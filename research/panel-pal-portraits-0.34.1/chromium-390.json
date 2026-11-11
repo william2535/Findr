@@ -1,0 +1,597 @@
+{
+  "status": "passed",
+  "recordedAt": "2026-11-11T20:49:34.044Z",
+  "browser": "chromium",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "physicalIPhone": false,
+  "mobileEmulation": true,
+  "offlineRequested": false,
+  "actualInference": false,
+  "checks": [
+    {
+      "name": "An older helper opens with the default appearance while another retains its own choices"
+    },
+    {
+      "name": "All six raw legacy icon IDs migrate to the intended portrait without changing colour or saved conversations"
+    },
+    {
+      "name": "All eight named options have real inline artwork and respond to selection",
+      "evidence": [
+        {
+          "id": "terminal",
+          "label": "OG",
+          "icon": "terminal",
+          "paths": 2
+        },
+        {
+          "id": "robot",
+          "label": "Panel pal",
+          "icon": "robot",
+          "paths": 4
+        },
+        {
+          "id": "hawking",
+          "label": "Stephen Hawking",
+          "icon": "hawking",
+          "paths": 7
+        },
+        {
+          "id": "einstein",
+          "label": "Albert Einstein",
+          "icon": "einstein",
+          "paths": 5
+        },
+        {
+          "id": "newton",
+          "label": "Isaac Newton",
+          "icon": "newton",
+          "paths": 3
+        },
+        {
+          "id": "tesla",
+          "label": "Nikola Tesla",
+          "icon": "tesla",
+          "paths": 3
+        },
+        {
+          "id": "curie",
+          "label": "Marie Curie",
+          "icon": "curie",
+          "paths": 4
+        },
+        {
+          "id": "lovelace",
+          "label": "Ada Lovelace",
+          "icon": "lovelace",
+          "paths": 3
+        }
+      ]
+    },
+    {
+      "name": "Icon and colour choices preview immediately, expose selected state, and remain unsaved until Save"
+    },
+    {
+      "name": "Cancel restores the saved appearance without changing the helper"
+    },
+    {
+      "name": "Icon and colour controls work with Enter and Space"
+    },
+    {
+      "name": "Save persists only the selected helper and leaves its conversations and diagnostic context unchanged"
+    },
+    {
+      "name": "Reload restores the chosen icon and colour"
+    },
+    {
+      "name": "Saved portrait appears left of every assistant message and never on user messages",
+      "evidence": [
+        {
+          "icon": "hawking",
+          "colour": "coral",
+          "svg": "hawking",
+          "right": 66,
+          "textLeft": 75
+        }
+      ]
+    },
+    {
+      "name": "Customising from the conversation preserves an unsent draft; Reset is reversible before saving"
+    },
+    {
+      "name": "Normal helper export and file-picker import preserve appearance alongside saved conversations"
+    },
+    {
+      "name": "Multiple helpers remain visually distinct and controls remain usable with reduced motion"
+    }
+  ],
+  "errors": [],
+  "navigationWarnings": [],
+  "requestFailures": [],
+  "fixture": "Synthetic saved pals including six raw legacy icon IDs; real app navigation, SVG artwork, IndexedDB, export and import. No model inference is needed or claimed.",
+  "browserVersion": "154.0.8037.57",
+  "seed": [
+    {
+      "id": "qa-portrait-pal-a",
+      "name": "My panel helper",
+      "discipline": "fire",
+      "scope": {
+        "kind": "manuals",
+        "label": "Synthetic UI test scope"
+      },
+      "selectedManualIds": [],
+      "requiredManualIds": [],
+      "conversations": [
+        {
+          "id": "qa-portrait-pal-a-chat",
+          "title": "Saved synthetic job",
+          "createdAt": 100,
+          "updatedAt": 100,
+          "context": {
+            "confirmedModel": "QA synthetic model"
+          },
+          "messages": [
+            {
+              "id": "qa-portrait-pal-a-you",
+              "role": "user",
+              "text": "Saved synthetic observation: the indication cleared before arrival.",
+              "createdAt": 100
+            },
+            {
+              "id": "qa-portrait-pal-a-findr",
+              "role": "assistant",
+              "text": "This is a synthetic saved conversation used to check that customisation keeps the job intact.",
+              "createdAt": 101,
+              "sourceRefs": [],
+              "mode": "manual-search"
+            }
+          ]
+        }
+      ],
+      "manualStates": {},
+      "activeConversationId": "qa-portrait-pal-a-chat",
+      "createdAt": 1794430177512,
+      "updatedAt": 1794430177512,
+      "revision": 0
+    },
+    {
+      "id": "qa-portrait-pal-b",
+      "name": "Night shift helper",
+      "discipline": "cctv",
+      "scope": {
+        "kind": "manuals",
+        "label": "Synthetic UI test scope"
+      },
+      "selectedManualIds": [],
+      "requiredManualIds": [],
+      "appearance": {
+        "icon": "curie",
+        "colour": "blue"
+      },
+      "conversations": [
+        {
+          "id": "qa-portrait-pal-b-chat",
+          "title": "Saved synthetic job",
+          "createdAt": 100,
+          "updatedAt": 100,
+          "context": {
+            "confirmedModel": "QA synthetic model"
+          },
+          "messages": [
+            {
+              "id": "qa-portrait-pal-b-you",
+              "role": "user",
+              "text": "Saved synthetic observation: the indication cleared before arrival.",
+              "createdAt": 100
+            },
+            {
+              "id": "qa-portrait-pal-b-findr",
+              "role": "assistant",
+              "text": "This is a synthetic saved conversation used to check that customisation keeps the job intact.",
+              "createdAt": 101,
+              "sourceRefs": [],
+              "mode": "manual-search"
+            }
+          ]
+        }
+      ],
+      "manualStates": {},
+      "activeConversationId": "qa-portrait-pal-b-chat",
+      "createdAt": 1794430177515,
+      "updatedAt": 1794430177515,
+      "revision": 0
+    },
+    {
+      "id": "qa-legacy-bolt",
+      "name": "Legacy bolt",
+      "discipline": "fire",
+      "scope": {
+        "kind": "manuals",
+        "label": "Synthetic legacy icon fixture"
+      },
+      "selectedManualIds": [],
+      "requiredManualIds": [],
+      "conversations": [
+        {
+          "id": "legacy-job-bolt",
+          "title": "Preserved legacy job",
+          "createdAt": 100,
+          "updatedAt": 100,
+          "context": {
+            "observations": [
+              "Keep legacy bolt"
+            ]
+          },
+          "messages": [
+            {
+              "id": "legacy-message-bolt",
+              "role": "assistant",
+              "text": "Saved before portrait update: bolt",
+              "createdAt": 100,
+              "sourceRefs": [],
+              "mode": "manual-search"
+            }
+          ]
+        }
+      ],
+      "manualStates": {},
+      "activeConversationId": "legacy-job-bolt",
+      "createdAt": 1794430177515,
+      "updatedAt": 1794430177515,
+      "revision": 0,
+      "appearance": {
+        "icon": "bolt",
+        "colour": "blue"
+      }
+    },
+    {
+      "id": "qa-legacy-ghost",
+      "name": "Legacy ghost",
+      "discipline": "fire",
+      "scope": {
+        "kind": "manuals",
+        "label": "Synthetic legacy icon fixture"
+      },
+      "selectedManualIds": [],
+      "requiredManualIds": [],
+      "conversations": [
+        {
+          "id": "legacy-job-ghost",
+          "title": "Preserved legacy job",
+          "createdAt": 100,
+          "updatedAt": 100,
+          "context": {
+            "observations": [
+              "Keep legacy ghost"
+            ]
+          },
+          "messages": [
+            {
+              "id": "legacy-message-ghost",
+              "role": "assistant",
+              "text": "Saved before portrait update: ghost",
+              "createdAt": 100,
+              "sourceRefs": [],
+              "mode": "manual-search"
+            }
+          ]
+        }
+      ],
+      "manualStates": {},
+      "activeConversationId": "legacy-job-ghost",
+      "createdAt": 1794430177516,
+      "updatedAt": 1794430177516,
+      "revision": 0,
+      "appearance": {
+        "icon": "ghost",
+        "colour": "blue"
+      }
+    },
+    {
+      "id": "qa-legacy-mug",
+      "name": "Legacy mug",
+      "discipline": "fire",
+      "scope": {
+        "kind": "manuals",
+        "label": "Synthetic legacy icon fixture"
+      },
+      "selectedManualIds": [],
+      "requiredManualIds": [],
+      "conversations": [
+        {
+          "id": "legacy-job-mug",
+          "title": "Preserved legacy job",
+          "createdAt": 100,
+          "updatedAt": 100,
+          "context": {
+            "observations": [
+              "Keep legacy mug"
+            ]
+          },
+          "messages": [
+            {
+              "id": "legacy-message-mug",
+              "role": "assistant",
+              "text": "Saved before portrait update: mug",
+              "createdAt": 100,
+              "sourceRefs": [],
+              "mode": "manual-search"
+            }
+          ]
+        }
+      ],
+      "manualStates": {},
+      "activeConversationId": "legacy-job-mug",
+      "createdAt": 1794430177516,
+      "updatedAt": 1794430177516,
+      "revision": 0,
+      "appearance": {
+        "icon": "mug",
+        "colour": "blue"
+      }
+    },
+    {
+      "id": "qa-legacy-cone",
+      "name": "Legacy cone",
+      "discipline": "fire",
+      "scope": {
+        "kind": "manuals",
+        "label": "Synthetic legacy icon fixture"
+      },
+      "selectedManualIds": [],
+      "requiredManualIds": [],
+      "conversations": [
+        {
+          "id": "legacy-job-cone",
+          "title": "Preserved legacy job",
+          "createdAt": 100,
+          "updatedAt": 100,
+          "context": {
+            "observations": [
+              "Keep legacy cone"
+            ]
+          },
+          "messages": [
+            {
+              "id": "legacy-message-cone",
+              "role": "assistant",
+              "text": "Saved before portrait update: cone",
+              "createdAt": 100,
+              "sourceRefs": [],
+              "mode": "manual-search"
+            }
+          ]
+        }
+      ],
+      "manualStates": {},
+      "activeConversationId": "legacy-job-cone",
+      "createdAt": 1794430177516,
+      "updatedAt": 1794430177516,
+      "revision": 0,
+      "appearance": {
+        "icon": "cone",
+        "colour": "blue"
+      }
+    },
+    {
+      "id": "qa-legacy-owl",
+      "name": "Legacy owl",
+      "discipline": "fire",
+      "scope": {
+        "kind": "manuals",
+        "label": "Synthetic legacy icon fixture"
+      },
+      "selectedManualIds": [],
+      "requiredManualIds": [],
+      "conversations": [
+        {
+          "id": "legacy-job-owl",
+          "title": "Preserved legacy job",
+          "createdAt": 100,
+          "updatedAt": 100,
+          "context": {
+            "observations": [
+              "Keep legacy owl"
+            ]
+          },
+          "messages": [
+            {
+              "id": "legacy-message-owl",
+              "role": "assistant",
+              "text": "Saved before portrait update: owl",
+              "createdAt": 100,
+              "sourceRefs": [],
+              "mode": "manual-search"
+            }
+          ]
+        }
+      ],
+      "manualStates": {},
+      "activeConversationId": "legacy-job-owl",
+      "createdAt": 1794430177516,
+      "updatedAt": 1794430177516,
+      "revision": 0,
+      "appearance": {
+        "icon": "owl",
+        "colour": "blue"
+      }
+    },
+    {
+      "id": "qa-legacy-wizard",
+      "name": "Legacy wizard",
+      "discipline": "fire",
+      "scope": {
+        "kind": "manuals",
+        "label": "Synthetic legacy icon fixture"
+      },
+      "selectedManualIds": [],
+      "requiredManualIds": [],
+      "conversations": [
+        {
+          "id": "legacy-job-wizard",
+          "title": "Preserved legacy job",
+          "createdAt": 100,
+          "updatedAt": 100,
+          "context": {
+            "observations": [
+              "Keep legacy wizard"
+            ]
+          },
+          "messages": [
+            {
+              "id": "legacy-message-wizard",
+              "role": "assistant",
+              "text": "Saved before portrait update: wizard",
+              "createdAt": 100,
+              "sourceRefs": [],
+              "mode": "manual-search"
+            }
+          ]
+        }
+      ],
+      "manualStates": {},
+      "activeConversationId": "legacy-job-wizard",
+      "createdAt": 1794430177516,
+      "updatedAt": 1794430177516,
+      "revision": 0,
+      "appearance": {
+        "icon": "wizard",
+        "colour": "blue"
+      }
+    }
+  ],
+  "iconChoices": [
+    {
+      "id": "terminal",
+      "label": "OG",
+      "icon": "terminal",
+      "paths": 2
+    },
+    {
+      "id": "robot",
+      "label": "Panel pal",
+      "icon": "robot",
+      "paths": 4
+    },
+    {
+      "id": "hawking",
+      "label": "Stephen Hawking",
+      "icon": "hawking",
+      "paths": 7
+    },
+    {
+      "id": "einstein",
+      "label": "Albert Einstein",
+      "icon": "einstein",
+      "paths": 5
+    },
+    {
+      "id": "newton",
+      "label": "Isaac Newton",
+      "icon": "newton",
+      "paths": 3
+    },
+    {
+      "id": "tesla",
+      "label": "Nikola Tesla",
+      "icon": "tesla",
+      "paths": 3
+    },
+    {
+      "id": "curie",
+      "label": "Marie Curie",
+      "icon": "curie",
+      "paths": 4
+    },
+    {
+      "id": "lovelace",
+      "label": "Ada Lovelace",
+      "icon": "lovelace",
+      "paths": 3
+    }
+  ],
+  "touchTargets": [
+    {
+      "label": "OG✓",
+      "width": 75.25,
+      "height": 98.78125
+    },
+    {
+      "label": "Panel pal✓",
+      "width": 75.25,
+      "height": 98.78125
+    },
+    {
+      "label": "Stephen Hawking✓",
+      "width": 75.25,
+      "height": 98.78125
+    },
+    {
+      "label": "Albert Einstein✓",
+      "width": 75.25,
+      "height": 98.78125
+    },
+    {
+      "label": "Isaac Newton✓",
+      "width": 75.25,
+      "height": 98.78125
+    },
+    {
+      "label": "Nikola Tesla✓",
+      "width": 75.25,
+      "height": 98.78125
+    },
+    {
+      "label": "Marie Curie✓",
+      "width": 75.25,
+      "height": 98.78125
+    },
+    {
+      "label": "Ada Lovelace✓",
+      "width": 75.25,
+      "height": 98.78125
+    },
+    {
+      "label": "✓FINDR yellow",
+      "width": 75.25,
+      "height": 84
+    },
+    {
+      "label": "✓Orange",
+      "width": 75.25,
+      "height": 84
+    },
+    {
+      "label": "✓Coral",
+      "width": 75.25,
+      "height": 84
+    },
+    {
+      "label": "✓Pink",
+      "width": 75.25,
+      "height": 84
+    },
+    {
+      "label": "✓Purple",
+      "width": 75.25,
+      "height": 84
+    },
+    {
+      "label": "✓Blue",
+      "width": 75.25,
+      "height": 84
+    },
+    {
+      "label": "✓Teal",
+      "width": 75.25,
+      "height": 84
+    }
+  ],
+  "layout": {
+    "window": 390,
+    "document": 390
+  },
+  "finishedAt": "2026-11-11T20:49:44.272Z"
+}

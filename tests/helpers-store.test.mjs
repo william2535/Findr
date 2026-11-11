@@ -50,6 +50,22 @@ test('untrusted imported appearance cannot supply CSS or executable icon markup'
  const normalized=normalizeHelper({...helper(),appearance:hostile});
  assert.deepEqual(normalized.appearance,{icon:'terminal',colour:'yellow'});
  assert.deepEqual(normalizeHelper({...helper(),appearance:null}).appearance,normalized.appearance);
+  assert.deepEqual(normalizeHelper({...helper(),appearance:{icon:{toString:'untrusted'},colour:'yellow'}}).appearance,normalized.appearance);
+});
+
+test('retired icons migrate to portraits without changing saved job data or colours',()=>{
+ const aliases={bolt:'tesla',ghost:'hawking',mug:'einstein',cone:'newton',owl:'curie',wizard:'lovelace',terminal:'terminal',robot:'robot'};
+ for(const [previous,icon] of Object.entries(aliases)){
+  const saved=helper();saved.appearance={icon:previous,colour:'teal'};
+  saved.conversations[0].messages=[{id:'saved-message',role:'assistant',text:'Existing evidence'}];
+  saved.conversations[0].faultSession={id:'saved-fault',readings:[{raw:'24.1 V',point:'PSU output'}]};
+  const original=structuredClone(saved),loaded=normalizeHelper(saved);
+  assert.deepEqual(loaded.appearance,{icon,colour:'teal'});
+  assert.deepEqual(loaded.conversations,original.conversations);
+  assert.deepEqual(loaded.manualStates,original.manualStates);
+  assert.deepEqual(saved,original);
+  assert.deepEqual(normalizeHelper(JSON.parse(JSON.stringify(loaded))),loaded);
+ }
 });
 
 test('failed appearance save preserves the last saved colours, chats and shared manuals',async()=>{

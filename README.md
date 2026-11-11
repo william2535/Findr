@@ -1,3 +1,9 @@
+## Genius portraits for Panel Pals — web 0.34.1
+
+**Customise** keeps the original **OG** terminal and **Panel pal** robot, with six new original line portraits: **Stephen Hawking, Albert Einstein, Isaac Newton, Nikola Tesla, Marie Curie and Ada Lovelace**. Portraits follow the selected colour on cards, conversation headers, replies and the fault handover. All graphics are bundled SVG; no image download or network connection is needed.
+
+Retired choices map consistently when loading older pals or backups: Sparky → Tesla, Little gremlin → Hawking, Tea break → Einstein, Cone head → Newton, Night owl → Curie and Wire wizard → Lovelace. Existing colours, saved conversations, manuals and fault records are preserved. This changes appearance only; it does not change the pal's model, behaviour or diagnostic knowledge. Android remains 0.14.1.
+
 ## Multi-task Panel Pals — web 0.34.0
 
 Compound requests now retain an ordered task plan, separate manual evidence and missing details for each task. Step-number follow-ups, explicit corrections, component changes and raw observations stay with the current saved conversation. Requested work is never marked as performed. Reviewed MxPro5 user-guide procedures cover sounder and individual-input disabling/enabling; physical device replacement still requires the relevant device/protocol instructions. Generic outputs and unspecified devices are clarified rather than silently mapped to a different operation.
