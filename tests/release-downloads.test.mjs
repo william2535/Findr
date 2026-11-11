@@ -111,7 +111,8 @@ test('external APK GET and HEAD redirect only to the exact versioned GitHub asse
     assert.ok(RETAINED_RELEASE_FILES.includes(release.apkFile));
     assert.ok(!DEPLOYED_RELEASE_FILES.includes(release.apkFile));
     assert.ok(DEPLOYED_RELEASE_FILES.includes(release.apkFile+'.sha256'));
-    assert.equal(release.url,`https://github.com/william2535/Findr/releases/download/android-v${release.version}/${release.apkFile}`);
+    assert.match(release.sourceCommit,/^[a-f0-9]{40}$/);
+  assert.equal(release.url,`https://raw.githubusercontent.com/william2535/Findr/${release.sourceCommit}/public/releases/${release.apkFile}`);
     const route=await import(pathToFileURL(join(root,'app/releases',release.apkFile,'route.ts')).href);
     for(const response of [externalReleaseResponse(release.apkFile),route.GET(),route.HEAD()]){
       assert.equal(response.status,307);assert.equal(response.headers.get('location'),release.url);

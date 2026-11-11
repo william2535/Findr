@@ -48,7 +48,8 @@ for(const name of EXTERNAL_RELEASE_FILES){
   assert.ok(existsSync(join(root,'app/releases',name,'route.ts')),`Missing external release handler: ${name}`);
   const release=EXTERNAL_RELEASES.find(release=>release.apkFile===name);
   assert.ok(release,`Missing external release URL: ${name}`);
-  assert.equal(release.url,`https://github.com/william2535/Findr/releases/download/android-v${release.version}/${name}`,`Unexpected external release URL: ${name}`);
+  assert.match(release.sourceCommit,/^[a-f0-9]{40}$/);
+  assert.equal(release.url,`https://raw.githubusercontent.com/william2535/Findr/${release.sourceCommit}/public/releases/${name}`,`Unexpected external release URL: ${name}`);
   const checksum=readFileSync(join(publicRoot,'releases',name+'.sha256'),'utf8').trim().split(/\s+/);
   assert.equal(checksum.length,2,`Invalid external release checksum record: ${name}`);
   assert.match(checksum[0],/^[a-f0-9]{64}$/,`Invalid external release checksum: ${name}`);

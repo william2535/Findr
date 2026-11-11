@@ -12,7 +12,7 @@ Web 0.36.0 also offers [OpenAI API setup](docs/openai-panel-pals.md). This is an
 
 ## Current Android release artifact
 
-The 0.37.0 source backup also retains the verified `public/releases/FINDR-0.37.0.apk` and its checksum as an explicit release artifact. The Sites source Git commit ignores this one large binary because its source server cannot accept the blob; all editable build source is retained. The APK is also published separately through the `android-v0.37.0` GitHub release before the website routes to it. Private signing material remains excluded. See `BACKUP-PROVENANCE.json` for publication status, SHA-256 and the exact source revision; preparing a backup does not itself publish a website or an APK release. Historical export exclusions remain unchanged.
+The 0.37.0 source backup also retains the verified `public/releases/FINDR-0.37.0.apk` and its checksum as an explicit release artifact. The Sites source Git commit ignores this one large binary because its source server cannot accept the blob; all editable build source is retained. The APK download uses the exact binary in immutable backup commit `ae2be03ffa51aa08c5f10e1a088e4970a8d44836`; the GitHub release page provides download links to it. Release-asset upload was unavailable, so no uploaded release asset is claimed. Private signing material remains excluded. See `BACKUP-PROVENANCE.json` for publication status, SHA-256 and the exact source revision; preparing a backup does not itself publish a website or an APK release. Historical export exclusions remain unchanged.
 
 ## Import into GitHub
 

@@ -2,7 +2,7 @@
 
 Home now has a **Tool box** with fire-alarm battery capacity (24/72/custom hours), DC voltage drop, 4/5/6-band resistor colours and conductor resistance / R1 + R2. The calculators run locally, save their inputs separately from fault logs, and show formulas, assumptions and sources. They do not establish equipment limits or compliance. [Calculation references](research/toolbox-0.37.0/calculators-and-sources.md).
 
-Android is updated to **0.37.0 / versionCode 27**, bundling the same application with the existing package name, storage origin and signing identity. It supports the current import types, Save As exports and the explicitly selected online-AI relay. The complete APK is hosted as a GitHub release asset because it exceeds the website’s 25 MiB static-file limit; the versioned website download redirects to that exact asset. [Build, verification and limitations](research/toolbox-0.37.0/README.md). Earlier release notes below describe their historical versions.
+Android is updated to **0.37.0 / versionCode 27**, bundling the same application with the existing package name, storage origin and signing identity. It supports the current import types, Save As exports and the explicitly selected online-AI relay. The complete APK is hosted from its verified GitHub backup commit because it exceeds the website’s 25 MiB static-file limit; the versioned website download redirects to that exact asset. [Build, verification and limitations](research/toolbox-0.37.0/README.md). Earlier release notes below describe their historical versions.
 
 ## OpenAI key option — web 0.36.0
 

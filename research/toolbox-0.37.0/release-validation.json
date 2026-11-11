@@ -32,7 +32,14 @@
   "androidEmulator": false,
   "physicalIPhone": false,
   "authenticatedAiProviderCalls": false,
-  "currentApkPublished": false,
+  "currentApkPublished": true,
   "websitePublished": false,
-  "externalApkExcludedFromSitesGit": true
+  "externalApkExcludedFromSitesGit": true,
+  "publicApkDownloadVerified": {
+    "url": "https://raw.githubusercontent.com/william2535/Findr/ae2be03ffa51aa08c5f10e1a088e4970a8d44836/public/releases/FINDR-0.37.0.apk",
+    "httpStatus": 200,
+    "bytes": 73458195,
+    "sha256": "e6f91ded97b687b3a69ebfeee46e9a0c3a43b9679ef4fca7b63bf9b5a3a3e37f"
+  },
+  "releasePolicyRecheckPassed": 17
 }

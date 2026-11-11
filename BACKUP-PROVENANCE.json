@@ -7,7 +7,7 @@
   "deploymentStatus": "pending_publication",
   "deploymentUpdatedAt": null,
   "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site",
-  "sourceCommit": "ceed55dc6d56198c08c5b32b2be2697e3639b16d",
+  "sourceCommit": "f32ec2e09f48f94dd482376c5a28aa92af624b73",
   "sourceRepository": "Sites project source repository",
   "githubRepository": "https://github.com/william2535/Findr",
   "githubBranch": "main",
@@ -62,19 +62,27 @@
       "At this source snapshot APK release and website publication are still pending."
     ],
     "evidence": "research/toolbox-0.37.0/README.md",
-    "verificationRecord": "research/toolbox-0.37.0/release-validation.json"
+    "verificationRecord": "research/toolbox-0.37.0/release-validation.json",
+    "postRouteCorrection": {
+      "releasePolicyTestsPassed": 17,
+      "build": "passed",
+      "publicAssetGate": "passed",
+      "appAndApkBytes": "unchanged",
+      "rawDownloadBytesAndSHA256": "verified"
+    }
   },
   "secretReview": {
-    "sourceCommit": "ceed55dc6d56198c08c5b32b2be2697e3639b16d",
-    "copiedFiles": 43,
-    "changedTextFilesScanned": 33,
+    "sourceCommit": "f32ec2e09f48f94dd482376c5a28aa92af624b73",
+    "copiedFiles": 6,
+    "changedTextFilesScanned": 7,
     "candidates": [],
     "allEligibleSourceFilesVerified": 2789,
     "detachedHostingVerified": true,
     "recoveryArchiveUnchanged": true,
-    "limitations": "Changed text plus reviewed baseline; no mathematical absence proof. One explicitly retained signed APK is an additional verified release artifact; private signing key, model weights and downloaded user manuals remain excluded."
+    "limitations": "Changed text plus reviewed baseline; no mathematical absence proof. One explicitly retained signed APK is an additional verified release artifact; private signing key, model weights and downloaded user manuals remain excluded.",
+    "reviewScope": "Current route/setup changes plus earlier complete0.37.0 source review."
   },
-  "preparedAt": "2026-11-11T23:35:52.465316+00:00",
+  "preparedAt": "2026-11-11T23:39:23.036245+00:00",
   "deploymentArchive": null,
   "previousPublishedRelease": {
     "webVersion": "0.36.2",
@@ -86,7 +94,7 @@
     "sourceCommit": "3c731f770e5bbc48da64e204331fab20a38a8c60",
     "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site"
   },
-  "publicationNote": "Source backup prepared before Android GitHub release assets and website publication. Previous published release remains live until separately verified.",
+  "publicationNote": "Corrected source backup prepared after immutable public APK download verification, before release-page and website publication. Site version81 was saved but never deployed.",
   "additionalRetainedArtifacts": [
     {
       "path": "public/releases/FINDR-0.37.0.apk",
@@ -95,7 +103,18 @@
       "gitBlob": "3c518f15f226fb97f6ebaa8cbba650bda3e25f2b",
       "reason": "Explicitly retained current signed release artifact; ignored only in Sites source Git because that server rejected this blob size.",
       "releaseTag": "android-v0.37.0",
-      "releasePublished": false
+      "releasePublished": false,
+      "rawDownloadUrl": "https://raw.githubusercontent.com/william2535/Findr/ae2be03ffa51aa08c5f10e1a088e4970a8d44836/public/releases/FINDR-0.37.0.apk",
+      "rawDownloadVerified": true,
+      "rawDownloadHttpStatus": 200,
+      "publicationMethod": "immutable GitHub raw file; no release-asset upload"
+    }
+  ],
+  "sourcePreparationHistory": [
+    {
+      "sourceCommit": "ceed55dc6d56198c08c5b32b2be2697e3639b16d",
+      "backupCommit": "ae2be03ffa51aa08c5f10e1a088e4970a8d44836",
+      "status": "superseded route policy before website publication; immutable APK bytes remain referenced"
     }
   ]
 }
