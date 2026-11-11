@@ -1,3 +1,7 @@
+## Kanye portrait — web 0.35.2
+
+The last Panel Pal icon is now **Kanye**, using a bundled 30.5 KB public-domain Official White House photo. Its existing saved slot ID is retained, so older selections and exports continue to work. Source and licence are recorded in `public/app/icons/pals/CREDITS.json`. Other portraits, colours and conversations are unchanged. Android remains 0.14.1.
+
 ## Online allowance and realistic portraits — web 0.35.1
 
 A compact strip at the top shows Groq’s last reported remaining daily requests and tokens/minute, with separate reset countdowns. It updates from normal reply/error headers without any polling or extra model requests. Missing balances remain unknown; elapsed timers never refill an invented balance. A fresh tab or changed key starts without an account snapshot. Groq does not supply the other two remaining balances in these headers.

@@ -18,14 +18,15 @@ export const HELPER_PORTRAITS=Object.freeze({
   newton:Object.freeze({width:330,height:464,crop:'28 0 280 280'}),
   tesla:Object.freeze({width:330,height:442,crop:'38 0 255 255'}),
   curie:Object.freeze({width:330,height:448,crop:'35 22 265 265'}),
-  lovelace:Object.freeze({width:330,height:474,crop:'101 40 151 151'}),
+  lovelace:Object.freeze({file:'kanye',width:318,height:349,crop:'112 20 150 150'}),
 });
 export const HELPER_ICONS=Object.freeze([
   {id:'terminal',label:'OG'}, {id:'robot',label:'Panel pal'},
   {id:'hawking',label:'Stephen Hawking'}, {id:'einstein',label:'Albert Einstein'},
   {id:'newton',label:'Isaac Newton'}, {id:'tesla',label:'Nikola Tesla'},
-  {id:'curie',label:'Marie Curie'}, {id:'lovelace',label:'Ada Lovelace'},
+  {id:'curie',label:'Marie Curie'}, {id:'lovelace',label:'Kanye'},
 ].map(Object.freeze));
+// The last slot keeps its legacy lovelace ID so saved selections now display Kanye.
 // Keep older saved pals and exported backups usable. Only the portrait changes;
 // their selected colour, messages, manuals and diagnostic records stay intact.
 const LEGACY_ICONS=Object.freeze({bolt:'tesla',ghost:'hawking',mug:'einstein',cone:'newton',owl:'curie',wizard:'lovelace'});
@@ -51,5 +52,5 @@ export function renderHelperIcon(value){
   const {icon}=normalizeHelperAppearance(value);
   const portrait=icon!=='terminal'&&icon!=='robot';
   const photo=HELPER_PORTRAITS[icon],crop=photo?.crop.split(' ').map(Number),scale=photo?64/crop[2]:1;
-  return `<svg data-helper-icon="${icon}" ${photo?'data-helper-portrait="true" ':''}viewBox="0 0 ${portrait?64:32} ${portrait?64:32}" fill="none" stroke="currentColor" stroke-width="${portrait?2.4:1.8}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${ICON_PATHS[icon]}${photo?`<image href="./icons/pals/${icon}.jpg" width="${photo.width}" height="${photo.height}" transform="matrix(${scale} 0 0 ${scale} ${-crop[0]*scale} ${-crop[1]*scale})" preserveAspectRatio="xMidYMid meet"/>`:''}</svg>`;
+  return `<svg data-helper-icon="${icon}" ${photo?'data-helper-portrait="true" ':''}viewBox="0 0 ${portrait?64:32} ${portrait?64:32}" fill="none" stroke="currentColor" stroke-width="${portrait?2.4:1.8}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${ICON_PATHS[icon]}${photo?`<image href="./icons/pals/${photo.file||icon}.jpg" width="${photo.width}" height="${photo.height}" transform="matrix(${scale} 0 0 ${scale} ${-crop[0]*scale} ${-crop[1]*scale})" preserveAspectRatio="xMidYMid meet"/>`:''}</svg>`;
 }

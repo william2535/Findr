@@ -74,6 +74,18 @@
       "attributionRequired": false,
       "sha256": "2a79cf4830896e37e753a742539080657acdef47225b06ecf5860eca929c56e6",
       "bytes": 37012
+    },
+    {
+      "id": "kanye",
+      "title": "File:Kanye West 2018-10-11.jpg",
+      "file": "public/app/icons/pals/kanye.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Kanye_West_2018-10-11.jpg",
+      "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/2/21/Kanye_West_2018-10-11.jpg",
+      "author": "Official White House Photo",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "sha256": "b3adaccd04e2bad6d2d67309c8f2d8c9016cf997b3340f53c6934e6f2b3bbe90",
+      "bytes": 30526
     }
   ]
 }

@@ -1,20 +1,20 @@
 {
-  "webVersion": "0.35.1",
-  "siteVersion": 76,
+  "webVersion": "0.35.2",
+  "siteVersion": 77,
   "siteProjectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
-  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_713732c8d11c81918c5e20722dfd5e92",
-  "deploymentId": "appgdep_6af4e2bd24f881919ec19b3b55dc5145",
+  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_4f4e2c3fff008191b7b2b58681380b45",
+  "deploymentId": "appgdep_6af4e58f6b048191b2e88ae63fb9fa61",
   "deploymentStatus": "succeeded",
-  "deploymentUpdatedAt": "2026-11-11T21:49:05.703427+00:00",
+  "deploymentUpdatedAt": "2026-11-11T22:01:08.465690+00:00",
   "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site",
-  "sourceCommit": "c121d2155f3fc9f1e2e65b3e27a389a388f9a6f6",
+  "sourceCommit": "7ad26199445fcbf903c9061561578c2a482ad056",
   "sourceRepository": "Sites project source repository",
   "githubRepository": "https://github.com/william2535/Findr",
   "githubBranch": "main",
   "backupRevision": "The Git commit containing this provenance and SOURCE-FILES.sha256 identifies the backup; it intentionally differs from the deployment source commit.",
   "sourceManifest": "SOURCE-FILES.sha256",
   "manifestScope": "All source-backup payload files except the checksum manifest itself; includes GitHub setup/export documentation and separately archived recovery files.",
-  "verifiedOriginalSourceFiles": 2706,
+  "verifiedOriginalSourceFiles": 2710,
   "intentionallyDetachedFile": ".openai/hosting.json",
   "detachedHostingReason": "Keep a migrated checkout separate from the original live ChatGPT Site.",
   "intentionalExclusions": "EXPORT-EXCLUSIONS.json; additionally no dependency/build caches, private environment values, user data, downloaded manuals or model weights. Required bundled runtime assets and synthetic fixtures remain included.",
@@ -24,78 +24,39 @@
     "recoveryArchive": "WORKSPACE-RECOVERY/original-workspace-files.zip"
   },
   "checks": {
-    "scope": "Top-of-app Groq response-header allowance display and six bundled public-domain portraits; original icon IDs, saved colours and conversations retained.",
-    "unitTests": {
-      "passed": 1780,
+    "scope": "Replace final Ada portrait option with bundled Kanye photo/label while retaining legacy slot identity and saved selections.",
+    "focusedRegressionTests": {
+      "passed": 15,
       "failed": 0,
-      "seconds": 33.070543312
+      "coverage": "Existing helper storage and appearance migration tests."
     },
     "productionBuild": "passed",
-    "typescript": "passed",
-    "publicAssets": "passed; 1454 public files verified; final build 187868708 bytes",
-    "offlineBuildHash": "dc2e06cedd1c",
-    "browserChecks": {
-      "Chromium154.0.8037.57Portrait390x844UsageAndOffline": 7,
-      "Chromium154.0.8037.57Portrait390x844Appearance": 12
-    },
-    "browserCheckTotal": 19,
-    "quotaRegressionTests": 9,
-    "providerResponses": "Synthetic quota headers/responses only; no authenticated real Groq usage or inference verification.",
-    "offlineVerified": "Chromium service-worker preparation then network-disabled reload; all six portrait assets readable offline and SHA-256 identical to bundled source. No offline hosted-model inference claim.",
-    "onlineProvider": {
-      "provider": "Groq",
-      "model": "openai/gpt-oss-120b",
-      "credentialScope": "Engineer personal key held only in current tab module memory; passed through same-origin relay per request.",
-      "siteEnvironmentKeyRequired": false,
-      "explicitConsentRequired": true,
-      "automaticCloudFallback": false,
-      "providerInferenceVerified": false,
-      "providerLatencyMeasured": false,
-      "accountBillingTierVerified": false
-    },
-    "previousLocalModelValidation": {
-      "webVersion": "0.34.0",
-      "sourceCommit": "1536b5a84e2126bae0e071d6004e6838bb70fac6",
-      "backupCommit": "f428451f831d662b58a53d73175ef0eb7afc2dc7",
-      "evidence": "research/panel-pals-0.34.0/README.md",
-      "model": {
-        "default": "SmolLM2-360M compact reference model retained",
-        "optional": "Experimental Qwen3.5-2B Q4_K_M, explicit download and local execution probe before activation",
-        "optionalModelBytes": 1280835840,
-        "bundledMainAndCompatibilityRuntimeBytes": 29395450,
-        "rawSemanticCasesPassed": 3,
-        "rawSemanticCasesTotal": 5,
-        "coldOnlineRequestSeconds": 107.35,
-        "coldOfflineRequestSeconds": 106.4,
-        "hardwareProbeEstablishesSemanticQuality": false,
-        "cloudFallback": false
-      }
-    },
-    "portraitSources": "public/app/icons/pals/CREDITS.json; public-domain source metadata and hashes recorded; six JPEG assets total 299157 bytes.",
+    "publicAssets": "passed; 1456 public files verified; final build 188032125 bytes",
+    "offlineBuildHash": "9124bd9ceb67",
+    "browserVerification": "Chromium154 at390px through actual settings: last option labelled Kanye; legacy saved selection, local image rendering and no horizontal overflow verified.",
+    "portraitSources": "public/app/icons/pals/CREDITS.json",
     "limitations": [
-      "No real Groq credential was available; live account allowances and authenticated inference remain unverified.",
-      "Browser quota tests use synthetic provider headers. Counts are reported provider snapshots, not live polling or a billing-tier guarantee.",
-      "No physical iPhone or installed iOS PWA test performed.",
-      "No local model selection change, paid fallback or Android APK build/signing included."
+      "No physical iPhone verification.",
+      "No new local-model or authenticated Groq inference test claimed for this appearance change.",
+      "No APK rebuild/signing performed."
     ],
-    "evidence": "research/online-usage-0.35.1/README.md",
-    "verificationRecord": "research/online-usage-0.35.1/verification.json",
-    "portraitEvidence": "research/realistic-panel-pals-0.35.1/README.md"
+    "evidence": "research/kanye-0.35.2/README.md",
+    "previousBroaderValidation": "research/online-usage-0.35.1/verification.json; historical results, not rerun as part of0.35.2."
   },
   "secretReview": {
-    "sourceCommit": "c121d2155f3fc9f1e2e65b3e27a389a388f9a6f6",
-    "copiedFiles": 36,
-    "changedTextFilesScanned": 22,
+    "sourceCommit": "7ad26199445fcbf903c9061561578c2a482ad056",
+    "copiedFiles": 11,
+    "changedTextFilesScanned": 8,
     "candidates": [],
-    "allEligibleSourceFilesVerified": 2706,
+    "allEligibleSourceFilesVerified": 2710,
     "detachedHostingVerified": true,
     "recoveryArchiveUnchanged": true,
-    "limitations": "Pattern review of changed text plus unchanged reviewed baseline. Not mathematical proof of absence. No credentials, model weights or downloaded manufacturer manuals included."
+    "limitations": "Changed-text pattern review plus reviewed baseline; no mathematical absence proof. Model weights, credentials and downloaded manuals excluded."
   },
-  "preparedAt": "2026-11-11T21:49:40.557447+00:00",
+  "preparedAt": "2026-11-11T22:01:38.369827+00:00",
   "deploymentArchive": {
-    "sha256": "d5adcb56510aa5248170806dd8b5f773e461c114bcdd1c1b15b919d1d32b610f",
-    "bytes": 189091840,
-    "files": 1557
+    "sha256": "b9d0487e44d4b59c97f5d79624d45b70495c0073c6c6e71137cf317f61332124",
+    "bytes": 189255680,
+    "files": 1559
   }
 }
