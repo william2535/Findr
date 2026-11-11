@@ -1,0 +1,907 @@
+{
+  "schemaVersion": 1,
+  "version": "2026-11-11.1",
+  "procedures": [
+    {
+      "id": "mxpro5-disable-sounders-680-166-rev04",
+      "operation": "disable-sounders",
+      "task": {
+        "actions": [
+          "disable"
+        ],
+        "targets": [
+          "sounder",
+          "sounders"
+        ],
+        "extent": "all"
+      },
+      "matchTerms": [
+        "disable sounders",
+        "disable the sounders",
+        "isolate sounders"
+      ],
+      "manual": {
+        "recordId": "advanced-0254975c10bd",
+        "sha256": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+        "title": "Advanced MxPro5 — User guide",
+        "documentNumber": "680-166",
+        "revision": "04",
+        "models": [
+          "MxPro5",
+          "Mx-5100",
+          "Mx-5200",
+          "Mx-5400",
+          "Mx-5800",
+          "Mx-5100V",
+          "Mx-5200V",
+          "Mx-5400V",
+          "Mx-5800V",
+          "Mx-5100N",
+          "Mx-5200N",
+          "Mx-5400N",
+          "Mx-5800N"
+        ],
+        "pageCount": 43
+      },
+      "scope": {
+        "models": [
+          "MxPro5",
+          "Mx-5100",
+          "Mx-5200",
+          "Mx-5400",
+          "Mx-5800",
+          "Mx-5100V",
+          "Mx-5200V",
+          "Mx-5400V",
+          "Mx-5800V",
+          "Mx-5100N",
+          "Mx-5200N",
+          "Mx-5400N",
+          "Mx-5800N"
+        ],
+        "familyAliases": [
+          "MxPro"
+        ],
+        "allowFamilyQuestion": true,
+        "sharedProcedure": false,
+        "label": "For MxPro5 panels covered by user guide 680-166, revision 04.",
+        "refs": [
+          {
+            "page": 5,
+            "printedPage": "5",
+            "quote": "Mx-5100, Mx-5200, Mx-5400, MX-5800",
+            "section": "1.1 Standards — covered products"
+          }
+        ]
+      },
+      "anchors": [
+        {
+          "page": 5,
+          "printedPage": "5",
+          "quote": "Mx-5100, Mx-5200, Mx-5400, MX-5800",
+          "section": "1.1 Standards — covered products"
+        },
+        {
+          "page": 43,
+          "printedPage": "43",
+          "quote": "Doc Number: 680-166",
+          "section": "Document identification"
+        },
+        {
+          "page": 43,
+          "printedPage": "43",
+          "quote": "Revision: 04",
+          "section": "Document identification"
+        }
+      ],
+      "prerequisites": [
+        {
+          "text": "Use authorised Level 2 access with permission for the operation. User permissions differ; use the access key if fitted, or MENU → ENABLE CONTROLS and your authorised password.",
+          "refs": [
+            {
+              "page": 10,
+              "printedPage": "10",
+              "quote": "Level 2 Authorised User",
+              "section": "3.1 Access Levels"
+            },
+            {
+              "page": 10,
+              "printedPage": "10",
+              "quote": "can be configured with varying permissions to specific menu function options.",
+              "section": "3.1 Access Levels"
+            },
+            {
+              "page": 11,
+              "printedPage": "11",
+              "quote": "If the panel has an access key switch fitted, use the key",
+              "section": "3.1.1 Changing from Access Level 1 to Level 2"
+            },
+            {
+              "page": 11,
+              "printedPage": "11",
+              "quote": "To enable the controls, ensure the “Enable Controls” option is highlighted",
+              "section": "3.1.1.1 Menu Access"
+            },
+            {
+              "page": 11,
+              "printedPage": "11",
+              "quote": "Enter the password using the number buttons and then press the ✔ button.",
+              "section": "3.1.1.1 Menu Access"
+            }
+          ]
+        },
+        {
+          "text": "Only trained service personnel should carry out installation, programming or maintenance of this equipment.",
+          "refs": [
+            {
+              "page": 6,
+              "printedPage": "6",
+              "quote": "Only Trained service personnel should undertake the Installation, Programming and Maintenance of this equipment.",
+              "section": "1.2 Cautions and Warnings"
+            }
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "text": "Press MENU. Select DISABLE, then OUTPUTS, using the arrows and ✔. If prompted, enter your authorised password.",
+          "refs": [
+            {
+              "page": 19,
+              "printedPage": "19",
+              "quote": "Press the ‘Menu’ button to bring up the display menu.",
+              "section": "3.8.1 Using the Buttons to Navigate Menus"
+            },
+            {
+              "page": 19,
+              "printedPage": "19",
+              "quote": "buttons to highlight the required menu option and then press the ✔ button to select it.",
+              "section": "3.8.1.1 Selecting Menu Options"
+            },
+            {
+              "page": 26,
+              "printedPage": "26",
+              "quote": "ZONE/INPUTS OUTPUTS GROUPS",
+              "section": "3.10 Disabling"
+            },
+            {
+              "page": 27,
+              "printedPage": "27",
+              "quote": "If the current User ID does not have the necessary permission, the display prompts for entry of a password",
+              "section": "3.10.2 Disable – Outputs"
+            },
+            {
+              "page": 27,
+              "printedPage": "27",
+              "quote": "Enter the password as normal. Once a valid password has been entered, a pop-up window is shown",
+              "section": "3.10.2 Disable – Outputs"
+            }
+          ]
+        },
+        {
+          "text": "Highlight ALL SOUNDERS and press ✔. The display returns to the main Disable menu.",
+          "refs": [
+            {
+              "page": 27,
+              "printedPage": "27",
+              "quote": "highlight the ALL SOUNDERS Option and then press the ✔ button to disable them. The display automatically reverts to the Main Disable Menu.",
+              "section": "3.10.2.1 All Sounder Outputs"
+            }
+          ]
+        }
+      ],
+      "effects": [
+        {
+          "text": "Disabled outputs will not activate for a fire alarm or another programmed event. The available output options depend on how the installation engineer configured the system.",
+          "refs": [
+            {
+              "page": 27,
+              "printedPage": "27",
+              "quote": "If disabled, the outputs will not activate in the event of a fire alarm or other programmed event.",
+              "section": "3.10.2 Disable – Outputs"
+            },
+            {
+              "page": 27,
+              "printedPage": "27",
+              "quote": "the available options will have been configured by the installation engineer.",
+              "section": "3.10.2 Disable – Outputs"
+            }
+          ]
+        },
+        {
+          "text": "The Sounder Disabled indicator illuminates. For some combined sounder/beacon devices, disabling the sounder also disables the beacon.",
+          "refs": [
+            {
+              "page": 27,
+              "printedPage": "27",
+              "quote": "The ‘Sounder Disabled’ Indicator will be illuminated.",
+              "section": "3.10.2.1 All Sounder Outputs"
+            },
+            {
+              "page": 27,
+              "printedPage": "27",
+              "quote": "For some combined sounder/beacon devices, the beacon follows the operation of the sounder and it is only possible to disable both the sounder and the beacon together.",
+              "section": "3.10.2.2 All Beacon Outputs"
+            }
+          ]
+        }
+      ],
+      "followUps": {},
+      "reviewedOn": "2026-11-11"
+    },
+    {
+      "id": "mxpro5-disable-individual-input-680-166-rev04",
+      "operation": "disable-individual-input",
+      "task": {
+        "actions": [
+          "disable"
+        ],
+        "targets": [
+          "input",
+          "inputs",
+          "detector",
+          "detectors"
+        ]
+      },
+      "matchTerms": [
+        "disable individual input",
+        "disable input",
+        "disable detector",
+        "isolate detector"
+      ],
+      "manual": {
+        "recordId": "advanced-0254975c10bd",
+        "sha256": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+        "title": "Advanced MxPro5 — User guide",
+        "documentNumber": "680-166",
+        "revision": "04",
+        "models": [
+          "MxPro5",
+          "Mx-5100",
+          "Mx-5200",
+          "Mx-5400",
+          "Mx-5800",
+          "Mx-5100V",
+          "Mx-5200V",
+          "Mx-5400V",
+          "Mx-5800V",
+          "Mx-5100N",
+          "Mx-5200N",
+          "Mx-5400N",
+          "Mx-5800N"
+        ],
+        "pageCount": 43
+      },
+      "scope": {
+        "models": [
+          "MxPro5",
+          "Mx-5100",
+          "Mx-5200",
+          "Mx-5400",
+          "Mx-5800",
+          "Mx-5100V",
+          "Mx-5200V",
+          "Mx-5400V",
+          "Mx-5800V",
+          "Mx-5100N",
+          "Mx-5200N",
+          "Mx-5400N",
+          "Mx-5800N"
+        ],
+        "familyAliases": [
+          "MxPro"
+        ],
+        "allowFamilyQuestion": true,
+        "sharedProcedure": false,
+        "label": "For MxPro5 panels covered by user guide 680-166, revision 04.",
+        "refs": [
+          {
+            "page": 5,
+            "printedPage": "5",
+            "quote": "Mx-5100, Mx-5200, Mx-5400, MX-5800",
+            "section": "1.1 Standards — covered products"
+          }
+        ]
+      },
+      "anchors": [
+        {
+          "page": 5,
+          "printedPage": "5",
+          "quote": "Mx-5100, Mx-5200, Mx-5400, MX-5800",
+          "section": "1.1 Standards — covered products"
+        },
+        {
+          "page": 43,
+          "printedPage": "43",
+          "quote": "Doc Number: 680-166",
+          "section": "Document identification"
+        },
+        {
+          "page": 43,
+          "printedPage": "43",
+          "quote": "Revision: 04",
+          "section": "Document identification"
+        }
+      ],
+      "prerequisites": [
+        {
+          "text": "Use authorised Level 2 access with permission for the operation. User permissions differ; use the access key if fitted, or MENU → ENABLE CONTROLS and your authorised password.",
+          "refs": [
+            {
+              "page": 10,
+              "printedPage": "10",
+              "quote": "Level 2 Authorised User",
+              "section": "3.1 Access Levels"
+            },
+            {
+              "page": 10,
+              "printedPage": "10",
+              "quote": "can be configured with varying permissions to specific menu function options.",
+              "section": "3.1 Access Levels"
+            },
+            {
+              "page": 11,
+              "printedPage": "11",
+              "quote": "If the panel has an access key switch fitted, use the key",
+              "section": "3.1.1 Changing from Access Level 1 to Level 2"
+            },
+            {
+              "page": 11,
+              "printedPage": "11",
+              "quote": "To enable the controls, ensure the “Enable Controls” option is highlighted",
+              "section": "3.1.1.1 Menu Access"
+            },
+            {
+              "page": 11,
+              "printedPage": "11",
+              "quote": "Enter the password using the number buttons and then press the ✔ button.",
+              "section": "3.1.1.1 Menu Access"
+            }
+          ]
+        },
+        {
+          "text": "Only trained service personnel should carry out installation, programming or maintenance of this equipment.",
+          "refs": [
+            {
+              "page": 6,
+              "printedPage": "6",
+              "quote": "Only Trained service personnel should undertake the Installation, Programming and Maintenance of this equipment.",
+              "section": "1.2 Cautions and Warnings"
+            }
+          ]
+        },
+        {
+          "text": "This documented route is for an individual input device. Outputs use a different menu.",
+          "refs": [
+            {
+              "page": 26,
+              "printedPage": "26",
+              "quote": "disable individual input devices.",
+              "section": "3.10.1 Disable – Zones and Inputs"
+            },
+            {
+              "page": 27,
+              "printedPage": "27",
+              "quote": "3.10.2 Disable - Outputs",
+              "section": "3.10.2 Disable – Outputs"
+            }
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "text": "Press MENU, select DISABLE → ZONE/INPUTS, then scroll to the required zone or enter its number.",
+          "refs": [
+            {
+              "page": 19,
+              "printedPage": "19",
+              "quote": "Press the ‘Menu’ button to bring up the display menu.",
+              "section": "3.8.1 Using the Buttons to Navigate Menus"
+            },
+            {
+              "page": 19,
+              "printedPage": "19",
+              "quote": "buttons to highlight the required menu option and then press the ✔ button to select it.",
+              "section": "3.8.1.1 Selecting Menu Options"
+            },
+            {
+              "page": 26,
+              "printedPage": "26",
+              "quote": "ZONE/INPUTS OUTPUTS GROUPS",
+              "section": "3.10 Disabling"
+            },
+            {
+              "page": 26,
+              "printedPage": "26",
+              "quote": "buttons to scroll through the available zones, or key in a specific zone number.",
+              "section": "3.10.1 Disable – Zones and Inputs"
+            }
+          ]
+        },
+        {
+          "text": "Move to the Mode column, highlight its existing mode and press ✔. Choose SELECTED INPUTS so the panel lists the input devices in that zone.",
+          "refs": [
+            {
+              "page": 26,
+              "printedPage": "26",
+              "quote": "move over to the Mode column and highlight the existing mode. Press the ✔ button and a pop-up window appears",
+              "section": "3.10.1 Disable – Zones and Inputs"
+            },
+            {
+              "page": 26,
+              "printedPage": "26",
+              "quote": "If SELECTED INPUTS is chosen, the pop-up window disappears and a list of the input devices within the selected zone is presented.",
+              "section": "3.10.1 Disable – Zones and Inputs"
+            }
+          ]
+        },
+        {
+          "text": "Check the required input against its device information, then highlight that input and press ✔ to disable it. Press Esc to return.",
+          "refs": [
+            {
+              "page": 26,
+              "printedPage": "26",
+              "quote": "button for more information on the inputs, including full state, type, analogue value etc.",
+              "section": "3.10.1 Disable – Zones and Inputs"
+            },
+            {
+              "page": 26,
+              "printedPage": "26",
+              "quote": "buttons to scroll through and highlight the required input and then press the ✔ button to disable it.",
+              "section": "3.10.1 Disable – Zones and Inputs"
+            },
+            {
+              "page": 26,
+              "printedPage": "26",
+              "quote": "Press the ‘Esc’ button to return.",
+              "section": "3.10.1 Disable – Zones and Inputs"
+            }
+          ]
+        }
+      ],
+      "effects": [
+        {
+          "text": "The DISABLE indicator shows when zones, input devices or output devices are disabled.",
+          "refs": [
+            {
+              "page": 15,
+              "printedPage": "15",
+              "quote": "If any zones, input devices or output devices have been disabled, the DISABLE Indicator is illuminated.",
+              "section": "3.4 Disablement Condition"
+            }
+          ]
+        }
+      ],
+      "followUps": {},
+      "reviewedOn": "2026-11-11"
+    },
+    {
+      "id": "mxpro5-enable-individual-input-680-166-rev04",
+      "operation": "enable-individual-input",
+      "task": {
+        "actions": [
+          "enable"
+        ],
+        "targets": [
+          "input",
+          "inputs",
+          "detector",
+          "detectors"
+        ]
+      },
+      "matchTerms": [
+        "enable input",
+        "enable individual input",
+        "enable detector",
+        "re-enable detector",
+        "re enable detector"
+      ],
+      "manual": {
+        "recordId": "advanced-0254975c10bd",
+        "sha256": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+        "title": "Advanced MxPro5 — User guide",
+        "documentNumber": "680-166",
+        "revision": "04",
+        "models": [
+          "MxPro5",
+          "Mx-5100",
+          "Mx-5200",
+          "Mx-5400",
+          "Mx-5800",
+          "Mx-5100V",
+          "Mx-5200V",
+          "Mx-5400V",
+          "Mx-5800V",
+          "Mx-5100N",
+          "Mx-5200N",
+          "Mx-5400N",
+          "Mx-5800N"
+        ],
+        "pageCount": 43
+      },
+      "scope": {
+        "models": [
+          "MxPro5",
+          "Mx-5100",
+          "Mx-5200",
+          "Mx-5400",
+          "Mx-5800",
+          "Mx-5100V",
+          "Mx-5200V",
+          "Mx-5400V",
+          "Mx-5800V",
+          "Mx-5100N",
+          "Mx-5200N",
+          "Mx-5400N",
+          "Mx-5800N"
+        ],
+        "familyAliases": [
+          "MxPro"
+        ],
+        "allowFamilyQuestion": true,
+        "sharedProcedure": false,
+        "label": "For MxPro5 panels covered by user guide 680-166, revision 04.",
+        "refs": [
+          {
+            "page": 5,
+            "printedPage": "5",
+            "quote": "Mx-5100, Mx-5200, Mx-5400, MX-5800",
+            "section": "1.1 Standards — covered products"
+          }
+        ]
+      },
+      "anchors": [
+        {
+          "page": 5,
+          "printedPage": "5",
+          "quote": "Mx-5100, Mx-5200, Mx-5400, MX-5800",
+          "section": "1.1 Standards — covered products"
+        },
+        {
+          "page": 43,
+          "printedPage": "43",
+          "quote": "Doc Number: 680-166",
+          "section": "Document identification"
+        },
+        {
+          "page": 43,
+          "printedPage": "43",
+          "quote": "Revision: 04",
+          "section": "Document identification"
+        }
+      ],
+      "prerequisites": [
+        {
+          "text": "Use authorised Level 2 access with permission for the operation. User permissions differ; use the access key if fitted, or MENU → ENABLE CONTROLS and your authorised password.",
+          "refs": [
+            {
+              "page": 10,
+              "printedPage": "10",
+              "quote": "Level 2 Authorised User",
+              "section": "3.1 Access Levels"
+            },
+            {
+              "page": 10,
+              "printedPage": "10",
+              "quote": "can be configured with varying permissions to specific menu function options.",
+              "section": "3.1 Access Levels"
+            },
+            {
+              "page": 11,
+              "printedPage": "11",
+              "quote": "If the panel has an access key switch fitted, use the key",
+              "section": "3.1.1 Changing from Access Level 1 to Level 2"
+            },
+            {
+              "page": 11,
+              "printedPage": "11",
+              "quote": "To enable the controls, ensure the “Enable Controls” option is highlighted",
+              "section": "3.1.1.1 Menu Access"
+            },
+            {
+              "page": 11,
+              "printedPage": "11",
+              "quote": "Enter the password using the number buttons and then press the ✔ button.",
+              "section": "3.1.1.1 Menu Access"
+            }
+          ]
+        },
+        {
+          "text": "Only trained service personnel should carry out installation, programming or maintenance of this equipment.",
+          "refs": [
+            {
+              "page": 6,
+              "printedPage": "6",
+              "quote": "Only Trained service personnel should undertake the Installation, Programming and Maintenance of this equipment.",
+              "section": "1.2 Cautions and Warnings"
+            }
+          ]
+        },
+        {
+          "text": "This route applies to disabled inputs; the Enable Outputs menu is separate.",
+          "refs": [
+            {
+              "page": 30,
+              "printedPage": "30",
+              "quote": "3.11.1 Enable - Zones and Inputs",
+              "section": "3.11.1 Enable – Zones and Inputs"
+            },
+            {
+              "page": 30,
+              "printedPage": "30",
+              "quote": "3.11.2 Enable - Outputs",
+              "section": "3.11.2 Enable – Outputs"
+            }
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "text": "Press MENU and select ENABLE → ZONE/INPUTS. The panel lists zones containing disabled input devices.",
+          "refs": [
+            {
+              "page": 19,
+              "printedPage": "19",
+              "quote": "Press the ‘Menu’ button to bring up the display menu.",
+              "section": "3.8.1 Using the Buttons to Navigate Menus"
+            },
+            {
+              "page": 19,
+              "printedPage": "19",
+              "quote": "buttons to highlight the required menu option and then press the ✔ button to select it.",
+              "section": "3.8.1.1 Selecting Menu Options"
+            },
+            {
+              "page": 30,
+              "printedPage": "30",
+              "quote": "ZONE/INPUTS OUTPUTS GROUPS REMOTE",
+              "section": "3.11 Enabling"
+            },
+            {
+              "page": 30,
+              "printedPage": "30",
+              "quote": "Selecting this option will show a list of zones containing disabled input devices.",
+              "section": "3.11.1 Enable – Zones and Inputs"
+            }
+          ]
+        },
+        {
+          "text": "Select the required zone and individual input to enable. The manual says this display uses virtually the same format as the equivalent Disable menu.",
+          "refs": [
+            {
+              "page": 30,
+              "printedPage": "30",
+              "quote": "The complete zone, individual devices and other options within the zone can then be enabled (The display format is virtually identical to the equivalent Disable menu).",
+              "section": "3.11.1 Enable – Zones and Inputs"
+            }
+          ]
+        }
+      ],
+      "effects": [
+        {
+          "text": "The DISABLE indicator goes off only when all disablement conditions have been removed.",
+          "refs": [
+            {
+              "page": 15,
+              "printedPage": "15",
+              "quote": "When all disablement conditions are removed, the DISABLE Indicator is also turned off.",
+              "section": "3.4 Disablement Condition"
+            }
+          ]
+        }
+      ],
+      "followUps": {},
+      "reviewedOn": "2026-11-11"
+    },
+    {
+      "id": "mxpro5-enable-sounders-680-166-rev04",
+      "operation": "enable-sounders",
+      "task": {
+        "actions": [
+          "enable"
+        ],
+        "targets": [
+          "sounder",
+          "sounders"
+        ],
+        "extent": "all"
+      },
+      "matchTerms": [
+        "enable sounders",
+        "enable the sounders",
+        "re-enable sounders",
+        "re enable sounders"
+      ],
+      "manual": {
+        "recordId": "advanced-0254975c10bd",
+        "sha256": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+        "title": "Advanced MxPro5 — User guide",
+        "documentNumber": "680-166",
+        "revision": "04",
+        "models": [
+          "MxPro5",
+          "Mx-5100",
+          "Mx-5200",
+          "Mx-5400",
+          "Mx-5800",
+          "Mx-5100V",
+          "Mx-5200V",
+          "Mx-5400V",
+          "Mx-5800V",
+          "Mx-5100N",
+          "Mx-5200N",
+          "Mx-5400N",
+          "Mx-5800N"
+        ],
+        "pageCount": 43
+      },
+      "scope": {
+        "models": [
+          "MxPro5",
+          "Mx-5100",
+          "Mx-5200",
+          "Mx-5400",
+          "Mx-5800",
+          "Mx-5100V",
+          "Mx-5200V",
+          "Mx-5400V",
+          "Mx-5800V",
+          "Mx-5100N",
+          "Mx-5200N",
+          "Mx-5400N",
+          "Mx-5800N"
+        ],
+        "familyAliases": [
+          "MxPro"
+        ],
+        "allowFamilyQuestion": true,
+        "sharedProcedure": false,
+        "label": "For MxPro5 panels covered by user guide 680-166, revision 04.",
+        "refs": [
+          {
+            "page": 5,
+            "printedPage": "5",
+            "quote": "Mx-5100, Mx-5200, Mx-5400, MX-5800",
+            "section": "1.1 Standards — covered products"
+          }
+        ]
+      },
+      "anchors": [
+        {
+          "page": 5,
+          "printedPage": "5",
+          "quote": "Mx-5100, Mx-5200, Mx-5400, MX-5800",
+          "section": "1.1 Standards — covered products"
+        },
+        {
+          "page": 43,
+          "printedPage": "43",
+          "quote": "Doc Number: 680-166",
+          "section": "Document identification"
+        },
+        {
+          "page": 43,
+          "printedPage": "43",
+          "quote": "Revision: 04",
+          "section": "Document identification"
+        }
+      ],
+      "prerequisites": [
+        {
+          "text": "Use authorised Level 2 access with permission for the operation. User permissions differ; use the access key if fitted, or MENU → ENABLE CONTROLS and your authorised password.",
+          "refs": [
+            {
+              "page": 10,
+              "printedPage": "10",
+              "quote": "Level 2 Authorised User",
+              "section": "3.1 Access Levels"
+            },
+            {
+              "page": 10,
+              "printedPage": "10",
+              "quote": "can be configured with varying permissions to specific menu function options.",
+              "section": "3.1 Access Levels"
+            },
+            {
+              "page": 11,
+              "printedPage": "11",
+              "quote": "If the panel has an access key switch fitted, use the key",
+              "section": "3.1.1 Changing from Access Level 1 to Level 2"
+            },
+            {
+              "page": 11,
+              "printedPage": "11",
+              "quote": "To enable the controls, ensure the “Enable Controls” option is highlighted",
+              "section": "3.1.1.1 Menu Access"
+            },
+            {
+              "page": 11,
+              "printedPage": "11",
+              "quote": "Enter the password using the number buttons and then press the ✔ button.",
+              "section": "3.1.1.1 Menu Access"
+            }
+          ]
+        },
+        {
+          "text": "Only trained service personnel should carry out installation, programming or maintenance of this equipment.",
+          "refs": [
+            {
+              "page": 6,
+              "printedPage": "6",
+              "quote": "Only Trained service personnel should undertake the Installation, Programming and Maintenance of this equipment.",
+              "section": "1.2 Cautions and Warnings"
+            }
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "text": "Press MENU and select ENABLE → OUTPUTS.",
+          "refs": [
+            {
+              "page": 19,
+              "printedPage": "19",
+              "quote": "Press the ‘Menu’ button to bring up the display menu.",
+              "section": "3.8.1 Using the Buttons to Navigate Menus"
+            },
+            {
+              "page": 19,
+              "printedPage": "19",
+              "quote": "buttons to highlight the required menu option and then press the ✔ button to select it.",
+              "section": "3.8.1.1 Selecting Menu Options"
+            },
+            {
+              "page": 30,
+              "printedPage": "30",
+              "quote": "ZONE/INPUTS OUTPUTS GROUPS REMOTE",
+              "section": "3.11 Enabling"
+            },
+            {
+              "page": 30,
+              "printedPage": "30",
+              "quote": "3.11.2 Enable - Outputs",
+              "section": "3.11.2 Enable – Outputs"
+            }
+          ]
+        },
+        {
+          "text": "Choose ALL SOUNDERS from the output categories to enable the sounders. The manual describes this display as virtually identical to the equivalent Disable menu.",
+          "refs": [
+            {
+              "page": 30,
+              "printedPage": "30",
+              "quote": "a pop-up menu appears asking if you want to enable ALL SOUNDERS, ALL BEACONS",
+              "section": "3.11.2 Enable – Outputs"
+            },
+            {
+              "page": 30,
+              "printedPage": "30",
+              "quote": "The display format is virtually identical to the equivalent Disable Menu",
+              "section": "3.11.2 Enable – Outputs"
+            }
+          ]
+        }
+      ],
+      "effects": [
+        {
+          "text": "Disablement indications clear when the corresponding disablement conditions are removed. The general DISABLE indicator remains until all disablements are removed.",
+          "refs": [
+            {
+              "page": 15,
+              "printedPage": "15",
+              "quote": "When the disablement conditions are removed, the appropriate indications are cleared from the display and from the Indicators. When all disablement conditions are removed, the DISABLE Indicator is also turned off.",
+              "section": "3.4 Disablement Condition"
+            }
+          ]
+        }
+      ],
+      "followUps": {},
+      "reviewedOn": "2026-11-11"
+    }
+  ],
+  "notes": [
+    "Reviewed panel menu operations only. These do not establish a physical device replacement procedure, compatibility, site permission or completed work.",
+    "Generic outputs and unspecified devices require clarification before choosing these task-specific procedures.",
+    "680-166 rev04 p27 section 3.10.2.4 contains contradictory Fire Protection / Fire Routing wording; no fire-protection recipe is supplied."
+  ]
+}

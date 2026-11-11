@@ -1,0 +1,1647 @@
+{
+  "createdAt": "2026-11-11T19:37:37.300Z",
+  "actualInference": true,
+  "physicalPhone": false,
+  "runtime": "@wllama/wllama 3.13.0 CPU WASM single thread",
+  "model": {
+    "label": "qwen35_2000",
+    "repo": "unsloth/Qwen3.5-2B-GGUF",
+    "revision": "f6d5376be1edb4d416d56da11e5397a961aca8ae",
+    "file": "Qwen3.5-2B-Q4_K_M.gguf",
+    "bytes": 1280835840,
+    "sha256": "aaf42c8b7c3cab2bf3d69c355048d4a0ee9973d48f16c731c0520ee914699223",
+    "url": "https://huggingface.co/unsloth/Qwen3.5-2B-GGUF/resolve/f6d5376be1edb4d416d56da11e5397a961aca8ae/Qwen3.5-2B-Q4_K_M.gguf"
+  },
+  "generationConfiguration": {
+    "maxTokens": 180,
+    "temperature": 0,
+    "seed": 1,
+    "thinking": false,
+    "grammar": "tasks array, free action and target strings"
+  },
+  "cases": [
+    {
+      "id": "multi_task",
+      "question": "I need to swap a device, how do I disable outputs, disable the old one, swap it, then re enable device.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "This is a reading-comprehension task. Split the quoted request into the separate questions/actions it asks about. Use the writer\u2019s words. Use a short verb for action and its object for target; keep synonyms such as swap. Do not answer the request or add recommended actions. Do not duplicate an overall goal when it is repeated among the steps."
+        },
+        {
+          "role": "user",
+          "content": "<request>I need to swap a device, how do I disable outputs, disable the old one, swap it, then re enable device.</request>"
+        }
+      ]
+    },
+    {
+      "id": "correct_target",
+      "question": "meant sounders, not all outputs",
+      "messages": [
+        {
+          "role": "system",
+          "content": "This is a reading-comprehension task. Apply the quoted correction to the previous requested actions. Return the updated list in its original order. Do not answer or add recommended actions."
+        },
+        {
+          "role": "user",
+          "content": "Previous requested actions: 1. Disable outputs. 2. Disable the old device. 3. Replace the device. 4. Re-enable the device.\n<request>meant sounders, not all outputs</request>"
+        }
+      ]
+    },
+    {
+      "id": "two_procedures",
+      "question": "How do I start a walk test and then view the event history on this panel?",
+      "messages": [
+        {
+          "role": "system",
+          "content": "This is a reading-comprehension task. Split the quoted request into the separate questions/actions it asks about. Use the writer\u2019s words. Use a short verb for action and its object for target; keep synonyms such as swap. Do not answer the request or add recommended actions. Do not duplicate an overall goal when it is repeated among the steps."
+        },
+        {
+          "role": "user",
+          "content": "<request>How do I start a walk test and then view the event history on this panel?</request>"
+        }
+      ]
+    },
+    {
+      "id": "trade_spelling",
+      "question": "Need to disbale the sounders, swap the optical detctor and re-enable it.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "This is a reading-comprehension task. Split the quoted request into the separate questions/actions it asks about. Use the writer\u2019s words. Use a short verb for action and its object for target; keep synonyms such as swap. Do not answer the request or add recommended actions. Do not duplicate an overall goal when it is repeated among the steps."
+        },
+        {
+          "role": "user",
+          "content": "<request>Need to disbale the sounders, swap the optical detctor and re-enable it.</request>"
+        }
+      ]
+    },
+    {
+      "id": "explicit_equipment_change",
+      "question": "Leave the panel for now. I am working on the external PSU: check its output voltage and inspect its battery leads.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "This is a reading-comprehension task. Split the quoted request into the separate questions/actions it asks about. Use the writer\u2019s words. Use a short verb for action and its object for target; keep synonyms such as swap. Do not answer the request or add recommended actions. Do not duplicate an overall goal when it is repeated among the steps."
+        },
+        {
+          "role": "user",
+          "content": "<request>Leave the panel for now. I am working on the external PSU: check its output voltage and inspect its battery leads.</request>"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "multi_task",
+      "text": "{\n\t\t\t\"tasks\": [\n\t\t\t\t{\n\t\t\t\t\t\"action\": \"disable\",\n\t\t\t\t\t\"target\": \"outputs\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"action\": \"disable\",\n\t\t\t\t\t\"target\": \"old device\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"action\": \"swap\",\n\t\t\t\t\t\"target\": \"device\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"action\": \"enable\",\n\t\t\t\t\t\"target\": \"device\"\n\t\t\t\t}\n\t\t\t]\n\t\t}",
+      "generationMs": 146501.59999999776,
+      "firstTokenMs": 64994.599999997765,
+      "usage": null,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 117,
+        "prompt_ms": 50287.599,
+        "prompt_per_token_ms": 429.8085384615385,
+        "prompt_per_second": 2.3266173435721202,
+        "predicted_n": 143,
+        "predicted_ms": 96152.301,
+        "predicted_per_token_ms": 677.1288802816902,
+        "predicted_per_second": 1.4768237319666433
+      }
+    }
+  ],
+  "rssSamples": [
+    {
+      "at": 1794425858913,
+      "sumKiB": 641612,
+      "maxRendererKiB": 156868
+    },
+    {
+      "at": 1794425859912,
+      "sumKiB": 743976,
+      "maxRendererKiB": 256000
+    },
+    {
+      "at": 1794425860914,
+      "sumKiB": 1056200,
+      "maxRendererKiB": 567868
+    },
+    {
+      "at": 1794425861910,
+      "sumKiB": 1360880,
+      "maxRendererKiB": 874584
+    },
+    {
+      "at": 1794425862912,
+      "sumKiB": 1742004,
+      "maxRendererKiB": 1256328
+    },
+    {
+      "at": 1794425863913,
+      "sumKiB": 2088940,
+      "maxRendererKiB": 1602604
+    },
+    {
+      "at": 1794425864914,
+      "sumKiB": 2729992,
+      "maxRendererKiB": 2245848
+    },
+    {
+      "at": 1794425865909,
+      "sumKiB": 2693532,
+      "maxRendererKiB": 2209388
+    },
+    {
+      "at": 1794425866911,
+      "sumKiB": 2694212,
+      "maxRendererKiB": 2210068
+    },
+    {
+      "at": 1794425867912,
+      "sumKiB": 1987688,
+      "maxRendererKiB": 1505852
+    },
+    {
+      "at": 1794425868967,
+      "sumKiB": 1987712,
+      "maxRendererKiB": 1505872
+    },
+    {
+      "at": 1794425869921,
+      "sumKiB": 1987716,
+      "maxRendererKiB": 1505872
+    },
+    {
+      "at": 1794425870921,
+      "sumKiB": 1987724,
+      "maxRendererKiB": 1505880
+    },
+    {
+      "at": 1794425871935,
+      "sumKiB": 1987724,
+      "maxRendererKiB": 1505880
+    },
+    {
+      "at": 1794425872921,
+      "sumKiB": 1987792,
+      "maxRendererKiB": 1505880
+    },
+    {
+      "at": 1794425873923,
+      "sumKiB": 1987792,
+      "maxRendererKiB": 1505880
+    },
+    {
+      "at": 1794425874922,
+      "sumKiB": 1987796,
+      "maxRendererKiB": 1505884
+    },
+    {
+      "at": 1794425875922,
+      "sumKiB": 1987796,
+      "maxRendererKiB": 1505884
+    },
+    {
+      "at": 1794425876921,
+      "sumKiB": 1987800,
+      "maxRendererKiB": 1505884
+    },
+    {
+      "at": 1794425877921,
+      "sumKiB": 1987800,
+      "maxRendererKiB": 1505884
+    },
+    {
+      "at": 1794425878920,
+      "sumKiB": 1987812,
+      "maxRendererKiB": 1505884
+    },
+    {
+      "at": 1794425879921,
+      "sumKiB": 1987812,
+      "maxRendererKiB": 1505884
+    },
+    {
+      "at": 1794425880925,
+      "sumKiB": 1987812,
+      "maxRendererKiB": 1505884
+    },
+    {
+      "at": 1794425881923,
+      "sumKiB": 1987856,
+      "maxRendererKiB": 1505884
+    },
+    {
+      "at": 1794425882922,
+      "sumKiB": 1987856,
+      "maxRendererKiB": 1505884
+    },
+    {
+      "at": 1794425883923,
+      "sumKiB": 1987856,
+      "maxRendererKiB": 1505884
+    },
+    {
+      "at": 1794425884928,
+      "sumKiB": 1987856,
+      "maxRendererKiB": 1505884
+    },
+    {
+      "at": 1794425885924,
+      "sumKiB": 1987856,
+      "maxRendererKiB": 1505884
+    },
+    {
+      "at": 1794425886925,
+      "sumKiB": 1987856,
+      "maxRendererKiB": 1505884
+    },
+    {
+      "at": 1794425887926,
+      "sumKiB": 1988460,
+      "maxRendererKiB": 1505884
+    },
+    {
+      "at": 1794425888923,
+      "sumKiB": 1999760,
+      "maxRendererKiB": 1525928
+    },
+    {
+      "at": 1794425889927,
+      "sumKiB": 1999760,
+      "maxRendererKiB": 1525928
+    },
+    {
+      "at": 1794425890924,
+      "sumKiB": 1999760,
+      "maxRendererKiB": 1525928
+    },
+    {
+      "at": 1794425891941,
+      "sumKiB": 1999720,
+      "maxRendererKiB": 1525960
+    },
+    {
+      "at": 1794425892924,
+      "sumKiB": 1999724,
+      "maxRendererKiB": 1525964
+    },
+    {
+      "at": 1794425893941,
+      "sumKiB": 1999724,
+      "maxRendererKiB": 1525964
+    },
+    {
+      "at": 1794425894925,
+      "sumKiB": 1999724,
+      "maxRendererKiB": 1525964
+    },
+    {
+      "at": 1794425895927,
+      "sumKiB": 1999724,
+      "maxRendererKiB": 1525964
+    },
+    {
+      "at": 1794425896925,
+      "sumKiB": 1999648,
+      "maxRendererKiB": 1525888
+    },
+    {
+      "at": 1794425897931,
+      "sumKiB": 1999648,
+      "maxRendererKiB": 1525888
+    },
+    {
+      "at": 1794425898926,
+      "sumKiB": 1999648,
+      "maxRendererKiB": 1525888
+    },
+    {
+      "at": 1794425899924,
+      "sumKiB": 1999648,
+      "maxRendererKiB": 1525888
+    },
+    {
+      "at": 1794425900926,
+      "sumKiB": 1999648,
+      "maxRendererKiB": 1525888
+    },
+    {
+      "at": 1794425901928,
+      "sumKiB": 1999648,
+      "maxRendererKiB": 1525888
+    },
+    {
+      "at": 1794425902927,
+      "sumKiB": 1999648,
+      "maxRendererKiB": 1525888
+    },
+    {
+      "at": 1794425903927,
+      "sumKiB": 1999648,
+      "maxRendererKiB": 1525888
+    },
+    {
+      "at": 1794425904928,
+      "sumKiB": 1999648,
+      "maxRendererKiB": 1525888
+    },
+    {
+      "at": 1794425905933,
+      "sumKiB": 1999648,
+      "maxRendererKiB": 1525888
+    },
+    {
+      "at": 1794425906935,
+      "sumKiB": 1999648,
+      "maxRendererKiB": 1525888
+    },
+    {
+      "at": 1794425907929,
+      "sumKiB": 1999648,
+      "maxRendererKiB": 1525888
+    },
+    {
+      "at": 1794425908929,
+      "sumKiB": 1999648,
+      "maxRendererKiB": 1525888
+    },
+    {
+      "at": 1794425909941,
+      "sumKiB": 1999648,
+      "maxRendererKiB": 1525888
+    },
+    {
+      "at": 1794425910956,
+      "sumKiB": 1999648,
+      "maxRendererKiB": 1525888
+    },
+    {
+      "at": 1794425911957,
+      "sumKiB": 1999648,
+      "maxRendererKiB": 1525888
+    },
+    {
+      "at": 1794425912936,
+      "sumKiB": 1999648,
+      "maxRendererKiB": 1525888
+    },
+    {
+      "at": 1794425913937,
+      "sumKiB": 1999648,
+      "maxRendererKiB": 1525888
+    },
+    {
+      "at": 1794425914956,
+      "sumKiB": 1999648,
+      "maxRendererKiB": 1525888
+    },
+    {
+      "at": 1794425915941,
+      "sumKiB": 2018548,
+      "maxRendererKiB": 1544788
+    },
+    {
+      "at": 1794425916942,
+      "sumKiB": 2018548,
+      "maxRendererKiB": 1544788
+    },
+    {
+      "at": 1794425917939,
+      "sumKiB": 2055120,
+      "maxRendererKiB": 1582292
+    },
+    {
+      "at": 1794425918953,
+      "sumKiB": 2054440,
+      "maxRendererKiB": 1581600
+    },
+    {
+      "at": 1794425919937,
+      "sumKiB": 2054720,
+      "maxRendererKiB": 1581856
+    },
+    {
+      "at": 1794425920941,
+      "sumKiB": 2054984,
+      "maxRendererKiB": 1581820
+    },
+    {
+      "at": 1794425921940,
+      "sumKiB": 2053956,
+      "maxRendererKiB": 1581636
+    },
+    {
+      "at": 1794425922937,
+      "sumKiB": 2053964,
+      "maxRendererKiB": 1581644
+    },
+    {
+      "at": 1794425923938,
+      "sumKiB": 2054112,
+      "maxRendererKiB": 1581792
+    },
+    {
+      "at": 1794425924940,
+      "sumKiB": 2054036,
+      "maxRendererKiB": 1581740
+    },
+    {
+      "at": 1794425925938,
+      "sumKiB": 2054096,
+      "maxRendererKiB": 1581800
+    },
+    {
+      "at": 1794425926939,
+      "sumKiB": 2054076,
+      "maxRendererKiB": 1581780
+    },
+    {
+      "at": 1794425927937,
+      "sumKiB": 2052368,
+      "maxRendererKiB": 1581804
+    },
+    {
+      "at": 1794425928937,
+      "sumKiB": 2052384,
+      "maxRendererKiB": 1581820
+    },
+    {
+      "at": 1794425929938,
+      "sumKiB": 2052380,
+      "maxRendererKiB": 1581840
+    },
+    {
+      "at": 1794425930947,
+      "sumKiB": 2052400,
+      "maxRendererKiB": 1581860
+    },
+    {
+      "at": 1794425931947,
+      "sumKiB": 2052592,
+      "maxRendererKiB": 1582052
+    },
+    {
+      "at": 1794425932937,
+      "sumKiB": 2052652,
+      "maxRendererKiB": 1582112
+    },
+    {
+      "at": 1794425933936,
+      "sumKiB": 2052672,
+      "maxRendererKiB": 1582148
+    },
+    {
+      "at": 1794425934938,
+      "sumKiB": 2052700,
+      "maxRendererKiB": 1582176
+    },
+    {
+      "at": 1794425935938,
+      "sumKiB": 2052840,
+      "maxRendererKiB": 1582316
+    },
+    {
+      "at": 1794425936937,
+      "sumKiB": 2052824,
+      "maxRendererKiB": 1582300
+    },
+    {
+      "at": 1794425937936,
+      "sumKiB": 2052996,
+      "maxRendererKiB": 1582472
+    },
+    {
+      "at": 1794425938938,
+      "sumKiB": 2052888,
+      "maxRendererKiB": 1582364
+    },
+    {
+      "at": 1794425939937,
+      "sumKiB": 2052996,
+      "maxRendererKiB": 1582432
+    },
+    {
+      "at": 1794425940943,
+      "sumKiB": 2053088,
+      "maxRendererKiB": 1582524
+    },
+    {
+      "at": 1794425941940,
+      "sumKiB": 2053092,
+      "maxRendererKiB": 1582568
+    },
+    {
+      "at": 1794425942939,
+      "sumKiB": 2053188,
+      "maxRendererKiB": 1582664
+    },
+    {
+      "at": 1794425943940,
+      "sumKiB": 2052728,
+      "maxRendererKiB": 1582204
+    },
+    {
+      "at": 1794425944946,
+      "sumKiB": 2051748,
+      "maxRendererKiB": 1581224
+    },
+    {
+      "at": 1794425945940,
+      "sumKiB": 2051784,
+      "maxRendererKiB": 1581260
+    },
+    {
+      "at": 1794425946941,
+      "sumKiB": 2051820,
+      "maxRendererKiB": 1581296
+    },
+    {
+      "at": 1794425947940,
+      "sumKiB": 2051644,
+      "maxRendererKiB": 1581336
+    },
+    {
+      "at": 1794425948941,
+      "sumKiB": 2051744,
+      "maxRendererKiB": 1581436
+    },
+    {
+      "at": 1794425949939,
+      "sumKiB": 2051752,
+      "maxRendererKiB": 1581444
+    },
+    {
+      "at": 1794425950946,
+      "sumKiB": 2051844,
+      "maxRendererKiB": 1581536
+    },
+    {
+      "at": 1794425951955,
+      "sumKiB": 2051896,
+      "maxRendererKiB": 1581588
+    },
+    {
+      "at": 1794425952939,
+      "sumKiB": 2052268,
+      "maxRendererKiB": 1581960
+    },
+    {
+      "at": 1794425953939,
+      "sumKiB": 2052232,
+      "maxRendererKiB": 1581924
+    },
+    {
+      "at": 1794425954942,
+      "sumKiB": 2052276,
+      "maxRendererKiB": 1581968
+    },
+    {
+      "at": 1794425955937,
+      "sumKiB": 2052368,
+      "maxRendererKiB": 1582060
+    },
+    {
+      "at": 1794425956946,
+      "sumKiB": 2052412,
+      "maxRendererKiB": 1582104
+    },
+    {
+      "at": 1794425957949,
+      "sumKiB": 2052520,
+      "maxRendererKiB": 1582208
+    },
+    {
+      "at": 1794425958939,
+      "sumKiB": 2052584,
+      "maxRendererKiB": 1582272
+    },
+    {
+      "at": 1794425959939,
+      "sumKiB": 2052684,
+      "maxRendererKiB": 1582372
+    },
+    {
+      "at": 1794425960943,
+      "sumKiB": 2052716,
+      "maxRendererKiB": 1582404
+    },
+    {
+      "at": 1794425961941,
+      "sumKiB": 2052808,
+      "maxRendererKiB": 1582496
+    },
+    {
+      "at": 1794425962947,
+      "sumKiB": 2052864,
+      "maxRendererKiB": 1582552
+    },
+    {
+      "at": 1794425963940,
+      "sumKiB": 2053072,
+      "maxRendererKiB": 1582760
+    },
+    {
+      "at": 1794425964939,
+      "sumKiB": 2053104,
+      "maxRendererKiB": 1582792
+    },
+    {
+      "at": 1794425965939,
+      "sumKiB": 2053140,
+      "maxRendererKiB": 1582828
+    },
+    {
+      "at": 1794425966953,
+      "sumKiB": 2053248,
+      "maxRendererKiB": 1582936
+    },
+    {
+      "at": 1794425967940,
+      "sumKiB": 2053300,
+      "maxRendererKiB": 1582988
+    },
+    {
+      "at": 1794425968947,
+      "sumKiB": 2053400,
+      "maxRendererKiB": 1583088
+    },
+    {
+      "at": 1794425969939,
+      "sumKiB": 2053448,
+      "maxRendererKiB": 1583124
+    },
+    {
+      "at": 1794425970941,
+      "sumKiB": 2053588,
+      "maxRendererKiB": 1583264
+    },
+    {
+      "at": 1794425971940,
+      "sumKiB": 2053628,
+      "maxRendererKiB": 1583304
+    },
+    {
+      "at": 1794425972945,
+      "sumKiB": 2053680,
+      "maxRendererKiB": 1583356
+    },
+    {
+      "at": 1794425973939,
+      "sumKiB": 2053904,
+      "maxRendererKiB": 1583592
+    },
+    {
+      "at": 1794425974952,
+      "sumKiB": 2053920,
+      "maxRendererKiB": 1583608
+    },
+    {
+      "at": 1794425975939,
+      "sumKiB": 2053828,
+      "maxRendererKiB": 1583516
+    },
+    {
+      "at": 1794425976939,
+      "sumKiB": 2053540,
+      "maxRendererKiB": 1583228
+    },
+    {
+      "at": 1794425977946,
+      "sumKiB": 2054104,
+      "maxRendererKiB": 1583532
+    },
+    {
+      "at": 1794425978940,
+      "sumKiB": 2054104,
+      "maxRendererKiB": 1583532
+    },
+    {
+      "at": 1794425979940,
+      "sumKiB": 2054140,
+      "maxRendererKiB": 1583568
+    },
+    {
+      "at": 1794425980943,
+      "sumKiB": 2054120,
+      "maxRendererKiB": 1583548
+    },
+    {
+      "at": 1794425981941,
+      "sumKiB": 2054316,
+      "maxRendererKiB": 1583832
+    },
+    {
+      "at": 1794425982941,
+      "sumKiB": 2054356,
+      "maxRendererKiB": 1583872
+    },
+    {
+      "at": 1794425983941,
+      "sumKiB": 2054436,
+      "maxRendererKiB": 1583952
+    },
+    {
+      "at": 1794425984940,
+      "sumKiB": 2054508,
+      "maxRendererKiB": 1584024
+    },
+    {
+      "at": 1794425985941,
+      "sumKiB": 2054556,
+      "maxRendererKiB": 1584064
+    },
+    {
+      "at": 1794425986944,
+      "sumKiB": 2054584,
+      "maxRendererKiB": 1584092
+    },
+    {
+      "at": 1794425987950,
+      "sumKiB": 2054572,
+      "maxRendererKiB": 1584080
+    },
+    {
+      "at": 1794425988941,
+      "sumKiB": 2054616,
+      "maxRendererKiB": 1584124
+    },
+    {
+      "at": 1794425989941,
+      "sumKiB": 2054836,
+      "maxRendererKiB": 1584356
+    },
+    {
+      "at": 1794425990942,
+      "sumKiB": 2054652,
+      "maxRendererKiB": 1584172
+    },
+    {
+      "at": 1794425991941,
+      "sumKiB": 2054672,
+      "maxRendererKiB": 1584192
+    },
+    {
+      "at": 1794425992946,
+      "sumKiB": 2054688,
+      "maxRendererKiB": 1584208
+    },
+    {
+      "at": 1794425993952,
+      "sumKiB": 2054700,
+      "maxRendererKiB": 1584232
+    },
+    {
+      "at": 1794425994951,
+      "sumKiB": 2054732,
+      "maxRendererKiB": 1584264
+    },
+    {
+      "at": 1794425995948,
+      "sumKiB": 2054820,
+      "maxRendererKiB": 1584352
+    },
+    {
+      "at": 1794425996951,
+      "sumKiB": 2054776,
+      "maxRendererKiB": 1584308
+    },
+    {
+      "at": 1794425997945,
+      "sumKiB": 2054780,
+      "maxRendererKiB": 1584324
+    },
+    {
+      "at": 1794425998943,
+      "sumKiB": 2054816,
+      "maxRendererKiB": 1584360
+    },
+    {
+      "at": 1794425999941,
+      "sumKiB": 2054848,
+      "maxRendererKiB": 1584392
+    },
+    {
+      "at": 1794426000949,
+      "sumKiB": 2054096,
+      "maxRendererKiB": 1583640
+    },
+    {
+      "at": 1794426001944,
+      "sumKiB": 2054136,
+      "maxRendererKiB": 1583680
+    },
+    {
+      "at": 1794426002941,
+      "sumKiB": 2054516,
+      "maxRendererKiB": 1584060
+    },
+    {
+      "at": 1794426003945,
+      "sumKiB": 2054416,
+      "maxRendererKiB": 1583960
+    },
+    {
+      "at": 1794426004944,
+      "sumKiB": 2054436,
+      "maxRendererKiB": 1583980
+    },
+    {
+      "at": 1794426005943,
+      "sumKiB": 2054424,
+      "maxRendererKiB": 1583968
+    },
+    {
+      "at": 1794426006968,
+      "sumKiB": 2054468,
+      "maxRendererKiB": 1584012
+    },
+    {
+      "at": 1794426007975,
+      "sumKiB": 2054564,
+      "maxRendererKiB": 1584108
+    },
+    {
+      "at": 1794426008946,
+      "sumKiB": 2054620,
+      "maxRendererKiB": 1584164
+    },
+    {
+      "at": 1794426009949,
+      "sumKiB": 2054684,
+      "maxRendererKiB": 1584228
+    },
+    {
+      "at": 1794426010944,
+      "sumKiB": 2054772,
+      "maxRendererKiB": 1584316
+    },
+    {
+      "at": 1794426011941,
+      "sumKiB": 2054880,
+      "maxRendererKiB": 1584424
+    },
+    {
+      "at": 1794426012941,
+      "sumKiB": 2054916,
+      "maxRendererKiB": 1584460
+    },
+    {
+      "at": 1794426013942,
+      "sumKiB": 2055756,
+      "maxRendererKiB": 1585292
+    },
+    {
+      "at": 1794426014942,
+      "sumKiB": 2056268,
+      "maxRendererKiB": 1585804
+    },
+    {
+      "at": 1794426015942,
+      "sumKiB": 2055880,
+      "maxRendererKiB": 1585416
+    },
+    {
+      "at": 1794426016964,
+      "sumKiB": 2055880,
+      "maxRendererKiB": 1585416
+    },
+    {
+      "at": 1794426017942,
+      "sumKiB": 2055880,
+      "maxRendererKiB": 1585416
+    },
+    {
+      "at": 1794426018941,
+      "sumKiB": 2055880,
+      "maxRendererKiB": 1585416
+    },
+    {
+      "at": 1794426019941,
+      "sumKiB": 2055880,
+      "maxRendererKiB": 1585416
+    },
+    {
+      "at": 1794426020943,
+      "sumKiB": 2055880,
+      "maxRendererKiB": 1585416
+    },
+    {
+      "at": 1794426021943,
+      "sumKiB": 2055872,
+      "maxRendererKiB": 1585416
+    },
+    {
+      "at": 1794426022941,
+      "sumKiB": 2055872,
+      "maxRendererKiB": 1585416
+    },
+    {
+      "at": 1794426023941,
+      "sumKiB": 2055872,
+      "maxRendererKiB": 1585416
+    },
+    {
+      "at": 1794426024941,
+      "sumKiB": 2055872,
+      "maxRendererKiB": 1585416
+    },
+    {
+      "at": 1794426025943,
+      "sumKiB": 2054628,
+      "maxRendererKiB": 1585416
+    },
+    {
+      "at": 1794426026942,
+      "sumKiB": 2054628,
+      "maxRendererKiB": 1585416
+    },
+    {
+      "at": 1794426027942,
+      "sumKiB": 2054628,
+      "maxRendererKiB": 1585416
+    },
+    {
+      "at": 1794426028941,
+      "sumKiB": 2062296,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426029941,
+      "sumKiB": 2062296,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426030946,
+      "sumKiB": 2062296,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426031947,
+      "sumKiB": 2062296,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426032951,
+      "sumKiB": 2062296,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426033943,
+      "sumKiB": 2062296,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426034944,
+      "sumKiB": 2062296,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426035952,
+      "sumKiB": 2062296,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426036954,
+      "sumKiB": 2062296,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426037951,
+      "sumKiB": 2062352,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426038946,
+      "sumKiB": 2062352,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426039946,
+      "sumKiB": 2062352,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426040945,
+      "sumKiB": 2062352,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426041945,
+      "sumKiB": 2062352,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426042955,
+      "sumKiB": 2062352,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426043948,
+      "sumKiB": 2062352,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426044948,
+      "sumKiB": 2062352,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426045946,
+      "sumKiB": 2062352,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426046959,
+      "sumKiB": 2062352,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426047952,
+      "sumKiB": 2062352,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426048955,
+      "sumKiB": 2062352,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426049955,
+      "sumKiB": 2062380,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426050947,
+      "sumKiB": 2062396,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426051947,
+      "sumKiB": 2062396,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426052952,
+      "sumKiB": 2062396,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426053945,
+      "sumKiB": 2062352,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426054947,
+      "sumKiB": 2062352,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426055948,
+      "sumKiB": 2062352,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426056950,
+      "sumKiB": 2062352,
+      "maxRendererKiB": 1593084
+    },
+    {
+      "at": 1794426057951,
+      "sumKiB": 2081968,
+      "maxRendererKiB": 1612700
+    },
+    {
+      "at": 1794426058948,
+      "sumKiB": 2081968,
+      "maxRendererKiB": 1612700
+    },
+    {
+      "at": 1794426059949,
+      "sumKiB": 2116804,
+      "maxRendererKiB": 1647536
+    },
+    {
+      "at": 1794426060948,
+      "sumKiB": 2116924,
+      "maxRendererKiB": 1647656
+    },
+    {
+      "at": 1794426061946,
+      "sumKiB": 2116944,
+      "maxRendererKiB": 1647676
+    },
+    {
+      "at": 1794426062947,
+      "sumKiB": 2117120,
+      "maxRendererKiB": 1647852
+    },
+    {
+      "at": 1794426063972,
+      "sumKiB": 2116828,
+      "maxRendererKiB": 1647824
+    },
+    {
+      "at": 1794426064959,
+      "sumKiB": 2116856,
+      "maxRendererKiB": 1647852
+    },
+    {
+      "at": 1794426065955,
+      "sumKiB": 2116892,
+      "maxRendererKiB": 1647888
+    },
+    {
+      "at": 1794426066951,
+      "sumKiB": 2121224,
+      "maxRendererKiB": 1652220
+    },
+    {
+      "at": 1794426067946,
+      "sumKiB": 2117856,
+      "maxRendererKiB": 1648852
+    },
+    {
+      "at": 1794426068952,
+      "sumKiB": 2117884,
+      "maxRendererKiB": 1648880
+    },
+    {
+      "at": 1794426069952,
+      "sumKiB": 2117972,
+      "maxRendererKiB": 1648968
+    },
+    {
+      "at": 1794426070954,
+      "sumKiB": 2118012,
+      "maxRendererKiB": 1649008
+    },
+    {
+      "at": 1794426071954,
+      "sumKiB": 2118068,
+      "maxRendererKiB": 1649064
+    },
+    {
+      "at": 1794426072953,
+      "sumKiB": 2118084,
+      "maxRendererKiB": 1649080
+    },
+    {
+      "at": 1794426073952,
+      "sumKiB": 2118244,
+      "maxRendererKiB": 1649244
+    },
+    {
+      "at": 1794426074952,
+      "sumKiB": 2118076,
+      "maxRendererKiB": 1649076
+    },
+    {
+      "at": 1794426075951,
+      "sumKiB": 2118088,
+      "maxRendererKiB": 1649088
+    },
+    {
+      "at": 1794426076951,
+      "sumKiB": 2118136,
+      "maxRendererKiB": 1649136
+    },
+    {
+      "at": 1794426077951,
+      "sumKiB": 2118140,
+      "maxRendererKiB": 1649140
+    },
+    {
+      "at": 1794426078960,
+      "sumKiB": 2118180,
+      "maxRendererKiB": 1649180
+    },
+    {
+      "at": 1794426079954,
+      "sumKiB": 2118192,
+      "maxRendererKiB": 1649192
+    },
+    {
+      "at": 1794426080952,
+      "sumKiB": 2118380,
+      "maxRendererKiB": 1649380
+    },
+    {
+      "at": 1794426081956,
+      "sumKiB": 2118240,
+      "maxRendererKiB": 1649240
+    },
+    {
+      "at": 1794426082953,
+      "sumKiB": 2118248,
+      "maxRendererKiB": 1649248
+    },
+    {
+      "at": 1794426083951,
+      "sumKiB": 2118268,
+      "maxRendererKiB": 1649268
+    },
+    {
+      "at": 1794426084955,
+      "sumKiB": 2118288,
+      "maxRendererKiB": 1649288
+    },
+    {
+      "at": 1794426085952,
+      "sumKiB": 2118496,
+      "maxRendererKiB": 1649496
+    },
+    {
+      "at": 1794426087001,
+      "sumKiB": 2118508,
+      "maxRendererKiB": 1649508
+    },
+    {
+      "at": 1794426087953,
+      "sumKiB": 2118428,
+      "maxRendererKiB": 1649428
+    },
+    {
+      "at": 1794426088953,
+      "sumKiB": 2121880,
+      "maxRendererKiB": 1649516
+    },
+    {
+      "at": 1794426089952,
+      "sumKiB": 2120924,
+      "maxRendererKiB": 1649596
+    },
+    {
+      "at": 1794426090953,
+      "sumKiB": 2120996,
+      "maxRendererKiB": 1649668
+    },
+    {
+      "at": 1794426091953,
+      "sumKiB": 2121040,
+      "maxRendererKiB": 1649712
+    },
+    {
+      "at": 1794426092954,
+      "sumKiB": 2121164,
+      "maxRendererKiB": 1649836
+    },
+    {
+      "at": 1794426093952,
+      "sumKiB": 2121120,
+      "maxRendererKiB": 1649792
+    },
+    {
+      "at": 1794426094953,
+      "sumKiB": 2120936,
+      "maxRendererKiB": 1649784
+    },
+    {
+      "at": 1794426095954,
+      "sumKiB": 2120976,
+      "maxRendererKiB": 1649824
+    },
+    {
+      "at": 1794426096965,
+      "sumKiB": 2120984,
+      "maxRendererKiB": 1649832
+    },
+    {
+      "at": 1794426097953,
+      "sumKiB": 2120668,
+      "maxRendererKiB": 1649456
+    },
+    {
+      "at": 1794426098955,
+      "sumKiB": 2120632,
+      "maxRendererKiB": 1649420
+    },
+    {
+      "at": 1794426099956,
+      "sumKiB": 2120644,
+      "maxRendererKiB": 1649432
+    },
+    {
+      "at": 1794426100954,
+      "sumKiB": 2120680,
+      "maxRendererKiB": 1649468
+    },
+    {
+      "at": 1794426101956,
+      "sumKiB": 2120752,
+      "maxRendererKiB": 1649572
+    },
+    {
+      "at": 1794426102954,
+      "sumKiB": 2120780,
+      "maxRendererKiB": 1649600
+    },
+    {
+      "at": 1794426103956,
+      "sumKiB": 2120756,
+      "maxRendererKiB": 1649576
+    },
+    {
+      "at": 1794426104962,
+      "sumKiB": 2120796,
+      "maxRendererKiB": 1649616
+    },
+    {
+      "at": 1794426105955,
+      "sumKiB": 2120744,
+      "maxRendererKiB": 1649652
+    },
+    {
+      "at": 1794426106955,
+      "sumKiB": 2120828,
+      "maxRendererKiB": 1649736
+    },
+    {
+      "at": 1794426107955,
+      "sumKiB": 2120888,
+      "maxRendererKiB": 1649796
+    },
+    {
+      "at": 1794426108958,
+      "sumKiB": 2120920,
+      "maxRendererKiB": 1649828
+    },
+    {
+      "at": 1794426109965,
+      "sumKiB": 2120992,
+      "maxRendererKiB": 1649908
+    },
+    {
+      "at": 1794426110955,
+      "sumKiB": 2121036,
+      "maxRendererKiB": 1649952
+    },
+    {
+      "at": 1794426111959,
+      "sumKiB": 2121128,
+      "maxRendererKiB": 1650044
+    },
+    {
+      "at": 1794426112956,
+      "sumKiB": 2121188,
+      "maxRendererKiB": 1650104
+    },
+    {
+      "at": 1794426113957,
+      "sumKiB": 2121300,
+      "maxRendererKiB": 1650216
+    },
+    {
+      "at": 1794426114962,
+      "sumKiB": 2121336,
+      "maxRendererKiB": 1650252
+    },
+    {
+      "at": 1794426115957,
+      "sumKiB": 2121924,
+      "maxRendererKiB": 1650840
+    },
+    {
+      "at": 1794426116968,
+      "sumKiB": 2121876,
+      "maxRendererKiB": 1650792
+    },
+    {
+      "at": 1794426117958,
+      "sumKiB": 2121932,
+      "maxRendererKiB": 1650848
+    },
+    {
+      "at": 1794426118958,
+      "sumKiB": 2121964,
+      "maxRendererKiB": 1650880
+    },
+    {
+      "at": 1794426119959,
+      "sumKiB": 2122024,
+      "maxRendererKiB": 1650940
+    },
+    {
+      "at": 1794426120962,
+      "sumKiB": 2121444,
+      "maxRendererKiB": 1650360
+    },
+    {
+      "at": 1794426121958,
+      "sumKiB": 2121412,
+      "maxRendererKiB": 1650328
+    },
+    {
+      "at": 1794426122961,
+      "sumKiB": 2121412,
+      "maxRendererKiB": 1650328
+    },
+    {
+      "at": 1794426123958,
+      "sumKiB": 2121452,
+      "maxRendererKiB": 1650368
+    },
+    {
+      "at": 1794426124967,
+      "sumKiB": 2121460,
+      "maxRendererKiB": 1650376
+    },
+    {
+      "at": 1794426125981,
+      "sumKiB": 2121440,
+      "maxRendererKiB": 1650388
+    },
+    {
+      "at": 1794426126966,
+      "sumKiB": 2121488,
+      "maxRendererKiB": 1650436
+    }
+  ],
+  "limitations": [
+    "Linux Chromium is not a physical iPhone.",
+    "Warm offline inference is not a cold offline application startup.",
+    "Raw model output is untrusted interpretation, never manufacturer procedure evidence."
+  ],
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "deviceMemoryGB": 16,
+    "logicalProcessors": 5,
+    "jsPi": true
+  },
+  "load": {
+    "readMs": 0,
+    "loadMs": 9268.5,
+    "info": {
+      "_name": "load_res",
+      "success": true,
+      "n_ctx": 1536,
+      "n_batch": 128,
+      "n_ubatch": 64,
+      "n_vocab": 248320,
+      "n_ctx_train": 262144,
+      "n_embd": 2048,
+      "n_layer": 24,
+      "metadata_key": [
+        "quantize.imatrix.file",
+        "general.file_type",
+        "tokenizer.ggml.pre",
+        "tokenizer.ggml.model",
+        "qwen35.full_attention_interval",
+        "quantize.imatrix.entries_count",
+        "qwen35.rope.dimension_count",
+        "qwen35.ssm.inner_size",
+        "qwen35.ssm.group_count",
+        "qwen35.attention.value_length",
+        "qwen35.rope.freq_base",
+        "qwen35.attention.head_count_kv",
+        "qwen35.attention.key_length",
+        "quantize.imatrix.chunks_count",
+        "tokenizer.chat_template",
+        "qwen35.ssm.time_step_rank",
+        "qwen35.feed_forward_length",
+        "qwen35.attention.layer_norm_rms_epsilon",
+        "tokenizer.ggml.eos_token_id",
+        "qwen35.context_length",
+        "general.type",
+        "qwen35.attention.head_count",
+        "tokenizer.ggml.padding_token_id",
+        "qwen35.block_count",
+        "general.repo_url",
+        "general.base_model.0.organization",
+        "general.base_model.count",
+        "general.quantization_version",
+        "general.base_model.0.repo_url",
+        "general.license",
+        "quantize.imatrix.dataset",
+        "general.name",
+        "general.quantized_by",
+        "general.architecture",
+        "qwen35.ssm.conv_kernel",
+        "general.basename",
+        "qwen35.embedding_length",
+        "general.license.link",
+        "qwen35.ssm.state_size",
+        "general.base_model.0.name",
+        "general.size_label"
+      ],
+      "metadata_val": [
+        "Qwen3.5-2B-GGUF/imatrix_unsloth.gguf",
+        "15",
+        "qwen35",
+        "gpt2",
+        "4",
+        "186",
+        "64",
+        "2048",
+        "16",
+        "256",
+        "10000000.000000",
+        "2",
+        "256",
+        "80",
+        "{%- set image_count = namespace(value=0) %}\n{%- set video_count = namespace(value=0) %}\n{%- macro render_content(content, do_vision_count, is_system_content=false) %}\n    {%- if content is string %}\n        {{- content }}\n    {%- elif content is iterable and content is not mapping %}\n        {%- for item in content %}\n            {%- if 'image' in item or 'image_url' in item or item.type == 'image' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain images.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set image_count.value = image_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Picture ' ~ image_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|image_pad|><|vision_end|>' }}\n            {%- elif 'video' in item or item.type == 'video' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain videos.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set video_count.value = video_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Video ' ~ video_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|video_pad|><|vision_end|>' }}\n            {%- elif 'text' in item %}\n                {{- item.text }}\n            {%- else %}\n                {{- raise_exception('Unexpected item type in content.') }}\n            {%- endif %}\n        {%- endfor %}\n    {%- elif content is none or content is undefined %}\n        {{- '' }}\n    {%- else %}\n        {{- raise_exception('Unexpected content type.') }}\n    {%- endif %}\n{%- endmacro %}\n{%- if not messages %}\n    {{- raise_exception('No messages provided.') }}\n{%- endif %}\n{%- if tools and tools is iterable and tools is not mapping %}\n    {{- '<|im_start|>system\\n' }}\n    {{- \"# Tools\\n\\nYou have access to the following functions:\\n\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\" }}\n    {{- '\\n\\nIf you choose to call a function ONLY reply in the following format with NO suffix:\\n\\n<tool_call>\\n<function=example_function_name>\\n<parameter=example_parameter_1>\\nvalue_1\\n</parameter>\\n<parameter=example_parameter_2>\\nThis is the value for the second parameter\\nthat can span\\nmultiple lines\\n</parameter>\\n</function>\\n</tool_call>\\n\\n<IMPORTANT>\\nReminder:\\n- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags\\n- Required parameters MUST be specified\\n- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after\\n- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls\\n</IMPORTANT>' }}\n    {%- if messages[0].role == 'system' %}\n        {%- set content = render_content(messages[0].content, false, true)|trim %}\n        {%- if content %}\n            {{- '\\n\\n' + content }}\n        {%- endif %}\n    {%- endif %}\n    {{- '<|im_end|>\\n' }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {%- set content = render_content(messages[0].content, false, true)|trim %}\n        {{- '<|im_start|>system\\n' + content + '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length - 1) %}\n{%- for message in messages[::-1] %}\n    {%- set index = (messages|length - 1) - loop.index0 %}\n    {%- if ns.multi_step_tool and message.role == \"user\" %}\n        {%- set content = render_content(message.content, false)|trim %}\n        {%- if not(content.startswith('<tool_response>') and content.endswith('</tool_response>')) %}\n            {%- set ns.multi_step_tool = false %}\n            {%- set ns.last_query_index = index %}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if ns.multi_step_tool %}\n    {{- raise_exception('No user query found in messages.') }}\n{%- endif %}\n{%- for message in messages %}\n    {%- set content = render_content(message.content, true)|trim %}\n    {%- if message.role == \"system\" %}\n        {%- if not loop.first %}\n            {{- raise_exception('System message must be at the beginning.') }}\n        {%- endif %}\n    {%- elif message.role == \"user\" %}\n        {{- '<|im_start|>' + message.role + '\\n' + content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {%- set reasoning_content = '' %}\n        {%- if message.reasoning_content is string %}\n            {%- set reasoning_content = message.reasoning_content %}\n        {%- else %}\n            {%- if '</think>' in content %}\n                {%- set reasoning_content = content.split('</think>')[0].rstrip('\\n').split('<think>')[-1].lstrip('\\n') %}\n                {%- set content = content.split('</think>')[-1].lstrip('\\n') %}\n            {%- endif %}\n        {%- endif %}\n        {%- set reasoning_content = reasoning_content|trim %}\n        {%- if loop.index0 > ns.last_query_index %}\n            {{- '<|im_start|>' + message.role + '\\n<think>\\n' + reasoning_content + '\\n</think>\\n\\n' + content }}\n        {%- else %}\n            {{- '<|im_start|>' + message.role + '\\n' + content }}\n        {%- endif %}\n        {%- if message.tool_calls and message.tool_calls is iterable and message.tool_calls is not mapping %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if tool_call.function is defined %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {%- if loop.first %}\n                    {%- if content|trim %}\n                        {{- '\\n\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- else %}\n                        {{- '<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- endif %}\n                {%- else %}\n                    {{- '\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                {%- endif %}\n                {%- if tool_call.arguments is mapping %}\n                    {%- for args_name in tool_call.arguments %}\n                        {%- set args_value = tool_call.arguments[args_name] %}\n                        {{- '<parameter=' + args_name + '>\\n' }}\n                        {%- set args_value = args_value | tojson | safe if args_value is mapping or (args_value is sequence and args_value is not string) else args_value | string %}\n                        {{- args_value }}\n                        {{- '\\n</parameter>\\n' }}\n                    {%- endfor %}\n                {%- endif %}\n                {{- '</function>\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.previtem and loop.previtem.role != \"tool\" %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- content }}\n        {{- '\\n</tool_response>' }}\n        {%- if not loop.last and loop.nextitem.role != \"tool\" %}\n            {{- '<|im_end|>\\n' }}\n        {%- elif loop.last %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- else %}\n        {{- raise_exception('Unexpected message role.') }}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n    {%- if enable_thinking is defined and enable_thinking is true %}\n        {{- '<think>\\n' }}\n    {%- else %}\n        {{- '<think>\\n\\n</think>\\n\\n' }}\n    {%- endif %}\n{%- endif %}",
+        "16",
+        "6144",
+        "0.000001",
+        "248046",
+        "262144",
+        "model",
+        "8",
+        "248055",
+        "24",
+        "https://huggingface.co/unsloth",
+        "Qwen",
+        "1",
+        "2",
+        "https://huggingface.co/Qwen/Qwen3.5-2B",
+        "apache-2.0",
+        "unsloth_calibration_Qwen3.5-2B.txt",
+        "Qwen3.5-2B",
+        "Unsloth",
+        "qwen35",
+        "4",
+        "Qwen3.5-2B",
+        "2048",
+        "https://huggingface.co/Qwen/Qwen3.5-2B/blob/main/LICENSE",
+        "128",
+        "Qwen3.5 2B",
+        "2B"
+      ],
+      "token_bos": 11,
+      "token_eos": 248046,
+      "token_eot": 248046,
+      "list_tokens_eog": [
+        248044,
+        248046,
+        248063,
+        248064,
+        248065
+      ],
+      "add_bos_token": false,
+      "add_eos_token": false,
+      "has_encoder": false,
+      "token_decoder_start": -1,
+      "media_marker": "<__media_ReMQDJ69QkRhV5EGwgFP3B6ZeSoBb3O2__>",
+      "has_image_input": false,
+      "has_audio_input": false,
+      "has_audio_output": false,
+      "has_chat": true,
+      "has_audio_stream": false,
+      "has_live_asr": false,
+      "audio_input_rate": 0,
+      "audio_output_rate": 0,
+      "audio_voices": [],
+      "metadata": {
+        "quantize.imatrix.file": "Qwen3.5-2B-GGUF/imatrix_unsloth.gguf",
+        "general.file_type": "15",
+        "tokenizer.ggml.pre": "qwen35",
+        "tokenizer.ggml.model": "gpt2",
+        "qwen35.full_attention_interval": "4",
+        "quantize.imatrix.entries_count": "186",
+        "qwen35.rope.dimension_count": "64",
+        "qwen35.ssm.inner_size": "2048",
+        "qwen35.ssm.group_count": "16",
+        "qwen35.attention.value_length": "256",
+        "qwen35.rope.freq_base": "10000000.000000",
+        "qwen35.attention.head_count_kv": "2",
+        "qwen35.attention.key_length": "256",
+        "quantize.imatrix.chunks_count": "80",
+        "tokenizer.chat_template": "{%- set image_count = namespace(value=0) %}\n{%- set video_count = namespace(value=0) %}\n{%- macro render_content(content, do_vision_count, is_system_content=false) %}\n    {%- if content is string %}\n        {{- content }}\n    {%- elif content is iterable and content is not mapping %}\n        {%- for item in content %}\n            {%- if 'image' in item or 'image_url' in item or item.type == 'image' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain images.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set image_count.value = image_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Picture ' ~ image_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|image_pad|><|vision_end|>' }}\n            {%- elif 'video' in item or item.type == 'video' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain videos.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set video_count.value = video_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Video ' ~ video_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|video_pad|><|vision_end|>' }}\n            {%- elif 'text' in item %}\n                {{- item.text }}\n            {%- else %}\n                {{- raise_exception('Unexpected item type in content.') }}\n            {%- endif %}\n        {%- endfor %}\n    {%- elif content is none or content is undefined %}\n        {{- '' }}\n    {%- else %}\n        {{- raise_exception('Unexpected content type.') }}\n    {%- endif %}\n{%- endmacro %}\n{%- if not messages %}\n    {{- raise_exception('No messages provided.') }}\n{%- endif %}\n{%- if tools and tools is iterable and tools is not mapping %}\n    {{- '<|im_start|>system\\n' }}\n    {{- \"# Tools\\n\\nYou have access to the following functions:\\n\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\" }}\n    {{- '\\n\\nIf you choose to call a function ONLY reply in the following format with NO suffix:\\n\\n<tool_call>\\n<function=example_function_name>\\n<parameter=example_parameter_1>\\nvalue_1\\n</parameter>\\n<parameter=example_parameter_2>\\nThis is the value for the second parameter\\nthat can span\\nmultiple lines\\n</parameter>\\n</function>\\n</tool_call>\\n\\n<IMPORTANT>\\nReminder:\\n- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags\\n- Required parameters MUST be specified\\n- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after\\n- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls\\n</IMPORTANT>' }}\n    {%- if messages[0].role == 'system' %}\n        {%- set content = render_content(messages[0].content, false, true)|trim %}\n        {%- if content %}\n            {{- '\\n\\n' + content }}\n        {%- endif %}\n    {%- endif %}\n    {{- '<|im_end|>\\n' }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {%- set content = render_content(messages[0].content, false, true)|trim %}\n        {{- '<|im_start|>system\\n' + content + '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length - 1) %}\n{%- for message in messages[::-1] %}\n    {%- set index = (messages|length - 1) - loop.index0 %}\n    {%- if ns.multi_step_tool and message.role == \"user\" %}\n        {%- set content = render_content(message.content, false)|trim %}\n        {%- if not(content.startswith('<tool_response>') and content.endswith('</tool_response>')) %}\n            {%- set ns.multi_step_tool = false %}\n            {%- set ns.last_query_index = index %}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if ns.multi_step_tool %}\n    {{- raise_exception('No user query found in messages.') }}\n{%- endif %}\n{%- for message in messages %}\n    {%- set content = render_content(message.content, true)|trim %}\n    {%- if message.role == \"system\" %}\n        {%- if not loop.first %}\n            {{- raise_exception('System message must be at the beginning.') }}\n        {%- endif %}\n    {%- elif message.role == \"user\" %}\n        {{- '<|im_start|>' + message.role + '\\n' + content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {%- set reasoning_content = '' %}\n        {%- if message.reasoning_content is string %}\n            {%- set reasoning_content = message.reasoning_content %}\n        {%- else %}\n            {%- if '</think>' in content %}\n                {%- set reasoning_content = content.split('</think>')[0].rstrip('\\n').split('<think>')[-1].lstrip('\\n') %}\n                {%- set content = content.split('</think>')[-1].lstrip('\\n') %}\n            {%- endif %}\n        {%- endif %}\n        {%- set reasoning_content = reasoning_content|trim %}\n        {%- if loop.index0 > ns.last_query_index %}\n            {{- '<|im_start|>' + message.role + '\\n<think>\\n' + reasoning_content + '\\n</think>\\n\\n' + content }}\n        {%- else %}\n            {{- '<|im_start|>' + message.role + '\\n' + content }}\n        {%- endif %}\n        {%- if message.tool_calls and message.tool_calls is iterable and message.tool_calls is not mapping %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if tool_call.function is defined %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {%- if loop.first %}\n                    {%- if content|trim %}\n                        {{- '\\n\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- else %}\n                        {{- '<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- endif %}\n                {%- else %}\n                    {{- '\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                {%- endif %}\n                {%- if tool_call.arguments is mapping %}\n                    {%- for args_name in tool_call.arguments %}\n                        {%- set args_value = tool_call.arguments[args_name] %}\n                        {{- '<parameter=' + args_name + '>\\n' }}\n                        {%- set args_value = args_value | tojson | safe if args_value is mapping or (args_value is sequence and args_value is not string) else args_value | string %}\n                        {{- args_value }}\n                        {{- '\\n</parameter>\\n' }}\n                    {%- endfor %}\n                {%- endif %}\n                {{- '</function>\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.previtem and loop.previtem.role != \"tool\" %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- content }}\n        {{- '\\n</tool_response>' }}\n        {%- if not loop.last and loop.nextitem.role != \"tool\" %}\n            {{- '<|im_end|>\\n' }}\n        {%- elif loop.last %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- else %}\n        {{- raise_exception('Unexpected message role.') }}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n    {%- if enable_thinking is defined and enable_thinking is true %}\n        {{- '<think>\\n' }}\n    {%- else %}\n        {{- '<think>\\n\\n</think>\\n\\n' }}\n    {%- endif %}\n{%- endif %}",
+        "qwen35.ssm.time_step_rank": "16",
+        "qwen35.feed_forward_length": "6144",
+        "qwen35.attention.layer_norm_rms_epsilon": "0.000001",
+        "tokenizer.ggml.eos_token_id": "248046",
+        "qwen35.context_length": "262144",
+        "general.type": "model",
+        "qwen35.attention.head_count": "8",
+        "tokenizer.ggml.padding_token_id": "248055",
+        "qwen35.block_count": "24",
+        "general.repo_url": "https://huggingface.co/unsloth",
+        "general.base_model.0.organization": "Qwen",
+        "general.base_model.count": "1",
+        "general.quantization_version": "2",
+        "general.base_model.0.repo_url": "https://huggingface.co/Qwen/Qwen3.5-2B",
+        "general.license": "apache-2.0",
+        "quantize.imatrix.dataset": "unsloth_calibration_Qwen3.5-2B.txt",
+        "general.name": "Qwen3.5-2B",
+        "general.quantized_by": "Unsloth",
+        "general.architecture": "qwen35",
+        "qwen35.ssm.conv_kernel": "4",
+        "general.basename": "Qwen3.5-2B",
+        "qwen35.embedding_length": "2048",
+        "general.license.link": "https://huggingface.co/Qwen/Qwen3.5-2B/blob/main/LICENSE",
+        "qwen35.ssm.state_size": "128",
+        "general.base_model.0.name": "Qwen3.5 2B",
+        "general.size_label": "2B"
+      }
+    }
+  },
+  "error": {
+    "name": "Error",
+    "message": "page.evaluate: Target page, context or browser has been closed",
+    "stack": "page.evaluate: Target page, context or browser has been closed\n    at generate (/workspace/sites/findr-sources/scripts/benchmark-pal-wllama034.mjs:30:31)\n    at /workspace/sites/findr-sources/scripts/benchmark-pal-wllama034.mjs:31:42"
+  },
+  "status": "stopped after first case to replace optional JSON whitespace with compact grammar",
+  "stopReason": "Exact four actions were semantically correct, but free JSON-schema formatting spent 143 output tokens and 146.5 seconds. Compact grammar retained free action/target strings and unrestricted task count."
+}

@@ -1,0 +1,75 @@
+{
+  "testedAt": "2026-11-11T19:49:36.830Z",
+  "note": "Lossless JSON tasks to action lines only; current production parser and source/omission guards unchanged. The benchmark input and raw output remain independent evidence.",
+  "results": [
+    {
+      "id": "multi_task",
+      "accepted": true,
+      "interpretation": {
+        "intent": "procedure",
+        "tasks": [
+          {
+            "action": "disable",
+            "target": "outputs",
+            "label": "disable outputs"
+          },
+          {
+            "action": "disable",
+            "target": "old device",
+            "label": "disable old device"
+          },
+          {
+            "action": "replace",
+            "target": "device",
+            "label": "replace device"
+          },
+          {
+            "action": "enable",
+            "target": "device",
+            "label": "enable device"
+          }
+        ],
+        "focusTask": null,
+        "observations": [],
+        "interpretationOnly": true
+      }
+    },
+    {
+      "id": "correct_target",
+      "accepted": false,
+      "reason": "invalid_action_list"
+    },
+    {
+      "id": "two_procedures",
+      "accepted": true,
+      "interpretation": {
+        "intent": "procedure",
+        "tasks": [
+          {
+            "action": "start",
+            "target": "walk test",
+            "label": "start walk test"
+          },
+          {
+            "action": "view",
+            "target": "event history",
+            "label": "view event history"
+          }
+        ],
+        "focusTask": null,
+        "observations": [],
+        "interpretationOnly": true
+      }
+    },
+    {
+      "id": "trade_spelling",
+      "accepted": false,
+      "reason": "ungrounded_task"
+    },
+    {
+      "id": "explicit_equipment_change",
+      "accepted": false,
+      "reason": "invalid_action_list"
+    }
+  ]
+}

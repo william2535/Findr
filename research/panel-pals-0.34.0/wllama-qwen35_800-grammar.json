@@ -1,0 +1,820 @@
+{
+  "createdAt": "2026-11-11T19:28:52.514Z",
+  "actualInference": true,
+  "physicalPhone": false,
+  "runtime": "@wllama/wllama 3.13.0 CPU WASM single thread",
+  "model": {
+    "label": "qwen35_800",
+    "repo": "unsloth/Qwen3.5-0.8B-GGUF",
+    "revision": "6ab461498e2023f6e3c1baea90a8f0fe38ab64d0",
+    "file": "Qwen3.5-0.8B-Q4_K_M.gguf",
+    "bytes": 532517120,
+    "sha256": "bd258782e35f7f458f8aced1adc053e6e92e89bc735ba3be89d38a06121dc517",
+    "url": "https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/6ab461498e2023f6e3c1baea90a8f0fe38ab64d0/Qwen3.5-0.8B-Q4_K_M.gguf"
+  },
+  "cases": [
+    {
+      "id": "multi_task",
+      "question": "I need to swap a device, how do I disable outputs, disable the old one, swap it, then re enable device.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Extract the actions requested by this fire and security engineer. Preserve each separate step and its object in order. Do not answer, supply instructions, add tasks, or duplicate an overall goal repeated in the steps."
+        },
+        {
+          "role": "user",
+          "content": "Equipment: Advanced MxPro 5.\nEngineer: I need to swap a device, how do I disable outputs, disable the old one, swap it, then re enable device."
+        }
+      ]
+    },
+    {
+      "id": "correct_target",
+      "question": "meant sounders, not all outputs",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Apply the engineer\u2019s correction to the previous requested actions. Return the whole updated task list in its original order. Do not give instructions or add tasks."
+        },
+        {
+          "role": "user",
+          "content": "Equipment: Advanced MxPro 5.\nPrevious requested actions: 1. Disable outputs. 2. Disable the old device. 3. Replace the device. 4. Re-enable the device.\nEngineer: meant sounders, not all outputs"
+        }
+      ]
+    },
+    {
+      "id": "two_procedures",
+      "question": "How do I start a walk test and then view the event history on this panel?",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Extract the actions requested by this fire and security engineer. Preserve each separate step and its object in order. Do not answer, supply instructions, add tasks, or duplicate an overall goal repeated in the steps."
+        },
+        {
+          "role": "user",
+          "content": "Equipment: Advanced MxPro 5.\nEngineer: How do I start a walk test and then view the event history on this panel?"
+        }
+      ]
+    },
+    {
+      "id": "trade_spelling",
+      "question": "Need to disbale the sounders, swap the optical detctor and re-enable it.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Extract the actions requested by this fire and security engineer. Preserve each separate step and its object in order. Do not answer, supply instructions, add tasks, or duplicate an overall goal repeated in the steps."
+        },
+        {
+          "role": "user",
+          "content": "Equipment: Advanced MxPro 5.\nEngineer: Need to disbale the sounders, swap the optical detctor and re-enable it."
+        }
+      ]
+    },
+    {
+      "id": "explicit_equipment_change",
+      "question": "Leave the panel for now. I am working on the external PSU: check its output voltage and inspect its battery leads.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Extract the actions requested by this fire and security engineer. Preserve each separate step and its object in order. Do not answer, supply instructions, add tasks, or duplicate an overall goal repeated in the steps."
+        },
+        {
+          "role": "user",
+          "content": "Equipment: Advanced MxPro 5.\nEngineer: Leave the panel for now. I am working on the external PSU: check its output voltage and inspect its battery leads."
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "multi_task",
+      "text": "{\"tasks\": [{\"action\": \"identify\", \"target\": \"device to be disabled\"}, {\"action\": \"identify\", \"target\": \"device to be swapped\"}, {\"action\": \"disable\", \"target\": \"old device\"}, {\"action\": \"disable\", \"target\": \"new device\"}, {\"action\": \"enable\", \"target\": \"new device\"}, {\"action\": \"enable\", \"target\": \"old device\"}, {\"action\": \"verify\", \"target\": \"new device is active\"}, {\"action\": \"verify\", \"target\": \"old device is inactive\"}]}",
+      "generationMs": 60681.39999999851,
+      "firstTokenMs": 24354.5,
+      "usage": null,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 97,
+        "prompt_ms": 16894.1,
+        "prompt_per_token_ms": 174.1659793814433,
+        "prompt_per_second": 5.741649451583689,
+        "predicted_n": 138,
+        "predicted_ms": 43723.601,
+        "predicted_per_token_ms": 319.1503722627737,
+        "predicted_per_second": 3.1333192341591443
+      }
+    }
+  ],
+  "rssSamples": [
+    {
+      "at": 1794425334412,
+      "sumKiB": 640420,
+      "maxRendererKiB": 156416
+    },
+    {
+      "at": 1794425335406,
+      "sumKiB": 737088,
+      "maxRendererKiB": 250332
+    },
+    {
+      "at": 1794425336402,
+      "sumKiB": 991788,
+      "maxRendererKiB": 506700
+    },
+    {
+      "at": 1794425337406,
+      "sumKiB": 1200780,
+      "maxRendererKiB": 715836
+    },
+    {
+      "at": 1794425338403,
+      "sumKiB": 1140516,
+      "maxRendererKiB": 655396
+    },
+    {
+      "at": 1794425339406,
+      "sumKiB": 1458520,
+      "maxRendererKiB": 974016
+    },
+    {
+      "at": 1794425340410,
+      "sumKiB": 1586784,
+      "maxRendererKiB": 1102740
+    },
+    {
+      "at": 1794425341403,
+      "sumKiB": 1255100,
+      "maxRendererKiB": 770912
+    },
+    {
+      "at": 1794425342414,
+      "sumKiB": 1255168,
+      "maxRendererKiB": 770980
+    },
+    {
+      "at": 1794425343406,
+      "sumKiB": 1253008,
+      "maxRendererKiB": 770992
+    },
+    {
+      "at": 1794425344405,
+      "sumKiB": 1253012,
+      "maxRendererKiB": 770992
+    },
+    {
+      "at": 1794425345410,
+      "sumKiB": 1253012,
+      "maxRendererKiB": 770992
+    },
+    {
+      "at": 1794425346407,
+      "sumKiB": 1275876,
+      "maxRendererKiB": 793856
+    },
+    {
+      "at": 1794425347413,
+      "sumKiB": 1275876,
+      "maxRendererKiB": 793856
+    },
+    {
+      "at": 1794425348407,
+      "sumKiB": 1276068,
+      "maxRendererKiB": 793980
+    },
+    {
+      "at": 1794425349424,
+      "sumKiB": 1276068,
+      "maxRendererKiB": 793980
+    },
+    {
+      "at": 1794425350415,
+      "sumKiB": 1276068,
+      "maxRendererKiB": 793980
+    },
+    {
+      "at": 1794425351443,
+      "sumKiB": 1276068,
+      "maxRendererKiB": 793980
+    },
+    {
+      "at": 1794425352421,
+      "sumKiB": 1276076,
+      "maxRendererKiB": 793984
+    },
+    {
+      "at": 1794425353421,
+      "sumKiB": 1276076,
+      "maxRendererKiB": 793984
+    },
+    {
+      "at": 1794425354436,
+      "sumKiB": 1276084,
+      "maxRendererKiB": 793984
+    },
+    {
+      "at": 1794425355420,
+      "sumKiB": 1276084,
+      "maxRendererKiB": 793984
+    },
+    {
+      "at": 1794425356429,
+      "sumKiB": 1276084,
+      "maxRendererKiB": 793984
+    },
+    {
+      "at": 1794425357419,
+      "sumKiB": 1295920,
+      "maxRendererKiB": 813820
+    },
+    {
+      "at": 1794425358418,
+      "sumKiB": 1333644,
+      "maxRendererKiB": 851544
+    },
+    {
+      "at": 1794425359416,
+      "sumKiB": 1333768,
+      "maxRendererKiB": 851664
+    },
+    {
+      "at": 1794425360420,
+      "sumKiB": 1333824,
+      "maxRendererKiB": 851720
+    },
+    {
+      "at": 1794425361417,
+      "sumKiB": 1333960,
+      "maxRendererKiB": 851840
+    },
+    {
+      "at": 1794425362424,
+      "sumKiB": 1334008,
+      "maxRendererKiB": 851888
+    },
+    {
+      "at": 1794425363426,
+      "sumKiB": 1334724,
+      "maxRendererKiB": 851988
+    },
+    {
+      "at": 1794425364432,
+      "sumKiB": 1324404,
+      "maxRendererKiB": 849972
+    },
+    {
+      "at": 1794425365425,
+      "sumKiB": 1324476,
+      "maxRendererKiB": 850044
+    },
+    {
+      "at": 1794425366423,
+      "sumKiB": 1324856,
+      "maxRendererKiB": 850464
+    },
+    {
+      "at": 1794425367419,
+      "sumKiB": 1324968,
+      "maxRendererKiB": 850576
+    },
+    {
+      "at": 1794425368416,
+      "sumKiB": 1324956,
+      "maxRendererKiB": 850564
+    },
+    {
+      "at": 1794425369427,
+      "sumKiB": 1324984,
+      "maxRendererKiB": 850592
+    },
+    {
+      "at": 1794425370420,
+      "sumKiB": 1325004,
+      "maxRendererKiB": 850612
+    },
+    {
+      "at": 1794425371417,
+      "sumKiB": 1325048,
+      "maxRendererKiB": 850656
+    },
+    {
+      "at": 1794425372418,
+      "sumKiB": 1325120,
+      "maxRendererKiB": 850728
+    },
+    {
+      "at": 1794425373418,
+      "sumKiB": 1324120,
+      "maxRendererKiB": 849744
+    },
+    {
+      "at": 1794425374418,
+      "sumKiB": 1324268,
+      "maxRendererKiB": 849892
+    },
+    {
+      "at": 1794425375419,
+      "sumKiB": 1324528,
+      "maxRendererKiB": 850152
+    },
+    {
+      "at": 1794425376425,
+      "sumKiB": 1324632,
+      "maxRendererKiB": 850256
+    },
+    {
+      "at": 1794425377423,
+      "sumKiB": 1324880,
+      "maxRendererKiB": 850504
+    },
+    {
+      "at": 1794425378422,
+      "sumKiB": 1325004,
+      "maxRendererKiB": 850628
+    },
+    {
+      "at": 1794425379419,
+      "sumKiB": 1325164,
+      "maxRendererKiB": 850788
+    },
+    {
+      "at": 1794425380419,
+      "sumKiB": 1325300,
+      "maxRendererKiB": 850924
+    },
+    {
+      "at": 1794425381419,
+      "sumKiB": 1325480,
+      "maxRendererKiB": 851104
+    },
+    {
+      "at": 1794425382419,
+      "sumKiB": 1324940,
+      "maxRendererKiB": 850564
+    },
+    {
+      "at": 1794425383419,
+      "sumKiB": 1325108,
+      "maxRendererKiB": 850732
+    },
+    {
+      "at": 1794425384428,
+      "sumKiB": 1325232,
+      "maxRendererKiB": 850856
+    },
+    {
+      "at": 1794425385425,
+      "sumKiB": 1325396,
+      "maxRendererKiB": 851020
+    },
+    {
+      "at": 1794425386427,
+      "sumKiB": 1325532,
+      "maxRendererKiB": 851156
+    },
+    {
+      "at": 1794425387431,
+      "sumKiB": 1325624,
+      "maxRendererKiB": 851248
+    },
+    {
+      "at": 1794425388418,
+      "sumKiB": 1325964,
+      "maxRendererKiB": 851588
+    },
+    {
+      "at": 1794425389421,
+      "sumKiB": 1326096,
+      "maxRendererKiB": 851720
+    },
+    {
+      "at": 1794425390418,
+      "sumKiB": 1326228,
+      "maxRendererKiB": 851852
+    },
+    {
+      "at": 1794425391418,
+      "sumKiB": 1326404,
+      "maxRendererKiB": 852028
+    },
+    {
+      "at": 1794425392419,
+      "sumKiB": 1326532,
+      "maxRendererKiB": 852156
+    },
+    {
+      "at": 1794425393418,
+      "sumKiB": 1324600,
+      "maxRendererKiB": 851332
+    },
+    {
+      "at": 1794425394419,
+      "sumKiB": 1324232,
+      "maxRendererKiB": 850940
+    },
+    {
+      "at": 1794425395418,
+      "sumKiB": 1324744,
+      "maxRendererKiB": 851420
+    },
+    {
+      "at": 1794425396422,
+      "sumKiB": 1325176,
+      "maxRendererKiB": 851520
+    },
+    {
+      "at": 1794425397418,
+      "sumKiB": 1324604,
+      "maxRendererKiB": 851552
+    },
+    {
+      "at": 1794425398419,
+      "sumKiB": 1324964,
+      "maxRendererKiB": 851912
+    },
+    {
+      "at": 1794425399421,
+      "sumKiB": 1324444,
+      "maxRendererKiB": 851392
+    },
+    {
+      "at": 1794425400420,
+      "sumKiB": 1324476,
+      "maxRendererKiB": 851448
+    },
+    {
+      "at": 1794425401420,
+      "sumKiB": 1324872,
+      "maxRendererKiB": 851876
+    },
+    {
+      "at": 1794425402426,
+      "sumKiB": 1325368,
+      "maxRendererKiB": 852360
+    },
+    {
+      "at": 1794425403420,
+      "sumKiB": 1323704,
+      "maxRendererKiB": 852200
+    },
+    {
+      "at": 1794425404422,
+      "sumKiB": 1323404,
+      "maxRendererKiB": 851900
+    },
+    {
+      "at": 1794425405424,
+      "sumKiB": 1323404,
+      "maxRendererKiB": 851900
+    },
+    {
+      "at": 1794425406424,
+      "sumKiB": 1323404,
+      "maxRendererKiB": 851900
+    },
+    {
+      "at": 1794425407423,
+      "sumKiB": 1330284,
+      "maxRendererKiB": 858780
+    },
+    {
+      "at": 1794425408422,
+      "sumKiB": 1330340,
+      "maxRendererKiB": 858780
+    },
+    {
+      "at": 1794425409422,
+      "sumKiB": 1330232,
+      "maxRendererKiB": 858780
+    },
+    {
+      "at": 1794425410421,
+      "sumKiB": 1328952,
+      "maxRendererKiB": 857500
+    },
+    {
+      "at": 1794425411421,
+      "sumKiB": 1328952,
+      "maxRendererKiB": 857500
+    },
+    {
+      "at": 1794425412424,
+      "sumKiB": 1328952,
+      "maxRendererKiB": 857500
+    },
+    {
+      "at": 1794425413423,
+      "sumKiB": 1328956,
+      "maxRendererKiB": 857500
+    },
+    {
+      "at": 1794425414424,
+      "sumKiB": 1328956,
+      "maxRendererKiB": 857500
+    },
+    {
+      "at": 1794425415423,
+      "sumKiB": 1328956,
+      "maxRendererKiB": 857500
+    },
+    {
+      "at": 1794425416424,
+      "sumKiB": 1328956,
+      "maxRendererKiB": 857500
+    },
+    {
+      "at": 1794425417422,
+      "sumKiB": 1328956,
+      "maxRendererKiB": 857500
+    },
+    {
+      "at": 1794425418430,
+      "sumKiB": 1348360,
+      "maxRendererKiB": 876904
+    },
+    {
+      "at": 1794425419430,
+      "sumKiB": 1382812,
+      "maxRendererKiB": 911356
+    },
+    {
+      "at": 1794425420426,
+      "sumKiB": 1382880,
+      "maxRendererKiB": 911424
+    },
+    {
+      "at": 1794425421426,
+      "sumKiB": 1382984,
+      "maxRendererKiB": 911528
+    },
+    {
+      "at": 1794425422425,
+      "sumKiB": 1383184,
+      "maxRendererKiB": 911728
+    },
+    {
+      "at": 1794425423431,
+      "sumKiB": 1383232,
+      "maxRendererKiB": 912336
+    },
+    {
+      "at": 1794425424430,
+      "sumKiB": 1387728,
+      "maxRendererKiB": 916864
+    },
+    {
+      "at": 1794425425424,
+      "sumKiB": 1383596,
+      "maxRendererKiB": 912968
+    },
+    {
+      "at": 1794425426425,
+      "sumKiB": 1383608,
+      "maxRendererKiB": 912980
+    },
+    {
+      "at": 1794425427428,
+      "sumKiB": 1383796,
+      "maxRendererKiB": 913168
+    },
+    {
+      "at": 1794425428427,
+      "sumKiB": 1383272,
+      "maxRendererKiB": 912644
+    },
+    {
+      "at": 1794425429424,
+      "sumKiB": 1383388,
+      "maxRendererKiB": 912760
+    },
+    {
+      "at": 1794425430427,
+      "sumKiB": 1383420,
+      "maxRendererKiB": 912792
+    },
+    {
+      "at": 1794425431424,
+      "sumKiB": 1383548,
+      "maxRendererKiB": 912920
+    },
+    {
+      "at": 1794425432429,
+      "sumKiB": 1384076,
+      "maxRendererKiB": 913448
+    },
+    {
+      "at": 1794425433426,
+      "sumKiB": 1384404,
+      "maxRendererKiB": 913776
+    },
+    {
+      "at": 1794425434424,
+      "sumKiB": 1384472,
+      "maxRendererKiB": 913844
+    },
+    {
+      "at": 1794425435427,
+      "sumKiB": 1384468,
+      "maxRendererKiB": 913840
+    },
+    {
+      "at": 1794425436425,
+      "sumKiB": 1384520,
+      "maxRendererKiB": 913892
+    },
+    {
+      "at": 1794425437431,
+      "sumKiB": 1383756,
+      "maxRendererKiB": 913128
+    },
+    {
+      "at": 1794425438424,
+      "sumKiB": 1383220,
+      "maxRendererKiB": 912588
+    }
+  ],
+  "limitations": [
+    "Linux Chromium is not a physical iPhone.",
+    "Warm offline inference is not a cold offline application startup.",
+    "Raw model output is untrusted interpretation, never manufacturer procedure evidence."
+  ],
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "deviceMemoryGB": 16,
+    "logicalProcessors": 5,
+    "jsPi": true
+  },
+  "load": {
+    "readMs": 0,
+    "loadMs": 7221.70000000298,
+    "info": {
+      "_name": "load_res",
+      "success": true,
+      "n_ctx": 1536,
+      "n_batch": 128,
+      "n_ubatch": 64,
+      "n_vocab": 248320,
+      "n_ctx_train": 262144,
+      "n_embd": 1024,
+      "n_layer": 24,
+      "metadata_key": [
+        "quantize.imatrix.file",
+        "general.file_type",
+        "tokenizer.ggml.pre",
+        "tokenizer.ggml.model",
+        "qwen35.full_attention_interval",
+        "quantize.imatrix.entries_count",
+        "qwen35.rope.dimension_count",
+        "qwen35.ssm.inner_size",
+        "qwen35.ssm.group_count",
+        "qwen35.attention.value_length",
+        "qwen35.rope.freq_base",
+        "qwen35.attention.head_count_kv",
+        "qwen35.attention.key_length",
+        "quantize.imatrix.chunks_count",
+        "tokenizer.chat_template",
+        "qwen35.ssm.time_step_rank",
+        "qwen35.feed_forward_length",
+        "qwen35.attention.layer_norm_rms_epsilon",
+        "tokenizer.ggml.eos_token_id",
+        "qwen35.context_length",
+        "general.type",
+        "qwen35.attention.head_count",
+        "tokenizer.ggml.padding_token_id",
+        "qwen35.block_count",
+        "general.repo_url",
+        "general.base_model.0.organization",
+        "general.base_model.count",
+        "general.quantization_version",
+        "general.base_model.0.repo_url",
+        "general.license",
+        "quantize.imatrix.dataset",
+        "general.name",
+        "general.quantized_by",
+        "general.architecture",
+        "qwen35.ssm.conv_kernel",
+        "general.basename",
+        "qwen35.embedding_length",
+        "general.license.link",
+        "qwen35.ssm.state_size",
+        "general.base_model.0.name",
+        "general.size_label"
+      ],
+      "metadata_val": [
+        "Qwen3.5-0.8B-GGUF/imatrix_unsloth.gguf",
+        "15",
+        "qwen35",
+        "gpt2",
+        "4",
+        "186",
+        "64",
+        "2048",
+        "16",
+        "256",
+        "10000000.000000",
+        "2",
+        "256",
+        "80",
+        "{%- set image_count = namespace(value=0) %}\n{%- set video_count = namespace(value=0) %}\n{%- macro render_content(content, do_vision_count, is_system_content=false) %}\n    {%- if content is string %}\n        {{- content }}\n    {%- elif content is iterable and content is not mapping %}\n        {%- for item in content %}\n            {%- if 'image' in item or 'image_url' in item or item.type == 'image' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain images.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set image_count.value = image_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Picture ' ~ image_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|image_pad|><|vision_end|>' }}\n            {%- elif 'video' in item or item.type == 'video' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain videos.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set video_count.value = video_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Video ' ~ video_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|video_pad|><|vision_end|>' }}\n            {%- elif 'text' in item %}\n                {{- item.text }}\n            {%- else %}\n                {{- raise_exception('Unexpected item type in content.') }}\n            {%- endif %}\n        {%- endfor %}\n    {%- elif content is none or content is undefined %}\n        {{- '' }}\n    {%- else %}\n        {{- raise_exception('Unexpected content type.') }}\n    {%- endif %}\n{%- endmacro %}\n{%- if not messages %}\n    {{- raise_exception('No messages provided.') }}\n{%- endif %}\n{%- if tools and tools is iterable and tools is not mapping %}\n    {{- '<|im_start|>system\\n' }}\n    {{- \"# Tools\\n\\nYou have access to the following functions:\\n\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\" }}\n    {{- '\\n\\nIf you choose to call a function ONLY reply in the following format with NO suffix:\\n\\n<tool_call>\\n<function=example_function_name>\\n<parameter=example_parameter_1>\\nvalue_1\\n</parameter>\\n<parameter=example_parameter_2>\\nThis is the value for the second parameter\\nthat can span\\nmultiple lines\\n</parameter>\\n</function>\\n</tool_call>\\n\\n<IMPORTANT>\\nReminder:\\n- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags\\n- Required parameters MUST be specified\\n- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after\\n- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls\\n</IMPORTANT>' }}\n    {%- if messages[0].role == 'system' %}\n        {%- set content = render_content(messages[0].content, false, true)|trim %}\n        {%- if content %}\n            {{- '\\n\\n' + content }}\n        {%- endif %}\n    {%- endif %}\n    {{- '<|im_end|>\\n' }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {%- set content = render_content(messages[0].content, false, true)|trim %}\n        {{- '<|im_start|>system\\n' + content + '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length - 1) %}\n{%- for message in messages[::-1] %}\n    {%- set index = (messages|length - 1) - loop.index0 %}\n    {%- if ns.multi_step_tool and message.role == \"user\" %}\n        {%- set content = render_content(message.content, false)|trim %}\n        {%- if not(content.startswith('<tool_response>') and content.endswith('</tool_response>')) %}\n            {%- set ns.multi_step_tool = false %}\n            {%- set ns.last_query_index = index %}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if ns.multi_step_tool %}\n    {{- raise_exception('No user query found in messages.') }}\n{%- endif %}\n{%- for message in messages %}\n    {%- set content = render_content(message.content, true)|trim %}\n    {%- if message.role == \"system\" %}\n        {%- if not loop.first %}\n            {{- raise_exception('System message must be at the beginning.') }}\n        {%- endif %}\n    {%- elif message.role == \"user\" %}\n        {{- '<|im_start|>' + message.role + '\\n' + content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {%- set reasoning_content = '' %}\n        {%- if message.reasoning_content is string %}\n            {%- set reasoning_content = message.reasoning_content %}\n        {%- else %}\n            {%- if '</think>' in content %}\n                {%- set reasoning_content = content.split('</think>')[0].rstrip('\\n').split('<think>')[-1].lstrip('\\n') %}\n                {%- set content = content.split('</think>')[-1].lstrip('\\n') %}\n            {%- endif %}\n        {%- endif %}\n        {%- set reasoning_content = reasoning_content|trim %}\n        {%- if loop.index0 > ns.last_query_index %}\n            {{- '<|im_start|>' + message.role + '\\n<think>\\n' + reasoning_content + '\\n</think>\\n\\n' + content }}\n        {%- else %}\n            {{- '<|im_start|>' + message.role + '\\n' + content }}\n        {%- endif %}\n        {%- if message.tool_calls and message.tool_calls is iterable and message.tool_calls is not mapping %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if tool_call.function is defined %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {%- if loop.first %}\n                    {%- if content|trim %}\n                        {{- '\\n\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- else %}\n                        {{- '<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- endif %}\n                {%- else %}\n                    {{- '\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                {%- endif %}\n                {%- if tool_call.arguments is mapping %}\n                    {%- for args_name in tool_call.arguments %}\n                        {%- set args_value = tool_call.arguments[args_name] %}\n                        {{- '<parameter=' + args_name + '>\\n' }}\n                        {%- set args_value = args_value | tojson | safe if args_value is mapping or (args_value is sequence and args_value is not string) else args_value | string %}\n                        {{- args_value }}\n                        {{- '\\n</parameter>\\n' }}\n                    {%- endfor %}\n                {%- endif %}\n                {{- '</function>\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.previtem and loop.previtem.role != \"tool\" %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- content }}\n        {{- '\\n</tool_response>' }}\n        {%- if not loop.last and loop.nextitem.role != \"tool\" %}\n            {{- '<|im_end|>\\n' }}\n        {%- elif loop.last %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- else %}\n        {{- raise_exception('Unexpected message role.') }}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n    {%- if enable_thinking is defined and enable_thinking is true %}\n        {{- '<think>\\n' }}\n    {%- else %}\n        {{- '<think>\\n\\n</think>\\n\\n' }}\n    {%- endif %}\n{%- endif %}",
+        "16",
+        "3584",
+        "0.000001",
+        "248046",
+        "262144",
+        "model",
+        "8",
+        "248055",
+        "24",
+        "https://huggingface.co/unsloth",
+        "Qwen",
+        "1",
+        "2",
+        "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+        "apache-2.0",
+        "unsloth_calibration_Qwen3.5-0.8B.txt",
+        "Qwen3.5-0.8B",
+        "Unsloth",
+        "qwen35",
+        "4",
+        "Qwen3.5-0.8B",
+        "1024",
+        "https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE",
+        "128",
+        "Qwen3.5 0.8B",
+        "0.8B"
+      ],
+      "token_bos": 11,
+      "token_eos": 248046,
+      "token_eot": 248046,
+      "list_tokens_eog": [
+        248044,
+        248046,
+        248063,
+        248064,
+        248065
+      ],
+      "add_bos_token": false,
+      "add_eos_token": false,
+      "has_encoder": false,
+      "token_decoder_start": -1,
+      "media_marker": "<__media_YotFDwr76gegdJ7tp8AAEHMaloSlVftS__>",
+      "has_image_input": false,
+      "has_audio_input": false,
+      "has_audio_output": false,
+      "has_chat": true,
+      "has_audio_stream": false,
+      "has_live_asr": false,
+      "audio_input_rate": 0,
+      "audio_output_rate": 0,
+      "audio_voices": [],
+      "metadata": {
+        "quantize.imatrix.file": "Qwen3.5-0.8B-GGUF/imatrix_unsloth.gguf",
+        "general.file_type": "15",
+        "tokenizer.ggml.pre": "qwen35",
+        "tokenizer.ggml.model": "gpt2",
+        "qwen35.full_attention_interval": "4",
+        "quantize.imatrix.entries_count": "186",
+        "qwen35.rope.dimension_count": "64",
+        "qwen35.ssm.inner_size": "2048",
+        "qwen35.ssm.group_count": "16",
+        "qwen35.attention.value_length": "256",
+        "qwen35.rope.freq_base": "10000000.000000",
+        "qwen35.attention.head_count_kv": "2",
+        "qwen35.attention.key_length": "256",
+        "quantize.imatrix.chunks_count": "80",
+        "tokenizer.chat_template": "{%- set image_count = namespace(value=0) %}\n{%- set video_count = namespace(value=0) %}\n{%- macro render_content(content, do_vision_count, is_system_content=false) %}\n    {%- if content is string %}\n        {{- content }}\n    {%- elif content is iterable and content is not mapping %}\n        {%- for item in content %}\n            {%- if 'image' in item or 'image_url' in item or item.type == 'image' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain images.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set image_count.value = image_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Picture ' ~ image_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|image_pad|><|vision_end|>' }}\n            {%- elif 'video' in item or item.type == 'video' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain videos.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set video_count.value = video_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Video ' ~ video_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|video_pad|><|vision_end|>' }}\n            {%- elif 'text' in item %}\n                {{- item.text }}\n            {%- else %}\n                {{- raise_exception('Unexpected item type in content.') }}\n            {%- endif %}\n        {%- endfor %}\n    {%- elif content is none or content is undefined %}\n        {{- '' }}\n    {%- else %}\n        {{- raise_exception('Unexpected content type.') }}\n    {%- endif %}\n{%- endmacro %}\n{%- if not messages %}\n    {{- raise_exception('No messages provided.') }}\n{%- endif %}\n{%- if tools and tools is iterable and tools is not mapping %}\n    {{- '<|im_start|>system\\n' }}\n    {{- \"# Tools\\n\\nYou have access to the following functions:\\n\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\" }}\n    {{- '\\n\\nIf you choose to call a function ONLY reply in the following format with NO suffix:\\n\\n<tool_call>\\n<function=example_function_name>\\n<parameter=example_parameter_1>\\nvalue_1\\n</parameter>\\n<parameter=example_parameter_2>\\nThis is the value for the second parameter\\nthat can span\\nmultiple lines\\n</parameter>\\n</function>\\n</tool_call>\\n\\n<IMPORTANT>\\nReminder:\\n- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags\\n- Required parameters MUST be specified\\n- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after\\n- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls\\n</IMPORTANT>' }}\n    {%- if messages[0].role == 'system' %}\n        {%- set content = render_content(messages[0].content, false, true)|trim %}\n        {%- if content %}\n            {{- '\\n\\n' + content }}\n        {%- endif %}\n    {%- endif %}\n    {{- '<|im_end|>\\n' }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {%- set content = render_content(messages[0].content, false, true)|trim %}\n        {{- '<|im_start|>system\\n' + content + '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length - 1) %}\n{%- for message in messages[::-1] %}\n    {%- set index = (messages|length - 1) - loop.index0 %}\n    {%- if ns.multi_step_tool and message.role == \"user\" %}\n        {%- set content = render_content(message.content, false)|trim %}\n        {%- if not(content.startswith('<tool_response>') and content.endswith('</tool_response>')) %}\n            {%- set ns.multi_step_tool = false %}\n            {%- set ns.last_query_index = index %}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if ns.multi_step_tool %}\n    {{- raise_exception('No user query found in messages.') }}\n{%- endif %}\n{%- for message in messages %}\n    {%- set content = render_content(message.content, true)|trim %}\n    {%- if message.role == \"system\" %}\n        {%- if not loop.first %}\n            {{- raise_exception('System message must be at the beginning.') }}\n        {%- endif %}\n    {%- elif message.role == \"user\" %}\n        {{- '<|im_start|>' + message.role + '\\n' + content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {%- set reasoning_content = '' %}\n        {%- if message.reasoning_content is string %}\n            {%- set reasoning_content = message.reasoning_content %}\n        {%- else %}\n            {%- if '</think>' in content %}\n                {%- set reasoning_content = content.split('</think>')[0].rstrip('\\n').split('<think>')[-1].lstrip('\\n') %}\n                {%- set content = content.split('</think>')[-1].lstrip('\\n') %}\n            {%- endif %}\n        {%- endif %}\n        {%- set reasoning_content = reasoning_content|trim %}\n        {%- if loop.index0 > ns.last_query_index %}\n            {{- '<|im_start|>' + message.role + '\\n<think>\\n' + reasoning_content + '\\n</think>\\n\\n' + content }}\n        {%- else %}\n            {{- '<|im_start|>' + message.role + '\\n' + content }}\n        {%- endif %}\n        {%- if message.tool_calls and message.tool_calls is iterable and message.tool_calls is not mapping %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if tool_call.function is defined %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {%- if loop.first %}\n                    {%- if content|trim %}\n                        {{- '\\n\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- else %}\n                        {{- '<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- endif %}\n                {%- else %}\n                    {{- '\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                {%- endif %}\n                {%- if tool_call.arguments is mapping %}\n                    {%- for args_name in tool_call.arguments %}\n                        {%- set args_value = tool_call.arguments[args_name] %}\n                        {{- '<parameter=' + args_name + '>\\n' }}\n                        {%- set args_value = args_value | tojson | safe if args_value is mapping or (args_value is sequence and args_value is not string) else args_value | string %}\n                        {{- args_value }}\n                        {{- '\\n</parameter>\\n' }}\n                    {%- endfor %}\n                {%- endif %}\n                {{- '</function>\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.previtem and loop.previtem.role != \"tool\" %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- content }}\n        {{- '\\n</tool_response>' }}\n        {%- if not loop.last and loop.nextitem.role != \"tool\" %}\n            {{- '<|im_end|>\\n' }}\n        {%- elif loop.last %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- else %}\n        {{- raise_exception('Unexpected message role.') }}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n    {%- if enable_thinking is defined and enable_thinking is true %}\n        {{- '<think>\\n' }}\n    {%- else %}\n        {{- '<think>\\n\\n</think>\\n\\n' }}\n    {%- endif %}\n{%- endif %}",
+        "qwen35.ssm.time_step_rank": "16",
+        "qwen35.feed_forward_length": "3584",
+        "qwen35.attention.layer_norm_rms_epsilon": "0.000001",
+        "tokenizer.ggml.eos_token_id": "248046",
+        "qwen35.context_length": "262144",
+        "general.type": "model",
+        "qwen35.attention.head_count": "8",
+        "tokenizer.ggml.padding_token_id": "248055",
+        "qwen35.block_count": "24",
+        "general.repo_url": "https://huggingface.co/unsloth",
+        "general.base_model.0.organization": "Qwen",
+        "general.base_model.count": "1",
+        "general.quantization_version": "2",
+        "general.base_model.0.repo_url": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+        "general.license": "apache-2.0",
+        "quantize.imatrix.dataset": "unsloth_calibration_Qwen3.5-0.8B.txt",
+        "general.name": "Qwen3.5-0.8B",
+        "general.quantized_by": "Unsloth",
+        "general.architecture": "qwen35",
+        "qwen35.ssm.conv_kernel": "4",
+        "general.basename": "Qwen3.5-0.8B",
+        "qwen35.embedding_length": "1024",
+        "general.license.link": "https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE",
+        "qwen35.ssm.state_size": "128",
+        "general.base_model.0.name": "Qwen3.5 0.8B",
+        "general.size_label": "0.8B"
+      }
+    }
+  },
+  "error": {
+    "name": "Error",
+    "message": "page.evaluate: Target page, context or browser has been closed",
+    "stack": "page.evaluate: Target page, context or browser has been closed\n    at generate (/workspace/sites/findr-sources/scripts/benchmark-pal-wllama034.mjs:29:31)\n    at /workspace/sites/findr-sources/scripts/benchmark-pal-wllama034.mjs:30:42"
+  },
+  "status": "stopped_after_failed_or_superseded_trial",
+  "stopReason": "Stopped after the first completed case failed semantic coverage."
+}

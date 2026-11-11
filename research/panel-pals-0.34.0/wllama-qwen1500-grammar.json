@@ -1,0 +1,597 @@
+{
+  "createdAt": "2026-11-11T19:30:39.366Z",
+  "actualInference": true,
+  "physicalPhone": false,
+  "runtime": "@wllama/wllama 3.13.0 CPU WASM single thread",
+  "model": {
+    "label": "qwen1500",
+    "repo": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+    "revision": "91cad51170dc346986eccefdc2dd33a9da36ead9",
+    "file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "bytes": 1117320736,
+    "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+    "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/91cad51170dc346986eccefdc2dd33a9da36ead9/qwen2.5-1.5b-instruct-q4_k_m.gguf"
+  },
+  "cases": [
+    {
+      "id": "multi_task",
+      "question": "I need to swap a device, how do I disable outputs, disable the old one, swap it, then re enable device.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Extract the actions requested by this fire and security engineer. Preserve each separate step and its object in order. Do not answer, supply instructions, add tasks, or duplicate an overall goal repeated in the steps."
+        },
+        {
+          "role": "user",
+          "content": "Equipment: Advanced MxPro 5.\nEngineer: I need to swap a device, how do I disable outputs, disable the old one, swap it, then re enable device."
+        }
+      ]
+    }
+  ],
+  "results": [],
+  "rssSamples": [
+    {
+      "at": 1794425440918,
+      "sumKiB": 635992,
+      "maxRendererKiB": 152836
+    },
+    {
+      "at": 1794425441932,
+      "sumKiB": 781636,
+      "maxRendererKiB": 297288
+    },
+    {
+      "at": 1794425442929,
+      "sumKiB": 1047148,
+      "maxRendererKiB": 560396
+    },
+    {
+      "at": 1794425443926,
+      "sumKiB": 1199436,
+      "maxRendererKiB": 714652
+    },
+    {
+      "at": 1794425444925,
+      "sumKiB": 1447040,
+      "maxRendererKiB": 962400
+    },
+    {
+      "at": 1794425445918,
+      "sumKiB": 1271820,
+      "maxRendererKiB": 785756
+    },
+    {
+      "at": 1794425446919,
+      "sumKiB": 1638920,
+      "maxRendererKiB": 1153064
+    },
+    {
+      "at": 1794425447924,
+      "sumKiB": 1976524,
+      "maxRendererKiB": 1492716
+    },
+    {
+      "at": 1794425448920,
+      "sumKiB": 1966764,
+      "maxRendererKiB": 1480908
+    },
+    {
+      "at": 1794425449919,
+      "sumKiB": 1928784,
+      "maxRendererKiB": 1447200
+    },
+    {
+      "at": 1794425450919,
+      "sumKiB": 1842648,
+      "maxRendererKiB": 1361060
+    },
+    {
+      "at": 1794425451922,
+      "sumKiB": 1853096,
+      "maxRendererKiB": 1371624
+    },
+    {
+      "at": 1794425452920,
+      "sumKiB": 1853096,
+      "maxRendererKiB": 1371624
+    },
+    {
+      "at": 1794425453919,
+      "sumKiB": 1853096,
+      "maxRendererKiB": 1371624
+    },
+    {
+      "at": 1794425454919,
+      "sumKiB": 1853004,
+      "maxRendererKiB": 1371624
+    },
+    {
+      "at": 1794425455919,
+      "sumKiB": 1853004,
+      "maxRendererKiB": 1371624
+    },
+    {
+      "at": 1794425456920,
+      "sumKiB": 1853004,
+      "maxRendererKiB": 1371624
+    },
+    {
+      "at": 1794425457951,
+      "sumKiB": 1853008,
+      "maxRendererKiB": 1371628
+    },
+    {
+      "at": 1794425458935,
+      "sumKiB": 1853012,
+      "maxRendererKiB": 1371628
+    },
+    {
+      "at": 1794425459940,
+      "sumKiB": 1853012,
+      "maxRendererKiB": 1371628
+    },
+    {
+      "at": 1794425460935,
+      "sumKiB": 1853020,
+      "maxRendererKiB": 1371628
+    },
+    {
+      "at": 1794425461932,
+      "sumKiB": 1853020,
+      "maxRendererKiB": 1371628
+    },
+    {
+      "at": 1794425462953,
+      "sumKiB": 1853020,
+      "maxRendererKiB": 1371628
+    },
+    {
+      "at": 1794425463921,
+      "sumKiB": 1853020,
+      "maxRendererKiB": 1371628
+    },
+    {
+      "at": 1794425464921,
+      "sumKiB": 1853020,
+      "maxRendererKiB": 1371628
+    },
+    {
+      "at": 1794425465925,
+      "sumKiB": 1853028,
+      "maxRendererKiB": 1371628
+    },
+    {
+      "at": 1794425466923,
+      "sumKiB": 1853044,
+      "maxRendererKiB": 1371628
+    },
+    {
+      "at": 1794425467926,
+      "sumKiB": 1853044,
+      "maxRendererKiB": 1371628
+    },
+    {
+      "at": 1794425468937,
+      "sumKiB": 1853044,
+      "maxRendererKiB": 1371628
+    },
+    {
+      "at": 1794425469920,
+      "sumKiB": 1853660,
+      "maxRendererKiB": 1371628
+    },
+    {
+      "at": 1794425470924,
+      "sumKiB": 1843708,
+      "maxRendererKiB": 1370100
+    },
+    {
+      "at": 1794425471923,
+      "sumKiB": 1843708,
+      "maxRendererKiB": 1370100
+    },
+    {
+      "at": 1794425472923,
+      "sumKiB": 1843708,
+      "maxRendererKiB": 1370100
+    },
+    {
+      "at": 1794425473921,
+      "sumKiB": 1843520,
+      "maxRendererKiB": 1369968
+    },
+    {
+      "at": 1794425474922,
+      "sumKiB": 1843520,
+      "maxRendererKiB": 1369968
+    },
+    {
+      "at": 1794425475924,
+      "sumKiB": 1843472,
+      "maxRendererKiB": 1369920
+    },
+    {
+      "at": 1794425476926,
+      "sumKiB": 1843472,
+      "maxRendererKiB": 1369920
+    },
+    {
+      "at": 1794425477931,
+      "sumKiB": 1843472,
+      "maxRendererKiB": 1369920
+    },
+    {
+      "at": 1794425478930,
+      "sumKiB": 1843472,
+      "maxRendererKiB": 1369920
+    },
+    {
+      "at": 1794425479936,
+      "sumKiB": 1843420,
+      "maxRendererKiB": 1369920
+    },
+    {
+      "at": 1794425480925,
+      "sumKiB": 1843420,
+      "maxRendererKiB": 1369920
+    },
+    {
+      "at": 1794425481935,
+      "sumKiB": 1843420,
+      "maxRendererKiB": 1369920
+    },
+    {
+      "at": 1794425482940,
+      "sumKiB": 1843420,
+      "maxRendererKiB": 1369920
+    },
+    {
+      "at": 1794425483924,
+      "sumKiB": 1843420,
+      "maxRendererKiB": 1369920
+    },
+    {
+      "at": 1794425484937,
+      "sumKiB": 1843420,
+      "maxRendererKiB": 1369920
+    },
+    {
+      "at": 1794425485927,
+      "sumKiB": 1843420,
+      "maxRendererKiB": 1369920
+    },
+    {
+      "at": 1794425486934,
+      "sumKiB": 1815128,
+      "maxRendererKiB": 1341628
+    },
+    {
+      "at": 1794425487932,
+      "sumKiB": 1815160,
+      "maxRendererKiB": 1341660
+    },
+    {
+      "at": 1794425488930,
+      "sumKiB": 1815780,
+      "maxRendererKiB": 1342280
+    },
+    {
+      "at": 1794425489924,
+      "sumKiB": 1815844,
+      "maxRendererKiB": 1342344
+    },
+    {
+      "at": 1794425490926,
+      "sumKiB": 1815932,
+      "maxRendererKiB": 1342432
+    },
+    {
+      "at": 1794425491931,
+      "sumKiB": 1815988,
+      "maxRendererKiB": 1342488
+    },
+    {
+      "at": 1794425492925,
+      "sumKiB": 1815988,
+      "maxRendererKiB": 1342488
+    },
+    {
+      "at": 1794425493929,
+      "sumKiB": 1816036,
+      "maxRendererKiB": 1342536
+    },
+    {
+      "at": 1794425494924,
+      "sumKiB": 1816156,
+      "maxRendererKiB": 1342656
+    },
+    {
+      "at": 1794425495926,
+      "sumKiB": 1816196,
+      "maxRendererKiB": 1342696
+    },
+    {
+      "at": 1794425496937,
+      "sumKiB": 1816236,
+      "maxRendererKiB": 1342736
+    },
+    {
+      "at": 1794425497927,
+      "sumKiB": 1816296,
+      "maxRendererKiB": 1342796
+    },
+    {
+      "at": 1794425498930,
+      "sumKiB": 1816332,
+      "maxRendererKiB": 1342832
+    },
+    {
+      "at": 1794425499930,
+      "sumKiB": 1815288,
+      "maxRendererKiB": 1342712
+    },
+    {
+      "at": 1794425500931,
+      "sumKiB": 1814512,
+      "maxRendererKiB": 1341896
+    },
+    {
+      "at": 1794425501929,
+      "sumKiB": 1814776,
+      "maxRendererKiB": 1342132
+    },
+    {
+      "at": 1794425502924,
+      "sumKiB": 1815140,
+      "maxRendererKiB": 1342172
+    },
+    {
+      "at": 1794425503925,
+      "sumKiB": 1814456,
+      "maxRendererKiB": 1342208
+    },
+    {
+      "at": 1794425504928,
+      "sumKiB": 1814492,
+      "maxRendererKiB": 1342244
+    },
+    {
+      "at": 1794425505925,
+      "sumKiB": 1813888,
+      "maxRendererKiB": 1341640
+    },
+    {
+      "at": 1794425506931,
+      "sumKiB": 1814024,
+      "maxRendererKiB": 1341800
+    },
+    {
+      "at": 1794425507930,
+      "sumKiB": 1814116,
+      "maxRendererKiB": 1341892
+    },
+    {
+      "at": 1794425508938,
+      "sumKiB": 1814204,
+      "maxRendererKiB": 1341980
+    },
+    {
+      "at": 1794425509930,
+      "sumKiB": 1812444,
+      "maxRendererKiB": 1342048
+    },
+    {
+      "at": 1794425510930,
+      "sumKiB": 1812484,
+      "maxRendererKiB": 1342088
+    },
+    {
+      "at": 1794425511942,
+      "sumKiB": 1811304,
+      "maxRendererKiB": 1340936
+    },
+    {
+      "at": 1794425512931,
+      "sumKiB": 1811424,
+      "maxRendererKiB": 1341056
+    },
+    {
+      "at": 1794425513933,
+      "sumKiB": 1811468,
+      "maxRendererKiB": 1341100
+    },
+    {
+      "at": 1794425514931,
+      "sumKiB": 1811560,
+      "maxRendererKiB": 1341140
+    },
+    {
+      "at": 1794425515938,
+      "sumKiB": 1811736,
+      "maxRendererKiB": 1341384
+    },
+    {
+      "at": 1794425516926,
+      "sumKiB": 1811916,
+      "maxRendererKiB": 1341564
+    },
+    {
+      "at": 1794425517944,
+      "sumKiB": 1812012,
+      "maxRendererKiB": 1341660
+    },
+    {
+      "at": 1794425518929,
+      "sumKiB": 1811960,
+      "maxRendererKiB": 1341608
+    },
+    {
+      "at": 1794425519937,
+      "sumKiB": 1812060,
+      "maxRendererKiB": 1341708
+    },
+    {
+      "at": 1794425520928,
+      "sumKiB": 1812284,
+      "maxRendererKiB": 1341932
+    },
+    {
+      "at": 1794425521928,
+      "sumKiB": 1812420,
+      "maxRendererKiB": 1342020
+    },
+    {
+      "at": 1794425522946,
+      "sumKiB": 1812392,
+      "maxRendererKiB": 1341992
+    },
+    {
+      "at": 1794425523930,
+      "sumKiB": 1812444,
+      "maxRendererKiB": 1342088
+    },
+    {
+      "at": 1794425524934,
+      "sumKiB": 1812784,
+      "maxRendererKiB": 1342428
+    },
+    {
+      "at": 1794425525930,
+      "sumKiB": 1812892,
+      "maxRendererKiB": 1342536
+    }
+  ],
+  "limitations": [
+    "Linux Chromium is not a physical iPhone.",
+    "Warm offline inference is not a cold offline application startup.",
+    "Raw model output is untrusted interpretation, never manufacturer procedure evidence."
+  ],
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "deviceMemoryGB": 16,
+    "logicalProcessors": 5,
+    "jsPi": true
+  },
+  "load": {
+    "readMs": 0,
+    "loadMs": 11221.10000000149,
+    "info": {
+      "_name": "load_res",
+      "success": true,
+      "n_ctx": 1536,
+      "n_batch": 128,
+      "n_ubatch": 64,
+      "n_vocab": 151936,
+      "n_ctx_train": 32768,
+      "n_embd": 1536,
+      "n_layer": 28,
+      "metadata_key": [
+        "general.quantization_version",
+        "tokenizer.chat_template",
+        "tokenizer.ggml.bos_token_id",
+        "tokenizer.ggml.padding_token_id",
+        "tokenizer.ggml.eos_token_id",
+        "tokenizer.ggml.pre",
+        "tokenizer.ggml.model",
+        "qwen2.attention.layer_norm_rms_epsilon",
+        "qwen2.rope.freq_base",
+        "qwen2.attention.head_count_kv",
+        "qwen2.embedding_length",
+        "qwen2.context_length",
+        "general.type",
+        "qwen2.attention.head_count",
+        "qwen2.feed_forward_length",
+        "general.architecture",
+        "qwen2.block_count",
+        "general.file_type",
+        "general.size_label",
+        "tokenizer.ggml.add_bos_token",
+        "general.version",
+        "general.finetune",
+        "general.name"
+      ],
+      "metadata_val": [
+        "2",
+        "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0]['role'] == 'system' %}\n        {{- messages[0]['content'] }}\n    {%- else %}\n        {{- 'You are Qwen, created by Alibaba Cloud. You are a helpful assistant.' }}\n    {%- endif %}\n    {{- \"\\n\\n# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}}\\n</tool_call><|im_end|>\\n\" }}\n{%- else %}\n    {%- if messages[0]['role'] == 'system' %}\n        {{- '<|im_start|>system\\n' + messages[0]['content'] + '<|im_end|>\\n' }}\n    {%- else %}\n        {{- '<|im_start|>system\\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- for message in messages %}\n    {%- if (message.role == \"user\") or (message.role == \"system\" and not loop.first) or (message.role == \"assistant\" and not message.tool_calls) %}\n        {{- '<|im_start|>' + message.role + '\\n' + message.content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {{- '<|im_start|>' + message.role }}\n        {%- if message.content %}\n            {{- '\\n' + message.content }}\n        {%- endif %}\n        {%- for tool_call in message.tool_calls %}\n            {%- if tool_call.function is defined %}\n                {%- set tool_call = tool_call.function %}\n            {%- endif %}\n            {{- '\\n<tool_call>\\n{\"name\": \"' }}\n            {{- tool_call.name }}\n            {{- '\", \"arguments\": ' }}\n            {{- tool_call.arguments | tojson }}\n            {{- '}\\n</tool_call>' }}\n        {%- endfor %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if (loop.index0 == 0) or (messages[loop.index0 - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- message.content }}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n{%- endif %}\n",
+        "151643",
+        "151643",
+        "151645",
+        "qwen2",
+        "gpt2",
+        "0.000001",
+        "1000000.000000",
+        "2",
+        "1536",
+        "32768",
+        "model",
+        "12",
+        "8960",
+        "qwen2",
+        "28",
+        "15",
+        "1.8B",
+        "false",
+        "v0.1",
+        "qwen2.5-1.5b-instruct",
+        "qwen2.5-1.5b-instruct"
+      ],
+      "token_bos": 151643,
+      "token_eos": 151645,
+      "token_eot": 151645,
+      "list_tokens_eog": [
+        128247,
+        151643,
+        151645,
+        151662,
+        151663,
+        151664
+      ],
+      "add_bos_token": false,
+      "add_eos_token": false,
+      "has_encoder": false,
+      "token_decoder_start": -1,
+      "media_marker": "<__media_2VVPt8BnNcCJlm3qLl4NUNVPkBn3Hc3a__>",
+      "has_image_input": false,
+      "has_audio_input": false,
+      "has_audio_output": false,
+      "has_chat": true,
+      "has_audio_stream": false,
+      "has_live_asr": false,
+      "audio_input_rate": 0,
+      "audio_output_rate": 0,
+      "audio_voices": [],
+      "metadata": {
+        "general.quantization_version": "2",
+        "tokenizer.chat_template": "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0]['role'] == 'system' %}\n        {{- messages[0]['content'] }}\n    {%- else %}\n        {{- 'You are Qwen, created by Alibaba Cloud. You are a helpful assistant.' }}\n    {%- endif %}\n    {{- \"\\n\\n# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}}\\n</tool_call><|im_end|>\\n\" }}\n{%- else %}\n    {%- if messages[0]['role'] == 'system' %}\n        {{- '<|im_start|>system\\n' + messages[0]['content'] + '<|im_end|>\\n' }}\n    {%- else %}\n        {{- '<|im_start|>system\\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- for message in messages %}\n    {%- if (message.role == \"user\") or (message.role == \"system\" and not loop.first) or (message.role == \"assistant\" and not message.tool_calls) %}\n        {{- '<|im_start|>' + message.role + '\\n' + message.content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {{- '<|im_start|>' + message.role }}\n        {%- if message.content %}\n            {{- '\\n' + message.content }}\n        {%- endif %}\n        {%- for tool_call in message.tool_calls %}\n            {%- if tool_call.function is defined %}\n                {%- set tool_call = tool_call.function %}\n            {%- endif %}\n            {{- '\\n<tool_call>\\n{\"name\": \"' }}\n            {{- tool_call.name }}\n            {{- '\", \"arguments\": ' }}\n            {{- tool_call.arguments | tojson }}\n            {{- '}\\n</tool_call>' }}\n        {%- endfor %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if (loop.index0 == 0) or (messages[loop.index0 - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- message.content }}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n{%- endif %}\n",
+        "tokenizer.ggml.bos_token_id": "151643",
+        "tokenizer.ggml.padding_token_id": "151643",
+        "tokenizer.ggml.eos_token_id": "151645",
+        "tokenizer.ggml.pre": "qwen2",
+        "tokenizer.ggml.model": "gpt2",
+        "qwen2.attention.layer_norm_rms_epsilon": "0.000001",
+        "qwen2.rope.freq_base": "1000000.000000",
+        "qwen2.attention.head_count_kv": "2",
+        "qwen2.embedding_length": "1536",
+        "qwen2.context_length": "32768",
+        "general.type": "model",
+        "qwen2.attention.head_count": "12",
+        "qwen2.feed_forward_length": "8960",
+        "general.architecture": "qwen2",
+        "qwen2.block_count": "28",
+        "general.file_type": "15",
+        "general.size_label": "1.8B",
+        "tokenizer.ggml.add_bos_token": "false",
+        "general.version": "v0.1",
+        "general.finetune": "qwen2.5-1.5b-instruct",
+        "general.name": "qwen2.5-1.5b-instruct"
+      }
+    }
+  },
+  "error": {
+    "name": "Error",
+    "message": "page.evaluate: Target page, context or browser has been closed",
+    "stack": "page.evaluate: Target page, context or browser has been closed\n    at generate (/workspace/sites/findr-sources/scripts/benchmark-pal-wllama034.mjs:29:31)\n    at /workspace/sites/findr-sources/scripts/benchmark-pal-wllama034.mjs:30:42"
+  },
+  "status": "stopped_after_failed_or_superseded_trial",
+  "stopReason": "Stopped after model load before result; superseded by quoted-data prompt."
+}

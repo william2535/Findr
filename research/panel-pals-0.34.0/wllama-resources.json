@@ -1,0 +1,133 @@
+{
+  "researchOnly": true,
+  "productionRuntimeChanged": false,
+  "npm": {
+    "runtime": {
+      "dist": {
+        "shasum": "2b8d7ce0b8b91b0d33a7c5bef1e847825bd65737",
+        "tarball": "https://registry.npmjs.org/@wllama/wllama/-/wllama-3.13.0.tgz",
+        "fileCount": 84,
+        "integrity": "sha512-ZvoRdQAn+E+18EvQ9qS036gudiI9rbZRBJgG/qNICPPwrA0Y6SMMdbziz/j7K/0WxcbJlhaRraVIYsnEy732NA==",
+        "signatures": [
+          {
+            "sig": "MEYCIQD/nmDZIWgSn6j09jjyvn+eroADzV/C2rVGV1UX8QXs5wIhANEbpLwGcKFF3q8ldM48uCkEbKaxDqbriEiLjBrb+dW0",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@wllama%2fwllama@3.13.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 12225282
+      },
+      "name": "@wllama/wllama",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/ngxson/wllama.git",
+        "type": "git"
+      },
+      "version": "3.13.0"
+    },
+    "compat": {
+      "dist": {
+        "shasum": "a87e1db5430ce33dbe962e8985775af7df56db0c",
+        "tarball": "https://registry.npmjs.org/@wllama/wllama-compat/-/wllama-compat-3.13.0.tgz",
+        "fileCount": 5,
+        "integrity": "sha512-MSWwyzVXpwkstvIGzOsQ9jlRm8kY5S5J0Gdw4E6M9mXqhgO/5tj+YNfxSoqN1GvsAOwui95JPtwX3hO6VZkbzg==",
+        "signatures": [
+          {
+            "sig": "MEQCIHwWRfAJSLJIf8GiaFjDOxqEW+hjh9wIyTLiiZ2sYZIfAiAJoOeJFwrlkebdx51AdPY2k6skuFMEKIRaTX8wgFbZ6A==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@wllama%2fwllama-compat@3.13.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 18933127
+      },
+      "name": "@wllama/wllama-compat",
+      "license": "MIT",
+      "repository": {
+        "url": "git+https://github.com/ngxson/wllama.git",
+        "type": "git"
+      },
+      "version": "3.13.0"
+    }
+  },
+  "runtimeFiles": [
+    {
+      "path": "package/esm/index.min.js",
+      "bytes": 219295,
+      "sha256": "e7f3745ee508c111c22d178d23c52cc74016dd8cec39e4600d87e28d287d7981"
+    },
+    {
+      "path": "package/esm/wasm/wllama.wasm",
+      "bytes": 10244628,
+      "sha256": "79ac5be917b71d50571a4f584436a9f6baf6b6e57719d094ed8bd950e9a65780"
+    },
+    {
+      "path": "compat/package/wasm/wllama.js",
+      "bytes": 173601,
+      "sha256": "942062a7495790a317061b27a6bcd2bd3b247e2ddef53a069baf5abb07284758"
+    },
+    {
+      "path": "compat/package/wasm/wllama.wasm",
+      "bytes": 18755784,
+      "sha256": "35df8c1e2f7dbd74b8e8b01054fb9f1fbe86cf566945fbf4cef3965855a8b92e"
+    }
+  ],
+  "models": [
+    {
+      "label": "qwen1500",
+      "repo": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+      "revision": "91cad51170dc346986eccefdc2dd33a9da36ead9",
+      "file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "bytes": 1117320736,
+      "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/91cad51170dc346986eccefdc2dd33a9da36ead9/qwen2.5-1.5b-instruct-q4_k_m.gguf"
+    },
+    {
+      "label": "qwen35_800",
+      "repo": "unsloth/Qwen3.5-0.8B-GGUF",
+      "revision": "6ab461498e2023f6e3c1baea90a8f0fe38ab64d0",
+      "file": "Qwen3.5-0.8B-Q4_K_M.gguf",
+      "bytes": 532517120,
+      "sha256": "bd258782e35f7f458f8aced1adc053e6e92e89bc735ba3be89d38a06121dc517",
+      "url": "https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/6ab461498e2023f6e3c1baea90a8f0fe38ab64d0/Qwen3.5-0.8B-Q4_K_M.gguf"
+    },
+    {
+      "label": "qwen35_2000",
+      "repo": "unsloth/Qwen3.5-2B-GGUF",
+      "revision": "f6d5376be1edb4d416d56da11e5397a961aca8ae",
+      "file": "Qwen3.5-2B-Q4_K_M.gguf",
+      "bytes": 1280835840,
+      "sha256": "aaf42c8b7c3cab2bf3d69c355048d4a0ee9973d48f16c731c0520ee914699223",
+      "url": "https://huggingface.co/unsloth/Qwen3.5-2B-GGUF/resolve/f6d5376be1edb4d416d56da11e5397a961aca8ae/Qwen3.5-2B-Q4_K_M.gguf",
+      "upstream": {
+        "repo": "Qwen/Qwen3.5-2B",
+        "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+        "license": "Apache-2.0"
+      }
+    }
+  ],
+  "docs": [
+    "https://github.com/ngxson/wllama",
+    "https://www.npmjs.com/package/@wllama/wllama",
+    "https://www.npmjs.com/package/@wllama/wllama-compat",
+    "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+    "https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF",
+    "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+    "https://huggingface.co/unsloth/Qwen3.5-2B-GGUF",
+    "https://huggingface.co/Qwen/Qwen3.5-2B"
+  ],
+  "caveats": [
+    "Compatibility resources must be bundled and explicitly configured; default Safari compatibility URLs use a CDN.",
+    "Model weights remain outside source; this manifest does not download or enable a new runtime.",
+    "LFM2.5-1.2B was inspected/downloaded but not run: LFM Open License1.0 commercial revenue threshold makes it unsuitable as an unrestricted default."
+  ]
+}

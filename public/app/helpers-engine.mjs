@@ -4,8 +4,10 @@
 import {generateLocalReply, LOCAL_MODEL} from './local-language.mjs';
 import {buildManualIndex, retrieveManualPassages, MANUAL_RETRIEVAL_VERSION} from './manual-retrieval.mjs';
 import {prepareManualAnswer} from './manual-answers.mjs';
+import {interpretHelperDialogue,limitedHelperDialogue} from './helper-dialogue.mjs';
+import {answerHelperTasks} from './helper-task-evidence.mjs';
 
-export const HELPERS_ENGINE_VERSION='2026-11-11.6';
+export const HELPERS_ENGINE_VERSION='2026-11-11.7';
 const list=value=>Array.isArray(value)?value:[];
 const str=value=>String(value??'');
 const compact=value=>str(value).normalize('NFC').replace(/\u0000/g,'').replace(/\s+/g,' ').trim();
@@ -19,7 +21,7 @@ const object=value=>value&&typeof value==='object'&&!Array.isArray(value)?value:
 const controls=value=>/(?:ignore|override|disregard).{0,45}(?:system|developer|previous|earlier).{0,30}(?:prompt|instructions)|(?:system|developer) prompt|reveal.{0,25}(?:secret|api.?key)|(?:execute|run).{0,20}(?:javascript|shell command|script)|(?:read|access).{0,25}other helpers?/i.test(str(value));
 const STOP=new Set('a an and are as at be been by can could do does for from has have how i in is it its me of on or that the their them then there these this to was were what when where which will with would you your please tell show explain need want help using use panel system device manual start starting begin perform carry out get set view see check find make put fault error code meaning means mean says saying message display screen shows showing reads currently now still report reported issue problem'.split(' '));
 const ALIASES={walktest:['walk','test'],histry:['history','events','log'],histroy:['history','events','log'],history:['events','event','log'],event:['history','log'],logs:['history','event'],psu:['power','supply'],poe:['power','ethernet'],eol:['end','line'],deol:['double','balanced','end','line'],volts:['voltage'],voltage:['volts','supply'],compatible:['compatibility','supported','protocol'],compatibility:['compatible','supported','protocol'],offline:['offline','communication','comms'],comms:['communication','communications'],communication:['comms','communications'],aspiration:['aspirating','flow'],flow:['airflow','flow'],walk:['walk','walking'],test:['test','testing'],reset:['reset','resetting'],wiring:['wiring','terminal'],terminals:['terminal','wiring'],disable:['disable','disabled','disablement'],enable:['enable','enabled']};
-const words=value=>(fold(value).match(/[\p{L}\p{N}][\p{L}\p{N}_.+-]*/gu)||[]).map(word=>word.replace(/[.]+$/,'')).filter(word=>word.length>1);
+const words=value=>(fold(value).replace(/\bre[ -]+enabl/g,'enabl').match(/[\p{L}\p{N}][\p{L}\p{N}_.+-]*/gu)||[]).map(word=>word.replace(/[.]+$/,'')).filter(word=>word.length>1);
 const stem=word=>word.length>4&&!/\d/.test(word)?word.replace(/ies$/,'y').replace(/(?:ing|ed|s)$/,''):word;
 function near(a,b){if(a===b)return true;if(a.length<5||b.length<5||/\d/.test(a+b)||Math.abs(a.length-b.length)>1)return false;if(a.length===b.length){const differing=[];for(let i=0;i<a.length;i++)if(a[i]!==b[i])differing.push(i);return differing.length===1||differing.length===2&&differing[1]===differing[0]+1&&a[differing[0]]===b[differing[1]]&&a[differing[1]]===b[differing[0]];}let i=0,j=0,edits=0;while(i<a.length&&j<b.length){if(a[i]===b[j]){i++;j++;continue;}if(++edits>1)return false;if(a.length>b.length)i++;else j++;}return true;}
 function sourceRef(p){return {sourceId:p.id,citationId:p.citationId,manualId:p.manualId,contentHash:p.contentHash,processorVersion:p.processorVersion||'',title:p.title||'Saved manual',revision:p.revision||'',models:list(p.models),page:p.page,pdfPage:p.page,printedPage:p.printedPage??null,section:p.section||null,method:p.method||'text',requiresSourceReview:p.method==='ocr',quote:compact(p.text),excerpt:compact(p.text)};}
@@ -191,8 +193,16 @@ function parseSelection(raw,request){
  return {valid:true,source:source==='NONE'?null:source,next:request.questionLabels.includes(next)?next:null,raw:text};
 }
 function sourceWarnings(passages){const result=[];if(passages.some(p=>p.method==='ocr'))result.push('Some of this text was read with OCR. Check the page image before relying on numbers or symbols.');return result;}
+function documentFamily(p){
+ // A user guide and an installation guide are complementary documents, even
+ // when their revision numbers differ. Compare editions of the same document,
+ // not every document which happens to cover the same panel.
+ const number=compact(p.documentNumber||p.documentId);
+ if(number)return 'number:'+fold(number);
+ return 'title:'+fold(p.title).replace(/\b(?:edition|revision|rev\.?|version|ver\.?)\s*[:.-]?\s*[a-z0-9][\w.-]*(?:\s+[a-z])?\b/g,'').replace(/\bmanual\b/g,'').replace(/\s+/g,' ').trim();
+}
 function conflicts(passages){
- const byManual=new Map();for(const p of passages){const key=p.manufacturer+'|'+list(p.models).map(modelKey).sort().join('|');if(!byManual.has(key))byManual.set(key,[]);byManual.get(key).push(p);}
+ const byManual=new Map();for(const p of passages){const key=p.manufacturer+'|'+list(p.models).map(modelKey).sort().join('|')+'|'+documentFamily(p);if(!byManual.has(key))byManual.set(key,[]);byManual.get(key).push(p);}
  const results=[];
  for(const items of byManual.values()){
   const editions=unique(items.map(p=>p.contentHash));if(editions.length<2)continue;
@@ -231,7 +241,7 @@ function fallbackMessage({reason,passages=[],error,empty=false,withholdInstructi
  * local helper store; no technical answer is generated from another helper or
  * sent to a cloud service. infer is injectable only for deterministic tests.
  */
-export async function answerHelper({helper,conversation,text='',indexes=[],analyses=[],procedures=[],modelReadiness,manualOnly=false,signal,onProgress,onToken,infer=generateLocalReply,now=Date.now()}={}){
+export async function answerHelper({helper,conversation,text='',indexes=[],analyses=[],procedures=[],taskProcedures=[],modelReadiness,manualOnly=false,signal,onProgress,onToken,infer=generateLocalReply,now=Date.now()}={}){
  const question=compact(text),c=normalizeHelperConversation(conversation),time=at(now);
  if(!question)throw Object.assign(Error('Enter a question or observation.'),{code:'HELPER_INPUT_REQUIRED'});
  if(signal?.aborted)throw new DOMException('Reply cancelled.','AbortError');
@@ -253,6 +263,39 @@ export async function answerHelper({helper,conversation,text='',indexes=[],analy
  const asReference=(reason,error)=>reviewed.status==='answered'&&reviewed.coverage==='reviewed_manual_procedure'?{text:reason+'\n\nHere are the documented steps:\n\n'+reviewed.text,kind:'manual_search',mode:'manual-search',modelUsed:false,sourceRefs:reviewed.sourceRefs,quickReplies:[],coverage:reviewed.coverage,steps:reviewed.steps,procedureId:reviewed.procedureId,operation:reviewed.operation,...(error?{error:{code:error.code||'MODEL_RUNTIME_ERROR',message:error.message}}:{})}:fallbackMessage({reason,passages,withholdInstructions:hazardous(question,passages,null),error});
  const outside=foreignModel(question,helper,passages);
  if(outside)return finish({text:'I can’t establish that for '+outside+' from this pal’s manuals. Open a pal for that exact model, or add its manual before using model-specific instructions.',kind:'unsupported',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:[],coverage:'different_model'});
+ // Interpret the whole request before choosing passages. The old selector is
+ // retained for older inference callers, but it cannot collapse a compound
+ // request or a saved task follow-up back into a single source label.
+ const readiness=modelReadiness||{},explicitTasks=limitedHelperDialogue({question,previous:c.context.dialogue}).tasks;
+ const activePlan=list(c.context.dialogue?.tasks).length>0,compound=explicitTasks.length>1;
+ const modelAvailable=!manualOnly&&readiness.supported!==false&&readiness.installed!==false&&!readiness.error&&!readiness.lastRuntimeError&&!!(readiness.ready||readiness.installed||readiness.canGenerate);
+ const dialogueCapable=readiness.model?.dialogueVersion===1;
+ const canInterpret=modelAvailable&&dialogueCapable;
+ if((compound||activePlan||dialogueCapable)&&sources.length&&!(reviewed.status==='answered'&&reviewed.coverage==='reviewed_manual_procedure'&&!compound&&!activePlan)){
+  onProgress?.({phase:'interpret',message:canInterpret?'Understanding your request…':'Separating the requested tasks…'});
+  let understood;
+  const interpretationContext={...c,context:{...c.context,pendingQuestion:turn.pending||c.context.pendingQuestion}};
+  try{understood=await interpretHelperDialogue({question,helper,conversation:interpretationContext,infer:canInterpret?infer:null,signal,onProgress,now:time,format:['actions','tasks-json'].includes(readiness.model?.dialogueFormat)?readiness.model.dialogueFormat:'json',resolveExplicitContext:true});}
+  catch(error){if(error?.name==='AbortError')return finish({text:'Stopped there. Your question and recorded observations are still saved.',kind:'cancelled',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:[],coverage:'cancelled'});throw error;}
+  c.context.dialogue=understood.dialogue;
+  for(const item of list(understood.interpretation.observations))noteFields(c.context,item,time);
+  const hasTasks=list(understood.dialogue.tasks).length>0;
+  if(hasTasks&&['procedure','followup','correction','clarification'].includes(understood.interpretation.intent)){
+   onProgress?.({phase:'retrieval',message:'Checking the manual for each part…'});
+   const pack=value=>Array.isArray(value)?value:list(value?.procedures);
+   const detail=answerHelperTasks({helper,conversation:c,dialogue:understood.dialogue,interpretation:understood.interpretation,indexes,analyses,procedures:{procedures:[...pack(procedures),...pack(taskProcedures)]},retrieve:retrieveHelperEvidence,scopeIndexes:scopeHelperIndexes,prepareAnswer:prepareManualAnswer,findConflicts:conflicts,hasRequiredPrecautions:(query,passages)=>!hazardous(query,passages,null)});
+   if(detail){
+    c.context.dialogue=detail.dialogue;delete detail.dialogue;
+    if(c.context.pendingQuestion?.field==='task_detail')c.context.pendingQuestion=null;
+    const resolved=understood.resolution==='context';
+    const prefix=understood.modelUsed||resolved&&canInterpret?'':resolved?'Manual search — I’m using your saved request and this reply. No local AI was used.\n\n':canInterpret?'Manual search — the local AI couldn’t reliably interpret this request. I’ve separated only the explicit tasks you wrote.\n\n':'Manual search — no local AI was used. I’ve separated the explicit tasks you wrote.\n\n';
+    return finish({...detail,text:prefix+detail.text,mode:understood.modelUsed?'local-ai':resolved&&canInterpret?'conversation-context':'manual-search',modelUsed:understood.modelUsed,...(understood.model?{model:{...understood.model,role:'request_interpretation'}}:{}),interpretation:understood.interpretation,interpretationResolution:understood.resolution||'model',limitedInterpretation:understood.limitedFallback,...(understood.fallbackReason?{interpretationFailure:understood.fallbackReason}:{})});
+   }
+  }
+  // A valid observed fault continues through the explicit diagnostic rules.
+  // A failed interpretation is never relabelled as successful comprehension.
+  if(understood.limitedFallback&&dialogueCapable&&!diagnosing)return finish({...asReference('Manual search — I couldn’t reliably interpret that reply. Your full message is saved; tell me which part you want to focus on.'),interpretationFailure:understood.fallbackReason});
+ }
  if(reviewed.status==='scope_required'){const field=reviewed.clarification?.kind==='variant'?'variant':'model';if(c.context.answeredQuestions.some(q=>q.field===field))return finish({text:'I still need the exact installed model or variant before we can use this procedure.',kind:'unsupported',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:[],coverage:'variant_required'});return finish({text:reviewed.clarification?.text||'Which variant is installed? It could change these steps.',kind:'clarification',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:list(reviewed.clarification?.options).map(o=>o.label),coverage:'variant_required',pendingQuestion:{field,text:reviewed.clarification?.text||'Which installed variant?',key:'model-scope'}});}
  // The complete procedure has already passed its pinned-PDF, page-quote and
  // equipment-scope checks. Loading the model cannot add evidence to those
@@ -264,7 +307,6 @@ export async function answerHelper({helper,conversation,text='',indexes=[],analy
  const questions=diagnosing?nextQuestions(c):[];
  if(clarifyPending){const selected=QUESTION_OPTIONS.find(q=>q.field===c.context.pendingQuestion?.field);if(selected){const details={display:'Copy the exact wording on the display, including any code.',current:'Is the same fault message visible on the display at the moment, or has it cleared?',location:'Does the fault show a location, device name or address?',checks:'What have you already inspected or measured, and what was the result?',timing:'Roughly when did it first happen? Was any work done or anything changed just before it?',extent:'Is it happening at one device or location, or in several places?',pattern:'Does the indication stay on, or does it clear and come back?',access:'What information, equipment or access is missing right now?'};questions.splice(0,questions.length,{...selected,text:details[selected.field]||selected.text});}}
  if(!passages.length&&(!diagnosing||!questions.length||!sources.length))return finish(fallbackMessage({empty:true}));
- const readiness=modelReadiness||{};
  if(manualOnly||readiness.supported===false||readiness.installed===false||readiness.error||readiness.lastRuntimeError||!(readiness.ready||readiness.installed||readiness.canGenerate)){
   const unavailable=manualOnly?'Manual search — I’m showing the saved-manual references for this reply. No local AI was used.':readiness.supported===false?'Manual search — this device can’t run the local AI engine, but you can still use your saved manuals.':readiness.error||readiness.lastRuntimeError?'Manual search — the local AI isn’t available on this device right now.':'Manual search — prepare the local AI engine when you’re ready to use AI assistance.';
   return finish(asReference(unavailable,readiness.error||readiness.lastRuntimeError));

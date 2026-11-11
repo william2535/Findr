@@ -1,3 +1,11 @@
+## Multi-task Panel Pals — web 0.34.0
+
+Compound requests now retain an ordered task plan, separate manual evidence and missing details for each task. Step-number follow-ups, explicit corrections, component changes and raw observations stay with the current saved conversation. Requested work is never marked as performed. Reviewed MxPro5 user-guide procedures cover sounder and individual-input disabling/enabling; physical device replacement still requires the relevant device/protocol instructions. Generic outputs and unspecified devices are clarified rather than silently mapped to a different operation.
+
+Everything remains local. The existing compact reference model stays the default. **Local resources** offers an explicitly experimental **Qwen3.5-2B Q4_K_M** profile: 1,280,835,840 bytes plus 29,395,450 bytes of bundled runtime assets. Download, integrity verification and a real local hardware/syntax trial must succeed before explicit activation. That trial does not certify language quality. Saved PDFs, compact-model files and conversations are retained when switching or cancelling.
+
+Measured raw semantic results were mixed (3/5 benchmark requests understood; correction and external-PSU requests failed). The application validates model interpretation against the actual request and retains an accurately labelled manual-search fallback. CPU replies can exceed a minute and peak memory in the tested Chromium renderer was about 2.2 GiB. No general conversational-intelligence or physical-iPhone capability claim is made. No cloud inference is used. See [implementation, evidence and limits](research/panel-pals-0.34.0/README.md). Android remains 0.14.1.
+
 ## Panel Pals and support-call handover — web 0.33.0
 
 Helpers are now **Panel Pals**. Existing saved pals, conversations, manuals, exports and internal routes remain compatible. A pal's chosen icon sits beside its replies, with more conversational wording around the same sourced information and evidence rules.

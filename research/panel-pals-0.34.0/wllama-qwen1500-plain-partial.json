@@ -1,0 +1,995 @@
+{
+  "createdAt": "2026-11-11T19:16:17.203Z",
+  "actualInference": true,
+  "physicalPhone": false,
+  "runtime": "@wllama/wllama 3.13.0 CPU WASM single thread",
+  "model": {
+    "label": "qwen1500",
+    "repo": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+    "revision": "91cad51170dc346986eccefdc2dd33a9da36ead9",
+    "file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "bytes": 1117320736,
+    "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+    "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/91cad51170dc346986eccefdc2dd33a9da36ead9/qwen2.5-1.5b-instruct-q4_k_m.gguf"
+  },
+  "cases": [
+    {
+      "id": "multi_task",
+      "question": "I need to swap a device, how do I disable outputs, disable the old one, swap it, then re enable device.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "List each separate action this engineer is asking about, in order. Do not answer, give technical instructions, or duplicate the overall goal. One action per line."
+        },
+        {
+          "role": "user",
+          "content": "I need to swap a device, how do I disable outputs, disable the old one, swap it, then re enable device."
+        }
+      ]
+    },
+    {
+      "id": "followup_step_two",
+      "question": "What about step two?",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Identify which previous action the engineer is referring to. Reply with its number and label only."
+        },
+        {
+          "role": "user",
+          "content": "Previous requested actions: 1. Disable outputs. 2. Disable the old device. 3. Replace the device. 4. Re-enable the device.\nWhat about step two?"
+        }
+      ]
+    },
+    {
+      "id": "correct_target",
+      "question": "meant sounders, not all outputs",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Apply this correction to the previous requested actions. Return the whole updated list, one action per line. Do not give technical instructions."
+        },
+        {
+          "role": "user",
+          "content": "Previous requested actions: 1. Disable outputs. 2. Disable the old device. 3. Replace the device. 4. Re-enable the device.\nmeant sounders, not all outputs"
+        }
+      ]
+    },
+    {
+      "id": "multiple_readings",
+      "question": "The PSU output is 24.1 V with the load connected, the first detector is 23.8 volts, and the last detector reads 0 V. The fault is still showing.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "List every observation the engineer reported, using their exact words. Do not interpret readings, propose tests or add facts."
+        },
+        {
+          "role": "user",
+          "content": "The PSU output is 24.1 V with the load connected, the first detector is 23.8 volts, and the last detector reads 0 V. The fault is still showing."
+        }
+      ]
+    },
+    {
+      "id": "two_procedures",
+      "question": "How do I start a walk test and then view the event history on this panel?",
+      "messages": [
+        {
+          "role": "system",
+          "content": "List each separate action this engineer is asking about, in order. Do not answer, give technical instructions, or duplicate the overall goal. One action per line."
+        },
+        {
+          "role": "user",
+          "content": "How do I start a walk test and then view the event history on this panel?"
+        }
+      ]
+    },
+    {
+      "id": "trade_spelling",
+      "question": "Need to disbale the sounders, swap the optical detctor and re-enable it.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "List each separate action this engineer is asking about, in order. Do not answer, give technical instructions, or duplicate the overall goal. One action per line."
+        },
+        {
+          "role": "user",
+          "content": "Need to disbale the sounders, swap the optical detctor and re-enable it."
+        }
+      ]
+    },
+    {
+      "id": "explicit_equipment_change",
+      "question": "Leave the panel for now. I am working on the external PSU: check its output voltage and inspect its battery leads.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "List each separate action this engineer is asking about, in order. Do not answer, give technical instructions, or duplicate the overall goal. One action per line."
+        },
+        {
+          "role": "user",
+          "content": "Leave the panel for now. I am working on the external PSU: check its output voltage and inspect its battery leads."
+        }
+      ]
+    },
+    {
+      "id": "blocked_test",
+      "question": "I cannot access the expander. The detector is still showing a resistance fault.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "List every observation the engineer reported, using their exact words. Do not interpret readings, propose tests or add facts."
+        },
+        {
+          "role": "user",
+          "content": "I cannot access the expander. The detector is still showing a resistance fault."
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "multi_task",
+      "text": "disable outputs of the old device\nswap the device\ndisable outputs of the new device\nswap the devices\nre-enable outputs of the new device",
+      "generationMs": 40598,
+      "firstTokenMs": 27247.20000000298,
+      "usage": null,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 71,
+        "prompt_ms": 26257.199,
+        "prompt_per_token_ms": 369.8197042253521,
+        "prompt_per_second": 2.7040203336235518,
+        "predicted_n": 30,
+        "predicted_ms": 14306.601,
+        "predicted_per_token_ms": 493.33106896551726,
+        "predicted_per_second": 2.027036330991547
+      }
+    },
+    {
+      "id": "followup_step_two",
+      "text": "2. Disable the old device.",
+      "generationMs": 30934.300000000745,
+      "firstTokenMs": 27992.10000000149,
+      "usage": null,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 70,
+        "prompt_ms": 26632.401,
+        "prompt_per_token_ms": 380.4628714285715,
+        "prompt_per_second": 2.6283773663516103,
+        "predicted_n": 8,
+        "predicted_ms": 4276.3,
+        "predicted_per_token_ms": 610.9,
+        "predicted_per_second": 1.636929120969062
+      }
+    },
+    {
+      "id": "correct_target",
+      "text": "1. Disable sounders. 2. Disable the old device. 3. Replace the device. 4. Re-enable the device.",
+      "generationMs": 47843.699999999255,
+      "firstTokenMs": 34406.300000000745,
+      "usage": null,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 80,
+        "prompt_ms": 33400.601,
+        "prompt_per_token_ms": 417.5075125,
+        "prompt_per_second": 2.3951664821839582,
+        "predicted_n": 30,
+        "predicted_ms": 14426.799,
+        "predicted_per_token_ms": 497.47582758620695,
+        "predicted_per_second": 2.0101479198538774
+      }
+    }
+  ],
+  "rssSamples": [
+    {
+      "at": 1794424578890,
+      "sumKiB": 539848,
+      "maxRendererKiB": 91720
+    },
+    {
+      "at": 1794424579887,
+      "sumKiB": 540972,
+      "maxRendererKiB": 91736
+    },
+    {
+      "at": 1794424580881,
+      "sumKiB": 541800,
+      "maxRendererKiB": 91740
+    },
+    {
+      "at": 1794424581891,
+      "sumKiB": 656304,
+      "maxRendererKiB": 169948
+    },
+    {
+      "at": 1794424582885,
+      "sumKiB": 620772,
+      "maxRendererKiB": 134804
+    },
+    {
+      "at": 1794424583891,
+      "sumKiB": 616664,
+      "maxRendererKiB": 131400
+    },
+    {
+      "at": 1794424584900,
+      "sumKiB": 703088,
+      "maxRendererKiB": 217824
+    },
+    {
+      "at": 1794424585891,
+      "sumKiB": 661640,
+      "maxRendererKiB": 176364
+    },
+    {
+      "at": 1794424586893,
+      "sumKiB": 637592,
+      "maxRendererKiB": 153300
+    },
+    {
+      "at": 1794424587880,
+      "sumKiB": 836328,
+      "maxRendererKiB": 354268
+    },
+    {
+      "at": 1794424588903,
+      "sumKiB": 1177520,
+      "maxRendererKiB": 695456
+    },
+    {
+      "at": 1794424589889,
+      "sumKiB": 1500968,
+      "maxRendererKiB": 1018792
+    },
+    {
+      "at": 1794424590896,
+      "sumKiB": 1449148,
+      "maxRendererKiB": 966980
+    },
+    {
+      "at": 1794424591894,
+      "sumKiB": 1795768,
+      "maxRendererKiB": 1313564
+    },
+    {
+      "at": 1794424592891,
+      "sumKiB": 2122668,
+      "maxRendererKiB": 1639176
+    },
+    {
+      "at": 1794424593905,
+      "sumKiB": 1930864,
+      "maxRendererKiB": 1448564
+    },
+    {
+      "at": 1794424594890,
+      "sumKiB": 1844812,
+      "maxRendererKiB": 1362512
+    },
+    {
+      "at": 1794424595912,
+      "sumKiB": 1850468,
+      "maxRendererKiB": 1368276
+    },
+    {
+      "at": 1794424596893,
+      "sumKiB": 1855292,
+      "maxRendererKiB": 1373096
+    },
+    {
+      "at": 1794424597906,
+      "sumKiB": 1855292,
+      "maxRendererKiB": 1373096
+    },
+    {
+      "at": 1794424598902,
+      "sumKiB": 1855296,
+      "maxRendererKiB": 1373096
+    },
+    {
+      "at": 1794424599913,
+      "sumKiB": 1855296,
+      "maxRendererKiB": 1373096
+    },
+    {
+      "at": 1794424600890,
+      "sumKiB": 1855304,
+      "maxRendererKiB": 1373096
+    },
+    {
+      "at": 1794424601899,
+      "sumKiB": 1855324,
+      "maxRendererKiB": 1373096
+    },
+    {
+      "at": 1794424602891,
+      "sumKiB": 1855324,
+      "maxRendererKiB": 1373096
+    },
+    {
+      "at": 1794424603890,
+      "sumKiB": 1855324,
+      "maxRendererKiB": 1373096
+    },
+    {
+      "at": 1794424604893,
+      "sumKiB": 1855324,
+      "maxRendererKiB": 1373096
+    },
+    {
+      "at": 1794424605893,
+      "sumKiB": 1855368,
+      "maxRendererKiB": 1373096
+    },
+    {
+      "at": 1794424606921,
+      "sumKiB": 1855372,
+      "maxRendererKiB": 1373096
+    },
+    {
+      "at": 1794424607893,
+      "sumKiB": 1855324,
+      "maxRendererKiB": 1373096
+    },
+    {
+      "at": 1794424608893,
+      "sumKiB": 1841912,
+      "maxRendererKiB": 1367892
+    },
+    {
+      "at": 1794424609892,
+      "sumKiB": 1841912,
+      "maxRendererKiB": 1367892
+    },
+    {
+      "at": 1794424610890,
+      "sumKiB": 1841912,
+      "maxRendererKiB": 1367892
+    },
+    {
+      "at": 1794424611950,
+      "sumKiB": 1841724,
+      "maxRendererKiB": 1367892
+    },
+    {
+      "at": 1794424612902,
+      "sumKiB": 1841724,
+      "maxRendererKiB": 1367892
+    },
+    {
+      "at": 1794424613989,
+      "sumKiB": 1841724,
+      "maxRendererKiB": 1367892
+    },
+    {
+      "at": 1794424614915,
+      "sumKiB": 1841724,
+      "maxRendererKiB": 1367892
+    },
+    {
+      "at": 1794424615928,
+      "sumKiB": 1841724,
+      "maxRendererKiB": 1367892
+    },
+    {
+      "at": 1794424616916,
+      "sumKiB": 1841724,
+      "maxRendererKiB": 1367892
+    },
+    {
+      "at": 1794424617919,
+      "sumKiB": 1841724,
+      "maxRendererKiB": 1367892
+    },
+    {
+      "at": 1794424618916,
+      "sumKiB": 1841724,
+      "maxRendererKiB": 1367892
+    },
+    {
+      "at": 1794424619930,
+      "sumKiB": 1841696,
+      "maxRendererKiB": 1367864
+    },
+    {
+      "at": 1794424620923,
+      "sumKiB": 1841696,
+      "maxRendererKiB": 1367864
+    },
+    {
+      "at": 1794424621917,
+      "sumKiB": 1843840,
+      "maxRendererKiB": 1370008
+    },
+    {
+      "at": 1794424622917,
+      "sumKiB": 1843952,
+      "maxRendererKiB": 1370120
+    },
+    {
+      "at": 1794424623931,
+      "sumKiB": 1844200,
+      "maxRendererKiB": 1370368
+    },
+    {
+      "at": 1794424624917,
+      "sumKiB": 1844224,
+      "maxRendererKiB": 1370392
+    },
+    {
+      "at": 1794424625919,
+      "sumKiB": 1844272,
+      "maxRendererKiB": 1370440
+    },
+    {
+      "at": 1794424626918,
+      "sumKiB": 1844228,
+      "maxRendererKiB": 1370396
+    },
+    {
+      "at": 1794424627918,
+      "sumKiB": 1844332,
+      "maxRendererKiB": 1370500
+    },
+    {
+      "at": 1794424628919,
+      "sumKiB": 1793336,
+      "maxRendererKiB": 1319504
+    },
+    {
+      "at": 1794424629916,
+      "sumKiB": 1793372,
+      "maxRendererKiB": 1319540
+    },
+    {
+      "at": 1794424630916,
+      "sumKiB": 1793404,
+      "maxRendererKiB": 1319572
+    },
+    {
+      "at": 1794424631927,
+      "sumKiB": 1793448,
+      "maxRendererKiB": 1319616
+    },
+    {
+      "at": 1794424632919,
+      "sumKiB": 1793476,
+      "maxRendererKiB": 1319644
+    },
+    {
+      "at": 1794424633924,
+      "sumKiB": 1793516,
+      "maxRendererKiB": 1319684
+    },
+    {
+      "at": 1794424634915,
+      "sumKiB": 1793548,
+      "maxRendererKiB": 1319716
+    },
+    {
+      "at": 1794424635919,
+      "sumKiB": 1793588,
+      "maxRendererKiB": 1319756
+    },
+    {
+      "at": 1794424636919,
+      "sumKiB": 1796872,
+      "maxRendererKiB": 1323040
+    },
+    {
+      "at": 1794424637922,
+      "sumKiB": 1795540,
+      "maxRendererKiB": 1322776
+    },
+    {
+      "at": 1794424638921,
+      "sumKiB": 1795540,
+      "maxRendererKiB": 1322776
+    },
+    {
+      "at": 1794424639922,
+      "sumKiB": 1795696,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424640937,
+      "sumKiB": 1795696,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424641950,
+      "sumKiB": 1795520,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424642936,
+      "sumKiB": 1795520,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424643934,
+      "sumKiB": 1795520,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424644920,
+      "sumKiB": 1795488,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424645924,
+      "sumKiB": 1795280,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424646923,
+      "sumKiB": 1795280,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424647924,
+      "sumKiB": 1793672,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424648922,
+      "sumKiB": 1792088,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424649937,
+      "sumKiB": 1792064,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424650930,
+      "sumKiB": 1792064,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424651929,
+      "sumKiB": 1792064,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424652922,
+      "sumKiB": 1792064,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424653925,
+      "sumKiB": 1792052,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424654922,
+      "sumKiB": 1792052,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424655923,
+      "sumKiB": 1792096,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424656926,
+      "sumKiB": 1792096,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424657932,
+      "sumKiB": 1792048,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424658925,
+      "sumKiB": 1792048,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424659930,
+      "sumKiB": 1792048,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424660927,
+      "sumKiB": 1792048,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424661929,
+      "sumKiB": 1792048,
+      "maxRendererKiB": 1322908
+    },
+    {
+      "at": 1794424662929,
+      "sumKiB": 1790324,
+      "maxRendererKiB": 1321076
+    },
+    {
+      "at": 1794424663922,
+      "sumKiB": 1790248,
+      "maxRendererKiB": 1321000
+    },
+    {
+      "at": 1794424664922,
+      "sumKiB": 1790248,
+      "maxRendererKiB": 1321000
+    },
+    {
+      "at": 1794424665922,
+      "sumKiB": 1790196,
+      "maxRendererKiB": 1321028
+    },
+    {
+      "at": 1794424666931,
+      "sumKiB": 1790292,
+      "maxRendererKiB": 1321124
+    },
+    {
+      "at": 1794424667926,
+      "sumKiB": 1793124,
+      "maxRendererKiB": 1323948
+    },
+    {
+      "at": 1794424668925,
+      "sumKiB": 1792864,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424669922,
+      "sumKiB": 1792696,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424670924,
+      "sumKiB": 1792696,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424671927,
+      "sumKiB": 1792696,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424672925,
+      "sumKiB": 1792696,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424673923,
+      "sumKiB": 1792696,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424674936,
+      "sumKiB": 1792696,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424675930,
+      "sumKiB": 1792696,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424676926,
+      "sumKiB": 1792696,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424677925,
+      "sumKiB": 1792684,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424678930,
+      "sumKiB": 1792684,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424679926,
+      "sumKiB": 1792684,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424680932,
+      "sumKiB": 1792684,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424681935,
+      "sumKiB": 1792684,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424682932,
+      "sumKiB": 1792684,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424683931,
+      "sumKiB": 1792684,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424684927,
+      "sumKiB": 1792684,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424685930,
+      "sumKiB": 1792684,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424686935,
+      "sumKiB": 1792684,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424687931,
+      "sumKiB": 1792684,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424688930,
+      "sumKiB": 1792684,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424689931,
+      "sumKiB": 1792696,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424690926,
+      "sumKiB": 1792696,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424691937,
+      "sumKiB": 1792696,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424692934,
+      "sumKiB": 1792696,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424693937,
+      "sumKiB": 1792684,
+      "maxRendererKiB": 1323688
+    },
+    {
+      "at": 1794424694930,
+      "sumKiB": 1792612,
+      "maxRendererKiB": 1323616
+    },
+    {
+      "at": 1794424695930,
+      "sumKiB": 1792612,
+      "maxRendererKiB": 1323616
+    },
+    {
+      "at": 1794424696930,
+      "sumKiB": 1792612,
+      "maxRendererKiB": 1323616
+    },
+    {
+      "at": 1794424697929,
+      "sumKiB": 1792884,
+      "maxRendererKiB": 1323616
+    },
+    {
+      "at": 1794424698929,
+      "sumKiB": 1792884,
+      "maxRendererKiB": 1323616
+    },
+    {
+      "at": 1794424699931,
+      "sumKiB": 1792884,
+      "maxRendererKiB": 1323616
+    },
+    {
+      "at": 1794424700927,
+      "sumKiB": 1794768,
+      "maxRendererKiB": 1325500
+    },
+    {
+      "at": 1794424701934,
+      "sumKiB": 1794216,
+      "maxRendererKiB": 1325020
+    },
+    {
+      "at": 1794424702929,
+      "sumKiB": 1794652,
+      "maxRendererKiB": 1325456
+    },
+    {
+      "at": 1794424703936,
+      "sumKiB": 1794528,
+      "maxRendererKiB": 1325332
+    },
+    {
+      "at": 1794424704929,
+      "sumKiB": 1794616,
+      "maxRendererKiB": 1325420
+    },
+    {
+      "at": 1794424705930,
+      "sumKiB": 1794724,
+      "maxRendererKiB": 1325552
+    },
+    {
+      "at": 1794424706931,
+      "sumKiB": 1794816,
+      "maxRendererKiB": 1325644
+    },
+    {
+      "at": 1794424707930,
+      "sumKiB": 1794904,
+      "maxRendererKiB": 1325732
+    },
+    {
+      "at": 1794424708936,
+      "sumKiB": 1794992,
+      "maxRendererKiB": 1325820
+    },
+    {
+      "at": 1794424709929,
+      "sumKiB": 1795068,
+      "maxRendererKiB": 1325896
+    },
+    {
+      "at": 1794424710928,
+      "sumKiB": 1795124,
+      "maxRendererKiB": 1325952
+    },
+    {
+      "at": 1794424711935,
+      "sumKiB": 1795232,
+      "maxRendererKiB": 1326060
+    },
+    {
+      "at": 1794424712936,
+      "sumKiB": 1795324,
+      "maxRendererKiB": 1326152
+    },
+    {
+      "at": 1794424713934,
+      "sumKiB": 1795424,
+      "maxRendererKiB": 1326280
+    }
+  ],
+  "limitations": [
+    "Linux Chromium is not a physical iPhone.",
+    "Warm offline inference is not a cold offline application startup.",
+    "Raw model output is untrusted interpretation, never manufacturer procedure evidence."
+  ],
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "deviceMemoryGB": 16,
+    "logicalProcessors": 5,
+    "jsPi": true
+  },
+  "load": {
+    "readMs": null,
+    "loadMs": 17553.699999999255,
+    "info": {
+      "_name": "load_res",
+      "success": true,
+      "n_ctx": 1536,
+      "n_batch": 128,
+      "n_ubatch": 64,
+      "n_vocab": 151936,
+      "n_ctx_train": 32768,
+      "n_embd": 1536,
+      "n_layer": 28,
+      "metadata_key": [
+        "general.quantization_version",
+        "tokenizer.chat_template",
+        "tokenizer.ggml.bos_token_id",
+        "tokenizer.ggml.padding_token_id",
+        "tokenizer.ggml.eos_token_id",
+        "tokenizer.ggml.pre",
+        "tokenizer.ggml.model",
+        "qwen2.attention.layer_norm_rms_epsilon",
+        "qwen2.rope.freq_base",
+        "qwen2.attention.head_count_kv",
+        "qwen2.embedding_length",
+        "qwen2.context_length",
+        "general.type",
+        "qwen2.attention.head_count",
+        "qwen2.feed_forward_length",
+        "general.architecture",
+        "qwen2.block_count",
+        "general.file_type",
+        "general.size_label",
+        "tokenizer.ggml.add_bos_token",
+        "general.version",
+        "general.finetune",
+        "general.name"
+      ],
+      "metadata_val": [
+        "2",
+        "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0]['role'] == 'system' %}\n        {{- messages[0]['content'] }}\n    {%- else %}\n        {{- 'You are Qwen, created by Alibaba Cloud. You are a helpful assistant.' }}\n    {%- endif %}\n    {{- \"\\n\\n# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}}\\n</tool_call><|im_end|>\\n\" }}\n{%- else %}\n    {%- if messages[0]['role'] == 'system' %}\n        {{- '<|im_start|>system\\n' + messages[0]['content'] + '<|im_end|>\\n' }}\n    {%- else %}\n        {{- '<|im_start|>system\\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- for message in messages %}\n    {%- if (message.role == \"user\") or (message.role == \"system\" and not loop.first) or (message.role == \"assistant\" and not message.tool_calls) %}\n        {{- '<|im_start|>' + message.role + '\\n' + message.content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {{- '<|im_start|>' + message.role }}\n        {%- if message.content %}\n            {{- '\\n' + message.content }}\n        {%- endif %}\n        {%- for tool_call in message.tool_calls %}\n            {%- if tool_call.function is defined %}\n                {%- set tool_call = tool_call.function %}\n            {%- endif %}\n            {{- '\\n<tool_call>\\n{\"name\": \"' }}\n            {{- tool_call.name }}\n            {{- '\", \"arguments\": ' }}\n            {{- tool_call.arguments | tojson }}\n            {{- '}\\n</tool_call>' }}\n        {%- endfor %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if (loop.index0 == 0) or (messages[loop.index0 - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- message.content }}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n{%- endif %}\n",
+        "151643",
+        "151643",
+        "151645",
+        "qwen2",
+        "gpt2",
+        "0.000001",
+        "1000000.000000",
+        "2",
+        "1536",
+        "32768",
+        "model",
+        "12",
+        "8960",
+        "qwen2",
+        "28",
+        "15",
+        "1.8B",
+        "false",
+        "v0.1",
+        "qwen2.5-1.5b-instruct",
+        "qwen2.5-1.5b-instruct"
+      ],
+      "token_bos": 151643,
+      "token_eos": 151645,
+      "token_eot": 151645,
+      "list_tokens_eog": [
+        128247,
+        151643,
+        151645,
+        151662,
+        151663,
+        151664
+      ],
+      "add_bos_token": false,
+      "add_eos_token": false,
+      "has_encoder": false,
+      "token_decoder_start": -1,
+      "media_marker": "<__media_Jt3T1xJSX6MIjwT3J9uHzomrFSf3YI5m__>",
+      "has_image_input": false,
+      "has_audio_input": false,
+      "has_audio_output": false,
+      "has_chat": true,
+      "has_audio_stream": false,
+      "has_live_asr": false,
+      "audio_input_rate": 0,
+      "audio_output_rate": 0,
+      "audio_voices": [],
+      "metadata": {
+        "general.quantization_version": "2",
+        "tokenizer.chat_template": "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0]['role'] == 'system' %}\n        {{- messages[0]['content'] }}\n    {%- else %}\n        {{- 'You are Qwen, created by Alibaba Cloud. You are a helpful assistant.' }}\n    {%- endif %}\n    {{- \"\\n\\n# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}}\\n</tool_call><|im_end|>\\n\" }}\n{%- else %}\n    {%- if messages[0]['role'] == 'system' %}\n        {{- '<|im_start|>system\\n' + messages[0]['content'] + '<|im_end|>\\n' }}\n    {%- else %}\n        {{- '<|im_start|>system\\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- for message in messages %}\n    {%- if (message.role == \"user\") or (message.role == \"system\" and not loop.first) or (message.role == \"assistant\" and not message.tool_calls) %}\n        {{- '<|im_start|>' + message.role + '\\n' + message.content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {{- '<|im_start|>' + message.role }}\n        {%- if message.content %}\n            {{- '\\n' + message.content }}\n        {%- endif %}\n        {%- for tool_call in message.tool_calls %}\n            {%- if tool_call.function is defined %}\n                {%- set tool_call = tool_call.function %}\n            {%- endif %}\n            {{- '\\n<tool_call>\\n{\"name\": \"' }}\n            {{- tool_call.name }}\n            {{- '\", \"arguments\": ' }}\n            {{- tool_call.arguments | tojson }}\n            {{- '}\\n</tool_call>' }}\n        {%- endfor %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if (loop.index0 == 0) or (messages[loop.index0 - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- message.content }}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n{%- endif %}\n",
+        "tokenizer.ggml.bos_token_id": "151643",
+        "tokenizer.ggml.padding_token_id": "151643",
+        "tokenizer.ggml.eos_token_id": "151645",
+        "tokenizer.ggml.pre": "qwen2",
+        "tokenizer.ggml.model": "gpt2",
+        "qwen2.attention.layer_norm_rms_epsilon": "0.000001",
+        "qwen2.rope.freq_base": "1000000.000000",
+        "qwen2.attention.head_count_kv": "2",
+        "qwen2.embedding_length": "1536",
+        "qwen2.context_length": "32768",
+        "general.type": "model",
+        "qwen2.attention.head_count": "12",
+        "qwen2.feed_forward_length": "8960",
+        "general.architecture": "qwen2",
+        "qwen2.block_count": "28",
+        "general.file_type": "15",
+        "general.size_label": "1.8B",
+        "tokenizer.ggml.add_bos_token": "false",
+        "general.version": "v0.1",
+        "general.finetune": "qwen2.5-1.5b-instruct",
+        "general.name": "qwen2.5-1.5b-instruct"
+      }
+    }
+  },
+  "status": "stopped_after_failed_or_superseded_trial",
+  "stopReason": "Stopped after first three completed cases to test a more suitable structured prompt."
+}

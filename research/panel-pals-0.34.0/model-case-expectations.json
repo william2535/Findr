@@ -1,0 +1,145 @@
+{
+  "syntheticTestInputs": true,
+  "technicalOperatingAdvice": false,
+  "grading": "Human semantic review plus existing application grounding and schema guards; valid syntax alone never counts as success. Action/target synonyms are acceptable only without new facts or altered relationships.",
+  "cases": [
+    {
+      "id": "multi_task",
+      "question": "I need to swap a device, how do I disable outputs, disable the old one, swap it, then re enable device.",
+      "intent": "procedure",
+      "orderedTasks": [
+        [
+          "disable",
+          "outputs"
+        ],
+        [
+          "disable",
+          "old device"
+        ],
+        [
+          "replace",
+          "device"
+        ],
+        [
+          "enable",
+          "device"
+        ]
+      ],
+      "forbidden": "No duplicate introductory replacement goal; no actual operating instructions."
+    },
+    {
+      "id": "followup_step_two",
+      "question": "What about step two?",
+      "intent": "followup",
+      "focusTask": 2,
+      "target": "disable old device",
+      "forbidden": "Do not replace the plan or mark the device disabled."
+    },
+    {
+      "id": "correct_target",
+      "question": "meant sounders, not all outputs",
+      "intent": "correction",
+      "orderedTasks": [
+        [
+          "disable",
+          "sounders"
+        ],
+        [
+          "disable",
+          "old device"
+        ],
+        [
+          "replace",
+          "device"
+        ],
+        [
+          "enable",
+          "device"
+        ]
+      ],
+      "forbidden": "Do not keep outputs as the changed target, reorder unchanged actions or claim work completed."
+    },
+    {
+      "id": "multiple_readings",
+      "question": "The PSU output is 24.1 V with the load connected, the first detector is 23.8 volts, and the last detector reads 0 V. The fault is still showing.",
+      "intent": "fault",
+      "rawObservations": [
+        "The PSU output is 24.1 V with the load connected",
+        "the first detector is 23.8 volts",
+        "the last detector reads 0 V",
+        "The fault is still showing."
+      ],
+      "forbidden": "Do not infer load state at the detectors, turn zero into unknown, or compare to an invented limit."
+    },
+    {
+      "id": "ordinary_request",
+      "question": "Write a short joke about my coffee going cold.",
+      "intent": "other",
+      "orderedTasks": [],
+      "forbidden": "Do not invent engineering actions or facts about the coffee."
+    },
+    {
+      "id": "two_procedures",
+      "question": "How do I start a walk test and then view the event history on this panel?",
+      "intent": "procedure",
+      "orderedTasks": [
+        [
+          "test",
+          "walk test"
+        ],
+        [
+          "view",
+          "event history"
+        ]
+      ],
+      "forbidden": "Do not invent menu paths or buttons; this is request interpretation."
+    },
+    {
+      "id": "trade_spelling",
+      "question": "Need to disbale the sounders, swap the optical detctor and re-enable it.",
+      "intent": "procedure",
+      "orderedTasks": [
+        [
+          "disable",
+          "sounders"
+        ],
+        [
+          "replace",
+          "optical detector"
+        ],
+        [
+          "enable",
+          "device"
+        ]
+      ],
+      "forbidden": "Do not interpret swapping the detector as substituting a sounder; preserve three requested actions."
+    },
+    {
+      "id": "explicit_equipment_change",
+      "question": "Leave the panel for now. I am working on the external PSU: check its output voltage and inspect its battery leads.",
+      "intent": "procedure",
+      "equipment": "external PSU",
+      "orderedTasks": [
+        [
+          "inspect",
+          "output voltage"
+        ],
+        [
+          "inspect",
+          "battery leads"
+        ]
+      ],
+      "forbidden": "No invented voltage limit or battery type; do not retain panel as the tested component."
+    },
+    {
+      "id": "blocked_test",
+      "question": "I cannot access the expander. The detector is still showing a resistance fault.",
+      "intent": "fault",
+      "rawObservations": [
+        "I cannot access the expander.",
+        "The detector is still showing a resistance fault."
+      ],
+      "forbidden": "No test has been performed; do not suggest resistance testing without prerequisites."
+    }
+  ]
+}

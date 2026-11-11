@@ -1,0 +1,909 @@
+{
+  "createdAt": "2026-11-11T19:26:28.354Z",
+  "actualInference": true,
+  "physicalPhone": false,
+  "runtime": "@wllama/wllama 3.13.0 CPU WASM single thread",
+  "model": {
+    "label": "qwen35_800",
+    "repo": "unsloth/Qwen3.5-0.8B-GGUF",
+    "revision": "6ab461498e2023f6e3c1baea90a8f0fe38ab64d0",
+    "file": "Qwen3.5-0.8B-Q4_K_M.gguf",
+    "bytes": 532517120,
+    "sha256": "bd258782e35f7f458f8aced1adc053e6e92e89bc735ba3be89d38a06121dc517",
+    "url": "https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/6ab461498e2023f6e3c1baea90a8f0fe38ab64d0/Qwen3.5-0.8B-Q4_K_M.gguf"
+  },
+  "cases": [
+    {
+      "id": "multi_task",
+      "question": "I need to swap a device, how do I disable outputs, disable the old one, swap it, then re enable device.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "List each separate action this engineer is asking about, in order. Do not answer, give technical instructions, or duplicate the overall goal. One action per line."
+        },
+        {
+          "role": "user",
+          "content": "I need to swap a device, how do I disable outputs, disable the old one, swap it, then re enable device."
+        }
+      ]
+    },
+    {
+      "id": "followup_step_two",
+      "question": "What about step two?",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Identify which previous action the engineer is referring to. Reply with its number and label only."
+        },
+        {
+          "role": "user",
+          "content": "Previous requested actions: 1. Disable outputs. 2. Disable the old device. 3. Replace the device. 4. Re-enable the device.\nWhat about step two?"
+        }
+      ]
+    },
+    {
+      "id": "correct_target",
+      "question": "meant sounders, not all outputs",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Apply this correction to the previous requested actions. Return the whole updated list, one action per line. Do not give technical instructions."
+        },
+        {
+          "role": "user",
+          "content": "Previous requested actions: 1. Disable outputs. 2. Disable the old device. 3. Replace the device. 4. Re-enable the device.\nmeant sounders, not all outputs"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "multi_task",
+      "text": "1. Identify the physical or logical output pin on the device under consideration.\n2. Locate the corresponding output pin on the target device to be swapped.\n3. Disable the output pin on the target device using the appropriate hardware or software method.\n4. Swap the physical or logical output pin between the two devices.\n5. Re-enable the output pin on the target device using the appropriate hardware or software method.\n6. Verify that the new output is functioning correctly and connected to the desired load.",
+      "generationMs": 41395.39999999851,
+      "firstTokenMs": 13290.300000000745,
+      "usage": null,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 75,
+        "prompt_ms": 12709.101,
+        "prompt_per_token_ms": 169.45468,
+        "prompt_per_second": 5.901282868080126,
+        "predicted_n": 104,
+        "predicted_ms": 28654.499,
+        "predicted_per_token_ms": 278.1990194174757,
+        "predicted_per_second": 3.5945489746653747
+      }
+    },
+    {
+      "id": "followup_step_two",
+      "text": "2",
+      "generationMs": 13066.5,
+      "firstTokenMs": 13066,
+      "usage": null,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 75,
+        "prompt_ms": 12687.2,
+        "prompt_per_token_ms": 169.16266666666667,
+        "prompt_per_second": 5.9114698278579985,
+        "predicted_n": 2,
+        "predicted_ms": 291.8,
+        "predicted_per_token_ms": 291.8,
+        "predicted_per_second": 3.427004797806717
+      }
+    },
+    {
+      "id": "correct_target",
+      "text": "1. Disable outputs.\n2. Disable the old device.\n3. Replace the device.\n4. Re-enable the device.\n5. Re-enable the device.",
+      "generationMs": 26411,
+      "firstTokenMs": 15911.900000002235,
+      "usage": null,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 85,
+        "prompt_ms": 15200.899,
+        "prompt_per_token_ms": 178.83410588235293,
+        "prompt_per_second": 5.591774539124298,
+        "predicted_n": 37,
+        "predicted_ms": 11117.3,
+        "predicted_per_token_ms": 308.81388888888887,
+        "predicted_per_second": 3.2381963246471717
+      }
+    }
+  ],
+  "rssSamples": [
+    {
+      "at": 1794425189961,
+      "sumKiB": 639100,
+      "maxRendererKiB": 156132
+    },
+    {
+      "at": 1794425190962,
+      "sumKiB": 774860,
+      "maxRendererKiB": 288580
+    },
+    {
+      "at": 1794425191964,
+      "sumKiB": 1089752,
+      "maxRendererKiB": 605172
+    },
+    {
+      "at": 1794425192963,
+      "sumKiB": 1124512,
+      "maxRendererKiB": 639572
+    },
+    {
+      "at": 1794425193962,
+      "sumKiB": 1608524,
+      "maxRendererKiB": 1123120
+    },
+    {
+      "at": 1794425194959,
+      "sumKiB": 1252936,
+      "maxRendererKiB": 768044
+    },
+    {
+      "at": 1794425195960,
+      "sumKiB": 1274520,
+      "maxRendererKiB": 789692
+    },
+    {
+      "at": 1794425196962,
+      "sumKiB": 1277156,
+      "maxRendererKiB": 792328
+    },
+    {
+      "at": 1794425197961,
+      "sumKiB": 1277336,
+      "maxRendererKiB": 792508
+    },
+    {
+      "at": 1794425198959,
+      "sumKiB": 1275112,
+      "maxRendererKiB": 792516
+    },
+    {
+      "at": 1794425199959,
+      "sumKiB": 1275116,
+      "maxRendererKiB": 792516
+    },
+    {
+      "at": 1794425200962,
+      "sumKiB": 1275120,
+      "maxRendererKiB": 792516
+    },
+    {
+      "at": 1794425201962,
+      "sumKiB": 1275120,
+      "maxRendererKiB": 792516
+    },
+    {
+      "at": 1794425202961,
+      "sumKiB": 1275120,
+      "maxRendererKiB": 792516
+    },
+    {
+      "at": 1794425203963,
+      "sumKiB": 1275032,
+      "maxRendererKiB": 792516
+    },
+    {
+      "at": 1794425204977,
+      "sumKiB": 1275032,
+      "maxRendererKiB": 792516
+    },
+    {
+      "at": 1794425205961,
+      "sumKiB": 1275032,
+      "maxRendererKiB": 792516
+    },
+    {
+      "at": 1794425206962,
+      "sumKiB": 1295004,
+      "maxRendererKiB": 812488
+    },
+    {
+      "at": 1794425207965,
+      "sumKiB": 1297996,
+      "maxRendererKiB": 815476
+    },
+    {
+      "at": 1794425208971,
+      "sumKiB": 1298164,
+      "maxRendererKiB": 815644
+    },
+    {
+      "at": 1794425209966,
+      "sumKiB": 1298264,
+      "maxRendererKiB": 815736
+    },
+    {
+      "at": 1794425210967,
+      "sumKiB": 1298376,
+      "maxRendererKiB": 815848
+    },
+    {
+      "at": 1794425211975,
+      "sumKiB": 1298476,
+      "maxRendererKiB": 815928
+    },
+    {
+      "at": 1794425212965,
+      "sumKiB": 1298304,
+      "maxRendererKiB": 815756
+    },
+    {
+      "at": 1794425213967,
+      "sumKiB": 1298528,
+      "maxRendererKiB": 815940
+    },
+    {
+      "at": 1794425214966,
+      "sumKiB": 1298592,
+      "maxRendererKiB": 816004
+    },
+    {
+      "at": 1794425215962,
+      "sumKiB": 1298696,
+      "maxRendererKiB": 816108
+    },
+    {
+      "at": 1794425216965,
+      "sumKiB": 1298788,
+      "maxRendererKiB": 816200
+    },
+    {
+      "at": 1794425217976,
+      "sumKiB": 1298832,
+      "maxRendererKiB": 816244
+    },
+    {
+      "at": 1794425218968,
+      "sumKiB": 1299376,
+      "maxRendererKiB": 816316
+    },
+    {
+      "at": 1794425219966,
+      "sumKiB": 1288416,
+      "maxRendererKiB": 813884
+    },
+    {
+      "at": 1794425220971,
+      "sumKiB": 1288488,
+      "maxRendererKiB": 813956
+    },
+    {
+      "at": 1794425221969,
+      "sumKiB": 1288512,
+      "maxRendererKiB": 814024
+    },
+    {
+      "at": 1794425222969,
+      "sumKiB": 1288816,
+      "maxRendererKiB": 814328
+    },
+    {
+      "at": 1794425223977,
+      "sumKiB": 1287972,
+      "maxRendererKiB": 813484
+    },
+    {
+      "at": 1794425224967,
+      "sumKiB": 1288112,
+      "maxRendererKiB": 813624
+    },
+    {
+      "at": 1794425225965,
+      "sumKiB": 1288224,
+      "maxRendererKiB": 813736
+    },
+    {
+      "at": 1794425226963,
+      "sumKiB": 1288384,
+      "maxRendererKiB": 813896
+    },
+    {
+      "at": 1794425227965,
+      "sumKiB": 1288520,
+      "maxRendererKiB": 814032
+    },
+    {
+      "at": 1794425228964,
+      "sumKiB": 1288624,
+      "maxRendererKiB": 814136
+    },
+    {
+      "at": 1794425229963,
+      "sumKiB": 1288760,
+      "maxRendererKiB": 814272
+    },
+    {
+      "at": 1794425230979,
+      "sumKiB": 1288908,
+      "maxRendererKiB": 814420
+    },
+    {
+      "at": 1794425231963,
+      "sumKiB": 1289020,
+      "maxRendererKiB": 814532
+    },
+    {
+      "at": 1794425232968,
+      "sumKiB": 1289164,
+      "maxRendererKiB": 814676
+    },
+    {
+      "at": 1794425233964,
+      "sumKiB": 1288260,
+      "maxRendererKiB": 813772
+    },
+    {
+      "at": 1794425234970,
+      "sumKiB": 1288608,
+      "maxRendererKiB": 814120
+    },
+    {
+      "at": 1794425235966,
+      "sumKiB": 1288764,
+      "maxRendererKiB": 814276
+    },
+    {
+      "at": 1794425236963,
+      "sumKiB": 1311416,
+      "maxRendererKiB": 836928
+    },
+    {
+      "at": 1794425237972,
+      "sumKiB": 1331228,
+      "maxRendererKiB": 856740
+    },
+    {
+      "at": 1794425238966,
+      "sumKiB": 1331228,
+      "maxRendererKiB": 856740
+    },
+    {
+      "at": 1794425239965,
+      "sumKiB": 1331228,
+      "maxRendererKiB": 856740
+    },
+    {
+      "at": 1794425240970,
+      "sumKiB": 1331228,
+      "maxRendererKiB": 856740
+    },
+    {
+      "at": 1794425241968,
+      "sumKiB": 1331228,
+      "maxRendererKiB": 856740
+    },
+    {
+      "at": 1794425242974,
+      "sumKiB": 1331228,
+      "maxRendererKiB": 856740
+    },
+    {
+      "at": 1794425243982,
+      "sumKiB": 1331228,
+      "maxRendererKiB": 856740
+    },
+    {
+      "at": 1794425244969,
+      "sumKiB": 1331228,
+      "maxRendererKiB": 856740
+    },
+    {
+      "at": 1794425245967,
+      "sumKiB": 1331228,
+      "maxRendererKiB": 856740
+    },
+    {
+      "at": 1794425246965,
+      "sumKiB": 1331228,
+      "maxRendererKiB": 856740
+    },
+    {
+      "at": 1794425247967,
+      "sumKiB": 1350724,
+      "maxRendererKiB": 876236
+    },
+    {
+      "at": 1794425248969,
+      "sumKiB": 1348492,
+      "maxRendererKiB": 874792
+    },
+    {
+      "at": 1794425249967,
+      "sumKiB": 1369780,
+      "maxRendererKiB": 896100
+    },
+    {
+      "at": 1794425250968,
+      "sumKiB": 1369496,
+      "maxRendererKiB": 895792
+    },
+    {
+      "at": 1794425251970,
+      "sumKiB": 1369496,
+      "maxRendererKiB": 895792
+    },
+    {
+      "at": 1794425252968,
+      "sumKiB": 1388884,
+      "maxRendererKiB": 915492
+    },
+    {
+      "at": 1794425253967,
+      "sumKiB": 1388884,
+      "maxRendererKiB": 915492
+    },
+    {
+      "at": 1794425254969,
+      "sumKiB": 1388860,
+      "maxRendererKiB": 915492
+    },
+    {
+      "at": 1794425255969,
+      "sumKiB": 1388860,
+      "maxRendererKiB": 915492
+    },
+    {
+      "at": 1794425256973,
+      "sumKiB": 1388508,
+      "maxRendererKiB": 915492
+    },
+    {
+      "at": 1794425257974,
+      "sumKiB": 1388508,
+      "maxRendererKiB": 915492
+    },
+    {
+      "at": 1794425258976,
+      "sumKiB": 1386844,
+      "maxRendererKiB": 915492
+    },
+    {
+      "at": 1794425259969,
+      "sumKiB": 1386844,
+      "maxRendererKiB": 915492
+    },
+    {
+      "at": 1794425260976,
+      "sumKiB": 1386844,
+      "maxRendererKiB": 915492
+    },
+    {
+      "at": 1794425261972,
+      "sumKiB": 1386844,
+      "maxRendererKiB": 915492
+    },
+    {
+      "at": 1794425262973,
+      "sumKiB": 1386844,
+      "maxRendererKiB": 915492
+    },
+    {
+      "at": 1794425263981,
+      "sumKiB": 1406600,
+      "maxRendererKiB": 935248
+    },
+    {
+      "at": 1794425264981,
+      "sumKiB": 1406088,
+      "maxRendererKiB": 934776
+    },
+    {
+      "at": 1794425265971,
+      "sumKiB": 1406124,
+      "maxRendererKiB": 934812
+    },
+    {
+      "at": 1794425266971,
+      "sumKiB": 1406292,
+      "maxRendererKiB": 934980
+    },
+    {
+      "at": 1794425267983,
+      "sumKiB": 1406432,
+      "maxRendererKiB": 935120
+    },
+    {
+      "at": 1794425268971,
+      "sumKiB": 1406604,
+      "maxRendererKiB": 935292
+    },
+    {
+      "at": 1794425269977,
+      "sumKiB": 1406992,
+      "maxRendererKiB": 935636
+    },
+    {
+      "at": 1794425270971,
+      "sumKiB": 1407272,
+      "maxRendererKiB": 935916
+    },
+    {
+      "at": 1794425271986,
+      "sumKiB": 1407376,
+      "maxRendererKiB": 936012
+    },
+    {
+      "at": 1794425272980,
+      "sumKiB": 1407380,
+      "maxRendererKiB": 936064
+    },
+    {
+      "at": 1794425273972,
+      "sumKiB": 1406600,
+      "maxRendererKiB": 935284
+    },
+    {
+      "at": 1794425274979,
+      "sumKiB": 1406680,
+      "maxRendererKiB": 935364
+    },
+    {
+      "at": 1794425275972,
+      "sumKiB": 1428800,
+      "maxRendererKiB": 957432
+    },
+    {
+      "at": 1794425276971,
+      "sumKiB": 1428912,
+      "maxRendererKiB": 957552
+    },
+    {
+      "at": 1794425277974,
+      "sumKiB": 1428968,
+      "maxRendererKiB": 957608
+    },
+    {
+      "at": 1794425278977,
+      "sumKiB": 1433280,
+      "maxRendererKiB": 962400
+    },
+    {
+      "at": 1794425279980,
+      "sumKiB": 1428932,
+      "maxRendererKiB": 958068
+    },
+    {
+      "at": 1794425280978,
+      "sumKiB": 1429048,
+      "maxRendererKiB": 958204
+    },
+    {
+      "at": 1794425281980,
+      "sumKiB": 1428968,
+      "maxRendererKiB": 958124
+    },
+    {
+      "at": 1794425282977,
+      "sumKiB": 1429140,
+      "maxRendererKiB": 958296
+    },
+    {
+      "at": 1794425283974,
+      "sumKiB": 1429256,
+      "maxRendererKiB": 958412
+    },
+    {
+      "at": 1794425284982,
+      "sumKiB": 1429352,
+      "maxRendererKiB": 958508
+    },
+    {
+      "at": 1794425285973,
+      "sumKiB": 1429444,
+      "maxRendererKiB": 958600
+    },
+    {
+      "at": 1794425286974,
+      "sumKiB": 1429704,
+      "maxRendererKiB": 958860
+    },
+    {
+      "at": 1794425287974,
+      "sumKiB": 1429580,
+      "maxRendererKiB": 958736
+    },
+    {
+      "at": 1794425288974,
+      "sumKiB": 1429944,
+      "maxRendererKiB": 959100
+    },
+    {
+      "at": 1794425289988,
+      "sumKiB": 1429972,
+      "maxRendererKiB": 959128
+    },
+    {
+      "at": 1794425290977,
+      "sumKiB": 1430016,
+      "maxRendererKiB": 959172
+    },
+    {
+      "at": 1794425291986,
+      "sumKiB": 1430080,
+      "maxRendererKiB": 959236
+    },
+    {
+      "at": 1794425292975,
+      "sumKiB": 1430212,
+      "maxRendererKiB": 959368
+    },
+    {
+      "at": 1794425293974,
+      "sumKiB": 1430376,
+      "maxRendererKiB": 959532
+    },
+    {
+      "at": 1794425294982,
+      "sumKiB": 1430328,
+      "maxRendererKiB": 959648
+    },
+    {
+      "at": 1794425295979,
+      "sumKiB": 1430528,
+      "maxRendererKiB": 959848
+    },
+    {
+      "at": 1794425296974,
+      "sumKiB": 1430628,
+      "maxRendererKiB": 959948
+    },
+    {
+      "at": 1794425297974,
+      "sumKiB": 1430692,
+      "maxRendererKiB": 960012
+    },
+    {
+      "at": 1794425298978,
+      "sumKiB": 1430628,
+      "maxRendererKiB": 959948
+    },
+    {
+      "at": 1794425299975,
+      "sumKiB": 1430692,
+      "maxRendererKiB": 960012
+    },
+    {
+      "at": 1794425300978,
+      "sumKiB": 1430784,
+      "maxRendererKiB": 960092
+    },
+    {
+      "at": 1794425301976,
+      "sumKiB": 1430844,
+      "maxRendererKiB": 960152
+    },
+    {
+      "at": 1794425302978,
+      "sumKiB": 1431084,
+      "maxRendererKiB": 960392
+    },
+    {
+      "at": 1794425303978,
+      "sumKiB": 1431224,
+      "maxRendererKiB": 960532
+    },
+    {
+      "at": 1794425304977,
+      "sumKiB": 1431308,
+      "maxRendererKiB": 960628
+    },
+    {
+      "at": 1794425305978,
+      "sumKiB": 1431272,
+      "maxRendererKiB": 960592
+    },
+    {
+      "at": 1794425306976,
+      "sumKiB": 1431400,
+      "maxRendererKiB": 960720
+    },
+    {
+      "at": 1794425308011,
+      "sumKiB": 1431464,
+      "maxRendererKiB": 960784
+    }
+  ],
+  "limitations": [
+    "Linux Chromium is not a physical iPhone.",
+    "Warm offline inference is not a cold offline application startup.",
+    "Raw model output is untrusted interpretation, never manufacturer procedure evidence."
+  ],
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "deviceMemoryGB": 16,
+    "logicalProcessors": 5,
+    "jsPi": true
+  },
+  "load": {
+    "readMs": 0,
+    "loadMs": 5623.20000000298,
+    "info": {
+      "_name": "load_res",
+      "success": true,
+      "n_ctx": 1536,
+      "n_batch": 128,
+      "n_ubatch": 64,
+      "n_vocab": 248320,
+      "n_ctx_train": 262144,
+      "n_embd": 1024,
+      "n_layer": 24,
+      "metadata_key": [
+        "quantize.imatrix.file",
+        "general.file_type",
+        "tokenizer.ggml.pre",
+        "tokenizer.ggml.model",
+        "qwen35.full_attention_interval",
+        "quantize.imatrix.entries_count",
+        "qwen35.rope.dimension_count",
+        "qwen35.ssm.inner_size",
+        "qwen35.ssm.group_count",
+        "qwen35.attention.value_length",
+        "qwen35.rope.freq_base",
+        "qwen35.attention.head_count_kv",
+        "qwen35.attention.key_length",
+        "quantize.imatrix.chunks_count",
+        "tokenizer.chat_template",
+        "qwen35.ssm.time_step_rank",
+        "qwen35.feed_forward_length",
+        "qwen35.attention.layer_norm_rms_epsilon",
+        "tokenizer.ggml.eos_token_id",
+        "qwen35.context_length",
+        "general.type",
+        "qwen35.attention.head_count",
+        "tokenizer.ggml.padding_token_id",
+        "qwen35.block_count",
+        "general.repo_url",
+        "general.base_model.0.organization",
+        "general.base_model.count",
+        "general.quantization_version",
+        "general.base_model.0.repo_url",
+        "general.license",
+        "quantize.imatrix.dataset",
+        "general.name",
+        "general.quantized_by",
+        "general.architecture",
+        "qwen35.ssm.conv_kernel",
+        "general.basename",
+        "qwen35.embedding_length",
+        "general.license.link",
+        "qwen35.ssm.state_size",
+        "general.base_model.0.name",
+        "general.size_label"
+      ],
+      "metadata_val": [
+        "Qwen3.5-0.8B-GGUF/imatrix_unsloth.gguf",
+        "15",
+        "qwen35",
+        "gpt2",
+        "4",
+        "186",
+        "64",
+        "2048",
+        "16",
+        "256",
+        "10000000.000000",
+        "2",
+        "256",
+        "80",
+        "{%- set image_count = namespace(value=0) %}\n{%- set video_count = namespace(value=0) %}\n{%- macro render_content(content, do_vision_count, is_system_content=false) %}\n    {%- if content is string %}\n        {{- content }}\n    {%- elif content is iterable and content is not mapping %}\n        {%- for item in content %}\n            {%- if 'image' in item or 'image_url' in item or item.type == 'image' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain images.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set image_count.value = image_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Picture ' ~ image_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|image_pad|><|vision_end|>' }}\n            {%- elif 'video' in item or item.type == 'video' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain videos.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set video_count.value = video_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Video ' ~ video_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|video_pad|><|vision_end|>' }}\n            {%- elif 'text' in item %}\n                {{- item.text }}\n            {%- else %}\n                {{- raise_exception('Unexpected item type in content.') }}\n            {%- endif %}\n        {%- endfor %}\n    {%- elif content is none or content is undefined %}\n        {{- '' }}\n    {%- else %}\n        {{- raise_exception('Unexpected content type.') }}\n    {%- endif %}\n{%- endmacro %}\n{%- if not messages %}\n    {{- raise_exception('No messages provided.') }}\n{%- endif %}\n{%- if tools and tools is iterable and tools is not mapping %}\n    {{- '<|im_start|>system\\n' }}\n    {{- \"# Tools\\n\\nYou have access to the following functions:\\n\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\" }}\n    {{- '\\n\\nIf you choose to call a function ONLY reply in the following format with NO suffix:\\n\\n<tool_call>\\n<function=example_function_name>\\n<parameter=example_parameter_1>\\nvalue_1\\n</parameter>\\n<parameter=example_parameter_2>\\nThis is the value for the second parameter\\nthat can span\\nmultiple lines\\n</parameter>\\n</function>\\n</tool_call>\\n\\n<IMPORTANT>\\nReminder:\\n- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags\\n- Required parameters MUST be specified\\n- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after\\n- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls\\n</IMPORTANT>' }}\n    {%- if messages[0].role == 'system' %}\n        {%- set content = render_content(messages[0].content, false, true)|trim %}\n        {%- if content %}\n            {{- '\\n\\n' + content }}\n        {%- endif %}\n    {%- endif %}\n    {{- '<|im_end|>\\n' }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {%- set content = render_content(messages[0].content, false, true)|trim %}\n        {{- '<|im_start|>system\\n' + content + '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length - 1) %}\n{%- for message in messages[::-1] %}\n    {%- set index = (messages|length - 1) - loop.index0 %}\n    {%- if ns.multi_step_tool and message.role == \"user\" %}\n        {%- set content = render_content(message.content, false)|trim %}\n        {%- if not(content.startswith('<tool_response>') and content.endswith('</tool_response>')) %}\n            {%- set ns.multi_step_tool = false %}\n            {%- set ns.last_query_index = index %}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if ns.multi_step_tool %}\n    {{- raise_exception('No user query found in messages.') }}\n{%- endif %}\n{%- for message in messages %}\n    {%- set content = render_content(message.content, true)|trim %}\n    {%- if message.role == \"system\" %}\n        {%- if not loop.first %}\n            {{- raise_exception('System message must be at the beginning.') }}\n        {%- endif %}\n    {%- elif message.role == \"user\" %}\n        {{- '<|im_start|>' + message.role + '\\n' + content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {%- set reasoning_content = '' %}\n        {%- if message.reasoning_content is string %}\n            {%- set reasoning_content = message.reasoning_content %}\n        {%- else %}\n            {%- if '</think>' in content %}\n                {%- set reasoning_content = content.split('</think>')[0].rstrip('\\n').split('<think>')[-1].lstrip('\\n') %}\n                {%- set content = content.split('</think>')[-1].lstrip('\\n') %}\n            {%- endif %}\n        {%- endif %}\n        {%- set reasoning_content = reasoning_content|trim %}\n        {%- if loop.index0 > ns.last_query_index %}\n            {{- '<|im_start|>' + message.role + '\\n<think>\\n' + reasoning_content + '\\n</think>\\n\\n' + content }}\n        {%- else %}\n            {{- '<|im_start|>' + message.role + '\\n' + content }}\n        {%- endif %}\n        {%- if message.tool_calls and message.tool_calls is iterable and message.tool_calls is not mapping %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if tool_call.function is defined %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {%- if loop.first %}\n                    {%- if content|trim %}\n                        {{- '\\n\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- else %}\n                        {{- '<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- endif %}\n                {%- else %}\n                    {{- '\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                {%- endif %}\n                {%- if tool_call.arguments is mapping %}\n                    {%- for args_name in tool_call.arguments %}\n                        {%- set args_value = tool_call.arguments[args_name] %}\n                        {{- '<parameter=' + args_name + '>\\n' }}\n                        {%- set args_value = args_value | tojson | safe if args_value is mapping or (args_value is sequence and args_value is not string) else args_value | string %}\n                        {{- args_value }}\n                        {{- '\\n</parameter>\\n' }}\n                    {%- endfor %}\n                {%- endif %}\n                {{- '</function>\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.previtem and loop.previtem.role != \"tool\" %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- content }}\n        {{- '\\n</tool_response>' }}\n        {%- if not loop.last and loop.nextitem.role != \"tool\" %}\n            {{- '<|im_end|>\\n' }}\n        {%- elif loop.last %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- else %}\n        {{- raise_exception('Unexpected message role.') }}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n    {%- if enable_thinking is defined and enable_thinking is true %}\n        {{- '<think>\\n' }}\n    {%- else %}\n        {{- '<think>\\n\\n</think>\\n\\n' }}\n    {%- endif %}\n{%- endif %}",
+        "16",
+        "3584",
+        "0.000001",
+        "248046",
+        "262144",
+        "model",
+        "8",
+        "248055",
+        "24",
+        "https://huggingface.co/unsloth",
+        "Qwen",
+        "1",
+        "2",
+        "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+        "apache-2.0",
+        "unsloth_calibration_Qwen3.5-0.8B.txt",
+        "Qwen3.5-0.8B",
+        "Unsloth",
+        "qwen35",
+        "4",
+        "Qwen3.5-0.8B",
+        "1024",
+        "https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE",
+        "128",
+        "Qwen3.5 0.8B",
+        "0.8B"
+      ],
+      "token_bos": 11,
+      "token_eos": 248046,
+      "token_eot": 248046,
+      "list_tokens_eog": [
+        248044,
+        248046,
+        248063,
+        248064,
+        248065
+      ],
+      "add_bos_token": false,
+      "add_eos_token": false,
+      "has_encoder": false,
+      "token_decoder_start": -1,
+      "media_marker": "<__media_RVMmWMcBeBreysoGcsI7bhvgF6OmiBsu__>",
+      "has_image_input": false,
+      "has_audio_input": false,
+      "has_audio_output": false,
+      "has_chat": true,
+      "has_audio_stream": false,
+      "has_live_asr": false,
+      "audio_input_rate": 0,
+      "audio_output_rate": 0,
+      "audio_voices": [],
+      "metadata": {
+        "quantize.imatrix.file": "Qwen3.5-0.8B-GGUF/imatrix_unsloth.gguf",
+        "general.file_type": "15",
+        "tokenizer.ggml.pre": "qwen35",
+        "tokenizer.ggml.model": "gpt2",
+        "qwen35.full_attention_interval": "4",
+        "quantize.imatrix.entries_count": "186",
+        "qwen35.rope.dimension_count": "64",
+        "qwen35.ssm.inner_size": "2048",
+        "qwen35.ssm.group_count": "16",
+        "qwen35.attention.value_length": "256",
+        "qwen35.rope.freq_base": "10000000.000000",
+        "qwen35.attention.head_count_kv": "2",
+        "qwen35.attention.key_length": "256",
+        "quantize.imatrix.chunks_count": "80",
+        "tokenizer.chat_template": "{%- set image_count = namespace(value=0) %}\n{%- set video_count = namespace(value=0) %}\n{%- macro render_content(content, do_vision_count, is_system_content=false) %}\n    {%- if content is string %}\n        {{- content }}\n    {%- elif content is iterable and content is not mapping %}\n        {%- for item in content %}\n            {%- if 'image' in item or 'image_url' in item or item.type == 'image' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain images.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set image_count.value = image_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Picture ' ~ image_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|image_pad|><|vision_end|>' }}\n            {%- elif 'video' in item or item.type == 'video' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain videos.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set video_count.value = video_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Video ' ~ video_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|video_pad|><|vision_end|>' }}\n            {%- elif 'text' in item %}\n                {{- item.text }}\n            {%- else %}\n                {{- raise_exception('Unexpected item type in content.') }}\n            {%- endif %}\n        {%- endfor %}\n    {%- elif content is none or content is undefined %}\n        {{- '' }}\n    {%- else %}\n        {{- raise_exception('Unexpected content type.') }}\n    {%- endif %}\n{%- endmacro %}\n{%- if not messages %}\n    {{- raise_exception('No messages provided.') }}\n{%- endif %}\n{%- if tools and tools is iterable and tools is not mapping %}\n    {{- '<|im_start|>system\\n' }}\n    {{- \"# Tools\\n\\nYou have access to the following functions:\\n\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\" }}\n    {{- '\\n\\nIf you choose to call a function ONLY reply in the following format with NO suffix:\\n\\n<tool_call>\\n<function=example_function_name>\\n<parameter=example_parameter_1>\\nvalue_1\\n</parameter>\\n<parameter=example_parameter_2>\\nThis is the value for the second parameter\\nthat can span\\nmultiple lines\\n</parameter>\\n</function>\\n</tool_call>\\n\\n<IMPORTANT>\\nReminder:\\n- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags\\n- Required parameters MUST be specified\\n- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after\\n- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls\\n</IMPORTANT>' }}\n    {%- if messages[0].role == 'system' %}\n        {%- set content = render_content(messages[0].content, false, true)|trim %}\n        {%- if content %}\n            {{- '\\n\\n' + content }}\n        {%- endif %}\n    {%- endif %}\n    {{- '<|im_end|>\\n' }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {%- set content = render_content(messages[0].content, false, true)|trim %}\n        {{- '<|im_start|>system\\n' + content + '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length - 1) %}\n{%- for message in messages[::-1] %}\n    {%- set index = (messages|length - 1) - loop.index0 %}\n    {%- if ns.multi_step_tool and message.role == \"user\" %}\n        {%- set content = render_content(message.content, false)|trim %}\n        {%- if not(content.startswith('<tool_response>') and content.endswith('</tool_response>')) %}\n            {%- set ns.multi_step_tool = false %}\n            {%- set ns.last_query_index = index %}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if ns.multi_step_tool %}\n    {{- raise_exception('No user query found in messages.') }}\n{%- endif %}\n{%- for message in messages %}\n    {%- set content = render_content(message.content, true)|trim %}\n    {%- if message.role == \"system\" %}\n        {%- if not loop.first %}\n            {{- raise_exception('System message must be at the beginning.') }}\n        {%- endif %}\n    {%- elif message.role == \"user\" %}\n        {{- '<|im_start|>' + message.role + '\\n' + content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {%- set reasoning_content = '' %}\n        {%- if message.reasoning_content is string %}\n            {%- set reasoning_content = message.reasoning_content %}\n        {%- else %}\n            {%- if '</think>' in content %}\n                {%- set reasoning_content = content.split('</think>')[0].rstrip('\\n').split('<think>')[-1].lstrip('\\n') %}\n                {%- set content = content.split('</think>')[-1].lstrip('\\n') %}\n            {%- endif %}\n        {%- endif %}\n        {%- set reasoning_content = reasoning_content|trim %}\n        {%- if loop.index0 > ns.last_query_index %}\n            {{- '<|im_start|>' + message.role + '\\n<think>\\n' + reasoning_content + '\\n</think>\\n\\n' + content }}\n        {%- else %}\n            {{- '<|im_start|>' + message.role + '\\n' + content }}\n        {%- endif %}\n        {%- if message.tool_calls and message.tool_calls is iterable and message.tool_calls is not mapping %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if tool_call.function is defined %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {%- if loop.first %}\n                    {%- if content|trim %}\n                        {{- '\\n\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- else %}\n                        {{- '<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- endif %}\n                {%- else %}\n                    {{- '\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                {%- endif %}\n                {%- if tool_call.arguments is mapping %}\n                    {%- for args_name in tool_call.arguments %}\n                        {%- set args_value = tool_call.arguments[args_name] %}\n                        {{- '<parameter=' + args_name + '>\\n' }}\n                        {%- set args_value = args_value | tojson | safe if args_value is mapping or (args_value is sequence and args_value is not string) else args_value | string %}\n                        {{- args_value }}\n                        {{- '\\n</parameter>\\n' }}\n                    {%- endfor %}\n                {%- endif %}\n                {{- '</function>\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.previtem and loop.previtem.role != \"tool\" %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- content }}\n        {{- '\\n</tool_response>' }}\n        {%- if not loop.last and loop.nextitem.role != \"tool\" %}\n            {{- '<|im_end|>\\n' }}\n        {%- elif loop.last %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- else %}\n        {{- raise_exception('Unexpected message role.') }}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n    {%- if enable_thinking is defined and enable_thinking is true %}\n        {{- '<think>\\n' }}\n    {%- else %}\n        {{- '<think>\\n\\n</think>\\n\\n' }}\n    {%- endif %}\n{%- endif %}",
+        "qwen35.ssm.time_step_rank": "16",
+        "qwen35.feed_forward_length": "3584",
+        "qwen35.attention.layer_norm_rms_epsilon": "0.000001",
+        "tokenizer.ggml.eos_token_id": "248046",
+        "qwen35.context_length": "262144",
+        "general.type": "model",
+        "qwen35.attention.head_count": "8",
+        "tokenizer.ggml.padding_token_id": "248055",
+        "qwen35.block_count": "24",
+        "general.repo_url": "https://huggingface.co/unsloth",
+        "general.base_model.0.organization": "Qwen",
+        "general.base_model.count": "1",
+        "general.quantization_version": "2",
+        "general.base_model.0.repo_url": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+        "general.license": "apache-2.0",
+        "quantize.imatrix.dataset": "unsloth_calibration_Qwen3.5-0.8B.txt",
+        "general.name": "Qwen3.5-0.8B",
+        "general.quantized_by": "Unsloth",
+        "general.architecture": "qwen35",
+        "qwen35.ssm.conv_kernel": "4",
+        "general.basename": "Qwen3.5-0.8B",
+        "qwen35.embedding_length": "1024",
+        "general.license.link": "https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE",
+        "qwen35.ssm.state_size": "128",
+        "general.base_model.0.name": "Qwen3.5 0.8B",
+        "general.size_label": "0.8B"
+      }
+    }
+  },
+  "warmOffline": {
+    "text": "1. Identify the physical or logical output pin on the device under consideration.\n2. Locate the corresponding output pin on the target device to be swapped.\n3. Disable the output pin on the target device using the appropriate hardware or software method.\n4. Swap the physical or logical output pin between the two devices.\n5. Re-enable the output pin on the target device using the appropriate hardware or software method.\n6. Verify that the new output is functioning correctly and connected to the desired load.",
+    "generationMs": 33097.39999999851,
+    "firstTokenMs": 1586.3999999985099,
+    "usage": null,
+    "timings": {
+      "cache_n": 71,
+      "prompt_n": 4,
+      "prompt_ms": 895.101,
+      "prompt_per_token_ms": 223.77525,
+      "prompt_per_second": 4.468769446129543,
+      "predicted_n": 104,
+      "predicted_ms": 32099.699,
+      "predicted_per_token_ms": 311.6475631067961,
+      "predicted_per_second": 3.2087528297383723
+    }
+  },
+  "status": "completed_benchmark_not_quality_acceptance"
+}

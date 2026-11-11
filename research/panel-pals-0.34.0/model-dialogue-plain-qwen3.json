@@ -1,0 +1,283 @@
+{
+  "actualInference": true,
+  "technicalAdviceEvaluated": false,
+  "physicalPhone": false,
+  "createdAt": "2026-11-11T19:11:12.043Z",
+  "runtime": "Transformers.js 3.8.1, bundled ORT CPU WASM, one thread",
+  "systemPrompt": "You interpret an engineer's message, not answer it. Return only one JSON object. Keys: intent (procedure, fault, followup, correction, other), tasks (array of requested actions in order), step (number or null), observations (array of reported facts), clarify (a question only if needed, otherwise empty string). Preserve all requested actions. Use the previous conversation for follow-ups and corrections. Do not invent technical instructions, measurements, model names, or actions.",
+  "cases": [
+    {
+      "id": "multi_task",
+      "messages": [
+        {
+          "role": "system",
+          "content": "List each separate action this engineer is asking about, in order. Do not answer, give technical instructions, or duplicate the overall goal. One action per line."
+        },
+        {
+          "role": "user",
+          "content": "I need to swap a device, how do I disable outputs, disable the old one, swap it, then re enable device."
+        }
+      ],
+      "question": "I need to swap a device, how do I disable outputs, disable the old one, swap it, then re enable device."
+    },
+    {
+      "id": "followup_step_two",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Identify which previous action the engineer is referring to. Reply with its number and label only."
+        },
+        {
+          "role": "user",
+          "content": "Previous requested actions: 1. Disable outputs. 2. Disable the old device. 3. Replace the device. 4. Re-enable the device.\nWhat about step two?"
+        }
+      ],
+      "question": "What about step two?"
+    },
+    {
+      "id": "correct_target",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Apply this correction to the previous requested actions. Return the whole updated list, one action per line. Do not give technical instructions."
+        },
+        {
+          "role": "user",
+          "content": "Previous requested actions: 1. Disable outputs. 2. Disable the old device. 3. Replace the device. 4. Re-enable the device.\nmeant sounders, not all outputs"
+        }
+      ],
+      "question": "meant sounders, not all outputs"
+    },
+    {
+      "id": "multiple_readings",
+      "messages": [
+        {
+          "role": "system",
+          "content": "List every observation the engineer reported, using their exact words. Do not interpret readings, propose tests or add facts."
+        },
+        {
+          "role": "user",
+          "content": "The PSU output is 24.1 V with the load connected, the first detector is 23.8 volts, and the last detector reads 0 V. The fault is still showing."
+        }
+      ],
+      "question": "The PSU output is 24.1 V with the load connected, the first detector is 23.8 volts, and the last detector reads 0 V. The fault is still showing."
+    },
+    {
+      "id": "ordinary_request",
+      "messages": [
+        {
+          "role": "system",
+          "content": "List each separate action this engineer is asking about, in order. Do not answer, give technical instructions, or duplicate the overall goal. One action per line."
+        },
+        {
+          "role": "user",
+          "content": "Write a short joke about my coffee going cold."
+        }
+      ],
+      "question": "Write a short joke about my coffee going cold."
+    },
+    {
+      "id": "two_procedures",
+      "question": "How do I start a walk test and then view the event history on this panel?",
+      "messages": [
+        {
+          "role": "system",
+          "content": "List each separate action this engineer is asking about, in order. Do not answer, give technical instructions, or duplicate the overall goal. One action per line."
+        },
+        {
+          "role": "user",
+          "content": "How do I start a walk test and then view the event history on this panel?"
+        }
+      ]
+    },
+    {
+      "id": "trade_spelling",
+      "question": "Need to disbale the sounders, swap the optical detctor and re-enable it.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "List each separate action this engineer is asking about, in order. Do not answer, give technical instructions, or duplicate the overall goal. One action per line."
+        },
+        {
+          "role": "user",
+          "content": "Need to disbale the sounders, swap the optical detctor and re-enable it."
+        }
+      ]
+    },
+    {
+      "id": "explicit_equipment_change",
+      "question": "Leave the panel for now. I am working on the external PSU: check its output voltage and inspect its battery leads.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "List each separate action this engineer is asking about, in order. Do not answer, give technical instructions, or duplicate the overall goal. One action per line."
+        },
+        {
+          "role": "user",
+          "content": "Leave the panel for now. I am working on the external PSU: check its output voltage and inspect its battery leads."
+        }
+      ]
+    },
+    {
+      "id": "blocked_test",
+      "question": "I cannot access the expander. The detector is still showing a resistance fault.",
+      "messages": [
+        {
+          "role": "system",
+          "content": "List every observation the engineer reported, using their exact words. Do not interpret readings, propose tests or add facts."
+        },
+        {
+          "role": "user",
+          "content": "I cannot access the expander. The detector is still showing a resistance fault."
+        }
+      ]
+    }
+  ],
+  "models": [
+    {
+      "id": "onnx-community/Qwen3-0.6B-ONNX",
+      "revision": "58ca03a5e7b354b480b1a82b34bde8dc7b854cc0",
+      "label": "qwen600",
+      "files": [
+        {
+          "path": "config.json",
+          "bytes": 912,
+          "sha256": "8a04114ba59cc42b47d804d35d1d5c61d746ae4634f41f796768c6e302d39b9e",
+          "downloadSeconds": 0.29
+        },
+        {
+          "path": "generation_config.json",
+          "bytes": 219,
+          "sha256": "9e9e031ae8bca36eefcdcdd0b35d83c61baa01e31d68d5f5a961c9ca1a4b95bf",
+          "downloadSeconds": 0.18
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 9117040,
+          "sha256": "e7a95fce95bf5b0946d0ddb3f9d7caa030b7e850bbe92b0edb26bcf563e9f3d5",
+          "downloadSeconds": 1.6
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 10369,
+          "sha256": "7c5194eecfd95a4dcbd6b4b502af785d2541fd65a388d1cae7ad43693c67b802",
+          "downloadSeconds": 0.37
+        },
+        {
+          "path": "onnx/model_quantized.onnx",
+          "bytes": 617687575,
+          "sha256": "ccf8734e59fdf7475b2dc0c117005e267a3a08342c1d951e0a79f0bce57bf62a",
+          "downloadSeconds": 72.86
+        }
+      ],
+      "modelBytes": 626816115,
+      "results": [
+        {
+          "id": "multi_task",
+          "text": "1. Disable outputs  \n2. Disable the old one  \n3. Swap it  \n4. Re enable device",
+          "inputTokens": 71,
+          "outputTokens": 23,
+          "firstTokenMs": 3074.699999999255,
+          "generationMs": 10396.800000000745,
+          "parsed": null
+        },
+        {
+          "id": "followup_step_two",
+          "text": "Step 2: **Disable the old device**.",
+          "inputTokens": 70,
+          "outputTokens": 12,
+          "firstTokenMs": 3099,
+          "generationMs": 7067.70000000298,
+          "parsed": null
+        },
+        {
+          "id": "correct_target",
+          "text": "1. Disable outputs.  \n2. Re-enable the device.  \n3. Replace the device.  \n4. Disable the old device.",
+          "inputTokens": 80,
+          "outputTokens": 29,
+          "firstTokenMs": 3119.699999999255,
+          "generationMs": 13020.29999999702,
+          "parsed": null
+        },
+        {
+          "id": "multiple_readings",
+          "text": "The engineer reported:  \n- The PSU output is 24.1 V with the load connected.  \n- The first detector reads 23.8 V.  \n- The last detector reads 0 V.  \n- The fault is still showing.",
+          "inputTokens": 77,
+          "outputTokens": 53,
+          "firstTokenMs": 2971.7999999970198,
+          "generationMs": 20523.79999999702,
+          "parsed": null
+        },
+        {
+          "id": "ordinary_request",
+          "text": "1. My coffee is going cold.  \n2. It's getting colder, and I'm not drinking it.  \n3. My coffee is going cold, and I'm not drinking it.  \n4. My coffee is going cold, and I'm not drinking it.",
+          "inputTokens": 55,
+          "outputTokens": 56,
+          "firstTokenMs": 2241,
+          "generationMs": 22493.199999999255,
+          "parsed": null
+        },
+        {
+          "id": "two_procedures",
+          "text": "1. Open the event history panel.  \n2. Click on the 'Start Walk Test' button.  \n3. View the event history.",
+          "inputTokens": 62,
+          "outputTokens": 30,
+          "firstTokenMs": 2616,
+          "generationMs": 14112.699999999255,
+          "parsed": null
+        },
+        {
+          "id": "trade_spelling",
+          "text": "1. Swap the optical detector with the sounder.  \n2. Re-enable the optical detector.",
+          "inputTokens": 63,
+          "outputTokens": 21,
+          "firstTokenMs": 2994.599999997765,
+          "generationMs": 10391.5,
+          "parsed": null
+        },
+        {
+          "id": "explicit_equipment_change",
+          "text": "- Check the output voltage of the external power supply.  \n- Inspect the battery leads of the external power supply.",
+          "inputTokens": 69,
+          "outputTokens": 25,
+          "firstTokenMs": 2808.800000000745,
+          "generationMs": 12024.800000000745,
+          "parsed": null
+        },
+        {
+          "id": "blocked_test",
+          "text": "The engineer reported: \"I cannot access the expander. The detector is still showing a resistance fault.\"",
+          "inputTokens": 52,
+          "outputTokens": 22,
+          "firstTokenMs": 3083.2000000029802,
+          "generationMs": 10994,
+          "parsed": null
+        }
+      ],
+      "load": {
+        "loadMs": 12487.10000000149
+      },
+      "warmOffline": {
+        "text": "1. Disable outputs  \n2. Disable the old one  \n3. Swap it  \n4. Re enable device",
+        "inputTokens": 71,
+        "outputTokens": 23,
+        "firstTokenMs": 3093.099999997765,
+        "generationMs": 11015.89999999851
+      }
+    }
+  ],
+  "limitations": [
+    "Linux Chromium CPU results do not establish iPhone memory capacity or speed.",
+    "Offline test covers warm in-memory inference, not a cold offline application launch.",
+    "Structured parsing is interpretation only; every operation needs separate verified manual evidence."
+  ],
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "hardwareConcurrency": 5,
+    "deviceMemoryGB": 16,
+    "viewport": [
+      390,
+      844
+    ]
+  }
+}

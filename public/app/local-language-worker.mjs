@@ -1,10 +1,10 @@
-import {LOCAL_MODEL,LOCAL_MODEL_FILES} from './local-language-resources.mjs';
+import {LOCAL_MODEL,LOCAL_MODEL_FILES,getLocalModelProfile,GGUF_RUNTIME_PATHS} from './local-language-resources.mjs';
 import {openModelCache,inspectModelFile,makeModelCacheAdapter,modelError} from './local-language-cache.mjs';
 import {downloadModelPack} from './local-language-download.mjs';
-let generator=null,library=null,active=false;
+let generator=null,library=null,active=false,ggufRuntime=null,ggufRequestId=null,selectedProfile=getLocalModelProfile();
 const send=(id,type,data)=>postMessage({id,type,...data});
-function errorDetails(error,phase){return {code:error?.code||(/memory|allocation|out of bounds/i.test(error?.message||'')?'MODEL_MEMORY_LIMIT':'MODEL_RUNTIME_ERROR'),message:error?.message||'Local language processing failed.',name:error?.name||'Error',stack:String(error?.stack||'').slice(0,10000),phase,modelId:LOCAL_MODEL.id,revision:LOCAL_MODEL.revision};}
-async function downloadPack(id){const result=await downloadModelPack({onProgress:value=>send(id,'progress',value)});send(id,'complete',{result});}
+function errorDetails(error,phase){return {code:error?.code||(/memory|allocation|out of bounds/i.test(error?.message||'')?'MODEL_MEMORY_LIMIT':'MODEL_RUNTIME_ERROR'),message:error?.message||'Local language processing failed.',name:error?.name||'Error',stack:String(error?.stack||'').slice(0,10000),causeStack:String(error?.cause?.stack||'').slice(0,10000),phase,modelId:selectedProfile.model.id,revision:selectedProfile.model.revision};}
+async function downloadPack(id){const result=await downloadModelPack({files:selectedProfile.files,model:selectedProfile.model,onProgress:value=>send(id,'progress',value)});send(id,'complete',{result});}
 async function loadGenerator(id){
  if(generator)return {loadMs:0};const start=performance.now();send(id,'progress',{phase:'load',message:'Loading the local language model into memory…',modelId:LOCAL_MODEL.id});
  library||=await import('./vendor/local-language/transformers.min.js');
@@ -65,4 +65,9 @@ async function generate(id,request){
  if(constraint&&!constraint.choices.includes(selected))throw modelError('MODEL_CHOICE_INVALID','The local model did not finish one of the permitted choices.');
  send(id,'complete',{result:{text:selected,modelId:LOCAL_MODEL.id,modelRevision:LOCAL_MODEL.revision,backend:'wasm',interpretationOnly:true,contextTruncated:truncated,...(constraint?{choiceConstraint:{method:constraint.method,allowed:constraint.choices,selected}}:{}),metrics:{...load,inputTokens,outputTokens:tokens,firstTokenMs,generationMs,tokensPerSecond:tokens/(generationMs/1000)}}});
 }
-if(typeof self!=='undefined')self.onmessage=async event=>{const {id,type,request}=event.data||{};if(active){send(id,'error',{error:errorDetails(modelError('MODEL_BUSY','Another local model operation is running.'),'busy')});return;}active=true;try{if(type==='download')await downloadPack(id);else if(type==='generate')await generate(id,request||{});else throw modelError('MODEL_REQUEST_INVALID','Unknown local model operation.');}catch(error){send(id,'error',{error:errorDetails(error,type)});}finally{active=false;}};
+async function generateGguf(id,request){
+ ggufRequestId=id;
+ if(!ggufRuntime){const [{createGgufRuntime},cacheAPI]=await Promise.all([import('./local-language-gguf.mjs'),import('./local-language-cache.mjs')]);ggufRuntime=createGgufRuntime({model:selectedProfile.model,file:selectedProfile.files[0],runtimeURLs:Object.fromEntries(Object.entries(GGUF_RUNTIME_PATHS).map(([key,path])=>[key,new URL(path,import.meta.url).href])),cacheAPI,onProgress:value=>send(ggufRequestId,'progress',value),onToken:text=>send(ggufRequestId,'token',{text})});}
+ const result=await ggufRuntime.generate(request);send(id,'complete',{result});
+}
+if(typeof self!=='undefined')self.onmessage=async event=>{const {id,type,request}=event.data||{};if(active){send(id,'error',{error:errorDetails(modelError('MODEL_BUSY','Another local model operation is running.'),'busy')});return;}active=true;try{const profile=getLocalModelProfile(request?.profileId||'compact');if(profile.id!==selectedProfile.id&&(generator||ggufRuntime))throw modelError('MODEL_PROFILE_SWITCH_REQUIRED','Close the previous model worker before switching profiles.');selectedProfile=profile;if(type==='download')await downloadPack(id);else if(type==='generate'){if(selectedProfile.id==='compact')await generate(id,request||{});else await generateGguf(id,request||{});}else throw modelError('MODEL_REQUEST_INVALID','Unknown local model operation.');}catch(error){send(id,'error',{error:errorDetails(error,type)});}finally{active=false;}};

@@ -1,0 +1,154 @@
+[
+  {
+    "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+    "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+    "label": "smol360",
+    "files": [
+      {
+        "path": "config.json",
+        "bytes": 961,
+        "sha256": "74c6493e7352434a031c0e2bd55a015ef90ac25d549ca1dcc7972a6731459456",
+        "downloadSeconds": 0.42
+      },
+      {
+        "path": "generation_config.json",
+        "bytes": 132,
+        "sha256": "3a6555a034b32bf2fc6d35cc16207dc95c8af520b2d45febe48a1ad6cb46ff63",
+        "downloadSeconds": 0.25
+      },
+      {
+        "path": "tokenizer.json",
+        "bytes": 3522656,
+        "sha256": "7d27c493c729a66ecefc837280b05d948b1ed50d130eebdbf911b1b36cf38ed7",
+        "downloadSeconds": 0.4
+      },
+      {
+        "path": "tokenizer_config.json",
+        "bytes": 3794,
+        "sha256": "7b85619980209ca801effcd87e5df7084a21abc3d8b8d27003a6b4ffcce170ef",
+        "downloadSeconds": 0.33
+      },
+      {
+        "path": "onnx/model_quantized.onnx",
+        "bytes": 363115149,
+        "sha256": "5ee6c8dc6791050d8779687a16c8167643a234e00ea41e06a92e05f88003dbb3",
+        "downloadSeconds": 35.65
+      }
+    ],
+    "totalBytes": 366642692
+  },
+  {
+    "id": "onnx-community/Qwen2.5-0.5B-Instruct",
+    "revision": "22942cb7d7ba4cc81bb4673549ca4d4614469b5e",
+    "label": "qwen500",
+    "files": [
+      {
+        "path": "config.json",
+        "bytes": 678,
+        "sha256": "777e01f0fbb3346eb229cb6fb278ed6533c1e4dcb9ebf4bed0f6e94ef17fa1b5",
+        "downloadSeconds": 0.31
+      },
+      {
+        "path": "generation_config.json",
+        "bytes": 242,
+        "sha256": "f7e7ce458658b2d40d9eb213b91b77a8bf698845ab89360976722d7ac46928a3",
+        "downloadSeconds": 0.39
+      },
+      {
+        "path": "tokenizer.json",
+        "bytes": 7031673,
+        "sha256": "a8506e7111b80c6d8635951a02eab0f4e1a8e4e5772da83846579e97b16f61bf",
+        "downloadSeconds": 0.66
+      },
+      {
+        "path": "tokenizer_config.json",
+        "bytes": 7849,
+        "sha256": "6a14243f0ae04884e597b3f032c05e15de9f417318fdcac24ab4e2680e691430",
+        "downloadSeconds": 0.18
+      },
+      {
+        "path": "onnx/model_quantized.onnx",
+        "bytes": 512096557,
+        "sha256": "41834041ab1b29eff9fc592f1a29a1844133aea35832ea9fa91682be13016100",
+        "downloadSeconds": 53.55
+      }
+    ],
+    "totalBytes": 519136999
+  },
+  {
+    "id": "onnx-community/Qwen3-0.6B-ONNX",
+    "revision": "58ca03a5e7b354b480b1a82b34bde8dc7b854cc0",
+    "label": "qwen600",
+    "files": [
+      {
+        "path": "config.json",
+        "bytes": 912,
+        "sha256": "8a04114ba59cc42b47d804d35d1d5c61d746ae4634f41f796768c6e302d39b9e",
+        "downloadSeconds": 0.29
+      },
+      {
+        "path": "generation_config.json",
+        "bytes": 219,
+        "sha256": "9e9e031ae8bca36eefcdcdd0b35d83c61baa01e31d68d5f5a961c9ca1a4b95bf",
+        "downloadSeconds": 0.18
+      },
+      {
+        "path": "tokenizer.json",
+        "bytes": 9117040,
+        "sha256": "e7a95fce95bf5b0946d0ddb3f9d7caa030b7e850bbe92b0edb26bcf563e9f3d5",
+        "downloadSeconds": 1.6
+      },
+      {
+        "path": "tokenizer_config.json",
+        "bytes": 10369,
+        "sha256": "7c5194eecfd95a4dcbd6b4b502af785d2541fd65a388d1cae7ad43693c67b802",
+        "downloadSeconds": 0.37
+      },
+      {
+        "path": "onnx/model_quantized.onnx",
+        "bytes": 617687575,
+        "sha256": "ccf8734e59fdf7475b2dc0c117005e267a3a08342c1d951e0a79f0bce57bf62a",
+        "downloadSeconds": 72.86
+      }
+    ],
+    "totalBytes": 626816115
+  },
+  {
+    "id": "onnx-community/Qwen2.5-1.5B-Instruct",
+    "revision": "d54957e3af1be04546436e874a60fe386041b244",
+    "label": "qwen1500",
+    "files": [
+      {
+        "path": "config.json",
+        "bytes": 809,
+        "sha256": "215eb99c4955b0c42ea9f6e0980d922c228950c5dbc09bde6dc451fbba4d21f3",
+        "downloadSeconds": 0.3
+      },
+      {
+        "path": "generation_config.json",
+        "bytes": 242,
+        "sha256": "f7e7ce458658b2d40d9eb213b91b77a8bf698845ab89360976722d7ac46928a3",
+        "downloadSeconds": 0.35
+      },
+      {
+        "path": "tokenizer.json",
+        "bytes": 7031673,
+        "sha256": "a8506e7111b80c6d8635951a02eab0f4e1a8e4e5772da83846579e97b16f61bf",
+        "downloadSeconds": 0.64
+      },
+      {
+        "path": "tokenizer_config.json",
+        "bytes": 7849,
+        "sha256": "6a14243f0ae04884e597b3f032c05e15de9f417318fdcac24ab4e2680e691430",
+        "downloadSeconds": 0.37
+      },
+      {
+        "path": "onnx/model_quantized.onnx",
+        "bytes": 1578954293,
+        "sha256": "ee8364373c6fb35644c67fd8127cbee6c3d98ac889f8bb32ea4ac04a29650787",
+        "downloadSeconds": 122.21
+      }
+    ],
+    "totalBytes": 1585994866
+  }
+]

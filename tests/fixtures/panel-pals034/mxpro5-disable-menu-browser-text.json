@@ -1,0 +1,14 @@
+{
+  "synthetic": false,
+  "purpose": "Regression for PDF.js splitting the unrelated USER-ID menu label while retaining the supported ZONE/INPUTS and OUTPUTS row. This is a short excerpt, not a manual replacement.",
+  "manualId": "advanced-0254975c10bd",
+  "title": "Advanced MxPro5 — User guide",
+  "documentNumber": "680-166",
+  "revision": "04",
+  "sha256": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+  "pdfPage": 26,
+  "printedPage": "26",
+  "section": "3.10 Disabling",
+  "processor": "FINDR analyseManual / PDF.js 5.6.205 in Linux Chromium 154",
+  "excerpt": "www.advancedco.com 26 \n3.10 Disabling \nOn selecting the Disable Menu, the display shows five possible options. For example: \n[Disable] User 1 Node 1 \nZONE/INPUTS OUTPUTS GROUPS \nCONTROLS USER - ID"
+}

@@ -10,7 +10,7 @@ const retryable=error=>['MODEL_DOWNLOAD_TIMEOUT','MODEL_NETWORK_ERROR','MODEL_DO
 
 /** Download pinned files into the existing 8 MiB cache parts. Inference is not
  * started here. Dependencies are injectable for transport/storage regressions. */
-export async function downloadModelPack({files=LOCAL_MODEL_FILES,cache,fetchImpl=globalThis.fetch,onProgress,signal,timeouts={},maxRetries=2,retryDelayMs=1000,progressIntervalMs=200,now=()=>Date.now()}={}){
+export async function downloadModelPack({files=LOCAL_MODEL_FILES,model=LOCAL_MODEL,cache,fetchImpl=globalThis.fetch,onProgress,signal,timeouts={},maxRetries=2,retryDelayMs=1000,progressIntervalMs=200,now=()=>Date.now()}={}){
  const limits=Object.fromEntries(Object.entries(MODEL_DOWNLOAD_TIMEOUTS).map(([key,value])=>[key,Number.isFinite(timeouts[key])&&timeouts[key]>0?timeouts[key]:value]));
  const retries=Math.max(0,Math.min(3,Number.isInteger(maxRetries)?maxRetries:2)),operation=new AbortController();
  let stopped=false,terminalError=null,receivedBytes=0,savedBytes=0,savedBytesKnown=false,lastProgress=-Infinity;
@@ -159,7 +159,7 @@ export async function downloadModelPack({files=LOCAL_MODEL_FILES,cache,fetchImpl
    }
    await verifyFile(file);
   }
-  check();return {installed:true,modelId:LOCAL_MODEL.id,revision:LOCAL_MODEL.revision,bytes:totalBytes,receivedBytes};
+  check();return {installed:true,modelId:model.id,revision:model.revision,bytes:totalBytes,receivedBytes};
  }catch(error){if(!operation.signal.aborted)stop(error);throw error;}
  finally{stopped=true;signal?.removeEventListener('abort',parentAbort);}
 }

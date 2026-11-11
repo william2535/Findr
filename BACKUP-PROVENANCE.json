@@ -1,20 +1,20 @@
 {
-  "webVersion": "0.33.0",
-  "siteVersion": 72,
+  "webVersion": "0.34.0",
+  "siteVersion": 73,
   "siteProjectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
-  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_d2f7375d56d48191b1fc5e3dd16de8a6",
-  "deploymentId": "appgdep_6af4b70ee298819184ed3707ab328dfe",
+  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_0ea5ce9d682c81918b6ce0f0cc2c3f6b",
+  "deploymentId": "appgdep_6af4cf4aff948191b7c343cdd1dc3beb",
   "deploymentStatus": "succeeded",
-  "deploymentUpdatedAt": "2026-11-11T18:42:44.727564+00:00",
+  "deploymentUpdatedAt": "2026-11-11T20:26:17.100045+00:00",
   "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site",
-  "sourceCommit": "41074dde6bd0d1546df4c50f008fb73333034929",
+  "sourceCommit": "1536b5a84e2126bae0e071d6004e6838bb70fac6",
   "sourceRepository": "Sites project source repository",
   "githubRepository": "https://github.com/william2535/Findr",
   "githubBranch": "main",
   "backupRevision": "The Git commit containing this provenance and SOURCE-FILES.sha256 identifies the backup; it intentionally differs from the deployment source commit.",
   "sourceManifest": "SOURCE-FILES.sha256",
   "manifestScope": "All source-backup payload files except the checksum manifest itself; includes GitHub setup/export documentation and separately archived recovery files.",
-  "verifiedOriginalSourceFiles": 2540,
+  "verifiedOriginalSourceFiles": 2622,
   "intentionallyDetachedFile": ".openai/hosting.json",
   "detachedHostingReason": "Keep a migrated checkout separate from the original live ChatGPT Site.",
   "intentionalExclusions": "EXPORT-EXCLUSIONS.json; additionally no dependency/build caches, private environment values, user data, downloaded manuals or model weights. Required bundled runtime assets and synthetic fixtures remain included.",
@@ -25,36 +25,64 @@
   },
   "checks": {
     "unitTests": {
-      "passed": 1567,
+      "passed": 1687,
+      "failed": 0,
+      "skipped": 0,
+      "seconds": 42.3
+    },
+    "postDisclosureResourceTests": {
+      "passed": 23,
       "failed": 0
     },
     "typescript": "passed",
     "productionBuild": "passed",
-    "publicAssets": "passed; 1424 public files verified",
-    "offlineBuildHash": "295078358727",
+    "publicAssets": "passed; 1436 public files verified; final build 187092597 bytes",
+    "offlineBuildHash": "b89bc4bf12ef",
     "browserChecks": {
-      "Chromium154.0.8037.57Desktop1440x1000": 12,
-      "Chromium154.0.8037.57Portrait390x844": 13,
-      "WebKit26.0WPELinuxPortrait390x844Online": 12
+      "Chromium154.0.8037.57Desktop1440x1000ManualSearch": 8,
+      "Chromium154.0.8037.57Portrait390x844ManualSearch": 8,
+      "WebKit26.0WPELinuxPortrait390x844OnlineManualSearch": 8,
+      "Chromium154.0.8037.57Portrait390x844ActualModelColdOffline": 12
     },
-    "offlineVerified": "Chromium portrait: verified app cache, network-disabled reload, saved handover, contact extraction from a saved synthetic manual, and opening its exact cited PDF page.",
+    "offlineVerified": "Actual pinned Qwen3.5-2B model and real saved MxPro5 PDFs through normal Panel Pals UI, verified service-worker cache, network-disabled cold reload and fresh four-task request: 106.40 seconds total (12.74 load,92.69 generation); saved follow-up 0.97 seconds. Functional test used eff26ef1dcee; only timing disclosure text changed afterward, then resources/build/public-byte checks passed again for b89bc4bf12ef.",
+    "model": {
+      "default": "SmolLM2-360M compact reference model retained",
+      "optional": "Experimental Qwen3.5-2B Q4_K_M, explicit download and local execution probe before activation",
+      "optionalModelBytes": 1280835840,
+      "bundledMainAndCompatibilityRuntimeBytes": 29395450,
+      "rawSemanticCasesPassed": 3,
+      "rawSemanticCasesTotal": 5,
+      "coldOnlineRequestSeconds": 107.35,
+      "coldOfflineRequestSeconds": 106.4,
+      "hardwareProbeEstablishesSemanticQuality": false,
+      "cloudFallback": false
+    },
     "limitations": [
-      "No physical iPhone/Safari session or native phone keyboard verification.",
-      "WebKit offline not claimed; native WPE CacheStorage limitation documented in preceding 0.32.7 QA.",
-      "No model inference benchmark, equipment electrical test, support call or APK release performed.",
-      "Actual Advanced manual general-contact footer was tested separately; current telephone validity and technical-support designation were not verified. Synthetic browser-test contact is a reserved fictional number."
+      "No physical iPhone/Safari device, installed iOS PWA or native keyboard verification.",
+      "WebKit online UI/PDF tests passed; offline WebKit inference is unverified because this executor CacheStorage does not retain entries.",
+      "Larger model is experimental, slow and memory-intensive. Three of five raw semantic cases passed; corrections/component changes are not claimed as broad model successes.",
+      "Exact-step follow-ups and explicit corrections use saved structured context without rerunning inference; this is not a model-quality success claim.",
+      "Model transport used a locally mirrored pinned file for download/probe QA; internet download throughput was not measured.",
+      "No APK build/signing or physical equipment tests performed."
     ],
-    "evidence": "research/panel-pals-0.33.0/README.md",
-    "manualContactReview": "research/panel-pals-0.33.0/support-sources.md"
+    "evidence": "research/panel-pals-0.34.0/README.md",
+    "browserEvidence": "research/panel-pals-0.34.0/browser-README.md",
+    "manualEvidence": "research/panel-pals-0.34.0/manual-evidence.md",
+    "modelEvidence": "research/panel-pals-0.34.0/model-optional-runtime-integration.md"
   },
   "secretReview": {
-    "sourceCommit": "41074dde6bd0d1546df4c50f008fb73333034929",
-    "copiedFiles": 38,
-    "changedTextFilesScanned": 30,
+    "sourceCommit": "1536b5a84e2126bae0e071d6004e6838bb70fac6",
+    "copiedFiles": 96,
+    "changedTextFilesScanned": 69,
     "candidates": [],
-    "allEligibleSourceFilesVerified": 2540,
+    "allEligibleSourceFilesVerified": 2622,
     "detachedHostingVerified": true,
-    "limitations": "Pattern review of changed text plus unchanged reviewed baseline from prior backup provenance and EXPORT-SECRET-AUDIT.json. No proof of mathematical absence of secrets. Screenshots/video and labelled synthetic PDFs are QA assets; manufacturer PDF remains outside source."
+    "recoveryArchiveUnchanged": true,
+    "limitations": "Pattern review of changed text plus unchanged reviewed baseline from previous provenance/EXPORT-SECRET-AUDIT.json. Not mathematical proof of absence. Real model weights and manufacturer PDFs remain outside source; bundled runtime binaries, captured short reference text, labelled synthetic fixtures and QA evidence are included."
   },
-  "preparedAt": "2026-11-11T18:43:11.999735+00:00"
+  "preparedAt": "2026-11-11T20:27:16.115644+00:00",
+  "deploymentArchive": {
+    "sha256": "976a9d83b6da992e4284fb38e3b227f2e4fbc7f3e70c5c80ed7d8016623b359a",
+    "bytes": 188303360
+  }
 }

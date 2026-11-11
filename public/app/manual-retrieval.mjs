@@ -10,7 +10,7 @@ const unique=values=>[...new Set(values.filter(Boolean))];
 const STOP=new Set('a an and are as at be been by can could do does for from has have how i in is it its me of on or that the their them then there these this to was were what when where which will with would you your please tell show explain'.split(' '));
 const ALIASES={psu:['power','supply'],eol:['end','line'],deol:['double','balanced','end','line'],teol:['triple','end','line'],rte:['request','exit'],rex:['request','exit'],mcp:['manual','call','point'],asd:['aspirating','smoke','detection'],poe:['power','ethernet'],nvr:['network','video','recorder'],dvr:['digital','video','recorder'],maglock:['magnetic','lock'],history:['event','log'],events:['history','log'],logs:['history','event'],cctv:['camera','recorder'],compatible:['compatibility','supported','protocol'],compatibility:['compatible','supported','protocol'],terminals:['terminal','wiring'],wires:['wiring','terminal'],walktest:['walk','test'],faults:['fault','trouble'],volts:['voltage'],voltage:['volts','supply']};
 const stem=word=>word.length>4&&!/\d/.test(word)?word.replace(/(?:ies)$/,'y').replace(/(?:ing|ed|s)$/,''):word;
-function words(value){return (folded(value).match(/[\p{L}\p{N}][\p{L}\p{N}_.+-]*/gu)||[]).filter(word=>word.length>1&&!STOP.has(word));}
+function words(value){return (folded(value).replace(/\bre[ -]+enabl/g,'enabl').match(/[\p{L}\p{N}][\p{L}\p{N}_.+-]*/gu)||[]).filter(word=>word.length>1&&!STOP.has(word));}
 function terms(value){return unique(words(value).flatMap(word=>[word,stem(word)]));}
 function queryTerms(value){return unique(words(value).flatMap(word=>[word,stem(word),...(ALIASES[word]||[])]));}
 // Equipment chooses the document, not the answer passage. Otherwise a cover

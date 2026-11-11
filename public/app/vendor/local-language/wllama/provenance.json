@@ -1,0 +1,50 @@
+{
+  "packages": [
+    {
+      "name": "@wllama/wllama",
+      "version": "3.13.0",
+      "license": "MIT"
+    },
+    {
+      "name": "@wllama/wllama-compat",
+      "version": "3.13.0",
+      "license": "MIT"
+    }
+  ],
+  "source": "Official npm tarballs downloaded and integrity verified by feasibility benchmark; copied unmodified. Compat package declares MIT and shares upstream project license.",
+  "files": [
+    {
+      "path": "../wllama/LICENSE",
+      "bytes": 1071,
+      "sha256": "5866e3bd7e3cbd3f7c8bea6efd8a1e7fa7cc8de68c30f428aff7c6584a0fb720"
+    },
+    {
+      "path": "../wllama/index.min.js",
+      "bytes": 219295,
+      "sha256": "e7f3745ee508c111c22d178d23c52cc74016dd8cec39e4600d87e28d287d7981"
+    },
+    {
+      "path": "../wllama/wllama.wasm",
+      "bytes": 10244628,
+      "sha256": "79ac5be917b71d50571a4f584436a9f6baf6b6e57719d094ed8bd950e9a65780"
+    },
+    {
+      "path": "../wllama-compat/LICENSE",
+      "bytes": 1071,
+      "sha256": "5866e3bd7e3cbd3f7c8bea6efd8a1e7fa7cc8de68c30f428aff7c6584a0fb720"
+    },
+    {
+      "path": "../wllama-compat/wllama.js",
+      "bytes": 173601,
+      "sha256": "942062a7495790a317061b27a6bcd2bd3b247e2ddef53a069baf5abb07284758"
+    },
+    {
+      "path": "../wllama-compat/wllama.wasm",
+      "bytes": 18755784,
+      "sha256": "35df8c1e2f7dbd74b8e8b01054fb9f1fbe86cf566945fbf4cef3965855a8b92e"
+    }
+  ],
+  "totalBytes": 29395450,
+  "mainPackageIntegrity": "sha512-ZvoRdQAn+E+18EvQ9qS036gudiI9rbZRBJgG/qNICPPwrA0Y6SMMdbziz/j7K/0WxcbJlhaRraVIYsnEy732NA==",
+  "compatPackageIntegrity": "sha512-MSWwyzVXpwkstvIGzOsQ9jlRm8kY5S5J0Gdw4E6M9mXqhgO/5tj+YNfxSoqN1GvsAOwui95JPtwX3hO6VZkbzg=="
+}

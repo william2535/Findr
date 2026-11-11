@@ -1,0 +1,981 @@
+{
+  "status": "failed",
+  "recordedAt": "2026-11-11T19:04:31.586Z",
+  "mode": "manuals",
+  "browser": "chromium",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "physicalIPhone": false,
+  "offlineRequested": false,
+  "actualInference": false,
+  "checks": [],
+  "errors": [],
+  "navigationWarnings": [],
+  "requestFailures": [],
+  "manuals": [
+    {
+      "id": "advanced-0254975c10bd",
+      "title": "Advanced MxPro5 — User guide",
+      "url": "https://irp-cdn.multiscreensite.com/cdbd5f30/files/uploaded/Liberty%20Systems_Advanced%20MxPro5%20Fire%20Alarm%20User%20Manual.pdf",
+      "sha256": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8"
+    },
+    {
+      "id": "advanced-a18ea5cccf04",
+      "title": "MxPro5 — Product Manual",
+      "url": "https://www.srsalertfire.ie/uploads/FCpZ1eWk/680-165-05MxPro5ProductManual.pdf",
+      "sha256": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b"
+    }
+  ],
+  "scope": "Real MxPro5 manufacturer PDFs, local PDF.js/Tesseract processing, normal Panel Pals composer, persistence and source-page reader. Test jobs contain no customer data.",
+  "browserVersion": "154.0.8037.57",
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "hardwareConcurrency": 5,
+    "deviceMemoryGB": 16
+  },
+  "seed": {
+    "times": [
+      {
+        "id": "advanced-0254975c10bd",
+        "elapsedMs": 16818.60000000149,
+        "pageCount": 43,
+        "timing": {
+          "extractionMs": 541,
+          "ocrMs": 15964,
+          "indexingMs": 30,
+          "totalMs": 16737
+        },
+        "reused": false,
+        "identity": {
+          "systemTypes": [
+            "fire"
+          ],
+          "manufacturer": "Advanced",
+          "manufacturerCandidates": [
+            "Advanced",
+            "Apollo",
+            "Hochiki"
+          ],
+          "model": null,
+          "models": [
+            "Mx-5100",
+            "Mx-5200",
+            "Mx-5400",
+            "Mx-5800",
+            "Mx-5100V",
+            "Mx-5200V",
+            "Mx-5400V",
+            "Mx-5800V"
+          ],
+          "familyOnly": false,
+          "equipmentType": "panel",
+          "equipmentTypes": [
+            "panel",
+            "PSU"
+          ],
+          "documentType": "User Manual",
+          "revision": null,
+          "variants": [
+            "Mx-5100",
+            "Mx-5200",
+            "Mx-5400",
+            "Mx-5800",
+            "Mx-5100V",
+            "Mx-5200V",
+            "Mx-5400V",
+            "Mx-5800V"
+          ],
+          "requiresVariant": true,
+          "uncertain": true,
+          "confirmed": false,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "www.advancedco.com \nFire Alarm Panels \nUser Manual \nThe operation and functions described in this manual are available from Software Version 5000-050-04 onwards.",
+              "field": "systemTypes",
+              "value": "fire"
+            },
+            {
+              "page": 6,
+              "quote": "four loops. \nAll above models are designed for use with the Apollo (Discovery, Explorer, XP95 and Series 90) and Hochiki\n(ESP) fire detection devices. \n1.3.2 5000V Series \nThe 5100V is a Single Loop, Analogue Addressable Fire Alarm Control",
+              "field": "manufacturer",
+              "value": "Apollo"
+            },
+            {
+              "page": 6,
+              "quote": "th the Apollo (Discovery, Explorer, XP95 and Series 90) and Hochiki\n(ESP) fire detection devices. \n1.3.2 5000V Series \nThe 5100V is a Single Loop, Analogue Addressable Fire Alarm Control Panel. \nThe 5200V is a Two Loop, Analogue Addressable",
+              "field": "manufacturer",
+              "value": "Hochiki"
+            },
+            {
+              "page": 5,
+              "quote": "www.advancedco.com 5 \n1 Introduction \n1.1 Standards \nAdvanced Electronics Ltd declares that the products identified below conform to the essential requirements\nspecified in the Construction Products Directive 89/106/EEC: \n0786-CPD-20952 \nEN",
+              "field": "manufacturer",
+              "value": "Advanced"
+            },
+            {
+              "page": 5,
+              "quote": "nt for fire detection and fire alarm\nsystems for buildings \nMx-5100, Mx-5200, Mx-5400, MX-5800 \nMx-5100V, Mx-5200V, Mx-5400V, MX-5800V \nMx-5100N, Mx-5200N, Mx-5400N, MX-5800N \nIn addition, the products comply with the following: \nLow Voltag",
+              "field": "models",
+              "value": "Mx-5100"
+            },
+            {
+              "page": 5,
+              "quote": "re detection and fire alarm\nsystems for buildings \nMx-5100, Mx-5200, Mx-5400, MX-5800 \nMx-5100V, Mx-5200V, Mx-5400V, MX-5800V \nMx-5100N, Mx-5200N, Mx-5400N, MX-5800N \nIn addition, the products comply with the following: \nLow Voltage Directi",
+              "field": "models",
+              "value": "Mx-5200"
+            },
+            {
+              "page": 5,
+              "quote": "ion and fire alarm\nsystems for buildings \nMx-5100, Mx-5200, Mx-5400, MX-5800 \nMx-5100V, Mx-5200V, Mx-5400V, MX-5800V \nMx-5100N, Mx-5200N, Mx-5400N, MX-5800N \nIn addition, the products comply with the following: \nLow Voltage Directive 2006/9",
+              "field": "models",
+              "value": "Mx-5400"
+            },
+            {
+              "page": 5,
+              "quote": "ire alarm\nsystems for buildings \nMx-5100, Mx-5200, Mx-5400, MX-5800 \nMx-5100V, Mx-5200V, Mx-5400V, MX-5800V \nMx-5100N, Mx-5200N, Mx-5400N, MX-5800N \nIn addition, the products comply with the following: \nLow Voltage Directive 2006/95/EC \nBS",
+              "field": "models",
+              "value": "Mx-5800"
+            },
+            {
+              "page": 5,
+              "quote": "systems for buildings \nMx-5100, Mx-5200, Mx-5400, MX-5800 \nMx-5100V, Mx-5200V, Mx-5400V, MX-5800V \nMx-5100N, Mx-5200N, Mx-5400N, MX-5800N \nIn addition, the products comply with the following: \nLow Voltage Directive 2006/95/EC \nBS EN60950-1",
+              "field": "models",
+              "value": "Mx-5100V"
+            },
+            {
+              "page": 5,
+              "quote": "or buildings \nMx-5100, Mx-5200, Mx-5400, MX-5800 \nMx-5100V, Mx-5200V, Mx-5400V, MX-5800V \nMx-5100N, Mx-5200N, Mx-5400N, MX-5800N \nIn addition, the products comply with the following: \nLow Voltage Directive 2006/95/EC \nBS EN60950-1: 2006 Saf",
+              "field": "models",
+              "value": "Mx-5200V"
+            },
+            {
+              "page": 5,
+              "quote": "gs \nMx-5100, Mx-5200, Mx-5400, MX-5800 \nMx-5100V, Mx-5200V, Mx-5400V, MX-5800V \nMx-5100N, Mx-5200N, Mx-5400N, MX-5800N \nIn addition, the products comply with the following: \nLow Voltage Directive 2006/95/EC \nBS EN60950-1: 2006 Safety of inf",
+              "field": "models",
+              "value": "Mx-5400V"
+            },
+            {
+              "page": 5,
+              "quote": "0, Mx-5200, Mx-5400, MX-5800 \nMx-5100V, Mx-5200V, Mx-5400V, MX-5800V \nMx-5100N, Mx-5200N, Mx-5400N, MX-5800N \nIn addition, the products comply with the following: \nLow Voltage Directive 2006/95/EC \nBS EN60950-1: 2006 Safety of information t",
+              "field": "models",
+              "value": "Mx-5800V"
+            },
+            {
+              "page": 5,
+              "quote": "tandardised Input / Output \nEN54-4: 1997 +A1:2002 +A2:2006 \nPower supply equipment for fire detection and fire alarm\nsystems for buildings \nMx-5100, Mx-5200, Mx-5400, MX-5800 \nMx-5100V, Mx-5200V, Mx-5400V, MX-5800V \nMx-5100N, Mx-5200N, Mx-5",
+              "field": "equipmentType",
+              "value": "PSU"
+            },
+            {
+              "page": 6,
+              "quote": "ers the use and operation of the 5000, 5000V & 5000N Series Fire Alarm Control Panels. Refer\nto the Installation and Commissioning Manual (Document No. 680-165) for details of how to install and program\nthe panel. \nAll panel models are avai",
+              "field": "equipmentType",
+              "value": "panel"
+            },
+            {
+              "page": 1,
+              "quote": "www.advancedco.com \nFire Alarm Panels \nUser Manual \nThe operation and functions described in this manual are available from Software Version 5000-050-04 onwards.",
+              "field": "documentType",
+              "value": "User Manual"
+            }
+          ],
+          "basis": "Unconfirmed suggestions extracted from manual contents. Confirm the installed label and applicable variant."
+        },
+        "methods": [
+          "text",
+          "ocr",
+          "ocr",
+          "ocr",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "ocr",
+          "ocr",
+          "ocr",
+          "text"
+        ],
+        "readablePages": 37
+      },
+      {
+        "id": "advanced-a18ea5cccf04",
+        "elapsedMs": 26199.60000000149,
+        "pageCount": 74,
+        "timing": {
+          "extractionMs": 979,
+          "ocrMs": 24839,
+          "indexingMs": 29,
+          "totalMs": 26065
+        },
+        "reused": false,
+        "identity": {
+          "systemTypes": [
+            "fire"
+          ],
+          "manufacturer": "Apollo",
+          "manufacturerCandidates": [
+            "Apollo",
+            "Hochiki"
+          ],
+          "model": null,
+          "models": [
+            "Mx-5100",
+            "Mx-5200",
+            "Mx-5400",
+            "Mx-5800"
+          ],
+          "familyOnly": false,
+          "equipmentType": "panel",
+          "equipmentTypes": [
+            "panel",
+            "PSU",
+            "detector"
+          ],
+          "documentType": "installation\ninstructions",
+          "revision": null,
+          "variants": [
+            "Mx-5100",
+            "Mx-5200",
+            "Mx-5400",
+            "Mx-5800"
+          ],
+          "requiresVariant": true,
+          "uncertain": true,
+          "confirmed": false,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "www.advancedco.com \nFire Alarm Panels \nProduct Manual \nThe operation and functions described in this manual are available from Software Version 5000-050-04 onwards.",
+              "field": "systemTypes",
+              "value": "fire"
+            },
+            {
+              "page": 69,
+              "quote": "panel using the PC-NET-007 PC software. \n680-025 Key Switch Access Control Application Note Explains how to configure the panel for use of a\nkey switch for level 2 access. \n680-030 Flash Programming Level 4 Tool Explains how to update the p",
+              "field": "systemTypes",
+              "value": "access"
+            },
+            {
+              "page": 2,
+              "quote": "p 500mA max. per Loop 500mA max. per Loop \nDevices per Loop Apollo 126 detector/call points per loop (max) \nHochiki 127 detector/call points per loop (max) \nAV 240 detector/call points per loop (max) \nNittan 254 detector/call points per loo",
+              "field": "manufacturer",
+              "value": "Apollo"
+            },
+            {
+              "page": 2,
+              "quote": "es per Loop Apollo 126 detector/call points per loop (max) \nHochiki 127 detector/call points per loop (max) \nAV 240 detector/call points per loop (max) \nNittan 254 detector/call points per loop (max) V\ndS \n2095 \nClause 6.2.5\nNot more than 1",
+              "field": "manufacturer",
+              "value": "Hochiki"
+            },
+            {
+              "page": 2,
+              "quote": "Specifications: \nItem Specification Details \nPart Number: Mx-5100 Mx-5200 Mx-5400 Mx-5800 \nEnclosure Steel IP30 RAL7035 Steel IP30 RAL7035 Steel IP30 RAL7035 Steel IP30 RAL7035 \nDimensions H x W x D mm 345 x 345 x 85 \n(/M) 345 x 430 x 120",
+              "field": "models",
+              "value": "Mx-5100"
+            },
+            {
+              "page": 2,
+              "quote": "ications: \nItem Specification Details \nPart Number: Mx-5100 Mx-5200 Mx-5400 Mx-5800 \nEnclosure Steel IP30 RAL7035 Steel IP30 RAL7035 Steel IP30 RAL7035 Steel IP30 RAL7035 \nDimensions H x W x D mm 345 x 345 x 85 \n(/M) 345 x 430 x 120 \n(/L) 4",
+              "field": "models",
+              "value": "Mx-5200"
+            },
+            {
+              "page": 2,
+              "quote": ": \nItem Specification Details \nPart Number: Mx-5100 Mx-5200 Mx-5400 Mx-5800 \nEnclosure Steel IP30 RAL7035 Steel IP30 RAL7035 Steel IP30 RAL7035 Steel IP30 RAL7035 \nDimensions H x W x D mm 345 x 345 x 85 \n(/M) 345 x 430 x 120 \n(/L) 475 x 450",
+              "field": "models",
+              "value": "Mx-5400"
+            },
+            {
+              "page": 2,
+              "quote": "Specification Details \nPart Number: Mx-5100 Mx-5200 Mx-5400 Mx-5800 \nEnclosure Steel IP30 RAL7035 Steel IP30 RAL7035 Steel IP30 RAL7035 Steel IP30 RAL7035 \nDimensions H x W x D mm 345 x 345 x 85 \n(/M) 345 x 430 x 120 \n(/L) 475 x 450 x 120",
+              "field": "models",
+              "value": "Mx-5800"
+            },
+            {
+              "page": 2,
+              "quote": "Compensated 2.0A Temp Compensated 2x 2.0A Temp Compensated \nPower Supply On - board 24V DC, 3A High \nEfficiency Off - Line Switched \nMode \nOn - board 24V DC, 5A High \nEfficiency Off - Line Switched \nMode \nOn - board 24V DC, 5A High \nEfficie",
+              "field": "equipmentType",
+              "value": "PSU"
+            },
+            {
+              "page": 2,
+              "quote": ". per Loop 500mA max. per Loop \nDevices per Loop Apollo 126 detector/call points per loop (max) \nHochiki 127 detector/call points per loop (max) \nAV 240 detector/call points per loop (max) \nNittan 254 detector/call points per loop (max) V\nd",
+              "field": "equipmentType",
+              "value": "detector"
+            },
+            {
+              "page": 5,
+              "quote": "sseesensausaueeesenseusansausaeesessensaesensesses OG\n5.2.1 Detector Loop Lengths — Apollo, Hochiki And AV .......cecceccecceeseeeeeeeeeeeeeceeeeeeeaeeeeeeseateaesaeeaeeeeeeeeeas OF\n5.2.2 Sounder Circuit LENGths ....... cece eecececeeeeecee",
+              "field": "equipmentType",
+              "value": "detector"
+            },
+            {
+              "page": 7,
+              "quote": "000 Series \nThe 5100 is a Single Loop, Analogue Addressable Fire Alarm Control Panel. \nThe 5200 is a Two Loop, Analogue Addressable Fire Alarm Control Panel. \nThe 5400 is a Multiple Loop, Analogue Addressable Fire Alarm Control Panel with p",
+              "field": "equipmentType",
+              "value": "panel"
+            },
+            {
+              "page": 7,
+              "quote": "oltage Safety and the EMC Directives. Failure to follow the installation\ninstructions may compromise its adherence to these standards. ATTENTION \nOBSERVE PRECAUTIONS\nFOR HANDLING\nELECTROSTATIC\nSENSITIVE DEVICES \nThis equipment is constructe",
+              "field": "documentType",
+              "value": "installation\ninstructions"
+            }
+          ],
+          "basis": "Unconfirmed suggestions extracted from manual contents. Confirm the installed label and applicable variant."
+        },
+        "methods": [
+          "text",
+          "text",
+          "ocr",
+          "ocr",
+          "ocr",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "ocr",
+          "ocr",
+          "text"
+        ],
+        "readablePages": 70
+      }
+    ],
+    "states": {
+      "advanced-0254975c10bd": {
+        "status": "ready",
+        "storedManualId": "advanced-0254975c10bd",
+        "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+        "processorVersion": "2026-11-10.3",
+        "pageCount": 43
+      },
+      "advanced-a18ea5cccf04": {
+        "status": "ready",
+        "storedManualId": "advanced-a18ea5cccf04",
+        "contentHash": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b",
+        "processorVersion": "2026-11-10.3",
+        "pageCount": 74
+      }
+    },
+    "verified": [
+      {
+        "id": "mxpro5-disable-sounders-680-166-rev04",
+        "question": "disable sounders",
+        "status": "missing",
+        "verificationFailures": [
+          {
+            "reason": "source_quote_missing",
+            "page": 26,
+            "section": "3.10 Disabling"
+          }
+        ],
+        "sourceRefs": [],
+        "text": ""
+      },
+      {
+        "id": "mxpro5-disable-individual-input-680-166-rev04",
+        "question": "disable individual input",
+        "status": "missing",
+        "verificationFailures": [
+          {
+            "reason": "source_quote_missing",
+            "page": 26,
+            "section": "3.10 Disabling"
+          }
+        ],
+        "sourceRefs": [],
+        "text": ""
+      },
+      {
+        "id": "mxpro5-enable-individual-input-680-166-rev04",
+        "question": "enable input",
+        "status": "answered",
+        "coverage": "reviewed_manual_procedure",
+        "sourceRefs": [
+          {
+            "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-30",
+            "manualId": "advanced-0254975c10bd",
+            "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+            "processorVersion": "2026-11-10.3",
+            "title": "Advanced MxPro5 — User guide",
+            "revision": "04",
+            "models": [
+              "MxPro5",
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800",
+              "Mx-5100V",
+              "Mx-5200V",
+              "Mx-5400V",
+              "Mx-5800V",
+              "Mx-5100N",
+              "Mx-5200N",
+              "Mx-5400N",
+              "Mx-5800N"
+            ],
+            "page": 30,
+            "pdfPage": 30,
+            "printedPage": "30",
+            "section": "3.11 Enabling",
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "ZONE/INPUTS OUTPUTS GROUPS REMOTE",
+            "excerpt": "ZONE/INPUTS OUTPUTS GROUPS REMOTE",
+            "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment.",
+            "citationId": "S1"
+          },
+          {
+            "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-19",
+            "manualId": "advanced-0254975c10bd",
+            "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+            "processorVersion": "2026-11-10.3",
+            "title": "Advanced MxPro5 — User guide",
+            "revision": "04",
+            "models": [
+              "MxPro5",
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800",
+              "Mx-5100V",
+              "Mx-5200V",
+              "Mx-5400V",
+              "Mx-5800V",
+              "Mx-5100N",
+              "Mx-5200N",
+              "Mx-5400N",
+              "Mx-5800N"
+            ],
+            "page": 19,
+            "pdfPage": 19,
+            "printedPage": "19",
+            "section": "3.8.1 Using the Buttons to Navigate Menus",
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "Press the ‘Menu’ button to bring up the display menu.",
+            "excerpt": "Press the ‘Menu’ button to bring up the display menu.",
+            "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment.",
+            "citationId": "S2"
+          },
+          {
+            "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-10",
+            "manualId": "advanced-0254975c10bd",
+            "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+            "processorVersion": "2026-11-10.3",
+            "title": "Advanced MxPro5 — User guide",
+            "revision": "04",
+            "models": [
+              "MxPro5",
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800",
+              "Mx-5100V",
+              "Mx-5200V",
+              "Mx-5400V",
+              "Mx-5800V",
+              "Mx-5100N",
+              "Mx-5200N",
+              "Mx-5400N",
+              "Mx-5800N"
+            ],
+            "page": 10,
+            "pdfPage": 10,
+            "printedPage": "10",
+            "section": "3.1 Access Levels",
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "Level 2 Authorised User",
+            "excerpt": "Level 2 Authorised User",
+            "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment.",
+            "citationId": "S3"
+          },
+          {
+            "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-11",
+            "manualId": "advanced-0254975c10bd",
+            "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+            "processorVersion": "2026-11-10.3",
+            "title": "Advanced MxPro5 — User guide",
+            "revision": "04",
+            "models": [
+              "MxPro5",
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800",
+              "Mx-5100V",
+              "Mx-5200V",
+              "Mx-5400V",
+              "Mx-5800V",
+              "Mx-5100N",
+              "Mx-5200N",
+              "Mx-5400N",
+              "Mx-5800N"
+            ],
+            "page": 11,
+            "pdfPage": 11,
+            "printedPage": "11",
+            "section": "3.1.1 Changing from Access Level 1 to Level 2",
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "If the panel has an access key switch fitted, use the key",
+            "excerpt": "If the panel has an access key switch fitted, use the key",
+            "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment.",
+            "citationId": "S4"
+          },
+          {
+            "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-6",
+            "manualId": "advanced-0254975c10bd",
+            "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+            "processorVersion": "2026-11-10.3",
+            "title": "Advanced MxPro5 — User guide",
+            "revision": "04",
+            "models": [
+              "MxPro5",
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800",
+              "Mx-5100V",
+              "Mx-5200V",
+              "Mx-5400V",
+              "Mx-5800V",
+              "Mx-5100N",
+              "Mx-5200N",
+              "Mx-5400N",
+              "Mx-5800N"
+            ],
+            "page": 6,
+            "pdfPage": 6,
+            "printedPage": "6",
+            "section": "1.2 Cautions and Warnings",
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "Only Trained service personnel should undertake the Installation, Programming and Maintenance of this equipment.",
+            "excerpt": "Only Trained service personnel should undertake the Installation, Programming and Maintenance of this equipment.",
+            "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment.",
+            "citationId": "S5"
+          },
+          {
+            "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-15",
+            "manualId": "advanced-0254975c10bd",
+            "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+            "processorVersion": "2026-11-10.3",
+            "title": "Advanced MxPro5 — User guide",
+            "revision": "04",
+            "models": [
+              "MxPro5",
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800",
+              "Mx-5100V",
+              "Mx-5200V",
+              "Mx-5400V",
+              "Mx-5800V",
+              "Mx-5100N",
+              "Mx-5200N",
+              "Mx-5400N",
+              "Mx-5800N"
+            ],
+            "page": 15,
+            "pdfPage": 15,
+            "printedPage": "15",
+            "section": "3.4 Disablement Condition",
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "When all disablement conditions are removed, the DISABLE Indicator is also turned off.",
+            "excerpt": "When all disablement conditions are removed, the DISABLE Indicator is also turned off.",
+            "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment.",
+            "citationId": "S6"
+          },
+          {
+            "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-5",
+            "manualId": "advanced-0254975c10bd",
+            "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+            "processorVersion": "2026-11-10.3",
+            "title": "Advanced MxPro5 — User guide",
+            "revision": "04",
+            "models": [
+              "MxPro5",
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800",
+              "Mx-5100V",
+              "Mx-5200V",
+              "Mx-5400V",
+              "Mx-5800V",
+              "Mx-5100N",
+              "Mx-5200N",
+              "Mx-5400N",
+              "Mx-5800N"
+            ],
+            "page": 5,
+            "pdfPage": 5,
+            "printedPage": "5",
+            "section": "1.1 Standards — covered products",
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "Mx-5100, Mx-5200, Mx-5400, MX-5800",
+            "excerpt": "Mx-5100, Mx-5200, Mx-5400, MX-5800",
+            "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment.",
+            "citationId": "S7"
+          }
+        ],
+        "text": "For MxPro5 panels covered by user guide 680-166, revision 04.\n\nUse authorised Level 2 access with permission for the operation. User permissions differ; use the access key if fitted, or MENU → ENABLE CONTROLS and your authorised password.\n\nOnly trained service personnel should carry out installation, programming or maintenance of this equipment.\n\nThis route applies to disabled inputs; the Enable Outputs menu is separate.\n\n1. Press MENU and select ENABLE → ZONE/INPUTS. The panel lists zones containing disabled input devices.\n2. Select the required zone and individual input to enable. The manual says this display uses virtually the same format as the equivalent Disable menu.\n\nThe DISABLE indicator goes off only when all disablement conditions have been removed."
+      },
+      {
+        "id": "mxpro5-enable-sounders-680-166-rev04",
+        "question": "enable sounders",
+        "status": "answered",
+        "coverage": "reviewed_manual_procedure",
+        "sourceRefs": [
+          {
+            "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-30",
+            "manualId": "advanced-0254975c10bd",
+            "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+            "processorVersion": "2026-11-10.3",
+            "title": "Advanced MxPro5 — User guide",
+            "revision": "04",
+            "models": [
+              "MxPro5",
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800",
+              "Mx-5100V",
+              "Mx-5200V",
+              "Mx-5400V",
+              "Mx-5800V",
+              "Mx-5100N",
+              "Mx-5200N",
+              "Mx-5400N",
+              "Mx-5800N"
+            ],
+            "page": 30,
+            "pdfPage": 30,
+            "printedPage": "30",
+            "section": "3.11 Enabling",
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "ZONE/INPUTS OUTPUTS GROUPS REMOTE",
+            "excerpt": "ZONE/INPUTS OUTPUTS GROUPS REMOTE",
+            "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment.",
+            "citationId": "S1"
+          },
+          {
+            "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-19",
+            "manualId": "advanced-0254975c10bd",
+            "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+            "processorVersion": "2026-11-10.3",
+            "title": "Advanced MxPro5 — User guide",
+            "revision": "04",
+            "models": [
+              "MxPro5",
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800",
+              "Mx-5100V",
+              "Mx-5200V",
+              "Mx-5400V",
+              "Mx-5800V",
+              "Mx-5100N",
+              "Mx-5200N",
+              "Mx-5400N",
+              "Mx-5800N"
+            ],
+            "page": 19,
+            "pdfPage": 19,
+            "printedPage": "19",
+            "section": "3.8.1 Using the Buttons to Navigate Menus",
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "Press the ‘Menu’ button to bring up the display menu.",
+            "excerpt": "Press the ‘Menu’ button to bring up the display menu.",
+            "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment.",
+            "citationId": "S2"
+          },
+          {
+            "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-10",
+            "manualId": "advanced-0254975c10bd",
+            "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+            "processorVersion": "2026-11-10.3",
+            "title": "Advanced MxPro5 — User guide",
+            "revision": "04",
+            "models": [
+              "MxPro5",
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800",
+              "Mx-5100V",
+              "Mx-5200V",
+              "Mx-5400V",
+              "Mx-5800V",
+              "Mx-5100N",
+              "Mx-5200N",
+              "Mx-5400N",
+              "Mx-5800N"
+            ],
+            "page": 10,
+            "pdfPage": 10,
+            "printedPage": "10",
+            "section": "3.1 Access Levels",
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "Level 2 Authorised User",
+            "excerpt": "Level 2 Authorised User",
+            "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment.",
+            "citationId": "S3"
+          },
+          {
+            "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-11",
+            "manualId": "advanced-0254975c10bd",
+            "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+            "processorVersion": "2026-11-10.3",
+            "title": "Advanced MxPro5 — User guide",
+            "revision": "04",
+            "models": [
+              "MxPro5",
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800",
+              "Mx-5100V",
+              "Mx-5200V",
+              "Mx-5400V",
+              "Mx-5800V",
+              "Mx-5100N",
+              "Mx-5200N",
+              "Mx-5400N",
+              "Mx-5800N"
+            ],
+            "page": 11,
+            "pdfPage": 11,
+            "printedPage": "11",
+            "section": "3.1.1 Changing from Access Level 1 to Level 2",
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "If the panel has an access key switch fitted, use the key",
+            "excerpt": "If the panel has an access key switch fitted, use the key",
+            "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment.",
+            "citationId": "S4"
+          },
+          {
+            "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-6",
+            "manualId": "advanced-0254975c10bd",
+            "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+            "processorVersion": "2026-11-10.3",
+            "title": "Advanced MxPro5 — User guide",
+            "revision": "04",
+            "models": [
+              "MxPro5",
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800",
+              "Mx-5100V",
+              "Mx-5200V",
+              "Mx-5400V",
+              "Mx-5800V",
+              "Mx-5100N",
+              "Mx-5200N",
+              "Mx-5400N",
+              "Mx-5800N"
+            ],
+            "page": 6,
+            "pdfPage": 6,
+            "printedPage": "6",
+            "section": "1.2 Cautions and Warnings",
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "Only Trained service personnel should undertake the Installation, Programming and Maintenance of this equipment.",
+            "excerpt": "Only Trained service personnel should undertake the Installation, Programming and Maintenance of this equipment.",
+            "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment.",
+            "citationId": "S5"
+          },
+          {
+            "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-15",
+            "manualId": "advanced-0254975c10bd",
+            "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+            "processorVersion": "2026-11-10.3",
+            "title": "Advanced MxPro5 — User guide",
+            "revision": "04",
+            "models": [
+              "MxPro5",
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800",
+              "Mx-5100V",
+              "Mx-5200V",
+              "Mx-5400V",
+              "Mx-5800V",
+              "Mx-5100N",
+              "Mx-5200N",
+              "Mx-5400N",
+              "Mx-5800N"
+            ],
+            "page": 15,
+            "pdfPage": 15,
+            "printedPage": "15",
+            "section": "3.4 Disablement Condition",
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "When the disablement conditions are removed, the appropriate indications are cleared from the display and from the Indicators. When all disablement conditions are removed, the DISABLE Indicator is also turned off.",
+            "excerpt": "When the disablement conditions are removed, the appropriate indications are cleared from the display and from the Indicators. When all disablement conditions are removed, the DISABLE Indicator is also turned off.",
+            "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment.",
+            "citationId": "S6"
+          },
+          {
+            "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-5",
+            "manualId": "advanced-0254975c10bd",
+            "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+            "processorVersion": "2026-11-10.3",
+            "title": "Advanced MxPro5 — User guide",
+            "revision": "04",
+            "models": [
+              "MxPro5",
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800",
+              "Mx-5100V",
+              "Mx-5200V",
+              "Mx-5400V",
+              "Mx-5800V",
+              "Mx-5100N",
+              "Mx-5200N",
+              "Mx-5400N",
+              "Mx-5800N"
+            ],
+            "page": 5,
+            "pdfPage": 5,
+            "printedPage": "5",
+            "section": "1.1 Standards — covered products",
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "Mx-5100, Mx-5200, Mx-5400, MX-5800",
+            "excerpt": "Mx-5100, Mx-5200, Mx-5400, MX-5800",
+            "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment.",
+            "citationId": "S7"
+          }
+        ],
+        "text": "For MxPro5 panels covered by user guide 680-166, revision 04.\n\nUse authorised Level 2 access with permission for the operation. User permissions differ; use the access key if fitted, or MENU → ENABLE CONTROLS and your authorised password.\n\nOnly trained service personnel should carry out installation, programming or maintenance of this equipment.\n\n1. Press MENU and select ENABLE → OUTPUTS.\n2. Choose ALL SOUNDERS from the output categories to enable the sounders. The manual describes this display as virtually identical to the equivalent Disable menu.\n\nDisablement indications clear when the corresponding disablement conditions are removed. The general DISABLE indicator remains until all disablements are removed."
+      }
+    ],
+    "originalMessage": {
+      "id": "qa-preserved-before-update",
+      "role": "assistant",
+      "text": "Saved before this acceptance run. This earlier message must remain unchanged.",
+      "mode": "manual-search",
+      "sourceRefs": [],
+      "createdAt": 100
+    }
+  },
+  "stage": "manual processing",
+  "error": {
+    "message": "{\"id\":\"mxpro5-disable-sounders-680-166-rev04\",\"status\":\"missing\",\"failures\":[{\"reason\":\"source_quote_missing\",\"page\":26,\"section\":\"3.10 Disabling\"}]}\n+ actual - expected\n\n+ undefined\n- 'reviewed_manual_procedure'\n",
+    "stack": "AssertionError [ERR_ASSERTION]: {\"id\":\"mxpro5-disable-sounders-680-166-rev04\",\"status\":\"missing\",\"failures\":[{\"reason\":\"source_quote_missing\",\"page\":26,\"section\":\"3.10 Disabling\"}]}\n+ actual - expected\n\n+ undefined\n- 'reviewed_manual_procedure'\n\n    at file:///workspace/sites/findr-sources/scripts/verify-panel-pal-dialogue034-browser.mjs:59:50"
+  },
+  "finishedAt": "2026-11-11T19:05:16.827Z"
+}
