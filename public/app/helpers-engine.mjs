@@ -7,7 +7,7 @@ import {prepareManualAnswer} from './manual-answers.mjs';
 import {interpretHelperDialogue,limitedHelperDialogue} from './helper-dialogue.mjs';
 import {answerHelperTasks} from './helper-task-evidence.mjs';
 
-export const HELPERS_ENGINE_VERSION='2026-11-11.7';
+export const HELPERS_ENGINE_VERSION='2026-11-11.8';
 const list=value=>Array.isArray(value)?value:[];
 const str=value=>String(value??'');
 const compact=value=>str(value).normalize('NFC').replace(/\u0000/g,'').replace(/\s+/g,' ').trim();
@@ -239,9 +239,12 @@ function fallbackMessage({reason,passages=[],error,empty=false,withholdInstructi
 /**
  * Every accepted turn is a new immutable snapshot. UI persists it in the same
  * local helper store; no technical answer is generated from another helper or
- * sent to a cloud service. infer is injectable only for deterministic tests.
+ * shared outside its scope. Online inference is an explicit injected adapter;
+ * the default remains local. Provider interpretation never supplies equipment facts.
  */
-export async function answerHelper({helper,conversation,text='',indexes=[],analyses=[],procedures=[],taskProcedures=[],modelReadiness,manualOnly=false,signal,onProgress,onToken,infer=generateLocalReply,now=Date.now()}={}){
+export async function answerHelper({helper,conversation,text='',indexes=[],analyses=[],procedures=[],taskProcedures=[],modelReadiness,manualOnly=false,inferenceMode='offline',signal,onProgress,onToken,infer=generateLocalReply,now=Date.now()}={}){
+ const online=inferenceMode==='online',aiMode=online?'online-ai':'local-ai',aiName=online?'online AI':'local AI';
+ if(online&&infer===generateLocalReply)throw Object.assign(Error('The online connection is unavailable. Your question is still saved.'),{code:'ONLINE_ADAPTER_REQUIRED'});
  const question=compact(text),c=normalizeHelperConversation(conversation),time=at(now);
  if(!question)throw Object.assign(Error('Enter a question or observation.'),{code:'HELPER_INPUT_REQUIRED'});
  if(signal?.aborted)throw new DOMException('Reply cancelled.','AbortError');
@@ -275,8 +278,8 @@ export async function answerHelper({helper,conversation,text='',indexes=[],analy
   onProgress?.({phase:'interpret',message:canInterpret?'Understanding your request…':'Separating the requested tasks…'});
   let understood;
   const interpretationContext={...c,context:{...c.context,pendingQuestion:turn.pending||c.context.pendingQuestion}};
-  try{understood=await interpretHelperDialogue({question,helper,conversation:interpretationContext,infer:canInterpret?infer:null,signal,onProgress,now:time,format:['actions','tasks-json'].includes(readiness.model?.dialogueFormat)?readiness.model.dialogueFormat:'json',resolveExplicitContext:true});}
-  catch(error){if(error?.name==='AbortError')return finish({text:'Stopped there. Your question and recorded observations are still saved.',kind:'cancelled',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:[],coverage:'cancelled'});throw error;}
+  try{understood=await interpretHelperDialogue({question,helper,conversation:interpretationContext,infer:canInterpret?infer:null,signal,onProgress,now:time,allowFallback:!online,format:['actions','tasks-json'].includes(readiness.model?.dialogueFormat)?readiness.model.dialogueFormat:'json',resolveExplicitContext:true});}
+  catch(error){if(error?.name==='AbortError')return finish({text:'Stopped there. Your question and recorded observations are still saved.',kind:'cancelled',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:[],coverage:'cancelled'});if(online&&!String(error?.code||'').startsWith('ONLINE_'))throw Object.assign(Error('The online reply could not be verified against your request. Your question is saved; retry or choose Manual search.'),{code:'ONLINE_INTERPRETATION_INVALID'});throw error;}
   c.context.dialogue=understood.dialogue;
   for(const item of list(understood.interpretation.observations))noteFields(c.context,item,time);
   const hasTasks=list(understood.dialogue.tasks).length>0;
@@ -289,7 +292,7 @@ export async function answerHelper({helper,conversation,text='',indexes=[],analy
     if(c.context.pendingQuestion?.field==='task_detail')c.context.pendingQuestion=null;
     const resolved=understood.resolution==='context';
     const prefix=understood.modelUsed||resolved&&canInterpret?'':resolved?'Manual search — I’m using your saved request and this reply. No local AI was used.\n\n':canInterpret?'Manual search — the local AI couldn’t reliably interpret this request. I’ve separated only the explicit tasks you wrote.\n\n':'Manual search — no local AI was used. I’ve separated the explicit tasks you wrote.\n\n';
-    return finish({...detail,text:prefix+detail.text,mode:understood.modelUsed?'local-ai':resolved&&canInterpret?'conversation-context':'manual-search',modelUsed:understood.modelUsed,...(understood.model?{model:{...understood.model,role:'request_interpretation'}}:{}),interpretation:understood.interpretation,interpretationResolution:understood.resolution||'model',limitedInterpretation:understood.limitedFallback,...(understood.fallbackReason?{interpretationFailure:understood.fallbackReason}:{})});
+    return finish({...detail,text:prefix+detail.text,mode:understood.modelUsed?aiMode:resolved&&canInterpret?'conversation-context':'manual-search',modelUsed:understood.modelUsed,...(understood.model?{model:{...understood.model,...(online?{provider:readiness.model?.provider||'Groq',backend:'online'}:{}),role:'request_interpretation'}}:{}),interpretation:understood.interpretation,interpretationResolution:understood.resolution||'model',limitedInterpretation:understood.limitedFallback,...(understood.fallbackReason?{interpretationFailure:understood.fallbackReason}:{})});
    }
   }
   // A valid observed fault continues through the explicit diagnostic rules.
@@ -307,6 +310,7 @@ export async function answerHelper({helper,conversation,text='',indexes=[],analy
  const questions=diagnosing?nextQuestions(c):[];
  if(clarifyPending){const selected=QUESTION_OPTIONS.find(q=>q.field===c.context.pendingQuestion?.field);if(selected){const details={display:'Copy the exact wording on the display, including any code.',current:'Is the same fault message visible on the display at the moment, or has it cleared?',location:'Does the fault show a location, device name or address?',checks:'What have you already inspected or measured, and what was the result?',timing:'Roughly when did it first happen? Was any work done or anything changed just before it?',extent:'Is it happening at one device or location, or in several places?',pattern:'Does the indication stay on, or does it clear and come back?',access:'What information, equipment or access is missing right now?'};questions.splice(0,questions.length,{...selected,text:details[selected.field]||selected.text});}}
  if(!passages.length&&(!diagnosing||!questions.length||!sources.length))return finish(fallbackMessage({empty:true}));
+ if(online&&!manualOnly&&!readiness.canGenerate)throw Object.assign(Error('Online AI is not available. Check the connection and your session key, or choose Manual search.'),{code:'ONLINE_UNAVAILABLE'});
  if(manualOnly||readiness.supported===false||readiness.installed===false||readiness.error||readiness.lastRuntimeError||!(readiness.ready||readiness.installed||readiness.canGenerate)){
   const unavailable=manualOnly?'Manual search — I’m showing the saved-manual references for this reply. No local AI was used.':readiness.supported===false?'Manual search — this device can’t run the local AI engine, but you can still use your saved manuals.':readiness.error||readiness.lastRuntimeError?'Manual search — the local AI isn’t available on this device right now.':'Manual search — prepare the local AI engine when you’re ready to use AI assistance.';
   return finish(asReference(unavailable,readiness.error||readiness.lastRuntimeError));
@@ -320,17 +324,19 @@ export async function answerHelper({helper,conversation,text='',indexes=[],analy
   try{reply=await generate();}catch(error){if(error?.code!=='MODEL_CONTEXT_TOO_LONG')throw error;request=buildHelperRequest({helper,conversation:c,question:query,passages:passages.slice(0,2),questions:questions.slice(0,2),sourceBudget:480});onProgress?.({phase:'model',message:'Trying a smaller set of sources…'});reply=await generate();}
  }catch(error){
   if(error?.name==='AbortError')return finish({text:'Stopped there. Your question and recorded observations are still saved.',kind:'cancelled',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:[],coverage:'cancelled'});
+  if(online)throw error;
   return finish(asReference('Manual search — the local AI couldn’t finish this reply on your device. '+(error?.code==='MODEL_CONTEXT_TOO_LONG'?'These references are too long for the local model’s input limit.':'Your manuals and conversation are still saved.'),error));
  }
  if(signal?.aborted)return finish({text:'Stopped there. Your question and recorded observations are still saved.',kind:'cancelled',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:[],coverage:'cancelled'});
- const selection=parseSelection(reply,request),model={id:reply?.modelId||LOCAL_MODEL.id,revision:reply?.modelRevision||LOCAL_MODEL.revision,backend:reply?.backend||'wasm',metrics:reply?.metrics||null,selection:{source:selection.source,question:selection.next},...(reply?.choiceConstraint?{choiceConstraint:reply.choiceConstraint}:{})};
+ const selection=parseSelection(reply,request),model={id:reply?.modelId||(online?readiness.model?.id||'unidentified-online-model':LOCAL_MODEL.id),revision:reply?.modelRevision||(online?'':LOCAL_MODEL.revision),backend:reply?.backend||(online?'online':'wasm'),...(online?{provider:reply?.provider||'Groq'}:{}),metrics:reply?.metrics||null,selection:{source:selection.source,question:selection.next},...(reply?.choiceConstraint?{choiceConstraint:reply.choiceConstraint}:{})};
+ if(online&&!selection.valid)throw Object.assign(Error('The online reply did not select a verifiable manual source. Retry or choose Manual search.'),{code:'ONLINE_RESPONSE_INVALID'});
  if(!selection.valid)return finish({...asReference('Manual search — the local AI didn’t select a source I could verify, so I haven’t used its generated instructions.'),inferenceAttempted:true,model});
  const chosen=passages.find(p=>p.citationId===selection.source),next=questions.find(q=>q.id===selection.next),conflict=conflicts(passages);
  if(!chosen&&!next&&reviewed.status==='answered'&&reviewed.coverage==='reviewed_manual_procedure')return finish({...asReference('Manual search — the local AI didn’t select a source. These steps were independently verified against your saved manual.'),inferenceAttempted:true,model});
- if(!chosen&&!next)return finish({text:'I can’t establish that from these manuals yet. The local AI didn’t find a supporting passage. Add the manual for the exact model and variant, or tell me exactly what the display says.',kind:'unsupported',mode:'local-ai',modelUsed:true,model,sourceRefs:[],quickReplies:[],coverage:'not_established'});
- if(conflict.length&&chosen)return finish(conflictAnswer(conflict,{mode:'local-ai',modelUsed:true,model}));
+ if(!chosen&&!next)return finish({text:'I can’t establish that from these manuals yet. The '+aiName+' didn’t find a supporting passage. Add the manual for the exact model and variant, or tell me exactly what the display says.',kind:'unsupported',mode:aiMode,modelUsed:true,model,sourceRefs:[],quickReplies:[],coverage:'not_established'});
+ if(conflict.length&&chosen)return finish(conflictAnswer(conflict,{mode:aiMode,modelUsed:true,model}));
  const useReviewed=chosen&&reviewed.status==='answered'&&reviewed.coverage==='reviewed_manual_procedure'&&reviewed.sourceRefs.some(ref=>ref.contentHash===chosen.contentHash&&ref.page===chosen.page);
- if(chosen&&hazardous(question,[chosen],useReviewed?reviewed:null))return finish({text:'I found the relevant section, but these extracts don’t establish the documented precautions or system effects needed to recommend that operation. Open the cited page, or add the applicable service or installation instructions. Your observations are still saved.',kind:'precautions_required',mode:'local-ai',modelUsed:true,model,sourceRefs:[sourceRef(chosen)],quickReplies:[],coverage:'precautions_not_established'});
+ if(chosen&&hazardous(question,[chosen],useReviewed?reviewed:null))return finish({text:'I found the relevant section, but these extracts don’t establish the documented precautions or system effects needed to recommend that operation. Open the cited page, or add the applicable service or installation instructions. Your observations are still saved.',kind:'precautions_required',mode:aiMode,modelUsed:true,model,sourceRefs:[sourceRef(chosen)],quickReplies:[],coverage:'precautions_not_established'});
  let answer='',refs=[],coverage='observation_question',steps=[];
  if(!chosen&&next&&!passages.length&&/\b(?:faults?|errors?|trouble)\b/i.test(query))answer='I haven’t found this fault’s meaning or a diagnostic procedure in your pal’s manuals yet. Let’s record what you can see first.';
  if(useReviewed){answer=reviewed.text;refs=reviewed.sourceRefs;coverage='reviewed_manual_procedure';steps=reviewed.steps;}
@@ -338,5 +344,5 @@ export async function answerHelper({helper,conversation,text='',indexes=[],analy
  if(next){answer+=(answer?'\n\n':'')+next.text;}
  else if(diagnosing){answer+=(answer?'\n\n':'')+'That gives us a reference to work from, but it doesn’t confirm the cause. I’ve kept the checks you reported with this job.';}
  const warnings=sourceWarnings(chosen?[chosen]:[]);if(warnings.length)answer+='\n\n'+warnings.join('\n');
- return finish({text:answer,kind:next?'diagnostic_question':'answer',mode:'local-ai',modelUsed:true,model,sourceRefs:refs,quickReplies:next?.quickReplies||[],coverage,steps,...(useReviewed?{procedureId:reviewed.procedureId,operation:reviewed.operation}:{}),...(next?{pendingQuestion:{field:next.field,key:next.field,text:next.text,sourceRefs:refs}}:{}),warnings,retrieval:'keyword_alias_matching_with_local_model_selection'});
+ return finish({text:answer,kind:next?'diagnostic_question':'answer',mode:aiMode,modelUsed:true,model,sourceRefs:refs,quickReplies:next?.quickReplies||[],coverage,steps,...(useReviewed?{procedureId:reviewed.procedureId,operation:reviewed.operation}:{}),...(next?{pendingQuestion:{field:next.field,key:next.field,text:next.text,sourceRefs:refs}}:{}),warnings,retrieval:online?'keyword_alias_matching_with_online_model_selection':'keyword_alias_matching_with_local_model_selection'});
 }

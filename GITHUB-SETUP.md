@@ -2,6 +2,12 @@
 
 Verified export: **web 0.32.6**, **Site version 69**, source commit `c4bdbb83ff0ed11762b603f3aca6d5dadd795df3`. The source is from the current source repository, not a compiled deployment archive. The original checkout and live website were not changed. Older unfinished local edits are preserved in `WORKSPACE-RECOVERY/` without overwriting newer source. See `SOURCE-INVENTORY.md` and `EXPORT-VALIDATION.md` for exactly what was included and tested.
 
+## Current Panel Pals online configuration
+
+The current deployed source snapshot is recorded in [BACKUP-PROVENANCE.json](BACKUP-PROVENANCE.json); the original export record above is retained for history. Web 0.35.0 adds an optional Groq online mode alongside the existing local models and manual search. Read [online setup and data handling](docs/online-panel-pals.md) before using it.
+
+No provider key belongs in the Site environment, Worker bindings, repository or `.env` file. Each engineer explicitly enters a personal Groq key in the app; the browser retains it only in this tab’s module memory. The same-origin FINDR relay forwards bounded requests to the fixed provider. A server-capable Worker/Sites deployment is required for that route; static GitHub Pages cannot run it. Never embed a shared owner key in static assets. Real authenticated provider inference was not verified during this release; its transport and browser acceptance tests used labelled synthetic provider responses.
+
 ## Import into GitHub
 
 1. Extract the ZIP and open its `FINDR/` directory.

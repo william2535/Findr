@@ -1,5 +1,5 @@
-import {LOCAL_MODEL,LOCAL_MODEL_FILES,LOCAL_MODEL_BYTES,LOCAL_LANGUAGE_VERSION,LOCAL_LANGUAGE_PROFILES,getLocalModelProfile} from './local-language-resources.mjs';
-import {openModelCache,inspectModelFile,modelError,awaitModelStorage,releaseModelResponse} from './local-language-cache.mjs';
+import {LOCAL_MODEL,LOCAL_MODEL_FILES,LOCAL_MODEL_BYTES,LOCAL_LANGUAGE_VERSION,LOCAL_LANGUAGE_PROFILES,getLocalModelProfile,localModelPartCount} from './local-language-resources.mjs';
+import {openModelCache,inspectModelFile,modelError,awaitModelStorage,releaseModelResponse,modelPartKey,modelVerifiedKey} from './local-language-cache.mjs';
 import {createLocalLanguageRecovery} from './local-language-recovery.mjs';
 export {LOCAL_MODEL,LOCAL_MODEL_FILES,LOCAL_MODEL_BYTES,LOCAL_LANGUAGE_VERSION} from './local-language-resources.mjs';
 export const LOCAL_LANGUAGE_PROFILE_KEY='findr-local-language-profile-v1';
@@ -103,4 +103,36 @@ export async function allowLocalLanguageRetry({profileId=getActiveLocalLanguageP
  if(readinessInFlight.has(profileId))await readinessInFlight.get(profileId);
  guardFor(getLocalModelProfile(profileId)).allowRetry();lastErrors.delete(profileId);lastReadiness.delete(profileId);
  return getLocalLanguageReadiness({profileId});
+}
+
+/** Explicit model-only removal. PDFs, jobs, indexes and runtime assets have other keys. */
+export async function removeLocalLanguageResources(profileId){
+ const profile=getLocalModelProfile(profileId);
+ if(active)throw modelError('MODEL_BUSY','Wait for the current local model operation to finish before removing its files.');
+ // Persist the fallback before touching bytes. A rejected preference write leaves
+ // the previous model and its files intact.
+ if(profile.experimental){let selected;try{const storage=globalThis.localStorage;if(!storage)throw Error('Local storage unavailable');selected=storage.getItem(LOCAL_LANGUAGE_PROFILE_KEY);}catch(cause){throw modelError('STORAGE_UNAVAILABLE','The selected model could not be checked. No model files were removed; retry when browser storage is available.',cause);}if(selected===profile.id)setActiveLocalLanguageProfile('compact');}
+ const operation={id:globalThis.crypto?.randomUUID?.()||'remove-'+Date.now(),type:'remove',profileId:profile.id,abort:()=>false};active=operation;
+ const result={profileId:profile.id,removedParts:0,removedMarkers:0,removedTrialProof:false,reclaimedBytes:null,complete:false,activeProfileId:getActiveLocalLanguageProfile().id};
+ try{
+  if(workerProfileId===profile.id)destroyWorker();
+  const checking=readinessInFlight.get(profile.id);if(checking)await checking;
+  const cache=await openModelCache(),options={timeoutMs:15000,message:'Removing the saved model files stopped responding. Some files may remain; retry removal.'};
+  async function removeKey(key,kind){
+   const removed=await awaitModelStorage(()=>cache.delete(key),options);
+   const remaining=await awaitModelStorage(()=>cache.match(key),options);
+   if(remaining){releaseModelResponse(remaining);throw modelError('STORAGE_UNAVAILABLE','Browser storage did not remove a saved model entry.');}
+   if(removed)result[kind]++;
+  }
+  // Invalidate every file first. A failed marker deletion cannot leave a partial
+  // model carrying a valid integrity marker.
+  for(const file of profile.files)await removeKey(modelVerifiedKey(file),'removedMarkers');
+  for(const file of profile.files)for(let index=0;index<localModelPartCount(file);index++)await removeKey(modelPartKey(file,index),'removedParts');
+  let raw,trials;
+  try{const storage=globalThis.localStorage;if(!storage)throw Error('Local storage unavailable');raw=storage.getItem(LOCAL_LANGUAGE_TRIAL_KEY);trials=raw===null?{}:JSON.parse(raw);if(!trials||typeof trials!=='object'||Array.isArray(trials))throw Error('Invalid trial record');}
+  catch(cause){throw modelError('STORAGE_UNAVAILABLE','The model files were removed, but its saved device-test record could not be read. Other saved data has not been changed.',cause);}
+  if(Object.hasOwn(trials,profile.id)){delete trials[profile.id];writePreference(LOCAL_LANGUAGE_TRIAL_KEY,JSON.stringify(trials));result.removedTrialProof=true;}
+  result.complete=true;return result;
+ }catch(cause){const failure=modelError('MODEL_REMOVAL_PARTIAL','Model removal did not finish. Some model files or its device-test record may remain. Your PDFs, chats, jobs and offline app resources are unchanged. Retry removal.',cause);failure.removal={...result};throw failure;}
+ finally{if(active===operation)active=null;lastReadiness.delete(profile.id);lastErrors.delete(profile.id);}
 }

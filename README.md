@@ -1,3 +1,11 @@
+## Optional online Panel Pals — web 0.35.0
+
+Panel Pals now offer **Offline AI**, **Online AI** and **Manual search** per conversation. Online mode uses Groq’s hosted open-weight GPT-OSS 120B model, so no language-model download is needed on the phone. It requires your own Groq Free-plan account/key, explicit data-sharing consent and an internet connection. FINDR cannot check a key’s billing tier; a paid-account key may incur charges. There is no automatic provider switch, paid upgrade or online fallback.
+
+Keys stay in memory for the current browser tab, never in exports or saved conversations. The online model interprets requests and selects scoped manual evidence; existing citations, technical evidence checks and diagnostic records remain in force. New conversations and imported backups start offline unless deliberately changed. Local resources includes explicit per-pack removal so large local models can be removed while retaining PDFs, jobs, indexes and runtime resources.
+
+[Setup, data handling and limits](docs/online-panel-pals.md). [Verification](research/online-panel-pals-0.35.0/README.md). Authenticated Groq inference and provider response performance remain unverified without a real key; automated provider responses are synthetic. Android remains 0.14.1.
+
 ## Genius portraits for Panel Pals — web 0.34.1
 
 **Customise** keeps the original **OG** terminal and **Panel pal** robot, with six new original line portraits: **Stephen Hawking, Albert Einstein, Isaac Newton, Nikola Tesla, Marie Curie and Ada Lovelace**. Portraits follow the selected colour on cards, conversation headers, replies and the fault handover. All graphics are bundled SVG; no image download or network connection is needed.

@@ -1,6 +1,7 @@
 import {openDB,allManuals,getFile,saveManual} from './db.mjs';
 import {validatePDF} from './engine.mjs';
 import {normalizeHelperAppearance} from './helpers-appearance.mjs';
+import {resetImportedOnlineConsent} from './helper-mode.mjs';
 
 export const HELPERS_KEY='helpers-v1';
 const copy=value=>structuredClone(value);
@@ -72,7 +73,7 @@ export async function importHelper(payload){
  const requestedMapping=new Map();for(const id of source.selectedManualIds){const state=source.manualStates[id]||{},target=hashMapping.get(state.contentHash)||mapping.get(state.storedManualId||id)||id;requestedMapping.set(id,target);}
  for(const item of prepared)if(!item.reuse)await saveManual(item.record,item.blob);
  const rewrite=value=>{if(Array.isArray(value))return value.map(rewrite);if(value&&typeof value==='object'){const out={};for(const [key,item]of Object.entries(value)){if(['__proto__','constructor','prototype'].includes(key))continue;out[key]=['manualId','recordId','storedManualId'].includes(key)&&typeof item==='string'?(requestedMapping.get(item)||mapping.get(item)||item):rewrite(item);}return out;}return value;};
- const helper=rewrite(source);helper.id=uid();helper.name=source.name+' (imported)';helper.createdAt=helper.updatedAt=Date.now();helper.revision=0;helper.selectedManualIds=unique(source.selectedManualIds.map(id=>requestedMapping.get(id)||id));helper.requiredManualIds=unique(source.requiredManualIds.map(id=>requestedMapping.get(id)||id));helper.manualStates={};
+ const helper=rewrite(source);helper.conversations=helper.conversations.map(resetImportedOnlineConsent);helper.id=uid();helper.name=source.name+' (imported)';helper.createdAt=helper.updatedAt=Date.now();helper.revision=0;helper.selectedManualIds=unique(source.selectedManualIds.map(id=>requestedMapping.get(id)||id));helper.requiredManualIds=unique(source.requiredManualIds.map(id=>requestedMapping.get(id)||id));helper.manualStates={};
  for(const id of source.selectedManualIds){const nextId=requestedMapping.get(id)||id,old=source.manualStates[id]||{};helper.manualStates[nextId]={status:'pending',contentHash:old.contentHash||storedHashById.get(nextId)||null,storedManualId:nextId,error:null};}
  helper.scope={...helper.scope,verifiedFamily:false,imported:true,limits:unique([...(Array.isArray(helper.scope.limits)?helper.scope.limits:[]),'Imported scope: confirm model, variant and source relationships on this device. Imported readiness markers were discarded.'])};helper.importedAt=Date.now();return saveHelper(helper);
 }

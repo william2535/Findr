@@ -1,0 +1,42 @@
+{
+  "version": "0.35.0",
+  "offlineBuild": "d2c08262902c",
+  "date": "2026-11-11",
+  "fullSuite": {
+    "command": "node --test --test-isolation=none tests/*.test.mjs",
+    "passed": 1771,
+    "failed": 0,
+    "elapsedMs": 36892.007114
+  },
+  "productionBuild": "passed",
+  "typecheck": "passed",
+  "newModulesESLint": "passed",
+  "widerLint": "existing app/page.tsx:29 no-html-link-for-pages error; existing warnings",
+  "browserChecks": 41,
+  "providerResponses": "synthetic mocks only",
+  "realAuthenticatedInference": false,
+  "physicalIPhone": false,
+  "compiledRoute": {
+    "get": 200,
+    "missingKeyPost": 401,
+    "serviceVerified": false
+  },
+  "assetGate": {
+    "publicFiles": 1443,
+    "nativeOnlyFilesExcluded": [
+      "app/data/download-map.json"
+    ],
+    "retainedApkVersions": [
+      "0.14.1",
+      "0.14.0"
+    ],
+    "archivedReleaseFilesExcluded": 40,
+    "archivedReleaseBytes": 439707096,
+    "orphanFilesRemoved": 41,
+    "maxStaticAssetBytes": 26214400,
+    "largestStaticAssetBytes": 24126768,
+    "buildBytes": 187421136,
+    "archiveAllowance": 1048576,
+    "verified": true
+  }
+}
