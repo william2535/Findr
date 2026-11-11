@@ -3,6 +3,7 @@ import {buildHelperChoices,searchHelperChoices,buildHelperPlan} from './helpers-
 import {createHelperLibrary} from './helpers-library.mjs';
 import {createHelperFaultSession,createHelperFaultsController} from './helpers-faults.mjs';
 import {createHelperConversation,answerHelper} from './helpers-engine.mjs';
+import {MENU_MAP_FAMILIES} from './menu-map-registry.mjs';
 import {getLocalLanguageReadiness,allowLocalLanguageRetry,unloadLocalLanguage,LOCAL_MODEL_BYTES,LOCAL_MODEL} from './local-language.mjs';
 import {getManualProcessingReadiness} from './manual-analysis.mjs';
 import {createTerminalTyper} from './terminal-typing.mjs';
@@ -30,7 +31,7 @@ const statusText=value=>({'ready':'Ready offline','ready-offline':'Ready offline
 export function createHelpersController({app,getData,getSaved,refreshSaved,readPDF,toast,openResources,getOfflineReady=()=>false,onModelStateChanged=()=>{}}){
   const syncModelReadiness=()=>{Promise.resolve().then(onModelStateChanged).catch(()=>{});};
   let creating=false;
-  let helpers=[],loaded=false,choices=null,procedures=null,taskProcedures=null,renderRevision=0,current=null,operation=null,progress=null,error='',saveState='Saved on this device';
+  let helpers=[],loaded=false,choices=null,procedures=null,taskProcedures=null,menuMaps=null,panelAccess=null,renderRevision=0,current=null,operation=null,progress=null,error='',saveState='Saved on this device';
   let processing=null;
   let setup={discipline:'fire',query:'',choiceId:'',name:'',variant:'',firmware:'',step:1,selected:[]},plan=null,pendingLegacy=null,model=null;
   let queue=Promise.resolve(),draftTimer=null,renderedConversation='',renderedHelper='',followLatest=true,archiveItems=[],faults=null,faultKey='';
@@ -70,6 +71,8 @@ export function createHelpersController({app,getData,getSaved,refreshSaved,readP
     choices||=buildHelperChoices(getData());
     if(!procedures){try{const response=await fetch(new URL('./data/quick-procedures.json',import.meta.url));if(response.ok)procedures=await response.json();}catch{/* Saved retrieval remains available; no procedural claims are fabricated. */}}
     if(!taskProcedures){try{const response=await fetch(new URL('./data/helper-task-procedures.json',import.meta.url));if(response.ok)taskProcedures=await response.json();}catch{/* Missing reviewed task data never authorises generated instructions. */}}
+    if(!menuMaps){const results=await Promise.allSettled(MENU_MAP_FAMILIES.map(async family=>{const response=await fetch(new URL('./data/menu-maps/'+family.id+'.json',import.meta.url));if(!response.ok)throw Error('Menu reference unavailable');return response.json();}));menuMaps=results.filter(row=>row.status==='fulfilled').map(row=>row.value);}
+    if(!panelAccess){try{const response=await fetch(new URL('./data/panel-default-access.json',import.meta.url));if(response.ok)panelAccess=await response.json();}catch{/* Unavailable evidence never becomes an inferred code. */}}
   }
   function applySaved(helper){helpers=[helper,...helpers.filter(item=>item.id!==helper.id)];if(current?.id===helper.id)current=helper;return helper;}
   async function saveConversation(helperId,next){
@@ -129,7 +132,7 @@ export function createHelpersController({app,getData,getSaved,refreshSaved,readP
   function messageRow(message,index){
     const user=['user','engineer'].includes(message.role),messageId=String(message.id??'message-'+index),key=JSON.stringify([current?.id,conversation()?.id]);
     const name=user?'YOU':current?.name||'Panel Pal';
-    return `<article class="helper-message" data-message-id="${esc(message.id)}" data-role="${user?'user':'assistant'}">${user?'':avatar(current?.appearance,'data-pal-message-avatar aria-hidden="true"')}<div class="helper-message-label"><span>${esc(name)}</span><span aria-hidden="true">&gt;</span>${!user&&message.mode==='manual-search'?'<small>MANUAL SEARCH · NO AI</small>':!user&&message.mode==='online-ai'?'<small>ONLINE AI · '+esc(message.model?.provider||'Groq')+'</small>':''}</div><div class="helper-message-text" data-terminal-message-text>${esc(message.text||message.content||'')}</div>${user?'':renderHelperSources(message.sourceRefs,{messageId,open:transcriptState.isOpen(key,messageId)})}${message.modelUsed&&message.model?.id?`<small class="helper-model-proof">${message.mode==='online-ai'?(message.model.role==='request_interpretation'?'Request interpreted online':'Source selected online'):(message.model.role==='request_interpretation'?'Request understood on this device':'Answered on this device')} · ${esc(message.model.id.split('/').at(-1))}</small>`:''}</article>`;
+    return `<article class="helper-message" data-message-id="${esc(message.id)}" data-role="${user?'user':'assistant'}">${user?'':avatar(current?.appearance,'data-pal-message-avatar aria-hidden="true"')}<div class="helper-message-label"><span>${esc(name)}</span><span aria-hidden="true">&gt;</span>${!user&&message.mode==='manual-search'?'<small>MANUAL SEARCH · NO AI</small>':!user&&message.mode==='online-ai'?'<small>ONLINE AI · '+esc(message.model?.provider||'Groq')+'</small>':''}</div><div class="helper-message-text" data-terminal-message-text>${esc(message.text||message.content||'')}</div>${user?'':renderHelperSources(message.sourceRefs,{messageId,open:transcriptState.isOpen(key,messageId),menuRefs:message.menuRefs})}${message.modelUsed&&message.model?.id?`<small class="helper-model-proof">${message.mode==='online-ai'?(message.model.role==='request_interpretation'?'Request interpreted online':'Source selected online'):(message.model.role==='request_interpretation'?'Request understood on this device':'Answered on this device')} · ${esc(message.model.id.split('/').at(-1))}</small>`:''}</article>`;
   }
   function manualRecoveryActive(){return model?.recovery?.blocked===true||!!model?.lastRuntimeError;}
   function savedQuestionRetryLabel(){const mode=helperMode(conversation());return mode==='online'?'Retry online question':mode==='manual'||manualRecoveryActive()?'Search saved manuals':'Retry saved question';}
@@ -244,7 +247,7 @@ export function createHelpersController({app,getData,getSaved,refreshSaved,readP
       const selected=manualOnly||pendingManualSelections.has(id+':'+base.id)?'manual':helperMode(savedJob),isOnline=selected==='online';
       const readiness=isOnline?onlineAPI.getOnlineReadiness(getOnlineProvider(savedJob.onlineConsent?.provider)?.id):await getLocalLanguageReadiness();if(!isOnline)model=readiness;
       if(isOnline){if(!validOnlineConsent(savedJob.onlineConsent))throw Object.assign(Error('Review the online sharing details before sending this saved question.'),{code:'ONLINE_CONSENT_REQUIRED'});if(!readiness.hasKey)throw Object.assign(Error('Add your '+readiness.provider+' API key in Online setup, then retry this saved question.'),{code:'ONLINE_KEY_REQUIRED'});if(!readiness.online)throw Object.assign(Error('You’re offline. Your question is saved. Retry when connected or choose Manual search.'),{code:'ONLINE_OFFLINE'});}
-      const result=await answerHelper({helper:target,conversation:base,text:raw,indexes,analyses,procedures,taskProcedures,modelReadiness:readiness,manualOnly:selected==='manual',inferenceMode:isOnline?'online':'offline',...(isOnline?{infer:request=>onlineAPI.generateOnlineReply({...request,consent:savedJob.onlineConsent})}:{}),signal:abort.signal,onProgress:value=>{progress=typeof value==='string'?{message:value}:value;renderProgress();}});
+      const result=await answerHelper({helper:target,conversation:base,text:raw,indexes,analyses,procedures,taskProcedures,menuMaps,panelAccess,modelReadiness:readiness,manualOnly:selected==='manual',inferenceMode:isOnline?'online':'offline',...(isOnline?{infer:request=>onlineAPI.generateOnlineReply({...request,consent:savedJob.onlineConsent})}:{}),signal:abort.signal,onProgress:value=>{progress=typeof value==='string'?{message:value}:value;renderProgress();}});
       if(!isOnline&&result.message?.error&&!readiness.error&&!readiness.lastRuntimeError){model=await getLocalLanguageReadiness().catch(()=>({...readiness,ready:false,canGenerate:false,lastRuntimeError:result.message.error}));syncModelReadiness();}
       if(abort.signal.aborted||result.message?.coverage==='cancelled')throw new DOMException('Stopped','AbortError');
       await saveConversation(id,{...result.conversation,draft:'',pending:null,interrupted:false});

@@ -6,8 +6,10 @@ import {buildManualIndex, retrieveManualPassages, MANUAL_RETRIEVAL_VERSION} from
 import {prepareManualAnswer} from './manual-answers.mjs';
 import {interpretHelperDialogue,limitedHelperDialogue} from './helper-dialogue.mjs';
 import {answerHelperTasks} from './helper-task-evidence.mjs';
+import {resolveHelperMenuReference} from './helpers-menu-reference.mjs';
+import {resolveHelperPanelAccess,bindHelperReferenceSources} from './helper-panel-access.mjs';
 
-export const HELPERS_ENGINE_VERSION='2026-11-11.8';
+export const HELPERS_ENGINE_VERSION='2026-11-11.9';
 const list=value=>Array.isArray(value)?value:[];
 const str=value=>String(value??'');
 const compact=value=>str(value).normalize('NFC').replace(/\u0000/g,'').replace(/\s+/g,' ').trim();
@@ -154,7 +156,7 @@ function answersPending(pending,question){
 }
 function recordInput(c,question,helper,now,clarifying=false){
  const context=c.context,pending=context.pendingQuestion,isAnswer=!!pending&&!clarifying&&answersPending(pending,question);
- if(isAnswer){context.answeredQuestions.push({...pending,answer:question,answeredAt:now,provenance:'user_report'});context.knownFields[pending.field]={value:question,at:now,provenance:'user_report'};context.pendingQuestion=null;if(pending.field==='model'&&!/^(?:unknown|i don.t know|not sure)/i.test(question))context.confirmedModel=question;if(pending.field==='variant'&&!/^(?:unknown|i don.t know|not sure)/i.test(question))context.confirmedVariant=question;}
+ if(isAnswer){context.answeredQuestions.push({...pending,answer:question,answeredAt:now,provenance:'user_report'});context.knownFields[pending.field]={value:question,at:now,provenance:'user_report'};context.pendingQuestion=null;if(pending.field==='model'&&!/^(?:unknown|i don.t know|not sure)/i.test(question))context.confirmedModel=question;if(pending.field==='variant'&&!/^(?:unknown|i don.t know|not sure)/i.test(question))context.confirmedVariant=question;if(pending.field==='firmware'&&!/^(?:unknown|i don.t know|not sure)/i.test(question))context.confirmedFirmware=question;}
  if(!context.investigation&&faultReport(question))context.investigation={id:uid(),complaint:question,startedAt:now,status:'open'};
  if(context.investigation&&!clarifying){context.observations.push({id:uid(),text:question,at:now,answersQuestionId:isAnswer?pending.id:null,provenance:'user_report',assessed:false});noteFields(context,question,now);}
  const model=helper?.scope?.model;if(!context.confirmedModel&&helper?.scope?.kind!=='family'&&model)context.confirmedModel=model;
@@ -242,7 +244,7 @@ function fallbackMessage({reason,passages=[],error,empty=false,withholdInstructi
  * shared outside its scope. Online inference is an explicit injected adapter;
  * the default remains local. Provider interpretation never supplies equipment facts.
  */
-export async function answerHelper({helper,conversation,text='',indexes=[],analyses=[],procedures=[],taskProcedures=[],modelReadiness,manualOnly=false,inferenceMode='offline',signal,onProgress,onToken,infer=generateLocalReply,now=Date.now()}={}){
+export async function answerHelper({helper,conversation,text='',indexes=[],analyses=[],procedures=[],taskProcedures=[],menuMaps=[],panelAccess={},modelReadiness,manualOnly=false,inferenceMode='offline',signal,onProgress,onToken,infer=generateLocalReply,now=Date.now()}={}){
  const online=inferenceMode==='online',aiMode=online?'online-ai':'local-ai',aiName=online?'online AI':'local AI';
  if(online&&infer===generateLocalReply)throw Object.assign(Error('The online connection is unavailable. Your question is still saved.'),{code:'ONLINE_ADAPTER_REQUIRED'});
  const question=compact(text),c=normalizeHelperConversation(conversation),time=at(now);
@@ -266,15 +268,19 @@ export async function answerHelper({helper,conversation,text='',indexes=[],analy
  const asReference=(reason,error)=>reviewed.status==='answered'&&reviewed.coverage==='reviewed_manual_procedure'?{text:reason+'\n\nHere are the documented steps:\n\n'+reviewed.text,kind:'manual_search',mode:'manual-search',modelUsed:false,sourceRefs:reviewed.sourceRefs,quickReplies:[],coverage:reviewed.coverage,steps:reviewed.steps,procedureId:reviewed.procedureId,operation:reviewed.operation,...(error?{error:{code:error.code||'MODEL_RUNTIME_ERROR',message:error.message}}:{})}:fallbackMessage({reason,passages,withholdInstructions:hazardous(question,passages,null),error});
  const outside=foreignModel(question,helper,passages);
  if(outside)return finish({text:'I can’t establish that for '+outside+' from this pal’s manuals. Open a pal for that exact model, or add its manual before using model-specific instructions.',kind:'unsupported',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:[],coverage:'different_model'});
+ const accessReference=resolveHelperPanelAccess({helper,question:turn.isAnswer&&turn.pending?.key?.startsWith('factory-access-')?query:question,context:c.context,data:panelAccess});
+ if(accessReference)return finish(bindHelperReferenceSources(accessReference,sources));
+ const menuReference=bindHelperReferenceSources(resolveHelperMenuReference({helper,question:query,menuMaps,context:c.context}),sources);
  // Interpret the whole request before choosing passages. The old selector is
  // retained for older inference callers, but it cannot collapse a compound
  // request or a saved task follow-up back into a single source label.
  const readiness=modelReadiness||{},explicitTasks=limitedHelperDialogue({question,previous:c.context.dialogue}).tasks;
  const activePlan=list(c.context.dialogue?.tasks).length>0,compound=explicitTasks.length>1;
+ const singleDeviceTask=explicitTasks.length===1&&['disable','enable'].includes(explicitTasks[0].action)&&/\b(?:device|detector|input|output|sounder)s?\b/i.test(explicitTasks[0].target);
  const modelAvailable=!manualOnly&&readiness.supported!==false&&readiness.installed!==false&&!readiness.error&&!readiness.lastRuntimeError&&!!(readiness.ready||readiness.installed||readiness.canGenerate);
  const dialogueCapable=readiness.model?.dialogueVersion===1;
  const canInterpret=modelAvailable&&dialogueCapable;
- if((compound||activePlan||dialogueCapable)&&sources.length&&!(reviewed.status==='answered'&&reviewed.coverage==='reviewed_manual_procedure'&&!compound&&!activePlan)){
+ if((compound||activePlan||singleDeviceTask||dialogueCapable)&&sources.length&&!(reviewed.status==='answered'&&reviewed.coverage==='reviewed_manual_procedure'&&!compound&&!activePlan)){
   onProgress?.({phase:'interpret',message:canInterpret?'Understanding your request…':'Separating the requested tasks…'});
   let understood;
   const interpretationContext={...c,context:{...c.context,pendingQuestion:turn.pending||c.context.pendingQuestion}};
@@ -288,6 +294,10 @@ export async function answerHelper({helper,conversation,text='',indexes=[],analy
    const pack=value=>Array.isArray(value)?value:list(value?.procedures);
    const detail=answerHelperTasks({helper,conversation:c,dialogue:understood.dialogue,interpretation:understood.interpretation,indexes,analyses,procedures:{procedures:[...pack(procedures),...pack(taskProcedures)]},retrieve:retrieveHelperEvidence,scopeIndexes:scopeHelperIndexes,prepareAnswer:prepareManualAnswer,findConflicts:conflicts,hasRequiredPrecautions:(query,passages)=>!hazardous(query,passages,null)});
    if(detail){
+    // Incomplete task extracts may locate a reviewed menu reference, but cannot
+    // erase a device-role/source conflict or authorise a physical operation.
+    const mapTask=menuReference&&list(detail.tasks).length===1&&['reference_only','missing_manual'].includes(detail.tasks[0].status)&&!understood.interpretation.needsClarification;
+    if(mapTask){const taskState=detail.dialogue;Object.assign(detail,menuReference,{dialogue:taskState});if(!menuReference.pendingQuestion)delete detail.pendingQuestion;}
     c.context.dialogue=detail.dialogue;delete detail.dialogue;
     if(c.context.pendingQuestion?.field==='task_detail')c.context.pendingQuestion=null;
     const resolved=understood.resolution==='context';
@@ -297,6 +307,7 @@ export async function answerHelper({helper,conversation,text='',indexes=[],analy
   }
   // A valid observed fault continues through the explicit diagnostic rules.
   // A failed interpretation is never relabelled as successful comprehension.
+  if(understood.limitedFallback&&dialogueCapable&&!diagnosing&&menuReference&&!compound)return finish(menuReference);
   if(understood.limitedFallback&&dialogueCapable&&!diagnosing)return finish({...asReference('Manual search — I couldn’t reliably interpret that reply. Your full message is saved; tell me which part you want to focus on.'),interpretationFailure:understood.fallbackReason});
  }
  if(reviewed.status==='scope_required'){const field=reviewed.clarification?.kind==='variant'?'variant':'model';if(c.context.answeredQuestions.some(q=>q.field===field))return finish({text:'I still need the exact installed model or variant before we can use this procedure.',kind:'unsupported',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:[],coverage:'variant_required'});return finish({text:reviewed.clarification?.text||'Which variant is installed? It could change these steps.',kind:'clarification',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:list(reviewed.clarification?.options).map(o=>o.label),coverage:'variant_required',pendingQuestion:{field,text:reviewed.clarification?.text||'Which installed variant?',key:'model-scope'}});}
@@ -307,6 +318,9 @@ export async function answerHelper({helper,conversation,text='',indexes=[],analy
   const conflict=conflicts(passages);if(conflict.length)return finish(conflictAnswer(conflict));
   return finish(asReference('I found the procedure in your saved manual.\n\nManual search — these steps are verified against that manual. No local AI was used.'));
  }
+ // A bundled source-pinned map is a reference, not generated operating steps.
+ // Keep compound work and device-type clarifications in the task engine above.
+ if(menuReference&&!diagnosing&&!compound&&!activePlan)return finish(menuReference);
  const questions=diagnosing?nextQuestions(c):[];
  if(clarifyPending){const selected=QUESTION_OPTIONS.find(q=>q.field===c.context.pendingQuestion?.field);if(selected){const details={display:'Copy the exact wording on the display, including any code.',current:'Is the same fault message visible on the display at the moment, or has it cleared?',location:'Does the fault show a location, device name or address?',checks:'What have you already inspected or measured, and what was the result?',timing:'Roughly when did it first happen? Was any work done or anything changed just before it?',extent:'Is it happening at one device or location, or in several places?',pattern:'Does the indication stay on, or does it clear and come back?',access:'What information, equipment or access is missing right now?'};questions.splice(0,questions.length,{...selected,text:details[selected.field]||selected.text});}}
  if(!passages.length&&(!diagnosing||!questions.length||!sources.length))return finish(fallbackMessage({empty:true}));

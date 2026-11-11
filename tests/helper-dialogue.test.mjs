@@ -176,6 +176,24 @@ test('bounded action typos accept canonical model intent without changing target
  assert.throws(()=>parseHelperDialogue(serial({...plan,tasks:[{action:'disable',target:'device 37'}]}),{question:'Disbale device 38'}),/ungrounded_task/);
 });
 
+test('reported devicw typo normalises only the generic task noun and preserves raw history',async()=>{
+ const input='How to disable a devicw';
+ const first=await interpretHelperDialogue({question:input,helper,conversation:{},infer:null});
+ assert.deepEqual(first.dialogue.tasks.map(task=>[task.action,task.target]),[['disable','a device']]);
+ assert.equal(first.dialogue.originalQuestion,input);assert.equal(first.dialogue.turns[0].question,input);assert.equal(first.dialogue.tasks[0].sourceText,input);
+ assert.equal(first.dialogue.tasks[0].performed,false);assert.equal(first.dialogue.confirmedModel,undefined);
+ const c=conversation(first.dialogue);c.context.pendingQuestion={field:'task_detail',taskId:first.dialogue.tasks[0].id,text:'What type and model is the device you’re working on?'};
+ const second=await interpretHelperDialogue({question:'detector',helper,conversation:c,infer:null});
+ assert.equal(second.dialogue.tasks[0].target,'detector');assert.equal(second.dialogue.tasks[0].action,'disable');
+ assert.equal(second.dialogue.originalQuestion,input);assert.equal(second.dialogue.history.at(-1).tasks[0].target,'a device');
+ assert.equal(second.dialogue.tasks[0].performed,false);assert.equal(second.dialogue.confirmedModel,undefined);
+ assert.equal(limitedHelperDialogue({question:'Disable XP96 devicw 0037'}).tasks[0].target,'XP96 device 0037');
+ assert.equal(limitedHelperDialogue({question:'Disable Modulex 0037'}).tasks[0].target,'Modulex 0037');
+ assert.equal(limitedHelperDialogue({question:'Disable DEVICW-42 0037'}).tasks[0].target,'DEVICW-42 0037');
+ assert.throws(()=>parseHelperDialogue('{"tasks":[{"action":"disable","target":"detector"}]}',{question:input,format:'tasks-json'}),/ungrounded_task/);
+ assert.throws(()=>parseHelperDialogue('{"tasks":[{"action":"disable","target":"XP95 device 0037"}]}',{question:'Disable XP96 devicw 0037',format:'tasks-json'}),/ungrounded_task/);
+});
+
 test('limited fallback applies explicit target correction while keeping unrelated tasks and audit history',async()=>{
  const previous=initial(),result=await interpretHelperDialogue({question:'I meant sounders, not all outputs',helper,conversation:conversation(previous),infer:null});
  assert.equal(result.limitedFallback,true);assert.equal(result.dialogue.tasks.length,4);assert.equal(result.dialogue.tasks[0].target,'sounders');assert.equal(result.dialogue.tasks[1].id,previous.tasks[1].id);assert.equal(result.dialogue.history[0].tasks[0].target,'outputs');

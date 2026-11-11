@@ -69,6 +69,15 @@ test('a generic device does not silently become an input detector',()=>{
  assert.equal(result.tasks[0].status,'clarification');assert.match(result.pendingQuestion.text,/type and model/);assert.doesNotMatch(result.text,/SYNTHETIC: select/);
 });
 
+test('indefinite articles do not bypass device-role and output-type clarification',()=>{
+ for(const target of ['a device','an old device','a new device']){
+  const result=answerHelperTasks(base([task('disable',target)]));
+  assert.equal(result.tasks[0].reason,'device_role_required',target);assert.match(result.pendingQuestion.text,/type and model/);
+  assert.doesNotMatch(result.text,/select DISABLE/);
+ }
+ const output=answerHelperTasks(base([task('disable','an output')]));assert.equal(output.tasks[0].reason,'output_type_required');
+});
+
 test('same-page context preserves caution and consequence chunks without borrowing a different page',()=>{
  const p=manual();p.pages[1].text='SYNTHETIC TEST ONLY. To disable sounders, select DISABLE then SOUNDERS. '+('Context for this operation. '.repeat(45))+' Warning: authorised access is required before this operation. Disabled sounders will not operate for an alarm.';
  const index=buildManualIndex(p);assert.ok(index.passages.filter(item=>item.page===2).length>1);

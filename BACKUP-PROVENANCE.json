@@ -1,20 +1,20 @@
 {
-  "webVersion": "0.36.0",
-  "siteVersion": 78,
+  "webVersion": "0.36.1",
+  "siteVersion": 79,
   "siteProjectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
-  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_0ba17d8c88a48191881da6528a14b834",
-  "deploymentId": "appgdep_6af4e9892b1881918b15d8e9f55f8bc3",
+  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_eef48543a7708191b1a20d0fcb166686",
+  "deploymentId": "appgdep_6af4f319cd4881919229c66fcfe1a5f6",
   "deploymentStatus": "succeeded",
-  "deploymentUpdatedAt": "2026-11-11T22:18:06.194956+00:00",
+  "deploymentUpdatedAt": "2026-11-11T22:58:53.072244+00:00",
   "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site",
-  "sourceCommit": "cbd4e81a8630fc6fec9018e06356c51be87d6e35",
+  "sourceCommit": "dfc79789f7af10e4be33778c4808489817511e20",
   "sourceRepository": "Sites project source repository",
   "githubRepository": "https://github.com/william2535/Findr",
   "githubBranch": "main",
   "backupRevision": "The Git commit containing this provenance and SOURCE-FILES.sha256 identifies the backup; it intentionally differs from the deployment source commit.",
   "sourceManifest": "SOURCE-FILES.sha256",
   "manifestScope": "All source-backup payload files except the checksum manifest itself; includes GitHub setup/export documentation and separately archived recovery files.",
-  "verifiedOriginalSourceFiles": 2721,
+  "verifiedOriginalSourceFiles": 2747,
   "intentionallyDetachedFile": ".openai/hosting.json",
   "detachedHostingReason": "Keep a migrated checkout separate from the original live ChatGPT Site.",
   "intentionalExclusions": "EXPORT-EXCLUSIONS.json; additionally no dependency/build caches, private environment values, user data, downloaded manuals or model weights. Required bundled runtime assets and synthetic fixtures remain included.",
@@ -24,50 +24,60 @@
     "recoveryArchive": "WORKSPACE-RECOVERY/original-workspace-files.zip"
   },
   "checks": {
-    "scope": "Explicit OpenAI API option alongside Groq, with provider-specific consent, billing disclosure, routing and usage windows.",
+    "scope": "Source-pinned menu-map and public factory-access references; MxPro5 device typo/type clarification; saved local and online engines unchanged.",
     "unitTests": {
-      "passed": 1800,
-      "failed": 0
+      "passed": 1827,
+      "failed": 0,
+      "skipped": 0,
+      "seconds": 47.55,
+      "actualPDFAccessAuditEnabled": true
     },
     "productionBuild": "passed",
     "typescript": "passed",
-    "publicAssets": "passed; 1457 public files verified; final build 188172501 bytes",
-    "offlineBuildHash": "391c5afce610",
+    "publicAssets": "passed; 1461 static files verified; final build 188354734 bytes",
+    "offlineBuildHash": "0c7986c75eb4",
     "browserChecks": {
-      "Chromium154Portrait390NormalEntryMockedProviders": 8
+      "Chromium154.0.8037.57Portrait390x844Online": 9,
+      "Chromium154.0.8037.57Portrait390x844ColdOffline": 10,
+      "WPEWebKit26.0Portrait390x844Online": 9
     },
-    "compiledRelayChecks": {
-      "OpenAICapabilityGET": 200,
-      "requiresPaidAPI": true,
-      "serviceVerified": false,
-      "MissingKeyPOST": 401
-    },
-    "providerVerification": "Synthetic provider responses only; authenticated OpenAI inference and real account quota not verified.",
-    "credentialHandling": "Engineer-supplied per-tab module-memory API keys; no environment key or stored/exported credentials.",
+    "browserCheckTotal": 28,
+    "offlineVerified": "Chromium network disabled before cold reload: saved conversations, real PDF pages, documented access references and scoped menu lookup usable; no provider calls or model downloads.",
+    "manualSources": "Actual Advanced MxPro5 user680-166 Rev04/product680-165 Rev05 and C-TEC XFP engineeringDFU2200510 Rev2 PDFs were analyzed locally; complete PDFs are not exported.",
+    "sourceAudit": "research/menu-helper-0.36.1/default-code-sources.md",
     "limitations": [
-      "No authenticated OpenAI or Groq inference, real account quota, model accuracy or provider latency verification.",
-      "No physical iPhone or installed iOS PWA verification.",
-      "Online inference requires connectivity; existing offline manuals/local model paths remain separate.",
-      "No APK build/signing performed."
+      "No physical iPhone or installed iOS PWA test.",
+      "WebKit online verification only; executor CacheStorage unavailable, so no WebKit offline claim.",
+      "No actual local inference or cloud-provider inference needed or claimed for this reference repair.",
+      "Menu references do not establish complete service precautions; public factory values do not establish current site credentials.",
+      "No Android APK build/signing; retained Android marker0.14.1/code26."
     ],
-    "evidence": "research/openai-panel-pals-0.36.0/README.md",
-    "verificationRecord": "research/openai-panel-pals-0.36.0/verification.json",
-    "configurationDocumentation": "docs/openai-panel-pals.md"
+    "evidence": "research/menu-helper-0.36.1/README.md"
   },
   "secretReview": {
-    "sourceCommit": "cbd4e81a8630fc6fec9018e06356c51be87d6e35",
-    "copiedFiles": 30,
-    "changedTextFilesScanned": 27,
+    "sourceCommit": "dfc79789f7af10e4be33778c4808489817511e20",
+    "copiedFiles": 39,
+    "changedTextFilesScanned": 25,
     "candidates": [],
-    "allEligibleSourceFilesVerified": 2721,
+    "allEligibleSourceFilesVerified": 2747,
     "detachedHostingVerified": true,
     "recoveryArchiveUnchanged": true,
-    "limitations": "Changed-text pattern review plus GitHub setup addition and reviewed baseline; no mathematical absence proof. Model weights, credentials and downloaded manuals excluded."
+    "limitations": "Changed-text pattern review plus reviewed baseline; no mathematical absence proof. Model weights, credentials and downloaded manuals excluded.",
+    "reviewedCandidates": [
+      {
+        "path": "tests/helpers-menu-reference.test.mjs",
+        "line": 105,
+        "kind": "credential_url",
+        "classification": "synthetic negative-test fixture",
+        "reason": "Test deliberately rejects a credential-bearing URL on reserved manufacturer.invalid host. No real account credential."
+      }
+    ]
   },
-  "preparedAt": "2026-11-11T22:18:39.417082+00:00",
+  "preparedAt": "2026-11-11T22:59:33.809949+00:00",
   "deploymentArchive": {
-    "sha256": "52403a97a5e2c2a7934c2a7a2090db5105aa6520bcdf8eaef35fc99f64e79cbc",
-    "bytes": 189399040,
-    "files": 1560
+    "sha256": "5413c17d516df194b60e9ce2dcc431fc638c41e0da336859dcb3b058f86c8e84",
+    "bytes": 189583360,
+    "files": 1564,
+    "hashScope": "Sites-stored normalized archive, as returned by native save result."
   }
 }

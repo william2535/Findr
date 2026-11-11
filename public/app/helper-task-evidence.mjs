@@ -5,7 +5,7 @@ import {buildManualIndex, retrieveManualPassages} from './manual-retrieval.mjs';
 import {prepareManualAnswer, normaliseManualQuote} from './manual-answers.mjs';
 import {normalizeHelperDialogue, taskQuery, updateHelperTaskEvidence} from './helper-dialogue.mjs';
 
-export const HELPER_TASK_EVIDENCE_VERSION='2026-11-11.1';
+export const HELPER_TASK_EVIDENCE_VERSION='2026-11-11.2';
 const list=value=>Array.isArray(value)?value:[];
 const str=value=>String(value??'');
 const compact=value=>str(value).normalize('NFC').replace(/\u0000/g,'').replace(/\s+/g,' ').trim();
@@ -105,7 +105,7 @@ function outputChoices(passages){
  return choices.filter(label=>label!=='An input device');
 }
 function ambiguousTask(task,passages){
- const target=fold(task.target).replace(/^(?:the|all|my|our)\s+/,''),refs=sourceRefs(passages.filter(p=>/\b(?:sounder|fire routing|fire protection|input|output)/i.test(p.text)).slice(0,4).map(refFrom));
+ const target=fold(task.target).replace(/^(?:a|an|the|all|my|our)\s+/,''),refs=sourceRefs(passages.filter(p=>/\b(?:sounder|fire routing|fire protection|input|output)/i.test(p.text)).slice(0,4).map(refFrom));
  if(['disable','enable','restore'].includes(task.action)&&/^(?:outputs?|output devices?)$/.test(target))return {status:'clarification',text:'I found output-control references, but “outputs” does not tell me which kind you intend to '+task.action+'.',question:'Which outputs do you mean?',quickReplies:outputChoices(passages),sourceRefs:refs,reason:'output_type_required'};
  if(['disable','enable','restore'].includes(task.action)&&/^(?:(?:old|new)\s+)?(?:devices?|one)$/.test(target))return {status:'clarification',text:'I need the device type and model to find its control instructions.',question:'What type and model is the device you’re working on?',quickReplies:[],sourceRefs:refs,reason:'device_role_required'};
  return null;

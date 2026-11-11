@@ -2,7 +2,7 @@
 // Task coverage is evidence status, never a record that an engineer performed work.
 import {generateLocalReply} from './local-language.mjs';
 
-export const HELPER_DIALOGUE_VERSION='2026-11-11.1';
+export const HELPER_DIALOGUE_VERSION='2026-11-11.2';
 const MAX_TASKS=12,MAX_TARGET=160;
 const list=value=>Array.isArray(value)?value:[];
 const str=value=>typeof value==='string'?value:'';
@@ -18,6 +18,11 @@ const ACTION_ALIASES={begin:'start',swap:'replace',change:'replace',isolation:'i
 const COMMON_TARGET=new Set('a an the this that it its my our your one ones all each them their and or of for to on at in with from step part'.split(' '));
 const TERM_ALIASES={psu:['power','supply'],power:['psu'],supply:['psu'],device:['one','detector','sensor','module','camera','keypad','reader','lock'],sounder:['sounders','audible'],output:['outputs'],camera:['cameras'],recorder:['nvr','dvr'],nvr:['recorder'],dvr:['recorder'],history:['log','events'],log:['history','events'],walktest:['walk','test']};
 const COMPONENT_NOUNS=new Set('detector sounder sensor camera recorder keypad reader interface expander controller battery module device'.split(' '));
+// Correct only these common generic-noun typos in interpreted task labels.
+// Keep the original message/turn untouched, and never fuzzy-correct a model,
+// protocol, address or code into a different equipment identifier.
+const COMPONENT_SPELLINGS={devicw:'device',devcie:'device',deivce:'device',devce:'device',detctor:'detector',detecotr:'detector'};
+const componentSpellingText=value=>str(value).replace(/[a-z0-9_.+-]+/gi,word=>COMPONENT_SPELLINGS[fold(word)]||word);
 const words=value=>(fold(value).match(/[\p{L}\p{N}][\p{L}\p{N}_.+-]*/gu)||[]).map(word=>word.replace(/[.]+$/,'')).filter(Boolean);
 const stem=word=>word.length>3&&!/\d/.test(word)?word.replace(/s$/,''):word;
 const suspicious=value=>/[\r\n]|[<>`{}]|\b(?:ignore|override|system prompt|javascript|script|password|pin code|engineer code)\b/i.test(str(value));
@@ -82,7 +87,7 @@ function actionSpellingText(value){
  });
 }
 function resolveTarget(target,question,previous){
- let result=compact(target);const history=[question,previous.originalQuestion,...previous.tasks.map(task=>task.target)].join(' ');
+ let result=componentSpellingText(compact(target));const history=[question,previous.originalQuestion,...previous.tasks.map(task=>task.target)].join(' ');
  // Only replace a bare pronoun when one equipment noun was actually supplied.
  if(/^(?:it|the old one|old one|the new one|new one|one|this|that)$/i.test(result)){
   const nouns=[...new Set((history.match(/\b(?:device|detector|sensor|camera|keypad|reader|lock|module|recorder|panel|power supply|PSU)\b/gi)||[]).map(fold))];
@@ -188,7 +193,7 @@ export function limitedHelperDialogue({question='',previous={},pendingQuestion={
   return {...base,intent:'correction',tasks:changed?tasks:[],...(!changed?{needsClarification:true,clarification:'Which step should I change, and what should it refer to?'}:{})};
  }
  if(prior.tasks.length&&pending.field==='task_detail'&&prior.tasks.some(task=>task.id===pending.taskId)&&!/[?]/.test(text)&&! /^(?:what|where|which|why|how|when|can|could|would|should)\b/i.test(text)&&words(text).length<=10){
-  const selected=prior.tasks.find(task=>task.id===pending.taskId),replacement=text.replace(/[.!]+$/,'').replace(/^(?:a|an|the|it(?:’|')?s)\s+/i,'');
+  const selected=prior.tasks.find(task=>task.id===pending.taskId),replacement=componentSpellingText(text.replace(/[.!]+$/,'').replace(/^(?:a|an|the|it(?:’|')?s)\s+/i,''));
   if(!replacement||suspicious(replacement)||/^(?:i (?:don.t know|can.t)|unknown|not sure|yes|no)$/i.test(replacement))return {...base,intent:'clarification',tasks:[],needsClarification:true,clarification:'I’ll keep that detail unconfirmed. Which part can you identify?'};
   const device= /\b(?:device|detector|sensor|module|camera|reader|lock|keypad)\b/i.exec(selected.target),tasks=prior.tasks.map(task=>{let target=task.target;if(task.id===selected.id)target=replacement;else if(device&&new RegExp('\\b'+device[0]+'\\b','i').test(target))target=target.replace(new RegExp('\\b'+device[0]+'\\b','i'),replacement);return {action:task.action,target,label:task.action+' '+target};});
   return {...base,intent:'clarification',tasks};

@@ -56,6 +56,21 @@ test('installed legacy source selector is not misrepresented as a multi-task int
  assert.equal(turn.modelUsed,false);assert.equal(turn.mode,'manual-search');assert.equal(turn.message.tasks.length,4);assert.match(turn.message.text,/no local AI was used/);
 });
 
+test('reported single-device typo clarifies the device then uses its reviewed control procedure without legacy inference',async()=>{
+ const document={...analysis,pages:analysis.pages.map(page=>page.page===3?{...page,text:page.text+' Authorised access is required before disabling the input. The disabled input will not report an alarm. Restore the input after the work.'}:page)};
+ const recipe={id:'synthetic-disable-input',operation:'disable-input',task:{actions:['disable'],targets:['detector','input']},matchTerms:['disable detector','disable input'],manual:{recordId:document.manualId,sha256:hash,title:document.title,revision:'TEST',models:['Unit panel']},scope:{models:['Unit panel'],label:'SYNTHETIC Unit panel only.',refs:[{page:1,quote:'Unit panel user guide.'}]},anchors:[{page:1,quote:'Revision TEST.'}],prerequisites:[{text:'SYNTHETIC authorised access is required before disabling the input.',refs:[{page:3,quote:'Authorised access is required before disabling the input.'}]}],steps:[{text:'SYNTHETIC select the detector address in the input menu.',refs:[{page:3,quote:'Disable an input device: select the detector address in the input menu.'}]}],effects:[{text:'SYNTHETIC the disabled input will not report an alarm; restore it after the work.',refs:[{page:3,quote:'The disabled input will not report an alarm. Restore the input after the work.'}]}]};
+ const options={...base(),analyses:[document],indexes:[buildManualIndex(document)],taskProcedures:[recipe],modelReadiness:{installed:true,ready:true,model:{id:'legacy-source-selector'}},infer:async()=>{throw Error('Legacy model must not guess the equipment role.');}};
+ const first=await answerHelper({...options,text:'How to disable a devicw'});
+ assert.match(first.message.text,/What type and model/);assert.equal(first.message.tasks[0].reason,'device_role_required');
+ assert.equal(first.message.modelUsed,false);assert.equal(first.conversation.messages[0].text,'How to disable a devicw');
+ assert.doesNotMatch(first.message.text,/SYNTHETIC select/);
+ const second=await answerHelper({...options,conversation:first.conversation,text:'detector'});
+ assert.equal(second.message.tasks[0].status,'documented');assert.equal(second.message.tasks[0].procedureId,recipe.id);
+ assert.match(second.message.text,/SYNTHETIC select the detector address/);assert.match(second.message.text,/will not report an alarm/);
+ assert.equal(second.conversation.context.dialogue.history.at(-1).tasks[0].target,'a device');assert.equal(second.message.tasks[0].performed,false);
+ assert.equal(second.conversation.messages.length,4);assert.ok(second.message.sourceRefs.every(ref=>ref.manualId===document.manualId&&ref.contentHash===hash));
+});
+
 test('unrelated new conversation cannot inherit a previous plan or another helper document',async()=>{
  const foreign={...analysis,manualId:'another-pal',contentHash:'d'.repeat(64),pages:[{page:1,text:'SYNTHETIC secret sounders output procedure ONLY ANOTHER PAL.',quality:{readable:true}}]};
  const turn=await answerHelper({...base(),indexes:[buildManualIndex(analysis),buildManualIndex(foreign)],analyses:[analysis,foreign],text:question,infer:async()=>result(tasks)});

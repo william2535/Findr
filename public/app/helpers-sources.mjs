@@ -12,18 +12,23 @@ export function helperSourcePage(ref){
   return null;
 }
 
-export function renderHelperSources(values,{messageId='',open=false}={}){
+const publisherURL=(value,page)=>{try{const url=new URL(value);if(url.protocol!=='https:'||url.username||url.password)return '';if(page)url.hash='page='+page;return url.href;}catch{return '';}};
+const menuURL=value=>/^#menus\/[a-z0-9-]+\/[a-zA-Z0-9._~%+-]+$/.test(String(value||''))?value:'';
+
+export function renderHelperSources(values,{messageId='',open=false,menuRefs=[]}={}){
   const sources=refs(values);
   if(!sources.length)return '';
   const rows=sources.map((ref,index)=>{
     const page=helperSourcePage(ref),title=text(ref.title)||text(ref.manualTitle)||'Saved manual';
     const label=title+(page===null?'':' · PDF page '+page);
     const manualId=text(ref.manualId),hash=text(ref.contentHash),quote=text(ref.quote)?String(ref.quote):text(ref.excerpt)?String(ref.excerpt):'';
-    const link=manualId||hash?`<button type="button" class="subtle" data-action="helper-source" data-id="${esc(manualId)}"${page===null?'':` data-page="${page}"`} data-hash="${esc(hash)}" data-helper-source-index="${index}">${esc(label)}</button>`:`<span class="helper-source-title">${esc(label)}</span>`;
+    const external=publisherURL(ref.sourceUrl,page);
+    const link=(manualId||hash)&&ref.saved!==false?`<button type="button" class="subtle" data-action="helper-source" data-id="${esc(manualId)}"${page===null?'':` data-page="${page}"`} data-hash="${esc(hash)}" data-helper-source-index="${index}">${esc(label)}</button>`:external?`<a class="subtle" href="${esc(external)}" target="_blank" rel="noopener noreferrer" data-helper-source-index="${index}">${esc(label)}</a><small>Publisher PDF · connection required. This edition is not saved here.</small>`:`<span class="helper-source-title">${esc(label)}</span>`;
     const metadata=[text(ref.revision)?'Edition '+text(ref.revision):'',text(ref.section),text(ref.printedPage)&&text(ref.printedPage)!==String(page)?'Printed page '+text(ref.printedPage):''].filter(Boolean).join(' · ');
     return `<div class="helper-source">${link}${metadata?`<small>${esc(metadata)}</small>`:''}${quote?`<div class="helper-source-evidence"><span>Supporting text</span><blockquote>${esc(quote)}</blockquote></div>`:''}</div>`;
   }).join('');
-  return `<details class="helper-sources" data-helper-sources="${esc(messageId)}"${open?' open':''}><summary>Sources (${sources.length})</summary><div class="helper-sources-list">${rows}</div></details>`;
+  const maps=(Array.isArray(menuRefs)?menuRefs:[]).filter(ref=>menuURL(ref?.href)).map(ref=>`<div class="helper-source"><a class="subtle" href="${esc(ref.href)}">Open menu map · ${esc(ref.title||ref.mapTitle||'Documented route')}</a><small>Bundled reference${ref.mapRevision?' · '+esc(ref.mapRevision):''}</small></div>`).join('');
+  return `<details class="helper-sources" data-helper-sources="${esc(messageId)}"${open?' open':''}><summary>Sources (${sources.length})</summary><div class="helper-sources-list">${rows}${maps}</div></details>`;
 }
 
 /** Keep disclosure and reading position across DOM replacement in this visit. */

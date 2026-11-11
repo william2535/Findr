@@ -1,0 +1,598 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-11",
+  "policy": {
+    "purpose": "Manufacturer-documented public factory access values and separately labelled fixed access sequences. Not site credentials, not emulator practice PINs.",
+    "siteCodeCaveat": "The site code may have been changed. A published factory value does not establish the current site credential; use the authorised site record or maintenance contact if it differs.",
+    "scope": "Match the exact model, variant, access role and stated firmware/document scope. Unknown or conflicting scope requires clarification.",
+    "safety": "Use only for authorised maintenance. Knowing an access code does not establish that a test, disablement or configuration change is appropriate. No reset or bypass instructions are supplied.",
+    "evidence": "All source PDFs were downloaded or reused from earlier source verification and SHA-256 matched on 2026-11-11. Quotes and page positions were checked with Poppler pdftotext. Technical entries remain distinct from emulator training credentials."
+  },
+  "entries": [
+    {
+      "id": "mxpro5-level3",
+      "manufacturer": "Advanced",
+      "models": [
+        "MxPro5",
+        "MxPro 5"
+      ],
+      "variant": "MxPro5 family in the cited product/installation manual",
+      "firmware": "5000-050-04 onwards, as covered by 680-165 Rev 05",
+      "kind": "factory-default",
+      "role": "Engineer / commissioning",
+      "accessLevel": "3",
+      "code": "7654",
+      "document": {
+        "title": "MxPro5 — Product Manual",
+        "url": "https://www.srsalertfire.ie/uploads/FCpZ1eWk/680-165-05MxPro5ProductManual.pdf",
+        "pdfPage": 50,
+        "printedPage": "50",
+        "revision": "680-165 Revision 05",
+        "contentHash": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b",
+        "quote": "The factory default level 3 password is 7654",
+        "section": "3.3.13 Passwords",
+        "sourceKey": "advanced-a18ea5cccf04",
+        "recordId": "advanced-a18ea5cccf04"
+      },
+      "conditions": [
+        "Authorised engineer access only; the documented level is Level 3, not the Level 2 user password."
+      ],
+      "notes": [
+        "The Level 2 password table on this page is explicitly an example, not a set of factory defaults.",
+        "The site code may have been changed. A published factory value does not establish the current site credential; use the authorised site record or maintenance contact if it differs."
+      ]
+    },
+    {
+      "id": "mxpro4-level3",
+      "manufacturer": "Advanced",
+      "models": [
+        "MxPro4",
+        "MxPro 4"
+      ],
+      "variant": "MxPro4 family in the cited product/installation manual",
+      "firmware": "Mx4100-023, Mx4200-023 and Mx4400-023 onwards, as covered by 680-014 Rev 13",
+      "kind": "factory-default",
+      "role": "Engineer / commissioning",
+      "accessLevel": "3",
+      "code": "7654",
+      "document": {
+        "title": "MxPro4 — Installation",
+        "url": "https://www.srsalertfire.ie/uploads/VqRfVH0i/680-014-13MxPro4Installation.pdf",
+        "pdfPage": 43,
+        "printedPage": "43",
+        "revision": "680-014 Revision 13",
+        "contentHash": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32",
+        "quote": "The factory default level 3 password is 7654",
+        "section": "3.3.12 Passwords",
+        "sourceKey": "advanced-9e6af4fbfd7d",
+        "recordId": "advanced-9e6af4fbfd7d"
+      },
+      "conditions": [
+        "Authorised engineer access only; the documented level is Level 3, not the Level 2 user password."
+      ],
+      "notes": [
+        "The Level 2 password table on this page is explicitly an example, not a set of factory defaults.",
+        "The site code may have been changed. A published factory value does not establish the current site credential; use the authorised site record or maintenance contact if it differs."
+      ]
+    },
+    {
+      "id": "gent-nano-v2-level2",
+      "manufacturer": "Gent",
+      "models": [
+        "Nano",
+        "Gent Nano",
+        "NANO-24"
+      ],
+      "variant": "Nano Main Controller V2.xx only",
+      "firmware": "V2.xx",
+      "kind": "factory-default",
+      "role": "Customer",
+      "accessLevel": "2",
+      "code": "0000",
+      "document": {
+        "title": "Nano panel-based fire detection and alarm system - Commissioning instructions",
+        "url": "https://www.firequeen.co.uk/wp-content/uploads/2021/10/Gent-Nano-Com.pdf",
+        "pdfPage": 20,
+        "printedPage": "20",
+        "revision": "Issue 3_05/10, May 2010; Main Controller V2.xx",
+        "contentHash": "f438d67b353cb0014d6cf45b4d348d0e1157a0f4d3b5009c31de8a6a07e5a79e",
+        "quote": "Access level 2 code:- 0000",
+        "section": "How to change to another Access level from access level 1",
+        "sourceKey": "gent-nano--nano-commissioning-3"
+      },
+      "conditions": [
+        "Confirm V2.xx firmware. The newer V3.xx operator/install manuals were checked and do not verify these defaults for V3.xx."
+      ],
+      "notes": [
+        "The site code may have been changed. A published factory value does not establish the current site credential; use the authorised site record or maintenance contact if it differs."
+      ],
+      "supportingEvidence": [
+        {
+          "pdfPage": 20,
+          "quote": "The factory set Access level codes are:"
+        }
+      ],
+      "applicability": {
+        "firmwareMajor": "2",
+        "requiresFirmware": true
+      }
+    },
+    {
+      "id": "gent-nano-v2-level3",
+      "manufacturer": "Gent",
+      "models": [
+        "Nano",
+        "Gent Nano",
+        "NANO-24"
+      ],
+      "variant": "Nano Main Controller V2.xx only",
+      "firmware": "V2.xx",
+      "kind": "factory-default",
+      "role": "Engineering",
+      "accessLevel": "3",
+      "code": "3333",
+      "document": {
+        "title": "Nano panel-based fire detection and alarm system - Commissioning instructions",
+        "url": "https://www.firequeen.co.uk/wp-content/uploads/2021/10/Gent-Nano-Com.pdf",
+        "pdfPage": 20,
+        "printedPage": "20",
+        "revision": "Issue 3_05/10, May 2010; Main Controller V2.xx",
+        "contentHash": "f438d67b353cb0014d6cf45b4d348d0e1157a0f4d3b5009c31de8a6a07e5a79e",
+        "quote": "Access level 3 code:- 3333",
+        "section": "How to change to another Access level from access level 1",
+        "sourceKey": "gent-nano--nano-commissioning-3"
+      },
+      "conditions": [
+        "Confirm V2.xx firmware. The newer V3.xx operator/install manuals were checked and do not verify these defaults for V3.xx."
+      ],
+      "notes": [
+        "The site code may have been changed. A published factory value does not establish the current site credential; use the authorised site record or maintenance contact if it differs."
+      ],
+      "supportingEvidence": [
+        {
+          "pdfPage": 20,
+          "quote": "The factory set Access level codes are:"
+        }
+      ],
+      "applicability": {
+        "firmwareMajor": "2",
+        "requiresFirmware": true
+      }
+    },
+    {
+      "id": "gent-nano-v2-level4",
+      "manufacturer": "Gent",
+      "models": [
+        "Nano",
+        "Gent Nano",
+        "NANO-24"
+      ],
+      "variant": "Nano Main Controller V2.xx only",
+      "firmware": "V2.xx",
+      "kind": "factory-default",
+      "role": "Maintenance",
+      "accessLevel": "4",
+      "code": "4444",
+      "document": {
+        "title": "Nano panel-based fire detection and alarm system - Commissioning instructions",
+        "url": "https://www.firequeen.co.uk/wp-content/uploads/2021/10/Gent-Nano-Com.pdf",
+        "pdfPage": 20,
+        "printedPage": "20",
+        "revision": "Issue 3_05/10, May 2010; Main Controller V2.xx",
+        "contentHash": "f438d67b353cb0014d6cf45b4d348d0e1157a0f4d3b5009c31de8a6a07e5a79e",
+        "quote": "Access level 4 code:- 4444",
+        "section": "How to change to another Access level from access level 1",
+        "sourceKey": "gent-nano--nano-commissioning-3"
+      },
+      "conditions": [
+        "Confirm V2.xx firmware. The newer V3.xx operator/install manuals were checked and do not verify these defaults for V3.xx."
+      ],
+      "notes": [
+        "The site code may have been changed. A published factory value does not establish the current site credential; use the authorised site record or maintenance contact if it differs."
+      ],
+      "supportingEvidence": [
+        {
+          "pdfPage": 20,
+          "quote": "The factory set Access level codes are:"
+        }
+      ],
+      "applicability": {
+        "firmwareMajor": "2",
+        "requiresFirmware": true
+      }
+    },
+    {
+      "id": "gent-vigilon-customer",
+      "manufacturer": "Gent",
+      "models": [
+        "Vigilon",
+        "Gent Vigilon",
+        "Vigilon Compact",
+        "VIG1-24",
+        "VIG1-72"
+      ],
+      "variant": "Vigilon / Vigilon Compact in 4188-856 issue 7",
+      "firmware": "MCC/MCB V4.53 or greater, within the cited 2015 manual scope",
+      "kind": "factory-default",
+      "role": "Customer",
+      "accessLevel": "2",
+      "code": "2222",
+      "document": {
+        "title": "Generic Commissioning Instructions for Vigilon 4/6 loop & Compact range of fire panels & network nodes",
+        "url": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon_and_vigilon_compact-installation-2015.pdf",
+        "pdfPage": 54,
+        "printedPage": "54",
+        "revision": "Issue 7, 07/15",
+        "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+        "quote": "All the VIGILON range of fire panels with MCC/MCB at V4.53 or greater are automatically set up with a FACTORY DEFAULT CUSTOMER PIN: 2 2 2 2, once an Engineer PIN is made active.",
+        "section": "Password or PIN code — How to change the Customer PIN",
+        "sourceKey": "gent-vigilon--gent-vigilon-4188-856-2015",
+        "recordId": "facp-7538be76-f958-46e4-99f6-c718601bb349"
+      },
+      "conditions": [
+        "Only once an Engineer PIN has been made active.",
+        "This is the customer Level 2 PIN. The manual explicitly says the panels leave the factory with no Engineer PIN; do not invent a Level 3 code."
+      ],
+      "notes": [
+        "The site code may have been changed. A published factory value does not establish the current site credential; use the authorised site record or maintenance contact if it differs."
+      ],
+      "applicability": {
+        "firmwareMinimum": "4.53",
+        "firmwareComponent": "MCC/MCB",
+        "requiresEngineerPinActive": true,
+        "variantExcludes": [
+          "Nano",
+          "Vigilon Plus"
+        ]
+      }
+    },
+    {
+      "id": "ctec-xfp16-level3",
+      "manufacturer": "C-TEC",
+      "models": [
+        "XFP",
+        "XFP501E/X",
+        "XFP501E/H"
+      ],
+      "variant": "Single-loop 16-zone XFP501E/X or XFP501E/H — DFU1200510 Rev 3",
+      "firmware": null,
+      "kind": "factory-default",
+      "role": "Engineer",
+      "accessLevel": "3",
+      "code": "4444",
+      "document": {
+        "title": "XFP Single Loop 16 Zone Engineering Manual",
+        "url": "https://c-tec.com/download?wpdmdl=12092",
+        "pdfPage": 18,
+        "printedPage": "18",
+        "revision": "DFU1200510 Rev 3",
+        "contentHash": "dd2afe39b0a4b2fcb2ad6c83559edc812ab0d43b8db8e3f23423a13e8eed556d",
+        "quote": "The default code is 4 4 4 4",
+        "section": "Accessing the engineering menus",
+        "sourceKey": "xfp--xfp16",
+        "recordId": "c-tec-6a8ae5ddd7bc"
+      },
+      "conditions": [
+        "Match the installed XFP variant to the cited engineering manual. Do not extend this to XFP CAST or a different revision without checking."
+      ],
+      "notes": [
+        "The site code may have been changed. A published factory value does not establish the current site credential; use the authorised site record or maintenance contact if it differs."
+      ],
+      "applicability": {
+        "variantExcludes": [
+          "CAST"
+        ]
+      }
+    },
+    {
+      "id": "ctec-xfp32-level3",
+      "manufacturer": "C-TEC",
+      "models": [
+        "XFP",
+        "XFP 32 Zone"
+      ],
+      "variant": "1 or 2 loop 32-zone XFP — DFU2200510 Rev 2",
+      "firmware": null,
+      "kind": "factory-default",
+      "role": "Engineer",
+      "accessLevel": "3",
+      "code": "4444",
+      "document": {
+        "title": "XFP 1 or 2 Loop 32 Zone Engineering Manual",
+        "url": "https://c-tec.com/download?wpdmdl=12095",
+        "pdfPage": 18,
+        "printedPage": "18",
+        "revision": "DFU2200510 Rev 2",
+        "contentHash": "a56ad3e3160fa617e4d024dba54bc0e378f5542855be71ee3a35b90083b1faea",
+        "quote": "The default code is 4 4 4 4",
+        "section": "Accessing the engineering menus",
+        "sourceKey": "xfp--xfp32",
+        "recordId": "c-tec-b03be75d8eb7"
+      },
+      "conditions": [
+        "Match the installed XFP variant to the cited engineering manual. Do not extend this to XFP CAST or a different revision without checking."
+      ],
+      "notes": [
+        "The site code may have been changed. A published factory value does not establish the current site credential; use the authorised site record or maintenance contact if it differs."
+      ],
+      "applicability": {
+        "variantExcludes": [
+          "CAST"
+        ]
+      }
+    },
+    {
+      "id": "ctec-xfp-level2",
+      "manufacturer": "C-TEC",
+      "models": [
+        "XFP"
+      ],
+      "variant": "Push-button XFP variants covered by DFU2000501 Rev 2",
+      "firmware": null,
+      "kind": "factory-default",
+      "role": "Authorised user",
+      "accessLevel": "2",
+      "code": "3333",
+      "document": {
+        "title": "XFP User Manual and Log Book",
+        "url": "https://www.srsalertfire.ie/uploads/WsOIx2U5/XFPUserManual.pdf",
+        "pdfPage": 12,
+        "printedPage": "12",
+        "revision": "DFU2000501 Rev 2",
+        "contentHash": "1710cb3359701fc524a96ed38fc165502b62d4737c0d94d1175ef0466773bc14",
+        "quote": "level 2 is 3 3 3 3",
+        "section": "Entering access level 2",
+        "sourceKey": "xfp--xfp-user",
+        "recordId": "c-tec-70f490a601e3"
+      },
+      "conditions": [
+        "Keypad/push-button entry only. Keyswitch versions use their keyswitch for Level 2.",
+        "Match the installed XFP variant and manual; no XFP CAST coverage is asserted."
+      ],
+      "notes": [
+        "The site code may have been changed. A published factory value does not establish the current site credential; use the authorised site record or maintenance contact if it differs."
+      ],
+      "supportingEvidence": [
+        {
+          "pdfPage": 20,
+          "quote": "The factory default code for access level 2 (required on push button versions of the panel only) is 3 3 3 3"
+        }
+      ],
+      "applicability": {
+        "variantExcludes": [
+          "CAST"
+        ]
+      }
+    },
+    {
+      "id": "ctec-cfp-level2",
+      "manufacturer": "C-TEC",
+      "models": [
+        "CFP",
+        "CFP Standard",
+        "CFP Economy",
+        "CFP AlarmSense"
+      ],
+      "variant": "CFP 2/4/8-zone keypad entry in DFU7001020 Rev 2",
+      "firmware": null,
+      "kind": "documented-access-sequence",
+      "role": "Authorised user",
+      "accessLevel": "2",
+      "code": "2143",
+      "document": {
+        "title": "CFP 2/4/8 Zone Conventional Fire Alarm Control Panels — User Manual & Log Book",
+        "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20CFP%20UNIVERSAL%20USER%20MNL%20DFU7001020_REV2.pdf",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "revision": "DFU7001020 · Rev 2",
+        "contentHash": "f4445ea23e6f6fc95a6732ed57b6591dac6d85b3e26f7c6b81dabcec0c0d5333",
+        "quote": "Enter the code 2 1 4 3 using the keypad buttons on the panel front.",
+        "section": "Panel layout / Accessing the controls",
+        "sourceKey": "c-tec-cfp-standard--cfp-user-rev2",
+        "recordId": "c-tec-5332c9b751b2"
+      },
+      "conditions": [
+        "Keypad method only; the same guide describes a separate keyswitch method."
+      ],
+      "notes": [
+        "The manual describes this as the access sequence, not a changeable factory-default password. Match the installed CFP and cited edition."
+      ]
+    },
+    {
+      "id": "twinflex-pro2-user",
+      "manufacturer": "Fike",
+      "models": [
+        "TWINFLEXpro²",
+        "TWINFLEXpro2",
+        "Twinflex pro2",
+        "Twinflex pro 2"
+      ],
+      "variant": "TWINFLEXpro² only; not legacy Twinflex or TWINFLEXpro",
+      "firmware": "V3.00 onwards within Doc.26-1028 Rev.5",
+      "kind": "factory-default",
+      "role": "User",
+      "accessLevel": "2A",
+      "code": "8737",
+      "document": {
+        "title": "TWINFLEXpro² Control Panel User Guide",
+        "url": "https://docs.facpmanuals.com/manuals/Fike/twinflex_pro2-user-guide-rev5.pdf",
+        "pdfPage": 30,
+        "printedPage": "30",
+        "revision": "Doc.26-1028 Rev.5 · V3.00+",
+        "contentHash": "f9142c9807f388c9e4ce65507d8ceb906a4ff609a3c9e98f6181ee981373aaf3",
+        "quote": "¼ turn or by entering the USER code (default 8737).",
+        "section": "Fire alarm system notice",
+        "sourceKey": "twinflex--twinflex-pro2-user-5",
+        "recordId": "facp-9e607562-03e2-429b-bcc3-b8f7dab17b75"
+      },
+      "conditions": [
+        "Do not substitute for supervisor or engineer access."
+      ],
+      "notes": [
+        "Rev.5 cover contains an extracted Issue 3 template artifact; the checked file hash fixes the source edition.",
+        "The site code may have been changed. A published factory value does not establish the current site credential; use the authorised site record or maintenance contact if it differs."
+      ],
+      "applicability": {
+        "variantExcludes": [
+          "legacy Twinflex",
+          "legacy TWINFLEXpro",
+          "original Twinflex",
+          "repeater"
+        ],
+        "family": "TWINFLEXpro2"
+      }
+    },
+    {
+      "id": "twinflex-pro2-supervisor",
+      "manufacturer": "Fike",
+      "models": [
+        "TWINFLEXpro²",
+        "TWINFLEXpro2",
+        "Twinflex pro2",
+        "Twinflex pro 2"
+      ],
+      "variant": "TWINFLEXpro² only; not legacy Twinflex or TWINFLEXpro",
+      "firmware": "V3.00 onwards within Doc.26-1028 Rev.5",
+      "kind": "factory-default",
+      "role": "Supervisor",
+      "accessLevel": "2B",
+      "code": "7877",
+      "document": {
+        "title": "TWINFLEXpro² Control Panel User Guide",
+        "url": "https://docs.facpmanuals.com/manuals/Fike/twinflex_pro2-user-guide-rev5.pdf",
+        "pdfPage": 19,
+        "printedPage": "19",
+        "revision": "Doc.26-1028 Rev.5 · V3.00+",
+        "contentHash": "f9142c9807f388c9e4ce65507d8ceb906a4ff609a3c9e98f6181ee981373aaf3",
+        "quote": "SUPR (7877)",
+        "section": "Access Level 2B (Supervisor)",
+        "sourceKey": "twinflex--twinflex-pro2-user-5",
+        "recordId": "facp-9e607562-03e2-429b-bcc3-b8f7dab17b75"
+      },
+      "conditions": [
+        "User-guide installation details identify the default as SUPR; the Level 2B menu diagram supplies its numeric keypad form 7877."
+      ],
+      "notes": [
+        "The site code may have been changed. A published factory value does not establish the current site credential; use the authorised site record or maintenance contact if it differs."
+      ],
+      "supportingEvidence": [
+        {
+          "pdfPage": 32,
+          "quote": "Access Level 2B (Supervisor) code: (Default – SUPR)"
+        }
+      ],
+      "applicability": {
+        "variantExcludes": [
+          "legacy Twinflex",
+          "legacy TWINFLEXpro",
+          "original Twinflex",
+          "repeater"
+        ],
+        "family": "TWINFLEXpro2"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "id": "mxpro-level2-not-established",
+      "manufacturer": "Advanced",
+      "models": [
+        "MxPro4",
+        "MxPro 4",
+        "MxPro5",
+        "MxPro 5"
+      ],
+      "role": "User / Level 2",
+      "reason": "The reviewed MxPro4/5 user guides do not supply a factory Level 2 code. Product-manual password tables are labelled examples and must not be treated as defaults."
+    },
+    {
+      "id": "gent-nano-v3-not-established",
+      "manufacturer": "Gent",
+      "models": [
+        "Nano",
+        "Gent Nano",
+        "NANO-24"
+      ],
+      "role": "All access levels",
+      "reason": "Nano V3.xx operating issue 9_12-21 and installation issue 11_01-22 do not verify factory codes. V2.xx commissioning codes must not be silently applied to V3.xx.",
+      "applicability": {
+        "firmwareMajor": "3",
+        "requiresFirmware": true
+      }
+    },
+    {
+      "id": "gent-vigilon-no-engineer-default",
+      "manufacturer": "Gent",
+      "models": [
+        "Vigilon",
+        "Gent Vigilon",
+        "Vigilon Compact",
+        "VIG1-24",
+        "VIG1-72"
+      ],
+      "role": "Engineer / Level 3",
+      "reason": "No numeric factory Engineer PIN is established; a commissioned site may have its own Engineer PIN.",
+      "document": {
+        "title": "Generic Commissioning Instructions for Vigilon 4/6 loop & Compact range of fire panels & network nodes",
+        "url": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon_and_vigilon_compact-installation-2015.pdf",
+        "pdfPage": 54,
+        "printedPage": "54",
+        "revision": "Issue 7, 07/15",
+        "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+        "quote": "The Vigilon and Vigilon Compact panels leave the factory with no Engineer PIN code (Access level 3 code).",
+        "section": "Password or PIN code — How to create an Engineer PIN",
+        "sourceKey": "gent-vigilon--gent-vigilon-4188-856-2015",
+        "recordId": "facp-7538be76-f958-46e4-99f6-c718601bb349"
+      }
+    },
+    {
+      "id": "kentec-sigma-physical-access",
+      "manufacturer": "Kentec",
+      "models": [
+        "Sigma CP",
+        "Sigma CP K Series",
+        "Sigma CP T Series"
+      ],
+      "role": "Level 2 / Level 3",
+      "reason": "The reviewed Sigma CP manual uses an Enable Control key for Level 2 and a physical Write Enable switch for Level 3. Configuration option numbers are not PINs.",
+      "document": {
+        "title": "Sigma CP (K and T Series) — Operation and Maintenance Manual",
+        "url": "https://kentec.co.uk/wp-content/uploads/2018/08/Man-1078_SigmaCP_25.pdf",
+        "pdfPage": 15,
+        "printedPage": "15",
+        "revision": "Man-1078 · Issue 25, April 2024",
+        "contentHash": "ce2da02ef49b615e68ae7a1e69b9ffcc54efd8970bbacb9b1589f484d3e30dd6",
+        "quote": "The Silence/Sound alarm button can only be operated at access level two which means that the Enable Control key must be inserted.",
+        "section": "16.3 Silence/sound alarms",
+        "sourceKey": "kentec-sigma-cp--sigma-main-25",
+        "recordId": "kentec-0d82d93522c3"
+      }
+    },
+    {
+      "id": "minerva-mx-default-not-established",
+      "manufacturer": "Tyco",
+      "models": [
+        "Minerva MX",
+        "Minerva MX2",
+        "MX1000",
+        "MX4000",
+        "MX4000M",
+        "MX2-100",
+        "MX2-200"
+      ],
+      "role": "All access levels",
+      "reason": "17A-05-O Issue 5 (11/04), firmware 5.0 operating instructions were reviewed. They establish access levels but do not state a numeric factory default. No generic Tyco code is inferred."
+    },
+    {
+      "id": "twinflex-pro2-engineer-not-explicit-default",
+      "manufacturer": "Fike",
+      "models": [
+        "TWINFLEXpro²",
+        "TWINFLEXpro2",
+        "Twinflex pro2"
+      ],
+      "role": "Engineer",
+      "reason": "Engineering Doc.26-0959 Rev.18 shows an ENGR code in its menu diagram and editable-code example, but the reviewed passage does not explicitly call it a factory default. No default engineer code is asserted from that example."
+    }
+  ]
+}
