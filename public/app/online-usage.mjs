@@ -1,4 +1,4 @@
-// Groq's response headers report RPD and TPM, not all four account limits.
+// Groq headers report RPD/TPM; OpenAI headers report RPM/TPM. Neither is a billing balance.
 // https://console.groq.com/docs/rate-limits — checked 2026-11-11.
 const MAX_DELAY=7*86400000;
 const count=value=>typeof value==='string'&&/^\d+$/.test(value)&&Number.isSafeInteger(Number(value))?Number(value):null;
@@ -9,22 +9,24 @@ export function parseResetDuration(value){
  if(parts.map(p=>p[0]).join('')!==value||!parts.length||new Set(parts.map(p=>p[2])).size!==parts.length)return null;
  const ms=parts.reduce((n,p)=>n+Number(p[1])*units[p[2]],0);return Number.isFinite(ms)&&ms<=MAX_DELAY?Math.ceil(ms):null;
 }
-export function readProviderAllowance(headers,observedAt=Date.now()){
+export function readProviderAllowance(headers,observedAt=Date.now(),providerId='groq'){
+ if(!['groq','openai'].includes(providerId))return null;
  const bucket=kind=>{const limit=count(headers.get('x-ratelimit-limit-'+kind)),remaining=count(headers.get('x-ratelimit-remaining-'+kind));return {limit,remaining:remaining!==null&&limit!==null&&remaining>limit?null:remaining,resetAfterMs:parseResetDuration(headers.get('x-ratelimit-reset-'+kind))};};
  const requests=bucket('requests'),tokens=bucket('tokens'),raw=headers.get('retry-after');
  const retry=raw&&/^\d+(?:\.\d+)?$/.test(raw)?Math.ceil(Number(raw)*1000):raw?Date.parse(raw)-observedAt:null;
  const retryAfterMs=Number.isFinite(retry)&&retry>=0&&retry<=MAX_DELAY?retry:null;
  if(![...Object.values(requests),...Object.values(tokens),retryAfterMs].some(x=>x!==null))return null;
- return {observedAt,requests,tokens,retryAfterMs};
+ return {providerId,observedAt,requests,tokens,retryAfterMs};
 }
 // Projection prevents arbitrary provider values entering markup or saved jobs.
-export function normalizeAllowance(value,receivedAt=Date.now()){
+export function normalizeAllowance(value,receivedAt=Date.now(),providerId='groq'){
+ if(!['groq','openai'].includes(providerId)||value?.providerId&&value.providerId!==providerId||providerId==='openai'&&value?.providerId!=='openai')return null;
  if(!value||!Number.isFinite(value.observedAt)||value.observedAt<=0)return null;
  const delay=v=>Number.isFinite(v)&&v>=0&&v<=MAX_DELAY?v:null;
  const bucket=raw=>{const limit=number(raw?.limit),remaining=number(raw?.remaining),ms=delay(raw?.resetAfterMs);return {limit,remaining:remaining!==null&&limit!==null&&remaining>limit?null:remaining,resetAt:ms===null?null:receivedAt+ms};};
  const requests=bucket(value.requests),tokens=bucket(value.tokens),retry=delay(value.retryAfterMs);
  if(![...Object.values(requests),...Object.values(tokens),retry].some(x=>x!==null))return null;
- return {observedAt:value.observedAt,receivedAt,requests,tokens,retryAt:retry===null?null:receivedAt+retry};
+ return {providerId,observedAt:value.observedAt,receivedAt,requests,tokens,retryAt:retry===null?null:receivedAt+retry};
 }
 export function resetCountdown(resetAt,now=Date.now()){
  if(!Number.isFinite(resetAt))return 'Reset time not reported';

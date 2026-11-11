@@ -1,8 +1,10 @@
-# Optional online Panel Pals
+# Groq option for online Panel Pals
+
+OpenAI is also available as an explicitly selected paid API option from web0.36.0; see [OpenAI setup](openai-panel-pals.md). The Groq-specific setup and limits below continue to apply.
 
 Panel Pals can use one shared hosted language model when an engineer explicitly chooses online mode. This is hosted computation, not cloud storage for a local model: the model weights run on Groq, so this option does not require downloading them to the phone. Manuals, extracted text, indexes and conversations remain in FINDR's existing local stores. The compact local model and manual-search fallback remain separate options.
 
-The provider is **Groq**, model **`openai/gpt-oss-120b`**. GPT-OSS is an openly available model; this deployment uses Groq's hosted API, not an OpenAI API account. FINDR does not automatically switch online, upgrade an account, select a paid fallback, or retry a failed inference request.
+For this option the provider is **Groq**, model **`openai/gpt-oss-120b`**. GPT-OSS is an openly available model; this deployment uses Groq's hosted API, not an OpenAI API account. FINDR does not automatically switch online, upgrade an account, select a paid fallback, or retry a failed inference request.
 
 ## Engineer setup and cost boundary
 
@@ -29,9 +31,9 @@ Groq's policy says ordinary inference inputs and outputs are not retained by def
 
 Public policy: `public/app/online-language-policy.mjs`. Stateless server implementation: `lib/online-assistant.mjs`. App route: `app/api/assistant/online/route.ts`.
 
-`GET /api/assistant/online` returns public capability metadata, including `supported: true`, `requiresKey: true` and `serviceVerified: false`. It is not a successful key test, model load, paid/free account check or offline-readiness statement.
+`GET /api/assistant/online` returns Groq public capability metadata by default (use `?providerId=openai` for the other configured provider), including `supported: true`, `requiresKey: true` and `serviceVerified: false`. It is not a successful key test, model load, paid/free account check or offline-readiness statement.
 
-`POST /api/assistant/online` requires JSON, a same-origin browser request, a bounded personal key header, `allowOnline: true` and the exact current `consentVersion`. Its JSON body contains `messages`, optional `maxNewTokens`, and either `choices` or `outputFormat`. No arbitrary upstream host, provider model, tools, schema or additional fields are accepted.
+`POST /api/assistant/online` requires JSON, a same-origin browser request, a bounded personal key header, `allowOnline: true` and the exact current `consentVersion`. Its JSON body contains `messages`, optional `providerId` (legacy default: `groq`), optional `maxNewTokens`, and either `choices` or `outputFormat`. Only the two configured providers are accepted, each with its matching consent version. No arbitrary upstream host, provider model, tools, schema or additional fields are accepted.
 
 The relay makes one non-streaming request to `https://api.groq.com/openai/v1/chat/completions`, with redirects disabled and the fixed GPT-OSS model. It does not use code execution, browser search, tools or stateful provider features. The local model's `maxNewTokens` is expanded with a bounded allowance because Groq counts hidden reasoning in its completion budget. Reasoning effort is low, and reasoning text is not requested or returned to the browser.
 

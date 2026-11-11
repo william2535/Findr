@@ -1,20 +1,20 @@
 {
-  "webVersion": "0.35.2",
-  "siteVersion": 77,
+  "webVersion": "0.36.0",
+  "siteVersion": 78,
   "siteProjectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
-  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_4f4e2c3fff008191b7b2b58681380b45",
-  "deploymentId": "appgdep_6af4e58f6b048191b2e88ae63fb9fa61",
+  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_0ba17d8c88a48191881da6528a14b834",
+  "deploymentId": "appgdep_6af4e9892b1881918b15d8e9f55f8bc3",
   "deploymentStatus": "succeeded",
-  "deploymentUpdatedAt": "2026-11-11T22:01:08.465690+00:00",
+  "deploymentUpdatedAt": "2026-11-11T22:18:06.194956+00:00",
   "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site",
-  "sourceCommit": "7ad26199445fcbf903c9061561578c2a482ad056",
+  "sourceCommit": "cbd4e81a8630fc6fec9018e06356c51be87d6e35",
   "sourceRepository": "Sites project source repository",
   "githubRepository": "https://github.com/william2535/Findr",
   "githubBranch": "main",
   "backupRevision": "The Git commit containing this provenance and SOURCE-FILES.sha256 identifies the backup; it intentionally differs from the deployment source commit.",
   "sourceManifest": "SOURCE-FILES.sha256",
   "manifestScope": "All source-backup payload files except the checksum manifest itself; includes GitHub setup/export documentation and separately archived recovery files.",
-  "verifiedOriginalSourceFiles": 2710,
+  "verifiedOriginalSourceFiles": 2721,
   "intentionallyDetachedFile": ".openai/hosting.json",
   "detachedHostingReason": "Keep a migrated checkout separate from the original live ChatGPT Site.",
   "intentionalExclusions": "EXPORT-EXCLUSIONS.json; additionally no dependency/build caches, private environment values, user data, downloaded manuals or model weights. Required bundled runtime assets and synthetic fixtures remain included.",
@@ -24,39 +24,50 @@
     "recoveryArchive": "WORKSPACE-RECOVERY/original-workspace-files.zip"
   },
   "checks": {
-    "scope": "Replace final Ada portrait option with bundled Kanye photo/label while retaining legacy slot identity and saved selections.",
-    "focusedRegressionTests": {
-      "passed": 15,
-      "failed": 0,
-      "coverage": "Existing helper storage and appearance migration tests."
+    "scope": "Explicit OpenAI API option alongside Groq, with provider-specific consent, billing disclosure, routing and usage windows.",
+    "unitTests": {
+      "passed": 1800,
+      "failed": 0
     },
     "productionBuild": "passed",
-    "publicAssets": "passed; 1456 public files verified; final build 188032125 bytes",
-    "offlineBuildHash": "9124bd9ceb67",
-    "browserVerification": "Chromium154 at390px through actual settings: last option labelled Kanye; legacy saved selection, local image rendering and no horizontal overflow verified.",
-    "portraitSources": "public/app/icons/pals/CREDITS.json",
+    "typescript": "passed",
+    "publicAssets": "passed; 1457 public files verified; final build 188172501 bytes",
+    "offlineBuildHash": "391c5afce610",
+    "browserChecks": {
+      "Chromium154Portrait390NormalEntryMockedProviders": 8
+    },
+    "compiledRelayChecks": {
+      "OpenAICapabilityGET": 200,
+      "requiresPaidAPI": true,
+      "serviceVerified": false,
+      "MissingKeyPOST": 401
+    },
+    "providerVerification": "Synthetic provider responses only; authenticated OpenAI inference and real account quota not verified.",
+    "credentialHandling": "Engineer-supplied per-tab module-memory API keys; no environment key or stored/exported credentials.",
     "limitations": [
-      "No physical iPhone verification.",
-      "No new local-model or authenticated Groq inference test claimed for this appearance change.",
-      "No APK rebuild/signing performed."
+      "No authenticated OpenAI or Groq inference, real account quota, model accuracy or provider latency verification.",
+      "No physical iPhone or installed iOS PWA verification.",
+      "Online inference requires connectivity; existing offline manuals/local model paths remain separate.",
+      "No APK build/signing performed."
     ],
-    "evidence": "research/kanye-0.35.2/README.md",
-    "previousBroaderValidation": "research/online-usage-0.35.1/verification.json; historical results, not rerun as part of0.35.2."
+    "evidence": "research/openai-panel-pals-0.36.0/README.md",
+    "verificationRecord": "research/openai-panel-pals-0.36.0/verification.json",
+    "configurationDocumentation": "docs/openai-panel-pals.md"
   },
   "secretReview": {
-    "sourceCommit": "7ad26199445fcbf903c9061561578c2a482ad056",
-    "copiedFiles": 11,
-    "changedTextFilesScanned": 8,
+    "sourceCommit": "cbd4e81a8630fc6fec9018e06356c51be87d6e35",
+    "copiedFiles": 30,
+    "changedTextFilesScanned": 27,
     "candidates": [],
-    "allEligibleSourceFilesVerified": 2710,
+    "allEligibleSourceFilesVerified": 2721,
     "detachedHostingVerified": true,
     "recoveryArchiveUnchanged": true,
-    "limitations": "Changed-text pattern review plus reviewed baseline; no mathematical absence proof. Model weights, credentials and downloaded manuals excluded."
+    "limitations": "Changed-text pattern review plus GitHub setup addition and reviewed baseline; no mathematical absence proof. Model weights, credentials and downloaded manuals excluded."
   },
-  "preparedAt": "2026-11-11T22:01:38.369827+00:00",
+  "preparedAt": "2026-11-11T22:18:39.417082+00:00",
   "deploymentArchive": {
-    "sha256": "b9d0487e44d4b59c97f5d79624d45b70495c0073c6c6e71137cf317f61332124",
-    "bytes": 189255680,
-    "files": 1559
+    "sha256": "52403a97a5e2c2a7934c2a7a2090db5105aa6520bcdf8eaef35fc99f64e79cbc",
+    "bytes": 189399040,
+    "files": 1560
   }
 }

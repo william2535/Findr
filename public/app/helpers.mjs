@@ -10,6 +10,7 @@ import {createHelperTranscriptState,renderHelperSources} from './helpers-sources
 import {HELPER_ICONS,HELPER_COLOURS,normalizeHelperAppearance,helperAppearanceStyle,renderHelperIcon} from './helpers-appearance.mjs';
 import {loadQuickQuestions} from './quick-questions-store.mjs';
 import * as db from './db.mjs';
+import {getOnlineProvider} from './online-language-policy.mjs';
 import * as onlineAPI from './online-language.mjs';
 import {helperMode,withHelperMode,validOnlineConsent} from './helper-mode.mjs';
 import {createAssistantModesController,renderAssistantModeSelector} from './assistant-modes.mjs';
@@ -56,7 +57,7 @@ export function createHelpersController({app,getData,getSaved,refreshSaved,readP
       const key=origin.id+':'+origin.conversationId;pendingModeSelections.add(key);
       const stop=()=>{if(operation?.kind==='answer'&&operation.helperId===origin.id&&operation.conversationId===origin.conversationId)operation.abort.abort();};
       stop();
-      try{await flush();applySaved(await store.updateHelper(origin.id,h=>{if(!list(h.conversations).some(c=>c.id===origin.conversationId))throw Object.assign(Error('This saved conversation no longer exists.'),{code:'HELPER_CONVERSATION_NOT_FOUND'});return {...h,conversations:h.conversations.map(c=>c.id===origin.conversationId?{...withHelperMode(c,mode,consent),updatedAt:Date.now()}:c)};}));stop();if(mode==='online')unloadLocalLanguage();}
+      try{await flush();applySaved(await store.updateHelper(origin.id,h=>{if(!list(h.conversations).some(c=>c.id===origin.conversationId))throw Object.assign(Error('This saved conversation no longer exists.'),{code:'HELPER_CONVERSATION_NOT_FOUND'});return {...h,conversations:h.conversations.map(c=>c.id===origin.conversationId?{...withHelperMode(c,mode,consent),updatedAt:Date.now()}:c)};}));stop();if(mode==='online'){unloadLocalLanguage();onlineAPI.selectOnlineUsageProvider(consent.provider);}}
       finally{pendingModeSelections.delete(key);}
       if(current?.id===origin.id&&active()&&!operation)chatView();
     },
@@ -133,8 +134,8 @@ export function createHelpersController({app,getData,getSaved,refreshSaved,readP
   function manualRecoveryActive(){return model?.recovery?.blocked===true||!!model?.lastRuntimeError;}
   function savedQuestionRetryLabel(){const mode=helperMode(conversation());return mode==='online'?'Retry online question':mode==='manual'||manualRecoveryActive()?'Search saved manuals':'Retry saved question';}
   function modeBanner(){
-    const mode=helperMode(conversation()),selector=renderAssistantModeSelector({mode,onlineReadiness:onlineAPI.getOnlineReadiness(),pending:!!conversation()?.pending||!!conversation()?.interrupted});
-    if(mode==='online'){const state=onlineAPI.getOnlineReadiness(),consent=validOnlineConsent(conversation()?.onlineConsent);return selector+`<p>Online AI · ${esc(state.provider)} / ${esc(state.modelId)} · Internet required.</p><p>${!consent?'Review the sharing details for this conversation.':!state.hasKey?'Add your free-plan API key for this browser session.':!state.online?'You’re offline. Your question and manuals are saved; retry online later or choose Manual search.':'Questions, relevant context and selected manual excerpts go to Groq through FINDR. No model is loaded on your phone.'}</p>${button('mode','Online setup','data-value="online"','subtle')} ${button('resources','Offline kit & storage','','subtle')}`;}
+    const provider=getOnlineProvider(conversation()?.onlineConsent?.provider)||getOnlineProvider(),mode=helperMode(conversation()),selector=renderAssistantModeSelector({mode,onlineReadiness:onlineAPI.getOnlineReadiness(provider.id),pending:!!conversation()?.pending||!!conversation()?.interrupted});
+    if(mode==='online'){const state=onlineAPI.getOnlineReadiness(provider.id),consent=validOnlineConsent(conversation()?.onlineConsent);return selector+`<p>Online AI · ${esc(state.provider)} / ${esc(state.modelId)} · Internet required.</p><p>${!consent?'Review the sharing details for this conversation.':!state.hasKey?'Add your '+provider.name+' API key for this browser session.':!state.online?'You’re offline. Your question and manuals are saved; retry online later or choose Manual search.':'Questions, relevant context and selected manual excerpts go to '+provider.name+' through FINDR. No model is loaded on your phone.'}</p>${button('mode','Online setup','data-value="online"','subtle')} ${button('resources','Offline kit & storage','','subtle')}`;}
     if(mode==='manual')return selector+ `Manual search selected for this conversation · no AI replies. Saved sources and your log stay available. ${button('resources','Choose local AI','','subtle')}`;
     const recovery=manualRecoveryActive(),ready=(model?.ready||model?.canGenerate)&&model?.supported!==false&&!model?.error&&!recovery;
     const message=model?.recovery?.message||model?.lastRuntimeError?.message||'The last local AI reply didn’t finish. Your question, manuals and model files are still saved.';
@@ -142,6 +143,7 @@ export function createHelpersController({app,getData,getSaved,refreshSaved,readP
   }
   function refreshChatReadiness(){const badgeNode=find('.helper-chat-head .helper-state');if(badgeNode&&current){const state=badgeInfo(current);badgeNode.dataset.state=stateKey(state?.status);badgeNode.textContent=state?.label||statusText(state?.status);}const banner=find('#helper-mode-banner');if(banner)banner.innerHTML=modeBanner();const retry=find('[data-action="helper-retry-answer"]');if(retry)retry.textContent=savedQuestionRetryLabel();}
   function chatView(){
+    if(helperMode(conversation())==='online'&&validOnlineConsent(conversation()?.onlineConsent))onlineAPI.selectOnlineUsageProvider(conversation().onlineConsent.provider);
     rememberTranscript();
     const c=conversation(),messages=list(c?.messages),last=messages.at(-1),key=JSON.stringify([current.id,c?.id]),first=renderedConversation!==c?.id||renderedHelper!==current.id;
     const previousInput=find('#helper-input'),keepInput=!first&&!operation&&previousInput&&find('#helper-transcript')?.dataset.helperConversation===key;
@@ -240,8 +242,8 @@ export function createHelpersController({app,getData,getSaved,refreshSaved,readP
       const savedJob=list(helpers.find(item=>item.id===id)?.conversations).find(item=>item.id===base.id)||base;
       if(abort.signal.aborted||pendingModeSelections.has(id+':'+base.id))throw new DOMException('Stopped','AbortError');
       const selected=manualOnly||pendingManualSelections.has(id+':'+base.id)?'manual':helperMode(savedJob),isOnline=selected==='online';
-      const readiness=isOnline?onlineAPI.getOnlineReadiness():await getLocalLanguageReadiness();if(!isOnline)model=readiness;
-      if(isOnline){if(!validOnlineConsent(savedJob.onlineConsent))throw Object.assign(Error('Review the online sharing details before sending this saved question.'),{code:'ONLINE_CONSENT_REQUIRED'});if(!readiness.hasKey)throw Object.assign(Error('Add your Groq Free plan key in Online setup, then retry this saved question.'),{code:'ONLINE_KEY_REQUIRED'});if(!readiness.online)throw Object.assign(Error('You’re offline. Your question is saved. Retry when connected or choose Manual search.'),{code:'ONLINE_OFFLINE'});}
+      const readiness=isOnline?onlineAPI.getOnlineReadiness(getOnlineProvider(savedJob.onlineConsent?.provider)?.id):await getLocalLanguageReadiness();if(!isOnline)model=readiness;
+      if(isOnline){if(!validOnlineConsent(savedJob.onlineConsent))throw Object.assign(Error('Review the online sharing details before sending this saved question.'),{code:'ONLINE_CONSENT_REQUIRED'});if(!readiness.hasKey)throw Object.assign(Error('Add your '+readiness.provider+' API key in Online setup, then retry this saved question.'),{code:'ONLINE_KEY_REQUIRED'});if(!readiness.online)throw Object.assign(Error('You’re offline. Your question is saved. Retry when connected or choose Manual search.'),{code:'ONLINE_OFFLINE'});}
       const result=await answerHelper({helper:target,conversation:base,text:raw,indexes,analyses,procedures,taskProcedures,modelReadiness:readiness,manualOnly:selected==='manual',inferenceMode:isOnline?'online':'offline',...(isOnline?{infer:request=>onlineAPI.generateOnlineReply({...request,consent:savedJob.onlineConsent})}:{}),signal:abort.signal,onProgress:value=>{progress=typeof value==='string'?{message:value}:value;renderProgress();}});
       if(!isOnline&&result.message?.error&&!readiness.error&&!readiness.lastRuntimeError){model=await getLocalLanguageReadiness().catch(()=>({...readiness,ready:false,canGenerate:false,lastRuntimeError:result.message.error}));syncModelReadiness();}
       if(abort.signal.aborted||result.message?.coverage==='cancelled')throw new DOMException('Stopped','AbortError');

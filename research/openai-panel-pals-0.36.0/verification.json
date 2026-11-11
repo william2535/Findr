@@ -1,0 +1,29 @@
+{
+  "version": "0.36.0",
+  "testsPassed": 1800,
+  "testsFailed": 0,
+  "build": "passed",
+  "typecheck": "passed",
+  "browserChecks": 8,
+  "realProviderInferenceVerified": false,
+  "physicalIPhone": false,
+  "offlineBuild": "391c5afce610",
+  "assetGate": {
+    "publicFiles": 1457,
+    "nativeOnlyFilesExcluded": [
+      "app/data/download-map.json"
+    ],
+    "retainedApkVersions": [
+      "0.14.1",
+      "0.14.0"
+    ],
+    "archivedReleaseFilesExcluded": 40,
+    "archivedReleaseBytes": 439707096,
+    "orphanFilesRemoved": 41,
+    "maxStaticAssetBytes": 26214400,
+    "largestStaticAssetBytes": 24126768,
+    "buildBytes": 188172501,
+    "archiveAllowance": 1048576,
+    "verified": true
+  }
+}

@@ -1,3 +1,9 @@
+## OpenAI key option — web 0.36.0
+
+**Online AI** now offers **Groq** and **OpenAI**, selected explicitly for each Panel Pal conversation. OpenAI uses the fixed GPT-6 Luna model with an individual API key held only in this tab’s memory. It requires a paid-API acknowledgement and data-sharing consent; a ChatGPT subscription does not cover API charges. No provider is selected as an automatic fallback, and keys, cancellation and reported usage stay separate between providers.
+
+Saved manual grounding, citations and diagnostic evidence checks remain in place. OpenAI’s top usage display reports remaining requests/minute and tokens/minute; it does not claim to show billing credits. Groq’s daily-request/minute-token display remains compatible. New and imported conversations still require their own explicit online choice. [OpenAI setup](docs/openai-panel-pals.md) · [Checks and limitations](research/openai-panel-pals-0.36.0/README.md). Authenticated OpenAI responses were not tested without a real key; provider test responses are synthetic. Android remains 0.14.1.
+
 ## Kanye portrait — web 0.35.2
 
 The last Panel Pal icon is now **Kanye**, using a bundled 30.5 KB public-domain Official White House photo. Its existing saved slot ID is retained, so older selections and exports continue to work. Source and licence are recorded in `public/app/icons/pals/CREDITS.json`. Other portraits, colours and conversations are unchanged. Android remains 0.14.1.

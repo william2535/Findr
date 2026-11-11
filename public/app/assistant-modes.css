@@ -25,3 +25,5 @@
 .assistant-mode-warning,.assistant-mode-notice{color:#edda91;border-left:3px solid #c6a73d;padding:10px 13px;background:#252115}
 .assistant-modes-panel button:disabled{opacity:.55;cursor:wait}
 @media(max-width:480px){.assistant-modes-panel h2{font-size:23px}.assistant-online-setup,.assistant-mode-local{padding:14px 12px}.assistant-mode-actions>.primary,.assistant-mode-local>.primary{width:100%}.assistant-modes-panel{font-size:14px}.assistant-mode-buttons button{font-size:12px;padding:10px 4px}}
+
+.assistant-online-providers{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:18px}

@@ -8,6 +8,8 @@ The current deployed source snapshot is recorded in [BACKUP-PROVENANCE.json](BAC
 
 No provider key belongs in the Site environment, Worker bindings, repository or `.env` file. Each engineer explicitly enters a personal Groq key in the app; the browser retains it only in this tab’s module memory. The same-origin FINDR relay forwards bounded requests to the fixed provider. A server-capable Worker/Sites deployment is required for that route; static GitHub Pages cannot run it. Never embed a shared owner key in static assets. Real authenticated provider inference was not verified during this release; its transport and browser acceptance tests used labelled synthetic provider responses.
 
+Web 0.36.0 also offers [OpenAI API setup](docs/openai-panel-pals.md). This is an explicit paid-API option alongside Groq; a ChatGPT login/subscription does not supply an API key or API credits. Each engineer enters their own key in FINDR for the current in-memory session. No provider key belongs in environment variables, source, or this backup. Authenticated provider inference remains unverified in the release evidence.
+
 ## Import into GitHub
 
 1. Extract the ZIP and open its `FINDR/` directory.
