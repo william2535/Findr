@@ -1,0 +1,344 @@
+{
+  "status": "passed",
+  "recordedAt": "2026-11-11T18:37:21.780Z",
+  "browser": "chromium",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "physicalIPhone": false,
+  "mobileEmulation": true,
+  "offlineRequested": true,
+  "actualInference": false,
+  "checks": [
+    {
+      "name": "Panel Pals navigation keeps old saved helpers and chosen appearance"
+    },
+    {
+      "name": "The chosen pal icon sits left of every assistant message, with readable prose and no user avatar",
+      "evidence": [
+        {
+          "icon": "mug",
+          "colour": "purple",
+          "left": 34,
+          "right": 66,
+          "textLeft": 75,
+          "label": "Tea-break pal>MANUAL SEARCH \u00b7 NO AI"
+        },
+        {
+          "icon": "mug",
+          "colour": "purple",
+          "left": 34,
+          "right": 66,
+          "textLeft": 75,
+          "label": "Tea-break pal>MANUAL SEARCH \u00b7 NO AI"
+        }
+      ]
+    },
+    {
+      "name": "Existing Sources dropdown and exact saved PDF page still work beside message avatars"
+    },
+    {
+      "name": "A real locally retrieved manual-search answer saves and displays the same avatar; no model inference is claimed"
+    },
+    {
+      "name": "Normal fault questions, corrections, raw readings, work reasons and outstanding actions are saved separately"
+    },
+    {
+      "name": "Give up first saves an unresolved job, then shows a brief two-pulse reaction and returns to a calm screen",
+      "evidence": {
+        "duration": "1.15s",
+        "iterations": "2",
+        "background": "rgb(24, 7, 7)",
+        "skipFocused": true,
+        "svg": true,
+        "elapsedMs": 2503
+      }
+    },
+    {
+      "name": "UK technical support is extracted from the selected saved PDF and its exact page opens; the fictional test number is never called"
+    },
+    {
+      "name": "Prepare for call presents chronological observations, readings, corrections, exact points, conditions, recorded reasons and outstanding restoration",
+      "evidence": [
+        {
+          "id": "cde840ce-bcf5-4dd7-a1f3-e8eda742a4e1",
+          "kind": "Reported observation",
+          "time": "1794422258313"
+        },
+        {
+          "id": "90adaf7b-c457-42e9-baa1-4f8656201113",
+          "kind": "Answer correction",
+          "time": "1794422258368"
+        },
+        {
+          "id": "b3c6a419-2c61-4468-ae83-7de558a1dcda",
+          "kind": "Reported observation",
+          "time": "1794422258460"
+        },
+        {
+          "id": "ab6c4686-c1a9-4b44-b67b-91f6ad191f05",
+          "kind": "Recorded reading",
+          "time": "1794422259156"
+        },
+        {
+          "id": "e92c5bc6-f708-4830-b3f3-cbc17c8fde13",
+          "kind": "Corrected reading",
+          "time": "1794422259286"
+        },
+        {
+          "id": "15a49e5e-747c-41fa-8f57-264242ff055a",
+          "kind": "Recorded reading",
+          "time": "1794422259470"
+        },
+        {
+          "id": "ea6a16d9-4bbc-4ec7-8b2f-82f1b2d023e0",
+          "kind": "Work / action",
+          "time": "1794422259750"
+        }
+      ]
+    },
+    {
+      "name": "The call view exports the full recorded chronology and offers copy without altering evidence",
+      "evidence": {
+        "clipboardVerified": true
+      }
+    },
+    {
+      "name": "Reload resumes the prepared call with the same log and no replayed reaction"
+    },
+    {
+      "name": "The visible Skip control ends the reaction and keeps the saved job"
+    },
+    {
+      "name": "Reduced motion skips the reaction and reaches support/call preparation without changing restoration"
+    },
+    {
+      "name": "With networking disabled, the saved call, extracted manual contact and cited PDF page remain available"
+    }
+  ],
+  "errors": [],
+  "navigationWarnings": [],
+  "requestFailures": [],
+  "fixture": "Labelled synthetic three-page PDF and saved legacy helper; real extraction/indexing/reading, normal conversation and fault UI. Reserved fictional UK number 01632 960123 is never called.",
+  "browserVersion": "154.0.8037.57",
+  "browserStartedAt": 1794422242322,
+  "offlineReadiness": {
+    "ready": true,
+    "build": "295078358727",
+    "version": "0.33.0",
+    "verification": "sha256-v1"
+  },
+  "seed": {
+    "analysis": {
+      "pageCount": 3,
+      "usable": true,
+      "method": [
+        "text",
+        "text",
+        "text"
+      ],
+      "identity": {
+        "systemTypes": [],
+        "manufacturer": "C-TEC",
+        "manufacturerCandidates": [
+          "C-TEC"
+        ],
+        "model": null,
+        "models": [
+          "CFP"
+        ],
+        "familyOnly": true,
+        "equipmentType": null,
+        "equipmentTypes": [],
+        "documentType": "engineering instructions",
+        "revision": null,
+        "variants": [
+          "CFP"
+        ],
+        "requiresVariant": true,
+        "uncertain": true,
+        "confirmed": false,
+        "evidence": [
+          {
+            "page": 1,
+            "quote": "SYNTHETIC QA FIXTURE - NOT MANUFACTURER GUIDANCE\nC-TEC CFP - synthetic Panel Pal UI fixture\nThis test document does not describe real equipment or procedures.\nDo not use any fixture text as engineering instructions.\nThe fictional phone numb",
+            "field": "manufacturer",
+            "value": "C-TEC"
+          },
+          {
+            "page": 1,
+            "quote": "SYNTHETIC QA FIXTURE - NOT MANUFACTURER GUIDANCE\nC-TEC CFP - synthetic Panel Pal UI fixture\nThis test document does not describe real equipment or procedures.\nDo not use any fixture text as engineering instructions.\nThe fictional phone numb",
+            "field": "models",
+            "value": "CFP"
+          },
+          {
+            "page": 1,
+            "quote": "SYNTHETIC QA FIXTURE - NOT MANUFACTURER GUIDANCE\nC-TEC CFP - synthetic Panel Pal UI fixture\nThis test document does not describe real equipment or procedures.\nDo not use any fixture text as engineering instructions.\nThe fictional phone numb",
+            "field": "models",
+            "value": "CFP"
+          },
+          {
+            "page": 1,
+            "quote": "eal equipment or procedures.\nDo not use any fixture text as engineering instructions.\nThe fictional phone number is reserved for testing and must not be called.",
+            "field": "documentType",
+            "value": "engineering instructions"
+          }
+        ],
+        "basis": "Unconfirmed suggestions extracted from manual contents. Confirm the installed label and applicable variant."
+      }
+    },
+    "hash": "1e441e838c2570d9992d1b74b26cc38aa14e1fef60725666ee307eae5f569815",
+    "messages": [
+      {
+        "id": "qa-user-before",
+        "role": "user",
+        "text": "Saved synthetic observation: this job is a UI test.",
+        "createdAt": 100
+      },
+      {
+        "id": "qa-answer-before",
+        "role": "assistant",
+        "text": "This saved synthetic answer checks older Panel Pal conversations.",
+        "sourceRefs": [],
+        "mode": "manual-search",
+        "createdAt": 101
+      },
+      {
+        "id": "qa-cited-answer",
+        "role": "assistant",
+        "text": "The saved fixture describes the event history. This is synthetic test evidence, not equipment advice.",
+        "sourceRefs": [
+          {
+            "manualId": "qa-panel-pal-manual",
+            "contentHash": "1e441e838c2570d9992d1b74b26cc38aa14e1fef60725666ee307eae5f569815",
+            "title": "SYNTHETIC QA C-TEC CFP contact fixture \u2014 NOT a real manual",
+            "page": 2,
+            "section": "Event history test reference",
+            "revision": "QA-1",
+            "quote": "The event history retains the last 120 entries."
+          }
+        ],
+        "mode": "manual-search",
+        "createdAt": 102
+      }
+    ]
+  },
+  "avatars": [
+    {
+      "icon": "mug",
+      "colour": "purple",
+      "left": 34,
+      "right": 66,
+      "textLeft": 75,
+      "label": "Tea-break pal>MANUAL SEARCH \u00b7 NO AI"
+    },
+    {
+      "icon": "mug",
+      "colour": "purple",
+      "left": 34,
+      "right": 66,
+      "textLeft": 75,
+      "label": "Tea-break pal>MANUAL SEARCH \u00b7 NO AI"
+    }
+  ],
+  "generatedReply": {
+    "id": "54a499fe-bc6a-4163-a711-748255350a89",
+    "role": "assistant",
+    "text": "Manual search \u2014 prepare the local AI engine when you\u2019re ready to use AI assistance.\n\nHere are the related passages I found in your saved manuals:\n\n[1] SYNTHETIC QA FIXTURE - PAGE TWO Event history test reference The event history retains the last 120 entries. Select the event history view to inspect the recorded date and event description. These synthetic menu words only test document retrieval and citations.\n\nThese passages are references to check, not a verified answer or a confirmed diagnosis.",
+    "createdAt": 1794422256280,
+    "kind": "manual_search",
+    "sourceRefs": [
+      {
+        "sourceId": "1e441e838c2570d9992d1b74b26cc38aa14e1fef60725666ee307eae5f569815:pdf-2:0",
+        "citationId": "S1",
+        "manualId": "qa-panel-pal-manual",
+        "contentHash": "1e441e838c2570d9992d1b74b26cc38aa14e1fef60725666ee307eae5f569815",
+        "processorVersion": "2026-11-10.3",
+        "title": "SYNTHETIC QA C-TEC CFP contact fixture \u2014 NOT a real manual",
+        "revision": "",
+        "models": [
+          "CFP"
+        ],
+        "page": 2,
+        "pdfPage": 2,
+        "printedPage": null,
+        "section": null,
+        "method": "text",
+        "requiresSourceReview": false,
+        "quote": "SYNTHETIC QA FIXTURE - PAGE TWO Event history test reference The event history retains the last 120 entries. Select the event history view to inspect the recorded date and event description. These synthetic menu words only test document retrieval and citations.",
+        "excerpt": "SYNTHETIC QA FIXTURE - PAGE TWO Event history test reference The event history retains the last 120 entries. Select the event history view to inspect the recorded date and event description. These synthetic menu words only test document retrieval and citations."
+      }
+    ],
+    "quickReplies": [],
+    "mode": "manual-search",
+    "modelUsed": false,
+    "coverage": "reference_only",
+    "engineVersion": "2026-11-11.6"
+  },
+  "reactionVideoStartSeconds": 17.622,
+  "reaction": {
+    "duration": "1.15s",
+    "iterations": "2",
+    "background": "rgb(24, 7, 7)",
+    "skipFocused": true,
+    "svg": true,
+    "elapsedMs": 2503
+  },
+  "timeline": [
+    {
+      "id": "cde840ce-bcf5-4dd7-a1f3-e8eda742a4e1",
+      "kind": "Reported observation",
+      "time": "1794422258313",
+      "text": "Reported observation \u00b7 11/11/2026, 18:37:38\nDoes it explicitly report a loop short circuit?\n\nYes\n\nQuestion context: Use the displayed information or existing records; choose \u201cI don\u2019t know\u201d if unavailable."
+    },
+    {
+      "id": "90adaf7b-c457-42e9-baa1-4f8656201113",
+      "kind": "Answer correction",
+      "time": "1794422258368",
+      "text": "Answer correction \u00b7 11/11/2026, 18:37:38\nDoes it explicitly report a loop short circuit?\n\nEarlier answer withdrawn: Yes\n\nWhy: An answer to a diagnostic question; it does not record an electrical test as performed."
+    },
+    {
+      "id": "b3c6a419-2c61-4468-ae83-7de558a1dcda",
+      "kind": "Reported observation",
+      "time": "1794422258460",
+      "text": "Reported observation \u00b7 11/11/2026, 18:37:38\nDoes it explicitly report a loop short circuit?\n\nNo\n\nQuestion context: Use the displayed information or existing records; choose \u201cI don\u2019t know\u201d if unavailable."
+    },
+    {
+      "id": "ab6c4686-c1a9-4b44-b67b-91f6ad191f05",
+      "kind": "Recorded reading",
+      "time": "1794422259156",
+      "text": "Recorded reading \u00b7 11/11/2026, 18:37:39\nSynthetic PSU output\n\n0 V DC\n\nRecorded note: Why: compare the recorded supply reading. No actual electrical test is performed by this QA.\n\nReference / terminals\nPSU + to PSU -\nConditions\nLoad connected; synthetic previously recorded observation\n\nOriginal reading \u2014 replaced by a later correction.\n\nDetails and source"
+    },
+    {
+      "id": "e92c5bc6-f708-4830-b3f3-cbc17c8fde13",
+      "kind": "Corrected reading",
+      "time": "1794422259286",
+      "text": "Corrected reading \u00b7 11/11/2026, 18:37:39\nSynthetic PSU output\n\n24.1 V DC\n\nRecorded note: Correction: synthetic transcription error; original zero must stay in the record.\n\nReference / terminals\nPSU + to PSU -\nConditions\nLoad connected; synthetic previously recorded observation\n\nCorrection \u2014 original reading retained.\n\nDetails and source"
+    },
+    {
+      "id": "15a49e5e-747c-41fa-8f57-264242ff055a",
+      "kind": "Recorded reading",
+      "time": "1794422259470",
+      "text": "Recorded reading \u00b7 11/11/2026, 18:37:39\nLast device\n\nOL \u03a9\n\nRecorded note: Synthetic earlier reading on a verified isolated spare span. This fixture is not a test instruction.\n\nDetails and source"
+    },
+    {
+      "id": "ea6a16d9-4bbc-4ec7-8b2f-82f1b2d023e0",
+      "kind": "Work / action",
+      "time": "1794422259750",
+      "text": "Work / action \u00b7 11/11/2026, 18:37:39\nChecked the existing labels in a synthetic site record\n\nLabel comparison recorded; fault cause still unconfirmed\n\nRecorded reason: To establish which documented location the reported fault refers to\n\nDetails and source"
+    }
+  ],
+  "layout": {
+    "viewport": 390,
+    "width": 390
+  },
+  "clipboardVerified": true,
+  "finishedAt": "2026-11-11T18:37:45.337Z",
+  "video": {
+    "file": "panel-pal-give-up-preview.webm",
+    "description": "Six-second excerpt from the unmodified portrait browser recording, starting at 17.1 seconds. Shows the brief reaction and transition to saved-manual support.",
+    "startSeconds": 17.1,
+    "durationSeconds": 6
+  }
+}

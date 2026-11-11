@@ -5,7 +5,7 @@ import {generateLocalReply, LOCAL_MODEL} from './local-language.mjs';
 import {buildManualIndex, retrieveManualPassages, MANUAL_RETRIEVAL_VERSION} from './manual-retrieval.mjs';
 import {prepareManualAnswer} from './manual-answers.mjs';
 
-export const HELPERS_ENGINE_VERSION='2026-11-11.5';
+export const HELPERS_ENGINE_VERSION='2026-11-11.6';
 const list=value=>Array.isArray(value)?value:[];
 const str=value=>String(value??'');
 const compact=value=>str(value).normalize('NFC').replace(/\u0000/g,'').replace(/\s+/g,' ').trim();
@@ -159,14 +159,14 @@ function recordInput(c,question,helper,now,clarifying=false){
  return {isAnswer,pending,query:isAnswer?[context.investigation?.complaint||context.previousQuestion,pending?.field==='display'?question:''].filter(Boolean).join(' '):question};
 }
 const QUESTION_OPTIONS=[
- {id:'Q1',field:'display',text:'What exact message or fault code is shown?',quickReplies:['I don’t know']},
+ {id:'Q1',field:'display',text:'Tell me exactly what the display says, including any fault code.',quickReplies:['I don’t know']},
  {id:'Q2',field:'current',text:'Is the fault showing now?',quickReplies:['Yes','No','I don’t know']},
  {id:'Q3',field:'location',text:'Which device or location is affected?',quickReplies:['I don’t know']},
- {id:'Q4',field:'checks',text:'What checks have already been completed, and what were the results?',quickReplies:['No checks yet','I don’t know']},
- {id:'Q5',field:'timing',text:'When did it start, and was anything changed shortly beforehand?',quickReplies:['I don’t know']},
+ {id:'Q4',field:'checks',text:'What have you checked so far, and what did you find?',quickReplies:['No checks yet','I don’t know']},
+ {id:'Q5',field:'timing',text:'When did it start? Had anything changed just before that?',quickReplies:['I don’t know']},
  {id:'Q6',field:'extent',text:'Does the issue affect one device or several?',quickReplies:['One device','Several devices','I don’t know']},
- {id:'Q7',field:'pattern',text:'Is the fault constant or intermittent?',quickReplies:['Constant','Intermittent','I don’t know']},
- {id:'Q8',field:'access',text:'What information or access is missing for the next check?',quickReplies:['I don’t know']}
+ {id:'Q7',field:'pattern',text:'Does it stay on, or does it come and go?',quickReplies:['Constant','Intermittent','I don’t know']},
+ {id:'Q8',field:'access',text:'What’s stopping the next check: access, equipment or missing information?',quickReplies:['I don’t know']}
 ];
 function nextQuestions(c){const answered=new Set(c.context.answeredQuestions.map(q=>q.field));return QUESTION_OPTIONS.filter(q=>!answered.has(q.field)&&!Object.hasOwn(c.context.knownFields,q.field)).slice(0,4);}
 function questionPreview(value,max=280){const text=compact(value);return text.length<=max?text:text.slice(0,max-3)+'…';}
@@ -190,21 +190,21 @@ function parseSelection(raw,request){
  const [source,next]=text.split(' ');
  return {valid:true,source:source==='NONE'?null:source,next:request.questionLabels.includes(next)?next:null,raw:text};
 }
-function sourceWarnings(passages){const result=[];if(passages.some(p=>p.method==='ocr'))result.push('Some supporting text was read with OCR; check the page image, especially numbers and symbols.');return result;}
+function sourceWarnings(passages){const result=[];if(passages.some(p=>p.method==='ocr'))result.push('Some of this text was read with OCR. Check the page image before relying on numbers or symbols.');return result;}
 function conflicts(passages){
  const byManual=new Map();for(const p of passages){const key=p.manufacturer+'|'+list(p.models).map(modelKey).sort().join('|');if(!byManual.has(key))byManual.set(key,[]);byManual.get(key).push(p);}
  const results=[];
  for(const items of byManual.values()){
   const editions=unique(items.map(p=>p.contentHash));if(editions.length<2)continue;
   const readings=new Set(items.flatMap(p=>(p.text.match(/\b\d+(?:\.\d+)?\s*(?:V(?:\s*(?:DC|AC))?|mA|A|k?Ω|ohms?|seconds?|minutes?)\b/gi)||[]).map(compact)));
-  if(readings.size>1)results.push({kind:'different_source_values',text:'These selected documents give different values or conditions. I have not established that they describe the same variant and operating condition.',sourceRefs:items.map(sourceRef)});
-  else if(unique(items.map(p=>p.revision).filter(Boolean)).length>1)results.push({kind:'edition_difference',text:'More than one document edition matched. Check the applicable edition and variant before using a procedure.',sourceRefs:items.map(sourceRef)});
+  if(readings.size>1)results.push({kind:'different_source_values',text:'I found different values or conditions in these documents. I can’t yet establish that they apply to the same variant and operating condition.',sourceRefs:items.map(sourceRef)});
+  else if(unique(items.map(p=>p.revision).filter(Boolean)).length>1)results.push({kind:'edition_difference',text:'I found more than one edition of the document. Let’s check which edition and variant apply before using the procedure.',sourceRefs:items.map(sourceRef)});
  }
  return results;
 }
 function conflictAnswer(items,{mode='manual-search',modelUsed=false,model}={}){
  const refs=unique(items.flatMap(item=>item.sourceRefs).map(ref=>JSON.stringify(ref))).map(value=>JSON.parse(value));
- return {text:items.map(item=>item.text).join('\n\n')+'\n\n'+refs.slice(0,3).map((ref,i)=>'['+(i+1)+'] '+ref.title+(ref.revision?' · edition '+ref.revision:'')+'\n'+ref.quote).join('\n\n')+'\n\nWhich document edition and installed variant apply here?',kind:'source_conflict',mode,modelUsed,...(model?{model}:{}),sourceRefs:refs,quickReplies:['I don’t know'],coverage:'conflicting_or_different_editions',conflicts:items,pendingQuestion:{field:'edition',key:'document-edition',text:'Which document edition and installed variant apply here?'}};
+ return {text:items.map(item=>item.text).join('\n\n')+'\n\n'+refs.slice(0,3).map((ref,i)=>'['+(i+1)+'] '+ref.title+(ref.revision?' · edition '+ref.revision:'')+'\n'+ref.quote).join('\n\n')+'\n\nWhich document edition and installed variant are you working with?',kind:'source_conflict',mode,modelUsed,...(model?{model}:{}),sourceRefs:refs,quickReplies:['I don’t know'],coverage:'conflicting_or_different_editions',conflicts:items,pendingQuestion:{field:'edition',key:'document-edition',text:'Which document edition and installed variant are you working with?'}};
 }
 function hazardous(question,passages,reviewed){
  if(reviewed?.coverage==='reviewed_manual_procedure'&&reviewed.status==='answered')return false;
@@ -221,8 +221,8 @@ function foreignModel(question,helper,passages){
  return candidates.find(candidate=>!names.includes(modelKey(candidate)))||null;
 }
 function fallbackMessage({reason,passages=[],error,empty=false,withholdInstructions=false}){
- const refs=passages.slice(0,2).map(sourceRef),lead=empty?'Not established in these manuals.':reason||'Manual search — local AI is unavailable.';
- const text=[lead,refs.length?(withholdInstructions?'Relevant manual pages were found, but the excerpts do not establish the precautions and consequences needed to recommend this operation. Open the cited pages and add the applicable service or installation instructions.':'Related saved-manual extracts:\n\n'+refs.map((ref,i)=>'['+(i+1)+'] '+ref.quote).join('\n\n')):'No sufficiently relevant, readable passage was found in this helper’s selected documents.',refs.length?'These references are not a verified answer or a completed diagnosis.':'Add the relevant model/variant manual, or give the exact display message and section you need.'].join('\n\n');
+ const refs=passages.slice(0,2).map(sourceRef),lead=empty?'I can’t establish that from these manuals yet.':reason||'Manual search — the local AI isn’t available on this device.';
+ const text=[lead,refs.length?(withholdInstructions?'I found relevant manual pages, but these extracts don’t establish the precautions or system effects needed to recommend this operation. Open the cited pages, or add the applicable service or installation instructions.':'Here are the related passages I found in your saved manuals:\n\n'+refs.map((ref,i)=>'['+(i+1)+'] '+ref.quote).join('\n\n')):'I couldn’t find a readable passage that answers this in your pal’s selected manuals.',refs.length?'These passages are references to check, not a verified answer or a confirmed diagnosis.':'Add the manual for the exact model and variant, or tell me the display message or section you need.'].join('\n\n');
  return {text,kind:empty?'unsupported':'manual_search',mode:'manual-search',modelUsed:false,sourceRefs:refs,quickReplies:[],coverage:empty?'not_established':'reference_only',...(error?{error:{code:error.code||'MODEL_RUNTIME_ERROR',message:error.message}}:{})};
 }
 
@@ -250,23 +250,23 @@ export async function answerHelper({helper,conversation,text='',indexes=[],analy
   passages=[...preferred,...passages.filter(p=>!preferred.some(item=>item.id===p.id))].slice(0,4).map((p,i)=>({...p,citationId:'S'+(i+1)}));
  }
  const finish=details=>{const message=append(c,'assistant',details.text,{...details,engineVersion:HELPERS_ENGINE_VERSION},time);if(details.pendingQuestion){c.context.pendingQuestion={...details.pendingQuestion,id:message.id};delete message.pendingQuestion;}c.context.previousQuestion=question;if(details.coverage==='reviewed_manual_procedure'){c.context.previousAnswer={text:details.text,steps:details.steps,sourceRefs:details.sourceRefs,procedureId:details.procedureId,operation:details.operation};c.context.procedureContext={procedureId:details.procedureId,previousAnswer:c.context.previousAnswer};}return {conversation:c,message,modelUsed:!!details.modelUsed,mode:details.mode};};
- const asReference=(reason,error)=>reviewed.status==='answered'&&reviewed.coverage==='reviewed_manual_procedure'?{text:reason+'\n\nVerified manual procedure:\n\n'+reviewed.text,kind:'manual_search',mode:'manual-search',modelUsed:false,sourceRefs:reviewed.sourceRefs,quickReplies:[],coverage:reviewed.coverage,steps:reviewed.steps,procedureId:reviewed.procedureId,operation:reviewed.operation,...(error?{error:{code:error.code||'MODEL_RUNTIME_ERROR',message:error.message}}:{})}:fallbackMessage({reason,passages,withholdInstructions:hazardous(question,passages,null),error});
+ const asReference=(reason,error)=>reviewed.status==='answered'&&reviewed.coverage==='reviewed_manual_procedure'?{text:reason+'\n\nHere are the documented steps:\n\n'+reviewed.text,kind:'manual_search',mode:'manual-search',modelUsed:false,sourceRefs:reviewed.sourceRefs,quickReplies:[],coverage:reviewed.coverage,steps:reviewed.steps,procedureId:reviewed.procedureId,operation:reviewed.operation,...(error?{error:{code:error.code||'MODEL_RUNTIME_ERROR',message:error.message}}:{})}:fallbackMessage({reason,passages,withholdInstructions:hazardous(question,passages,null),error});
  const outside=foreignModel(question,helper,passages);
- if(outside)return finish({text:'Not established in this helper’s manuals for '+outside+'. Choose the helper for that exact model, or add its documented manual before using model-specific instructions.',kind:'unsupported',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:[],coverage:'different_model'});
- if(reviewed.status==='scope_required'){const field=reviewed.clarification?.kind==='variant'?'variant':'model';if(c.context.answeredQuestions.some(q=>q.field===field))return finish({text:'The applicable model or variant is still unconfirmed in this job. Add its exact details before using this procedure.',kind:'unsupported',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:[],coverage:'variant_required'});return finish({text:reviewed.clarification?.text||'Which installed variant applies to this procedure?',kind:'clarification',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:list(reviewed.clarification?.options).map(o=>o.label),coverage:'variant_required',pendingQuestion:{field,text:reviewed.clarification?.text||'Which installed variant?',key:'model-scope'}});}
+ if(outside)return finish({text:'I can’t establish that for '+outside+' from this pal’s manuals. Open a pal for that exact model, or add its manual before using model-specific instructions.',kind:'unsupported',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:[],coverage:'different_model'});
+ if(reviewed.status==='scope_required'){const field=reviewed.clarification?.kind==='variant'?'variant':'model';if(c.context.answeredQuestions.some(q=>q.field===field))return finish({text:'I still need the exact installed model or variant before we can use this procedure.',kind:'unsupported',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:[],coverage:'variant_required'});return finish({text:reviewed.clarification?.text||'Which variant is installed? It could change these steps.',kind:'clarification',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:list(reviewed.clarification?.options).map(o=>o.label),coverage:'variant_required',pendingQuestion:{field,text:reviewed.clarification?.text||'Which installed variant?',key:'model-scope'}});}
  // The complete procedure has already passed its pinned-PDF, page-quote and
  // equipment-scope checks. Loading the model cannot add evidence to those
  // checks, so release this as an explicit manual result without inference.
  if(reviewed.status==='answered'&&reviewed.coverage==='reviewed_manual_procedure'){
   const conflict=conflicts(passages);if(conflict.length)return finish(conflictAnswer(conflict));
-  return finish(asReference('Manual search — this procedure is verified against the saved manual. No local AI was used.'));
+  return finish(asReference('I found the procedure in your saved manual.\n\nManual search — these steps are verified against that manual. No local AI was used.'));
  }
  const questions=diagnosing?nextQuestions(c):[];
- if(clarifyPending){const selected=QUESTION_OPTIONS.find(q=>q.field===c.context.pendingQuestion?.field);if(selected){const details={display:'Please copy the wording and any code exactly as it appears on the display.',current:'Is the same fault message visible on the display at the moment, or has it cleared?',location:'What location, device name or address is shown with that fault?',checks:'What have you already inspected or measured, and what was the result?',timing:'About when did it first happen, and did any work or change happen just before it?',extent:'Are you seeing the issue at a single device or location, or at more than one?',pattern:'Does the indication remain on continuously, or does it clear and return?',access:'What information, equipment or access is missing right now?'};questions.splice(0,questions.length,{...selected,text:details[selected.field]||selected.text});}}
+ if(clarifyPending){const selected=QUESTION_OPTIONS.find(q=>q.field===c.context.pendingQuestion?.field);if(selected){const details={display:'Copy the exact wording on the display, including any code.',current:'Is the same fault message visible on the display at the moment, or has it cleared?',location:'Does the fault show a location, device name or address?',checks:'What have you already inspected or measured, and what was the result?',timing:'Roughly when did it first happen? Was any work done or anything changed just before it?',extent:'Is it happening at one device or location, or in several places?',pattern:'Does the indication stay on, or does it clear and come back?',access:'What information, equipment or access is missing right now?'};questions.splice(0,questions.length,{...selected,text:details[selected.field]||selected.text});}}
  if(!passages.length&&(!diagnosing||!questions.length||!sources.length))return finish(fallbackMessage({empty:true}));
  const readiness=modelReadiness||{};
  if(manualOnly||readiness.supported===false||readiness.installed===false||readiness.error||readiness.lastRuntimeError||!(readiness.ready||readiness.installed||readiness.canGenerate)){
-  const unavailable=manualOnly?'Manual search — showing saved-manual references for this reply. No local AI was used.':readiness.supported===false?'Manual search — this device does not support the local AI engine.':readiness.error||readiness.lastRuntimeError?'Manual search — the local AI engine is unavailable on this device.':'Manual search — download and prepare the local AI engine to use AI assistance.';
+  const unavailable=manualOnly?'Manual search — I’m showing the saved-manual references for this reply. No local AI was used.':readiness.supported===false?'Manual search — this device can’t run the local AI engine, but you can still use your saved manuals.':readiness.error||readiness.lastRuntimeError?'Manual search — the local AI isn’t available on this device right now.':'Manual search — prepare the local AI engine when you’re ready to use AI assistance.';
   return finish(asReference(unavailable,readiness.error||readiness.lastRuntimeError));
  }
  let request=buildHelperRequest({helper,conversation:c,question:query,passages,questions}),reply;
@@ -275,26 +275,26 @@ export async function answerHelper({helper,conversation,text='',indexes=[],analy
   // Raw model tokens may contain unsupported prose before its source choice is
   // validated. Only genuine token-count progress is exposed while generating.
   const generate=()=>infer({messages:request.messages,maxNewTokens:request.maxNewTokens,choices:request.choices,signal,onProgress});
-  try{reply=await generate();}catch(error){if(error?.code!=='MODEL_CONTEXT_TOO_LONG')throw error;request=buildHelperRequest({helper,conversation:c,question:query,passages:passages.slice(0,2),questions:questions.slice(0,2),sourceBudget:480});onProgress?.({phase:'model',message:'Preparing a smaller source request…'});reply=await generate();}
+  try{reply=await generate();}catch(error){if(error?.code!=='MODEL_CONTEXT_TOO_LONG')throw error;request=buildHelperRequest({helper,conversation:c,question:query,passages:passages.slice(0,2),questions:questions.slice(0,2),sourceBudget:480});onProgress?.({phase:'model',message:'Trying a smaller set of sources…'});reply=await generate();}
  }catch(error){
-  if(error?.name==='AbortError')return finish({text:'Reply cancelled. Your question and recorded observations are saved.',kind:'cancelled',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:[],coverage:'cancelled'});
-  return finish(asReference('Manual search — the local AI could not finish on this device. '+(error?.code==='MODEL_CONTEXT_TOO_LONG'?'The references exceed this compact model’s input limit.':'Your documents and conversation are retained.'),error));
+  if(error?.name==='AbortError')return finish({text:'Stopped there. Your question and recorded observations are still saved.',kind:'cancelled',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:[],coverage:'cancelled'});
+  return finish(asReference('Manual search — the local AI couldn’t finish this reply on your device. '+(error?.code==='MODEL_CONTEXT_TOO_LONG'?'These references are too long for the local model’s input limit.':'Your manuals and conversation are still saved.'),error));
  }
- if(signal?.aborted)return finish({text:'Reply cancelled. Your question and recorded observations are saved.',kind:'cancelled',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:[],coverage:'cancelled'});
+ if(signal?.aborted)return finish({text:'Stopped there. Your question and recorded observations are still saved.',kind:'cancelled',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:[],coverage:'cancelled'});
  const selection=parseSelection(reply,request),model={id:reply?.modelId||LOCAL_MODEL.id,revision:reply?.modelRevision||LOCAL_MODEL.revision,backend:reply?.backend||'wasm',metrics:reply?.metrics||null,selection:{source:selection.source,question:selection.next},...(reply?.choiceConstraint?{choiceConstraint:reply.choiceConstraint}:{})};
- if(!selection.valid)return finish({...asReference('Manual search — the local AI response did not select a verifiable source. No generated technical instructions have been used.'),inferenceAttempted:true,model});
+ if(!selection.valid)return finish({...asReference('Manual search — the local AI didn’t select a source I could verify, so I haven’t used its generated instructions.'),inferenceAttempted:true,model});
  const chosen=passages.find(p=>p.citationId===selection.source),next=questions.find(q=>q.id===selection.next),conflict=conflicts(passages);
- if(!chosen&&!next&&reviewed.status==='answered'&&reviewed.coverage==='reviewed_manual_procedure')return finish({...asReference('Manual search — the local AI did not select a source; this procedure was independently verified against the saved manual.'),inferenceAttempted:true,model});
- if(!chosen&&!next)return finish({text:'Not established in these manuals. The local AI did not identify a supporting passage. Add the relevant model/variant manual or give the exact display message.',kind:'unsupported',mode:'local-ai',modelUsed:true,model,sourceRefs:[],quickReplies:[],coverage:'not_established'});
+ if(!chosen&&!next&&reviewed.status==='answered'&&reviewed.coverage==='reviewed_manual_procedure')return finish({...asReference('Manual search — the local AI didn’t select a source. These steps were independently verified against your saved manual.'),inferenceAttempted:true,model});
+ if(!chosen&&!next)return finish({text:'I can’t establish that from these manuals yet. The local AI didn’t find a supporting passage. Add the manual for the exact model and variant, or tell me exactly what the display says.',kind:'unsupported',mode:'local-ai',modelUsed:true,model,sourceRefs:[],quickReplies:[],coverage:'not_established'});
  if(conflict.length&&chosen)return finish(conflictAnswer(conflict,{mode:'local-ai',modelUsed:true,model}));
  const useReviewed=chosen&&reviewed.status==='answered'&&reviewed.coverage==='reviewed_manual_procedure'&&reviewed.sourceRefs.some(ref=>ref.contentHash===chosen.contentHash&&ref.page===chosen.page);
- if(chosen&&hazardous(question,[chosen],useReviewed?reviewed:null))return finish({text:'I found the relevant manual section, but I could not establish the documented precautions and consequences needed to recommend that operation from these excerpts. Open the cited page and add the applicable service or installation instructions. Your recorded observations remain saved.',kind:'precautions_required',mode:'local-ai',modelUsed:true,model,sourceRefs:[sourceRef(chosen)],quickReplies:[],coverage:'precautions_not_established'});
+ if(chosen&&hazardous(question,[chosen],useReviewed?reviewed:null))return finish({text:'I found the relevant section, but these extracts don’t establish the documented precautions or system effects needed to recommend that operation. Open the cited page, or add the applicable service or installation instructions. Your observations are still saved.',kind:'precautions_required',mode:'local-ai',modelUsed:true,model,sourceRefs:[sourceRef(chosen)],quickReplies:[],coverage:'precautions_not_established'});
  let answer='',refs=[],coverage='observation_question',steps=[];
- if(!chosen&&next&&!passages.length&&/\b(?:faults?|errors?|trouble)\b/i.test(query))answer='I have not found a passage establishing this fault’s meaning or a diagnostic procedure in this helper’s selected manuals.';
+ if(!chosen&&next&&!passages.length&&/\b(?:faults?|errors?|trouble)\b/i.test(query))answer='I haven’t found this fault’s meaning or a diagnostic procedure in your pal’s manuals yet. Let’s record what you can see first.';
  if(useReviewed){answer=reviewed.text;refs=reviewed.sourceRefs;coverage='reviewed_manual_procedure';steps=reviewed.steps;}
- else if(chosen){answer='The saved manual says:\n\n'+compact(chosen.text);refs=[sourceRef(chosen)];coverage='model_selected_manual_extract';if(/\b(?:how|procedure|steps|walk[ -]?test|disable|enable|configure|reset|silence)\b/i.test(question))answer+='\n\nThis is the cited manual wording; open the page for the complete procedure and surrounding conditions.';}
+ else if(chosen){answer='Here’s what your saved manual says:\n\n'+compact(chosen.text);refs=[sourceRef(chosen)];coverage='model_selected_manual_extract';if(/\b(?:how|procedure|steps|walk[ -]?test|disable|enable|configure|reset|silence)\b/i.test(question))answer+='\n\nThat’s the manual’s wording. Open the cited page to check the full procedure and its conditions.';}
  if(next){answer+=(answer?'\n\n':'')+next.text;}
- else if(diagnosing){answer+=(answer?'\n\n':'')+'This is documented reference information, not confirmation of the cause. The checks you have reported are saved.';}
+ else if(diagnosing){answer+=(answer?'\n\n':'')+'That gives us a reference to work from, but it doesn’t confirm the cause. I’ve kept the checks you reported with this job.';}
  const warnings=sourceWarnings(chosen?[chosen]:[]);if(warnings.length)answer+='\n\n'+warnings.join('\n');
  return finish({text:answer,kind:next?'diagnostic_question':'answer',mode:'local-ai',modelUsed:true,model,sourceRefs:refs,quickReplies:next?.quickReplies||[],coverage,steps,...(useReviewed?{procedureId:reviewed.procedureId,operation:reviewed.operation}:{}),...(next?{pendingQuestion:{field:next.field,key:next.field,text:next.text,sourceRefs:refs}}:{}),warnings,retrieval:'keyword_alias_matching_with_local_model_selection'});
 }

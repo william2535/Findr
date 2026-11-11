@@ -68,3 +68,15 @@
 .helper-customise #helper-appearance-status{font-size:12px;min-height:24px;line-height:1.6;margin:4px 0 16px;color:#bcbcbc}.helper-customise #helper-appearance-status.is-error{color:#efbe9a}
 @media(max-width:600px){.helper-chat-identity{gap:11px;flex-basis:100%}.helper-chat-identity .helper-avatar{width:45px;height:45px}.helper-chat-head>.helper-state{margin-left:56px}.helper-settings .helper-customise{padding:17px 13px}.helper-appearance-preview{padding:15px 10px;gap:9px}.helper-appearance-preview .helper-avatar{width:48px;height:48px}.helper-appearance-preview .helper-avatar svg{width:42px;height:42px}.helper-appearance-preview strong{font-size:19px}.helper-icon-options,.helper-colour-options{gap:7px}.helper-icon-option{min-height:89px}.helper-customise .inline-actions>.primary{width:100%;justify-content:center}.helper-customise .inline-actions button{flex:1;white-space:normal}.helper-customise .inline-actions>.subtle{flex-basis:100%;font-size:11px}}
 @media(prefers-reduced-motion:reduce){.helper-appearance-preview{transition:none}}
+
+/* A pal sits beside each reply, including restored and manual-search messages. */
+.helper-message[data-role=assistant]{display:grid;grid-template-columns:42px minmax(0,1fr);column-gap:12px;align-items:start}
+.helper-message[data-role=assistant]>:not([data-pal-message-avatar]){grid-column:2;min-width:0}
+.helper-message[data-role=assistant]>[data-pal-message-avatar]{grid-column:1;grid-row:1 / span 4;width:42px;height:42px;margin:0;border-radius:13px;align-self:start}
+.helper-message [data-pal-message-avatar] svg{width:28px;height:28px}
+.helper-message-label{flex-wrap:wrap;line-height:1.5;overflow-wrap:anywhere}
+.helper-message-label>span:first-child{min-width:0;overflow-wrap:anywhere}
+.helper-message-label small{flex-basis:100%}
+.helper-message-text{font:15px/1.75 var(--interface-sans,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif);letter-spacing:0}
+.helper-composer textarea{font-family:var(--interface-sans,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif)}
+@media(max-width:600px){.helper-message[data-role=assistant]{grid-template-columns:32px minmax(0,1fr);column-gap:9px}.helper-message[data-role=assistant]>[data-pal-message-avatar]{width:32px;height:32px;border-radius:10px}.helper-message [data-pal-message-avatar] svg{width:24px;height:24px}.helper-message-text{font-size:14px;line-height:1.75}.helper-message-label{font-size:10px;gap:6px}.helper-message-label small{font-size:8px}.helper-source button,.helper-source-title{font-size:11px}}

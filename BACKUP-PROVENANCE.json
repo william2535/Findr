@@ -1,20 +1,20 @@
 {
-  "webVersion": "0.32.8",
-  "siteVersion": 71,
+  "webVersion": "0.33.0",
+  "siteVersion": 72,
   "siteProjectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
-  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_76fc5f039cc88191855406148c386d4c",
-  "deploymentId": "appgdep_6af4aff428e081919646adcf36dd13c0",
+  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_d2f7375d56d48191b1fc5e3dd16de8a6",
+  "deploymentId": "appgdep_6af4b70ee298819184ed3707ab328dfe",
   "deploymentStatus": "succeeded",
-  "deploymentUpdatedAt": "2026-11-11T18:12:25.771818+00:00",
+  "deploymentUpdatedAt": "2026-11-11T18:42:44.727564+00:00",
   "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site",
-  "sourceCommit": "9340ad0809dfd7412a4dc01cf74b279f69bc3897",
+  "sourceCommit": "41074dde6bd0d1546df4c50f008fb73333034929",
   "sourceRepository": "Sites project source repository",
   "githubRepository": "https://github.com/william2535/Findr",
   "githubBranch": "main",
   "backupRevision": "The Git commit containing this provenance and SOURCE-FILES.sha256 identifies the backup; it intentionally differs from the deployment source commit.",
   "sourceManifest": "SOURCE-FILES.sha256",
   "manifestScope": "All source-backup payload files except the checksum manifest itself; includes GitHub setup/export documentation and separately archived recovery files.",
-  "verifiedOriginalSourceFiles": 2521,
+  "verifiedOriginalSourceFiles": 2540,
   "intentionallyDetachedFile": ".openai/hosting.json",
   "detachedHostingReason": "Keep a migrated checkout separate from the original live ChatGPT Site.",
   "intentionalExclusions": "EXPORT-EXCLUSIONS.json; additionally no dependency/build caches, private environment values, user data, downloaded manuals or model weights. Required bundled runtime assets and synthetic fixtures remain included.",
@@ -25,34 +25,36 @@
   },
   "checks": {
     "unitTests": {
-      "passed": 1546,
+      "passed": 1567,
       "failed": 0
     },
     "typescript": "passed",
     "productionBuild": "passed",
-    "publicAssets": "passed; 1420 public files verified",
-    "offlineBuildHash": "2f6778a8f8a5",
+    "publicAssets": "passed; 1424 public files verified",
+    "offlineBuildHash": "295078358727",
     "browserChecks": {
-      "Chromium154.0.8037.57Desktop1440x1000": 9,
-      "Chromium154.0.8037.57Portrait390x844": 10,
-      "WebKit26.0WPELinuxPortrait390x844Online": 9
+      "Chromium154.0.8037.57Desktop1440x1000": 12,
+      "Chromium154.0.8037.57Portrait390x844": 13,
+      "WebKit26.0WPELinuxPortrait390x844Online": 12
     },
-    "offlineVerified": "Chromium portrait: verified service-worker cache, network-disabled reload, customisation save and further reload retaining the chosen icon and accent.",
+    "offlineVerified": "Chromium portrait: verified app cache, network-disabled reload, saved handover, contact extraction from a saved synthetic manual, and opening its exact cited PDF page.",
     "limitations": [
-      "No physical iPhone/Safari session.",
+      "No physical iPhone/Safari session or native phone keyboard verification.",
       "WebKit offline not claimed; native WPE CacheStorage limitation documented in preceding 0.32.7 QA.",
-      "No model inference benchmark or APK release performed for this appearance update."
+      "No model inference benchmark, equipment electrical test, support call or APK release performed.",
+      "Actual Advanced manual general-contact footer was tested separately; current telephone validity and technical-support designation were not verified. Synthetic browser-test contact is a reserved fictional number."
     ],
-    "evidence": "research/helper-customisation-0.32.8/README.md"
+    "evidence": "research/panel-pals-0.33.0/README.md",
+    "manualContactReview": "research/panel-pals-0.33.0/support-sources.md"
   },
   "secretReview": {
-    "sourceCommit": "9340ad0809dfd7412a4dc01cf74b279f69bc3897",
-    "copiedFiles": 22,
-    "changedTextFilesScanned": 16,
+    "sourceCommit": "41074dde6bd0d1546df4c50f008fb73333034929",
+    "copiedFiles": 38,
+    "changedTextFilesScanned": 30,
     "candidates": [],
-    "allEligibleSourceFilesVerified": 2521,
+    "allEligibleSourceFilesVerified": 2540,
     "detachedHostingVerified": true,
-    "limitations": "Pattern review of changed text plus unchanged reviewed baseline from prior backup provenance and EXPORT-SECRET-AUDIT.json. No proof of mathematical absence of secrets. Images are QA assets."
+    "limitations": "Pattern review of changed text plus unchanged reviewed baseline from prior backup provenance and EXPORT-SECRET-AUDIT.json. No proof of mathematical absence of secrets. Screenshots/video and labelled synthetic PDFs are QA assets; manufacturer PDF remains outside source."
   },
-  "preparedAt": "2026-11-11T18:12:57.739167+00:00"
+  "preparedAt": "2026-11-11T18:43:11.999735+00:00"
 }

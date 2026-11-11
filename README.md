@@ -1,3 +1,11 @@
+## Panel Pals and support-call handover — web 0.33.0
+
+Helpers are now **Panel Pals**. Existing saved pals, conversations, manuals, exports and internal routes remain compatible. A pal's chosen icon sits beside its replies, with more conversational wording around the same sourced information and evidence rules.
+
+**Give up** saves an unresolved investigation, plays a short skippable red reaction, then returns to a calm support screen. Reduced motion skips the shaking and pulses. **Prepare for call** collects the fault, recorded observations, tests, raw readings, corrections and outstanding work in a readable timeline. Missing reasons or test context remain explicitly unrecorded; a suggested check never becomes a performed test.
+
+Support contacts are read from the pal's saved manual pages, with their title and page available to check. A number printed in an older manual is not a claim of current verification. Missing, ambiguous or uncertain contact details remain visible instead of supplying a guessed helpline. [Checks and limitations](research/panel-pals-0.33.0/README.md). Android remains 0.14.1.
+
 ## Make your helpers yours — web 0.32.8
 
 Each helper can have its own playful icon and accent colour. Open **Customise**, preview the choices and save; the appearance follows that helper on its card and conversation. Existing helpers keep the default FINDR yellow terminal icon. Choices are stored locally and travel with helper exports without changing manuals, conversations or diagnostic evidence. The surrounding FINDR branding stays black and yellow.

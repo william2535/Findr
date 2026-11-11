@@ -154,3 +154,20 @@ test('results expose hypotheses and the reference model limits rather than an au
  assert.match(h.app.innerHTML,/hypothes|possibilit/i);assert.match(h.app.innerHTML,/not a confirmed diagnosis|not.*diagnos|unconfirmed/i);assert.match(h.app.innerHTML,/Synthetic panel manual, edition 2/);assert.match(h.app.innerHTML,/Synthetic P1 only/);
  assert.doesNotMatch(h.app.innerHTML,/href="#(?:questions|result|faults)"/);
 });
+
+test('Give up saves an unresolved handover without erasing readings, then supports call preparation and resume',async()=>{
+ const h=harness();await h.show();await h.act('group','power');await h.act('answer',h.question(),'unknown');
+ await h.show('fault-log');h.field('inv-quick-value').value='024.00';await h.act('investigation-add-quick');
+ const reading=h.session.investigation.measurements[0];await h.act('investigation-give-up');
+ assert.equal(h.session.investigation.handover.status,'unresolved');assert.equal(h.session.investigation.handover.restored,'unknown');assert.equal(h.session.investigation.measurements[0].id,reading.id);assert.ok(h.session.supportHandover.stoppedAt);
+ await h.show('fault-support');await h.act('stop-reason',null,'Missing test equipment');await h.edit('panel-pal-return-requirements','Meter needed for next visit');await h.act('prepare-call');
+ assert.equal(h.session.supportHandover.reason,'Missing test equipment');assert.equal(h.session.supportHandover.stage,'call');
+ await h.show('fault-call');assert.match(h.app.innerHTML,/024\.00/);assert.match(h.app.innerHTML,/Meter needed/);assert.match(h.app.innerHTML,/Not confirmed/);assert.match(helperFaultReport(h.record,h.session,knowledge),/Missing test equipment/);
+ const reopened=harness({record:h.record});await reopened.show('fault-call');assert.match(reopened.app.innerHTML,/024\.00/);await reopened.act('resume-job');assert.equal(reopened.session.investigation.handover.status,'in_progress');assert.equal(reopened.session.supportHandover.reason,'Missing test equipment');
+});
+
+test('failed Give up save leaves the previous usable job intact and retry saves the pause exactly once',async()=>{
+ const h=harness();await h.show();await h.act('group','power');await h.act('answer',h.question(),'yes');const before=h.session;
+ h.fail();await h.act('give-up');assert.deepEqual(h.session,before);assert.match(h.notices.join(' '),/storage/i);
+ await h.act('retry');assert.ok(h.session.supportHandover.stoppedAt);assert.deepEqual(h.session.answers,before.answers);assert.equal(h.session.investigation.handover.restored,'unknown');assert.equal(h.session.supportHandover.history.length,0);
+});

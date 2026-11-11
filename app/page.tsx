@@ -46,7 +46,7 @@ export default function Page() {
           <p>A free, open-source field kit for fire and security engineers. Panels, manuals and a little less messing about on site.</p>
           <div className="release-actions">
             <OpenFindr className="release-button release-button-solid">Open FINDR <Arrow /></OpenFindr>
-            <OpenFindr destination="#helpers/new" className="release-button release-button-outline">Make a helper <Arrow /></OpenFindr>
+            <OpenFindr destination="#helpers/new" className="release-button release-button-outline">Make a pal <Arrow /></OpenFindr>
           </div>
           <div className="release-quick-links"><OpenFindr destination="#downloads/all" className="release-device-link">Find a manual <Arrow /></OpenFindr><OpenFindr destination="#downloads/saved" className="release-device-link">My saved PDFs <Arrow /></OpenFindr><OpenFindr destination="#emulator" className="release-device-link">Emulators <Arrow /></OpenFindr></div>
           <p className="release-platform-note"><strong>{panelPacks.length} panel packs · {devicePacks.length} device packs · UK models first</strong><span>Powered by Manual Archives · iPhone, Android and desktop. Save PDFs online before heading to site.</span></p>
@@ -70,8 +70,8 @@ export default function Page() {
           <article className="release-feature">
             <div className="release-feature-top"><FeatureIcon kind="faults" /><span>02</span></div>
             <h3>Keep your system close.</h3>
-            <p>Make a helper for your exact system. Save its manuals, ask a question or investigate a fault, and return to the same conversation on the next visit.</p>
-            <OpenFindr destination="#helpers" className="release-feature-link">Open Helpers <Arrow /></OpenFindr>
+            <p>Make a pal for your exact system. Save its manuals, ask a question or investigate a fault, and return to the same conversation on the next visit.</p>
+            <OpenFindr destination="#helpers" className="release-feature-link">Open Panel Pals <Arrow /></OpenFindr>
           </article>
           <article className="release-feature">
             <div className="release-feature-top"><FeatureIcon kind="practice" /><span>03</span></div>
@@ -83,8 +83,8 @@ export default function Page() {
       </section>
 
       <section id="updates" className="release-updates" aria-labelledby="release-updates-title">
-        <div><p className="release-eyebrow">WEB APP UPDATE / {APP_VERSION}</p><h2 id="release-updates-title">Your system.<br />Your saved helper.</h2></div>
-        <ul><li><strong>Resume your model download.</strong> Incoming data, saved parts and file checks are shown separately. Interrupted transfers retry automatically; pause and resume keep completed parts.</li><li><strong>Question matrix and test log.</strong> Open a helper and choose “I want to fault find” to work through the original observation questions. Keep readings, checks and handover notes with that job, then return to your conversation.</li><li><strong>Make your helpers yours.</strong> Give each helper a playful icon and its own accent colour. Preview your choices in Customise, then save them with your helper. Sources still open beneath each cited reply.</li><li><strong>Prepare before leaving signal.</strong> Choose verified family documents or a smaller selection. Each helper checks its manuals, local model and app resources before showing Ready offline.</li></ul>
+        <div><p className="release-eyebrow">WEB APP UPDATE / {APP_VERSION}</p><h2 id="release-updates-title">Your system.<br />Your saved panel pal.</h2></div>
+        <ul><li><strong>Resume your model download.</strong> Incoming data, saved parts and file checks are shown separately. Interrupted transfers retry automatically; pause and resume keep completed parts.</li><li><strong>Ready for the support call.</strong> Keep your checks and readings in the fault log. Give up saves your progress; Prepare for call puts the history in order and shows support contacts found in your saved manuals.</li><li><strong>Meet your Panel Pals.</strong> Your chosen icon sits beside each reply. Ask in your own words, check the sources and keep your fault notes ready for a support call.</li><li><strong>Prepare before leaving signal.</strong> Choose verified family documents or a smaller selection. Each pal checks its manuals, local model and app resources before showing Ready offline.</li></ul>
       </section>
 
       <section id="install" className="release-install" aria-labelledby="release-install-title">
@@ -92,7 +92,7 @@ export default function Page() {
           <p className="release-eyebrow">TAKE IT WITH YOU</p>
           <h2 id="release-install-title">Ready for your<br />next call-out.</h2>
           <p>Open the app online first. Save the manuals you need before heading somewhere with no signal.</p>
-          <div className="release-offline-note"><span aria-hidden="true">↘</span><p>Wait for <strong>“Ready offline”</strong> on the helper you need. This checks its selected manuals, the shared local model and app resources. Devices that cannot run the model use clearly labelled manual search.</p></div>
+          <div className="release-offline-note"><span aria-hidden="true">↘</span><p>Wait for <strong>“Ready offline”</strong> on the panel pal you need. This checks its selected manuals, the shared local model and app resources. Devices that cannot run the model use clearly labelled manual search.</p></div>
         </div>
         <div className="release-install-options">
           <article className="release-install-card">

@@ -53,7 +53,7 @@ manifest = {
     'name': 'FINDR — Fire & Security Field Kit', 'short_name': 'FINDR',
     'id': '/app/', 'start_url': './', 'scope': './', 'display': 'standalone',
     'background_color': '#000000', 'theme_color': '#000000',
-    'description': 'Saved system helpers, offline manual packs, cited questions and fault investigations, keypad emulators and sourced menu maps.',
+    'description': 'Saved Panel Pals, offline manual packs, cited questions and fault investigations, keypad emulators and sourced menu maps.',
     'icons': [
         {'src': f'./icons/icon-{size}.png', 'sizes': f'{size}x{size}', 'type': 'image/png', 'purpose': 'any'}
         for size in [192, 512]
@@ -75,7 +75,7 @@ draw.text((405, 95), 'findr', font=font(142, True), fill='#090909', stroke_width
 draw.text((414, 281), 'Find the manual.', font=font(43, True), fill='#090909')
 draw.text((414, 337), 'Follow the evidence.', font=font(43, True), fill='#090909')
 draw.line((62, 497, 1138, 497), fill='#15130a', width=2)
-draw.text((65, 526), 'MANUALS  /  HELPERS  /  KEYPAD EMULATORS', font=font(24, True), fill='#090909')
+draw.text((65, 526), 'MANUALS  /  PANEL PALS  /  EMULATORS', font=font(24, True), fill='#090909')
 draw.text((65, 570), 'PUBLIC BETA  •  WEB + ANDROID  •  ' + version, font=font(18), fill='#29220c')
 card.save(public / ('share/findr-release-' + version + '.png'), optimize=True)
 

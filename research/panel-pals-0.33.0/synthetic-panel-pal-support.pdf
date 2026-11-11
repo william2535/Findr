@@ -1,0 +1,66 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 377 >>
+stream
+BT /F1 11 Tf 40 730 Td (SYNTHETIC QA FIXTURE - NOT MANUFACTURER GUIDANCE) Tj
+0 -28 Td (C-TEC CFP - synthetic Panel Pal UI fixture) Tj
+0 -28 Td (This test document does not describe real equipment or procedures.) Tj
+0 -28 Td (Do not use any fixture text as engineering instructions.) Tj
+0 -28 Td (The fictional phone number is reserved for testing and must not be called.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 348 >>
+stream
+BT /F1 11 Tf 40 730 Td (SYNTHETIC QA FIXTURE - PAGE TWO) Tj
+0 -28 Td (Event history test reference) Tj
+0 -28 Td (The event history retains the last 120 entries.) Tj
+0 -28 Td (Select the event history view to inspect the recorded date and event description.) Tj
+0 -28 Td (These synthetic menu words only test document retrieval and citations.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 349 >>
+stream
+BT /F1 11 Tf 40 730 Td (SYNTHETIC QA FIXTURE - PAGE THREE) Tj
+0 -28 Td (C-TEC - fictional contact for UI acceptance only) Tj
+0 -28 Td (United Kingdom technical support: 01632 960123) Tj
+0 -28 Td (This is an Ofcom reserved fictional UK number. Do not call.) Tj
+0 -28 Td (This document is not C-TEC guidance and provides no real support number.) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000253 00000 n 
+0000000681 00000 n 
+0000000807 00000 n 
+0000001206 00000 n 
+0000001332 00000 n 
+0000001732 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+1802
+%%EOF

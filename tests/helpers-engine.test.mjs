@@ -42,7 +42,7 @@ test('source selection never publishes free model prose or fabricated menu contr
  const result=await answerHelper({...base(),text:'How do I view event history?',infer:choose('S1. Press HIDDEN NEXT and enter code 9999.')});
  assert.equal(result.mode,'manual-search');assert.equal(result.modelUsed,false);assert.doesNotMatch(result.message.text,/HIDDEN|9999/);assert.match(result.message.text,/EVENT LOG/);
  const invalid=await answerHelper({...base(),text:'How do I view event history?',infer:choose('Press HIDDEN NEXT and enter code 9999.')});
- assert.equal(invalid.mode,'manual-search');assert.equal(invalid.modelUsed,false);assert.equal(invalid.message.inferenceAttempted,true);assert.doesNotMatch(invalid.message.text,/HIDDEN|9999/);assert.match(invalid.message.text,/response did not select a verifiable source/);
+ assert.equal(invalid.mode,'manual-search');assert.equal(invalid.modelUsed,false);assert.equal(invalid.message.inferenceAttempted,true);assert.doesNotMatch(invalid.message.text,/HIDDEN|9999/);assert.match(invalid.message.text,/didn’t select a source I could verify/);
 });
 
 test('restating source labels or a bare list number is not a model choice',async()=>{
@@ -59,7 +59,7 @@ test('unknown source labels are not accepted as grounded answers',async()=>{
 
 test('unsupported question receives honest absence with no model fact substitution',async()=>{
  let called=false;const result=await answerHelper({...base(),text:'How do I enable quantum teleportation?',infer:async()=>{called=true;return {text:'S1'};}});
- assert.equal(called,false);assert.equal(result.message.coverage,'not_established');assert.match(result.message.text,/Not established in these manuals/);assert.equal(result.message.sourceRefs.length,0);
+ assert.equal(called,false);assert.equal(result.message.coverage,'not_established');assert.match(result.message.text,/I can’t establish that from these manuals yet/);assert.equal(result.message.sourceRefs.length,0);
 });
 
 test('unsupported and missing local engine show labelled reference-only search',async()=>{
@@ -80,7 +80,7 @@ test('fault investigation remembers answers and selects one unasked observation 
  assert.equal(first.message.kind,'diagnostic_question');assert.match(first.message.text,/Is the fault showing now\?/);assert.deepEqual(first.message.quickReplies,['Yes','No','I don’t know']);
  let nextRequest;
  const second=await answerHelper({...base(),conversation:first.conversation,text:'Yes',now:102,infer:async request=>{nextRequest=request;return {text:'S1 Q4'};}});
- assert.equal(second.mode,'local-ai');assert.equal(second.conversation.context.answeredQuestions[0].answer,'Yes');assert.equal(second.conversation.context.answeredQuestions[0].field,'current');assert.doesNotMatch(nextRequest.messages.at(-1).content,/Q2:/);assert.match(second.message.text,/What checks have already been completed/);
+ assert.equal(second.mode,'local-ai');assert.equal(second.conversation.context.answeredQuestions[0].answer,'Yes');assert.equal(second.conversation.context.answeredQuestions[0].field,'current');assert.doesNotMatch(nextRequest.messages.at(-1).content,/Q2:/);assert.match(second.message.text,/What have you checked so far/);
  const third=await answerHelper({...base(),conversation:second.conversation,text:'Measured 24.5 V at the panel. I have not located the break.',now:103,infer:choose('S1 Q5')});
  assert.match(third.message.text,/When did it start/);assert.equal(third.conversation.context.answeredQuestions.length,2);assert.match(third.conversation.context.knownFields.checks.value,/24\.5 V/);assert.ok(third.conversation.context.observations.every(o=>o.assessed===false));assert.doesNotMatch(third.message.text,/24\.5 V.*(?:healthy|normal|proves|confirmed)/i);
  assert.equal(first.conversation.context.answeredQuestions.length,0,'prior snapshots remain unchanged');
@@ -105,7 +105,7 @@ test('new conversations do not import previous diagnostic observations',()=>{
 
 test('an unclear fault can receive an AI-selected observation without fabricated technical facts',async()=>{
  const result=await answerHelper({...base(),text:'It stopped working',infer:choose('NONE Q1')});
- assert.equal(result.mode,'local-ai');assert.equal(result.message.coverage,'observation_question');assert.equal(result.message.sourceRefs.length,0);assert.equal(result.message.text,'What exact message or fault code is shown?');
+ assert.equal(result.mode,'local-ai');assert.equal(result.message.coverage,'observation_question');assert.equal(result.message.sourceRefs.length,0);assert.equal(result.message.text,'Tell me exactly what the display says, including any fault code.');
 });
 
 function reviewedWalkFixture(){
@@ -148,13 +148,13 @@ test('a verified recipe does not suppress conflict between selected document edi
 test('hazardous operation without documented precautions does not become a recommendation',async()=>{
  const p=manual({pages:[{page:1,text:'SYNTHETIC TEST ONLY. To disable the zone, select DISABLE then zone 1. This incomplete fixture deliberately omits precautions and consequences.',quality:{readable:true}}]});
  const result=await answerHelper({...base(),indexes:[buildManualIndex(p)],analyses:[p],text:'How do I disable the zone?',infer:choose('S1')});
- assert.equal(result.message.kind,'precautions_required');assert.match(result.message.text,/could not establish the documented precautions/);assert.doesNotMatch(result.message.text,/select DISABLE then zone 1/);assert.equal(result.message.sourceRefs[0].page,1);
+ assert.equal(result.message.kind,'precautions_required');assert.match(result.message.text,/don’t establish the documented precautions/);assert.doesNotMatch(result.message.text,/select DISABLE then zone 1/);assert.equal(result.message.sourceRefs[0].page,1);
 });
 
 test('different document values are shown as unresolved evidence rather than silently selected',async()=>{
  const b=manual({manualId:'second-edition',contentHash:HASH_B,title:'SYNTHETIC Fixture Panel edition B',identity:{...source.identity,revision:'TEST B'},pages:[{page:7,text:'SYNTHETIC TEST ONLY. The stated power supply output rating is 12.0 V DC under the declared connected-load condition.',quality:{readable:true}}]}),h=helper({selectedManualIds:['fixture-manual','second-edition'],manualStates:{'fixture-manual':{status:'ready',contentHash:HASH_A},'second-edition':{status:'ready',contentHash:HASH_B}}});
  const result=await answerHelper({...base(),helper:h,indexes:[index,buildManualIndex(b)],analyses:[source,b],text:'What is the power supply output voltage?',infer:choose('S1')});
- assert.equal(result.message.kind,'source_conflict');assert.match(result.message.text,/24\.0 V DC/);assert.match(result.message.text,/12\.0 V DC/);assert.equal(new Set(result.message.sourceRefs.map(ref=>ref.contentHash)).size,2);assert.match(result.message.text,/not established.*same variant/i);
+ assert.equal(result.message.kind,'source_conflict');assert.match(result.message.text,/24\.0 V DC/);assert.match(result.message.text,/12\.0 V DC/);assert.equal(new Set(result.message.sourceRefs.map(ref=>ref.contentHash)).size,2);assert.match(result.message.text,/can’t yet establish.*same variant/i);
 });
 
 test('explicit context-limit failure retries a smaller request, without duplicating context',async()=>{
@@ -164,7 +164,7 @@ test('explicit context-limit failure retries a smaller request, without duplicat
 
 test('model failure preserves the new user turn with clearly labelled fallback',async()=>{
  const result=await answerHelper({...base(),text:'How do I view event history?',infer:async()=>{throw Object.assign(new Error('Out of memory'),{code:'MODEL_MEMORY_LIMIT'});}});
- assert.equal(result.mode,'manual-search');assert.equal(result.modelUsed,false);assert.equal(result.conversation.messages.length,2);assert.equal(result.message.error.code,'MODEL_MEMORY_LIMIT');assert.match(result.message.text,/could not finish on this device/);
+ assert.equal(result.mode,'manual-search');assert.equal(result.modelUsed,false);assert.equal(result.conversation.messages.length,2);assert.equal(result.message.error.code,'MODEL_MEMORY_LIMIT');assert.match(result.message.text,/couldn’t finish this reply on your device/);
 });
 
 test('explicit manual recovery cannot start inference even when fresh model readiness is healthy',async()=>{
@@ -308,7 +308,7 @@ test('requesting clarification keeps the pending observation unanswered',async()
 test('fallback distinguishes a found unsafe procedure from absence of a manual',async()=>{
  const p=manual({pages:[{page:1,text:'SYNTHETIC TEST ONLY. To disable the zone, select DISABLE then zone 1. This incomplete fixture deliberately omits precautions and consequences.',quality:{readable:true}}]});
  const result=await answerHelper({...base(),indexes:[buildManualIndex(p)],analyses:[p],text:'How do I disable the zone?',modelReadiness:{supported:false}});
- assert.equal(result.mode,'manual-search');assert.match(result.message.text,/Relevant manual pages were found/);assert.doesNotMatch(result.message.text,/select DISABLE|No sufficiently relevant/);assert.equal(result.message.sourceRefs[0].page,1);
+ assert.equal(result.mode,'manual-search');assert.match(result.message.text,/I found relevant manual pages/);assert.doesNotMatch(result.message.text,/select DISABLE|No sufficiently relevant/);assert.equal(result.message.sourceRefs[0].page,1);
 });
 
 test('a measured no-voltage observation is not misread as No to fault-present question',async()=>{
@@ -340,7 +340,7 @@ test('actual MxPro4 wiring and contents excerpts are not evidence for a reported
  for(const text of ['The panel is showing a battery fault.','The display says "Battery fault".']){
   let request;const result=await answerHelper({...base(),indexes:[i],analyses:[p],text,infer:async value=>{request=value;return {text:'NONE Q2'};}});
   assert.equal(result.mode,'local-ai');assert.equal(result.message.coverage,'observation_question');assert.equal(result.message.sourceRefs.length,0);
-  assert.match(result.message.text,/not found a passage establishing this fault’s meaning/);assert.match(result.message.text,/Is the fault showing now/);
+  assert.match(result.message.text,/haven’t found this fault’s meaning/);assert.match(result.message.text,/Is the fault showing now/);
   assert.ok(request.choices.every(choice=>choice.startsWith('NONE ')));assert.doesNotMatch(request.messages.at(-1).content,/Route battery|Quarterly|Battery Installation/);
  }
  // Removing the diagnostic context must not make real installation material

@@ -33,7 +33,7 @@ export function buildHelperPlan(choice,data={},options={}){
   // Exact catalogue model identity can associate another manual without asserting
   // compatibility with any device or neighbouring model. Keep editions distinct.
   for(const record of records.values())if(!review.excludedRecordIds.has(record.id)&&record.sha256&&modelKey(record.brand)===modelKey(panel.brand)&&helperDiscipline(record.category)===helperDiscipline(panel.category)&&list(record.models).some(model=>modelKey(model)===modelKey(panel.model)))add(record.id,{reason:'Exact manufacturer and model name in the archive; confirm this document edition for the installed panel.',evidenceStatus:'exact-model-catalogue'});
-  if(review.documents.length)verifiedFamily=true;else warnings.push('Compatible devices and modules have not been established for this panel in the reviewed relationships. This helper initially covers its linked panel manuals.');
+  if(review.documents.length)verifiedFamily=true;else warnings.push('Compatible devices and modules have not been established for this panel in the reviewed relationships. This pal initially covers its linked panel manuals.');
   if(panel.applicability_limits)warnings.push(panel.applicability_limits);
  }else if(choice.kind==='device'){
   const device=list(data.devices).find(d=>d.id===choice.entityId)||choice.source;members=[plainMember(device)];for(const id of list(device.record_ids))add(id,{required:!documents.length});if(device.applicability_limits)warnings.push(device.applicability_limits);warnings.push('A matching brand or protocol name does not establish panel compatibility. Only this device’s linked documents are selected.');

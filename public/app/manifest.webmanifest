@@ -7,7 +7,7 @@
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
-  "description": "Saved system helpers, offline manual packs, cited questions and fault investigations, keypad emulators and sourced menu maps.",
+  "description": "Saved Panel Pals, offline manual packs, cited questions and fault investigations, keypad emulators and sourced menu maps.",
   "icons": [
     {
       "src": "./icons/icon-192.png",
