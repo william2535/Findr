@@ -2,7 +2,7 @@
 const ICON_PATHS={
   terminal:'<rect x="4" y="5" width="24" height="22" rx="5"/><path d="m10 12 4 4-4 4m8 0h4"/>',
   robot:'<path d="M16 4v4m-5 17v3m10-3v3M4 14H2m28 0h-2"/><circle cx="16" cy="3" r="1"/><rect x="5" y="8" width="22" height="17" rx="5"/><path d="M10 14h2m8 0h2m-11 5q5 5 10 0"/>',
-  // Original, compact line portraits: no remote images, fonts or extra downloads.
+  // Local line silhouettes remain behind the bundled portraits as image-load fallbacks.
   hawking:'<path d="M13 43V18q0-5 5-5h28q5 0 5 5v25M17 26v-7q1-12 16-12 14 0 14 12v8M19 18q7 1 17-7m-6 1q8 2 14 7"/><path d="M19 26v8q1 13 13 13 12 0 14-13v-8"/><rect x="17" y="23" width="14" height="10" rx="3"/><rect x="34" y="23" width="14" height="10" rx="3"/><path d="M31 27h3m-3 7 3 2m-8 4q6 5 13-1M25 47v4m14-4v4M11 60v-5q0-5 13-6l8 7 8-7q13 1 13 6v5M23 60v-5h18v5"/><circle cx="24" cy="28" r="1" fill="currentColor"/><circle cx="40" cy="28" r="1" fill="currentColor"/>',
   einstein:'<path d="M18 31q-9 3-13-3l6-5-7-3 9-4-5-5 12 1-1-7 10 5 5-7 6 8 10-4-2 8 11 1-7 6 8 5-10 4M19 18q-3 9-1 18 1 13 14 15 13-2 14-15 2-9-1-16M18 24l-5 6m32-6 6 6M22 26l6-1m9 0 6 1M32 30l-2 5h4"/><path d="M22 41q3-7 10-4 7-3 10 4-5 1-10-1-5 2-10 1Z" fill="currentColor" stroke-width="1"/><path d="M28 45h8M12 60q1-8 11-10l9 7 9-7q10 2 11 10"/><circle cx="25" cy="30" r="1.2" fill="currentColor"/><circle cx="40" cy="30" r="1.2" fill="currentColor"/>',
   newton:'<path d="M19 49q-9 3-8-5-6-3-2-9-5-6 0-10-2-7 4-10 0-10 12-10h12q12 0 13 10 6 3 4 10 5 5 0 10 4 6-2 9 0 8-8 5M20 18q6 0 11-9 6 8 12 9M20 19v15q1 13 12 14 11-1 12-14V19M14 23q-6 3-1 8m2 4q-5 4 0 8m34-20q6 3 1 8m-2 4q5 4 0 8M23 26h5m8 0h5m-9 3-2 7h4m-7 5h10M9 60q2-8 15-11l8 7 8-7q13 3 15 11M27 50l-2 10h14l-2-10"/><circle cx="26" cy="30" r="1" fill="currentColor"/><circle cx="39" cy="30" r="1" fill="currentColor"/>',
@@ -10,6 +10,16 @@ const ICON_PATHS={
   curie:'<path d="M17 26q-4-13 5-18 11-6 20 0 11 5 6 18M19 22q10-1 17-12 1 8 10 12M18 24v10q1 12 14 16 13-4 14-16V24M24 28h4m9 0h4m-9 3-2 6h4m-6 6h8M24 47v5l8 6 8-6v-5M24 52q-14 1-16 9m32-9q14 1 16 9M23 54l-1 7m20-7 1 7M16 17q-8-1-6-8 2-6 9-3"/><circle cx="26" cy="32" r="1" fill="currentColor"/><circle cx="39" cy="32" r="1" fill="currentColor"/><circle cx="32" cy="61" r="1" fill="currentColor"/>',
   lovelace:'<path d="M18 25q-6-9 2-15 12-8 25 1 7 5 2 14M19 22q7-2 14-11 4 8 12 11M20 23v12q2 12 12 14 11-2 13-14V23M14 23q-7 4-3 10-4 5 1 9-2 6 5 7m31-26q7 4 3 10 4 5-1 9 2 6-5 7M24 28h4m9 0h4m-9 3-2 6h4m-6 6h8M25 47v4q7 8 14 0v-4M25 51l-13 5-3 6m30-11 13 5 3 6M16 56q16 10 32 0M17 13l-4-5 8 1m1-1 4-5 3 5"/><circle cx="26" cy="32" r="1" fill="currentColor"/><circle cx="39" cy="32" r="1" fill="currentColor"/>',
 };
+// Real public-domain photographs and paintings; display crops keep faces readable
+// at conversation-avatar size. Attribution and exact asset hashes are bundled.
+export const HELPER_PORTRAITS=Object.freeze({
+  hawking:Object.freeze({width:250,height:359,crop:'12 0 158 158'}),
+  einstein:Object.freeze({width:330,height:440,crop:'0 0 330 330'}),
+  newton:Object.freeze({width:330,height:464,crop:'28 0 280 280'}),
+  tesla:Object.freeze({width:330,height:442,crop:'38 0 255 255'}),
+  curie:Object.freeze({width:330,height:448,crop:'35 22 265 265'}),
+  lovelace:Object.freeze({width:330,height:474,crop:'101 40 151 151'}),
+});
 export const HELPER_ICONS=Object.freeze([
   {id:'terminal',label:'OG'}, {id:'robot',label:'Panel pal'},
   {id:'hawking',label:'Stephen Hawking'}, {id:'einstein',label:'Albert Einstein'},
@@ -40,5 +50,6 @@ export function helperAppearanceStyle(value){
 export function renderHelperIcon(value){
   const {icon}=normalizeHelperAppearance(value);
   const portrait=icon!=='terminal'&&icon!=='robot';
-  return `<svg data-helper-icon="${icon}" viewBox="0 0 ${portrait?64:32} ${portrait?64:32}" fill="none" stroke="currentColor" stroke-width="${portrait?2.4:1.8}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${ICON_PATHS[icon]}</svg>`;
+  const photo=HELPER_PORTRAITS[icon],crop=photo?.crop.split(' ').map(Number),scale=photo?64/crop[2]:1;
+  return `<svg data-helper-icon="${icon}" ${photo?'data-helper-portrait="true" ':''}viewBox="0 0 ${portrait?64:32} ${portrait?64:32}" fill="none" stroke="currentColor" stroke-width="${portrait?2.4:1.8}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${ICON_PATHS[icon]}${photo?`<image href="./icons/pals/${icon}.jpg" width="${photo.width}" height="${photo.height}" transform="matrix(${scale} 0 0 ${scale} ${-crop[0]*scale} ${-crop[1]*scale})" preserveAspectRatio="xMidYMid meet"/>`:''}</svg>`;
 }

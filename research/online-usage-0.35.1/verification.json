@@ -1,0 +1,34 @@
+{
+  "version": "0.35.1",
+  "date": "2026-11-11",
+  "offlineBuild": "dc2e06cedd1c",
+  "tests": {
+    "passed": 1780,
+    "failed": 0,
+    "durationMs": 33070.543312
+  },
+  "productionBuild": "passed",
+  "typecheck": "passed",
+  "usageBrowserChecks": 7,
+  "portraitBrowserChecks": 12,
+  "realGroqUsageTested": false,
+  "physicalIPhone": false,
+  "assetGate": {
+    "publicFiles": 1454,
+    "nativeOnlyFilesExcluded": [
+      "app/data/download-map.json"
+    ],
+    "retainedApkVersions": [
+      "0.14.1",
+      "0.14.0"
+    ],
+    "archivedReleaseFilesExcluded": 40,
+    "archivedReleaseBytes": 439707096,
+    "orphanFilesRemoved": 41,
+    "maxStaticAssetBytes": 26214400,
+    "largestStaticAssetBytes": 24126768,
+    "buildBytes": 187868708,
+    "archiveAllowance": 1048576,
+    "verified": true
+  }
+}

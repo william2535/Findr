@@ -1,5 +1,6 @@
 // Explicit, per-user online inference. Credentials exist only in this module's
 // memory; they never enter a job record, storage, a URL or an error message.
+import {normalizeAllowance} from './online-usage.mjs';
 import {ONLINE_PROVIDER} from './online-language-policy.mjs';
 
 const ENDPOINT='/api/assistant/online';
@@ -64,8 +65,11 @@ function verifiedReply(value,payload,elapsedMs){
 }
 
 /** Injectable transport for tests; production always uses a fixed same-origin URL. */
-export function createOnlineLanguage({fetchImpl=(...args)=>globalThis.fetch(...args),getOnline=()=>globalThis.navigator?.onLine!==false,getOrigin=()=>globalThis.location?.origin,timeoutMs=50000,now=()=>performance.now(),supported=()=>typeof globalThis.fetch==='function'&&typeof AbortController==='function'}={}){
- let key='',generation=0;const active=new Set();
+export function createOnlineLanguage({fetchImpl=(...args)=>globalThis.fetch(...args),getOnline=()=>globalThis.navigator?.onLine!==false,getOrigin=()=>globalThis.location?.origin,timeoutMs=50000,now=()=>performance.now(),wallNow=()=>Date.now(),supported=()=>typeof globalThis.fetch==='function'&&typeof AbortController==='function'}={}){
+ let key='',generation=0,allowance=null;const active=new Set(),usageListeners=new Set();
+ const getOnlineUsage=()=>({hasKey:!!key,allowance:allowance?structuredClone(allowance):null});
+ const notifyUsage=()=>{for(const listener of usageListeners){try{listener(getOnlineUsage());}catch{}}};
+ const subscribeOnlineUsage=listener=>{usageListeners.add(listener);return ()=>usageListeners.delete(listener);};
  const online=()=>{try{return getOnline()!==false;}catch{return false;}};
  function getOnlineReadiness(){
   const connected=online(),hasKey=!!key,capable=supported();
@@ -74,9 +78,9 @@ export function createOnlineLanguage({fetchImpl=(...args)=>globalThis.fetch(...a
  function stop(){generation++;for(const operation of [...active])operation.cancel(cancelled());}
  function setOnlineKey(value){
   if(typeof value!=='string'||value.length<20||value.length>512||!/^[\x21-\x7e]+$/.test(value))throw fail('ONLINE_KEY_INVALID','setup');
-  stop();key=value;return getOnlineReadiness();
+  stop();key=value;allowance=null;notifyUsage();return getOnlineReadiness();
  }
- function clearOnlineKey(){key='';stop();return getOnlineReadiness();}
+ function clearOnlineKey(){key='';stop();allowance=null;notifyUsage();return getOnlineReadiness();}
  async function generateOnlineReply({messages=[],choices,outputFormat,maxNewTokens,signal,onProgress,consent}={}){
   if(signal?.aborted)throw cancelled();
   if(!hasOnlineConsent(consent))throw fail('ONLINE_CONSENT_REQUIRED','request');
@@ -99,15 +103,19 @@ export function createOnlineLanguage({fetchImpl=(...args)=>globalThis.fetch(...a
    reader=response.body.getReader();const decoder=new TextDecoder('utf-8',{fatal:true});let text='',bytes=0;
    while(true){const part=await race(reader.read());check();if(part.done)break;if(!(part.value instanceof Uint8Array))throw fail('ONLINE_RESPONSE_INVALID','response');bytes+=part.value.byteLength;if(bytes>MAX_RESPONSE_BYTES)throw fail('ONLINE_RESPONSE_INVALID','response');try{text+=decoder.decode(part.value,{stream:true});}catch{throw fail('ONLINE_RESPONSE_INVALID','response');}}
    try{text+=decoder.decode();}catch{throw fail('ONLINE_RESPONSE_INVALID','response');}let value;try{value=JSON.parse(text);}catch{throw fail('ONLINE_RESPONSE_INVALID','response');}
+   check();const reported=normalizeAllowance(value?.allowance,wallNow());if(reported&&(!allowance||reported.observedAt>=allowance.observedAt)){allowance=reported;notifyUsage();}
    if(!response.ok)throw serverFailure(response,value);
    check();const result=verifiedReply(value,payload,now()-started);safeProgress(onProgress,{phase:'online-complete',message:'Online reply received. Checking it against this job’s evidence…',provider:ONLINE_PROVIDER.name,elapsedMs:result.metrics.elapsedMs});check();return result;
   }catch(error){if(stopError)throw stopError;if(error?.name==='AbortError'||signal?.aborted||revision!==generation)throw cancelled();if(typeof error?.code==='string'&&Object.hasOwn(MESSAGES,error.code))throw fail(error.code,['request','response','setup'].includes(error.stage)?error.stage:'request');throw fail(online()?'ONLINE_NETWORK_ERROR':'ONLINE_OFFLINE','request');}
   finally{ended=true;controller.abort();clearTimeout(timeout);signal?.removeEventListener('abort',abort);active.delete(operation);try{reader?.cancel()?.catch(()=>{});}catch{}try{reader?.releaseLock();}catch{}}
  }
- return {setOnlineKey,clearOnlineKey,getOnlineReadiness,generateOnlineReply};
+ return {setOnlineKey,clearOnlineKey,getOnlineReadiness,generateOnlineReply,getOnlineUsage,subscribeOnlineUsage};
 }
 const onlineLanguage=createOnlineLanguage();
 export const setOnlineKey=onlineLanguage.setOnlineKey;
 export const clearOnlineKey=onlineLanguage.clearOnlineKey;
 export const getOnlineReadiness=onlineLanguage.getOnlineReadiness;
 export const generateOnlineReply=onlineLanguage.generateOnlineReply;
+
+export const getOnlineUsage=onlineLanguage.getOnlineUsage;
+export const subscribeOnlineUsage=onlineLanguage.subscribeOnlineUsage;

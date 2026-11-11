@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-11-11",
+  "source": "Wikimedia Commons imageinfo/extmetadata",
+  "note": "Public-domain photographs and paintings. Display crops are applied in SVG; downloaded images are unmodified. No endorsement by the subjects or source institutions is implied.",
+  "portraits": [
+    {
+      "id": "lovelace",
+      "title": "File:Ada Lovelace portrait.jpg",
+      "file": "public/app/icons/pals/lovelace.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Ada_Lovelace_portrait.jpg",
+      "downloadURL": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Ada_Lovelace_portrait.jpg/330px-Ada_Lovelace_portrait.jpg",
+      "author": "Alfred Edward Chalon",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "sha256": "45ee9eff3af0d49db7820c5af103ea4221a00b8b8113bb1130f519fc6d165e0b",
+      "bytes": 64708
+    },
+    {
+      "id": "einstein",
+      "title": "File:Albert Einstein Head.jpg",
+      "file": "public/app/icons/pals/einstein.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Albert_Einstein_Head.jpg",
+      "downloadURL": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/330px-Albert_Einstein_Head.jpg",
+      "author": "Photograph by Orren Jack Turner, Princeton, N.J. Modified with Photoshop by PM_Poon and later by Dantadd.",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "sha256": "115eaa3516521d5a99b71e79094b80210dfb121573734a4b7eabe589b9ac247a",
+      "bytes": 45702
+    },
+    {
+      "id": "newton",
+      "title": "File:GodfreyKneller-IsaacNewton-1689.jpg",
+      "file": "public/app/icons/pals/newton.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:GodfreyKneller-IsaacNewton-1689.jpg",
+      "downloadURL": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/GodfreyKneller-IsaacNewton-1689.jpg/330px-GodfreyKneller-IsaacNewton-1689.jpg",
+      "author": "Godfrey Kneller",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "sha256": "69717da61982cc3dcc6ea7f4dcacd788961fdf6bf2191723ce45460dc95d1717",
+      "bytes": 41233
+    },
+    {
+      "id": "curie",
+      "title": "File:Marie Curie c1920.jpg",
+      "file": "public/app/icons/pals/curie.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Marie_Curie_c1920.jpg",
+      "downloadURL": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Marie_Curie_c1920.jpg/330px-Marie_Curie_c1920.jpg",
+      "author": "Henri Manuel",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "sha256": "3dc3f50656783f7edd50081bde70b7d0ef79f2d1eb044491643a214221636fe2",
+      "bytes": 31319
+    },
+    {
+      "id": "hawking",
+      "title": "File:Stephen Hawking.StarChild.jpg",
+      "file": "public/app/icons/pals/hawking.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Stephen_Hawking.StarChild.jpg",
+      "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Stephen_Hawking.StarChild.jpg",
+      "author": "NASA",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "sha256": "ed7f9a68632666a9d2fe39be2fa6f06b9132ecd4546a57774cf8fa4a19169779",
+      "bytes": 79183
+    },
+    {
+      "id": "tesla",
+      "title": "File:Tesla circa 1890.jpeg",
+      "file": "public/app/icons/pals/tesla.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Tesla_circa_1890.jpeg",
+      "downloadURL": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Tesla_circa_1890.jpeg/330px-Tesla_circa_1890.jpeg",
+      "author": "Napoleon Sarony",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "sha256": "2a79cf4830896e37e753a742539080657acdef47225b06ecf5860eca929c56e6",
+      "bytes": 37012
+    }
+  ]
+}

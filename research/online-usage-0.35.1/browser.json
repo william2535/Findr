@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "browser": "154.0.8037.57",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "physicalPhone": false,
+  "realInference": false,
+  "quota": "Synthetic provider snapshots",
+  "checks": [
+    "Top allowance is unknown before connecting; no provider polling",
+    "Normal client reply updates separate daily-request and minute-token counters with real countdown rendering",
+    "Mobile top strip and realistic portrait fit 390px without horizontal overlap",
+    "Rate error updates quota/retry; elapsed reset does not fabricate replenished tokens",
+    "Disconnect clears account balances; explanation identifies unavailable limits",
+    "Missing quota headers remain unknown and never trigger an extra request",
+    "Offline reload restores the saved pal and all six source-identical portraits; session usage resets honestly with the key"
+  ],
+  "requests": 3,
+  "pageErrors": [],
+  "offlineBuild": "dc2e06cedd1c"
+}

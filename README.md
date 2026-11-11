@@ -1,3 +1,9 @@
+## Online allowance and realistic portraits — web 0.35.1
+
+A compact strip at the top shows Groq’s last reported remaining daily requests and tokens/minute, with separate reset countdowns. It updates from normal reply/error headers without any polling or extra model requests. Missing balances remain unknown; elapsed timers never refill an invented balance. A fresh tab or changed key starts without an account snapshot. Groq does not supply the other two remaining balances in these headers.
+
+Panel Pals’ six scientists now use bundled public-domain photos or historical painted portraits (299 KB total), with source credits. OG and Panel pal stay unchanged, as do saved IDs and colours. [Portrait sources and checks](research/realistic-panel-pals-0.35.1/README.md) · [Usage verification](research/online-usage-0.35.1/README.md). Android remains 0.14.1.
+
 ## Optional online Panel Pals — web 0.35.0
 
 Panel Pals now offer **Offline AI**, **Online AI** and **Manual search** per conversation. Online mode uses Groq’s hosted open-weight GPT-OSS 120B model, so no language-model download is needed on the phone. It requires your own Groq Free-plan account/key, explicit data-sharing consent and an internet connection. FINDR cannot check a key’s billing tier; a paid-account key may incur charges. There is no automatic provider switch, paid upgrade or online fallback.

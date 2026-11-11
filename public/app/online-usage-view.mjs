@@ -1,0 +1,17 @@
+import {getOnlineUsage,subscribeOnlineUsage} from './online-language.mjs';
+import {resetCountdown} from './online-usage.mjs';
+const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const clock=value=>new Date(value).toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
+export function renderOnlineUsage({hasKey=false,allowance=null}={},now=Date.now()){
+ if(!hasKey)return '<div class="usage-heading">Online AI allowance</div><p>Choose Online AI in a Panel Pal to connect your key.</p>';
+ if(!allowance)return '<div class="usage-heading">Online AI · Groq</div><p>Usage appears after your next online reply. No extra requests are made to check it.</p>';
+ const card=(bucket,label)=>`<div class="usage-bucket"><span>${label}</span><strong>${bucket.remaining===null?'Not reported':esc(bucket.remaining.toLocaleString())+(bucket.limit===null?'':` <small>/ ${esc(bucket.limit.toLocaleString())}</small>`)+' left'}</strong><span class="usage-reset" ${bucket.resetAt===null?'':`data-usage-reset="${bucket.resetAt}" title="Provider reset: ${esc(new Date(bucket.resetAt).toLocaleString())}"`}>${esc(resetCountdown(bucket.resetAt,now))}</span></div>`;
+ return `<div class="usage-heading">Online AI · Groq <small>Last reported ${esc(clock(allowance.receivedAt))}</small></div><div class="usage-balances">${card(allowance.requests,'Requests / day')}${card(allowance.tokens,'Tokens / minute')}</div>${allowance.retryAt===null?'':`<p class="usage-retry" data-usage-retry="${allowance.retryAt}"></p>`}<details><summary>About these figures</summary><p>This is Groq’s last reported allowance for this account/model, including use outside FINDR. It updates with online replies, not by polling. A question can use several requests. After a reset, the next reply confirms the new balance.</p><p>Groq does not report the remaining requests/minute or tokens/day in these headers. A reset here does not guarantee that other limits have cleared. <a href="https://console.groq.com/settings/organization/limits" target="_blank" rel="noopener noreferrer">View account limits ↗</a></p></details>`;
+}
+export function mountOnlineUsage(element,{getUsage=getOnlineUsage,subscribe=subscribeOnlineUsage,windowRef=globalThis.window,documentRef=globalThis.document,now=Date.now}={}){
+ if(!element)return ()=>{};
+ const tick=()=>{if(documentRef?.hidden||element.hidden)return;for(const node of element.querySelectorAll('[data-usage-reset]'))node.textContent=resetCountdown(Number(node.dataset.usageReset),now());const retry=element.querySelector('[data-usage-retry]');if(retry){const seconds=Math.ceil((Number(retry.dataset.usageRetry)-now())/1000);retry.textContent=seconds>0?`Rate limit · retry in ${seconds}s`:'Retry delay elapsed · other account limits may still apply';}};
+ const render=()=>{const state=getUsage(),open=element.querySelector('details')?.open;element.hidden=!state.hasKey&&!/^#helpers(?:\/|$)/.test(windowRef?.location?.hash||'');element.innerHTML=renderOnlineUsage(state,now());if(open&&element.querySelector('details'))element.querySelector('details').open=true;tick();};
+ const unsubscribe=subscribe(render);windowRef?.addEventListener('hashchange',render);documentRef?.addEventListener('visibilitychange',tick);const timer=setInterval(tick,1000);render();
+ return ()=>{unsubscribe();clearInterval(timer);windowRef?.removeEventListener('hashchange',render);documentRef?.removeEventListener('visibilitychange',tick);};
+}

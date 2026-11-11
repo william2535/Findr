@@ -1,3 +1,4 @@
+import {mountOnlineUsage} from './online-usage-view.mjs';
 import {createInterfaceMotion} from './motion.mjs';
 import {createHelpersController} from './helpers.mjs';
 import {manualHelperReferences} from './helpers-store.mjs';
@@ -40,6 +41,7 @@ import {createDeviceController,matchImportedDocument} from './devices.mjs';
 import {CATEGORIES,categoryLabel,imageKind,filterPanels,sortPanels,sortPacks,groupsForPanel,resolvePanelImage} from './catalog.mjs';
 import {ANSWERS,answerLabel,answerEntries,nextQuestion,assess,validatePDF} from './engine.mjs';
 const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+mountOnlineUsage(document.querySelector('#online-usage'));
 const uid=()=>globalThis.crypto?.randomUUID?.()||Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);
 const paths={arrow:'M5 12h14m-6-6 6 6-6 6',back:'M19 12H5m6-6-6 6 6 6',search:'m21 21-5-5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0',download:'M12 3v12m-5-5 5 5 5-5M4 15v5h16v-5',check:'m5 12 4 4L19 6',panel:'M4 3h16v18H4zM7 7h10v5H7zM7 16h1m3 0h1m3 0h1',bolt:'m13 2-9 12h7l-1 8 10-13h-8z',loop:'M5 6h11l3 3v9H6l-3-3V6m9-3-3 3 3 3',earth:'M12 2v12M5 14h14M7 18h10M10 22h4',device:'M4 6h16v12H4zM8 10h8M8 14h4',sound:'M4 9h4l5-4v14l-5-4H4zM17 8q5 4 0 8',network:'M9 2h6v5H9zM3 17h6v5H3zM15 17h6v5h-6zM12 7v5H6v5m6-5h6v5',book:'M3 4h7l2 2 2-2h7v16h-7l-2 1-2-1H3zM12 6v15',clock:'M12 7v5l3 2M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0',shield:'m12 2 9 4v6q-1 7-9 10-8-3-9-10V6zM8 12l3 3 5-6'};
 const icon=(n='arrow')=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${paths[n]||paths.panel}"/></svg>`;

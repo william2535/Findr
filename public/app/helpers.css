@@ -80,3 +80,7 @@
 .helper-message-text{font:15px/1.75 var(--interface-sans,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif);letter-spacing:0}
 .helper-composer textarea{font-family:var(--interface-sans,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif)}
 @media(max-width:600px){.helper-message[data-role=assistant]{grid-template-columns:32px minmax(0,1fr);column-gap:9px}.helper-message[data-role=assistant]>[data-pal-message-avatar]{width:32px;height:32px;border-radius:10px}.helper-message [data-pal-message-avatar] svg{width:24px;height:24px}.helper-message-text{font-size:14px;line-height:1.75}.helper-message-label{font-size:10px;gap:6px}.helper-message-label small{font-size:8px}.helper-source button,.helper-source-title{font-size:11px}}
+
+/* Bundled real portraits fill the existing coloured avatar frame. OG/robot retain their line icons. */
+.helper-avatar>svg[data-helper-portrait]{width:calc(100% - 2px);height:calc(100% - 2px);border-radius:inherit;overflow:hidden}
+.helper-icon-option>svg[data-helper-portrait]{width:44px;height:44px;border-radius:7px;overflow:hidden}

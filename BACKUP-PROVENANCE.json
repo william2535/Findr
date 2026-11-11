@@ -1,20 +1,20 @@
 {
-  "webVersion": "0.35.0",
-  "siteVersion": 75,
+  "webVersion": "0.35.1",
+  "siteVersion": 76,
   "siteProjectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
-  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_69998900f058819193e4bc9c9e88f185",
-  "deploymentId": "appgdep_6af4de141ecc8191ba323c5b487425e9",
+  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_713732c8d11c81918c5e20722dfd5e92",
+  "deploymentId": "appgdep_6af4e2bd24f881919ec19b3b55dc5145",
   "deploymentStatus": "succeeded",
-  "deploymentUpdatedAt": "2026-11-11T21:29:14.300446+00:00",
+  "deploymentUpdatedAt": "2026-11-11T21:49:05.703427+00:00",
   "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site",
-  "sourceCommit": "3b0ab936b5c96857a1486eb7f5d847a468f11552",
+  "sourceCommit": "c121d2155f3fc9f1e2e65b3e27a389a388f9a6f6",
   "sourceRepository": "Sites project source repository",
   "githubRepository": "https://github.com/william2535/Findr",
   "githubBranch": "main",
   "backupRevision": "The Git commit containing this provenance and SOURCE-FILES.sha256 identifies the backup; it intentionally differs from the deployment source commit.",
   "sourceManifest": "SOURCE-FILES.sha256",
   "manifestScope": "All source-backup payload files except the checksum manifest itself; includes GitHub setup/export documentation and separately archived recovery files.",
-  "verifiedOriginalSourceFiles": 2680,
+  "verifiedOriginalSourceFiles": 2706,
   "intentionallyDetachedFile": ".openai/hosting.json",
   "detachedHostingReason": "Keep a migrated checkout separate from the original live ChatGPT Site.",
   "intentionalExclusions": "EXPORT-EXCLUSIONS.json; additionally no dependency/build caches, private environment values, user data, downloaded manuals or model weights. Required bundled runtime assets and synthetic fixtures remain included.",
@@ -24,33 +24,24 @@
     "recoveryArchive": "WORKSPACE-RECOVERY/original-workspace-files.zip"
   },
   "checks": {
-    "scope": "Explicit per-conversation online Groq mode and bounded local model-pack removal; local/manual options retained.",
+    "scope": "Top-of-app Groq response-header allowance display and six bundled public-domain portraits; original icon IDs, saved colours and conversations retained.",
     "unitTests": {
-      "passed": 1771,
+      "passed": 1780,
       "failed": 0,
-      "seconds": 36.892007114
+      "seconds": 33.070543312
     },
     "productionBuild": "passed",
     "typescript": "passed",
-    "newOnlineModulesESLint": "passed",
-    "widerLint": "Existing app/page.tsx:29 no-html-link-for-pages error and existing warnings; whole-repository lint not claimed clean.",
-    "publicAssets": "passed; 1443 public files verified; final build 187421136 bytes",
-    "offlineBuildHash": "d2c08262902c",
+    "publicAssets": "passed; 1454 public files verified; final build 187868708 bytes",
+    "offlineBuildHash": "dc2e06cedd1c",
     "browserChecks": {
-      "Chromium154.0.8037.57Desktop1440x844MockedProvider": 10,
-      "Chromium154.0.8037.57Portrait390x844MockedProvider": 10,
-      "WebKit26.0WPELinuxPortrait390x844OnlineMockedProvider": 10,
-      "Chromium154.0.8037.57Portrait390x844OfflineManualSearch": 11
+      "Chromium154.0.8037.57Portrait390x844UsageAndOffline": 7,
+      "Chromium154.0.8037.57Portrait390x844Appearance": 12
     },
-    "browserCheckTotal": 41,
-    "browserPageErrors": 0,
-    "providerResponses": "Labelled synthetic mocks only; real authenticated Groq inference unavailable.",
-    "compiledRelayChecks": {
-      "GETCapabilities": 200,
-      "POSTMissingKey": 401,
-      "serviceVerified": false
-    },
-    "offlineVerified": "Chromium app prepared, networking disabled and page reloaded; saved manual search and local PDF reading remain available without downloading a model. Hosted-model inference is not offline.",
+    "browserCheckTotal": 19,
+    "quotaRegressionTests": 9,
+    "providerResponses": "Synthetic quota headers/responses only; no authenticated real Groq usage or inference verification.",
+    "offlineVerified": "Chromium service-worker preparation then network-disabled reload; all six portrait assets readable offline and SHA-256 identical to bundled source. No offline hosted-model inference claim.",
     "onlineProvider": {
       "provider": "Groq",
       "model": "openai/gpt-oss-120b",
@@ -80,31 +71,31 @@
         "cloudFallback": false
       }
     },
+    "portraitSources": "public/app/icons/pals/CREDITS.json; public-domain source metadata and hashes recorded; six JPEG assets total 299157 bytes.",
     "limitations": [
-      "No real Groq credential was available; authenticated inference, semantic accuracy, latency and free-account eligibility remain unverified.",
-      "Browser transport/server tests used synthetic provider responses, not live model answers.",
-      "No physical iPhone/Safari device or installed iOS PWA verification.",
-      "WebKit online UI tests passed; offline WebKit is unverified because this executor CacheStorage does not reliably retain entries.",
-      "Online inference needs connectivity. Existing local-model performance limits are unchanged; no new local model or APK build/signing was performed."
+      "No real Groq credential was available; live account allowances and authenticated inference remain unverified.",
+      "Browser quota tests use synthetic provider headers. Counts are reported provider snapshots, not live polling or a billing-tier guarantee.",
+      "No physical iPhone or installed iOS PWA test performed.",
+      "No local model selection change, paid fallback or Android APK build/signing included."
     ],
-    "evidence": "research/online-panel-pals-0.35.0/README.md",
-    "verificationRecord": "research/online-panel-pals-0.35.0/verification.json",
-    "configurationDocumentation": "docs/online-panel-pals.md"
+    "evidence": "research/online-usage-0.35.1/README.md",
+    "verificationRecord": "research/online-usage-0.35.1/verification.json",
+    "portraitEvidence": "research/realistic-panel-pals-0.35.1/README.md"
   },
   "secretReview": {
-    "sourceCommit": "3b0ab936b5c96857a1486eb7f5d847a468f11552",
-    "copiedFiles": 46,
-    "changedTextFilesScanned": 35,
+    "sourceCommit": "c121d2155f3fc9f1e2e65b3e27a389a388f9a6f6",
+    "copiedFiles": 36,
+    "changedTextFilesScanned": 22,
     "candidates": [],
-    "allEligibleSourceFilesVerified": 2680,
+    "allEligibleSourceFilesVerified": 2706,
     "detachedHostingVerified": true,
     "recoveryArchiveUnchanged": true,
-    "limitations": "Pattern review of changed text and GitHub setup addition plus unchanged reviewed baseline. Not mathematical proof of absence. No real provider key, model weights or downloaded manufacturer manuals included."
+    "limitations": "Pattern review of changed text plus unchanged reviewed baseline. Not mathematical proof of absence. No credentials, model weights or downloaded manufacturer manuals included."
   },
-  "preparedAt": "2026-11-11T21:29:57.003814+00:00",
+  "preparedAt": "2026-11-11T21:49:40.557447+00:00",
   "deploymentArchive": {
-    "sha256": "0be61246df91e4a084d5f59eb94ba3bd14948a8900a28d5a71fc597a2b74555e",
-    "bytes": 188631040,
-    "files": 1546
+    "sha256": "d5adcb56510aa5248170806dd8b5f773e461c114bcdd1c1b15b919d1d32b610f",
+    "bytes": 189091840,
+    "files": 1557
   }
 }
