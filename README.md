@@ -1,3 +1,9 @@
+## Helper source dropdowns — web 0.32.7
+
+Helper replies keep their citations in a compact, initially closed **Sources** disclosure. Open it to see the actual supporting manuals, PDF pages, recorded sections/editions and quoted text. Sources with no valid PDF page do not acquire an invented page number. The same saved PDF and edition checks remain in use.
+
+Opening sources and supporting text stays stable while that conversation updates or a PDF is opened. Existing messages, typing, downloaded files and diagnostic context are preserved. [Browser checks and limitations](research/helper-sources-0.32.7/README.md). The GitHub source backup is refreshed with this release; Android remains 0.14.1.
+
 ## Browser activation wait — web 0.32.6
 
 The updater distinguishes a verified release waiting for native browser activation from an unresponsive verification request. Chromium can defer activation while the previous worker finishes ongoing work. The waiting worker now reports successful cache verification before awaiting native activation, and the launcher allows that verified phase a bounded six minutes within its existing overall limit. Repeated messages cannot extend the allowance. The app still opens only after actual activation and an exact-version readiness check; the waiting message does not claim the update is active.

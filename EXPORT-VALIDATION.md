@@ -1,3 +1,5 @@
+> Initial export record for 0.32.6. For the current deployed source snapshot and verification, see [BACKUP-PROVENANCE.json](BACKUP-PROVENANCE.json) and [SOURCE-FILES.sha256](SOURCE-FILES.sha256). Historical release tags retain their original files.
+
 # Export validation — 2026-11-11
 
 All validation used `/workspace/findr-export-staging/FINDR` or `/workspace/findr-export-validation/FINDR`, never rebuilt or modified the original project or live Site.

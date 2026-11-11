@@ -1,3 +1,5 @@
+> Initial export record for 0.32.6. For the current deployed source snapshot and verification, see [BACKUP-PROVENANCE.json](BACKUP-PROVENANCE.json) and [SOURCE-FILES.sha256](SOURCE-FILES.sha256). Historical release tags retain their original files.
+
 # FINDR source inventory
 
 Verified web version: **0.32.6**. Site version: **69**. Android source/retained release marker: **0.14.1**, code **26**. The package.json package version is the unchanged starter value, not the FINDR web release number.

@@ -1,0 +1,318 @@
+{
+  "status": "passed",
+  "recordedAt": "2026-11-11T17:42:13.615Z",
+  "browser": "chromium",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "mobileEmulation": false,
+  "physicalIPhone": false,
+  "checks": [
+    {
+      "name": "Synthetic PDFs extracted and indexed through the actual local PDF pipeline",
+      "evidence": [
+        {
+          "id": "qa-synthetic-source-0",
+          "pages": 3,
+          "usable": true,
+          "passages": 3
+        },
+        {
+          "id": "qa-synthetic-source-1",
+          "pages": 3,
+          "usable": true,
+          "passages": 3
+        }
+      ]
+    },
+    {
+      "name": "Saved assistant sources start collapsed with the correct count; citation-free messages have no disclosure"
+    },
+    {
+      "name": "Pointer/touch expansion shows unchanged source metadata and supporting quote without horizontal overflow",
+      "evidence": {
+        "window": 1440,
+        "document": 1440,
+        "transcript": 1078,
+        "content": 1078
+      }
+    },
+    {
+      "name": "Native summary supports keyboard Enter/Space and retains focus"
+    },
+    {
+      "name": "Both page and legacy pdfPage citations open the actual saved PDF at the exact page; disclosure and quote stay open on return"
+    },
+    {
+      "name": "Same-chat connectivity/resource refresh preserves disclosure, quote, scrollback, unsent draft and selection",
+      "evidence": {
+        "before": 501,
+        "after": 501
+      }
+    },
+    {
+      "name": "A real manual-search reply types and saves while earlier sources, quote and scrollback stay open; new sources start collapsed",
+      "evidence": {
+        "beforeReply": 501,
+        "afterReply": 501,
+        "replyId": "b0e2bf99-9adc-4582-ac71-49e6aeaa3d05",
+        "citationCount": 2
+      }
+    },
+    {
+      "name": "Sources remain usable with reduced motion"
+    },
+    {
+      "name": "Reload resets visual expansion while preserving every saved source reference unchanged"
+    },
+    {
+      "name": "Network-disabled reload restores the saved chat and renders the exact cited PDF page through verified app cache and local storage"
+    }
+  ],
+  "errors": [],
+  "requestFailures": [],
+  "offlineRequested": true,
+  "actualInference": false,
+  "fixture": "Two generated 3-page synthetic PDFs, extracted and indexed through real app modules; seeded saved conversation. No response interception.",
+  "browserVersion": "154.0.8037.57",
+  "offlineReadiness": {
+    "ready": true,
+    "build": "21edf75194e5",
+    "version": "0.32.7",
+    "verification": "sha256-v1"
+  },
+  "seed": {
+    "analyses": [
+      {
+        "id": "qa-synthetic-source-0",
+        "pages": 3,
+        "usable": true,
+        "passages": 3
+      },
+      {
+        "id": "qa-synthetic-source-1",
+        "pages": 3,
+        "usable": true,
+        "passages": 3
+      }
+    ],
+    "sourceRefs": [
+      {
+        "manualId": "qa-synthetic-source-0",
+        "title": "QA event history reference — synthetic PDF for source disclosure testing",
+        "page": 2,
+        "printedPage": "II",
+        "revision": "QA-1",
+        "section": "Event history",
+        "contentHash": "2f233dd04c1d317f8400422830146055c6a09ae62d79a2fa9564157db4fd5dbc",
+        "quote": "Synthetic QA reference: the event history retains the last 120 entries. Select the event history view to inspect the recorded date and event description."
+      },
+      {
+        "manualId": "qa-synthetic-source-1",
+        "title": "QA printed pagination reference — synthetic PDF",
+        "pdfPage": 3,
+        "printedPage": "III",
+        "revision": "QA-2",
+        "section": "Printed pagination",
+        "contentHash": "ff153941ba28e65b9edd6852bf3c6560ac189a089fe3cbff5694f288adb32707",
+        "quote": "Printed page III corresponds to PDF page three in this synthetic test fixture."
+      },
+      {
+        "manualId": "qa-synthetic-source-0",
+        "title": "QA long title continuous-reference-identifier-continuous-reference-identifier-continuous-reference-identifier-continuous-reference-identifier-continuous-reference-identifier-continuous-reference-identifier-continuous-reference-identifier-continuous-reference-identifier-",
+        "page": 1,
+        "contentHash": "2f233dd04c1d317f8400422830146055c6a09ae62d79a2fa9564157db4fd5dbc",
+        "quote": "Synthetic overflow probe: unbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtext"
+      }
+    ],
+    "messages": [
+      {
+        "id": "qa-no-sources",
+        "role": "assistant",
+        "text": "This saved synthetic answer has no citations and must not show an empty Sources control.",
+        "sourceRefs": [],
+        "mode": "manual-search",
+        "createdAt": 1794418948559
+      },
+      {
+        "id": "qa-before-0",
+        "role": "user",
+        "text": "Saved conversation context 1. This synthetic history gives the transcript enough content to check scrollback while citations are being read.\nThe test keeps earlier messages in place during a refresh.",
+        "sourceRefs": [],
+        "createdAt": 1794418948559
+      },
+      {
+        "id": "qa-before-1",
+        "role": "assistant",
+        "text": "Saved conversation context 2. This synthetic history gives the transcript enough content to check scrollback while citations are being read.\nThe test keeps earlier messages in place during a refresh.",
+        "sourceRefs": [],
+        "createdAt": 1794418948559
+      },
+      {
+        "id": "qa-before-2",
+        "role": "user",
+        "text": "Saved conversation context 3. This synthetic history gives the transcript enough content to check scrollback while citations are being read.\nThe test keeps earlier messages in place during a refresh.",
+        "sourceRefs": [],
+        "createdAt": 1794418948559
+      },
+      {
+        "id": "qa-before-3",
+        "role": "assistant",
+        "text": "Saved conversation context 4. This synthetic history gives the transcript enough content to check scrollback while citations are being read.\nThe test keeps earlier messages in place during a refresh.",
+        "sourceRefs": [],
+        "createdAt": 1794418948559
+      },
+      {
+        "id": "qa-cited-message",
+        "role": "assistant",
+        "text": "The saved reference describes the event history. Open Sources to inspect its supporting text and the exact saved PDF pages.\nThis is a synthetic UI acceptance answer, not equipment advice.",
+        "mode": "manual-search",
+        "sourceRefs": [
+          {
+            "manualId": "qa-synthetic-source-0",
+            "title": "QA event history reference — synthetic PDF for source disclosure testing",
+            "page": 2,
+            "printedPage": "II",
+            "revision": "QA-1",
+            "section": "Event history",
+            "contentHash": "2f233dd04c1d317f8400422830146055c6a09ae62d79a2fa9564157db4fd5dbc",
+            "quote": "Synthetic QA reference: the event history retains the last 120 entries. Select the event history view to inspect the recorded date and event description."
+          },
+          {
+            "manualId": "qa-synthetic-source-1",
+            "title": "QA printed pagination reference — synthetic PDF",
+            "pdfPage": 3,
+            "printedPage": "III",
+            "revision": "QA-2",
+            "section": "Printed pagination",
+            "contentHash": "ff153941ba28e65b9edd6852bf3c6560ac189a089fe3cbff5694f288adb32707",
+            "quote": "Printed page III corresponds to PDF page three in this synthetic test fixture."
+          },
+          {
+            "manualId": "qa-synthetic-source-0",
+            "title": "QA long title continuous-reference-identifier-continuous-reference-identifier-continuous-reference-identifier-continuous-reference-identifier-continuous-reference-identifier-continuous-reference-identifier-continuous-reference-identifier-continuous-reference-identifier-",
+            "page": 1,
+            "contentHash": "2f233dd04c1d317f8400422830146055c6a09ae62d79a2fa9564157db4fd5dbc",
+            "quote": "Synthetic overflow probe: unbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtextunbrokencitationtext"
+          }
+        ],
+        "createdAt": 1794418948560
+      },
+      {
+        "id": "qa-after-0",
+        "role": "user",
+        "text": "Later saved message 1. This synthetic context allows the test to stay in scrollback rather than following the newest answer.\nMessages and citations remain on this device.",
+        "sourceRefs": [],
+        "createdAt": 1794418948560
+      },
+      {
+        "id": "qa-after-1",
+        "role": "assistant",
+        "text": "Later saved message 2. This synthetic context allows the test to stay in scrollback rather than following the newest answer.\nMessages and citations remain on this device.",
+        "sourceRefs": [],
+        "createdAt": 1794418948560
+      },
+      {
+        "id": "qa-after-2",
+        "role": "user",
+        "text": "Later saved message 3. This synthetic context allows the test to stay in scrollback rather than following the newest answer.\nMessages and citations remain on this device.",
+        "sourceRefs": [],
+        "createdAt": 1794418948560
+      },
+      {
+        "id": "qa-after-3",
+        "role": "assistant",
+        "text": "Later saved message 4. This synthetic context allows the test to stay in scrollback rather than following the newest answer.\nMessages and citations remain on this device.",
+        "sourceRefs": [],
+        "createdAt": 1794418948560
+      },
+      {
+        "id": "qa-after-4",
+        "role": "user",
+        "text": "Later saved message 5. This synthetic context allows the test to stay in scrollback rather than following the newest answer.\nMessages and citations remain on this device.",
+        "sourceRefs": [],
+        "createdAt": 1794418948560
+      },
+      {
+        "id": "qa-after-5",
+        "role": "assistant",
+        "text": "Later saved message 6. This synthetic context allows the test to stay in scrollback rather than following the newest answer.\nMessages and citations remain on this device.",
+        "sourceRefs": [],
+        "createdAt": 1794418948560
+      },
+      {
+        "id": "qa-after-6",
+        "role": "user",
+        "text": "Later saved message 7. This synthetic context allows the test to stay in scrollback rather than following the newest answer.\nMessages and citations remain on this device.",
+        "sourceRefs": [],
+        "createdAt": 1794418948560
+      },
+      {
+        "id": "qa-after-7",
+        "role": "assistant",
+        "text": "Later saved message 8. This synthetic context allows the test to stay in scrollback rather than following the newest answer.\nMessages and citations remain on this device.",
+        "sourceRefs": [],
+        "createdAt": 1794418948560
+      }
+    ]
+  },
+  "layout": {
+    "window": 1440,
+    "document": 1440,
+    "transcript": 1078,
+    "content": 1078
+  },
+  "generatedReply": {
+    "id": "b0e2bf99-9adc-4582-ac71-49e6aeaa3d05",
+    "role": "assistant",
+    "text": "Manual search — download and prepare the local AI engine to use AI assistance.\n\nRelated saved-manual extracts:\n\n[1] SYNTHETIC QA DOCUMENT - PAGE TWO Event history reference The event history retains the last 120 entries. Select the event history view to inspect the recorded date and event description. This sample text is deliberately synthetic and carries no field instructions.\n\n[2] SYNTHETIC QA DOCUMENT - PAGE TWO Event history reference The event history retains the last 120 entries. Select the event history view to inspect the recorded date and event description. This sample text is deliberately synthetic and carries no field instructions.\n\nThese references are not a verified answer or a completed diagnosis.",
+    "createdAt": 1794418955270,
+    "kind": "manual_search",
+    "sourceRefs": [
+      {
+        "sourceId": "2f233dd04c1d317f8400422830146055c6a09ae62d79a2fa9564157db4fd5dbc:pdf-2:0",
+        "citationId": "S1",
+        "manualId": "qa-synthetic-source-0",
+        "contentHash": "2f233dd04c1d317f8400422830146055c6a09ae62d79a2fa9564157db4fd5dbc",
+        "processorVersion": "2026-11-10.3",
+        "title": "QA event history reference — synthetic PDF for source disclosure testing",
+        "revision": "",
+        "models": [],
+        "page": 2,
+        "pdfPage": 2,
+        "printedPage": null,
+        "section": null,
+        "method": "text",
+        "requiresSourceReview": false,
+        "quote": "SYNTHETIC QA DOCUMENT - PAGE TWO Event history reference The event history retains the last 120 entries. Select the event history view to inspect the recorded date and event description. This sample text is deliberately synthetic and carries no field instructions.",
+        "excerpt": "SYNTHETIC QA DOCUMENT - PAGE TWO Event history reference The event history retains the last 120 entries. Select the event history view to inspect the recorded date and event description. This sample text is deliberately synthetic and carries no field instructions."
+      },
+      {
+        "sourceId": "ff153941ba28e65b9edd6852bf3c6560ac189a089fe3cbff5694f288adb32707:pdf-2:0",
+        "citationId": "S2",
+        "manualId": "qa-synthetic-source-1",
+        "contentHash": "ff153941ba28e65b9edd6852bf3c6560ac189a089fe3cbff5694f288adb32707",
+        "processorVersion": "2026-11-10.3",
+        "title": "QA printed pagination reference — synthetic PDF",
+        "revision": "",
+        "models": [],
+        "page": 2,
+        "pdfPage": 2,
+        "printedPage": null,
+        "section": null,
+        "method": "text",
+        "requiresSourceReview": false,
+        "quote": "SYNTHETIC QA DOCUMENT - PAGE TWO Event history reference The event history retains the last 120 entries. Select the event history view to inspect the recorded date and event description. This sample text is deliberately synthetic and carries no field instructions.",
+        "excerpt": "SYNTHETIC QA DOCUMENT - PAGE TWO Event history reference The event history retains the last 120 entries. Select the event history view to inspect the recorded date and event description. This sample text is deliberately synthetic and carries no field instructions."
+      }
+    ],
+    "quickReplies": [],
+    "mode": "manual-search",
+    "modelUsed": false,
+    "coverage": "reference_only",
+    "engineVersion": "2026-11-11.5"
+  },
+  "offlineReload": true,
+  "finishedAt": "2026-11-11T17:42:40.028Z"
+}

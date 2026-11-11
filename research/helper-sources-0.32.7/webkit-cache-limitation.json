@@ -1,0 +1,22 @@
+{
+  "recordedAt": "2026-11-11T17:44:32.358Z",
+  "browser": "Playwright WebKit 26.0 / WPE Linux",
+  "persistentContext": true,
+  "appScriptsLoaded": false,
+  "serviceWorkers": "block",
+  "profile": "/tmp/findr-wkcache-isolated-uS2Sd0",
+  "scope": "Independent native CacheStorage API probe at directory index, without app code",
+  "storage": {
+    "putResolved": true,
+    "immediateMatch": null,
+    "immediateKeys": [],
+    "reopenedMatch": null,
+    "reopenedKeys": [],
+    "cacheNames": [
+      "qa-independent-cache"
+    ],
+    "secureContext": true,
+    "serviceWorkerControlled": false
+  },
+  "conclusion": "Cache.put resolves but native CacheStorage does not retain response data in this installed WPE test browser. Full app offline-shell verification cannot complete; not evidence of physical Safari behavior."
+}
