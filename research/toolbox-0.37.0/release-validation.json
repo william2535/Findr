@@ -14,7 +14,7 @@
   "zipCrcAndUniqueEntries": true,
   "oldApkUnchanged": true,
   "nodeTests": {
-    "passed": 1868,
+    "passed": 1872,
     "failed": 0,
     "skipped": 0
   },
@@ -41,5 +41,16 @@
     "bytes": 73458195,
     "sha256": "e6f91ded97b687b3a69ebfeee46e9a0c3a43b9679ef4fca7b63bf9b5a3a3e37f"
   },
-  "releasePolicyRecheckPassed": 17
+  "releasePolicyRecheckPassed": 21,
+  "productionWorkerHttpChecks": {
+    "count": 8,
+    "externalApkGET": 307,
+    "externalApkHEAD": 307,
+    "archivedApkGET": 410,
+    "archivedApkHEAD": 410,
+    "checksumGET": 200,
+    "checksumHEAD": 200,
+    "versionGET": 200,
+    "versionHEAD": 200
+  }
 }

@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "access": "provided Sites verification header; unauthenticated executor received edge403",
+  "checks": [
+    {
+      "path": "/app-release.json",
+      "status": 200,
+      "sha256": "d33be31951b7e2271a9a39bfd6d70cc337db909caa753f084ecfe22a344face9"
+    },
+    {
+      "path": "/app/version.mjs",
+      "status": 200,
+      "sha256": "2139eb9ae646d834ecd0df1a7c6ad49231a127b3698383261865371629bdc1b4"
+    },
+    {
+      "path": "/app/app.mjs",
+      "status": 200,
+      "sha256": "8c07e93ab14ee5478d6499f9150d163b7009045f4524d9d6aa1bf6b053e9b172"
+    },
+    {
+      "path": "/app/toolbox.mjs",
+      "status": 200,
+      "sha256": "2c7c798367e8eae9b284ce003ea3481ee25fe7d89c774d3ede5dadf23bb38fb3"
+    },
+    {
+      "path": "/app/toolbox-calculators.mjs",
+      "status": 200,
+      "sha256": "90cc97ae17a142f44cb48f3e52a786055cfaa4330c9bfeccb6efd1e333abbd0f"
+    },
+    {
+      "path": "/app/toolbox.css",
+      "status": 200,
+      "sha256": "4d1718e218351b659312f8d930fa78a28fe21ce6af256e0ea2b29f5b8ee681dc"
+    },
+    {
+      "path": "/releases/FINDR-0.37.0.apk.sha256",
+      "status": 200,
+      "sha256": "1f4dced572d9919ae17b5773d0fc71de56dd47d539081ef2725878e23a8e7cd0"
+    },
+    {
+      "path": "/releases/FINDR-0.37.0.apk",
+      "status": 307,
+      "location": "https://raw.githubusercontent.com/william2535/Findr/ae2be03ffa51aa08c5f10e1a088e4970a8d44836/public/releases/FINDR-0.37.0.apk"
+    },
+    {
+      "path": "/",
+      "toolboxAndVersion": true
+    }
+  ]
+}

@@ -30,7 +30,7 @@ Final automated/browser results are recorded below and in adjacent evidence file
 
 ## Completed checks
 
-- All **1,868 Node regression tests passed**, zero failures/skips, including the new calculator, native transport/export and release-policy tests.
+- All **1,872 Node regression tests passed**, zero failures/skips, including the new calculator, native transport/export and release-policy tests.
 - TypeScript `tsc --noEmit`, production web build and public-asset boundary verification passed.
 - Signed APK: 73,458,195 bytes; SHA256 `e6f91ded97b687b3a69ebfeee46e9a0c3a43b9679ef4fca7b63bf9b5a3a3e37f`. Official SDK35 apksigner verified v2/v3 and the existing certificate; zipalign, ZIP CRC, unique entries and all bundled app bytes passed. The previous0.14.1 APK hash is unchanged.
 - Chromium154: seven browser checks passed including normal Home entry, all four calculators, draft restoration and a full reload with networking disabled after real service-worker caching (build `7423eeefce3a`). Existing synthetic saved Panel Pal/log were preserved. No model/provider requests occurred.
@@ -38,3 +38,10 @@ Final automated/browser results are recorded below and in adjacent evidence file
 - Adjacent `browser-*.json` and screenshots contain evidence. `release-validation.json` records prepublication checks; these results alone do not claim website or APK publication. GitHub release/provenance records record publication separately.
 
 GitHub release-asset upload returned HTTP401 for `uploads.github.com`, while repository access remained authorized. The public raw APK at backup commit `ae2be03ffa51aa08c5f10e1a088e4970a8d44836` was downloaded in full (HTTP200,73,458,195bytes) and its SHA256 matched the signed artifact. The website redirects to that fixed commit/path; the release notes link to the same file. No generated APK contents were changed.
+
+
+## Production release routing follow-up
+
+Site82’s live static modules and checksum matched source, but the APK redirect returned404. Vinext’s generated public-file inventory still contained the source APK even though the deployment gate correctly removed the oversized static binary. Its public-file lookup shadowed the route handler. The Worker now handles only the explicitly listed external/archive GET/HEAD release paths before entering Vinext. Current static downloads, app/API requests and unknown paths continue through the original handler. Regression tests exercise the actual transpiled Worker entry with the framework’s404 behavior, in addition to exact-path/method checks. No APK or offline app bytes changed. The final production check records the corrected redirect separately.
+
+Final Worker correction passed the complete1,872-test suite, TypeScript, production build/gate, and eight real local production-Worker GET/HEAD checks: currentAPK307, archivedAPK410, checksum200 and versionJSON200. This is additional to the unchanged APK and offline-browser checks.
