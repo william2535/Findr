@@ -1,0 +1,221 @@
+{
+  "status": "passed",
+  "recordedAt": "2026-11-11T18:07:54.492Z",
+  "browser": "webkit",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "physicalIPhone": false,
+  "mobileEmulation": true,
+  "offlineRequested": false,
+  "actualInference": false,
+  "checks": [
+    {
+      "name": "An older helper opens with the default appearance while another retains its own choices"
+    },
+    {
+      "name": "Icon and colour choices preview immediately, expose selected state, and remain unsaved until Save"
+    },
+    {
+      "name": "Cancel restores the saved appearance without changing the helper"
+    },
+    {
+      "name": "Icon and colour controls work with Enter and Space"
+    },
+    {
+      "name": "Save persists only the selected helper and leaves its conversations and diagnostic context unchanged"
+    },
+    {
+      "name": "Reload restores the chosen icon and colour"
+    },
+    {
+      "name": "Customising from the conversation preserves an unsent draft; Reset is reversible before saving"
+    },
+    {
+      "name": "Normal helper export and file-picker import preserve appearance alongside saved conversations"
+    },
+    {
+      "name": "Multiple helpers remain visually distinct and controls remain usable with reduced motion"
+    }
+  ],
+  "errors": [],
+  "navigationWarnings": [],
+  "requestFailures": [],
+  "fixture": "Two synthetic saved helpers with distinct appearance and conversation records; real app navigation, IndexedDB, export and import.",
+  "browserVersion": "26.0",
+  "seed": [
+    {
+      "id": "qa-custom-helper-a",
+      "name": "My panel helper",
+      "discipline": "fire",
+      "scope": {
+        "kind": "manuals",
+        "label": "Synthetic UI test scope"
+      },
+      "selectedManualIds": [],
+      "requiredManualIds": [],
+      "conversations": [
+        {
+          "id": "qa-custom-helper-a-chat",
+          "title": "Saved synthetic job",
+          "createdAt": 100,
+          "updatedAt": 100,
+          "context": {
+            "confirmedModel": "QA synthetic model"
+          },
+          "messages": [
+            {
+              "id": "qa-custom-helper-a-you",
+              "role": "user",
+              "text": "Saved synthetic observation: the indication cleared before arrival.",
+              "createdAt": 100
+            },
+            {
+              "id": "qa-custom-helper-a-findr",
+              "role": "assistant",
+              "text": "This is a synthetic saved conversation used to check that customisation keeps the job intact.",
+              "createdAt": 101,
+              "sourceRefs": [],
+              "mode": "manual-search"
+            }
+          ]
+        }
+      ],
+      "manualStates": {},
+      "activeConversationId": "qa-custom-helper-a-chat",
+      "createdAt": 1794420478274,
+      "updatedAt": 1794420478274,
+      "revision": 0
+    },
+    {
+      "id": "qa-custom-helper-b",
+      "name": "Night shift helper",
+      "discipline": "cctv",
+      "scope": {
+        "kind": "manuals",
+        "label": "Synthetic UI test scope"
+      },
+      "selectedManualIds": [],
+      "requiredManualIds": [],
+      "appearance": {
+        "icon": "owl",
+        "colour": "blue"
+      },
+      "conversations": [
+        {
+          "id": "qa-custom-helper-b-chat",
+          "title": "Saved synthetic job",
+          "createdAt": 100,
+          "updatedAt": 100,
+          "context": {
+            "confirmedModel": "QA synthetic model"
+          },
+          "messages": [
+            {
+              "id": "qa-custom-helper-b-you",
+              "role": "user",
+              "text": "Saved synthetic observation: the indication cleared before arrival.",
+              "createdAt": 100
+            },
+            {
+              "id": "qa-custom-helper-b-findr",
+              "role": "assistant",
+              "text": "This is a synthetic saved conversation used to check that customisation keeps the job intact.",
+              "createdAt": 101,
+              "sourceRefs": [],
+              "mode": "manual-search"
+            }
+          ]
+        }
+      ],
+      "manualStates": {},
+      "activeConversationId": "qa-custom-helper-b-chat",
+      "createdAt": 1794420478275,
+      "updatedAt": 1794420478275,
+      "revision": 0
+    }
+  ],
+  "touchTargets": [
+    {
+      "label": "Old school✓",
+      "width": 75.25,
+      "height": 98
+    },
+    {
+      "label": "Panel pal✓",
+      "width": 75.25,
+      "height": 98
+    },
+    {
+      "label": "Sparky✓",
+      "width": 75.25,
+      "height": 98
+    },
+    {
+      "label": "Little gremlin✓",
+      "width": 75.25,
+      "height": 98
+    },
+    {
+      "label": "Tea break✓",
+      "width": 75.25,
+      "height": 89
+    },
+    {
+      "label": "Cone head✓",
+      "width": 75.25,
+      "height": 89
+    },
+    {
+      "label": "Night owl✓",
+      "width": 75.25,
+      "height": 89
+    },
+    {
+      "label": "Wire wizard✓",
+      "width": 75.25,
+      "height": 89
+    },
+    {
+      "label": "✓FINDR yellow",
+      "width": 75.25,
+      "height": 84
+    },
+    {
+      "label": "✓Orange",
+      "width": 75.25,
+      "height": 84
+    },
+    {
+      "label": "✓Coral",
+      "width": 75.25,
+      "height": 84
+    },
+    {
+      "label": "✓Pink",
+      "width": 75.25,
+      "height": 84
+    },
+    {
+      "label": "✓Purple",
+      "width": 75.25,
+      "height": 84
+    },
+    {
+      "label": "✓Blue",
+      "width": 75.25,
+      "height": 84
+    },
+    {
+      "label": "✓Teal",
+      "width": 75.25,
+      "height": 84
+    }
+  ],
+  "layout": {
+    "window": 390,
+    "document": 390
+  },
+  "finishedAt": "2026-11-11T18:08:04.491Z"
+}

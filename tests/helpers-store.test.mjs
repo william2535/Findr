@@ -28,6 +28,37 @@ test('deleting a helper removes only that helper, retaining shared references an
 test('bad stored helper schema fails closed without erasing old records',()=>{assert.throws(()=>normalizeHelpers({schemaVersion:999,helpers:[]}),/not been changed/);assert.throws(()=>normalizeHelpers({schemaVersion:1,helpers:[{id:'bad',name:'bad',scope:{},selectedManualIds:[],requiredManualIds:[],conversations:'bad'}]}),/not been changed/);});
 test('revision lease prevents an old tab overwriting a newer saved helper',async()=>{const store=createHelpersStore(async()=>backend),backend=database();const first=await store.save(helper());await store.update(first.id,h=>({...h,name:'Newer name'}));await assert.rejects(store.save({...first,name:'Old name'},{expectedRevision:first.revision}),/another tab/);assert.equal((await store.load()).helpers[0].name,'Newer name');});
 
+test('legacy helpers gain the default appearance without changing saved work or the source record',()=>{
+ const old=helper();delete old.appearance;old.conversations[0].messages=[{id:'legacy-answer',text:'Saved before customisation'}];
+ const before=structuredClone(old),loaded=normalizeHelper(old);
+ assert.deepEqual(loaded.appearance,{icon:'terminal',colour:'yellow'});
+ assert.deepEqual(loaded.conversations,before.conversations);assert.deepEqual(old,before);
+});
+
+test('appearance updates survive reload and backup serialization independently of other helpers and fault evidence',async()=>{
+ const one=helper(),two=helper('two');one.conversations[0].draft='Unsent observation';one.conversations[0].faultSession={id:'fault',answers:{supply:'unknown'}};
+ const backend=database(),store=createHelpersStore(async()=>backend);await store.save(one);await store.save(two);
+ await store.update('one',h=>({...h,appearance:{icon:'terminal',colour:'blue'}}));
+ const loaded=await createHelpersStore(async()=>backend).load(),updated=loaded.helpers.find(h=>h.id==='one');
+ assert.deepEqual(updated.appearance,{icon:'terminal',colour:'blue'});assert.deepEqual(updated.conversations,one.conversations);
+ assert.deepEqual(loaded.helpers.find(h=>h.id==='two').appearance,{icon:'terminal',colour:'yellow'});
+ const backup=JSON.parse(JSON.stringify(updated));assert.deepEqual(normalizeHelper(backup).appearance,updated.appearance);
+});
+
+test('untrusted imported appearance cannot supply CSS or executable icon markup',()=>{
+ const hostile={icon:'<svg onload=alert(1)>',colour:'red; background:url(https://example.invalid)',customCSS:'display:none'};
+ const normalized=normalizeHelper({...helper(),appearance:hostile});
+ assert.deepEqual(normalized.appearance,{icon:'terminal',colour:'yellow'});
+ assert.deepEqual(normalizeHelper({...helper(),appearance:null}).appearance,normalized.appearance);
+});
+
+test('failed appearance save preserves the last saved colours, chats and shared manuals',async()=>{
+ const one=helper();one.appearance={icon:'terminal',colour:'blue'};one.conversations[0].messages=[{id:'m1',text:'Keep this reading'}];
+ const original={schemaVersion:1,helpers:[one,helper('two')]},backend=database({[HELPERS_KEY]:original},{fail:true}),store=createHelpersStore(async()=>backend);
+ await assert.rejects(store.update('one',h=>({...h,appearance:{icon:'terminal',colour:'yellow'}})),/quota/);
+ assert.deepEqual(backend.data.get(HELPERS_KEY),original);
+});
+
 test('fault worksheets stay with their captured job while other jobs and chat continue',async()=>{
  const one=helper(),two=helper('two'),firstId=one.activeConversationId;
  one.conversations.push(createConversation({id:'second-job',title:'A separate visit'}));one.activeConversationId='second-job';

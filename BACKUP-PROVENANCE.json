@@ -1,20 +1,20 @@
 {
-  "webVersion": "0.32.7",
-  "siteVersion": 70,
+  "webVersion": "0.32.8",
+  "siteVersion": 71,
   "siteProjectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
-  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_161b001d92b08191ac6f38f00916a84f",
-  "deploymentId": "appgdep_6af4aa6218c4819194143620aac4d45c",
+  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_76fc5f039cc88191855406148c386d4c",
+  "deploymentId": "appgdep_6af4aff428e081919646adcf36dd13c0",
   "deploymentStatus": "succeeded",
-  "deploymentUpdatedAt": "2026-11-11T17:48:43.543368+00:00",
+  "deploymentUpdatedAt": "2026-11-11T18:12:25.771818+00:00",
   "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site",
-  "sourceCommit": "26332824b9c9617edc091b6a85ef2af59a18fc67",
+  "sourceCommit": "9340ad0809dfd7412a4dc01cf74b279f69bc3897",
   "sourceRepository": "Sites project source repository",
   "githubRepository": "https://github.com/william2535/Findr",
   "githubBranch": "main",
   "backupRevision": "The Git commit containing this provenance and SOURCE-FILES.sha256 identifies the backup; it intentionally differs from the deployment source commit.",
   "sourceManifest": "SOURCE-FILES.sha256",
   "manifestScope": "All source-backup payload files except the checksum manifest itself; includes GitHub setup/export documentation and separately archived recovery files.",
-  "verifiedOriginalSourceFiles": 2509,
+  "verifiedOriginalSourceFiles": 2521,
   "intentionallyDetachedFile": ".openai/hosting.json",
   "detachedHostingReason": "Keep a migrated checkout separate from the original live ChatGPT Site.",
   "intentionalExclusions": "EXPORT-EXCLUSIONS.json; additionally no dependency/build caches, private environment values, user data, downloaded manuals or model weights. Required bundled runtime assets and synthetic fixtures remain included.",
@@ -25,34 +25,34 @@
   },
   "checks": {
     "unitTests": {
-      "passed": 1542,
+      "passed": 1546,
       "failed": 0
     },
     "typescript": "passed",
     "productionBuild": "passed",
-    "publicAssets": "passed;1418 public files verified",
-    "offlineBuildHash": "21edf75194e5",
+    "publicAssets": "passed; 1420 public files verified",
+    "offlineBuildHash": "2f6778a8f8a5",
     "browserChecks": {
-      "Chromium154.0.8037.57Desktop1440x1000": 10,
+      "Chromium154.0.8037.57Desktop1440x1000": 9,
       "Chromium154.0.8037.57Portrait390x844": 10,
       "WebKit26.0WPELinuxPortrait390x844Online": 9
     },
-    "offlineVerified": "Chromium desktop and portrait: verified service-worker cache, network-disabled reload, saved conversation and cited PDF rendering.",
+    "offlineVerified": "Chromium portrait: verified service-worker cache, network-disabled reload, customisation save and further reload retaining the chosen icon and accent.",
     "limitations": [
       "No physical iPhone/Safari session.",
-      "WebKit offline shell verification blocked by native WPE CacheStorage behavior reproduced independently of FINDR.",
-      "No model inference benchmark or APK release performed for this presentation update."
+      "WebKit offline not claimed; native WPE CacheStorage limitation documented in preceding 0.32.7 QA.",
+      "No model inference benchmark or APK release performed for this appearance update."
     ],
-    "evidence": "research/helper-sources-0.32.7/README.md"
+    "evidence": "research/helper-customisation-0.32.8/README.md"
   },
   "secretReview": {
-    "sourceCommit": "26332824b9c9617edc091b6a85ef2af59a18fc67",
-    "copiedFiles": 27,
+    "sourceCommit": "9340ad0809dfd7412a4dc01cf74b279f69bc3897",
+    "copiedFiles": 22,
     "changedTextFilesScanned": 16,
     "candidates": [],
-    "allEligibleSourceFilesVerified": 2509,
+    "allEligibleSourceFilesVerified": 2521,
     "detachedHostingVerified": true,
-    "limitations": "Pattern review of changed text plus unchanged baseline from EXPORT-SECRET-AUDIT.json. No proof of mathematical absence of secrets. Images and labelled synthetic PDF fixtures are QA assets."
+    "limitations": "Pattern review of changed text plus unchanged reviewed baseline from prior backup provenance and EXPORT-SECRET-AUDIT.json. No proof of mathematical absence of secrets. Images are QA assets."
   },
-  "preparedAt": "2026-11-11T17:49:14.395685+00:00"
+  "preparedAt": "2026-11-11T18:12:57.739167+00:00"
 }

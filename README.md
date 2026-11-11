@@ -1,3 +1,9 @@
+## Make your helpers yours — web 0.32.8
+
+Each helper can have its own playful icon and accent colour. Open **Customise**, preview the choices and save; the appearance follows that helper on its card and conversation. Existing helpers keep the default FINDR yellow terminal icon. Choices are stored locally and travel with helper exports without changing manuals, conversations or diagnostic evidence. The surrounding FINDR branding stays black and yellow.
+
+[Browser checks and limitations](research/helper-customisation-0.32.8/README.md). Android remains 0.14.1.
+
 ## Helper source dropdowns — web 0.32.7
 
 Helper replies keep their citations in a compact, initially closed **Sources** disclosure. Open it to see the actual supporting manuals, PDF pages, recorded sections/editions and quoted text. Sources with no valid PDF page do not acquire an invented page number. The same saved PDF and edition checks remain in use.

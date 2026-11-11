@@ -1,5 +1,6 @@
 import {openDB,allManuals,getFile,saveManual} from './db.mjs';
 import {validatePDF} from './engine.mjs';
+import {normalizeHelperAppearance} from './helpers-appearance.mjs';
 
 export const HELPERS_KEY='helpers-v1';
 const copy=value=>structuredClone(value);
@@ -17,6 +18,7 @@ export function normalizeHelper(value){
  if(!value||typeof value.id!=='string'||!value.id||typeof value.name!=='string'||!value.name.trim()||!value.scope||typeof value.scope!=='object'||!strings(value.selectedManualIds)||!strings(value.requiredManualIds)||!Array.isArray(value.conversations)||value.conversations.some(c=>!c||typeof c.id!=='string'||!Array.isArray(c.messages)))throw fail('This helper cannot be read. Existing helpers and manuals have not been changed.');
  if(new Set(value.conversations.map(c=>c.id)).size!==value.conversations.length)throw fail('A helper has duplicate conversation identities. Existing helpers are unchanged.');
  const next=copy(value);next.name=next.name.trim();next.selectedManualIds=unique(next.selectedManualIds);next.requiredManualIds=unique(next.requiredManualIds);next.manualStates=next.manualStates&&typeof next.manualStates==='object'&&!Array.isArray(next.manualStates)?next.manualStates:{};
+ next.appearance=normalizeHelperAppearance(next.appearance);
  next.revision=Number.isInteger(next.revision)&&next.revision>=0?next.revision:0;
  if(!next.conversations.some(c=>c.id===next.activeConversationId))next.activeConversationId=next.conversations[0]?.id||null;
  return next;
