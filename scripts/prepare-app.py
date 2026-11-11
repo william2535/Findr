@@ -9,6 +9,8 @@ root = Path(__file__).resolve().parents[1]
 public = root / 'public'
 p = public / 'app'
 version = re.search(r"APP_VERSION = '([^']+)'", (p / 'version.mjs').read_text()).group(1)
+# Keep the update discovery URL outside the offline app worker's scope.
+(public / 'app-release.json').write_text(json.dumps({'version': version}) + '\n')
 # The static shell and practice metadata share the release identifier.
 shell_path = p / 'index.html'
 shell = shell_path.read_text()
