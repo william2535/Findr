@@ -83,8 +83,8 @@ export default function Page() {
       </section>
 
       <section id="updates" className="release-updates" aria-labelledby="release-updates-title">
-        <div><p className="release-eyebrow">WEB APP UPDATE / {APP_VERSION}</p><h2 id="release-updates-title">Your system.<br />Your saved panel pal.</h2></div>
-        <ul><li><strong>One request, several tasks.</strong> Panel Pals keep an ordered plan and check each task against your saved manuals. Follow up about a step or correct a detail without starting again.</li><li><strong>See what is established.</strong> Supported steps keep their page references. Missing device details and procedures stay visible; planned work is never recorded as completed.</li><li><strong>Less to store on your phone.</strong> Choose Online AI with your own Groq or OpenAI API key, or keep Offline AI and saved-manual search. You choose which provider receives each conversation. OpenAI API charges are separate from ChatGPT subscriptions.</li><li><strong>Your notes stay yours.</strong> Saved manuals, conversations, fault readings and support-call handovers remain on your device. Online keys last only for the current tab. Manual search is available without running AI.</li></ul>
+        <div><p className="release-eyebrow">WEB APP &amp; ANDROID / {APP_VERSION}</p><h2 id="release-updates-title">Your Tool box.<br />Ready on site.</h2></div>
+        <ul><li><strong>Four tools on Home.</strong> Calculate battery capacity, DC voltage drop, resistor colour codes and conductor resistance / R1 + R2. Each result shows its inputs, assumptions and formula.</li><li><strong>Works without signal.</strong> The calculators run on your device and remember your last inputs. Use your equipment and cable documentation for the applicable limits.</li><li><strong>The same field kit on Android.</strong> The updated APK includes the current web features, Tool box, file imports and Save As exports. Install it over the existing FINDR app to keep its saved data.</li><li><strong>Your panel pals stay with you.</strong> Saved manuals, conversations, fault readings and support-call handovers remain on your device. Online AI remains an explicit choice; manual search is available without running a model.</li></ul>
       </section>
 
       <section id="install" className="release-install" aria-labelledby="release-install-title">
@@ -102,9 +102,9 @@ export default function Page() {
           </article>
           <article className="release-install-card">
             <div className="release-install-card-head"><h3>Android</h3><span>APK / WEB APP</span></div>
-            <p>Use the web app for the latest features, or install the Android APK with its bundled field kit. Update an existing APK by installing the newer file. Save manual PDFs while online.</p>
+            <p>The APK includes the current field kit and Tool box. Update an existing APK by installing the newer file. Save manual PDFs while online.</p>
             <a href={apkUrl} download={'FINDR-' + APK_VERSION + '.apk'}>Download Android APK <Arrow download /></a>
-            <small>APK {APK_VERSION} · Android 8 or later · Web app {APP_VERSION}</small>
+            <small>APK {APK_VERSION} · Android 8 or later · Hosted on GitHub · Web app {APP_VERSION}</small>
           </article>
         </div>
       </section>

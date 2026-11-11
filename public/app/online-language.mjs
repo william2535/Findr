@@ -1,5 +1,6 @@
 // Explicit, per-user online inference. Credentials exist only in this module's
 // memory; they never enter a job record, storage, a URL or an error message.
+import {nativeOnlineFetch} from './native-platform.mjs';
 import {validOnlineConsent} from './helper-mode.mjs';
 import {normalizeAllowance} from './online-usage.mjs';
 import {getOnlineProvider} from './online-language-policy.mjs';
@@ -67,7 +68,7 @@ function verifiedReply(value,payload,elapsedMs,provider){
 }
 
 /** Injectable transport for tests; production always uses a fixed same-origin URL. */
-export function createOnlineLanguage({fetchImpl=(...args)=>globalThis.fetch(...args),getOnline=()=>globalThis.navigator?.onLine!==false,getOrigin=()=>globalThis.location?.origin,timeoutMs=50000,now=()=>performance.now(),wallNow=()=>Date.now(),supported=()=>typeof globalThis.fetch==='function'&&typeof AbortController==='function'}={}){
+export function createOnlineLanguage({fetchImpl=nativeOnlineFetch,getOnline=()=>globalThis.navigator?.onLine!==false,getOrigin=()=>globalThis.location?.origin,timeoutMs=50000,now=()=>performance.now(),wallNow=()=>Date.now(),supported=()=>typeof globalThis.fetch==='function'&&typeof AbortController==='function'}={}){
  const sessions=new Map(),usageListeners=new Set();let usageProviderId='groq';
  const sessionFor=(providerId='groq')=>{const provider=getOnlineProvider(providerId);if(!provider)throw fail('ONLINE_PROVIDER_INVALID','setup');if(!sessions.has(providerId))sessions.set(providerId,{key:'',generation:0,allowance:null,active:new Set()});return {provider,session:sessions.get(providerId)};};
  const getOnlineUsage=(providerId=usageProviderId)=>{const {provider,session}=sessionFor(providerId);return {providerId:provider.id,providerName:provider.name,hasKey:!!session.key,allowance:session.allowance?structuredClone(session.allowance):null};};

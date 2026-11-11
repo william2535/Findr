@@ -52,3 +52,7 @@ yarn-error.log*
 # Local Python fixture-generation bytecode.
 __pycache__/
 *.pyc
+
+# Current APK is published on GitHub; too large for the Sites source host.
+# Keep the local artifact and checksum; GitHub backup retains an explicit copy.
+/public/releases/FINDR-0.37.0.apk

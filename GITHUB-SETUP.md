@@ -10,6 +10,10 @@ No provider key belongs in the Site environment, Worker bindings, repository or 
 
 Web 0.36.0 also offers [OpenAI API setup](docs/openai-panel-pals.md). This is an explicit paid-API option alongside Groq; a ChatGPT login/subscription does not supply an API key or API credits. Each engineer enters their own key in FINDR for the current in-memory session. No provider key belongs in environment variables, source, or this backup. Authenticated provider inference remains unverified in the release evidence.
 
+## Current Android release artifact
+
+The 0.37.0 source backup also retains the verified `public/releases/FINDR-0.37.0.apk` and its checksum as an explicit release artifact. The Sites source Git commit ignores this one large binary because its source server cannot accept the blob; all editable build source is retained. The APK is also published separately through the `android-v0.37.0` GitHub release before the website routes to it. Private signing material remains excluded. See `BACKUP-PROVENANCE.json` for publication status, SHA-256 and the exact source revision; preparing a backup does not itself publish a website or an APK release. Historical export exclusions remain unchanged.
+
 ## Import into GitHub
 
 1. Extract the ZIP and open its `FINDR/` directory.

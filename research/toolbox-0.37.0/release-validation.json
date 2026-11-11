@@ -1,0 +1,38 @@
+{
+  "version": "0.37.0",
+  "androidVersionCode": 27,
+  "package": "com.findr.app",
+  "apkBytes": 73458195,
+  "apkSha256": "e6f91ded97b687b3a69ebfeee46e9a0c3a43b9679ef4fca7b63bf9b5a3a3e37f",
+  "signerSha256": "6075a73725dac5a3cc1f7b6b32c5e1df907cd1ca4b5b611f4c1c1d2fd502fefd",
+  "apkSignatures": [
+    "v2",
+    "v3"
+  ],
+  "zipAligned": true,
+  "bundledAppFilesCompared": 1388,
+  "zipCrcAndUniqueEntries": true,
+  "oldApkUnchanged": true,
+  "nodeTests": {
+    "passed": 1868,
+    "failed": 0,
+    "skipped": 0
+  },
+  "typecheck": true,
+  "webBuild": true,
+  "publicAssetGate": true,
+  "offlineBuild": "7423eeefce3a",
+  "browserChecks": {
+    "chromium154": 7,
+    "webkit26": 5,
+    "realChromiumColdOffline": true,
+    "webkitOffline": false
+  },
+  "physicalAndroid": false,
+  "androidEmulator": false,
+  "physicalIPhone": false,
+  "authenticatedAiProviderCalls": false,
+  "currentApkPublished": false,
+  "websitePublished": false,
+  "externalApkExcludedFromSitesGit": true
+}

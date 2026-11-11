@@ -1,0 +1,111 @@
+{
+  "status": "passed",
+  "recordedAt": "2026-11-11T23:28:55.892Z",
+  "browser": "chromium",
+  "profile": "/workspace/findr-toolbox037-chromium-jxd0f4",
+  "physicalIPhone": false,
+  "androidTested": false,
+  "checks": [
+    {
+      "name": "Normal Home offers all four calculators and opens the Tool box menu at 390px"
+    },
+    {
+      "name": "Every Home calculator link reaches a working calculation with units and fitting mobile results",
+      "evidence": {
+        "battery": "Calculated capacity: 2.65 Ah before any allowance.",
+        "voltage": "Cable drop 1.14933 V (4.78889%); arithmetic load voltage 22.8507 V.",
+        "resistor": "1 kΩ ±1% · 100 ppm/°C.",
+        "resistance": "R1 0.3448 Ω + R2 0.574667 Ω = 0.919467 Ω."
+      }
+    },
+    {
+      "name": "Physical keyboard Enter, validation recovery and reduced-height phone viewport remain usable"
+    },
+    {
+      "name": "Saved drafts survive reload and calculators remain operable with reduced motion"
+    },
+    {
+      "name": "Desktop Home layout and calculator retain saved inputs without overflow"
+    },
+    {
+      "name": "Real cached shell cold-reloads offline; all four draft-backed calculators and existing Panel Pals/Manuals remain accessible",
+      "evidence": {
+        "ready": true,
+        "build": "7423eeefce3a",
+        "version": "0.37.0",
+        "verification": "sha256-v1"
+      }
+    },
+    {
+      "name": "Calculator drafts stay separate from saved fault logs; no page error, model download or provider call"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "forbiddenRequests": [],
+  "scope": "Normal Home links, actual calculators and local drafts. Chromium real service-worker cold reload with network disabled; WebKit online layout only (executor CacheStorage limitation). Reduced viewport simulates available keyboard space, not an actual iPhone keyboard.",
+  "browserVersion": "154.0.8037.57",
+  "before": {
+    "log": {
+      "id": "qa-log",
+      "test": "PSU output",
+      "raw": "24.1 V",
+      "createdAt": 100
+    },
+    "pals": [
+      {
+        "id": "qa-toolbox-pal",
+        "name": "Tool box preservation QA",
+        "discipline": "fire",
+        "scope": {
+          "kind": "manuals",
+          "label": "Synthetic preservation scope"
+        },
+        "conversations": [
+          {
+            "schemaVersion": 1,
+            "engineVersion": "2026-11-11.9",
+            "id": "qa-toolbox-conversation",
+            "title": "Preserved separate fault log",
+            "createdAt": 1794439737474,
+            "updatedAt": 1794439737474,
+            "messages": [
+              {
+                "id": "saved-toolbox-message",
+                "role": "user",
+                "text": "This synthetic fault log must not absorb calculator results.",
+                "createdAt": 100
+              }
+            ],
+            "context": {
+              "observations": [],
+              "answeredQuestions": [],
+              "knownFields": {},
+              "pendingQuestion": null,
+              "investigation": null
+            }
+          }
+        ],
+        "activeConversationId": "qa-toolbox-conversation",
+        "selectedManualIds": [],
+        "requiredManualIds": [],
+        "manualStates": {},
+        "createdAt": 1794439737475,
+        "updatedAt": 1794439737476,
+        "revision": 1,
+        "appearance": {
+          "icon": "terminal",
+          "colour": "yellow"
+        }
+      }
+    ],
+    "drafts": null
+  },
+  "shell": {
+    "ready": true,
+    "build": "7423eeefce3a",
+    "version": "0.37.0",
+    "verification": "sha256-v1"
+  },
+  "finishedAt": "2026-11-11T23:29:07.533Z"
+}
