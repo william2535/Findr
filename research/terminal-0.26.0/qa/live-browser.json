@@ -1,0 +1,38 @@
+{
+  "synthetic": true,
+  "environment": "Linux Chromium; desktop and phone viewport emulation only",
+  "offline": false,
+  "results": [
+    {
+      "width": 390,
+      "status": "passed",
+      "offlineReadiness": null,
+      "import": {
+        "filename": "synthetic-premier-elite-scan.pdf",
+        "elapsedMs": 3749.051532999999
+      },
+      "responseMs": [
+        47.611360000000786
+      ],
+      "checks": [
+        "Actual opening character animation and tap-to-reveal",
+        "Actual Start shortcut / typed START retain one persisted transcript",
+        "Number and upload alias reach native picker; cancellation keeps job",
+        "Local text/scanned PDF upload and identity in transcript",
+        "Confirmed identity, free-text route, ordinary command words, Enter / Shift+Enter, cited next question",
+        "Saved source PDF opens",
+        "BACK corrects prior answer while retaining original and updating evidence",
+        "Ambiguous reading asks exact points, reference, condition, connection and source",
+        "Reading correction remains in continuous transcript and evidence history",
+        "Second manual resumes pending diagnostic step in same job",
+        "Scrollback survives typing / new reply; Latest message follows output",
+        "Reload preserves full messages / evidence and does not replay introduction",
+        "Reduced motion renders new messages immediately",
+        "390×500 keyboard-like viewport, composer/outcomes reachable",
+        "Give up remains conversational, saves handover and exports reviewed complete record",
+        "Fault found conversation confirms linked evidence separately from parts/retests/restoration"
+      ]
+    }
+  ],
+  "status": "passed"
+}

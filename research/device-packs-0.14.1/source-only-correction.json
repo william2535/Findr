@@ -1,0 +1,13 @@
+{
+  "failed_ids": [
+    "device-doc-ems-0df7986de600",
+    "device-doc-ems-2f0d72961ef4",
+    "device-doc-ems-777d6bd3e405",
+    "device-doc-ems-c103ba80a56c",
+    "device-doc-ems-c40857c87e50",
+    "device-doc-ems-de2c0fb8aa1f"
+  ],
+  "action": "retain identity and source; disable unavailable automatic delivery",
+  "ems_pack_downloadable_pdfs": 2,
+  "ems_pack_source_only_document_records": 6
+}

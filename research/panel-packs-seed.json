@@ -1,0 +1,312 @@
+[
+  {
+    "id": "gent-panels",
+    "brand": "Gent",
+    "title": "Gent panel pack",
+    "description": "All 16 Gent panel manual records plus the Vigilon Plus specification guide indexed under Honeywell. Includes historical Vigilon, VIG1, Compact, Plus, Nano, Xenex and SenTRI records.",
+    "record_ids": [
+      "facp-02cf0136-1388-437b-8386-c2f944752741",
+      "facp-56e1a364-8eb4-48b9-a0d1-4152226bca32",
+      "facp-7538be76-f958-46e4-99f6-c718601bb349",
+      "facp-8f3116f7-a850-46ce-9e84-ed197dea0367",
+      "facp-d442a96b-9a39-4e76-b773-5f7676e175dc",
+      "facp-e33036de-023c-4c4c-b17a-ad7787c7549a",
+      "facp-faba6936-2889-4bc9-b699-8b59f7fef64c",
+      "gent-33fdf5de07b1",
+      "gent-4d383857e271",
+      "gent-6f93f6f727f3",
+      "gent-88d7bb063fd0",
+      "gent-8d26fbbe29f6",
+      "gent-945e977903d9",
+      "gent-c2e20b406444",
+      "gent-da1f16c399e3",
+      "gent-f03fe5ba8e30",
+      "facp-5bb98c9f-d1d2-432f-a17a-4e80e2852d0d"
+    ],
+    "panel_ids": [
+      "gent-vigilon-compact",
+      "gent-compact-plus",
+      "gent-vigilon-plus",
+      "gent-nano",
+      "gent-xenex"
+    ],
+    "scope": "All identified Gent fire-control-panel manuals in the repository snapshot. Not a claim to every manual ever published; retained revisions may overlap.",
+    "category": "fire",
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "source_manifest": "data/app-manifest.json",
+    "record_count": 17,
+    "direct_pdf_count": 17,
+    "records": [
+      {
+        "id": "facp-02cf0136-1388-437b-8386-c2f944752741",
+        "title": "VIG1-24 and VIG1-72 \u2014 Installation (2015, source-listed)",
+        "models": [
+          "VIG1-24 and VIG1-72"
+        ],
+        "download_url": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vig1-24_and_vig1-72-installation-2015.pdf",
+        "source_url": "https://facpmanuals.com/manuals/honeywell_gent"
+      },
+      {
+        "id": "facp-56e1a364-8eb4-48b9-a0d1-4152226bca32",
+        "title": "Vigilon Plus Basic Commissioning Training \u2014 Manual (2017, source-listed)",
+        "models": [
+          "Vigilon Plus Basic Commissioning Training"
+        ],
+        "download_url": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon_plus_basic_commissioning_training-2017.pdf",
+        "source_url": "https://facpmanuals.com/manuals/honeywell_gent"
+      },
+      {
+        "id": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+        "title": "Vigilon 4/6 Loop and Compact \u2014 Installation (2015, source-listed)",
+        "models": [
+          "Vigilon 4/6 Loop and Compact"
+        ],
+        "download_url": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon_and_vigilon_compact-installation-2015.pdf",
+        "source_url": "https://facpmanuals.com/manuals/honeywell_gent"
+      },
+      {
+        "id": "facp-8f3116f7-a850-46ce-9e84-ed197dea0367",
+        "title": "Vigilon \u2014 Operating Instructions (2009, source-listed)",
+        "models": [
+          "Vigilon"
+        ],
+        "download_url": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon-operating-instructions-2009.pdf",
+        "source_url": "https://facpmanuals.com/manuals/honeywell_gent"
+      },
+      {
+        "id": "facp-d442a96b-9a39-4e76-b773-5f7676e175dc",
+        "title": "Vigilon Compact Control Panel \u2014 Installation (2010, source-listed)",
+        "models": [
+          "Vigilon Compact Control Panel"
+        ],
+        "download_url": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon_compact_control_panel-installation-2010-rev3.pdf",
+        "source_url": "https://facpmanuals.com/manuals/honeywell_gent"
+      },
+      {
+        "id": "facp-e33036de-023c-4c4c-b17a-ad7787c7549a",
+        "title": "Vigilon \u2014 Installation (2010, source-listed)",
+        "models": [
+          "Vigilon"
+        ],
+        "download_url": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon-installation-2010.pdf",
+        "source_url": "https://facpmanuals.com/manuals/honeywell_gent"
+      },
+      {
+        "id": "facp-faba6936-2889-4bc9-b699-8b59f7fef64c",
+        "title": "Vigilon \u2014 Operations (1999, source-listed)",
+        "models": [
+          "Vigilon"
+        ],
+        "download_url": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon-operations-1999.pdf",
+        "source_url": "https://facpmanuals.com/manuals/honeywell_gent"
+      },
+      {
+        "id": "gent-33fdf5de07b1",
+        "title": "xenex-panel-installation-and-commissioning-manual",
+        "models": [
+          "Xenex"
+        ],
+        "download_url": "https://www.midlandfiresecurity.co.uk/wp-content/uploads/2019/05/xenex-panel-installation-and-commissioning-manual.pdf",
+        "source_url": "https://www.midlandfiresecurity.co.uk/client-support-training/instruction-manuals-and-documentation/"
+      },
+      {
+        "id": "gent-4d383857e271",
+        "title": "Vigilon \u2014 Installation manual",
+        "models": [
+          "Vigilon"
+        ],
+        "download_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/manuals-and-guides/installation-guides/gent-112425/hon-ba-fire-vig-ins.pdf?download=false",
+        "source_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/manuals-and-guides/installation-guides/gent-112425/hon-ba-fire-vig-ins.pdf?download=false"
+      },
+      {
+        "id": "gent-6f93f6f727f3",
+        "title": "gent-honeywell-vigilon-compact-Vig-Comp-Oper_2km-4188-1027",
+        "models": [
+          "Vigilon Compact"
+        ],
+        "download_url": "https://www.midlandfiresecurity.co.uk/wp-content/uploads/2019/05/gent-honeywell-vigilon-compact-Vig-Comp-Oper_2km-4188-1027.pdf",
+        "source_url": "https://www.midlandfiresecurity.co.uk/client-support-training/instruction-manuals-and-documentation/"
+      },
+      {
+        "id": "gent-88d7bb063fd0",
+        "title": "xenex-2-operating-instructions-4188-424",
+        "models": [
+          "Xenex"
+        ],
+        "download_url": "https://www.midlandfiresecurity.co.uk/wp-content/uploads/2019/05/xenex-2-operating-instructions-4188-424.pdf",
+        "source_url": "https://www.midlandfiresecurity.co.uk/client-support-training/instruction-manuals-and-documentation/"
+      },
+      {
+        "id": "gent-8d26fbbe29f6",
+        "title": "nano-v2-panel-operating-manual",
+        "models": [
+          "Nano"
+        ],
+        "download_url": "https://www.midlandfiresecurity.co.uk/wp-content/uploads/2019/05/nano-v2-panel-operating-manual.pdf",
+        "source_url": "https://www.midlandfiresecurity.co.uk/client-support-training/instruction-manuals-and-documentation/"
+      },
+      {
+        "id": "gent-945e977903d9",
+        "title": "gent-honeywell-vigilon-Vig-4-6-loops-Oper_2km-4188-1025",
+        "models": [
+          "Vigilon"
+        ],
+        "download_url": "https://www.midlandfiresecurity.co.uk/wp-content/uploads/2019/05/gent-honeywell-vigilon-Vig-4-6-loops-Oper_2km-4188-1025.pdf",
+        "source_url": "https://www.midlandfiresecurity.co.uk/client-support-training/instruction-manuals-and-documentation/"
+      },
+      {
+        "id": "gent-c2e20b406444",
+        "title": "SenTRI ONE installation instructions",
+        "models": [
+          "SenTRI ONE"
+        ],
+        "download_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Sentri_one%20fire%20alarm%20Install%20Manual.pdf",
+        "source_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+      },
+      {
+        "id": "gent-da1f16c399e3",
+        "title": "SenTRI system operating instructions",
+        "models": [
+          "SenTRI"
+        ],
+        "download_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Sentri%20one%20fire%20panel%20user%20manual.pdf",
+        "source_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+      },
+      {
+        "id": "gent-f03fe5ba8e30",
+        "title": "Vigilon \u2014 Operating instructions",
+        "models": [
+          "Vigilon"
+        ],
+        "download_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/manuals-and-guides/repair-and-maintenance-guides/gent-112425/hon-ba-fire-vigop.pdf?download=false",
+        "source_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/manuals-and-guides/repair-and-maintenance-guides/gent-112425/hon-ba-fire-vigop.pdf?download=false"
+      },
+      {
+        "id": "facp-5bb98c9f-d1d2-432f-a17a-4e80e2852d0d",
+        "title": "Vigilon Plus Consultants Specification Guide \u2014 Manual (2021, source-listed)",
+        "models": [
+          "Vigilon Plus Consultants Specification Guide"
+        ],
+        "download_url": "https://docs.facpmanuals.com/manuals/Honeywell/vigilon_plus_consultants_specification_guide-2021.pdf",
+        "source_url": "https://facpmanuals.com/manuals/honeywell"
+      }
+    ],
+    "included_alias_brands": [
+      "Honeywell"
+    ]
+  },
+  {
+    "id": "advanced-mxpro5",
+    "brand": "Advanced",
+    "title": "MxPro 5 pack",
+    "description": "Core MxPro 5 user/product manuals and networking reference.",
+    "record_ids": [
+      "advanced-0254975c10bd",
+      "advanced-a18ea5cccf04",
+      "advanced-aa801f2a3d3c",
+      "advanced-e3c12063d700"
+    ],
+    "panel_ids": [
+      "advanced-mxpro5"
+    ],
+    "scope": "Curated MxPro 5 family pack. Not all Advanced records.",
+    "category": "fire",
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "source_manifest": "data/app-manifest.json",
+    "record_count": 4,
+    "direct_pdf_count": 4,
+    "records": [
+      {
+        "id": "advanced-0254975c10bd",
+        "title": "Advanced MxPro5 \u2014 User guide",
+        "models": [
+          "MxPro5"
+        ],
+        "download_url": "https://irp-cdn.multiscreensite.com/cdbd5f30/files/uploaded/Liberty%20Systems_Advanced%20MxPro5%20Fire%20Alarm%20User%20Manual.pdf",
+        "source_url": "https://www.libertysystems.co.uk/Fire-Alarm-User-Manuals"
+      },
+      {
+        "id": "advanced-a18ea5cccf04",
+        "title": "MxPro5 \u2014 Product Manual",
+        "models": [
+          "MxPro5"
+        ],
+        "download_url": "https://www.srsalertfire.ie/uploads/FCpZ1eWk/680-165-05MxPro5ProductManual.pdf",
+        "source_url": "https://www.srsalertfire.ie/product-info/product-literature"
+      },
+      {
+        "id": "advanced-aa801f2a3d3c",
+        "title": "Advanced mxpro5 5000 series",
+        "models": [
+          "mxpro5 5000 series"
+        ],
+        "download_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Advanced%20mxpro5_5000_series.pdf",
+        "source_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+      },
+      {
+        "id": "advanced-e3c12063d700",
+        "title": "Mx-5000 Networking",
+        "models": [
+          "MxPro5 networking"
+        ],
+        "download_url": "https://www.srsalertfire.ie/uploads/8bdfmtUM/680-502-01Mx-5000Networking.pdf",
+        "source_url": "https://www.srsalertfire.ie/product-info/product-literature"
+      }
+    ]
+  },
+  {
+    "id": "protec-6500",
+    "brand": "Protec",
+    "title": "Protec 6500 pack",
+    "description": "6500/6600 commissioning, loop commissioning and 6300-to-6500 upgrade references.",
+    "record_ids": [
+      "protec-342a0d542c7d",
+      "protec-aee99ea8ed2b",
+      "protec-f54869c43a89"
+    ],
+    "panel_ids": [
+      "protec-6500"
+    ],
+    "scope": "Curated 6500 family pack. Confirm edition and model; not all Protec records.",
+    "category": "fire",
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "source_manifest": "data/app-manifest.json",
+    "record_count": 3,
+    "direct_pdf_count": 3,
+    "records": [
+      {
+        "id": "protec-342a0d542c7d",
+        "title": "Algo-Tec 6500 / 6600 \u2014 Loop commissioning manual",
+        "models": [
+          "6500",
+          "6600"
+        ],
+        "download_url": "https://www.acornfiresecurity.com/index.php?filename=6500-Loop-Commissioning.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+        "source_url": "https://www.acornfiresecurity.com/protec/protec-algo-tec-6500-fire-alarm-control-panel-1-4-loop?page=18"
+      },
+      {
+        "id": "protec-aee99ea8ed2b",
+        "title": "Algo-Tec 6500 / 6600 \u2014 Commissioning manual",
+        "models": [
+          "6500",
+          "6600"
+        ],
+        "download_url": "https://www.acornfiresecurity.com/index.php?filename=6500-commissioning-manual.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+        "source_url": "https://www.acornfiresecurity.com/protec/protec-algo-tec-6500-fire-alarm-control-panel-1-4-loop?page=18"
+      },
+      {
+        "id": "protec-f54869c43a89",
+        "title": "6300 to 6500 \u2014 Panel upgrade guide",
+        "models": [
+          "6300",
+          "6500"
+        ],
+        "download_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6300-6500-Upgrade-1.pdf",
+        "source_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6300-6500-Upgrade-1.pdf"
+      }
+    ]
+  }
+]

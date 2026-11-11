@@ -1,0 +1,36 @@
+{
+  "base": "https://findr-fault-finder.floodyyy21.chatgpt.site",
+  "releaseCommit": "6b8875ccaf0899ad45121677a08842b007715cac",
+  "checks": [
+    {
+      "path": "app/version.mjs",
+      "bytes": 722,
+      "sha256": "5e2871e8b47f7c034bd1721dd8cb10563491fc1f199808c72f6d24f483f868ba",
+      "matchesRelease": true
+    },
+    {
+      "path": "app/pdf-runtime.mjs",
+      "bytes": 4506,
+      "sha256": "7ec4f437f5d1efd5957e0c1e23e71e8ccc9ac0ede75cbd49760836419acf6e81",
+      "matchesRelease": true
+    },
+    {
+      "path": "app/precache.js",
+      "bytes": 196391,
+      "sha256": "1a00327cfd7723605186beafa7dd0194711cdd422cc3332e617b883abd11c830",
+      "matchesRelease": true
+    },
+    {
+      "path": "app/quick-questions-engine.mjs",
+      "bytes": 56702,
+      "sha256": "fe540c712d12d071e141a92da40d187b963f4a2ebfe6e01e85fca6331df526b6",
+      "matchesRelease": true
+    },
+    {
+      "path": "demos/findr-0.27.0-assistant-demo.mp4",
+      "bytes": 641636,
+      "sha256": "fbe658a6a00407de3e4ca90528614106b2772869cab324a352041d17e1e97141",
+      "matchesRelease": true
+    }
+  ]
+}

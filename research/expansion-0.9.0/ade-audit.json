@@ -1,0 +1,184 @@
+{
+  "profileId": "ade-accenta-optima",
+  "reviewedAt": "2026-10-29",
+  "baseline": "IU1-0040 Rev1.0 User Guide + IE1-0040 Rev1.1 Engineer Manual, combined original manufacturer booklet. Accenta G4 LCD baseline; no G3 or built-in Optima compact LED menu substitution.",
+  "source": {
+    "id": "ade-manuals",
+    "title": "Accenta/Optima User Guide and Accenta G4 Engineer’s Manual",
+    "edition": "IU1-0040 Rev 1.0 (user); IE1-0040 Rev 1.1 (engineer)",
+    "publisher": "Honeywell Security / ADE",
+    "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Accenta%20-%20Optima%20User%20Guide.pdf",
+    "totalPdfPages": 80,
+    "sha256": "63d08f22e4989314328c026abf5c9ff006fb93c5104ad50f37bd4c22f1128a8f",
+    "pageNumbering": "User: PDF 1–24, printed Arabic page +4. Engineer: PDF 25–80, printed Arabic page +28.",
+    "scope": "Original manufacturer booklet in a third-party archive. Accenta G4 with 8EP417A LCD keypad; the LED/Optima compact variations are distinguished. Revision footers are on PDF24 and PDF80.",
+    "archiveRecordId": "ade-cabf3c545321"
+  },
+  "sourceEvidence": {
+    "file": "emulator-research-0.9.0/ade/user.pdf",
+    "pdfPages": 80,
+    "userRevisionFooterPdfPage": 24,
+    "engineerRevisionFooterPdfPage": 80,
+    "keypadIllustrationPdfPage": 25,
+    "keypadModel": "8EP417A",
+    "keypadRows": [
+      [
+        "1",
+        "2",
+        "3",
+        "CHIME"
+      ],
+      [
+        "4",
+        "5",
+        "6",
+        "OMIT"
+      ],
+      [
+        "7",
+        "8",
+        "9",
+        "PROG"
+      ],
+      [
+        "▲",
+        "0",
+        "RESET",
+        "SET"
+      ]
+    ],
+    "separateKeys": [
+      "PA left",
+      "PA right"
+    ],
+    "arrowCount": 1,
+    "descriptorLibraryPdfPage": 77,
+    "descriptorCount": 25
+  },
+  "notUsedAsImplementationBaseline": [
+    {
+      "url": "https://www.centralproperties.co.uk/wp-content/uploads/2014/05/Burglar-Alarm-Instructions-Accenta-Optima.pdf",
+      "edition": "IE1-0040 Rev1.0, 56-page engineer manual",
+      "sha256": "0c6168b9f4fc82ea15088a05e86e99ca063333399dced283ac4137bb54f612dd",
+      "reason": "Older revision; retained as corroboration only, not mixed into the selected Rev1.1 implementation."
+    }
+  ],
+  "unavailableOfficialDownloads": [
+    {
+      "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/manuals-and-guides/user-manuals/IE1-0040-Rev1-engineer%2520pdf.pdf",
+      "result": "HTTP404"
+    },
+    {
+      "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/manuals-and-guides/user-manuals/IU1-0040-Rev1-user%2520pdf.pdf",
+      "result": "HTTP404"
+    }
+  ],
+  "documentedEntries": 263,
+  "guidedTasks": 7,
+  "sourceConflicts": [
+    {
+      "id": "flag2-set-wording",
+      "title": "Flag2 SET wording conflict",
+      "question": "Does SET save, toggle, or depend on selection stage in Flag2 on this firmware?",
+      "reason": "Engineer p23 first says digits or SET toggle, then explicitly says SET saves and RESET leaves; the same page diagram and p21 also use SET to save. The emulator follows the repeated save instruction and uses digits to toggle.",
+      "priority": "medium",
+      "affectedNodeIds": [
+        "a-e3-2"
+      ],
+      "neededEvidence": "A source-matched keypad recording of Flag2 selection, SET and RESET."
+    },
+    {
+      "id": "physical-verification",
+      "title": "Physical keypad comparison",
+      "question": "Can an 8EP417A on Accenta G4 be checked against these specific manual revisions?",
+      "reason": "The menu tree is pinned to original printed sources; LCD spacing, key-repeat, beeps and firmware variation have not been measured on hardware.",
+      "priority": "high",
+      "affectedNodeIds": [
+        "a-engineer",
+        "a-setting-omit",
+        "a-e6"
+      ],
+      "neededEvidence": "A consented video of the relevant menu operations with panel and software version visible."
+    },
+    {
+      "id": "omit-arrow",
+      "title": "Omission arrow behaviour",
+      "question": "Does ▲ only browse, or also omit, in the LCD user omission screen?",
+      "reason": "User p6 says zone number or up arrow to be omitted, without a clear separate browse/toggle description. The emulator uses digits to omit and ▲ to browse, and never asserts repeated-digit reinstatement.",
+      "priority": "high",
+      "affectedNodeIds": [
+        "a-setting-omit"
+      ],
+      "neededEvidence": "A short keypad recording showing ▲ and repeating the same zone digit during omission."
+    },
+    {
+      "id": "timer-zero",
+      "title": "Bell time zero conflict",
+      "question": "Does 00 mean continuous on this precise revision?",
+      "reason": "Engineer p25 gives 01–99 minutes; summary p52 gives 00–99 and specifications p46 mention continuous, without explicitly assigning 00. The editable range is conservatively 01–99.",
+      "priority": "medium",
+      "affectedNodeIds": [
+        "a-e7-1"
+      ],
+      "neededEvidence": "Manufacturer clarification or G4 firmware-specific keypad evidence for 00."
+    },
+    {
+      "id": "exit-time-label",
+      "title": "Exit-time diagram typo",
+      "question": "Confirm menu5 for exit time on hardware.",
+      "reason": "Engineer p39 LCD prose, p34 structure and p52 summary identify Exit Time as5; a p39 diagram/LED instruction wrongly repeats4. The emulator follows the mutually corroborated LCD route5.",
+      "priority": "medium",
+      "affectedNodeIds": [
+        "a-eP-1-exit",
+        "a-eP-2-exit",
+        "a-eP-3-exit"
+      ],
+      "neededEvidence": "Keypad route PROG, program,5."
+    },
+    {
+      "id": "duress-permission",
+      "title": "Duress permission conflict",
+      "question": "Confirm user1 cannot program duress in this baseline.",
+      "reason": "Engineer p28 introductory text is inconsistent with User Guide p13, which explicitly restricts duress setup/edit/delete to engineer programming. The user roots follow the restrictive, explicit user-guide rule.",
+      "priority": "medium",
+      "affectedNodeIds": [
+        "a-e8-3",
+        "a-user1-codes"
+      ],
+      "neededEvidence": "Hardware permission check or corrected manufacturer manual."
+    },
+    {
+      "id": "omit-defaults",
+      "title": "Omit-allow default conflict",
+      "question": "Which factory omission eligibility applies to the actual firmware?",
+      "reason": "Engineer p31 says all zones enabled as Omit Allow; the LED notes on p33 say default off. No factory-default claim is made; all initial settings are labelled FINDR fixtures.",
+      "priority": "low",
+      "affectedNodeIds": [
+        "a-eO-2"
+      ],
+      "neededEvidence": "Corrected manufacturer defaults table or firmware-specific record."
+    },
+    {
+      "id": "hardware-effects",
+      "title": "Physical and signalling effects",
+      "question": "Which physical demonstrations would you like verified next?",
+      "reason": "No live bell, communicator, PA, tamper, timed rearm, entry countdown or ARC is connected. LEDs, sounds and generated events are illustrative local feedback.",
+      "priority": "low",
+      "affectedNodeIds": [
+        "a-e0",
+        "a-e1",
+        "a-e2",
+        "a-e3-1",
+        "a-setting"
+      ],
+      "neededEvidence": "Controlled hardware comparison for the exact system variant."
+    }
+  ],
+  "verification": {
+    "hardwareVerified": false,
+    "testCommand": "node tests/emulator-ade.test.mjs",
+    "testsPassed": 19,
+    "testsFailed": 0,
+    "notes": "Every factual map node has an exact combined-PDF page reference. All application values and events are fictional. Runtime tests are recorded in the family test file."
+  }
+}

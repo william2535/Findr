@@ -1,0 +1,155 @@
+{
+  "browser": "chromium",
+  "offlineVerified": false,
+  "checks": [
+    "Saved Blob text PDF is read and identified",
+    "Saved PDF and extracted pages reopen after reload",
+    "Actual extraction runtime error retains original stack and offers retry",
+    "Legacy typed-array bytes reopen without changing saved representation",
+    "Previous processor record is retained and reindexed without extraction/OCR",
+    "Scanned PDF uses real local OCR",
+    "synthetic-password-protected.pdf classified PDF_PASSWORD_PROTECTED",
+    "synthetic-malformed.pdf classified INVALID_PDF",
+    "synthetic-unreadable.pdf classified UNREADABLE_MANUAL",
+    "Cancellation exits without a partial analysis",
+    "Save failure is visible and recoverable",
+    "Safe retry reuses intact analysis",
+    "Real archive Advanced MxPro4 PDF72pages"
+  ],
+  "measurements": [
+    {
+      "type": "synthetic text",
+      "pages": 3,
+      "elapsedMs": 294.7999999988824,
+      "timing": {
+        "extractionMs": 52,
+        "ocrMs": 0,
+        "indexingMs": 15,
+        "totalMs": 290
+      }
+    },
+    {
+      "type": "saved text reuse",
+      "elapsedMs": 8.599999999627471
+    },
+    {
+      "type": "synthetic scanned",
+      "pages": 2,
+      "elapsedMs": 2494,
+      "timing": {
+        "extractionMs": 30,
+        "ocrMs": 2325,
+        "indexingMs": 19,
+        "totalMs": 2486
+      }
+    },
+    {
+      "type": "synthetic-password-protected.pdf",
+      "elapsedMs": 99.40000000037253,
+      "errorCode": "PDF_PASSWORD_PROTECTED"
+    },
+    {
+      "type": "synthetic-malformed.pdf",
+      "elapsedMs": 1.099999999627471,
+      "errorCode": "INVALID_PDF"
+    },
+    {
+      "type": "synthetic-unreadable.pdf",
+      "elapsedMs": 737.3000000007451,
+      "errorCode": "UNREADABLE_MANUAL"
+    },
+    {
+      "type": "real Advanced archive",
+      "sha256": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e",
+      "pages": 72,
+      "elapsedMs": 964.6999999992549,
+      "timing": {
+        "extractionMs": 805,
+        "ocrMs": 0,
+        "indexingMs": 29,
+        "totalMs": 960
+      },
+      "identity": {
+        "systemTypes": [
+          "fire"
+        ],
+        "manufacturer": "Advanced",
+        "manufacturerCandidates": [
+          "Advanced"
+        ],
+        "model": null,
+        "models": [
+          "Mx-4200",
+          "Mx-4200/D",
+          "Mx-4400",
+          "Mx-4400/D",
+          "Mx-4200V",
+          "Mx-4400V",
+          "Mx-4400V/LE",
+          "Mx-4800V",
+          "Mx-4200V/LE"
+        ],
+        "familyOnly": false,
+        "equipmentType": "panel",
+        "equipmentTypes": [
+          "panel",
+          "PSU",
+          "detector",
+          "interface"
+        ],
+        "documentType": "Installation & Commissioning",
+        "revision": null,
+        "variants": [
+          "Mx-4200",
+          "Mx-4200/D",
+          "Mx-4400",
+          "Mx-4400/D",
+          "Mx-4200V",
+          "Mx-4400V",
+          "Mx-4400V/LE",
+          "Mx-4800V",
+          "Mx-4200V/LE"
+        ],
+        "requiresVariant": true,
+        "uncertain": true,
+        "confirmed": false,
+        "basis": "Unconfirmed suggestions extracted from manual contents. Confirm the installed label and applicable variant."
+      }
+    }
+  ],
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "hardwareConcurrency": 5,
+    "deviceMemory": 16,
+    "asyncIterator": "function",
+    "getReader": "function"
+  },
+  "runtimeFailure": {
+    "code": "PDF_RUNTIME_FAILED",
+    "message": "The PDF reader hit an error. Your manual and conversation are still saved. Retry, or open Error details.",
+    "details": {
+      "stage": "text-extraction",
+      "page": 1,
+      "pdfjsVersion": "5.6.205",
+      "runtime": {
+        "version": "2026-11-10.2",
+        "pdfjsVersion": "5.6.205",
+        "textReader": "ReadableStream.getReader",
+        "readableStreams": true,
+        "nativeAsyncIteration": true
+      },
+      "exception": {
+        "name": "Error",
+        "message": "The PDF reader hit an error. Your manual and conversation are still saved. Retry, or open Error details.",
+        "stack": "Error: The PDF reader hit an error. Your manual and conversation are still saved. Retry, or open Error details.\n    at codedError (http://127.0.0.1:8097/public/app/manual-analysis.mjs:16:58)\n    at classifyManualProcessingError (http://127.0.0.1:8097/public/app/manual-analysis.mjs:43:80)\n    at Module.analyseManual (http://127.0.0.1:8097/public/app/manual-analysis.mjs:273:23)\n    at async eval (eval at evaluate (:290:30), <anonymous>:6:9)\n    at async <anonymous>:316:30",
+        "code": "PDF_RUNTIME_FAILED",
+        "cause": {
+          "name": "TypeError",
+          "message": "SYNTHETIC reader runtime error",
+          "stack": "TypeError: SYNTHETIC reader runtime error\n    at prototype.streamTextContent (eval at evaluate (:290:30), <anonymous>:5:70)\n    at getPDFTextContent (http://127.0.0.1:8097/public/app/pdf-runtime.mjs:36:21)\n    at Module.analyseManual (http://127.0.0.1:8097/public/app/manual-analysis.mjs:221:53)\n    at async eval (eval at evaluate (:290:30), <anonymous>:6:9)\n    at async <anonymous>:316:30"
+        }
+      }
+    }
+  },
+  "passed": true
+}

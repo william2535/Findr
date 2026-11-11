@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-10",
+  "synthetic": false,
+  "sources": [
+    {
+      "recordId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+      "sha256": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+      "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+      "documentNumber": "4188-856",
+      "revision": "Issue 7, 07/15",
+      "models": [
+        "Vigilon",
+        "Vigilon 4/6 Loop and Compact",
+        "Vigilon Compact"
+      ],
+      "pageCount": 162,
+      "url": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon_and_vigilon_compact-installation-2015.pdf",
+      "bytes": 10265001,
+      "sha256Verified": true,
+      "procedurePages": [
+        81,
+        105
+      ],
+      "accessPages": [
+        53
+      ],
+      "documentIdentityPage": 1,
+      "printedPageNumbersMatchPDF": true,
+      "renderedAndReviewedPages": [
+        81,
+        105
+      ]
+    }
+  ]
+}

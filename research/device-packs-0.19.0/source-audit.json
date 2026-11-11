@@ -1,0 +1,150 @@
+{
+  "batch": "bosch-risco-devices-0.19.0",
+  "reviewed_date": "2026-11-02",
+  "scope": "Pictured identification and existing installation-document links only; no emulator behaviour, numeric fault comparator or commissioning procedure added.",
+  "checked_sources": [
+    {
+      "record_id": "bosch-0ba92138ab30",
+      "url": "https://resources.keenfinity.tech/public/documents/ISC_BDL2_WP6__WP12_Installation_Manual_all_2614427019.pdf",
+      "sha256": "435411de48f7f486996f0b81e9a13df5601ddec6aede3428d442473bcce876ed",
+      "bytes": 1527455,
+      "pages": 2,
+      "hash_matches_archive": true
+    },
+    {
+      "record_id": "bosch-3d8651b2effe",
+      "url": "https://resources.keenfinity.tech/public/documents/Blue_Line_Gen_2_Quick_Installation_Guide_all_71222140683.pdf",
+      "sha256": "5d9ac566dee9eec5e926f6e2ecc1df51b1d92f0326a06cf597453132045bfbe4",
+      "bytes": 2723247,
+      "pages": 2,
+      "hash_matches_archive": true
+    },
+    {
+      "record_id": "bosch-be9d38fc89d0",
+      "url": "https://resources.keenfinity.tech/public/documents/BlueLineGen2_Data_sheet_enUS_2614480139.pdf",
+      "sha256": "381a17151fbcb0ec9d5520f02224a08a177f7833e410cc00037aa2f74036d44e",
+      "bytes": 592891,
+      "pages": 4,
+      "hash_matches_archive": true
+    },
+    {
+      "record_id": "bosch-c221490fad45",
+      "url": "https://resources.keenfinity.tech/public/documents/ISC_BDL2_W12_Installation_Manual_all_2614400267.pdf",
+      "sha256": "bf32a06bb0ad0e0082cadaae7f606ab2e9e4e38927c279ed4239dad7eb363c5b",
+      "bytes": 928264,
+      "pages": 2,
+      "hash_matches_archive": true
+    },
+    {
+      "record_id": "risco-00a6655953a1",
+      "url": "https://www.pahedomotica.nl/wp-content/uploads/5IN1749_BWare-DT-G2-Detector-Installation-Instructions_multi.pdf",
+      "sha256": "17ba44aea0fbaa826d7cc12d3012f84b9b1513b640c2a4306ed03046371292ba",
+      "bytes": 682398,
+      "pages": 2,
+      "hash_matches_archive": true
+    },
+    {
+      "record_id": "risco-e8aee4e7a650",
+      "url": "https://www.casmarglobal.com/media/akeneo_connector/media_files/M/I/MI_INTRUSI__N_IWISE_DT25_AM_G3_9ec2.pdf",
+      "sha256": "d2fd6b2dd60c60dc4336ca7f0f6314067585ab47bbb5c968eb739096186c6404",
+      "bytes": 560055,
+      "pages": 2,
+      "hash_matches_archive": true
+    }
+  ],
+  "devices": [
+    {
+      "id": "bosch-device-blue-line-gen2-wp",
+      "part_numbers": [
+        "ISC-BDL2-WP6G",
+        "ISC-BDL2-WP12G",
+        "ISC-BDL2-WP12H"
+      ],
+      "linked_records": [
+        "bosch-0ba92138ab30"
+      ],
+      "manual_revision": "F.01U.140.810 | 10 | 2017.12",
+      "image_record_id": "bosch-be9d38fc89d0",
+      "image_pdf_page": 1,
+      "image_pdf_xref": 52,
+      "image_sha256": "be77ce37496b1c702af64f7f5f2d16c74df80099a2740f7fd289ee693098bf32",
+      "image_dimensions": [
+        557,
+        900
+      ]
+    },
+    {
+      "id": "bosch-device-blue-line-gen2-w12",
+      "part_numbers": [
+        "ISC-BDL2-W12G",
+        "ISC-BDL2-W12H"
+      ],
+      "linked_records": [
+        "bosch-c221490fad45"
+      ],
+      "manual_revision": "F.01U.140.813 | 10 | 2017.12",
+      "image_record_id": "bosch-be9d38fc89d0",
+      "image_pdf_page": 1,
+      "image_pdf_xref": 52,
+      "image_sha256": "be77ce37496b1c702af64f7f5f2d16c74df80099a2740f7fd289ee693098bf32",
+      "image_dimensions": [
+        557,
+        900
+      ]
+    },
+    {
+      "id": "risco-device-bware-rk515dtgl",
+      "part_numbers": [
+        "RK515DTGL"
+      ],
+      "linked_records": [
+        "risco-00a6655953a1"
+      ],
+      "manual_revision": "5IN1749 | 01/2012",
+      "image_record_id": "risco-00a6655953a1",
+      "image_pdf_page": 1,
+      "image_pdf_xref": 65,
+      "image_sha256": "efc9edac5b693393a778b12426d38148ff36f07a103d92a382e7769fd80abd04",
+      "image_dimensions": [
+        261,
+        405
+      ]
+    },
+    {
+      "id": "risco-device-iwise-dt-g3",
+      "part_numbers": [
+        "RK815DTG3",
+        "RK815DTG3A",
+        "RK825DTG3",
+        "RK825DTG3A"
+      ],
+      "linked_records": [
+        "risco-e8aee4e7a650"
+      ],
+      "manual_revision": "5IN2634 D | 08/2022",
+      "image_record_id": "risco-e8aee4e7a650",
+      "image_pdf_page": 1,
+      "image_pdf_xref": 77,
+      "image_sha256": "1456c110e5d7cdbb66ab981ff27b6376dd694611f387c8b39d30cd2978d1ff74",
+      "image_dimensions": [
+        357,
+        526
+      ]
+    }
+  ],
+  "review_decisions": [
+    "Bosch photograph is a representative Blue Line Gen2 family photo from the current Radionix/Bosch datasheet, not independent evidence of each suffix. Each card says so.",
+    "The 2019 quick guide was retrieved and hash-checked but not linked to the G/H cards: it names GE/HE variants and does not list the earlier H suffix. Suffixes were not collapsed.",
+    "The 2026 datasheet supplies the shared family photograph only; its later ordering list is not substituted for the applicable 2017 installation sheets.",
+    "The iWISE original PDF explicitly includes A-suffixed models beyond the abbreviated archive model array. All four complete codes are retained and covered by the same family sheet.",
+    "No catalogue records, manual URLs, document identities or download allowlists were modified. All existing devices and packs were preserved."
+  ],
+  "totals": {
+    "device_families": 150,
+    "device_packs": 18,
+    "new_device_families": 4,
+    "new_packs": 2,
+    "new_linked_archive_documents": 4,
+    "new_supplementary_documents": 0
+  }
+}

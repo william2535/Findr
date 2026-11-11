@@ -1,0 +1,234 @@
+{
+  "status": "passed",
+  "environment": {
+    "browser": "chromium",
+    "version": "154.0.8037.57",
+    "os": "Linux container",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "physicalIPhone": false
+  },
+  "transport": "Real hash-verified PDFs served only at application /api/manual download boundary; PDF reader, indexing, engine, storage and UI unmodified",
+  "model": "No model installed in this profile; source-grounded retrieval/reviewed procedures",
+  "checks": [
+    "Exact Gent query proposes real operating guide before any download",
+    "Original failure reproduced: processed Vigilon operator manual is rejected for scope and an older operator guide is proposed"
+  ],
+  "measurements": [
+    {
+      "stage": "Gent question to correct proposal",
+      "ms": 317
+    }
+  ],
+  "answers": [],
+  "downloads": [
+    "facp-8f3116f7-a850-46ce-9e84-ed197dea0367"
+  ],
+  "pageErrors": [],
+  "offlineRequests": [],
+  "appVersion": "0.31.0",
+  "firstProposal": {
+    "id": "facp-8f3116f7-a850-46ce-9e84-ed197dea0367",
+    "brand": "Gent",
+    "category": "fire",
+    "models": [
+      "Vigilon"
+    ],
+    "title": "Vigilon \u2014 Operating Instructions (2009, source-listed)",
+    "type": "user-guide",
+    "url": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon-operating-instructions-2009.pdf",
+    "source": "https://facpmanuals.com/manuals/honeywell_gent",
+    "revision": null,
+    "status": "complete-file",
+    "sha256": "efa963e7cb8b2bf2821a437a09fbb5c515a91afd3b73d270fb01c07161faaf26",
+    "bytes": 1423939,
+    "pages": 36,
+    "saved": false,
+    "score": 148,
+    "coverageLabel": "Vigilon",
+    "relevance": "This user guide is a likely source for the walk-test procedure."
+  },
+  "baseline": {
+    "phase": "download_confirm",
+    "answers": 0,
+    "manuals": [
+      "facp-8f3116f7-a850-46ce-9e84-ed197dea0367"
+    ],
+    "nextManual": {
+      "id": "facp-faba6936-2889-4bc9-b699-8b59f7fef64c",
+      "brand": "Gent",
+      "category": "fire",
+      "models": [
+        "Vigilon"
+      ],
+      "title": "Vigilon \u2014 Operations (1999, source-listed)",
+      "type": "user-guide",
+      "url": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon-operations-1999.pdf",
+      "source": "https://facpmanuals.com/manuals/honeywell_gent",
+      "revision": null,
+      "status": "complete-file",
+      "sha256": "780d54c2babe81368bbcfd46229846bb859b951ea685a7edd0d7d272c843f62d",
+      "bytes": 709388,
+      "pages": 60,
+      "saved": false,
+      "score": 148,
+      "coverageLabel": "Vigilon",
+      "relevance": "This user guide is a likely source for the walk-test procedure."
+    },
+    "lastMessages": [
+      {
+        "id": "4adec72f-a0f1-47b2-a605-7f7f68f5e958",
+        "role": "user",
+        "text": "yes",
+        "createdAt": 1794351999175,
+        "kind": "quick_input",
+        "inputId": "a2df5222-adff-4c19-b212-2d612adf55fd"
+      },
+      {
+        "id": "d9618b52-d951-47d8-ae53-f48783d1fe6c",
+        "role": "user",
+        "text": "Selected archive manual: Vigilon \u2014 Operating Instructions (2009, source-listed)",
+        "createdAt": 1794351999186,
+        "kind": "manual_selection",
+        "manualId": "facp-8f3116f7-a850-46ce-9e84-ed197dea0367"
+      },
+      {
+        "id": "a91cac7b-a088-46cd-b0cc-38ae4cf10298",
+        "role": "assistant",
+        "text": "Downloading\u2026",
+        "createdAt": 1794351999195,
+        "kind": "manual_download",
+        "manualId": "facp-8f3116f7-a850-46ce-9e84-ed197dea0367"
+      },
+      {
+        "id": "bf4e1c14-6024-4210-b1be-d03a1b6051f1",
+        "role": "assistant",
+        "text": "Finding the walk-test section\u2026",
+        "createdAt": 1794351999302,
+        "kind": "manual_processing"
+      },
+      {
+        "id": "4e5a14a2-dfa7-423b-975f-53a556953e60",
+        "role": "assistant",
+        "text": "This manual does not establish the Vigilon coverage needed for your question. I\u2019ll look for the applicable document.",
+        "createdAt": 1794352001508,
+        "kind": "manual_scope_mismatch",
+        "manualId": "facp-8f3116f7-a850-46ce-9e84-ed197dea0367"
+      },
+      {
+        "id": "114e5ae7-e2fa-4683-a598-5325fefe39aa",
+        "role": "assistant",
+        "text": "Scanning saved manuals\u2026",
+        "createdAt": 1794352001538,
+        "kind": "manual_scan",
+        "stage": "saved",
+        "requestId": "d5ee3065-ba7a-4975-87ac-5f05ccaf74a3",
+        "explanation": ""
+      },
+      {
+        "id": "6e61f2ec-0f42-444c-a22e-854e65487b14",
+        "role": "assistant",
+        "text": "Scanning Manual Archives\u2026",
+        "createdAt": 1794352001567,
+        "kind": "manual_scan",
+        "stage": "archive",
+        "requestId": "511a2e0c-c1a0-4a87-9ac4-81534019a80b",
+        "explanation": "Searching the Manual Archives catalogue installed with FINDR. PDF download requires your confirmation."
+      },
+      {
+        "id": "7f272ed1-3370-4487-9ab2-f8f7348f87ac",
+        "role": "assistant",
+        "text": "This user guide is a likely source for the walk-test procedure.\nVigilon \u2014 Operations (1999, source-listed) \u2014 Vigilon\nDownload it?\n[1] Yes\n[2] Choose another\n[3] Upload PDF",
+        "createdAt": 1794352001618,
+        "kind": "quick_prompt",
+        "bodyText": "This user guide is a likely source for the walk-test procedure.\nVigilon \u2014 Operations (1999, source-listed) \u2014 Vigilon\nDownload it?",
+        "terminalPromptKey": "quick-download:cd081dd9-4906-46df-adf6-f3d3d2e31978:facp-faba6936-2889-4bc9-b699-8b59f7fef64c",
+        "terminalKind": "download_confirm",
+        "options": [
+          {
+            "value": "download_yes",
+            "label": "Yes",
+            "aliases": [
+              "yes",
+              "download",
+              "download it"
+            ],
+            "number": 1
+          },
+          {
+            "value": "choose_another",
+            "label": "Choose another",
+            "aliases": [
+              "no",
+              "another",
+              "choose another manual"
+            ],
+            "number": 2
+          },
+          {
+            "value": "upload",
+            "label": "Upload PDF",
+            "aliases": [
+              "upload"
+            ],
+            "number": 3
+          }
+        ],
+        "sourceRefs": [],
+        "manual": {
+          "id": "facp-faba6936-2889-4bc9-b699-8b59f7fef64c",
+          "title": "Vigilon \u2014 Operations (1999, source-listed)",
+          "models": [
+            "Vigilon"
+          ],
+          "revision": "",
+          "url": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon-operations-1999.pdf"
+        },
+        "explanation": "The model coverage is the document\u2019s scope. Downloading it does not confirm the model installed on site."
+      }
+    ]
+  },
+  "confirmedScopeMismatch": {
+    "manufacturer": "Honeywell",
+    "manufacturerCandidates": [
+      "Honeywell",
+      "Gent"
+    ],
+    "model": "Vigilon",
+    "models": [
+      "Vigilon"
+    ],
+    "documentType": "Operating instructions",
+    "revision": "4_11/09_"
+  },
+  "intent": {
+    "question": "Putting a gent vigilon on walk test",
+    "equipment": {
+      "manufacturer": "Gent",
+      "model": "Vigilon",
+      "equipmentType": null,
+      "systemTypes": [
+        "fire"
+      ],
+      "family": null,
+      "exact": true
+    },
+    "operation": {
+      "id": "walk-test",
+      "label": "walk-test procedure",
+      "query": "walk test test zones"
+    },
+    "modelTerms": [
+      "Vigilon"
+    ],
+    "requestedModels": [
+      "Vigilon"
+    ],
+    "family": null,
+    "sufficient": true,
+    "contextUsed": false,
+    "componentShift": false
+  }
+}

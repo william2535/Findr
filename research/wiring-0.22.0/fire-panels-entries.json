@@ -1,0 +1,2560 @@
+[
+  {
+    "id": "advanced-9e6af4fbfd7d-p24-mxpro-4-detector-loop-wiring",
+    "recordId": "advanced-9e6af4fbfd7d",
+    "brand": "Advanced",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 24,
+    "title": "MxPro 4 detector-loop wiring",
+    "section": "2.7.3 Detector Loop Installation",
+    "scope": "MxPro 4 detector-loop circuit and isolator arrangement in this revision.",
+    "notes": [
+      "The page gives the applicable isolator/device-count and voltage-drop conditions; follow the named detector manufacturer’s data as directed."
+    ],
+    "keywords": [
+      "MxPro 4",
+      "detector loop",
+      "isolator",
+      "screen"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "24",
+    "models": [
+      "Mx-4100",
+      "Mx-4200",
+      "Mx-4400",
+      "Mx-4800"
+    ],
+    "panelIds": [
+      "advanced-mxpro-4"
+    ],
+    "sourceUrl": "https://www.srsalertfire.ie/uploads/VqRfVH0i/680-014-13MxPro4Installation.pdf",
+    "sourceSha256": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32",
+    "edition": "680-014 Revision 13",
+    "image": "wiring/advanced-9e6af4fbfd7d-p24-mxpro-4-detector-loop-wiring.webp",
+    "imageSha256": "8290a1ab06344014547c20ac42c753c80e4bed427ac944854b3a371f8a4d7ae7",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 113382,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "advanced-9e6af4fbfd7d-p25-mxpro-4-sounder-and-relay-circuits",
+    "recordId": "advanced-9e6af4fbfd7d",
+    "brand": "Advanced",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 25,
+    "title": "MxPro 4 sounder and relay circuits",
+    "section": "2.7.4 Sounder Circuits / 2.7.5 Relay Circuits",
+    "scope": "Sounder-circuit connections and relay contacts; the source distinguishes the available sounder circuits by panel model.",
+    "notes": [
+      "The page warns that these relay contacts are not fully EN54-2 compliant fire/fault routing outputs without the specified external monitoring."
+    ],
+    "keywords": [
+      "MxPro 4",
+      "sounder",
+      "relay",
+      "end of line"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "25",
+    "models": [
+      "Mx-4100",
+      "Mx-4200",
+      "Mx-4400",
+      "Mx-4800"
+    ],
+    "panelIds": [
+      "advanced-mxpro-4"
+    ],
+    "sourceUrl": "https://www.srsalertfire.ie/uploads/VqRfVH0i/680-014-13MxPro4Installation.pdf",
+    "sourceSha256": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32",
+    "edition": "680-014 Revision 13",
+    "image": "wiring/advanced-9e6af4fbfd7d-p25-mxpro-4-sounder-and-relay-circuits.webp",
+    "imageSha256": "48c9a030a46ec12f49431eeea070d50e2a46792b56ae394f9cc03cdca4536c38",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 108940,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "advanced-a18ea5cccf04-p28-mxpro-5-detector-loop-wiring",
+    "recordId": "advanced-a18ea5cccf04",
+    "brand": "Advanced",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 28,
+    "title": "MxPro 5 detector-loop wiring",
+    "section": "2.5.3 Detector Loop Installation",
+    "scope": "MxPro 5 loop connections and isolator arrangement, with the edition’s EN54-13 and VdS conditions.",
+    "notes": [],
+    "keywords": [
+      "MxPro 5",
+      "detector loop",
+      "isolator"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "28",
+    "models": [
+      "Mx-5100",
+      "Mx-5200",
+      "Mx-5400",
+      "Mx-5800"
+    ],
+    "panelIds": [
+      "advanced-mxpro5"
+    ],
+    "sourceUrl": "https://www.srsalertfire.ie/uploads/FCpZ1eWk/680-165-05MxPro5ProductManual.pdf",
+    "sourceSha256": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b",
+    "edition": "680-165 Revision 05; software 5000-050-04 onwards",
+    "image": "wiring/advanced-a18ea5cccf04-p28-mxpro-5-detector-loop-wiring.webp",
+    "imageSha256": "8a8946f769ad1e10b76b2e26cff9d023d31a17d3ab44fd58a699f783ca25a821",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 122372,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "advanced-a18ea5cccf04-p29-mxpro-5-sounder-circuits-and-active-eol",
+    "recordId": "advanced-a18ea5cccf04",
+    "brand": "Advanced",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 29,
+    "title": "MxPro 5 sounder circuits and active EOL",
+    "section": "2.5.4 Sounder Circuits",
+    "scope": "Sounder wiring and active end-of-line arrangement for the named MxPro 5 models.",
+    "notes": [
+      "Keep the page’s EN54-13 option, polarity and non-replaceable fuse conditions with the diagram."
+    ],
+    "keywords": [
+      "MxPro 5",
+      "sounder",
+      "active EOL",
+      "EN54-13"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "29",
+    "models": [
+      "Mx-5100",
+      "Mx-5200",
+      "Mx-5400",
+      "Mx-5800"
+    ],
+    "panelIds": [
+      "advanced-mxpro5"
+    ],
+    "sourceUrl": "https://www.srsalertfire.ie/uploads/FCpZ1eWk/680-165-05MxPro5ProductManual.pdf",
+    "sourceSha256": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b",
+    "edition": "680-165 Revision 05; software 5000-050-04 onwards",
+    "image": "wiring/advanced-a18ea5cccf04-p29-mxpro-5-sounder-circuits-and-active-eol.webp",
+    "imageSha256": "739d2b2e2d1709dcfb176bab53cdc5dce3b01ce39a128dfe8bdfdfb1d6cec6ab",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 107994,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "advanced-a18ea5cccf04-p33-mxpro-5-monitored-fire-fault-routing",
+    "recordId": "advanced-a18ea5cccf04",
+    "brand": "Advanced",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 33,
+    "title": "MxPro 5 monitored fire/fault routing",
+    "section": "2.5.12 Routing Interface",
+    "scope": "Plug-in routing-interface examples for fire/fault routing and fire-protection routing.",
+    "notes": [
+      "The source distinguishes routing-equipment and protection-equipment monitoring arrangements."
+    ],
+    "keywords": [
+      "MxPro 5",
+      "routing interface",
+      "fire routing",
+      "fault routing"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "33",
+    "models": [
+      "Mx-5100",
+      "Mx-5200",
+      "Mx-5400",
+      "Mx-5800"
+    ],
+    "panelIds": [
+      "advanced-mxpro5"
+    ],
+    "sourceUrl": "https://www.srsalertfire.ie/uploads/FCpZ1eWk/680-165-05MxPro5ProductManual.pdf",
+    "sourceSha256": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b",
+    "edition": "680-165 Revision 05; software 5000-050-04 onwards",
+    "image": "wiring/advanced-a18ea5cccf04-p33-mxpro-5-monitored-fire-fault-routing.webp",
+    "imageSha256": "38ebca75bae54817f7e50a59b3d2d1c2607511f38efcffb745c33dc9ecdcd08a",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 113256,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "advanced-c1f080ef94b1-p28-axis-en-detector-loop-wiring",
+    "recordId": "advanced-c1f080ef94b1",
+    "brand": "Advanced",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 28,
+    "title": "Axis EN detector-loop wiring",
+    "section": "2.5.3 Detector Loop Installation",
+    "scope": "Axis EN loop circuit and isolator arrangement, with the stated EN54-13 and VdS conditions.",
+    "notes": [],
+    "keywords": [
+      "Axis EN",
+      "detector loop",
+      "isolator"
+    ],
+    "diagramType": "wiring",
+    "printedPage": null,
+    "models": [
+      "Axis-5100",
+      "Axis-5200",
+      "Axis-5400",
+      "Axis-5800"
+    ],
+    "panelIds": [
+      "advanced-axis-en-5000v"
+    ],
+    "sourceUrl": "https://www.advancedco.com/wp-content/uploads/680-165V-07-Axis-EN-Product-Manual.pdf",
+    "sourceSha256": "ea38daebe63652fb5c30e490be892ebe1df5bf87f29e9ed9d7f35d04ca855238",
+    "edition": "680-165V Axis EN Revision 07; software 5000-050-04 onwards",
+    "image": "wiring/advanced-c1f080ef94b1-p28-axis-en-detector-loop-wiring.webp",
+    "imageSha256": "ca392acc4e1889d5d8166c50c45544d1354b64492c6371b3cdd7aacf051b7dc0",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 122790,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "advanced-c1f080ef94b1-p29-axis-en-sounder-circuits-and-active-eol",
+    "recordId": "advanced-c1f080ef94b1",
+    "brand": "Advanced",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 29,
+    "title": "Axis EN sounder circuits and active EOL",
+    "section": "2.5.4 Sounder Circuits",
+    "scope": "Sounder connections for the Axis EN models named by this manual; not treated as an MxPro model solely because the drawings resemble it.",
+    "notes": [
+      "Preserves the active end-of-line polarity and fuse conditions."
+    ],
+    "keywords": [
+      "Axis EN",
+      "sounder",
+      "active EOL"
+    ],
+    "diagramType": "wiring",
+    "printedPage": null,
+    "models": [
+      "Axis-5100",
+      "Axis-5200",
+      "Axis-5400",
+      "Axis-5800"
+    ],
+    "panelIds": [
+      "advanced-axis-en-5000v"
+    ],
+    "sourceUrl": "https://www.advancedco.com/wp-content/uploads/680-165V-07-Axis-EN-Product-Manual.pdf",
+    "sourceSha256": "ea38daebe63652fb5c30e490be892ebe1df5bf87f29e9ed9d7f35d04ca855238",
+    "edition": "680-165V Axis EN Revision 07; software 5000-050-04 onwards",
+    "image": "wiring/advanced-c1f080ef94b1-p29-axis-en-sounder-circuits-and-active-eol.webp",
+    "imageSha256": "f8c736904da9680e005658a6bf6a8d9a6d337380399da9d9fcc59e1c362d9b2e",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 107956,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "c-tec-44b03d254ee3-p9-xfp-16-zone-analogue-loop-connections",
+    "recordId": "c-tec-44b03d254ee3",
+    "brand": "C-TEC",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 9,
+    "title": "XFP 16-zone analogue-loop connections",
+    "section": "Typical analogue loop wiring / Main Control PCB",
+    "scope": "Single-loop 16-zone XFP loop legs and PCB terminals.",
+    "notes": [],
+    "keywords": [
+      "XFP",
+      "16 zone",
+      "loop",
+      "A+",
+      "B+"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "9",
+    "models": [
+      "XFP single-loop 16-zone"
+    ],
+    "panelIds": [
+      "c-tec-xfp-16-zone"
+    ],
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/XFP%20single%20loop%2016%20zone%20fire%20panel%20manual200510%20Rev1.pdf",
+    "sourceSha256": "e65934abe0148df1d9230c032e8a008e2c043310f36971f06802937cc79c642b",
+    "edition": "DFU1200510 Rev 1",
+    "image": "wiring/c-tec-44b03d254ee3-p9-xfp-16-zone-analogue-loop-connections.webp",
+    "imageSha256": "73432396e7962f588f8e7647e68038a153abe5a19f64a92dce3b1cd20d54e1b5",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 115428,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "c-tec-44b03d254ee3-p10-xfp-16-zone-sounders-relays-and-inputs",
+    "recordId": "c-tec-44b03d254ee3",
+    "brand": "C-TEC",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 10,
+    "title": "XFP 16-zone sounders, relays and inputs",
+    "section": "Conventional sounder circuit wiring / Auxiliary input wiring",
+    "scope": "Conventional sounder circuit, auxiliary inputs and relay contacts on the single-loop 16-zone XFP.",
+    "notes": [
+      "Conventional sounder wiring is separate from the addressable loop diagram."
+    ],
+    "keywords": [
+      "XFP",
+      "16 zone",
+      "sounder",
+      "auxiliary input",
+      "relay"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "10",
+    "models": [
+      "XFP single-loop 16-zone"
+    ],
+    "panelIds": [
+      "c-tec-xfp-16-zone"
+    ],
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/XFP%20single%20loop%2016%20zone%20fire%20panel%20manual200510%20Rev1.pdf",
+    "sourceSha256": "e65934abe0148df1d9230c032e8a008e2c043310f36971f06802937cc79c642b",
+    "edition": "DFU1200510 Rev 1",
+    "image": "wiring/c-tec-44b03d254ee3-p10-xfp-16-zone-sounders-relays-and-inputs.webp",
+    "imageSha256": "985be02dfc610dd49078cbd3ba25486179c7f812dc96ce07ac8b05dacca13951",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 117428,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "c-tec-4b1267f3fefc-p7-cfp-standard-detector-zone-wiring",
+    "recordId": "c-tec-4b1267f3fefc",
+    "brand": "C-TEC",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 7,
+    "title": "CFP Standard detector-zone wiring",
+    "section": "Detector circuit wiring / Figure 4",
+    "scope": "Conventional detector radial shown for the LPCB-approved CFP 2/4/8-zone panel in this edition.",
+    "notes": [
+      "Preserves the page’s end-of-line, detector-base and screen conditions. Do not apply to CFP AlarmSense or Economy variants."
+    ],
+    "keywords": [
+      "CFP",
+      "detector",
+      "zone",
+      "radial",
+      "end of line"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "7",
+    "models": [
+      "CFP 2/4/8 zone (LPCB approved)"
+    ],
+    "panelIds": [
+      "c-tec-cfp-standard"
+    ],
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CFP%202%2C4%2C8%20zone%20conventional%20fire%20panel%20manual.pdf",
+    "sourceSha256": "6e04b478f4fe32f3f33a0365e660a5629a6621882a6231b3f2d56985d6c1ace8",
+    "edition": "DFU7004010 Rev 1",
+    "image": "wiring/c-tec-4b1267f3fefc-p7-cfp-standard-detector-zone-wiring.webp",
+    "imageSha256": "06d58fe55d8fb20ebd728d316c985cec176bad2457377c8e4a28ac472b822add",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 100324,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "c-tec-4b1267f3fefc-p8-cfp-standard-sounders-relays-and-inputs",
+    "recordId": "c-tec-4b1267f3fefc",
+    "brand": "C-TEC",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 8,
+    "title": "CFP Standard sounders, relays and inputs",
+    "section": "Typical sounder circuit wiring / Auxiliary inputs and outputs",
+    "scope": "Polarised conventional sounders, auxiliary relay contacts and class-change/alert inputs for this CFP edition.",
+    "notes": [
+      "The figure expressly prohibits unmonitored sounder spurs."
+    ],
+    "keywords": [
+      "CFP",
+      "sounder",
+      "class change",
+      "alert",
+      "relay"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "8",
+    "models": [
+      "CFP 2/4/8 zone (LPCB approved)"
+    ],
+    "panelIds": [
+      "c-tec-cfp-standard"
+    ],
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CFP%202%2C4%2C8%20zone%20conventional%20fire%20panel%20manual.pdf",
+    "sourceSha256": "6e04b478f4fe32f3f33a0365e660a5629a6621882a6231b3f2d56985d6c1ace8",
+    "edition": "DFU7004010 Rev 1",
+    "image": "wiring/c-tec-4b1267f3fefc-p8-cfp-standard-sounders-relays-and-inputs.webp",
+    "imageSha256": "1e02857ced9be706187a1ed78126cadd61fe26a5d7df32995f5c05e9b4c1b6d7",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 73278,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "c-tec-4b1267f3fefc-p11-cfp-standard-mains-and-standby-batteries",
+    "recordId": "c-tec-4b1267f3fefc",
+    "brand": "C-TEC",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 11,
+    "title": "CFP Standard mains and standby batteries",
+    "section": "Figure 8 — Power Supply PCB layout and Mains connection details / Figure 9 — Battery location and connection details",
+    "scope": "Power Supply PCB connections and the two-battery connection for the CFP LPCB-approved enclosure in this edition.",
+    "notes": [],
+    "keywords": [
+      "CFP",
+      "mains",
+      "battery",
+      "power supply"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "11",
+    "models": [
+      "CFP 2/4/8 zone (LPCB approved)"
+    ],
+    "panelIds": [
+      "c-tec-cfp-standard"
+    ],
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CFP%202%2C4%2C8%20zone%20conventional%20fire%20panel%20manual.pdf",
+    "sourceSha256": "6e04b478f4fe32f3f33a0365e660a5629a6621882a6231b3f2d56985d6c1ace8",
+    "edition": "DFU7004010 Rev 1",
+    "image": "wiring/c-tec-4b1267f3fefc-p11-cfp-standard-mains-and-standby-batteries.webp",
+    "imageSha256": "bbc9f3ae9a32f865d1321a5702edd61b959bb2ad07718fe85c1f88f083de4788",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 125506,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "c-tec-4b1267f3fefc-p13-cfp-standard-detector-and-sounder-terminals",
+    "recordId": "c-tec-4b1267f3fefc",
+    "brand": "C-TEC",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 13,
+    "title": "CFP Standard detector and sounder terminals",
+    "section": "Connecting the detector and sounder circuits / Connecting the auxiliary inputs and outputs",
+    "scope": "Main Control PCB detector, sounder and auxiliary connections, with screen bonding detail.",
+    "notes": [],
+    "keywords": [
+      "CFP",
+      "detector",
+      "sounder",
+      "screen",
+      "auxiliary"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "13",
+    "models": [
+      "CFP 2/4/8 zone (LPCB approved)"
+    ],
+    "panelIds": [
+      "c-tec-cfp-standard"
+    ],
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CFP%202%2C4%2C8%20zone%20conventional%20fire%20panel%20manual.pdf",
+    "sourceSha256": "6e04b478f4fe32f3f33a0365e660a5629a6621882a6231b3f2d56985d6c1ace8",
+    "edition": "DFU7004010 Rev 1",
+    "image": "wiring/c-tec-4b1267f3fefc-p13-cfp-standard-detector-and-sounder-terminals.webp",
+    "imageSha256": "c49b272f2fd9698a378e83f9dbb969fc670815069b1558b24c7196cbac725b59",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 107762,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "c-tec-71e2d26e5669-p12-cfp-repeater-network-wiring",
+    "recordId": "c-tec-71e2d26e5669",
+    "brand": "C-TEC",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 12,
+    "title": "CFP repeater network wiring",
+    "section": "Connecting the Network wiring",
+    "scope": "Master CFP network-driver and repeater interconnection, with screen and end-of-line conditions retained.",
+    "notes": [],
+    "keywords": [
+      "CFP",
+      "repeater",
+      "network",
+      "screen"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "12",
+    "models": [
+      "CFP 2/4/8-zone repeater"
+    ],
+    "panelIds": [
+      "c-tec-cfp760-repeater"
+    ],
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CFP%20repeater%20panel%20install%20manual.pdf",
+    "sourceSha256": "bfd5d6d36a25141cebc2dbd624505bbe224418533ae227b5bc1ac201b998223c",
+    "edition": "DFU7003001 Rev 2",
+    "image": "wiring/c-tec-71e2d26e5669-p12-cfp-repeater-network-wiring.webp",
+    "imageSha256": "b5588194412a1b47f818d2777c52fe6a41542c984852acbf829d40521e60088e",
+    "imageWidth": 1400,
+    "imageHeight": 1978,
+    "imageBytes": 111102,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "c-tec-ba3f93b60d06-p9-xfp-32-zone-analogue-loop-connections",
+    "recordId": "c-tec-ba3f93b60d06",
+    "brand": "C-TEC",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 9,
+    "title": "XFP 32-zone analogue-loop connections",
+    "section": "Typical analogue loop wiring / Main Control PCB",
+    "scope": "One/two-loop 32-zone XFP main-board and loop connections, with separate loop-1 and loop-2 terminals.",
+    "notes": [],
+    "keywords": [
+      "XFP",
+      "32 zone",
+      "loop 1",
+      "loop 2"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "9",
+    "models": [
+      "XFP 1/2-loop 32-zone"
+    ],
+    "panelIds": [
+      "c-tec-xfp-32-zone"
+    ],
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP_1_OR_2_LOOP_32Z_LPCB_ENG_MANUAL_DFU2200510_R2.pdf",
+    "sourceSha256": "a56ad3e3160fa617e4d024dba54bc0e378f5542855be71ee3a35b90083b1faea",
+    "edition": "DFU2200510 Rev 2",
+    "image": "wiring/c-tec-ba3f93b60d06-p9-xfp-32-zone-analogue-loop-connections.webp",
+    "imageSha256": "15c93e5e1fb7ae51969382f81bb8459933d038ad08b5b148f2a1f6c3892ff9e8",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 141902,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "c-tec-ba3f93b60d06-p10-xfp-32-zone-sounders-inputs-and-relay-wiring",
+    "recordId": "c-tec-ba3f93b60d06",
+    "brand": "C-TEC",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 10,
+    "title": "XFP 32-zone sounders, inputs and relay wiring",
+    "section": "Figure 6 — Typical conventional sounder circuit connection and detail / Auxiliary input wiring",
+    "scope": "Conventional sounders, auxiliary inputs and relay contacts on the 32-zone XFP.",
+    "notes": [],
+    "keywords": [
+      "XFP",
+      "32 zone",
+      "sounder",
+      "auxiliary",
+      "relay"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "10",
+    "models": [
+      "XFP 1/2-loop 32-zone"
+    ],
+    "panelIds": [
+      "c-tec-xfp-32-zone"
+    ],
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP_1_OR_2_LOOP_32Z_LPCB_ENG_MANUAL_DFU2200510_R2.pdf",
+    "sourceSha256": "a56ad3e3160fa617e4d024dba54bc0e378f5542855be71ee3a35b90083b1faea",
+    "edition": "DFU2200510 Rev 2",
+    "image": "wiring/c-tec-ba3f93b60d06-p10-xfp-32-zone-sounders-inputs-and-relay-wiring.webp",
+    "imageSha256": "4df1dff53de6641cb4d4b1533b24698e6eeb392f53b7bf5ca0c1da2f0807a2b8",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 108058,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "c-tec-ba3f93b60d06-p11-xfp-32-zone-pc-link-and-battery-connections",
+    "recordId": "c-tec-ba3f93b60d06",
+    "brand": "C-TEC",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 11,
+    "title": "XFP 32-zone PC link and battery connections",
+    "section": "Remote PC connection / Installing the standby battery supply",
+    "scope": "RS232 programming lead and two-battery connection details for this 32-zone XFP edition.",
+    "notes": [],
+    "keywords": [
+      "XFP",
+      "32 zone",
+      "RS232",
+      "battery"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "11",
+    "models": [
+      "XFP 1/2-loop 32-zone"
+    ],
+    "panelIds": [
+      "c-tec-xfp-32-zone"
+    ],
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP_1_OR_2_LOOP_32Z_LPCB_ENG_MANUAL_DFU2200510_R2.pdf",
+    "sourceSha256": "a56ad3e3160fa617e4d024dba54bc0e378f5542855be71ee3a35b90083b1faea",
+    "edition": "DFU2200510 Rev 2",
+    "image": "wiring/c-tec-ba3f93b60d06-p11-xfp-32-zone-pc-link-and-battery-connections.webp",
+    "imageSha256": "a63626716427e90463133d56435aba492e9b1f80ebc354768cc4b4c5550b6e32",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 139074,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "c-tec-ec140ad546f0-p7-xfp-32-zone-repeater-batteries-relay-and-network",
+    "recordId": "c-tec-ec140ad546f0",
+    "brand": "C-TEC",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 7,
+    "title": "XFP 32-zone repeater batteries, relay and network",
+    "section": "Installing the standby battery supply / Connecting to the XFP network",
+    "scope": "Connections for the 32-zone XFP repeater named by DFU2200502; not linked to the separate 16-zone repeater picture pack.",
+    "notes": [],
+    "keywords": [
+      "XFP",
+      "32 zone",
+      "repeater",
+      "battery",
+      "network",
+      "fault relay"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "7",
+    "models": [
+      "XFP 32-zone repeater"
+    ],
+    "panelIds": [],
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%2032Z%20REPEATER%20MANUAL.pdf",
+    "sourceSha256": "6c8f2ec56d9b5ad84e351a63ffd57d0d810a592064ab76feef23e19819aa5f10",
+    "edition": "DFU2200502 Rev 1",
+    "image": "wiring/c-tec-ec140ad546f0-p7-xfp-32-zone-repeater-batteries-relay-and-network.webp",
+    "imageSha256": "1fac2fe7d09b57fd4d49a16d04c9fbb0bdb2bb937c3845d6a0fe53a70044f82c",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 189240,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "eaton-cooper-053a993a0c8b-p83-cf1100-cf1200-system-wiring-overview",
+    "recordId": "eaton-cooper-053a993a0c8b",
+    "brand": "Eaton / Cooper",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 83,
+    "title": "CF1100 / CF1200 system-wiring overview",
+    "section": "Section 4: Appendix — System wiring",
+    "scope": "Panel terminals, loop/device examples and output circuits for the CF1100/CF1200 manual.",
+    "notes": [
+      "This record’s family picture pack is CF1000; the reviewed manual identifies CF1100 and CF1200."
+    ],
+    "keywords": [
+      "CF1100",
+      "CF1200",
+      "CF1000",
+      "loop",
+      "system wiring"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "83",
+    "models": [
+      "CF1100",
+      "CF1200"
+    ],
+    "panelIds": [
+      "eaton-cf1000"
+    ],
+    "sourceUrl": "https://www.eaton.com/content/dam/eaton/products/safety-security-emergency-communications/fire/addressable/cf1000-panel/en/eaton-fire-addressable-control-panel-cf1100-1200-manual-25-16327-en.pdf",
+    "sourceSha256": "7bb99d18ff9662ac9f77129193ee5ea9cc2d4c71380cce4a7898ce9ffb15c0eb",
+    "edition": "25-16327-B, November 2020",
+    "image": "wiring/eaton-cooper-053a993a0c8b-p83-cf1100-cf1200-system-wiring-overview.webp",
+    "imageSha256": "c10e8c2b9d339fbb11f441e985a75a60a15d16df57759348d38fa2afb2a8a86f",
+    "imageWidth": 1400,
+    "imageHeight": 1987,
+    "imageBytes": 152478,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "eaton-cooper-d30026e0a49d-p109-cf3000-system-wiring-overview",
+    "recordId": "eaton-cooper-d30026e0a49d",
+    "brand": "Eaton / Cooper",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 109,
+    "title": "CF3000 system-wiring overview",
+    "section": "Appendix — System wiring",
+    "scope": "Panel terminals, loop/device examples, sounder circuits and repeater/PC links as illustrated for the CF3000.",
+    "notes": [
+      "The overview includes device-specific terminal examples; use the relevant device instructions before applying a connection to another model."
+    ],
+    "keywords": [
+      "CF3000",
+      "loop",
+      "sounder",
+      "relay",
+      "system wiring"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "109",
+    "models": [
+      "CF3000"
+    ],
+    "panelIds": [
+      "eaton-cf3000"
+    ],
+    "sourceUrl": "https://www.eaton.com/content/dam/eaton/products/safety-security-emergency-communications/fire/addressable/cf3000-panel/en/eaton-fire-addressable-control-panel-cf3000-manual-25-14682-en.pdf",
+    "sourceSha256": "7741f6041262e2c61aa724246eb2094d9ca658a94a5624d7d60e3aaf4b949796",
+    "edition": "25-14682-C, December 2019",
+    "image": "wiring/eaton-cooper-d30026e0a49d-p109-cf3000-system-wiring-overview.webp",
+    "imageSha256": "83d4b07c3fae60a36fdf5c4690104784f8440cabccf95d9ee7e2ab3b21c608b0",
+    "imageWidth": 1400,
+    "imageHeight": 1987,
+    "imageBytes": 120838,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "facp-53d7f2b3-b7fd-495d-8711-13b42717beef-p12-twinflexpro-repeater-supply-connections",
+    "recordId": "facp-53d7f2b3-b7fd-495d-8711-13b42717beef",
+    "brand": "Fike",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 12,
+    "title": "TWINFLEXpro² repeater supply connections",
+    "section": "Power Supply & Connections",
+    "scope": "Repeater back-board power terminals and stated supply from the control-panel auxiliary output.",
+    "notes": [],
+    "keywords": [
+      "TWINFLEXpro2",
+      "repeater",
+      "24V",
+      "AUX"
+    ],
+    "diagramType": "terminal-layout",
+    "printedPage": "12",
+    "models": [
+      "TWINFLEXpro² repeater"
+    ],
+    "panelIds": [
+      "fike-twinflexpro2-repeater"
+    ],
+    "sourceUrl": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro2_repeater_panel-installation-rev3.pdf",
+    "sourceSha256": "477ac1158a8731a9842e33d9a50d607a13b420019d7b8a6557cf79ad3164b208",
+    "edition": "26-1192 Rev 3 (cover also carries Issue 1)",
+    "image": "wiring/facp-53d7f2b3-b7fd-495d-8711-13b42717beef-p12-twinflexpro-repeater-supply-connections.webp",
+    "imageSha256": "8ad7ccfc1f51df157bd2a40f6daa7878b8727a9664e35ee0b06f34fae9458ec9",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 93804,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "facp-53d7f2b3-b7fd-495d-8711-13b42717beef-p13-twinflexpro-repeater-peripheral-bus",
+    "recordId": "facp-53d7f2b3-b7fd-495d-8711-13b42717beef",
+    "brand": "Fike",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 13,
+    "title": "TWINFLEXpro² repeater peripheral bus",
+    "section": "Peripheral Bus Connections",
+    "scope": "Panel-to-repeater communications bus and back-board connection drawing.",
+    "notes": [
+      "The source specifies a 120Ω resistor across A/B only at the last repeater on the network."
+    ],
+    "keywords": [
+      "TWINFLEXpro2",
+      "repeater",
+      "bus",
+      "A",
+      "B",
+      "120 ohm"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "13",
+    "models": [
+      "TWINFLEXpro² repeater"
+    ],
+    "panelIds": [
+      "fike-twinflexpro2-repeater"
+    ],
+    "sourceUrl": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro2_repeater_panel-installation-rev3.pdf",
+    "sourceSha256": "477ac1158a8731a9842e33d9a50d607a13b420019d7b8a6557cf79ad3164b208",
+    "edition": "26-1192 Rev 3 (cover also carries Issue 1)",
+    "image": "wiring/facp-53d7f2b3-b7fd-495d-8711-13b42717beef-p13-twinflexpro-repeater-peripheral-bus.webp",
+    "imageSha256": "cc35d7e7cd469a267a2881769e2c7c30952e6ce7828d42548dae1b5eab00d9a1",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 202900,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "fike-fc894e8e5796-p11-twinflexpro-4-8-zone-terminal-overview",
+    "recordId": "fike-fc894e8e5796",
+    "brand": "Fike",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 11,
+    "title": "TWINFLEXpro 4/8-zone terminal overview",
+    "section": "Control Panel Connections — Overview: 4 / 8 zone Panel",
+    "scope": "Board and terminal identification specifically for the illustrated 4/8-zone panel.",
+    "notes": [],
+    "keywords": [
+      "TWINFLEXpro",
+      "4 zone",
+      "8 zone",
+      "terminal"
+    ],
+    "diagramType": "terminal-layout",
+    "printedPage": "11",
+    "models": [
+      "TWINFLEXpro"
+    ],
+    "panelIds": [
+      "fike-twinflexpro"
+    ],
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Twinflex%20Pro%20Installation%20Manual.pdf",
+    "sourceSha256": "d67d8409213042ba956bd3c98c92135038bb8af67ebee53dee79b09339b90e70",
+    "edition": "26-0959 Issue 7; TWINFLEXpro V1.00 onwards",
+    "image": "wiring/fike-fc894e8e5796-p11-twinflexpro-4-8-zone-terminal-overview.webp",
+    "imageSha256": "3ae4da3def177b2ad4b2a43ed94e690dc522471cb1867c5f57c10c9bbd6d25aa",
+    "imageWidth": 1400,
+    "imageHeight": 1981,
+    "imageBytes": 279456,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "fike-fc894e8e5796-p14-twinflexpro-device-zone-radial-wiring",
+    "recordId": "fike-fc894e8e5796",
+    "brand": "Fike",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 14,
+    "title": "TWINFLEXpro device-zone radial wiring",
+    "section": "Device Zones: Z1–Z8",
+    "scope": "Two-core radial zone circuit, screen connections and the source’s final-device switch arrangement.",
+    "notes": [
+      "The page says no separate EOL resistor is required and specifies the device EOL switch; do not substitute a conventional-panel EOL arrangement."
+    ],
+    "keywords": [
+      "TWINFLEXpro",
+      "zone",
+      "radial",
+      "EOL",
+      "SW1"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "14",
+    "models": [
+      "TWINFLEXpro"
+    ],
+    "panelIds": [
+      "fike-twinflexpro"
+    ],
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Twinflex%20Pro%20Installation%20Manual.pdf",
+    "sourceSha256": "d67d8409213042ba956bd3c98c92135038bb8af67ebee53dee79b09339b90e70",
+    "edition": "26-0959 Issue 7; TWINFLEXpro V1.00 onwards",
+    "image": "wiring/fike-fc894e8e5796-p14-twinflexpro-device-zone-radial-wiring.webp",
+    "imageSha256": "46eabcfc34c37020b3f1a78a12bc25a5c5391987ded78b7c6a24c7c65088a2bd",
+    "imageWidth": 1400,
+    "imageHeight": 1981,
+    "imageBytes": 75956,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "facp-7538be76-f958-46e4-99f6-c718601bb349-p28-vigilon-4-6-loop-terminal-card-layout",
+    "recordId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+    "brand": "Gent",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 28,
+    "title": "Vigilon 4/6-loop terminal-card layout",
+    "section": "Terminals on Terminal Card",
+    "scope": "Terminal-card identifiers for the Vigilon 4/6-loop panels section of this combined commissioning manual.",
+    "notes": [
+      "The combined manual contains multiple panel variants; this page is specifically the 4/6-loop terminal card."
+    ],
+    "keywords": [
+      "Vigilon",
+      "4 loop",
+      "6 loop",
+      "terminal card"
+    ],
+    "diagramType": "terminal-layout",
+    "printedPage": "28",
+    "models": [
+      "Vigilon 4/6-loop"
+    ],
+    "panelIds": [
+      "gent-vigilon-4-6-loop"
+    ],
+    "sourceUrl": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon_and_vigilon_compact-installation-2015.pdf",
+    "sourceSha256": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+    "edition": "4188-856 Issue 7, July 2015",
+    "image": "wiring/facp-7538be76-f958-46e4-99f6-c718601bb349-p28-vigilon-4-6-loop-terminal-card-layout.webp",
+    "imageSha256": "eddafc5f22c4d39ce1f6c6cd88eaafa96bfae1fb049b753c11b6618ab787970a",
+    "imageWidth": 1400,
+    "imageHeight": 990,
+    "imageBytes": 125338,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "facp-7538be76-f958-46e4-99f6-c718601bb349-p37-vigilon-compact-master-control-board-terminals",
+    "recordId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+    "brand": "Gent",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 37,
+    "title": "Vigilon Compact master-control-board terminals",
+    "section": "Terminals on the Master Control Board (MCB)",
+    "scope": "MCB terminal diagram in the Vigilon Compact section of the combined commissioning manual.",
+    "notes": [
+      "Kept distinct from the 4/6-loop terminal-card page in the same source."
+    ],
+    "keywords": [
+      "Vigilon Compact",
+      "MCB",
+      "terminal"
+    ],
+    "diagramType": "terminal-layout",
+    "printedPage": "37",
+    "models": [
+      "Vigilon Compact"
+    ],
+    "panelIds": [
+      "gent-vigilon-compact"
+    ],
+    "sourceUrl": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon_and_vigilon_compact-installation-2015.pdf",
+    "sourceSha256": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+    "edition": "4188-856 Issue 7, July 2015",
+    "image": "wiring/facp-7538be76-f958-46e4-99f6-c718601bb349-p37-vigilon-compact-master-control-board-terminals.webp",
+    "imageSha256": "3483035b7219654f8afea2204b00dadd5bbcf4b36febf9fbb40a94f4a7bf1da4",
+    "imageWidth": 1400,
+    "imageHeight": 990,
+    "imageBytes": 82922,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "facp-d442a96b-9a39-4e76-b773-5f7676e175dc-p19-vigilon-compact-device-loop-circuit",
+    "recordId": "facp-d442a96b-9a39-4e76-b773-5f7676e175dc",
+    "brand": "Gent",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 19,
+    "title": "Vigilon Compact device-loop circuit",
+    "section": "Device loop circuits",
+    "scope": "Vigilon Compact loop ends and the specific detector, call-point and S-Quad base examples drawn by this edition.",
+    "notes": [
+      "Preserves loop-screen/earth and source-specific device terminal conditions; this is not evidence of physical cable order in an installed system."
+    ],
+    "keywords": [
+      "Vigilon Compact",
+      "loop",
+      "S-Quad",
+      "IN4",
+      "OUT5"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "19",
+    "models": [
+      "Vigilon Compact"
+    ],
+    "panelIds": [
+      "gent-vigilon-compact"
+    ],
+    "sourceUrl": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon_compact_control_panel-installation-2010-rev3.pdf",
+    "sourceSha256": "9cdf8ee0964ffb14d370929ec0ddeece559b39bd870a6426e52d5fc154d41e4a",
+    "edition": "4188-900 Issue 3, July 2010",
+    "image": "wiring/facp-d442a96b-9a39-4e76-b773-5f7676e175dc-p19-vigilon-compact-device-loop-circuit.webp",
+    "imageSha256": "4790c30ce8a7b1161a3ffdc318234eee9ed0088c5fc8f13ed75e3d434da53a37",
+    "imageWidth": 1400,
+    "imageHeight": 1982,
+    "imageBytes": 81574,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "facp-d442a96b-9a39-4e76-b773-5f7676e175dc-p20-vigilon-compact-alarm-circuits-and-repeat-indicator",
+    "recordId": "facp-d442a96b-9a39-4e76-b773-5f7676e175dc",
+    "brand": "Gent",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 20,
+    "title": "Vigilon Compact alarm circuits and repeat indicator",
+    "section": "Master alarm circuits / Auxiliary relay circuits / Repeat indicator panel",
+    "scope": "Master sounders, relay contacts and repeat-indicator connections for Vigilon Compact.",
+    "notes": [
+      "The repeat-indicator supply arrangement depends on the number of indicators, as stated on the page."
+    ],
+    "keywords": [
+      "Vigilon Compact",
+      "sounder",
+      "master alarm",
+      "repeat indicator",
+      "relay"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "20",
+    "models": [
+      "Vigilon Compact"
+    ],
+    "panelIds": [
+      "gent-vigilon-compact"
+    ],
+    "sourceUrl": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon_compact_control_panel-installation-2010-rev3.pdf",
+    "sourceSha256": "9cdf8ee0964ffb14d370929ec0ddeece559b39bd870a6426e52d5fc154d41e4a",
+    "edition": "4188-900 Issue 3, July 2010",
+    "image": "wiring/facp-d442a96b-9a39-4e76-b773-5f7676e175dc-p20-vigilon-compact-alarm-circuits-and-repeat-indicator.webp",
+    "imageSha256": "2c68a534d860aae4a2fd5e588aa39fe44b98e44a8bbf83699f29101032abbf3d",
+    "imageWidth": 1400,
+    "imageHeight": 1982,
+    "imageBytes": 140712,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "gent-33fdf5de07b1-p3-xenex-sounder-circuits-class-change-and-contacts",
+    "recordId": "gent-33fdf5de07b1",
+    "brand": "Gent",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 3,
+    "title": "Xenex sounder circuits, class change and contacts",
+    "section": "Alarm (Sounder circuits) / Class change / Auxiliary contacts",
+    "scope": "Xenex alarm-circuit, class-change and volt-free contact figures with the source’s end-of-line conditions.",
+    "notes": [],
+    "keywords": [
+      "Xenex",
+      "sounder",
+      "class change",
+      "auxiliary contacts"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "3",
+    "models": [
+      "Xenex"
+    ],
+    "panelIds": [
+      "gent-xenex"
+    ],
+    "sourceUrl": "https://www.midlandfiresecurity.co.uk/wp-content/uploads/2019/05/xenex-panel-installation-and-commissioning-manual.pdf",
+    "sourceSha256": "bfba77e6449597ce2a10fe1cfd0f4ef33d7db3b012f7358d5e155f6b2842f4d1",
+    "edition": "4188-424 Issue 6, Part 1, June 2012",
+    "image": "wiring/gent-33fdf5de07b1-p3-xenex-sounder-circuits-class-change-and-contacts.webp",
+    "imageSha256": "b4cbc410a9c8263ed6eb54fbf99bac7053b6dc3e75ff3dd36b70b8fafc63edb7",
+    "imageWidth": 1400,
+    "imageHeight": 1978,
+    "imageBytes": 121552,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "gent-33fdf5de07b1-p8-xenex-panel-terminals-and-mains",
+    "recordId": "gent-33fdf5de07b1",
+    "brand": "Gent",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 8,
+    "title": "Xenex panel terminals and mains",
+    "section": "Terminals — Figure 12: Panel terminals and fuses",
+    "scope": "Terminal identification and mains/earth connection in the Xenex installation instructions.",
+    "notes": [],
+    "keywords": [
+      "Xenex",
+      "terminal",
+      "mains",
+      "fuse"
+    ],
+    "diagramType": "terminal-layout",
+    "printedPage": "8",
+    "models": [
+      "Xenex"
+    ],
+    "panelIds": [
+      "gent-xenex"
+    ],
+    "sourceUrl": "https://www.midlandfiresecurity.co.uk/wp-content/uploads/2019/05/xenex-panel-installation-and-commissioning-manual.pdf",
+    "sourceSha256": "bfba77e6449597ce2a10fe1cfd0f4ef33d7db3b012f7358d5e155f6b2842f4d1",
+    "edition": "4188-424 Issue 6, Part 1, June 2012",
+    "image": "wiring/gent-33fdf5de07b1-p8-xenex-panel-terminals-and-mains.webp",
+    "imageSha256": "b048abe047b372da011fb41512633d7a4a834dc5dd16207b7b863ceb4bc51e69",
+    "imageWidth": 1400,
+    "imageHeight": 1978,
+    "imageBytes": 113670,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "gent-c2e20b406444-p19-sentri-one-main-board-external-terminals",
+    "recordId": "gent-c2e20b406444",
+    "brand": "Gent",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 19,
+    "title": "SenTRI ONE main-board external terminals",
+    "section": "Terminals for external circuits on Main Control Board",
+    "scope": "MCB field-terminal identifiers for SenTRI ONE.",
+    "notes": [],
+    "keywords": [
+      "SenTRI ONE",
+      "MCB",
+      "terminal"
+    ],
+    "diagramType": "terminal-layout",
+    "printedPage": "19",
+    "models": [
+      "SenTRI ONE"
+    ],
+    "panelIds": [
+      "gent-sentri-one"
+    ],
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Sentri_one%20fire%20alarm%20Install%20Manual.pdf",
+    "sourceSha256": "45e4dca1dec5f1bc8978b22d2dfee76ece3d5949d342aa90de394b8765a118b4",
+    "edition": "4188-979 Issue 2, April 2010; document pack 2534-235 Issue 2",
+    "image": "wiring/gent-c2e20b406444-p19-sentri-one-main-board-external-terminals.webp",
+    "imageSha256": "d0ed00012e112c8e0eee5e24953660e16d286d434817d3be64472d436fb367dd",
+    "imageWidth": 1400,
+    "imageHeight": 1982,
+    "imageBytes": 84926,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "gent-c2e20b406444-p20-sentri-one-device-loop-circuit",
+    "recordId": "gent-c2e20b406444",
+    "brand": "Gent",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 20,
+    "title": "SenTRI ONE device-loop circuit",
+    "section": "Device loop circuit",
+    "scope": "Loop ends and the specific SenTRI detector, call-point and sounder-strobe examples shown in this edition.",
+    "notes": [],
+    "keywords": [
+      "SenTRI ONE",
+      "detector loop",
+      "call point",
+      "sounder strobe"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "20",
+    "models": [
+      "SenTRI ONE"
+    ],
+    "panelIds": [
+      "gent-sentri-one"
+    ],
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Sentri_one%20fire%20alarm%20Install%20Manual.pdf",
+    "sourceSha256": "45e4dca1dec5f1bc8978b22d2dfee76ece3d5949d342aa90de394b8765a118b4",
+    "edition": "4188-979 Issue 2, April 2010; document pack 2534-235 Issue 2",
+    "image": "wiring/gent-c2e20b406444-p20-sentri-one-device-loop-circuit.webp",
+    "imageSha256": "f7288149ab3d7d59de02e686b7d829d2197b73f2e0c497e37760c0c4cc85c780",
+    "imageWidth": 1400,
+    "imageHeight": 1982,
+    "imageBytes": 81402,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "gent-c2e20b406444-p21-sentri-one-alarm-and-relay-circuits",
+    "recordId": "gent-c2e20b406444",
+    "brand": "Gent",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 21,
+    "title": "SenTRI ONE alarm and relay circuits",
+    "section": "Master alarm circuits / Auxiliary relay circuits",
+    "scope": "Conventional master alarm circuits and fire/fault relay contacts for SenTRI ONE.",
+    "notes": [],
+    "keywords": [
+      "SenTRI ONE",
+      "master alarm",
+      "sounder",
+      "relay"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "21",
+    "models": [
+      "SenTRI ONE"
+    ],
+    "panelIds": [
+      "gent-sentri-one"
+    ],
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Sentri_one%20fire%20alarm%20Install%20Manual.pdf",
+    "sourceSha256": "45e4dca1dec5f1bc8978b22d2dfee76ece3d5949d342aa90de394b8765a118b4",
+    "edition": "4188-979 Issue 2, April 2010; document pack 2534-235 Issue 2",
+    "image": "wiring/gent-c2e20b406444-p21-sentri-one-alarm-and-relay-circuits.webp",
+    "imageSha256": "a0b917cc02ee1fdae3bd0da726680ce5d1579bd1fcefd08e25b73333ff7b57e8",
+    "imageWidth": 1400,
+    "imageHeight": 1982,
+    "imageBytes": 81644,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "haes-2ddf67adc24c-p16-alarmsense-plus-mains-and-panel-connection-layout",
+    "recordId": "haes-2ddf67adc24c",
+    "brand": "Haes",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 16,
+    "title": "AlarmSense PLUS mains and panel connection layout",
+    "section": "Installation — Typical panel layout",
+    "scope": "Typical AlarmSense PLUS internal terminals and incoming-mains arrangement.",
+    "notes": [],
+    "keywords": [
+      "AlarmSense PLUS",
+      "mains",
+      "terminal"
+    ],
+    "diagramType": "terminal-layout",
+    "printedPage": "14",
+    "models": [
+      "AlarmSense PLUS"
+    ],
+    "panelIds": [
+      "haes-alarmsense-plus"
+    ],
+    "sourceUrl": "https://haes-tech.com/app/uploads/2019/08/AlarmSense-Plus-Manual-1.pdf",
+    "sourceSha256": "e35cb4ae76e1d4e57991c7c2694f088b9c6c7475bd2cf3c9a5cf321693533f3d",
+    "edition": "UI-ASP-01 Issue 5.0",
+    "image": "wiring/haes-2ddf67adc24c-p16-alarmsense-plus-mains-and-panel-connection-layout.webp",
+    "imageSha256": "000e240c590aa1fd307fab7a9db36531afcfc0193642573bad729cfb43ccddf2",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 118228,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "haes-2ddf67adc24c-p17-alarmsense-plus-standby-battery-connections",
+    "recordId": "haes-2ddf67adc24c",
+    "brand": "Haes",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 17,
+    "title": "AlarmSense PLUS standby battery connections",
+    "section": "Connecting the batteries / Battery charging voltage checks",
+    "scope": "Two-battery connection and charging-check page for AlarmSense PLUS.",
+    "notes": [],
+    "keywords": [
+      "AlarmSense PLUS",
+      "battery",
+      "charging"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "15",
+    "models": [
+      "AlarmSense PLUS"
+    ],
+    "panelIds": [
+      "haes-alarmsense-plus"
+    ],
+    "sourceUrl": "https://haes-tech.com/app/uploads/2019/08/AlarmSense-Plus-Manual-1.pdf",
+    "sourceSha256": "e35cb4ae76e1d4e57991c7c2694f088b9c6c7475bd2cf3c9a5cf321693533f3d",
+    "edition": "UI-ASP-01 Issue 5.0",
+    "image": "wiring/haes-2ddf67adc24c-p17-alarmsense-plus-standby-battery-connections.webp",
+    "imageSha256": "4fd32b884f0c1af6d4ad3f9dc145dec831059110e231a38aa3f795b6952ca998",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 95314,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "haes-2ddf67adc24c-p19-alarmsense-plus-zone-interface-connection-example",
+    "recordId": "haes-2ddf67adc24c",
+    "brand": "Haes",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 19,
+    "title": "AlarmSense PLUS zone-interface connection example",
+    "section": "Setup & Programming — Zone Interface Function",
+    "scope": "Connection from another control panel’s fire/fault contacts to a zone configured for the interface function.",
+    "notes": [
+      "The stated interface-zone mode is non-latching, non-aux-operating and non-alarm-sounding; the page warns the fire signal does not operate sounders on that interface zone."
+    ],
+    "keywords": [
+      "AlarmSense PLUS",
+      "zone interface",
+      "fire relay",
+      "fault relay"
+    ],
+    "diagramType": "connection-example",
+    "printedPage": "17",
+    "models": [
+      "AlarmSense PLUS"
+    ],
+    "panelIds": [
+      "haes-alarmsense-plus"
+    ],
+    "sourceUrl": "https://haes-tech.com/app/uploads/2019/08/AlarmSense-Plus-Manual-1.pdf",
+    "sourceSha256": "e35cb4ae76e1d4e57991c7c2694f088b9c6c7475bd2cf3c9a5cf321693533f3d",
+    "edition": "UI-ASP-01 Issue 5.0",
+    "image": "wiring/haes-2ddf67adc24c-p19-alarmsense-plus-zone-interface-connection-example.webp",
+    "imageSha256": "d033375608953f9a360bf425e35feb3fcbd1abe11433e17c381afdc6e6ecd690",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 58178,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "haes-98aed045fb2f-p12-esento-repeater-mains-and-terminal-layout",
+    "recordId": "haes-98aed045fb2f",
+    "brand": "Haes",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 12,
+    "title": "Esento repeater mains and terminal layout",
+    "section": "Installation — Typical panel layout",
+    "scope": "Repeater internal terminal layout, mains and power-supply arrangement.",
+    "notes": [],
+    "keywords": [
+      "Esento",
+      "repeater",
+      "mains",
+      "terminal"
+    ],
+    "diagramType": "terminal-layout",
+    "printedPage": "10",
+    "models": [
+      "Esento repeater"
+    ],
+    "panelIds": [
+      "haes-esento-repeater"
+    ],
+    "sourceUrl": "https://haes-tech.com/app/uploads/2021/09/Esento-Repeater-Manual.pdf",
+    "sourceSha256": "e445b61606a112b2a234bb8523cab59bdc1ddf205183d808701fe14916f0b8f3",
+    "edition": "UI-XLEN-R-01 Issue 6.0",
+    "image": "wiring/haes-98aed045fb2f-p12-esento-repeater-mains-and-terminal-layout.webp",
+    "imageSha256": "22037c925b4ba5445ce22bd9bfa113e442b123a6542087ab9ee8444f71ef9e6d",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 102470,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "haes-98aed045fb2f-p14-esento-repeater-loop-and-legacy-network-wiring",
+    "recordId": "haes-98aed045fb2f",
+    "brand": "Haes",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 14,
+    "title": "Esento repeater loop and legacy network wiring",
+    "section": "Installation — Cabling",
+    "scope": "Repeater-network loop and radial/legacy examples, kept together with their termination details.",
+    "notes": [
+      "Choose the source’s topology-specific figure; do not mix loop and legacy radial arrangements."
+    ],
+    "keywords": [
+      "Esento",
+      "repeater",
+      "network",
+      "radial",
+      "loop",
+      "120 ohm"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "12",
+    "models": [
+      "Esento repeater"
+    ],
+    "panelIds": [
+      "haes-esento-repeater"
+    ],
+    "sourceUrl": "https://haes-tech.com/app/uploads/2021/09/Esento-Repeater-Manual.pdf",
+    "sourceSha256": "e445b61606a112b2a234bb8523cab59bdc1ddf205183d808701fe14916f0b8f3",
+    "edition": "UI-XLEN-R-01 Issue 6.0",
+    "image": "wiring/haes-98aed045fb2f-p14-esento-repeater-loop-and-legacy-network-wiring.webp",
+    "imageSha256": "f3fe7cf035eeee89b6235658fe312d8e5b81f6dc45f024b23a0f877868da7e58",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 77486,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "haes-c83f3256011b-p15-fusion-mains-and-protective-earth-connection",
+    "recordId": "haes-c83f3256011b",
+    "brand": "Haes",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 15,
+    "title": "Fusion mains and protective-earth connection",
+    "section": "Installation (Continued) — Mains connections",
+    "scope": "PSUFUSION 3A terminal and earth-stud connection drawing in the Fusion installation instructions.",
+    "notes": [],
+    "keywords": [
+      "Fusion",
+      "mains",
+      "earth",
+      "PSUFUSION 3A"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "15",
+    "models": [
+      "Fusion"
+    ],
+    "panelIds": [
+      "haes-fusion"
+    ],
+    "sourceUrl": "https://haes-tech.com/app/uploads/2019/10/FUSION-Inst-Comm-Manual-UI-FBU-01.pdf",
+    "sourceSha256": "8bc320646004ac7f4c853963d04a4efd3e50313d5a84d5c73cbd8e7c57ed08d6",
+    "edition": "UI-FBU-01 Issue 3.0",
+    "image": "wiring/haes-c83f3256011b-p15-fusion-mains-and-protective-earth-connection.webp",
+    "imageSha256": "f3e3e74e25d679f1597c07bb6de6ee0eb3eca41a6e6485c71d2b57a304263e85",
+    "imageWidth": 1400,
+    "imageHeight": 1981,
+    "imageBytes": 92116,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "haes-c83f3256011b-p54-fusion-can-network-wiring",
+    "recordId": "haes-c83f3256011b",
+    "brand": "Haes",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 54,
+    "title": "Fusion CAN network wiring",
+    "section": "Networking — Typical CAN bus wiring",
+    "scope": "Typical CAN-bus links and termination for Fusion networked panels.",
+    "notes": [
+      "This is communications-network wiring, not the detector circuit."
+    ],
+    "keywords": [
+      "Fusion",
+      "CAN",
+      "network",
+      "termination"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "54",
+    "models": [
+      "Fusion"
+    ],
+    "panelIds": [
+      "haes-fusion"
+    ],
+    "sourceUrl": "https://haes-tech.com/app/uploads/2019/10/FUSION-Inst-Comm-Manual-UI-FBU-01.pdf",
+    "sourceSha256": "8bc320646004ac7f4c853963d04a4efd3e50313d5a84d5c73cbd8e7c57ed08d6",
+    "edition": "UI-FBU-01 Issue 3.0",
+    "image": "wiring/haes-c83f3256011b-p54-fusion-can-network-wiring.webp",
+    "imageSha256": "5b210c93a28fd0cae9d7463418467a99a047017a36c2881904b776d087b89525",
+    "imageWidth": 1400,
+    "imageHeight": 1981,
+    "imageBytes": 100314,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "haes-cd2d5aa5d441-p18-esento-excel-mains-and-panel-connection-layout",
+    "recordId": "haes-cd2d5aa5d441",
+    "brand": "Haes",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 18,
+    "title": "Esento Excel mains and panel connection layout",
+    "section": "Installation — Typical panel layout",
+    "scope": "Typical Esento Excel internal terminal layout and mains-entry connection drawing.",
+    "notes": [],
+    "keywords": [
+      "Esento Excel",
+      "mains",
+      "terminal",
+      "zone"
+    ],
+    "diagramType": "terminal-layout",
+    "printedPage": "16",
+    "models": [
+      "Esento Excel"
+    ],
+    "panelIds": [
+      "haes-esento-excel"
+    ],
+    "sourceUrl": "https://haes-tech.com/app/uploads/2019/08/Esento-Excel-Manual-2.pdf",
+    "sourceSha256": "ca0394e0221f62b9a39e7b260e8b1ea10d4df660c3a90806cbeb0d4d5fe4a849",
+    "edition": "UI-XLEN-01 Issue 12.0",
+    "image": "wiring/haes-cd2d5aa5d441-p18-esento-excel-mains-and-panel-connection-layout.webp",
+    "imageSha256": "4712dd1115940ca8f5a534fedc199bbee9b24fdd76c4ecbc67de1db1a62882e2",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 116026,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "haes-cd2d5aa5d441-p19-esento-excel-standby-battery-connections",
+    "recordId": "haes-cd2d5aa5d441",
+    "brand": "Haes",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 19,
+    "title": "Esento Excel standby battery connections",
+    "section": "Connecting the batteries / Battery charging voltage checks",
+    "scope": "Two-battery arrangement and charging checks shown in the Esento Excel manual.",
+    "notes": [],
+    "keywords": [
+      "Esento Excel",
+      "battery",
+      "charging"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "17",
+    "models": [
+      "Esento Excel"
+    ],
+    "panelIds": [
+      "haes-esento-excel"
+    ],
+    "sourceUrl": "https://haes-tech.com/app/uploads/2019/08/Esento-Excel-Manual-2.pdf",
+    "sourceSha256": "ca0394e0221f62b9a39e7b260e8b1ea10d4df660c3a90806cbeb0d4d5fe4a849",
+    "edition": "UI-XLEN-01 Issue 12.0",
+    "image": "wiring/haes-cd2d5aa5d441-p19-esento-excel-standby-battery-connections.webp",
+    "imageSha256": "c67ed1a40a52eabcaa4a41153b9b6ae1e66a3387ef32dbd44bf7f324c8f28d68",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 92642,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "haes-cd2d5aa5d441-p22-esento-excel-twin-wire-detector-base-wiring",
+    "recordId": "haes-cd2d5aa5d441",
+    "brand": "Haes",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 22,
+    "title": "Esento Excel twin-wire detector-base wiring",
+    "section": "Setup & Programming — Twin Wire Mode",
+    "scope": "Detector-base terminal arrangement and zone-mode switches for Esento Excel’s stated Twin Wire mode.",
+    "notes": [
+      "The source distinguishes compatible diode bases and sounders; this is not an AlarmSense wiring diagram."
+    ],
+    "keywords": [
+      "Esento Excel",
+      "twin wire",
+      "detector base",
+      "diode"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "20",
+    "models": [
+      "Esento Excel"
+    ],
+    "panelIds": [
+      "haes-esento-excel"
+    ],
+    "sourceUrl": "https://haes-tech.com/app/uploads/2019/08/Esento-Excel-Manual-2.pdf",
+    "sourceSha256": "ca0394e0221f62b9a39e7b260e8b1ea10d4df660c3a90806cbeb0d4d5fe4a849",
+    "edition": "UI-XLEN-01 Issue 12.0",
+    "image": "wiring/haes-cd2d5aa5d441-p22-esento-excel-twin-wire-detector-base-wiring.webp",
+    "imageSha256": "a90161682accd738ee18e09157029cc21a1ef8e7960d7ffd5369a219cd6bfccd",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 99318,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "haes-d04704a4ec15-p16-esento-eclipse-mains-and-panel-connection-layout",
+    "recordId": "haes-d04704a4ec15",
+    "brand": "Haes",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 16,
+    "title": "Esento Eclipse mains and panel connection layout",
+    "section": "Installation — Typical panel layout",
+    "scope": "Typical Esento Eclipse internal terminals and incoming-mains arrangement.",
+    "notes": [],
+    "keywords": [
+      "Esento Eclipse",
+      "mains",
+      "terminal",
+      "zone"
+    ],
+    "diagramType": "terminal-layout",
+    "printedPage": "14",
+    "models": [
+      "Esento Eclipse"
+    ],
+    "panelIds": [
+      "haes-esento-eclipse"
+    ],
+    "sourceUrl": "https://haes-tech.com/app/uploads/2019/08/Esento-Eclipse-Manual-2.pdf",
+    "sourceSha256": "3c7a7e74abccfd94f9789a0292b4604efe42bf916c780b7d384302777819896a",
+    "edition": "UI-ECL-01 Issue 8.0",
+    "image": "wiring/haes-d04704a4ec15-p16-esento-eclipse-mains-and-panel-connection-layout.webp",
+    "imageSha256": "0a937cae1ec9aa9d7571b6c3d377ff789c8e5fb82665cabb9655c616cabb8973",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 120120,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "haes-d04704a4ec15-p18-esento-eclipse-twin-wire-detector-base-wiring",
+    "recordId": "haes-d04704a4ec15",
+    "brand": "Haes",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 18,
+    "title": "Esento Eclipse twin-wire detector-base wiring",
+    "section": "Setup & Programming — Twin Wire Mode",
+    "scope": "Twin Wire detector-base arrangement for the mode described in this Eclipse manual.",
+    "notes": [
+      "Use the stated base/sounder compatibility conditions; a manufacturer name alone does not establish a compatible device."
+    ],
+    "keywords": [
+      "Esento Eclipse",
+      "twin wire",
+      "detector base"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "16",
+    "models": [
+      "Esento Eclipse"
+    ],
+    "panelIds": [
+      "haes-esento-eclipse"
+    ],
+    "sourceUrl": "https://haes-tech.com/app/uploads/2019/08/Esento-Eclipse-Manual-2.pdf",
+    "sourceSha256": "3c7a7e74abccfd94f9789a0292b4604efe42bf916c780b7d384302777819896a",
+    "edition": "UI-ECL-01 Issue 8.0",
+    "image": "wiring/haes-d04704a4ec15-p18-esento-eclipse-twin-wire-detector-base-wiring.webp",
+    "imageSha256": "ced68ffd16cd11562ad0230933e9f37b27d9e464aa8c6508b1485770df83c3b3",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 78556,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "hochiki-2e3c913355f8-p10-latitude-loop-terminal-connection-photograph",
+    "recordId": "hochiki-2e3c913355f8",
+    "brand": "Hochiki",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 10,
+    "title": "Latitude loop-terminal connection photograph",
+    "section": "Connecting loop cables",
+    "scope": "Manufacturer photograph showing labelled loop cable connections on the Latitude board; it is not a full field-circuit schematic.",
+    "notes": [
+      "The source directs the engineer to observe polarity shown at the board’s loop terminations."
+    ],
+    "keywords": [
+      "Latitude",
+      "loop",
+      "terminal",
+      "photograph"
+    ],
+    "diagramType": "connection-example",
+    "printedPage": "9",
+    "models": [
+      "Latitude"
+    ],
+    "panelIds": [
+      "hochiki-latitude-en"
+    ],
+    "sourceUrl": "https://assets.hochikiglobal.com/assetbank-hochikieurope/assetfile/17452.pdf",
+    "sourceSha256": "f0fc9f60cbbd79ff24f43da8ea12d043b2fbfe1ca7ebd2bb2c4eb6ba6f27186e",
+    "edition": "ISS2/MAR24",
+    "image": "wiring/hochiki-2e3c913355f8-p10-latitude-loop-terminal-connection-photograph.webp",
+    "imageSha256": "7a4141660e2e9c82e6dfde5835b3690493e440dc733cdf845ce2c1ca2f066174",
+    "imageWidth": 1400,
+    "imageHeight": 1974,
+    "imageBytes": 407386,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "kentec-001fd3365756-p13-sigma-xt-detector-zones-and-sounder-circuits",
+    "recordId": "kentec-001fd3365756",
+    "brand": "Kentec",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 13,
+    "title": "Sigma XT detector zones and sounder circuits",
+    "section": "6. Detection zone wiring / 7. Sounder circuit wiring",
+    "scope": "Sigma XT conventional detection-zone and sounder-circuit connections.",
+    "notes": [
+      "This is the extinguishant panel’s own source; do not substitute Sigma CP zone or EOL arrangements."
+    ],
+    "keywords": [
+      "Sigma XT",
+      "detection zone",
+      "sounder",
+      "end of line"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "13",
+    "models": [
+      "Sigma XT"
+    ],
+    "panelIds": [
+      "kentec-sigma-xt"
+    ],
+    "sourceUrl": "https://trinityfireandsecurity.com/wp-content/uploads/2025/09/Sigma-XT-Operating-and-Maintenance-Manual.pdf",
+    "sourceSha256": "390d7d21b9063d5c4da5b51e62f36fd338a6d84f4dcb9fed3c7c78e681b8534a",
+    "edition": "Man-1088 Issue 27",
+    "image": "wiring/kentec-001fd3365756-p13-sigma-xt-detector-zones-and-sounder-circuits.webp",
+    "imageSha256": "95bacc8603593765cb8701444ec5b6ff55942d9091ba51b253920ff3dc5ed72a",
+    "imageWidth": 1400,
+    "imageHeight": 1981,
+    "imageBytes": 76448,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "kentec-001fd3365756-p14-sigma-xt-intrinsically-safe-barrier-examples",
+    "recordId": "kentec-001fd3365756",
+    "brand": "Kentec",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 14,
+    "title": "Sigma XT intrinsically safe barrier examples",
+    "section": "8. Using intrinsically safe barriers / Figures 8–9",
+    "scope": "Source-specific detector-zone MTL5561 and sounder MTL7778ac barrier diagrams for the conditions described in the Sigma XT manual.",
+    "notes": [
+      "These are the named intrinsically safe barrier examples; they are not a general authorisation for another barrier, circuit or hazardous-area installation."
+    ],
+    "keywords": [
+      "Sigma XT",
+      "intrinsically safe",
+      "MTL5561",
+      "MTL7778ac",
+      "barrier"
+    ],
+    "diagramType": "connection-example",
+    "printedPage": "14",
+    "models": [
+      "Sigma XT"
+    ],
+    "panelIds": [
+      "kentec-sigma-xt"
+    ],
+    "sourceUrl": "https://trinityfireandsecurity.com/wp-content/uploads/2025/09/Sigma-XT-Operating-and-Maintenance-Manual.pdf",
+    "sourceSha256": "390d7d21b9063d5c4da5b51e62f36fd338a6d84f4dcb9fed3c7c78e681b8534a",
+    "edition": "Man-1088 Issue 27",
+    "image": "wiring/kentec-001fd3365756-p14-sigma-xt-intrinsically-safe-barrier-examples.webp",
+    "imageSha256": "160c4caf84c8a2163a67f23d12b74585eeee7c10ff09d1484cf099174f78b9c7",
+    "imageWidth": 1400,
+    "imageHeight": 1981,
+    "imageBytes": 94212,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "kentec-001fd3365756-p15-sigma-xt-monitored-inputs-and-solenoid-connection",
+    "recordId": "kentec-001fd3365756",
+    "brand": "Kentec",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 15,
+    "title": "Sigma XT monitored inputs and solenoid connection",
+    "section": "9. Connection to monitored inputs / Figure 11 — Example of wiring a solenoid",
+    "scope": "Mode/manual-release/hold/pressure inputs and the illustrated extinguishant-solenoid connection.",
+    "notes": [
+      "Preserves monitoring-component, polarity and solenoid-diode conditions from the source."
+    ],
+    "keywords": [
+      "Sigma XT",
+      "monitored input",
+      "manual release",
+      "solenoid",
+      "extinguishant"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "15",
+    "models": [
+      "Sigma XT"
+    ],
+    "panelIds": [
+      "kentec-sigma-xt"
+    ],
+    "sourceUrl": "https://trinityfireandsecurity.com/wp-content/uploads/2025/09/Sigma-XT-Operating-and-Maintenance-Manual.pdf",
+    "sourceSha256": "390d7d21b9063d5c4da5b51e62f36fd338a6d84f4dcb9fed3c7c78e681b8534a",
+    "edition": "Man-1088 Issue 27",
+    "image": "wiring/kentec-001fd3365756-p15-sigma-xt-monitored-inputs-and-solenoid-connection.webp",
+    "imageSha256": "822818b9d35ad613f30b486327bd1b4a63fc40db849352244f4b572c80951005",
+    "imageWidth": 1400,
+    "imageHeight": 1981,
+    "imageBytes": 59750,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "kentec-07eb8f5458c5-p7-hydrosense-cp-r-relay-contacts-and-dc-supply",
+    "recordId": "kentec-07eb8f5458c5",
+    "brand": "Kentec",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 7,
+    "title": "Hydrosense CP-R relay contacts and DC supply",
+    "section": "6. Connection to relay contacts / 7. 24V Input",
+    "scope": "Hydrosense CP-R fault/alarm relay terminals and external 24V DC supply connection for non-mains-powered versions.",
+    "notes": [
+      "The source requires correct DC polarity and fault monitoring when supplied from another power source."
+    ],
+    "keywords": [
+      "Hydrosense",
+      "CP-R",
+      "repeater",
+      "relay",
+      "24V"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "7",
+    "models": [
+      "Hydrosense CP-R B3420"
+    ],
+    "panelIds": [
+      "kentec-hydrosense-cp-r"
+    ],
+    "sourceUrl": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1132.pdf",
+    "sourceSha256": "68b57f09a1612749ba3677745b9e65f10e2f9a6f3ffa3d5da8d5223be689a97e",
+    "edition": "Man-1132 B3420 Issue 03, June 2013",
+    "image": "wiring/kentec-07eb8f5458c5-p7-hydrosense-cp-r-relay-contacts-and-dc-supply.webp",
+    "imageSha256": "1fe489223da0fbbcfd9d6a3743711439464c4b31fbbe8104053dee43f90cb52a",
+    "imageWidth": 1400,
+    "imageHeight": 1981,
+    "imageBytes": 65666,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "kentec-0d82d93522c3-p10-sigma-cp-circuit-board-terminal-layout",
+    "recordId": "kentec-0d82d93522c3",
+    "brand": "Kentec",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 10,
+    "title": "Sigma CP circuit-board terminal layout",
+    "section": "6. Connecting to the circuit board",
+    "scope": "Field terminal row and main board for the K and T series named on the manual cover.",
+    "notes": [],
+    "keywords": [
+      "Sigma CP",
+      "terminal",
+      "main PCB"
+    ],
+    "diagramType": "terminal-layout",
+    "printedPage": "10",
+    "models": [
+      "Sigma CP K series",
+      "Sigma CP T series"
+    ],
+    "panelIds": [
+      "kentec-sigma-cp"
+    ],
+    "sourceUrl": "https://kentec.co.uk/wp-content/uploads/2018/08/Man-1078_SigmaCP_25.pdf",
+    "sourceSha256": "ce2da02ef49b615e68ae7a1e69b9ffcc54efd8970bbacb9b1589f484d3e30dd6",
+    "edition": "Man-1078 Issue 25, April 2024",
+    "image": "wiring/kentec-0d82d93522c3-p10-sigma-cp-circuit-board-terminal-layout.webp",
+    "imageSha256": "69650f5ba6d47c6885be4da4f3552b31cc78676988ed3461f3b508695ddcbc8f",
+    "imageWidth": 1400,
+    "imageHeight": 1979,
+    "imageBytes": 109902,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "kentec-0d82d93522c3-p11-sigma-cp-k-series-and-t-series-zone-wiring",
+    "recordId": "kentec-0d82d93522c3",
+    "brand": "Kentec",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 11,
+    "title": "Sigma CP K-series and T-series zone wiring",
+    "section": "8. Detection zone wiring / Figures 4–5",
+    "scope": "Separate standard K-series detector-zone and T-series two-wire drawings; match the panel variant before using either.",
+    "notes": [
+      "Both drawings show 6K8 end-of-line resistors. The T-series drawing specifies reversed sounder polarity and SA-WIRE bases; the text separately describes conditional LCMU use for non-two-wire systems."
+    ],
+    "keywords": [
+      "Sigma CP",
+      "K series",
+      "T series",
+      "two wire",
+      "detection zone",
+      "end of line"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "11",
+    "models": [
+      "Sigma CP K series",
+      "Sigma CP T series"
+    ],
+    "panelIds": [
+      "kentec-sigma-cp"
+    ],
+    "sourceUrl": "https://kentec.co.uk/wp-content/uploads/2018/08/Man-1078_SigmaCP_25.pdf",
+    "sourceSha256": "ce2da02ef49b615e68ae7a1e69b9ffcc54efd8970bbacb9b1589f484d3e30dd6",
+    "edition": "Man-1078 Issue 25, April 2024",
+    "image": "wiring/kentec-0d82d93522c3-p11-sigma-cp-k-series-and-t-series-zone-wiring.webp",
+    "imageSha256": "210b2e9a200a6402370ccdc68e66cdad3f5b2b6c08df2ce880b3ceb7af31ebfb",
+    "imageWidth": 1400,
+    "imageHeight": 1979,
+    "imageBytes": 75746,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "kentec-0d82d93522c3-p12-sigma-cp-sounders-and-remote-controls",
+    "recordId": "kentec-0d82d93522c3",
+    "brand": "Kentec",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 12,
+    "title": "Sigma CP sounders and remote controls",
+    "section": "9. Sounder circuit wiring / 10. Remote control inputs",
+    "scope": "Polarised common-sounder circuit and remote-control inputs, applicable to standard and T-series control panels as stated on the page.",
+    "notes": [
+      "The sounder figure specifies a 10K end-of-line resistor; it is not the T-series zone diagram."
+    ],
+    "keywords": [
+      "Sigma CP",
+      "sounder",
+      "remote control",
+      "10K"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "12",
+    "models": [
+      "Sigma CP K series",
+      "Sigma CP T series"
+    ],
+    "panelIds": [
+      "kentec-sigma-cp"
+    ],
+    "sourceUrl": "https://kentec.co.uk/wp-content/uploads/2018/08/Man-1078_SigmaCP_25.pdf",
+    "sourceSha256": "ce2da02ef49b615e68ae7a1e69b9ffcc54efd8970bbacb9b1589f484d3e30dd6",
+    "edition": "Man-1078 Issue 25, April 2024",
+    "image": "wiring/kentec-0d82d93522c3-p12-sigma-cp-sounders-and-remote-controls.webp",
+    "imageSha256": "d94b745f210111aa99e9a63fd9912636968ab6d71d2e169df2c730e62f3c5198",
+    "imageWidth": 1400,
+    "imageHeight": 1979,
+    "imageBytes": 81538,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "kentec-21f0fd797fe0-p7-syncro-terminal-plate-layout",
+    "recordId": "kentec-21f0fd797fe0",
+    "brand": "Kentec",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 7,
+    "title": "Syncro terminal-plate layout",
+    "section": "5. Connecting to the panel",
+    "scope": "Terminal-plate photograph and field-terminal identifiers for Syncro; a terminal layout rather than a complete circuit drawing.",
+    "notes": [
+      "Retains the source instruction not to connect or disconnect circuits with power on."
+    ],
+    "keywords": [
+      "Syncro",
+      "terminal",
+      "PCB"
+    ],
+    "diagramType": "terminal-layout",
+    "printedPage": "7",
+    "models": [
+      "Syncro"
+    ],
+    "panelIds": [
+      "kentec-syncro"
+    ],
+    "sourceUrl": "https://trinityfireandsecurity.com/wp-content/uploads/2025/09/Syncro-Fire-Control-Panel-Product-Manual.pdf",
+    "sourceSha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd",
+    "edition": "Man-1055 Issue 26, May 2016",
+    "image": "wiring/kentec-21f0fd797fe0-p7-syncro-terminal-plate-layout.webp",
+    "imageSha256": "9d10590815adce7fb468edfda6bbfced9825410945da682d6b796b23fe74ae57",
+    "imageWidth": 1400,
+    "imageHeight": 1981,
+    "imageBytes": 105068,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "kentec-21f0fd797fe0-p16-syncro-monitored-routing-outputs",
+    "recordId": "kentec-21f0fd797fe0",
+    "brand": "Kentec",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 16,
+    "title": "Syncro monitored routing outputs",
+    "section": "14. Monitored outputs",
+    "scope": "Fire-routing and monitored auxiliary output examples with monitoring resistor, polarity and suppression components shown.",
+    "notes": [],
+    "keywords": [
+      "Syncro",
+      "fire routing",
+      "monitored output",
+      "diode",
+      "end of line"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "16",
+    "models": [
+      "Syncro"
+    ],
+    "panelIds": [
+      "kentec-syncro"
+    ],
+    "sourceUrl": "https://trinityfireandsecurity.com/wp-content/uploads/2025/09/Syncro-Fire-Control-Panel-Product-Manual.pdf",
+    "sourceSha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd",
+    "edition": "Man-1055 Issue 26, May 2016",
+    "image": "wiring/kentec-21f0fd797fe0-p16-syncro-monitored-routing-outputs.webp",
+    "imageSha256": "b0334e22e9cf364ccbf2af1aea2a22db30d5df54eef6f6d66f786ebe4c48179c",
+    "imageWidth": 1400,
+    "imageHeight": 1981,
+    "imageBytes": 52914,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "kentec-21f0fd797fe0-p28-syncro-network-loop-connections",
+    "recordId": "kentec-21f0fd797fe0",
+    "brand": "Kentec",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 28,
+    "title": "Syncro network-loop connections",
+    "section": "21. Networking",
+    "scope": "Network IN/OUT wiring among Syncro nodes, with the cable-distance condition recorded on the page.",
+    "notes": [
+      "This is the panel communications network, not the detector-loop wiring."
+    ],
+    "keywords": [
+      "Syncro",
+      "network",
+      "IN",
+      "OUT",
+      "1200 metres"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "28",
+    "models": [
+      "Syncro"
+    ],
+    "panelIds": [
+      "kentec-syncro"
+    ],
+    "sourceUrl": "https://trinityfireandsecurity.com/wp-content/uploads/2025/09/Syncro-Fire-Control-Panel-Product-Manual.pdf",
+    "sourceSha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd",
+    "edition": "Man-1055 Issue 26, May 2016",
+    "image": "wiring/kentec-21f0fd797fe0-p28-syncro-network-loop-connections.webp",
+    "imageSha256": "b66cf607d2dde841c23563b27cf013190c2319278ed160fb12924db568c92207",
+    "imageWidth": 1400,
+    "imageHeight": 1981,
+    "imageBytes": 83608,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "kentec-579029878abe-p7-solo-response-repeater-terminal-layout",
+    "recordId": "kentec-579029878abe",
+    "brand": "Kentec",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 7,
+    "title": "Solo Response repeater terminal layout",
+    "section": "Annex 2",
+    "scope": "Main circuit-board and terminal drawing for the original Solo Response repeater in this edition.",
+    "notes": [],
+    "keywords": [
+      "Solo Response",
+      "repeater",
+      "terminal"
+    ],
+    "diagramType": "terminal-layout",
+    "printedPage": "6",
+    "models": [
+      "Solo Response"
+    ],
+    "panelIds": [
+      "kentec-solo-response"
+    ],
+    "sourceUrl": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1052.pdf",
+    "sourceSha256": "2883d388d53540d5f9c0aeb635acbbb04467177a60d9919646740eb486cc3414",
+    "edition": "Issue 02, November 1998",
+    "image": "wiring/kentec-579029878abe-p7-solo-response-repeater-terminal-layout.webp",
+    "imageSha256": "d9163f2b9a2c4c6bcffae0e13394eae68895f7b26814bb0ebb7c90550e874cb3",
+    "imageWidth": 1400,
+    "imageHeight": 1979,
+    "imageBytes": 118636,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "kentec-922756f21680-p6-sigma-cp-r-dc-terminal-layout",
+    "recordId": "kentec-922756f21680",
+    "brand": "Kentec",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 6,
+    "title": "Sigma CP-R DC terminal layout",
+    "section": "24V DC versions / Figure 3 — Wiring to the circuit board",
+    "scope": "Board connections illustrated in the 24V DC-version section of the Sigma CP-R manual.",
+    "notes": [],
+    "keywords": [
+      "Sigma CP-R",
+      "24V DC",
+      "repeater",
+      "terminal"
+    ],
+    "diagramType": "terminal-layout",
+    "printedPage": "6",
+    "models": [
+      "Sigma CP-R E01020L2",
+      "Sigma CP-R E01040L2",
+      "Sigma CP-R E01080L2"
+    ],
+    "panelIds": [
+      "kentec-sigma-cp-r"
+    ],
+    "sourceUrl": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1093.pdf",
+    "sourceSha256": "9afcecdc1d954f77440e5db52dfe830117abc8551bc6243314d90fbedffc622f",
+    "edition": "Man-1093 Issue 06, May 2016",
+    "image": "wiring/kentec-922756f21680-p6-sigma-cp-r-dc-terminal-layout.webp",
+    "imageSha256": "c0f4a13eca6103419e88888f65171282ffd407f494bbde81f1e1b67784c185e6",
+    "imageWidth": 1400,
+    "imageHeight": 1981,
+    "imageBytes": 81812,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "kentec-922756f21680-p7-sigma-cp-r-relay-contacts-and-dc-supply",
+    "recordId": "kentec-922756f21680",
+    "brand": "Kentec",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 7,
+    "title": "Sigma CP-R relay contacts and DC supply",
+    "section": "6. Connection to relay contacts / 7. 24V Input",
+    "scope": "Fault/fire relay terminals and the external 24V DC supply connection for E-version repeaters.",
+    "notes": [
+      "The source requires correct DC polarity and fault monitoring when supplied from another power source."
+    ],
+    "keywords": [
+      "Sigma CP-R",
+      "repeater",
+      "relay",
+      "24V",
+      "E version"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "7",
+    "models": [
+      "Sigma CP-R K01020M2 / K01040M2 / K01080M2",
+      "Sigma CP-R E01020L2 / E01040L2 / E01080L2"
+    ],
+    "panelIds": [
+      "kentec-sigma-cp-r"
+    ],
+    "sourceUrl": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1093.pdf",
+    "sourceSha256": "9afcecdc1d954f77440e5db52dfe830117abc8551bc6243314d90fbedffc622f",
+    "edition": "Man-1093 Issue 06, May 2016",
+    "image": "wiring/kentec-922756f21680-p7-sigma-cp-r-relay-contacts-and-dc-supply.webp",
+    "imageSha256": "5723833a89b8f70ea8d05bfcc17c5d38e4d2f1810b7815efde3d0a9973d11d08",
+    "imageWidth": 1400,
+    "imageHeight": 1981,
+    "imageBytes": 62826,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "kentec-be1af1c20d35-p34-solo-esp-detector-base-and-chq-b-chq-z-examples",
+    "recordId": "kentec-be1af1c20d35",
+    "brand": "Kentec",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 34,
+    "title": "Solo ESP detector-base and CHQ-B / CHQ-Z examples",
+    "section": "Annex 4",
+    "scope": "Hochiki ESP detector-base, CHQ-B and CHQ-Z connection drawings reproduced in the 1999 Solo manual.",
+    "notes": [
+      "These legacy module drawings apply only to the exact named modules; CHQ family names do not establish compatibility with later module suffixes."
+    ],
+    "keywords": [
+      "Solo",
+      "Hochiki ESP",
+      "CHQ-B",
+      "CHQ-Z",
+      "base"
+    ],
+    "diagramType": "connection-example",
+    "printedPage": "31",
+    "models": [
+      "Solo — Hochiki ESP protocol"
+    ],
+    "panelIds": [
+      "kentec-solo-hochiki-esp"
+    ],
+    "sourceUrl": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1054.pdf",
+    "sourceSha256": "93b29c2c581e24e55df01586efc498e303d4dd320d1798b78aa1ddfb54a27586",
+    "edition": "Issue 03, June 1999",
+    "image": "wiring/kentec-be1af1c20d35-p34-solo-esp-detector-base-and-chq-b-chq-z-examples.webp",
+    "imageSha256": "78e8d5ab52e3e755eb84d90d829578b3e03fc92d23ea8ee978d3791430e40ef7",
+    "imageWidth": 1400,
+    "imageHeight": 1979,
+    "imageBytes": 84188,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "kentec-be1af1c20d35-p35-solo-esp-chq-mz-chq-s-chq-r-examples",
+    "recordId": "kentec-be1af1c20d35",
+    "brand": "Kentec",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 35,
+    "title": "Solo ESP CHQ-MZ / CHQ-S / CHQ-R examples",
+    "section": "Annex 5",
+    "scope": "Legacy CHQ-MZ, CHQ-S and CHQ-R connection drawings reproduced in the 1999 Solo manual.",
+    "notes": [
+      "Retains the source module suffixes and original circuit figures; do not treat these as diagrams for newer similarly named CHQ modules."
+    ],
+    "keywords": [
+      "Solo",
+      "Hochiki ESP",
+      "CHQ-MZ",
+      "CHQ-S",
+      "CHQ-R"
+    ],
+    "diagramType": "connection-example",
+    "printedPage": "32",
+    "models": [
+      "Solo — Hochiki ESP protocol"
+    ],
+    "panelIds": [
+      "kentec-solo-hochiki-esp"
+    ],
+    "sourceUrl": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1054.pdf",
+    "sourceSha256": "93b29c2c581e24e55df01586efc498e303d4dd320d1798b78aa1ddfb54a27586",
+    "edition": "Issue 03, June 1999",
+    "image": "wiring/kentec-be1af1c20d35-p35-solo-esp-chq-mz-chq-s-chq-r-examples.webp",
+    "imageSha256": "daebaa4230b21b05cfde8c570a1d481cae663d02297a0951786cb1ccdeace6f6",
+    "imageWidth": 1400,
+    "imageHeight": 1979,
+    "imageBytes": 75078,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "kentec-e2d68c942c86-p7-solo-2-response-k5003-terminal-layout",
+    "recordId": "kentec-e2d68c942c86",
+    "brand": "Kentec",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 7,
+    "title": "Solo 2 Response K5003 terminal layout",
+    "section": "Annex 2 — Solo 2 Response Main PCB Details (K5003)",
+    "scope": "K5003 main-PCB drawing for Solo 2 Response; kept distinct from the original Solo Response.",
+    "notes": [],
+    "keywords": [
+      "Solo 2 Response",
+      "K5003",
+      "terminal"
+    ],
+    "diagramType": "terminal-layout",
+    "printedPage": "7",
+    "models": [
+      "Solo 2 Response"
+    ],
+    "panelIds": [
+      "kentec-solo-2-response"
+    ],
+    "sourceUrl": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1064.pdf",
+    "sourceSha256": "5296de49813d461628807ec7af8f85add240ff14a1ae2cab554e010c3f363e99",
+    "edition": "Issue 01, July 2002",
+    "image": "wiring/kentec-e2d68c942c86-p7-solo-2-response-k5003-terminal-layout.webp",
+    "imageSha256": "71154751c3cdcc17fa76d198c30ad7f259d4ce6669e72c34da6be314e9096f48",
+    "imageWidth": 1400,
+    "imageHeight": 1982,
+    "imageBytes": 116268,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "facp-8a4e02b8-8f8d-4061-b018-4e4b1e71b948-p19-morley-zx-loop-wiring-and-isolators",
+    "recordId": "facp-8a4e02b8-8f8d-4061-b018-4e4b1e71b948",
+    "brand": "Morley-IAS",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 19,
+    "title": "Morley ZX loop wiring and isolators",
+    "section": "3.4.3.1 Loop Wiring Installation / Figures 10–11",
+    "scope": "Standard loop and preferred isolator arrangement as shown in the ZX-series installation manual.",
+    "notes": [
+      "The source gives the maximum sensor/call-point count between isolators; preserve that condition with the figure."
+    ],
+    "keywords": [
+      "Morley",
+      "ZX",
+      "loop",
+      "isolator"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "13",
+    "models": [
+      "ZX fire alarm control panels"
+    ],
+    "panelIds": [
+      "morley-ias-zx-series"
+    ],
+    "sourceUrl": "https://docs.facpmanuals.com/manuals/Morley-IAS/zx_series-installation.pdf",
+    "sourceSha256": "d17d1c068228c684ce7d7dc754bfe7fbdbb36b7690816513d590d28ad4f3da4a",
+    "edition": "996-174-000-2 Revision 2",
+    "image": "wiring/facp-8a4e02b8-8f8d-4061-b018-4e4b1e71b948-p19-morley-zx-loop-wiring-and-isolators.webp",
+    "imageSha256": "0da360cef06c180e4d5ce406d793bb19ae18504946e2e09655826046dd7db9eb",
+    "imageWidth": 1400,
+    "imageHeight": 1982,
+    "imageBytes": 164580,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "facp-8a4e02b8-8f8d-4061-b018-4e4b1e71b948-p22-morley-zx-sounder-wiring-and-relay-ratings",
+    "recordId": "facp-8a4e02b8-8f8d-4061-b018-4e4b1e71b948",
+    "brand": "Morley-IAS",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 22,
+    "title": "Morley ZX sounder wiring and relay ratings",
+    "section": "Figure 16 — Sounder Wiring / 3.4.5 Auxiliary Relay Outputs",
+    "scope": "Polarised sounder circuit diagram and auxiliary relay specifications in this ZX edition.",
+    "notes": [
+      "Relay contacts are rated 30V AC/DC, 1 Amp in this source."
+    ],
+    "keywords": [
+      "Morley",
+      "ZX",
+      "sounder",
+      "relay"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "16",
+    "models": [
+      "ZX fire alarm control panels"
+    ],
+    "panelIds": [
+      "morley-ias-zx-series"
+    ],
+    "sourceUrl": "https://docs.facpmanuals.com/manuals/Morley-IAS/zx_series-installation.pdf",
+    "sourceSha256": "d17d1c068228c684ce7d7dc754bfe7fbdbb36b7690816513d590d28ad4f3da4a",
+    "edition": "996-174-000-2 Revision 2",
+    "image": "wiring/facp-8a4e02b8-8f8d-4061-b018-4e4b1e71b948-p22-morley-zx-sounder-wiring-and-relay-ratings.webp",
+    "imageSha256": "cbf729e698323cb3bcfc37033ba5aab3c83b3919381baaf49c472724dc3eb983",
+    "imageWidth": 1400,
+    "imageHeight": 1982,
+    "imageBytes": 179144,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "facp-b4f11834-bd71-4134-8d67-cb9c6d11f4df-p48-notifier-id2000-typical-detector-loop-connections",
+    "recordId": "facp-b4f11834-bd71-4134-8d67-cb9c6d11f4df",
+    "brand": "Notifier",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 48,
+    "title": "Notifier ID2000 typical detector-loop connections",
+    "section": "8.4.2 Loop Checks Before Connecting Wiring",
+    "scope": "Typical analogue-loop connections shown in the commissioning loop-check section, with model/base-specific test conditions retained.",
+    "notes": [
+      "This page is a commissioning reference; its detector-removal instructions depend on the named base type."
+    ],
+    "keywords": [
+      "Notifier",
+      "ID2000",
+      "loop",
+      "detector base",
+      "commissioning"
+    ],
+    "diagramType": "wiring",
+    "printedPage": "43",
+    "models": [
+      "ID2000 series"
+    ],
+    "panelIds": [
+      "notifier-id2000"
+    ],
+    "sourceUrl": "https://docs.facpmanuals.com/manuals/Notifier/id2000-installation-2010.pdf",
+    "sourceSha256": "4c88121060f76b104f8850439c03aa87ad85faeb9bb734df04d6f3b4eec673b4",
+    "edition": "997-433-000-5 Issue 5, May 2010",
+    "image": "wiring/facp-b4f11834-bd71-4134-8d67-cb9c6d11f4df-p48-notifier-id2000-typical-detector-loop-connections.webp",
+    "imageSha256": "aedef14c0ef7a4b20601382ad19c9fa3f5849b5841638537641e5efa7df59fbd",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 97462,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "facp-b4f11834-bd71-4134-8d67-cb9c6d11f4df-p50-notifier-id2000-sounder-and-relay-check-connections",
+    "recordId": "facp-b4f11834-bd71-4134-8d67-cb9c6d11f4df",
+    "brand": "Notifier",
+    "category": "fire",
+    "targetType": "panel",
+    "pdfPage": 50,
+    "title": "Notifier ID2000 sounder and relay check connections",
+    "section": "8.4.5 24V Auxiliary Outputs Check / 8.4.6 Sounder Circuits Check / 8.4.7 Fault Relay Wiring",
+    "scope": "Sounder circuit and fault-relay connection/check figures within the ID2000 commissioning procedure.",
+    "notes": [
+      "Retains the meter placement and relay-state context; the drawing does not establish a live fault in an installed system."
+    ],
+    "keywords": [
+      "Notifier",
+      "ID2000",
+      "sounder",
+      "fault relay",
+      "commissioning"
+    ],
+    "diagramType": "connection-example",
+    "printedPage": "45",
+    "models": [
+      "ID2000 series"
+    ],
+    "panelIds": [
+      "notifier-id2000"
+    ],
+    "sourceUrl": "https://docs.facpmanuals.com/manuals/Notifier/id2000-installation-2010.pdf",
+    "sourceSha256": "4c88121060f76b104f8850439c03aa87ad85faeb9bb734df04d6f3b4eec673b4",
+    "edition": "997-433-000-5 Issue 5, May 2010",
+    "image": "wiring/facp-b4f11834-bd71-4134-8d67-cb9c6d11f4df-p50-notifier-id2000-sounder-and-relay-check-connections.webp",
+    "imageSha256": "75f36b5e01f7e39834926e7284114dc06afcada81b9e3e2e242709937b8e754f",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 116508,
+    "deviceIds": [],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  }
+]

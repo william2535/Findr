@@ -1,0 +1,144 @@
+{
+  "release": "0.11.0",
+  "reviewedAt": "2026-10-30",
+  "projectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
+  "baselineCommit": "01e95deb93b23bdbdc8b0d87dee0c59e05ffe828",
+  "nano": {
+    "mappedScreens": 56,
+    "interactiveScreens": 39,
+    "referenceScreens": 17,
+    "catalogueRoutes": 76,
+    "routeCounts": {
+      "implemented": 20,
+      "conditional": 7,
+      "reference": 49,
+      "conflict": 0
+    },
+    "tracks": 4,
+    "lessons": 28,
+    "logicalSteps": 229,
+    "literalPhysicalKeyPresses": 835,
+    "helpArticles": 34,
+    "glossaryTerms": 20,
+    "tutorialSourceLimits": 7
+  },
+  "tests": {
+    "command": "node --test --test-isolation=none tests/*.test.mjs",
+    "passed": 588,
+    "failed": 0,
+    "newNanoTests": 109,
+    "details": "test-results.txt"
+  },
+  "browserQA": {
+    "preview": "managed Sites preview",
+    "deviceDisableAndMatchingEnableLessons": {
+      "completed": true,
+      "finalFire": 0,
+      "finalFault": 0,
+      "finalDisablement": 0,
+      "finalTest": 0
+    },
+    "learnerPressedHints": true,
+    "guidedTimePaused": true,
+    "helpSearch": {
+      "query": "weekly test",
+      "matchingArticles": 3,
+      "matchingGlossary": true
+    },
+    "phoneFrames": [
+      {
+        "width": 320,
+        "contentWidth": 305,
+        "pageScrollWidth": 305,
+        "largeKeysContained": true,
+        "largePanelWidth": 490,
+        "panelViewportWidth": 243
+      },
+      {
+        "width": 390,
+        "contentWidth": 375,
+        "pageScrollWidth": 375,
+        "fitPanelWidth": 313,
+        "panelLeft": 31,
+        "panelRight": 344
+      }
+    ],
+    "proof": "browser-preview.jpg",
+    "temporaryViewportPageRemoved": true,
+    "limits": [
+      "HTTP preview does not provide a real installed offline PWA test.",
+      "No physical iPhone or Android installation was performed.",
+      "Browser extension metadata errors were separate from app behavior."
+    ]
+  },
+  "webBuild": {
+    "command": "node /root/.codex/plugins/cache/openai-curated-remote/sites/1.1.2/scripts/build-site.mjs",
+    "passed": true,
+    "publicFiles": 745,
+    "orphanFilesRemoved": 1,
+    "buildBytes": 266379919,
+    "limitBytes": 268435456,
+    "exactPublicFileMatch": "All 745 web-required public files are byte-identical; the Android-only download index remains in source and APK assets.",
+    "archiveAllowance": 1048576,
+    "nativeOnlyFilesExcluded": [
+      "app/data/download-map.json"
+    ],
+    "repackagingReason": "The initial archive included an unexpected transient generated copy and exceeded the expanded size limit. The regenerated web build removes orphan copies, omits the native-only download index, and reserves 1 MiB for tar overhead."
+  },
+  "android": {
+    "version": "0.11.0",
+    "versionCode": 15,
+    "bytes": 21722749,
+    "sha256": "fdc4bdae4002701784ea9bc3ecb47450c7e904dbf02d6ce1bc1b6276e043ce06",
+    "appFiles": 711,
+    "allBundledAssetsMatch": true,
+    "signerCertificateSha256": "6075a73725dac5a3cc1f7b6b32c5e1df907cd1ca4b5b611f4c1c1d2fd502fefd",
+    "minSdk": 26,
+    "targetSdk": 35,
+    "permissions": [
+      "android.permission.INTERNET"
+    ],
+    "physicalInstallTested": false
+  },
+  "preservation": {
+    "parsedTrainingDataCompared": [
+      "public/app/data/menu-maps/ade-accenta-optima.json",
+      "public/app/data/menu-maps/galaxy-dimension.json",
+      "public/app/data/menu-maps/hkc-quantum70.json",
+      "public/app/data/menu-maps/menvier-mseries.json",
+      "public/app/data/menu-maps/orisec-cp.json",
+      "public/app/data/menu-maps/pyronix-enforcer.json",
+      "public/app/data/menu-maps/risco-lightsys2.json",
+      "public/app/data/menu-maps/scantronic-ion.json",
+      "public/app/data/menu-maps/texecom-premier-elite.json",
+      "public/app/data/practice.json",
+      "public/app/data/gent-vigilon.json",
+      "public/app/data/gent-lessons.json"
+    ],
+    "allowedSemanticChange": "practice.json release version 0.10.0 -> 0.11.0",
+    "byteIdenticalCoreData": [
+      "catalogue.json",
+      "panels.json",
+      "packs.json",
+      "coverage.json",
+      "knowledge.json"
+    ],
+    "historicalApksRetained": true,
+    "reasonForCompaction": "Remove insignificant JSON whitespace so the new APK fits the hosting bundle without deleting old release downloads.",
+    "compactedFileCount": 14,
+    "whitespaceBytesRemoved": 2304797,
+    "nativeDownloadIndex": "Retained unchanged in public source and the APK. The web manual relay compiles lib/download-map.json separately, and the browser does not consume the native asset."
+  },
+  "sourceSynchronization": {
+    "baselineRecoveredFromConfiguredRemote": true,
+    "method": "Ordinary Git using the exact Site repository and ephemeral hidden-stdin credential; bounded Git operation approved separately after restricted source helper escalation was rejected.",
+    "credentialPersisted": false,
+    "forcePush": false
+  },
+  "limitations": [
+    "Manual-based NANO-24 V3.xx training model; no firmware image or physical panel validation.",
+    "Older V2.xx engineering references remain separate and reference-only unless corroborated.",
+    "The fictional fixture deliberately permits Level 2 device/channel disablement; real commissioning can differ.",
+    "PIN2468, draft handling details, clock range, declared cause/effect and paused guided time are explicit teaching conventions."
+  ]
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "id": "device-doc-apollo-44ca8b979263",
+    "sha256": "44ca8b979263a0afc199e32dfd474353f53a66b1d10009214c35f51ce051309e",
+    "pdf_pages": 2,
+    "bytes": 503895,
+    "model_mentions": [
+      "55000-620APO",
+      "XP95 Optical Smoke Detector"
+    ],
+    "local_source": "/workspace/scratch/163ad62fc051/device-batches-0.13.0/apollo/research/xp95-optical-datasheet.pdf"
+  },
+  {
+    "id": "device-doc-apollo-0c937f028eba",
+    "sha256": "0c937f028eba869be22bde1e92b0989d60a10af890972723b1bb444c4aae1a5f",
+    "pdf_pages": 2,
+    "bytes": 573574,
+    "model_mentions": [
+      "55000-420APO"
+    ],
+    "local_source": "/workspace/scratch/163ad62fc051/device-batches-0.13.0/apollo/research/xp95-heat-a2s-datasheet.pdf"
+  },
+  {
+    "id": "device-doc-apollo-9fa419f06047",
+    "sha256": "9fa419f06047cd85b95db1589151f04028ab9a691ae564982a37ac5f8b82eeb1",
+    "pdf_pages": 2,
+    "bytes": 331630,
+    "model_mentions": [
+      "55000-317APO",
+      "Series 65 Optical Smoke Detector"
+    ],
+    "local_source": "/workspace/scratch/163ad62fc051/device-batches-0.13.0/apollo/research/series65-optical-datasheet.pdf"
+  },
+  {
+    "id": "device-doc-c-tec-c355db94ca7a",
+    "sha256": "c355db94ca7ab2070db5c34b1246bdf3ab22a9aab31f40ebea6d9be54347519c",
+    "pdf_pages": 2,
+    "bytes": 406794,
+    "model_mentions": [
+      "CA402"
+    ],
+    "local_source": "/workspace/scratch/163ad62fc051/device-batches-0.13.0/gent-ctec/research/ctec-ca402-pdf-acorn.pdf"
+  },
+  {
+    "id": "device-doc-c-tec-af925ff0ac67",
+    "sha256": "af925ff0ac67444f0233dc16dec4cad8a538f02ad8f996742227c25a2ff96780",
+    "pdf_pages": 2,
+    "bytes": 389403,
+    "model_mentions": [
+      "CA414"
+    ],
+    "local_source": "/workspace/scratch/163ad62fc051/device-batches-0.13.0/gent-ctec/research/ctec-ca414-pdf.pdf"
+  },
+  {
+    "id": "device-doc-c-tec-9310045e0f57",
+    "sha256": "9310045e0f57b5179bc96dba10144e419be42ebc8b9124b1593e9da2d234c451",
+    "pdf_pages": 2,
+    "bytes": 387709,
+    "model_mentions": [
+      "CA416"
+    ],
+    "local_source": "/workspace/scratch/163ad62fc051/device-batches-0.13.0/gent-ctec/research/ctec-ca416-pdf.pdf"
+  },
+  {
+    "id": "device-doc-c-tec-1a72f739e6d0",
+    "sha256": "1a72f739e6d0b3655e75212dfc71fccde2c4f037fa3da4adc13217fecc624cca",
+    "pdf_pages": 1,
+    "bytes": 230354,
+    "model_mentions": [
+      "CA408"
+    ],
+    "local_source": "/workspace/scratch/163ad62fc051/device-batches-0.13.0/gent-ctec/research/ctec-ca408-pdf.pdf"
+  },
+  {
+    "id": "device-doc-c-tec-8533dbee907d",
+    "sha256": "8533dbee907d2f6f4f80ec1f6d787f791bba259a3b06abca91bdc6ecb4d6ffdc",
+    "pdf_pages": 2,
+    "bytes": 339880,
+    "model_mentions": [
+      "CA470"
+    ],
+    "local_source": "/workspace/scratch/163ad62fc051/device-batches-0.13.0/gent-ctec/research/ctec-ca470-pdf.pdf"
+  },
+  {
+    "id": "device-doc-c-tec-cb5ba501ef82",
+    "sha256": "cb5ba501ef827a576800999d9834b434dc72f70195918a663faae09a7c13027c",
+    "pdf_pages": 1,
+    "bytes": 467453,
+    "model_mentions": [
+      "CA470",
+      "CA47067",
+      "CA470Y",
+      "CA470GR",
+      "CA470B",
+      "CA470W"
+    ],
+    "local_source": "/workspace/scratch/163ad62fc051/device-batches-0.13.0/gent-ctec/research/ctec-ca470-instruction.pdf"
+  },
+  {
+    "id": "device-doc-c-tec-7da7a3d9afa0",
+    "sha256": "7da7a3d9afa0a9451014d862dcb2f49a7d96d6674d0edbee50f2bfbf98da52e6",
+    "pdf_pages": 2,
+    "bytes": 477384,
+    "model_mentions": [
+      "CA730"
+    ],
+    "local_source": "/workspace/scratch/163ad62fc051/device-batches-0.13.0/gent-ctec/research/ctec-ca730-product-pdf.pdf"
+  },
+  {
+    "id": "device-doc-c-tec-f18a6fbbfbc7",
+    "sha256": "f18a6fbbfbc7fb6a1356c4458d959053c5bf51b953ed30553c95e0fda0679d89",
+    "pdf_pages": 1,
+    "bytes": 449509,
+    "model_mentions": [
+      "CA730"
+    ],
+    "local_source": "/workspace/scratch/163ad62fc051/device-batches-0.13.0/gent-ctec/research/ctec-ca730-pdf.pdf"
+  },
+  {
+    "id": "device-doc-c-tec-c1e5b7a7bd89",
+    "sha256": "c1e5b7a7bd89c13d0507eb52c0c920479f96197b635650f2aa3d3e824f309226",
+    "pdf_pages": 2,
+    "bytes": 406799,
+    "model_mentions": [
+      "CA459A/W"
+    ],
+    "local_source": "/workspace/scratch/163ad62fc051/device-batches-0.13.0/gent-ctec/research/ctec-ca459-pdf.pdf"
+  },
+  {
+    "id": "device-doc-gent-9c36c632ebd9",
+    "sha256": "9c36c632ebd9d444656c0274139a4efd893e108b8104b8c7a16d532d4f4d122e",
+    "pdf_pages": 2,
+    "bytes": 1154917,
+    "model_mentions": [
+      "S4-34800",
+      "S4-34842",
+      "S4-34805",
+      "S4-34845"
+    ],
+    "local_source": "/workspace/scratch/163ad62fc051/device-batches-0.13.0/gent-ctec/research/gent-mcp-instruction.pdf"
+  }
+]

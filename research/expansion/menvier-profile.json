@@ -1,0 +1,922 @@
+{
+  "id": "menvier-mseries",
+  "brand": "Menvier",
+  "title": "Menvier M750 / M800",
+  "keypad": "Classic M Series LCD · MKP3 style",
+  "edition": "Engineer 496966 Issue 5 (2006) · separate M800 Manager 11821957 (2010)",
+  "scope": "M750/M800 engineer menu baseline plus a separately labelled later M800 manager menu. The seven guided lessons are selected routes; the free emulator uses the complete reviewed atlas. This is not Menvier30/40/100/300 or TS-series.",
+  "panelIds": [],
+  "allFixtureValuesSimulated": true,
+  "fixtureNotice": "Every name, event, reading and detector action shown here is fictional FINDR practice data.",
+  "sessionStart": "Already authorised practice session",
+  "lcdNotice": "Documented menu labels; populated displays and spacing are illustrative.",
+  "rightIsEnter": false,
+  "leftIsBack": false,
+  "commitOnExit": true,
+  "exitFromRoot": true,
+  "hideTypeCodes": false,
+  "exitChecks": false,
+  "reverseLogScroll": true,
+  "exitPrompt": [
+    "Press [Ent] To",
+    "Leave Menus"
+  ],
+  "enterLabel": "ENT",
+  "backLabel": "ESC",
+  "editLabel": "Toggle",
+  "directMenuCodes": true,
+  "zoneDigits": 4,
+  "typeLabel": "Zone Type",
+  "circuit": "Fictional 4K7/2K2 FSL panel input. The open-circuit display is the documented panel reading, not a multimeter measurement.",
+  "readings": {
+    "secure": "02.200 K Ohms",
+    "active": "06.900 K Ohms",
+    "tamper": "11.463 K Ohms"
+  },
+  "statusLabels": {
+    "secure": "Healthy",
+    "active": "Active",
+    "tamper": "Tamper"
+  },
+  "zones": [
+    {
+      "address": "0001",
+      "name": "Front Door",
+      "type": "Normal Alm",
+      "omitEnabled": true
+    },
+    {
+      "address": "0002",
+      "name": "Hall PIR",
+      "type": "Normal Alm",
+      "omitEnabled": true
+    },
+    {
+      "address": "0003",
+      "name": "Office PIR",
+      "type": "Normal Alm",
+      "omitEnabled": true
+    },
+    {
+      "address": "0004",
+      "name": "Store PIR",
+      "type": "Normal Alm",
+      "omitEnabled": true
+    }
+  ],
+  "zoneTypes": [
+    {
+      "code": "0",
+      "label": "Not Used"
+    },
+    {
+      "code": "1",
+      "label": "Normal Alm"
+    },
+    {
+      "code": "2",
+      "label": "24 Hour"
+    },
+    {
+      "code": "3",
+      "label": "PA Silent"
+    },
+    {
+      "code": "4",
+      "label": "PA Audible"
+    },
+    {
+      "code": "5",
+      "label": "Fire"
+    },
+    {
+      "code": "6",
+      "label": "Technical"
+    },
+    {
+      "code": "7",
+      "label": "Final Exit"
+    },
+    {
+      "code": "8",
+      "label": "Exit Term"
+    },
+    {
+      "code": "9",
+      "label": "Entry"
+    },
+    {
+      "code": null,
+      "label": "Keyswitch"
+    },
+    {
+      "code": null,
+      "label": "Shunt Key"
+    },
+    {
+      "code": null,
+      "label": "Tamper"
+    },
+    {
+      "code": null,
+      "label": "Perimeter"
+    },
+    {
+      "code": null,
+      "label": "Lock Set"
+    },
+    {
+      "code": null,
+      "label": "PSU Battery"
+    },
+    {
+      "code": null,
+      "label": "PSU Fuse"
+    },
+    {
+      "code": null,
+      "label": "PSU Power"
+    },
+    {
+      "code": null,
+      "label": "Masking"
+    },
+    {
+      "code": null,
+      "label": "Occupancy"
+    },
+    {
+      "code": null,
+      "label": "Security"
+    }
+  ],
+  "events": [
+    {
+      "id": "ward-unset",
+      "label": "UNSET WARDS:-",
+      "zone": "",
+      "time": "10:37:10 29/10",
+      "details": "Ward 1 · demo manager",
+      "sourceRefs": [
+        {
+          "sourceId": "eng5",
+          "printedPage": "116",
+          "pdfPage": 118
+        }
+      ]
+    },
+    {
+      "id": "ward-reset",
+      "label": "RESET WARDS:-",
+      "zone": "",
+      "time": "10:35:12 29/10",
+      "details": "Ward 1 · fictional reset",
+      "sourceRefs": [
+        {
+          "sourceId": "eng5",
+          "printedPage": "121",
+          "pdfPage": 123
+        }
+      ]
+    },
+    {
+      "id": "zone-0004-alarm",
+      "label": "ALARM 0004",
+      "zone": "0004",
+      "time": "10:35:00 29/10",
+      "details": "Store PIR · fictional alarm",
+      "logs": [
+        "alarm"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "eng5",
+          "printedPage": "119",
+          "pdfPage": 121
+        }
+      ]
+    },
+    {
+      "id": "ward-set",
+      "label": "SET WARDS:-",
+      "zone": "",
+      "time": "09:00:00 29/10",
+      "details": "Ward 1 · demo manager",
+      "sourceRefs": [
+        {
+          "sourceId": "eng5",
+          "printedPage": "116",
+          "pdfPage": 118
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "eng5",
+      "title": "M-Series Engineering Manual",
+      "edition": "496966 Issue 5; Cooper Security 2005–2006",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Menvier%20M%20Series%20Engineering%20Manual.pdf",
+      "publisher": "Cooper Security / Menvier",
+      "totalPdfPages": 140,
+      "sha256": "6f4f3a6b9f9996e7a32c8b48b64715922ccd98506b93e1ee30ac9d1265536923",
+      "pageNumbering": "Printed Arabic page + 2 = one-based PDF page.",
+      "scope": "M750/M800 subset of the older M-Series manual. No firmware version is asserted; this is not the later Menvier30/40/100/300 family."
+    },
+    {
+      "id": "manager2010",
+      "title": "M2000/M800 Manager’s Manual",
+      "edition": "Part 11821957; PDF metadata created January 2010",
+      "url": "https://bw-tech.co.uk/guides/eaton-menvier-m800-m2000-managers-guide.pdf",
+      "publisher": "Cooper Security / Menvier",
+      "totalPdfPages": 76,
+      "sha256": "7299e5774bf06bcde43820cef438635a365278dd9446b61b7e6db60832fd566a",
+      "pageNumbering": "Printed Arabic page + 2 = one-based PDF page.",
+      "scope": "Separate later M800 Manager baseline. Calendar timers differ from the older engineer guide; user and engineer roots are not merged."
+    },
+    {
+      "id": "keypad",
+      "title": "M2000/M800 User’s Guide",
+      "edition": "Part 12062453; 2010 copyright; keypad diagram printed p3",
+      "url": "https://bw-tech.co.uk/guides/eaton-menvier-m800-m2000-user-guide.pdf",
+      "publisher": "Cooper Security / Menvier",
+      "totalPdfPages": 28,
+      "sha256": "82606a42ec328a1a64344900f23765fb88606b75d3de8d23061750eb5a6663e9",
+      "pageNumbering": "Printed Arabic page + 2 = one-based PDF page.",
+      "scope": "Open-flap classic M Series keypad illustration and physical key names only."
+    }
+  ],
+  "limitations": [
+    "The 2006 Engineer and 2010 Manager manuals are separate baselines. The M800 manager additions are not asserted to exist on M750 or to match the older firmware.",
+    "No attached alarm has been tested. All inputs, codes, schedules and events are fictional and no live communications are possible.",
+    "The seven lessons expose selected paths. The free emulator maps the wider menu tree with explicit reference-only and simplified branches.",
+    "Four fictional panel zones and Ward 1 are used in the lessons. No network jump, radio enrolment, multi-ward walk selection or physical output is performed.",
+    "Free text uses a FINDR helper. Some conditional output fields, calendar allocation masks, custom logic and fault diagnostics require further keypad evidence."
+  ],
+  "keys": [
+    {
+      "id": "1",
+      "label": "1",
+      "ariaLabel": "1"
+    },
+    {
+      "id": "2",
+      "label": "2",
+      "ariaLabel": "2"
+    },
+    {
+      "id": "3",
+      "label": "3",
+      "ariaLabel": "3"
+    },
+    {
+      "id": "4",
+      "label": "4",
+      "ariaLabel": "4"
+    },
+    {
+      "id": "5",
+      "label": "5",
+      "ariaLabel": "5"
+    },
+    {
+      "id": "6",
+      "label": "6",
+      "ariaLabel": "6"
+    },
+    {
+      "id": "7",
+      "label": "7",
+      "ariaLabel": "7"
+    },
+    {
+      "id": "8",
+      "label": "8",
+      "ariaLabel": "8"
+    },
+    {
+      "id": "9",
+      "label": "9",
+      "ariaLabel": "9"
+    },
+    {
+      "id": "0",
+      "label": "0",
+      "ariaLabel": "0"
+    },
+    {
+      "id": "previous",
+      "label": "▲",
+      "ariaLabel": "Up: previous option; earlier event in the log"
+    },
+    {
+      "id": "change",
+      "label": "↔",
+      "ariaLabel": "Toggle: change omission or show log details"
+    },
+    {
+      "id": "next",
+      "label": "▼",
+      "ariaLabel": "Down: next option; newer event in the log"
+    },
+    {
+      "id": "details",
+      "label": "#",
+      "ariaLabel": "Hash key"
+    },
+    {
+      "id": "enter",
+      "label": "ENT",
+      "ariaLabel": "Enter: select, accept or advance"
+    },
+    {
+      "id": "back",
+      "label": "ESC",
+      "ariaLabel": "Escape: return or cancel the unconfirmed field"
+    }
+  ],
+  "controls": [
+    {
+      "label": "▲ / ▼",
+      "description": "Browse menus and records. In the event log, up goes earlier and down goes newer."
+    },
+    {
+      "label": "ENT / ESC",
+      "description": "ENT selects or accepts; ESC returns. Confirm the final leave-menus prompt to commit engineer programming."
+    },
+    {
+      "label": "Toggle",
+      "description": "Changes an omission, toggles a selected attribute, or reveals log details. It is separate from the # key."
+    },
+    {
+      "label": "0–9",
+      "description": "Select a local numbered menu, then ENT. Zones use their complete four-digit address."
+    },
+    {
+      "label": "Omit Zones",
+      "description": "Toggle changes the selected eligible zone; ENT advances to another zone; ESC finishes."
+    }
+  ],
+  "omissionInfo": {
+    "label": "What “disable” means here",
+    "meaning": "Omission excludes an eligible ordinary intruder zone from setting. It does not disconnect or power off the detector. Shunting 24-hour zones is a separate menu.",
+    "duration": "A normal omitted zone is automatically reinstated when its ward is next unset.",
+    "restore": "Return to User 1 → Omit Zones, select the zone, Toggle it to its included state and press ESC."
+  },
+  "nodes": {
+    "root": {
+      "kind": "menu",
+      "label": "Engineer levels",
+      "parent": null,
+      "children": [
+        "engineer-2"
+      ],
+      "virtual": true,
+      "selectedSubset": true,
+      "sourceRefs": [
+        {
+          "sourceId": "eng5",
+          "printedPage": "21",
+          "pdfPage": 23
+        }
+      ]
+    },
+    "engineer-2": {
+      "kind": "menu",
+      "label": "Engineer Menu 2",
+      "parent": "root",
+      "code": "2",
+      "children": [
+        "zone-status",
+        "built-in-tests",
+        "log-functions"
+      ],
+      "selectedSubset": true,
+      "sourceRefs": [
+        {
+          "sourceId": "eng5",
+          "printedPage": "82",
+          "pdfPage": 84
+        }
+      ]
+    },
+    "zone-status": {
+      "kind": "zones",
+      "label": "View Zones",
+      "parent": "engineer-2",
+      "code": "1",
+      "numericSelection": true,
+      "detailsKey": "none",
+      "resistance": false,
+      "sourceRefs": [
+        {
+          "sourceId": "eng5",
+          "printedPage": "83",
+          "pdfPage": 85
+        }
+      ]
+    },
+    "built-in-tests": {
+      "kind": "menu",
+      "label": "Built In Tests",
+      "parent": "engineer-2",
+      "code": "7",
+      "children": [
+        "equipment"
+      ],
+      "selectedSubset": true,
+      "sourceRefs": [
+        {
+          "sourceId": "eng5",
+          "printedPage": "101",
+          "pdfPage": 103
+        }
+      ]
+    },
+    "equipment": {
+      "kind": "menu",
+      "label": "Equipment",
+      "parent": "built-in-tests",
+      "code": "3",
+      "children": [
+        "zone-resistance"
+      ],
+      "selectedSubset": true,
+      "sourceRefs": [
+        {
+          "sourceId": "eng5",
+          "printedPage": "106",
+          "pdfPage": 108
+        }
+      ]
+    },
+    "zone-resistance": {
+      "kind": "zones",
+      "label": "Zone Resistance",
+      "parent": "equipment",
+      "code": "4",
+      "numericSelection": true,
+      "detailsKey": "none",
+      "resistance": true,
+      "sourceRefs": [
+        {
+          "sourceId": "eng5",
+          "printedPage": "108",
+          "pdfPage": 110
+        }
+      ]
+    },
+    "log-functions": {
+      "kind": "menu",
+      "label": "Log Functions",
+      "parent": "engineer-2",
+      "code": "8",
+      "children": [
+        "view-log"
+      ],
+      "selectedSubset": true,
+      "sourceRefs": [
+        {
+          "sourceId": "eng5",
+          "printedPage": "116",
+          "pdfPage": 118
+        }
+      ]
+    },
+    "view-log": {
+      "kind": "log",
+      "label": "View Log",
+      "parent": "log-functions",
+      "code": "1",
+      "detailsKey": "change",
+      "sourceRefs": [
+        {
+          "sourceId": "eng5",
+          "printedPage": "116",
+          "pdfPage": 118
+        }
+      ]
+    },
+    "user-root": {
+      "kind": "menu",
+      "label": "M800 User levels · 2010",
+      "parent": null,
+      "children": [
+        "user-1"
+      ],
+      "sessionRoot": true,
+      "selectedSubset": true,
+      "sourceRefs": [
+        {
+          "sourceId": "manager2010",
+          "printedPage": "2",
+          "pdfPage": 4
+        }
+      ]
+    },
+    "user-1": {
+      "kind": "menu",
+      "label": "User Menu 1",
+      "parent": "user-root",
+      "code": "1",
+      "children": [
+        "test-menu",
+        "omit-zones"
+      ],
+      "selectedSubset": true,
+      "sourceRefs": [
+        {
+          "sourceId": "manager2010",
+          "printedPage": "72",
+          "pdfPage": 74
+        }
+      ]
+    },
+    "test-menu": {
+      "kind": "menu",
+      "label": "Test Menu",
+      "parent": "user-1",
+      "code": "1",
+      "children": [
+        "walk-ready"
+      ],
+      "selectedSubset": true,
+      "sourceRefs": [
+        {
+          "sourceId": "manager2010",
+          "printedPage": "3",
+          "pdfPage": 5
+        }
+      ]
+    },
+    "walk-ready": {
+      "kind": "walk-ready",
+      "label": "Walk Test",
+      "parent": "test-menu",
+      "code": "2",
+      "next": "walk-active",
+      "lines": [
+        "Walk Test Wards",
+        "Ward > 1***"
+      ],
+      "areaFixture": [
+        "1"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "manager2010",
+          "printedPage": "4",
+          "pdfPage": 6
+        }
+      ]
+    },
+    "walk-active": {
+      "kind": "walk-run",
+      "label": "Walk Test",
+      "parent": "walk-ready",
+      "virtual": true,
+      "all": true,
+      "finishKey": "back",
+      "areaFixture": [
+        "1"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "manager2010",
+          "printedPage": "4",
+          "pdfPage": 6
+        }
+      ]
+    },
+    "omit-zones": {
+      "kind": "zone-omit",
+      "label": "Omit Zones",
+      "parent": "user-1",
+      "code": "2",
+      "toggleKeys": [
+        "change"
+      ],
+      "toggleLabel": "Toggle",
+      "recordAdvanceKey": "enter",
+      "finishKey": "back",
+      "numericSelection": true,
+      "eligibleOnly": true,
+      "sourceRefs": [
+        {
+          "sourceId": "manager2010",
+          "printedPage": "7",
+          "pdfPage": 9
+        }
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "id": "omit-zone",
+      "title": "Disable a device — omit its zone",
+      "description": "Omit the fictional Hall PIR on zone 0002, then leave the omit list.",
+      "category": "omission",
+      "relatedTaskId": "restore-zone",
+      "aliases": [
+        "disable device",
+        "bypass detector",
+        "isolate sensor",
+        "turn off detector",
+        "omit zone"
+      ],
+      "startNodeId": "user-root",
+      "sessionStart": "Already authorised M800 manager practice · 2010 manual",
+      "sessionLabel": "SIMULATED M800 MANAGER SESSION",
+      "path": [
+        "1 User Menu 1",
+        "2 Omit Zones",
+        "0002 Hall PIR",
+        "Toggle to omit",
+        "ESC to finish"
+      ],
+      "routeNodeIds": [
+        "user-root",
+        "user-1",
+        "omit-zones"
+      ],
+      "hints": [
+        "Select 1 → ENT, then 2 → ENT. This is the separate M800 Manager menu.",
+        "Type all four digits 0002, or use the arrow keys to find Hall PIR.",
+        "Press the physical Toggle key to omit the zone. ENT advances to another zone; ESC finishes."
+      ],
+      "initialOmissions": {
+        "0002": false
+      },
+      "goal": {
+        "kind": "omission",
+        "zone": "0002",
+        "value": true
+      },
+      "completionMessage": "Hall PIR is omitted in this fictional M800 session.",
+      "sourceRefs": [
+        {
+          "sourceId": "manager2010",
+          "printedPage": "7",
+          "pdfPage": 9
+        }
+      ]
+    },
+    {
+      "id": "restore-zone",
+      "title": "Re-enable a device — reinstate its zone",
+      "description": "Reinstate the fictional Hall PIR on zone 0002, then leave the omit list.",
+      "category": "restore",
+      "relatedTaskId": "omit-zone",
+      "aliases": [
+        "reinstate detector",
+        "restore device",
+        "include zone",
+        "undo bypass"
+      ],
+      "startNodeId": "user-root",
+      "sessionStart": "Already authorised M800 manager practice · 2010 manual",
+      "sessionLabel": "SIMULATED M800 MANAGER SESSION",
+      "path": [
+        "1 User Menu 1",
+        "2 Omit Zones",
+        "0002 Hall PIR",
+        "Toggle to reinstate",
+        "ESC to finish"
+      ],
+      "routeNodeIds": [
+        "user-root",
+        "user-1",
+        "omit-zones"
+      ],
+      "hints": [
+        "Select 1 → ENT, then 2 → ENT. This is the separate M800 Manager menu.",
+        "Type all four digits 0002, or use the arrow keys to find Hall PIR.",
+        "Press the physical Toggle key to reinstate the zone. ENT advances to another zone; ESC finishes."
+      ],
+      "initialOmissions": {
+        "0002": true
+      },
+      "goal": {
+        "kind": "omission",
+        "zone": "0002",
+        "value": false
+      },
+      "completionMessage": "Hall PIR is included again in this fictional M800 session.",
+      "sourceRefs": [
+        {
+          "sourceId": "manager2010",
+          "printedPage": "7",
+          "pdfPage": 9
+        }
+      ]
+    },
+    {
+      "id": "check-resistance",
+      "title": "Check zone resistance",
+      "description": "Find the actual Zone Resistance route and read Hall PIR’s simulated circuit.",
+      "aliases": [
+        "zone ohms",
+        "loop resistance",
+        "check a PIR",
+        "resistor reading"
+      ],
+      "path": [
+        "2 Engineer Menu 2",
+        "7 Built In Tests",
+        "3 Equipment",
+        "4 Zone Resistance",
+        "0002 Hall PIR"
+      ],
+      "routeNodeIds": [
+        "root",
+        "engineer-2",
+        "built-in-tests",
+        "equipment",
+        "zone-resistance"
+      ],
+      "hints": [
+        "Enter 2 → ENT, 7 → ENT, 3 → ENT, 4 → ENT. Each number belongs to its current menu.",
+        "Enter 0002. The fictional healthy 4K7/2K2 loop reads 02.200 K Ohms.",
+        "Use the detector control to compare Active 06.900 K Ohms and the panel open-circuit display 11.463 K Ohms."
+      ],
+      "goal": {
+        "kind": "zone",
+        "zone": "0002",
+        "resistance": true
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "eng5",
+          "printedPage": "108",
+          "pdfPage": 110
+        },
+        {
+          "sourceId": "eng5",
+          "printedPage": "83",
+          "pdfPage": 85
+        }
+      ]
+    },
+    {
+      "id": "view-zone-status",
+      "title": "Read a zone’s state",
+      "description": "Use View Zones to identify the fictional Hall PIR’s healthy, active or tamper state.",
+      "aliases": [
+        "is a detector open",
+        "view zones",
+        "zone status",
+        "is PIR healthy"
+      ],
+      "path": [
+        "2 Engineer Menu 2",
+        "1 View Zones",
+        "0002 Hall PIR"
+      ],
+      "routeNodeIds": [
+        "root",
+        "engineer-2",
+        "zone-status"
+      ],
+      "hints": [
+        "Enter 2 → ENT, then 1 → ENT. View Zones and Zone Resistance are separate routes.",
+        "Type all four digits 0002, or scroll to Hall PIR. The screen shows the fictional circuit state."
+      ],
+      "goal": {
+        "kind": "zone",
+        "zone": "0002",
+        "resistance": false
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "eng5",
+          "printedPage": "83",
+          "pdfPage": 85
+        }
+      ]
+    },
+    {
+      "id": "find-last-alarm",
+      "title": "Find the last alarm",
+      "description": "Find the fictional Store PIR alarm in the event log and show its associated text.",
+      "aliases": [
+        "alarm history",
+        "what set it off",
+        "previous alarm",
+        "view log"
+      ],
+      "path": [
+        "2 Engineer Menu 2",
+        "8 Log Functions",
+        "1 View Log",
+        "ALARM 0004",
+        "Toggle for details"
+      ],
+      "routeNodeIds": [
+        "root",
+        "engineer-2",
+        "log-functions",
+        "view-log"
+      ],
+      "hints": [
+        "Enter 2 → ENT, then 8 → ENT, then 1 → ENT.",
+        "The up arrow moves to earlier events. Find ALARM 0004.",
+        "Press the physical Toggle key to reveal Store PIR. The # key is not the log-detail control."
+      ],
+      "goal": {
+        "kind": "log",
+        "event": "zone-0004-alarm",
+        "details": true
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "eng5",
+          "printedPage": "116",
+          "pdfPage": 118
+        }
+      ]
+    },
+    {
+      "id": "walk-test-pir",
+      "title": "Walk-test a PIR",
+      "description": "Start the fictional Ward 1 walk test, activate Store PIR, and stop the test.",
+      "aliases": [
+        "test detector",
+        "walk test",
+        "test movement sensor",
+        "test PIR"
+      ],
+      "startNodeId": "user-root",
+      "sessionStart": "Already authorised M800 manager practice · 2010 manual",
+      "sessionLabel": "SIMULATED M800 MANAGER SESSION",
+      "path": [
+        "1 User Menu 1",
+        "1 Test Menu",
+        "2 Walk Test",
+        "Ward 1",
+        "Store PIR"
+      ],
+      "routeNodeIds": [
+        "user-root",
+        "user-1",
+        "test-menu",
+        "walk-ready",
+        "walk-active"
+      ],
+      "hints": [
+        "Enter 1 → ENT, then 1 → ENT, then 2 → ENT.",
+        "Ward 1 is the fixed practice selection. Press ENT to start.",
+        "Activate Store PIR with FINDR’s detector control, then press ESC to stop. The physical post-test result list is simplified."
+      ],
+      "goal": {
+        "kind": "walk",
+        "zone": "0004"
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "manager2010",
+          "printedPage": "4",
+          "pdfPage": 6
+        }
+      ]
+    },
+    {
+      "id": "leave-engineering",
+      "title": "Leave engineer menus",
+      "description": "Return through the menu levels and confirm the engineer-exit prompt.",
+      "aliases": [
+        "exit engineer",
+        "finish programming",
+        "leave engineer mode",
+        "save and leave"
+      ],
+      "path": [
+        "Engineer levels",
+        "ESC",
+        "Leave Menus",
+        "ENT"
+      ],
+      "routeNodeIds": [
+        "root"
+      ],
+      "hints": [
+        "Press ESC to return through the menu levels.",
+        "At Engineer levels, press ESC to display the leave-menus prompt, then ENT."
+      ],
+      "goal": {
+        "kind": "logout"
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "eng5",
+          "printedPage": "21",
+          "pdfPage": 23
+        },
+        {
+          "sourceId": "eng5",
+          "printedPage": "22",
+          "pdfPage": 24
+        }
+      ]
+    }
+  ]
+}

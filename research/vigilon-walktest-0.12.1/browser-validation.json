@@ -1,0 +1,49 @@
+{
+  "appVersion": "0.12.1",
+  "environment": "Managed Sites preview, Chromium desktop and same-origin phone-width frames",
+  "fullLesson": {
+    "id": "gent-walk-test",
+    "steps": 36,
+    "completedByBrowserClicks": true,
+    "observed": [
+      "physical highlighted route through both Test menus",
+      "explicit F2 On and zone2 commit",
+      "Test indication on",
+      "simulated sensor fire",
+      "labelled five-second time advance",
+      "fire and sounders clear while Test remains on",
+      "input restored",
+      "physical Off route and zone2 commit",
+      "Test off and normal status",
+      "lesson complete and one saved completion"
+    ]
+  },
+  "discovery": {
+    "panelShortcut": "Walk test / Zone Test \u2192 SHOW HINTS",
+    "learnSearch": "walktest",
+    "matchingLessons": 2
+  },
+  "mobile": [
+    {
+      "frameWidth": 390,
+      "documentClientWidth": 375,
+      "documentScrollWidth": 375,
+      "shortcutVisible": true,
+      "nearbyInstructionsAndAction": true,
+      "physicalHintRouteCheckedThrough": "Choose On"
+    },
+    {
+      "frameWidth": 320,
+      "documentClientWidth": 305,
+      "documentScrollWidth": 305,
+      "shortcutVisible": true
+    }
+  ],
+  "regressionFix": "Display test continues timing when a guided walk-test pauses only the zone-test cycle; tested with a simultaneous simulated test fire.",
+  "proofScreenshot": "walk-test-hints-proof.jpg",
+  "limits": [
+    "No physical fire-panel validation",
+    "No physical Android install or offline validation",
+    "HTTP preview cannot validate service-worker installation; offline worker regressions passed in the automated suite"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "release": "0.24.0",
+  "baselineCommit": "b126f5b4c54709aa161416963d0cf9dde91d8d72",
+  "method": "Canonical JSON projection of reviewed engine trees; no physical route is inferred. Existing thirteen atlas families are untouched.",
+  "maps": [
+    {
+      "id": "xfp",
+      "entries": 73,
+      "sourceDocuments": 3,
+      "sourceNodes": 62,
+      "practiceTasks": 10,
+      "citedPages": 38,
+      "statuses": {
+        "implemented": 61,
+        "reference-only": 12
+      },
+      "hintLinks": 58,
+      "contentSha256": "4dff23368f97d95c82dbe8c6234ba00f24551c429baaf8cf1d6b9a59400df161"
+    },
+    {
+      "id": "twinflex",
+      "entries": 129,
+      "sourceDocuments": 2,
+      "sourceNodes": 119,
+      "practiceTasks": 9,
+      "citedPages": 26,
+      "statuses": {
+        "implemented": 81,
+        "reference-only": 48
+      },
+      "hintLinks": 81,
+      "contentSha256": "026bf264651e6fc95c140d8e12b6980c9168a255736a2b03f1f42438f2f76b9b"
+    }
+  ],
+  "pageConventions": [
+    "Exact sourceRefs and recorded printed page labels are preserved.",
+    "Missing printed labels remain “not recorded”; PDF offsets are never guessed."
+  ],
+  "hardwareVerified": false
+}

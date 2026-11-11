@@ -1,0 +1,347 @@
+{
+  "batch": "protec-0.14.0",
+  "verified_date": "2026-10-30",
+  "brand": "Protec",
+  "scope": "Device identification cards only. No operational commissioning, wiring or interoperability guarantee is inferred from shared appearance.",
+  "image_processing": "Original manufacturer pixels; alpha flattened onto white, maximum 1200 px, WebP quality 93. PDF illustrations extracted by exact image XRef from inspected page 1. No generated imagery.",
+  "devices": [
+    {
+      "id": "protec-6000plus-op",
+      "record_id": "protec-6d5775af2bdd",
+      "manufacturer_product_page": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/sensors/6000plus-op/",
+      "document_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000PLUS-OP-Tech-sheet-Issue-0.pdf",
+      "document_title": "6000PLUS/OP Tech Sheet",
+      "document_sha256": "9799687e7b6fe7a664445f2a0585aa0a4cc218ecba5f7e3b7514ababb087a62d",
+      "document_bytes": 109483,
+      "document_pages": 1,
+      "archive_sha256": "9799687e7b6fe7a664445f2a0585aa0a4cc218ecba5f7e3b7514ababb087a62d",
+      "archive_hash_matches": true,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "model_evidence": "White 6000PLUS head with dark chamber openings and a grey centre ring in the manufacturer photo. Confirm the OP label.",
+      "protocol_and_variant_limits": "Optical-only model. Similar 6000PLUS housings include heat, multisensor, sounder and VAD versions; the picture does not identify those functions.",
+      "image_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000PLUS-OP.png",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_sha256": "a34dcfac5f31ccb570d4c92f0b4ead68bb5d11f4dd087d5a6d68f6b9548acb27",
+      "image_dimensions": [
+        1200,
+        960
+      ],
+      "verified_document_mark": "Manufacturer tech-sheet PDF; Issue 0 in source filename"
+    },
+    {
+      "id": "protec-6000plus-ht",
+      "record_id": "protec-8fe34afdfd9e",
+      "manufacturer_product_page": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/sensors/6000plus-ht/",
+      "document_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000PLUS-HT-Tech-sheet-Issue-0.pdf",
+      "document_title": "6000PLUS/HT Tech Sheet",
+      "document_sha256": "0c2c16d1eb2d7e2937491086c350ccd27eebf32a58245b307a3ccfb96f611c1f",
+      "document_bytes": 109524,
+      "document_pages": 1,
+      "archive_sha256": "0c2c16d1eb2d7e2937491086c350ccd27eebf32a58245b307a3ccfb96f611c1f",
+      "archive_hash_matches": true,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "model_evidence": "Manufacturer photo shows a red centre ring on the white 6000PLUS head. Confirm HT on the device label.",
+      "protocol_and_variant_limits": "Heat-only head; not the OP optical detector or an HT/S sounder variant. Use the matching panel configuration and head documentation.",
+      "image_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000Plus-HT.png",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_sha256": "5281b019315c3d777e618075ddd5d5d0ce9281c9535c551bb62de13f8e57b14f",
+      "image_dimensions": [
+        1200,
+        960
+      ],
+      "verified_document_mark": "Manufacturer tech-sheet PDF; Issue 0 in source filename"
+    },
+    {
+      "id": "protec-6000plus-ophtco",
+      "record_id": "protec-f6b672126de1",
+      "manufacturer_product_page": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/sensors/6000plus-ophtco/",
+      "document_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000PLUS-OPHTCO.pdf",
+      "document_title": "6000PLUS/OPHTCO Datasheet",
+      "document_sha256": "1f94841e859bb05f3bf214056b98c57544e95805e0352c2fec80704d4d4ef3ad",
+      "document_bytes": 585317,
+      "document_pages": 2,
+      "archive_sha256": "1f94841e859bb05f3bf214056b98c57544e95805e0352c2fec80704d4d4ef3ad",
+      "archive_hash_matches": true,
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "model_evidence": "Optical smoke, heat and carbon-monoxide fire sensor in the 6000PLUS housing. Manufacturer photo has a black centre ring; check the full OPHTCO label.",
+      "protocol_and_variant_limits": "This is the plain OPHTCO head. Sounder, speech and VAD suffixes are different variants; its CO element does not make it a domestic CO alarm.",
+      "image_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000PLUS-OPHTCO.png",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_sha256": "57658cc8a2c99324bc2743d967a4c8b5ec7ef696c46c77183f3e660f8c8cade2",
+      "image_dimensions": [
+        1200,
+        960
+      ],
+      "verified_document_mark": "MED1402 Issue 6"
+    },
+    {
+      "id": "protec-6000-mcp",
+      "record_id": "protec-f00b03bef0a0",
+      "manufacturer_product_page": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/manual-call-points/6000-mcp/",
+      "document_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-MCP.pdf",
+      "document_title": "6000/MCP Datasheet",
+      "document_sha256": "4f1d88053c3046b2212ba0d1761a4a49c0c317a8f19e7619b3fe5d5aebb63d14",
+      "document_bytes": 472402,
+      "document_pages": 2,
+      "archive_sha256": "4f1d88053c3046b2212ba0d1761a4a49c0c317a8f19e7619b3fe5d5aebb63d14",
+      "archive_hash_matches": true,
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "model_evidence": "Red indoor call point with resettable element and Protec branding. Check the 6000/MCP label because conventional models share this front style.",
+      "protocol_and_variant_limits": "UK 6000/MCP entry. The linked sheet also lists NL and EXP editions; it does not establish that their configurations are interchangeable. Indoor housing only.",
+      "image_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/3000-MCP.png",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_sha256": "f3b5d6f19c3142bbed09ccc3840c276bc8707e71a459fcc1c322c8305dd23dae",
+      "image_dimensions": [
+        1200,
+        960
+      ],
+      "verified_document_mark": "MED1474 Issue 7"
+    },
+    {
+      "id": "protec-6000-mcp-wp",
+      "record_id": "protec-339b6a0f3290",
+      "manufacturer_product_page": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/manual-call-points/6000-mcp-wp/",
+      "document_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-MCP-WP.pdf",
+      "document_title": "6000/MCP/WP Datasheet",
+      "document_sha256": "3ff47ee08ae751dd5d831dac22ad393d520da022f5946825be7a5d3a38b2f8f8",
+      "document_bytes": 573877,
+      "document_pages": 2,
+      "archive_sha256": "3ff47ee08ae751dd5d831dac22ad393d520da022f5946825be7a5d3a38b2f8f8",
+      "archive_hash_matches": true,
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "model_evidence": "Deep red weatherproof enclosure with top cable entries and resettable element. Confirm the 6000/MCP/WP code.",
+      "protocol_and_variant_limits": "Weatherproof UK variant, distinct from the shallow indoor MCP and the EXP version. Shared housing does not establish conventional/addressable compatibility.",
+      "image_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/3000-MCP-Weatherproof.png",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_sha256": "8786df695944ce18d6c58637912766db011291d7a50d5e84631a506c4d549696",
+      "image_dimensions": [
+        1200,
+        960
+      ],
+      "verified_document_mark": "MED1475 Issue 6"
+    },
+    {
+      "id": "protec-6000plus-base",
+      "record_id": "protec-5b9f06e51aac",
+      "manufacturer_product_page": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/sensors/6000plus-base/",
+      "document_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000PLUS-BASE-Tech-sheet-Issue-0.pdf",
+      "document_title": "6000PLUS/BASE Tech Sheet",
+      "document_sha256": "903d63c4d204ed040dcd6efba72352adb2db60e70cccfa827215d2a2fc40d94b",
+      "document_bytes": 121557,
+      "document_pages": 1,
+      "archive_sha256": "903d63c4d204ed040dcd6efba72352adb2db60e70cccfa827215d2a2fc40d94b",
+      "archive_hash_matches": true,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "model_evidence": "White circular surface base shown without a detector head. Its terminal layout and label distinguish it from the fast-fix base.",
+      "protocol_and_variant_limits": "Base only; the detector is separate. The linked sheet specifies 6000PLUS heads and does not establish compatibility with another manufacturer’s heads.",
+      "image_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000PLUS-BASE.png",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_sha256": "e6c5ac02ea0262674b6781966df4eef05e01915be06808cd7e3e00ce212813ab",
+      "image_dimensions": [
+        1200,
+        960
+      ],
+      "verified_document_mark": "Manufacturer tech-sheet PDF; Issue 0 in source filename"
+    },
+    {
+      "id": "protec-6000-2io",
+      "record_id": "protec-9e5e03fd774a",
+      "manufacturer_product_page": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/interfaces/two-channel-input-output-interface-6000-2io/",
+      "document_url": "https://www.protec.co.uk/wp-content/uploads/2025/10/6000-2IO-Tech-sheet-Issue-0.pdf",
+      "document_title": "6000/2IO Tech Sheet",
+      "document_sha256": "11643d7d7586d32e735477876ed7e7114e2ef177c6dc89fd898097b8cab4012c",
+      "document_bytes": 127116,
+      "document_pages": 1,
+      "archive_sha256": "11643d7d7586d32e735477876ed7e7114e2ef177c6dc89fd898097b8cab4012c",
+      "archive_hash_matches": true,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "model_evidence": "Green DIN-rail interface board illustrated in the exact 6000/2IO tech sheet TEC0053/0 (08/25). Confirm the 6000/2IO label on the installed unit.",
+      "protocol_and_variant_limits": "6000/2IO only. Other Protec interfaces use similar housings; the matched tech sheet governs supported panels, inputs and contact loads.",
+      "image_url": "https://www.protec.co.uk/wp-content/uploads/2025/10/6000-2IO-Tech-sheet-Issue-0.pdf",
+      "image_pdf_page": 1,
+      "image_pdf_xref": 26,
+      "image_sha256": "8ad79fd2d89a5f07eff3163945ec9eb439bc1a1ab875493da3d598574bb64b13",
+      "image_dimensions": [
+        520,
+        405
+      ],
+      "verified_document_mark": "TEC0053/0 08/25",
+      "rejected_image_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-2APZA.png",
+      "rejection_reason": "Product page used a different board image. Replaced with the exact 6000/2IO datasheet illustration after independent visual review."
+    },
+    {
+      "id": "protec-6000-lcm",
+      "record_id": "protec-3d5612b83a2a",
+      "manufacturer_product_page": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/interfaces/6000-lcm/",
+      "document_url": "https://www.protec.co.uk/wp-content/uploads/2021/04/6000-LCM.pdf",
+      "document_title": "6000/LCM Datasheet",
+      "document_sha256": "ee5dd0b9bd1a88f15c18342fe4eb130b9ee05fad6c76b226c58f5ea1456c2234",
+      "document_bytes": 548984,
+      "document_pages": 2,
+      "archive_sha256": "ee5dd0b9bd1a88f15c18342fe4eb130b9ee05fad6c76b226c58f5ea1456c2234",
+      "archive_hash_matches": true,
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "model_evidence": "Local alarm faceplate with three status indicators and a MUTE button. This is the loop-connected local control module.",
+      "protocol_and_variant_limits": "The LCM manages its specified local detector and sounder circuits. It is not a generic silence control or a replacement for the main fire panel.",
+      "image_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-LCM.png",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_sha256": "1f832b65bc87a570f841f41b3999ba66a8b063cf8fab8c91de94281885eb198a",
+      "image_dimensions": [
+        1200,
+        960
+      ],
+      "verified_document_mark": "MED1442 Issue 5"
+    },
+    {
+      "id": "protec-ug4dp-duct-detector",
+      "record_id": "protec-a7baa334bd77",
+      "manufacturer_product_page": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/ancillaries/6000plus-ug4dp-duct-probe-smoke-detector/",
+      "document_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/UG4DP-Issue-4-1.pdf",
+      "document_title": "6000PLUS/UG4DP Datasheet",
+      "document_sha256": "9ab3a01536165848d100819870ca23603e5f6ef56cdc6f702375bba78469ae82",
+      "document_bytes": 538029,
+      "document_pages": 2,
+      "archive_sha256": "9ab3a01536165848d100819870ca23603e5f6ef56cdc6f702375bba78469ae82",
+      "archive_hash_matches": true,
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "model_evidence": "Transparent duct housing shown with a detector head. The same housing is used by addressable and conventional UG4DP assemblies.",
+      "protocol_and_variant_limits": "Confirm the fitted 6000PLUS/OP or 3000PLUS/OP head and assembly label. Heads are sold separately; the photo does not distinguish protocol. Datasheet ordering suffix needs supplier confirmation.",
+      "image_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000PLUS-UG4DP-Duct-probe.png",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_sha256": "5cf80e64d34bba5fad943211c246f83f97c728bb08b29e1a51d31e5e5925990c",
+      "image_dimensions": [
+        1200,
+        960
+      ],
+      "verified_document_mark": "MED1516 Issue 4",
+      "literal_code_check": {
+        "part_numbers": [
+          "6000PLUS/UG4DP",
+          "3000PLUS/UG4DP"
+        ],
+        "evidence": "Both strings are printed verbatim in the page 1 headline/bullets of MED1516 Issue 4. No suffix was inferred. The inconsistent 6000PLUS/UG4DP6 ordering-block spelling is not added as an assumed code."
+      }
+    },
+    {
+      "id": "protec-6000-ssr-vad",
+      "record_id": "protec-0be7c2a76eef",
+      "manufacturer_product_page": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/sounders-vads/6000-ssr-vad/",
+      "document_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-SSR-VAD.pdf",
+      "document_title": "6000/SSR/VAD Datasheet",
+      "document_sha256": "92b5ced0a82eb3c054c9df5c5169e9f3de89eba19ead820b79e0353f961f041e",
+      "document_bytes": 631104,
+      "document_pages": 2,
+      "archive_sha256": "92b5ced0a82eb3c054c9df5c5169e9f3de89eba19ead820b79e0353f961f041e",
+      "archive_hash_matches": true,
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "model_evidence": "Red horn-style wall sounder with a separate clear VAD lens below the sounder opening.",
+      "protocol_and_variant_limits": "Red wall-mounted sounder/VAD model. The white SSW/VAD and sounder-only SSR variants are separate; mounting and coverage depend on the exact specification.",
+      "image_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-SSR-VAD-Red.png",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_sha256": "408f5a78b40c8233ed964e35e68844851129e7675806a8d4e17b8e83f64be57e",
+      "image_dimensions": [
+        1200,
+        960
+      ],
+      "verified_document_mark": "MED1965 Issue 7"
+    },
+    {
+      "id": "protec-6000-dcm",
+      "record_id": "protec-ce38ec46cb37",
+      "manufacturer_product_page": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/interfaces/6000-dcm/",
+      "document_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-DCM-Smoke-Damper-Module.pdf",
+      "document_title": "6000/DCM Datasheet",
+      "document_sha256": "1e9752d8dc1b3d2adaf23b78f881835a4528439ba192c13f5a9168b2800c4e22",
+      "document_bytes": 558190,
+      "document_pages": 2,
+      "archive_sha256": "1e9752d8dc1b3d2adaf23b78f881835a4528439ba192c13f5a9168b2800c4e22",
+      "archive_hash_matches": true,
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "model_evidence": "Black metal damper-control enclosure with a labelled front indicator panel. Check the DCM label and enclosure option.",
+      "protocol_and_variant_limits": "Smoke damper interface, not a generic sounder or zone module. The sheet covers enclosure options and specified actuator supplies; field wiring and legacy DIU mode require the exact instructions.",
+      "image_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-DCM.png",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_sha256": "a8b14b16bfea1099906160a2663a0c918dd3c9e80de8ca66408e977f7621d9e7",
+      "image_dimensions": [
+        1200,
+        960
+      ],
+      "verified_document_mark": "MED2304 Issue 2"
+    },
+    {
+      "id": "protec-6000-lpza",
+      "record_id": "protec-19c2f3a94324",
+      "manufacturer_product_page": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/interfaces/6000-loop-panel-zone-alarm/",
+      "document_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-LPZA-Issue-2.pdf",
+      "document_title": "6000/LPZA Datasheet",
+      "document_sha256": "266a376b4a49340e5954621f100fc8fbb2f542b74a987d045539c17f1133ca75",
+      "document_bytes": 1640148,
+      "document_pages": 2,
+      "archive_sha256": "266a376b4a49340e5954621f100fc8fbb2f542b74a987d045539c17f1133ca75",
+      "archive_hash_matches": true,
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "model_evidence": "Cream plate marked FIRE ALARM and ZONE ALARM INTERFACE UNIT. Confirm LPZA on the internal label; APZA units can share the exterior.",
+      "protocol_and_variant_limits": "LPZA connects its specified conventional detector zone and sounder circuit to a Protec loop. The shared photo cannot establish the power arrangement or supported devices.",
+      "image_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-APZA-and-6000-LPZA.png",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_sha256": "f73a9c4e4a3a35372051b683fb98c547ad3faa9661b9d55ed7a3b45ba942d1da",
+      "image_dimensions": [
+        1200,
+        960
+      ],
+      "verified_document_mark": "MED1995 Issue 2"
+    }
+  ],
+  "review_notes": [
+    "All 12 downloaded datasheets match the existing catalogue SHA-256 values. No replacement document records are required.",
+    "Product page image filenames for 6000/MCP and MCP/WP contain 3000; the current manufacturer pages explicitly identify their 6000 models. Shared front appearance is disclosed.",
+    "6000/2IO product-page image was rejected because its 2APZA board differs visibly from the exact 2IO datasheet figure. The delivered card now uses page 1, XRef 26 of 6000-2IO-Tech-sheet-Issue-0.pdf (TEC0053/0 08/25).",
+    "UG4DP datasheet MED1516 Issue 4 uses 6000PLUS/UG4DP in the title and description but 6000PLUS/UG4DP6 in its ordering block. Card keeps the published family codes and asks for ordering-suffix confirmation; no guessed suffix is added.",
+    "APZA and LPZA share the source photo; the LPZA code and loop-powered behaviour are separately confirmed by the exact sheet."
+  ],
+  "supplementary_documents": [],
+  "visual_review": "Each final card image was inspected on the per-brand contact sheet and compared with its source product page or manufacturer PDF illustration. Shared housing, assembled-head/base and edition limitations were retained."
+}

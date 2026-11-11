@@ -1,0 +1,325 @@
+{
+  "version": "0.11.0",
+  "date": "2026-10-30",
+  "panelId": "gent-nano",
+  "fixtureId": "findr-nano-training-site",
+  "baseline": "GENT NANO-24 V3.xx operating issue 9 (December 2021), installation issue 11 (January 2022); V2.xx commissioning issue 3 (May 2010) explicitly supplementary and version-limited.",
+  "counts": {
+    "tracks": 4,
+    "lessons": 28,
+    "logicalSteps": 229,
+    "literalPhysicalKeyPresses": 835,
+    "helpArticles": 34,
+    "glossaryTerms": 20,
+    "tutorialSourceLimits": 7
+  },
+  "validation": {
+    "command": "node --test --test-isolation=none tests/gent-nano-lessons.test.mjs",
+    "passed": 44,
+    "failed": 0,
+    "browserValidation": "Owned by the release integration audit; this tutorial audit records pure-engine replay and source validation only.",
+    "checks": [
+      "Every stored physical-key sequence is replayed literally; the test does not navigate by goal or repair missing lesson steps.",
+      "Every logical step reaches its stated outcome only on the final stored key, and every lesson reaches its final-state conditions.",
+      "Commit-event steps require fresh semantic events.",
+      "Ten abandoned-form recovery cases preserve protection state through logout, unrelated navigation, reauthentication and field reconstruction.",
+      "Wrong PIN digits and cursor positions recover through physical keys without automatic acceptance.",
+      "All source references point to actual one-based PDF pages in pinned documents.",
+      "All help cross-links and matching restoration lessons resolve.",
+      "Weekly-test completion is refused while the test remains active after timed silence/reset.",
+      "Engineering-only reference screens are excluded from executable tutorials.",
+      "The locked Cancel Buzzer prompt teaches entering access then pressing Cancel Buzzer again."
+    ]
+  },
+  "sourceRegister": [
+    {
+      "id": "nano-operator-9",
+      "sha256": "1e1de98fe28d734efc476d31e47638bf1640094dbe9ce453265d072f8afb47fe",
+      "pages": 28,
+      "url": "https://midlandfire.direct/docs/files/4188-947-1e1de9.pdf"
+    },
+    {
+      "id": "nano-installation-11",
+      "sha256": "7006fd9dd77c03893ec0e5f158a7984c112bd72cb6d2d7616e811265b2a20483",
+      "pages": 28,
+      "url": "https://midlandfire.direct/docs/files/4188-948-7006fd.pdf"
+    },
+    {
+      "id": "nano-commissioning-3",
+      "sha256": "f438d67b353cb0014d6cf45b4d348d0e1157a0f4d3b5009c31de8a6a07e5a79e",
+      "pages": 85,
+      "url": "https://www.firequeen.co.uk/wp-content/uploads/2021/10/Gent-Nano-Com.pdf"
+    }
+  ],
+  "teachingContract": {
+    "goals": "Goal steps can take several physical presses. The controller highlights one at a time and never performs a key on the learner’s behalf.",
+    "expectedKeys": "The complete literal key list includes the explicit final nextKey on commit steps; laboratory and acknowledgement steps have empty lists.",
+    "labActions": "set-input, set-fault and tick are separate labelled FINDR controls, not invented Nano panel keys.",
+    "feedback": "Completion follows actual outcome conditions; root controller supplies optional rising audio and celebration.",
+    "restoration": "Device, zone and sector disablement lessons link the matching re-enable lesson and leave the changed state visible.",
+    "timers": "Guided lessons pause simulation time while the learner reads and use explicit five/eight-second training actions. Free practice timers run while visible. This pause is clearly marked as a FINDR teaching convention, not a Nano feature."
+  },
+  "limits": [
+    "No physical Nano or firmware-image validation was performed.",
+    "Device status editing uses the declared optional Level 2 fixture setting documented in the older commissioning source; the V3.xx operator form itself is read-only.",
+    "The global menu ordering is supplemented from the older commissioning appendix; no universal V3.xx hardware transcript is claimed.",
+    "PIN range cycling, exact return pages and some validation wording are stated practice conventions.",
+    "The 999-record training history bound comes from V2.xx commissioning page 22; the V3.xx operator manual establishes newest-entry numbering without restating capacity.",
+    "Coincidence, printer setup and unverified engineering operations stay reference-only or configuration-dependent.",
+    "Day/night lesson uses the declared CALENDAR-mode fixture and direct Save; the V3.xx manual’s separate warning note is not turned into an invented post-save confirmation."
+  ],
+  "lessons": [
+    {
+      "id": "nano-panel-basics",
+      "title": "Read the Nano and use its five navigation buttons",
+      "scenario": "normal",
+      "logicalSteps": 7,
+      "physicalKeyPresses": 7,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-customer-code",
+      "title": "Enter the scrolling Customer Mode PIN",
+      "scenario": "normal",
+      "logicalSteps": 5,
+      "physicalKeyPresses": 22,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-display-test",
+      "title": "Run the eight-second display test",
+      "scenario": "normal",
+      "logicalSteps": 6,
+      "physicalKeyPresses": 29,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-loop-map",
+      "title": "Find a device on the loop map",
+      "scenario": "normal",
+      "logicalSteps": 8,
+      "physicalKeyPresses": 32,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-zone-status",
+      "title": "Read a zone and leave its draft unsaved",
+      "scenario": "normal",
+      "logicalSteps": 9,
+      "physicalKeyPresses": 33,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-channel-details",
+      "title": "Read an interface channel correctly",
+      "scenario": "normal",
+      "logicalSteps": 7,
+      "physicalKeyPresses": 32,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-loop-status",
+      "title": "Read the single-loop status",
+      "scenario": "normal",
+      "logicalSteps": 6,
+      "physicalKeyPresses": 32,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-fire-buzzer",
+      "title": "Cancel the panel buzzer without silencing alarms",
+      "scenario": "fire",
+      "logicalSteps": 6,
+      "physicalKeyPresses": 18,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-multiple-fires",
+      "title": "Keep the first fire in view while scrolling later fires",
+      "scenario": "multiple-fires",
+      "logicalSteps": 5,
+      "physicalKeyPresses": 7,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-silence-resound",
+      "title": "Silence and resound the alarm sounders",
+      "scenario": "fire",
+      "logicalSteps": 7,
+      "physicalKeyPresses": 24,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-reset-fire",
+      "title": "Clear the cause and then reset the fire",
+      "scenario": "fire",
+      "logicalSteps": 7,
+      "physicalKeyPresses": 23,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-fault-triage",
+      "title": "Read and acknowledge a mains fault",
+      "scenario": "fault",
+      "logicalSteps": 8,
+      "physicalKeyPresses": 31,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-disable-device",
+      "title": "Disable the reception sensor",
+      "scenario": "normal",
+      "logicalSteps": 9,
+      "physicalKeyPresses": 42,
+      "status": "configuration-dependent",
+      "restoreLessonId": "nano-enable-device"
+    },
+    {
+      "id": "nano-enable-device",
+      "title": "Re-enable the reception sensor",
+      "scenario": "device-disabled",
+      "logicalSteps": 9,
+      "physicalKeyPresses": 33,
+      "status": "configuration-dependent",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-disable-zone",
+      "title": "Disable the reception and entrance zone",
+      "scenario": "normal",
+      "logicalSteps": 9,
+      "physicalKeyPresses": 36,
+      "status": "operator-route",
+      "restoreLessonId": "nano-enable-zone"
+    },
+    {
+      "id": "nano-enable-zone",
+      "title": "Re-enable the reception and entrance zone",
+      "scenario": "zone-disabled",
+      "logicalSteps": 9,
+      "physicalKeyPresses": 29,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-disable-sector",
+      "title": "Disable the first-floor alarm sector",
+      "scenario": "normal",
+      "logicalSteps": 9,
+      "physicalKeyPresses": 41,
+      "status": "operator-route",
+      "restoreLessonId": "nano-enable-sector"
+    },
+    {
+      "id": "nano-enable-sector",
+      "title": "Re-enable the first-floor alarm sector",
+      "scenario": "sector-disabled",
+      "logicalSteps": 9,
+      "physicalKeyPresses": 33,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-master-alarms",
+      "title": "Disable and restore Master Alarms",
+      "scenario": "normal",
+      "logicalSteps": 9,
+      "physicalKeyPresses": 35,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-weekly-test",
+      "title": "Run a weekly test and explicitly stop it",
+      "scenario": "normal",
+      "logicalSteps": 13,
+      "physicalKeyPresses": 32,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-zone-test",
+      "title": "Start and stop one zone test",
+      "scenario": "normal",
+      "logicalSteps": 9,
+      "physicalKeyPresses": 52,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-active-logs",
+      "title": "Compare active Fire, Fault, Disablement and Test logs",
+      "scenario": "zone-disabled",
+      "logicalSteps": 6,
+      "physicalKeyPresses": 23,
+      "status": "operator-route",
+      "restoreLessonId": "nano-enable-zone"
+    },
+    {
+      "id": "nano-history",
+      "title": "Read the historic sequence with event 1 newest",
+      "scenario": "normal",
+      "logicalSteps": 5,
+      "physicalKeyPresses": 7,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-day-night",
+      "title": "Set DAY, NIGHT and return the override to NONE",
+      "scenario": "normal",
+      "logicalSteps": 11,
+      "physicalKeyPresses": 40,
+      "status": "configuration-dependent",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-clock",
+      "title": "Set the practice clock and save it",
+      "scenario": "normal",
+      "logicalSteps": 8,
+      "physicalKeyPresses": 35,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-version-checks",
+      "title": "Read Firmware and Site Data versions",
+      "scenario": "normal",
+      "logicalSteps": 7,
+      "physicalKeyPresses": 32,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-loop-repair",
+      "title": "Run Repair only after removing a loop fault cause",
+      "scenario": "loop-fault",
+      "logicalSteps": 11,
+      "physicalKeyPresses": 41,
+      "status": "operator-route",
+      "restoreLessonId": null
+    },
+    {
+      "id": "nano-return-normal",
+      "title": "Finish with no hidden fire, fault, disablement or test",
+      "scenario": "zone-disabled",
+      "logicalSteps": 15,
+      "physicalKeyPresses": 34,
+      "status": "operator-route",
+      "restoreLessonId": null
+    }
+  ]
+}

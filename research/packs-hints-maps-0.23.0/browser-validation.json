@@ -1,0 +1,256 @@
+{
+  "release": "0.23.0",
+  "status": "passed",
+  "build": "6214c2994290",
+  "testedAt": "2026-11-02T21:23:50.842Z",
+  "browser": "154.0.8037.57",
+  "command": "FINDR_PLAYWRIGHT_PATH=/opt/codex/cua_node/lib/node_modules/playwright node scripts/qa-packs-hints-maps.cjs",
+  "scriptSha256": "e31270f29a37ddff1b484c4f8bf50492c4246e21e5f1499adadf93fc87d09835",
+  "results": [
+    {
+      "width": 390,
+      "height": 844,
+      "status": "passed",
+      "offline": true,
+      "offlineCache": [
+        {
+          "cache": "findr-shell-6214c2994290",
+          "build": "6214c2994290",
+          "version": "0.23.0",
+          "assetCount": 1250
+        }
+      ],
+      "packs": {
+        "brands": 28,
+        "packs": 79,
+        "pictures": 177
+      },
+      "hintFamilies": 13,
+      "menuMaps": [
+        {
+          "id": "galaxy-dimension",
+          "nodes": 1365
+        },
+        {
+          "id": "texecom-premier-elite",
+          "nodes": 956
+        },
+        {
+          "id": "scantronic-ion",
+          "nodes": 1189
+        },
+        {
+          "id": "orisec-cp",
+          "nodes": 856
+        },
+        {
+          "id": "menvier-mseries",
+          "nodes": 1024
+        },
+        {
+          "id": "pyronix-enforcer",
+          "nodes": 1317
+        },
+        {
+          "id": "ade-accenta-optima",
+          "nodes": 263
+        },
+        {
+          "id": "risco-lightsys2",
+          "nodes": 1146
+        },
+        {
+          "id": "hkc-quantum70",
+          "nodes": 863
+        },
+        {
+          "id": "gent-vigilon",
+          "nodes": 456
+        },
+        {
+          "id": "gent-nano",
+          "nodes": 140
+        },
+        {
+          "id": "c-tec-cfp-standard",
+          "nodes": 61
+        },
+        {
+          "id": "kentec-sigma-cp",
+          "nodes": 189
+        }
+      ],
+      "activeHintFamilies": [
+        "galaxy-dimension",
+        "gent-vigilon",
+        "gent-nano",
+        "c-tec-cfp-standard",
+        "kentec-sigma-cp"
+      ],
+      "browserErrors": []
+    },
+    {
+      "width": 1440,
+      "height": 844,
+      "status": "passed",
+      "offline": true,
+      "offlineCache": [
+        {
+          "cache": "findr-shell-6214c2994290",
+          "build": "6214c2994290",
+          "version": "0.23.0",
+          "assetCount": 1250
+        }
+      ],
+      "packs": {
+        "brands": 28,
+        "packs": 79,
+        "pictures": 177
+      },
+      "hintFamilies": 13,
+      "menuMaps": [
+        {
+          "id": "galaxy-dimension",
+          "nodes": 1365
+        },
+        {
+          "id": "texecom-premier-elite",
+          "nodes": 956
+        },
+        {
+          "id": "scantronic-ion",
+          "nodes": 1189
+        },
+        {
+          "id": "orisec-cp",
+          "nodes": 856
+        },
+        {
+          "id": "menvier-mseries",
+          "nodes": 1024
+        },
+        {
+          "id": "pyronix-enforcer",
+          "nodes": 1317
+        },
+        {
+          "id": "ade-accenta-optima",
+          "nodes": 263
+        },
+        {
+          "id": "risco-lightsys2",
+          "nodes": 1146
+        },
+        {
+          "id": "hkc-quantum70",
+          "nodes": 863
+        },
+        {
+          "id": "gent-vigilon",
+          "nodes": 456
+        },
+        {
+          "id": "gent-nano",
+          "nodes": 140
+        },
+        {
+          "id": "c-tec-cfp-standard",
+          "nodes": 61
+        },
+        {
+          "id": "kentec-sigma-cp",
+          "nodes": 189
+        }
+      ],
+      "activeHintFamilies": [
+        "galaxy-dimension",
+        "gent-vigilon",
+        "gent-nano",
+        "c-tec-cfp-standard",
+        "kentec-sigma-cp"
+      ],
+      "browserErrors": []
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "brands-390.png",
+      "sha256": "3cb13130be17b766a516f3066652e858072ebc479ee57caa893dc8213de61457"
+    },
+    {
+      "file": "kentec-families-390.png",
+      "sha256": "9fc958d93ff0747bd81dddce0070c4cee8f6a897c1f47852ec0795a8b7b20c8f"
+    },
+    {
+      "file": "pack-source-pdf-390.png",
+      "sha256": "14ce0c220bc26df8acd80bf081f6eb224069bbd94c5f39aa1a9a4e5e90e45b8b"
+    },
+    {
+      "file": "sigma-hints-390.png",
+      "sha256": "ae6980309f40f3308496966afd39ee8ff680e79cb2d563b0dc5b1ef47dd9d92f"
+    },
+    {
+      "file": "menu-maps-390.png",
+      "sha256": "3aba131a0f6c8e8f6596a73d6639da1de53baefea4ccbac18a58d355666f67ed"
+    },
+    {
+      "file": "sigma-map-entry-390.png",
+      "sha256": "66a3994fa3f8e2b638529e52fcec40ee39ebae7b90c2a67cd6372d124e5ece6b"
+    },
+    {
+      "file": "unsupported-hints-390.png",
+      "sha256": "d3fef26884c475ba79d02177c76da167abaa9cf806983527a9c06725ea635ce2"
+    },
+    {
+      "file": "offline-picture-390.png",
+      "sha256": "814250c6384429498bd3a39924ed6b62d1adf4802fcc363dc1dc202dcb7c052a"
+    },
+    {
+      "file": "brands-1440.png",
+      "sha256": "503f2f410e9435c3dce15e717b57dcc15e8aae429b3d10e5f814c170fc991e35"
+    },
+    {
+      "file": "kentec-families-1440.png",
+      "sha256": "d38010f96ca321c05a7ad24f8b8dab477fd58a064537073653fb9570262413c7"
+    },
+    {
+      "file": "pack-source-pdf-1440.png",
+      "sha256": "50d7b4c18aa24cd1f7295f669b81a7a451064a85bac67e625aab03dbc0a3e84f"
+    },
+    {
+      "file": "sigma-hints-1440.png",
+      "sha256": "19b90ed5c8458c9ba92df3bdcd371a9fa64cfcaa25079719e0bb1c992b11bf2c"
+    },
+    {
+      "file": "menu-maps-1440.png",
+      "sha256": "9edf0dea5b81b605ee21645cf13e09727fe95d65adb15ad76fa29261249c8551"
+    },
+    {
+      "file": "sigma-map-entry-1440.png",
+      "sha256": "c39d1c1ac818902fb480560a9169497ece32b98d37ddcade5e5a56f8359cd48c"
+    },
+    {
+      "file": "unsupported-hints-1440.png",
+      "sha256": "9ff51b582038708acfd3de7ed9f70656bf20731d8fa973124f26d42ce9ba907a"
+    },
+    {
+      "file": "offline-picture-1440.png",
+      "sha256": "db231f858a2eaf71f1128273807d31a62e1c65d8dc315b0fe6f765ed11e0d1dc"
+    }
+  ],
+  "runtimeFiles": {
+    "app.mjs": "729229b829eca4945fc00f68d2608a52cfa70aae2239f019cdd9eaecc450966c",
+    "wiring-packs.mjs": "e589862a2407d84edcd0298272fce822db3e055303b73f86684481e16f25e065",
+    "onsite.mjs": "6c644f0df23a58a146e6555f9f98d494f441c839b732c4af2ebb89158509e74c",
+    "menu-map.mjs": "f98cd82152510a22eb0ea4d8f52fba7665a67d430a1d02197df6f7137043277d",
+    "menu-map-registry.mjs": "7f0166d60a9fae4fe2eb762b34bcf111160be1bb791b97d25b8e751c96ce9792",
+    "precache.js": "3d2fe927e1e445e7997246f95f4f7c21fcad9b6420788a8a728a0988cc12afc8"
+  },
+  "limits": [
+    "Chromium viewport emulation, not physical iPhone/Safari testing",
+    "Stored sites, readings and programming fixtures are explicitly synthetic",
+    "Manual API uses actual checked local source PDF bytes; publisher availability is not part of this run",
+    "Reference/control maps are source-backed indexes, not a claim of complete physical-panel simulation",
+    "Publication, build and regression results are reported separately by the release owner"
+  ]
+}

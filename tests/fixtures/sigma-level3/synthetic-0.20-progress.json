@@ -1,0 +1,557 @@
+{
+  "label": "SYNTHETIC legacy conventional trainer progress generated using exact committed 0.20.0 engine",
+  "baselineCommit": "3d6f286119accef7c86f80cc74cb4461a9153b9d",
+  "profiles": {
+    "c-tec-cfp-standard": {
+      "version": 1,
+      "state": {
+        "version": 1,
+        "profileId": "c-tec-cfp-standard",
+        "sourceVersion": "2026-11-02.2",
+        "scenarioId": "normal",
+        "sequence": 15,
+        "keyEnabled": false,
+        "codeAccess": false,
+        "codeBuffer": "",
+        "inputs": {
+          "Z1": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z2": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z3": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z4": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z5": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z6": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z7": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z8": {
+            "alarm": false,
+            "fault": false
+          }
+        },
+        "faults": {
+          "power": false,
+          "sounder": false
+        },
+        "fireZones": [],
+        "silencedZones": [],
+        "soundersRequested": false,
+        "evacuation": false,
+        "buzzerSilenced": false,
+        "disabledZones": [
+          "Z3"
+        ],
+        "disabledOutputs": [],
+        "testZones": [],
+        "selection": null,
+        "sigmaMode": null,
+        "sigmaZone": "Z1",
+        "modeChooser": false,
+        "lampTest": false,
+        "log": [
+          {
+            "key": "KEYSWITCH",
+            "kind": "key",
+            "ok": true,
+            "message": "Simulated enable key turned on. Authorised controls are available.",
+            "sequence": 1,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-user-rev2",
+                "pdfPage": 6,
+                "printedPage": "6",
+                "section": "Control fascia / access"
+              }
+            ]
+          },
+          {
+            "key": "NEXT_OPTION",
+            "kind": "key",
+            "ok": true,
+            "message": "Disablement selection started at Zone 1. Enable/Disable stages a change; Next Option confirms it.",
+            "sequence": 2,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-user-rev2",
+                "pdfPage": 6,
+                "printedPage": "6",
+                "section": "Control fascia / access"
+              }
+            ]
+          },
+          {
+            "key": "NEXT_OPTION",
+            "kind": "key",
+            "ok": true,
+            "message": "Z1 choice confirmed. Next available option selected.",
+            "sequence": 3,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-user-rev2",
+                "pdfPage": 6,
+                "printedPage": "6",
+                "section": "Control fascia / access"
+              }
+            ]
+          },
+          {
+            "key": "NEXT_OPTION",
+            "kind": "key",
+            "ok": true,
+            "message": "Z2 choice confirmed. Next available option selected.",
+            "sequence": 4,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-user-rev2",
+                "pdfPage": 6,
+                "printedPage": "6",
+                "section": "Control fascia / access"
+              }
+            ]
+          },
+          {
+            "key": "TOGGLE",
+            "kind": "key",
+            "ok": true,
+            "message": "Selected option staged disabled. Press Next Option to confirm; leaving now discards this latest change.",
+            "sequence": 5,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-user-rev2",
+                "pdfPage": 6,
+                "printedPage": "6",
+                "section": "Control fascia / access"
+              }
+            ]
+          },
+          {
+            "key": "NEXT_OPTION",
+            "kind": "key",
+            "ok": true,
+            "message": "Z3 choice confirmed. Next available option selected.",
+            "sequence": 6,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-user-rev2",
+                "pdfPage": 6,
+                "printedPage": "6",
+                "section": "Control fascia / access"
+              }
+            ]
+          },
+          {
+            "key": "KEYSWITCH",
+            "kind": "key",
+            "ok": true,
+            "message": "Simulated enable key turned off. Unconfirmed selection discarded; committed disablements remain.",
+            "sequence": 7,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-user-rev2",
+                "pdfPage": 6,
+                "printedPage": "6",
+                "section": "Control fascia / access"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "cover",
+            "ok": true,
+            "message": "Training cover removed. Press the actual SW8 control to enter access level 3.",
+            "sequence": 8,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16"
+              }
+            ]
+          },
+          {
+            "key": "ENGINEER",
+            "kind": "engineering",
+            "ok": true,
+            "message": "Access level 3: Coincidence. Unconfirmed training drafts are not applied.",
+            "sequence": 9,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": ""
+              },
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": "Function sequence"
+              }
+            ]
+          },
+          {
+            "key": "NEXT_OPTION",
+            "kind": "engineering",
+            "ok": true,
+            "message": "Z1-Z2 selected. Enable/Disable stages a change; Next Option confirms it.",
+            "sequence": 10,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": ""
+              },
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": "Function sequence"
+              }
+            ]
+          },
+          {
+            "key": "TOGGLE",
+            "kind": "engineering",
+            "ok": true,
+            "message": "Z1-Z2 staged on. Press Next Option to confirm.",
+            "sequence": 11,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": ""
+              },
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": "Function sequence"
+              }
+            ]
+          },
+          {
+            "key": "NEXT_OPTION",
+            "kind": "engineering",
+            "ok": true,
+            "message": "Z1-Z2 confirmed. Z3-Z4 selected.",
+            "sequence": 12,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": ""
+              },
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": "Function sequence"
+              }
+            ]
+          },
+          {
+            "key": "EXIT",
+            "kind": "engineering",
+            "ok": true,
+            "message": "Access level 3 exited. Confirmed settings remain; an unconfirmed training draft was not applied.",
+            "sequence": 13,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": ""
+              },
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": "Function sequence"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "delay-setting",
+            "ok": true,
+            "message": "VR1 set to 3 minute(s) for subsequent delayed alarms in this fictional installation.",
+            "sequence": 14,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": ""
+              },
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": "Function sequence"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "cover",
+            "ok": true,
+            "message": "Training cover refitted.",
+            "sequence": 15,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16"
+              }
+            ]
+          }
+        ],
+        "lastAction": {
+          "key": "",
+          "kind": "cover",
+          "ok": true,
+          "message": "Training cover refitted.",
+          "sequence": 15,
+          "sourceRefs": [
+            {
+              "sourceId": "cfp-engineer-rev1",
+              "pdfPage": 16,
+              "printedPage": "16"
+            }
+          ]
+        },
+        "cfpEngineeringVersion": 1,
+        "coverOpen": false,
+        "engineering": null,
+        "settings": {
+          "coincidencePairs": [
+            "Z1-Z2"
+          ],
+          "nonLatchingZones": [],
+          "delayedZones": [],
+          "delayedOutputs": [],
+          "delayMinutes": 3,
+          "resoundNewZone": true,
+          "delaysEnabled": true
+        },
+        "simulationSeconds": 0,
+        "pendingDelays": {},
+        "testStartedAt": {},
+        "manualOverride": false,
+        "overrideDelays": false,
+        "diagnostics": {
+          "systemFaults": [],
+          "systemInputs": [],
+          "repeaters": []
+        }
+      },
+      "completed": {
+        "cfp-code-access": 1,
+        "cfp-cover-engineering": 2
+      },
+      "profileId": "c-tec-cfp-standard",
+      "hints": true,
+      "faceZoom": "fit"
+    },
+    "kentec-sigma-cp": {
+      "version": 1,
+      "state": {
+        "version": 1,
+        "profileId": "kentec-sigma-cp",
+        "sourceVersion": "2026-11-02.2",
+        "scenarioId": "normal",
+        "sequence": 6,
+        "keyEnabled": true,
+        "codeAccess": false,
+        "codeBuffer": "",
+        "inputs": {
+          "Z1": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z2": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z3": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z4": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z5": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z6": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z7": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z8": {
+            "alarm": false,
+            "fault": false
+          }
+        },
+        "faults": {
+          "power": false,
+          "sounder": false
+        },
+        "fireZones": [],
+        "silencedZones": [],
+        "soundersRequested": false,
+        "evacuation": false,
+        "buzzerSilenced": false,
+        "disabledZones": [
+          "Z4"
+        ],
+        "disabledOutputs": [],
+        "testZones": [],
+        "selection": null,
+        "sigmaMode": "d",
+        "sigmaZone": "Z4",
+        "modeChooser": false,
+        "lampTest": false,
+        "log": [
+          {
+            "key": "KEYSWITCH",
+            "kind": "key",
+            "ok": true,
+            "message": "Simulated enable key turned on. Authorised controls are available.",
+            "sequence": 1,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 9,
+                "printedPage": "9",
+                "section": "Control fascia / access"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "mode-target",
+            "ok": true,
+            "message": "Training assist loaded d at Zone 1 where relevant. This is not a physical MODE button sequence or a claim about its cycle order.",
+            "sequence": 2,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 9,
+                "printedPage": "9",
+                "section": "Control fascia / access"
+              }
+            ]
+          },
+          {
+            "key": "SELECT",
+            "kind": "key",
+            "ok": true,
+            "message": "Z2 selected in the documented d mode.",
+            "sequence": 3,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 9,
+                "printedPage": "9",
+                "section": "Control fascia / access"
+              }
+            ]
+          },
+          {
+            "key": "SELECT",
+            "kind": "key",
+            "ok": true,
+            "message": "Z3 selected in the documented d mode.",
+            "sequence": 4,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 9,
+                "printedPage": "9",
+                "section": "Control fascia / access"
+              }
+            ]
+          },
+          {
+            "key": "SELECT",
+            "kind": "key",
+            "ok": true,
+            "message": "Z4 selected in the documented d mode.",
+            "sequence": 5,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 9,
+                "printedPage": "9",
+                "section": "Control fascia / access"
+              }
+            ]
+          },
+          {
+            "key": "ENTER",
+            "kind": "key",
+            "ok": true,
+            "message": "Z4 disabled in the fictional installation. An active input on an enabled zone can cause an alarm.",
+            "sequence": 6,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 9,
+                "printedPage": "9",
+                "section": "Control fascia / access"
+              }
+            ]
+          }
+        ],
+        "lastAction": {
+          "key": "ENTER",
+          "kind": "key",
+          "ok": true,
+          "message": "Z4 disabled in the fictional installation. An active input on an enabled zone can cause an alarm.",
+          "sequence": 6,
+          "sourceRefs": [
+            {
+              "sourceId": "sigma-main-25",
+              "pdfPage": 9,
+              "printedPage": "9",
+              "section": "Control fascia / access"
+            }
+          ]
+        }
+      },
+      "completed": {
+        "sigma-lamps": 1
+      },
+      "profileId": "kentec-sigma-cp",
+      "hints": true,
+      "faceZoom": "fit"
+    }
+  }
+}

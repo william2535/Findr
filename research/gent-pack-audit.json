@@ -1,0 +1,184 @@
+{
+  "repository_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+  "total_gent_records": 24,
+  "included_count": 17,
+  "excluded_count": 8,
+  "included": [
+    {
+      "id": "facp-02cf0136-1388-437b-8386-c2f944752741",
+      "title": "VIG1-24 and VIG1-72 \u2014 Installation (2015, source-listed)",
+      "models": [
+        "VIG1-24 and VIG1-72"
+      ]
+    },
+    {
+      "id": "facp-56e1a364-8eb4-48b9-a0d1-4152226bca32",
+      "title": "Vigilon Plus Basic Commissioning Training \u2014 Manual (2017, source-listed)",
+      "models": [
+        "Vigilon Plus Basic Commissioning Training"
+      ]
+    },
+    {
+      "id": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+      "title": "Vigilon 4/6 Loop and Compact \u2014 Installation (2015, source-listed)",
+      "models": [
+        "Vigilon 4/6 Loop and Compact"
+      ]
+    },
+    {
+      "id": "facp-8f3116f7-a850-46ce-9e84-ed197dea0367",
+      "title": "Vigilon \u2014 Operating Instructions (2009, source-listed)",
+      "models": [
+        "Vigilon"
+      ]
+    },
+    {
+      "id": "facp-d442a96b-9a39-4e76-b773-5f7676e175dc",
+      "title": "Vigilon Compact Control Panel \u2014 Installation (2010, source-listed)",
+      "models": [
+        "Vigilon Compact Control Panel"
+      ]
+    },
+    {
+      "id": "facp-e33036de-023c-4c4c-b17a-ad7787c7549a",
+      "title": "Vigilon \u2014 Installation (2010, source-listed)",
+      "models": [
+        "Vigilon"
+      ]
+    },
+    {
+      "id": "facp-faba6936-2889-4bc9-b699-8b59f7fef64c",
+      "title": "Vigilon \u2014 Operations (1999, source-listed)",
+      "models": [
+        "Vigilon"
+      ]
+    },
+    {
+      "id": "gent-33fdf5de07b1",
+      "title": "xenex-panel-installation-and-commissioning-manual",
+      "models": [
+        "Xenex"
+      ]
+    },
+    {
+      "id": "gent-4d383857e271",
+      "title": "Vigilon \u2014 Installation manual",
+      "models": [
+        "Vigilon"
+      ]
+    },
+    {
+      "id": "gent-6f93f6f727f3",
+      "title": "gent-honeywell-vigilon-compact-Vig-Comp-Oper_2km-4188-1027",
+      "models": [
+        "Vigilon Compact"
+      ]
+    },
+    {
+      "id": "gent-88d7bb063fd0",
+      "title": "xenex-2-operating-instructions-4188-424",
+      "models": [
+        "Xenex"
+      ]
+    },
+    {
+      "id": "gent-8d26fbbe29f6",
+      "title": "nano-v2-panel-operating-manual",
+      "models": [
+        "Nano"
+      ]
+    },
+    {
+      "id": "gent-945e977903d9",
+      "title": "gent-honeywell-vigilon-Vig-4-6-loops-Oper_2km-4188-1025",
+      "models": [
+        "Vigilon"
+      ]
+    },
+    {
+      "id": "gent-c2e20b406444",
+      "title": "SenTRI ONE installation instructions",
+      "models": [
+        "SenTRI ONE"
+      ]
+    },
+    {
+      "id": "gent-da1f16c399e3",
+      "title": "SenTRI system operating instructions",
+      "models": [
+        "SenTRI"
+      ]
+    },
+    {
+      "id": "gent-f03fe5ba8e30",
+      "title": "Vigilon \u2014 Operating instructions",
+      "models": [
+        "Vigilon"
+      ]
+    },
+    {
+      "id": "facp-5bb98c9f-d1d2-432f-a17a-4e80e2852d0d",
+      "title": "Vigilon Plus Consultants Specification Guide \u2014 Manual (2021, source-listed)",
+      "models": [
+        "Vigilon Plus Consultants Specification Guide"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "id": "gent-035d36a5eb3f",
+      "title": "gent-GEN051_Open-Protocol-information-4pp_SB",
+      "reason": "General open protocol information, not a panel operating or installation manual."
+    },
+    {
+      "id": "gent-0ba4cfc5de7c",
+      "title": "gent-honeywell-S4-Sensor-Sounder-Speech-Strobe-rangedata-and-installation",
+      "reason": "S-Quad detector/sounder/speech/strobe device instructions, not a panel manual."
+    },
+    {
+      "id": "gent-33248028a91d",
+      "title": "Honeywell-Voice-Alarm_SB",
+      "reason": "Voice alarm overview, not an identified fire-control-panel manual."
+    },
+    {
+      "id": "gent-776937cca998",
+      "title": "VADS-vs-VIDS-infographic",
+      "reason": "VAD/VID infographic, not a panel manual."
+    },
+    {
+      "id": "gent-79c05fefb816",
+      "title": "Honeywell-Fire-Safety_EVCS",
+      "reason": "Emergency voice communication system overview, not an identified fire-alarm-panel manual."
+    },
+    {
+      "id": "gent-ea35ef5e18ee",
+      "title": "door-release-mechanisms-to-comply-with-BS7273-4-2007-application-notes",
+      "reason": "Door-release application note, not a panel manual."
+    },
+    {
+      "id": "gent-f0db8a7f305e",
+      "title": "MCP-XENS-800-801-805-842-850-installation-instructions",
+      "reason": "Manual call point installation instructions, not a panel manual."
+    },
+    {
+      "id": "gent-ff2d3638ae39",
+      "title": "gent-honeywell-GEN031-Design-Installation-Guide",
+      "reason": "General design/installation guide; retain in searchable catalogue, outside the panel-manual pack."
+    }
+  ],
+  "missing_photo_families": [
+    "VIG1-24 / VIG1-72",
+    "Vigilon older 4/6 loop variants",
+    "SenTRI",
+    "SenTRI ONE"
+  ],
+  "note": "A photo match must not establish exact model, firmware, protocol, or edition. Some catalogue records can be alternate copies of the same manual.",
+  "cross_brand_matches": [
+    {
+      "id": "facp-5bb98c9f-d1d2-432f-a17a-4e80e2852d0d",
+      "catalogue_brand": "Honeywell",
+      "title": "Vigilon Plus Consultants Specification Guide \u2014 Manual (2021, source-listed)",
+      "reason": "Exact Vigilon Plus family reference indexed under Honeywell."
+    }
+  ]
+}

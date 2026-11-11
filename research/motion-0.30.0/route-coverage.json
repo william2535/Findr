@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "browser": "Chromium154 Linux",
+  "width": 390,
+  "rows": [
+    {
+      "route": "home",
+      "target": ".home-import-callout",
+      "observed": 2,
+      "decorated": true,
+      "overflow": false
+    },
+    {
+      "route": "downloads/all",
+      "target": ".manual",
+      "observed": 36,
+      "decorated": true,
+      "overflow": false
+    },
+    {
+      "route": "downloads/packs",
+      "target": ".pack",
+      "observed": 19,
+      "decorated": true,
+      "overflow": false
+    },
+    {
+      "route": "devices",
+      "target": ".device-card",
+      "observed": 25,
+      "decorated": true,
+      "overflow": false
+    },
+    {
+      "route": "downloads/wiring",
+      "target": ".wiring-card",
+      "observed": 36,
+      "decorated": true,
+      "overflow": false
+    },
+    {
+      "route": "downloads/wiring-packs",
+      "target": ".wiring-brand-card",
+      "observed": 30,
+      "decorated": true,
+      "overflow": false
+    },
+    {
+      "route": "menus",
+      "target": ".menu-map-card",
+      "observed": 17,
+      "decorated": true,
+      "overflow": false
+    },
+    {
+      "route": "emulator",
+      "target": ".emulator-profile-card",
+      "observed": 17,
+      "decorated": true,
+      "overflow": false
+    }
+  ]
+}

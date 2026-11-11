@@ -1,0 +1,353 @@
+{
+  "status": "passed",
+  "environment": {
+    "browser": "chromium",
+    "version": "154.0.8037.57",
+    "os": "Linux container",
+    "viewport": {
+      "width": 1280,
+      "height": 844
+    },
+    "touchEmulated": false,
+    "physicalPhone": false
+  },
+  "checks": [
+    "Fresh page uses the shipped motion revision; phone checks use actual touch media without hover",
+    "Within 1.8 seconds, actual pixels visibly change inside the Home title and main actions",
+    "The above-fold motion recurs after the entrance instead of spending the whole window still",
+    "The existing navigation order and phone layout remain intact",
+    "Help exposes the actual effects state; Replay resets visible title, gloss and edge animations and produces visible motion",
+    "Turning effects off immediately produces a static title and main actions",
+    "The off preference persists after reload and can be re-enabled",
+    "OS reduced motion stays authoritative, disables replay and explains why effects are off",
+    "Existing completed terminal text remains stable after the visibility fix"
+  ],
+  "pixelSamples": [
+    {
+      "label": "first-window",
+      "duration": 1800,
+      "metrics": [
+        {
+          "selector": ".home-intro h1",
+          "box": [
+            50,
+            248,
+            1230,
+            316
+          ],
+          "changedPixels": 7231,
+          "fromMs": 0,
+          "toMs": 750,
+          "regionPixels": 80240,
+          "percentChanged": 9.012,
+          "threshold": "max RGB-channel difference >12/255"
+        },
+        {
+          "selector": ".home-quick-links",
+          "box": [
+            50,
+            375,
+            1230,
+            427
+          ],
+          "changedPixels": 14044,
+          "fromMs": 0,
+          "toMs": 750,
+          "regionPixels": 61360,
+          "percentChanged": 22.888,
+          "threshold": "max RGB-channel difference >12/255"
+        }
+      ],
+      "sampledTimes": [
+        0,
+        350,
+        750,
+        1200,
+        1800
+      ],
+      "frames": [
+        {
+          "ms": 0,
+          "file": "research/motion-0.30.1/visibility-chromium-1280-first-window-0.png"
+        },
+        {
+          "ms": 750,
+          "file": "research/motion-0.30.1/visibility-chromium-1280-first-window-750.png"
+        }
+      ]
+    },
+    {
+      "label": "recurring-window",
+      "duration": 1800,
+      "metrics": [
+        {
+          "selector": ".home-intro h1",
+          "box": [
+            50,
+            248,
+            1230,
+            316
+          ],
+          "changedPixels": 7151,
+          "fromMs": 1200,
+          "toMs": 1800,
+          "regionPixels": 80240,
+          "percentChanged": 8.912,
+          "threshold": "max RGB-channel difference >12/255"
+        },
+        {
+          "selector": ".home-quick-links",
+          "box": [
+            50,
+            375,
+            1230,
+            427
+          ],
+          "changedPixels": 13874,
+          "fromMs": 1200,
+          "toMs": 1800,
+          "regionPixels": 61360,
+          "percentChanged": 22.611,
+          "threshold": "max RGB-channel difference >12/255"
+        }
+      ],
+      "sampledTimes": [
+        0,
+        350,
+        750,
+        1200,
+        1800
+      ],
+      "frames": [
+        {
+          "ms": 1200,
+          "file": "research/motion-0.30.1/visibility-chromium-1280-recurring-window-1200.png"
+        },
+        {
+          "ms": 1800,
+          "file": "research/motion-0.30.1/visibility-chromium-1280-recurring-window-1800.png"
+        }
+      ]
+    },
+    {
+      "label": "replay-window",
+      "duration": 1800,
+      "metrics": [
+        {
+          "selector": ".home-intro h1",
+          "box": [
+            50,
+            254,
+            1230,
+            322
+          ],
+          "changedPixels": 8416,
+          "fromMs": 0,
+          "toMs": 750,
+          "regionPixels": 80240,
+          "percentChanged": 10.489,
+          "threshold": "max RGB-channel difference >12/255"
+        },
+        {
+          "selector": ".home-quick-links",
+          "box": [
+            50,
+            381,
+            1230,
+            433
+          ],
+          "changedPixels": 19912,
+          "fromMs": 0,
+          "toMs": 750,
+          "regionPixels": 61360,
+          "percentChanged": 32.451,
+          "threshold": "max RGB-channel difference >12/255"
+        }
+      ],
+      "sampledTimes": [
+        0,
+        350,
+        750,
+        1200,
+        1800
+      ],
+      "frames": [
+        {
+          "ms": 0,
+          "file": "research/motion-0.30.1/visibility-chromium-1280-replay-window-0.png"
+        },
+        {
+          "ms": 750,
+          "file": "research/motion-0.30.1/visibility-chromium-1280-replay-window-750.png"
+        }
+      ]
+    },
+    {
+      "label": "user-off",
+      "duration": 1500,
+      "metrics": [
+        {
+          "selector": ".home-intro h1",
+          "box": [
+            50,
+            248,
+            1230,
+            316
+          ],
+          "changedPixels": 0,
+          "fromMs": 0,
+          "toMs": 0,
+          "regionPixels": 80240,
+          "percentChanged": 0,
+          "threshold": "max RGB-channel difference >12/255"
+        },
+        {
+          "selector": ".home-quick-links",
+          "box": [
+            50,
+            375,
+            1230,
+            427
+          ],
+          "changedPixels": 0,
+          "fromMs": 0,
+          "toMs": 0,
+          "regionPixels": 61360,
+          "percentChanged": 0,
+          "threshold": "max RGB-channel difference >12/255"
+        }
+      ],
+      "sampledTimes": [
+        0,
+        350,
+        750,
+        1200,
+        1500
+      ],
+      "frames": [
+        {
+          "ms": 1500,
+          "file": "research/motion-0.30.1/visibility-chromium-1280-user-off-1500.png"
+        }
+      ]
+    },
+    {
+      "label": "os-reduced",
+      "duration": 1500,
+      "metrics": [
+        {
+          "selector": ".home-intro h1",
+          "box": [
+            50,
+            248,
+            1230,
+            316
+          ],
+          "changedPixels": 0,
+          "fromMs": 0,
+          "toMs": 0,
+          "regionPixels": 80240,
+          "percentChanged": 0,
+          "threshold": "max RGB-channel difference >12/255"
+        },
+        {
+          "selector": ".home-quick-links",
+          "box": [
+            50,
+            375,
+            1230,
+            427
+          ],
+          "changedPixels": 0,
+          "fromMs": 0,
+          "toMs": 0,
+          "regionPixels": 61360,
+          "percentChanged": 0,
+          "threshold": "max RGB-channel difference >12/255"
+        }
+      ],
+      "sampledTimes": [
+        0,
+        350,
+        750,
+        1200,
+        1500
+      ],
+      "frames": [
+        {
+          "ms": 1500,
+          "file": "research/motion-0.30.1/visibility-chromium-1280-os-reduced-1500.png"
+        }
+      ]
+    }
+  ],
+  "pageErrors": [],
+  "appVersion": "0.30.1",
+  "helpText": "Interface effects\nOn — visible light sweeps on headings, buttons and cards.\nReplay effects",
+  "replay": {
+    "afterClick": [
+      {
+        "name": "findr-gloss",
+        "time": 33.331999999999695,
+        "state": "running",
+        "target": "brand motion-watch motion-gloss motion-visible"
+      },
+      {
+        "name": "findr-gloss",
+        "time": 33.331999999999695,
+        "state": "running",
+        "target": "motion-watch motion-gloss motion-action motion-visible active"
+      },
+      {
+        "name": "findr-edge",
+        "time": 33.331999999999695,
+        "state": "running",
+        "target": "home-intro motion-watch motion-rail motion-visible"
+      },
+      {
+        "name": "findr-title",
+        "time": 33.331999999999695,
+        "state": "running",
+        "target": "motion-watch motion-title motion-visible"
+      },
+      {
+        "name": "findr-gloss",
+        "time": 33.331999999999695,
+        "state": "running",
+        "target": "primary motion-watch motion-gloss motion-action motion-visible"
+      },
+      {
+        "name": "findr-gloss",
+        "time": 33.331999999999695,
+        "state": "running",
+        "target": "secondary motion-watch motion-gloss motion-action motion-visible"
+      },
+      {
+        "name": "findr-gloss",
+        "time": 33.331999999999695,
+        "state": "running",
+        "target": "secondary motion-watch motion-gloss motion-action motion-visible"
+      },
+      {
+        "name": "findr-edge",
+        "time": 33.331999999999695,
+        "state": "running",
+        "target": "home-import-callout motion-watch motion-gloss motion-rail motion-visible"
+      },
+      {
+        "name": "findr-gloss",
+        "time": 33.331999999999695,
+        "state": "running",
+        "target": "home-import-callout motion-watch motion-gloss motion-rail motion-visible"
+      },
+      {
+        "name": "findr-gloss",
+        "time": 33.331999999999695,
+        "state": "running",
+        "target": "primary motion-watch motion-gloss motion-action motion-visible"
+      }
+    ],
+    "dialogOpen": false
+  },
+  "reducedHelp": "Interface effects\nPaused — Reduce Motion is enabled in your device settings.\nReplay effects"
+}

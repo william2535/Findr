@@ -1,0 +1,51 @@
+[
+  {
+    "legacy_image": "gent-vigilon-compact.jpg",
+    "current_image": "gent-vigilon-compact.webp",
+    "panel_id": "gent-vigilon-compact",
+    "original_sha256": "9697cc9e9948da625e8fdf6aa2d7994abb9d39a35cc8312d8a35a897fa7f7134",
+    "original_bytes": 52487
+  },
+  {
+    "legacy_image": "gent-compact-plus.jpg",
+    "current_image": "gent-compact-plus.webp",
+    "panel_id": "gent-compact-plus",
+    "original_sha256": "26a2652e7c54144e206e3ace90d7ef44b09e0c0051328325ef9e0c54c6cbdafe",
+    "original_bytes": 160553
+  },
+  {
+    "legacy_image": "gent-vigilon-plus.png",
+    "current_image": "gent-vigilon-plus.webp",
+    "panel_id": "gent-vigilon-plus",
+    "original_sha256": "b31eb297ad2d3beee3ac56653749650e5077ecb44b5b71f6bfdf48219a1d2108",
+    "original_bytes": 3633565
+  },
+  {
+    "legacy_image": "gent-nano-alt.jpg",
+    "current_image": "gent-nano.webp",
+    "panel_id": "gent-nano",
+    "original_sha256": "69a9e446ea19e2ee61ff7523be251a44e5f144c7449ef12063bb023fc428f677",
+    "original_bytes": 234423
+  },
+  {
+    "legacy_image": "gent-xenex.jpg",
+    "current_image": "gent-xenex.webp",
+    "panel_id": "gent-xenex",
+    "original_sha256": "23fc1cd0d589495af5b9864f603be6a519512694f95cec4a945c6c1d6a070fa0",
+    "original_bytes": 660165
+  },
+  {
+    "legacy_image": "advanced-mxpro5.jpg",
+    "current_image": "advanced-mxpro5.webp",
+    "panel_id": "advanced-mxpro5",
+    "original_sha256": "49f61e74e77ff23b268e52068b939dd70c762cfc2167972c9b183c21b48eecc0",
+    "original_bytes": 273659
+  },
+  {
+    "legacy_image": "protec-6500.png",
+    "current_image": "protec-6500.webp",
+    "panel_id": "protec-6500",
+    "original_sha256": "6a88cfe0a85ac43ca126c07840e6f3b9c46df712da6a9ef7ded5c2598e1b11af",
+    "original_bytes": 89666
+  }
+]

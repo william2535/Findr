@@ -1,0 +1,2266 @@
+[
+  {
+    "id": "act-6137ac1ea5e1-p6-typical-wiring",
+    "recordId": "act-6137ac1ea5e1",
+    "title": "ACT10 typical two-door wiring",
+    "brand": "ACT",
+    "category": "access-control",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "ACT10"
+    ],
+    "panelIds": [
+      "act-10"
+    ],
+    "deviceIds": [],
+    "pdfPage": 6,
+    "printedPage": "6",
+    "section": "Figure 1 — Typical ACT 10 Configuration",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/ACT%2010%20and%2020%20digi%20keypad.pdf",
+    "sourceSha256": "ab79a044fbc1e72ff88f68aa57169ccb3e794d3ed8dcd3de99472b21dfd9c582",
+    "edition": "18-00001, © 2007",
+    "image": "wiring/act-6137ac1ea5e1-p6-typical-wiring.webp",
+    "imageSha256": "deb32d7e8549203dbd0dd64243453ebb1f067cd283ed411121579f1ccf925359",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 98912,
+    "scope": "ACT10 only, as named on the source cover.",
+    "notes": [
+      "The archive title mentions ACT10 and ACT20. This source establishes ACT10 wiring only.",
+      "Strike and normally energised lock alternatives have different relay connections. Retain the power and suppression conditions."
+    ],
+    "keywords": [
+      "ACT10",
+      "lock",
+      "exit button",
+      "varistor",
+      "door"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "act-6137ac1ea5e1-p7-system-schematic",
+    "recordId": "act-6137ac1ea5e1",
+    "title": "ACT10 system connection overview",
+    "brand": "ACT",
+    "category": "access-control",
+    "targetType": "panel",
+    "diagramType": "connection-example",
+    "models": [
+      "ACT10"
+    ],
+    "panelIds": [
+      "act-10"
+    ],
+    "deviceIds": [],
+    "pdfPage": 7,
+    "printedPage": "7",
+    "section": "Figure 2 — ACT 10 System Schematic",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/ACT%2010%20and%2020%20digi%20keypad.pdf",
+    "sourceSha256": "ab79a044fbc1e72ff88f68aa57169ccb3e794d3ed8dcd3de99472b21dfd9c582",
+    "edition": "18-00001, © 2007",
+    "image": "wiring/act-6137ac1ea5e1-p7-system-schematic.webp",
+    "imageSha256": "383409306525b05241d7d162f35331d70a0318a60a4778c6e19342c9ff69aff2",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 70892,
+    "scope": "ACT10 only, as named on the source cover.",
+    "notes": [
+      "The archive title mentions ACT10 and ACT20. This source establishes ACT10 wiring only.",
+      "System-level connection overview; detailed terminals are on PDF page 6."
+    ],
+    "keywords": [
+      "ACT10",
+      "system schematic",
+      "door",
+      "lock"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "paxton-0ff722d66548-p3-io",
+    "recordId": "paxton-0ff722d66548",
+    "title": "Net2 I/O input, relay and network connections",
+    "brand": "Paxton",
+    "category": "access-control",
+    "targetType": "accessory",
+    "diagramType": "wiring",
+    "models": [
+      "Net2 I/O"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 3,
+    "printedPage": null,
+    "section": "Net2 I/O connection diagram",
+    "sourceUrl": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-20005.pdf",
+    "sourceSha256": "9cca76260c931b7fb3551bf5793de1cf5ff3014ca526297665ad90af1cb8b955",
+    "edition": "INS-20005 Rev D",
+    "image": "wiring/paxton-0ff722d66548-p3-io.webp",
+    "imageSha256": "bb9fa20789fbab67ddccccd96a17ca292a5abec187959694332dbf26c656aecd",
+    "imageWidth": 1400,
+    "imageHeight": 1400,
+    "imageBytes": 101906,
+    "scope": "Paxton Net2 I/O board relay, input, power and Ethernet connections.",
+    "notes": [
+      "Relay ratings and product variant markings are on PDF pages 4–5; confirm the fitted unit before applying a load."
+    ],
+    "keywords": [
+      "Net2",
+      "I/O",
+      "relay",
+      "input",
+      "Ethernet"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "paxton-191cfc4e7f90-p1-controller",
+    "recordId": "paxton-191cfc4e7f90",
+    "title": "Net2 Plus readers, lock and inputs",
+    "brand": "Paxton",
+    "category": "access-control",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Net2 Plus"
+    ],
+    "panelIds": [
+      "paxton-net2-plus"
+    ],
+    "deviceIds": [],
+    "pdfPage": 1,
+    "printedPage": "1",
+    "section": "Net2 Plus ACU — wiring diagram",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Net2%20Plus%20ACU.pdf",
+    "sourceSha256": "a0eed9c3fa8cf37aa70636720bb9da2204fd5bad2639a30d009f52fd36c5dd7e",
+    "edition": "INS-30080, 22/01/2010",
+    "image": "wiring/paxton-191cfc4e7f90-p1-controller.webp",
+    "imageSha256": "43b0cdeafdd9c1714e276ecee0eca5f32924f3bc9ffdecdc79defb3c65cf1703",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 386148,
+    "scope": "Net2 Plus ACU connections in the reviewed INS-30080 issue.",
+    "notes": [
+      "The full page retains 12V-reader-only and fail-open / fail-closed lock conditions."
+    ],
+    "keywords": [
+      "Net2 Plus",
+      "reader",
+      "lock",
+      "exit",
+      "door contact",
+      "tamper"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "paxton-191cfc4e7f90-p4-network",
+    "recordId": "paxton-191cfc4e7f90",
+    "title": "Net2 Plus TCP/IP and RS485 network example",
+    "brand": "Paxton",
+    "category": "access-control",
+    "targetType": "panel",
+    "diagramType": "connection-example",
+    "models": [
+      "Net2 Plus"
+    ],
+    "panelIds": [
+      "paxton-net2-plus"
+    ],
+    "deviceIds": [],
+    "pdfPage": 4,
+    "printedPage": "4",
+    "section": "TCP/IP and RS485 network configuration",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Net2%20Plus%20ACU.pdf",
+    "sourceSha256": "a0eed9c3fa8cf37aa70636720bb9da2204fd5bad2639a30d009f52fd36c5dd7e",
+    "edition": "INS-30080, 22/01/2010",
+    "image": "wiring/paxton-191cfc4e7f90-p4-network.webp",
+    "imageSha256": "16c323a975660f4d6669de3507523415f6c2cb412bb5500bae504cbd62f22950",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 304586,
+    "scope": "Net2 Plus ACU connections in the reviewed INS-30080 issue.",
+    "notes": [
+      "Retain the source data-line, screen and termination instructions."
+    ],
+    "keywords": [
+      "Net2 Plus",
+      "TCP/IP",
+      "RS485",
+      "termination"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "paxton-27e5d85e1edc-p2-connections",
+    "recordId": "paxton-27e5d85e1edc",
+    "title": "Switch2 reader, lock and exit wiring",
+    "brand": "Paxton",
+    "category": "access-control",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Switch2"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 2,
+    "printedPage": "2",
+    "section": "Connections",
+    "sourceUrl": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1002.pdf",
+    "sourceSha256": "bdb8b49911524ff2caf56b363e89d2a5c858bdea7a7ebce740cc6a47b84c39a2",
+    "edition": "APN-1002",
+    "image": "wiring/paxton-27e5d85e1edc-p2-connections.webp",
+    "imageSha256": "40ccb8c321957cf5622619ab0e4b083953d53b931132608a51e02de31f1597e5",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 491196,
+    "scope": "Paxton Switch2 controller system example.",
+    "notes": [
+      "PDF page 3 explains the different NC/NO relay connections for fail-open and fail-closed locks; choose the correct arrangement."
+    ],
+    "keywords": [
+      "Switch2",
+      "reader",
+      "lock",
+      "door contact",
+      "exit button"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "paxton-34d2fed7ef37-p3-wiring",
+    "recordId": "paxton-34d2fed7ef37",
+    "title": "TOUCHLOCK Compact K Series wiring",
+    "brand": "Paxton",
+    "category": "access-control",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "TOUCHLOCK Compact K Series"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 3,
+    "printedPage": null,
+    "section": "Wiring",
+    "sourceUrl": "https://www.paxton-access.com/wp-content/uploads/2019/04/ins-30076.pdf",
+    "sourceSha256": "c67a1441021062abc269ee20456b45d658e0c5afb506c57175442d44234e1c04",
+    "edition": "INS-30076 Rev E",
+    "image": "wiring/paxton-34d2fed7ef37-p3-wiring.webp",
+    "imageSha256": "da6f493c3853d19757847ad641c3d22f23b35c7dd81f971595eed65b6aae9de2",
+    "imageWidth": 1400,
+    "imageHeight": 1400,
+    "imageBytes": 278906,
+    "scope": "TOUCHLOCK Compact K Series standalone keypad; includes the K75 screw-connector option.",
+    "notes": [
+      "Compact systems directly control one lock. This is not a Net2 or Switch2 data-reader wiring diagram."
+    ],
+    "keywords": [
+      "TOUCHLOCK",
+      "K75",
+      "keypad",
+      "lock",
+      "exit",
+      "bell"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "bbv-0aa95402bc61-p9-pcb",
+    "recordId": "bbv-0aa95402bc61",
+    "title": "Rx10X variant PCB terminal connections",
+    "brand": "BBV",
+    "category": "cctv",
+    "targetType": "accessory",
+    "diagramType": "terminal-layout",
+    "models": [
+      "Rx10X",
+      "Rx10X/AL",
+      "Rx10X/WBX",
+      "Rx10X/24/WBX"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 9,
+    "printedPage": "9",
+    "section": "Figure 2 — Rx10X PCB Connections",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/BBV%20Rx10X%20installation%20manual%20V3.05.pdf",
+    "sourceSha256": "81590387e7687d1f701e391a5938a67771c724d2cd7f550d42a59af9db002c7b",
+    "edition": "Installation manual V3.05",
+    "image": "wiring/bbv-0aa95402bc61-p9-pcb.webp",
+    "imageSha256": "e4811614dce0c7b4f99c9c07cab0457d7b23125bb9b5781d60caa0013c9e9771",
+    "imageWidth": 1800,
+    "imageHeight": 2545,
+    "imageBytes": 140898,
+    "scope": "BBV Rx10X family; select the exact variant and its source connection drawing.",
+    "notes": [
+      "The page distinguishes the Rx10X board from AL/WBX variants, including different power arrangements."
+    ],
+    "keywords": [
+      "Rx10X",
+      "RS232",
+      "RS422",
+      "RS485",
+      "20mA",
+      "video"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "bbv-0aa95402bc61-p15-control",
+    "recordId": "bbv-0aa95402bc61",
+    "title": "Rx10X coax and 20mA control examples",
+    "brand": "BBV",
+    "category": "cctv",
+    "targetType": "accessory",
+    "diagramType": "wiring",
+    "models": [
+      "Rx10X",
+      "Rx10X/AL",
+      "Rx10X/WBX",
+      "Rx10X/24/WBX"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 15,
+    "printedPage": "15",
+    "section": "Figures 5 and 6 — COAX Control / 20mA Control",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/BBV%20Rx10X%20installation%20manual%20V3.05.pdf",
+    "sourceSha256": "81590387e7687d1f701e391a5938a67771c724d2cd7f550d42a59af9db002c7b",
+    "edition": "Installation manual V3.05",
+    "image": "wiring/bbv-0aa95402bc61-p15-control.webp",
+    "imageSha256": "845cf0dbc33cbc7a45b67190c3f6ac276086496f2844d0e845e33c6dc7c0aa59",
+    "imageWidth": 1800,
+    "imageHeight": 2545,
+    "imageBytes": 628540,
+    "scope": "BBV Rx10X family; select the exact variant and its source connection drawing.",
+    "notes": [
+      "Shown dome families and cable limits are examples for this interface; protocol configuration must match the actual dome."
+    ],
+    "keywords": [
+      "coax",
+      "20mA",
+      "dome",
+      "telemetry"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "bbv-0aa95402bc61-p16-alarm",
+    "recordId": "bbv-0aa95402bc61",
+    "title": "Rx10X/AL alarm connections",
+    "brand": "BBV",
+    "category": "cctv",
+    "targetType": "accessory",
+    "diagramType": "wiring",
+    "models": [
+      "Rx10X/AL"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 16,
+    "printedPage": "16",
+    "section": "Figure 7 — Rx10X/AL Alarm Connections",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/BBV%20Rx10X%20installation%20manual%20V3.05.pdf",
+    "sourceSha256": "81590387e7687d1f701e391a5938a67771c724d2cd7f550d42a59af9db002c7b",
+    "edition": "Installation manual V3.05",
+    "image": "wiring/bbv-0aa95402bc61-p16-alarm.webp",
+    "imageSha256": "39d4684d92e0e329eb51865b133ceab69fcdac7957eb8cdedc0759c4a34053c6",
+    "imageWidth": 1800,
+    "imageHeight": 1274,
+    "imageBytes": 102766,
+    "scope": "BBV Rx10X family; select the exact variant and its source connection drawing.",
+    "notes": [
+      "This diagram is specifically the AL alarm variant."
+    ],
+    "keywords": [
+      "Rx10X/AL",
+      "alarm",
+      "dome",
+      "24V"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "bbv-0aa95402bc61-p17-auxiliary",
+    "recordId": "bbv-0aa95402bc61",
+    "title": "Rx10X/WBX auxiliary connections",
+    "brand": "BBV",
+    "category": "cctv",
+    "targetType": "accessory",
+    "diagramType": "wiring",
+    "models": [
+      "Rx10X/WBX"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 17,
+    "printedPage": "17",
+    "section": "Figure 8 — Rx10X/WBX Auxiliary Connections",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/BBV%20Rx10X%20installation%20manual%20V3.05.pdf",
+    "sourceSha256": "81590387e7687d1f701e391a5938a67771c724d2cd7f550d42a59af9db002c7b",
+    "edition": "Installation manual V3.05",
+    "image": "wiring/bbv-0aa95402bc61-p17-auxiliary.webp",
+    "imageSha256": "8102b039a88ef6e8bb40938ba9f2197cf251f5978994212ce1521d7e64df9061",
+    "imageWidth": 1800,
+    "imageHeight": 1274,
+    "imageBytes": 141756,
+    "scope": "BBV Rx10X family; select the exact variant and its source connection drawing.",
+    "notes": [
+      "This diagram is specifically the WBX auxiliary arrangement and retains the source fused supply and double-pole switching conditions."
+    ],
+    "keywords": [
+      "Rx10X/WBX",
+      "auxiliary",
+      "relay",
+      "lighting"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "honeywell-4f5136f7b0f1-p1-rear-connections",
+    "recordId": "honeywell-4f5136f7b0f1",
+    "title": "HRDE4X4 video, audio and monitor connections",
+    "brand": "Honeywell",
+    "category": "cctv",
+    "targetType": "panel",
+    "diagramType": "terminal-layout",
+    "models": [
+      "HRDE4X4"
+    ],
+    "panelIds": [
+      "honeywell-hrde4x4"
+    ],
+    "deviceIds": [],
+    "pdfPage": 1,
+    "printedPage": null,
+    "section": "1 — Easy Video / Audio Connections",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/HRDE4X4QuickInstallV1.pdf",
+    "sourceSha256": "ddc03e15938ee071625c0268e14a700c770c0e99861927adacbf5edd7eb53938",
+    "edition": "Document 900.0573, 02/06, Rev 1.00",
+    "image": "wiring/honeywell-4f5136f7b0f1-p1-rear-connections.webp",
+    "imageSha256": "2b2f6c9054239501a28198ee7ad45eaeee4c7825e5404c911525b032417b30ae",
+    "imageWidth": 1400,
+    "imageHeight": 1812,
+    "imageBytes": 319090,
+    "scope": "Honeywell HRDE4X4 recorder rear connections in the reviewed quick installation guide.",
+    "notes": [
+      "The source specifies VGA or composite monitor selection and the supplied power adaptor."
+    ],
+    "keywords": [
+      "HRDE4X4",
+      "BNC",
+      "audio",
+      "VGA",
+      "monitor",
+      "12V"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "nvt-8589e51457ae-p2-grounding",
+    "recordId": "nvt-8589e51457ae",
+    "title": "NVT UTP CCTV recommended grounding",
+    "brand": "NVT",
+    "category": "cctv",
+    "targetType": "accessory",
+    "diagramType": "wiring",
+    "models": [
+      "NVT UTP CCTV transmission products"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "Recommended Grounding",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/NVT%20cctv%20installationmanual.pdf",
+    "sourceSha256": "2c2091e1d30113bb0309f10d9476807ec7910fb96b39f55a5732e1744665b10d",
+    "edition": "451-436-1-G, © 2003",
+    "image": "wiring/nvt-8589e51457ae-p2-grounding.webp",
+    "imageSha256": "8a9c438f8c55843f9b36a9f3d5ba5163a4cfc8bed63e0c32c6c4c589a66bd204",
+    "imageWidth": 2800,
+    "imageHeight": 4612,
+    "imageBytes": 512244,
+    "scope": "The NVT analogue composite-video-over-UTP transmitter and receiver family listed on this manual page.",
+    "notes": [
+      "Analogue NVT video transmission and the specified power/grounding arrangement only; this is not an Ethernet or PoE wiring diagram."
+    ],
+    "keywords": [
+      "UTP",
+      "CCTV",
+      "ground",
+      "transmitter",
+      "receiver"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "bosch-0ba92138ab30-p2-terminals",
+    "recordId": "bosch-0ba92138ab30",
+    "title": "Blue Line Gen2 WP power, alarm and tamper terminals",
+    "brand": "Bosch",
+    "category": "security",
+    "targetType": "device",
+    "diagramType": "terminal-layout",
+    "models": [
+      "ISC-BDL2-WP12",
+      "ISC-BDL2-WP6",
+      "ISC-BDL2-WP12G",
+      "ISC-BDL2-WP6G",
+      "ISC-BDL2-WP12H"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "bosch-device-blue-line-gen2-wp"
+    ],
+    "pdfPage": 2,
+    "printedPage": "2",
+    "section": "Installation step 5 — terminal connections",
+    "sourceUrl": "https://resources.keenfinity.tech/public/documents/ISC_BDL2_WP6__WP12_Installation_Manual_all_2614427019.pdf",
+    "sourceSha256": "435411de48f7f486996f0b81e9a13df5601ddec6aede3428d442473bcce876ed",
+    "edition": "F.01U.140.810 | 10 | 2017.12",
+    "image": "wiring/bosch-0ba92138ab30-p2-terminals.webp",
+    "imageSha256": "0fc52df307fd2ba6ea5bf2e8377ac846a7dbfd54cd25e90a4e0e6e036eeb06be",
+    "imageWidth": 2200,
+    "imageHeight": 1700,
+    "imageBytes": 378696,
+    "scope": "Bosch Blue Line Gen2 pet-friendly TriTech variants explicitly listed in this guide.",
+    "notes": [
+      "SELV supply and electrical limits are retained on the complete manual page."
+    ],
+    "keywords": [
+      "12V",
+      "alarm",
+      "NC",
+      "tamper",
+      "TriTech"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "bosch-3d8651b2effe-p1-terminals",
+    "recordId": "bosch-3d8651b2effe",
+    "title": "Blue Line Gen2 TriTech terminal connections",
+    "brand": "Bosch",
+    "category": "security",
+    "targetType": "device",
+    "diagramType": "terminal-layout",
+    "models": [
+      "ISC-BDL2-W12G",
+      "ISC-BDL2-W12GE",
+      "ISC-BDL2-W12HE",
+      "ISC-BDL2-WP12G",
+      "ISC-BDL2-WP12GE",
+      "ISC-BDL2-WP12HE",
+      "ISC-BDL2-WP6G"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 1,
+    "printedPage": null,
+    "section": "Instruction panel 6 — terminal layout",
+    "sourceUrl": "https://resources.keenfinity.tech/public/documents/Blue_Line_Gen_2_Quick_Installation_Guide_all_71222140683.pdf",
+    "sourceSha256": "5d9ac566dee9eec5e926f6e2ecc1df51b1d92f0326a06cf597453132045bfbe4",
+    "edition": "F.01U.140.813 | 12 | 2019.10",
+    "image": "wiring/bosch-3d8651b2effe-p1-terminals.webp",
+    "imageSha256": "43aaa992d7977ed954a83dae2e6483ecf7b21952ee3d93f4744c44f0e5a40306",
+    "imageWidth": 2800,
+    "imageHeight": 1860,
+    "imageBytes": 322200,
+    "scope": "The seven Blue Line Gen2 TriTech model suffixes listed on PDF page 2 of this quick guide.",
+    "notes": [
+      "WP-only pet and Grade 2 insert conditions are part of the complete page."
+    ],
+    "keywords": [
+      "TriTech",
+      "power",
+      "alarm",
+      "tamper"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "eaton-scantronic-105c389dba94-p18-keypad-bus",
+    "recordId": "eaton-scantronic-105c389dba94",
+    "title": "9752 keypad and expander bus layouts",
+    "brand": "Eaton / Scantronic",
+    "category": "security",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Scantronic 9752"
+    ],
+    "panelIds": [
+      "eaton-scantronic-9651-9751-9752-9851-9930"
+    ],
+    "deviceIds": [],
+    "pdfPage": 18,
+    "printedPage": "14",
+    "section": "Keypads and Expanders — star and bus wiring",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Scantronic%209752%20Installation%20Guide.pdf",
+    "sourceSha256": "229072efb50a5a4eece53e18189adf3ca869b0c186f7ea33eeb0404d28b2b86b",
+    "edition": "497098, Issue 3",
+    "image": "wiring/eaton-scantronic-105c389dba94-p18-keypad-bus.webp",
+    "imageSha256": "e8d2fb8df8850daeb89c364d97c279ebbb4e39b4f026a7953abb951fe3151e37",
+    "imageWidth": 1400,
+    "imageHeight": 1982,
+    "imageBytes": 71108,
+    "scope": "Scantronic 9752 installation guide only.",
+    "notes": [
+      "The linked FINDR family pack includes other control units. This source verifies 9752 connections, not the other units in that pack.",
+      "Cable type, length and device limits are part of the source example."
+    ],
+    "keywords": [
+      "keypad",
+      "expander",
+      "bus",
+      "star"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "eaton-scantronic-105c389dba94-p24-keypad",
+    "recordId": "eaton-scantronic-105c389dba94",
+    "title": "9752 keypad and panic inputs",
+    "brand": "Eaton / Scantronic",
+    "category": "security",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Scantronic 9752"
+    ],
+    "panelIds": [
+      "eaton-scantronic-9651-9751-9752-9851-9930"
+    ],
+    "deviceIds": [],
+    "pdfPage": 24,
+    "printedPage": "20",
+    "section": "Keypad Connections",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Scantronic%209752%20Installation%20Guide.pdf",
+    "sourceSha256": "229072efb50a5a4eece53e18189adf3ca869b0c186f7ea33eeb0404d28b2b86b",
+    "edition": "497098, Issue 3",
+    "image": "wiring/eaton-scantronic-105c389dba94-p24-keypad.webp",
+    "imageSha256": "a00b53a51e17e82f316e92812e5389f9dea288102ed131ab594ef96e77fa3cf2",
+    "imageWidth": 1400,
+    "imageHeight": 1982,
+    "imageBytes": 51166,
+    "scope": "Scantronic 9752 installation guide only.",
+    "notes": [
+      "The linked FINDR family pack includes other control units. This source verifies 9752 connections, not the other units in that pack.",
+      "The page distinguishes 9930 keypad connections from 9940 panic inputs."
+    ],
+    "keywords": [
+      "9930",
+      "9940",
+      "keypad",
+      "panic attack"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "eaton-scantronic-105c389dba94-p25-sounder",
+    "recordId": "eaton-scantronic-105c389dba94",
+    "title": "9752 sounder connections and keypad addressing",
+    "brand": "Eaton / Scantronic",
+    "category": "security",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Scantronic 9752"
+    ],
+    "panelIds": [
+      "eaton-scantronic-9651-9751-9752-9851-9930"
+    ],
+    "deviceIds": [],
+    "pdfPage": 25,
+    "printedPage": "21",
+    "section": "Figure 14 — Sounder Connections",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Scantronic%209752%20Installation%20Guide.pdf",
+    "sourceSha256": "229072efb50a5a4eece53e18189adf3ca869b0c186f7ea33eeb0404d28b2b86b",
+    "edition": "497098, Issue 3",
+    "image": "wiring/eaton-scantronic-105c389dba94-p25-sounder.webp",
+    "imageSha256": "498d9107d93129cf8d214ef956800fc4fb0df609530899a96484a44261ff793e",
+    "imageWidth": 1400,
+    "imageHeight": 1982,
+    "imageBytes": 66926,
+    "scope": "Scantronic 9752 installation guide only.",
+    "notes": [
+      "The linked FINDR family pack includes other control units. This source verifies 9752 connections, not the other units in that pack."
+    ],
+    "keywords": [
+      "sounder",
+      "strobe",
+      "keypad",
+      "address links"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "eaton-scantronic-105c389dba94-p27-closed-circuit",
+    "recordId": "eaton-scantronic-105c389dba94",
+    "title": "9752 closed-circuit loop wiring",
+    "brand": "Eaton / Scantronic",
+    "category": "security",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Scantronic 9752"
+    ],
+    "panelIds": [
+      "eaton-scantronic-9651-9751-9752-9851-9930"
+    ],
+    "deviceIds": [],
+    "pdfPage": 27,
+    "printedPage": "23",
+    "section": "Figure 15 — CCL Connections",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Scantronic%209752%20Installation%20Guide.pdf",
+    "sourceSha256": "229072efb50a5a4eece53e18189adf3ca869b0c186f7ea33eeb0404d28b2b86b",
+    "edition": "497098, Issue 3",
+    "image": "wiring/eaton-scantronic-105c389dba94-p27-closed-circuit.webp",
+    "imageSha256": "af10f7fb82de01d539f7a3827e24f39ecbcd9d76e8f3cb27b50ddb4e0c8ffccb",
+    "imageWidth": 1400,
+    "imageHeight": 1982,
+    "imageBytes": 81064,
+    "scope": "Scantronic 9752 installation guide only.",
+    "notes": [
+      "The linked FINDR family pack includes other control units. This source verifies 9752 connections, not the other units in that pack."
+    ],
+    "keywords": [
+      "CCL",
+      "closed circuit",
+      "zone",
+      "tamper"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "eaton-scantronic-105c389dba94-p28-fully-supervised",
+    "recordId": "eaton-scantronic-105c389dba94",
+    "title": "9752 fully supervised loop wiring",
+    "brand": "Eaton / Scantronic",
+    "category": "security",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Scantronic 9752"
+    ],
+    "panelIds": [
+      "eaton-scantronic-9651-9751-9752-9851-9930"
+    ],
+    "deviceIds": [],
+    "pdfPage": 28,
+    "printedPage": "24",
+    "section": "Figure 16 — FSL Connections",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Scantronic%209752%20Installation%20Guide.pdf",
+    "sourceSha256": "229072efb50a5a4eece53e18189adf3ca869b0c186f7ea33eeb0404d28b2b86b",
+    "edition": "497098, Issue 3",
+    "image": "wiring/eaton-scantronic-105c389dba94-p28-fully-supervised.webp",
+    "imageSha256": "0b0ffaa15e796968a328c6cfbd9ffb7ac487c5b6f35d91fff3fba7b568f44e03",
+    "imageWidth": 1400,
+    "imageHeight": 1982,
+    "imageBytes": 36550,
+    "scope": "Scantronic 9752 installation guide only.",
+    "notes": [
+      "The linked FINDR family pack includes other control units. This source verifies 9752 connections, not the other units in that pack.",
+      "The full page retains resistor identification, loop resistance and cable length notes."
+    ],
+    "keywords": [
+      "FSL",
+      "fully supervised",
+      "zone",
+      "resistor"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "eaton-scantronic-105c389dba94-p30-9954-expander",
+    "recordId": "eaton-scantronic-105c389dba94",
+    "title": "9752 wired expander connections",
+    "brand": "Eaton / Scantronic",
+    "category": "security",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Scantronic 9752"
+    ],
+    "panelIds": [
+      "eaton-scantronic-9651-9751-9752-9851-9930"
+    ],
+    "deviceIds": [],
+    "pdfPage": 30,
+    "printedPage": "26",
+    "section": "Figure 20 — Connecting a 9954 Expander",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Scantronic%209752%20Installation%20Guide.pdf",
+    "sourceSha256": "229072efb50a5a4eece53e18189adf3ca869b0c186f7ea33eeb0404d28b2b86b",
+    "edition": "497098, Issue 3",
+    "image": "wiring/eaton-scantronic-105c389dba94-p30-9954-expander.webp",
+    "imageSha256": "caea4bb7b7aa910441b8ef08df49808240e55658758579f75d2ff63407d2437d",
+    "imageWidth": 1400,
+    "imageHeight": 1982,
+    "imageBytes": 61470,
+    "scope": "Scantronic 9752 installation guide only.",
+    "notes": [
+      "The linked FINDR family pack includes other control units. This source verifies 9752 connections, not the other units in that pack.",
+      "The upper illustration is a 9960 radio expander layout; the lower wiring diagram is specifically the 9954 expander."
+    ],
+    "keywords": [
+      "9954",
+      "expander",
+      "9960"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "honeywell-18a74589d3d1-p20-rs485",
+    "recordId": "honeywell-18a74589d3d1",
+    "title": "Galaxy Dimension RS485 daisy chain",
+    "brand": "Honeywell",
+    "category": "security",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Galaxy Dimension 48",
+      "Galaxy Dimension 96",
+      "Galaxy Dimension 264",
+      "Galaxy Dimension 520"
+    ],
+    "panelIds": [
+      "honeywell-galaxy-dimension"
+    ],
+    "deviceIds": [],
+    "pdfPage": 20,
+    "printedPage": "2-8",
+    "section": "RS485 Data Communication Bus — Figure 2-6",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Galaxy%20Dimension%20Install%20Manual.pdf",
+    "sourceSha256": "b64fa5be0bd932ecb4bee89767ec1de60ef8742614548a005e982a5833812c14",
+    "edition": "IE1-0063 Rev 1.0",
+    "image": "wiring/honeywell-18a74589d3d1-p20-rs485.webp",
+    "imageSha256": "bd9edf64821d11c0e29b26b9fa6a0f0ed71996940c5030fd4d5c7956e468c91c",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 102372,
+    "scope": "Galaxy Dimension wiring in the reviewed installer manual; the configuration, bus and zone resistance option must match the system.",
+    "notes": [
+      "Keep the source termination and end-link instructions with this diagram."
+    ],
+    "keywords": [
+      "RS485",
+      "AB bus",
+      "termination",
+      "daisy chain"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "honeywell-18a74589d3d1-p21-twin-rs485",
+    "recordId": "honeywell-18a74589d3d1",
+    "title": "Galaxy Dimension twin AB line arrangement",
+    "brand": "Honeywell",
+    "category": "security",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Galaxy Dimension 48",
+      "Galaxy Dimension 96",
+      "Galaxy Dimension 264",
+      "Galaxy Dimension 520"
+    ],
+    "panelIds": [
+      "honeywell-galaxy-dimension"
+    ],
+    "deviceIds": [],
+    "pdfPage": 21,
+    "printedPage": "2-9",
+    "section": "Figure 2-7 — Twin AB Line configuration",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Galaxy%20Dimension%20Install%20Manual.pdf",
+    "sourceSha256": "b64fa5be0bd932ecb4bee89767ec1de60ef8742614548a005e982a5833812c14",
+    "edition": "IE1-0063 Rev 1.0",
+    "image": "wiring/honeywell-18a74589d3d1-p21-twin-rs485.webp",
+    "imageSha256": "15180df6d36028e23392aaa3d59228f1966b5ab74578933d34744754313b0643",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 75046,
+    "scope": "Galaxy Dimension wiring in the reviewed installer manual; the configuration, bus and zone resistance option must match the system.",
+    "notes": [
+      "The source allows the illustrated configurations and explicitly excludes spur and star configurations."
+    ],
+    "keywords": [
+      "RS485",
+      "AB",
+      "termination",
+      "bus"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "honeywell-18a74589d3d1-p25-zones",
+    "recordId": "honeywell-18a74589d3d1",
+    "title": "Galaxy Dimension double-balanced zones",
+    "brand": "Honeywell",
+    "category": "security",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Galaxy Dimension 48",
+      "Galaxy Dimension 96",
+      "Galaxy Dimension 264",
+      "Galaxy Dimension 520"
+    ],
+    "panelIds": [
+      "honeywell-galaxy-dimension"
+    ],
+    "deviceIds": [],
+    "pdfPage": 25,
+    "printedPage": "2-13",
+    "section": "Zone wiring — Figures 2-10 and 2-11",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Galaxy%20Dimension%20Install%20Manual.pdf",
+    "sourceSha256": "b64fa5be0bd932ecb4bee89767ec1de60ef8742614548a005e982a5833812c14",
+    "edition": "IE1-0063 Rev 1.0",
+    "image": "wiring/honeywell-18a74589d3d1-p25-zones.webp",
+    "imageSha256": "cd3e2c56b7d61f672f54721a8428118dd2964a5492c07f28cfcb98264fc6da62",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 90768,
+    "scope": "Galaxy Dimension wiring in the reviewed installer manual; the configuration, bus and zone resistance option must match the system.",
+    "notes": [
+      "Option 09 fault/mask wiring is a specific programmed resistance option, not a universal detector pinout."
+    ],
+    "keywords": [
+      "zone",
+      "double balanced",
+      "anti-mask",
+      "resistance"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "honeywell-18a74589d3d1-p26-option-10",
+    "recordId": "honeywell-18a74589d3d1",
+    "title": "Galaxy Dimension fault and anti-mask option 10",
+    "brand": "Honeywell",
+    "category": "security",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Galaxy Dimension 48",
+      "Galaxy Dimension 96",
+      "Galaxy Dimension 264",
+      "Galaxy Dimension 520"
+    ],
+    "panelIds": [
+      "honeywell-galaxy-dimension"
+    ],
+    "deviceIds": [],
+    "pdfPage": 26,
+    "printedPage": "2-14",
+    "section": "Figure 2-12 — Option 10 zone wiring",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Galaxy%20Dimension%20Install%20Manual.pdf",
+    "sourceSha256": "b64fa5be0bd932ecb4bee89767ec1de60ef8742614548a005e982a5833812c14",
+    "edition": "IE1-0063 Rev 1.0",
+    "image": "wiring/honeywell-18a74589d3d1-p26-option-10.webp",
+    "imageSha256": "208fce563049bf46ea1159d0171db4a1dbe4137a4189f33b718f81325d6f8932",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 78230,
+    "scope": "Galaxy Dimension wiring in the reviewed installer manual; the configuration, bus and zone resistance option must match the system.",
+    "notes": [
+      "Use only with the matching programmed resistance option and detector output arrangement."
+    ],
+    "keywords": [
+      "zone",
+      "fault",
+      "anti-mask",
+      "resistance"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "honeywell-18a74589d3d1-p27-multiple-detectors",
+    "recordId": "honeywell-18a74589d3d1",
+    "title": "Galaxy Dimension multiple detector zone example",
+    "brand": "Honeywell",
+    "category": "security",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Galaxy Dimension 48",
+      "Galaxy Dimension 96",
+      "Galaxy Dimension 264",
+      "Galaxy Dimension 520"
+    ],
+    "panelIds": [
+      "honeywell-galaxy-dimension"
+    ],
+    "deviceIds": [],
+    "pdfPage": 27,
+    "printedPage": "2-15",
+    "section": "Figure 2-13 — Zone to Multiple Detectors",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Galaxy%20Dimension%20Install%20Manual.pdf",
+    "sourceSha256": "b64fa5be0bd932ecb4bee89767ec1de60ef8742614548a005e982a5833812c14",
+    "edition": "IE1-0063 Rev 1.0",
+    "image": "wiring/honeywell-18a74589d3d1-p27-multiple-detectors.webp",
+    "imageSha256": "a5f88b0cc2b7ac2db8fb15022b9fcf73356a115ebfd542ed14852b984d3007a3",
+    "imageWidth": 1400,
+    "imageHeight": 1980,
+    "imageBytes": 60488,
+    "scope": "Galaxy Dimension wiring in the reviewed installer manual; the configuration, bus and zone resistance option must match the system.",
+    "notes": [
+      "The illustrated arrangement and device limit are specific to preset 1 in this source."
+    ],
+    "keywords": [
+      "zone",
+      "multiple detectors",
+      "normally closed"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "orisec-01d0e0ac004c-p18-network",
+    "recordId": "orisec-01d0e0ac004c",
+    "title": "Orisec keypad and expander network examples",
+    "brand": "Orisec",
+    "category": "security",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "CP-25",
+      "CP-50",
+      "CP-100"
+    ],
+    "panelIds": [
+      "orisec-cp-50-cp-100-cp-200"
+    ],
+    "deviceIds": [],
+    "pdfPage": 18,
+    "printedPage": "18",
+    "section": "Network Connections",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Orisec%20CP%2025-50-100%20Install%20Manual.pdf",
+    "sourceSha256": "981dd38a39191492282d25b4d12cafb5a3e92fd6139dd4e959f4ba284276626c",
+    "edition": "INS008, © 2018",
+    "image": "wiring/orisec-01d0e0ac004c-p18-network.webp",
+    "imageSha256": "1363291b5ada0d639407bd19c9b03bae88cb22605a56746aef3e34ac320a6b59",
+    "imageWidth": 1400,
+    "imageHeight": 1981,
+    "imageBytes": 252246,
+    "scope": "CP-25, CP-50 and CP-100 only, as named by this installation manual.",
+    "notes": [
+      "The linked FINDR panel pack also names CP-200. This source does not establish CP-200 wiring compatibility.",
+      "Retain the separate positive supply and network termination conditions shown."
+    ],
+    "keywords": [
+      "network",
+      "keypad",
+      "ZX-10",
+      "external power supply"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "orisec-01d0e0ac004c-p23-zone-eol",
+    "recordId": "orisec-01d0e0ac004c",
+    "title": "Orisec NC, NO, single and double EOL zones",
+    "brand": "Orisec",
+    "category": "security",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "CP-25",
+      "CP-50",
+      "CP-100"
+    ],
+    "panelIds": [
+      "orisec-cp-50-cp-100-cp-200"
+    ],
+    "deviceIds": [],
+    "pdfPage": 23,
+    "printedPage": "23",
+    "section": "Zone Connections",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Orisec%20CP%2025-50-100%20Install%20Manual.pdf",
+    "sourceSha256": "981dd38a39191492282d25b4d12cafb5a3e92fd6139dd4e959f4ba284276626c",
+    "edition": "INS008, © 2018",
+    "image": "wiring/orisec-01d0e0ac004c-p23-zone-eol.webp",
+    "imageSha256": "580e36a49b1b5b67d7caae241548492c7f2b864c012f7504c8edb55e5263f8e1",
+    "imageWidth": 1400,
+    "imageHeight": 1981,
+    "imageBytes": 87946,
+    "scope": "CP-25, CP-50 and CP-100 only, as named by this installation manual.",
+    "notes": [
+      "The linked FINDR panel pack also names CP-200. This source does not establish CP-200 wiring compatibility.",
+      "Select the wiring mode and resistor settings specified for the installation."
+    ],
+    "keywords": [
+      "zone",
+      "NC",
+      "NO",
+      "EOL",
+      "DEOL"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "orisec-01d0e0ac004c-p24-teol-outputs",
+    "recordId": "orisec-01d0e0ac004c",
+    "title": "Orisec triple EOL, outputs and speakers",
+    "brand": "Orisec",
+    "category": "security",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "CP-25",
+      "CP-50",
+      "CP-100"
+    ],
+    "panelIds": [
+      "orisec-cp-50-cp-100-cp-200"
+    ],
+    "deviceIds": [],
+    "pdfPage": 24,
+    "printedPage": "24",
+    "section": "Triple End Of Line / Control Panel Outputs / Speaker Connections",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Orisec%20CP%2025-50-100%20Install%20Manual.pdf",
+    "sourceSha256": "981dd38a39191492282d25b4d12cafb5a3e92fd6139dd4e959f4ba284276626c",
+    "edition": "INS008, © 2018",
+    "image": "wiring/orisec-01d0e0ac004c-p24-teol-outputs.webp",
+    "imageSha256": "4e89bbfdb60181321960c5008b7ca3673405176ff332ab236320f8b6a92cdcfe",
+    "imageWidth": 1400,
+    "imageHeight": 1981,
+    "imageBytes": 112426,
+    "scope": "CP-25, CP-50 and CP-100 only, as named by this installation manual.",
+    "notes": [
+      "The linked FINDR panel pack also names CP-200. This source does not establish CP-200 wiring compatibility.",
+      "Triple EOL is shown for one detector per zone. The page retains the alternative resistor programming note."
+    ],
+    "keywords": [
+      "TEOL",
+      "triple EOL",
+      "relay",
+      "buzzer",
+      "speaker"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "orisec-01d0e0ac004c-p25-sounders",
+    "recordId": "orisec-01d0e0ac004c",
+    "title": "Orisec external sounder and strobe connections",
+    "brand": "Orisec",
+    "category": "security",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "CP-25",
+      "CP-50",
+      "CP-100"
+    ],
+    "panelIds": [
+      "orisec-cp-50-cp-100-cp-200"
+    ],
+    "deviceIds": [],
+    "pdfPage": 25,
+    "printedPage": "25",
+    "section": "External Sounder/Strobe Connections",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Orisec%20CP%2025-50-100%20Install%20Manual.pdf",
+    "sourceSha256": "981dd38a39191492282d25b4d12cafb5a3e92fd6139dd4e959f4ba284276626c",
+    "edition": "INS008, © 2018",
+    "image": "wiring/orisec-01d0e0ac004c-p25-sounders.webp",
+    "imageSha256": "d2323c7b63974cd2fff7ce377fbb30a37335764e1b2d257f136e6a6eed45609f",
+    "imageWidth": 1400,
+    "imageHeight": 1981,
+    "imageBytes": 151468,
+    "scope": "CP-25, CP-50 and CP-100 only, as named by this installation manual.",
+    "notes": [
+      "The linked FINDR panel pack also names CP-200. This source does not establish CP-200 wiring compatibility.",
+      "Single and multiple sounder examples have different connections; retain the Grade 3 conditions."
+    ],
+    "keywords": [
+      "sounder",
+      "strobe",
+      "Grade 3",
+      "tamper"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "pyronix-05952749c9ff-p1-quick-wiring",
+    "recordId": "pyronix-05952749c9ff",
+    "title": "KX15DTAM quick installation and EOL selection",
+    "brand": "Pyronix",
+    "category": "security",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "KX15DTAM"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 1,
+    "printedPage": null,
+    "section": "Quick installation — EOL / NC examples",
+    "sourceUrl": "https://dsc.hu/themes/frontend/documents/kx15dtam-installation-manual-english-rins1664-1.pdf",
+    "sourceSha256": "c8c2516669e058c1660a8f3fe20d775f42c7b6d8b16c0aef64e16a1a79801bc5",
+    "edition": "RINS1664-1",
+    "image": "wiring/pyronix-05952749c9ff-p1-quick-wiring.webp",
+    "imageSha256": "578228861f8fe005802016ca616a7503b4093d180474d95f14874216309dfd3a",
+    "imageWidth": 2800,
+    "imageHeight": 2000,
+    "imageBytes": 701406,
+    "scope": "KX15DTAM Grade 3 anti-mask detector in RINS1664-1; connections depend on the selected panel, resistor and anti-mask arrangement.",
+    "notes": [
+      "Keep the selector and mode conditions with the diagram."
+    ],
+    "keywords": [
+      "KX15DTAM",
+      "EOL",
+      "anti-mask",
+      "Grade 3"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "pyronix-05952749c9ff-p3-eol-options",
+    "recordId": "pyronix-05952749c9ff",
+    "title": "KX15DTAM DEOL and 3EOL examples",
+    "brand": "Pyronix",
+    "category": "security",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "KX15DTAM"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 3,
+    "printedPage": null,
+    "section": "Section D — DEOL / 3EOL examples",
+    "sourceUrl": "https://dsc.hu/themes/frontend/documents/kx15dtam-installation-manual-english-rins1664-1.pdf",
+    "sourceSha256": "c8c2516669e058c1660a8f3fe20d775f42c7b6d8b16c0aef64e16a1a79801bc5",
+    "edition": "RINS1664-1",
+    "image": "wiring/pyronix-05952749c9ff-p3-eol-options.webp",
+    "imageSha256": "3eb61c08f759cc84d16df4b59e23db0a196c7622b5754a70402676f5d8399a17",
+    "imageWidth": 2800,
+    "imageHeight": 2000,
+    "imageBytes": 673540,
+    "scope": "KX15DTAM Grade 3 anti-mask detector in RINS1664-1; connections depend on the selected panel, resistor and anti-mask arrangement.",
+    "notes": [
+      "Generic hard-wired resistor examples are separate from the named EURO panel examples."
+    ],
+    "keywords": [
+      "DEOL",
+      "3EOL",
+      "KX15DTAM",
+      "anti-mask"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "pyronix-05952749c9ff-p4-panel-examples",
+    "recordId": "pyronix-05952749c9ff",
+    "title": "KX15DTAM Grade 3 and separate anti-mask circuits",
+    "brand": "Pyronix",
+    "category": "security",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "KX15DTAM"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 4,
+    "printedPage": null,
+    "section": "Grade 3 DEOL Connections / Conventional DEOL Connections",
+    "sourceUrl": "https://dsc.hu/themes/frontend/documents/kx15dtam-installation-manual-english-rins1664-1.pdf",
+    "sourceSha256": "c8c2516669e058c1660a8f3fe20d775f42c7b6d8b16c0aef64e16a1a79801bc5",
+    "edition": "RINS1664-1",
+    "image": "wiring/pyronix-05952749c9ff-p4-panel-examples.webp",
+    "imageSha256": "db323731471be2a66ef5952837fd66795fbd254703e4c69ce177634bc5b262eb",
+    "imageWidth": 2800,
+    "imageHeight": 2000,
+    "imageBytes": 309030,
+    "scope": "KX15DTAM Grade 3 anti-mask detector in RINS1664-1; connections depend on the selected panel, resistor and anti-mask arrangement.",
+    "notes": [
+      "The top and bottom rows represent different anti-mask arrangements. Named manufacturer examples do not establish compatibility with every panel from those manufacturers."
+    ],
+    "keywords": [
+      "KX15DTAM",
+      "Grade 3",
+      "DEOL",
+      "Pyronix",
+      "Castle",
+      "Honeywell",
+      "Menvier",
+      "Cooper"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "pyronix-12dc1a0275b5-p2-eol",
+    "recordId": "pyronix-12dc1a0275b5",
+    "title": "KX15DT NC and DEOL connections",
+    "brand": "Pyronix",
+    "category": "security",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "KX15DT"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "pyronix-kx15dt-rins549"
+    ],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "Figures 9 and 10 — NC / DEOL wiring",
+    "sourceUrl": "https://dsc.hu/themes/frontend/documents/kx15dt-installation-manual-multilingual.pdf",
+    "sourceSha256": "2cd59b9ecb5aaa3d5052803c146704551c79e74bb6fce2225d6bd8476a7f8086",
+    "edition": "RINS549-14",
+    "image": "wiring/pyronix-12dc1a0275b5-p2-eol.webp",
+    "imageSha256": "b92427b163b61c810b0ad0b7a1acd5f9689635ad0ce5d7741d8371728a376993",
+    "imageWidth": 2200,
+    "imageHeight": 1556,
+    "imageBytes": 446970,
+    "scope": "KX15DT RINS549-14 generation only.",
+    "notes": [
+      "The manual labels these examples only; refer to the control panel instructions for its supported resistor and zone options."
+    ],
+    "keywords": [
+      "KX15DT",
+      "EOL",
+      "DEOL",
+      "NC",
+      "alarm",
+      "tamper"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "risco-00a6655953a1-p2-eol-terminals",
+    "recordId": "risco-00a6655953a1",
+    "title": "BWare EOL jumpers and terminal wiring",
+    "brand": "Risco",
+    "category": "security",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "BWare RK515DTGLG2"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "risco-device-bware-rk515dtgl"
+    ],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "Figures 4 and 6 — EOL jumpers / terminal wiring",
+    "sourceUrl": "https://www.pahedomotica.nl/wp-content/uploads/5IN1749_BWare-DT-G2-Detector-Installation-Instructions_multi.pdf",
+    "sourceSha256": "17ba44aea0fbaa826d7cc12d3012f84b9b1513b640c2a4306ed03046371292ba",
+    "edition": "5IN1749, 01/2012",
+    "image": "wiring/risco-00a6655953a1-p2-eol-terminals.webp",
+    "imageSha256": "c0db249d734947daa121f81fe42fa329c54bb8967578e739834eb235421abd30",
+    "imageWidth": 2800,
+    "imageHeight": 3961,
+    "imageBytes": 727116,
+    "scope": "BWare RK515DTGLG2 Grade 2 detector and the terminal/EOL options shown in its installation instructions.",
+    "notes": [
+      "This is a multilingual foldout. English terminal instructions are on PDF page 1; select the panel-compatible EOL option, not a universal resistor value."
+    ],
+    "keywords": [
+      "EOL",
+      "DEOL",
+      "alarm",
+      "tamper",
+      "BWare"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "risco-e8aee4e7a650-p2-eol-terminals",
+    "recordId": "risco-e8aee4e7a650",
+    "title": "iWISE Grade 3 EOL and anti-mask terminal wiring",
+    "brand": "Risco",
+    "category": "security",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "RK815DTG3",
+      "RK815DTG3A",
+      "RK825DTG3",
+      "RK825DTG3A"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "risco-device-iwise-dt-g3"
+    ],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "Figures 3 and 5 — EOL resistors / terminal wiring",
+    "sourceUrl": "https://www.casmarglobal.com/media/akeneo_connector/media_files/M/I/MI_INTRUSI__N_IWISE_DT25_AM_G3_9ec2.pdf",
+    "sourceSha256": "d2fd6b2dd60c60dc4336ca7f0f6314067585ab47bbb5c968eb739096186c6404",
+    "edition": "5IN2634 D, 08/2022",
+    "image": "wiring/risco-e8aee4e7a650-p2-eol-terminals.webp",
+    "imageSha256": "8dca0da790225353dc797dbcba91cc1d60227951948e55994fdd135ec7e434aa",
+    "imageWidth": 2800,
+    "imageHeight": 3961,
+    "imageBytes": 759284,
+    "scope": "iWISE DT AM Grade 3 models explicitly named in the manual.",
+    "notes": [
+      "This is a multilingual foldout. English operating and terminal instructions are on PDF page 1; match the selected EOL option and LED/SET polarity."
+    ],
+    "keywords": [
+      "EOL",
+      "DEOL",
+      "TEOL",
+      "anti-mask",
+      "Grade 3"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "texecom-031d1f7f736b-p11-contacts",
+    "recordId": "texecom-031d1f7f736b",
+    "title": "Veritas magnetic contacts and panic buttons",
+    "brand": "Texecom",
+    "category": "security",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Veritas R8 Plus",
+      "Veritas Excel"
+    ],
+    "panelIds": [
+      "texecom-veritas-excel",
+      "texecom-veritas-r8-plus"
+    ],
+    "deviceIds": [],
+    "pdfPage": 11,
+    "printedPage": "11",
+    "section": "Zone Connections — Figure 1",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Texecom%20Veritas%20R8%20Plus%20and%20Excell%20installation%20manual.pdf",
+    "sourceSha256": "8fe54c67b3932973b17010a2511b5f185ecf9434c1eab632abb40307a329737e",
+    "edition": "Issue 10",
+    "image": "wiring/texecom-031d1f7f736b-p11-contacts.webp",
+    "imageSha256": "60a4f8704f7c76d688eeb5b57d989be96ac27b6e6fc20fdae2e8d5d59ef415d8",
+    "imageWidth": 1400,
+    "imageHeight": 1768,
+    "imageBytes": 96328,
+    "scope": "Veritas R8 Plus / Excel installation examples; match the programmed zone mode and the connected equipment.",
+    "notes": [],
+    "keywords": [
+      "zone",
+      "magnetic contact",
+      "panic button",
+      "normally closed"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "texecom-031d1f7f736b-p12-pir",
+    "recordId": "texecom-031d1f7f736b",
+    "title": "Veritas powered PIR connections",
+    "brand": "Texecom",
+    "category": "security",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Veritas R8 Plus",
+      "Veritas Excel"
+    ],
+    "panelIds": [
+      "texecom-veritas-excel",
+      "texecom-veritas-r8-plus"
+    ],
+    "deviceIds": [],
+    "pdfPage": 12,
+    "printedPage": "12",
+    "section": "Figure 2 — Connecting Powered Detectors to a Zone",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Texecom%20Veritas%20R8%20Plus%20and%20Excell%20installation%20manual.pdf",
+    "sourceSha256": "8fe54c67b3932973b17010a2511b5f185ecf9434c1eab632abb40307a329737e",
+    "edition": "Issue 10",
+    "image": "wiring/texecom-031d1f7f736b-p12-pir.webp",
+    "imageSha256": "ffc5f8af6b8461964f473bae7d2c9b6f534eaab80ceefa507ebaa73e9e64a870",
+    "imageWidth": 1400,
+    "imageHeight": 1768,
+    "imageBytes": 115354,
+    "scope": "Veritas R8 Plus / Excel installation examples; match the programmed zone mode and the connected equipment.",
+    "notes": [],
+    "keywords": [
+      "PIR",
+      "AUX",
+      "zone",
+      "detector"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "texecom-031d1f7f736b-p13-eol",
+    "recordId": "texecom-031d1f7f736b",
+    "title": "Veritas EOL wiring options",
+    "brand": "Texecom",
+    "category": "security",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Veritas R8 Plus",
+      "Veritas Excel"
+    ],
+    "panelIds": [
+      "texecom-veritas-excel",
+      "texecom-veritas-r8-plus"
+    ],
+    "deviceIds": [],
+    "pdfPage": 13,
+    "printedPage": "13",
+    "section": "End Of Line (EOL) Technology — Figure 3",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Texecom%20Veritas%20R8%20Plus%20and%20Excell%20installation%20manual.pdf",
+    "sourceSha256": "8fe54c67b3932973b17010a2511b5f185ecf9434c1eab632abb40307a329737e",
+    "edition": "Issue 10",
+    "image": "wiring/texecom-031d1f7f736b-p13-eol.webp",
+    "imageSha256": "704f6892117720b291006cf581d2d7f2c485a7cd2c5f4bc5e5ee80d7772b7df1",
+    "imageWidth": 1400,
+    "imageHeight": 1768,
+    "imageBytes": 95950,
+    "scope": "Veritas R8 Plus / Excel installation examples; match the programmed zone mode and the connected equipment.",
+    "notes": [
+      "The page shows different NC and EOL options. Resistor values and zone programming must match the selected source example."
+    ],
+    "keywords": [
+      "EOL",
+      "end of line",
+      "resistor",
+      "zone"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "texecom-031d1f7f736b-p15-sounder",
+    "recordId": "texecom-031d1f7f736b",
+    "title": "Veritas external sounder connections",
+    "brand": "Texecom",
+    "category": "security",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Veritas R8 Plus",
+      "Veritas Excel"
+    ],
+    "panelIds": [
+      "texecom-veritas-excel",
+      "texecom-veritas-r8-plus"
+    ],
+    "deviceIds": [],
+    "pdfPage": 15,
+    "printedPage": "15",
+    "section": "External Sounder Connections",
+    "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Texecom%20Veritas%20R8%20Plus%20and%20Excell%20installation%20manual.pdf",
+    "sourceSha256": "8fe54c67b3932973b17010a2511b5f185ecf9434c1eab632abb40307a329737e",
+    "edition": "Issue 10",
+    "image": "wiring/texecom-031d1f7f736b-p15-sounder.webp",
+    "imageSha256": "812e8a77d891481787bf43beadb41a5b6c3ca300b346dbd67ad0adbbfffd106f",
+    "imageWidth": 1400,
+    "imageHeight": 1768,
+    "imageBytes": 139542,
+    "scope": "Veritas R8 Plus / Excel installation examples; match the programmed zone mode and the connected equipment.",
+    "notes": [
+      "Examples name specific sounders; do not transfer their terminal names to another model."
+    ],
+    "keywords": [
+      "SAB",
+      "bell",
+      "strobe",
+      "tamper",
+      "sounder"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "texecom-24fe7d380381-p7-grade3",
+    "recordId": "texecom-24fe7d380381",
+    "title": "Odyssey Premier Elite sounder Grade 3 examples",
+    "brand": "Texecom",
+    "category": "security",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "Odyssey series Premier Elite sounder"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 7,
+    "printedPage": "7/17",
+    "section": "Grade 3 Wiring",
+    "sourceUrl": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/04/07093203/Odyssey-Series-Installation-Manual-INS154-7.pdf",
+    "sourceSha256": "be72473cc30197d4f9018def0f4933cb28863a74c7baf6dd1f38ec2909b0d474",
+    "edition": "INS154-7",
+    "image": "wiring/texecom-24fe7d380381-p7-grade3.webp",
+    "imageSha256": "02ef7ddb99fed8fa41c2d946388346bb40138a5390d746b0fda997918cf64fd0",
+    "imageWidth": 1400,
+    "imageHeight": 1739,
+    "imageBytes": 148838,
+    "scope": "Premier Elite sounder variants in the Odyssey Series manual that provide the illustrated fault and test terminals.",
+    "notes": [
+      "This is the Grade 3 Premier Elite sounder arrangement. The terminal definitions and Grade 3 introduction are on PDF pages 5–6; other Odyssey variants are not established by this diagram.",
+      "Retain the bell-trigger pull-high and third-party relay output conditions printed below the diagrams."
+    ],
+    "keywords": [
+      "Odyssey",
+      "sounder",
+      "bell",
+      "Grade 3",
+      "fault",
+      "test"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "texecom-778b363ae34b-p19-terminal-layout",
+    "recordId": "texecom-778b363ae34b",
+    "title": "Capture G2 terminal identification",
+    "brand": "Texecom",
+    "category": "security",
+    "targetType": "device",
+    "diagramType": "terminal-layout",
+    "models": [
+      "Capture P15",
+      "Capture Q20",
+      "Capture D20",
+      "Capture CQ",
+      "Capture CD",
+      "Capture LR50",
+      "Capture PET",
+      "Capture C15"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "texecom-capture-wired-wall",
+      "texecom-capture-wired-ceiling"
+    ],
+    "pdfPage": 19,
+    "printedPage": "19/76",
+    "section": "Terminal block (section 1.3 Wiring and EOL selection)",
+    "sourceUrl": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/11/04115044/INS878EN-11-Capture-G2-Wired-wall-mount-detectors.pdf",
+    "sourceSha256": "75d9984f07d7b68cb905762988d074e5e40847f6b32f124ba908f805e527a3b7",
+    "edition": "INS878EN-11",
+    "image": "wiring/texecom-778b363ae34b-p19-terminal-layout.webp",
+    "imageSha256": "c35e446cc603dd643b17867c3dfbb8514a96e9dfd24062f5330aa03ac0163f04",
+    "imageWidth": 1400,
+    "imageHeight": 1739,
+    "imageBytes": 162048,
+    "scope": "Capture G2 wired motion detectors named on the cover. Premier Elite EOL examples are specific to the panel group identified for each diagram.",
+    "notes": [
+      "PDF page 18 states that the examples assume a Premier Elite panel; other wiring types require the control equipment instructions."
+    ],
+    "keywords": [
+      "Capture",
+      "terminal",
+      "alarm",
+      "tamper",
+      "RLED"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "texecom-778b363ae34b-p20-eol-selector",
+    "recordId": "texecom-778b363ae34b",
+    "title": "Capture G2 EOL resistor selector",
+    "brand": "Texecom",
+    "category": "security",
+    "targetType": "device",
+    "diagramType": "terminal-layout",
+    "models": [
+      "Capture P15",
+      "Capture Q20",
+      "Capture D20",
+      "Capture CQ",
+      "Capture CD",
+      "Capture LR50",
+      "Capture PET",
+      "Capture C15"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "texecom-capture-wired-wall",
+      "texecom-capture-wired-ceiling"
+    ],
+    "pdfPage": 20,
+    "printedPage": "20/76",
+    "section": "Wiring and EOL selection",
+    "sourceUrl": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/11/04115044/INS878EN-11-Capture-G2-Wired-wall-mount-detectors.pdf",
+    "sourceSha256": "75d9984f07d7b68cb905762988d074e5e40847f6b32f124ba908f805e527a3b7",
+    "edition": "INS878EN-11",
+    "image": "wiring/texecom-778b363ae34b-p20-eol-selector.webp",
+    "imageSha256": "95dd5567fa8fd8ff8b22d5f9ee02f1c77bb480427450e927f11cd632680fd948",
+    "imageWidth": 1400,
+    "imageHeight": 1739,
+    "imageBytes": 148738,
+    "scope": "Capture G2 wired motion detectors named on the cover. Premier Elite EOL examples are specific to the panel group identified for each diagram.",
+    "notes": [
+      "PDF page 18 states that the examples assume a Premier Elite panel; other wiring types require the control equipment instructions.",
+      "This page shows the selector positions. Its lower heading introduces the 24 / 64-W diagram on the following PDF page."
+    ],
+    "keywords": [
+      "Capture",
+      "EOL",
+      "resistor selector"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "texecom-778b363ae34b-p21-elite24-64w",
+    "recordId": "texecom-778b363ae34b",
+    "title": "Capture EOL example: Premier Elite 24 / 64-W",
+    "brand": "Texecom",
+    "category": "security",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "Capture P15",
+      "Capture Q20",
+      "Capture D20",
+      "Capture CQ",
+      "Capture CD",
+      "Capture LR50",
+      "Capture PET",
+      "Capture C15"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "texecom-capture-wired-wall",
+      "texecom-capture-wired-ceiling"
+    ],
+    "pdfPage": 21,
+    "printedPage": "21/76",
+    "section": "EOL wiring to a Premier Elite 24 & 64-W (heading on PDF page 20)",
+    "sourceUrl": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/11/04115044/INS878EN-11-Capture-G2-Wired-wall-mount-detectors.pdf",
+    "sourceSha256": "75d9984f07d7b68cb905762988d074e5e40847f6b32f124ba908f805e527a3b7",
+    "edition": "INS878EN-11",
+    "image": "wiring/texecom-778b363ae34b-p21-elite24-64w.webp",
+    "imageSha256": "a1fbeaa9b55ed9f14421f673817df49107bf55c2e996d145dfe1874a9846ba0f",
+    "imageWidth": 1400,
+    "imageHeight": 1739,
+    "imageBytes": 191496,
+    "scope": "Capture G2 wired motion detectors named on the cover. Premier Elite EOL examples are specific to the panel group identified for each diagram.",
+    "notes": [
+      "PDF page 18 states that the examples assume a Premier Elite panel; other wiring types require the control equipment instructions.",
+      "The diagram follows its heading on PDF page 20. The 48 & 640 heading below this diagram introduces the next page, not this two-terminal zone example."
+    ],
+    "keywords": [
+      "Capture",
+      "EOL",
+      "Premier Elite 24",
+      "Premier Elite 64-W"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "texecom-778b363ae34b-p22-elite48-640",
+    "recordId": "texecom-778b363ae34b",
+    "title": "Capture EOL example: Premier Elite 48 / 640",
+    "brand": "Texecom",
+    "category": "security",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "Capture P15",
+      "Capture Q20",
+      "Capture D20",
+      "Capture CQ",
+      "Capture CD",
+      "Capture LR50",
+      "Capture PET",
+      "Capture C15"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "texecom-capture-wired-wall",
+      "texecom-capture-wired-ceiling"
+    ],
+    "pdfPage": 22,
+    "printedPage": "22/76",
+    "section": "EOL wiring to a Premier Elite 48 & 640 (heading on PDF page 21)",
+    "sourceUrl": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/11/04115044/INS878EN-11-Capture-G2-Wired-wall-mount-detectors.pdf",
+    "sourceSha256": "75d9984f07d7b68cb905762988d074e5e40847f6b32f124ba908f805e527a3b7",
+    "edition": "INS878EN-11",
+    "image": "wiring/texecom-778b363ae34b-p22-elite48-640.webp",
+    "imageSha256": "3170dd470884c9ee38db1dd8bf8f113f7d3562f4eae150f7128d439c2ac6bffc",
+    "imageWidth": 1400,
+    "imageHeight": 1739,
+    "imageBytes": 194528,
+    "scope": "Capture G2 wired motion detectors named on the cover. Premier Elite EOL examples are specific to the panel group identified for each diagram.",
+    "notes": [
+      "PDF page 18 states that the examples assume a Premier Elite panel; other wiring types require the control equipment instructions.",
+      "The four-terminal zone diagram follows its heading on PDF page 21."
+    ],
+    "keywords": [
+      "Capture",
+      "EOL",
+      "Premier Elite 48",
+      "Premier Elite 640"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "tunstall-31748186a127-p2-plug-connection",
+    "recordId": "tunstall-31748186a127",
+    "title": "Epilepsy transmitter plug connection",
+    "brand": "Tunstall",
+    "category": "warden-call",
+    "targetType": "device",
+    "diagramType": "connection-example",
+    "models": [
+      "67005/65 Epilepsy Radio Transmitter"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 2,
+    "printedPage": "1 of 2",
+    "section": "Installation — Radio Module Mounting, image 2",
+    "sourceUrl": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/d6707135a_epilepsy_radio_transmitter_installation_guide.pdf",
+    "sourceSha256": "70b22ac7121b24a65860fe25b38d101089caee273dcbeae694c2b2aaa16c002e",
+    "edition": "D6707135A",
+    "image": "wiring/tunstall-31748186a127-p2-plug-connection.webp",
+    "imageSha256": "06dca21afbd6071a516dcae359d0cfe5fd08bdf919d82a4a485c63993be147fd",
+    "imageWidth": 1400,
+    "imageHeight": 1984,
+    "imageBytes": 207826,
+    "scope": "Tunstall 67005/65 transmitter with the specified Emfit D-1090 epilepsy control unit.",
+    "notes": [
+      "Photographic plug-connection example; the source does not provide a terminal pinout and limits compatibility to the named equipment."
+    ],
+    "keywords": [
+      "67005/65",
+      "Emfit",
+      "D-1090",
+      "transmitter",
+      "plug"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "tynetec-0bf0ff779621-p1-safelink",
+    "recordId": "tynetec-0bf0ff779621",
+    "title": "Advent XT CSL DualCom SafeLink wiring",
+    "brand": "Tynetec",
+    "category": "warden-call",
+    "targetType": "accessory",
+    "diagramType": "wiring",
+    "models": [
+      "Advent XT",
+      "CSL DualCom SafeLink"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 1,
+    "printedPage": "Sheet 1 of 1",
+    "section": "Advent XT — DualCom SafeLink Wiring Diagram",
+    "sourceUrl": "https://www.tynetec.co.uk/wp-content/uploads/2019/05/WD0296_B-Advent_xt_CSL_DualCom_SafeLink_Wiring_Diagram-1.pdf",
+    "sourceSha256": "525b12f9eb59dd9ad9e9d96ff0e829263edca6e12923a87493b1fcc06fc096ec",
+    "edition": "Drawing WD0296, Mod B, 19/09/17",
+    "image": "wiring/tynetec-0bf0ff779621-p1-safelink.webp",
+    "imageSha256": "1bc6946d906338df7e793f51d53b4a424cdebec7d998f5f3371df342a441c8c6",
+    "imageWidth": 2400,
+    "imageHeight": 1696,
+    "imageBytes": 106524,
+    "scope": "Advent XT controller to the CSL DualCom SafeLink arrangement shown on WD0296 only.",
+    "notes": [
+      "Full source page rotated for readability; the reviewed drawing revision explicitly changes the 0V/12V connection."
+    ],
+    "keywords": [
+      "Advent XT",
+      "DualCom",
+      "SafeLink",
+      "telephone",
+      "communicator"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "tynetec-b9c2d63d6565-p1-strobe",
+    "recordId": "tynetec-b9c2d63d6565",
+    "title": "Advent XT master strobe wiring",
+    "brand": "Tynetec",
+    "category": "warden-call",
+    "targetType": "accessory",
+    "diagramType": "wiring",
+    "models": [
+      "Advent XT",
+      "ZSL045 master strobe"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 1,
+    "printedPage": "Sheet 1 of 1",
+    "section": "Advent XT Master Strobe — Customer Wiring Diagram",
+    "sourceUrl": "https://www.tynetec.co.uk/wp-content/uploads/2019/05/ZSL045_A-Advent_xt_Strobe_Light_Wiring_Diagram-1.pdf",
+    "sourceSha256": "e1a1791d84a40f0af474b3e07a320e47e17915dda423376358e64dafa50d68f2",
+    "edition": "Drawing ZSL045, Mod A, 29/09/08",
+    "image": "wiring/tynetec-b9c2d63d6565-p1-strobe.webp",
+    "imageSha256": "c6ef3aa669c3ffe56ca3250a217c79ba5d7863a9224199f10806271519c16dbc",
+    "imageWidth": 1800,
+    "imageHeight": 1272,
+    "imageBytes": 76800,
+    "scope": "Advent XT intercom to ZSL045 master strobe, exactly as shown on this drawing.",
+    "notes": [
+      "The source specifies two twisted pairs and a maximum of one strobe per intercom."
+    ],
+    "keywords": [
+      "Advent XT",
+      "ZSL045",
+      "strobe",
+      "intercom"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "tynetec-cccbd788ab8a-p1-controller",
+    "recordId": "tynetec-cccbd788ab8a",
+    "title": "Advent XT2 controller and power connections",
+    "brand": "Tynetec",
+    "category": "warden-call",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Advent XT2"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 1,
+    "printedPage": "Sheet 1 of 8",
+    "section": "Advent XT2 Controller — General Arrangement",
+    "sourceUrl": "https://www.tynetec.co.uk/wp-content/uploads/2024/01/ZXT900_E-Advent-XT2-Wiring-Diagrams.pdf",
+    "sourceSha256": "85a512cba69c23fba981705acbc6ed3cbbd3104d2e3917dae680072404c5d036",
+    "edition": "Drawing ZXT900, Mod C, 15/01/21 (reviewed sheets 1–4)",
+    "image": "wiring/tynetec-cccbd788ab8a-p1-controller.webp",
+    "imageSha256": "7f7ac07be7765ed0c776da4740b5f5090bc044a95a7048e77bc53c80dc684610",
+    "imageWidth": 2800,
+    "imageHeight": 1980,
+    "imageBytes": 193582,
+    "scope": "Advent XT2 drawings ZXT900, reviewed sheets 1–4 only. Match board and peripheral references on the sheet.",
+    "notes": [],
+    "keywords": [
+      "Advent XT2",
+      "controller",
+      "power",
+      "network"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "tynetec-cccbd788ab8a-p2-intercom",
+    "recordId": "tynetec-cccbd788ab8a",
+    "title": "Advent XT2 PA and intercom connections",
+    "brand": "Tynetec",
+    "category": "warden-call",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Advent XT2"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 2,
+    "printedPage": "Sheet 2 of 8",
+    "section": "PA Amp & Intercom Connection Details",
+    "sourceUrl": "https://www.tynetec.co.uk/wp-content/uploads/2024/01/ZXT900_E-Advent-XT2-Wiring-Diagrams.pdf",
+    "sourceSha256": "85a512cba69c23fba981705acbc6ed3cbbd3104d2e3917dae680072404c5d036",
+    "edition": "Drawing ZXT900, Mod C, 15/01/21 (reviewed sheets 1–4)",
+    "image": "wiring/tynetec-cccbd788ab8a-p2-intercom.webp",
+    "imageSha256": "07be03442869424bd0995c8a073a01bb1eb63145b572f86864c6edcb80a8a5e3",
+    "imageWidth": 2800,
+    "imageHeight": 1980,
+    "imageBytes": 216152,
+    "scope": "Advent XT2 drawings ZXT900, reviewed sheets 1–4 only. Match board and peripheral references on the sheet.",
+    "notes": [
+      "Retain the shown cable-pair, distance, option and addressing notes."
+    ],
+    "keywords": [
+      "Advent XT2",
+      "PA",
+      "intercom",
+      "network",
+      "termination"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "tynetec-cccbd788ab8a-p3-auxiliary-devices",
+    "recordId": "tynetec-cccbd788ab8a",
+    "title": "Advent XT2 intercom auxiliary device wiring",
+    "brand": "Tynetec",
+    "category": "warden-call",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Advent XT2"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 3,
+    "printedPage": "Sheet 3 of 8",
+    "section": "Intercom Auxiliary Device Connection Details",
+    "sourceUrl": "https://www.tynetec.co.uk/wp-content/uploads/2024/01/ZXT900_E-Advent-XT2-Wiring-Diagrams.pdf",
+    "sourceSha256": "85a512cba69c23fba981705acbc6ed3cbbd3104d2e3917dae680072404c5d036",
+    "edition": "Drawing ZXT900, Mod C, 15/01/21 (reviewed sheets 1–4)",
+    "image": "wiring/tynetec-cccbd788ab8a-p3-auxiliary-devices.webp",
+    "imageSha256": "e35d2376cf58aa5e2c61562e7699bfd69ce7ab2ca9826d15e99b0b1c11c472b8",
+    "imageWidth": 2800,
+    "imageHeight": 1980,
+    "imageBytes": 175154,
+    "scope": "Advent XT2 drawings ZXT900, reviewed sheets 1–4 only. Match board and peripheral references on the sheet.",
+    "notes": [
+      "Specific intercom auxiliary inputs and peripherals are shown; this is not generic fire alarm circuit wiring."
+    ],
+    "keywords": [
+      "Advent XT2",
+      "pullcord",
+      "smoke",
+      "strobe",
+      "intercom",
+      "zone expander"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "tynetec-cccbd788ab8a-p4-door-telephone",
+    "recordId": "tynetec-cccbd788ab8a",
+    "title": "Advent XT2 door panel and telephone connections",
+    "brand": "Tynetec",
+    "category": "warden-call",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Advent XT2"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 4,
+    "printedPage": "Sheet 4 of 8",
+    "section": "Door Panel & Telephone Connection Details",
+    "sourceUrl": "https://www.tynetec.co.uk/wp-content/uploads/2024/01/ZXT900_E-Advent-XT2-Wiring-Diagrams.pdf",
+    "sourceSha256": "85a512cba69c23fba981705acbc6ed3cbbd3104d2e3917dae680072404c5d036",
+    "edition": "Drawing ZXT900, Mod C, 15/01/21 (reviewed sheets 1–4)",
+    "image": "wiring/tynetec-cccbd788ab8a-p4-door-telephone.webp",
+    "imageSha256": "b30afa7d4a1b769def681c4bdbf977c316f8d4991614f471aca78c319c31e3c5",
+    "imageWidth": 2800,
+    "imageHeight": 1980,
+    "imageBytes": 239094,
+    "scope": "Advent XT2 drawings ZXT900, reviewed sheets 1–4 only. Match board and peripheral references on the sheet.",
+    "notes": [
+      "Keep the depicted door release and earthing conditions."
+    ],
+    "keywords": [
+      "Advent XT2",
+      "door panel",
+      "telephone",
+      "strobe"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "tynetec-ceeb9047ffe7-p1-controller",
+    "recordId": "tynetec-ceeb9047ffe7",
+    "title": "Advent XT controller and power connections",
+    "brand": "Tynetec",
+    "category": "warden-call",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Advent XT"
+    ],
+    "panelIds": [
+      "tynetec-advent-xt"
+    ],
+    "deviceIds": [],
+    "pdfPage": 1,
+    "printedPage": "Sheet 1 of 10",
+    "section": "Advent XT Controller — General Arrangement",
+    "sourceUrl": "https://www.tynetec.co.uk/wp-content/uploads/2019/05/ZXT100_M-Advent-XT-Wiring-Diagrams-1.pdf",
+    "sourceSha256": "ecd86a6573cf2c61c26e4ad4ef171f6f0e2bebb855dd10095daedaf9c23d5657",
+    "edition": "Drawing ZXT100, Mod M, 25/04/19",
+    "image": "wiring/tynetec-ceeb9047ffe7-p1-controller.webp",
+    "imageSha256": "6077181f6373583e207869f1c99b773179b2f412080d45de1e07a3b399e3a2d8",
+    "imageWidth": 2800,
+    "imageHeight": 1980,
+    "imageBytes": 203260,
+    "scope": "Advent XT controller and associated peripheral drawings, reviewed sheets 1–4 only; not Advent XT2.",
+    "notes": [],
+    "keywords": [
+      "Advent XT",
+      "controller",
+      "power",
+      "network"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "tynetec-ceeb9047ffe7-p2-intercom",
+    "recordId": "tynetec-ceeb9047ffe7",
+    "title": "Advent XT intercom and pullcord connections",
+    "brand": "Tynetec",
+    "category": "warden-call",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Advent XT"
+    ],
+    "panelIds": [
+      "tynetec-advent-xt"
+    ],
+    "deviceIds": [],
+    "pdfPage": 2,
+    "printedPage": "Sheet 2 of 10",
+    "section": "Intercom Connection Details",
+    "sourceUrl": "https://www.tynetec.co.uk/wp-content/uploads/2019/05/ZXT100_M-Advent-XT-Wiring-Diagrams-1.pdf",
+    "sourceSha256": "ecd86a6573cf2c61c26e4ad4ef171f6f0e2bebb855dd10095daedaf9c23d5657",
+    "edition": "Drawing ZXT100, Mod M, 25/04/19",
+    "image": "wiring/tynetec-ceeb9047ffe7-p2-intercom.webp",
+    "imageSha256": "d4396e7c50fb89e4b79884fd5355648d1d2486b320173622feb00138004f55b7",
+    "imageWidth": 2800,
+    "imageHeight": 1980,
+    "imageBytes": 230954,
+    "scope": "Advent XT controller and associated peripheral drawings, reviewed sheets 1–4 only; not Advent XT2.",
+    "notes": [
+      "Retain the firmware, cable pair, maximum distance and input conditions shown."
+    ],
+    "keywords": [
+      "Advent XT",
+      "intercom",
+      "pullcord",
+      "PA",
+      "network"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "tynetec-ceeb9047ffe7-p3-door-telephone",
+    "recordId": "tynetec-ceeb9047ffe7",
+    "title": "Advent XT door entry and telephone connections",
+    "brand": "Tynetec",
+    "category": "warden-call",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Advent XT"
+    ],
+    "panelIds": [
+      "tynetec-advent-xt"
+    ],
+    "deviceIds": [],
+    "pdfPage": 3,
+    "printedPage": "Sheet 3 of 10",
+    "section": "Door Entry Telephone Connection Details",
+    "sourceUrl": "https://www.tynetec.co.uk/wp-content/uploads/2019/05/ZXT100_M-Advent-XT-Wiring-Diagrams-1.pdf",
+    "sourceSha256": "ecd86a6573cf2c61c26e4ad4ef171f6f0e2bebb855dd10095daedaf9c23d5657",
+    "edition": "Drawing ZXT100, Mod M, 25/04/19",
+    "image": "wiring/tynetec-ceeb9047ffe7-p3-door-telephone.webp",
+    "imageSha256": "e48181b985eca7473bd46fe14e1e04fb7cce42eee923cfeac31049102cd8bcbe",
+    "imageWidth": 2800,
+    "imageHeight": 1980,
+    "imageBytes": 267714,
+    "scope": "Advent XT controller and associated peripheral drawings, reviewed sheets 1–4 only; not Advent XT2.",
+    "notes": [
+      "Keep the depicted door release and earthing conditions."
+    ],
+    "keywords": [
+      "Advent XT",
+      "door panel",
+      "telephone",
+      "strobe"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "tynetec-ceeb9047ffe7-p4-remote-intercom",
+    "recordId": "tynetec-ceeb9047ffe7",
+    "title": "Advent XT remote intercom and telephone wiring",
+    "brand": "Tynetec",
+    "category": "warden-call",
+    "targetType": "panel",
+    "diagramType": "wiring",
+    "models": [
+      "Advent XT"
+    ],
+    "panelIds": [
+      "tynetec-advent-xt"
+    ],
+    "deviceIds": [],
+    "pdfPage": 4,
+    "printedPage": "Sheet 4 of 10",
+    "section": "Remote Intercom / Telephone Connection Details",
+    "sourceUrl": "https://www.tynetec.co.uk/wp-content/uploads/2019/05/ZXT100_M-Advent-XT-Wiring-Diagrams-1.pdf",
+    "sourceSha256": "ecd86a6573cf2c61c26e4ad4ef171f6f0e2bebb855dd10095daedaf9c23d5657",
+    "edition": "Drawing ZXT100, Mod M, 25/04/19",
+    "image": "wiring/tynetec-ceeb9047ffe7-p4-remote-intercom.webp",
+    "imageSha256": "d174e479aeea3ba02f38af2340cea7176e34b06e59213682c57c1343a4eee15e",
+    "imageWidth": 2800,
+    "imageHeight": 1980,
+    "imageBytes": 216008,
+    "scope": "Advent XT controller and associated peripheral drawings, reviewed sheets 1–4 only; not Advent XT2.",
+    "notes": [
+      "Master and remote equipment must follow the illustrated connections and supply conditions."
+    ],
+    "keywords": [
+      "Advent XT",
+      "remote intercom",
+      "telephone",
+      "network"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "loadMs": 0,
+  "generationMs": 10232,
+  "result": [
+    {
+      "generated_text": [
+        {
+          "role": "system",
+          "content": "You are FINDR, a concise engineering manual assistant. Use only the provided reference. Do not invent a procedure."
+        },
+        {
+          "role": "user",
+          "content": "REFERENCE (manual page 12): To view the event log, select View, then Log. Use the arrow keys to scroll through events. This menu does not change the configuration.\nQUESTION: how do i chek the evnt histry on this panel?"
+        },
+        {
+          "role": "assistant",
+          "content": "Select View, then Log. Use the arrow keys to scroll through events."
+        },
+        {
+          "role": "user",
+          "content": "where is that menu?"
+        },
+        {
+          "role": "assistant",
+          "content": "This menu does not change the configuration."
+        }
+      ]
+    }
+  ],
+  "updates": [
+    {
+      "t": "This ",
+      "at": 6932
+    },
+    {
+      "t": "menu ",
+      "at": 7588
+    },
+    {
+      "t": "does ",
+      "at": 8140
+    },
+    {
+      "t": "not ",
+      "at": 8596
+    },
+    {
+      "t": "change ",
+      "at": 8940.000000000007
+    },
+    {
+      "t": "the ",
+      "at": 9329
+    },
+    {
+      "t": "configuration.",
+      "at": 10224
+    }
+  ]
+}

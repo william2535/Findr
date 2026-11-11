@@ -1,0 +1,173 @@
+{
+  "release": "0.22.0",
+  "status": "passed",
+  "testedAt": "2026-11-02T21:00:07.591295+00:00",
+  "server": "http://127.0.0.1:8087",
+  "build": "57ad67801e89",
+  "browser": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+  "script": "scripts/qa-wiring.cjs",
+  "scriptSha256": "097752c76340892ae05a6909e69b4579bc2c18c3e0eb71079a2d96e32200ef84",
+  "fixture": "tests/fixtures/wiring/synthetic-0.21-progress.json",
+  "fixtureSha256": "b4dfe75814058dd9f687ba3007ded9cd2839cf211995f4c70c2eeb43409d8a7e",
+  "legacyBaseline": "350e887b0ce5bb3706a7a3660f0fe531d1175d9f",
+  "command": "FINDR_PLAYWRIGHT_PATH=/opt/codex/cua_node/lib/node_modules/playwright node scripts/qa-wiring.cjs",
+  "results": [
+    {
+      "width": 390,
+      "height": 844,
+      "status": "passed",
+      "offline": true,
+      "offlineCache": [
+        {
+          "cache": "findr-shell-57ad67801e89",
+          "format": "sha256-v1",
+          "build": "57ad67801e89",
+          "version": "0.22.0",
+          "assetCount": 1243
+        }
+      ],
+      "indexedPictures": 177,
+      "checkedEntry": "kentec-0d82d93522c3-p11-sigma-cp-k-series-and-t-series-zone-wiring",
+      "sourcePdfPage": 11,
+      "checks": "manual content/brand/discipline/target filters; source picture and zoom; download failure context; normal download and exact source page; actual-byte edition mismatch despite forged metadata; exact target associations; saved-only scope and recent-save order; earlier records and PDFs; offline images and both saved PDFs",
+      "limits": "Chromium viewport emulation; PDF API uses checked local source bytes; synthetic preservation fixtures; no physical wiring validation"
+    },
+    {
+      "width": 1440,
+      "height": 844,
+      "status": "passed",
+      "offline": true,
+      "offlineCache": [
+        {
+          "cache": "findr-shell-57ad67801e89",
+          "format": "sha256-v1",
+          "build": "57ad67801e89",
+          "version": "0.22.0",
+          "assetCount": 1243
+        }
+      ],
+      "indexedPictures": 177,
+      "checkedEntry": "kentec-0d82d93522c3-p11-sigma-cp-k-series-and-t-series-zone-wiring",
+      "sourcePdfPage": 11,
+      "checks": "manual content/brand/discipline/target filters; source picture and zoom; download failure context; normal download and exact source page; actual-byte edition mismatch despite forged metadata; exact target associations; saved-only scope and recent-save order; earlier records and PDFs; offline images and both saved PDFs",
+      "limits": "Chromium viewport emulation; PDF API uses checked local source bytes; synthetic preservation fixtures; no physical wiring validation"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "gallery-390.png",
+      "sha256": "a83788a994b44bd95c9e387b8457e7a710ccc913be0bbcbb5c3930b6ae142f9d",
+      "width": 390,
+      "height": 5684
+    },
+    {
+      "file": "picture-390.png",
+      "sha256": "9f5281e65a6016b8376bc42ce3369d4f5c7cb1d169cb927d76e98592149e76eb",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "zoom-390.png",
+      "sha256": "f623c10dfa7f3bab5b952452445c210b061c8d389782f6c3468bcbc17b3cf151",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "source-pdf-390.png",
+      "sha256": "64f628bb18b03568830c6a27fa971360c242e59db7bf898225ecf4f33df6ee48",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "edition-mismatch-390.png",
+      "sha256": "7fb3dce6b97848ee65217ea2e317a8443601f37350104fca8d6beb380ecae338",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "offline-picture-390.png",
+      "sha256": "814250c6384429498bd3a39924ed6b62d1adf4802fcc363dc1dc202dcb7c052a",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "gallery-1440.png",
+      "sha256": "fc5f68c236137d346cd87f6ce79443256b8b093d85e1bf5d2b890047af834dac",
+      "width": 1440,
+      "height": 2145
+    },
+    {
+      "file": "picture-1440.png",
+      "sha256": "f1048877c7199e04658b4ebaed9826c7bed422cfdc3629842d32cd028f171d11",
+      "width": 1440,
+      "height": 844
+    },
+    {
+      "file": "zoom-1440.png",
+      "sha256": "f375aef556e32c96eb44df7d8b595469ea76edbc11ba8e3ab5af75685566d69d",
+      "width": 1440,
+      "height": 844
+    },
+    {
+      "file": "source-pdf-1440.png",
+      "sha256": "91778b68d6cc0916acc6219dfe0ec9d1de3cdf11b187f88c151856700f6bb0c2",
+      "width": 1440,
+      "height": 844
+    },
+    {
+      "file": "edition-mismatch-1440.png",
+      "sha256": "6c0452b0aa6269c82084a8e46562ea4bf8ff6e4cdcd2f40396e75f7ec9ff8930",
+      "width": 1440,
+      "height": 844
+    },
+    {
+      "file": "offline-picture-1440.png",
+      "sha256": "3177ddfd6933b4917bc5a543d3382aa7ef147c0e5c20594301d21505358b51e4",
+      "width": 1440,
+      "height": 844
+    }
+  ],
+  "checkedSource": {
+    "recordId": "kentec-0d82d93522c3",
+    "entryId": "kentec-0d82d93522c3-p11-sigma-cp-k-series-and-t-series-zone-wiring",
+    "sourceSha256": "ce2da02ef49b615e68ae7a1e69b9ffcc54efd8970bbacb9b1589f484d3e30dd6",
+    "pdfPage": 11,
+    "edition": "Man-1078 Issue 25, April 2024",
+    "imageSha256": "210b2e9a200a6402370ccdc68e66cdad3f5b2b6c08df2ce880b3ceb7af31ebfb"
+  },
+  "runtimeFiles": {
+    "public/app/app.mjs": "47fa27191a6de10d84b1bc7b081819dc5da7bd56662cb57aa92da8560d7834a0",
+    "public/app/wiring-ui.mjs": "948a86a3d156335f342f7cf9b62ff04d760353a2dcc2a446e27e1af3a1d10d0e",
+    "public/app/wiring.mjs": "408cce3afd227e7d13505bf1e189a1329ada85673392b4b17f7c9a9b406669c2",
+    "public/app/wiring.css": "28b1fe9a33bccf3f71f437bedcc8b8c6b8b3c47f48b317638803aa6fb32629fc",
+    "public/app/data/wiring-diagrams.json": "e54b6a0757df727f9ab6af300b826ebd0f3f055d8e0adda359552f884aaf44f1",
+    "public/app/precache.js": "c0f022a31c1bd3bab737e715d3f853201cbdc27fad0ce0096cecb902cc84343b",
+    "public/app/sw.js": "2e3050efef92a4659dda2795af0ba6219787bb855e7c985f261befc331a57f1b"
+  },
+  "assertions": [
+    "Manual content filter exposes original wiring pictures; combined query, brand, discipline and panel/device filters retain only matching source entries",
+    "A broad Sigma query keeps multiple candidates and does not silently select a model or open a source page",
+    "Unmatched wording says no reviewed picture is indexed; it does not claim the equipment has no wiring",
+    "Selected picture displays its exact model scope, source title, edition and recorded PDF page; image path and dimensions match the curated source entry",
+    "Full-page source pictures retain the original captions, terminal labels and manufacturer conditions; all displayed gallery thumbnails are scrolled into view and decoded before capture",
+    "Fit and 150% zoom have no document horizontal overflow; new zoom/download controls and filter disclosure hit targets are at least 44 CSS pixels high",
+    "A deliberately failed source download leaves the picture usable and does not create a saved PDF",
+    "Normal download stores checked Sigma source bytes; its reader opens PDF page 11; Back to wiring picture preserves the query and saved-source action",
+    "Wrong saved PDF bytes with forged matching fileHash metadata are rejected for a source-page jump; the explicit open-from-beginning action opens page 1 only",
+    "Saved wiring scope contains only saved full-PDF parents; Recently saved puts newly downloaded Sigma ahead of retained Gent",
+    "Panel and device catalogue links use explicit curated target IDs and return only entries linked to the selected ID",
+    "Network-disabled reload opens the bundled wiring image, the newly downloaded Sigma PDF at page 11 and the earlier saved Gent PDF at page 1",
+    "PDF checks wait for nonblank, stable rendered canvas pixels, not only canvas allocation or a status label",
+    "The manual API interception is removed before offline checks; navigator.onLine is false; both viewports verify current sha256-v1 cache 57ad67801e89 with 1243 assets",
+    "Earlier synthetic fault visit, imported schedule, intruder settings, pack usage and actual 0.21 CFP/Sigma trainer records remain JSON-equivalent",
+    "The earlier Gent PDF retains its exact byte count and SHA-256; earlier Sigma/CFP trainer views and saved visit reopen",
+    "No browser page errors occur at either viewport"
+  ],
+  "limits": [
+    "Chromium viewport emulation, not physical iPhone Safari or installed panel wiring verification",
+    "All site and programming fixtures are labelled synthetic; retained import/keypad markers are preservation checks rather than full feature acceptance",
+    "The Sigma download API response uses actual locally checked manufacturer PDF bytes; current publisher availability is not verified",
+    "Screenshots show selected Sigma source pages; curated archive coverage and all image hashes are checked separately by merge/data validation",
+    "This report verifies the local app; the release owner reports regression/build, website publication and APK signing separately"
+  ]
+}

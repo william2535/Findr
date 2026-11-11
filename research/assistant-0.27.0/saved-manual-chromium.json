@@ -1,0 +1,71 @@
+{
+  "browser": "chromium",
+  "physicalIPhone": false,
+  "recordSchema": 1,
+  "steps": [
+    "Version-1 catalogue record with real PDF Blob",
+    "Reload",
+    "Normal Fault Finder Start",
+    "Use a saved manual",
+    "Advanced mxpro4",
+    "Real72-page PDF read; equipment confirmation shown; original Blob preserved"
+  ],
+  "environment": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+  "record": {
+    "id": "advanced-76cae27e9ec7",
+    "title": "Advanced mxpro4",
+    "bytes": 2252899,
+    "sha256": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e"
+  },
+  "elapsedMs": 1341.3468619999999,
+  "identity": {
+    "systemTypes": [
+      "fire"
+    ],
+    "manufacturer": "Advanced",
+    "manufacturerCandidates": [
+      "Advanced"
+    ],
+    "model": null,
+    "models": [
+      "Mx-4200",
+      "Mx-4200/D",
+      "Mx-4400",
+      "Mx-4400/D",
+      "Mx-4200V",
+      "Mx-4400V",
+      "Mx-4400V/LE",
+      "Mx-4800V",
+      "Mx-4200V/LE"
+    ],
+    "familyOnly": false,
+    "equipmentType": "panel",
+    "equipmentTypes": [
+      "panel",
+      "PSU",
+      "detector",
+      "interface"
+    ],
+    "documentType": "Installation & Commissioning",
+    "revision": null,
+    "variants": [
+      "Mx-4200",
+      "Mx-4200/D",
+      "Mx-4400",
+      "Mx-4400/D",
+      "Mx-4200V",
+      "Mx-4400V",
+      "Mx-4400V/LE",
+      "Mx-4800V",
+      "Mx-4200V/LE"
+    ],
+    "requiresVariant": true,
+    "uncertain": true,
+    "confirmed": false,
+    "basis": "Unconfirmed suggestions extracted from manual contents. Confirm the installed label and applicable variant.",
+    "confirmedSystem": false,
+    "confirmedEquipment": false
+  },
+  "status": "passed",
+  "pageErrors": []
+}

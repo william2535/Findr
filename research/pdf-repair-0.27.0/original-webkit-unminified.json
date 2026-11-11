@@ -1,0 +1,46 @@
+{
+  "browser": "webkit",
+  "features": {
+    "readableStreamAsyncIterator": "undefined",
+    "readableStreamGetReader": "function"
+  },
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15",
+  "status": "failed",
+  "storageError": null,
+  "bytes": {
+    "constructor": "Blob",
+    "size": 2252899,
+    "arrayBuffer": "function",
+    "head": "%PDF-1.5"
+  },
+  "elapsedMs": 292,
+  "error": {
+    "name": "Error",
+    "code": "MANUAL_PROCESSING_FAILED",
+    "message": "This PDF could not be read: undefined is not a function (near '...value of readableStream...'). Try an unlocked, complete copy or upload the relevant manual pages.",
+    "stack": "codedError@http://127.0.0.1:8097/public/app/manual-analysis.mjs:14:67\nanalyseManual@http://127.0.0.1:8097/public/app/manual-analysis.mjs:232:40",
+    "cause": {
+      "name": "TypeError",
+      "message": "undefined is not a function (near '...value of readableStream...')",
+      "stack": "getTextContent@http://127.0.0.1:8097/public/app/vendor/pdfjs/pdf.mjs:22019:28\ngetTextContent@http://127.0.0.1:8097/public/app/vendor/pdfjs/pdf.mjs:22009:26\nanalyseManual@http://127.0.0.1:8097/public/app/manual-analysis.mjs:180:58",
+      "cause": null
+    }
+  },
+  "progress": [
+    {
+      "phase": "checking",
+      "message": "Checking the PDF and looking for a saved analysis\u2026",
+      "completed": 0,
+      "total": null
+    },
+    {
+      "phase": "text",
+      "message": "Reading PDF text \u00b7 page 1 of 72",
+      "page": 1,
+      "pages": 72,
+      "completed": 0,
+      "total": 72
+    }
+  ],
+  "issues": []
+}

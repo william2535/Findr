@@ -1,0 +1,71 @@
+{
+  "downloadedAt": "2026-11-11",
+  "transformers": {
+    "package": "@huggingface/transformers",
+    "version": "3.8.1",
+    "url": "https://registry.npmjs.org/@huggingface/transformers/-/transformers-3.8.1.tgz"
+  },
+  "onnxruntime": {
+    "package": "onnxruntime-web",
+    "version": "1.22.0-dev.20250409-89f8206ba4",
+    "source": "CPU-only non-JSEP .mjs/.wasm from the exact ONNX Runtime Web build embedded by Transformers.js 3.8.1. Package JSEP assets were byte-for-byte identical to the previous bundled assets before replacement; never mix runtime versions.",
+    "url": "https://registry.npmjs.org/onnxruntime-web/-/onnxruntime-web-1.22.0-dev.20250409-89f8206ba4.tgz"
+  },
+  "incrementalHash": {
+    "package": "@noble/hashes",
+    "version": "2.0.1",
+    "url": "https://registry.npmjs.org/@noble/hashes/-/hashes-2.0.1.tgz"
+  },
+  "files": [
+    {
+      "path": "ORT-LICENSE",
+      "bytes": 1073,
+      "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+    },
+    {
+      "path": "TRANSFORMERS-LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "hashes/LICENSE",
+      "bytes": 1109,
+      "sha256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec"
+    },
+    {
+      "path": "hashes/_md.js",
+      "bytes": 5615,
+      "sha256": "a112f0fe1b15db00f2638618c436a17be1c5e13baf19d02fcc29016ae1db2233"
+    },
+    {
+      "path": "hashes/_u64.js",
+      "bytes": 3081,
+      "sha256": "e48c0cfc10810439a4807b46db136ce603a3fa09b62584f513ef2f3ca496af54"
+    },
+    {
+      "path": "hashes/sha2.js",
+      "bytes": 16773,
+      "sha256": "3ddc587c588283cbceed4dd9929cefcce06a0c231b54d4c6f0f99c478c686c00"
+    },
+    {
+      "path": "hashes/utils.js",
+      "bytes": 9356,
+      "sha256": "11319ec0a8132a0c2ced8c98af33ae9274c001d6baf4f4709c4a6115e031a3c5"
+    },
+    {
+      "path": "ort-wasm-simd-threaded.mjs",
+      "bytes": 20856,
+      "sha256": "43c25054b6b9ac000f786c65545ff83a45f871e0e310e8c2f4d48a363bb66db4"
+    },
+    {
+      "path": "ort-wasm-simd-threaded.wasm",
+      "bytes": 11133407,
+      "sha256": "f061472c6e77d6d50d079aacdc0ff9b63fee287ddd2cbf46cf62438d3891de2b"
+    },
+    {
+      "path": "transformers.min.js",
+      "bytes": 888173,
+      "sha256": "aa5002b70e789798da263f5f99c62bd3e8fcd0c119258a493c40c180648365fa"
+    }
+  ]
+}

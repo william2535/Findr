@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "release": "0.22.0",
+  "entryFields": {
+    "id": "unique lowercase slug; prefer recordId-pN-short-topic",
+    "recordId": "existing catalogue or device-documents ID, never invented",
+    "title": "specific diagram/page topic",
+    "brand": "record brand",
+    "category": "record category exactly, for existing manual discipline filters",
+    "targetType": "panel | device | accessory",
+    "diagramType": "wiring | terminal-layout | connection-example",
+    "models": ["only models/part codes actually established by this source and page scope"],
+    "panelIds": ["existing panel IDs only where source establishes applicability"],
+    "deviceIds": ["existing device IDs only where source establishes applicability"],
+    "pdfPage": "1-based integer",
+    "printedPage": "string or null; do not infer printed number from PDF index",
+    "section": "actual caption/section or precise page topic",
+    "sourceUrl": "retrieved source PDF URL, normally existing record.url",
+    "sourceSha256": "SHA256 of reviewed PDF bytes",
+    "edition": "actual edition/revision or Edition not stated",
+    "image": "wiring/<id>.webp, relative to public/app",
+    "imageSha256": "SHA256 of derivative image",
+    "imageWidth": "pixels",
+    "imageHeight": "pixels",
+    "imageBytes": "integer",
+    "scope": "brief page/model/circuit applicability including relevant variants",
+    "notes": ["necessary limitations/conditions already in source; no invented instructions"],
+    "keywords": ["source-backed search terms"],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  "sourceRules": [
+    "Only visually checked actual manufacturer manual pages; no generated/redrawn wiring or inferred cross-model compatibility.",
+    "Render complete page by default so legends, conditions and neighbouring figures remain. Document crop bounds if absolutely necessary.",
+    "Use lossless WebP at about 1400 pixels page width (increase if small print requires it). Keep diagrams legible; do not optimize by removing labels.",
+    "Do not change catalogue records, pack membership, manual URLs, device/panel IDs or existing PDF hashes.",
+    "An image of terminals alone must be called a terminal layout, not a complete wiring diagram.",
+    "Record every retrieved PDF's source URL/hash/edition/local filename and selected pages in a batch audit, including retrieval failures and skipped candidates.",
+    "One page may contain several connection drawings; preserve them together and describe all relevant variant conditions.",
+    "No diagram found means not yet included, never proof that a device has no wiring. Archive coverage must be reported honestly."
+  ]
+}

@@ -1,0 +1,31 @@
+const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const state = value => value === true || value === 'on' ? 'on' : /flash/.test(String(value)) ? 'flash' : 'off';
+const labels = {MENU:'Menu',MORE:'More information',UP:'Up / digit 1',ACCEPT:'Accept / digit 2',DOWN:'Down / digit 3',ESCAPE:'Escape / digit 4',SILENCE_INTERNAL:'Silence internal sounder',SILENCE_RESOUND:'Silence / resound sounders',RESET:'Control panel reset',INVESTIGATE:'Investigate',KEY_SWITCH:'Access key — O / I'};
+const controls = {
+  '16': [['MORE',575,228],['UP',633,254],['ACCEPT',663,281],['DOWN',633,310],['ESCAPE',600,281],['MENU',575,337],['SILENCE_INTERNAL',690,337],['RESET',575,418],['SILENCE_RESOUND',690,418],['INVESTIGATE',575,497],['KEY_SWITCH',677,497]],
+  '32': [['MENU',87,63],['MORE',232,63],['SILENCE_INTERNAL',160,135],['UP',160,209],['ACCEPT',232,245],['DOWN',160,280],['ESCAPE',87,245],['RESET',87,360],['INVESTIGATE',160,360],['SILENCE_RESOUND',232,360]]
+};
+const statusLabels = {fire:'Fire',supply:'Supply present',test:'Test',accessed:'Accessed',disablement:'General disablement',phasedEvacuation:'Phased evacuation',generalFault:'General fault',powerFault:'Power supply fault',systemFault:'System fault',sounderStatus:'Sounder status',delaysRunning:'Delays running'};
+const statusPositions = {
+  '16': [['fire',767,225,'red'],['supply',835,451,'green'],['test',903,451],['accessed',970,451],['disablement',1105,451],['phasedEvacuation',1240,451],['generalFault',835,496],['powerFault',903,496],['systemFault',970,496,'orange'],['sounderStatus',1105,496],['delaysRunning',1240,496]],
+  '32': [['fire',317,154,'red'],['supply',317,300,'green'],['test',443,300],['accessed',516,300],['disablement',735,300],['phasedEvacuation',880,300],['generalFault',408,373],['powerFault',481,373],['systemFault',553,373,'orange'],['sounderStatus',698,373],['delaysRunning',844,373]]
+};
+const point = (x,y,w,h) => `left:${x/w*100}%;top:${y/h*100}%`;
+function lamp(id,label,value,color,x,y,w,h) {
+  const s=state(value); return `<span class="xfp-lamp xfp-lamp-${color||'amber'} xfp-lamp-${s}" data-xfp-led="${esc(id)}" style="${point(x,y,w,h)}" role="img" aria-label="${esc(label)}: ${s}"></span>`;
+}
+function key(id,x,y,w,h,view,hintKey) {
+  const hint=id===hintKey, keyed=id==='KEY_SWITCH';
+  return `<button type="button" class="xfp-physical-key${['UP','ACCEPT','DOWN','ESCAPE'].includes(id)?' xfp-arrow-key':''}${keyed?' xfp-access-key':''}${hint?' xfp-key-hint':''}" style="${point(x,y,w,h)}" data-xfp-key="${id}" title="${labels[id]}" aria-label="${labels[id]}${hint?' — next hinted control':''}"${keyed?` aria-pressed="${Boolean(view.keySwitch)}"`:''}>${keyed?`<i class="xfp-key-blade${Boolean(view.keySwitch)?' xfp-key-turned':''}" aria-hidden="true"></i>`:''}</button>`;
+}
+export function xfpPanelFace(model={}, view={}, {hintKey=null,zoom='fit'}={}) {
+  const variant=String(view.variant||model.variant||model.zoneCount)==='16'?'16':'32', small=variant==='16', w=small?1350:990,h=small?585:418;
+  const zones=Array.from({length:small?16:32},(_,i)=>{
+    const row=Math.floor(i/(small?8:16)), col=i%(small?8:16), x=small?835+col*67.6:372+col*36.3, y=small?225+row*90:154+row*73;
+    return lamp(`zone-${i+1}`,`Zone ${i+1} fire`,view.zoneStates?.[i+1],'red',x,y,w,h);
+  }).join('');
+  const lcd=(Array.isArray(view.lcdLines)?view.lcdLines:[]).slice(0,2);
+  while(lcd.length<2)lcd.push('');
+  const face=`<div class="xfp-fascia"><img class="xfp-source-fascia" src="./trainer-assets/xfp-${variant}-fascia.png" alt="" draggable="false"><div class="xfp-lcd" role="status" aria-label="Two-line panel display">${lcd.map(line=>`<span>${esc(line)}</span>`).join('')}</div>${zones}${statusPositions[variant].map(([id,x,y,color])=>lamp(id,statusLabels[id],view.leds?.[id],color,x,y,w,h)).join('')}${controls[variant].map(([id,x,y])=>key(id,x,y,w,h,view,hintKey)).join('')}${small?'<span class="xfp-brand-mark" aria-label="C-TEC XFP Series"><i aria-hidden="true">❮</i><b>C-TEC</b><small>XFP SERIES</small></span>':''}</div>`;
+  return `<div class="xfp-face-workspace"><div class="xfp-face-viewport${zoom==='large'?' xfp-face-large':''}" tabindex="0" aria-label="XFP ${variant}-zone panel; Zoom controls enlarges the physical keys"><div class="xfp-cabinet xfp-cabinet-${variant}" data-variant="${variant}" role="group" aria-label="C-TEC XFP ${variant}-zone ${small?'plastic':'metal'} cabinet simulated controls"><span class="xfp-case-screw xfp-screw-one" aria-hidden="true"></span><span class="xfp-case-screw xfp-screw-two" aria-hidden="true"></span>${face}${small?'':`<div class="xfp-instruction-strip"><img src="./trainer-assets/xfp-32-instructions.png" alt="Fire alarm control panel instructions" draggable="false">${key('KEY_SWITCH',496,93,990,187,view,hintKey)}<span class="xfp-brand-mark" aria-label="C-TEC XFP Series"><i aria-hidden="true">❮</i><b>C-TEC</b><small>XFP SERIES</small></span></div>`}</div></div>${zoom==='large'?'<p class="xfp-face-note">Scroll across the panel to reach the enlarged controls.</p>':''}${view.coverOpen?`<figure class="xfp-memory-detail"><img src="./trainer-assets/xfp-${variant}-memory-unlock.png" alt="Original manufacturer detail showing the ${small?'Memory Unlock link':'PLK2 NVM memory unlock link'} on the main control PCB"><figcaption>Cover removed in the simulation · ${small?'Memory Unlock':'PLK2 NVM memory unlock'} link ${view.nvmUnlocked?'fitted':'removed'}. Original PCB detail, engineering manual PDF p18. Removing the cover does not enter access level 3.</figcaption></figure>`:''}<p class="xfp-face-note">${variant}-zone ${small?'plastic':'metal'} XFP · original manufacturer fascia, live simulated display and indicators · ${small?'DFU1200510 Rev 3':'DFU2200510 Rev 2'}, PDF p14.</p><details class="xfp-source-reference"><summary>Compare the actual panel picture</summary><img src="./panels/c-tec-xfp-${variant}-zone.webp" alt="Manufacturer photograph of the ${variant}-zone C-TEC XFP ${small?'plastic':'metal'} cabinet"><p>The flat trainer follows the matching manual figure. Apollo XP95 training fixture; select the correct panel and protocol manual for site work.</p></details></div>`;
+}

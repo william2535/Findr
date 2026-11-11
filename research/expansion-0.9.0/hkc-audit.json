@@ -1,0 +1,309 @@
+{
+  "profileId": "hkc-quantum70",
+  "version": "0.9.0",
+  "verifiedAt": "2026-10-29",
+  "sources": [
+    {
+      "id": "q70-v4",
+      "title": "Quantum 70 Installation Manual",
+      "edition": "V4.0+ software · 310118_1 · 31 January 2018",
+      "url": "https://gard.ie/wp-content/uploads/2024/08/Quantum-70-Installation-Manual.pdf",
+      "publisher": "HKC Ltd.; original manufacturer manual hosted by GARD Security",
+      "totalPdfPages": 104,
+      "sha256": "52a169e5d15c68f33da4e6215ec134400d6b27d798054a969ae416c9d73fbb47",
+      "pageNumbering": "PDF page equals printed page.",
+      "scope": "Quantum70 V4.0+; UK variant, with documented conditional devices. Reused pages with conflicting model data are called out."
+    },
+    {
+      "id": "q70-user-2011",
+      "title": "Quantum 70 User Manual",
+      "edition": "Quantum User Manual 160811_1 · 2011",
+      "url": "https://www.hkcsecurity.com/gb/en/documents/alarm-user-/Quantum%2070%20%28Wireless%29%20User%20Manual.pdf",
+      "publisher": "HKC Security; official GB support download",
+      "totalPdfPages": 12,
+      "sha256": "f333a0e6c4e1f1a94fe04383a6e6f3d2768ceef85c6931ad3af18a275695bfe1",
+      "pageNumbering": "PDF page equals printed page.",
+      "scope": "Earlier Quantum70 user procedures. The V4 installer p57 independently corroborates User/Manager menu order; exact V4 user prompt timing still requires hardware verification."
+    }
+  ],
+  "baseline": "Quantum70 V4.0+ · installation manual 310118_1; UK options. Earlier official 160811_1 user guide is separately scoped.",
+  "documentsDownloaded": true,
+  "hardwareVerified": false,
+  "sourceNodeCount": 863,
+  "referenceNodeCount": 128,
+  "selectionNodeCount": 381,
+  "practiceTasks": 7,
+  "supported": [
+    "Immediate local engineer digits where unambiguous",
+    "Unnumbered User/Manager menus",
+    "Zone type/name/options and persistent fictional settings",
+    "Conditional zone option enable/disable",
+    "Fictional user-code confirmation/validation",
+    "RF Echo and SABB YES on/off tests",
+    "Engineer walk test and local event logs",
+    "Authorised * zone [* zone] YES inhibit flow; unset restores",
+    "Menu search and SHOW HINTS through shared engine"
+  ],
+  "limitations": [
+    "Quantum70 only; this profile does not represent SecureWave1070/10270 or later SecureHub.",
+    "User guide edition2011 is separated from the V4 installation baseline.",
+    "All credentials are already authorised; no factory codes or live transports.",
+    "Guided lessons are selected subsets. Full exploration, exact inhibit flow and SHOW HINTS are in the complete emulator.",
+    "User-menu entries are unnumbered; engineer quick digits act per level.",
+    "Text helpers and unresolved numeric ranges are labelled. Bell automatic timing, radio enrollment and copied manual contradictions remain visible gaps."
+  ],
+  "gaps": [
+    {
+      "id": "hkc-user-edition",
+      "title": "User guide predates V4",
+      "reason": "The official guide is 2011; installer V4 p57 confirms the User/Manager order, but not every timing/detail of the older arming/inhibit procedure.",
+      "affectedNodeIds": [
+        "h-a-inhibit",
+        "h-u-unset",
+        "h-u-full"
+      ],
+      "question": "Can you record a Quantum70 V4 user entering *5 YES after authorisation, then unsetting, including every display?",
+      "priority": "high",
+      "neededEvidence": "Quantum70 V4 keypad recording or manufacturer erratum with exact key presses and firmware version."
+    },
+    {
+      "id": "hkc-arming-shortcuts",
+      "title": "Arming options 1 / 10 / 11",
+      "reason": "Printed numbers collide under immediate-digit navigation. This menu is scroll-only until the actual input method is verified.",
+      "affectedNodeIds": [
+        "h-e8.1"
+      ],
+      "question": "From 81, how do you select Arm Squawk (10) and Infinite Exit (11) without selecting Final Door (1)?",
+      "priority": "high",
+      "neededEvidence": "Quantum70 V4 keypad recording or manufacturer erratum with exact key presses and firmware version."
+    },
+    {
+      "id": "hkc-point-numbering",
+      "title": "Point Hardware / Block Assign",
+      "reason": "Overview p8 and body p56 disagree about local Point Menu numbering. No numeric shortcut is guessed.",
+      "affectedNodeIds": [
+        "h-point-hardware",
+        "h-point-block"
+      ],
+      "question": "On V4, what are Point Menu items 5 and 6, and which actually appear?",
+      "priority": "high",
+      "neededEvidence": "Quantum70 V4 keypad recording or manufacturer erratum with exact key presses and firmware version."
+    },
+    {
+      "id": "hkc-ip-monitoring",
+      "title": "IP Monitoring copied model data",
+      "reason": "Detailed p87 uses SecureComm98 and eight blocks, unlike Quantum70 p9 and p3. The top location 974 is documented; details remain reference-only.",
+      "affectedNodeIds": [
+        "h-e9.7.4"
+      ],
+      "question": "Can the Quantum70 V4 IP Monitoring submenu and its block list be recorded?",
+      "priority": "high",
+      "neededEvidence": "Quantum70 V4 keypad recording or manufacturer erratum with exact key presses and firmware version."
+    },
+    {
+      "id": "hkc-camera-toggle",
+      "title": "Camera Image Size source conflict",
+      "reason": "p17 says NO toggles and gives an inconsistent VGA resolution; p52 says YES and 640×480. The dedicated menu page is used, with this limitation visible.",
+      "affectedNodeIds": [
+        "h-e2.1.6.1"
+      ],
+      "question": "Does your Quantum70 V4 use YES or NO to toggle Image Size?",
+      "priority": "medium",
+      "neededEvidence": "Quantum70 V4 keypad recording or manufacturer erratum with exact key presses and firmware version."
+    },
+    {
+      "id": "hkc-rf-copied-ranges",
+      "title": "RF copied model ranges",
+      "reason": "RF Echo/SABB pages mention blocks0–8; PIRCAM pages mention RF Points/P50. Those capacities are not extended to Quantum70.",
+      "affectedNodeIds": [
+        "h-e2.1.4.3-block",
+        "h-e2.1.4.4-block",
+        "h-rf-zone-flash"
+      ],
+      "question": "Which block values and RF option labels are actually present on your Quantum70?",
+      "priority": "medium",
+      "neededEvidence": "Quantum70 V4 keypad recording or manufacturer erratum with exact key presses and firmware version."
+    },
+    {
+      "id": "hkc-rf-co-code",
+      "title": "CO test code",
+      "reason": "RF device diagrams repeat code2 for CO; SABB already occupies code2. The CO test is kept as an unnumbered reference.",
+      "affectedNodeIds": [
+        "h-test-rf-co"
+      ],
+      "question": "What local number, if any, is displayed beside Test RF CO?",
+      "priority": "medium",
+      "neededEvidence": "Quantum70 V4 keypad recording or manufacturer erratum with exact key presses and firmware version."
+    },
+    {
+      "id": "hkc-gsm-delay",
+      "title": "GSM fault-delay units",
+      "reason": "Overview displays minutes; prose describes seconds. A number editor would risk teaching the wrong unit.",
+      "affectedNodeIds": [
+        "h-e9.2.2.3.2.2"
+      ],
+      "question": "What unit and limits appear on the V4 GSM Signal Monitor Fault Delay field?",
+      "priority": "medium",
+      "neededEvidence": "Quantum70 V4 keypad recording or manufacturer erratum with exact key presses and firmware version."
+    },
+    {
+      "id": "hkc-bell-sequence",
+      "title": "Automatic Bell Test sequence",
+      "reason": "The sequence is documented, but exact durations and phase-confirmation keys are not. No invented physical YES stepping is taught.",
+      "affectedNodeIds": [
+        "h-e1.3.9",
+        "h-u-bell"
+      ],
+      "question": "Can you record a complete Bell Test, including the outside prompt, timing and any required key presses?",
+      "priority": "high",
+      "neededEvidence": "Quantum70 V4 keypad recording or manufacturer erratum with exact key presses and firmware version."
+    },
+    {
+      "id": "hkc-field-entry",
+      "title": "Physical text/number editing",
+      "reason": "Text uses a labelled FINDR helper. Many field lengths and numeric bounds are not given; editors expose this limit.",
+      "affectedNodeIds": [
+        "h-e3.1.1",
+        "h-e5.2",
+        "h-e6.2.4",
+        "h-e8.8.1",
+        "h-e9.2.3.3.1.2"
+      ],
+      "question": "Can we verify field lengths, NO/YES behavior, and date/time/IP editing on a Quantum70 V4 keypad?",
+      "priority": "medium",
+      "neededEvidence": "Quantum70 V4 keypad recording or manufacturer erratum with exact key presses and firmware version."
+    },
+    {
+      "id": "hkc-date-sequence",
+      "title": "Date/time helper sequence",
+      "reason": "The source states the date and time formats but does not give every transition key. The two-field helper advances with YES and is labelled as a FINDR simplification.",
+      "affectedNodeIds": [
+        "h-e6.1",
+        "h-date",
+        "h-time"
+      ],
+      "question": "What exact keys move from the date to time and confirm the final date/time on Quantum70 V4?",
+      "priority": "medium",
+      "neededEvidence": "Quantum70 V4 keypad recording or manufacturer erratum with exact key presses and firmware version."
+    },
+    {
+      "id": "hkc-event-timers",
+      "title": "Conditional event-timer wizard",
+      "reason": "The timer types and dependent fields are mapped; the full conditional scheduling state machine is reference-only.",
+      "affectedNodeIds": [
+        "h-e6.5"
+      ],
+      "question": "Can each timer type be recorded from type selection through its final day/block/user field?",
+      "priority": "medium",
+      "neededEvidence": "Quantum70 V4 keypad recording or manufacturer erratum with exact key presses and firmware version."
+    },
+    {
+      "id": "hkc-channel-enum",
+      "title": "Full Fast Format type list",
+      "reason": "The manual states over50 channel types but does not publish the complete programming enumeration here. Only documented report examples populate fixture records.",
+      "affectedNodeIds": [
+        "h-e9.3.3.1",
+        "h-e1.3.5.1",
+        "h-e9.3.4.1",
+        "h-e9.3.4.2"
+      ],
+      "question": "Can you scroll the complete Fast Format channel-type and report-type list?",
+      "priority": "medium",
+      "neededEvidence": "Quantum70 V4 keypad recording or manufacturer erratum with exact key presses and firmware version."
+    },
+    {
+      "id": "hkc-hardware-flows",
+      "title": "Hardware-only functions",
+      "reason": "RF enrollment, battery performance, firmware, audio recording, proximity tags, radio/network scans and transmitted reports require hardware. The references do not invent successful outcomes.",
+      "affectedNodeIds": [
+        "h-e2.1.1",
+        "h-e1.3.8",
+        "h-e1.6",
+        "h-e5.6",
+        "h-e9.3.2",
+        "h-e9.4.3"
+      ],
+      "question": "Which hardware-specific workflow should be verified next, and what fitted modules are available?",
+      "priority": "medium",
+      "neededEvidence": "Quantum70 V4 keypad recording or manufacturer erratum with exact key presses and firmware version."
+    },
+    {
+      "id": "hkc-remote-service",
+      "title": "Remote Service detail",
+      "reason": "Only the overview entry is available in this edition; a complete prompt/key sequence was not located.",
+      "affectedNodeIds": [
+        "h-e1.8"
+      ],
+      "question": "Can you open Remote Service and record the menu/prompts without connecting to a service?",
+      "priority": "medium",
+      "neededEvidence": "Quantum70 V4 keypad recording or manufacturer erratum with exact key presses and firmware version."
+    },
+    {
+      "id": "hkc-sms-test-flag",
+      "title": "SMS Test flag detail",
+      "reason": "The Test report flag appears in overview p73 but is omitted from the descriptive list. It is retained in the map with this discrepancy.",
+      "affectedNodeIds": [
+        "h-e9.4.2.4"
+      ],
+      "question": "Does the V4 SMS Phone Options list end with Report Test, and how is it confirmed?",
+      "priority": "medium",
+      "neededEvidence": "Quantum70 V4 keypad recording or manufacturer erratum with exact key presses and firmware version."
+    }
+  ],
+  "physicalKeys": {
+    "layout": "3×4 numeric bank plus three-key right column",
+    "numericRows": [
+      [
+        "1",
+        "2",
+        "3"
+      ],
+      [
+        "4",
+        "5",
+        "6"
+      ],
+      [
+        "7",
+        "8",
+        "9"
+      ],
+      [
+        "previous",
+        "0",
+        "next"
+      ]
+    ],
+    "rightColumn": [
+      "back",
+      "enter",
+      "change"
+    ],
+    "labels": {
+      "previous": "* / prev",
+      "next": "# / next",
+      "back": "PLAY / QUIT",
+      "enter": "REC / YES",
+      "change": "LIGHT / NO"
+    },
+    "sourceRefs": [
+      {
+        "sourceId": "q70-v4",
+        "pdfPage": 7,
+        "printedPage": "7"
+      }
+    ]
+  },
+  "verification": {
+    "testFile": "tests/emulator-hkc.test.mjs",
+    "focusedTests": 20,
+    "mapValidation": "No duplicate, missing-parent, cycle or invalid page/source errors.",
+    "hintBoundary": "Shared h-time helper marked hintRouteUnverified for both Engineer and Manager paths; no invented physical YES advance is taught."
+  },
+  "notes": [
+    "RF test siren/strobe are visual fixture states only.",
+    "Automatic Bell Test is mapped but its phase progression is not invented.",
+    "The guide contains inconsistent copied-model diagrams; those are retained as explicit evidence gaps.",
+    "Source files and hashes were inspected; no installer portal or access control was bypassed."
+  ]
+}

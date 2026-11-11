@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-10-30T15:50:42.442956+00:00",
+  "results": [
+    {
+      "file": "FINDR-0.14.0.apk",
+      "url": "https://findr-fault-finder.snowyskunk12.chatgpt.site/releases/FINDR-0.14.0.apk",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "effective_url": "https://findr-fault-finder.snowyskunk12.chatgpt.site/releases/FINDR-0.14.0.apk",
+      "content_type": "application/octet-stream",
+      "bytes": 24126768,
+      "sha256": "e9d0366a76dda58bd442288660210cb94fcb74af87c2c8d98b9a8ba1cc3d1a17",
+      "error": null,
+      "expected_bytes": 24126768,
+      "expected_sha256": "e9d0366a76dda58bd442288660210cb94fcb74af87c2c8d98b9a8ba1cc3d1a17",
+      "zip_header": true,
+      "passed": true
+    },
+    {
+      "file": "FINDR-0.14.0.apk.sha256",
+      "url": "https://findr-fault-finder.snowyskunk12.chatgpt.site/releases/FINDR-0.14.0.apk.sha256",
+      "curl_exit_code": 0,
+      "http_status": 200,
+      "effective_url": "https://findr-fault-finder.snowyskunk12.chatgpt.site/releases/FINDR-0.14.0.apk.sha256",
+      "content_type": "application/octet-stream",
+      "bytes": 83,
+      "sha256": "b4836092b0a8e772462daefd41ec03785c7c9895cfa2fb0a32f06681acf4b95e",
+      "error": null,
+      "contents": "e9d0366a76dda58bd442288660210cb94fcb74af87c2c8d98b9a8ba1cc3d1a17  FINDR-0.14.0.apk\n",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "retries": 0
+}

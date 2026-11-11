@@ -1,0 +1,190 @@
+{
+  "date": "2026-10-29",
+  "scope": "Two additional interactive keypad faces sharing FINDR's existing keypad rendering and hint-button contract",
+  "representation": "Source-referenced HTML/CSS teaching illustrations with live buttons, not manufacturer firmware or product photographs",
+  "families": [
+    {
+      "profileId": "menvier-mseries",
+      "faceModel": "Menvier MKP3 / M Series LCD keypad",
+      "style": "menvier",
+      "manufacturerLayoutSource": {
+        "title": "M2000/M800 User's Guide",
+        "publisher": "Cooper Security Limited",
+        "edition": "Part No. 12062453, 2010",
+        "url": "https://bw-tech.co.uk/guides/eaton-menvier-m800-m2000-user-guide.pdf",
+        "pdfPage": 5,
+        "printedPage": "3",
+        "totalPdfPages": 28,
+        "sha256": "82606a42ec328a1a64344900f23765fb88606b75d3de8d23061750eb5a6663e9",
+        "visualVerified": true
+      },
+      "appearanceSource": {
+        "title": "MKP3 Keypads \u2014 Scantronic and Menvier product data sheet",
+        "publisher": "Eaton",
+        "edition": "DSOX0030EN/B, December 2020",
+        "url": "https://huvo.co.uk/wp-content/uploads/2025/03/Eaton-MKP3.pdf",
+        "pdfPage": 1,
+        "compatibilityPdfPage": 2,
+        "totalPdfPages": 2,
+        "sha256": "f7f130e3ed41aedaecd420f3b36f0184b9c47f1f06bfa366fb87f8a3296075d2"
+      },
+      "physicalRows": [
+        [
+          "Up",
+          "1",
+          "2",
+          "3"
+        ],
+        [
+          "Toggle",
+          "4",
+          "5",
+          "6"
+        ],
+        [
+          "Down",
+          "7",
+          "8",
+          "9"
+        ],
+        [
+          "Hash",
+          "ENT",
+          "0",
+          "ESC"
+        ]
+      ],
+      "keyIds": [
+        "previous",
+        "1",
+        "2",
+        "3",
+        "change",
+        "4",
+        "5",
+        "6",
+        "next",
+        "7",
+        "8",
+        "9",
+        "details",
+        "enter",
+        "0",
+        "back"
+      ],
+      "recognition": "Ivory hinged case, offset dark LCD surround and green display, two indicator lamps, charcoal key recess, left function column, green ENT and red ESC/toggle",
+      "fullSizeMaximumWidthCssPixels": 405
+    },
+    {
+      "profileId": "pyronix-enforcer",
+      "faceModel": "Enforcer V11 integrated control-panel keypad",
+      "style": "pyronix",
+      "manufacturerLayoutSource": {
+        "title": "Enforcer V11 Extended User Guide",
+        "publisher": "Pyronix",
+        "edition": "Rev-02",
+        "url": "https://eaglesecuritysolutions.co.uk/user-manual/pyronix-wireless-alarm-system-extended-user-guide.pdf",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "totalPdfPages": 40,
+        "sha256": "a5a835b03ff6242b2ae28e64752bf6d57f4cf86259ba5ba521ac318939927f4c",
+        "visualVerified": true
+      },
+      "navigationCrossCheck": {
+        "title": "Enforcer V11 Programming Guide",
+        "publisher": "Pyronix",
+        "edition": "Document SAP 102028847-02",
+        "url": "https://cdn.connectec.uk/Images/Products/alarms/enforcer-v11-programming-guide.pdf",
+        "pdfPages": [
+          6,
+          18
+        ],
+        "visualVerified": true
+      },
+      "physicalRows": [
+        [
+          "1",
+          "2",
+          "3",
+          "A",
+          "Police icon"
+        ],
+        [
+          "4",
+          "5",
+          "6",
+          "B",
+          "Fire icon"
+        ],
+        [
+          "7",
+          "8",
+          "9",
+          "C",
+          "Left arrow"
+        ],
+        [
+          "NO",
+          "0",
+          "YES",
+          "D",
+          "Right arrow"
+        ]
+      ],
+      "keyIds": [
+        "1",
+        "2",
+        "3",
+        "logout",
+        "panic-police",
+        "4",
+        "5",
+        "6",
+        "previous",
+        "panic-fire",
+        "7",
+        "8",
+        "9",
+        "cancel",
+        "left",
+        "back",
+        "0",
+        "enter",
+        "area-d",
+        "right"
+      ],
+      "outsideMenuRouteKeys": [
+        "panic-police",
+        "panic-fire"
+      ],
+      "keyContractNote": "Twenty physical keys. A/B/C/D form one column. The two arrow keys are separate buttons in the next column, below the two emergency-icon keys. C and D must not be conflated with arrows. The PDF text glyphs [ and ] represent those arrows.",
+      "recognition": "Wide pale casing, horizontal speaker slots, grey recessed face, blue LCD, proximity symbol, rectangular dark-edged keys and a lower hinged-flap area",
+      "fullSizeMaximumWidthCssPixels": 440
+    }
+  ],
+  "interaction": {
+    "buttonNamespace": "data-practice-action=key plus data-key; existing emulator renderer remaps to its own namespace",
+    "hintTarget": "Each supported key ID appears exactly once on its matching physical face",
+    "miniature": "Same face markup, with noninteractive spans and aria-hidden",
+    "buttonMinimumHeightCssPixels": 44,
+    "mobile": "Family-specific responsive rules at 550px and 360px; existing families retain their original CSS rules",
+    "lcd": "Escaped live display text with existing accessible status semantics",
+    "keyboard": "Shared practiceKeyboardKey export maps Pyronix A/B/C/D, NO/YES and arrows separately; Menvier T uses toggle. New families reject keys absent from their profile, while existing family mappings are preserved."
+  },
+  "verification": {
+    "sourceImagesRenderedAndInspected": true,
+    "syntaxCheckPassed": true,
+    "whitespaceCheckPassed": true,
+    "physicalKeyContractTestsPassed": 9,
+    "testFile": "tests/keypad-faces-expansion.test.mjs",
+    "browserQa": "Pending root's integrated release check",
+    "physicalHardwareComparison": false,
+    "existingFaceTemplateComparisonsPassed": 8
+  },
+  "limits": [
+    "Illustrated proportions and LCD font are adapted for readable touch interaction, rather than exact millimetre dimensions.",
+    "The open flap is represented below the keys without reproducing the manufacturer's full instruction sticker.",
+    "Pyronix emergency-icon keys are shown for recognition outside the ordinary menu routes; no live alarm connection exists.",
+    "The MKP3 datasheet disagrees internally on 16 versus 20 display characters; no claim about that count is made by this face."
+  ]
+}

@@ -1,0 +1,52 @@
+Note: /workspace/scratch/163ad62fc051/findr/android/src/com/findr/app/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+APK: /workspace/scratch/163ad62fc051/findr/artifacts/FINDR-0.12.0.apk bytes: 21771973
+
+SIGNATURE VERIFICATION
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=FINDR Preview, O=Development, C=GB
+Signer #1 certificate SHA-256 digest: 6075a73725dac5a3cc1f7b6b32c5e1df907cd1ca4b5b611f4c1c1d2fd502fefd
+Signer #1 certificate SHA-1 digest: 4ecf9f9b2795e4a500737d59de6bd2c525263e3f
+Signer #1 certificate MD5 digest: 54f646d9f02a8518368acf161235a4f4
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: 02d6b3a035cae98127a33e224c6ca7db764b6f8a6fac569f62e056e60272a245
+Signer #1 public key SHA-1 digest: 328669f5ea33e5a711aeb8bd6b656bef1df44497
+Signer #1 public key MD5 digest: 1b5cefd7555df45e97d9fc2488e0f476
+
+BADGING VERIFICATION
+package: name='com.findr.app' versionCode='18' versionName='0.12.0' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'
+sdkVersion:'26'
+targetSdkVersion:'35'
+uses-permission: name='android.permission.INTERNET'
+application-label:'FINDR'
+application-icon-160:'res/drawable/icon.png'
+application: label='FINDR' icon='res/drawable/icon.png'
+launchable-activity: name='com.findr.app.MainActivity'  label='' icon=''
+feature-group: label=''
+  uses-feature: name='android.hardware.faketouch'
+  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'
+main
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales: '--_--'
+densities: '160'
+
+PERMISSIONS VERIFICATION
+package: com.findr.app
+uses-permission: name='android.permission.INTERNET'

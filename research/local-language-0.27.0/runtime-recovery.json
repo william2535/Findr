@@ -1,0 +1,55 @@
+{
+  "result": {
+    "before": {
+      "installed": false,
+      "missingBytes": 2405005
+    },
+    "cancelled": {
+      "name": "AbortError",
+      "message": "Local model download cancelled. Completed chunks are retained for retry."
+    },
+    "afterCancel": {
+      "installed": false,
+      "missingBytes": 2405005
+    },
+    "afterRetry": {
+      "installed": true,
+      "missingBytes": 0
+    },
+    "retryMs": 7708.5999999996275,
+    "busy": "MODEL_BUSY",
+    "stopped": "AbortError",
+    "afterStop": {
+      "installed": true,
+      "loaded": false
+    },
+    "model": {
+      "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+      "title": "SmolLM2 360M Instruct · int8 · local CPU",
+      "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+      "dtype": "q8",
+      "backend": "wasm",
+      "parameters": 360000000,
+      "license": "Apache-2.0",
+      "originalModel": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct",
+      "modelCard": "https://huggingface.co/onnx-community/SmolLM2-360M-Instruct-ONNX",
+      "maxInputTokens": 768,
+      "maxNewTokens": 96,
+      "limits": "Compact local language model. Interpretations need source checks. It does not verify electrical procedures, measurements or compatibility. CPU replies can take tens of seconds; saved references remain available.",
+      "bytes": 366642692,
+      "runtimeBytes": 22575968
+    }
+  },
+  "modelRequests": [
+    {
+      "host": "huggingface.co",
+      "path": "/onnx-community/SmolLM2-360M-Instruct-ONNX/resolve/fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9/onnx/model_quantized.onnx",
+      "range": "bytes=360710144-"
+    },
+    {
+      "host": "huggingface.co",
+      "path": "/onnx-community/SmolLM2-360M-Instruct-ONNX/resolve/fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9/onnx/model_quantized.onnx",
+      "range": "bytes=360710144-"
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "syntheticReference": true,
+  "actualInference": true,
+  "modelFilesDownloadedThisRun": false,
+  "results": [
+    {
+      "promptName": "original",
+      "name": "misspelled event history",
+      "expected": "S1",
+      "question": "how do i chek the evnt histry on this panel?",
+      "networkOffline": false,
+      "reply": {
+        "text": "[S1] PDF page 12\nEvent history procedure. From the",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 9028.29999999702,
+          "inputTokens": 185,
+          "outputTokens": 16,
+          "firstTokenMs": 3641,
+          "generationMs": 6029.70000000298,
+          "tokensPerSecond": 2.6535316848254626
+        }
+      },
+      "originalHarnessSelection": "S1",
+      "originalHarnessMatchedExpected": true,
+      "strictSelection": null,
+      "strictSelectionMatchedExpected": false
+    },
+    {
+      "promptName": "original",
+      "name": "contextual menu follow-up",
+      "expected": "S1",
+      "question": "where is that menu?",
+      "previous": "How do I view the event history?",
+      "networkOffline": true,
+      "reply": {
+        "text": "The external power supply provides a nominal 24 V DC output. The output",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 188,
+          "outputTokens": 16,
+          "firstTokenMs": 3549,
+          "generationMs": 5984.20000000298,
+          "tokensPerSecond": 2.6737074295631884
+        }
+      },
+      "originalHarnessSelection": null,
+      "originalHarnessMatchedExpected": false,
+      "strictSelection": null,
+      "strictSelectionMatchedExpected": false
+    },
+    {
+      "promptName": "original",
+      "name": "explicit component change",
+      "expected": "S2",
+      "question": "what about the external PSU, what is its output voltage?",
+      "previous": "How do I view the event history?",
+      "networkOffline": true,
+      "reply": {
+        "text": "The external power supply provides a nominal 24 V DC output. The output",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 196,
+          "outputTokens": 16,
+          "firstTokenMs": 3711.89999999851,
+          "generationMs": 6016.5,
+          "tokensPerSecond": 2.659353444693759
+        }
+      },
+      "originalHarnessSelection": null,
+      "originalHarnessMatchedExpected": false,
+      "strictSelection": null,
+      "strictSelectionMatchedExpected": false
+    },
+    {
+      "promptName": "original",
+      "name": "absent battery specification",
+      "expected": "NONE",
+      "question": "What battery capacity is required for the PSU?",
+      "networkOffline": true,
+      "reply": {
+        "text": "SOURCE S1, SOURCE S2, or NONE.",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 181,
+          "outputTokens": 15,
+          "firstTokenMs": 3696.7000000029802,
+          "generationMs": 5701.60000000149,
+          "tokensPerSecond": 2.6308404658334643
+        }
+      },
+      "originalHarnessSelection": null,
+      "originalHarnessMatchedExpected": false,
+      "strictSelection": null,
+      "strictSelectionMatchedExpected": false
+    },
+    {
+      "promptName": "revised",
+      "name": "misspelled event history",
+      "expected": "S1",
+      "question": "how do i chek the evnt histry on this panel?",
+      "networkOffline": true,
+      "reply": {
+        "text": "To check the event history on this panel, you can use the test-only",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 185,
+          "outputTokens": 16,
+          "firstTokenMs": 3711.1999999955297,
+          "generationMs": 5875,
+          "tokensPerSecond": 2.723404255319149
+        }
+      },
+      "originalHarnessSelection": null,
+      "originalHarnessMatchedExpected": false,
+      "strictSelection": null,
+      "strictSelectionMatchedExpected": false
+    },
+    {
+      "promptName": "revised",
+      "name": "contextual menu follow-up",
+      "expected": "S1",
+      "question": "where is that menu?",
+      "previous": "How do I view the event history?",
+      "networkOffline": true,
+      "reply": {
+        "text": "Output S1.",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 188,
+          "outputTokens": 5,
+          "firstTokenMs": 4038.89999999851,
+          "generationMs": 4659.60000000149,
+          "tokensPerSecond": 1.073053480985149
+        }
+      },
+      "originalHarnessSelection": null,
+      "originalHarnessMatchedExpected": false,
+      "strictSelection": null,
+      "strictSelectionMatchedExpected": false
+    },
+    {
+      "promptName": "revised",
+      "name": "explicit component change",
+      "expected": "S2",
+      "question": "what about the external PSU, what is its output voltage?",
+      "previous": "How do I view the event history?",
+      "networkOffline": true,
+      "reply": {
+        "text": "Output S1.",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 196,
+          "outputTokens": 5,
+          "firstTokenMs": 3628.2999999970198,
+          "generationMs": 4207.29999999702,
+          "tokensPerSecond": 1.1884106196381388
+        }
+      },
+      "originalHarnessSelection": null,
+      "originalHarnessMatchedExpected": false,
+      "strictSelection": null,
+      "strictSelectionMatchedExpected": false
+    },
+    {
+      "promptName": "revised",
+      "name": "absent battery specification",
+      "expected": "NONE",
+      "question": "What battery capacity is required for the PSU?",
+      "networkOffline": true,
+      "reply": {
+        "text": "The battery capacity is required for the PSU to provide a nominal 24",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 181,
+          "outputTokens": 16,
+          "firstTokenMs": 3397.39999999851,
+          "generationMs": 5511.70000000298,
+          "tokensPerSecond": 2.9029156158701217
+        }
+      },
+      "originalHarnessSelection": null,
+      "originalHarnessMatchedExpected": false,
+      "strictSelection": null,
+      "strictSelectionMatchedExpected": false
+    }
+  ],
+  "pageErrors": [],
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "hardwareConcurrency": 5,
+    "deviceMemory": 16,
+    "webGPU": true
+  },
+  "model": {
+    "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+    "title": "SmolLM2 360M Instruct \u00b7 int8 \u00b7 local CPU",
+    "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+    "dtype": "q8",
+    "backend": "wasm",
+    "parameters": 360000000,
+    "license": "Apache-2.0",
+    "originalModel": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct",
+    "modelCard": "https://huggingface.co/onnx-community/SmolLM2-360M-Instruct-ONNX",
+    "maxInputTokens": 768,
+    "maxNewTokens": 96,
+    "limits": "Compact local language model. Interpretations need source checks. It does not verify electrical procedures, measurements or compatibility. CPU replies can take tens of seconds; saved references remain available.",
+    "bytes": 366642692,
+    "runtimeBytes": 22563501
+  },
+  "offlineAfterColdLoad": true,
+  "unexpectedRequests": [],
+  "assessment": "Exploratory model quality benchmark, not a passing application acceptance test. Full generated outputs are retained; production guards must reject unsupported text."
+}

@@ -1,0 +1,9 @@
+import { archivedReleaseResponse } from '../../../lib/release-downloads.mjs';
+
+export function GET() {
+  return archivedReleaseResponse('FINDR-0.13.1.apk');
+}
+
+export function HEAD() {
+  return archivedReleaseResponse('FINDR-0.13.1.apk', { head: true });
+}

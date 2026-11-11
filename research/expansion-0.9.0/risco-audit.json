@@ -1,0 +1,150 @@
+{
+  "profileId": "risco-lightsys2",
+  "sources": [
+    {
+      "id": "installer-g",
+      "title": "LightSYS2 Installation and Programming Manual",
+      "edition": "5IN2048 G · 06/2020",
+      "url": "https://www.lsc.com.au/Documents/LightSYS2%20Installer%20Manual%20EN.pdf",
+      "publisher": "RISCO Group (original manufacturer document; LSC mirror)",
+      "totalPdfPages": 272,
+      "sha256": "d686a09823279da50e3c9fc307a88576742220a6bb093e52f09928b1e79ffdd1",
+      "pageNumbering": "The cited printed Arabic page equals the one-based PDF page.",
+      "scope": "LightSYS2 installer baseline; feature-dependent menus. Not LightSYS+."
+    },
+    {
+      "id": "user-uk-e",
+      "title": "LightSYS2 User Manual — UK",
+      "edition": "5IN2124 E · 08/2021",
+      "url": "https://riscogroup.com/en/downloads-material/21659/",
+      "publisher": "RISCO Group",
+      "totalPdfPages": 60,
+      "sha256": "3325de4e12edec037c7c1243a438f28f0f30134770aa0b1668849038e2b5fdfa",
+      "pageNumbering": "The cited printed Arabic page equals the one-based PDF page.",
+      "scope": "Separate later UK user terminology and menu baseline. This does not assert identical firmware to installer G."
+    },
+    {
+      "id": "keypad-h",
+      "title": "LCD Keypad & LCD Proximity Keypad — RP432KP / RP432KPP",
+      "edition": "5IN1425 H · PDF metadata created January 2022 · six-page English extract",
+      "url": "https://www.maxwell.co.th/wp-content/uploads/2023/11/LightSYS-LCD-Keypad.pdf",
+      "publisher": "RISCO Group (original manufacturer document; Maxwell mirror)",
+      "totalPdfPages": 6,
+      "sha256": "4b703bed3d22383a73bbbcb4aeb7af96ff85b5db78137a760e1fc504c276e6fd",
+      "pageNumbering": "The available PDF is the six-page English portion. Printed page equals one-based PDF page; control instructions pp3–6.",
+      "scope": "Physical RP432KP / RP432KPP control functions. Other keypad styles remain separate. Revision H is identified in PDF title/metadata; the multilingual remainder is not included in this download."
+    }
+  ],
+  "baseline": "Installer 5IN2048 G (06/2020); separately labelled UK user 5IN2124 E (08/2021); physical keypad 5IN1425 H (01/2022). No LightSYS+ or latest-firmware equivalence.",
+  "documentedEntries": 1146,
+  "gaps": [
+    {
+      "id": "separate-editions",
+      "reason": "Installer G (2020) and UK user E (2021) are distinct documented baselines. UK Set/Omit/Fault terminology is not silently substituted for installer Arm/Bypass/Trouble.",
+      "affectedNodeIds": [
+        "r-installer",
+        "r-user"
+      ],
+      "question": "Which installed LightSYS2 firmware/language should the combined experience target?",
+      "neededEvidence": "A version-screen photo and matching installer/user manual edition, with credentials redacted."
+    },
+    {
+      "id": "source-map-errors",
+      "reason": "Appendix p255 repeats Abort Alarm and its old type summary on p104 conflicts with the complete pp107–114 type table. p257 repeats PSTN Parameters as 2; detailed p153 verifies 3. Detailed pages take precedence.",
+      "affectedNodeIds": [
+        "r-e2.1.2.3",
+        "r-e2.1.2.7.3",
+        "r-e5.1.1.3"
+      ],
+      "question": "Does the real target keypad match the detailed G tables for PSTN Parameters and zone types?",
+      "neededEvidence": "Screen-by-screen capture of the affected local lists with firmware/version visible separately."
+    },
+    {
+      "id": "conditional-hardware",
+      "reason": "Installed BUS/wireless detector and peripheral variants alter available fields. Reference branches expose the documented names without inventing extra model-selection menus or device responses.",
+      "affectedNodeIds": [
+        "r-e2.1.2.7.4",
+        "r-e2.1.2.7.5",
+        "r-e7",
+        "r-e8"
+      ],
+      "question": "Which BUS/wireless detector, sounder and keypad variants should gain working field wizards?",
+      "neededEvidence": "Exact device model IDs and authorised recordings of their parameter and acknowledgement screens."
+    },
+    {
+      "id": "one-by-one-atomic",
+      "reason": "Source p102 requires completing the entire One By One wizard to save. That wizard remains reference-only; confirmed By Category edits are functional.",
+      "affectedNodeIds": [
+        "r-e2.1.1"
+      ],
+      "question": "At which exact screen does One By One record its entire zone edit, and how does cancellation behave?",
+      "neededEvidence": "An authorised recording of a full zone wizard and a cancelled edit on the selected firmware."
+    },
+    {
+      "id": "zone-label-limit",
+      "reason": "Source p102 says 15 characters for One By One, while p103 gives 16 for By Category. The functional By Category editor uses its own 16-character limit.",
+      "affectedNodeIds": [
+        "r-e2.1.1",
+        "r-e2.1.2.1"
+      ],
+      "question": "Does the target firmware accept 15 or 16 characters in each of the two zone-label methods?",
+      "neededEvidence": "A non-sensitive test label entered through both One By One and By Category."
+    },
+    {
+      "id": "output-wizard",
+      "reason": "Trigger selection is followed by conditional source, pattern, duration, logic and label steps. This programming wizard remains reference-only rather than pretending a single field completes it; separate operational output tests work.",
+      "affectedNodeIds": [
+        "r-e3"
+      ],
+      "question": "Which conditional pattern/source/ALL–ANY screens appear for each output trigger family?",
+      "neededEvidence": "An authorised recording of the complete output wizard with a safely isolated test output."
+    },
+    {
+      "id": "user-order-no-numbers",
+      "reason": "The complete UK user function table gives order but no numerical quick-key addresses. User and service sessions use scrolling; no shortcut numbers are guessed.",
+      "affectedNodeIds": [
+        "r-user",
+        "r-service"
+      ],
+      "question": "What exact user/service menu order and local numbers are displayed on the UK target firmware?",
+      "neededEvidence": "Pictures or video of every top-level user/service option after authorised entry; no authentication codes."
+    },
+    {
+      "id": "no-live-transport",
+      "reason": "All data are fictional local state. No codes, tag enrolment, RF exchanges, remote software, cloud registration, monitoring, reset algorithm or factory authentication is supplied.",
+      "affectedNodeIds": [
+        "r-e5",
+        "r-u-anti",
+        "r-u-tag",
+        "r-u-delete-by-tag"
+      ],
+      "question": "Which disconnected service workflows are useful to model next?",
+      "neededEvidence": "Manufacturer instructions and a bench-only screen sequence, excluding credentials and live monitoring actions."
+    },
+    {
+      "id": "lamp-brightness-number",
+      "reason": "Detailed p214 prints 07.1 for both Lamp Type and Brightness, while appendix p261 prints 07.2 for Brightness. The conflicting Brightness quick code is not exposed as an interactive shortcut.",
+      "affectedNodeIds": [
+        "r-e8.3.1"
+      ],
+      "question": "Is Lamp Brightness 07.1 or 07.2 on the specified BUS sounder and panel revision?",
+      "neededEvidence": "The displayed Lamp submenu with the exact sounder model and firmware identified."
+    }
+  ],
+  "sourceCorrections": {
+    "PSTN Parameters": "5.1.1.3 from p153; p257 incorrectly repeats 2.",
+    "Zone types": "Full table pp107–114 supersedes inconsistent old summary p104.",
+    "Device controls": "p95–96 includes 4,6,7,8,9 omitted from appendix p254; no code 5 is invented.",
+    "Resistance": "2.1.3 p130 is configuration; diagnostic is installer Maintenance, p222.",
+    "Firmware": "No specific firmware build asserted for the G manual; modern 5IN2912/LightSYS+ excluded."
+  },
+  "fixtureValues": "All stored values, records, event times, readings and device responses are fictional.",
+  "notImplementedAsHardware": [
+    "One By One zone wizard",
+    "Output programming wizard",
+    "Device allocation and RF calibration",
+    "Firmware download",
+    "Reset/anticode and factory credentials",
+    "Cloud/monitoring/telephone exchanges"
+  ]
+}

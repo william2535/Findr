@@ -1,0 +1,14 @@
+{
+  "project_id": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
+  "version_number": 48,
+  "version_id": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_a3a4aee3ede48191ab99e6adf55fa455",
+  "deployment_id": "appgdep_6af30dafd02c8191a19d09a72c974346",
+  "status": "succeeded",
+  "url": "https://findr-fault-finder.floodyyy21.chatgpt.site",
+  "release_commit": "6b8875ccaf0899ad45121677a08842b007715cac",
+  "app_version": "0.27.0",
+  "app_build": "ca538710da52",
+  "verified_assets": "live-assets.json",
+  "verified_browser": "live-browser.json",
+  "signed_apk": "0.14.1 unchanged"
+}

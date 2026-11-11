@@ -1,0 +1,43 @@
+{
+  "fixtureNotice": "Every site, person, identifier, time and reading in this file is synthetic. These examples are not manufacturer limits or approved test procedures.",
+  "legacy": {
+    "id": "synthetic-legacy-unknown-model",
+    "site": "SYNTHETIC Training House",
+    "notes": "Earlier engineer: rear-store input inaccessible. Original free text must survive.",
+    "message": "SYNTHETIC intermittent high resistance",
+    "answers": {},
+    "panel": {"brand": "Unknown", "model": "Unknown", "category": "intruder", "record_ids": []}
+  },
+  "radial": {
+    "id": "synthetic-radial-visit",
+    "site": "SYNTHETIC Training House",
+    "panel": {"brand": "Unknown", "model": "Unknown", "category": "fire", "record_ids": []},
+    "message": "SYNTHETIC conventional zone 3 open",
+    "started": 1792484040000,
+    "answers": {},
+    "notes": ""
+  },
+  "door": {
+    "id": "synthetic-door-visit",
+    "site": "SYNTHETIC Training House",
+    "panel": {"brand": "Unknown", "model": "Unknown", "category": "access", "record_ids": []},
+    "message": "SYNTHETIC Door 2 will not release",
+    "started": 1792484040000,
+    "answers": {},
+    "notes": ""
+  },
+  "powerPairs": [
+    {"pair": "L–N", "rawText": "231", "unit": "V AC", "executionState": "performed"},
+    {"pair": "L–PE", "rawText": "232", "unit": "V AC", "executionState": "performed"},
+    {"pair": "N–PE", "rawText": "1.2", "unit": "V AC", "executionState": "performed"}
+  ],
+  "rawResults": [
+    {"rawText": "0", "unit": "Ω", "source": "meter", "executionState": "performed"},
+    {"rawText": "OL", "unit": "Ω", "source": "meter", "executionState": "performed"},
+    {"rawText": "no reading", "unit": "V DC", "source": "meter", "executionState": "performed"},
+    {"rawText": "fluctuating", "unit": "V DC", "source": "meter", "executionState": "performed"},
+    {"rawText": "not tested", "unit": "Ω", "source": "human_report", "executionState": "deferred"},
+    {"rawText": "unknown", "unit": "Ω", "source": "human_report", "executionState": "inaccessible"},
+    {"rawText": "1.967", "unit": "kΩ", "source": "panel", "executionState": "performed"}
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "release": "0.12.3",
+  "preview_url": "http://terminal.local:4173/",
+  "date": "2026-10-30",
+  "release_page": {
+    "version": "0.12.3",
+    "new_families": 45,
+    "total_families": 549,
+    "apk_href": "/releases/FINDR-0.12.3.apk",
+    "open_findr_link_reaches_app": true
+  },
+  "library": {
+    "families": 549,
+    "brands": 74,
+    "packs": 80,
+    "uk_first_default": true,
+    "existing_priority_models_retained": true,
+    "esser_filter_cards": 3,
+    "esser_images_loaded": true,
+    "iq8control_source_and_both_exact_manual_links_visible": true,
+    "downloads_panel_packs_visible": true,
+    "castle_picture_only_status_visible": true
+  },
+  "responsive": [
+    {
+      "frame_width": 390,
+      "client_width": 375,
+      "scroll_width": 375,
+      "content": "Aiphone GT pictured cards and modular GT model/source dialog",
+      "horizontal_overflow": false
+    },
+    {
+      "frame_width": 320,
+      "client_width": 305,
+      "scroll_width": 305,
+      "content": "Axis controller/recorder cards, CCTV type filter and original S2208/S2212 source dialog",
+      "horizontal_overflow": false
+    }
+  ],
+  "screenshots": [
+    "pack-preview.jpg",
+    "phone-preview.jpg"
+  ],
+  "limits": [
+    "HTTP preview is not evidence of installed PWA/offline readiness.",
+    "No physical phone APK installation or hardware panel test performed."
+  ],
+  "temporary_qa_page_removed": true
+}

@@ -1,0 +1,515 @@
+{
+  "schemaVersion": 1,
+  "profileId": "gent-vigilon",
+  "release": "0.10.0",
+  "reviewedOn": "2026-10-29",
+  "modelScope": {
+    "family": "Vigilon",
+    "variant": "Full-size EN Vigilon 4/6-loop panel with 2 km loop cards",
+    "models": [
+      "VIG1-24",
+      "VIG1-72"
+    ],
+    "operatorDocument": "gent-vigilon-4188-1025-2015",
+    "menuMapDocument": "gent-vigilon-4188-856-2015",
+    "menuMapFirmware": "EN54 (V4), MCC/MCB V4.53 or higher as printed in Appendix A-1",
+    "editionBoundary": "This is the July 2015 classic full-size family, not a claimed match for Vigilon Plus, Compact, Compact VA, Nano or every later firmware revision.",
+    "practiceConfiguration": "Fictional single local panel, two commissioned loops, three zones, six devices; integral printer fitted and initially off.",
+    "display": {
+      "rows": 8,
+      "columns": 40
+    },
+    "selectionReason": "The operator manual and matching dated generic menu appendix provide strong, inspectable source coverage; no market-share claim is made."
+  },
+  "sources": [
+    {
+      "id": "gent-vigilon-4188-1025-2015",
+      "title": "Vigilon panel and Network node - Operating instructions",
+      "publisher": "Gent by Honeywell",
+      "documentNumber": "4188-1025",
+      "edition": "July 2015; printed footer issue 4_07-15; metadata and preface describe issue 2",
+      "url": "https://www.midlandfiresecurity.co.uk/wp-content/uploads/2019/05/gent-honeywell-vigilon-Vig-4-6-loops-Oper_2km-4188-1025.pdf",
+      "originalPublisher": true,
+      "hostType": "Manufacturer document mirrored by a fire-system installer",
+      "pages": 40,
+      "sha256": "e065bfe4221da2a1ab1d02df943b2c5442d21abfd519fe6c13c3369201473caa",
+      "reviewedPages": [
+        1,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        38,
+        40
+      ],
+      "note": "Primary operator procedure source. Several internal inconsistencies are explicitly recorded in the audit."
+    },
+    {
+      "id": "gent-vigilon-4188-856-2015",
+      "title": "Generic Commissioning Instructions for Vigilon 4/6 loop & Compact range of fire panels & network nodes",
+      "publisher": "Gent by Honeywell",
+      "documentNumber": "4188-856",
+      "edition": "Issue 7, 07/15",
+      "url": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon_and_vigilon_compact-installation-2015.pdf",
+      "originalUrl": "https://www.gentexpert.co.uk/downloads/Addressable/Vigilon/VIG1-24_72/4188-856.pdf",
+      "originalUrlStatus": "Returned 404 when independently opened during this audit",
+      "originalPublisher": true,
+      "hostType": "Original Gent manual downloaded from an archive mirror",
+      "pages": 162,
+      "sha256": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+      "reviewedPages": [
+        1,
+        53,
+        54,
+        58,
+        59,
+        60,
+        81,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106
+      ],
+      "note": "Appendix A-1 covers EN54 (V4) Vigilon with MCC/MCB V4.53 or higher. Compact VA-only and fitted-option branches are excluded or marked conditional. The working archive URL is used for page links."
+    },
+    {
+      "id": "gent-vigilon-4188-1024-2015",
+      "title": "Vigilon VIG1-24 and VIG1-72 installation instructions",
+      "publisher": "Gent by Honeywell",
+      "documentNumber": "4188-1024",
+      "edition": "Printed issue 4_07-15",
+      "url": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vig1-24_and_vig1-72-installation-2015.pdf",
+      "originalPublisher": true,
+      "hostType": "Manufacturer document archive mirror",
+      "pages": 48,
+      "sha256": "c64000863faf305f1949a96cc0356576a7bb7229a117424cc1a72bcfe9f439d6",
+      "reviewedPages": [
+        1,
+        2,
+        5,
+        12,
+        15,
+        16,
+        48
+      ],
+      "note": "Printed p12 and pp15-16 confirm up to four/six loop circuits, up to 200 devices per loop and 32-character device / 28-character MCP labels; p48 identifies the issue."
+    }
+  ],
+  "method": "Original manufacturer PDF text extraction plus rendered inspection of physical-control pages and Appendix A-1 pages 98-106. Operator instructions take precedence for verified key drills; conflicting or conditional branches remain explicit reference entries.",
+  "findings": [
+    {
+      "id": "issue-identification",
+      "severity": "edition",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            3,
+            40
+          ]
+        }
+      ],
+      "finding": "PDF metadata title and preface say issue 2 / second issue, while the final printed footer says issue 4_07-15.",
+      "resolution": "Identify the source by document number, July 2015, panel scope and SHA256; preserve both issue descriptions."
+    },
+    {
+      "id": "loop-limits",
+      "severity": "scope",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            22,
+            25,
+            29,
+            32,
+            38
+          ]
+        },
+        {
+          "sourceId": "gent-vigilon-4188-856-2015",
+          "pages": [
+            98,
+            104,
+            106
+          ]
+        }
+      ],
+      "finding": "Full-size operator instructions repeatedly use loop 1-2 despite p22 describing cards 1-4 and up to six for VIG1-72. Generic appendix selectors allow 1-8.",
+      "resolution": "The fictional commissioned site has only loops 1 and 2. No claim that two or eight is the hardware capacity of the selected 4/6-loop panel."
+    },
+    {
+      "id": "device-limits",
+      "severity": "scope",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            25,
+            29,
+            32
+          ]
+        },
+        {
+          "sourceId": "gent-vigilon-4188-856-2015",
+          "pages": [
+            98,
+            104
+          ]
+        }
+      ],
+      "finding": "Operator device range is 1-200; generic appendix parameter boxes use 1-207.",
+      "resolution": "Operator forms use the documented 1-200 range and validate against the fictional installed devices. Extended/reserved addresses are not assumed."
+    },
+    {
+      "id": "repair-route",
+      "severity": "route-conflict",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            20,
+            21,
+            38
+          ]
+        }
+      ],
+      "finding": "Repair p38 says F1 Test/Eng, contradicting the visible F4 top-level mapping, and says F1 Loop after UserCode where PIN-change p21 specifies F1 NewPass.",
+      "resolution": "Repair is reference-only, with no fabricated exact button lesson."
+    },
+    {
+      "id": "zone-test-order",
+      "severity": "route-conflict",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-856-2015",
+          "pages": [
+            81,
+            105
+          ]
+        }
+      ],
+      "finding": "The narrative orders Test > Zone > On/Off, but the appendix diagram orders Test > Off/On > Zone. It is an engineer-only function.",
+      "resolution": "Show source explanation and a preconfigured fictional Zone Test scenario; do not offer an exact source-verified F-key route."
+    },
+    {
+      "id": "fare-switch-key",
+      "severity": "route-conflict",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            26
+          ]
+        },
+        {
+          "sourceId": "gent-vigilon-4188-856-2015",
+          "pages": [
+            98
+          ]
+        }
+      ],
+      "finding": "Operator p26 says choose FARE with F4 after cycling <etc>; the generic control map positions FARE before <etc>.",
+      "resolution": "FARE output On/Off is a source-reference branch."
+    },
+    {
+      "id": "aux-disable-key",
+      "severity": "route-conflict",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            27,
+            28
+          ]
+        },
+        {
+          "sourceId": "gent-vigilon-4188-856-2015",
+          "pages": [
+            98
+          ]
+        }
+      ],
+      "finding": "Operator p28 says Aux Rly is F2 after three <etc> presses. p27 says FPE is F2; the appendix page places FARE,FPE,AuxRly in that order.",
+      "resolution": "Show appendix order in the reference map; Aux Rly operation remains reference-only."
+    },
+    {
+      "id": "zone-mcp-behaviour",
+      "severity": "behaviour-gap",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            25,
+            26
+          ]
+        }
+      ],
+      "finding": "July 2015 operator text describes individual MCP sensing disablement but does not explicitly state MCP behaviour when a zone is disabled. An older 1999 manual differs in scope and is not silently imported.",
+      "resolution": "The zone-disable lesson uses Zone 2, with no MCP. Full MCP-in-zone behaviour requires panel-specific confirmation."
+    },
+    {
+      "id": "delay-indicator-label",
+      "severity": "source-typo",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            7,
+            9
+          ]
+        }
+      ],
+      "finding": "The p9 indicator table calls the delay-block row Sounder; the physical-face illustration labels it Delay.",
+      "resolution": "Use the physical-face Delay label and explain its delay-block meaning."
+    },
+    {
+      "id": "zone-31-artwork",
+      "severity": "source-typo",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            7,
+            8
+          ]
+        }
+      ],
+      "finding": "The face artwork repeats 30 in the 17-32 zone row.",
+      "resolution": "Render the normal continuous zone numbers 1-32 and disclose the artwork discrepancy here."
+    },
+    {
+      "id": "fpe-wording",
+      "severity": "source-typo",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            27
+          ]
+        }
+      ],
+      "finding": "Within the FPE procedure one line says FARE while its headings, choice and confirmation all say FPE.",
+      "resolution": "Keep FPE terminology based on the explicit heading, selector and confirmation; FPE operation is reference-only."
+    },
+    {
+      "id": "io-edit-key",
+      "severity": "route-distinction",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            30,
+            33
+          ]
+        }
+      ],
+      "finding": "View IO label uses F2 Device; Edit IO label explicitly uses F3 Device.",
+      "resolution": "Preserve each printed route rather than standardising the two."
+    },
+    {
+      "id": "printer-branch",
+      "severity": "conditional",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            22,
+            23,
+            29,
+            30,
+            31
+          ]
+        }
+      ],
+      "finding": "Display/Print selection is skipped if the printer is absent or switched off.",
+      "resolution": "Start with a fitted printer switched off and dynamically include output selection when switched on."
+    },
+    {
+      "id": "operator-vs-engineer",
+      "severity": "access",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-856-2015",
+          "pages": [
+            53
+          ]
+        },
+        {
+          "sourceId": "gent-vigilon-4188-856-2015",
+          "pages": [
+            98,
+            100,
+            104,
+            105
+          ]
+        }
+      ],
+      "finding": "AL1, AL2a, AL2b and AL3 have different visibility. Compact VA, D1 voice, SD card, radio, network and Freeblock conditions introduce further branches.",
+      "resolution": "Customer routes are interactive; engineering and fitted-option branches are clearly marked in the searchable source map."
+    },
+    {
+      "id": "qwerty-editor",
+      "severity": "training-approximation",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            7,
+            10,
+            32,
+            33,
+            34,
+            35
+          ]
+        }
+      ],
+      "finding": "The keyboard includes Insert, Delete, Shift and cursor keys; the operator text does not fully specify cursor editing semantics.",
+      "resolution": "FINDR uses a documented training text editor and enforces source label limits; no claim of byte-for-byte firmware editing behaviour."
+    },
+    {
+      "id": "alarm-timing",
+      "severity": "training-approximation",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            13,
+            14,
+            15,
+            21
+          ]
+        },
+        {
+          "sourceId": "gent-vigilon-4188-856-2015",
+          "pages": [
+            81
+          ]
+        }
+      ],
+      "finding": "Display test and Zone Test have approximate documented durations; real alarm behaviour depends on commissioning.",
+      "resolution": "Use training timing and distinguish rising hint tones from physical panel sounds."
+    },
+    {
+      "id": "clock-year-bounds",
+      "severity": "training-approximation",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            24
+          ]
+        }
+      ],
+      "finding": "The source documents the clock-field order and controls but does not specify a permitted year range.",
+      "resolution": "The practice date editor uses 2000-2099 as an explicit FINDR calendar limit, not a claimed Gent hardware or firmware limit."
+    },
+    {
+      "id": "generic-form-shortcuts",
+      "severity": "evidence-gap",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            20
+          ]
+        },
+        {
+          "sourceId": "gent-vigilon-4188-856-2015",
+          "pages": [
+            98,
+            100,
+            104
+          ]
+        }
+      ],
+      "finding": "Params, Cancel and Quit exist in the documentation, but their exact function-key positions are not established independently for every form.",
+      "resolution": "Live forms show only individually verified route keys. Field guidance is presented as FINDR help; Menu On/Off remains the verified abort control. Active-event result F4 Quit is separately verified by operator p23."
+    }
+  ],
+  "nodeCount": 96,
+  "menuReferenceCount": 343,
+  "sourcePageScope": {
+    "operator": [
+      7,
+      8,
+      9,
+      10,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      38,
+      40
+    ],
+    "menuMaps": [
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106
+    ]
+  },
+  "openEvidenceRequests": [
+    "A recording of the identified full-size panel at customer access showing initial Test/Eng choices after UserCode.",
+    "A recording or corrected manufacturer instruction confirming FARE manual-switch and Aux Rly enable/disable function-key positions.",
+    "A panel/software-specific confirmation of Zone Test selector order and MCP behaviour under zone disablement.",
+    "A firmware/card-specific definition of extended device addresses 201-207 and loop selector values beyond fitted physical loops."
+  ],
+  "notClaimed": [
+    "Full firmware equivalence",
+    "Vigilon Plus or Compact equivalence",
+    "Live cause-and-effect commissioning",
+    "Credential recovery or engineering password generation",
+    "All conditional branches enabled",
+    "Certification or manufacturer endorsement"
+  ]
+}

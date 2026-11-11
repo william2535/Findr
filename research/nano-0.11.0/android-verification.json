@@ -1,0 +1,15 @@
+{
+  "version": "0.11.0",
+  "versionCode": 15,
+  "bytes": 21722749,
+  "sha256": "fdc4bdae4002701784ea9bc3ecb47450c7e904dbf02d6ce1bc1b6276e043ce06",
+  "appFiles": 711,
+  "allBundledAssetsMatch": true,
+  "signerCertificateSha256": "6075a73725dac5a3cc1f7b6b32c5e1df907cd1ca4b5b611f4c1c1d2fd502fefd",
+  "minSdk": 26,
+  "targetSdk": 35,
+  "permissions": [
+    "android.permission.INTERNET"
+  ],
+  "physicalInstallTested": false
+}

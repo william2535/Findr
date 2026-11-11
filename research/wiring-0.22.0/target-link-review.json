@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "version": "0.22.0",
+  "reviewedOn": "2026-11-02",
+  "scope": "Independent review of new diagram-to-target associations that were not already in the original target record_ids. These links do not modify the original catalogue, device or panel records.",
+  "method": "Read original source text and inspected selected complete-page images. Applicability is established by explicit source model names and figure scope, not by matching titles or manufacturer names.",
+  "approved": [
+    {
+      "recordId": "c-tec-44b03d254ee3",
+      "panelIds": [
+        "c-tec-xfp-16-zone"
+      ],
+      "deviceIds": [],
+      "pdfPages": [
+        9,
+        10
+      ],
+      "evidence": [
+        "The source cover identifies XFP Single Loop 16 Zone Version, DFU1200510 Rev 1.",
+        "Page 9 shows the single analogue-loop connection to the main board. Page 10 identifies conventional sounder, auxiliary input and relay connections."
+      ],
+      "limits": "Do not substitute the separate 32-zone panel edition.",
+      "sourceSha256": "e65934abe0148df1d9230c032e8a008e2c043310f36971f06802937cc79c642b",
+      "edition": "DFU1200510 Rev 1",
+      "reviewStatus": "source-reviewed"
+    },
+    {
+      "recordId": "c-tec-ba3f93b60d06",
+      "panelIds": [
+        "c-tec-xfp-32-zone"
+      ],
+      "deviceIds": [],
+      "pdfPages": [
+        9,
+        10,
+        11
+      ],
+      "evidence": [
+        "The source cover explicitly identifies XFP 1 or 2 Loop 32 Zone Version, DFU2200510 Rev 2.",
+        "Pages 9\u201311 identify loop connections (including an additional loop connector if applicable), sounder/input/relay connections, and RS232/battery connections."
+      ],
+      "limits": "The second loop exists only if fitted, as stated by the source; this edition is separate from the 16-zone panel.",
+      "sourceSha256": "a56ad3e3160fa617e4d024dba54bc0e378f5542855be71ee3a35b90083b1faea",
+      "edition": "DFU2200510 Rev 2",
+      "reviewStatus": "source-reviewed"
+    },
+    {
+      "recordId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+      "panelIds": [
+        "gent-vigilon-4-6-loop"
+      ],
+      "deviceIds": [],
+      "pdfPages": [
+        28
+      ],
+      "evidence": [
+        "The complete page is explicitly labelled Vigilon 4/6 loop panels and Figure 13, Typical terminal card 8 zones.",
+        "The combined manual also covers Compact, but this selected page establishes the 4/6-loop model applicability directly."
+      ],
+      "limits": "A terminal-card layout does not establish general compatibility between Compact and 4/6-loop panels.",
+      "sourceSha256": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+      "edition": "4188-856 Issue 7, July 2015",
+      "reviewStatus": "source-reviewed"
+    },
+    {
+      "recordId": "kentec-21f0fd797fe0",
+      "panelIds": [
+        "kentec-syncro"
+      ],
+      "deviceIds": [],
+      "pdfPages": [
+        7,
+        16,
+        28
+      ],
+      "evidence": [
+        "The source cover identifies Syncro Multi Loop Analogue Addressable Fire Control Panel, Man-1055 Issue 26 May 2016.",
+        "Page 7 is the terminal-plate layout; page 16 separately shows FIRE ROUTING and MONITORED AUX output examples; page 28 shows the Syncro node network IN/OUT ring."
+      ],
+      "limits": "The network-ring picture is not detector-loop wiring. Source conditions and board requirements remain visible on the full page.",
+      "sourceSha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd",
+      "edition": "Man-1055 Issue 26, May 2016",
+      "reviewStatus": "source-reviewed"
+    },
+    {
+      "recordId": "hochiki-f97bdbde045d",
+      "panelIds": [],
+      "deviceIds": [
+        "hochiki-aln-en",
+        "hochiki-acc-en",
+        "hochiki-atj-en",
+        "hochiki-acd-en",
+        "hochiki-acb-ew",
+        "hochiki-ybn-r3",
+        "hochiki-ybv-r4"
+      ],
+      "pdfPages": [
+        1
+      ],
+      "evidence": [
+        "The original PDF header states: SENSORS COVERED: ACC, ATJ, ALG, ACA, ACB, ALN, ACD (all variants).",
+        "The compatible-base header explicitly includes YBN-R/3 and YBV-R/4 (all variants). The body directs base wiring to Figure 1 and explicitly states that ACB-EW uses flying leads and its own fixing base.",
+        "The rendered page visibly contains separately labelled YBN-R/3 / YBN-R/3M, ACB-EW and YBV-R/4 wiring diagrams."
+      ],
+      "limits": "The source explicitly refers YBN-R/3(SCI) and YBN-R/3(SCI)M wiring to instruction 2-3-0-1499. The gallery note preserves that limit.",
+      "sourceSha256": "2a5e9c1f7c6e667a2758f451bb2d85661d880ebc590e96042a7a07f1d09acb9a",
+      "edition": "2-3-0-246/ISS19/AUG18",
+      "reviewStatus": "source-reviewed"
+    },
+    {
+      "recordId": "protec-502abea1875d",
+      "panelIds": [],
+      "deviceIds": [
+        "protec-6000plus-base"
+      ],
+      "pdfPages": [
+        2
+      ],
+      "evidence": [
+        "The source explicitly identifies 3000PLUS/BASE and 6000PLUS/BASE, including different continuity mechanisms.",
+        "Page 2 shows separately labelled 3000PLUS Detector Wiring Details and 6000PLUS Detector Wiring Details."
+      ],
+      "limits": "The 3000PLUS diode belongs to its own drawing; the 6000PLUS loop drawing is distinct, as preserved in the gallery note.",
+      "sourceSha256": "906a3a6f0db18034e7850ba10ba724e409cefc6b7d76449d3e23a22d2a7aa7f5",
+      "edition": "MED2042 Issue 2, \u00a9 2015\u20132019",
+      "reviewStatus": "source-reviewed"
+    }
+  ],
+  "rejected": [
+    {
+      "recordId": "hochiki-ea524f5d80ee",
+      "sourceSha256": "134cd17c1c21e56958964988dc4ed518fe2704424991b6d58ba01b2376585720",
+      "deviceId": "hochiki-chq-ari",
+      "reason": "The source names CHQ-ARI(CLR), while the existing target only records CHQ-ARI. No evidence establishes interchangeability of these variants.",
+      "resolution": "Removed the generic device link; retained the correctly named CHQ-ARI(CLR) page for source-only gallery discovery."
+    }
+  ]
+}

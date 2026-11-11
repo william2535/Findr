@@ -1,0 +1,15 @@
+{
+  "release": "0.13.2",
+  "base_commit": "e2fdd025d21e190b90d8f4589cf50890ca0a9f66",
+  "app_build": "4c07d2e732ad",
+  "precache_assets": 846,
+  "panel_families": 549,
+  "panel_packs": 80,
+  "archive_records": 12377,
+  "device_families": 24,
+  "device_packs": 3,
+  "active_device_pack_documents": 22,
+  "supplementary_device_references": 17,
+  "panel_data_and_images_unchanged": true,
+  "device_data_documents_images_and_maps_unchanged": true
+}

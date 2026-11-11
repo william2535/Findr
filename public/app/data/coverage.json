@@ -1,0 +1,257 @@
+{
+  "generated": "2026-11-02",
+  "repository_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+  "pictured_families": 615,
+  "brands": 80,
+  "packs": 86,
+  "unresolved": [
+    {
+      "id": "simplex-4100",
+      "brand": "Simplex",
+      "model": "4100",
+      "status": "awaiting-image-review",
+      "reason": "The official 4100-M001 Issue1.2 manual shows a faint Australian operator-interface drawing. A clear exterior photograph for the intended legacy 4100 variant remains unverified; 4100U and4100ES photographs are not substitutes.",
+      "record_ids": [
+        "facp-6cc18b4b-c119-4d72-922c-7511ef87e447",
+        "facp-542dd48b-6d3a-4d40-a52d-1aa8130e58bf",
+        "facp-c4641de6-7659-4791-896b-44185dc91eeb"
+      ],
+      "reviewed": "2026-10-29",
+      "source_document_url": "https://docs.johnsoncontrols.com/simplex/api/khub/documents/t6f4epQOVWTdkM6bOU5aig/content",
+      "source_sha256": "fb3cfd01b3713bce270b0bae38e939d6f88911ceb5e908dd91234257b17fbcbd"
+    },
+    {
+      "id": "haes-level-1-4-twin",
+      "brand": "Haes",
+      "model": "Level 1-4 TWIN",
+      "status": "unresolved",
+      "reason": "Rechecked the manufacturer manual and public sources. The available boards, connection diagrams or text do not establish a clear exterior/fascia identification image.",
+      "record_ids": [
+        "haes-317313906c9c"
+      ],
+      "reviewed": "2026-10-29",
+      "source_document_url": "https://haes-tech.com/app/uploads/2019/10/Level-1-4-TWIN-manual.pdf",
+      "source_sha256": "fd728024d454356b8c8e86bca3af5b59831d56765046ba68524a4a585d9e9444"
+    },
+    {
+      "id": "haes-level-2-1cd",
+      "brand": "Haes",
+      "model": "Level 2-1CD",
+      "status": "unresolved",
+      "reason": "Rechecked the manufacturer manual and public sources. The available boards, connection diagrams or text do not establish a clear exterior/fascia identification image.",
+      "record_ids": [
+        "haes-4770add6f3df"
+      ],
+      "reviewed": "2026-10-29",
+      "source_document_url": "https://haes-tech.com/app/uploads/2019/10/Level-2-1CD-manual.pdf",
+      "source_sha256": "ceefb8951a76e46c0b2aa906f0b56835fc6067a4e82849ca9dee830ed8190ad3"
+    },
+    {
+      "id": "haes-firemax",
+      "brand": "Haes",
+      "model": "Firemax",
+      "status": "unresolved",
+      "reason": "Rechecked the manufacturer manual and public sources. The available boards, connection diagrams or text do not establish a clear exterior/fascia identification image.",
+      "record_ids": [
+        "haes-653dc7d77bcb"
+      ],
+      "reviewed": "2026-10-29",
+      "source_document_url": "https://haes-tech.com/app/uploads/2019/10/Firemax-installation-manual.pdf",
+      "source_sha256": "4253630cab5d07a57f88bb840b7f4fb452fd4af8e6282d9ab5e4ba0ec9c79ff0"
+    },
+    {
+      "id": "haes-9012",
+      "brand": "Haes",
+      "model": "9012",
+      "status": "unresolved",
+      "reason": "Rechecked the manufacturer scan, including its drawing sheets. It contains text and connection/board diagrams, without a clear verified exterior or complete fascia image.",
+      "record_ids": [
+        "haes-7f89a3aecdc0"
+      ],
+      "reviewed": "2026-10-29",
+      "source_document_url": "https://haes-tech.com/app/uploads/2019/10/9012-manual.pdf",
+      "source_sha256": "7e74ef6f2aeda62a02dbda471acffcdc8f2fd8d3cc75916ff1d277dfd3078cbc"
+    },
+    {
+      "id": "haes-9001sd",
+      "brand": "Haes",
+      "model": "9001SD",
+      "status": "unresolved",
+      "reason": "Rechecked the manufacturer scan, including its drawing sheets. It contains text and connection/board diagrams, without a clear verified exterior or complete fascia image.",
+      "record_ids": [
+        "haes-a9a2076a7531"
+      ],
+      "reviewed": "2026-10-29",
+      "source_document_url": "https://haes-tech.com/app/uploads/2019/10/9001SD-manual.pdf",
+      "source_sha256": "a77a16100d79cf813ebe3431fcbcd053f67a36b3b14676396f49b5414f9e8ca2"
+    },
+    {
+      "id": "haes-level-1-4",
+      "brand": "Haes",
+      "model": "Level 1-4",
+      "status": "unresolved",
+      "reason": "Rechecked the manufacturer manual and public sources. The available boards, connection diagrams or text do not establish a clear exterior/fascia identification image.",
+      "record_ids": [
+        "haes-af1a326cf3f3"
+      ],
+      "reviewed": "2026-10-29",
+      "source_document_url": "https://haes-tech.com/app/uploads/2019/10/Level-1-4-manual.pdf",
+      "source_sha256": "c91840e6023de6650e1e4608f9be1caa20dae83259c017481011217d4a094c81"
+    },
+    {
+      "id": "haes-6000-series",
+      "brand": "Haes",
+      "model": "6000 Series",
+      "status": "unresolved",
+      "reason": "The available official source is a one-page connection schematic. It does not show a usable cabinet or front fascia.",
+      "record_ids": [
+        "haes-b06e971644c9"
+      ],
+      "reviewed": "2026-10-29",
+      "source_document_url": "https://haes-tech.com/app/uploads/2019/10/6000-Series-manual.pdf",
+      "source_sha256": "8034202a88e5cd209610f9c89975fb125e9db0d235b28a4be06dce7959e0855c"
+    },
+    {
+      "id": "haes-8000-series",
+      "brand": "Haes",
+      "model": "8000 Series",
+      "status": "unresolved",
+      "reason": "Rechecked the manufacturer scan, including its drawing sheets. It contains text and connection/board diagrams, without a clear verified exterior or complete fascia image.",
+      "record_ids": [
+        "haes-bd3b175ffb6c"
+      ],
+      "reviewed": "2026-10-29",
+      "source_document_url": "https://haes-tech.com/app/uploads/2019/10/8000-Series-manual.pdf",
+      "source_sha256": "e5dc8f3354dd65550eb7a8659db4da24f91e3eb8cbc16d717fd801915f1121fa"
+    },
+    {
+      "id": "eaton-scantronic-500r-picture-review",
+      "brand": "Eaton / Scantronic",
+      "model": "500r",
+      "status": "needs-exterior-image",
+      "record_ids": [
+        "eaton-scantronic-de9041bab79e"
+      ],
+      "reason": "The existing two-page original user guide has operating-button symbols but no adequate full exterior image. It was not promoted using an invented or generic cabinet.",
+      "sources": [
+        "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Scantronic%20500r%20user%20guide.pdf"
+      ]
+    },
+    {
+      "id": "bell-system-bellini",
+      "brand": "Bell System",
+      "model": "Bellini entrance panel family",
+      "category": "access-control",
+      "status": "image-download-blocked",
+      "record_ids": [],
+      "source_page_url": "https://bellsystem.co.uk/products/door-entry-panels/bellini-series",
+      "source_image_url": "https://bellsystem.co.uk/uploads/bellini_range_2363x303.png",
+      "reason": "Official family and picture URL verified, but both direct public hosts returned a 202 HTML response rather than image bytes. A failed download was kept in research only. No substitute picture was used."
+    },
+    {
+      "id": "bell-system-portabello",
+      "brand": "Bell System",
+      "model": "Portabello entrance panel family",
+      "category": "access-control",
+      "status": "image-download-blocked",
+      "record_ids": [],
+      "source_page_url": "https://bellsystem.co.uk/products/door-entry-panels/portabello-range",
+      "source_image_url": "https://bellsystem.co.uk/uploads/PORTA.png",
+      "reason": "Official product identity and asset URL verified, but direct download returned HTML instead of a usable image. Deferred rather than substituting a visually similar SPA or VRP panel."
+    },
+    {
+      "id": "comelit-ikall",
+      "brand": "Comelit",
+      "model": "Ikall entrance panel family",
+      "category": "access-control",
+      "status": "research-deferred",
+      "record_ids": [],
+      "source_page_url": "https://pro.comelitgroup.com/en-gb/product/ikall-avdig",
+      "reason": "Manufacturer family page found; product site denied direct requests. No clear, complete Ikall image was obtained and inspected within this bounded batch. Existing accessory references do not establish a complete panel manual."
+    },
+    {
+      "id": "comelit-3one6-sense",
+      "brand": "Comelit",
+      "model": "3ONE6 Sense entrance panel",
+      "category": "access-control",
+      "status": "research-deferred",
+      "record_ids": [],
+      "considered_catalogue_record_ids": [
+        "comelit-96fce5a539a7"
+      ],
+      "source_page_url": "https://comelit-pac.co.uk/installer/products/door-entry-systems/3one6/",
+      "reason": "Downloaded candidate manual is a 3457U 8-inch touch module Wiegand integration manual. It does not establish applicability to 3ONE6 Sense. Touch imagery and manual were not reassigned to the buttonless Sense panel."
+    },
+    {
+      "id": "came-bpt-targha",
+      "brand": "CAME / BPT",
+      "model": "Targha entrance panel family",
+      "category": "access-control",
+      "status": "research-deferred",
+      "record_ids": [],
+      "considered_catalogue_record_ids": [
+        "came-bpt-aa6078374efd"
+      ],
+      "source_page_url": "https://www.bptintercoms.co.uk/manuals.html",
+      "attempted_url": "https://docs.came.com/pdf/FB00971-EN.pdf?1644594043",
+      "retrieval_http_status": 404,
+      "attempts": 1,
+      "reason": "The catalogue lead is AGATAkit C200, not proof that all Targha variants are covered. Its public PDF returned 404 on one attempt. No image or manual mapping was invented."
+    },
+    {
+      "id": "pac-512-controllers",
+      "brand": "PAC",
+      "model": "512 DC / DCi controllers",
+      "category": "access-control",
+      "status": "research-deferred",
+      "record_ids": [],
+      "source_page_url": "https://pacgdx.com/product/controller-512-dc-din-mount/",
+      "reason": "Current exact product pages and an older catalogue show inconsistent ordering of DIN/cabinet part numbers in extracted text. The batch adds the separately verified 511 DCi only; 512 DC and DCi need model-specific photo and code checks."
+    },
+    {
+      "id": "came-bpt-strikemaster",
+      "brand": "CAME / BPT",
+      "model": "Strikemaster entrance panel",
+      "category": "access-control",
+      "status": "research-deferred",
+      "record_ids": [],
+      "considered_catalogue_record_ids": [
+        "came-bpt-1adb0809da40"
+      ],
+      "source_page_url": "https://www.bptintercoms.co.uk/manuals.html",
+      "attempted_url": "https://cf.bptintercoms.co.uk/media/wysiwyg/CameBPT-Manual/BPT-Strikemaster.pdf",
+      "retrieval_http_status": 403,
+      "attempts": 1,
+      "reason": "The existing exact-title PDF lead returned 403 on one public retrieval attempt. No challenge bypass or repeated retry; no image was substituted."
+    },
+    {
+      "id": "came-bpt-storm-vr",
+      "brand": "CAME / BPT",
+      "model": "Storm VR entrance panel",
+      "category": "access-control",
+      "status": "research-deferred",
+      "record_ids": [],
+      "considered_catalogue_record_ids": [
+        "came-bpt-debc22c5b6e1"
+      ],
+      "source_page_url": "https://www.bptintercoms.co.uk/manuals.html",
+      "attempted_url": "https://cf.bptintercoms.co.uk/media/wysiwyg/CameBPT-Manual/BPT-STORM-VR.pdf",
+      "retrieval_http_status": 403,
+      "attempts": 1,
+      "reason": "The existing exact-title PDF lead returned 403 on one public retrieval attempt. No challenge bypass or repeated retry; no unverified front was substituted."
+    },
+    {
+      "id": "aes-603-legacy",
+      "brand": "AES",
+      "model": "603 legacy wireless entrance panel",
+      "category": "access-control",
+      "status": "research-deferred",
+      "record_ids": [],
+      "considered_catalogue_record_ids": [
+        "aes-bdc411a3a630"
+      ],
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php",
+      "reason": "The two-page Ver.3 manual was downloaded and identifies 603 AB/ABK/HB/HBK with the 1200 keypad model. A clear attributable complete front for that legacy generation was not verified. No newer Prime panel was used as a substitute."
+    }
+  ]
+}

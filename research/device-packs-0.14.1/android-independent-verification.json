@@ -1,0 +1,64 @@
+{
+  "checked_at": "2026-10-30T15:54:20.033833+00:00",
+  "artifact": "/workspace/scratch/dc428cd64ddc/findr/artifacts/FINDR-0.14.1.apk",
+  "apk_bytes": 24126768,
+  "apk_sha256": "b46ed914f92d9715980e74555cdf9f85487530232fa09040f17729d54b075353",
+  "hosting_limit_bytes": 26214400,
+  "hosting_headroom_bytes": 2087632,
+  "zip_integrity": true,
+  "duplicate_zip_paths": false,
+  "bundled_catalogues": {
+    "panels": 611,
+    "panel_packs": 86,
+    "devices": 146,
+    "device_packs": 16,
+    "image_file_or_hash_errors": []
+  },
+  "precache": {
+    "version": "0.14.1",
+    "build": "8e4b0814d673",
+    "recomputed_build": "8e4b0814d673",
+    "assets": 1023,
+    "hash_entries": 1023,
+    "missing_assets": [],
+    "hash_mismatches": [],
+    "apk_app_files": 1026,
+    "source_byte_mismatches": [],
+    "unbundled_source_files": [],
+    "extra_bundled_files": []
+  },
+  "release_blockers": [],
+  "package": "com.findr.app",
+  "version": "0.14.1",
+  "version_code": 26,
+  "min_sdk": 26,
+  "target_sdk": 35,
+  "compile_sdk": 35,
+  "permissions": [
+    "android.permission.INTERNET"
+  ],
+  "signing": {
+    "verified": true,
+    "schemes": [
+      "v2",
+      "v3"
+    ],
+    "signers": 1,
+    "certificate_sha256": "6075a73725dac5a3cc1f7b6b32c5e1df907cd1ca4b5b611f4c1c1d2fd502fefd",
+    "matches_expected_certificate": true
+  },
+  "zipalign_4_bytes": true,
+  "methods": [
+    "aapt dump badging",
+    "apksigner verify --verbose --print-certs",
+    "zipalign -c 4",
+    "ZIP CRC and duplicate-path inspection",
+    "SHA-256 verification for every precache asset and catalogue picture",
+    "Precache build digest recomputation including service worker",
+    "Exact app-file inventory and byte comparison with current public/app"
+  ],
+  "limits": [
+    "Static artifact verification only; no physical Android installation, launch, upgrade or airplane-mode test.",
+    "Original-picture preservation audit was completed for 0.14.0 and was not repeated for this follow-up."
+  ]
+}

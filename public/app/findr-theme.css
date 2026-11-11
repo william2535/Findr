@@ -1,0 +1,523 @@
+/*
+ * FINDR brand layer. Load after the feature stylesheets.
+ * Keep layout, real device faces and operational status colours in their owners.
+ * These selectors style app navigation, cards, forms and learning guidance only.
+ */
+:root {
+  --findr-yellow: #ffcc00;
+  --findr-ink: #101010;
+  --findr-brand-tint: #2a250f;
+  --findr-brand-line: #71601c;
+  --findr-green: #dcdcdc;
+  --bg: var(--findr-ink);
+  --surface: #1b1b1b;
+  --surface2: #272727;
+  --line: #3b3b3b;
+  --text: #fafaf7;
+  --muted: #b7b7bb;
+  --accent: var(--findr-yellow);
+  --dark: var(--findr-ink);
+  /* --red and --orange retain their existing warning and alarm meanings. */
+}
+
+/* Preserve inherited letter legends and keyboard focus on the original skins. */
+.practice-keypad {
+  --muted: #a4b1bc;
+  --accent: #bded94;
+}
+
+/* App identity and shared actions. */
+h1, h2, h3 { font-weight: 800; }
+.brand-wordmark { color: var(--accent); }
+.eyebrow { font-weight: 800; }
+.header { border-bottom-color: #343434; }
+.header nav a { font-weight: 650; }
+.header nav a:not(.active):hover { background: var(--surface2); color: var(--text); }
+.header nav a.active {
+  background: var(--accent);
+  color: var(--dark);
+  font-weight: 800;
+}
+.header nav a.active #download-count:not(:empty) {
+  background: var(--dark);
+  color: var(--accent);
+}
+.icon-button { background: var(--surface); border-color: #4a4a4a; color: var(--text); }
+.icon-button:hover { border-color: var(--accent); color: var(--accent); }
+.back:hover { color: var(--accent); }
+.primary,
+.gent-feature .primary,
+.menu-show-hints,
+.emulator-result-hints {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--dark);
+  font-weight: 800;
+}
+.primary:hover,
+.gent-feature .primary:hover,
+.menu-show-hints:hover,
+.emulator-result-hints:hover {
+  background: #ffdb45;
+  border-color: #ffdb45;
+  color: var(--dark);
+}
+.menu-show-hints:focus-visible { outline-color: var(--accent); }
+.secondary { border-color: #515151; font-weight: 700; }
+.secondary:hover { background: #303030; border-color: var(--accent); }
+.subtle { color: #d1d1d3; }
+.subtle:hover { color: var(--text); }
+.tabs button.active { font-weight: 800; }
+
+/* Home, identification and the downloads catalogue. */
+.field-card {
+  background: linear-gradient(140deg, #292929, #171717);
+  border-color: var(--findr-brand-line);
+  box-shadow: 0 16px 50px #0005;
+}
+.field-card-top { color: #d1d1d3; }
+.pill { background: var(--accent); color: var(--dark); font-weight: 800; }
+.field-bottom { border-color: #424242; color: #dadadc; }
+.field-photo,
+.panel-image,
+.pack-photos {
+  background: var(--accent);
+}
+/* Source photography keeps its actual colours against the yellow surround. */
+.field-photo img,
+.panel-image img,
+.pack-photos img { mix-blend-mode: normal; }
+.panel-card:hover { border-color: var(--accent); }
+.notice { background: #252525; color: #d4d4d6; }
+.notice:not(.warning) { border-left-color: var(--accent); }
+.symptom:hover { background: #292719; }
+.progress { background: #3b3b3b; }
+.answer { background: #292929; border-color: #494949; font-weight: 650; }
+.answer:hover { background: #302c17; }
+.answer[data-value="unknown"] { background: transparent; }
+.result-card:first-child { border-color: var(--findr-brand-line); }
+.source a { color: #dfdfdc; text-decoration-color: #898989; }
+.source a:hover { color: var(--accent); }
+.file-icon { background: #292719; border-color: var(--findr-brand-line); color: var(--accent); }
+.download-job,
+.compare-bar {
+  background: #242216;
+  border-color: var(--findr-brand-line);
+}
+.download-job p { color: #d8d8d3; }
+.pack:hover,
+.manual:hover { border-color: #64604a; }
+
+/* Modal and field chrome. Rendered manual pages are left untouched. */
+dialog { border-color: #515151; box-shadow: 0 30px 80px #000b; }
+dialog::backdrop { background: #000c; }
+.reader-canvas { background: #303030; }
+#toast { color: var(--dark); font-weight: 750; }
+main input::placeholder,
+main textarea::placeholder { color: #929296; }
+.practice-task-card select,
+.practice-demo-inputs select,
+.emulator-session-bar select,
+.emulator-field-label input,
+.emulator-field-label select,
+.emulator-report textarea,
+.emulator-hint-record select,
+.gent-search,
+.gent-sim select {
+  background: #121212;
+  border-color: #4c4c4c;
+  color: var(--text);
+}
+
+/* Shared emulator and practice chooser. Miniature keypad skins stay unchanged. */
+.practice-page { --practice-border: #414141; --practice-soft: #252525; }
+.emulator-page { --emulator-border: #414141; }
+.practice-home-callout,
+.practice-intro-note,
+.practice-omit-callout,
+.emulator-intro,
+.gent-feature {
+  background: linear-gradient(135deg, #2a2719, #191919 74%);
+  border-color: var(--findr-brand-line);
+}
+.emulator-intro { box-shadow: inset 4px 0 0 var(--accent); }
+.practice-profile { border-color: #414141; }
+.practice-profile:hover { border-color: var(--accent); }
+.practice-profile-visual,
+.practice-tone-1 .practice-profile-visual,
+.practice-tone-2 .practice-profile-visual,
+.practice-tone-3 .practice-profile-visual {
+  background: var(--accent);
+}
+.practice-visual-caption,
+.practice-visual-bottom { color: var(--dark); font-weight: 800; }
+.practice-profile-photo { background: #fff; }
+.emulator-fire-card .practice-profile-photo { background: transparent; }
+.practice-profile-body p.practice-profile-keypad { color: #d6d6d3; }
+.practice-phrase,
+.emulator-phrase {
+  background: #292929;
+  border-color: #4a4a4a;
+  color: #dfdfdc;
+}
+.practice-phrase:hover,
+.emulator-phrase:hover { border-color: var(--accent); color: var(--accent); }
+.practice-task-result:hover { background: #292719; }
+.practice-session-note {
+  background: #242216;
+  border-color: #5b5129;
+  color: #d7d7d0;
+}
+.practice-keypad-stage,
+.emulator-keypad-stage {
+  background: radial-gradient(ellipse at 45% 42%, #333, #171717 77%);
+  border-color: #484848;
+}
+.practice-stage-label,
+.practice-screen-note,
+.practice-display-note,
+.practice-model-identity > span,
+.practice-model-identity > p,
+.practice-recognition-note,
+.emulator-stage-top,
+.emulator-key-hint,
+.emulator-footer-note,
+.emulator-save-state { color: var(--muted); }
+.practice-model-identity h2 { color: var(--text); }
+.practice-feedback,
+.emulator-feedback {
+  background: #151515cc;
+  border-color: #414141;
+  color: #d1d1d3;
+}
+.practice-route,
+.practice-reference-card dt { color: #e4e4df; }
+.practice-reference-card,
+.practice-source-list article,
+.emulator-session-bar,
+.emulator-detail { background: #1b1b1b; }
+.practice-source-list article > span { color: var(--muted); }
+.practice-task-sources a,
+.practice-recognition-note a,
+.emulator-current-links a {
+  color: var(--accent);
+  text-decoration-color: #8e7618;
+}
+.practice-limitations summary { color: #dfdfdc; }
+.practice-omit-callout .practice-overline { color: var(--accent); }
+.practice-task-actions .practice-mobile-jump { border-color: var(--findr-brand-line); color: var(--accent); }
+.practice-input-button:not(.is-selected),
+.emulator-zone-button:not(.is-selected) {
+  background: #282828;
+  border-color: #494949;
+  color: #d0d0d3;
+}
+.practice-input-button:not(.is-selected):hover,
+.emulator-zone-button:not(.is-selected):hover { border-color: var(--accent); color: var(--text); }
+
+/* Menu maps and documented routes. Warning/reference tags retain amber. */
+.menu-page { --map-border: #444; }
+.menu-page p,
+.menu-numbering dd,
+.menu-entry-evidence li { color: #c2c2c5; }
+.menu-map-card { background: linear-gradient(135deg, #2a281b, #1b1b1b 76%); }
+.menu-card-link,
+.menu-gap { border-color: #4a4a4a; }
+.menu-legend > div > span,
+.menu-kind {
+  border-color: var(--findr-brand-line);
+  background: var(--findr-brand-tint);
+  color: var(--accent);
+}
+.menu-scope { background: #242216; }
+.menu-branch:hover { background: #2b2819; }
+.menu-branch-code { background: var(--accent); border-color: var(--accent); color: var(--dark); }
+.menu-branch-code-blank { background: #2c2c2c; border-color: #494949; color: #b8b8bc; }
+.menu-numbering,
+.menu-contribute { background: #202020; }
+.menu-breadcrumbs a { color: var(--accent); }
+.menu-path-card li { border-left-color: #6d6028; }
+.menu-path-card a { color: #e8e8e2; }
+.menu-path-card a > span { background: var(--findr-brand-tint); color: var(--accent); }
+.menu-source-links a {
+  background: #282719;
+  border-color: #625729;
+  color: var(--accent);
+}
+.menu-source-links a:hover { border-color: var(--accent); }
+.menu-result-heading { color: #e0e0d9; }
+.menu-result-meta strong { color: #c7c7ca; }
+.menu-practice-link { background: #252317; border-color: var(--findr-brand-line); }
+.menu-practice-link p { color: #d0d0ca; }
+
+/* Intruder emulator tools surrounding the physical keypad. */
+.emulator-session-copy strong,
+.emulator-breadcrumb span:last-child,
+.emulator-source-links strong,
+.emulator-search-result > strong,
+.emulator-activity-list strong,
+.emulator-stored-values dd { color: #e2e2dc; }
+.emulator-overline { color: #c2c2c5; }
+.emulator-mode-label:not(.is-reference) {
+  background: var(--findr-brand-tint);
+  border-color: var(--findr-brand-line);
+  color: var(--accent);
+}
+.emulator-breadcrumb,
+.emulator-breadcrumb i,
+.emulator-field-label,
+.emulator-site-summary > div > span,
+.emulator-detail > summary:before,
+.emulator-detail-content ul,
+.emulator-source-links span,
+.emulator-search-result > small,
+.emulator-activity-list li,
+.emulator-stored-values dt { color: var(--muted); }
+.emulator-site-summary > div > strong:not(.emulator-output-on) { color: #dadada; }
+.emulator-value,
+.emulator-source-links a,
+.emulator-search-result { background: #151515; border-color: #434343; }
+.emulator-value > strong { color: #f0f0e8; }
+.emulator-source-links a:hover,
+.emulator-search-result:hover { border-color: var(--accent); background: #282516; }
+.emulator-text-link,
+.emulator-result-open,
+.emulator-search-result > strong > span,
+.emulator-stored-values > summary { color: var(--accent); }
+.emulator-stored-values dl > div { border-color: var(--line); }
+.emulator-result-actions .emulator-result-open {
+  background: #292929;
+  border-color: #606060;
+  color: var(--text);
+}
+
+/* SHOW HINTS coach. The actual highlighted physical keys keep their own styles. */
+.emulator-keypad-stage.has-hints { border-color: var(--accent); }
+.emulator-hint-guide {
+  background: linear-gradient(125deg, #2d2918, #181818 78%);
+  border-color: var(--accent);
+  box-shadow: 0 8px 28px #0005;
+}
+.emulator-hint-header > .emulator-overline { color: var(--accent); }
+.emulator-hint-title h2 { color: var(--text); }
+.emulator-hint-sound,
+.emulator-hint-target,
+.emulator-hint-message,
+.emulator-hint-record,
+.emulator-hint-record small,
+.emulator-hint-root { color: #c7c7c3; }
+.emulator-hint-next { background: #111; border-color: #8c741c; color: #e8e8de; }
+.emulator-hint-next kbd {
+  background: var(--accent);
+  border-color: #ffe36b;
+  color: var(--dark);
+  box-shadow: 0 2px 0 #8b7000;
+}
+.emulator-hint-progress > div { background: #111; border-color: #625522; }
+.emulator-hint-progress > div > span { background: var(--accent); }
+.emulator-hint-progress > span { color: #ededdf; }
+.emulator-hint-actions button { color: var(--accent); }
+.emulator-hint-actions .emulator-hint-stop { color: #c4c4c6; }
+.emulator-hint-guide.is-complete {
+  background: linear-gradient(140deg, #333333, #1a1a1a);
+  border-color: #c5c5c5;
+  box-shadow: 0 0 28px #e1e1e11c;
+}
+.emulator-hint-guide.is-reference,
+.emulator-hint-guide.is-blocked { background: linear-gradient(130deg, #302c21, #191919); border-color: #bb9f6c; }
+.emulator-hint-guide.is-reference .emulator-hint-next,
+.emulator-hint-guide.is-blocked .emulator-hint-next { background: #252219; border-color: #8b7548; }
+
+/* GENT learn, practice, help and sources. No face, LCD, lamp or key selectors. */
+.gent-feature .eyebrow,
+.gent-heading .eyebrow { color: var(--accent); }
+.gent-badge { background: var(--findr-brand-tint); border-color: var(--findr-brand-line); color: var(--accent); }
+.gent-tabs a[aria-current="page"],
+.gent-family-switch a[aria-current="page"],
+.gent-help-nav button.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--dark);
+  font-weight: 800;
+}
+.gent-tabs a:not([aria-current="page"]):hover,
+.gent-family-switch a:not([aria-current="page"]):hover,
+.gent-help-nav button:not(.active):hover { background: #303030; color: var(--text); }
+.gent-panel-scroll { scrollbar-color: #5a5a5a #171717; }
+.gent-panel-caption strong { color: #eee; }
+.gent-coach { background: linear-gradient(145deg, #2a271a, #191919 76%); border-color: var(--findr-brand-line); }
+.gent-coach progress { accent-color: var(--accent); }
+.gent-coach .gent-step-count { color: #c6c6c3; }
+.gent-coach .gent-step-number { color: var(--accent); }
+.gent-next-key { background: var(--accent); color: var(--dark); font-weight: 800; }
+.gent-next-key kbd { background: #ffe363; border-color: #8b7000; color: var(--dark); }
+.gent-next-key small { color: #3c330f; }
+.gent-coach .gent-outcome { border-left-color: var(--accent); color: #e0e0d3; }
+.gent-details summary { color: #ddd; }
+.gent-refs a,
+.gent-help-card a,
+.gent-source a { color: var(--accent); }
+.gent-practice-code { background: #171717; border-color: #6b6031; }
+.gent-practice-code code { color: var(--accent); }
+.gent-learning-progress strong { color: var(--accent); }
+.gent-track-number { background: var(--accent); border-color: var(--accent); color: var(--dark); font-weight: 800; }
+.gent-lesson-meta,
+.gent-source code,
+.gent-map-path,
+.gent-sim label,
+.gent-event-list small { color: var(--muted); }
+.gent-article p,
+.gent-article li,
+.gent-event-list li { color: #c8c8cb; }
+.gent-article .gent-summary { color: #eeeee3; }
+.gent-glossary dt { color: #e4e4da; }
+.gent-sim { background: #191919; border-color: #64604c; }
+.gent-device-row { background: #141414; }
+.gent-step-list li.current { color: var(--accent); font-weight: 750; }
+.nano-panel-card { background: #1b1b1b; }
+.nano-panel-status { color: var(--muted); }
+.nano-panel-status strong { color: #e5e5df; }
+.nano-next-cue { background: #272314; border-color: var(--findr-brand-line); }
+.nano-next-cue > div > span { color: var(--accent); }
+.nano-next-cue strong { color: #ffeb9c; }
+.nano-next-cue p { color: #d2d2ca; }
+
+/* Status labels remain explicit. App status text stays neutral; physical panel
+   indicators keep their operational colours in the panel-specific styles. */
+.connection.ready:before { background: var(--findr-green); }
+.practice-input-status:not(.is-active):not(.is-tamper) { color: var(--findr-green); }
+.answer[data-value="yes"],
+.evidence strong,
+.pack-status { color: var(--findr-green); }
+.badge { background: #3e3e3e; color: var(--findr-green); }
+.practice-complete { --accent: var(--findr-green); }
+.practice-feedback.is-complete { background: #373737; border-color: #636363; color: #e7e7e7; }
+
+/* On-site home: search first, with saved PDFs one tap away. */
+.skip-link { position: fixed; top: -100px; left: 16px; z-index: 1000; padding: 12px 18px; background: var(--accent); color: var(--dark); }
+.skip-link:focus { top: 12px; }
+.field-home { max-width: 950px; padding: 40px 0 28px; }
+.field-home h1 { font-size: clamp(32px, 5vw, 58px); line-height: 1.08; letter-spacing: -.045em; margin: 18px 0; }
+.field-home h1 em { color: var(--accent); font-style: normal; }
+.field-home > p { color: var(--muted); font-size: 17px; }
+.quick-search { margin-top: 28px; }
+.quick-search > label { display: block; font-weight: 700; margin-bottom: 10px; }
+.quick-search-row { display: flex; gap: 10px; }
+.quick-search-row .search { flex: 1; min-width: 0; }
+.quick-search-row input { min-height: 54px; font-size: 16px; }
+.quick-search > small { display: block; color: var(--muted); margin-top: 12px; }
+.field-home-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 20px; }
+.field-home-actions svg, .field-tool svg, .field-ready svg, .resume-session svg { width: 20px; height: 20px; flex-shrink: 0; }
+.field-tools { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; margin: 10px 0 24px; }
+.field-tool { display: block; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--text); padding: 24px; text-decoration: none; }
+.field-tool:hover { border-color: var(--accent); }
+.field-tool > svg { color: var(--accent); width: 28px; height: 28px; }
+.field-tool h2 { font-size: 20px; margin: 16px 0 10px; }
+.field-tool p { color: var(--muted); line-height: 1.5; margin: 0 0 20px; }
+.field-tool > span { display: flex; justify-content: space-between; align-items: center; color: var(--accent); font-size: 13px; font-weight: 700; }
+.field-ready, .resume-session { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; border: 1px solid var(--line); border-radius: 12px; padding: 22px; margin: 20px 0; }
+.field-ready > div, .resume-session > div { flex: 1; min-width: 220px; }
+.field-ready h2 { font-size: 19px; margin: 0 0 8px; }
+.field-ready p, .resume-session p { color: var(--muted); margin: 0; line-height: 1.5; }
+.manual-info { min-width: 0; overflow-wrap: anywhere; }
+#manual-results .empty .primary { margin-top: 16px; }
+#manual-results .result-toolbar { min-height: 54px; gap: 10px; }
+#manual-order { max-width: 180px; }
+@media(max-width: 700px) {
+  .field-home { padding-top: 22px; }
+  .quick-search-row { flex-direction: column; }
+  .quick-search-row .primary { justify-content: center; min-height: 48px; }
+  .field-tools { grid-template-columns: 1fr; gap: 10px; }
+  .field-tool { padding: 20px; }
+  .field-tool h2 { margin-top: 10px; }
+  .field-tool p { margin-bottom: 14px; }
+  #manual-order { max-width: none; }
+  .download-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .download-tabs button { min-height: 48px; white-space: normal; padding: 12px 8px; }
+}
+
+@media(max-width: 700px) {
+  .manual-toolbar { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
+  .manual-toolbar .search, .manual-toolbar #manual-order { grid-column: 1 / -1; }
+  .manual-toolbar select { width: 100%; font-size: 14px; min-height: 46px; }
+  .manual-info h3 { font-size: 15px; line-height: 1.4; }
+  .manual-info small { font-size: 11px; line-height: 1.6; }
+  .manual-actions .secondary, .manual-actions .primary { min-height: 44px; }
+}
+
+/* Keep guided fault finding visible before the manual library. */
+.fault-start-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0 16px; }
+.fault-start-actions .primary, .fault-start-actions .secondary { min-height: 52px; }
+.fault-flow-steps { display: flex; flex-wrap: wrap; gap: 8px; font-size: 13px; line-height: 1.7; }
+.field-home .quick-search { border-top: 1px solid var(--line); padding-top: 24px; }
+@media(max-width: 700px) {
+  .fault-start-actions > button { width: 100%; justify-content: center; }
+  .field-home h1 { font-size: clamp(30px, 8vw, 40px); }
+}
+
+/* Personal home dashboard, separate from the fault-finding workspace. */
+.home-intro { padding: 12px 0 30px; }
+.home-intro h1 { margin: 14px 0; font-size: clamp(34px,4.5vw,54px); }
+.home-intro > p { font-size: 16px; max-width: 650px; }
+.home-quick-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.home-pack-section { margin: 16px 0 38px; }
+.home-section-head { display: flex; justify-content: space-between; align-items: center; gap: 15px; margin-bottom: 18px; }
+.home-section-head h2 { font-size: 24px; }
+.home-section-head p { font-size: 13px; margin: 8px 0 0; }
+.home-pack-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; }
+.home-pack-card { display: flex; align-items: center; gap: 16px; padding: 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); min-width: 0; }
+.home-pack-card:hover { border-color: var(--accent); }
+.home-pack-card img { width: 64px; height: 72px; object-fit: contain; background: #efefef; padding: 7px; border-radius: 7px; flex-shrink: 0; }
+.home-pack-card > div { flex: 1; min-width: 0; }
+.home-pack-card h3 { font-size: 18px; line-height: 1.3; margin: 7px 0; overflow-wrap: anywhere; }
+.home-pack-card p { font-size: 12px; margin: 0 0 3px; }
+.home-pack-card p.has-saved { color: var(--findr-green); }
+.home-pack-card > svg { color: var(--accent); }
+.home-pack-section > .inline-actions { margin-top: 16px; }
+.home-empty { border: 1px dashed var(--line); border-radius: 12px; padding: 26px; background: var(--surface); }
+.home-empty h3 { font-size: 18px; margin-bottom: 10px; }
+.home-empty p { font-size: 14px; max-width: 640px; }
+.home-about { margin-top: 36px; border-top: 1px solid var(--line); padding-top: 30px; }
+.home-about h2 { font-size: 30px; margin: 14px 0; }
+.home-about > p { max-width: 760px; }
+.home-howto { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; margin: 26px 0; }
+.home-howto article { border: 1px solid var(--line); border-radius: 12px; padding: 24px; }
+.home-howto article > span { color: var(--accent); font-weight: 800; font-size: 13px; }
+.home-howto h3 { margin: 12px 0; font-size: 20px; }
+.home-howto p { font-size: 14px; }
+.home-howto a { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); min-height: 44px; font-size: 13px; font-weight: 700; }
+@media(max-width: 900px) {
+  .header { height: auto; min-height: 108px; flex-wrap: wrap; padding-top: 14px; padding-bottom: 10px; gap: 12px; }
+  .header > .brand { order: 1; }
+  .header > .icon-button { order: 2; margin-left: auto; }
+  .header > nav { order: 3; flex: 0 0 100%; width: 100%; margin: 0; display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 4px; }
+  .header > nav a { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; text-align: center; padding: 8px 3px; font-size: 11px; min-height: 44px; white-space: normal; line-height: 1.35; }
+}
+@media(max-width: 700px) {
+  .home-pack-grid, .home-howto { grid-template-columns: 1fr; }
+  .home-section-head { align-items: flex-start; flex-direction: column; gap: 8px; }
+  .home-pack-card { padding: 16px; gap: 12px; }
+  .home-pack-card img { width: 52px; height: 64px; }
+  .home-pack-card h3 { font-size: 17px; }
+  .home-quick-links > a { min-height: 46px; }
+  .home-empty { padding: 22px; }
+  .home-howto { gap: 12px; }
+}
+.home-import-callout { display:flex; align-items:center; gap:24px; padding:24px; margin:0 0 32px; border:1px solid var(--findr-brand-line); border-radius:12px; background:var(--findr-brand-tint); }
+.home-import-callout > div { flex:1; }
+.home-import-callout h2 { font-size:24px; margin:10px 0; }
+.home-import-callout p { margin:0; font-size:14px; max-width:640px; }
+.home-import-callout > a { flex-shrink:0; }
+.imported-session-context { display:grid; gap:6px; border-left:4px solid var(--accent); border-radius:8px; background:var(--surface); padding:18px; margin-bottom:24px; }
+.imported-session-context strong { font-size:20px; }
+.imported-session-context span { font-size:13px; }
+.imported-session-context small { line-height:1.6; }
+@media(max-width:700px) { .home-import-callout { flex-direction:column; align-items:stretch; padding:20px; } .home-import-callout > a { justify-content:center; } }
+.investigation-callout { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:20px; margin:20px 0; border:1px solid var(--findr-brand-line); border-radius:12px; background:var(--findr-brand-tint); }
+.investigation-callout p { margin:6px 0 0; max-width:640px; font-size:13px; }
+.investigation-callout > a { flex-shrink:0; }
+@media(max-width:700px) { .investigation-callout { flex-direction:column; align-items:stretch; } .investigation-callout > a { justify-content:center; } }
+
+.visit-return-banner{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border:1px solid var(--line);padding:12px 16px;margin-bottom:18px;border-radius:10px;background:var(--surface);font-size:13px}.visit-return-banner a{min-height:44px}
+
+#visit-return{max-width:1180px;margin:16px auto 0;width:calc(100% - 80px)}@media(max-width:680px){#visit-return{width:calc(100% - 36px);margin-top:12px}}

@@ -1,0 +1,290 @@
+{
+  "date": "2026-10-29",
+  "profileId": "pyronix-enforcer",
+  "baseline": {
+    "engineer": "Enforcer V11 Programming Guide SAP102028847-02",
+    "communications": "Enforcer V11 Communications Guide SAP102028846-01",
+    "user": "Extended User Guide Rev-02"
+  },
+  "sources": [
+    {
+      "id": "prog",
+      "title": "Enforcer V11 Programming Guide",
+      "edition": "Document SAP 102028847-02",
+      "url": "https://cdn.connectec.uk/Images/Products/alarms/enforcer-v11-programming-guide.pdf",
+      "publisher": "Pyronix Ltd",
+      "totalPdfPages": 60,
+      "sha256": "92f47ace93369e6a407e5f217652ad727eb3ed69ca1403ac70aadc1c627ed0a7",
+      "pageNumbering": "1-based PDF pages equal printed page numbers; communications front matter uses roman numerals before page4.",
+      "scope": "Manufacturer-authored Enforcer V11 document hosted by a distributor/installer mirror. Official legacy download redirects were unusable during this audit."
+    },
+    {
+      "id": "comms",
+      "title": "Enforcer V11 Communications Guide",
+      "edition": "Document SAP 102028846-01",
+      "url": "https://cdn.connectec.uk/Images/Products/alarms/enforcer-v11-communications-guide-en.pdf",
+      "publisher": "Pyronix Ltd",
+      "totalPdfPages": 28,
+      "sha256": "75162c4f14a16da98bbd49be16244f061cbfe82e8da40c6f5fb630ba0a6e41b1",
+      "pageNumbering": "1-based PDF pages equal printed page numbers; communications front matter uses roman numerals before page4.",
+      "scope": "Manufacturer-authored Enforcer V11 document hosted by a distributor/installer mirror. Official legacy download redirects were unusable during this audit."
+    },
+    {
+      "id": "user",
+      "title": "Wireless Alarm System Extended User Guide",
+      "edition": "Enforcer V11 \u00b7 Rev-02",
+      "url": "https://eaglesecuritysolutions.co.uk/user-manual/pyronix-wireless-alarm-system-extended-user-guide.pdf",
+      "publisher": "Pyronix Ltd",
+      "totalPdfPages": 40,
+      "sha256": "a5a835b03ff6242b2ae28e64752bf6d57f4cf86259ba5ba521ac318939927f4c",
+      "pageNumbering": "1-based PDF pages equal printed page numbers; communications front matter uses roman numerals before page4.",
+      "scope": "Manufacturer-authored Enforcer V11 document hosted by a distributor/installer mirror. Official legacy download redirects were unusable during this audit."
+    }
+  ],
+  "counts": {
+    "indexedEntries": 1317,
+    "behaviorOverlays": 591,
+    "evidenceGaps": 11,
+    "guidedExercises": 7,
+    "physicalMenuKeys": 18,
+    "engineerTopLevelEntries": 22,
+    "managerTopLevelEntries": 16,
+    "userTopLevelEntries": 7
+  },
+  "countingRule": "Atlas count includes field choices and separate access contexts. It does not count physical LCD screens or imply firmware completeness.",
+  "manualPagesVisuallyChecked": [
+    {
+      "source": "prog",
+      "pages": [
+        6,
+        18
+      ]
+    },
+    {
+      "source": "user",
+      "pages": [
+        6
+      ]
+    }
+  ],
+  "physicalLayout": "Five columns \u00d7 four rows. Digits/NO/YES in first3; A/B/C/D in column4; emergency police/fire and separate arrows in column5. Emergency buttons shown for recognition only.",
+  "navigation": {
+    "menuNextKey": "back",
+    "menuPreviousKey": "previous",
+    "recordNextKey": "right",
+    "recordPreviousKey": "left",
+    "fieldNextKey": "enter",
+    "fieldPreviousKey": "cancel",
+    "exitKey": "back",
+    "questionMenus": true,
+    "choiceNextKey": "right",
+    "choicePreviousKey": "left",
+    "exitEditorToParent": true,
+    "logNextKey": "area-d",
+    "logPreviousKey": "previous"
+  },
+  "criticalDistinctions": [
+    "No invented numeric chapter shortcuts.",
+    "C and D are separate from left/right arrow keys.",
+    "NO advances main-menu questions and exits active options; YES advances sequential programming fields.",
+    "Record addresses and output/type codes are different namespaces.",
+    "Manager omission applies to Day Alarm inputs only.",
+    "Engineer changes commit on exit; manager/user acceptance is immediate.",
+    "Normal/High app credential flows remain fictional; no real credentials or communications."
+  ],
+  "coverage": {
+    "strategy": "Compared top-level flow charts, explicit worked programming sequences, defaults and value appendices across three matching manufacturer-authored V11 documents.",
+    "mappedAreas": [
+      "All22 Engineer top-level entries",
+      "Input types, attributes and naming",
+      "Wireless controls",
+      "Outputs and output function table",
+      "Keypad/reader configuration",
+      "Timers and volume",
+      "System options and displays",
+      "Logs, tests and diagnostics",
+      "Communications and signalling fields",
+      "Restore/alarm response",
+      "Master Manager and restricted User menus"
+    ],
+    "excludedAreas": [
+      "Real learning/deletion/default operations",
+      "Actual ARC, cloud, SMS or modem traffic",
+      "Actual battery loading and physical sounders",
+      "Complete predictive text timing",
+      "Unstated value ranges and unresolved print contradictions"
+    ],
+    "hardwareVerified": false,
+    "confidence": "Documented V11 baseline with explicit limits; not a firmware or hardware fidelity claim.",
+    "documentedEntries": 1317
+  },
+  "gaps": [
+    {
+      "id": "py-eol-duplicate",
+      "title": "Duplicate printed EOL code",
+      "question": "Which numeric code selects Wide range on the installed V11 keypad?",
+      "reason": "Programming p19 gives code2 to both 4K7/4K7 and Wide range. Those two numeric shortcuts are not invented.",
+      "priority": "medium",
+      "affectedNodeIds": [
+        "py-eol-range"
+      ],
+      "neededEvidence": "Matching Enforcer V11 software screen or manufacturer clarification."
+    },
+    {
+      "id": "py-output-module-sequence",
+      "title": "Output module field prompt and sequence",
+      "question": "What display follows OP Mod Installed when your fitted output module is enabled?",
+      "reason": "The guide documents output programming and module addressing but does not print the complete output-module field sequence. FINDR uses an explicitly labelled function editor fixture.",
+      "priority": "medium",
+      "affectedNodeIds": [
+        "py-output-module-function"
+      ],
+      "neededEvidence": "Matching Enforcer V11 software screen or manufacturer clarification."
+    },
+    {
+      "id": "py-reader-code",
+      "title": "Reader and keypad code discrepancies",
+      "question": "Confirm Type and Reader is value numbers on the installed V11 panel.",
+      "reason": "The p21 enumeration and p22 workflow/appendix p45 disagree. FINDR uses the p21 enumeration and disables guesses beyond those named values.",
+      "priority": "medium",
+      "affectedNodeIds": [
+        "py-keypad-type",
+        "py-reader-mode"
+      ],
+      "neededEvidence": "Matching Enforcer V11 software screen or manufacturer clarification."
+    },
+    {
+      "id": "py-timer-ranges",
+      "title": "Incomplete timer ranges",
+      "question": "What ranges are displayed for Occupancy, Service Time and Wi-Fi Fault Delay on your V11 panel?",
+      "reason": "The source omits or truncates these ranges; no arbitrary number editor has been enabled.",
+      "priority": "medium",
+      "affectedNodeIds": [
+        "py-timer-occupancy",
+        "py-timer-service-time",
+        "py-timer-wi-fi-fault-delay"
+      ],
+      "neededEvidence": "Matching Enforcer V11 software screen or manufacturer clarification."
+    },
+    {
+      "id": "py-fast-format-fields",
+      "title": "Fast Format-specific selection screens",
+      "question": "Can you provide the exact LCD labels and channel flag cursor sequence for the Fast Format branch?",
+      "reason": "The communications guide describes channel and restore flags but does not give complete screen labels. Those fields are not substituted with the different SIA/Contact ID sequence.",
+      "priority": "medium",
+      "affectedNodeIds": [
+        "py-arc-format",
+        "py-arc-fast-channels",
+        "py-arc-fast-restores"
+      ],
+      "neededEvidence": "Matching Enforcer V11 software screen or manufacturer clarification."
+    },
+    {
+      "id": "py-response-confirm",
+      "title": "Alarm response stage discrepancy",
+      "question": "Does your V11 Stop At selector include Confirm [4]?",
+      "reason": "The explanatory stage list pp38\u201340 gives0\u20133, but defaults pp49\u201350 also show Confirm[4]. The undocumented stage is not offered as a verified value.",
+      "priority": "medium",
+      "affectedNodeIds": [
+        "py-response"
+      ],
+      "neededEvidence": "Matching Enforcer V11 software screen or manufacturer clarification."
+    },
+    {
+      "id": "py-sequence-back",
+      "title": "Nested attribute return behaviour",
+      "question": "From halfway through Input Attributes, does NO show Input Attributes or go directly to Input Description on your V11?",
+      "reason": "The guide states the general NO rule but does not illustrate this intermediate return. FINDR returns to the question before skipping it.",
+      "priority": "medium",
+      "affectedNodeIds": [
+        "py-input-attributes"
+      ],
+      "neededEvidence": "Matching Enforcer V11 software screen or manufacturer clarification."
+    },
+    {
+      "id": "py-text-entry",
+      "title": "Predictive text and length limits",
+      "question": "Can you confirm text length and C-key behaviour for input name/location and user names?",
+      "reason": "The source describes multi-tap/predictive entry; only some fields have explicit length limits. The text helper uses a conservative practice limit.",
+      "priority": "medium",
+      "affectedNodeIds": [
+        "py-input-name",
+        "py-input-location",
+        "pm-user-new-name"
+      ],
+      "neededEvidence": "Matching Enforcer V11 software screen or manufacturer clarification."
+    },
+    {
+      "id": "py-omission-restore",
+      "title": "Manager Day Alarm omission reinstatement",
+      "question": "What exact prompt appears when selecting an already omitted Day Alarm input?",
+      "reason": "The user guide documents omission and automatic restoration after set/unset, but not the full repeated-selection display. FINDR labels its local toggle as a simplified practice interaction.",
+      "priority": "medium",
+      "affectedNodeIds": [
+        "pm-omit"
+      ],
+      "neededEvidence": "Matching Enforcer V11 software screen or manufacturer clarification."
+    },
+    {
+      "id": "py-dynamic-comms",
+      "title": "Conditional communications menus",
+      "question": "Which modem and firmware revision are fitted to the keypad you want to practise?",
+      "reason": "The V11 guides describe different module-dependent branches. FINDR shows the documented branches with conditions and no live communications.",
+      "priority": "medium",
+      "affectedNodeIds": [
+        "py-communications",
+        "py-diag-comms"
+      ],
+      "neededEvidence": "Matching Enforcer V11 software screen or manufacturer clarification."
+    },
+    {
+      "id": "py-hardware-tests",
+      "title": "Wireless learning, siren and test timing",
+      "question": "Can matching hardware recordings confirm the complete test prompts and delays?",
+      "reason": "Learning, deleting, signalling, battery loading and actual sounder timing require equipment; only local fixtures are provided.",
+      "priority": "medium",
+      "affectedNodeIds": [
+        "py-wireless",
+        "py-test-siren",
+        "py-test-battery"
+      ],
+      "neededEvidence": "Matching Enforcer V11 software screen or manufacturer clarification."
+    }
+  ],
+  "verification": {
+    "mapValidation": "Passed: zero graph/source-page validation errors.",
+    "configurationAndRoutes": {
+      "command": "node --test-isolation=none --test tests/emulator-pyronix.test.mjs",
+      "passed": 25,
+      "failed": 0,
+      "date": "2026-10-29"
+    },
+    "physicalHardware": false,
+    "actualAudioListening": false,
+    "sourcesDownloadedAndFingerprinted": true,
+    "sharedFamilyCrossChecks": {
+      "passed": 5,
+      "failed": 0,
+      "scope": "Pyronix source graph, practice links and behavior configuration checks."
+    },
+    "guidedTasks": "All7 published Pyronix task routes passed the shared practice suite.",
+    "scope": "Software checks validate this local simulator. Exact firmware prompts, original panel audio and physical hardware have not been verified."
+  },
+  "runtimeStats": {
+    "total": 579,
+    "menus": 82,
+    "editable": 389,
+    "actions": 60,
+    "referenceOnly": 48,
+    "documentedEntries": 1317
+  },
+  "importantLimits": [
+    "The atlas counts selections and repeated access contexts, not physical LCD screens.",
+    "Conditional modem, reader and signalling field visibility is not a complete firmware implementation; source conditions and explicit gaps remain visible.",
+    "The module-output editor is a labelled fixture because the complete physical prompt sequence is not printed.",
+    "Fast Format channel/restore flags are source references; the fully described SIA/Contact ID field sequence must not be taken as that branch.",
+    "YES on Sound to Play acknowledges a local selection without changing programming. Exact panel tone playback and YES timing are unverified.",
+    "Learning, deleting devices, actual communications and battery-load outcomes are not invented.",
+    "Manager Day Alarm omission is distinct from ordinary input omission during arming; the exact repeated-selection restoration prompt remains unverified."
+  ]
+}

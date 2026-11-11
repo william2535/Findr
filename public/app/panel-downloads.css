@@ -1,0 +1,76 @@
+.panel-downloads { max-width: 1100px; margin: auto; }
+.panel-downloads h2 { font-size: clamp(23px,3vw,32px); margin: 22px 0 14px; }
+.panel-downloads h3 { margin: 22px 0 12px; }
+.panel-downloads h4 { margin: 0 0 12px; font-size: 17px; line-height: 1.4; }
+.panel-downloads label { display: block; font-size: 14px; color: var(--muted); line-height: 1.5; }
+.panel-downloads input, .panel-downloads select { display: block; width: 100%; margin-top: 7px; min-height: 48px; font-size: 16px; }
+.panel-downloads .primary, .panel-downloads .secondary { min-height: 48px; }
+.panel-downloads .inline-actions { margin-top: 18px; }
+.panel-downloads .notice p:last-child { margin-bottom: 0; }
+.import-context { display: flex; gap: 24px; flex-wrap: wrap; padding: 18px 20px; border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px; background: var(--surface); margin: 20px 0 10px; }
+.import-context small { display: block; font-size: 10px; letter-spacing: .07em; margin-bottom: 5px; }
+.import-context strong { font-size: 17px; overflow-wrap: anywhere; }
+.import-provenance { margin-bottom: 22px; color: var(--muted); font-size: 12px; }
+.import-provenance summary, .import-separate summary, .import-original summary { min-height: 44px; cursor: pointer; padding: 12px 0; }
+.import-provenance p { margin: 10px 0; }
+.import-controls { display: flex; align-items: flex-end; gap: 15px; }
+.import-picker { flex: 1; }
+.import-form-grid, .import-mapping { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; margin: 22px 0; }
+.import-file { border: 1px dashed var(--line); padding: 20px; border-radius: 10px; margin: 20px 0; }
+.import-file input { max-width: 100%; min-height: 48px; height: auto; padding: 10px; font-size: 14px; }
+.import-example { display: inline-block; color: var(--accent); text-decoration: underline; padding: 10px 0; min-height: 44px; font-size: 13px; }
+.import-table-scroll { overflow: auto; max-width: 100%; max-height: 280px; border: 1px solid var(--line); border-radius: 8px; margin: 18px 0; }
+.import-table-scroll table { border-collapse: collapse; min-width: 100%; font-size: 12px; text-align: left; }
+.import-table-scroll th { background: var(--surface2); position: sticky; top: 0; font-weight: 700; }
+.import-table-scroll td, .import-table-scroll th { padding: 11px 14px; border-bottom: 1px solid var(--line); white-space: pre-wrap; min-width: 105px; max-width: 320px; overflow-wrap: anywhere; }
+.import-check { display: flex!important; align-items: flex-start; gap: 12px; color: var(--text)!important; }
+.import-check input { flex: none; width: 22px; min-height: 22px; height: 22px; margin: 0; accent-color: var(--accent); }
+.import-lookup { padding: 24px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; margin: 24px 0; }
+.import-lookup h2 { margin-top: 12px; }
+.import-lookup form > label { margin-top: 18px; }
+.import-search-row { display: flex; gap: 12px; align-items: flex-end; margin: 18px 0; }
+.import-search-row label { flex: 1; min-width: 0; }
+.import-separate { border-top: 1px solid var(--line); margin-top: 18px; }
+.import-source-panel { max-width: 650px; margin-top: 20px; }
+.import-lookup > .small { margin-top: 18px; margin-bottom: 0; }
+.import-lookup-empty { border: 1px dashed var(--line); border-radius: 10px; padding: 24px; color: var(--muted); }
+.import-result-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; }
+.import-result { border: 1px solid var(--line); background: var(--surface); border-radius: 12px; padding: 20px; color: var(--text); text-align: left; min-width: 0; }
+.import-result:hover, .import-result:focus-visible { border-color: var(--accent); }
+.import-result strong { display: block; font-size: 20px; line-height: 1.3; margin-bottom: 12px; overflow-wrap: anywhere; }
+.import-result span, .import-result small { display: block; line-height: 1.6; font-size: 13px; overflow-wrap: anywhere; }
+.import-result .import-result-action { color: var(--accent); font-weight: 700; margin-top: 14px; }
+.import-device-detail { margin-top: 28px; }
+.import-device-detail > h2 { margin-top: 12px; font-size: clamp(27px,4vw,42px); }
+.import-device-address { font-size: 17px; color: var(--accent); }
+.import-evidence { border: 1px solid var(--line); border-radius: 10px; background: var(--surface); padding: 20px; margin: 18px 0; }
+.import-evidence.is-exact { border-left: 4px solid var(--accent); }
+.import-evidence > strong { color: var(--accent); }
+.import-evidence p { font-size: 14px; margin: 12px 0 0; }
+.import-document { border: 1px solid var(--line); background: var(--surface); padding: 20px; margin: 14px 0; border-radius: 10px; }
+.import-manual-status { font-size: 12px; color: var(--accent); }
+.import-original { margin-top: 24px; border-top: 1px solid var(--line); }
+.import-original dl { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.import-original dt { font-size: 12px; color: var(--muted); }
+.import-original dd { margin: 4px 0 0; overflow-wrap: anywhere; white-space: pre-wrap; }
+@media(max-width:700px) {
+  .import-context { gap: 16px; padding: 16px; }
+  .import-context > div { min-width: 130px; }
+  .import-controls, .import-search-row { flex-direction: column; align-items: stretch; }
+  .import-form-grid, .import-mapping, .import-result-list { grid-template-columns: 1fr; }
+  .import-lookup { padding: 18px; }
+  .import-lookup h2 { font-size: 26px; }
+  .import-document, .import-evidence { padding: 16px; }
+  .import-document .primary, .import-device-detail > .inline-actions .primary { width: 100%; justify-content: center; }
+  .import-original dl { grid-template-columns: 1fr; }
+  .panel-downloads .inline-actions { align-items: stretch; }
+}
+.import-reported { border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; margin: 14px 0; }
+.import-reported small { font-size: 10px; letter-spacing: .06em; }
+.import-reported p { margin: 6px 0 0; color: var(--text); overflow-wrap: anywhere; white-space: pre-wrap; }
+.import-manual-quick { border: 1px solid var(--findr-brand-line, var(--line)); background: var(--surface); border-radius: 10px; padding: 16px; margin: 16px 0; }
+.import-manual-quick > strong { color: var(--accent); font-size: 13px; line-height: 1.5; }
+.import-manual-quick p { font-size: 14px; margin: 8px 0; }
+.import-manual-quick > small { display: block; margin: 8px 0; }
+.import-manual-quick .primary { width: 100%; justify-content: center; }
+.import-context { scroll-margin-top: 18px; }

@@ -1,0 +1,233 @@
+{
+  "batch": "notifier-devices-0.14.0",
+  "verified_date": "2026-10-30",
+  "brand": "Notifier",
+  "scope": "Pictured device identification and accurately labelled manufacturer references. No new live-panel operations or commissioning workflow.",
+  "source_method": "Recovered original manufacturer PDFs and original manufacturer web assets. PDF photographs extracted with their transparency masks; no generated hardware imagery.",
+  "devices": [
+    {
+      "id": "notifier-device-nfxi-opt",
+      "document_ids": [
+        "device-doc-notifier-c96d59e70df0",
+        "device-doc-notifier-722c2bfa968b"
+      ],
+      "uk_catalogue_pdf_page": 31,
+      "uk_catalogue_printed_pages": "60-61",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_source_url": "https://honeywell.scene7.com/is/image/Honeywell65/hbt-fire-nfxi-opt-opal-photoelectric-smoke-detector-primaryimage",
+      "source_page_url": "https://buildings.honeywell.com/gb/en/products/by-category/sensors/smoke-detectors/opal-photoelectric-smoke-detector-with-isolator-notifier",
+      "image_sha256": "0683720d596d23aed0272410e0abe89af2654fbfa9582913c8872350b3130e65",
+      "model_table_checked": true
+    },
+    {
+      "id": "notifier-device-b501ap",
+      "document_ids": [
+        "device-doc-notifier-c96d59e70df0",
+        "device-doc-notifier-722c2bfa968b"
+      ],
+      "uk_catalogue_pdf_page": 31,
+      "uk_catalogue_printed_pages": "60-61",
+      "image_pdf_page": 2,
+      "image_pdf_xref": null,
+      "image_source_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-it/HBT-Fire-NFX-OPT-ENG.pdf?download=false",
+      "source_page_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-it/HBT-Fire-NFX-OPT-ENG.pdf?download=false",
+      "image_sha256": "0383c896e82f371f55d8881068b984356acffa6c1c9b79c9bc3bf8c2644d7fc2",
+      "model_table_checked": true,
+      "image_crop_pdf_points": [
+        55,
+        95,
+        223,
+        194
+      ]
+    },
+    {
+      "id": "notifier-device-nfxi-beam",
+      "document_ids": [
+        "device-doc-notifier-c96d59e70df0"
+      ],
+      "uk_catalogue_pdf_page": 38,
+      "uk_catalogue_printed_pages": "74-75",
+      "image_pdf_page": 32,
+      "image_pdf_xref": 788,
+      "image_source_url": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/downloads/Fire-EMEA-NOTIFIER-2023-Black-Book_digital.pdf",
+      "source_page_url": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/downloads/Fire-EMEA-NOTIFIER-2023-Black-Book_digital.pdf",
+      "image_sha256": "22317afe3eb0e06f32baafa265215cf73721297e8d616f474c4edd4d01c18a94",
+      "model_table_checked": true
+    },
+    {
+      "id": "notifier-device-nrx-opt",
+      "document_ids": [
+        "device-doc-notifier-c96d59e70df0",
+        "device-doc-notifier-05a7316dffbe"
+      ],
+      "uk_catalogue_pdf_page": 55,
+      "uk_catalogue_printed_pages": "108-109",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_source_url": "https://honeywell.scene7.com/is/image/Honeywell65/hbt-fire-nrx-opt-photo-thermal-fire-detector-primaryimage",
+      "source_page_url": "https://buildings.honeywell.com/gb/en/products/by-category/sensors/multi-criteria-sensors/scattered-light-smoke-detectors",
+      "image_sha256": "70ce0bec68b4f6c10a0ea8cc1def93826e7344d47a3bca91027b65de28a995da",
+      "model_table_checked": true
+    },
+    {
+      "id": "notifier-device-nrx-heat",
+      "document_ids": [
+        "device-doc-notifier-c96d59e70df0",
+        "device-doc-notifier-05a7316dffbe"
+      ],
+      "uk_catalogue_pdf_page": 55,
+      "uk_catalogue_printed_pages": "108-109",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_source_url": "https://s7d1.scene7.com/is/image/Honeywell65/hbt-fire-nrx-tdiff-agile-wireless-fire-detection-primaryimage",
+      "source_page_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-uk/hba-fire-Agile-Wireless-Fire-Detection-990-182-0919.pdf?download=false",
+      "image_sha256": "b5e8db68c1d32f38eea273fde9bafb5a6af741d6ede6763a194dd4ed7cb78889",
+      "model_table_checked": true
+    },
+    {
+      "id": "notifier-device-nrx-wcp",
+      "document_ids": [
+        "device-doc-notifier-c96d59e70df0",
+        "device-doc-notifier-05a7316dffbe"
+      ],
+      "uk_catalogue_pdf_page": 55,
+      "uk_catalogue_printed_pages": "108-109",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_source_url": "https://s7d1.scene7.com/is/image/Honeywell65/hbt-fire-nrx-wcp-radio-alarm-signalling-button-primaryimage",
+      "source_page_url": "https://buildings.honeywell.com/gb/en/products/by-category/fire-life-safety/manual-call-points-pull-stations-and-panic-buttons/manual-call-points-pull-stations/nrx-wcp",
+      "image_sha256": "cc6656f876b317085aae7a92b0bdf827ebbea049262294e3924be349a795bef3",
+      "model_table_checked": true
+    },
+    {
+      "id": "notifier-device-nrxi-gate",
+      "document_ids": [
+        "device-doc-notifier-c96d59e70df0",
+        "device-doc-notifier-05a7316dffbe"
+      ],
+      "uk_catalogue_pdf_page": 55,
+      "uk_catalogue_printed_pages": "108-109",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_source_url": "https://s7d1.scene7.com/is/image/Honeywell65/hbt-fire-nrxi-gate-nrxi-gateway-primaryimage",
+      "source_page_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-uk/hba-fire-Agile-Wireless-Fire-Detection-990-182-0919.pdf?download=false",
+      "image_sha256": "b11d60e0cfa29fa5ec2dc38fa017ef985093ff4b57cf3ee903ec1b86b9a40b5c",
+      "model_table_checked": true
+    },
+    {
+      "id": "notifier-device-nrx-rep",
+      "document_ids": [
+        "device-doc-notifier-c96d59e70df0",
+        "device-doc-notifier-05a7316dffbe"
+      ],
+      "uk_catalogue_pdf_page": 55,
+      "uk_catalogue_printed_pages": "108-109",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_source_url": "https://s7d1.scene7.com/is/image/Honeywell65/hbt-fire-nrx-rep-nrx-rep-wireless-repeater---------primaryimage",
+      "source_page_url": "https://buildings.honeywell.com/gb/en/products/by-category/building-management/networking/repeaters/repeater",
+      "image_sha256": "db84b1e9bdebec47a73df95f72f4072196e514176788a1fc70e9361e62613dce",
+      "model_table_checked": true
+    },
+    {
+      "id": "notifier-device-nrx-irk",
+      "document_ids": [
+        "device-doc-notifier-c96d59e70df0",
+        "device-doc-notifier-05a7316dffbe"
+      ],
+      "uk_catalogue_pdf_page": 55,
+      "uk_catalogue_printed_pages": "108-109",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_source_url": "https://honeywell.scene7.com/is/image/Honeywell65/hbt-fire-nrx-irk-agile-wireless-remote-indicator-primaryimage",
+      "source_page_url": "https://buildings.honeywell.com/ae/en/products/by-category/fire-life-safety/notification-appliances/strobes-and-signal-lights/agile-wireless-remote-indicator",
+      "image_sha256": "faaca7ac9aff932869c1d2a7fdedf371471e1c75bf6741a655edd66d501767a5",
+      "model_table_checked": true
+    }
+  ],
+  "supplementary_documents": [
+    {
+      "id": "device-doc-notifier-c96d59e70df0",
+      "brand": "Notifier",
+      "category": "fire",
+      "models": [
+        "NFXI-OPT",
+        "B501AP",
+        "NFXI-BEAM-E",
+        "NFXI-BEAM-TE",
+        "NRX-OPT",
+        "NRX-TDIFF",
+        "NRX-TFIX58",
+        "NRX-WCP",
+        "NRXI-GATE",
+        "NRX-REP",
+        "NRX-IRK"
+      ],
+      "title": "Notifier UK Black Book - 2023 product reference",
+      "type": "manufacturer reference",
+      "url": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/downloads/Fire-EMEA-NOTIFIER-2023-Black-Book_digital.pdf",
+      "source": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/downloads/Fire-EMEA-NOTIFIER-2023-Black-Book_digital.pdf",
+      "revision": "2023 edition",
+      "status": "file-hash",
+      "sha256": "c96d59e70df050fed1f927d38ba0cc6d2ab4143b80deae3f868bb80132c7d5d0",
+      "bytes": 13158971,
+      "pages": 106,
+      "origin": "device-reference",
+      "related_archive_record_ids": []
+    },
+    {
+      "id": "device-doc-notifier-05a7316dffbe",
+      "brand": "Notifier",
+      "category": "fire",
+      "models": [
+        "NRX-OPT",
+        "NRX-TDIFF",
+        "NRX-TFIX58",
+        "NRX-WCP",
+        "NRXI-GATE",
+        "NRX-REP",
+        "NRX-IRK"
+      ],
+      "title": "Notifier Agile wireless fire detection - 990-182_0919",
+      "type": "manufacturer reference",
+      "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-uk/hba-fire-Agile-Wireless-Fire-Detection-990-182-0919.pdf?download=false",
+      "source": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-uk/hba-fire-Agile-Wireless-Fire-Detection-990-182-0919.pdf?download=false",
+      "revision": "990-182_0919, September 2019",
+      "status": "file-hash",
+      "sha256": "05a7316dffbe411403d95f86c8885a5a5ef2954cae4ee3af854d2a0cc6a6d56e",
+      "bytes": 439386,
+      "pages": 3,
+      "origin": "device-reference",
+      "related_archive_record_ids": []
+    },
+    {
+      "id": "device-doc-notifier-722c2bfa968b",
+      "brand": "Notifier",
+      "category": "fire",
+      "models": [
+        "NFX-OPT",
+        "NFXI-OPT",
+        "B501AP"
+      ],
+      "title": "Notifier NFX-OPT / NFXI-OPT and B501AP - English manufacturer datasheet",
+      "type": "manufacturer reference",
+      "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-it/HBT-Fire-NFX-OPT-ENG.pdf?download=false",
+      "source": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-it/HBT-Fire-NFX-OPT-ENG.pdf?download=false",
+      "revision": "D-532.3-NFX-ENG Rev. A.1, October 2009",
+      "status": "file-hash",
+      "sha256": "722c2bfa968b04f1a3f7e27071344ee6eb48be7ba7553bc5ebc601b90dd44188",
+      "bytes": 1715533,
+      "pages": 2,
+      "origin": "device-reference",
+      "related_archive_record_ids": []
+    }
+  ],
+  "review_notes": [
+    "Notifier-branded variants remain one pack; no duplicate System Sensor cards were made from the same photographs.",
+    "2023 Black Book and 2019 Agile datasheet are clearly labelled product references, not current standards or installation manuals.",
+    "The Italian 2009 English datasheet is retained only for its explicitly listed NFX/NFXI/B501AP identities; regional limits are visible.",
+    "The unavailable NRXI-GATE page is not used as the product source; the verified manufacturer Agile PDF is used instead."
+  ],
+  "visual_review": "Source page layouts and final contact sheets reviewed before integration; exact model labels distinguish similar housings."
+}

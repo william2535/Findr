@@ -1,0 +1,160 @@
+{
+  "release": "0.8.1",
+  "generated_utc": "2026-10-29T22:49:12.920588+00:00",
+  "scope": "Picture expansion and release verification before publication; live deployment is recorded by Sites.",
+  "source_baseline_commit": "e79a7e508b22cf198a5c4bc3080a633e01ff651b",
+  "site_project": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
+  "release_url": "https://findr-fault-finder.snowyskunk12.chatgpt.site",
+  "baseline": {
+    "families": 396,
+    "brands": 51,
+    "packs": 52
+  },
+  "current": {
+    "families": 441,
+    "brands": 56,
+    "packs": 58
+  },
+  "added": 45,
+  "categories": {
+    "access-control": 13,
+    "security": 12,
+    "fire": 20
+  },
+  "uk_prioritised_additions": 43,
+  "new_families_without_linked_manuals": 24,
+  "picture_only_packs": [
+    "acre-vanderbilt-security",
+    "came-bpt-access-control",
+    "hkc-security"
+  ],
+  "old_panels_unchanged": true,
+  "old_pack_ids_and_manual_links_preserved": true,
+  "catalogue_unchanged": true,
+  "catalogue_records": 12377,
+  "remaining_tracked_candidates": 10,
+  "remaining_legacy_candidates": 9,
+  "new_panel_ids": [
+    "act-10",
+    "acre-vanderbilt-spc-comfort-keypad",
+    "ade-accenta-optima-lcd-keypad",
+    "advanced-evacgo",
+    "advanced-exgo",
+    "advanced-go",
+    "advanced-quickzone",
+    "advanced-quickzone-xl",
+    "advanced-touchcontrol",
+    "came-bpt-lithos",
+    "came-bpt-mtm",
+    "came-bpt-thangram",
+    "eaton-cf2000",
+    "eaton-fx2200",
+    "eaton-xdetect",
+    "eaton-scantronic-9651-9751-9752-9851-9930",
+    "haes-elan-remote-terminals",
+    "haes-elan-touch-10",
+    "haes-esento-repeater",
+    "haes-esento-rdu",
+    "haes-multi-tech",
+    "hkc-quantum-70",
+    "hkc-securehub",
+    "hkc-securewave-10270-touch",
+    "hochiki-latitude-en",
+    "menvier-m750-m800-m800id",
+    "menvier-ts590-ts690-ts2500-networker",
+    "notifier-inspire-e10-e15",
+    "paradox-esprit-616-626-636-646",
+    "paradox-spectra-1689-1641",
+    "paxton-entry-standard",
+    "paxton-entry-touch",
+    "paxton-entry-vr",
+    "protec-3300",
+    "protec-3500",
+    "protec-6000plus-repeater",
+    "pyronix-euro-enforcer-surface-keypad",
+    "pyronix-euro-76-large-metal",
+    "videx-4000-series",
+    "videx-4212",
+    "videx-8000-series",
+    "videx-sp300",
+    "videx-vr120",
+    "videx-vr4k",
+    "zeta-premier-quatro-mkii"
+  ],
+  "source_audits": [
+    "pictures-0.8.1-haes.json",
+    "pictures-0.8.1-uk-fire.json",
+    "pictures-0.8.1-uk-intruder.json",
+    "pictures-0.8.1-uk-access.json"
+  ],
+  "source_policy": "Real attributable manufacturer photos, original manufacturer document illustrations, or one clearly credited ACT10 supplier photograph. No generated hardware imagery. Composite crops retain complete original content.",
+  "image_validation": {
+    "decoded": 441,
+    "sha256_and_dimensions_checked": 441,
+    "all_new_images_visually_reviewed": true,
+    "new_normalized_bytes": 1027896,
+    "all_normalized_bytes": 11319554,
+    "palette_transparency_preserved": [
+      "came-bpt-mtm",
+      "came-bpt-lithos",
+      "protec-3500"
+    ],
+    "source_pdfs_excluded_from_app_images": true
+  },
+  "manual_associations": {
+    "new_card_associations": 35,
+    "unique_archive_records_linked": 30,
+    "no_new_catalogue_records": true,
+    "source_snapshot_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "caution": "Picture availability does not imply a complete current manual. Shared keypad appearance does not identify connected panel firmware. CAME cards retain no stale exact manual download associations."
+  },
+  "automated_tests": {
+    "total": 301,
+    "pass": 301,
+    "fail": 0,
+    "result_file": "pictures-0.8.1-tests.txt"
+  },
+  "browser_checks": {
+    "environment": "Managed preview at http://terminal.local:4173/",
+    "release_launcher_version": "0.8.1",
+    "release_launcher_new_count": 45,
+    "release_launcher_total_count": 441,
+    "home_total_packs": 58,
+    "uk_first_identify_first_card": "gent-vigilon-compact",
+    "uk_first_packs_first_brand": "Gent",
+    "haes_multi_tech_search": true,
+    "haes_multi_tech_manual_illustration_label": true,
+    "haes_multi_tech_source_pdf_page": 4,
+    "menvier_m750_search_and_keypad_reference_label": true,
+    "hkc_pack_three_images_visible": true,
+    "hkc_pack_manuals_not_linked_notice": true,
+    "hkc_pack_no_zero_of_zero_saved_or_download_button": true,
+    "preview_screenshot": "pictures-0.8.1-preview.jpg",
+    "preview_sha256": "38b230ba56acaa2d07842a82987fafe7fd36c8b74712eaf022a7b0df8d66b7a1",
+    "offline_ready_in_preview": "Not claimed; HTTP preview showed Preparing offline app. Precache contents and bundled Android assets were verified separately.",
+    "physical_device_install_and_offline_use_tested": false
+  },
+  "android": {
+    "version": "0.8.1",
+    "versionCode": 12,
+    "apk_bytes": 21463388,
+    "apk_sha256": "876b87e2ee37bf93b5eb7cd7b90e85e931594675148d39bd9d3fe7c535118fb1",
+    "signing_certificate_sha256": "6075a73725dac5a3cc1f7b6b32c5e1df907cd1ca4b5b611f4c1c1d2fd502fefd",
+    "byte_identical_app_files": 694,
+    "min_api": 26,
+    "target_api": 35,
+    "permissions": [
+      "android.permission.INTERNET"
+    ],
+    "precache_assets": 691,
+    "pictures_in_precache": 441,
+    "build": "7af095c1874f"
+  },
+  "web_build": {
+    "succeeded": true,
+    "byte_identical_public_files": 720,
+    "temporary_qa_fixtures_in_public": false
+  },
+  "functional_scope": "Existing six keypad emulators and 41 guided lessons preserved; emulator profile associations and behaviour unchanged.",
+  "backlog_note": "Haes Multi-Tech resolved. Nine earlier legacy candidates remain. Newly reviewed Scantronic 500r adds one candidate, leaving ten tracked gaps overall; not a global coverage total."
+}

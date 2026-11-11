@@ -1,0 +1,1794 @@
+{
+  "id": "risco-lightsys2",
+  "brand": "RISCO",
+  "title": "RISCO LightSYS2",
+  "keypad": "Classic RP432KP / RP432KPP LCD",
+  "edition": "Installer 5IN2048 G (06/2020); separately labelled UK user 5IN2124 E (08/2021); physical keypad 5IN1425 H (01/2022). No LightSYS+ or latest-firmware equivalence.",
+  "scope": "Full published top-level programming tree, reviewed parameter tables, conditional device references, UK user functions and installer operations. Functional common settings/actions are explicitly separated from reference-only hardware-dependent wizards.",
+  "panelIds": [
+    "risco-lightsys-2"
+  ],
+  "allFixtureValuesSimulated": true,
+  "fixtureNotice": "Every name, event, setting and electrical reading is fictional FINDR practice data. No live panel connection exists.",
+  "sessionStart": "Already authorised installer programming practice",
+  "lcdNotice": "Manual labels are sourced; populated LCD spacing and fixture displays are illustrative.",
+  "rightIsEnter": false,
+  "leftIsBack": false,
+  "commitOnExit": true,
+  "exitFromRoot": false,
+  "hideTypeCodes": false,
+  "exitChecks": false,
+  "reverseLogScroll": false,
+  "exitPrompt": [
+    "Exit and SAVE?",
+    "Press OK"
+  ],
+  "enterLabel": "OK",
+  "backLabel": "Menu / Back",
+  "editLabel": "Full / Part Set",
+  "directMenuCodes": false,
+  "zoneDigits": 2,
+  "typeLabel": "Type",
+  "navigation": {
+    "menuNextKey": "next",
+    "menuPreviousKey": "previous",
+    "recordNextKey": "next",
+    "recordPreviousKey": "previous"
+  },
+  "circuit": "Fictional wired detector circuit; readings are independent teaching fixtures, not panel calibration or a voltage-to-resistance conversion.",
+  "readings": {
+    "secure": "2.20 kΩ",
+    "active": "4.40 kΩ",
+    "tamper": "Open circuit"
+  },
+  "statusLabels": {
+    "secure": "Closed",
+    "active": "Open",
+    "tamper": "Tamper"
+  },
+  "zones": [
+    {
+      "address": "01",
+      "name": "Front Door",
+      "type": "Exit/Entry 1",
+      "omitEnabled": true,
+      "areas": [
+        "1"
+      ]
+    },
+    {
+      "address": "02",
+      "name": "Hall PIR",
+      "type": "Instant",
+      "omitEnabled": true,
+      "areas": [
+        "1"
+      ]
+    },
+    {
+      "address": "03",
+      "name": "Office PIR",
+      "type": "Instant",
+      "omitEnabled": true,
+      "areas": [
+        "1"
+      ]
+    },
+    {
+      "address": "04",
+      "name": "Store PIR",
+      "type": "Instant",
+      "omitEnabled": true,
+      "areas": [
+        "1"
+      ]
+    }
+  ],
+  "zoneTypes": [
+    {
+      "code": "00",
+      "label": "Not Used"
+    },
+    {
+      "code": "01",
+      "label": "Exit/Entry 1"
+    },
+    {
+      "code": "02",
+      "label": "Exit/Entry 2"
+    },
+    {
+      "code": "03",
+      "label": "Exit (OP)/Entry 1"
+    },
+    {
+      "code": "04",
+      "label": "Exit (OP)/Entry 2"
+    },
+    {
+      "code": "05",
+      "label": "Entry Follower"
+    },
+    {
+      "code": "06",
+      "label": "Instant"
+    },
+    {
+      "code": "07",
+      "label": "I+ Exit/Entry 1"
+    },
+    {
+      "code": "08",
+      "label": "I+ Exit/Entry 2"
+    },
+    {
+      "code": "09",
+      "label": "I+ Exit(OP)/Entry 1"
+    },
+    {
+      "code": "10",
+      "label": "I+ Exit(OP)/Entry 2"
+    },
+    {
+      "code": "11",
+      "label": "I+ Entry Follow"
+    },
+    {
+      "code": "12",
+      "label": "I+ Instant"
+    },
+    {
+      "code": "13",
+      "label": "UO Trigger"
+    },
+    {
+      "code": "14",
+      "label": "Day"
+    },
+    {
+      "code": "15",
+      "label": "24 Hours"
+    },
+    {
+      "code": "16",
+      "label": "Fire"
+    },
+    {
+      "code": "17",
+      "label": "Panic"
+    },
+    {
+      "code": "18",
+      "label": "Special"
+    },
+    {
+      "code": "19",
+      "label": "Pulsed Key Switch"
+    },
+    {
+      "code": "20",
+      "label": "Final Exit"
+    },
+    {
+      "code": "21",
+      "label": "Latch Keyswitch"
+    },
+    {
+      "code": "22",
+      "label": "Entry Follower + Stay"
+    },
+    {
+      "code": "23",
+      "label": "Pulsed Keyswitch Delay"
+    },
+    {
+      "code": "24",
+      "label": "Latch Keyswitch Delay"
+    },
+    {
+      "code": "25",
+      "label": "Tamper"
+    },
+    {
+      "code": "26",
+      "label": "Technical"
+    },
+    {
+      "code": "27",
+      "label": "Water"
+    },
+    {
+      "code": "28",
+      "label": "Gas"
+    },
+    {
+      "code": "29",
+      "label": "CO"
+    },
+    {
+      "code": "30",
+      "label": "Exit Term"
+    },
+    {
+      "code": "31",
+      "label": "High Temperature"
+    },
+    {
+      "code": "32",
+      "label": "Low Temperature"
+    },
+    {
+      "code": "33",
+      "label": "Key Box"
+    },
+    {
+      "code": "34",
+      "label": "KeySwitch Arm"
+    },
+    {
+      "code": "35",
+      "label": "KeySwitch Delayed Arm"
+    }
+  ],
+  "events": [
+    {
+      "id": "demo-disarm",
+      "label": "Dis:P=1 C=01",
+      "zone": "",
+      "time": "14:32 29/10/26",
+      "details": "Demo user · fictional unset",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "244",
+          "pdfPage": 244
+        }
+      ]
+    },
+    {
+      "id": "demo-restore",
+      "label": "Restore Z=04",
+      "zone": "04",
+      "time": "14:30 29/10/26",
+      "details": "Store PIR · fictional restore",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "250",
+          "pdfPage": 250
+        }
+      ]
+    },
+    {
+      "id": "zone-04-alarm",
+      "label": "Alarm Z=04",
+      "zone": "04",
+      "time": "14:29 29/10/26",
+      "details": "Store PIR · fictional alarm",
+      "logs": [
+        "alarm"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "242",
+          "pdfPage": 242
+        }
+      ]
+    },
+    {
+      "id": "demo-arm",
+      "label": "ARM:P=1 C=01",
+      "zone": "",
+      "time": "13:00 29/10/26",
+      "details": "Demo user · fictional full set",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "242",
+          "pdfPage": 242
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "installer-g",
+      "title": "LightSYS2 Installation and Programming Manual",
+      "edition": "5IN2048 G · 06/2020",
+      "url": "https://www.lsc.com.au/Documents/LightSYS2%20Installer%20Manual%20EN.pdf",
+      "publisher": "RISCO Group (original manufacturer document; LSC mirror)",
+      "totalPdfPages": 272,
+      "sha256": "d686a09823279da50e3c9fc307a88576742220a6bb093e52f09928b1e79ffdd1",
+      "pageNumbering": "The cited printed Arabic page equals the one-based PDF page.",
+      "scope": "LightSYS2 installer baseline; feature-dependent menus. Not LightSYS+."
+    },
+    {
+      "id": "user-uk-e",
+      "title": "LightSYS2 User Manual — UK",
+      "edition": "5IN2124 E · 08/2021",
+      "url": "https://riscogroup.com/en/downloads-material/21659/",
+      "publisher": "RISCO Group",
+      "totalPdfPages": 60,
+      "sha256": "3325de4e12edec037c7c1243a438f28f0f30134770aa0b1668849038e2b5fdfa",
+      "pageNumbering": "The cited printed Arabic page equals the one-based PDF page.",
+      "scope": "Separate later UK user terminology and menu baseline. This does not assert identical firmware to installer G."
+    },
+    {
+      "id": "keypad-h",
+      "title": "LCD Keypad & LCD Proximity Keypad — RP432KP / RP432KPP",
+      "edition": "5IN1425 H · PDF metadata created January 2022 · six-page English extract",
+      "url": "https://www.maxwell.co.th/wp-content/uploads/2023/11/LightSYS-LCD-Keypad.pdf",
+      "publisher": "RISCO Group (original manufacturer document; Maxwell mirror)",
+      "totalPdfPages": 6,
+      "sha256": "4b703bed3d22383a73bbbcb4aeb7af96ff85b5db78137a760e1fc504c276e6fd",
+      "pageNumbering": "The available PDF is the six-page English portion. Printed page equals one-based PDF page; control instructions pp3–6.",
+      "scope": "Physical RP432KP / RP432KPP control functions. Other keypad styles remain separate. Revision H is identified in PDF title/metadata; the multilingual remainder is not included in this download."
+    }
+  ],
+  "limitations": [
+    "Installer G (2020) and UK user E (2021) are separately labelled baselines; this is not LightSYS+ or a claim about current firmware.",
+    "The seven guided lessons cover selected supported routes. Free exploration exposes the larger sourced tree, with explicit reference-only conditional hardware branches.",
+    "UK user and installer operations use scroll navigation because their source tables do not publish exact numeric shortcuts.",
+    "One By One zone programming, output programming, RF/device enrolment, firmware, reset/anticode and remote communications are reference-only.",
+    "The source requires 0 then OK to save installer changes. Only the free emulator models the demo tamper exit gate.",
+    "The basic lesson engine simplifies walk-test result text and resistance/voltage views; the free emulator implements the distinct source functions."
+  ],
+  "keys": [
+    {
+      "id": "1",
+      "label": "1",
+      "ariaLabel": "1",
+      "secondaryLabel": "A"
+    },
+    {
+      "id": "2",
+      "label": "2",
+      "ariaLabel": "2",
+      "secondaryLabel": "B"
+    },
+    {
+      "id": "3",
+      "label": "3",
+      "ariaLabel": "3",
+      "secondaryLabel": "C"
+    },
+    {
+      "id": "4",
+      "label": "4",
+      "ariaLabel": "4",
+      "secondaryLabel": "Fire"
+    },
+    {
+      "id": "5",
+      "label": "5",
+      "ariaLabel": "5",
+      "secondaryLabel": "D"
+    },
+    {
+      "id": "6",
+      "label": "6",
+      "ariaLabel": "6",
+      "secondaryLabel": "Fire"
+    },
+    {
+      "id": "7",
+      "label": "7",
+      "ariaLabel": "7",
+      "secondaryLabel": "Medical"
+    },
+    {
+      "id": "8",
+      "label": "8",
+      "ariaLabel": "8",
+      "secondaryLabel": ""
+    },
+    {
+      "id": "9",
+      "label": "9",
+      "ariaLabel": "9",
+      "secondaryLabel": "Medical"
+    },
+    {
+      "id": "0",
+      "label": "0",
+      "ariaLabel": "0",
+      "secondaryLabel": ""
+    },
+    {
+      "id": "panic-left",
+      "label": "P",
+      "ariaLabel": "Left panic key: emergency combination is outside this practice scope"
+    },
+    {
+      "id": "panic-right",
+      "label": "P",
+      "ariaLabel": "Right panic key: emergency combination is outside this practice scope"
+    },
+    {
+      "id": "arm",
+      "label": "🔒",
+      "ariaLabel": "Full Set: closed padlock, change programming data"
+    },
+    {
+      "id": "part-set",
+      "label": "⌂",
+      "ariaLabel": "Part Set: house key, select or restore an omitted zone"
+    },
+    {
+      "id": "previous",
+      "label": "↑ i",
+      "ariaLabel": "Up / Status: previous option or move cursor left"
+    },
+    {
+      "id": "next",
+      "label": "↓",
+      "ariaLabel": "Down / Omit: next option or move cursor right"
+    },
+    {
+      "id": "back",
+      "label": "↩",
+      "ariaLabel": "Menu / Back: return or discard unconfirmed data"
+    },
+    {
+      "id": "enter",
+      "label": "OK",
+      "ariaLabel": "Unset / OK: enter, confirm or save"
+    }
+  ],
+  "physicalLayout": [
+    [
+      "panic-left",
+      "previous",
+      "panic-right"
+    ],
+    [
+      "part-set",
+      "next",
+      "arm"
+    ],
+    [
+      "1",
+      "2",
+      "3"
+    ],
+    [
+      "4",
+      "5",
+      "6"
+    ],
+    [
+      "7",
+      "8",
+      "9"
+    ],
+    [
+      "back",
+      "0",
+      "enter"
+    ]
+  ],
+  "controls": [
+    {
+      "label": "↑ / ↓",
+      "description": "Browse the displayed menu or detector list. UK user menus use scrolling, not invented shortcut numbers."
+    },
+    {
+      "label": "OK / Menu",
+      "description": "Green OK accepts a selection; Menu/Back returns or discards unconfirmed data."
+    },
+    {
+      "label": "Full / Part Set",
+      "description": "Changes programming choices. The HOUSE / Part Set key selects a zone for omission, then OK confirms."
+    },
+    {
+      "label": "0–9",
+      "description": "Installer quick keys select consecutive local options. Preserve two-digit values such as 01; the keypad does not treat a whole path as one field."
+    },
+    {
+      "label": "0 then OK",
+      "description": "Exit and save at the installer main menu."
+    }
+  ],
+  "omissionInfo": {
+    "label": "What “disable” means here",
+    "meaning": "Omit excludes an eligible ordinary intrusion zone; it does not disconnect or power off the device.",
+    "duration": "One Time Only is reinstated after the next set-and-unset cycle. Permanent Omit remains until changed; it has a separate screen in free mode.",
+    "restore": "Return to Activities → Omit → Zones → One Time Only, find the zone, change it with Part Set and confirm with OK."
+  },
+  "nodes": {
+    "root": {
+      "kind": "menu",
+      "label": "Installer Programming",
+      "parent": null,
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "74",
+          "pdfPage": 74
+        }
+      ],
+      "autoDigits": true,
+      "selectedSubset": true,
+      "children": [
+        "eng-1",
+        "eng-2",
+        "eng-3",
+        "eng-4",
+        "eng-5",
+        "eng-6",
+        "eng-7",
+        "eng-8",
+        "exit"
+      ]
+    },
+    "eng-1": {
+      "kind": "info",
+      "label": "System",
+      "parent": "root",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "74",
+          "pdfPage": 74
+        }
+      ],
+      "code": "1",
+      "lines": [
+        "System",
+        "Open free emulator"
+      ]
+    },
+    "eng-2": {
+      "kind": "info",
+      "label": "Zones",
+      "parent": "root",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "101",
+          "pdfPage": 101
+        }
+      ],
+      "code": "2",
+      "lines": [
+        "Zones",
+        "Open free emulator"
+      ]
+    },
+    "eng-3": {
+      "kind": "info",
+      "label": "Outputs",
+      "parent": "root",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "135",
+          "pdfPage": 135
+        }
+      ],
+      "code": "3",
+      "lines": [
+        "Outputs",
+        "Open free emulator"
+      ]
+    },
+    "eng-4": {
+      "kind": "info",
+      "label": "Codes",
+      "parent": "root",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "148",
+          "pdfPage": 148
+        }
+      ],
+      "code": "4",
+      "lines": [
+        "Codes",
+        "Open free emulator"
+      ]
+    },
+    "eng-5": {
+      "kind": "info",
+      "label": "Communication",
+      "parent": "root",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "152",
+          "pdfPage": 152
+        }
+      ],
+      "code": "5",
+      "lines": [
+        "Communication",
+        "Open free emulator"
+      ]
+    },
+    "eng-6": {
+      "kind": "info",
+      "label": "Audio",
+      "parent": "root",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "187",
+          "pdfPage": 187
+        }
+      ],
+      "code": "6",
+      "lines": [
+        "Audio",
+        "Open free emulator"
+      ]
+    },
+    "eng-7": {
+      "kind": "info",
+      "label": "Install",
+      "parent": "root",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "191",
+          "pdfPage": 191
+        }
+      ],
+      "code": "7",
+      "lines": [
+        "Install",
+        "Open free emulator"
+      ]
+    },
+    "eng-8": {
+      "kind": "info",
+      "label": "Devices",
+      "parent": "root",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "208",
+          "pdfPage": 208
+        }
+      ],
+      "code": "8",
+      "lines": [
+        "Devices",
+        "Open free emulator"
+      ]
+    },
+    "exit": {
+      "kind": "logout",
+      "label": "Exit",
+      "parent": "root",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "73",
+          "pdfPage": 73
+        }
+      ],
+      "code": "0",
+      "confirmExit": true
+    },
+    "user-root": {
+      "kind": "menu",
+      "label": "UK User Functions",
+      "parent": null,
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "46",
+          "pdfPage": 46
+        }
+      ],
+      "sessionRoot": true,
+      "children": [
+        "activities",
+        "followme",
+        "view",
+        "codes",
+        "clock",
+        "event-log",
+        "maintenance",
+        "macro",
+        "keyfobs"
+      ]
+    },
+    "activities": {
+      "kind": "menu",
+      "label": "Activities",
+      "parent": "user-root",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "46",
+          "pdfPage": 46
+        }
+      ],
+      "children": [
+        "omit",
+        "outputs",
+        "sound",
+        "anti",
+        "cs",
+        "sim",
+        "advanced"
+      ]
+    },
+    "omit": {
+      "kind": "menu",
+      "label": "Omit",
+      "parent": "activities",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "46",
+          "pdfPage": 46
+        }
+      ],
+      "children": [
+        "omit-zones",
+        "omit-tamper"
+      ]
+    },
+    "omit-zones": {
+      "kind": "menu",
+      "label": "Zones",
+      "parent": "omit",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "40",
+          "pdfPage": 40
+        }
+      ],
+      "children": [
+        "omit-once",
+        "omit-reset",
+        "omit-recall",
+        "omit-permanent"
+      ]
+    },
+    "omit-once": {
+      "kind": "zone-omit",
+      "label": "One Time Only",
+      "parent": "omit-zones",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "40",
+          "pdfPage": 40
+        }
+      ],
+      "toggleKeys": [
+        "part-set"
+      ],
+      "toggleLabel": "Part Set",
+      "commitKey": "enter",
+      "finishKey": "back",
+      "numericSelection": false,
+      "eligibleOnly": true
+    },
+    "omit-reset": {
+      "kind": "info",
+      "label": "Omit Reset",
+      "parent": "omit-zones",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "46",
+          "pdfPage": 46
+        }
+      ],
+      "lines": [
+        "Omit Reset",
+        "Reference in free mode"
+      ]
+    },
+    "omit-recall": {
+      "kind": "info",
+      "label": "Omit Recall",
+      "parent": "omit-zones",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "46",
+          "pdfPage": 46
+        }
+      ],
+      "lines": [
+        "Omit Recall",
+        "Reference in free mode"
+      ]
+    },
+    "omit-permanent": {
+      "kind": "info",
+      "label": "Permanent Omit",
+      "parent": "omit-zones",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "40",
+          "pdfPage": 40
+        }
+      ],
+      "lines": [
+        "Permanent Omit",
+        "Use free emulator"
+      ]
+    },
+    "omit-tamper": {
+      "kind": "info",
+      "label": "Tamper omit",
+      "parent": "omit",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "46",
+          "pdfPage": 46
+        }
+      ],
+      "lines": [
+        "Tamper omit",
+        "Conditional feature"
+      ]
+    },
+    "outputs": {
+      "kind": "info",
+      "label": "Outputs",
+      "parent": "activities",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "46",
+          "pdfPage": 46
+        }
+      ],
+      "lines": [
+        "Outputs",
+        "Open free emulator"
+      ]
+    },
+    "sound": {
+      "kind": "info",
+      "label": "Keypad Sound",
+      "parent": "activities",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "47",
+          "pdfPage": 47
+        }
+      ],
+      "lines": [
+        "Keypad Sound",
+        "Open free emulator"
+      ]
+    },
+    "anti": {
+      "kind": "info",
+      "label": "Anti Code",
+      "parent": "activities",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "47",
+          "pdfPage": 47
+        }
+      ],
+      "lines": [
+        "Anti Code",
+        "Open free emulator"
+      ]
+    },
+    "cs": {
+      "kind": "info",
+      "label": "Configure SW",
+      "parent": "activities",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "47",
+          "pdfPage": 47
+        }
+      ],
+      "lines": [
+        "Configure SW",
+        "Open free emulator"
+      ]
+    },
+    "sim": {
+      "kind": "info",
+      "label": "Prepaid SIM",
+      "parent": "activities",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "47",
+          "pdfPage": 47
+        }
+      ],
+      "lines": [
+        "Prepaid SIM",
+        "Open free emulator"
+      ]
+    },
+    "advanced": {
+      "kind": "info",
+      "label": "Advanced",
+      "parent": "activities",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "48",
+          "pdfPage": 48
+        }
+      ],
+      "lines": [
+        "Advanced",
+        "Open free emulator"
+      ]
+    },
+    "followme": {
+      "kind": "info",
+      "label": "Follow Me",
+      "parent": "user-root",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "48",
+          "pdfPage": 48
+        }
+      ],
+      "lines": [
+        "Follow Me",
+        "Open free emulator"
+      ]
+    },
+    "view": {
+      "kind": "menu",
+      "label": "View",
+      "parent": "user-root",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "49",
+          "pdfPage": 49
+        }
+      ],
+      "children": [
+        "fault",
+        "alarm-memory",
+        "partition-status",
+        "zone-status",
+        "service-info",
+        "ip"
+      ]
+    },
+    "fault": {
+      "kind": "info",
+      "label": "Fault",
+      "parent": "view",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "49",
+          "pdfPage": 49
+        }
+      ],
+      "lines": [
+        "Fault",
+        "Open free emulator"
+      ]
+    },
+    "alarm-memory": {
+      "kind": "info",
+      "label": "Alarm Memory",
+      "parent": "view",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "49",
+          "pdfPage": 49
+        }
+      ],
+      "lines": [
+        "Alarm Memory",
+        "Open free emulator"
+      ]
+    },
+    "partition-status": {
+      "kind": "info",
+      "label": "Partition Status",
+      "parent": "view",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "49",
+          "pdfPage": 49
+        }
+      ],
+      "lines": [
+        "Partition Status",
+        "Open free emulator"
+      ]
+    },
+    "zone-status": {
+      "kind": "zones",
+      "label": "Zone Status",
+      "parent": "view",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "49",
+          "pdfPage": 49
+        }
+      ],
+      "numericSelection": false,
+      "resistance": false,
+      "detailsKey": "none"
+    },
+    "service-info": {
+      "kind": "info",
+      "label": "Service Info",
+      "parent": "view",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "49",
+          "pdfPage": 49
+        }
+      ],
+      "lines": [
+        "Service Info",
+        "Open free emulator"
+      ]
+    },
+    "ip": {
+      "kind": "info",
+      "label": "IP Address",
+      "parent": "view",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "50",
+          "pdfPage": 50
+        }
+      ],
+      "lines": [
+        "IP Address",
+        "Open free emulator"
+      ]
+    },
+    "codes": {
+      "kind": "info",
+      "label": "Codes/Tags",
+      "parent": "user-root",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "50",
+          "pdfPage": 50
+        }
+      ],
+      "lines": [
+        "Codes/Tags",
+        "Open free emulator"
+      ]
+    },
+    "clock": {
+      "kind": "info",
+      "label": "Clock",
+      "parent": "user-root",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "50",
+          "pdfPage": 50
+        }
+      ],
+      "lines": [
+        "Clock",
+        "Open free emulator"
+      ]
+    },
+    "event-log": {
+      "kind": "log",
+      "label": "Event Log",
+      "parent": "user-root",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "51",
+          "pdfPage": 51
+        }
+      ],
+      "detailsKey": "none"
+    },
+    "maintenance": {
+      "kind": "menu",
+      "label": "Maintenance",
+      "parent": "user-root",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "51",
+          "pdfPage": 51
+        }
+      ],
+      "children": [
+        "walk",
+        "keypad-test",
+        "sounder-test",
+        "strobe-test"
+      ]
+    },
+    "walk": {
+      "kind": "menu",
+      "label": "Walk test",
+      "parent": "maintenance",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "51",
+          "pdfPage": 51
+        }
+      ],
+      "children": [
+        "walk-full",
+        "walk-quick"
+      ]
+    },
+    "walk-full": {
+      "kind": "walk-run",
+      "label": "Full walk test",
+      "parent": "walk",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "51",
+          "pdfPage": 51
+        }
+      ],
+      "all": true,
+      "finishKey": "back"
+    },
+    "walk-quick": {
+      "kind": "info",
+      "label": "Quick walk test",
+      "parent": "walk",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "51",
+          "pdfPage": 51
+        }
+      ],
+      "lines": [
+        "Quick walk test",
+        "Use free emulator"
+      ]
+    },
+    "keypad-test": {
+      "kind": "info",
+      "label": "Keypad test",
+      "parent": "maintenance",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "51",
+          "pdfPage": 51
+        }
+      ],
+      "lines": [
+        "Keypad test",
+        "Use free emulator"
+      ]
+    },
+    "sounder-test": {
+      "kind": "info",
+      "label": "Sounder test",
+      "parent": "maintenance",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "51",
+          "pdfPage": 51
+        }
+      ],
+      "lines": [
+        "Sounder test",
+        "Use free emulator"
+      ]
+    },
+    "strobe-test": {
+      "kind": "info",
+      "label": "Strobe test",
+      "parent": "maintenance",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "51",
+          "pdfPage": 51
+        }
+      ],
+      "lines": [
+        "Strobe test",
+        "Use free emulator"
+      ]
+    },
+    "macro": {
+      "kind": "info",
+      "label": "Macro",
+      "parent": "user-root",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "51",
+          "pdfPage": 51
+        }
+      ],
+      "lines": [
+        "Macro",
+        "Open free emulator"
+      ]
+    },
+    "keyfobs": {
+      "kind": "info",
+      "label": "Stand Alone Keyfobs",
+      "parent": "user-root",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "51",
+          "pdfPage": 51
+        }
+      ],
+      "lines": [
+        "Stand Alone Keyfobs",
+        "Open free emulator"
+      ]
+    },
+    "service-root": {
+      "kind": "menu",
+      "label": "Installer operations",
+      "parent": null,
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "219",
+          "pdfPage": 219
+        }
+      ],
+      "sessionRoot": true,
+      "children": [
+        "s-activities",
+        "s-followme",
+        "s-view",
+        "s-clock",
+        "s-log",
+        "s-maintenance",
+        "s-macro",
+        "s-keyfobs"
+      ]
+    },
+    "s-activities": {
+      "kind": "info",
+      "label": "Activities",
+      "parent": "service-root",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "219",
+          "pdfPage": 219
+        }
+      ],
+      "lines": [
+        "Activities",
+        "Open free emulator"
+      ]
+    },
+    "s-followme": {
+      "kind": "info",
+      "label": "Follow Me",
+      "parent": "service-root",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "219",
+          "pdfPage": 219
+        }
+      ],
+      "lines": [
+        "Follow Me",
+        "Open free emulator"
+      ]
+    },
+    "s-view": {
+      "kind": "info",
+      "label": "View",
+      "parent": "service-root",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "220",
+          "pdfPage": 220
+        }
+      ],
+      "lines": [
+        "View",
+        "Open free emulator"
+      ]
+    },
+    "s-clock": {
+      "kind": "info",
+      "label": "Clock",
+      "parent": "service-root",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "221",
+          "pdfPage": 221
+        }
+      ],
+      "lines": [
+        "Clock",
+        "Open free emulator"
+      ]
+    },
+    "s-log": {
+      "kind": "info",
+      "label": "Event Log",
+      "parent": "service-root",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "221",
+          "pdfPage": 221
+        }
+      ],
+      "lines": [
+        "Event Log",
+        "Open free emulator"
+      ]
+    },
+    "s-maintenance": {
+      "kind": "menu",
+      "label": "Maintenance",
+      "parent": "service-root",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "221",
+          "pdfPage": 221
+        }
+      ],
+      "children": [
+        "s-walk",
+        "s-siren",
+        "s-strobe",
+        "resistance",
+        "s-diagnostics"
+      ]
+    },
+    "s-walk": {
+      "kind": "info",
+      "label": "Walk Test",
+      "parent": "s-maintenance",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "221",
+          "pdfPage": 221
+        }
+      ],
+      "lines": [
+        "Walk Test",
+        "Open free emulator"
+      ]
+    },
+    "s-siren": {
+      "kind": "info",
+      "label": "Siren Test",
+      "parent": "s-maintenance",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "222",
+          "pdfPage": 222
+        }
+      ],
+      "lines": [
+        "Siren Test",
+        "Open free emulator"
+      ]
+    },
+    "s-strobe": {
+      "kind": "info",
+      "label": "Strobe Test",
+      "parent": "s-maintenance",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "222",
+          "pdfPage": 222
+        }
+      ],
+      "lines": [
+        "Strobe Test",
+        "Open free emulator"
+      ]
+    },
+    "resistance": {
+      "kind": "zones",
+      "label": "Zone Resistance",
+      "parent": "s-maintenance",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "222",
+          "pdfPage": 222
+        }
+      ],
+      "numericSelection": false,
+      "resistance": true,
+      "detailsKey": "enter"
+    },
+    "s-diagnostics": {
+      "kind": "info",
+      "label": "Diagnostics",
+      "parent": "s-maintenance",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "222",
+          "pdfPage": 222
+        }
+      ],
+      "lines": [
+        "Diagnostics",
+        "Open free emulator"
+      ]
+    },
+    "s-macro": {
+      "kind": "info",
+      "label": "Macro",
+      "parent": "service-root",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "223",
+          "pdfPage": 223
+        }
+      ],
+      "lines": [
+        "Macro",
+        "Open free emulator"
+      ]
+    },
+    "s-keyfobs": {
+      "kind": "info",
+      "label": "Stand Alone Keyfobs",
+      "parent": "service-root",
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "223",
+          "pdfPage": 223
+        }
+      ],
+      "lines": [
+        "Stand Alone Keyfobs",
+        "Open free emulator"
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "id": "omit-zone",
+      "title": "Disable a device — omit its zone",
+      "description": "Omit the fictional Hall PIR, then confirm with OK.",
+      "category": "omission",
+      "relatedTaskId": "restore-zone",
+      "aliases": [
+        "disable device",
+        "bypass detector",
+        "isolate zone"
+      ],
+      "startNodeId": "user-root",
+      "sessionStart": "Already authorised UK Grand Master practice · user E (2021)",
+      "sessionLabel": "SIMULATED UK USER SESSION",
+      "path": [
+        "Activities",
+        "Omit",
+        "Zones",
+        "One Time Only",
+        "02 Hall PIR",
+        "Part Set",
+        "OK"
+      ],
+      "routeNodeIds": [
+        "user-root",
+        "activities",
+        "omit",
+        "omit-zones",
+        "omit-once"
+      ],
+      "hints": [
+        "Use the arrows and OK to select Activities → Omit → Zones → One Time Only. These user-menu numbers are not specified by the source.",
+        "Use the down arrow to find 02 Hall PIR. Press the HOUSE / Part Set key to change its omit selection.",
+        "Press the green OK key to confirm; Menu/Back would discard an unconfirmed choice."
+      ],
+      "initialOmissions": {
+        "02": false
+      },
+      "goal": {
+        "kind": "omission",
+        "zone": "02",
+        "value": true
+      },
+      "completionMessage": "Hall PIR is omitted for the next setting in this fictional lesson.",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "40",
+          "pdfPage": 40
+        },
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "46",
+          "pdfPage": 46
+        }
+      ]
+    },
+    {
+      "id": "restore-zone",
+      "title": "Re-enable a device — restore its zone",
+      "description": "Restore the fictional Hall PIR, then confirm with OK.",
+      "category": "restore",
+      "relatedTaskId": "omit-zone",
+      "aliases": [
+        "restore device",
+        "reinstate detector",
+        "undo bypass"
+      ],
+      "startNodeId": "user-root",
+      "sessionStart": "Already authorised UK Grand Master practice · user E (2021)",
+      "sessionLabel": "SIMULATED UK USER SESSION",
+      "path": [
+        "Activities",
+        "Omit",
+        "Zones",
+        "One Time Only",
+        "02 Hall PIR",
+        "Part Set",
+        "OK"
+      ],
+      "routeNodeIds": [
+        "user-root",
+        "activities",
+        "omit",
+        "omit-zones",
+        "omit-once"
+      ],
+      "hints": [
+        "Use the arrows and OK to select Activities → Omit → Zones → One Time Only. These user-menu numbers are not specified by the source.",
+        "Use the down arrow to find 02 Hall PIR. Press the HOUSE / Part Set key to change its omit selection.",
+        "Press the green OK key to confirm; Menu/Back would discard an unconfirmed choice."
+      ],
+      "initialOmissions": {
+        "02": true
+      },
+      "goal": {
+        "kind": "omission",
+        "zone": "02",
+        "value": false
+      },
+      "completionMessage": "Hall PIR is included again in this fictional lesson.",
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "40",
+          "pdfPage": 40
+        },
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "46",
+          "pdfPage": 46
+        }
+      ]
+    },
+    {
+      "id": "check-resistance",
+      "title": "Read a zone’s resistance",
+      "description": "Use the installer operations menu to read Hall PIR’s fictional resistance.",
+      "aliases": [
+        "ohms",
+        "loop resistance",
+        "check PIR resistance"
+      ],
+      "startNodeId": "service-root",
+      "sessionStart": "Already authorised installer operations · G (2020)",
+      "path": [
+        "Maintenance",
+        "Zone Resistance",
+        "02 Hall PIR"
+      ],
+      "routeNodeIds": [
+        "service-root",
+        "s-maintenance",
+        "resistance"
+      ],
+      "hints": [
+        "Scroll to Maintenance and press OK, then select Zone Resistance. This is separate from programming 2.1.3 Resistance, which configures end-of-line values.",
+        "Use the down arrow to find Hall PIR. Its fictional healthy reading is 2.20 kΩ.",
+        "The full emulator also follows the documented OK toggle between resistance and voltage. This lesson focuses on locating and reading resistance."
+      ],
+      "goal": {
+        "kind": "zone",
+        "zone": "02",
+        "resistance": true
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "222",
+          "pdfPage": 222
+        }
+      ]
+    },
+    {
+      "id": "view-zone-status",
+      "title": "Read a zone’s state",
+      "description": "Use the UK View menu to find the fictional Hall PIR.",
+      "aliases": [
+        "zone status",
+        "open zone",
+        "detector healthy"
+      ],
+      "startNodeId": "user-root",
+      "path": [
+        "View",
+        "Zone Status",
+        "02 Hall PIR"
+      ],
+      "routeNodeIds": [
+        "user-root",
+        "view",
+        "zone-status"
+      ],
+      "hints": [
+        "Scroll to View and press OK. Scroll to Zone Status and press OK.",
+        "Use the arrows to find Hall PIR. The detector controls below change its fictional status."
+      ],
+      "goal": {
+        "kind": "zone",
+        "zone": "02",
+        "resistance": false
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "49",
+          "pdfPage": 49
+        }
+      ]
+    },
+    {
+      "id": "find-last-alarm",
+      "title": "Find the last alarm",
+      "description": "Find the fictional Store PIR alarm in Event Log.",
+      "aliases": [
+        "alarm history",
+        "what set it off",
+        "event history"
+      ],
+      "startNodeId": "user-root",
+      "path": [
+        "Event Log",
+        "Alarm Z=04"
+      ],
+      "routeNodeIds": [
+        "user-root",
+        "event-log"
+      ],
+      "hints": [
+        "Scroll to Event Log and press OK.",
+        "Use the down arrow to move through the fictional history until Alarm Z=04 appears.",
+        "The source log cannot be erased. The full emulator also models the ten-event Part Set / Full Set jumps."
+      ],
+      "goal": {
+        "kind": "log",
+        "event": "zone-04-alarm",
+        "details": false
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "51",
+          "pdfPage": 51
+        },
+        {
+          "sourceId": "installer-g",
+          "printedPage": "242",
+          "pdfPage": 242
+        }
+      ]
+    },
+    {
+      "id": "walk-test-pir",
+      "title": "Walk-test a PIR",
+      "description": "Start Full walk test, activate the fictional Store PIR, and stop the test.",
+      "aliases": [
+        "test PIR",
+        "walk test",
+        "test movement detector"
+      ],
+      "startNodeId": "user-root",
+      "path": [
+        "Maintenance",
+        "Walk test",
+        "Full walk test",
+        "Activate Store PIR",
+        "Menu/Back"
+      ],
+      "routeNodeIds": [
+        "user-root",
+        "maintenance",
+        "walk",
+        "walk-full"
+      ],
+      "hints": [
+        "Scroll to Maintenance → Walk test → Full walk test, confirming each with OK.",
+        "Activate Store PIR with FINDR’s detector control.",
+        "Press Menu/Back to stop. The lesson shows a simplified count; the full emulator distinguishes Full detected-zone and Quick undetected-zone displays."
+      ],
+      "goal": {
+        "kind": "walk",
+        "zone": "04"
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "user-uk-e",
+          "printedPage": "51",
+          "pdfPage": 51
+        }
+      ]
+    },
+    {
+      "id": "leave-engineering",
+      "title": "Save and leave installer programming",
+      "description": "Use the documented 0 then OK exit route.",
+      "aliases": [
+        "exit installer",
+        "save programming",
+        "leave engineer mode"
+      ],
+      "path": [
+        "Installer Programming",
+        "0 Exit",
+        "OK"
+      ],
+      "routeNodeIds": [
+        "root",
+        "exit"
+      ],
+      "hints": [
+        "At the main installer programming menu, press 0.",
+        "Press green OK to save and exit. The full emulator blocks a simulated tamper; fault handling beyond the four demo inputs remains a reference limitation."
+      ],
+      "goal": {
+        "kind": "logout"
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "installer-g",
+          "printedPage": "73",
+          "pdfPage": 73
+        }
+      ]
+    }
+  ]
+}

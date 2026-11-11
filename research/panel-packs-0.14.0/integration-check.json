@@ -1,0 +1,23 @@
+{
+  "base_commit": "45e79bdf8e9d4333cb397a124e53183aad0724df",
+  "release": "0.14.0",
+  "counts": {
+    "panels": 611,
+    "packs": 86,
+    "devices": 146,
+    "device-packs": 16,
+    "device-documents": 61
+  },
+  "preserved_existing_panel_cards": 549,
+  "preserved_existing_device_cards": 24,
+  "preserved_original_download_mappings": 12146,
+  "preserved_data_store_identity": true,
+  "preserved_emulator_engines": true,
+  "preserved_signing_identity": true,
+  "browser_before_update": {
+    "release": "0.13.2",
+    "offline_ready": true,
+    "saved_pdfs": 5
+  },
+  "local_preview": "Browser route refused connection; managed preview daemon reported running. Production browser QA required."
+}

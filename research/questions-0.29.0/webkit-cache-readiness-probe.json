@@ -1,0 +1,585 @@
+{
+  "environment": "Playwright WebKit26.0/WPE Linux persistent context; no physical iPhone",
+  "appVersion": "0.29.0",
+  "events": [
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 12,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 24,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 36,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 48,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 60,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 72,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 84,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 96,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 108,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 120,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 132,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 144,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 156,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 168,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 180,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 192,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 204,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 216,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 228,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 240,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 252,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 264,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 276,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 288,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 300,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 312,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 324,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 336,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 348,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 360,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 372,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 384,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 396,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 408,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 420,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 432,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 444,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 456,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 468,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 480,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 492,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 504,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 516,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 528,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 540,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 552,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 564,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 576,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 588,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 600,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 612,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 624,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 636,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 648,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 660,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 672,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 684,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 696,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 708,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 720,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 732,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 744,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 756,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 768,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 780,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 792,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 804,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 816,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 828,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 840,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 852,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 864,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 876,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 888,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 900,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 912,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 924,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 936,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 948,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 960,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 972,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 984,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 996,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1008,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1020,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1032,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1044,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1056,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1068,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1080,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1092,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1104,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1116,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1128,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1140,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1152,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1164,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1176,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1188,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1200,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1212,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1224,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1236,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1248,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1260,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1272,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1284,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1296,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1308,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1320,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1332,
+      "total": 1334
+    },
+    {
+      "type": "OFFLINE_PROGRESS",
+      "completed": 1334,
+      "total": 1334
+    }
+  ],
+  "result": {
+    "footer": "\nApp installing 100% · 0 PDFs saved · PDF pending · OCR pending · Model pending\nFINDR / 0.29.0",
+    "registrations": [
+      {
+        "scope": "http://127.0.0.1:8088/app/",
+        "active": "activated"
+      }
+    ],
+    "cacheNames": [
+      "findr-language-model-v1",
+      "findr-shell-3c401fd1522b"
+    ],
+    "keyCount": 0,
+    "hasStampKey": false,
+    "hasAppKey": false,
+    "stampMatch": false,
+    "appMatch": false,
+    "stampText": null
+  }
+}

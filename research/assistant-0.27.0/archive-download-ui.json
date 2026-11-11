@@ -1,0 +1,32 @@
+{
+  "transport": "Local real UI /api/manual route forwarded unchanged to the existing published FINDR manual endpoint; no synthetic PDF response",
+  "physicalIPhone": false,
+  "status": "passed",
+  "elapsedMs": 1784.6262829999998,
+  "saved": {
+    "id": "advanced-76cae27e9ec7",
+    "bytes": 2252899,
+    "sha256": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e",
+    "imported": false,
+    "blobBytes": 2252899
+  },
+  "questionRetained": true,
+  "steps": [
+    "Normal Quick Questions menu",
+    "Exact model question",
+    "Equipment confirmation",
+    "Catalogue proposes available download",
+    "Engineer selects download",
+    "Published endpoint returns real PDF",
+    "SHA-256 verified and Blob saved",
+    "PDF read and identity requested; pending question retained"
+  ],
+  "forwarded": [
+    {
+      "url": "https://findr-fault-finder.floodyyy21.chatgpt.site/api/manual/advanced-76cae27e9ec7",
+      "status": 200,
+      "contentType": "application/pdf",
+      "transport": "curl through configured environment proxy; Playwright APIRequestContext direct network was refused"
+    }
+  ]
+}

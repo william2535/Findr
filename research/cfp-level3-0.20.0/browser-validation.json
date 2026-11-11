@@ -1,0 +1,95 @@
+{
+  "release": "0.20.0",
+  "status": "passed",
+  "testedAt": "2026-11-02T19:47:05.508065+00:00",
+  "server": "http://127.0.0.1:8085",
+  "build": "afc4869465ca",
+  "browser": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+  "script": "scripts/qa-cfp-level3.cjs",
+  "scriptSha256": "963c56ba6cde9a5fb2602cabeb7e61f854073cb08c9aa3f9a00ac1bdf5aa43f0",
+  "fixture": "tests/fixtures/cfp-level3/synthetic-0.19-progress.json",
+  "legacyBaseline": "ed00c1fa0479ccfc5c111abeec4de2eac33f1843",
+  "command": "FINDR_PLAYWRIGHT_PATH=/opt/codex/cua_node/lib/node_modules/playwright node scripts/qa-cfp-level3.cjs",
+  "results": [
+    {
+      "width": 390,
+      "status": "passed",
+      "offline": true,
+      "cfpLessons": 15,
+      "sigmaLessons": 8,
+      "checks": "source-reviewed fascia/PCB; separate cover and L3 entry; programming/commit/exit; physical guided actions; independent old progress; saved PDFs and visits; offline settings and manuals",
+      "cfpSteps": 128,
+      "sigmaSteps": 30,
+      "hardware": "Chromium viewport emulation; no physical panel or Safari certification"
+    },
+    {
+      "width": 1440,
+      "status": "passed",
+      "offline": true,
+      "cfpLessons": 15,
+      "sigmaLessons": 8,
+      "checks": "source-reviewed fascia/PCB; separate cover and L3 entry; programming/commit/exit; physical guided actions; independent old progress; saved PDFs and visits; offline settings and manuals",
+      "cfpSteps": 128,
+      "sigmaSteps": 30,
+      "hardware": "Chromium viewport emulation; no physical panel or Safari certification"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "front-390.png",
+      "sha256": "acaf2ecc103ff0ed9ab011b87d8cbe6adc422fd094c0c2d7264cab5393e78c09"
+    },
+    {
+      "file": "pcb-390.png",
+      "sha256": "15af72f6408f2284f49f7b9c00bd8b60c747820d489612c6152b80edc4327167"
+    },
+    {
+      "file": "front-zoom-390.png",
+      "sha256": "bb143132671c0643dd81567d81b93fbc60e1d4a0105586caf20d3df13563cc26"
+    },
+    {
+      "file": "pcb-zoom-390.png",
+      "sha256": "889ce4bd4292d1b3647dd4d300c21aa3ff6c5dd2cbbf3449ab156cff3dbbbd46"
+    },
+    {
+      "file": "front-1440.png",
+      "sha256": "da40d2b1541b95c3408127286c4559880e61e115f9cb8667dd55ab8ebe07ff0d"
+    },
+    {
+      "file": "pcb-1440.png",
+      "sha256": "999f97956433241b3d21e4a824262acd70c6b9691d80a4b41a15fd447350e562"
+    },
+    {
+      "file": "front-zoom-1440.png",
+      "sha256": "bda8eb3b8f967125907de2b8078a67254025e522cacdf214dffb899514ebd00e"
+    },
+    {
+      "file": "pcb-zoom-1440.png",
+      "sha256": "a05d2923062d78ef205ad59a30ed829259b542a0e1af74d23e33fa9865585737"
+    }
+  ],
+  "assertions": [
+    "15 CFP lessons (128 steps) and 8 Sigma lessons (30 steps) completed through rendered hinted controls at both widths",
+    "Cover removal alone does not enter level 3; actual SW8 enters coincidence and cycles the nine source functions",
+    "Refitting the cover retains active engineering state and hides SW8; reopening exposes the same state",
+    "Next Option selects immediately in L3; Enable/Disable stages a pair; a subsequent Next Option commits it",
+    "One coincidence zone indicates fire and buzzer but does not run alarm sounders; both zones permit normal output",
+    "Actual open/short scenario selectors retain subtype; matching diagnostic function shows only the affected zone",
+    "VR1 exposes 1 through 10 minutes; stored 3-minute setting, delayed Z1 and test Z5 persist",
+    "Zoomed physical key targets are at least 44 by 44 CSS pixels; no horizontal document overflow in fit or zoom",
+    "CFP manual modal excludes Sigma documents; normal download/read flow renders source PDF in canvas",
+    "Prior old-schema CFP disablement and completion are retained before intentional practice; Sigma remains exactly unchanged by CFP use",
+    "Prior synthetic visit, schedule and intruder state remain byte-equivalent by JSON comparison; prior saved PDF remains stored",
+    "After a complete app cache, network-disabled reload retains active L3, unconfirmed draft, fitted cover, settings, test flags and lesson completions",
+    "With networking disabled, both CFP and earlier Gent saved PDFs render; prior visit can be reopened",
+    "No browser page errors in either run"
+  ],
+  "limits": [
+    "Desktop Chromium viewport emulation, not physical iPhone Safari or panel hardware verification",
+    "All site/event/programming data are labelled synthetic; no real panel was connected",
+    "CFP PDF API response is intercepted with the checked local installation manual bytes to avoid depending on manufacturer host availability",
+    "Old visit/import/intruder records are preservation markers; their full product workflows are covered by separate feature suites",
+    "This report verifies the local app, not publication or APK signing",
+    "Unconfirmed draft exit handling is labelled simulator policy because the manual does not specify every firmware edge case"
+  ]
+}

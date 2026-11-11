@@ -1,0 +1,80 @@
+{
+  "release": "0.9.0",
+  "reviewedAt": "2026-10-29",
+  "baselineCommit": "19804c0428782cc40fedb9237dcaad0f9bcb7501",
+  "addedProfiles": [
+    "ade-accenta-optima",
+    "risco-lightsys2",
+    "hkc-quantum70"
+  ],
+  "totals": {
+    "emulatorFamilies": 9,
+    "guidedLessons": 62,
+    "indexedEntries": 8979,
+    "pinnedSourceFiles": 22,
+    "sourcePdfPages": 1825,
+    "distinctCitedSourcePages": 946,
+    "evidenceGaps": 88,
+    "newReachableEmulatorEntries": 989,
+    "picturedFamilies": 441,
+    "pictureBrands": 56,
+    "packs": 58,
+    "catalogueRecords": 12377
+  },
+  "verification": {
+    "automatedCommand": "node --test --test-isolation=none tests/*.test.mjs",
+    "tests": 400,
+    "passed": 400,
+    "failed": 0,
+    "fullLog": "emulators-0.9.0-tests.txt",
+    "independentHintAudit": "tests/emulator-expansion-0.9.test.mjs",
+    "hintAuditCases": 13,
+    "hintAuditReachableEntries": 989,
+    "priorSixProfilesDeepEqual": true,
+    "priorPicturesPacksCatalogueByteIdentical": true,
+    "newModulesAndMapsPrecached": true,
+    "webBuildSucceeded": true,
+    "webPublicFilesByteIdentical": 730,
+    "apkAppFilesByteIdentical": 701
+  },
+  "browserChecks": [
+    "All nine emulator cards render and advertise 62 lessons.",
+    "ADE output numeric toggles and 0/RESET shutdown.",
+    "ADE SHOW HINTS highlights physical6, recovers wrong2 via RESET, and completes without saving zone names.",
+    "Risco RP432KP face and separate installer/UK user contexts; one-time omission draft selected by house key and stored by green OK.",
+    "HKC separate physical function column; authorised *2 YES inhibits zone002 and sets, User Unset clears the setting period and inhibition.",
+    "All three faces checked at 320px iframe width with no horizontal document overflow.",
+    "FINDR0.9.0 footer confirmed in final new-card screenshot."
+  ],
+  "screenshot": "emulators-0.9.0-preview.jpg",
+  "android": {
+    "versionCode": 13,
+    "versionName": "0.9.0",
+    "minimumSdk": 26,
+    "targetSdk": 35,
+    "permissions": [
+      "android.permission.INTERNET"
+    ],
+    "apk": "public/releases/FINDR-0.9.0.apk",
+    "bytes": 21595036,
+    "sha256": "6b92ad297b828c8f0ca9cedaf663fba40a8f00bc2a82a023fd4b2cdb75cd2bda",
+    "signingCertificateSha256": "6075a73725dac5a3cc1f7b6b32c5e1df907cd1ca4b5b611f4c1c1d2fd502fefd",
+    "v2SignatureVerified": true,
+    "v3SignatureVerified": true
+  },
+  "fixes": [
+    "ADE RESET preserves an active setting period; only documented unsetting restores temporary omissions.",
+    "All new text helpers retain family-specific validation.",
+    "Risco output-test hints stop before activation and name OK correctly.",
+    "HKC clock helper is usable but undocumented physical field advance cannot be taught by hints.",
+    "Source-defined numeric partition masks survive restoration.",
+    "Unfitted device lists remain empty and return an explicit prerequisite."
+  ],
+  "limits": [
+    "Manual-based selected behavior and fictional site; no matching hardware tested.",
+    "Indexed source entries include values and references and are not all interactive LCD screens.",
+    "No live panel transport, RF enrollment or manufacturer approval.",
+    "Physical device installation, actual speaker listening and real offline-device use have not been verified.",
+    "Source conflicts and hardware-dependent functions remain labelled rather than claimed exact."
+  ]
+}

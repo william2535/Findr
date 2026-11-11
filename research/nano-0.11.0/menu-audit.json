@@ -1,0 +1,620 @@
+{
+  "profileId": "gent-nano",
+  "release": "0.11.0",
+  "reviewedAt": "2026-10-30",
+  "baseline": {
+    "family": "Nano",
+    "variant": "NANO-24 single-loop analogue addressable fire panel",
+    "models": [
+      "NANO-24"
+    ],
+    "operatorDocument": "nano-operator-9",
+    "menuMapDocument": "nano-commissioning-3",
+    "menuMapFirmware": "V2.xx supplementary map; V3.xx operator procedures verified separately",
+    "editionBoundary": "V3.xx operator manual issue 9 (December 2021) and installation issue 11 (January 2022). Older V2.xx commissioning details are reference-only unless corroborated. This is a Nano profile, not Vigilon, Vigilon Plus, Compact or every firmware revision.",
+    "practiceConfiguration": "Fictional single loop with seven devices, sixteen selectable zones and sectors (three populated), optional level-2 device/channel disablement, no printer.",
+    "display": {
+      "rows": 8,
+      "columns": 40
+    },
+    "selectionReason": "The Nano-specific V3 operator manual provides complete common Customer-mode procedures and a physical panel illustration; no market-share claim is made.",
+    "hardwareLimits": {
+      "loops": 1,
+      "maxDevices": 127,
+      "zones": 16,
+      "sectors": 16,
+      "deviceLabelCharacters": 32,
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            21,
+            22
+          ]
+        },
+        {
+          "sourceId": "nano-installation-11",
+          "pages": [
+            7,
+            10,
+            11
+          ]
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nano-operator-9",
+      "title": "Nano panel-based fire detection and alarm system - Operating instructions",
+      "publisher": "Honeywell Gent",
+      "documentNumber": "4188-947",
+      "edition": "Issue 9_12-21, December 2021; V3.xx",
+      "url": "https://midlandfire.direct/docs/files/4188-947-1e1de9.pdf",
+      "originalPublisher": true,
+      "hostType": "Manufacturer document mirrored by a Gent system integrator",
+      "pages": 28,
+      "sha256": "1e1de98fe28d734efc476d31e47638bf1640094dbe9ce453265d072f8afb47fe",
+      "reviewedPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "note": "Primary V3.xx operator baseline. Page numbers in links are one-based PDF pages and match the printed operator page numbers."
+    },
+    {
+      "id": "nano-installation-11",
+      "title": "Nano panel-based fire detection and alarm system - Data and installation instructions",
+      "publisher": "Honeywell Gent",
+      "documentNumber": "4188-948",
+      "edition": "Issue 11_01-22, January 2022; V3.xx",
+      "url": "https://midlandfire.direct/docs/files/4188-948-7006fd.pdf",
+      "originalPublisher": true,
+      "hostType": "Manufacturer document mirrored by a Gent system integrator",
+      "pages": 28,
+      "sha256": "7006fd9dd77c03893ec0e5f158a7984c112bd72cb6d2d7616e811265b2a20483",
+      "reviewedPages": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        19,
+        28
+      ],
+      "note": "Current-baseline hardware limits, display specification and access-level feature categories. Installation and wiring are reference material, not simulated electrical work."
+    },
+    {
+      "id": "nano-commissioning-3",
+      "title": "Nano panel-based fire detection and alarm system - Commissioning instructions",
+      "publisher": "Gent by Honeywell",
+      "documentNumber": "4188-949",
+      "edition": "Issue 3_05/10, May 2010; Main Controller V2.xx",
+      "url": "https://www.firequeen.co.uk/wp-content/uploads/2021/10/Gent-Nano-Com.pdf",
+      "originalUrl": "https://gentexpert.co.uk/downloads/Addressable/Nano/v2/4188-949_V2_Nano%20Comms.pdf",
+      "originalPublisher": true,
+      "hostType": "Manufacturer document mirrored by a fire-system installer",
+      "pages": 85,
+      "sha256": "f438d67b353cb0014d6cf45b4d348d0e1157a0f4d3b5009c31de8a6a07e5a79e",
+      "reviewedPages": [
+        1,
+        4,
+        9,
+        10,
+        20,
+        21,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        33,
+        35,
+        36,
+        37,
+        38,
+        39,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ],
+      "note": "Older V2.xx supplementary source. Detailed engineering routes stay reference-only unless independently corroborated by the V3.xx operator manual. The final menu map is PDF page 85 but printed page 86; all page links use actual PDF page numbers."
+    }
+  ],
+  "nodeCount": 56,
+  "interactiveNodeCount": 39,
+  "referenceNodeCount": 17,
+  "menuReferenceCount": 76,
+  "routeCounts": {
+    "implemented": 20,
+    "conditional": 7,
+    "reference": 49,
+    "conflict": 0
+  },
+  "findings": [
+    {
+      "id": "firmware-boundary",
+      "finding": "The operator baseline is V3.xx from December 2021; the detailed public commissioning source is V2.xx from May 2010.",
+      "resolution": "Keep V2-only engineering forms reference-only. Supported operator recipes are checked against the V3 manual, and the distinction stays visible.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            1,
+            3,
+            28
+          ]
+        },
+        {
+          "sourceId": "nano-installation-11",
+          "pages": [
+            3,
+            28
+          ]
+        },
+        {
+          "sourceId": "nano-commissioning-3",
+          "pages": [
+            1,
+            4,
+            85
+          ]
+        }
+      ]
+    },
+    {
+      "id": "menu-order",
+      "finding": "The V3 operator manual illustrates individual recipes but not a complete global menu appendix. The older V2 map provides complete branch ordering.",
+      "resolution": "Record the supplementary ordering evidence. Do not claim that every V3 firmware build has been checked on hardware.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            8,
+            9,
+            18,
+            19,
+            24,
+            25
+          ]
+        },
+        {
+          "sourceId": "nano-commissioning-3",
+          "pages": [
+            85
+          ]
+        }
+      ]
+    },
+    {
+      "id": "commissioning-pagination",
+      "finding": "The commissioning PDF has 85 pages, while its final printed menu-map page says 86 and some contents references use later printed numbers.",
+      "resolution": "All citations use actual one-based PDF page indices; the final map is linked as PDF page 85.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-commissioning-3",
+          "pages": [
+            2,
+            3,
+            85
+          ]
+        }
+      ]
+    },
+    {
+      "id": "device-access",
+      "finding": "The V3 customer example shows read-only device status. The older commissioning source makes device/channel disablement level 3 by default, configurable to level 2.",
+      "resolution": "The fictional fixture declares optional level-2 device and channel disablement; help explains that actual sites may require authorised Engineering mode.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            22,
+            23
+          ]
+        },
+        {
+          "sourceId": "nano-commissioning-3",
+          "pages": [
+            25,
+            49,
+            58
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cancel-buzzer-access",
+      "finding": "Cancel Buzzer is configurable at level 1 or 2, with level 2 documented as the factory setting.",
+      "resolution": "The practice fixture requires Customer mode. Cancelling the buzzer never removes the underlying event.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            8,
+            14,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "device-number-artwork",
+      "finding": "The V3 fault illustration shows device 145 although the same family is specified for up to 127 loop devices.",
+      "resolution": "Treat 145 as an inconsistent illustration; training addresses remain within the documented 1-127 range.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            15,
+            22
+          ]
+        },
+        {
+          "sourceId": "nano-installation-11",
+          "pages": [
+            7,
+            9,
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zones-and-mcp",
+      "finding": "Unlike the unresolved classic Vigilon zone scope, Nano operator instructions explicitly include manual call points in a disabled zone.",
+      "resolution": "Nano zone disablement affects sensors and MCPs in the selected zone; independent device disablement remains a separate state.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            21
+          ]
+        }
+      ]
+    },
+    {
+      "id": "channel-form",
+      "finding": "The V3 Channels illustration shows a Back prompt and a nearby Save callout, with status read-only, and warns that Find can operate relay outputs.",
+      "resolution": "Use the source-supported route and explicit fixture access setting for status. Do not expose a falsely harmless Find action.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            23
+          ]
+        },
+        {
+          "sourceId": "nano-commissioning-3",
+          "pages": [
+            49,
+            58
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alarm-controls",
+      "finding": "Operator language describes Sound Alarms broadly; commissioning defines configurable SOUND/RESOUND, new-fire resound and fire-relay behaviour.",
+      "resolution": "Declare the practice all-alarm SOUND configuration. Manual sound/silence does not end the separate practice delay or trigger plant; another automatic input retains the first countdown deadline. These are stated fictional scenario rules, not universal Nano cause-and-effect.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            8,
+            12,
+            14
+          ]
+        },
+        {
+          "sourceId": "nano-commissioning-3",
+          "pages": [
+            58
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-mode",
+      "finding": "Day mode, Verify, calendar operation, delay duration and timeout are commissioned for each site.",
+      "resolution": "Use a labelled practice delay scenario and preserve NONE as removal of override. Do not infer a real-site delay policy from the simulator.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            8,
+            13,
+            21
+          ]
+        },
+        {
+          "sourceId": "nano-commissioning-3",
+          "pages": [
+            45,
+            46,
+            47,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-mode-warning-order",
+      "finding": "The V3 operator page has a warning note beside the entry arrow and a CALENDAR override form. The older commissioning source separates MANUAL Yes/No switching from CALENDAR/ON/OFF override forms.",
+      "resolution": "The declared CALENDAR practice fixture uses the source form with NONE/NIGHT/DAY and Save. It does not invent a post-save confirmation. Exact V3 MANUAL warning timing remains unverified.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            21
+          ]
+        },
+        {
+          "sourceId": "nano-commissioning-3",
+          "pages": [
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coincidence",
+      "finding": "The operator manual distinguishes zone coincidence from detector coincidence, including different first-event lamp and buzzer behaviour.",
+      "resolution": "Explain the distinction in help. The main fixture has ordinary detection and does not claim full coincidence cause-and-effect simulation.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "id": "printer",
+      "finding": "Print options depend on a connected printer; non-fire print actions require Customer mode. Test Print is only in the older appendix.",
+      "resolution": "The fixture has no printer. Print routes are conditional references, with Test Print explicitly version-limited.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            11,
+            19,
+            20
+          ]
+        },
+        {
+          "sourceId": "nano-commissioning-3",
+          "pages": [
+            22,
+            85
+          ]
+        }
+      ]
+    },
+    {
+      "id": "history-capacity",
+      "finding": "The V3 operator source identifies event 1 as newest without stating capacity. The older commissioning source states 999 records.",
+      "resolution": "Use a maximum of 999 training records with the older capacity basis labelled; never import the Vigilon 255-entry limit.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            19
+          ]
+        },
+        {
+          "sourceId": "nano-commissioning-3",
+          "pages": [
+            22
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clock-bounds",
+      "finding": "The clock recipe does not define firmware year bounds or every invalid-date response.",
+      "resolution": "Use explicit FINDR calendar validation and a 2000-2099 training range; do not present the bound as a manufacturer specification.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cursor-and-return",
+      "finding": "The sources specify range scrolling, next-field selection, Save and Quit, but do not completely define wrap behaviour, key repeat, every post-save screen or error wording.",
+      "resolution": "Training uses consistent single-step cycling, validation messages and return screens. These details are identified as practice conventions rather than verified firmware transcripts.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            7,
+            8,
+            9,
+            18,
+            21,
+            22,
+            23
+          ]
+        }
+      ]
+    },
+    {
+      "id": "timeout",
+      "finding": "The V3 operator instructions state a few minutes of inactivity; the V2 commissioning source gives about 3 minutes at levels 2 and 3.",
+      "resolution": "Use a stated 180-second practice timeout which returns to status and access level 1, based on the older access description. Exact V3 session timing remains unverified. Temporary navigation and access are not restored after leaving the trainer.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            8
+          ]
+        },
+        {
+          "sourceId": "nano-commissioning-3",
+          "pages": [
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "id": "test-exit",
+      "finding": "Leaving a weekly-test form is separate from ending weekly-test mode. Starting or stopping weekly test affects all zones.",
+      "resolution": "Require the explicit Stop confirmation and show outstanding Test state in lessons; test-device timing follows the documented 5-second plus 5-second sequence.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            10,
+            11,
+            21
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repair-cause",
+      "finding": "Repair assumes that loop wiring faults have been corrected first.",
+      "resolution": "A simulated active fault cannot be repaired away. The learner removes the simulated cause separately before acknowledging the retained indication.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "simulation-boundary",
+      "finding": "Manufacturer diagrams describe real equipment and site-specific behaviour; the app has no hardware link or firmware image.",
+      "resolution": "Fixture labels, event dates, code, scenarios, timings controls, sounds and lesson celebrations are fictional learning aids. Physical panel validation remains outstanding.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            3,
+            5,
+            8
+          ]
+        },
+        {
+          "sourceId": "nano-installation-11",
+          "pages": [
+            11,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guided-practice-clock",
+      "finding": "The documented weekly-test sequence reaches automatic silence after five seconds and reset after a further five seconds; the display test also has a short running time. A learner may need longer to read each observation step.",
+      "resolution": "FINDR-only teaching policy: guided lessons pause simulation time while reading and use clearly labelled Advance training time actions for each documented duration. Free practice runs timers normally while visible. Real Nano firmware does not pause for a lesson; the panel menus and documented timing sequence are unchanged.",
+      "sourceRefs": [
+        {
+          "sourceId": "nano-operator-9",
+          "pages": [
+            10,
+            11,
+            18
+          ]
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "physicalPanelCompared": false,
+    "firmwareImageUsed": false,
+    "sourcePdfHashesPinned": true,
+    "primarySourceFaceRendered": true,
+    "primaryOperatorRecipesRead": true,
+    "olderEngineeringRoutesInteractive": false
+  },
+  "unresolvedEvidenceNeeded": [
+    "A matching V3.xx commissioning manual for exact engineering forms and order.",
+    "Physical Nano firmware check of menu availability, cursor wrapping, post-save return and invalid-entry messages.",
+    "Actual site configuration when comparing device disablement access, alarm controls, Day/Verify and cause-and-effect."
+  ],
+  "knownLimitCount": 21,
+  "guidedPracticeClock": {
+    "origin": "FINDR teaching policy",
+    "guidedLessons": "manual-advance",
+    "freePractice": "visible-realtime",
+    "firmwareBehaviour": false,
+    "description": "Guided lessons pause simulation time while the learner reads. The explicitly labelled Advance training time actions advance the documented durations. Free practice runs the simulation timers normally while the trainer is visible. This is a FINDR learning aid, not how Nano firmware pauses or operates."
+  }
+}

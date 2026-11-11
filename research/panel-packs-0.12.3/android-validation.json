@@ -1,0 +1,73 @@
+{
+  "release": "0.12.3",
+  "validated_at_utc": "2026-10-30T13:20:08.746211+00:00",
+  "status": "passed",
+  "build_command": "FINDR_ANDROID_SDK=/workspace/scratch/163ad62fc051/android-sdk python3 android/build-apk.py",
+  "prepared_cache_hash": "073778df4cd9",
+  "precache_asset_count": 817,
+  "pictured_families": 549,
+  "package": "com.findr.app",
+  "version_name": "0.12.3",
+  "version_code": 21,
+  "min_sdk": 26,
+  "target_sdk": 35,
+  "permissions": [
+    "android.permission.INTERNET"
+  ],
+  "certificate_sha256": "6075a73725dac5a3cc1f7b6b32c5e1df907cd1ca4b5b611f4c1c1d2fd502fefd",
+  "certificate_matches_expected": true,
+  "certificate_matches_previous_0_12_2": true,
+  "previous_apk_sha256": "dda26780c38a8351d8bedaaa60d9338ab358c92cbde03818435a9a53dfb7d0f5",
+  "existing_keystore_unchanged": true,
+  "authored_android_manifest_unchanged": true,
+  "signers": 1,
+  "signature_v2": true,
+  "signature_v3": true,
+  "zipalign_4_byte_check": true,
+  "zip_crc_check": true,
+  "apk_sha256": "8e97ce4f6d8dc400f0a4835e238a839b7548adb613ba141934f5403b3d00b469",
+  "apk_bytes": 24906921,
+  "artifact_path": "artifacts/FINDR-0.12.3.apk",
+  "release_path": "public/releases/FINDR-0.12.3.apk",
+  "release_copy_identical": true,
+  "sha256_sidecars_match_prior_format": true,
+  "source_asset_root": "public/app",
+  "embedded_asset_root": "assets/www",
+  "source_file_count": 820,
+  "embedded_file_count": 820,
+  "embedded_bytes": 39524337,
+  "prepared_source_unchanged_during_build": true,
+  "generated_www_byte_identical": true,
+  "all_embedded_files_byte_identical_to_prepared_source": true,
+  "missing_assets": [],
+  "extra_assets": [],
+  "mismatched_assets": [],
+  "download_map_path": "data/download-map.json",
+  "download_map_sha256": "4cbcb702b3c4dec0f659cd16d0ce3bcc61f02af85ea67757d0af49a678fc5f24",
+  "download_map_byte_identical": true,
+  "source_asset_manifest_sha256": "6fd2df558c7dc4c289acbf0121a8eb819ea99a5650e5cdeccaaef79a0a484b7f",
+  "source_asset_manifest_hash_format": "SHA256 of JSON sorted relative paths to {bytes, sha256}, with sorted keys and compact separators",
+  "critical_assets": {
+    "version.mjs": {
+      "bytes": 687,
+      "sha256": "642d49416334f7c544202e9cbacd804987cd6f1ce2304cace809a0f66ca9fd1b"
+    },
+    "precache.js": {
+      "bytes": 30600,
+      "sha256": "57cb0f036fc0efb8f0566353c1451a22fc1966bbd465fc3f78f3e376d9553af9"
+    },
+    "data/catalogue.json": {
+      "bytes": 5944194,
+      "sha256": "905804559c630f0bc7f5f910fef3d663dd2b8905bc958dbe339eb49f6a5a2334"
+    },
+    "data/panels.json": {
+      "bytes": 832973,
+      "sha256": "4f3c47fe2c659bab8d1be69c30ef47e17cc5842a78bed1aad80ca9e409ddbab7"
+    },
+    "data/download-map.json": {
+      "bytes": 1530198,
+      "sha256": "4cbcb702b3c4dec0f659cd16d0ce3bcc61f02af85ea67757d0af49a678fc5f24"
+    }
+  },
+  "build_log": "research/panel-packs-0.12.3/android-build.txt"
+}

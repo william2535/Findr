@@ -1,0 +1,377 @@
+{
+  "batch": "nittan-0.14.0",
+  "verified_date": "2026-10-30",
+  "brand": "Nittan",
+  "scope": "Pictured device identification and accurately labelled manufacturer references. No new live-panel operations or commissioning workflow.",
+  "source_method": "Recovered original manufacturer PDFs and original manufacturer web assets. PDF photographs extracted with their transparency masks; no generated hardware imagery.",
+  "devices": [
+    {
+      "id": "nittan-evc-ir",
+      "archive_reference_id": "nittan-0ac170ea49ab",
+      "document_id": "device-doc-nittan-4e12fd384d8c",
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "printed_revision": "NISM-EVC-IR Issue 9",
+      "document_sha256": "4e12fd384d8c18dadcfe71cb75553a65bf1485f0cf4959ac0977ead569365dc0",
+      "original_image_sha256": "1cdd8b222f10d4e490c2939eb712e8861aaeab6e544458115a092de1a376ec44",
+      "source_page_url": "https://www.nittan.com/english/product/evc-ir/",
+      "source_image_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EVC-IR.jpg",
+      "image_sha256": "e9a8bc6d4af8cb2352d70a32a0a160416afb328b4132e9272d40f22e6d7ae197"
+    },
+    {
+      "id": "nittan-ev-h-cs",
+      "archive_reference_id": "nittan-14089a9905eb",
+      "document_id": "device-doc-nittan-2baa1e344172",
+      "inspected_pdf_pages": [
+        1,
+        3,
+        5
+      ],
+      "printed_revision": "NISM/EV-H/05, September 2015",
+      "document_sha256": "2baa1e344172062e5c91021267dc7904d1ac981cc87700a5df5289500910fda8",
+      "original_image_sha256": "def32374e4c61173c8e55fc03e3523b3edc3d00291744133e4425430b621e1df",
+      "source_page_url": "https://www.nittan.com/english/product/ev-h-cs/",
+      "source_image_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EV-H-CS.jpg",
+      "image_sha256": "9c23d206e1b0fcc738ba12fa4fa99eb441b292a48a6fa7b8f8a7803cb0411841"
+    },
+    {
+      "id": "nittan-ev-hiop-sb-sci",
+      "archive_reference_id": "nittan-14b8944e8de0",
+      "document_id": "device-doc-nittan-f912292fc103",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "printed_revision": "IIS-EV-HIOP-SB-SCI Issue 9, 20/10/2016",
+      "document_sha256": "f912292fc103239e1d4ea38eba311a74309a8dc0cf6d105c61d00313ef976eb6",
+      "original_image_sha256": "2159d317ded5774fbe62bb99a99a774cedcdf0625b557df139ec35114af74d59",
+      "source_page_url": "https://www.nittan.com/english/product/ev-hiop-sb-sci/",
+      "source_image_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EV-HIOP-SB-SCI.jpg",
+      "image_sha256": "2af0b76fe8ffa876d129cf0db4d0c9dda8381d2ac4a3d2ca72f0b8dd0f643622"
+    },
+    {
+      "id": "nittan-ev-mcp2-sci-ip67",
+      "archive_reference_id": "nittan-1a1a18b53ab3",
+      "document_id": "device-doc-nittan-92f082662910",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "printed_revision": "IIS-EV-MCP2-SCI-IP67 Issue 2, 08/10/2019",
+      "document_sha256": "92f082662910775f8f633359f84188014201ac5fd1926f7a0e2320dd0c80d93c",
+      "original_image_sha256": "2670cfd044ba8d726b5207e83e9c64865b602e9413901fbff6ce2e65905e5e4b",
+      "source_page_url": "https://www.nittan.com/english/product/ev-mcp2-sci-ip67/",
+      "source_image_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EV-MCP2-SCI-IP67.jpg",
+      "image_sha256": "30e649a3a2c2a5691fb8c85b1ca261fa53e05410e4f9af58a85c8af2af3db34d"
+    },
+    {
+      "id": "nittan-ev-mcp2-sci-ip24",
+      "archive_reference_id": "nittan-62c9c1d3b106",
+      "document_id": "device-doc-nittan-509751ace6d5",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "printed_revision": "IIS-EV-MCP2-SCI-IP24 Issue 3, 08/10/2019",
+      "document_sha256": "509751ace6d5abdb7675d679c7d844cdbb5abbd4cf67dd11413f08f49d486fb8",
+      "original_image_sha256": "0fe47fb766ffbb4ca571895a6ef4ec0a3c80c264ae2a259f4edbc992024ce4a0",
+      "source_page_url": "https://www.nittan.com/english/product/ev-mcp2-sci-ip24/",
+      "source_image_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EV-MCP2-SCI-IP24.jpg",
+      "image_sha256": "d683d5b1974f63c94eb1b1029eefef727ae017b24473321849bc3cc47a82b7a0"
+    },
+    {
+      "id": "nittan-ev-240v-mra",
+      "archive_reference_id": "nittan-695cd16504ab",
+      "document_id": "device-doc-nittan-60acce3d2e53",
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "printed_revision": "EV-240V MRA Installation Leaflet Issue 1",
+      "document_sha256": "60acce3d2e53aa94eb7c74ecb05222e962a78b3daddd8527c909fb901693c1a1",
+      "original_image_sha256": "1df061b856ee42bd6a338d6f6a4217eef8f27b0f44d0c8327047ef82c1a8a402",
+      "source_page_url": "https://www.nittan.com/english/product/ev-240v-mra/",
+      "source_image_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EV-240V_MRA.jpg",
+      "image_sha256": "c5a4ab137b83ff686828cc312cb5e1be5d5f9daa9c1f01afddf743ded98c3b3a"
+    },
+    {
+      "id": "nittan-ev-dph-cs",
+      "archive_reference_id": "nittan-6fd49a400a54",
+      "document_id": "device-doc-nittan-24b1fd056ba7",
+      "inspected_pdf_pages": [
+        1,
+        3,
+        7
+      ],
+      "printed_revision": "NISM/EV-DPH/01 Issue 1, May 2010",
+      "document_sha256": "24b1fd056ba7e0312ffcbab08909ff71399bc9815901d7ca4e708524a2513339",
+      "original_image_sha256": "0947dfc851f6a76ffb2e1fd0aace174db0e7c92ba3e945e1770b0e7a9afd9ba0",
+      "source_page_url": "https://www.nittan.com/english/product/ev-dph-cs/",
+      "source_image_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EV-DPH-CS.jpg",
+      "image_sha256": "7f7b4540ac8832e4b74a61c62bf8dd929a6ba23165ad9651a1580ec8ff998a3f"
+    },
+    {
+      "id": "nittan-ev-mini-ip2",
+      "archive_reference_id": "nittan-702bcab0c22a",
+      "document_id": "device-doc-nittan-c65c530f2411",
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "printed_revision": "IIS-EV-Mini IP2 Issue 4, 18/01/2019",
+      "document_sha256": "c65c530f2411588278a1e09401f4ad7bcf395488f011d27493ce257ec0a91866",
+      "original_image_sha256": "57df4b2797512e10159b769a939ccdabdd96b34a01ddf503fc68e7adac087d7c",
+      "source_page_url": "https://www.nittan.com/english/product/ev-mini-ip2/",
+      "source_image_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EV-MiniIP2.jpg",
+      "image_sha256": "236e6bc976a48bd85e22db428dffbb65192444c427c30c600536d32d15420b2d"
+    },
+    {
+      "id": "nittan-ev-ps",
+      "archive_reference_id": "nittan-bd4b83c91afc",
+      "document_id": "device-doc-nittan-651d5abec767",
+      "inspected_pdf_pages": [
+        1,
+        3
+      ],
+      "printed_revision": "NISM/EV-PS/01 Issue 1, May 2010",
+      "document_sha256": "651d5abec767d4674524a8b7bbad471b908c4b85a1008ca4e3d049c6b03709e1",
+      "original_image_sha256": "16094866958f5ee392b68fc9db1458d1bd868ecf1e5904c3ad857ae29a4cb903",
+      "source_page_url": "https://www.nittan.com/english/product/ev-ps/",
+      "source_image_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EV-PS.jpg",
+      "image_sha256": "840de2613b3cca55a693218f4756576161295944d8f9ef13b2084b7527db3616"
+    },
+    {
+      "id": "nittan-ev-2i1o",
+      "archive_reference_id": "nittan-ea9adebcd190",
+      "document_id": "device-doc-nittan-c2305fc3416e",
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "printed_revision": "IIS-EV-2I1O (-EU) Issue 4, 04/03/2019",
+      "document_sha256": "c2305fc3416e3f064559a41b2354f47d95f75878a213313e64dbcc7f760e4de4",
+      "original_image_sha256": "8278bf8e2b8a61fe27c8cfeee788f6ff0f4df119ac4175f94e19de5fcdb3f2c5",
+      "source_page_url": "https://www.nittan.com/english/product/ev-2i1o/",
+      "source_image_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EV-2I1O.jpg",
+      "image_sha256": "ba67062a35e1be001cedb37b2f60603886afac19114ad9759a884cd73a7cf900"
+    }
+  ],
+  "supplementary_documents": [
+    {
+      "id": "device-doc-nittan-4e12fd384d8c",
+      "brand": "Nittan",
+      "category": "fire",
+      "models": [
+        "EVC-IR"
+      ],
+      "title": "Nittan EVC-IR reference - NISM-EVC-IR Issue 9",
+      "type": "manufacturer reference",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/2026/06/NISM-EVC-IR-Tech-Manual-Iss-9.pdf",
+      "source": "https://www.nittan.com/english/product/evc-ir/",
+      "revision": "NISM-EVC-IR Issue 9",
+      "status": "file-hash",
+      "sha256": "4e12fd384d8c18dadcfe71cb75553a65bf1485f0cf4959ac0977ead569365dc0",
+      "bytes": 266377,
+      "pages": 6,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "nittan-0ac170ea49ab"
+      ]
+    },
+    {
+      "id": "device-doc-nittan-2baa1e344172",
+      "brand": "Nittan",
+      "category": "fire",
+      "models": [
+        "EV-H-CS"
+      ],
+      "title": "Nittan EV-H-CS reference - NISM/EV-H/05, September 2015",
+      "type": "manufacturer reference",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/ev-h_a1r_techmanual.pdf",
+      "source": "https://www.nittan.com/english/product/ev-h-cs/",
+      "revision": "NISM/EV-H/05, September 2015",
+      "status": "file-hash",
+      "sha256": "2baa1e344172062e5c91021267dc7904d1ac981cc87700a5df5289500910fda8",
+      "bytes": 195034,
+      "pages": 7,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "nittan-14089a9905eb"
+      ]
+    },
+    {
+      "id": "device-doc-nittan-f912292fc103",
+      "brand": "Nittan",
+      "category": "fire",
+      "models": [
+        "EV-HIOP-SB-SCI"
+      ],
+      "title": "Nittan EV-HIOP-SB-SCI reference - IIS-EV-HIOP-SB-SCI Issue 9, 20/10/2016",
+      "type": "manufacturer reference",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-HIOP-SB-SCI_Iss_7_Instruction_leaflet.pdf",
+      "source": "https://www.nittan.com/english/product/ev-hiop-sb-sci/",
+      "revision": "IIS-EV-HIOP-SB-SCI Issue 9, 20/10/2016",
+      "status": "file-hash",
+      "sha256": "f912292fc103239e1d4ea38eba311a74309a8dc0cf6d105c61d00313ef976eb6",
+      "bytes": 326478,
+      "pages": 1,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "nittan-14b8944e8de0"
+      ]
+    },
+    {
+      "id": "device-doc-nittan-92f082662910",
+      "brand": "Nittan",
+      "category": "fire",
+      "models": [
+        "EV-MCP2-SCI-IP67"
+      ],
+      "title": "Nittan EV-MCP2-SCI-IP67 reference - IIS-EV-MCP2-SCI-IP67 Issue 2, 08/10/2019",
+      "type": "manufacturer reference",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-MCP2-SCI-IP67%20Iss%202%20Installation%20instruction%20sheet.pdf",
+      "source": "https://www.nittan.com/english/product/ev-mcp2-sci-ip67/",
+      "revision": "IIS-EV-MCP2-SCI-IP67 Issue 2, 08/10/2019",
+      "status": "file-hash",
+      "sha256": "92f082662910775f8f633359f84188014201ac5fd1926f7a0e2320dd0c80d93c",
+      "bytes": 341095,
+      "pages": 1,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "nittan-1a1a18b53ab3"
+      ]
+    },
+    {
+      "id": "device-doc-nittan-509751ace6d5",
+      "brand": "Nittan",
+      "category": "fire",
+      "models": [
+        "EV-MCP2-SCI-IP24"
+      ],
+      "title": "Nittan EV-MCP2-SCI-IP24 reference - IIS-EV-MCP2-SCI-IP24 Issue 3, 08/10/2019",
+      "type": "manufacturer reference",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-MCP2-SCI-IP24%20Iss%203%20Installation%20instruction%20sheet.pdf",
+      "source": "https://www.nittan.com/english/product/ev-mcp2-sci-ip24/",
+      "revision": "IIS-EV-MCP2-SCI-IP24 Issue 3, 08/10/2019",
+      "status": "file-hash",
+      "sha256": "509751ace6d5abdb7675d679c7d844cdbb5abbd4cf67dd11413f08f49d486fb8",
+      "bytes": 214302,
+      "pages": 1,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "nittan-62c9c1d3b106"
+      ]
+    },
+    {
+      "id": "device-doc-nittan-60acce3d2e53",
+      "brand": "Nittan",
+      "category": "fire",
+      "models": [
+        "EV-240V MRA"
+      ],
+      "title": "Nittan EV-240V MRA reference - EV-240V MRA Installation Leaflet Issue 1",
+      "type": "manufacturer reference",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/ev-240vmra_installmanual.pdf",
+      "source": "https://www.nittan.com/english/product/ev-240v-mra/",
+      "revision": "EV-240V MRA Installation Leaflet Issue 1",
+      "status": "file-hash",
+      "sha256": "60acce3d2e53aa94eb7c74ecb05222e962a78b3daddd8527c909fb901693c1a1",
+      "bytes": 306264,
+      "pages": 2,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "nittan-695cd16504ab"
+      ]
+    },
+    {
+      "id": "device-doc-nittan-24b1fd056ba7",
+      "brand": "Nittan",
+      "category": "fire",
+      "models": [
+        "EV-DPH-CS"
+      ],
+      "title": "Nittan EV-DPH-CS reference - NISM/EV-DPH/01 Issue 1, May 2010",
+      "type": "manufacturer reference",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/NISM-EV-DPH-01_Manual.pdf",
+      "source": "https://www.nittan.com/english/product/ev-dph-cs/",
+      "revision": "NISM/EV-DPH/01 Issue 1, May 2010",
+      "status": "file-hash",
+      "sha256": "24b1fd056ba7e0312ffcbab08909ff71399bc9815901d7ca4e708524a2513339",
+      "bytes": 764598,
+      "pages": 10,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "nittan-6fd49a400a54"
+      ]
+    },
+    {
+      "id": "device-doc-nittan-c65c530f2411",
+      "brand": "Nittan",
+      "category": "fire",
+      "models": [
+        "EV-Mini IP2"
+      ],
+      "title": "Nittan EV-Mini IP2 reference - IIS-EV-Mini IP2 Issue 4, 18/01/2019",
+      "type": "manufacturer reference",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-Mini%20IP2%20Iss%204%20Installation%20instruction%20sheet.pdf",
+      "source": "https://www.nittan.com/english/product/ev-mini-ip2/",
+      "revision": "IIS-EV-Mini IP2 Issue 4, 18/01/2019",
+      "status": "file-hash",
+      "sha256": "c65c530f2411588278a1e09401f4ad7bcf395488f011d27493ce257ec0a91866",
+      "bytes": 273328,
+      "pages": 4,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "nittan-702bcab0c22a"
+      ]
+    },
+    {
+      "id": "device-doc-nittan-651d5abec767",
+      "brand": "Nittan",
+      "category": "fire",
+      "models": [
+        "EV-PS"
+      ],
+      "title": "Nittan EV-PS reference - NISM/EV-PS/01 Issue 1, May 2010",
+      "type": "manufacturer reference",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/ev-ps_techmanual.pdf",
+      "source": "https://www.nittan.com/english/product/ev-ps/",
+      "revision": "NISM/EV-PS/01 Issue 1, May 2010",
+      "status": "file-hash",
+      "sha256": "651d5abec767d4674524a8b7bbad471b908c4b85a1008ca4e3d049c6b03709e1",
+      "bytes": 887499,
+      "pages": 10,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "nittan-bd4b83c91afc"
+      ]
+    },
+    {
+      "id": "device-doc-nittan-c2305fc3416e",
+      "brand": "Nittan",
+      "category": "fire",
+      "models": [
+        "EV-2I1O"
+      ],
+      "title": "Nittan EV-2I1O reference - IIS-EV-2I1O (-EU) Issue 4, 04/03/2019",
+      "type": "manufacturer reference",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-2I1O%28EU%29%20Iss%204%20Installation%20instruction%20sheet.pdf",
+      "source": "https://www.nittan.com/english/product/ev-2i1o/",
+      "revision": "IIS-EV-2I1O (-EU) Issue 4, 04/03/2019",
+      "status": "file-hash",
+      "sha256": "c2305fc3416e3f064559a41b2354f47d95f75878a213313e64dbcc7f760e4de4",
+      "bytes": 458432,
+      "pages": 4,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "nittan-ea9adebcd190"
+      ]
+    }
+  ],
+  "review_notes": [
+    "All ten image URLs came from the exact manufacturer model pages and downloaded bytes match their recorded SHA-256.",
+    "Actual PDF editions have separate hash-derived identities. Archive records and their original titles remain untouched.",
+    "HIOP filename/printed-edition conflict and EV-H-CS temperature wording conflict remain visible in the cards.",
+    "EV-AV2 Base remains deferred because this recovery has not selected an adequate complete product photograph."
+  ],
+  "visual_review": "Source page layouts and final contact sheets reviewed before integration; exact model labels distinguish similar housings."
+}

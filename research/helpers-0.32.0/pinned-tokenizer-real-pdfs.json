@@ -1,0 +1,144 @@
+{
+  "recordedAt": "2026-11-11T11:16:02.353Z",
+  "actualPinnedTokenizer": true,
+  "actualInference": false,
+  "browser": false,
+  "textExtraction": "Poppler pdftotext -layout from independently SHA-256-verified real catalogue PDFs",
+  "tokenLimit": 768,
+  "manuals": [
+    {
+      "manualId": "advanced-8f3ba6ecfc7f",
+      "contentHash": "5b0e02d2f682d6039474e94716b2f75f10868dc33fa3e6764c0b43c3c50b86a4",
+      "pageCount": 40,
+      "usable": true
+    },
+    {
+      "manualId": "advanced-76cae27e9ec7",
+      "contentHash": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e",
+      "pageCount": 72,
+      "usable": true
+    }
+  ],
+  "cases": [
+    {
+      "label": "event-history",
+      "question": "How do I view the event history on an MxPro4 panel?",
+      "retrieved": [
+        {
+          "manualId": "advanced-8f3ba6ecfc7f",
+          "page": 22,
+          "id": "S1"
+        },
+        {
+          "manualId": "advanced-76cae27e9ec7",
+          "page": 44,
+          "id": "S2"
+        },
+        {
+          "manualId": "advanced-8f3ba6ecfc7f",
+          "page": 17,
+          "id": "S3"
+        },
+        {
+          "manualId": "advanced-8f3ba6ecfc7f",
+          "page": 22,
+          "id": "S4"
+        }
+      ],
+      "inputTokens": 452,
+      "withinLimit": true,
+      "sourceCopies": 1,
+      "hasContextArgument": false
+    },
+    {
+      "label": "walk-test",
+      "question": "How do I start a walk test on an MxPro4 panel?",
+      "retrieved": [
+        {
+          "manualId": "advanced-8f3ba6ecfc7f",
+          "page": 31,
+          "id": "S1"
+        },
+        {
+          "manualId": "advanced-76cae27e9ec7",
+          "page": 46,
+          "id": "S2"
+        },
+        {
+          "manualId": "advanced-8f3ba6ecfc7f",
+          "page": 17,
+          "id": "S3"
+        },
+        {
+          "manualId": "advanced-76cae27e9ec7",
+          "page": 40,
+          "id": "S4"
+        }
+      ],
+      "inputTokens": 410,
+      "withinLimit": true,
+      "sourceCopies": 1,
+      "hasContextArgument": false
+    },
+    {
+      "label": "battery-fault",
+      "question": "The panel is showing a battery fault on this MxPro4.",
+      "retrieved": [
+        {
+          "manualId": "advanced-76cae27e9ec7",
+          "page": 16,
+          "id": "S1"
+        },
+        {
+          "manualId": "advanced-76cae27e9ec7",
+          "page": 22,
+          "id": "S2"
+        }
+      ],
+      "inputTokens": 492,
+      "withinLimit": true,
+      "sourceCopies": 1,
+      "hasContextArgument": false
+    },
+    {
+      "label": "unknown-feature",
+      "question": "How do I enable the quantum smoke compensator on MxPro4?",
+      "retrieved": [],
+      "inputTokens": 169,
+      "withinLimit": true,
+      "sourceCopies": 1,
+      "hasContextArgument": false
+    },
+    {
+      "label": "long-observations",
+      "question": "Battery fault displayed: the panel is currently showing a fault and I have already checked the connections and measured the battery voltage at 24.80 VDC. The same fault appeared yesterday after the site reported intermittent faults on three different devices.",
+      "retrieved": [
+        {
+          "manualId": "advanced-8f3ba6ecfc7f",
+          "page": 21,
+          "id": "S1"
+        },
+        {
+          "manualId": "advanced-76cae27e9ec7",
+          "page": 46,
+          "id": "S2"
+        },
+        {
+          "manualId": "advanced-76cae27e9ec7",
+          "page": 46,
+          "id": "S3"
+        },
+        {
+          "manualId": "advanced-8f3ba6ecfc7f",
+          "page": 17,
+          "id": "S4"
+        }
+      ],
+      "inputTokens": 536,
+      "withinLimit": true,
+      "sourceCopies": 1,
+      "hasContextArgument": false
+    }
+  ],
+  "status": "passed"
+}

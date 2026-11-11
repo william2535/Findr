@@ -1,0 +1,46 @@
+{
+  "baselineCommit": "350e887b0ce5bb3706a7a3660f0fe531d1175d9f",
+  "scope": "Existing catalogue, manual references, model identities, pack links and PDF delivery maps remain byte-for-byte unchanged by the wiring picture collection.",
+  "files": [
+    {
+      "path": "public/app/data/catalogue.json",
+      "bytes": 5944194,
+      "sha256": "905804559c630f0bc7f5f910fef3d663dd2b8905bc958dbe339eb49f6a5a2334"
+    },
+    {
+      "path": "public/app/data/device-documents.json",
+      "bytes": 49341,
+      "sha256": "2634849efe7fff1b16ba2dc7fc7cdc9ffce65a2c8891492099d3360a7b9f57b9"
+    },
+    {
+      "path": "public/app/data/devices.json",
+      "bytes": 223257,
+      "sha256": "1f3680310e9a830034ea3253016b08cc46ea66bc5a33463890d816cd50d94f38"
+    },
+    {
+      "path": "public/app/data/device-packs.json",
+      "bytes": 24835,
+      "sha256": "8269cfd48de401e84e6c6473aba91599fddec4a6e5b8ef6c921d46d4d53b8d5d"
+    },
+    {
+      "path": "public/app/data/panels.json",
+      "bytes": 940517,
+      "sha256": "e30e577d51cf22586646817963bc8dce46a64cd23e7f5388f0ecca392e0d3b64"
+    },
+    {
+      "path": "public/app/data/packs.json",
+      "bytes": 116630,
+      "sha256": "0e7a85adc48092f9aed12868c12ad6abcd6980396f9ed4c730b8d72cae821ea2"
+    },
+    {
+      "path": "public/app/data/download-map.json",
+      "bytes": 1537090,
+      "sha256": "503da2cd87cbd877c66041d9ee9a681686c138441ce10381330a0d15ccd8de8c"
+    },
+    {
+      "path": "lib/download-map.json",
+      "bytes": 1537090,
+      "sha256": "503da2cd87cbd877c66041d9ee9a681686c138441ce10381330a0d15ccd8de8c"
+    }
+  ]
+}

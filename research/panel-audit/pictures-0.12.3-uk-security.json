@@ -1,0 +1,685 @@
+{
+  "batch": "FINDR 0.12.3 UK security picture pack",
+  "date": "2026-10-30",
+  "baseline_commit": "27ae6eddc9a6db83ebd743b8e101744fbe3bc42d",
+  "baseline_families": 504,
+  "selected_families": 12,
+  "selected_brands": 8,
+  "exact_archive_manual_linked_families": 10,
+  "picture_only_families": [
+    "risco-gardtec-profile-keypad",
+    "castle-care-tech-1600-keypad"
+  ],
+  "unique_exact_manual_records": 12,
+  "scope": "Distinct missing remote-keypad and control-panel fascias. Host panels, radio variants and colour options are not counted as separate pictured families. Existing app and catalogue remain unmodified by this batch.",
+  "candidates": [
+    {
+      "id": "bosch-abacus-lcd-keypad",
+      "brand": "Bosch",
+      "model": "Abacus LCD remote keypad",
+      "status": "verified-image",
+      "category": "security",
+      "record_ids": [
+        "bosch-5a4c69933a94",
+        "bosch-a743ae8fb01d"
+      ],
+      "verification": "Detection Systems Abacus LCD remote keypad: wide body, LCD on the left, numeric keys on the right, NO and YES/PART keys and two separate exclamation-mark keys. The supplier photograph shows the complete front with its display cover closed.",
+      "applicability_limits": "A shared remote keypad, so its appearance does not identify which Abacus control-panel variant is installed. The linked historical LCD and engineer guides cover their stated Abacus variants. This is not an Abacus Evolution identification or a claim of compatibility with every later Abacus product.",
+      "source_image_url": "https://securitytradesupplies.com/wp-content/uploads/2024/05/DSabacus.jpg",
+      "source_page_url": "https://securitytradesupplies.com/product/ds-detection-systems-abacus-lcd-keypad/",
+      "image_credit": "Security Trade Supplies — original DS Detection Systems Abacus LCD keypad product photograph.",
+      "image_type": "supplier-keypad-product-photo",
+      "asset": "images/bosch-abacus-lcd-keypad.jpg",
+      "asset_sha256": "89c051322888994b9f10a5339b53d87d072b1e3aed6fcf3d618fc2240ceb43bb",
+      "asset_dimensions": [
+        640,
+        386
+      ],
+      "uk_priority": true,
+      "uk_priority_evidence": "UK specialist supplier product listing; exact legacy Abacus manufacturer guides retained by a UK alarm service archive.",
+      "visual_review": "Reviewed against original PDF page or supplier/manufacturer photograph and the labelled final contact sheet.",
+      "provenance": {
+        "source_image_url": "https://securitytradesupplies.com/wp-content/uploads/2024/05/DSabacus.jpg",
+        "source_page_url": "https://securitytradesupplies.com/product/ds-detection-systems-abacus-lcd-keypad/",
+        "source_confirmation_urls": [
+          "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Abacus%20LCD%20User%20Manual.pdf",
+          "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/DA%20Abacus%20Engineer%20Manual.pdf"
+        ]
+      }
+    },
+    {
+      "id": "lynteck-nexus-8-keypad",
+      "brand": "Lynteck",
+      "model": "Nexus 8 remote keypad",
+      "status": "verified-image",
+      "category": "security",
+      "record_ids": [
+        "lynteck-5ce79fc79fa5"
+      ],
+      "verification": "Original Lynteck Nexus 8 remote-keypad line illustration from the 1998 engineer manual, PDF page 6 / printed page 10. The lower flap is open; the original arrows identify the two upper keys.",
+      "applicability_limits": "This drawing identifies the Nexus 8 remote keypad, not the separate end-station cabinet. It is an original manual illustration, not a product photograph. Confirm the installed system label and manual revision.",
+      "source_image_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Nexus%20Engineer%20Manual.pdf",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Nexus%20Engineer%20Manual.pdf#page=6",
+      "image_credit": "Lynteck Ltd — 1998 Nexus 8 engineer manual, printed page 10, exact keypad illustration.",
+      "image_type": "manufacturer-keypad-manual-illustration",
+      "asset": "images/lynteck-nexus-8-keypad.png",
+      "asset_sha256": "c8670c105a0e9704ffaa3ae983ef2aa308a5cb30e9539b5743aeef0ee8bcb353",
+      "asset_dimensions": [
+        356,
+        512
+      ],
+      "uk_priority": true,
+      "uk_priority_evidence": "Original 1998 Lynteck UK Nexus 8 engineer manual, with UK contact details and a named remote-keypad drawing.",
+      "visual_review": "Reviewed against original PDF page or supplier/manufacturer photograph and the labelled final contact sheet.",
+      "provenance": {
+        "source_image_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Nexus%20Engineer%20Manual.pdf",
+        "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Nexus%20Engineer%20Manual.pdf#page=6",
+        "source_document_record_id": "lynteck-5ce79fc79fa5",
+        "source_document_page": 6,
+        "source_pdf_page": 6,
+        "source_crop_points": [
+          63.077,
+          352.308,
+          181.538,
+          523.077
+        ],
+        "source_crop_coordinate_system": "upright rendered PDF page, points; whole-page render then crop",
+        "source_document_sha256": "cab97a0a04ddb1cd8a5378a4ad558f8a6ec0b255ba781dab6a89db9c38b58f9d",
+        "source_render_scale": 3.0
+      }
+    },
+    {
+      "id": "risco-gardtec-800-compact-led-keypad",
+      "brand": "Risco",
+      "model": "Gardtec 800 Series compact LED keypad",
+      "status": "verified-image",
+      "category": "security",
+      "record_ids": [
+        "risco-c9ad442c2a5b",
+        "risco-adab2e63198a"
+      ],
+      "verification": "Figure 4 explicitly labels this fascia Gardtec 800 Series LED Compact. It has a two-character LED display and three rows of four keys. The installation illustration has the lower service flap removed and retains the original retaining-clip callouts.",
+      "applicability_limits": "Remote-keypad reference only. The exposed lower terminal strip is an installation-illustration detail; the normal fitted lower flap is not shown. The keypad does not distinguish Gardtec 800, 816 and 840 main panels, which share guide coverage. Do not treat it as a Contour LCD keypad.",
+      "source_image_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Gardtec%20800%20Series.pdf",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Gardtec%20800%20Series.pdf#page=8",
+      "image_credit": "Gardtec — Gardtec 800 Series installation manual, PDF page 8 / printed page 13, Figure 4.",
+      "image_type": "manufacturer-keypad-manual-illustration",
+      "asset": "images/risco-gardtec-800-compact-led-keypad.png",
+      "asset_sha256": "891ec46ad92b32b46fb505542ca22f6b78ae655f4b7ed9712c1f9f05ad2b68c1",
+      "asset_dimensions": [
+        556,
+        464
+      ],
+      "uk_priority": true,
+      "uk_priority_evidence": "Gardtec Ltd UK manufacturer brochure and RS UK-hosted product documents; exact Gardtec manufacturer guides in a UK alarm service archive.",
+      "visual_review": "Reviewed against original PDF page or supplier/manufacturer photograph and the labelled final contact sheet.",
+      "provenance": {
+        "source_image_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Gardtec%20800%20Series.pdf",
+        "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Gardtec%20800%20Series.pdf#page=8",
+        "source_document_record_id": "risco-c9ad442c2a5b",
+        "source_document_page": 8,
+        "source_pdf_page": 8,
+        "source_crop_points": [
+          521.538,
+          119.231,
+          706.923,
+          273.846
+        ],
+        "source_crop_coordinate_system": "upright rendered PDF page, points; whole-page render then crop",
+        "source_document_sha256": "38bee314ecc5f1a5f57ce9510d8368f8783fff32e285fa70e058afe0f341b503",
+        "source_render_scale": 3.0
+      }
+    },
+    {
+      "id": "risco-gardtec-contour-gtag-keypad",
+      "brand": "Risco",
+      "model": "Gardtec Contour G-Tag LCD keypad",
+      "status": "verified-image",
+      "category": "security",
+      "record_ids": [
+        "risco-c9ad442c2a5b",
+        "risco-adab2e63198a"
+      ],
+      "verification": "Manufacturer System G-Tag brochure photograph of the Contour keypad with its lower flap closed. The brochure names the G-Tag Contour keypad and its 32-character LCD; the 800 Series installation guide independently labels the same housing Contour RKP in Figure 4a.",
+      "applicability_limits": "Shared keypad fascia, not a main-panel identifier. The brochure describes Gardtec 590/800-series applications, while the linked archive guides here cover the 800 series. Do not infer a particular 590/591 display option, firmware version, fitted proximity reader or main-panel model solely from this closed-cover photograph.",
+      "source_image_url": "https://docs.rs-online.com/f2c6/0900766b80530726.pdf",
+      "source_page_url": "https://docs.rs-online.com/f2c6/0900766b80530726.pdf#page=1",
+      "image_credit": "Gardtec Ltd — original System G-Tag brochure GLIT0199/A, hosted by RS, page 1 product photograph.",
+      "image_type": "manufacturer-keypad-brochure-photo",
+      "asset": "images/risco-gardtec-contour-gtag-keypad.jpg",
+      "asset_sha256": "fb2b437f36dcc15bab927ed78a44a4e88b129e9bf9be7017402cae5d26b8cb62",
+      "asset_dimensions": [
+        777,
+        761
+      ],
+      "uk_priority": true,
+      "uk_priority_evidence": "Gardtec Ltd UK manufacturer brochure and RS UK-hosted product documents; exact Gardtec manufacturer guides in a UK alarm service archive.",
+      "visual_review": "Reviewed against original PDF page or supplier/manufacturer photograph and the labelled final contact sheet.",
+      "provenance": {
+        "source_image_url": "https://docs.rs-online.com/f2c6/0900766b80530726.pdf",
+        "source_page_url": "https://docs.rs-online.com/f2c6/0900766b80530726.pdf#page=1",
+        "source_document_page": 1,
+        "source_pdf_page": 1,
+        "source_embedded_image_xref": 287,
+        "source_document_sha256": "522ddf9e0fca2a269fe1a835cf80c874d1be1dc1ea4417cd999af9de2c322d36",
+        "source_extraction": "Unmodified embedded JPEG, PDF page 1, image object 287."
+      }
+    },
+    {
+      "id": "risco-gardtec-profile-keypad",
+      "brand": "Risco",
+      "model": "Gardtec Profile blue-LCD keypad",
+      "status": "verified-image",
+      "category": "security",
+      "record_ids": [],
+      "verification": "Original Profile keypad datasheet photograph with blue LCD, G-Tag marking, numeric keys and lowered front flap. The source expressly names the Profile keypad and lists Gardtec 600, 601, 490X, 480 and Eurosec CPX control panels.",
+      "applicability_limits": "Picture identification only: this archive snapshot has no exact Profile keypad manual linked to this card. Listed host panels share this remote keypad and are not aliases for its hardware. Do not substitute Gardtec 590/800-series or 595 programming guides for the named host panel.",
+      "source_image_url": "https://docs.rs-online.com/50cd/0900766b813d7a48.pdf",
+      "source_page_url": "https://docs.rs-online.com/50cd/0900766b813d7a48.pdf#page=1",
+      "image_credit": "Original Gardtec Profile keypad product datasheet, hosted by RS — embedded product photograph, page 1.",
+      "image_type": "manufacturer-keypad-datasheet-photo",
+      "asset": "images/risco-gardtec-profile-keypad.jpg",
+      "asset_sha256": "7164d23d2e07298fb0b2df6c4318859b175270f3fd5937f151597333055f5762",
+      "asset_dimensions": [
+        444,
+        440
+      ],
+      "uk_priority": true,
+      "uk_priority_evidence": "Gardtec Ltd UK manufacturer brochure and RS UK-hosted product documents; exact Gardtec manufacturer guides in a UK alarm service archive.",
+      "visual_review": "Reviewed against original PDF page or supplier/manufacturer photograph and the labelled final contact sheet.",
+      "provenance": {
+        "source_image_url": "https://docs.rs-online.com/50cd/0900766b813d7a48.pdf",
+        "source_page_url": "https://docs.rs-online.com/50cd/0900766b813d7a48.pdf#page=1",
+        "source_document_page": 1,
+        "source_pdf_page": 1,
+        "source_embedded_image_xref": 8,
+        "source_document_sha256": "e253ad0b05180b615e13a41992e4a5c32d09f4b5556da3c2b24662ac60d70c7d",
+        "source_extraction": "Unmodified embedded JPEG, PDF page 1, image object 8."
+      }
+    },
+    {
+      "id": "aritech-ats111xa-keypad",
+      "brand": "Aritech",
+      "model": "Advisor Advanced ATS111xA keypad family",
+      "status": "verified-image",
+      "category": "security",
+      "record_ids": [
+        "aritech-e2cde2877542",
+        "aritech-fddad742413e"
+      ],
+      "verification": "Original Advisor Advanced user-guide Figure 1 explicitly labels the tall fascia ATS111xA. It shows the LCD, central navigation cluster, numeric keys and lower area indicators; original numbered callouts are retained.",
+      "applicability_limits": "The source uses ATS111xA as a family label. The drawing does not establish the exact suffix, reader option or connected ATS control panel. Shared main-panel model names are not keypad aliases. Guide scope and firmware must match the installed system.",
+      "source_image_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Aritech%20Advisor%20Intruder%20Panel%20User%20manual.pdf",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Aritech%20Advisor%20Intruder%20Panel%20User%20manual.pdf#page=7",
+      "image_credit": "UTC / Aritech — Advisor Advanced User Guide P/N 1068996 (EN), Rev F, 29 October 2014, printed page 1 Figure 1.",
+      "image_type": "manufacturer-keypad-manual-illustration",
+      "asset": "images/aritech-ats111xa-keypad.png",
+      "asset_sha256": "aa8f0c15b791375b27bfa3674990be9d20fffb6767c0d2b032e0098c1a846ddc",
+      "asset_dimensions": [
+        540,
+        792
+      ],
+      "uk_priority": true,
+      "uk_priority_evidence": "Exact Advisor Advanced manufacturer user/installation guides retained by the UK Watch Security service archive; English ATS111xA/ATS1135 keypad figures.",
+      "visual_review": "Reviewed against original PDF page or supplier/manufacturer photograph and the labelled final contact sheet.",
+      "provenance": {
+        "source_image_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Aritech%20Advisor%20Intruder%20Panel%20User%20manual.pdf",
+        "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Aritech%20Advisor%20Intruder%20Panel%20User%20manual.pdf#page=7",
+        "source_document_record_id": "aritech-e2cde2877542",
+        "source_document_page": 7,
+        "source_pdf_page": 7,
+        "source_crop_points": [
+          96.923,
+          116.154,
+          276.923,
+          380.0
+        ],
+        "source_crop_coordinate_system": "upright rendered PDF page, points; whole-page render then crop",
+        "source_document_sha256": "84ab3317130f570affb872717c045afd4f1491e461d8409c1b4a374b9c3395f8",
+        "source_render_scale": 3.0
+      }
+    },
+    {
+      "id": "aritech-ats1135-keypad",
+      "brand": "Aritech",
+      "model": "Advisor Advanced ATS1135 keypad",
+      "status": "verified-image",
+      "category": "security",
+      "record_ids": [
+        "aritech-e2cde2877542",
+        "aritech-fddad742413e"
+      ],
+      "verification": "Original Advisor Advanced user-guide Figure 2 explicitly labels ATS1135. The wide fascia has the LCD on the left, A/B/C keys below it and the navigation/numeric keys on the right; original numbered callouts are retained.",
+      "applicability_limits": "Remote keypad, not an ATS control-panel enclosure. Its appearance alone does not identify the connected ATS model, software, access permissions or enabled functions. The linked 2014 user guide and 2017 installation/programming guide explicitly cover this keypad.",
+      "source_image_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Aritech%20Advisor%20Intruder%20Panel%20User%20manual.pdf",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Aritech%20Advisor%20Intruder%20Panel%20User%20manual.pdf#page=7",
+      "image_credit": "UTC / Aritech — Advisor Advanced User Guide P/N 1068996 (EN), Rev F, 29 October 2014, printed page 1 Figure 2.",
+      "image_type": "manufacturer-keypad-manual-illustration",
+      "asset": "images/aritech-ats1135-keypad.png",
+      "asset_sha256": "6689a6378eca74d4f8bb9c93a056064ce99b670eecc6473f769232e470295190",
+      "asset_dimensions": [
+        713,
+        476
+      ],
+      "uk_priority": true,
+      "uk_priority_evidence": "Exact Advisor Advanced manufacturer user/installation guides retained by the UK Watch Security service archive; English ATS111xA/ATS1135 keypad figures.",
+      "visual_review": "Reviewed against original PDF page or supplier/manufacturer photograph and the labelled final contact sheet.",
+      "provenance": {
+        "source_image_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Aritech%20Advisor%20Intruder%20Panel%20User%20manual.pdf",
+        "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Aritech%20Advisor%20Intruder%20Panel%20User%20manual.pdf#page=7",
+        "source_document_record_id": "aritech-e2cde2877542",
+        "source_document_page": 7,
+        "source_pdf_page": 7,
+        "source_crop_points": [
+          293.846,
+          115.385,
+          531.538,
+          273.846
+        ],
+        "source_crop_coordinate_system": "upright rendered PDF page, points; whole-page render then crop",
+        "source_document_sha256": "84ab3317130f570affb872717c045afd4f1491e461d8409c1b4a374b9c3395f8",
+        "source_render_scale": 3.0
+      }
+    },
+    {
+      "id": "visonic-powermax-original",
+      "brand": "Visonic",
+      "model": "PowerMax original control panel",
+      "status": "verified-image",
+      "category": "security",
+      "record_ids": [
+        "visonic-a6a091e1c0e2",
+        "visonic-d611439f6283"
+      ],
+      "verification": "Original PowerMax user-guide Figure 1 shows the integrated control panel with keypad and battery covers closed. The sloping enclosure, left speaker area and upper control/display area distinguish this original generation from the later Plus, Pro and Complete fascias.",
+      "applicability_limits": "Original PowerMax generation only. Do not use this card to identify PowerMax Plus, PowerMax Pro or PowerMaxComplete. Regional radio hardware and manual revision require confirmation from the product label; this drawing does not establish operating frequency.",
+      "source_image_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Visonic%20Powermax%20user%20guide.pdf",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Visonic%20Powermax%20user%20guide.pdf#page=4",
+      "image_credit": "Visonic Ltd — original PowerMax User Guide DE5450U, page 4 Figure 1, exact manufacturer illustration.",
+      "image_type": "manufacturer-manual-illustration",
+      "asset": "images/visonic-powermax-original.png",
+      "asset_sha256": "0d0a9d24aa4efbb2db17b30fc233992e0e8f93b69ce3967b4520f576cf95eee9",
+      "asset_dimensions": [
+        627,
+        457
+      ],
+      "uk_priority": true,
+      "uk_priority_evidence": "Original PowerMax manufacturer installation/user guides retained by the UK Watch Security alarm service archive. Regional radio identity remains expressly unverified.",
+      "visual_review": "Reviewed against original PDF page or supplier/manufacturer photograph and the labelled final contact sheet.",
+      "provenance": {
+        "source_image_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Visonic%20Powermax%20user%20guide.pdf",
+        "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Visonic%20Powermax%20user%20guide.pdf#page=4",
+        "source_document_record_id": "visonic-d611439f6283",
+        "source_document_page": 4,
+        "source_pdf_page": 4,
+        "source_crop_points": [
+          243.846,
+          106.923,
+          453.077,
+          259.231
+        ],
+        "source_crop_coordinate_system": "upright rendered PDF page, points; whole-page render then crop",
+        "source_document_sha256": "4f22b7585981a5515d0a563e29cbf21f905f08604a326f23c822e9fc7fbb3193",
+        "source_render_scale": 3.0
+      }
+    },
+    {
+      "id": "texecom-premier-rkp8-16plus",
+      "brand": "Texecom",
+      "model": "Premier RKP8Plus / RKP16Plus LED keypad family",
+      "status": "verified-image",
+      "category": "security",
+      "record_ids": [
+        "texecom-9077d1ea8968",
+        "texecom-c66b83386b79"
+      ],
+      "verification": "Official Texecom RKP8Plus product photograph with closed lower flap and eight numbered zone indicators. The RKP8Plus and RKP16Plus are grouped as the Plus fascia family, with the indicator-count difference retained in the model description and manuals.",
+      "applicability_limits": "The photograph specifically shows RKP8Plus; it cannot identify an RKP16Plus by appearance without checking its indicators and label. The linked manuals state Premier 412/816 software 2.1 or later in their compatibility section. Do not assume LCD menus, universal Premier Elite programming capability or compatibility from the shared Premier name.",
+      "source_image_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/04/10164551/Premier-RKP8-Plus_recess_1-1-1-1-1024x1024.png",
+      "source_page_url": "https://www.texe.com/products/rkp8plus-led-keypad/",
+      "image_credit": "Texecom Ltd — official Premier RKP8Plus LED keypad product photograph, cropped to the complete keypad housing.",
+      "image_type": "manufacturer-keypad-product-photo",
+      "asset": "images/texecom-premier-rkp8-16plus.png",
+      "asset_sha256": "e2a67bee18201801fe9346743d304e3f34d16bc715f71c552f1dd71559a63a75",
+      "asset_dimensions": [
+        735,
+        600
+      ],
+      "uk_priority": true,
+      "uk_priority_evidence": "UK manufacturer official product support documents and official product photographs.",
+      "visual_review": "Reviewed against original PDF page or supplier/manufacturer photograph and the labelled final contact sheet.",
+      "provenance": {
+        "source_image_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/04/10164551/Premier-RKP8-Plus_recess_1-1-1-1-1024x1024.png",
+        "source_page_url": "https://www.texe.com/products/rkp8plus-led-keypad/",
+        "source_image_crop_pixels": [
+          145,
+          300,
+          880,
+          900
+        ],
+        "source_original_image_dimensions": [
+          1024,
+          1024
+        ],
+        "source_original_image_sha256": "e925d8f78e1e55bce8e7c215821d5840e53ce4a66e39bb01cb915a4efa2c340a"
+      }
+    },
+    {
+      "id": "texecom-premier-rkp4-8-16",
+      "brand": "Texecom",
+      "model": "Premier RKP4 / RKP8 / RKP16 LED keypad family",
+      "status": "verified-image",
+      "category": "security",
+      "record_ids": [
+        "texecom-c66b83386b79"
+      ],
+      "verification": "Original Texecom INS181-4 installation drawing following section 1.2 Mounting RKP4/8/16, with the lower hinged flap open. The narrow fascia, round number keys and right-hand function keys differ from the Plus housing. The original mounting-hand callout is retained.",
+      "applicability_limits": "Grouped RKP4/8/16 fascia family: the drawing depicts the 16-indicator arrangement and does not distinguish a fitted RKP4 from RKP8 without its label and indicator count. These are separate from the RKP8Plus/RKP16Plus housing. The linked manual states Premier 412/816 software 2.1 or later; verify the exact controller.",
+      "source_image_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/04/07125408/RKP4_8_16_8Plus_16Plus_keypad-installation-manual-OLD-INS181-4.pdf",
+      "source_page_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/04/07125408/RKP4_8_16_8Plus_16Plus_keypad-installation-manual-OLD-INS181-4.pdf#page=4",
+      "image_credit": "Texecom Ltd — Premier RKP4/8/16 and RKP8Plus/16Plus installation manual INS181-4, page 4, original RKP4/8/16 mounting illustration.",
+      "image_type": "manufacturer-keypad-manual-illustration",
+      "asset": "images/texecom-premier-rkp4-8-16.png",
+      "asset_sha256": "3d16eed7081003915bb445b94b8986c062dc283b9b33ce9adb34fe3dd1569633",
+      "asset_dimensions": [
+        780,
+        1029
+      ],
+      "uk_priority": true,
+      "uk_priority_evidence": "UK manufacturer official product support documents and official product photographs.",
+      "visual_review": "Reviewed against original PDF page or supplier/manufacturer photograph and the labelled final contact sheet.",
+      "provenance": {
+        "source_image_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/04/07125408/RKP4_8_16_8Plus_16Plus_keypad-installation-manual-OLD-INS181-4.pdf",
+        "source_page_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/04/07125408/RKP4_8_16_8Plus_16Plus_keypad-installation-manual-OLD-INS181-4.pdf#page=4",
+        "source_document_record_id": "texecom-c66b83386b79",
+        "source_document_page": 4,
+        "source_pdf_page": 4,
+        "source_crop_points": [
+          141.538,
+          53.077,
+          401.538,
+          396.154
+        ],
+        "source_crop_coordinate_system": "upright rendered PDF page, points; whole-page render then crop",
+        "source_document_sha256": "5fdfba3cb9c082070e4dec033a129592d6ca10336e1944390cb11c6b66a106f5",
+        "source_render_scale": 3.0
+      }
+    },
+    {
+      "id": "castle-care-tech-1600-keypad",
+      "brand": "Castle Care-Tech",
+      "model": "1600 remote keypad",
+      "status": "verified-image",
+      "category": "security",
+      "record_ids": [],
+      "verification": "Castle 1600 remote keypad supplier photograph with the side flap open, small LED display, numeric keys and A/B/C/D keys. The original Care-Tech 1600 operating instructions independently describe this remote-keypad key arrangement.",
+      "applicability_limits": "Picture identification only: no exact Castle 1600 manual record exists in this archive snapshot. The independently checked external manufacturer operating guide is for software issue 3.4 or later, February 2000; it is retained as provenance, not silently substituted for another Castle model. The keypad is not a main-panel cabinet identifier.",
+      "source_image_url": "https://securitytradesupplies.com/wp-content/uploads/2024/05/1600keypadopen.jpg",
+      "source_page_url": "https://securitytradesupplies.com/product/castle-1600-keypad-new-stock/",
+      "image_credit": "Security Trade Supplies — Castle 1600 keypad original product photograph.",
+      "image_type": "supplier-keypad-product-photo",
+      "asset": "images/castle-care-tech-1600-keypad.jpg",
+      "asset_sha256": "2f8b52391f424e907c736a16b122a9d4f1f9a0d93a5de1f3568339047795caec",
+      "asset_dimensions": [
+        640,
+        404
+      ],
+      "uk_priority": true,
+      "uk_priority_evidence": "UK specialist supplier exact-model listing; original Care-Tech 1600 guide states designed and manufactured in England.",
+      "visual_review": "Reviewed against original PDF page or supplier/manufacturer photograph and the labelled final contact sheet.",
+      "provenance": {
+        "source_image_url": "https://securitytradesupplies.com/wp-content/uploads/2024/05/1600keypadopen.jpg",
+        "source_page_url": "https://securitytradesupplies.com/product/castle-1600-keypad-new-stock/",
+        "source_confirmation_urls": [
+          "https://www.intelligentsecurity.org/resources/intruder-alarms/Castle-Care-Tech-1600-Operating-Instructions_Watermark.pdf"
+        ]
+      }
+    },
+    {
+      "id": "qolsys-iq-panel-2-family",
+      "brand": "Qolsys",
+      "model": "IQ Panel 2 / 2 Plus fascia family",
+      "status": "verified-image",
+      "category": "security",
+      "record_ids": [
+        "facp-c3aa97cd-9fa4-4777-aaa5-c3e570017cc1"
+      ],
+      "verification": "Complete second-generation IQ Panel tabletop unit cropped from the manufacturer photograph on the cover of the 2020 software 2.5.1 user guide. The camera is above the touch display and this generation has no first-generation front Home/Emergency buttons. IQ Panel 2 and 2 Plus share this visual family.",
+      "applicability_limits": "Regional and radio variants cannot be identified from the front. The linked archive entry is generically titled IQ Panel and contains a 2020 software 2.5.1 guide with North American regulatory text; it is not verified as the UK edition. No UK-priority flag is claimed. Confirm the full part number, 2 versus 2 Plus hardware, radio frequency, region and firmware; this is not an IQ Panel 4 or IQ4 Hub reference.",
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Qolsys/iq_panel-operations-2020.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Qolsys/iq_panel-operations-2020.pdf#page=1",
+      "image_credit": "Qolsys — original photograph embedded on page 1 of the 2020 IQ Panel software 2.5.1 user guide; cropped to the complete tabletop device.",
+      "image_type": "manufacturer-photo-in-manual",
+      "asset": "images/qolsys-iq-panel-2-family.jpg",
+      "asset_sha256": "9e641c7807ecd2837f67daa2f19a26198db48634789df499f52951cfa9143312",
+      "asset_dimensions": [
+        423,
+        260
+      ],
+      "uk_priority": false,
+      "uk_priority_evidence": "Not designated UK-priority. The exact linked 2020 guide has North American regulatory text; UK edition and radio variant are unverified.",
+      "visual_review": "Reviewed against original PDF page or supplier/manufacturer photograph and the labelled final contact sheet.",
+      "provenance": {
+        "source_image_url": "https://docs.facpmanuals.com/manuals/Qolsys/iq_panel-operations-2020.pdf",
+        "source_page_url": "https://docs.facpmanuals.com/manuals/Qolsys/iq_panel-operations-2020.pdf#page=1",
+        "source_document_record_id": "facp-c3aa97cd-9fa4-4777-aaa5-c3e570017cc1",
+        "source_document_page": 1,
+        "source_pdf_page": 1,
+        "source_embedded_image_xref": 49,
+        "source_document_sha256": "ca1f37ac2685d3f8d40c24fcd4b6f836740c3dbc5402492ca6da5f5d2dc7ee05",
+        "source_image_crop_pixels": [
+          595,
+          420,
+          1018,
+          680
+        ],
+        "source_embedded_image_dimensions": [
+          1500,
+          843
+        ],
+        "source_confirmation_urls": [
+          "https://iqsecurityproducts.com/wp-content/uploads/2020/03/IQ-Panel-2-User-Guide-2.5.1.pdf",
+          "https://qolsys.reamaze.io/kb/tsb/iq-panel-2-and-2-plus-2-dot-5-5-software-update-release-notes-and-instructions"
+        ]
+      }
+    },
+    {
+      "id": "security-0123-rejected-abacus-open-photo",
+      "brand": "Bosch",
+      "model": "Abacus LCD incomplete open-cover photograph",
+      "status": "excluded",
+      "reason": "Supplier alternate image hides the entire numeric-key section and crops the housing; replaced with its complete closed display-cover front photograph. Original retained in research/rejected-abacus-incomplete-open-cover.jpg.",
+      "source_url": "https://securitytradesupplies.com/wp-content/uploads/2024/05/DSabacusopen.jpg"
+    },
+    {
+      "id": "security-0123-rejected-rkp8-current-photo",
+      "brand": "Texecom",
+      "model": "RKP8 current-site reused Plus photograph",
+      "status": "excluded",
+      "reason": "Current RKP8 listing points at a filename RKP8PLUS-DISCONTINUED and visually shows the wide Plus housing. It is not reliable evidence for the separate legacy RKP4/8/16 housing. Used the original INS181-4 mounting drawing instead.",
+      "source_url": "https://www.texe.com/products/rkp8-led-keypad/",
+      "image_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/06/11072257/RKP8PLUS-DISCONTINUED-1-1-1-1024x1024.png"
+    },
+    {
+      "id": "security-0123-deferred-scantronic500r",
+      "brand": "Eaton / Scantronic",
+      "model": "500r / 500r+",
+      "status": "excluded",
+      "record_ids": [
+        "eaton-scantronic-de9041bab79e"
+      ],
+      "reason": "Exact archive 500r user guide has no adequate hardware picture; checked 500r and 500r+ secondary-hosted user guides also lack a usable panel figure. Installer candidate URL unavailable. No housing substitution made."
+    },
+    {
+      "id": "security-0123-deferred-gardtec593595",
+      "brand": "Risco",
+      "model": "Gardtec 593 / 595 main cabinets",
+      "status": "excluded",
+      "record_ids": [
+        "risco-275af677a86f",
+        "risco-08a3a82fef9d"
+      ],
+      "reason": "Exact guides verified but no exact useful main-cabinet pictures. Shared remote keypads are not proof of the hidden main-panel model; no extra cards added for shared keypad appearance."
+    },
+    {
+      "id": "security-0123-deferred-gardtec370581582",
+      "brand": "Risco",
+      "model": "Gardtec 370 / 581 / 582",
+      "status": "excluded",
+      "record_ids": [
+        "risco-320a6b33dd1b"
+      ],
+      "reason": "Cover and body model wording are inconsistent (370/581/582 versus 360/580), and no verified hardware picture was obtained. Not accepted as exact picture evidence."
+    },
+    {
+      "id": "security-0123-deferred-eurosec-cp8l",
+      "brand": "Risco",
+      "model": "Eurosec CP8L",
+      "status": "excluded",
+      "reason": "External original user guide was located but the cover is branding rather than a hardware picture. No exact archive record and no verified useful photograph selected.",
+      "source_url": "https://www.intelligentsecurity.org/resources/Gardtec-Eurosec-CP8L-LCD-User-Guide.pdf"
+    },
+    {
+      "id": "security-0123-deferred-qolsys-firstgen",
+      "brand": "Qolsys",
+      "model": "IQ Panel first generation",
+      "status": "excluded",
+      "record_ids": [
+        "facp-ab41f39b-15db-42b1-9bc8-5613842f78ac"
+      ],
+      "reason": "Original guide verified but US-focused with unverified UK relevance; omitted in this bounded UK-first batch. First-generation front-button housing was not used as a substitute for the 2020 second-generation source photograph."
+    },
+    {
+      "id": "security-0123-rejected-nexus-pir",
+      "brand": "Lynteck",
+      "model": "Nexus manual embedded PIR images",
+      "status": "not-panel",
+      "reason": "Embedded image objects 49 and 52 are PIR detectors, not the Nexus remote keypad. The actual keypad is a vector illustration on PDF page 6, which was rendered and cropped instead."
+    }
+  ],
+  "manual_verification": {
+    "aritech-e2cde2877542": {
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Aritech%20Advisor%20Intruder%20Panel%20User%20manual.pdf",
+      "title": "Aritech Advisor Intruder Panel User manual",
+      "local_research_file": "research/aritech-e2cde2877542.pdf",
+      "sha256": "84ab3317130f570affb872717c045afd4f1491e461d8409c1b4a374b9c3395f8",
+      "catalogue_sha256": "84ab3317130f570affb872717c045afd4f1491e461d8409c1b4a374b9c3395f8",
+      "hash_matches_catalogue": true,
+      "pages": 34,
+      "catalogue_status_preserved": "file-hash"
+    },
+    "aritech-fddad742413e": {
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Aritech%20Advisor%20Intruder%20Panel%20ATSx500A_Installation_EN.pdf",
+      "title": "Aritech Advisor Intruder Panel ATSx500A Installation EN",
+      "local_research_file": "research/aritech-fddad742413e.pdf",
+      "sha256": "f537a350ec6790bc14fd7b77ec9df948958b885912c8df3f7ecc1536e96b1bf0",
+      "catalogue_sha256": "f537a350ec6790bc14fd7b77ec9df948958b885912c8df3f7ecc1536e96b1bf0",
+      "hash_matches_catalogue": true,
+      "pages": 408,
+      "catalogue_status_preserved": "file-hash"
+    },
+    "bosch-5a4c69933a94": {
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Abacus%20LCD%20User%20Manual.pdf",
+      "title": "Abacus LCD user guide",
+      "local_research_file": "research/bosch-5a4c69933a94.pdf",
+      "sha256": "0a9e86f3e6def3be0b4b7daeb9eaf5adfb551bb54b4bc44a69a105808dc61b37",
+      "catalogue_sha256": "0a9e86f3e6def3be0b4b7daeb9eaf5adfb551bb54b4bc44a69a105808dc61b37",
+      "hash_matches_catalogue": true,
+      "pages": 46,
+      "catalogue_status_preserved": "complete-file"
+    },
+    "bosch-a743ae8fb01d": {
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/DA%20Abacus%20Engineer%20Manual.pdf",
+      "title": "Abacus installation guide",
+      "local_research_file": "research/bosch-a743ae8fb01d.pdf",
+      "sha256": "05442609095b5ae5b12a6c9f157821ac196152b2e6f32469e7262db401ca583b",
+      "catalogue_sha256": "05442609095b5ae5b12a6c9f157821ac196152b2e6f32469e7262db401ca583b",
+      "hash_matches_catalogue": true,
+      "pages": 78,
+      "catalogue_status_preserved": "complete-file"
+    },
+    "facp-c3aa97cd-9fa4-4777-aaa5-c3e570017cc1": {
+      "url": "https://docs.facpmanuals.com/manuals/Qolsys/iq_panel-operations-2020.pdf",
+      "title": "IQ Panel — User Guide (2020, source-listed)",
+      "local_research_file": "research/facp-c3aa97cd-9fa4-4777-aaa5-c3e570017cc1.pdf",
+      "sha256": "ca1f37ac2685d3f8d40c24fcd4b6f836740c3dbc5402492ca6da5f5d2dc7ee05",
+      "catalogue_sha256": "ca1f37ac2685d3f8d40c24fcd4b6f836740c3dbc5402492ca6da5f5d2dc7ee05",
+      "hash_matches_catalogue": true,
+      "pages": 28,
+      "catalogue_status_preserved": "complete-file"
+    },
+    "lynteck-5ce79fc79fa5": {
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Nexus%20Engineer%20Manual.pdf",
+      "title": "Nexus 8 installation manual",
+      "local_research_file": "research/lynteck-5ce79fc79fa5.pdf",
+      "sha256": "cab97a0a04ddb1cd8a5378a4ad558f8a6ec0b255ba781dab6a89db9c38b58f9d",
+      "catalogue_sha256": "cab97a0a04ddb1cd8a5378a4ad558f8a6ec0b255ba781dab6a89db9c38b58f9d",
+      "hash_matches_catalogue": true,
+      "pages": 15,
+      "catalogue_status_preserved": "complete-file"
+    },
+    "risco-adab2e63198a": {
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Gardtec%20800-816-840%20user%20manual.pdf",
+      "title": "Gardtec 800-816-840 user manual",
+      "local_research_file": "research/risco-adab2e63198a.pdf",
+      "sha256": "e81a126037bd0e2e52bf0955b580075e6fd3bb744d141667a02eb57deb579d9f",
+      "catalogue_sha256": "e81a126037bd0e2e52bf0955b580075e6fd3bb744d141667a02eb57deb579d9f",
+      "hash_matches_catalogue": true,
+      "pages": 38,
+      "catalogue_status_preserved": "file-hash"
+    },
+    "risco-c9ad442c2a5b": {
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Gardtec%20800%20Series.pdf",
+      "title": "Gardtec 800 Series",
+      "local_research_file": "research/risco-c9ad442c2a5b.pdf",
+      "sha256": "38bee314ecc5f1a5f57ce9510d8368f8783fff32e285fa70e058afe0f341b503",
+      "catalogue_sha256": "38bee314ecc5f1a5f57ce9510d8368f8783fff32e285fa70e058afe0f341b503",
+      "hash_matches_catalogue": true,
+      "pages": 43,
+      "catalogue_status_preserved": "file-hash"
+    },
+    "texecom-9077d1ea8968": {
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/04/07125509/RKP8Plus_16Plus-Keypad-Installation-Manual-NEW-INS181-5.pdf",
+      "title": "RKP 8Plus/16Plus Installation Manual",
+      "local_research_file": "research/texecom-rkp-plus-manual.pdf",
+      "sha256": "a2209cbd3465fa545e42c6ecbcb7c653559d2b29ea1b5a0f305c26030af3a075",
+      "catalogue_sha256": null,
+      "hash_matches_catalogue": null,
+      "pages": 9,
+      "catalogue_status_preserved": "listed"
+    },
+    "texecom-c66b83386b79": {
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/04/07125408/RKP4_8_16_8Plus_16Plus_keypad-installation-manual-OLD-INS181-4.pdf",
+      "title": "RKP 4/8/16 Installation Manual",
+      "local_research_file": "research/texecom-rkp-legacy-manual.pdf",
+      "sha256": "5fdfba3cb9c082070e4dec033a129592d6ca10336e1944390cb11c6b66a106f5",
+      "catalogue_sha256": null,
+      "hash_matches_catalogue": null,
+      "pages": 9,
+      "catalogue_status_preserved": "listed"
+    },
+    "visonic-a6a091e1c0e2": {
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Visonic%20PowerMax%20Install%20Guide.pdf",
+      "title": "Visonic PowerMax Install Guide",
+      "local_research_file": "research/visonic-a6a091e1c0e2.pdf",
+      "sha256": "984e862bfbad9765967c977603a3232484dec8b315ef8cf74dbcf0ad354bb813",
+      "catalogue_sha256": "984e862bfbad9765967c977603a3232484dec8b315ef8cf74dbcf0ad354bb813",
+      "hash_matches_catalogue": true,
+      "pages": 12,
+      "catalogue_status_preserved": "complete-file"
+    },
+    "visonic-d611439f6283": {
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Visonic%20Powermax%20user%20guide.pdf",
+      "title": "Visonic Powermax user guide",
+      "local_research_file": "research/visonic-d611439f6283.pdf",
+      "sha256": "4f22b7585981a5515d0a563e29cbf21f905f08604a326f23c822e9fc7fbb3193",
+      "catalogue_sha256": null,
+      "hash_matches_catalogue": null,
+      "pages": 26,
+      "catalogue_status_preserved": "pdf-indexed"
+    }
+  },
+  "asset_policy": "Actual supplier/manufacturer photographs or exact original manual drawings. No generated or redrawn panel images. PDF research inputs are not application assets.",
+  "contact_sheet": "contact-sheet.jpg",
+  "review_status": "Complete: every selected asset visually inspected, model/guide scope checked, and source hashes recorded."
+}

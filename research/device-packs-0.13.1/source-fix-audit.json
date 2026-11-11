@@ -1,0 +1,189 @@
+{
+  "purpose": "Repair C-TEC device pack PDF retrieval following production relay HTTP 403 from Acorn-hosted reference.",
+  "new_documents": [
+    {
+      "document_id": "device-doc-c-tec-97eb0a9793d9",
+      "author": "Computionics Limited (C-TEC)",
+      "publisher": "Modern Alarm Kft., independent distributor",
+      "source_page_url": "https://www.modernalarm.hu/:erzekelok-aljzatok/34600/c-tec-ca402-programozhat-h-rz-kel-34600-",
+      "download": {
+        "file": "ca402-modernalarm.pdf",
+        "url": "https://www.modernalarm.hu/dok/c-tec/CA402_CAST_Heat-Detector_Datasheet.pdf",
+        "final_url": "https://www.modernalarm.hu/dok/c-tec/CA402_CAST_Heat-Detector_Datasheet.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "bytes": 365401,
+        "sha256": "97eb0a9793d9a2cb8bbc6baf2c64b9540d20f2919fcb3d98ea4ec01ad1d85da0",
+        "pdf_magic": true,
+        "pages": 1,
+        "revision_lines": [
+          "Approved Document No. DFU4020000 Rev 7\t 05/08/21",
+          "Approved Document No. DFU4020000 Rev 7\t 05/08/21"
+        ]
+      },
+      "local_pdf": "ca402-modernalarm.pdf",
+      "visual_review": "ca402-modernalarm.pdf.png",
+      "pdf_pages": 1,
+      "printed_pages": 2,
+      "exact_model": "CA402",
+      "model_coverage_pdf_pages": [
+        1
+      ],
+      "manufacturer_document_code": "DFU4020000",
+      "revision": "7",
+      "printed_date": "05/08/21",
+      "verified_identification": "Programmable heat detector, red colour-coded ring",
+      "protocol": "CAST (C-TEC)",
+      "scope": "Exact detector head. CA408 base is separately documented. No CAST PRO or ActiV equivalence.",
+      "revision_limitation": "This is the explicitly dated 2021 edition; no claim it is the latest edition.",
+      "replacement_for": "device-doc-c-tec-c355db94ca7a",
+      "production_relay_status": "Not tested by research agent; root must confirm production retrieval."
+    },
+    {
+      "document_id": "device-doc-c-tec-41e341b9c547",
+      "author": "Computionics Limited (C-TEC)",
+      "publisher": "Modern Alarm Kft., independent distributor",
+      "source_page_url": "https://www.modernalarm.hu/:erzekelok-aljzatok/34604/c-tec-ca414-programozhat-multi-szenzoros-rz-kel-34604-",
+      "download": {
+        "file": "ca414-modernalarm.pdf",
+        "url": "https://www.modernalarm.hu/dok/c-tec/CA414_CAST_Multisensor-Fire-Detector_Datasheet.pdf",
+        "final_url": "https://www.modernalarm.hu/dok/c-tec/CA414_CAST_Multisensor-Fire-Detector_Datasheet.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "bytes": 370932,
+        "sha256": "41e341b9c547aad8e56a321a76c863063f0ed4aa0e01e6aacd0905608393e265",
+        "pdf_magic": true
+      },
+      "local_pdf": "ca414-modernalarm.pdf",
+      "visual_review": "ca414-modernalarm.pdf.png",
+      "pdf_pages": 1,
+      "printed_pages": 2,
+      "exact_model": "CA414",
+      "model_coverage_pdf_pages": [
+        1
+      ],
+      "manufacturer_document_code": "DFU4140000",
+      "revision": "7",
+      "printed_date": "05/08/21",
+      "verified_identification": "Multisensor fire detector, blue colour-coded ring",
+      "protocol": "CAST (C-TEC)",
+      "scope": "Exact detector head. CA408 base is separately documented. No CAST PRO or ActiV equivalence.",
+      "revision_limitation": "This is the explicitly dated 2021 edition; no claim it is the latest edition.",
+      "replacement_for": "device-doc-c-tec-af925ff0ac67",
+      "production_relay_status": "Not tested by research agent; root must confirm production retrieval."
+    },
+    {
+      "document_id": "device-doc-c-tec-7ad9393daf5b",
+      "author": "Computionics Limited (C-TEC)",
+      "publisher": "Modern Alarm Kft., independent distributor",
+      "source_page_url": "https://www.modernalarm.hu/:erzekelok-aljzatok/34605/c-tec-ca416-optikai-f-st-rz-kel-34605-",
+      "download": {
+        "file": "ca416-modernalarm.pdf",
+        "url": "https://modernalarm.hu/dok/c-tec/CA416_CAST_Optical-Smoke-Detector_Datasheet.pdf",
+        "final_url": "https://modernalarm.hu/dok/c-tec/CA416_CAST_Optical-Smoke-Detector_Datasheet.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "bytes": 367778,
+        "sha256": "7ad9393daf5b385609d88d3e05ae4a3a6c59ae0b8c54358ad5f4bc5ef072dd40",
+        "pdf_magic": true
+      },
+      "local_pdf": "ca416-modernalarm.pdf",
+      "visual_review": "ca416-modernalarm.pdf.png",
+      "pdf_pages": 1,
+      "printed_pages": 2,
+      "exact_model": "CA416",
+      "model_coverage_pdf_pages": [
+        1
+      ],
+      "manufacturer_document_code": "DFU4160000",
+      "revision": "8",
+      "printed_date": "05/08/21",
+      "verified_identification": "Optical smoke detector, grey colour-coded ring",
+      "protocol": "CAST (C-TEC)",
+      "scope": "Exact detector head. CA408 base is separately documented. No CAST PRO or ActiV equivalence.",
+      "revision_limitation": "This is the explicitly dated 2021 edition; no claim it is the latest edition.",
+      "replacement_for": "device-doc-c-tec-9310045e0f57",
+      "production_relay_status": "Not tested by research agent; root must confirm production retrieval."
+    },
+    {
+      "document_id": "device-doc-c-tec-df7988f16dc3",
+      "author": "Computionics Limited (C-TEC)",
+      "publisher": "Modern Alarm Kft., independent distributor",
+      "publisher_evidence_url": "https://www.modernalarm.hu/ceg/forgalmazott-markak",
+      "download": {
+        "url": "https://www.modernalarm.hu/dok/c-tec/DFU4315010-CAST-Base-Mount-Sounder-VAD-Range-Rev-15.pdf",
+        "final_url": "https://www.modernalarm.hu/dok/c-tec/DFU4315010-CAST-Base-Mount-Sounder-VAD-Range-Rev-15.pdf",
+        "status": 200,
+        "content_type": "application/pdf",
+        "bytes": 744746,
+        "sha256": "df7988f16dc371b405b3661cea2ae78e26bf120ad6081eeda22b5e9c4143bbea",
+        "pdf_signature": true
+      },
+      "document_code": "DFU4315010",
+      "revision": "15",
+      "printed_date": "01/06/22",
+      "pdf_pages": 2,
+      "printed_pages": 4,
+      "visual_review": [
+        "page-1.png",
+        "page-2.png"
+      ],
+      "model_coverage": {
+        "CA459A/W": {
+          "pdf_page": 1,
+          "printed_page": 1,
+          "description": "Addressable Ceiling VAD Base with isolator, white, O-Class (CAST)",
+          "mounting": "Lens points along corridor length",
+          "technical_table": {
+            "pdf_page": 2,
+            "printed_page": 3,
+            "protocol": "CAST (C-TEC)",
+            "description": "Base VAD with isolator, O-Class",
+            "sound_output": "N/A"
+          }
+        }
+      },
+      "other_explicit_model_codes": [
+        "CA431A/W",
+        "CA432A/W",
+        "CA456A/W",
+        "CA459A/W",
+        "CA460A/W"
+      ],
+      "provenance_note": "Manufacturer-authored English installation instructions publicly hosted by Modern Alarm. These are independently verified bytes, not claimed equal to prior C-TEC or Acorn files.",
+      "revision_limitation": "Manufacturer indexed DFU4315010 Rev 16 dated 01/06/2024 is newer. This working copy must remain labelled Rev 15 dated 01/06/22.",
+      "blocked_sources_not_retried": [
+        "Acorn Fire & Security",
+        "c-tec.com direct downloads"
+      ],
+      "replacement_for": "device-doc-c-tec-c1e5b7a7bd89",
+      "production_relay_status": "Not tested by this research agent; root must check production retrieval."
+    }
+  ],
+  "archive_catalogue_policy": "Keep the six earlier Acorn supplementary record identities and original catalogue unchanged for imports, saved history and provenance. Exclude those six from active device-pack reference lists. Add these four independently verified manufacturer copies with new identities determined by their own hashes.",
+  "image_policy": "Existing embedded device images and their original extraction provenance remain accurate; replacement reference documents do not imply that the image was extracted from the new PDF.",
+  "observed_blocks": [
+    {
+      "url": "https://www.eufireandsecurity.com/wp-content/uploads/2025/07/DFU4140000-CA414-CAST-Multisensor-Fire-Detector-Rev-8.pdf",
+      "observed_result": "Search index exposes exact document text, but web open returned HTTP 403. No follow-up retry or alternate client used for that document."
+    },
+    {
+      "url": "https://www.eufireandsecurity.com/product/ca-programmable-heat-detector/",
+      "observed_result": "Web open returned HTTP 403. No follow-up retrieval attempted."
+    }
+  ],
+  "not_retried": [
+    "Acorn Fire & Security blocked production source",
+    "c-tec.com direct CAPTCHA sources"
+  ],
+  "root_gate": "Production relay must retrieve each selected replacement before release. Modern Alarm downloads passed HTTP200 with unaltered default Python urllib requests.",
+  "source_only_supplementary_document_ids": [
+    "device-doc-c-tec-c355db94ca7a",
+    "device-doc-c-tec-af925ff0ac67",
+    "device-doc-c-tec-9310045e0f57",
+    "device-doc-c-tec-8533dbee907d",
+    "device-doc-c-tec-7da7a3d9afa0",
+    "device-doc-c-tec-c1e5b7a7bd89"
+  ],
+  "root_retrieval_update": "Root confirmed existing CA730 EU Fire DFU7300000 Rev 11 saved successfully through live production FINDR relay with app hash verification. Root owns remaining production tests."
+}

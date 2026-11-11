@@ -1,0 +1,75 @@
+{
+  "kind": "normal-ui-export",
+  "fileBytes": 6688195,
+  "helperName": "MxPro4 \u00b7 workshop check",
+  "selectedManuals": [
+    "advanced-9e6af4fbfd7d",
+    "advanced-76cae27e9ec7",
+    "advanced-8f3ba6ecfc7f"
+  ],
+  "manuals": [
+    {
+      "id": "advanced-9e6af4fbfd7d",
+      "bytes": 1781694,
+      "sha256": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32",
+      "includesActualPdf": true
+    },
+    {
+      "id": "advanced-76cae27e9ec7",
+      "bytes": 2252899,
+      "sha256": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e",
+      "includesActualPdf": true
+    },
+    {
+      "id": "advanced-8f3ba6ecfc7f",
+      "bytes": 927783,
+      "sha256": "5b0e02d2f682d6039474e94716b2f75f10868dc33fa3e6764c0b43c3c50b86a4",
+      "includesActualPdf": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "user",
+      "kind": "user_input",
+      "mode": null,
+      "modelUsed": null,
+      "inferenceAttempted": null,
+      "model": null,
+      "text": "How do I start a walk test?",
+      "sourcePages": []
+    },
+    {
+      "role": "assistant",
+      "kind": "manual_search",
+      "mode": "manual-search",
+      "modelUsed": false,
+      "inferenceAttempted": true,
+      "model": {
+        "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "metrics": {
+          "loadMs": 33029.699999999255,
+          "inputTokens": 413,
+          "outputTokens": 24,
+          "firstTokenMs": 61374.20000000112,
+          "generationMs": 71990.70000000112,
+          "tokensPerSecond": 0.33337639445094475
+        },
+        "selection": {
+          "source": null,
+          "question": null
+        }
+      },
+      "text": "Manual search \u2014 the local AI response did not select a verifiable source. No generated technical instructions have been used.\n\nVerified manual procedure:\n\nFor MxPro4 panels covered by user guide 680-015, revision 10.\n\nUse authorised Level 2 access with permission for zone testing. If fitted, use the access key; otherwise press MENU \u2192 ENABLE CONTROLS \u2192 \u2714, enter your authorised password and press \u2714.\n\n1. Press MENU. Use the arrow buttons and \u2714 to select TEST, then ZONES.\n2. Choose WITHOUT SOUNDERS or WITH SOUNDERS, then press \u2714.\n3. Highlight each zone to test and press \u2714. Check it shows IN TEST and the Test indicator is lit.\n4. Operate the call point with its test key, or apply test smoke to the smoke detector. A registered test shows ! beside the zone; the sounders operate if selected.\n5. Remove the call-point test key or allow the detector smoke to clear. The panel automatically resets that test condition.\n6. When finished, press Esc and select FINISHED TEST. Check that the Test LED goes out.\n\nWITH SOUNDERS activates the sounders selected during commissioning for about 10 seconds per activation. KEEP ZONES IN TEST leaves the test active and the Test LED lit.",
+      "sourcePages": [
+        31,
+        32,
+        18,
+        17,
+        10,
+        5
+      ]
+    }
+  ]
+}

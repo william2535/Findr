@@ -1,0 +1,95 @@
+{
+  "checkedOn": "2026-11-02",
+  "sources": [
+    {
+      "id": "cfp-user-rev2",
+      "documentNumber": "DFU7001020",
+      "title": "CFP 2/4/8 Zone Conventional Fire Alarm Control Panels — User Manual & Log Book",
+      "revision": "Rev 2",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20CFP%20UNIVERSAL%20USER%20MNL%20DFU7001020_REV2.pdf",
+      "recordId": "c-tec-5332c9b751b2",
+      "sha256": "f4445ea23e6f6fc95a6732ed57b6591dac6d85b3e26f7c6b81dabcec0c0d5333",
+      "bytes": 579604,
+      "pages": 20,
+      "catalogueHashVerified": true,
+      "provenance": "Manufacturer-authored manual hosted by an archive mirror; bytes match the existing archive record.",
+      "limitations": "Common manual covers Standard, Economy and AlarmSense. This trainer uses the Standard eight-zone fascia and operator controls only. Model-dependent features are not inferred from the shared cabinet.",
+      "checkedOn": "2026-11-02",
+      "pageNumbering": "PDF page number equals printed page number for cited pages."
+    },
+    {
+      "id": "cfp-engineer-rev1",
+      "documentNumber": "DFU7004010",
+      "title": "CFP 2/4/8 Zone Fire Alarm Control Panel — Installation & Maintenance Manual",
+      "revision": "Rev 1",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CFP%202%2C4%2C8%20zone%20conventional%20fire%20panel%20manual.pdf",
+      "recordId": "c-tec-4b1267f3fefc",
+      "sha256": "6e04b478f4fe32f3f33a0365e660a5629a6621882a6231b3f2d56985d6c1ace8",
+      "bytes": 1033522,
+      "pages": 24,
+      "catalogueHashVerified": true,
+      "provenance": "Manufacturer-authored Standard-panel manual hosted by an archive mirror; bytes match the existing archive record.",
+      "limitations": "Historical revision. Engineering controls and hardware procedures remain outside this operator trainer. Do not assume current production hardware has this exact revision.",
+      "checkedOn": "2026-11-02",
+      "pageNumbering": "PDF page number equals printed page number for cited pages."
+    },
+    {
+      "id": "sigma-main-25",
+      "documentNumber": "Man-1078",
+      "title": "Sigma CP (K and T Series) — Operation and Maintenance Manual",
+      "revision": "Issue 25, April 2024",
+      "url": "https://kentec.co.uk/wp-content/uploads/2018/08/Man-1078_SigmaCP_25.pdf",
+      "recordId": "kentec-0d82d93522c3",
+      "sha256": "ce2da02ef49b615e68ae7a1e69b9ffcc54efd8970bbacb9b1589f484d3e30dd6",
+      "bytes": 834385,
+      "pages": 24,
+      "catalogueHashVerified": false,
+      "provenance": "Retrieved from Kentec’s official document URL; the existing catalogue record has no pinned edition/hash.",
+      "limitations": "The checked file is Issue 25. Check any saved/downloaded document edition against this source. This trainer represents an eight-zone K-series operator configuration; it does not simulate T-series electrical behaviour or engineering configuration.",
+      "checkedOn": "2026-11-02",
+      "pageNumbering": "PDF page number equals printed page number for cited pages."
+    },
+    {
+      "id": "sigma-user-06",
+      "documentNumber": "Man-1082",
+      "title": "Sigma CP (K and T Series) and Sigma CP-A — User Manual",
+      "revision": "Cover: Issue 06, June 2013; page footers: _05",
+      "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1082.pdf",
+      "recordId": "kentec-33d8d4b2acfa",
+      "sha256": "97522c50ed95e9abbb87fc7332d4950e63c785aa9a48d523393936d25297cee0",
+      "bytes": 351268,
+      "pages": 6,
+      "catalogueHashVerified": false,
+      "provenance": "Retrieved from Kentec’s official document URL. Cover/footer discrepancy retained rather than silently resolved.",
+      "limitations": "Used alongside the newer K/T-series main manual. Common operator examples do not establish CP-A electrical compatibility. No full MODE cycle order is specified.",
+      "checkedOn": "2026-11-02",
+      "pageNumbering": "PDF page number equals printed page number for cited pages."
+    }
+  ],
+  "profiles": [
+    {
+      "id": "c-tec-cfp-standard",
+      "variant": "Eight-zone Standard operator fascia — DFU7001020 Rev 2",
+      "limitations": [
+        "A fictional eight-zone training configuration, not an electrical panel emulator or a live system connection.",
+        "No engineering access, walk-test programming, coincidence, non-latching programming or commissioning settings are implemented. Those require the applicable engineering manual.",
+        "Configured output delays are not supplied by the normal fixture; no field delay setting or acceptance value is inferred.",
+        "The fixture explicitly enables resound on a new zone. The manual describes this as programmable, not universal.",
+        "This is the Standard fascia/edition. Shared images do not establish Economy or AlarmSense compatibility."
+      ]
+    },
+    {
+      "id": "kentec-sigma-cp",
+      "variant": "K11080M2 eight-zone K-series; sigma_CP 214.hex or later warning scope — Man-1078 Issue 25",
+      "limitations": [
+        "A fictional eight-zone K-series fixture with common alarm operation and no configured delays. It is not a T-series wiring or CP-A AlarmSense simulator.",
+        "Active-device warning on a disabled zone is scoped to sigma_CP 214.hex or later, as stated by the main manual. It is not assumed for older panels.",
+        "The manuals say to press Mode until a code is shown but do not establish the complete cycle order. An explicit training target chooser avoids inventing a hardware press count.",
+        "Test auto-reset is described only as after a few seconds. Advancing a training test cycle does not certify a hardware timer.",
+        "No access-level-three Write Enable switch, engineering configuration, hardware fault injection or circuit measurements are implemented.",
+        "The source user guide has an Issue 06 cover and _05 page footers. This discrepancy is retained; the newer Issue 25 main manual is the primary operator reference.",
+        "The existing catalogue records do not pin the Sigma download hashes; compare a saved/downloaded edition with the checked source."
+      ]
+    }
+  ]
+}

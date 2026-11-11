@@ -1,0 +1,566 @@
+{
+  "environment": {
+    "browser": "chromium",
+    "version": "154.0.8037.57",
+    "os": "Linux container",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "persistentProfile": true,
+    "physicalIPhone": false,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36"
+  },
+  "syntheticManuals": true,
+  "offline": true,
+  "useModel": true,
+  "profile": "Isolated persistent QA profile; no user data",
+  "checks": [
+    "Separate Fault Finder and Quick Questions entries create distinct saved conversations",
+    "New Quick Questions output visibly types, with tap-to-complete",
+    "Real pinned local model installed through resource workflow or previously verified installation",
+    "Question before manual asks a focused equipment clarification",
+    "Cancelled picker keeps question; uploaded unseen manual is identified, confirmed and resumes real local inference",
+    "Supporting PDF page reference opens actual saved manual",
+    "Natural follow-up retains equipment, manual and previous question context",
+    "Scrollback stays put while new transcript lines arrive; Latest message restores follow",
+    "Reload restores full answers and source references without replaying old animation",
+    "Reduced motion and Shift+Enter multiline input",
+    "Phone portrait and keyboard-like 390\u00d7500 viewport keep composer reachable",
+    "Additional component manual preserves panel and conversation, then resumes question",
+    "BACK retains original question and answer while reassessing a correction",
+    "Network disabled: reload, real model inference and previously unseen PDF import through normal menu",
+    "Fault Finder uses real shared local inference while keeping the pending diagnostic check and evidence unchanged",
+    "Explicit transfer makes a separate Fault Finder job with manuals/context, without invented completed checks",
+    "Independent question histories reopen without replacing Fault Finder"
+  ],
+  "measurements": [
+    {
+      "kind": "PDF import",
+      "file": "synthetic-quick-panel.pdf",
+      "ms": 146.11619500000052
+    },
+    {
+      "kind": "Question response",
+      "question": "How do I view the event history on this panel?",
+      "wallMs": 15617.379484000001,
+      "loadMs": 6943,
+      "inputTokens": 308,
+      "outputTokens": 16,
+      "firstTokenMs": 5746.9000000003725,
+      "generationMs": 8368.599999999627,
+      "tokensPerSecond": 1.911908801950232
+    },
+    {
+      "kind": "Question response",
+      "question": "Where is that menu?",
+      "wallMs": 8404.510136,
+      "loadMs": 0,
+      "inputTokens": 317,
+      "outputTokens": 16,
+      "firstTokenMs": 5977.0999999996275,
+      "generationMs": 8225.099999999627,
+      "tokensPerSecond": 1.945265103159928
+    },
+    {
+      "kind": "PDF import",
+      "file": "synthetic-quick-psu.pdf",
+      "ms": 129.35796800000026
+    },
+    {
+      "kind": "Question response",
+      "question": "What output voltage is documented for this power supply?",
+      "wallMs": 9189.127212999996,
+      "loadMs": 3428.199999999255,
+      "inputTokens": 198,
+      "outputTokens": 11,
+      "firstTokenMs": 3802.2000000011176,
+      "generationMs": 5538.4000000003725,
+      "tokensPerSecond": 1.9861331792574137
+    },
+    {
+      "kind": "Question response",
+      "question": "SYNTHETIC correction: what nominal voltage is documented for the external PSU?",
+      "wallMs": 6030.234906999998,
+      "loadMs": 0,
+      "inputTokens": 207,
+      "outputTokens": 16,
+      "firstTokenMs": 3642.89999999851,
+      "generationMs": 5767.0999999996275,
+      "tokensPerSecond": 2.774357996220117
+    },
+    {
+      "kind": "Question response",
+      "question": "What is the nominal output voltage?",
+      "wallMs": 10009.639856000002,
+      "loadMs": 4078.60000000149,
+      "inputTokens": 195,
+      "outputTokens": 12,
+      "firstTokenMs": 3905.199999999255,
+      "generationMs": 5712.5,
+      "tokensPerSecond": 2.1006564551422318
+    },
+    {
+      "kind": "PDF import",
+      "file": "synthetic-quick-camera.pdf",
+      "ms": 339.7309380000006
+    },
+    {
+      "kind": "Question response",
+      "question": "What does this camera support?",
+      "wallMs": 5676.182428,
+      "loadMs": 0,
+      "inputTokens": 187,
+      "outputTokens": 16,
+      "firstTokenMs": 3106.89999999851,
+      "generationMs": 5462.199999999255,
+      "tokensPerSecond": 2.9292226575376556
+    },
+    {
+      "kind": "Fault Finder local explanation",
+      "wallMs": 22483.507679999995,
+      "loadMs": 0,
+      "inputTokens": 352,
+      "outputTokens": 96,
+      "firstTokenMs": 6497,
+      "generationMs": 22222.10000000149,
+      "tokensPerSecond": 4.3200237601303915
+    }
+  ],
+  "answers": [
+    {
+      "question": "How do I view the event history on this panel?",
+      "text": "The local model\u2019s wording did not pass source checking. Here are relevant manual extracts; I have not established a complete answer.\n1. \u201cFor this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history. The EVENT HISTORY menu is inside VIEW. Step two selects EVENT HISTORY after VIEW has already been opened. Viewing the log does not clear its entries or reset a fault.\u201d\n2. \u201cThis fictional fire alarm control panel exists only for browser verification. The model names, buttons and behaviour below do not describe real equipment. Confirm the equipment label before applying any actual manufacturer procedure. This fixture supports read-only questions about event history. It does not provide installer access codes, disablement procedures, electrical tests or authority to impair a fire alarm system.\u201d\n\nApplies to the recorded equipment: Test Bench FINDR-QA-100 not established. These are shortened excerpts; check the cited page for surrounding conditions and the full procedure. Check the cited pages, or add the relevant manual, diagram or configuration detail.",
+      "sourceRefs": [
+        {
+          "sourceId": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9:pdf-2:0",
+          "citationId": "S1",
+          "manualId": "local-2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+          "contentHash": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+          "processorVersion": "2026-11-10.2",
+          "title": "synthetic-quick-panel",
+          "revision": "QA-027",
+          "models": [
+            "FINDR-QA-100"
+          ],
+          "page": 2,
+          "pdfPage": 2,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history. The EVENT HISTORY menu is inside VIEW. Step two selects EVENT HISTORY after VIEW has already been opened. Viewing the log does not clear its entries or reset a fault.",
+          "excerpt": "For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history. The EVENT HISTORY menu is inside VIEW. Step two selects EVENT HISTORY after VIEW has already been opened. Viewing the log does not clear its entries or reset a fault.",
+          "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+        },
+        {
+          "sourceId": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9:pdf-1:0",
+          "citationId": "S2",
+          "manualId": "local-2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+          "contentHash": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+          "processorVersion": "2026-11-10.2",
+          "title": "synthetic-quick-panel",
+          "revision": "QA-027",
+          "models": [
+            "FINDR-QA-100"
+          ],
+          "page": 1,
+          "pdfPage": 1,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "This fictional fire alarm control panel exists only for browser verification. The model names, buttons and behaviour below do not describe real equipment. Confirm the equipment label before applying any actual manufacturer procedure. This fixture supports read-only questions about event history. It does not provide installer access codes, disablement procedures, electrical tests or authority to impair a fire alarm system.",
+          "excerpt": "This fictional fire alarm control panel exists only for browser verification. The model names, buttons and behaviour below do not describe real equipment. Confirm the equipment label before applying any actual manufacturer procedure. This fixture supports read-only questions about event history. It does not provide installer access codes, disablement procedures, electrical tests or authority to impair a fire alarm system.",
+          "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+        }
+      ],
+      "model": {
+        "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "metrics": {
+          "loadMs": 6943,
+          "inputTokens": 308,
+          "outputTokens": 16,
+          "firstTokenMs": 5746.9000000003725,
+          "generationMs": 8368.599999999627,
+          "tokensPerSecond": 1.911908801950232
+        },
+        "ran": true,
+        "outputAccepted": false,
+        "sourceSelection": [],
+        "generatedProseUsed": false,
+        "validationIssues": [
+          "Generated wording was not a verbatim supported passage and has not been presented as a documented fact.",
+          "The local model did not return an independently supported quotation. Review the exact retrieved material or add the missing manual information."
+        ]
+      }
+    },
+    {
+      "question": "Where is that menu?",
+      "text": "The local model\u2019s wording did not pass source checking. Here are relevant manual extracts; I have not established a complete answer.\n1. \u201cThis fictional fire alarm control panel exists only for browser verification. The model names, buttons and behaviour below do not describe real equipment. Confirm the equipment label before applying any actual manufacturer procedure. This fixture supports read-only questions about event history. It does not provide installer access codes, disablement procedures, electrical tests or authority to impair a fire alarm system.\u201d\n2. \u201cFor this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history. The EVENT HISTORY menu is inside VIEW. Step two selects EVENT HISTORY after VIEW has already been opened. Viewing the log does not clear its entries or reset a fault.\u201d\n\nApplies to the recorded equipment: Test Bench FINDR-QA-100 not established. These are shortened excerpts; check the cited page for surrounding conditions and the full procedure. Check the cited pages, or add the relevant manual, diagram or configuration detail.",
+      "sourceRefs": [
+        {
+          "sourceId": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9:pdf-1:0",
+          "citationId": "S1",
+          "manualId": "local-2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+          "contentHash": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+          "processorVersion": "2026-11-10.2",
+          "title": "synthetic-quick-panel",
+          "revision": "QA-027",
+          "models": [
+            "FINDR-QA-100"
+          ],
+          "page": 1,
+          "pdfPage": 1,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "This fictional fire alarm control panel exists only for browser verification. The model names, buttons and behaviour below do not describe real equipment. Confirm the equipment label before applying any actual manufacturer procedure. This fixture supports read-only questions about event history. It does not provide installer access codes, disablement procedures, electrical tests or authority to impair a fire alarm system.",
+          "excerpt": "This fictional fire alarm control panel exists only for browser verification. The model names, buttons and behaviour below do not describe real equipment. Confirm the equipment label before applying any actual manufacturer procedure. This fixture supports read-only questions about event history. It does not provide installer access codes, disablement procedures, electrical tests or authority to impair a fire alarm system.",
+          "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+        },
+        {
+          "sourceId": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9:pdf-2:0",
+          "citationId": "S2",
+          "manualId": "local-2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+          "contentHash": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+          "processorVersion": "2026-11-10.2",
+          "title": "synthetic-quick-panel",
+          "revision": "QA-027",
+          "models": [
+            "FINDR-QA-100"
+          ],
+          "page": 2,
+          "pdfPage": 2,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history. The EVENT HISTORY menu is inside VIEW. Step two selects EVENT HISTORY after VIEW has already been opened. Viewing the log does not clear its entries or reset a fault.",
+          "excerpt": "For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history. The EVENT HISTORY menu is inside VIEW. Step two selects EVENT HISTORY after VIEW has already been opened. Viewing the log does not clear its entries or reset a fault.",
+          "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+        }
+      ],
+      "model": {
+        "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 317,
+          "outputTokens": 16,
+          "firstTokenMs": 5977.0999999996275,
+          "generationMs": 8225.099999999627,
+          "tokensPerSecond": 1.945265103159928
+        },
+        "ran": true,
+        "outputAccepted": false,
+        "sourceSelection": [],
+        "generatedProseUsed": false,
+        "validationIssues": [
+          "Generated wording was not a verbatim supported passage and has not been presented as a documented fact.",
+          "The local model did not return an independently supported quotation. Review the exact retrieved material or add the missing manual information."
+        ]
+      }
+    },
+    {
+      "question": "What output voltage is documented for this power supply?",
+      "text": "The local model\u2019s wording did not pass source checking. Here are relevant manual extracts; I have not established a complete answer.\n1. \u201cSection 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product. No wiring procedure, live measurement instruction, isolation sequence or acceptable fault-test threshold is established by this fixture.\u201d\n\nApplies to the recorded equipment: Test Bench QA-PSU-24 not established. These are shortened excerpts; check the cited page for surrounding conditions and the full procedure. Check the cited pages, or add the relevant manual, diagram or configuration detail.",
+      "sourceRefs": [
+        {
+          "sourceId": "0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310:pdf-1:0",
+          "citationId": "S1",
+          "manualId": "local-0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310",
+          "contentHash": "0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310",
+          "processorVersion": "2026-11-10.2",
+          "title": "synthetic-quick-psu",
+          "revision": "QA-027",
+          "models": [
+            "QA-PSU-24"
+          ],
+          "page": 1,
+          "pdfPage": 1,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product. No wiring procedure, live measurement instruction, isolation sequence or acceptable fault-test threshold is established by this fixture.",
+          "excerpt": "Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product. No wiring procedure, live measurement instruction, isolation sequence or acceptable fault-test threshold is established by this fixture.",
+          "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+        }
+      ],
+      "model": {
+        "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "metrics": {
+          "loadMs": 3428.199999999255,
+          "inputTokens": 198,
+          "outputTokens": 11,
+          "firstTokenMs": 3802.2000000011176,
+          "generationMs": 5538.4000000003725,
+          "tokensPerSecond": 1.9861331792574137
+        },
+        "ran": true,
+        "outputAccepted": false,
+        "sourceSelection": [],
+        "generatedProseUsed": false,
+        "validationIssues": [
+          "Generated wording was not a verbatim supported passage and has not been presented as a documented fact.",
+          "The local model did not return an independently supported quotation. Review the exact retrieved material or add the missing manual information."
+        ]
+      }
+    },
+    {
+      "question": "SYNTHETIC correction: what nominal voltage is documented for the external PSU?",
+      "text": "The local model\u2019s wording did not pass source checking. Here are relevant manual extracts; I have not established a complete answer.\n1. \u201cEquipment: External power supply PSU Document type: Datasheet Revision: QA-027 Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product.\u201d\n\nApplies to the recorded equipment: Test Bench QA-PSU-24 not established. These are shortened excerpts; check the cited page for surrounding conditions and the full procedure. Check the cited pages, or add the relevant manual, diagram or configuration detail.",
+      "sourceRefs": [
+        {
+          "sourceId": "0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310:pdf-1:0",
+          "citationId": "S1",
+          "manualId": "local-0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310",
+          "contentHash": "0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310",
+          "processorVersion": "2026-11-10.2",
+          "title": "synthetic-quick-psu",
+          "revision": "QA-027",
+          "models": [
+            "QA-PSU-24"
+          ],
+          "page": 1,
+          "pdfPage": 1,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "Equipment: External power supply PSU Document type: Datasheet Revision: QA-027 Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product.",
+          "excerpt": "Equipment: External power supply PSU Document type: Datasheet Revision: QA-027 Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product.",
+          "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+        }
+      ],
+      "model": {
+        "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 207,
+          "outputTokens": 16,
+          "firstTokenMs": 3642.89999999851,
+          "generationMs": 5767.0999999996275,
+          "tokensPerSecond": 2.774357996220117
+        },
+        "ran": true,
+        "outputAccepted": false,
+        "sourceSelection": [],
+        "generatedProseUsed": false,
+        "validationIssues": [
+          "Generated wording was not a verbatim supported passage and has not been presented as a documented fact.",
+          "The local model did not return an independently supported quotation. Review the exact retrieved material or add the missing manual information."
+        ]
+      }
+    },
+    {
+      "question": "What is the nominal output voltage?",
+      "text": "The local model\u2019s wording did not pass source checking. Here are relevant manual extracts; I have not established a complete answer.\n1. \u201cSection 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product. No wiring procedure, live measurement instruction, isolation sequence or acceptable fault-test threshold is established by this fixture.\u201d\n\nApplies to the recorded equipment: Test Bench QA-PSU-24 not established. These are shortened excerpts; check the cited page for surrounding conditions and the full procedure. Check the cited pages, or add the relevant manual, diagram or configuration detail.",
+      "sourceRefs": [
+        {
+          "sourceId": "0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310:pdf-1:0",
+          "citationId": "S1",
+          "manualId": "local-0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310",
+          "contentHash": "0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310",
+          "processorVersion": "2026-11-10.2",
+          "title": "synthetic-quick-psu",
+          "revision": "QA-027",
+          "models": [
+            "QA-PSU-24"
+          ],
+          "page": 1,
+          "pdfPage": 1,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product. No wiring procedure, live measurement instruction, isolation sequence or acceptable fault-test threshold is established by this fixture.",
+          "excerpt": "Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product. No wiring procedure, live measurement instruction, isolation sequence or acceptable fault-test threshold is established by this fixture.",
+          "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+        }
+      ],
+      "model": {
+        "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "metrics": {
+          "loadMs": 4078.60000000149,
+          "inputTokens": 195,
+          "outputTokens": 12,
+          "firstTokenMs": 3905.199999999255,
+          "generationMs": 5712.5,
+          "tokensPerSecond": 2.1006564551422318
+        },
+        "ran": true,
+        "outputAccepted": false,
+        "sourceSelection": [],
+        "generatedProseUsed": false,
+        "validationIssues": [
+          "Generated wording was not a verbatim supported passage and has not been presented as a documented fact.",
+          "The local model did not return an independently supported quotation. Review the exact retrieved material or add the missing manual information."
+        ]
+      }
+    },
+    {
+      "question": "What does this camera support?",
+      "text": "The local model\u2019s wording did not pass source checking. Here are relevant manual extracts; I have not established a complete answer.\n1. \u201cSection 1 - Fictional video interface This synthetic camera lists H.264 video and ONVIF Profile S. It does not claim that every recorder implementing those labels will support every function. This document contains no verified pairing with QA-NVR-300. Obtain the recorder manual, installed firmware and a current interoperability statement before claiming a verified compatible pairing.\u201d\n\nApplies to the recorded equipment: Test Bench QA-CAM-200 unknown. These are shortened excerpts; check the cited page for surrounding conditions and the full procedure. Check the cited pages, or add the relevant manual, diagram or configuration detail.",
+      "sourceRefs": [
+        {
+          "sourceId": "a4a02cd2eac17faf3a50ff62be17e3783b4aed135fd5062e92218133ada0ac53:pdf-1:0",
+          "citationId": "S1",
+          "manualId": "local-a4a02cd2eac17faf3a50ff62be17e3783b4aed135fd5062e92218133ada0ac53",
+          "contentHash": "a4a02cd2eac17faf3a50ff62be17e3783b4aed135fd5062e92218133ada0ac53",
+          "processorVersion": "2026-11-10.2",
+          "title": "synthetic-quick-camera",
+          "revision": "QA-027",
+          "models": [
+            "QA-CAM-200"
+          ],
+          "page": 1,
+          "pdfPage": 1,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "Section 1 - Fictional video interface This synthetic camera lists H.264 video and ONVIF Profile S. It does not claim that every recorder implementing those labels will support every function. This document contains no verified pairing with QA-NVR-300. Obtain the recorder manual, installed firmware and a current interoperability statement before claiming a verified compatible pairing.",
+          "excerpt": "Section 1 - Fictional video interface This synthetic camera lists H.264 video and ONVIF Profile S. It does not claim that every recorder implementing those labels will support every function. This document contains no verified pairing with QA-NVR-300. Obtain the recorder manual, installed firmware and a current interoperability statement before claiming a verified compatible pairing.",
+          "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+        }
+      ],
+      "model": {
+        "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 187,
+          "outputTokens": 16,
+          "firstTokenMs": 3106.89999999851,
+          "generationMs": 5462.199999999255,
+          "tokensPerSecond": 2.9292226575376556
+        },
+        "ran": true,
+        "outputAccepted": false,
+        "sourceSelection": [],
+        "generatedProseUsed": false,
+        "validationIssues": [
+          "Generated wording was not a verbatim supported passage and has not been presented as a documented fact.",
+          "The local model did not return an independently supported quotation. Review the exact retrieved material or add the missing manual information."
+        ]
+      }
+    }
+  ],
+  "status": "passed",
+  "offlineOutboundRequests": [],
+  "pageErrors": [],
+  "externalRequests": [],
+  "video": "/tmp/findr027-chromium-offline-video/4c7912b169d0080dfa9f59124f82b78c.webm",
+  "initialModelReadiness": {
+    "supported": true,
+    "ready": false,
+    "installed": true,
+    "loaded": false,
+    "status": "ready",
+    "lastRuntimeError": null,
+    "canGenerate": true,
+    "model": {
+      "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+      "title": "SmolLM2 360M Instruct \u00b7 int8 \u00b7 local CPU",
+      "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+      "dtype": "q8",
+      "backend": "wasm",
+      "parameters": 360000000,
+      "license": "Apache-2.0",
+      "originalModel": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct",
+      "modelCard": "https://huggingface.co/onnx-community/SmolLM2-360M-Instruct-ONNX",
+      "maxInputTokens": 768,
+      "maxNewTokens": 96,
+      "limits": "Compact local language model. Interpretations need source checks. It does not verify electrical procedures, measurements or compatibility. CPU replies can take tens of seconds; saved references remain available.",
+      "bytes": 366642692,
+      "runtimeBytes": 22563501
+    },
+    "missing": [],
+    "files": [
+      {
+        "path": "config.json",
+        "bytes": 961,
+        "sha256": "74c6493e7352434a031c0e2bd55a015ef90ac25d549ca1dcc7972a6731459456",
+        "ready": true,
+        "verified": true,
+        "savedBytes": 961,
+        "missingParts": []
+      },
+      {
+        "path": "generation_config.json",
+        "bytes": 132,
+        "sha256": "3a6555a034b32bf2fc6d35cc16207dc95c8af520b2d45febe48a1ad6cb46ff63",
+        "ready": true,
+        "verified": true,
+        "savedBytes": 132,
+        "missingParts": []
+      },
+      {
+        "path": "tokenizer.json",
+        "bytes": 3522656,
+        "sha256": "7d27c493c729a66ecefc837280b05d948b1ed50d130eebdbf911b1b36cf38ed7",
+        "ready": true,
+        "verified": true,
+        "savedBytes": 3522656,
+        "missingParts": []
+      },
+      {
+        "path": "tokenizer_config.json",
+        "bytes": 3794,
+        "sha256": "7b85619980209ca801effcd87e5df7084a21abc3d8b8d27003a6b4ffcce170ef",
+        "ready": true,
+        "verified": true,
+        "savedBytes": 3794,
+        "missingParts": []
+      },
+      {
+        "path": "onnx/model_quantized.onnx",
+        "bytes": 363115149,
+        "sha256": "5ee6c8dc6791050d8779687a16c8167643a234e00ea41e06a92e05f88003dbb3",
+        "ready": true,
+        "verified": true,
+        "savedBytes": 363115149,
+        "missingParts": []
+      }
+    ],
+    "runtimeReady": false,
+    "runtimeMissing": [
+      "./vendor/local-language/transformers.min.js",
+      "./vendor/local-language/ort-wasm-simd-threaded.jsep.mjs",
+      "./vendor/local-language/ort-wasm-simd-threaded.jsep.wasm",
+      "./vendor/local-language/hashes/sha2.js",
+      "./vendor/local-language/hashes/_md.js",
+      "./vendor/local-language/hashes/_u64.js",
+      "./vendor/local-language/hashes/utils.js",
+      "./local-language-worker.mjs",
+      "./local-language-cache.mjs",
+      "./local-language-resources.mjs"
+    ],
+    "downloadBytes": 0,
+    "totalBytes": 366642692,
+    "capabilities": {
+      "supported": true,
+      "missing": [],
+      "backend": "wasm",
+      "requiresWebGPU": false,
+      "webGPU": true,
+      "deviceMemoryGB": 16,
+      "logicalProcessors": 5,
+      "physicalDeviceValidated": false
+    },
+    "message": "Model files are saved. The app still needs to cache the local runtime for offline use."
+  }
+}

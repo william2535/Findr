@@ -1,0 +1,29 @@
+{
+  "release": "0.13.0",
+  "baseline_release": "0.12.3",
+  "panel_families_preserved": 549,
+  "panel_packs_preserved": 80,
+  "previous_panel_asset_files_preserved": 556,
+  "catalogue_records_preserved": 12377,
+  "catalogue_sha256": "905804559c630f0bc7f5f910fef3d663dd2b8905bc958dbe339eb49f6a5a2334",
+  "device_families": 24,
+  "device_packs": 3,
+  "by_brand": {
+    "Gent": 5,
+    "Apollo": 12,
+    "C-TEC": 7
+  },
+  "by_type": {
+    "detector": 10,
+    "base": 4,
+    "call-point": 4,
+    "interface": 3,
+    "sounder": 3
+  },
+  "distinct_linked_documents": 24,
+  "supplementary_documents": 13,
+  "device_picture_bytes": 424996,
+  "all_original_download_allowlist_entries_preserved": true,
+  "new_allowlisted_documents": 13,
+  "passed": true
+}

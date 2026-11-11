@@ -1,0 +1,3451 @@
+{
+  "groups": [
+    {
+      "id": "access-offline",
+      "category": "access-control",
+      "title": "Controller offline",
+      "subtitle": "One door or the whole system?",
+      "icon": "network",
+      "questions": [
+        {
+          "id": "access-offline_0",
+          "text": "Are all controllers on the same link offline?",
+          "hint": "Use the authorised controller list and the recorded interface names.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-offline",
+              "page": 1,
+              "section": "NO ACUs are responding"
+            }
+          ]
+        },
+        {
+          "id": "access-offline_1",
+          "text": "Are only some controllers on that link offline?",
+          "hint": "Use the same link as the first question; record affected door names.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-offline",
+              "page": 2,
+              "section": "Some ACUs are responding"
+            }
+          ]
+        },
+        {
+          "id": "access-offline_2",
+          "text": "Are expected power or OK indicators missing?",
+          "hint": "Use an existing indicator observation or a safely visible indicator; do not open an enclosure.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-offline",
+              "page": 2,
+              "section": "Some ACUs are responding"
+            }
+          ]
+        },
+        {
+          "id": "access-offline_3",
+          "text": "Did the fault follow network or installation changes?",
+          "hint": "Use the change log; choose I don’t know if the timing is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-offline",
+              "page": "1-2",
+              "section": "NO ACUs are responding; Some ACUs are responding"
+            },
+            {
+              "sourceId": "net2-tcpip",
+              "page": 6,
+              "section": "Troubleshooting"
+            }
+          ]
+        },
+        {
+          "id": "access-offline_server",
+          "text": "Was the Net2 server reported unavailable at the same time?",
+          "hint": "Use an existing service-status or incident record.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-offline",
+              "page": 1,
+              "section": "NO ACUs are responding"
+            }
+          ]
+        },
+        {
+          "id": "access-offline_address",
+          "text": "Does the recorded TCP/IP node address differ from the documented site address?",
+          "hint": "Compare authorised records only; choose I don’t know for a non-IP link.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-tcpip",
+              "page": "4-6",
+              "section": "Software configuration; How do I give the device an IP address?; Troubleshooting"
+            }
+          ]
+        },
+        {
+          "id": "access-offline_segment",
+          "text": "Are the offline controllers all beyond the same point on the documented RS485 route?",
+          "hint": "Use the existing wiring drawing; choose I don’t know for another network type.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-offline",
+              "page": "1-2",
+              "section": "Testing the Data Line; Some ACUs are responding"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "access-offline_common",
+          "title": "Shared communication path",
+          "summary": "A common interface, host or link may explain several offline controllers.",
+          "checks": [
+            "Record the interface name, server-status report and last successful communication."
+          ],
+          "likelihoods": {
+            "access-offline_0": 0.85,
+            "access-offline_1": 0.15,
+            "access-offline_2": 0.35,
+            "access-offline_3": 0.65,
+            "access-offline_server": 0.9,
+            "access-offline_address": 0.2,
+            "access-offline_segment": 0.3
+          },
+          "sources": [
+            {
+              "id": "net2-offline",
+              "title": "Paxton APN-1061 - ACUs not responding - RS485 data line",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1061.pdf",
+              "recordId": "paxton-85eb02998e0f",
+              "page": "1-2",
+              "section": "NO ACUs are responding; Some ACUs are responding",
+              "appliesTo": "Net2 controllers on RS485 data lines. Ethernet-only, Net2Air and Paxton10 need their own model guidance.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.1",
+              "searchRef": "turn262view1"
+            },
+            {
+              "id": "net2-tcpip",
+              "title": "Paxton APN-1006 - Installing remote sites using TCP/IP",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1006.pdf",
+              "recordId": null,
+              "page": "4-6",
+              "section": "LED indications; Software configuration; How do I give the device an IP address?; Troubleshooting",
+              "appliesTo": "Net2 plus and Net2 TCP/IP Ethernet interfaces described in this legacy application note; not Net2Air wireless diagnosis.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": null,
+              "searchRef": "turn267view1"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "access-offline_local",
+          "title": "Local controller power or operation",
+          "summary": "A controller with absent expected indicators needs local assessment.",
+          "checks": [
+            "Record the model and the observed power/OK indication for the authorised installer."
+          ],
+          "likelihoods": {
+            "access-offline_0": 0.2,
+            "access-offline_1": 0.75,
+            "access-offline_2": 0.9,
+            "access-offline_3": 0.3,
+            "access-offline_server": 0.15,
+            "access-offline_address": 0.15,
+            "access-offline_segment": 0.2
+          },
+          "sources": [
+            {
+              "id": "net2-offline",
+              "title": "Paxton APN-1061 - ACUs not responding - RS485 data line",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1061.pdf",
+              "recordId": "paxton-85eb02998e0f",
+              "page": "1-2",
+              "section": "NO ACUs are responding; Some ACUs are responding",
+              "appliesTo": "Net2 controllers on RS485 data lines. Ethernet-only, Net2Air and Paxton10 need their own model guidance.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.1",
+              "searchRef": "turn262view1"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "access-offline_line",
+          "title": "Communication wiring or topology",
+          "summary": "The distribution of failed controllers may point to the data path.",
+          "checks": [
+            "Mark the affected controllers on the existing route drawing; pass it to the installer."
+          ],
+          "likelihoods": {
+            "access-offline_0": 0.55,
+            "access-offline_1": 0.65,
+            "access-offline_2": 0.15,
+            "access-offline_3": 0.8,
+            "access-offline_server": 0.2,
+            "access-offline_address": 0.2,
+            "access-offline_segment": 0.85
+          },
+          "sources": [
+            {
+              "id": "net2-offline",
+              "title": "Paxton APN-1061 - ACUs not responding - RS485 data line",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1061.pdf",
+              "recordId": "paxton-85eb02998e0f",
+              "page": "1-2",
+              "section": "NO ACUs are responding; Some ACUs are responding",
+              "appliesTo": "Net2 controllers on RS485 data lines. Ethernet-only, Net2Air and Paxton10 need their own model guidance.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.1",
+              "searchRef": "turn262view1"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "access-offline_address",
+          "title": "TCP/IP node addressing mismatch",
+          "summary": "The recorded Ethernet destination may no longer match the node or the site network.",
+          "checks": [
+            "Record the conflicting addresses and the related change reference for the network administrator."
+          ],
+          "likelihoods": {
+            "access-offline_0": 0.75,
+            "access-offline_1": 0.35,
+            "access-offline_2": 0.15,
+            "access-offline_3": 0.85,
+            "access-offline_server": 0.15,
+            "access-offline_address": 0.9,
+            "access-offline_segment": 0.2
+          },
+          "sources": [
+            {
+              "id": "net2-tcpip",
+              "title": "Paxton APN-1006 - Installing remote sites using TCP/IP",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1006.pdf",
+              "recordId": null,
+              "page": "4-6",
+              "section": "LED indications; Software configuration; How do I give the device an IP address?; Troubleshooting",
+              "appliesTo": "Net2 plus and Net2 TCP/IP Ethernet interfaces described in this legacy application note; not Net2Air wireless diagnosis.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": null,
+              "searchRef": "turn267view1"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        }
+      ],
+      "scope": "Net2 examples. Separate RS485 topology from Ethernet node addressing before interpreting the results."
+    },
+    {
+      "id": "access-denied",
+      "category": "access-control",
+      "title": "Card accepted / door closed",
+      "subtitle": "Separate credentials from the door",
+      "icon": "device",
+      "questions": [
+        {
+          "id": "access-denied_0",
+          "text": "Does the event log explicitly say access denied?",
+          "hint": "Read the event for the correct door and time.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-denied",
+              "page": 1,
+              "section": "User validity"
+            }
+          ]
+        },
+        {
+          "id": "access-denied_1",
+          "text": "Does a second authorised credential work there?",
+          "hint": "Use an already-known result from normal authorised use; do not borrow another person’s credential for a test.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-denied",
+              "page": 1,
+              "section": "A Door does not open when a user card is presented"
+            }
+          ]
+        },
+        {
+          "id": "access-denied_2",
+          "text": "Does the reader show no response to either credential?",
+          "hint": "Use existing observations of normal use; record the reader’s lights and sounds.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-reader",
+              "page": 1,
+              "section": "User token"
+            }
+          ]
+        },
+        {
+          "id": "access-denied_3",
+          "text": "Does the system report access granted while the door stays locked?",
+          "hint": "Use the recorded grant and the existing door observation; do not force the door.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-denied",
+              "page": 1,
+              "section": "A Door does not open when a user card is presented"
+            }
+          ]
+        },
+        {
+          "id": "access-denied_expired",
+          "text": "Does the user record show that the credential has expired?",
+          "hint": "Read the existing validity record without changing it.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-denied",
+              "page": 1,
+              "section": "User validity"
+            }
+          ]
+        },
+        {
+          "id": "access-denied_update",
+          "text": "Was this controller offline when the user’s permission was last changed?",
+          "hint": "Compare the existing permission-change time with the controller’s offline period.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-denied",
+              "page": 1,
+              "section": "User validity is correct but access is still denied"
+            }
+          ]
+        },
+        {
+          "id": "access-denied_token",
+          "text": "Has this credential also produced no response at another known-working reader?",
+          "hint": "Use a previous authorised observation; choose I don’t know if none exists.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-reader",
+              "page": 1,
+              "section": "User token"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "access-denied_credential",
+          "title": "Credential validity or permissions",
+          "summary": "The credential may lack current permission for this door.",
+          "checks": [
+            "Have the system administrator review the denial reason."
+          ],
+          "likelihoods": {
+            "access-denied_0": 0.9,
+            "access-denied_1": 0.8,
+            "access-denied_2": 0.1,
+            "access-denied_3": 0.1,
+            "access-denied_expired": 0.9,
+            "access-denied_update": 0.3,
+            "access-denied_token": 0.15
+          },
+          "sources": [
+            {
+              "id": "net2-denied",
+              "title": "Paxton APN-1059 - What to do if a user is denied access with a valid token",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1059.pdf",
+              "recordId": "paxton-c70476dcabac",
+              "page": 1,
+              "section": "A Door does not open; User validity; User validity is correct but access is still denied",
+              "appliesTo": "Net2 token, reader and user-validity examples; indicator colours are not universal.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.1",
+              "searchRef": "turn262view0"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "access-denied_reader",
+          "title": "Reader or its supply path",
+          "summary": "Missing responses from several valid credentials suggest a reader-side issue.",
+          "checks": [
+            "Record whether the reader indicators are present."
+          ],
+          "likelihoods": {
+            "access-denied_0": 0.15,
+            "access-denied_1": 0.1,
+            "access-denied_2": 0.9,
+            "access-denied_3": 0.1,
+            "access-denied_expired": 0.1,
+            "access-denied_update": 0.15,
+            "access-denied_token": 0.2
+          },
+          "sources": [
+            {
+              "id": "net2-denied",
+              "title": "Paxton APN-1059 - What to do if a user is denied access with a valid token",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1059.pdf",
+              "recordId": "paxton-c70476dcabac",
+              "page": 1,
+              "section": "A Door does not open; User validity; User validity is correct but access is still denied",
+              "appliesTo": "Net2 token, reader and user-validity examples; indicator colours are not universal.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.1",
+              "searchRef": "turn262view0"
+            },
+            {
+              "id": "net2-reader",
+              "title": "Paxton APN-1060 - What to do if readers or keypads are not working",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1060.pdf",
+              "recordId": null,
+              "page": 1,
+              "section": "Software settings; User token; Supply voltage",
+              "appliesTo": "Net2 readers/keypads covered by the note; no voltage or wiring procedure is reproduced.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.1",
+              "searchRef": "turn264view2"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "access-denied_door",
+          "title": "Door release path",
+          "summary": "A grant event with a locked door points beyond credential recognition.",
+          "checks": [
+            "Record the grant event for the installer; preserve emergency egress."
+          ],
+          "likelihoods": {
+            "access-denied_0": 0.1,
+            "access-denied_1": 0.15,
+            "access-denied_2": 0.1,
+            "access-denied_3": 0.93,
+            "access-denied_expired": 0.1,
+            "access-denied_update": 0.15,
+            "access-denied_token": 0.1
+          },
+          "sources": [
+            {
+              "id": "net2-denied",
+              "title": "Paxton APN-1059 - What to do if a user is denied access with a valid token",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1059.pdf",
+              "recordId": "paxton-c70476dcabac",
+              "page": 1,
+              "section": "A Door does not open; User validity; User validity is correct but access is still denied",
+              "appliesTo": "Net2 token, reader and user-validity examples; indicator colours are not universal.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.1",
+              "searchRef": "turn262view0"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "access-denied_update",
+          "title": "Permission update not received by the controller",
+          "summary": "An offline controller may still have an older user-validity record.",
+          "checks": [
+            "Give the administrator the change time and controller offline period; do not alter access rights to test it."
+          ],
+          "likelihoods": {
+            "access-denied_0": 0.9,
+            "access-denied_1": 0.5,
+            "access-denied_2": 0.1,
+            "access-denied_3": 0.1,
+            "access-denied_expired": 0.2,
+            "access-denied_update": 0.9,
+            "access-denied_token": 0.1
+          },
+          "sources": [
+            {
+              "id": "net2-denied",
+              "title": "Paxton APN-1059 - What to do if a user is denied access with a valid token",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1059.pdf",
+              "recordId": "paxton-c70476dcabac",
+              "page": 1,
+              "section": "A Door does not open; User validity; User validity is correct but access is still denied",
+              "appliesTo": "Net2 token, reader and user-validity examples; indicator colours are not universal.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.1",
+              "searchRef": "turn262view0"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "access-denied_token",
+          "title": "Credential not being read",
+          "summary": "The token may not be communicating with the readers, independently of its access permission.",
+          "checks": [
+            "Record the already-known reader responses for this credential and for other authorised users."
+          ],
+          "likelihoods": {
+            "access-denied_0": 0.2,
+            "access-denied_1": 0.85,
+            "access-denied_2": 0.3,
+            "access-denied_3": 0.1,
+            "access-denied_expired": 0.15,
+            "access-denied_update": 0.15,
+            "access-denied_token": 0.9
+          },
+          "sources": [
+            {
+              "id": "net2-reader",
+              "title": "Paxton APN-1060 - What to do if readers or keypads are not working",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1060.pdf",
+              "recordId": null,
+              "page": 1,
+              "section": "Software settings; User token; Supply voltage",
+              "appliesTo": "Net2 readers/keypads covered by the note; no voltage or wiring procedure is reproduced.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.1",
+              "searchRef": "turn264view2"
+            },
+            {
+              "id": "net2-denied",
+              "title": "Paxton APN-1059 - What to do if a user is denied access with a valid token",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1059.pdf",
+              "recordId": "paxton-c70476dcabac",
+              "page": 1,
+              "section": "A Door does not open; User validity; User validity is correct but access is still denied",
+              "appliesTo": "Net2 token, reader and user-validity examples; indicator colours are not universal.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.1",
+              "searchRef": "turn262view0"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        }
+      ],
+      "scope": "Net2 examples; a grant event and a physically released door are separate observations."
+    },
+    {
+      "id": "access-unlocked",
+      "category": "access-control",
+      "title": "Door will not lock / stays unlocked",
+      "subtitle": "Separate release commands from lock and door condition",
+      "icon": "device",
+      "scope": "Net2 release examples plus a separately scoped PaxLock Pro mechanical example. A life-safety release must be handled under the site procedure.",
+      "questions": [
+        {
+          "id": "access-unlocked_schedule",
+          "text": "Does the door’s documented unlock timezone cover the affected time?",
+          "hint": "Read the existing door schedule and its date/time basis.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-unlock",
+              "page": 1,
+              "section": "Holding a door unlocked with Net2 software"
+            }
+          ]
+        },
+        {
+          "id": "access-unlocked_fire",
+          "text": "Does Net2 still show an active fire-door release?",
+          "hint": "Use the current authorised display or incident record; do not reset it for diagnosis.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-fire-release",
+              "page": "1-3",
+              "section": "Overview; Resetting the Fire Alarm"
+            }
+          ]
+        },
+        {
+          "id": "access-unlocked_exit",
+          "text": "Do existing logs show repeated exit requests during the unwanted unlocking?",
+          "hint": "Match the door and time; do not operate or obstruct an exit device.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-exit-monitor",
+              "page": "1-2",
+              "section": "Create an Exit button event"
+            }
+          ]
+        },
+        {
+          "id": "access-unlocked_failopen",
+          "text": "Is this lock documented as needing power to remain locked?",
+          "hint": "Use the installed lock’s records; do not infer this from appearance alone.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-fail-open",
+              "page": 1,
+              "section": "Fail safe opening of fire doors"
+            }
+          ]
+        },
+        {
+          "id": "access-unlocked_power",
+          "text": "Has loss of lock power already been reported?",
+          "hint": "Use monitoring or a qualified engineer’s existing report; take no electrical measurements.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-fail-open",
+              "page": "1-2",
+              "section": "Fail safe opening of fire doors; Security issues"
+            }
+          ]
+        },
+        {
+          "id": "access-unlocked_closing",
+          "text": "Is the door visibly unable to reach its normal closed position?",
+          "hint": "Use a normal, unobstructed observation; do not force or wedge the door.",
+          "sourceRefs": [
+            {
+              "sourceId": "paxlock-door-fit",
+              "page": "3-4, 8-9",
+              "section": "Floor; Acoustic and draft seals; Post installation commissioning; Troubleshooting"
+            }
+          ]
+        },
+        {
+          "id": "access-unlocked_work",
+          "text": "Did the problem begin after documented door or lock hardware work?",
+          "hint": "Use the job record; hardware checks remain with the authorised installer.",
+          "sourceRefs": [
+            {
+              "sourceId": "paxlock-door-fit",
+              "page": "1-4, 9-10",
+              "section": "Checks prior to installation; Troubleshooting"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "access-unlocked_schedule",
+          "title": "Scheduled door release",
+          "summary": "An active unlock timezone may be holding the door released as configured.",
+          "checks": [
+            "Record the relevant timezone and the affected period."
+          ],
+          "likelihoods": {
+            "access-unlocked_schedule": 0.9,
+            "access-unlocked_fire": 0.1,
+            "access-unlocked_exit": 0.2,
+            "access-unlocked_failopen": 0.5,
+            "access-unlocked_power": 0.1,
+            "access-unlocked_closing": 0.1,
+            "access-unlocked_work": 0.2
+          },
+          "sources": [
+            {
+              "id": "net2-unlock",
+              "title": "Paxton APN-1049 - Holding a door unlocked with Net2 software",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1049.pdf",
+              "recordId": null,
+              "page": 1,
+              "section": "Holding a door unlocked with Net2 software",
+              "appliesTo": "Net2 door unlock timezones and optional first-valid-access condition.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.1",
+              "searchRef": "turn262view3"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "access-unlocked_fire",
+          "title": "Fire-release condition still active",
+          "summary": "The access-control fire-release state may persist after the fire panel clears, depending on configuration.",
+          "checks": [
+            "Record both systems’ displayed states and refer to the responsible site operator."
+          ],
+          "likelihoods": {
+            "access-unlocked_schedule": 0.1,
+            "access-unlocked_fire": 0.9,
+            "access-unlocked_exit": 0.2,
+            "access-unlocked_failopen": 0.6,
+            "access-unlocked_power": 0.2,
+            "access-unlocked_closing": 0.1,
+            "access-unlocked_work": 0.15
+          },
+          "sources": [
+            {
+              "id": "net2-fire-release",
+              "title": "Paxton APN-1031 - Integrating Net2 with a fire alarm system",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1031.pdf",
+              "recordId": null,
+              "page": "1-3",
+              "section": "Overview; Resetting the Fire Alarm; Automatically reset fire alarm feature",
+              "appliesTo": "Net2 Professional fire-input integration. Reset behaviour depends on the configured automatic-reset feature; it is not a universal fire-interface design.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.2",
+              "searchRef": "turn272view0"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "access-unlocked_exit",
+          "title": "Exit-input activation or configuration",
+          "summary": "An exit-input event may be requesting a release; some monitored-handle arrangements intentionally suppress that release.",
+          "checks": [
+            "Record the exit-event sequence and the documented exit-input function."
+          ],
+          "likelihoods": {
+            "access-unlocked_schedule": 0.2,
+            "access-unlocked_fire": 0.15,
+            "access-unlocked_exit": 0.9,
+            "access-unlocked_failopen": 0.5,
+            "access-unlocked_power": 0.15,
+            "access-unlocked_closing": 0.15,
+            "access-unlocked_work": 0.35
+          },
+          "sources": [
+            {
+              "id": "net2-exit-monitor",
+              "title": "Paxton APN-1048 - Door Forced monitoring integrated with a Manual door handle",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1048.pdf",
+              "recordId": null,
+              "page": "1-2",
+              "section": "False door forced alarms; Create an Exit button event",
+              "appliesTo": "Net2 door-contact monitoring with a mechanical inside handle and a configured exit input.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.1",
+              "searchRef": "turn262view4"
+            },
+            {
+              "id": "net2-door-alarms",
+              "title": "Paxton APN-1047 - Configuring door alarms",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1047.pdf",
+              "recordId": null,
+              "page": "1-4",
+              "section": "Alarm definitions; Alarm types; Alarm reporting at the PC; Exit-button behaviour",
+              "appliesTo": "Net2 door contacts and alarm configuration. The note states that Net2 nano has fixed alarm values.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.3",
+              "searchRef": "turn262view2"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "access-unlocked_supply",
+          "title": "Power missing from a fail-open lock",
+          "summary": "A documented power-to-lock device releases when its lock supply is absent.",
+          "checks": [
+            "Pass the existing supply report and lock model to the installer; preserve emergency egress."
+          ],
+          "likelihoods": {
+            "access-unlocked_schedule": 0.1,
+            "access-unlocked_fire": 0.2,
+            "access-unlocked_exit": 0.2,
+            "access-unlocked_failopen": 0.9,
+            "access-unlocked_power": 0.9,
+            "access-unlocked_closing": 0.15,
+            "access-unlocked_work": 0.35
+          },
+          "sources": [
+            {
+              "id": "net2-fail-open",
+              "title": "Paxton APN-1090 - Advice on using access control with fire doors",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1090.pdf",
+              "recordId": null,
+              "page": "1-2",
+              "section": "Fail safe opening of fire doors; Security issues",
+              "appliesTo": "Physical behaviour of documented fail-open electric locks. Historical installation advice is not used as current legal or compliance guidance.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": null,
+              "searchRef": "turn272view1"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "access-unlocked_mechanical",
+          "title": "Door or latch not reaching its locking position",
+          "summary": "A visible closing problem can prevent mechanical engagement; the exact hardware requires its own assessment.",
+          "checks": [
+            "Record where the door stops and any recent hardware work without dismantling or adjusting it."
+          ],
+          "likelihoods": {
+            "access-unlocked_schedule": 0.1,
+            "access-unlocked_fire": 0.1,
+            "access-unlocked_exit": 0.15,
+            "access-unlocked_failopen": 0.3,
+            "access-unlocked_power": 0.1,
+            "access-unlocked_closing": 0.9,
+            "access-unlocked_work": 0.8
+          },
+          "sources": [
+            {
+              "id": "paxlock-door-fit",
+              "title": "Paxton APN-1173 - PaxLock Pro Installation and Commissioning Guide",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1173.pdf",
+              "recordId": null,
+              "page": "1-4, 8-10",
+              "section": "Checks prior to installation; Post installation commissioning; Troubleshooting",
+              "appliesTo": "PaxLock Pro Euro/Scandinavian lockset examples only. No dimensions or hardware settings are generalised to other locks.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.6",
+              "searchRef": "turn289view0"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        }
+      ]
+    },
+    {
+      "id": "access-door-alarm",
+      "category": "access-control",
+      "title": "Door-held / forced / exit-event alarm",
+      "subtitle": "Compare door position with the event sequence",
+      "icon": "bell",
+      "scope": "Net2 door-contact and monitored-handle examples. An alarm label alone does not establish forced entry.",
+      "questions": [
+        {
+          "id": "access-door-alarm_held",
+          "text": "Does the event log identify a door-left-open alarm?",
+          "hint": "Copy the exact event and time.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-door-alarms",
+              "page": 1,
+              "section": "Alarm definitions"
+            }
+          ]
+        },
+        {
+          "id": "access-door-alarm_forced",
+          "text": "Does the event log identify a door-forced-open alarm?",
+          "hint": "Use the event wording; do not infer intent from the label.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-door-alarms",
+              "page": 1,
+              "section": "Alarm definitions"
+            }
+          ]
+        },
+        {
+          "id": "access-door-alarm_open",
+          "text": "Was the door still open after its configured open-time limit?",
+          "hint": "Use a known observation and the existing setting; do not hold the door open for a test.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-door-alarms",
+              "page": "1-2",
+              "section": "Door left open; Alarm types"
+            }
+          ]
+        },
+        {
+          "id": "access-door-alarm_contact",
+          "text": "Does the monitored contact say open while the door is visibly closed?",
+          "hint": "Compare the same door at the same time; do not touch the contact or wiring.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-door-alarms",
+              "page": 1,
+              "section": "Door forced open; Door left open"
+            }
+          ]
+        },
+        {
+          "id": "access-door-alarm_exit",
+          "text": "Did the alarm follow a known authorised exit using the inside handle?",
+          "hint": "Use the incident record or an existing observation.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-exit-monitor",
+              "page": 1,
+              "section": "False door forced alarms"
+            }
+          ]
+        },
+        {
+          "id": "access-door-alarm_missing",
+          "text": "Is the matching exit-request event missing before that opening?",
+          "hint": "Review the event sequence; choose I don’t know if logs are incomplete.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-exit-monitor",
+              "page": "1-2",
+              "section": "False door forced alarms; Create an Exit button event"
+            }
+          ]
+        },
+        {
+          "id": "access-door-alarm_grant",
+          "text": "Was a valid access grant recorded for that opening?",
+          "hint": "Match the door and opening time; later or unrelated grants do not count.",
+          "sourceRefs": [
+            {
+              "sourceId": "net2-door-alarms",
+              "page": 1,
+              "section": "Alarm definitions"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "access-door-alarm_held",
+          "title": "Door remained open beyond the allowed time",
+          "summary": "The reported opening may have lasted longer than the configured door-open allowance.",
+          "checks": [
+            "Record the opening duration and the configured alarm delay."
+          ],
+          "likelihoods": {
+            "access-door-alarm_held": 0.9,
+            "access-door-alarm_forced": 0.1,
+            "access-door-alarm_open": 0.9,
+            "access-door-alarm_contact": 0.2,
+            "access-door-alarm_exit": 0.3,
+            "access-door-alarm_missing": 0.3,
+            "access-door-alarm_grant": 0.8
+          },
+          "sources": [
+            {
+              "id": "net2-door-alarms",
+              "title": "Paxton APN-1047 - Configuring door alarms",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1047.pdf",
+              "recordId": null,
+              "page": "1-4",
+              "section": "Alarm definitions; Alarm types; Alarm reporting at the PC; Exit-button behaviour",
+              "appliesTo": "Net2 door contacts and alarm configuration. The note states that Net2 nano has fixed alarm values.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.3",
+              "searchRef": "turn262view2"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "access-door-alarm_contact",
+          "title": "Door-contact state does not match the door",
+          "summary": "The monitoring state may need installer review when it disagrees with the visible door position.",
+          "checks": [
+            "Record both states together; this does not identify the failed contact or wiring component."
+          ],
+          "likelihoods": {
+            "access-door-alarm_held": 0.5,
+            "access-door-alarm_forced": 0.5,
+            "access-door-alarm_open": 0.2,
+            "access-door-alarm_contact": 0.9,
+            "access-door-alarm_exit": 0.3,
+            "access-door-alarm_missing": 0.4,
+            "access-door-alarm_grant": 0.5
+          },
+          "sources": [
+            {
+              "id": "net2-door-alarms",
+              "title": "Paxton APN-1047 - Configuring door alarms",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1047.pdf",
+              "recordId": null,
+              "page": "1-4",
+              "section": "Alarm definitions; Alarm types; Alarm reporting at the PC; Exit-button behaviour",
+              "appliesTo": "Net2 door contacts and alarm configuration. The note states that Net2 nano has fixed alarm values.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.3",
+              "searchRef": "turn262view2"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "access-door-alarm_exit",
+          "title": "Authorised handle exit was not recognised",
+          "summary": "A mechanical-handle exit can be labelled forced if the expected exit event is absent.",
+          "checks": [
+            "Give the administrator the handle-exit time and missing event, plus the documented exit-input function."
+          ],
+          "likelihoods": {
+            "access-door-alarm_held": 0.1,
+            "access-door-alarm_forced": 0.9,
+            "access-door-alarm_open": 0.2,
+            "access-door-alarm_contact": 0.2,
+            "access-door-alarm_exit": 0.9,
+            "access-door-alarm_missing": 0.9,
+            "access-door-alarm_grant": 0.1
+          },
+          "sources": [
+            {
+              "id": "net2-exit-monitor",
+              "title": "Paxton APN-1048 - Door Forced monitoring integrated with a Manual door handle",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1048.pdf",
+              "recordId": null,
+              "page": "1-2",
+              "section": "False door forced alarms; Create an Exit button event",
+              "appliesTo": "Net2 door-contact monitoring with a mechanical inside handle and a configured exit input.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.1",
+              "searchRef": "turn262view4"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "access-door-alarm_unrecognised",
+          "title": "Opening without a recorded grant or exit event",
+          "summary": "The log shows no recognised release for the opening; this does not prove unauthorised entry.",
+          "checks": [
+            "Preserve the event sequence and refer to the site’s security procedure."
+          ],
+          "likelihoods": {
+            "access-door-alarm_held": 0.1,
+            "access-door-alarm_forced": 0.9,
+            "access-door-alarm_open": 0.2,
+            "access-door-alarm_contact": 0.15,
+            "access-door-alarm_exit": 0.1,
+            "access-door-alarm_missing": 0.85,
+            "access-door-alarm_grant": 0.1
+          },
+          "sources": [
+            {
+              "id": "net2-door-alarms",
+              "title": "Paxton APN-1047 - Configuring door alarms",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1047.pdf",
+              "recordId": null,
+              "page": "1-4",
+              "section": "Alarm definitions; Alarm types; Alarm reporting at the PC; Exit-button behaviour",
+              "appliesTo": "Net2 door contacts and alarm configuration. The note states that Net2 nano has fixed alarm values.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.3",
+              "searchRef": "turn262view2"
+            },
+            {
+              "id": "net2-exit-monitor",
+              "title": "Paxton APN-1048 - Door Forced monitoring integrated with a Manual door handle",
+              "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1048.pdf",
+              "recordId": null,
+              "page": "1-2",
+              "section": "False door forced alarms; Create an Exit button event",
+              "appliesTo": "Net2 door-contact monitoring with a mechanical inside handle and a configured exit input.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "1.0.1",
+              "searchRef": "turn262view4"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        }
+      ]
+    },
+    {
+      "id": "cctv-link",
+      "category": "cctv",
+      "title": "Camera offline / no link",
+      "subtitle": "Use the camera status message",
+      "icon": "network",
+      "questions": [
+        {
+          "id": "cctv-link_0",
+          "text": "Does camera status specifically say network unreachable?",
+          "hint": "Copy the full camera-status message from the affected channel.",
+          "sourceRefs": [
+            {
+              "sourceId": "hik-network",
+              "page": null,
+              "section": "Reason"
+            }
+          ]
+        },
+        {
+          "id": "cctv-link_1",
+          "text": "Does it instead report an authentication or password error?",
+          "hint": "Record the exact error for the administrator; do not reset credentials.",
+          "sourceRefs": [
+            {
+              "sourceId": "hik-link",
+              "page": null,
+              "section": "Scenario 1"
+            }
+          ]
+        },
+        {
+          "id": "cctv-link_2",
+          "text": "Are several cameras on the same switch offline?",
+          "hint": "Use the recorded switch topology and offline times.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-network",
+              "page": null,
+              "section": "The infrastructure"
+            }
+          ]
+        },
+        {
+          "id": "cctv-link_3",
+          "text": "Did the fault begin after addressing or network changes?",
+          "hint": "Read the change record without reconfiguring the recorder.",
+          "sourceRefs": [
+            {
+              "sourceId": "hik-network",
+              "page": null,
+              "section": "Reason"
+            }
+          ]
+        },
+        {
+          "id": "cctv-link_missing",
+          "text": "Does status explicitly report that the IP camera does not exist?",
+          "hint": "Use the exact Hikvision message; choose I don’t know for an unavailable status.",
+          "sourceRefs": [
+            {
+              "sourceId": "hik-link",
+              "page": null,
+              "section": "Scenario 3: IP camera does not exist"
+            }
+          ]
+        },
+        {
+          "id": "cctv-link_poe",
+          "text": "Do existing monitoring logs report the camera’s PoE port powered off?",
+          "hint": "Use a recorded PoE power-off exception where supported; do not restart the port.",
+          "sourceRefs": [
+            {
+              "sourceId": "hik-poe-exceptions",
+              "page": null,
+              "section": "Step 5: network-switch exception types"
+            }
+          ]
+        },
+        {
+          "id": "cctv-link_destination",
+          "text": "Does the saved camera address or port differ from the recorder’s entry?",
+          "hint": "Ask the authorised administrator to compare existing records only.",
+          "sourceRefs": [
+            {
+              "sourceId": "hik-network",
+              "page": null,
+              "section": "Reason"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "cctv-link_network",
+          "title": "Network path interrupted",
+          "summary": "A shared switch or connection may explain unreachable cameras.",
+          "checks": [
+            "Record which cameras share the affected path."
+          ],
+          "likelihoods": {
+            "cctv-link_0": 0.8,
+            "cctv-link_1": 0.1,
+            "cctv-link_2": 0.85,
+            "cctv-link_3": 0.6,
+            "cctv-link_missing": 0.65,
+            "cctv-link_poe": 0.15,
+            "cctv-link_destination": 0.2
+          },
+          "sources": [
+            {
+              "id": "hik-network",
+              "title": "Hikvision - Why is the video recorder notifying the network is unreachable when a network camera is being added?",
+              "url": "https://enpinfo.hikvision.com/hkwsen/unzip/20230410194813_20373_doc/GUID-03DBE341-D7F0-4680-99B2-DF54C958DEBA.html",
+              "recordId": null,
+              "page": null,
+              "section": "Reason",
+              "appliesTo": "Hikvision recorder online-manual example. The page does not identify every supported recorder; confirm the exact model and firmware.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "Online manual snapshot 2023-04-10",
+              "searchRef": "turn264view3"
+            },
+            {
+              "id": "axis-network",
+              "title": "Axis - Troubleshooting guide for network connection",
+              "url": "https://help.axis.com/en-us/troubleshooting-network",
+              "recordId": null,
+              "page": null,
+              "section": "The infrastructure; Bandwidth; Device overload; Chipset performance",
+              "appliesTo": "Axis network-video examples; no generic camera count, throughput limit or network reconfiguration is inferred.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "September 2026",
+              "searchRef": "turn272view2"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "cctv-link_address",
+          "title": "Address or port mismatch",
+          "summary": "The configured destination may no longer match the camera.",
+          "checks": [
+            "Have the authorised administrator compare documented settings."
+          ],
+          "likelihoods": {
+            "cctv-link_0": 0.85,
+            "cctv-link_1": 0.15,
+            "cctv-link_2": 0.25,
+            "cctv-link_3": 0.85,
+            "cctv-link_missing": 0.3,
+            "cctv-link_poe": 0.15,
+            "cctv-link_destination": 0.9
+          },
+          "sources": [
+            {
+              "id": "hik-network",
+              "title": "Hikvision - Why is the video recorder notifying the network is unreachable when a network camera is being added?",
+              "url": "https://enpinfo.hikvision.com/hkwsen/unzip/20230410194813_20373_doc/GUID-03DBE341-D7F0-4680-99B2-DF54C958DEBA.html",
+              "recordId": null,
+              "page": null,
+              "section": "Reason",
+              "appliesTo": "Hikvision recorder online-manual example. The page does not identify every supported recorder; confirm the exact model and firmware.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "Online manual snapshot 2023-04-10",
+              "searchRef": "turn264view3"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "cctv-link_auth",
+          "title": "Camera authentication mismatch",
+          "summary": "An explicit login error suggests credential configuration.",
+          "checks": [
+            "Keep the exact error for the authorised administrator."
+          ],
+          "likelihoods": {
+            "cctv-link_0": 0.1,
+            "cctv-link_1": 0.93,
+            "cctv-link_2": 0.2,
+            "cctv-link_3": 0.4,
+            "cctv-link_missing": 0.15,
+            "cctv-link_poe": 0.1,
+            "cctv-link_destination": 0.2
+          },
+          "sources": [
+            {
+              "id": "hik-link",
+              "title": "Hikvision - How to Solve IP Camera No Link Issue on PoE NVR",
+              "url": "https://securitylab.hikvision.com/tr/support/how-to/faq/how-to-solve-ip-camera-no-link-issue-on-poe-nvr/",
+              "recordId": null,
+              "page": null,
+              "section": "Scenario 1: user name or password is wrong; Scenario 2: Network is Unreachable; Scenario 3: IP camera does not exist",
+              "appliesTo": "Hikvision PoE NVR examples; only status-message interpretation is used. Password resets and factory-default procedures are excluded.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": null,
+              "searchRef": "turn270search4"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "cctv-link_power",
+          "title": "Camera power or PoE delivery problem",
+          "summary": "A power-off exception can explain why the recorder cannot detect the camera.",
+          "checks": [
+            "Record the port, camera and exception time for the authorised network or CCTV engineer."
+          ],
+          "likelihoods": {
+            "cctv-link_0": 0.65,
+            "cctv-link_1": 0.1,
+            "cctv-link_2": 0.35,
+            "cctv-link_3": 0.2,
+            "cctv-link_missing": 0.9,
+            "cctv-link_poe": 0.9,
+            "cctv-link_destination": 0.15
+          },
+          "sources": [
+            {
+              "id": "hik-link",
+              "title": "Hikvision - How to Solve IP Camera No Link Issue on PoE NVR",
+              "url": "https://securitylab.hikvision.com/tr/support/how-to/faq/how-to-solve-ip-camera-no-link-issue-on-poe-nvr/",
+              "recordId": null,
+              "page": null,
+              "section": "Scenario 1: user name or password is wrong; Scenario 2: Network is Unreachable; Scenario 3: IP camera does not exist",
+              "appliesTo": "Hikvision PoE NVR examples; only status-message interpretation is used. Password resets and factory-default procedures are excluded.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": null,
+              "searchRef": "turn270search4"
+            },
+            {
+              "id": "hik-poe-exceptions",
+              "title": "Hikvision Hik-Partner Pro - Add Exception Rule",
+              "url": "https://enpinfo.hikvision.com/hkwsen/unzip/20230330182709_44228_doc/GUID-70503EA6-F0B3-42B7-ACC4-99E14FA61DF7.html",
+              "recordId": null,
+              "page": null,
+              "section": "Step 5: network-switch exception types",
+              "appliesTo": "Hik-Partner Pro monitored switches that support the named PoE exceptions. Not every camera or recorder exposes them.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "Online manual snapshot 2023-03-30",
+              "searchRef": "turn291search3"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        }
+      ],
+      "scope": "Hikvision status-message examples with Axis shared-network context. PoE exceptions require supported monitoring."
+    },
+    {
+      "id": "cctv-record",
+      "category": "cctv",
+      "title": "Missing recordings",
+      "subtitle": "Check storage, schedule and events",
+      "icon": "clock",
+      "questions": [
+        {
+          "id": "cctv-record_0",
+          "text": "Does the recorder report an HDD or storage exception?",
+          "hint": "Record storage status without initialising, formatting or deleting.",
+          "sourceRefs": [
+            {
+              "sourceId": "hik-record",
+              "page": null,
+              "section": "Reason"
+            }
+          ]
+        },
+        {
+          "id": "cctv-record_1",
+          "text": "Is live video available for the affected channel?",
+          "hint": "Use the same authorised channel whose recording is missing.",
+          "sourceRefs": [
+            {
+              "sourceId": "hik-record",
+              "page": null,
+              "section": "Reason; Solution"
+            }
+          ]
+        },
+        {
+          "id": "cctv-record_2",
+          "text": "Does the gap fall outside its configured recording schedule?",
+          "hint": "Read the saved schedule and its time basis only.",
+          "sourceRefs": [
+            {
+              "sourceId": "hik-record",
+              "page": null,
+              "section": "Reason: recording schedule"
+            }
+          ]
+        },
+        {
+          "id": "cctv-record_3",
+          "text": "Is recording configured for events, with no matching event logged?",
+          "hint": "Compare existing event and recording records for the same channel and interval.",
+          "sourceRefs": [
+            {
+              "sourceId": "hik-record",
+              "page": null,
+              "section": "Reason: motion detection event setting"
+            }
+          ]
+        },
+        {
+          "id": "cctv-record_time",
+          "text": "Is a camera/server time mismatch already reported?",
+          "hint": "Read the existing time-offset alarm or status; do not change the clock.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-acs5-troubleshooting",
+              "page": null,
+              "section": "Time synchronization > Detected time difference on a device"
+            }
+          ]
+        },
+        {
+          "id": "cctv-record_retention",
+          "text": "Is the requested footage older than the channel’s configured retention period?",
+          "hint": "Read the retention value for that channel without changing it.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-acs5-troubleshooting",
+              "page": null,
+              "section": "Recordings disappear"
+            }
+          ]
+        },
+        {
+          "id": "cctv-record_oldest",
+          "text": "Is the oldest available recording timestamp later than the requested footage?",
+          "hint": "Compare the recorder’s existing oldest-recording value with the required time.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-acspro-manual",
+              "page": null,
+              "section": "Select storage devices to connect > Oldest recording"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "cctv-record_storage",
+          "title": "Storage exception",
+          "summary": "A storage fault can prevent recording.",
+          "checks": [
+            "Preserve existing footage and record disk status for service."
+          ],
+          "likelihoods": {
+            "cctv-record_0": 0.95,
+            "cctv-record_1": 0.75,
+            "cctv-record_2": 0.2,
+            "cctv-record_3": 0.25,
+            "cctv-record_time": 0.2,
+            "cctv-record_retention": 0.2,
+            "cctv-record_oldest": 0.3
+          },
+          "sources": [
+            {
+              "id": "hik-record",
+              "title": "Hikvision - Why is there no recorded video after the motion detection is set?",
+              "url": "https://enpinfo.hikvision.com/hkwsen/unzip/20230410194813_20373_doc/GUID-92930AA9-2960-4EB1-AC9B-0804C03741C2.html",
+              "recordId": null,
+              "page": null,
+              "section": "Reason; Solution",
+              "appliesTo": "Hikvision recorder motion-recording example. Schedule, trigger and storage behaviour must be checked against the exact recorder.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "Online manual snapshot 2023-04-10",
+              "searchRef": "turn264view4"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "cctv-record_schedule",
+          "title": "Recording schedule mismatch",
+          "summary": "The requested time may not be covered by the recording plan.",
+          "checks": [
+            "Record the channel, date, recorder time and configured schedule."
+          ],
+          "likelihoods": {
+            "cctv-record_0": 0.1,
+            "cctv-record_1": 0.85,
+            "cctv-record_2": 0.93,
+            "cctv-record_3": 0.35,
+            "cctv-record_time": 0.2,
+            "cctv-record_retention": 0.25,
+            "cctv-record_oldest": 0.2
+          },
+          "sources": [
+            {
+              "id": "hik-record",
+              "title": "Hikvision - Why is there no recorded video after the motion detection is set?",
+              "url": "https://enpinfo.hikvision.com/hkwsen/unzip/20230410194813_20373_doc/GUID-92930AA9-2960-4EB1-AC9B-0804C03741C2.html",
+              "recordId": null,
+              "page": null,
+              "section": "Reason; Solution",
+              "appliesTo": "Hikvision recorder motion-recording example. Schedule, trigger and storage behaviour must be checked against the exact recorder.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "Online manual snapshot 2023-04-10",
+              "searchRef": "turn264view4"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "cctv-record_event",
+          "title": "Event recording not triggered",
+          "summary": "An event-only plan may not have received its trigger.",
+          "checks": [
+            "Record the event mode and corresponding log entries."
+          ],
+          "likelihoods": {
+            "cctv-record_0": 0.1,
+            "cctv-record_1": 0.85,
+            "cctv-record_2": 0.35,
+            "cctv-record_3": 0.93,
+            "cctv-record_time": 0.2,
+            "cctv-record_retention": 0.25,
+            "cctv-record_oldest": 0.2
+          },
+          "sources": [
+            {
+              "id": "hik-record",
+              "title": "Hikvision - Why is there no recorded video after the motion detection is set?",
+              "url": "https://enpinfo.hikvision.com/hkwsen/unzip/20230410194813_20373_doc/GUID-92930AA9-2960-4EB1-AC9B-0804C03741C2.html",
+              "recordId": null,
+              "page": null,
+              "section": "Reason; Solution",
+              "appliesTo": "Hikvision recorder motion-recording example. Schedule, trigger and storage behaviour must be checked against the exact recorder.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "Online manual snapshot 2023-04-10",
+              "searchRef": "turn264view4"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "cctv-record_retention",
+          "title": "Footage no longer within available retention",
+          "summary": "The requested interval may have aged out; full storage can shorten actual retention on the cited Axis system.",
+          "checks": [
+            "Record configured retention and the oldest available timestamp; preserve the footage that remains."
+          ],
+          "likelihoods": {
+            "cctv-record_0": 0.25,
+            "cctv-record_1": 0.85,
+            "cctv-record_2": 0.15,
+            "cctv-record_3": 0.15,
+            "cctv-record_time": 0.15,
+            "cctv-record_retention": 0.9,
+            "cctv-record_oldest": 0.9
+          },
+          "sources": [
+            {
+              "id": "axis-acs5-troubleshooting",
+              "title": "Axis - AXIS Camera Station 5 Troubleshooting guide",
+              "url": "https://help.axis.com/en-us/axis-camera-station-troubleshooting-guide",
+              "recordId": null,
+              "page": null,
+              "section": "Recordings disappear; Recording gaps during continuous recording; Live view and playback performance; Detected time difference on a device",
+              "appliesTo": "AXIS Camera Station 5 only; retention, time and service behaviour are not assumed for other recorders.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "March 2026",
+              "searchRef": "turn269view4"
+            },
+            {
+              "id": "axis-acspro-manual",
+              "title": "Axis - AXIS Camera Station Pro User manual",
+              "url": "https://help.axis.com/en-us/axis-camera-station-pro",
+              "recordId": null,
+              "page": null,
+              "section": "Select storage devices to connect; Time synchronization; Secure Remote Access v2",
+              "appliesTo": "AXIS Camera Station Pro. Secure Remote Access v2 findings apply only where that service is configured.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": null,
+              "searchRef": "turn269view5"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "cctv-record_time",
+          "title": "Timestamp or search-time mismatch",
+          "summary": "A reported clock difference can place the expected event at a different recording time.",
+          "checks": [
+            "Give the investigator both time references and the existing offset report; do not alter evidence timestamps."
+          ],
+          "likelihoods": {
+            "cctv-record_0": 0.1,
+            "cctv-record_1": 0.85,
+            "cctv-record_2": 0.2,
+            "cctv-record_3": 0.2,
+            "cctv-record_time": 0.9,
+            "cctv-record_retention": 0.15,
+            "cctv-record_oldest": 0.15
+          },
+          "sources": [
+            {
+              "id": "axis-acs5-troubleshooting",
+              "title": "Axis - AXIS Camera Station 5 Troubleshooting guide",
+              "url": "https://help.axis.com/en-us/axis-camera-station-troubleshooting-guide",
+              "recordId": null,
+              "page": null,
+              "section": "Recordings disappear; Recording gaps during continuous recording; Live view and playback performance; Detected time difference on a device",
+              "appliesTo": "AXIS Camera Station 5 only; retention, time and service behaviour are not assumed for other recorders.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "March 2026",
+              "searchRef": "turn269view4"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        }
+      ],
+      "scope": "Hikvision schedule/event/storage examples; Axis Camera Station examples for retention and timestamp differences. Missing footage is not proof it was never recorded."
+    },
+    {
+      "id": "cctv-image",
+      "category": "cctv",
+      "title": "Poor picture / night IR / focus",
+      "subtitle": "Separate motion blur, focus, cover and infrared effects",
+      "icon": "device",
+      "scope": "Axis camera examples. Some causes can coexist; near-focus limits and integrated IR are model-dependent.",
+      "questions": [
+        {
+          "id": "cctv-image_ir",
+          "text": "Does a pale haze appear mainly in infrared night mode?",
+          "hint": "Compare existing day and night images from the same camera.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-ir",
+              "page": null,
+              "section": "Summary; Types of reflections and how to prevent them"
+            }
+          ]
+        },
+        {
+          "id": "cctv-image_motion",
+          "text": "Are moving objects blurred while stationary details stay sharp?",
+          "hint": "Use an existing frame with both moving and stationary subjects.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-image",
+              "page": null,
+              "section": "Shutter speed"
+            }
+          ]
+        },
+        {
+          "id": "cctv-image_static",
+          "text": "Are stationary details also out of focus in daylight?",
+          "hint": "Compare an existing daylight image at the intended subject distance.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-focus",
+              "page": null,
+              "section": "Dome and front glass; Object proximity"
+            }
+          ]
+        },
+        {
+          "id": "cctv-image_cover",
+          "text": "Are marks or droplets visible on the outside of the camera cover?",
+          "hint": "Use a safe existing observation or photo; do not climb or remove the cover.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-focus",
+              "page": null,
+              "section": "Dirty or scratched dome or front glass"
+            },
+            {
+              "sourceId": "axis-ir",
+              "page": null,
+              "section": "IR light reflected against objects on the dome surface"
+            }
+          ]
+        },
+        {
+          "id": "cctv-image_reflector",
+          "text": "Do installation photos show a reflective surface close to the camera?",
+          "hint": "A surface outside the visible image may still reflect IR; absence in a photo does not rule it out.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-ir",
+              "page": null,
+              "section": "IR light reflected against nearby objects"
+            }
+          ]
+        },
+        {
+          "id": "cctv-image_noise",
+          "text": "Does the image become grainy mainly in low light?",
+          "hint": "Compare existing images without changing exposure settings.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-image",
+              "page": null,
+              "section": "Gain and noise"
+            }
+          ]
+        },
+        {
+          "id": "cctv-image_near",
+          "text": "Is the subject closer than the camera’s documented near-focus limit?",
+          "hint": "Use existing distance/settings records on a model with this feature; otherwise choose I don’t know.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-focus",
+              "page": null,
+              "section": "Near focus limit for autofocus"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "cctv-image_ir",
+          "title": "Infrared reflection into the lens",
+          "summary": "Integrated IR may reflect from nearby surfaces or material on the dome.",
+          "checks": [
+            "Keep matched day/night examples and the existing installation photo for the installer."
+          ],
+          "likelihoods": {
+            "cctv-image_ir": 0.9,
+            "cctv-image_motion": 0.15,
+            "cctv-image_static": 0.2,
+            "cctv-image_cover": 0.55,
+            "cctv-image_reflector": 0.7,
+            "cctv-image_noise": 0.3,
+            "cctv-image_near": 0.2
+          },
+          "sources": [
+            {
+              "id": "axis-ir",
+              "title": "Axis - IR reflections in dome cameras",
+              "url": "https://whitepapers.axis.com/en-us/ir-reflections-in-dome-cameras",
+              "recordId": null,
+              "page": null,
+              "section": "Summary; IR light reflected against nearby objects; IR light reflected against objects on the dome surface",
+              "appliesTo": "Dome cameras with integrated IR illumination; an IR-reflecting object can be outside the visible image.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "May 2021",
+              "searchRef": "turn296view0"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "cctv-image_cover",
+          "title": "Contamination or damage on the optical cover",
+          "summary": "Visible material or scratches may reduce clarity and interfere with focus.",
+          "checks": [
+            "Record the cover observation; any cleaning or replacement must follow the exact model instructions."
+          ],
+          "likelihoods": {
+            "cctv-image_ir": 0.55,
+            "cctv-image_motion": 0.15,
+            "cctv-image_static": 0.8,
+            "cctv-image_cover": 0.9,
+            "cctv-image_reflector": 0.25,
+            "cctv-image_noise": 0.25,
+            "cctv-image_near": 0.2
+          },
+          "sources": [
+            {
+              "id": "axis-focus",
+              "title": "Axis - Troubleshooting guide for focus",
+              "url": "https://help.axis.com/en-us/troubleshooting-focus",
+              "recordId": null,
+              "page": null,
+              "section": "Dome and front glass; Dirty or scratched dome or front glass; Object proximity; Near focus limit for autofocus",
+              "appliesTo": "Axis optics and dome/front-glass examples. Near-focus-limit guidance applies to PTZ or remote-focus models that provide that feature.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "December 2024",
+              "searchRef": "turn269view1"
+            },
+            {
+              "id": "axis-ir",
+              "title": "Axis - IR reflections in dome cameras",
+              "url": "https://whitepapers.axis.com/en-us/ir-reflections-in-dome-cameras",
+              "recordId": null,
+              "page": null,
+              "section": "Summary; IR light reflected against nearby objects; IR light reflected against objects on the dome surface",
+              "appliesTo": "Dome cameras with integrated IR illumination; an IR-reflecting object can be outside the visible image.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "May 2021",
+              "searchRef": "turn296view0"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "cctv-image_focus",
+          "title": "Focus setting or subject-distance limitation",
+          "summary": "The intended subject may be outside the usable focus range.",
+          "checks": [
+            "Record subject distance and the existing focus setting; leave adjustment to the authorised operator."
+          ],
+          "likelihoods": {
+            "cctv-image_ir": 0.2,
+            "cctv-image_motion": 0.15,
+            "cctv-image_static": 0.9,
+            "cctv-image_cover": 0.2,
+            "cctv-image_reflector": 0.2,
+            "cctv-image_noise": 0.2,
+            "cctv-image_near": 0.9
+          },
+          "sources": [
+            {
+              "id": "axis-focus",
+              "title": "Axis - Troubleshooting guide for focus",
+              "url": "https://help.axis.com/en-us/troubleshooting-focus",
+              "recordId": null,
+              "page": null,
+              "section": "Dome and front glass; Dirty or scratched dome or front glass; Object proximity; Near focus limit for autofocus",
+              "appliesTo": "Axis optics and dome/front-glass examples. Near-focus-limit guidance applies to PTZ or remote-focus models that provide that feature.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "December 2024",
+              "searchRef": "turn269view1"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "cctv-image_exposure",
+          "title": "Motion blur from exposure conditions",
+          "summary": "A long exposure can smear moving subjects while static detail remains sharp.",
+          "checks": [
+            "Keep an existing moving-subject example with its lighting conditions."
+          ],
+          "likelihoods": {
+            "cctv-image_ir": 0.35,
+            "cctv-image_motion": 0.9,
+            "cctv-image_static": 0.15,
+            "cctv-image_cover": 0.15,
+            "cctv-image_reflector": 0.2,
+            "cctv-image_noise": 0.55,
+            "cctv-image_near": 0.15
+          },
+          "sources": [
+            {
+              "id": "axis-image",
+              "title": "Axis - Troubleshooting guide for image quality",
+              "url": "https://help.axis.com/en-us/troubleshooting-image-quality",
+              "recordId": null,
+              "page": null,
+              "section": "Shutter speed; Gain and noise",
+              "appliesTo": "Axis camera image-quality examples; exposure controls depend on the camera model.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "January 2026",
+              "searchRef": "turn269view0"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "cctv-image_noise",
+          "title": "Low-light gain and image noise",
+          "summary": "Amplification in a dark scene can make the image grainy.",
+          "checks": [
+            "Record whether the symptom follows low light and preserve a representative frame."
+          ],
+          "likelihoods": {
+            "cctv-image_ir": 0.3,
+            "cctv-image_motion": 0.4,
+            "cctv-image_static": 0.3,
+            "cctv-image_cover": 0.15,
+            "cctv-image_reflector": 0.2,
+            "cctv-image_noise": 0.9,
+            "cctv-image_near": 0.15
+          },
+          "sources": [
+            {
+              "id": "axis-image",
+              "title": "Axis - Troubleshooting guide for image quality",
+              "url": "https://help.axis.com/en-us/troubleshooting-image-quality",
+              "recordId": null,
+              "page": null,
+              "section": "Shutter speed; Gain and noise",
+              "appliesTo": "Axis camera image-quality examples; exposure controls depend on the camera model.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "January 2026",
+              "searchRef": "turn269view0"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        }
+      ]
+    },
+    {
+      "id": "cctv-stream",
+      "category": "cctv",
+      "title": "Intermittent / jerky video stream",
+      "subtitle": "Compare network, camera and viewing-client evidence",
+      "icon": "network",
+      "scope": "Axis streaming examples. An error message alone does not establish the underlying hardware fault.",
+      "questions": [
+        {
+          "id": "cctv-stream_viewers",
+          "text": "Does the client report “Too many viewers”?",
+          "hint": "Copy the whole message and time; other RTSP-service problems can produce this message.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-stream",
+              "page": null,
+              "section": "Too many viewers displayed in web interface"
+            }
+          ]
+        },
+        {
+          "id": "cctv-stream_shared",
+          "text": "Are several cameras on the same network path affected together?",
+          "hint": "Use the recorded topology and incident times.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-network",
+              "page": null,
+              "section": "The infrastructure; Bandwidth"
+            }
+          ]
+        },
+        {
+          "id": "cctv-stream_local",
+          "text": "Is the same camera’s existing local recording smooth while this client stutters?",
+          "hint": "Compare already-available footage; do not disconnect a live system to create a test.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-stream",
+              "page": null,
+              "section": "My video stream is lagging, jerky, or choppy"
+            }
+          ]
+        },
+        {
+          "id": "cctv-stream_congestion",
+          "text": "Do network-monitoring records show congestion during the interruptions?",
+          "hint": "Use an existing report; no network changes or packet capture are required.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-network",
+              "page": null,
+              "section": "Bandwidth; Chipset performance"
+            }
+          ]
+        },
+        {
+          "id": "cctv-stream_client",
+          "text": "Do existing client records show high CPU or GPU use during the problem?",
+          "hint": "Use an available performance record from the viewing computer.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-stream",
+              "page": null,
+              "section": "My video stream is lagging, jerky, or choppy"
+            }
+          ]
+        },
+        {
+          "id": "cctv-stream_added",
+          "text": "Did the issue begin after more simultaneous video streams were requested?",
+          "hint": "Use the change history and existing stream/session information.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-stream",
+              "page": null,
+              "section": "Too many viewers displayed in web interface"
+            },
+            {
+              "sourceId": "axis-network",
+              "page": null,
+              "section": "Chipset performance"
+            }
+          ]
+        },
+        {
+          "id": "cctv-stream_format",
+          "text": "Does the client explicitly report an unsupported stream parameter?",
+          "hint": "Record the named format, resolution or other parameter without changing it.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-stream",
+              "page": null,
+              "section": "Cannot retrieve stream in client"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "cctv-stream_capacity",
+          "title": "Camera stream-capacity or service pressure",
+          "summary": "Additional distinct streams may exceed available processing; the viewer error can also have other service causes.",
+          "checks": [
+            "Record existing stream counts and profiles for the model-specific support review."
+          ],
+          "likelihoods": {
+            "cctv-stream_viewers": 0.85,
+            "cctv-stream_shared": 0.2,
+            "cctv-stream_local": 0.5,
+            "cctv-stream_congestion": 0.2,
+            "cctv-stream_client": 0.25,
+            "cctv-stream_added": 0.9,
+            "cctv-stream_format": 0.1
+          },
+          "sources": [
+            {
+              "id": "axis-stream",
+              "title": "Axis - Troubleshooting guide for streaming issues",
+              "url": "https://help.axis.com/en-us/troubleshooting-streaming",
+              "recordId": null,
+              "page": null,
+              "section": "Cannot retrieve stream in client; Too many viewers displayed in web interface; My video stream is lagging, jerky, or choppy",
+              "appliesTo": "Axis stream/client examples; stream limits and supported parameters are device-specific.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "July 2026",
+              "searchRef": "turn269view2"
+            },
+            {
+              "id": "axis-network",
+              "title": "Axis - Troubleshooting guide for network connection",
+              "url": "https://help.axis.com/en-us/troubleshooting-network",
+              "recordId": null,
+              "page": null,
+              "section": "The infrastructure; Bandwidth; Device overload; Chipset performance",
+              "appliesTo": "Axis network-video examples; no generic camera count, throughput limit or network reconfiguration is inferred.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "September 2026",
+              "searchRef": "turn272view2"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "cctv-stream_network",
+          "title": "Network congestion or insufficient throughput",
+          "summary": "Shared traffic and limited throughput may delay or drop video delivery.",
+          "checks": [
+            "Keep the network report and the affected-camera list for the network administrator."
+          ],
+          "likelihoods": {
+            "cctv-stream_viewers": 0.15,
+            "cctv-stream_shared": 0.85,
+            "cctv-stream_local": 0.65,
+            "cctv-stream_congestion": 0.9,
+            "cctv-stream_client": 0.3,
+            "cctv-stream_added": 0.6,
+            "cctv-stream_format": 0.1
+          },
+          "sources": [
+            {
+              "id": "axis-network",
+              "title": "Axis - Troubleshooting guide for network connection",
+              "url": "https://help.axis.com/en-us/troubleshooting-network",
+              "recordId": null,
+              "page": null,
+              "section": "The infrastructure; Bandwidth; Device overload; Chipset performance",
+              "appliesTo": "Axis network-video examples; no generic camera count, throughput limit or network reconfiguration is inferred.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "September 2026",
+              "searchRef": "turn272view2"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "cctv-stream_client",
+          "title": "Viewing-client decoding or rendering load",
+          "summary": "The viewing computer may be unable to display otherwise available video smoothly.",
+          "checks": [
+            "Record the client version and existing resource-use evidence."
+          ],
+          "likelihoods": {
+            "cctv-stream_viewers": 0.1,
+            "cctv-stream_shared": 0.3,
+            "cctv-stream_local": 0.9,
+            "cctv-stream_congestion": 0.15,
+            "cctv-stream_client": 0.9,
+            "cctv-stream_added": 0.5,
+            "cctv-stream_format": 0.15
+          },
+          "sources": [
+            {
+              "id": "axis-stream",
+              "title": "Axis - Troubleshooting guide for streaming issues",
+              "url": "https://help.axis.com/en-us/troubleshooting-streaming",
+              "recordId": null,
+              "page": null,
+              "section": "Cannot retrieve stream in client; Too many viewers displayed in web interface; My video stream is lagging, jerky, or choppy",
+              "appliesTo": "Axis stream/client examples; stream limits and supported parameters are device-specific.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "July 2026",
+              "searchRef": "turn269view2"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "cctv-stream_profile",
+          "title": "Requested stream parameters not supported",
+          "summary": "The client may request a stream combination the camera does not provide.",
+          "checks": [
+            "Compare the recorded request with the exact camera’s supported stream list."
+          ],
+          "likelihoods": {
+            "cctv-stream_viewers": 0.1,
+            "cctv-stream_shared": 0.1,
+            "cctv-stream_local": 0.75,
+            "cctv-stream_congestion": 0.1,
+            "cctv-stream_client": 0.2,
+            "cctv-stream_added": 0.5,
+            "cctv-stream_format": 0.9
+          },
+          "sources": [
+            {
+              "id": "axis-stream",
+              "title": "Axis - Troubleshooting guide for streaming issues",
+              "url": "https://help.axis.com/en-us/troubleshooting-streaming",
+              "recordId": null,
+              "page": null,
+              "section": "Cannot retrieve stream in client; Too many viewers displayed in web interface; My video stream is lagging, jerky, or choppy",
+              "appliesTo": "Axis stream/client examples; stream limits and supported parameters are device-specific.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "July 2026",
+              "searchRef": "turn269view2"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        }
+      ]
+    },
+    {
+      "id": "cctv-remote",
+      "category": "cctv",
+      "title": "Remote viewing / playback access",
+      "subtitle": "Separate internet, account, service and client-format issues",
+      "icon": "network",
+      "scope": "AXIS Camera Station Pro/Edge examples. These are read-only checks for an authorised account; service and codec details are client-specific.",
+      "questions": [
+        {
+          "id": "cctv-remote_local",
+          "text": "Is live view still available on the site’s local client?",
+          "hint": "Use an existing observation of the same cameras.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-acspro-manual",
+              "page": null,
+              "section": "Secure Remote Access v2; Unable to log in or connect to server"
+            }
+          ]
+        },
+        {
+          "id": "cctv-remote_login",
+          "text": "Does the remote client explicitly report a sign-in error?",
+          "hint": "Record the message without sharing passwords or verification codes.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-edge-manual",
+              "page": null,
+              "section": "Troubleshooting > Login"
+            }
+          ]
+        },
+        {
+          "id": "cctv-remote_service",
+          "text": "Does the provider’s status record show an outage at the fault time?",
+          "hint": "Use the incident history for the service actually in use, not today’s status alone.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-acspro-manual",
+              "page": null,
+              "section": "Secure Remote Access v2 > Unable to connect to cloud services remotely"
+            }
+          ]
+        },
+        {
+          "id": "cctv-remote_internet",
+          "text": "Do site records show that internet access was unavailable at that time?",
+          "hint": "Use the existing connectivity report; local video can remain available.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-acspro-manual",
+              "page": null,
+              "section": "Secure Remote Access v2 > Unable to connect to cloud services locally"
+            },
+            {
+              "sourceId": "axis-edge-manual",
+              "page": null,
+              "section": "Troubleshooting > Login; Mobile app"
+            }
+          ]
+        },
+        {
+          "id": "cctv-remote_membership",
+          "text": "Is the user missing from the site’s authorised organisation membership?",
+          "hint": "Have the administrator read the membership record; do not change rights for a test.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-acspro-manual",
+              "page": null,
+              "section": "Secure Remote Access v2 > Unable to connect to cloud services remotely"
+            }
+          ]
+        },
+        {
+          "id": "cctv-remote_codec",
+          "text": "Does remote playback explicitly report an unsupported codec?",
+          "hint": "Record the client and codec. Axis Edge’s cited H.265 restriction is for its web app only.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-edge-manual",
+              "page": null,
+              "section": "Troubleshooting > Web app > Video playback disruptions"
+            }
+          ]
+        },
+        {
+          "id": "cctv-remote_playlocal",
+          "text": "Is the same recording already known to play in an authorised local client?",
+          "hint": "Use the same camera and time interval; this does not by itself prove the remote connection is healthy.",
+          "sourceRefs": [
+            {
+              "sourceId": "axis-edge-manual",
+              "page": null,
+              "section": "Play a recording; Troubleshooting > Web app"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "cctv-remote_connection",
+          "title": "Remote internet or connection path unavailable",
+          "summary": "The site or viewing client may be unable to reach the remote service.",
+          "checks": [
+            "Keep the existing connectivity record and affected-client details for support."
+          ],
+          "likelihoods": {
+            "cctv-remote_local": 0.85,
+            "cctv-remote_login": 0.15,
+            "cctv-remote_service": 0.15,
+            "cctv-remote_internet": 0.9,
+            "cctv-remote_membership": 0.1,
+            "cctv-remote_codec": 0.25,
+            "cctv-remote_playlocal": 0.7
+          },
+          "sources": [
+            {
+              "id": "axis-acspro-manual",
+              "title": "Axis - AXIS Camera Station Pro User manual",
+              "url": "https://help.axis.com/en-us/axis-camera-station-pro",
+              "recordId": null,
+              "page": null,
+              "section": "Select storage devices to connect; Time synchronization; Secure Remote Access v2",
+              "appliesTo": "AXIS Camera Station Pro. Secure Remote Access v2 findings apply only where that service is configured.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": null,
+              "searchRef": "turn269view5"
+            },
+            {
+              "id": "axis-edge-manual",
+              "title": "Axis - AXIS Camera Station Edge User manual",
+              "url": "https://help.axis.com/en-us/axis-camera-station-edge",
+              "recordId": null,
+              "page": null,
+              "section": "Troubleshooting > Technical issues and solutions > Login; Web app; Mobile app",
+              "appliesTo": "AXIS Camera Station Edge desktop/mobile/web clients. The H.265 limitation cited here is specifically for its web app.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "September 2026",
+              "searchRef": "turn269view6"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "cctv-remote_service",
+          "title": "Remote service incident",
+          "summary": "A matching provider incident may explain lost remote access while local viewing continues.",
+          "checks": [
+            "Record the incident reference and its start/end times."
+          ],
+          "likelihoods": {
+            "cctv-remote_local": 0.85,
+            "cctv-remote_login": 0.2,
+            "cctv-remote_service": 0.9,
+            "cctv-remote_internet": 0.25,
+            "cctv-remote_membership": 0.2,
+            "cctv-remote_codec": 0.1,
+            "cctv-remote_playlocal": 0.6
+          },
+          "sources": [
+            {
+              "id": "axis-acspro-manual",
+              "title": "Axis - AXIS Camera Station Pro User manual",
+              "url": "https://help.axis.com/en-us/axis-camera-station-pro",
+              "recordId": null,
+              "page": null,
+              "section": "Select storage devices to connect; Time synchronization; Secure Remote Access v2",
+              "appliesTo": "AXIS Camera Station Pro. Secure Remote Access v2 findings apply only where that service is configured.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": null,
+              "searchRef": "turn269view5"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "cctv-remote_account",
+          "title": "Account authentication or site membership",
+          "summary": "The authorised account may not be signed in successfully or associated with the intended site.",
+          "checks": [
+            "Give the exact error and membership observation to the account administrator."
+          ],
+          "likelihoods": {
+            "cctv-remote_local": 0.85,
+            "cctv-remote_login": 0.9,
+            "cctv-remote_service": 0.1,
+            "cctv-remote_internet": 0.15,
+            "cctv-remote_membership": 0.9,
+            "cctv-remote_codec": 0.1,
+            "cctv-remote_playlocal": 0.65
+          },
+          "sources": [
+            {
+              "id": "axis-edge-manual",
+              "title": "Axis - AXIS Camera Station Edge User manual",
+              "url": "https://help.axis.com/en-us/axis-camera-station-edge",
+              "recordId": null,
+              "page": null,
+              "section": "Troubleshooting > Technical issues and solutions > Login; Web app; Mobile app",
+              "appliesTo": "AXIS Camera Station Edge desktop/mobile/web clients. The H.265 limitation cited here is specifically for its web app.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "September 2026",
+              "searchRef": "turn269view6"
+            },
+            {
+              "id": "axis-acspro-manual",
+              "title": "Axis - AXIS Camera Station Pro User manual",
+              "url": "https://help.axis.com/en-us/axis-camera-station-pro",
+              "recordId": null,
+              "page": null,
+              "section": "Select storage devices to connect; Time synchronization; Secure Remote Access v2",
+              "appliesTo": "AXIS Camera Station Pro. Secure Remote Access v2 findings apply only where that service is configured.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": null,
+              "searchRef": "turn269view5"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        },
+        {
+          "id": "cctv-remote_codec",
+          "title": "Remote playback client does not support the codec",
+          "summary": "A recording can exist locally but use a format unsupported by the remote client.",
+          "checks": [
+            "Record the codec and client version; preserve the original recording."
+          ],
+          "likelihoods": {
+            "cctv-remote_local": 0.9,
+            "cctv-remote_login": 0.1,
+            "cctv-remote_service": 0.1,
+            "cctv-remote_internet": 0.1,
+            "cctv-remote_membership": 0.1,
+            "cctv-remote_codec": 0.9,
+            "cctv-remote_playlocal": 0.9
+          },
+          "sources": [
+            {
+              "id": "axis-edge-manual",
+              "title": "Axis - AXIS Camera Station Edge User manual",
+              "url": "https://help.axis.com/en-us/axis-camera-station-edge",
+              "recordId": null,
+              "page": null,
+              "section": "Troubleshooting > Technical issues and solutions > Login; Web app; Mobile app",
+              "appliesTo": "AXIS Camera Station Edge desktop/mobile/web clients. The H.265 limitation cited here is specifically for its web app.",
+              "reviewedOn": "2026-10-30",
+              "documentVersion": "September 2026",
+              "searchRef": "turn269view6"
+            }
+          ],
+          "status": "hypothesis",
+          "weightBasis": "uncalibrated-editorial-heuristic"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "net2-offline",
+      "title": "Paxton APN-1061 - ACUs not responding - RS485 data line",
+      "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1061.pdf",
+      "recordId": "paxton-85eb02998e0f",
+      "page": "1-2",
+      "section": "NO ACUs are responding; Some ACUs are responding",
+      "appliesTo": "Net2 controllers on RS485 data lines. Ethernet-only, Net2Air and Paxton10 need their own model guidance.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": "1.0.1",
+      "searchRef": "turn262view1"
+    },
+    {
+      "id": "net2-denied",
+      "title": "Paxton APN-1059 - What to do if a user is denied access with a valid token",
+      "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1059.pdf",
+      "recordId": "paxton-c70476dcabac",
+      "page": 1,
+      "section": "A Door does not open; User validity; User validity is correct but access is still denied",
+      "appliesTo": "Net2 token, reader and user-validity examples; indicator colours are not universal.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": "1.0.1",
+      "searchRef": "turn262view0"
+    },
+    {
+      "id": "net2-tcpip",
+      "title": "Paxton APN-1006 - Installing remote sites using TCP/IP",
+      "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1006.pdf",
+      "recordId": null,
+      "page": "4-6",
+      "section": "LED indications; Software configuration; How do I give the device an IP address?; Troubleshooting",
+      "appliesTo": "Net2 plus and Net2 TCP/IP Ethernet interfaces described in this legacy application note; not Net2Air wireless diagnosis.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": null,
+      "searchRef": "turn267view1"
+    },
+    {
+      "id": "net2-reader",
+      "title": "Paxton APN-1060 - What to do if readers or keypads are not working",
+      "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1060.pdf",
+      "recordId": null,
+      "page": 1,
+      "section": "Software settings; User token; Supply voltage",
+      "appliesTo": "Net2 readers/keypads covered by the note; no voltage or wiring procedure is reproduced.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": "1.0.1",
+      "searchRef": "turn264view2"
+    },
+    {
+      "id": "net2-unlock",
+      "title": "Paxton APN-1049 - Holding a door unlocked with Net2 software",
+      "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1049.pdf",
+      "recordId": null,
+      "page": 1,
+      "section": "Holding a door unlocked with Net2 software",
+      "appliesTo": "Net2 door unlock timezones and optional first-valid-access condition.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": "1.0.1",
+      "searchRef": "turn262view3"
+    },
+    {
+      "id": "net2-door-alarms",
+      "title": "Paxton APN-1047 - Configuring door alarms",
+      "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1047.pdf",
+      "recordId": null,
+      "page": "1-4",
+      "section": "Alarm definitions; Alarm types; Alarm reporting at the PC; Exit-button behaviour",
+      "appliesTo": "Net2 door contacts and alarm configuration. The note states that Net2 nano has fixed alarm values.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": "1.0.3",
+      "searchRef": "turn262view2"
+    },
+    {
+      "id": "net2-exit-monitor",
+      "title": "Paxton APN-1048 - Door Forced monitoring integrated with a Manual door handle",
+      "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1048.pdf",
+      "recordId": null,
+      "page": "1-2",
+      "section": "False door forced alarms; Create an Exit button event",
+      "appliesTo": "Net2 door-contact monitoring with a mechanical inside handle and a configured exit input.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": "1.0.1",
+      "searchRef": "turn262view4"
+    },
+    {
+      "id": "net2-fire-release",
+      "title": "Paxton APN-1031 - Integrating Net2 with a fire alarm system",
+      "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1031.pdf",
+      "recordId": null,
+      "page": "1-3",
+      "section": "Overview; Resetting the Fire Alarm; Automatically reset fire alarm feature",
+      "appliesTo": "Net2 Professional fire-input integration. Reset behaviour depends on the configured automatic-reset feature; it is not a universal fire-interface design.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": "1.0.2",
+      "searchRef": "turn272view0"
+    },
+    {
+      "id": "net2-fail-open",
+      "title": "Paxton APN-1090 - Advice on using access control with fire doors",
+      "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1090.pdf",
+      "recordId": null,
+      "page": "1-2",
+      "section": "Fail safe opening of fire doors; Security issues",
+      "appliesTo": "Physical behaviour of documented fail-open electric locks. Historical installation advice is not used as current legal or compliance guidance.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": null,
+      "searchRef": "turn272view1"
+    },
+    {
+      "id": "paxlock-door-fit",
+      "title": "Paxton APN-1173 - PaxLock Pro Installation and Commissioning Guide",
+      "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1173.pdf",
+      "recordId": null,
+      "page": "1-4, 8-10",
+      "section": "Checks prior to installation; Post installation commissioning; Troubleshooting",
+      "appliesTo": "PaxLock Pro Euro/Scandinavian lockset examples only. No dimensions or hardware settings are generalised to other locks.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": "1.0.6",
+      "searchRef": "turn289view0"
+    },
+    {
+      "id": "hik-network",
+      "title": "Hikvision - Why is the video recorder notifying the network is unreachable when a network camera is being added?",
+      "url": "https://enpinfo.hikvision.com/hkwsen/unzip/20230410194813_20373_doc/GUID-03DBE341-D7F0-4680-99B2-DF54C958DEBA.html",
+      "recordId": null,
+      "page": null,
+      "section": "Reason",
+      "appliesTo": "Hikvision recorder online-manual example. The page does not identify every supported recorder; confirm the exact model and firmware.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": "Online manual snapshot 2023-04-10",
+      "searchRef": "turn264view3"
+    },
+    {
+      "id": "hik-link",
+      "title": "Hikvision - How to Solve IP Camera No Link Issue on PoE NVR",
+      "url": "https://securitylab.hikvision.com/tr/support/how-to/faq/how-to-solve-ip-camera-no-link-issue-on-poe-nvr/",
+      "recordId": null,
+      "page": null,
+      "section": "Scenario 1: user name or password is wrong; Scenario 2: Network is Unreachable; Scenario 3: IP camera does not exist",
+      "appliesTo": "Hikvision PoE NVR examples; only status-message interpretation is used. Password resets and factory-default procedures are excluded.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": null,
+      "searchRef": "turn270search4"
+    },
+    {
+      "id": "hik-poe-exceptions",
+      "title": "Hikvision Hik-Partner Pro - Add Exception Rule",
+      "url": "https://enpinfo.hikvision.com/hkwsen/unzip/20230330182709_44228_doc/GUID-70503EA6-F0B3-42B7-ACC4-99E14FA61DF7.html",
+      "recordId": null,
+      "page": null,
+      "section": "Step 5: network-switch exception types",
+      "appliesTo": "Hik-Partner Pro monitored switches that support the named PoE exceptions. Not every camera or recorder exposes them.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": "Online manual snapshot 2023-03-30",
+      "searchRef": "turn291search3"
+    },
+    {
+      "id": "hik-record",
+      "title": "Hikvision - Why is there no recorded video after the motion detection is set?",
+      "url": "https://enpinfo.hikvision.com/hkwsen/unzip/20230410194813_20373_doc/GUID-92930AA9-2960-4EB1-AC9B-0804C03741C2.html",
+      "recordId": null,
+      "page": null,
+      "section": "Reason; Solution",
+      "appliesTo": "Hikvision recorder motion-recording example. Schedule, trigger and storage behaviour must be checked against the exact recorder.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": "Online manual snapshot 2023-04-10",
+      "searchRef": "turn264view4"
+    },
+    {
+      "id": "axis-image",
+      "title": "Axis - Troubleshooting guide for image quality",
+      "url": "https://help.axis.com/en-us/troubleshooting-image-quality",
+      "recordId": null,
+      "page": null,
+      "section": "Shutter speed; Gain and noise",
+      "appliesTo": "Axis camera image-quality examples; exposure controls depend on the camera model.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": "January 2026",
+      "searchRef": "turn269view0"
+    },
+    {
+      "id": "axis-ir",
+      "title": "Axis - IR reflections in dome cameras",
+      "url": "https://whitepapers.axis.com/en-us/ir-reflections-in-dome-cameras",
+      "recordId": null,
+      "page": null,
+      "section": "Summary; IR light reflected against nearby objects; IR light reflected against objects on the dome surface",
+      "appliesTo": "Dome cameras with integrated IR illumination; an IR-reflecting object can be outside the visible image.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": "May 2021",
+      "searchRef": "turn296view0"
+    },
+    {
+      "id": "axis-focus",
+      "title": "Axis - Troubleshooting guide for focus",
+      "url": "https://help.axis.com/en-us/troubleshooting-focus",
+      "recordId": null,
+      "page": null,
+      "section": "Dome and front glass; Dirty or scratched dome or front glass; Object proximity; Near focus limit for autofocus",
+      "appliesTo": "Axis optics and dome/front-glass examples. Near-focus-limit guidance applies to PTZ or remote-focus models that provide that feature.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": "December 2024",
+      "searchRef": "turn269view1"
+    },
+    {
+      "id": "axis-stream",
+      "title": "Axis - Troubleshooting guide for streaming issues",
+      "url": "https://help.axis.com/en-us/troubleshooting-streaming",
+      "recordId": null,
+      "page": null,
+      "section": "Cannot retrieve stream in client; Too many viewers displayed in web interface; My video stream is lagging, jerky, or choppy",
+      "appliesTo": "Axis stream/client examples; stream limits and supported parameters are device-specific.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": "July 2026",
+      "searchRef": "turn269view2"
+    },
+    {
+      "id": "axis-network",
+      "title": "Axis - Troubleshooting guide for network connection",
+      "url": "https://help.axis.com/en-us/troubleshooting-network",
+      "recordId": null,
+      "page": null,
+      "section": "The infrastructure; Bandwidth; Device overload; Chipset performance",
+      "appliesTo": "Axis network-video examples; no generic camera count, throughput limit or network reconfiguration is inferred.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": "September 2026",
+      "searchRef": "turn272view2"
+    },
+    {
+      "id": "axis-acs5-troubleshooting",
+      "title": "Axis - AXIS Camera Station 5 Troubleshooting guide",
+      "url": "https://help.axis.com/en-us/axis-camera-station-troubleshooting-guide",
+      "recordId": null,
+      "page": null,
+      "section": "Recordings disappear; Recording gaps during continuous recording; Live view and playback performance; Detected time difference on a device",
+      "appliesTo": "AXIS Camera Station 5 only; retention, time and service behaviour are not assumed for other recorders.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": "March 2026",
+      "searchRef": "turn269view4"
+    },
+    {
+      "id": "axis-acspro-manual",
+      "title": "Axis - AXIS Camera Station Pro User manual",
+      "url": "https://help.axis.com/en-us/axis-camera-station-pro",
+      "recordId": null,
+      "page": null,
+      "section": "Select storage devices to connect; Time synchronization; Secure Remote Access v2",
+      "appliesTo": "AXIS Camera Station Pro. Secure Remote Access v2 findings apply only where that service is configured.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": null,
+      "searchRef": "turn269view5"
+    },
+    {
+      "id": "axis-edge-manual",
+      "title": "Axis - AXIS Camera Station Edge User manual",
+      "url": "https://help.axis.com/en-us/axis-camera-station-edge",
+      "recordId": null,
+      "page": null,
+      "section": "Troubleshooting > Technical issues and solutions > Login; Web app; Mobile app",
+      "appliesTo": "AXIS Camera Station Edge desktop/mobile/web clients. The H.265 limitation cited here is specifically for its web app.",
+      "reviewedOn": "2026-10-30",
+      "documentVersion": "September 2026",
+      "searchRef": "turn269view6"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "access-offline-rs485",
+      "groupIds": [
+        "access-offline"
+      ],
+      "claim": "Paxton separates all-controller and some-controller RS485 failures, with interface, controller indication and data-line checks.",
+      "sourceRefs": [
+        {
+          "sourceId": "net2-offline",
+          "page": "1-2",
+          "section": "NO ACUs are responding; Some ACUs are responding"
+        }
+      ],
+      "questionIds": [
+        "access-offline_0",
+        "access-offline_1",
+        "access-offline_2",
+        "access-offline_3",
+        "access-offline_server",
+        "access-offline_segment"
+      ],
+      "causeIds": [
+        "access-offline_common",
+        "access-offline_local",
+        "access-offline_line"
+      ],
+      "qualification": "Route-clustering is an editorial inference; measurements and disconnections in the manual are deliberately excluded."
+    },
+    {
+      "id": "access-offline-ip",
+      "groupIds": [
+        "access-offline"
+      ],
+      "claim": "The documented interface address and network range are relevant to a Net2 TCP/IP node that is not responding.",
+      "sourceRefs": [
+        {
+          "sourceId": "net2-tcpip",
+          "page": "4-6",
+          "section": "LED indications; Software configuration; How do I give the device an IP address?; Troubleshooting"
+        }
+      ],
+      "questionIds": [
+        "access-offline_address"
+      ],
+      "causeIds": [
+        "access-offline_address"
+      ],
+      "qualification": "Read-only comparison, not an instruction to change addressing or firewall settings."
+    },
+    {
+      "id": "access-denied-validity",
+      "groupIds": [
+        "access-denied"
+      ],
+      "claim": "The event reason, current validity and expiry are separate from a recorded grant with no physical release.",
+      "sourceRefs": [
+        {
+          "sourceId": "net2-denied",
+          "page": 1,
+          "section": "A Door does not open; User validity; User validity is correct but access is still denied"
+        }
+      ],
+      "questionIds": [
+        "access-denied_0",
+        "access-denied_1",
+        "access-denied_3",
+        "access-denied_expired"
+      ],
+      "causeIds": [
+        "access-denied_credential",
+        "access-denied_door"
+      ],
+      "qualification": null
+    },
+    {
+      "id": "access-denied-reader",
+      "groupIds": [
+        "access-denied"
+      ],
+      "claim": "No reader response and token behaviour at an already-known working reader distinguish recognition from permission.",
+      "sourceRefs": [
+        {
+          "sourceId": "net2-reader",
+          "page": 1,
+          "section": "User token"
+        },
+        {
+          "sourceId": "net2-denied",
+          "page": 1,
+          "section": "A Door does not open"
+        }
+      ],
+      "questionIds": [
+        "access-denied_2",
+        "access-denied_token"
+      ],
+      "causeIds": [
+        "access-denied_reader",
+        "access-denied_token"
+      ],
+      "qualification": "Only existing authorised observations are requested; no credential-testing exercise is prescribed."
+    },
+    {
+      "id": "access-denied-update",
+      "groupIds": [
+        "access-denied"
+      ],
+      "claim": "An offline Net2 controller cannot receive a user-validity update.",
+      "sourceRefs": [
+        {
+          "sourceId": "net2-denied",
+          "page": 1,
+          "section": "User validity is correct but access is still denied"
+        }
+      ],
+      "questionIds": [
+        "access-denied_update"
+      ],
+      "causeIds": [
+        "access-denied_update"
+      ],
+      "qualification": null
+    },
+    {
+      "id": "access-unlocked-schedule",
+      "groupIds": [
+        "access-unlocked"
+      ],
+      "claim": "A configured unlock timezone can intentionally hold a door released.",
+      "sourceRefs": [
+        {
+          "sourceId": "net2-unlock",
+          "page": 1,
+          "section": "Holding a door unlocked with Net2 software"
+        }
+      ],
+      "questionIds": [
+        "access-unlocked_schedule"
+      ],
+      "causeIds": [
+        "access-unlocked_schedule"
+      ],
+      "qualification": null
+    },
+    {
+      "id": "access-unlocked-fire",
+      "groupIds": [
+        "access-unlocked"
+      ],
+      "claim": "A Net2 fire-release state can remain after the fire panel resets unless the configured automatic-reset behaviour applies.",
+      "sourceRefs": [
+        {
+          "sourceId": "net2-fire-release",
+          "page": "1-3",
+          "section": "Overview; Resetting the Fire Alarm; Automatically reset fire alarm feature"
+        }
+      ],
+      "questionIds": [
+        "access-unlocked_fire"
+      ],
+      "causeIds": [
+        "access-unlocked_fire"
+      ],
+      "qualification": "The app never tells the user to reset, inhibit or bypass the fire release."
+    },
+    {
+      "id": "access-unlocked-exit",
+      "groupIds": [
+        "access-unlocked",
+        "access-door-alarm"
+      ],
+      "claim": "A monitored-handle exit input can create an exit event without releasing the lock; the configured function matters.",
+      "sourceRefs": [
+        {
+          "sourceId": "net2-exit-monitor",
+          "page": "1-2",
+          "section": "False door forced alarms; Create an Exit button event"
+        },
+        {
+          "sourceId": "net2-door-alarms",
+          "page": 4,
+          "section": "Do not unlock door when exit button is pressed"
+        }
+      ],
+      "questionIds": [
+        "access-unlocked_exit",
+        "access-door-alarm_exit",
+        "access-door-alarm_missing"
+      ],
+      "causeIds": [
+        "access-unlocked_exit",
+        "access-door-alarm_exit"
+      ],
+      "qualification": "Repeated exit events are a lead for configuration review, not proof of a defective button."
+    },
+    {
+      "id": "access-unlocked-power",
+      "groupIds": [
+        "access-unlocked"
+      ],
+      "claim": "A documented fail-open lock does not remain electrically locked without its required supply.",
+      "sourceRefs": [
+        {
+          "sourceId": "net2-fail-open",
+          "page": "1-2",
+          "section": "Fail safe opening of fire doors; Security issues"
+        }
+      ],
+      "questionIds": [
+        "access-unlocked_failopen",
+        "access-unlocked_power"
+      ],
+      "causeIds": [
+        "access-unlocked_supply"
+      ],
+      "qualification": "No live measurements, supply interruption or emergency-release operation is suggested."
+    },
+    {
+      "id": "access-unlocked-mechanical",
+      "groupIds": [
+        "access-unlocked"
+      ],
+      "claim": "PaxLock Pro guidance distinguishes door/frame fit and latch engagement from electronic operation.",
+      "sourceRefs": [
+        {
+          "sourceId": "paxlock-door-fit",
+          "page": "1-4, 8-10",
+          "section": "Checks prior to installation; Post installation commissioning; Troubleshooting"
+        }
+      ],
+      "questionIds": [
+        "access-unlocked_closing",
+        "access-unlocked_work"
+      ],
+      "causeIds": [
+        "access-unlocked_mechanical"
+      ],
+      "qualification": "The general observation is useful elsewhere, but product dimensions and repair procedures are not transferred."
+    },
+    {
+      "id": "access-door-events",
+      "groupIds": [
+        "access-door-alarm"
+      ],
+      "claim": "Net2 defines left-open by an authorised opening exceeding its allowance, and forced-open by an opening without a recognised release.",
+      "sourceRefs": [
+        {
+          "sourceId": "net2-door-alarms",
+          "page": "1-2",
+          "section": "Alarm definitions; Alarm types; Alarm reporting at the PC; Exit-button behaviour"
+        }
+      ],
+      "questionIds": [
+        "access-door-alarm_held",
+        "access-door-alarm_forced",
+        "access-door-alarm_open",
+        "access-door-alarm_grant"
+      ],
+      "causeIds": [
+        "access-door-alarm_held",
+        "access-door-alarm_unrecognised"
+      ],
+      "qualification": "Alarm labels do not establish intent or prove unlawful entry."
+    },
+    {
+      "id": "access-door-contact",
+      "groupIds": [
+        "access-door-alarm"
+      ],
+      "claim": "Both Net2 door alarms depend on the monitored door contact.",
+      "sourceRefs": [
+        {
+          "sourceId": "net2-door-alarms",
+          "page": 1,
+          "section": "Alarm definitions"
+        }
+      ],
+      "questionIds": [
+        "access-door-alarm_contact"
+      ],
+      "causeIds": [
+        "access-door-alarm_contact"
+      ],
+      "qualification": "A disagreement with visible position is an editorial fault lead, not a component diagnosis."
+    },
+    {
+      "id": "cctv-link-status",
+      "groupIds": [
+        "cctv-link"
+      ],
+      "claim": "Hikvision separates unreachable address/path errors, authentication errors and a camera-not-detected message.",
+      "sourceRefs": [
+        {
+          "sourceId": "hik-network",
+          "page": null,
+          "section": "Reason"
+        },
+        {
+          "sourceId": "hik-link",
+          "page": null,
+          "section": "Scenarios 1-3"
+        }
+      ],
+      "questionIds": [
+        "cctv-link_0",
+        "cctv-link_1",
+        "cctv-link_3",
+        "cctv-link_missing",
+        "cctv-link_destination"
+      ],
+      "causeIds": [
+        "cctv-link_network",
+        "cctv-link_address",
+        "cctv-link_auth"
+      ],
+      "qualification": "Password recovery, defaulting and network changes in the source are not included."
+    },
+    {
+      "id": "cctv-link-power",
+      "groupIds": [
+        "cctv-link"
+      ],
+      "claim": "Supported Hik-Partner Pro switches can report a PoE-port-power-off exception.",
+      "sourceRefs": [
+        {
+          "sourceId": "hik-poe-exceptions",
+          "page": null,
+          "section": "Step 5"
+        }
+      ],
+      "questionIds": [
+        "cctv-link_poe"
+      ],
+      "causeIds": [
+        "cctv-link_power"
+      ],
+      "qualification": "The cause is an inference combining the recorded power exception with missing-camera status."
+    },
+    {
+      "id": "cctv-shared-path",
+      "groupIds": [
+        "cctv-link",
+        "cctv-stream"
+      ],
+      "claim": "Shared switches and available throughput can affect multiple video streams.",
+      "sourceRefs": [
+        {
+          "sourceId": "axis-network",
+          "page": null,
+          "section": "The infrastructure; Bandwidth"
+        }
+      ],
+      "questionIds": [
+        "cctv-link_2",
+        "cctv-stream_shared",
+        "cctv-stream_congestion"
+      ],
+      "causeIds": [
+        "cctv-link_network",
+        "cctv-stream_network"
+      ],
+      "qualification": "Shared timing is suggestive, not proof of a failed switch."
+    },
+    {
+      "id": "cctv-record-creation",
+      "groupIds": [
+        "cctv-record"
+      ],
+      "claim": "Hikvision lists schedule, motion-event configuration and HDD exception as distinct recording-failure reasons.",
+      "sourceRefs": [
+        {
+          "sourceId": "hik-record",
+          "page": null,
+          "section": "Reason; Solution"
+        }
+      ],
+      "questionIds": [
+        "cctv-record_0",
+        "cctv-record_1",
+        "cctv-record_2",
+        "cctv-record_3"
+      ],
+      "causeIds": [
+        "cctv-record_storage",
+        "cctv-record_schedule",
+        "cctv-record_event"
+      ],
+      "qualification": "Live video alone does not prove past recording; formatting instructions in the source are excluded."
+    },
+    {
+      "id": "cctv-record-retention",
+      "groupIds": [
+        "cctv-record"
+      ],
+      "claim": "Axis describes time-limited retention, possible early deletion when full, and a reported oldest-recording timestamp.",
+      "sourceRefs": [
+        {
+          "sourceId": "axis-acs5-troubleshooting",
+          "page": null,
+          "section": "Recordings disappear"
+        },
+        {
+          "sourceId": "axis-acspro-manual",
+          "page": null,
+          "section": "Select storage devices to connect > Oldest recording"
+        }
+      ],
+      "questionIds": [
+        "cctv-record_retention",
+        "cctv-record_oldest"
+      ],
+      "causeIds": [
+        "cctv-record_retention"
+      ],
+      "qualification": "No recovery guarantee or instruction to modify retention is made."
+    },
+    {
+      "id": "cctv-record-time",
+      "groupIds": [
+        "cctv-record"
+      ],
+      "claim": "Axis reports camera/server time differences and timestamp consequences.",
+      "sourceRefs": [
+        {
+          "sourceId": "axis-acs5-troubleshooting",
+          "page": null,
+          "section": "Detected time difference on a device"
+        }
+      ],
+      "questionIds": [
+        "cctv-record_time"
+      ],
+      "causeIds": [
+        "cctv-record_time"
+      ],
+      "qualification": "Searching the wrong apparent time is an editorial inference; clocks are not changed."
+    },
+    {
+      "id": "cctv-image-ir",
+      "groupIds": [
+        "cctv-image"
+      ],
+      "claim": "Integrated IR can reflect from nearby surfaces and material on a dome; the reflector can be outside the image.",
+      "sourceRefs": [
+        {
+          "sourceId": "axis-ir",
+          "page": null,
+          "section": "Summary; IR light reflected against nearby objects; IR light reflected against objects on the dome surface"
+        }
+      ],
+      "questionIds": [
+        "cctv-image_ir",
+        "cctv-image_cover",
+        "cctv-image_reflector"
+      ],
+      "causeIds": [
+        "cctv-image_ir"
+      ],
+      "qualification": "No nearby reflector in a picture does not exclude IR reflection."
+    },
+    {
+      "id": "cctv-image-focus",
+      "groupIds": [
+        "cctv-image"
+      ],
+      "claim": "Optical-cover condition and model-specific focus limits can affect stationary-image sharpness.",
+      "sourceRefs": [
+        {
+          "sourceId": "axis-focus",
+          "page": null,
+          "section": "Dome and front glass; Object proximity"
+        }
+      ],
+      "questionIds": [
+        "cctv-image_static",
+        "cctv-image_cover",
+        "cctv-image_near"
+      ],
+      "causeIds": [
+        "cctv-image_cover",
+        "cctv-image_focus"
+      ],
+      "qualification": null
+    },
+    {
+      "id": "cctv-image-exposure",
+      "groupIds": [
+        "cctv-image"
+      ],
+      "claim": "Long exposure blurs movement; gain in low light can amplify visible noise.",
+      "sourceRefs": [
+        {
+          "sourceId": "axis-image",
+          "page": null,
+          "section": "Shutter speed; Gain and noise"
+        }
+      ],
+      "questionIds": [
+        "cctv-image_motion",
+        "cctv-image_noise"
+      ],
+      "causeIds": [
+        "cctv-image_exposure",
+        "cctv-image_noise"
+      ],
+      "qualification": null
+    },
+    {
+      "id": "cctv-stream-capacity",
+      "groupIds": [
+        "cctv-stream"
+      ],
+      "claim": "Axis links viewer-limit errors to multiple streams while acknowledging other RTSP-service causes.",
+      "sourceRefs": [
+        {
+          "sourceId": "axis-stream",
+          "page": null,
+          "section": "Too many viewers displayed in web interface"
+        },
+        {
+          "sourceId": "axis-network",
+          "page": null,
+          "section": "Chipset performance"
+        }
+      ],
+      "questionIds": [
+        "cctv-stream_viewers",
+        "cctv-stream_added"
+      ],
+      "causeIds": [
+        "cctv-stream_capacity"
+      ],
+      "qualification": "The heuristic must not convert this message into a confirmed overload diagnosis."
+    },
+    {
+      "id": "cctv-stream-client",
+      "groupIds": [
+        "cctv-stream"
+      ],
+      "claim": "Device, network and client processing can each contribute latency; unsupported stream parameters can prevent retrieval.",
+      "sourceRefs": [
+        {
+          "sourceId": "axis-stream",
+          "page": null,
+          "section": "My video stream is lagging, jerky, or choppy; Cannot retrieve stream in client"
+        }
+      ],
+      "questionIds": [
+        "cctv-stream_local",
+        "cctv-stream_client",
+        "cctv-stream_format"
+      ],
+      "causeIds": [
+        "cctv-stream_client",
+        "cctv-stream_profile"
+      ],
+      "qualification": "A smooth local recording is an editorial comparison, not a prescribed live-system isolation test."
+    },
+    {
+      "id": "cctv-remote-path",
+      "groupIds": [
+        "cctv-remote"
+      ],
+      "claim": "Axis remote troubleshooting distinguishes internet reachability, provider incidents and account/site association.",
+      "sourceRefs": [
+        {
+          "sourceId": "axis-acspro-manual",
+          "page": null,
+          "section": "Secure Remote Access v2"
+        },
+        {
+          "sourceId": "axis-edge-manual",
+          "page": null,
+          "section": "Troubleshooting > Login; Mobile app"
+        }
+      ],
+      "questionIds": [
+        "cctv-remote_local",
+        "cctv-remote_login",
+        "cctv-remote_service",
+        "cctv-remote_internet",
+        "cctv-remote_membership"
+      ],
+      "causeIds": [
+        "cctv-remote_connection",
+        "cctv-remote_service",
+        "cctv-remote_account"
+      ],
+      "qualification": "Current service health is not historical fault evidence; use the incident time. No rights or credentials are changed."
+    },
+    {
+      "id": "cctv-remote-codec",
+      "groupIds": [
+        "cctv-remote"
+      ],
+      "claim": "The cited Axis Edge manual states that its web app does not support H.265 playback.",
+      "sourceRefs": [
+        {
+          "sourceId": "axis-edge-manual",
+          "page": null,
+          "section": "Troubleshooting > Web app > Video playback disruptions"
+        }
+      ],
+      "questionIds": [
+        "cctv-remote_codec",
+        "cctv-remote_playlocal"
+      ],
+      "causeIds": [
+        "cctv-remote_codec"
+      ],
+      "qualification": "Do not generalise this codec restriction to all browsers, Axis clients or CCTV systems."
+    }
+  ],
+  "scenarios": [
+    {
+      "groupId": "access-offline",
+      "answers": {
+        "access-offline_0": "yes",
+        "access-offline_2": "no",
+        "access-offline_server": "yes",
+        "access-offline_address": "no",
+        "access-offline_segment": "no"
+      },
+      "expectedCause": "access-offline_common"
+    },
+    {
+      "groupId": "access-offline",
+      "answers": {
+        "access-offline_2": "no",
+        "access-offline_3": "yes",
+        "access-offline_address": "yes",
+        "access-offline_server": "no"
+      },
+      "expectedCause": "access-offline_address"
+    },
+    {
+      "groupId": "access-denied",
+      "answers": {
+        "access-denied_0": "yes",
+        "access-denied_1": "yes",
+        "access-denied_expired": "yes",
+        "access-denied_update": "no",
+        "access-denied_token": "no"
+      },
+      "expectedCause": "access-denied_credential"
+    },
+    {
+      "groupId": "access-denied",
+      "answers": {
+        "access-denied_0": "yes",
+        "access-denied_expired": "no",
+        "access-denied_update": "yes",
+        "access-denied_token": "no"
+      },
+      "expectedCause": "access-denied_update"
+    },
+    {
+      "groupId": "access-unlocked",
+      "answers": {
+        "access-unlocked_schedule": "yes",
+        "access-unlocked_fire": "no",
+        "access-unlocked_exit": "no",
+        "access-unlocked_power": "no",
+        "access-unlocked_closing": "no"
+      },
+      "expectedCause": "access-unlocked_schedule"
+    },
+    {
+      "groupId": "access-unlocked",
+      "answers": {
+        "access-unlocked_schedule": "no",
+        "access-unlocked_fire": "yes",
+        "access-unlocked_exit": "no",
+        "access-unlocked_closing": "no"
+      },
+      "expectedCause": "access-unlocked_fire"
+    },
+    {
+      "groupId": "access-unlocked",
+      "answers": {
+        "access-unlocked_schedule": "no",
+        "access-unlocked_fire": "no",
+        "access-unlocked_failopen": "yes",
+        "access-unlocked_power": "yes",
+        "access-unlocked_closing": "no"
+      },
+      "expectedCause": "access-unlocked_supply"
+    },
+    {
+      "groupId": "access-door-alarm",
+      "answers": {
+        "access-door-alarm_held": "no",
+        "access-door-alarm_forced": "yes",
+        "access-door-alarm_contact": "no",
+        "access-door-alarm_exit": "yes",
+        "access-door-alarm_missing": "yes",
+        "access-door-alarm_grant": "no"
+      },
+      "expectedCause": "access-door-alarm_exit"
+    },
+    {
+      "groupId": "access-door-alarm",
+      "answers": {
+        "access-door-alarm_held": "yes",
+        "access-door-alarm_forced": "no",
+        "access-door-alarm_open": "yes",
+        "access-door-alarm_contact": "no",
+        "access-door-alarm_grant": "yes"
+      },
+      "expectedCause": "access-door-alarm_held"
+    },
+    {
+      "groupId": "cctv-link",
+      "answers": {
+        "cctv-link_0": "no",
+        "cctv-link_1": "yes",
+        "cctv-link_missing": "no",
+        "cctv-link_poe": "no",
+        "cctv-link_destination": "no"
+      },
+      "expectedCause": "cctv-link_auth"
+    },
+    {
+      "groupId": "cctv-link",
+      "answers": {
+        "cctv-link_1": "no",
+        "cctv-link_missing": "yes",
+        "cctv-link_poe": "yes",
+        "cctv-link_destination": "no"
+      },
+      "expectedCause": "cctv-link_power"
+    },
+    {
+      "groupId": "cctv-record",
+      "answers": {
+        "cctv-record_0": "no",
+        "cctv-record_1": "yes",
+        "cctv-record_2": "no",
+        "cctv-record_3": "no",
+        "cctv-record_time": "no",
+        "cctv-record_retention": "yes",
+        "cctv-record_oldest": "yes"
+      },
+      "expectedCause": "cctv-record_retention"
+    },
+    {
+      "groupId": "cctv-record",
+      "answers": {
+        "cctv-record_0": "no",
+        "cctv-record_1": "yes",
+        "cctv-record_2": "no",
+        "cctv-record_3": "no",
+        "cctv-record_time": "yes",
+        "cctv-record_retention": "no",
+        "cctv-record_oldest": "no"
+      },
+      "expectedCause": "cctv-record_time"
+    },
+    {
+      "groupId": "cctv-image",
+      "answers": {
+        "cctv-image_ir": "yes",
+        "cctv-image_motion": "no",
+        "cctv-image_static": "no",
+        "cctv-image_cover": "no",
+        "cctv-image_reflector": "yes",
+        "cctv-image_noise": "no",
+        "cctv-image_near": "no"
+      },
+      "expectedCause": "cctv-image_ir"
+    },
+    {
+      "groupId": "cctv-image",
+      "answers": {
+        "cctv-image_ir": "no",
+        "cctv-image_motion": "yes",
+        "cctv-image_static": "no",
+        "cctv-image_cover": "no",
+        "cctv-image_noise": "unknown",
+        "cctv-image_near": "no"
+      },
+      "expectedCause": "cctv-image_exposure"
+    },
+    {
+      "groupId": "cctv-stream",
+      "answers": {
+        "cctv-stream_viewers": "no",
+        "cctv-stream_shared": "yes",
+        "cctv-stream_congestion": "yes",
+        "cctv-stream_client": "no",
+        "cctv-stream_format": "no"
+      },
+      "expectedCause": "cctv-stream_network"
+    },
+    {
+      "groupId": "cctv-stream",
+      "answers": {
+        "cctv-stream_viewers": "no",
+        "cctv-stream_shared": "no",
+        "cctv-stream_local": "yes",
+        "cctv-stream_congestion": "no",
+        "cctv-stream_client": "yes",
+        "cctv-stream_format": "no"
+      },
+      "expectedCause": "cctv-stream_client"
+    },
+    {
+      "groupId": "cctv-remote",
+      "answers": {
+        "cctv-remote_local": "yes",
+        "cctv-remote_login": "no",
+        "cctv-remote_service": "yes",
+        "cctv-remote_internet": "no",
+        "cctv-remote_membership": "no",
+        "cctv-remote_codec": "no"
+      },
+      "expectedCause": "cctv-remote_service"
+    },
+    {
+      "groupId": "cctv-remote",
+      "answers": {
+        "cctv-remote_local": "yes",
+        "cctv-remote_login": "no",
+        "cctv-remote_service": "no",
+        "cctv-remote_internet": "no",
+        "cctv-remote_membership": "no",
+        "cctv-remote_codec": "yes",
+        "cctv-remote_playlocal": "yes"
+      },
+      "expectedCause": "cctv-remote_codec"
+    }
+  ]
+}

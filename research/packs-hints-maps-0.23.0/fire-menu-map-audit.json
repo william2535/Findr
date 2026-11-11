@@ -1,0 +1,111 @@
+{
+  "release": "0.23.0",
+  "baselineCommit": "e8691d604f07fc882a803892d4c6ca7f8722a869",
+  "method": "Deterministic projection of the existing reviewed source data. Exact full reference paths are merged, parent paths are labelled reference groupings, and authored lessons remain practice tasks. No new firmware or hardware verification.",
+  "inputs": [
+    {
+      "file": "public/app/data/gent-vigilon.json",
+      "sha256": "d5455f274a579f6c9c694bb1a0a3ce79fb9b62a99ca49842651881af2b82ec23"
+    },
+    {
+      "file": "public/app/data/gent-lessons.json",
+      "sha256": "0d26eb81e889e76f85118b4686047d982aa9ae83d00805a45c96f0fb5ce7bd37"
+    },
+    {
+      "file": "public/app/data/gent-nano.json",
+      "sha256": "c7ffb137e87e1c655d1faa86c516b53b2cc7abd66504510a2d8645ea406888ac"
+    },
+    {
+      "file": "public/app/data/gent-nano-lessons.json",
+      "sha256": "bc4f81dce0580d7433c313a4490ce2c854f8825097e072781581b4b860187c7b"
+    },
+    {
+      "file": "public/app/data/conventional-fire.json",
+      "sha256": "28e9d860e3c832459006df43fb993c832cb3ee3c26e8f8679a4f31f17846e532"
+    }
+  ],
+  "maps": [
+    {
+      "id": "gent-vigilon",
+      "entries": 456,
+      "sourceDocuments": 4,
+      "sourcePages": 383,
+      "citedPages": 38,
+      "statuses": {
+        "reference-only": 375,
+        "implemented": 44,
+        "conflict": 4,
+        "conditional": 33
+      },
+      "hintLinks": 44,
+      "practiceTasks": 20,
+      "files": [
+        "gent-vigilon.json",
+        "gent-lessons.json"
+      ],
+      "referenceRows": 345,
+      "uniqueReferencePaths": 344
+    },
+    {
+      "id": "gent-nano",
+      "entries": 140,
+      "sourceDocuments": 3,
+      "sourcePages": 141,
+      "citedPages": 60,
+      "statuses": {
+        "reference-only": 85,
+        "implemented": 48,
+        "conditional": 7
+      },
+      "hintLinks": 48,
+      "practiceTasks": 28,
+      "files": [
+        "gent-nano.json",
+        "gent-nano-lessons.json"
+      ],
+      "referenceRows": 76,
+      "uniqueReferencePaths": 76
+    },
+    {
+      "id": "c-tec-cfp-standard",
+      "entries": 61,
+      "sourceDocuments": 2,
+      "sourcePages": 44,
+      "citedPages": 13,
+      "statuses": {
+        "reference-only": 6,
+        "implemented": 55
+      },
+      "hintLinks": 15,
+      "practiceTasks": 15,
+      "files": [
+        "conventional-fire.json"
+      ],
+      "profileId": "c-tec-cfp-standard"
+    },
+    {
+      "id": "kentec-sigma-cp",
+      "entries": 189,
+      "sourceDocuments": 2,
+      "sourcePages": 30,
+      "citedPages": 15,
+      "statuses": {
+        "reference-only": 79,
+        "implemented": 110
+      },
+      "hintLinks": 18,
+      "practiceTasks": 13,
+      "files": [
+        "conventional-fire.json"
+      ],
+      "profileId": "kentec-sigma-cp"
+    }
+  ],
+  "pageConventions": [
+    "Existing explicit printedPage labels are preserved.",
+    "Nano operator PDF pages equal printed pages per its existing reviewed source note.",
+    "Nano commissioning PDF page 85 is printed page 86; other unrecorded labels remain unknown.",
+    "Gent commissioning PDF pages 98–106 were independently checked against their printed footers in the matching a08baba…66998 PDF.",
+    "Unrecorded printed page labels remain “not recorded”; no offset is guessed."
+  ]
+}

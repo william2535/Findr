@@ -1,0 +1,2260 @@
+[
+  {
+    "id": "gent-0ba4cfc5de7c-p2-squad-base-loop-io",
+    "recordId": "gent-0ba4cfc5de7c",
+    "title": "S-Quad base loop wiring and programmable input/output",
+    "brand": "Gent",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "S4-700",
+      "S4-720",
+      "S4-780",
+      "S4-720-ST-VO",
+      "S4-715",
+      "S4-710",
+      "S4-770",
+      "S4-711",
+      "S4-771",
+      "S4-711-ST",
+      "S4-711-VO",
+      "S4-711-ST-VO",
+      "S4-911",
+      "S4-911-ST-VO"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "gent-squad-legacy-family",
+      "gent-s4-700-base"
+    ],
+    "pdfPage": 2,
+    "printedPage": "2",
+    "section": "In\u2013Out wiring to S-Quad bases; Programmable input/output",
+    "sourceUrl": "https://www.midlandfiresecurity.co.uk/wp-content/uploads/2019/05/gent-honeywell-S4-Sensor-Sounder-Speech-Strobe-rangedata-and-installation.pdf",
+    "sourceSha256": "85edede462352343e420789b5ffff962c54e48583236a9ad562db84a10d13c7c",
+    "edition": "4188-779 Issue 10, December 2013, Part 1",
+    "image": "wiring/gent-0ba4cfc5de7c-p2-squad-base-loop-io.webp",
+    "imageSha256": "12c61a04d7638ec7b499611062831a1f96ce080b76dc55482325606d593ab662",
+    "imageWidth": 1600,
+    "imageHeight": 2264,
+    "imageBytes": 377412,
+    "scope": "Legacy S-Quad range and S4-700 base listed in this 2013 manual; loop in/out, remote indicator and configurable monitored input examples. This is not the later S4T or EN54-23 VAD range.",
+    "notes": [
+      "The manual limits the conventional manual-call-point fire-input example to non-UK applications.",
+      "The 34703 slave relay and slave LED units are explicitly not supported with S-Quad; the source retains the stated remote-indicator and I/O limits."
+    ],
+    "keywords": [
+      "loop",
+      "base",
+      "remote LED",
+      "monitored input",
+      "S-Quad",
+      "S4-700"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-gent-9c36c632ebd9-p2-mcp-loop",
+    "recordId": "device-doc-gent-9c36c632ebd9",
+    "title": "S4-348XX call-point loop connections",
+    "brand": "Gent",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "S4-34800",
+      "S4-34805",
+      "S4-34842",
+      "S4-34845"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "gent-s4-348xx-mcp"
+    ],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "S4-348XX call-point loop connections",
+    "sourceUrl": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/manuals-and-guides/installation-guides/gent-112425/hon-ba-fire-4188-855.pdf?download=false",
+    "sourceSha256": "9c36c632ebd9d444656c0274139a4efd893e108b8104b8c7a16d532d4f4d122e",
+    "edition": "4188-855 Issue 7, 11/2021",
+    "image": "wiring/device-doc-gent-9c36c632ebd9-p2-mcp-loop.webp",
+    "imageSha256": "de33af0897f0b9d2b3f9f4a57bbd28e79815e50ff09a8ee517cdbf74183c9a61",
+    "imageWidth": 1600,
+    "imageHeight": 2262,
+    "imageBytes": 261192,
+    "scope": "Gent S4-34800, S4-34805, S4-34842 and S4-34845 addressable manual call points; loop in/out, 0V and earth-continuity drawing.",
+    "notes": [
+      "The source distinguishes glass and resettable-element versions and retains the back-box and cover instructions."
+    ],
+    "keywords": [
+      "call point",
+      "loop",
+      "earth continuity"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "apollo-0f80e75d8a7b-p1-xp95-discovery-base",
+    "recordId": "apollo-0f80e75d8a7b",
+    "title": "XP95 / Discovery mounting-base loop and common remote LED",
+    "brand": "Apollo",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "XP95/Discovery mounting base"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "apollo-xpert7-base-45681-210"
+    ],
+    "pdfPage": 1,
+    "printedPage": null,
+    "section": "XP95 / Discovery mounting-base loop and common remote LED",
+    "sourceUrl": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0002037_0001.pdf",
+    "sourceSha256": "a3b11944f1ddcf5ed62e6794c1ab12734508e7c229c900cba5f67fc3dfb27cbd",
+    "edition": "39214-481/2008/Issue 1",
+    "image": "wiring/apollo-0f80e75d8a7b-p1-xp95-discovery-base.webp",
+    "imageSha256": "cc5735d68b46d7369465dfc228de4183faf058b818bf15a6cd742521c54de43b",
+    "imageWidth": 2200,
+    "imageHeight": 1555,
+    "imageBytes": 134812,
+    "scope": "Apollo XP95/Discovery mounting-base schematic using L1, L2, R+, R\u2212 and EARTH. Applies to the mounting base shown; does not establish compatibility with other base types.",
+    "notes": [
+      "The complete source sheet contains two identical copies of the wiring leaflet."
+    ],
+    "keywords": [
+      "XPERT 7",
+      "loop",
+      "remote LED",
+      "base"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "apollo-33c5f6586bfd-p1-intelligent-mcp-loop",
+    "recordId": "apollo-33c5f6586bfd",
+    "title": "Intelligent manual call-point loop terminals",
+    "brand": "Apollo",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "terminal-layout",
+    "models": [
+      "SA5900-908",
+      "SA5900-928",
+      "SA5900-948",
+      "SA5900-903",
+      "SA5900-904",
+      "SA5900-905",
+      "SA5900-906",
+      "SA5900-907"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "apollo-intelligent-mcp-sa5900-908"
+    ],
+    "pdfPage": 1,
+    "printedPage": null,
+    "section": "Intelligent manual call-point loop terminals",
+    "sourceUrl": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0000082_0001.pdf",
+    "sourceSha256": "85927dcf376349796bde07cbfb3c6f881c9c73dae0fc66bbf3f1b70d084a88e0",
+    "edition": "39214-996/Issue 4",
+    "image": "wiring/apollo-33c5f6586bfd-p1-intelligent-mcp-loop.webp",
+    "imageSha256": "61eea829f40dd1d21e2dd90a9cbd6ccff79e8173fd3a95334370f33d1c8863d7",
+    "imageWidth": 2200,
+    "imageHeight": 1556,
+    "imageBytes": 355600,
+    "scope": "Apollo SA5900 intelligent call-point range listed in the source, including indoor and marine variants; L1/L2 loop terminal drawing.",
+    "notes": [
+      "The marine version has additional gasket/IP44 conditions on this page."
+    ],
+    "keywords": [
+      "manual call point",
+      "L1",
+      "L2"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "apollo-7e9f50267330-p2-io-input-examples",
+    "recordId": "apollo-7e9f50267330",
+    "title": "Intelligent I/O monitored-input and relay connections",
+    "brand": "Apollo",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "SA4700-102APO"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "apollo-intelligent-io-sa4700-102"
+    ],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "Intelligent I/O monitored-input and relay connections",
+    "sourceUrl": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0000707_0001.pdf",
+    "sourceSha256": "119d0f2e5aa91ce215c9d848ae9170a53d86fa21292f2b664e0bd5d828405cea",
+    "edition": "39215-159/Issue 3",
+    "image": "wiring/apollo-7e9f50267330-p2-io-input-examples.webp",
+    "imageSha256": "0f7aa811cd8717790ea1cb006eb66da4a343164f3077b78f603ef07bbc294865",
+    "imageWidth": 2200,
+    "imageHeight": 1556,
+    "imageBytes": 130370,
+    "scope": "SA4700-102APO input/output unit: standard monitored-input wiring and CoreProtocol-only normally-open/normally-closed examples.",
+    "notes": [
+      "Figures 2 and 3 are CoreProtocol-only options. The page retains the EN54-13 device-type and protocol limitations.",
+      "The source says the unit must not be used to switch mains voltages."
+    ],
+    "keywords": [
+      "interface",
+      "monitored input",
+      "relay",
+      "CoreProtocol",
+      "XP95"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "apollo-1288f40f26a2-p2-xpert8-base-loop",
+    "recordId": "apollo-1288f40f26a2",
+    "title": "XPERT 8 base loop, isolator and remote-LED wiring",
+    "brand": "Apollo",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "SA5000-200",
+      "SA5000-202",
+      "SA5000-204"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "apollo-xpert8-base-sa5000-200"
+    ],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "XPERT 8 base loop, isolator and remote-LED wiring",
+    "sourceUrl": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0001909_0001.pdf",
+    "sourceSha256": "ccea11eb907ee063520c10e0eb49a4d87c20adbea1dead28de1e05c020f87a6f",
+    "edition": "39215-005/Issue 3",
+    "image": "wiring/apollo-1288f40f26a2-p2-xpert8-base-loop.webp",
+    "imageSha256": "8e4c864a5e64d6a9fbdceff7e47f26fdd1b6764dcd50c45b6049b999f69ff25e",
+    "imageWidth": 2200,
+    "imageHeight": 1556,
+    "imageBytes": 160070,
+    "scope": "SA5000-200, SA5000-202 and SA5000-204 XPERT 8 bases; source distinguishes isolating and non-isolating detectors and a common remote LED.",
+    "notes": [],
+    "keywords": [
+      "XPERT 8",
+      "base",
+      "isolator",
+      "remote LED"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "apollo-00c3936bf0fc-p7-reach-loop-terminals",
+    "recordId": "apollo-00c3936bf0fc",
+    "title": "REACH loop interface: wired loop terminals",
+    "brand": "Apollo",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "terminal-layout",
+    "models": [
+      "RW1700-030APO"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "apollo-reach-loop-interface-rw1700-030"
+    ],
+    "pdfPage": 7,
+    "printedPage": "7 of 27",
+    "section": "REACH loop interface: wired loop terminals",
+    "sourceUrl": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0007831_0001.pdf",
+    "sourceSha256": "4b709b2c5ddf5f1d0b0684c738ba088a24dd77babd415d29a2a5f17a9a4b4d64",
+    "edition": "PP5099/2023/Issue 1; hub firmware 1.0.3",
+    "image": "wiring/apollo-00c3936bf0fc-p7-reach-loop-terminals.webp",
+    "imageSha256": "070ca99cf61725539ef5f262812e5bad4ac9be9954a2c96b4c0ac831a266d4e2",
+    "imageWidth": 1600,
+    "imageHeight": 2263,
+    "imageBytes": 373112,
+    "scope": "RW1700-030APO REACH loop interface wired loop IN/OUT and screen connections. This is the interface wiring, not wiring for the wireless field devices.",
+    "notes": [],
+    "keywords": [
+      "REACH",
+      "loop interface",
+      "screen",
+      "wireless"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "apollo-ae612a27ea60-p1-minidisc-terminals",
+    "recordId": "apollo-ae612a27ea60",
+    "title": "MiniDisc remote indicator A / B / C terminals",
+    "brand": "Apollo",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "terminal-layout",
+    "models": [
+      "53832-070",
+      "53832-072"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "apollo-minidisc-remote-indicator-53832-070"
+    ],
+    "pdfPage": 1,
+    "printedPage": null,
+    "section": "MiniDisc remote indicator A / B / C terminals",
+    "sourceUrl": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0007690_0001.pdf",
+    "sourceSha256": "df337873e8f8a88c52dc345dd873b6a024e94bd3bf0c8a2728a7ed8c596c49a4",
+    "edition": "39214-101 Issue 5A",
+    "image": "wiring/apollo-ae612a27ea60-p1-minidisc-terminals.webp",
+    "imageSha256": "a8757a5155b2b0f4aafc620ecd6edc82e2fd02f381bd6a48c19e069acfea8ba2",
+    "imageWidth": 3200,
+    "imageHeight": 2263,
+    "imageBytes": 152866,
+    "scope": "Apollo MiniDisc 53832-070 and 53832-072; polarity-sensitive A/B/C terminal layout and detector-range connection table.",
+    "notes": [
+      "Use the source table for the relevant detector range: A/C and B/C are different connections.",
+      "The full source sheet repeats the same leaflet eight times; no labels or limits have been removed."
+    ],
+    "keywords": [
+      "remote indicator",
+      "MiniDisc",
+      "polarity"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "apollo-e4ec6992b586-p4-beam-controller",
+    "recordId": "apollo-e4ec6992b586",
+    "title": "Auto-aligning beam controller and detector wiring",
+    "brand": "Apollo",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "SA7100-100APO"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "apollo-auto-align-beam-sa7100-100"
+    ],
+    "pdfPage": 4,
+    "printedPage": "4",
+    "section": "Auto-aligning beam controller and detector wiring",
+    "sourceUrl": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0001887_0001.pdf",
+    "sourceSha256": "127d2c19e1ebce71f86db686440146f83086def4feffa8ed8fc2889e82d6ecc9",
+    "edition": "39215-002/Issue 1",
+    "image": "wiring/apollo-e4ec6992b586-p4-beam-controller.webp",
+    "imageSha256": "a3351362a60a985a6e563dae77f5f5d83d2e8ae07fe7dc79a6e2600f7b78536e",
+    "imageWidth": 1600,
+    "imageHeight": 2263,
+    "imageBytes": 34448,
+    "scope": "Apollo Intelligent Auto Aligning Beam Detector: controller loop wiring and connections to detector 1 and detector 2 as shown in the user guide.",
+    "notes": [],
+    "keywords": [
+      "beam",
+      "controller",
+      "loop",
+      "detector"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "apollo-d632a36424b9-p3-ir3-base",
+    "recordId": "apollo-d632a36424b9",
+    "title": "IR3 flame-detector base connections",
+    "brand": "Apollo",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "55000-024"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "apollo-xp95-ir3-flame-55000-024"
+    ],
+    "pdfPage": 3,
+    "printedPage": "6 / 3",
+    "section": "IR3 flame-detector base connections",
+    "sourceUrl": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/base-mounted-ir3-installation-guide.pdf",
+    "sourceSha256": "f49637fcc5f08725063f69dd916e8e9a7fa01f25a3db6e16ae0319d678b7bcfc",
+    "edition": "PP2331/Issue 9, 2014",
+    "image": "wiring/apollo-d632a36424b9-p3-ir3-base.webp",
+    "imageSha256": "6fed1d4faef13b7801b5213a45fd19575e2d1f49636a2cfe728ac554a495881f",
+    "imageWidth": 2200,
+    "imageHeight": 1556,
+    "imageBytes": 129560,
+    "scope": "Apollo 55000-024 base-mounted IR3 flame detector: loop and remote-indicator connections, XPERT card and base terminals.",
+    "notes": [
+      "The source explicitly excludes compatibility with the 45681-321 isolator base."
+    ],
+    "keywords": [
+      "IR3",
+      "flame",
+      "XPERT",
+      "remote indicator"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "apollo-f27ce8642ca3-p2-xpander-loop",
+    "recordId": "apollo-f27ce8642ca3",
+    "title": "XPander diversity interface single and multiple loop connections",
+    "brand": "Apollo",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "XPA-IN-14050-APO"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "apollo-xpander-diversity-interface-xpa-in-14050"
+    ],
+    "pdfPage": 2,
+    "printedPage": "2 of 2",
+    "section": "XPander diversity interface single and multiple loop connections",
+    "sourceUrl": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0008051_0001.pdf",
+    "sourceSha256": "44fc1a96d1a83246a55e4a377be904a60c3d6f501f0c060ba0abc8081be4393a",
+    "edition": "39214-926/Issue 3, 26/06/2024",
+    "image": "wiring/apollo-f27ce8642ca3-p2-xpander-loop.webp",
+    "imageSha256": "8d75dc58cf5dbc41e77b3272f719855a11b1e8ca00999236658f8bc597809e29",
+    "imageWidth": 1600,
+    "imageHeight": 2263,
+    "imageBytes": 197530,
+    "scope": "XPA-IN-14050-APO diversity loop interface: wiring for a single loop module and multiple loop modules; up to five modules per loop as stated.",
+    "notes": [
+      "The wired loop interfaces serve wireless devices; the page does not define wiring for those wireless devices."
+    ],
+    "keywords": [
+      "XPander",
+      "diversity",
+      "loop interface",
+      "screen"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "apollo-9739bb7328db-p1-orbis-base-terminals",
+    "recordId": "apollo-9739bb7328db",
+    "title": "Orbis TimeSaver base terminal layout",
+    "brand": "Apollo",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "terminal-layout",
+    "models": [
+      "Orbis TimeSaver base",
+      "Orbis TimeSaver LX base",
+      "Orbis TimeSaver diode base"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "apollo-orbis-diode-base-orb-db-00003"
+    ],
+    "pdfPage": 1,
+    "printedPage": null,
+    "section": "Orbis TimeSaver base terminal layout",
+    "sourceUrl": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/Orbis-TimeSaver-Base-Installation-Guide.pdf",
+    "sourceSha256": "b6af18c178efc82a2ca3587bae2b7cd0cf064adc3a30166e4309243ca014f474",
+    "edition": "39214-208/Issue 3",
+    "image": "wiring/apollo-9739bb7328db-p1-orbis-base-terminals.webp",
+    "imageSha256": "feeda8d638a636fc8afbb6680cf2f9336371d7c4d2d9f0831641c8a4eafa06f5",
+    "imageWidth": 1600,
+    "imageHeight": 2256,
+    "imageBytes": 116882,
+    "scope": "Orbis TimeSaver base IN+, OUT+, IN/OUT\u2212, LED\u2212 and functional-earth terminal identification.",
+    "notes": [
+      "The source notes that LX and diode-base LX versions do not have a continuity link."
+    ],
+    "keywords": [
+      "Orbis",
+      "TimeSaver",
+      "base",
+      "remote LED"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "apollo-9739bb7328db-p2-orbis-base-led",
+    "recordId": "apollo-9739bb7328db",
+    "title": "Orbis base remote LED and diode-base wiring",
+    "brand": "Apollo",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "Orbis TimeSaver base",
+      "Orbis TimeSaver diode base",
+      "Orbis TimeSaver diode base LX"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "apollo-orbis-diode-base-orb-db-00003"
+    ],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "Orbis base remote LED and diode-base wiring",
+    "sourceUrl": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/Orbis-TimeSaver-Base-Installation-Guide.pdf",
+    "sourceSha256": "b6af18c178efc82a2ca3587bae2b7cd0cf064adc3a30166e4309243ca014f474",
+    "edition": "39214-208/Issue 3",
+    "image": "wiring/apollo-9739bb7328db-p2-orbis-base-led.webp",
+    "imageSha256": "71988cd4b56c74ef6e199350cd1f4dc91cb144d29361f56da3ef762883141d2c",
+    "imageWidth": 1600,
+    "imageHeight": 2256,
+    "imageBytes": 134176,
+    "scope": "Orbis TimeSaver wiring figures for remote LED and diode-base variants; use the depicted base type and diode arrangement.",
+    "notes": [],
+    "keywords": [
+      "Orbis",
+      "diode base",
+      "remote LED"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-c-tec-1a72f739e6d0-p1-cast-base",
+    "recordId": "device-doc-c-tec-1a72f739e6d0",
+    "title": "CA408 CAST detector-base loop wiring",
+    "brand": "C-TEC",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "CA408"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "c-tec-ca408-base"
+    ],
+    "pdfPage": 1,
+    "printedPage": null,
+    "section": "CA408 CAST detector-base loop wiring",
+    "sourceUrl": "https://c-techelp.zendesk.com/hc/en-gb/article_attachments/5979798085535",
+    "sourceSha256": "1a72f739e6d0b3655e75212dfc71fccde2c4f037fa3da4adc13217fecc624cca",
+    "edition": "DFU0002408 Rev 2, 05/08/2021",
+    "image": "wiring/device-doc-c-tec-1a72f739e6d0-p1-cast-base.webp",
+    "imageSha256": "96d6d0b6964c3e95015838c5e482a54a96be15ff76c498129d0797ea90e22665",
+    "imageWidth": 2200,
+    "imageHeight": 1556,
+    "imageBytes": 173792,
+    "scope": "CA408 detector base on a CAST-compatible panel: loop connections, cable screens and optional remote LED.",
+    "notes": [
+      "The terminal assignments are CAST-specific; they are not generic detector-base pinouts."
+    ],
+    "keywords": [
+      "CAST",
+      "base",
+      "remote LED",
+      "loop"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-c-tec-cb5ba501ef82-p1-cast-call-point",
+    "recordId": "device-doc-c-tec-cb5ba501ef82",
+    "title": "CA470 call-point loop connections",
+    "brand": "C-TEC",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "CA470",
+      "CA47067",
+      "CA470Y",
+      "CA470GR",
+      "CA470B",
+      "CA470W"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "c-tec-ca470-call-point"
+    ],
+    "pdfPage": 1,
+    "printedPage": "1\u20132 of 2",
+    "section": "CA470 call-point loop connections",
+    "sourceUrl": "https://www.eufireandsecurity.com/wp-content/uploads/2025/07/DFU4700000-CA470-CAST-Manual-Call-Point-Rev-9.pdf",
+    "sourceSha256": "cb5ba501ef827a576800999d9834b434dc72f70195918a663faae09a7c13027c",
+    "edition": "DFU4700000 Rev 9, 01/06/2024",
+    "image": "wiring/device-doc-c-tec-cb5ba501ef82-p1-cast-call-point.webp",
+    "imageSha256": "a09cb7beda19470e78df6a360d4df0cf0a9f29244bec478693ec09e403d7c7a3",
+    "imageWidth": 2200,
+    "imageHeight": 1556,
+    "imageBytes": 384828,
+    "scope": "C-TEC CA470 range CAST call-point connections, terminal table and IP67 mounting conditions.",
+    "notes": [],
+    "keywords": [
+      "CAST",
+      "manual call point",
+      "loop"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-c-tec-f18a6fbbfbc7-p1-cast-io-zone",
+    "recordId": "device-doc-c-tec-f18a6fbbfbc7",
+    "title": "CA730 loop, relay and monitored-zone wiring",
+    "brand": "C-TEC",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "CA730"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "c-tec-ca730-interface"
+    ],
+    "pdfPage": 1,
+    "printedPage": "1\u20132 of 2",
+    "section": "CA730 loop, relay and monitored-zone wiring",
+    "sourceUrl": "https://www.eufireandsecurity.com/wp-content/uploads/2025/09/DFU7300000-CA730-CAST-IO-Module-Rev-11.pdf",
+    "sourceSha256": "f18a6fbbfbc7fb6a1356c4458d959053c5bf51b953ed30553c95e0fda0679d89",
+    "edition": "DFU7300000 Rev 11, 01/06/2024",
+    "image": "wiring/device-doc-c-tec-f18a6fbbfbc7-p1-cast-io-zone.webp",
+    "imageSha256": "32b9c343bef6d50febc93a5da2ecc49fc64018a80f4d6f17e3f346bdd404abca",
+    "imageWidth": 2400,
+    "imageHeight": 1697,
+    "imageBytes": 266278,
+    "scope": "CA730 CAST I/O module loop, switched relay and monitored zone input; source shows the specified end-of-line capacitor and manual-call-point fire resistor.",
+    "notes": [
+      "The input uses the supplied end-of-line capacitor and the source-specific 470\u03a9 call-point arrangement. Follow the depicted circuit and supported equipment."
+    ],
+    "keywords": [
+      "CAST",
+      "interface",
+      "relay",
+      "zone",
+      "end of line"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-c-tec-df7988f16dc3-p2-cast-base-sounder",
+    "recordId": "device-doc-c-tec-df7988f16dc3",
+    "title": "CAST sounder/VAD base loop and detector connections",
+    "brand": "C-TEC",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "CA431A/W",
+      "CA432A/W",
+      "CA456A/W",
+      "CA459A/W",
+      "CA460A/W"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "c-tec-ca459a-w-vad-base"
+    ],
+    "pdfPage": 2,
+    "printedPage": "2\u20133 of 4",
+    "section": "CAST sounder/VAD base loop and detector connections",
+    "sourceUrl": "https://www.modernalarm.hu/dok/c-tec/DFU4315010-CAST-Base-Mount-Sounder-VAD-Range-Rev-15.pdf",
+    "sourceSha256": "df7988f16dc371b405b3661cea2ae78e26bf120ad6081eeda22b5e9c4143bbea",
+    "edition": "DFU4315010 Rev 15, 01/06/22",
+    "image": "wiring/device-doc-c-tec-df7988f16dc3-p2-cast-base-sounder.webp",
+    "imageSha256": "06095065f2017ade535d1731be0555526cc07c78de1e50d3397b76789745dc6f",
+    "imageWidth": 2400,
+    "imageHeight": 1697,
+    "imageBytes": 277678,
+    "scope": "CA431A/W, CA432A/W, CA456A/W, CA459A/W and CA460A/W CAST base devices; loop terminals and optional CAST detector-base connection.",
+    "notes": [
+      "The source requires BF431QCP Quick Connect Plate for the stated EN54 compliance and specifies the preferred loop-through arrangement."
+    ],
+    "keywords": [
+      "CAST",
+      "sounder",
+      "VAD",
+      "base",
+      "loop"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-aico-6c128c0b705a-p26-ei3000-interconnect",
+    "recordId": "device-doc-aico-6c128c0b705a",
+    "title": "Ei3014 / Ei3016 / Ei3024 mains interconnection",
+    "brand": "Aico",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "Ei3014",
+      "Ei3016",
+      "Ei3024"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "aico-ei3014",
+      "aico-ei3016",
+      "aico-ei3024"
+    ],
+    "pdfPage": 26,
+    "printedPage": "26",
+    "section": "Ei3014 / Ei3016 / Ei3024 mains interconnection",
+    "sourceUrl": "https://www.aico.co.uk/wp-content/uploads/2025/02/B20224-R4-Ei3014\uf0223016\uf0223024-UK-SERIES-UC-ENG.pdf",
+    "sourceSha256": "6c128c0b705ac601a55a5902c3f788932d72df8e92622a633fb96607d6bcfb66",
+    "edition": "B20224 Rev4, 2025",
+    "image": "wiring/device-doc-aico-6c128c0b705a-p26-ei3000-interconnect.webp",
+    "imageSha256": "708402ea88157bc0154d0b8998f5df277645edb17669519c433a506e3e02b73d",
+    "imageWidth": 1600,
+    "imageHeight": 1280,
+    "imageBytes": 76730,
+    "scope": "Ei3014, Ei3016 and Ei3024: Figure 9 live, neutral and hard-wired IC interconnect drawing.",
+    "notes": [
+      "This is a 230V mains-alarm interconnect, not an addressable fire-panel loop. The source treats the IC wire as live and retains its length and occupancy limitations."
+    ],
+    "keywords": [
+      "230V",
+      "interconnect",
+      "IC",
+      "mains alarm"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-aico-7dbcfdf98ccb-p20-ei3030-base-terminals",
+    "recordId": "device-doc-aico-7dbcfdf98ccb",
+    "title": "Ei3030 mains-base terminals",
+    "brand": "Aico",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "terminal-layout",
+    "models": [
+      "Ei3030"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "aico-ei3030"
+    ],
+    "pdfPage": 20,
+    "printedPage": "20",
+    "section": "Ei3030 mains-base terminals",
+    "sourceUrl": "https://www.aico.co.uk/wp-content/uploads/2025/02/B20665-R4-Ei3030-UK-SERIES-UC-ENG.pdf",
+    "sourceSha256": "7dbcfdf98ccb6bac7fa482d85f19a6c5450e55dd323984e8b5cb049861cae124",
+    "edition": "B20665 Rev4, 2025",
+    "image": "wiring/device-doc-aico-7dbcfdf98ccb-p20-ei3030-base-terminals.webp",
+    "imageSha256": "371d899ab87f3a1b8616e78a4c1c6caa5b708d893e33b6692c6628b469312b93",
+    "imageWidth": 1600,
+    "imageHeight": 1280,
+    "imageBytes": 107088,
+    "scope": "Ei3030 Easi-Fit base terminal drawing: live, neutral, interconnect and earth parking terminal.",
+    "notes": [
+      "The earth terminal is for safely parking an earth conductor; the source states the alarm itself does not need to be earthed."
+    ],
+    "keywords": [
+      "mains",
+      "interconnect",
+      "base",
+      "IC"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-aico-7dbcfdf98ccb-p24-ei3030-interconnect",
+    "recordId": "device-doc-aico-7dbcfdf98ccb",
+    "title": "Ei3030 hard-wired alarm interconnection",
+    "brand": "Aico",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "Ei3030"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "aico-ei3030"
+    ],
+    "pdfPage": 24,
+    "printedPage": "24",
+    "section": "Ei3030 hard-wired alarm interconnection",
+    "sourceUrl": "https://www.aico.co.uk/wp-content/uploads/2025/02/B20665-R4-Ei3030-UK-SERIES-UC-ENG.pdf",
+    "sourceSha256": "7dbcfdf98ccb6bac7fa482d85f19a6c5450e55dd323984e8b5cb049861cae124",
+    "edition": "B20665 Rev4, 2025",
+    "image": "wiring/device-doc-aico-7dbcfdf98ccb-p24-ei3030-interconnect.webp",
+    "imageSha256": "3943f08b6f2f008bfaac65f96ba4067544030cee7db9f027e5c2670fa64a7c19",
+    "imageWidth": 1600,
+    "imageHeight": 1280,
+    "imageBytes": 104640,
+    "scope": "Ei3030 Figure 8 live, neutral and IC interconnection; separate source notes cover optional SmartLINK/RF hybrid operation.",
+    "notes": [
+      "This is a mains-alarm interconnect. The source requires the interconnect conductor to be treated as live and retains its maximum length and single-family-living-unit conditions."
+    ],
+    "keywords": [
+      "230V",
+      "interconnect",
+      "IC"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-aico-8f8b5876b06d-p15-ei140e-interconnect",
+    "recordId": "device-doc-aico-8f8b5876b06d",
+    "title": "Ei140e hard-wired alarm interconnection",
+    "brand": "Aico",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "Ei144e",
+      "Ei146e"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "aico-ei144e",
+      "aico-ei146e"
+    ],
+    "pdfPage": 15,
+    "printedPage": "15",
+    "section": "Ei140e hard-wired alarm interconnection",
+    "sourceUrl": "https://www.aico.co.uk/wp-content/uploads/2021/06/Ei140e-Series.pdf",
+    "sourceSha256": "8f8b5876b06de0e1fd9a920a4da3823b738508dad2334c924d2ebdf3d089e852",
+    "edition": "B20412 Rev2, 2023",
+    "image": "wiring/device-doc-aico-8f8b5876b06d-p15-ei140e-interconnect.webp",
+    "imageSha256": "e364467b583fdf64efb611b71eeed8d24ac8b6117b7cdbbd3889c16f436eef82",
+    "imageWidth": 1600,
+    "imageHeight": 4000,
+    "imageBytes": 162606,
+    "scope": "Ei144e and Ei146e mains alarms: Figure 7 live, neutral and IC wiring; optional Ei168RC radio mounting plate is discussed separately.",
+    "notes": [
+      "This is mains-alarm wiring, not a fire-panel loop. The interconnect wire must be treated as live; source cable and occupancy limits remain visible."
+    ],
+    "keywords": [
+      "230V",
+      "interconnect",
+      "IC",
+      "Ei140e"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "aico-3940aa649cda-p1-mcp401rc-interconnect",
+    "recordId": "aico-3940aa649cda",
+    "title": "MCP401RC mains-alarm call-point wiring",
+    "brand": "Aico",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "MCP401RC"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "aico-mcp401rc"
+    ],
+    "pdfPage": 1,
+    "printedPage": "1",
+    "section": "MCP401RC mains-alarm call-point wiring",
+    "sourceUrl": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/MCP401RC-Instructions-Rev2.pdf",
+    "sourceSha256": "9bc26ac591276431fc756d47895d07e54246fced1e0ceb42c91c26e435ea679e",
+    "edition": "B16073 Rev 2, 14/10/2008",
+    "image": "wiring/aico-3940aa649cda-p1-mcp401rc-interconnect.webp",
+    "imageSha256": "8902b5f2e92a68df1aec07ddc9e0b2e9fee97ce8aa88c4ea4441331faf9a4940",
+    "imageWidth": 1600,
+    "imageHeight": 2265,
+    "imageBytes": 151408,
+    "scope": "MCP401RC call point connected to the compatible Ei alarm models expressly listed on this 2008 sheet.",
+    "notes": [
+      "The source lists legacy compatible alarm models; it does not establish compatibility with every later Ei alarm. Maximum four MCP401RC units plus twelve interconnect alarms is the stated arrangement."
+    ],
+    "keywords": [
+      "MCP401RC",
+      "interconnect",
+      "mains",
+      "call point"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "protec-ce38ec46cb37-p2-damper-module",
+    "recordId": "protec-ce38ec46cb37",
+    "title": "6000/DCM damper module connection diagram",
+    "brand": "Protec",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "6000/DCM"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "protec-6000-dcm"
+    ],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "6000/DCM damper module connection diagram",
+    "sourceUrl": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-DCM-Smoke-Damper-Module.pdf",
+    "sourceSha256": "1e9752d8dc1b3d2adaf23b78f881835a4528439ba192c13f5a9168b2800c4e22",
+    "edition": "MED2304 Issue 2, \u00a9 2019\u20132023",
+    "image": "wiring/protec-ce38ec46cb37-p2-damper-module.webp",
+    "imageSha256": "e7004b785f5633920266853edfbe7754759d7804dcf1dcab4985a5ebe079fbf8",
+    "imageWidth": 1600,
+    "imageHeight": 2263,
+    "imageBytes": 141740,
+    "scope": "Protec 6000/DCM: loop, monitored limit-switch inputs, damper actuator and external control connections; 230V AC or 24V DC supply options as labelled.",
+    "notes": [
+      "Supply and actuator-output options differ: the source states a 230V supply supports the shown 230V/24V operation, while a 24V DC input supports a 24V actuator. Refer to RDM0028 as directed."
+    ],
+    "keywords": [
+      "damper",
+      "actuator",
+      "limit switch",
+      "loop",
+      "6000/DCM"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "protec-502abea1875d-p2-protec-common-base",
+    "recordId": "protec-502abea1875d",
+    "title": "3000PLUS / 6000PLUS base wiring",
+    "brand": "Protec",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "3000PLUS/BASE",
+      "6000PLUS/BASE"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "protec-6000plus-base"
+    ],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "3000PLUS / 6000PLUS base wiring",
+    "sourceUrl": "https://www.protec.co.uk/wp-content/uploads/2020/04/3000-6000PLUS-Standard-Base.pdf",
+    "sourceSha256": "906a3a6f0db18034e7850ba10ba724e409cefc6b7d76449d3e23a22d2a7aa7f5",
+    "edition": "MED2042 Issue 2, \u00a9 2015\u20132019",
+    "image": "wiring/protec-502abea1875d-p2-protec-common-base.webp",
+    "imageSha256": "fa2ba31d8d86005a468a6d449f51a12ec4478cbafd57f3f8c5dfa8395589d96f",
+    "imageWidth": 1600,
+    "imageHeight": 2263,
+    "imageBytes": 176812,
+    "scope": "Separate manufacturer diagrams for 3000PLUS conventional zone and 6000PLUS addressable loop bases, including optional remote LED and screen continuity.",
+    "notes": [
+      "The diode shown belongs to the 3000PLUS zone-base drawing; do not transfer it to the separate 6000PLUS loop drawing."
+    ],
+    "keywords": [
+      "base",
+      "remote LED",
+      "3000PLUS",
+      "6000PLUS",
+      "loop",
+      "zone"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "fike-44f428530108-p1-twinflex-multipoint",
+    "recordId": "fike-44f428530108",
+    "title": "Twinflex Multipoint ASD zone wiring",
+    "brand": "Fike",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "204-0003",
+      "204-0001",
+      "204-0012"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "fike-twinflex-multipoint-asd"
+    ],
+    "pdfPage": 1,
+    "printedPage": null,
+    "section": "Twinflex Multipoint ASD zone wiring",
+    "sourceUrl": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/TwinflexPro/Conventional%20Control%20Panels/Manuals/TF%20MP%20ASD%20204-0001%20204-0003%20204-0012%20InstallInstructs%2026-0947-13.pdf",
+    "sourceSha256": "c17442657a48c50feee3efe4a0e03290d03cfc5b3b3b984882935de5ecb4f79a",
+    "edition": "Document 26-0947-13",
+    "image": "wiring/fike-44f428530108-p1-twinflex-multipoint.webp",
+    "imageSha256": "dc00072ce00cd691297ea4edb0b46ee0cfd1c1391758fb9043c4c1665f7ef5b8",
+    "imageWidth": 1600,
+    "imageHeight": 2263,
+    "imageBytes": 372976,
+    "scope": "204-0003, 204-0001 and 204-0012 Twinflex Multipoint ASD: detector-base terminals and two-wire zone connection schematic.",
+    "notes": [
+      "The source states this Multipoint ASD is not compatible as an end-of-line device on older V3 Twinflex panels. The last device uses its EOL setting, not an added resistor or capacitor."
+    ],
+    "keywords": [
+      "Twinflex",
+      "Multipoint",
+      "ASD",
+      "two wire",
+      "zone"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "fike-77a5c9cbeaa2-p1-sita-multipoint-terminals",
+    "recordId": "fike-77a5c9cbeaa2",
+    "title": "Sita Multipoint ASD base terminals",
+    "brand": "Fike",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "terminal-layout",
+    "models": [
+      "205-0003",
+      "205-0001",
+      "205-0012"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "fike-sita-multipoint-asd"
+    ],
+    "pdfPage": 1,
+    "printedPage": null,
+    "section": "Sita Multipoint ASD base terminals",
+    "sourceUrl": "https://my.fike.com/_fike_new_docs/8a702f3e-4883-42bf-8eda-0388fdd005c4.pdf",
+    "sourceSha256": "e739faedc4b92569c9ff79ee2f090b6e1edb1e792cd1c93567bced754e4519b9",
+    "edition": "Document 26-0874-14",
+    "image": "wiring/fike-77a5c9cbeaa2-p1-sita-multipoint-terminals.webp",
+    "imageSha256": "34d3cecc2b93941c58f447a81d91e7329f5b01dd8a639f704b649a38926a9abe",
+    "imageWidth": 1600,
+    "imageHeight": 2263,
+    "imageBytes": 282392,
+    "scope": "205-0003, 205-0001 and 205-0012 Sita Multipoint ASD: loop IN/OUT, auxiliary and screen terminal identification.",
+    "notes": [
+      "This is the Sita addressable loop range. The source disallows spurs and distinguishes auxiliary connections from the loop terminals."
+    ],
+    "keywords": [
+      "Sita",
+      "Multipoint",
+      "ASD",
+      "loop",
+      "base"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "fike-6fec87fdf63f-p2-twinflex-call-point",
+    "recordId": "fike-6fec87fdf63f",
+    "title": "Twinflex call-point two-wire zone connections",
+    "brand": "Fike",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "402-0006",
+      "402-0007"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "fike-twinflex-mcp-402-0006"
+    ],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "Twinflex call-point two-wire zone connections",
+    "sourceUrl": "https://my.fike.com/_fike_new_docs/02181c3b-6298-45dc-af80-9816716c3522.pdf",
+    "sourceSha256": "8b809a677ec11f3350d2ae9dbaab3f7fcba64ed9bad8e8b3c210518a030321d4",
+    "edition": "Document 26-1834-02",
+    "image": "wiring/fike-6fec87fdf63f-p2-twinflex-call-point.webp",
+    "imageSha256": "0dbbfbfda4e106d7f38b8e242cf131282593d7cb10182fd0dfcfe47675a76c1d",
+    "imageWidth": 1600,
+    "imageHeight": 2263,
+    "imageBytes": 152872,
+    "scope": "Twinflex standard and weatherproof manual call points: positive, negative and screen zone connection schematic.",
+    "notes": [
+      "The final device must have its EOL signal enabled. The source says not to add another manufacturer\u2019s end-of-line device, resistor or capacitor."
+    ],
+    "keywords": [
+      "Twinflex",
+      "call point",
+      "two wire",
+      "zone"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "fike-594585b67819-p2-sita-call-point-terminals",
+    "recordId": "fike-594585b67819",
+    "title": "Sita call-point loop terminals",
+    "brand": "Fike",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "terminal-layout",
+    "models": [
+      "403-0006",
+      "403-0007"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "fike-sita-mcp-403-0006"
+    ],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "Sita call-point loop terminals",
+    "sourceUrl": "https://my.fike.com/_fike_new_docs/1ab59b39-88d2-4b6f-8805-7786a80534bd.pdf",
+    "sourceSha256": "b367bc185ed3d86bc08ac009e96d714a75d80d96f05fbf85e25d63bcb1085f32",
+    "edition": "Document 26-1835-02",
+    "image": "wiring/fike-594585b67819-p2-sita-call-point-terminals.webp",
+    "imageSha256": "b936fea49a6fc9c4c2f27abb824f8bf8df63e9a03c4c1e7220d929443c8d782b",
+    "imageWidth": 1600,
+    "imageHeight": 2263,
+    "imageBytes": 161914,
+    "scope": "403-0006 and 403-0007 Sita manual call points: red loop IN+, yellow OUT+, blue negative and E screen terminal drawing.",
+    "notes": [
+      "These are Sita loop terminals, not the Twinflex zone connections."
+    ],
+    "keywords": [
+      "Sita",
+      "call point",
+      "loop"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "fike-078df373e6a6-p2-twinflex-io-zone",
+    "recordId": "fike-078df373e6a6",
+    "title": "Twinflex I/O module zone wiring",
+    "brand": "Fike",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "802-0006"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "fike-twinflex-io-802-0006"
+    ],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "Twinflex I/O module zone wiring",
+    "sourceUrl": "https://my.fike.com/_fike_new_docs/0373c9c3-e933-412e-aa08-7fb8a84d6a5d.pdf",
+    "sourceSha256": "2c635d4768d96605c2fdbe0c37604c45b1e062c1a39304f1fb1fef95fb4c07c1",
+    "edition": "Document 26-1034-13",
+    "image": "wiring/fike-078df373e6a6-p2-twinflex-io-zone.webp",
+    "imageSha256": "eae803c419348274a62ba7732e4194d45895e857cc327dd6d273b4d171b367d3",
+    "imageWidth": 1600,
+    "imageHeight": 2263,
+    "imageBytes": 124844,
+    "scope": "802-0006 Twinflex I/O module zone IN/OUT, screen and end-of-line switch connections.",
+    "notes": [
+      "The manual supports Twinflex V3 and Twinflex Pro panels and explicitly excludes Twinflex SRP. Panel-version-dependent output behavior is described on PDF page 4."
+    ],
+    "keywords": [
+      "Twinflex",
+      "I/O",
+      "zone",
+      "end of line"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "fike-078df373e6a6-p3-twinflex-io-input-output",
+    "recordId": "fike-078df373e6a6",
+    "title": "Twinflex I/O input and relay wiring examples",
+    "brand": "Fike",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "802-0006"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "fike-twinflex-io-802-0006"
+    ],
+    "pdfPage": 3,
+    "printedPage": null,
+    "section": "Twinflex I/O input and relay wiring examples",
+    "sourceUrl": "https://my.fike.com/_fike_new_docs/0373c9c3-e933-412e-aa08-7fb8a84d6a5d.pdf",
+    "sourceSha256": "2c635d4768d96605c2fdbe0c37604c45b1e062c1a39304f1fb1fef95fb4c07c1",
+    "edition": "Document 26-1034-13",
+    "image": "wiring/fike-078df373e6a6-p3-twinflex-io-input-output.webp",
+    "imageSha256": "b30b75d201ec4d9cbf5af2e33c9c92cd29aaea5471b091e28a7d460977427ffc",
+    "imageWidth": 1600,
+    "imageHeight": 2263,
+    "imageBytes": 181106,
+    "scope": "802-0006 Twinflex I/O module examples for inputs and output relays with and without fault monitoring; external EOL switch positions are preserved.",
+    "notes": [
+      "The source prohibits mixing mains and low-voltage equipment on one module; separate dedicated modules are required.",
+      "The manual explicitly excludes Twinflex SRP. Its page 4 states the Twinflex V3 / Pro version-dependent output behavior."
+    ],
+    "keywords": [
+      "Twinflex",
+      "relay",
+      "fault monitoring",
+      "EOL",
+      "input"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "fike-1b2de37e6684-p1-sita-io-loop",
+    "recordId": "fike-1b2de37e6684",
+    "title": "Sita I/O module loop connection schematic",
+    "brand": "Fike",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "803-0006"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "fike-sita-io-803-0006"
+    ],
+    "pdfPage": 1,
+    "printedPage": null,
+    "section": "Sita I/O module loop connection schematic",
+    "sourceUrl": "https://my.fike.com/_fike_new_docs/56377394-750b-4543-90b1-16a1d520c9fc.pdf",
+    "sourceSha256": "be75c97fe95fcd29cd5eb2200711e03b6b0f33455a7f9f40ea561d299ef6bf6f",
+    "edition": "Document 26-0555-16",
+    "image": "wiring/fike-1b2de37e6684-p1-sita-io-loop.webp",
+    "imageSha256": "2c027161f16de2aeef56754c1168c098ab31be809f732d1ed6b4d8177a6f7458",
+    "imageWidth": 1600,
+    "imageHeight": 2263,
+    "imageBytes": 337368,
+    "scope": "803-0006 Sita I/O module: addressable loop connections and terminal board diagram.",
+    "notes": [
+      "The source specifies a loop returning to the control panel and does not permit spurs."
+    ],
+    "keywords": [
+      "Sita",
+      "I/O",
+      "loop",
+      "relay"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "fike-1b2de37e6684-p2-sita-io-examples",
+    "recordId": "fike-1b2de37e6684",
+    "title": "Sita I/O fault-monitored input/output examples",
+    "brand": "Fike",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "803-0006"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "fike-sita-io-803-0006"
+    ],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "Sita I/O fault-monitored input/output examples",
+    "sourceUrl": "https://my.fike.com/_fike_new_docs/56377394-750b-4543-90b1-16a1d520c9fc.pdf",
+    "sourceSha256": "be75c97fe95fcd29cd5eb2200711e03b6b0f33455a7f9f40ea561d299ef6bf6f",
+    "edition": "Document 26-0555-16",
+    "image": "wiring/fike-1b2de37e6684-p2-sita-io-examples.webp",
+    "imageSha256": "bb0273e8d0f593050e65b1180b2f892f9774b59a37ac3c0be8c1031d20fb481a",
+    "imageWidth": 1600,
+    "imageHeight": 2263,
+    "imageBytes": 193484,
+    "scope": "803-0006 Sita I/O module: relay with or without fault monitoring and fault-monitored input examples, including EOL-switch states.",
+    "notes": [
+      "The source says this device may be an input or an output, but not both. Relay 1 and relay 2 have different voltage/current ratings shown on the drawings."
+    ],
+    "keywords": [
+      "Sita",
+      "I/O",
+      "relay",
+      "fault monitoring",
+      "EOL"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "fike-0a81dc0dbbc1-p1-sita-soundpoint-terminals",
+    "recordId": "fike-0a81dc0dbbc1",
+    "title": "Sita SoundPoint loop terminals",
+    "brand": "Fike",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "terminal-layout",
+    "models": [
+      "313-0001",
+      "313-0002"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "fike-sita-soundpoint-313-0001"
+    ],
+    "pdfPage": 1,
+    "printedPage": null,
+    "section": "Sita SoundPoint loop terminals",
+    "sourceUrl": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/Duonet%20&%20Quadnet/Addressable%20Control%20Panels/Manuals/Sita%20SoundPoint%20313-0001%20313-0002%20InstallInstructs%2026-0190-13.pdf",
+    "sourceSha256": "a6bdb8ddee689f01836a8190b82426ec5be312aa9348dfe01fb8ddf481982aaf",
+    "edition": "Document 26-0190-13",
+    "image": "wiring/fike-0a81dc0dbbc1-p1-sita-soundpoint-terminals.webp",
+    "imageSha256": "1fbd8edd1630d7dcbf94ac8162f392c9f794b28b053e27fc01354ab7afafe96e",
+    "imageWidth": 1600,
+    "imageHeight": 2263,
+    "imageBytes": 366874,
+    "scope": "313-0001 red and 313-0002 white Sita SoundPoint: loop IN+, OUT+, negative and screen terminals.",
+    "notes": [
+      "The source specifies a loop circuit and disallows spurs."
+    ],
+    "keywords": [
+      "Sita",
+      "SoundPoint",
+      "sounder",
+      "loop"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "fike-538db8f6d1d5-p2-twinflex-vad-zone",
+    "recordId": "fike-538db8f6d1d5",
+    "title": "Twinflex sounder/VAD zone wiring",
+    "brand": "Fike",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "F0296336"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "fike-twinflex-sounder-vad-f0296336"
+    ],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "Twinflex sounder/VAD zone wiring",
+    "sourceUrl": "https://my.fike.com/_fike_new_docs/941829b3-1802-4861-8ca9-ac3c3bcdfa88.pdf",
+    "sourceSha256": "fb3af336d1852b905ecd93f0c8661105ededf8dea5b4ba54337e447c48218960",
+    "edition": "Document 26-1878-04",
+    "image": "wiring/fike-538db8f6d1d5-p2-twinflex-vad-zone.webp",
+    "imageSha256": "ec14a9d61872093743d2b97ad451aea0fbb9d476915c4549c04cc835cfe7a575",
+    "imageWidth": 1600,
+    "imageHeight": 2263,
+    "imageBytes": 423148,
+    "scope": "F0296336 Twinflex sounder/VAD: numbered base terminals and two-wire zone IN/OUT diagram.",
+    "notes": [
+      "The source distinguishes the circuit screen from building earth and specifies end-of-line configuration on the last device."
+    ],
+    "keywords": [
+      "Twinflex",
+      "sounder",
+      "VAD",
+      "two wire",
+      "zone"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-the-fire-beam-company-ef8e716e192b-p7-beam-single-head",
+    "recordId": "device-doc-the-fire-beam-company-ef8e716e192b",
+    "title": "Fire Beam BLUE: single head on a zone",
+    "brand": "The Fire Beam Company",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "connection-example",
+    "models": [
+      "FIREBEAM BLUE"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "fire-beam-blue"
+    ],
+    "pdfPage": 7,
+    "printedPage": "7",
+    "section": "Fire Beam BLUE: single head on a zone",
+    "sourceUrl": "https://thefirebeamcompany.com/user-zone/pdf/Fire-Beam-BLUE-User-Guide-0165-05.pdf",
+    "sourceSha256": "ef8e716e192bc1d7120129374698f6ffd1f4f4560de79321f589048ee297becd",
+    "edition": "0165-05, Rev05, 22 April 2026",
+    "image": "wiring/device-doc-the-fire-beam-company-ef8e716e192b-p7-beam-single-head.webp",
+    "imageSha256": "ba80cdf6b09def7cae5fff71ba11989d36e7241ad9016fb9f465720774eb91bb",
+    "imageWidth": 1600,
+    "imageHeight": 1600,
+    "imageBytes": 171540,
+    "scope": "Fire Beam BLUE conventional zone connection example for single head; power, zone and fire/fault interfaces as drawn.",
+    "notes": [
+      "FIRE and EOL components must suit the connected control panel; this generic manufacturer example is not a verified pinout for every panel."
+    ],
+    "keywords": [
+      "beam",
+      "conventional",
+      "zone",
+      "EOL",
+      "fire relay"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-the-fire-beam-company-ef8e716e192b-p8-beam-multiple-beams",
+    "recordId": "device-doc-the-fire-beam-company-ef8e716e192b",
+    "title": "Fire Beam BLUE: multiple beams on a zone",
+    "brand": "The Fire Beam Company",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "connection-example",
+    "models": [
+      "FIREBEAM BLUE"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "fire-beam-blue"
+    ],
+    "pdfPage": 8,
+    "printedPage": "8",
+    "section": "Fire Beam BLUE: multiple beams on a zone",
+    "sourceUrl": "https://thefirebeamcompany.com/user-zone/pdf/Fire-Beam-BLUE-User-Guide-0165-05.pdf",
+    "sourceSha256": "ef8e716e192bc1d7120129374698f6ffd1f4f4560de79321f589048ee297becd",
+    "edition": "0165-05, Rev05, 22 April 2026",
+    "image": "wiring/device-doc-the-fire-beam-company-ef8e716e192b-p8-beam-multiple-beams.webp",
+    "imageSha256": "6d49021cf18c1ba82a0dc83fecb8892ac7ef2b5011aae344e551e3710697ded2",
+    "imageWidth": 1600,
+    "imageHeight": 1600,
+    "imageBytes": 177988,
+    "scope": "Fire Beam BLUE conventional zone connection example for multiple beams; power, zone and fire/fault interfaces as drawn.",
+    "notes": [
+      "FIRE and EOL components must suit the connected control panel; this generic manufacturer example is not a verified pinout for every panel.",
+      "The multiple-beam arrangement uses the isolation diode and last-beam EOL placement shown in this manual."
+    ],
+    "keywords": [
+      "beam",
+      "conventional",
+      "zone",
+      "EOL",
+      "fire relay"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-the-fire-beam-company-9ea9d54e1f2c-p5-beam-single-head",
+    "recordId": "device-doc-the-fire-beam-company-9ea9d54e1f2c",
+    "title": "Fire Beam Xtra: single head on a zone",
+    "brand": "The Fire Beam Company",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "connection-example",
+    "models": [
+      "FIREBEAM XTRA"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "fire-beam-xtra"
+    ],
+    "pdfPage": 5,
+    "printedPage": "5",
+    "section": "Fire Beam Xtra: single head on a zone",
+    "sourceUrl": "https://thefirebeamcompany.com/user-zone/pdf/Fire-Beam-Xtra-User-Guide-0025-12.pdf",
+    "sourceSha256": "9ea9d54e1f2c6ea887646ef03e63cac1532e471c496be732ed009a48fa6b66e8",
+    "edition": "0025-12, Rev12, 22 April 2026",
+    "image": "wiring/device-doc-the-fire-beam-company-9ea9d54e1f2c-p5-beam-single-head.webp",
+    "imageSha256": "2c436652dba7b9f0fd2ad0bdc0ae06db016acf67f3981d4cc26158f86d34f570",
+    "imageWidth": 1600,
+    "imageHeight": 1950,
+    "imageBytes": 254392,
+    "scope": "Fire Beam Xtra conventional zone connection example for single head; power, zone and fire/fault interfaces as drawn.",
+    "notes": [
+      "FIRE and EOL components must suit the connected control panel; this generic manufacturer example is not a verified pinout for every panel."
+    ],
+    "keywords": [
+      "beam",
+      "conventional",
+      "zone",
+      "EOL",
+      "fire relay"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-the-fire-beam-company-9ea9d54e1f2c-p6-beam-multiple-beams",
+    "recordId": "device-doc-the-fire-beam-company-9ea9d54e1f2c",
+    "title": "Fire Beam Xtra: multiple beams on a zone",
+    "brand": "The Fire Beam Company",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "connection-example",
+    "models": [
+      "FIREBEAM XTRA"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "fire-beam-xtra"
+    ],
+    "pdfPage": 6,
+    "printedPage": "6",
+    "section": "Fire Beam Xtra: multiple beams on a zone",
+    "sourceUrl": "https://thefirebeamcompany.com/user-zone/pdf/Fire-Beam-Xtra-User-Guide-0025-12.pdf",
+    "sourceSha256": "9ea9d54e1f2c6ea887646ef03e63cac1532e471c496be732ed009a48fa6b66e8",
+    "edition": "0025-12, Rev12, 22 April 2026",
+    "image": "wiring/device-doc-the-fire-beam-company-9ea9d54e1f2c-p6-beam-multiple-beams.webp",
+    "imageSha256": "46b65355d0092011a5aef20be0d72f79ef1ac3ae8b9a5ad44bc642616649d72a",
+    "imageWidth": 1600,
+    "imageHeight": 1950,
+    "imageBytes": 160320,
+    "scope": "Fire Beam Xtra conventional zone connection example for multiple beams; power, zone and fire/fault interfaces as drawn.",
+    "notes": [
+      "FIRE and EOL components must suit the connected control panel; this generic manufacturer example is not a verified pinout for every panel.",
+      "The multiple-beam arrangement uses the isolation diode and last-beam EOL placement shown in this manual."
+    ],
+    "keywords": [
+      "beam",
+      "conventional",
+      "zone",
+      "EOL",
+      "fire relay"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-nittan-2baa1e344172-p6-ev-h-base",
+    "recordId": "device-doc-nittan-2baa1e344172",
+    "title": "EV-H heat-sensor base connections",
+    "brand": "Nittan",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "EV-H-A1R",
+      "EV-H-CS",
+      "UB-6-EV",
+      "STB-4SE-EV"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "nittan-ev-h-cs"
+    ],
+    "pdfPage": 6,
+    "printedPage": "5 of 6",
+    "section": "EV-H heat-sensor base connections",
+    "sourceUrl": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/ev-h_a1r_techmanual.pdf",
+    "sourceSha256": "2baa1e344172062e5c91021267dc7904d1ac981cc87700a5df5289500910fda8",
+    "edition": "NISM/EV-H/05, September 2015",
+    "image": "wiring/device-doc-nittan-2baa1e344172-p6-ev-h-base.webp",
+    "imageSha256": "d811f0f423ba309bc493b61f27d4aef481b2b1e81bc6cfc397272ca1c0718528",
+    "imageWidth": 1600,
+    "imageHeight": 2265,
+    "imageBytes": 85834,
+    "scope": "EV-H-A1R and EV-H-CS heat sensors on the illustrated UB-6-EV and STB-4SE-EV bases, including remote indicator.",
+    "notes": [
+      "The source limits the RIL auxiliary terminal to 3mA and warns that base-control auxiliary equipment must provide its own current limiting."
+    ],
+    "keywords": [
+      "Evolution",
+      "heat",
+      "base",
+      "remote indicator"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-nittan-f912292fc103-p1-hiop-sounder-terminals",
+    "recordId": "device-doc-nittan-f912292fc103",
+    "title": "EV-HIOP-SB-SCI loop terminals",
+    "brand": "Nittan",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "terminal-layout",
+    "models": [
+      "EV-HIOP-SB-SCI"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "nittan-ev-hiop-sb-sci"
+    ],
+    "pdfPage": 1,
+    "printedPage": null,
+    "section": "EV-HIOP-SB-SCI loop terminals",
+    "sourceUrl": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-HIOP-SB-SCI_Iss_7_Instruction_leaflet.pdf",
+    "sourceSha256": "f912292fc103239e1d4ea38eba311a74309a8dc0cf6d105c61d00313ef976eb6",
+    "edition": "IIS-EV-HIOP-SB-SCI Issue 9, 20/10/2016",
+    "image": "wiring/device-doc-nittan-f912292fc103-p1-hiop-sounder-terminals.webp",
+    "imageSha256": "89ef8f8d85d11df6de6b28350eb6c8e4f25f2ffb9576226a252fe8988c8a7c03",
+    "imageWidth": 2200,
+    "imageHeight": 1555,
+    "imageBytes": 341292,
+    "scope": "EV-HIOP-SB-SCI sounder/beacon base with separate loop IN and OUT positive/negative terminals.",
+    "notes": [
+      "The source identifies a negative-line isolator and states this model is not compatible with Advanced Mx4000/Pro4."
+    ],
+    "keywords": [
+      "sounder",
+      "beacon",
+      "SCI",
+      "Evolution",
+      "loop"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-nittan-92f082662910-p1-mcp-loop",
+    "recordId": "device-doc-nittan-92f082662910",
+    "title": "EV-MCP2-SCI-IP67 loop terminals",
+    "brand": "Nittan",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "terminal-layout",
+    "models": [
+      "EV-MCP2-SCI-IP67"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "nittan-ev-mcp2-sci-ip67"
+    ],
+    "pdfPage": 1,
+    "printedPage": null,
+    "section": "EV-MCP2-SCI-IP67 loop terminals",
+    "sourceUrl": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-MCP2-SCI-IP67%20Iss%202%20Installation%20instruction%20sheet.pdf",
+    "sourceSha256": "92f082662910775f8f633359f84188014201ac5fd1926f7a0e2320dd0c80d93c",
+    "edition": "IIS-EV-MCP2-SCI-IP67 Issue 2, 08/10/2019",
+    "image": "wiring/device-doc-nittan-92f082662910-p1-mcp-loop.webp",
+    "imageSha256": "4cee35e4b7d19acf1cd9303e0103af534e47e235a62a0464e3f26b11da4c819a",
+    "imageWidth": 2200,
+    "imageHeight": 1555,
+    "imageBytes": 212444,
+    "scope": "EV-MCP2-SCI-IP67 manual call point: loop IN and OUT wiring, plus model-specific enclosure instructions.",
+    "notes": [
+      "For Nittan Evolution protocol only. The source excludes Advanced MxPro4/Mx4000 and states positive- and negative-line isolator styles cannot be mixed on one system."
+    ],
+    "keywords": [
+      "call point",
+      "SCI",
+      "loop",
+      "Evolution"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-nittan-509751ace6d5-p1-mcp-loop",
+    "recordId": "device-doc-nittan-509751ace6d5",
+    "title": "EV-MCP2-SCI-IP24 loop terminals",
+    "brand": "Nittan",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "terminal-layout",
+    "models": [
+      "EV-MCP2-SCI-IP24"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "nittan-ev-mcp2-sci-ip24"
+    ],
+    "pdfPage": 1,
+    "printedPage": null,
+    "section": "EV-MCP2-SCI-IP24 loop terminals",
+    "sourceUrl": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-MCP2-SCI-IP24%20Iss%203%20Installation%20instruction%20sheet.pdf",
+    "sourceSha256": "509751ace6d5abdb7675d679c7d844cdbb5abbd4cf67dd11413f08f49d486fb8",
+    "edition": "IIS-EV-MCP2-SCI-IP24 Issue 3, 08/10/2019",
+    "image": "wiring/device-doc-nittan-509751ace6d5-p1-mcp-loop.webp",
+    "imageSha256": "a7bbceaf3b5601cd1c8862084f8681427f5be5ab567faf6801b592942a518c8e",
+    "imageWidth": 2200,
+    "imageHeight": 1555,
+    "imageBytes": 216426,
+    "scope": "EV-MCP2-SCI-IP24 manual call point: loop IN and OUT wiring, plus model-specific enclosure instructions.",
+    "notes": [
+      "For Nittan Evolution protocol only. The source excludes Advanced MxPro4/Mx4000 and states positive- and negative-line isolator styles cannot be mixed on one system."
+    ],
+    "keywords": [
+      "call point",
+      "SCI",
+      "loop",
+      "Evolution"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-nittan-60acce3d2e53-p2-mra-voltage-examples",
+    "recordId": "device-doc-nittan-60acce3d2e53",
+    "title": "EV-240V MRA relay application wiring",
+    "brand": "Nittan",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "connection-example",
+    "models": [
+      "EV-240V MRA",
+      "EV-OP",
+      "EV-MIO"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "nittan-ev-240v-mra"
+    ],
+    "pdfPage": 2,
+    "printedPage": "2\u20133",
+    "section": "EV-240V MRA relay application wiring",
+    "sourceUrl": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/ev-240vmra_installmanual.pdf",
+    "sourceSha256": "60acce3d2e53aa94eb7c74ecb05222e962a78b3daddd8527c909fb901693c1a1",
+    "edition": "EV-240V MRA Installation Leaflet Issue 1",
+    "image": "wiring/device-doc-nittan-60acce3d2e53-p2-mra-voltage-examples.webp",
+    "imageSha256": "d4853f8d1eedadf94fde491bc90041d84d1799e3ae34571fd9005c6c93421204",
+    "imageWidth": 2600,
+    "imageHeight": 1839,
+    "imageBytes": 139284,
+    "scope": "EV-240V MRA with EV-OP / EV-MIO: separately labelled 24V DC, 24V AC, 120V AC and 240V AC application drawings, including a multiple-relay example.",
+    "notes": [
+      "The leaflet applies to EV-240V MRA manufacturing date code 43-03 or later and EV-OP PCB Issue 9 or later, with compatible Evolution panel support.",
+      "The source says unused wires must be individually isolated and insulated; some unused wires carry mains voltage in AC applications. Match the exact supply/application drawing."
+    ],
+    "keywords": [
+      "relay",
+      "MRA",
+      "240V",
+      "24V",
+      "EV-OP",
+      "EV-MIO"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-nittan-24b1fd056ba7-p9-ev-dph-base",
+    "recordId": "device-doc-nittan-24b1fd056ba7",
+    "title": "EV-DPH sensor base and remote-indicator wiring",
+    "brand": "Nittan",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "EV-DPH",
+      "EV-DPH-CS",
+      "UB-4-EV",
+      "STB-4SE-EV"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "nittan-ev-dph-cs"
+    ],
+    "pdfPage": 9,
+    "printedPage": "9",
+    "section": "EV-DPH sensor base and remote-indicator wiring",
+    "sourceUrl": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/NISM-EV-DPH-01_Manual.pdf",
+    "sourceSha256": "24b1fd056ba7e0312ffcbab08909ff71399bc9815901d7ca4e708524a2513339",
+    "edition": "NISM/EV-DPH/01 Issue 1, May 2010",
+    "image": "wiring/device-doc-nittan-24b1fd056ba7-p9-ev-dph-base.webp",
+    "imageSha256": "ae96036929df4e986e004ed3c3726690b2b519db648d2725fe81e872e82e7c69",
+    "imageWidth": 1600,
+    "imageHeight": 2263,
+    "imageBytes": 170592,
+    "scope": "EV-DPH dual optical/heat family, including A2R and CS grades; UB-4-EV and STB-4SE-EV base connections shown.",
+    "notes": [
+      "The source limits RIL current to 3mA and requires current limiting for base-control auxiliary equipment."
+    ],
+    "keywords": [
+      "Evolution",
+      "dual optical",
+      "heat",
+      "base",
+      "RIL"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-nittan-c65c530f2411-p2-mini-ip2-input",
+    "recordId": "device-doc-nittan-c65c530f2411",
+    "title": "EV-Mini IP2 loop and monitored-input connections",
+    "brand": "Nittan",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "EV-Mini IP2"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "nittan-ev-mini-ip2"
+    ],
+    "pdfPage": 2,
+    "printedPage": "2 / 7",
+    "section": "EV-Mini IP2 loop and monitored-input connections",
+    "sourceUrl": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-Mini%20IP2%20Iss%204%20Installation%20instruction%20sheet.pdf",
+    "sourceSha256": "c65c530f2411588278a1e09401f4ad7bcf395488f011d27493ce257ec0a91866",
+    "edition": "IIS-EV-Mini IP2 Issue 4, 18/01/2019",
+    "image": "wiring/device-doc-nittan-c65c530f2411-p2-mini-ip2-input.webp",
+    "imageSha256": "f76ddaab89338821d91fc81bad7f325347c21d77ebc7d5115998cb6593a79064",
+    "imageWidth": 2200,
+    "imageHeight": 1555,
+    "imageBytes": 78388,
+    "scope": "EV-Mini IP2: loop IN/OUT, monitored input resistor circuit and remote indicator as drawn.",
+    "notes": [
+      "The drawing retains the specific input end-of-line and fire-resistor values for this module."
+    ],
+    "keywords": [
+      "Evolution",
+      "input",
+      "loop",
+      "EOL",
+      "remote indicator"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-nittan-651d5abec767-p9-ev-ps-base",
+    "recordId": "device-doc-nittan-651d5abec767",
+    "title": "EV-PS sounder-sensor base connections",
+    "brand": "Nittan",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "EV-PS",
+      "UB-6",
+      "UB-4-EV",
+      "EV-PSBCN"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "nittan-ev-ps"
+    ],
+    "pdfPage": 9,
+    "printedPage": "9",
+    "section": "EV-PS sounder-sensor base connections",
+    "sourceUrl": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/ev-ps_techmanual.pdf",
+    "sourceSha256": "651d5abec767d4674524a8b7bbad471b908c4b85a1008ca4e3d049c6b03709e1",
+    "edition": "NISM/EV-PS/01 Issue 1, May 2010",
+    "image": "wiring/device-doc-nittan-651d5abec767-p9-ev-ps-base.webp",
+    "imageSha256": "e6937b5c4e5ead41cbc9b38dcced808b5d15492bbe1a049e6a2a6dfa92477d4c",
+    "imageWidth": 1600,
+    "imageHeight": 2263,
+    "imageBytes": 255236,
+    "scope": "EV-PS photoelectric sensor with sounder: separate DSCI and non-DSCI base circuit examples.",
+    "notes": [
+      "The source shows different DSCI and non-DSCI base arrangements. Use the drawing matching the actual fitted base."
+    ],
+    "keywords": [
+      "Evolution",
+      "sounder",
+      "base",
+      "DSCI",
+      "loop"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "device-doc-nittan-c2305fc3416e-p4-dual-input-relay",
+    "recordId": "device-doc-nittan-c2305fc3416e",
+    "title": "EV-2I1O loop, input and relay connections",
+    "brand": "Nittan",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "EV-2I1O"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "nittan-ev-2i1o"
+    ],
+    "pdfPage": 4,
+    "printedPage": "4\u20135",
+    "section": "EV-2I1O loop, input and relay connections",
+    "sourceUrl": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-2I1O%28EU%29%20Iss%204%20Installation%20instruction%20sheet.pdf",
+    "sourceSha256": "c2305fc3416e3f064559a41b2354f47d95f75878a213313e64dbcc7f760e4de4",
+    "edition": "IIS-EV-2I1O (-EU) Issue 4, 04/03/2019",
+    "image": "wiring/device-doc-nittan-c2305fc3416e-p4-dual-input-relay.webp",
+    "imageSha256": "bc5ac9c79158abe997987c4c48a5b3815e3dc15a5d61c0c5dba1d94fd86ec8c0",
+    "imageWidth": 2400,
+    "imageHeight": 1696,
+    "imageBytes": 152472,
+    "scope": "EV-2I1O (-EU): two monitored inputs, loop connections, remote indicator and relay output in the source connection drawing.",
+    "notes": [
+      "The source requires the correct EOL values when replacing earlier EV-SIO equipment and distinguishes normal/failsafe output operation."
+    ],
+    "keywords": [
+      "Evolution",
+      "input",
+      "relay",
+      "EOL",
+      "loop"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "hochiki-7547f36e3e7f-p2-chq-dsc-sounder",
+    "recordId": "hochiki-7547f36e3e7f",
+    "title": "CHQ-DSC sounder controller connections",
+    "brand": "Hochiki",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "CHQ-DSC(SCI)",
+      "CHQ-DSC/M(SCI)",
+      "CHQ-DSC/DIN(SCI)"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 2,
+    "printedPage": "2",
+    "section": "CHQ-DSC sounder controller connections",
+    "sourceUrl": "https://www.hochikiasiapacific.com/storage/product_resources/Installation%20Manual/1433750-00%20Installation%20Instructions%2001.pdf%20%28chq-drc2-sci%29.pdf",
+    "sourceSha256": "1aebdff7d7a3c789dc8be359736544cf32e473bdda18adcd6ed3a833405a5a17",
+    "edition": "2-3-0-1730/ISS3/DEC13",
+    "image": "wiring/hochiki-7547f36e3e7f-p2-chq-dsc-sounder.webp",
+    "imageSha256": "0ef76dd019cc6e987fdf2d712d1ea5c849c11c75ded54b00fb69c09cafb94c91",
+    "imageWidth": 1600,
+    "imageHeight": 2263,
+    "imageBytes": 110596,
+    "scope": "CHQ-DSC(SCI), CHQ-DSC/M(SCI) and CHQ-DSC/DIN(SCI): loop, auxiliary 24V supply, monitored input and two sounder outputs.",
+    "notes": [
+      "The source requires an auxiliary 24V supply and preserves the sounder/input monitoring switch tables and EOL specifications."
+    ],
+    "keywords": [
+      "ESP",
+      "sounder controller",
+      "CHQ",
+      "loop",
+      "24V"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "hochiki-7547f36e3e7f-p3-chq-relay-controllers",
+    "recordId": "hochiki-7547f36e3e7f",
+    "title": "CHQ-DRC2 and CHQ-MRC2 relay connections",
+    "brand": "Hochiki",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "CHQ-DRC2(SCI)",
+      "CHQ-DRC2/DIN(SCI)",
+      "CHQ-MRC2(SCI)",
+      "CHQ-MRC2/DIN(SCI)"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 3,
+    "printedPage": "3",
+    "section": "CHQ-DRC2 and CHQ-MRC2 relay connections",
+    "sourceUrl": "https://www.hochikiasiapacific.com/storage/product_resources/Installation%20Manual/1433750-00%20Installation%20Instructions%2001.pdf%20%28chq-drc2-sci%29.pdf",
+    "sourceSha256": "1aebdff7d7a3c789dc8be359736544cf32e473bdda18adcd6ed3a833405a5a17",
+    "edition": "2-3-0-1730/ISS3/DEC13",
+    "image": "wiring/hochiki-7547f36e3e7f-p3-chq-relay-controllers.webp",
+    "imageSha256": "f9a03c029a2acfc53a855e463d38b566070401df09bcabbe4fe5d61cf9c0103d",
+    "imageWidth": 1600,
+    "imageHeight": 2263,
+    "imageBytes": 164000,
+    "scope": "Separate CHQ-DRC2 dual-relay and CHQ-MRC2 mains-relay diagrams, including SCI and DIN variants; the different contact ratings remain visible.",
+    "notes": [
+      "The source warns relay contact states may be indeterminate until powered and requires external over-current protection for the unfused CHQ-MRC2 relay circuit."
+    ],
+    "keywords": [
+      "ESP",
+      "relay",
+      "CHQ",
+      "loop",
+      "mains"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "hochiki-85ce4a38f43c-p2-chq-ab-bases",
+    "recordId": "hochiki-85ce4a38f43c",
+    "title": "CHQ-AB beacon base wiring",
+    "brand": "Hochiki",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "CHQ-AB(RED)",
+      "CHQ-AB(AMB)",
+      "CHQ-AB(BLU)",
+      "CHQ-AB(CLR)",
+      "YBO-R/3",
+      "YBO-R/SCI"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "CHQ-AB beacon base wiring",
+    "sourceUrl": "https://www.hochikiasiapacific.com/storage/product_resources/Installation%20Manual/1460010-00%20Installation%20Instructions%2001.pdf%20%28chq-ab%29.pdf",
+    "sourceSha256": "0b532d3a401a5a44076c0a03f2ee9ff34ec352863bc61b9f9da64e1b0c4ea75a",
+    "edition": "2-3-0-568/ISS4/DEC13",
+    "image": "wiring/hochiki-85ce4a38f43c-p2-chq-ab-bases.webp",
+    "imageSha256": "b43852387caac55385f506206c3f3de081f59550bcaa426dc355dbb227a04c1c",
+    "imageWidth": 1600,
+    "imageHeight": 2264,
+    "imageBytes": 154692,
+    "scope": "CHQ-AB addressable beacon range: separate YBO-R/3 and YBO-R/SCI base loop diagrams.",
+    "notes": [
+      "The source calls CHQ-AB a supplementary indicator and says it must not be used as an EN54-23 visual alarm device."
+    ],
+    "keywords": [
+      "ESP",
+      "beacon",
+      "base",
+      "loop"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "hochiki-872585639bed-p2-chq-cb-bases",
+    "recordId": "hochiki-872585639bed",
+    "title": "CHQ-CB beacon loop and external-power wiring",
+    "brand": "Hochiki",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "CHQ-CB/WL",
+      "CHQ-CB(RED)/WL",
+      "CHQ-CB(WHT)/WL",
+      "CHQ-CB/WL-15",
+      "CHQ-CB(RED)/WL-15",
+      "CHQ-CB(WHT)/WL-15",
+      "CHQ-CB/RL",
+      "CHQ-CB(RED)/RL",
+      "CHQ-CB(WHT)/RL"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "CHQ-CB beacon loop and external-power wiring",
+    "sourceUrl": "https://www.hochikiaustralia.com/media/uploads/documentdownloads/CHQ-CB_Installation_Instructions.pdf",
+    "sourceSha256": "75f5b35d64d8588e54645844551c7ff7014fa39e57c2f8417ad87d8f97220b4e",
+    "edition": "2-3-0-1574/ISS1/JUNE14",
+    "image": "wiring/hochiki-872585639bed-p2-chq-cb-bases.webp",
+    "imageSha256": "2dccc5f7713f06cf11fc2cc267f6625bab2011051c8886f7393cf1ea6dbef453",
+    "imageWidth": 1600,
+    "imageHeight": 2264,
+    "imageBytes": 206568,
+    "scope": "CHQ-CB/WL, WL-15 and RL ceiling-beacon variants: YBN-R/3, YBO-R/SCI and YBN-R/3(SCI) base diagrams with optional external-power terminals.",
+    "notes": [
+      "The source specifies external supply limits and says remote indication is unavailable when external power is used. Its YBN-R/3(SCI) example does not show external power connected."
+    ],
+    "keywords": [
+      "ESP",
+      "beacon",
+      "external power",
+      "base",
+      "SCI"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "hochiki-ea524f5d80ee-p2-chq-ari-bases",
+    "recordId": "hochiki-ea524f5d80ee",
+    "title": "CHQ-ARI(CLR) remote-indicator base wiring",
+    "brand": "Hochiki",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "CHQ-ARI(CLR)",
+      "YBN-R/3",
+      "CHQ-BS",
+      "YBO-R/SCI"
+    ],
+    "panelIds": [],
+    "deviceIds": [],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "CHQ-ARI(CLR) remote-indicator base wiring",
+    "sourceUrl": "https://assets.hochikiglobal.com/assetbank-hochikieurope/assetfile/31818.pdf",
+    "sourceSha256": "134cd17c1c21e56958964988dc4ed518fe2704424991b6d58ba01b2376585720",
+    "edition": "2-3-0-617/ISS1/FEB05",
+    "image": "wiring/hochiki-ea524f5d80ee-p2-chq-ari-bases.webp",
+    "imageSha256": "29107e9a039423b23373a35ac4e53c287eced6de65ee3c7ad278ba0a8a41419d",
+    "imageWidth": 1600,
+    "imageHeight": 2265,
+    "imageBytes": 153464,
+    "scope": "CHQ-ARI(CLR) addressable remote indicator: YBN-R/3, CHQ-BS and YBO-R/SCI base loop and remote-indicator examples.",
+    "notes": [
+      "The source limits the optional remote-indicator current to 10mA. This older sheet names CHQ-BS; it does not establish all later base-sounder variants."
+    ],
+    "keywords": [
+      "ESP",
+      "remote indicator",
+      "base",
+      "loop"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "hochiki-f97bdbde045d-p1-esp-sensor-bases",
+    "recordId": "hochiki-f97bdbde045d",
+    "title": "ESP sensor and base wiring",
+    "brand": "Hochiki",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "ACC",
+      "ATJ",
+      "ALG",
+      "ACA",
+      "ACB",
+      "ALN",
+      "ACD",
+      "YBN-R/3",
+      "ACB-EW",
+      "YBV-R/4"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "hochiki-aln-en",
+      "hochiki-acc-en",
+      "hochiki-atj-en",
+      "hochiki-acd-en",
+      "hochiki-acb-ew",
+      "hochiki-ybn-r3",
+      "hochiki-ybv-r4"
+    ],
+    "pdfPage": 1,
+    "printedPage": null,
+    "section": "ESP sensor and base wiring",
+    "sourceUrl": "https://www.hochikiasiapacific.com/storage/product_resources/Installation%20Manual/1412140-00%20Installation%20Instructions%2001.pdf%20%28aln-en%29.pdf",
+    "sourceSha256": "2a5e9c1f7c6e667a2758f451bb2d85661d880ebc590e96042a7a07f1d09acb9a",
+    "edition": "2-3-0-246/ISS19/AUG18",
+    "image": "wiring/hochiki-f97bdbde045d-p1-esp-sensor-bases.webp",
+    "imageSha256": "ff22aa1431a53a4188b3d5d779167b7b51c6000d7abe3636de54b1e010f23a3c",
+    "imageWidth": 3400,
+    "imageHeight": 2404,
+    "imageBytes": 691616,
+    "scope": "Hochiki ESP ACC, ATJ, ALG, ACA, ACB, ALN and ACD sensor families: YBN-R/3, ACB-EW and YBV-R/4 wiring examples on the multilingual source sheet.",
+    "notes": [
+      "The source covers the listed sensor families and variants, but refers YBN-R/3(SCI) wiring to separate instruction 2-3-0-1499. Do not substitute this page for that base\u2019s instructions."
+    ],
+    "keywords": [
+      "ESP",
+      "detector",
+      "base",
+      "loop",
+      "remote indicator"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "protec-3d5612b83a2a-p2-lcm-loop-zone",
+    "recordId": "protec-3d5612b83a2a",
+    "title": "6000/LCM loop, zone and sounder connections",
+    "brand": "Protec",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "6000/LCM"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "protec-6000-lcm"
+    ],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "Circuit Board; Technical Specification",
+    "sourceUrl": "https://www.protec.co.uk/wp-content/uploads/2021/04/6000-LCM.pdf",
+    "sourceSha256": "ee5dd0b9bd1a88f15c18342fe4eb130b9ee05fad6c76b226c58f5ea1456c2234",
+    "edition": "MED1442 Issue 5, \u00a9 2010\u20132021",
+    "image": "wiring/protec-3d5612b83a2a-p2-lcm-loop-zone.webp",
+    "imageSha256": "6c00c3516baf82d340fb21e140b5aa826f45f35165bea201696a13fb3cfffc86",
+    "imageWidth": 1800,
+    "imageHeight": 2546,
+    "imageBytes": 140658,
+    "scope": "Protec 6000/LCM module: loop input/output and local conventional detector/call-point zone and sounder circuits. The source lists supported Protec 3000 / 3000PLUS equipment and model-specific EOL requirements.",
+    "notes": [
+      "Use the separate source specifications for the zone and sounder circuits. The drawing does not establish compatibility with arbitrary conventional devices or generic EOL values."
+    ],
+    "keywords": [
+      "Algo-Tec",
+      "loop",
+      "zone",
+      "sounder",
+      "EOL",
+      "6000/LCM"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  },
+  {
+    "id": "protec-19c2f3a94324-p2-lpza-loop-zone",
+    "recordId": "protec-19c2f3a94324",
+    "title": "6000/LPZA loop, zone and sounder connections",
+    "brand": "Protec",
+    "category": "fire",
+    "targetType": "device",
+    "diagramType": "wiring",
+    "models": [
+      "6000/LPZA"
+    ],
+    "panelIds": [],
+    "deviceIds": [
+      "protec-6000-lpza"
+    ],
+    "pdfPage": 2,
+    "printedPage": null,
+    "section": "Circuit Board; Technical Specification",
+    "sourceUrl": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-LPZA-Issue-2.pdf",
+    "sourceSha256": "266a376b4a49340e5954621f100fc8fbb2f542b74a987d045539c17f1133ca75",
+    "edition": "MED1995 Issue 2, \u00a9 2022",
+    "image": "wiring/protec-19c2f3a94324-p2-lpza-loop-zone.webp",
+    "imageSha256": "57fc41608670f7ce57968ccc8ab3d696f4baa40abff14486755b08864d6a3e76",
+    "imageWidth": 1800,
+    "imageHeight": 2546,
+    "imageBytes": 144300,
+    "scope": "Protec 6000/LPZA module: loop input/output and local conventional detector/call-point zone and sounder circuits. The source lists supported Protec 3000 / 3000PLUS equipment and model-specific EOL requirements.",
+    "notes": [
+      "Use the separate source specifications for the zone and sounder circuits. The drawing does not establish compatibility with arbitrary conventional devices or generic EOL values."
+    ],
+    "keywords": [
+      "Algo-Tec",
+      "loop",
+      "zone",
+      "sounder",
+      "EOL",
+      "6000/LPZA"
+    ],
+    "reviewedOn": "2026-11-02",
+    "reviewStatus": "reviewed"
+  }
+]

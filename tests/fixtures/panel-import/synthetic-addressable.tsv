@@ -1,0 +1,9 @@
+Panel	Network Node	Loop	Address	Sub-address	Zone	Programmed location text	Device type	Manufacturer	Model	Part Number	Export date
+A	01	01	037		003	Ground floor, reception	Multisensor	Gent	S-Quad	S4-720-ST-VO	2026-10-31
+A	01	02	037		004	First floor optical detector	optical detector				2026-10-31
+B	01	01	037		001	Annexe entrance	optical detector				2026-10-31
+B	01	02	037		002	Annexe stair	optical detector				2026-10-31
+A	02	01	037	01	005	Plant room input 1	multi-input	Example	IO family		2026-10-31
+A	02	01	037	02	005	Plant room input 2	multi-input	Example	IO family		2026-10-31
+A	01	01	038		003	"Store ""east""
+By loading door"	optical detector		S-Quad		2026-10-31

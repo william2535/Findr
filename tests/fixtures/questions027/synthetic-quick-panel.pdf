@@ -1,0 +1,137 @@
+%PDF-1.3
+%“Œ‹ž ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/Contents 9 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 8 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+5 0 obj
+<<
+/Contents 10 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 8 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+6 0 obj
+<<
+/PageMode /UseNone /Pages 8 0 R /Type /Catalog
+>>
+endobj
+7 0 obj
+<<
+/Author (FINDR synthetic QA fixture generator) /CreationDate (D:20000101000000+00'00') /Creator (anonymous) /Keywords () /ModDate (D:20000101000000+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (unspecified) /Title (SYNTHETIC FINDR-QA-100 User guide QA-027) /Trapped /False
+>>
+endobj
+8 0 obj
+<<
+/Count 2 /Kids [ 4 0 R 5 0 R ] /Type /Pages
+>>
+endobj
+9 0 obj
+<<
+/Length 1425
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+BT /F2 13 Tf 15.6 TL ET
+BT 1 0 0 1 42 805 Tm (SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL) Tj T* ET
+BT /F1 11 Tf 13.2 TL ET
+BT 1 0 0 1 42 776 Tm (Manufacturer: Test Bench) Tj T* ET
+BT 1 0 0 1 42 759 Tm (Model: FINDR-QA-100) Tj T* ET
+BT 1 0 0 1 42 742 Tm (Equipment: Fire alarm control panel) Tj T* ET
+BT 1 0 0 1 42 725 Tm (Document type: User guide) Tj T* ET
+BT 1 0 0 1 42 708 Tm (Revision: QA-027) Tj T* ET
+BT 1 0 0 1 42 679 Tm (This fictional fire alarm control panel exists only for browser verification. The model) Tj T* ET
+BT 1 0 0 1 42 662 Tm (names, buttons and behaviour below do not describe real equipment. Confirm the equipment) Tj T* ET
+BT 1 0 0 1 42 645 Tm (label before applying any actual manufacturer procedure. This fixture supports read-only) Tj T* ET
+BT 1 0 0 1 42 628 Tm (questions about event history. It does not provide installer access codes, disablement) Tj T* ET
+BT 1 0 0 1 42 611 Tm (procedures, electrical tests or authority to impair a fire alarm system. External) Tj T* ET
+BT 1 0 0 1 42 594 Tm (equipment requires its own relevant manual. The event history records observations but) Tj T* ET
+BT 1 0 0 1 42 577 Tm (does not establish whether the cause of a fault has been repaired or the system has been) Tj T* ET
+BT 1 0 0 1 42 560 Tm (restored.) Tj T* ET
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 42 30 Tm (Synthetic printed page Q-1 / PDF page 1) Tj T* ET
+ 
+endstream
+endobj
+10 0 obj
+<<
+/Length 1868
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+BT /F2 13 Tf 15.6 TL ET
+BT 1 0 0 1 42 805 Tm (SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL) Tj T* ET
+BT /F1 11 Tf 13.2 TL ET
+BT 1 0 0 1 42 776 Tm (Manufacturer: Test Bench. Model: FINDR-QA-100. Revision: QA-027.) Tj T* ET
+BT 1 0 0 1 42 759 Tm (Section 2 - Viewing event history) Tj T* ET
+BT 1 0 0 1 42 742 Tm (For this fictional panel, the read-only event history is available from the front) Tj T* ET
+BT 1 0 0 1 42 725 Tm (controls.) Tj T* ET
+BT 1 0 0 1 42 708 Tm (1. Press VIEW on the panel front.) Tj T* ET
+BT 1 0 0 1 42 691 Tm (2. Select EVENT HISTORY from the displayed menu.) Tj T* ET
+BT 1 0 0 1 42 674 Tm (3. Use the UP and DOWN buttons to browse the stored events.) Tj T* ET
+BT 1 0 0 1 42 657 Tm (4. Press BACK to leave event history.) Tj T* ET
+BT 1 0 0 1 42 640 Tm (The EVENT HISTORY menu is inside VIEW. Step two selects EVENT HISTORY after VIEW has) Tj T* ET
+BT 1 0 0 1 42 623 Tm (already been opened. Viewing the log does not clear its entries or reset a fault. This) Tj T* ET
+BT 1 0 0 1 42 606 Tm (synthetic panel retains 120 event entries. Record the exact event wording and time shown) Tj T* ET
+BT 1 0 0 1 42 589 Tm (when investigating a fault. A cleared indication does not confirm its cause.) Tj T* ET
+BT 1 0 0 1 42 572 Tm (Section 3 - Limits of this guide) Tj T* ET
+BT 1 0 0 1 42 555 Tm (Walk test is not described in this user guide. Obtain the applicable installer manual and) Tj T* ET
+BT 1 0 0 1 42 538 Tm (the installed configuration before answering how walk test is performed. The external) Tj T* ET
+BT 1 0 0 1 42 521 Tm (power supply is a separate component. This panel guide does not establish the PSU) Tj T* ET
+BT 1 0 0 1 42 504 Tm (terminal assignments, current rating or operating voltage.) Tj T* ET
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 42 30 Tm (Synthetic printed page Q-2 / PDF page 2) Tj T* ET
+ 
+endstream
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000321 00000 n 
+0000000524 00000 n 
+0000000728 00000 n 
+0000000796 00000 n 
+0000001116 00000 n 
+0000001181 00000 n 
+0000002657 00000 n 
+trailer
+<<
+/ID 
+[<342cde231e035c5eaa382d4e52d8f903><342cde231e035c5eaa382d4e52d8f903>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 7 0 R
+/Root 6 0 R
+/Size 11
+>>
+startxref
+4577
+%%EOF

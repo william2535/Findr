@@ -1,0 +1,14 @@
+{"waitingFor":"0.26.0","status":null,"requests":105,"detail":{"stored":[],"events":[]},"errors":[]}
+{"waitingFor":"0.26.0","status":{"ready":false,"build":"480f4afaee4b","version":"0.26.0","verification":"sha256-v1","controlled":false,"workerState":"activated"},"requests":1405,"detail":{"active":"activated","stored":[{"name":"findr-shell-480f4afaee4b","keys":0,"stamp":null}],"events":[{"type":"OFFLINE_PROGRESS","completed":1284,"total":1298},{"type":"OFFLINE_PROGRESS","completed":1296,"total":1298},{"type":"OFFLINE_PROGRESS","completed":1298,"total":1298}]},"errors":[]}
+{"waitingFor":"0.26.0","status":{"ready":false,"build":"480f4afaee4b","version":"0.26.0","verification":"sha256-v1","controlled":false,"workerState":"activated"},"requests":1405,"detail":{"active":"activated","stored":[{"name":"findr-shell-480f4afaee4b","keys":0,"stamp":null}],"events":[{"type":"OFFLINE_PROGRESS","completed":1284,"total":1298},{"type":"OFFLINE_PROGRESS","completed":1296,"total":1298},{"type":"OFFLINE_PROGRESS","completed":1298,"total":1298}]},"errors":[]}
+{"waitingFor":"0.26.0","status":{"ready":false,"build":"480f4afaee4b","version":"0.26.0","verification":"sha256-v1","controlled":false,"workerState":"activated"},"requests":1405,"detail":{"active":"activated","stored":[{"name":"findr-shell-480f4afaee4b","keys":0,"stamp":null}],"events":[{"type":"OFFLINE_PROGRESS","completed":1284,"total":1298},{"type":"OFFLINE_PROGRESS","completed":1296,"total":1298},{"type":"OFFLINE_PROGRESS","completed":1298,"total":1298}]},"errors":[]}
+{"passed":false,"browser":"webkit","checks":[],"output":"/tmp/findr-upgrade027-webkit.json","errors":[]}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+Error: Offline release 0.26.0 did not become ready: {"ready":false,"build":"480f4afaee4b","version":"0.26.0","verification":"sha256-v1","controlled":false,"workerState":"activated"}
+    at ready (file:///workspace/sites/findr/scripts/verify-pdf-upgrade027.mjs:25:1044)
+    at async file:///workspace/sites/findr/scripts/verify-pdf-upgrade027.mjs:29:17
+
+Node.js v24.19.0

@@ -1,0 +1,44 @@
+/* Device recognition and offline packs share FINDR's existing card styles. */
+.devices-page { min-width: 0; }
+.device-back-row { display: flex; justify-content: space-between; gap: 16px; }
+.device-packs-intro { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin: 0 0 25px; }
+.device-packs-intro h2 { font-size: 28px; margin-bottom: 12px; }
+.device-packs-intro p { margin: 0; max-width: 670px; font-size: 14px; }
+.device-packs-intro > a { flex: none; }
+.device-toolbar .search input { padding-left: 15px; }
+.device-grid { margin-bottom: 25px; }
+.device-pack-grid { margin-top: 25px; }
+.device-card { min-width: 0; }
+.device-card .panel-info > h3 { min-height: 0; margin-bottom: 12px; }
+.device-card .panel-info > small:first-child { display: block; line-height: 1.5; margin-bottom: 8px; }
+.device-card .device-code { font-size: 11px; line-height: 1.55; margin-bottom: 14px; color: var(--text); overflow-wrap: anywhere; }
+.device-card .panel-info > .secondary { width: 100%; }
+.device-pack .pack-photos img { min-width: 0; }
+.device-documents-title { font-size: 24px; margin: 30px 0 18px; }
+.device-specs { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 20px; padding: 18px 0; margin: 8px 0 10px; border-bottom: 1px solid var(--line); }
+.device-specs dt { font-size: 11px; color: var(--muted); margin-bottom: 5px; }
+.device-specs dd { margin: 0; color: var(--text); font-size: 14px; font-weight: 650; overflow-wrap: anywhere; }
+.device-detail h2, .device-detail .notice, .device-picture-credit { overflow-wrap: anywhere; }
+.device-detail .notice { font-size: 12px; }
+.device-detail .inline-actions { margin-top: 20px; }
+.device-document-status { margin: 12px 0; }
+.device-picture-credit { margin: 20px 0 0; }
+.device-picture-credit a { text-decoration: underline; text-underline-offset: 3px; }
+.download-tabs { flex-wrap: wrap; column-gap: 26px; row-gap: 0; }
+@media (max-width: 680px) {
+  .device-packs-intro { flex-direction: column; align-items: stretch; gap: 16px; }
+  .device-packs-intro h2 { font-size: 25px; }
+  .device-packs-intro p { font-size: 13px; }
+  .device-packs-intro > a { font-size: 12px; }
+  .device-toolbar select { flex-basis: calc(50% - 6px); max-width: 100%; }
+  .device-card .device-code { font-size: 10px; }
+  .device-specs { grid-template-columns: 1fr; gap: 14px; }
+  .device-detail .inline-actions { flex-direction: column; align-items: stretch; }
+  .device-detail .inline-actions > * { width: 100%; }
+  .device-detail .modal-image { height: 185px; padding: 15px; }
+}
+@media (max-width: 480px) {
+  .download-tabs { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 16px; }
+  .download-tabs button { text-align: left; white-space: normal; }
+  .device-modal { padding: 20px; }
+}

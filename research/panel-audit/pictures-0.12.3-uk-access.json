@@ -1,0 +1,925 @@
+{
+  "batch": "FINDR 0.12.3 UK access and door-entry",
+  "verified_at": "2026-10-30T13:16:36.304935+00:00",
+  "baseline_commit": "27ae6eddc9a6db83ebd743b8e101744fbe3bc42d",
+  "baseline_pictured_families": 504,
+  "catalogue_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+  "scope": "15 genuinely missing access-control and door-entry identification families, each linked only to verified existing catalogue records. Pictures do not implement or certify an emulator.",
+  "counts": {
+    "new_families": 15,
+    "manual_backed_families": 15,
+    "picture_only_families": 0,
+    "record_links": 16,
+    "unique_existing_records": 15,
+    "manufacturer_photographs": 13,
+    "manufacturer_manual_drawings": 2,
+    "pinned_manual_hashes_matched": 2,
+    "manuals_with_observed_hash_only": 13,
+    "brands": {
+      "Aiphone": 2,
+      "Axis": 7,
+      "Farfisa": 1,
+      "Videx": 5
+    }
+  },
+  "verified": [
+    {
+      "id": "aiphone-gt-dm",
+      "brand": "Aiphone",
+      "model": "GT-DM integrated video entrance station",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "aiphone-6fbba6604334"
+      ],
+      "source_image_url": "https://www.aiphone.co.uk/wp-content/uploads/2015/04/GT-DM-Spec-Sheet.pdf",
+      "source_page_url": "https://www.aiphone.co.uk/featured_item/gt-series-2/",
+      "image_credit": "Aiphone manufacturer product photograph, UK-hosted GT-DM specification sheet 0611, page 1",
+      "image_type": "official-manufacturer-pdf-product-image",
+      "source_pdf_page": 1,
+      "asset_file": "images/aiphone-gt-dm.jpeg",
+      "source_asset_sha256": "38c4325e7d333055ee27accf72b491815e43fd1cbb378f313fab6e7eb85fbbe6",
+      "source_asset_dimensions": [
+        331,
+        900
+      ],
+      "source_asset_bytes": 46186,
+      "visual_review": "Selected image reviewed at useful resolution and on the final labelled contact sheet; full pictured hardware front retained. Drawings and exposed boards are explicitly identified.",
+      "identification_notes": "One-piece stainless steel entrance plate with a round camera, perforated speech grille, colour screen and four-column bank of numbered and navigation buttons. The original embedded manufacturer photograph is labelled GT-DM.",
+      "applicability_limits": "The linked 0311 A OI GT installation manual explicitly includes GT-DM on page 12. This is the earlier integrated GT-DM design; do not transfer its menu or wiring details to later GT generations, modular GT units or IXG panels. Confirm the installed model and system revision.",
+      "uk_evidence": "UK manufacturer product/support material or UK-hosted archive/manual; UK prioritisation is not a claim of installed-market share.",
+      "pdf_extraction": {
+        "panel_id": "aiphone-gt-dm",
+        "source_pdf": "aiphone-gt-dm-spec.pdf",
+        "page_one_based": 1,
+        "xref": 288,
+        "method": "Original embedded JPEG extracted without changing the image",
+        "source_pdf_sha256": "37aa1fef2045a972af5f00f1768e5617db99d2f38dc58c916577eb3179bf8960"
+      }
+    },
+    {
+      "id": "aiphone-gt-modular",
+      "brand": "Aiphone",
+      "model": "GT modular digital entrance station (GTV-DES202)",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "aiphone-6fbba6604334"
+      ],
+      "source_image_url": "https://www.aiphone.co.uk/wp-content/uploads/2015/04/GTV-DES202-Spec-Sheet.pdf",
+      "source_page_url": "https://www.aiphone.co.uk/featured_item/gt-series-2/",
+      "image_credit": "Aiphone manufacturer product photograph, UK-hosted GTV-DES202 specification sheet 0611, page 1",
+      "image_type": "official-manufacturer-pdf-product-image",
+      "source_pdf_page": 1,
+      "asset_file": "images/aiphone-gtv-des202.jpeg",
+      "source_asset_sha256": "b4860ea50e84931b9173e91cb96e3d980813c4046154c4f103114b8ffedaf492",
+      "source_asset_dimensions": [
+        896,
+        755
+      ],
+      "source_asset_bytes": 90292,
+      "visual_review": "Selected image reviewed at useful resolution and on the final labelled contact sheet; full pictured hardware front retained. Drawings and exposed boards are explicitly identified.",
+      "identification_notes": "Four-module, two-column entrance assembly: camera above speaker on the left, name-scrolling display above numeric keypad on the right. The manufacturer names this exact photographed assembly GTV-DES202.",
+      "applicability_limits": "The linked 0311 A OI manual lists the GT-VA/GT-VP, GT-DA-L/GT-DP-L, GT-NS/GT-NSP-L and GT-10K/GF-10KP modules on pages 10–11. This photograph is a 2-by-2 digital example; other frames, direct-call buttons and later replacement modules require their own exact model checks.",
+      "uk_evidence": "UK manufacturer product/support material or UK-hosted archive/manual; UK prioritisation is not a claim of installed-market share.",
+      "pdf_extraction": {
+        "panel_id": "aiphone-gt-modular",
+        "source_pdf": "aiphone-gtv-des202-spec.pdf",
+        "page_one_based": 1,
+        "xref": 366,
+        "method": "Original embedded JPEG extracted without changing the image",
+        "source_pdf_sha256": "f5d865e7549c3ec4aef7f4bbb27661a9de7fec735e40aae881f1472d13aa1d11"
+      }
+    },
+    {
+      "id": "axis-a1001",
+      "brand": "Axis",
+      "model": "AXIS A1001 Network Door Controller",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "axis-02e843dd3ba5"
+      ],
+      "source_image_url": "https://help.axis.com/download/um_a1001_t10010336_2511.pdf",
+      "source_page_url": "https://www.axis.com/en-gb/products/axis-a1001/support",
+      "image_credit": "Axis Communications, A1001 and AXIS Entry Manager user manual, page 5 front-cover figure",
+      "image_type": "official-manufacturer-manual-drawing",
+      "source_pdf_page": 5,
+      "asset_file": "images/axis-a1001.png",
+      "source_asset_sha256": "4a45f6661f5b51cb1fb6e2657ad58a13f2d1e5245f457f3f624627b52bf3c4fd",
+      "source_asset_dimensions": [
+        708,
+        1028
+      ],
+      "source_asset_bytes": 96670,
+      "visual_review": "Selected image reviewed at useful resolution and on the final labelled contact sheet; full pictured hardware front retained. Drawings and exposed boards are explicitly identified.",
+      "identification_notes": "Manufacturer manual drawing of the controller enclosure, showing its plain cover, lower retaining screw and cover-removal slot detail. Original numbered reference callouts are retained. This is an exact technical drawing, not a product photograph.",
+      "applicability_limits": "The linked document is A1001 and AXIS Entry Manager, observed edition T10010336, 2025-11 (M26.2). Closed Axis enclosures can look similar: confirm the product label rather than identifying A1001 from the cover alone. Do not substitute A1601 or A1610 software instructions.",
+      "uk_evidence": "UK manufacturer product/support material or UK-hosted archive/manual; UK prioritisation is not a claim of installed-market share.",
+      "pdf_extraction": {
+        "panel_id": "axis-a1001",
+        "source_pdf": "axis-02e843dd3ba5.pdf",
+        "page_one_based": 5,
+        "clip_pdf_points": [
+          58,
+          82,
+          235,
+          339
+        ],
+        "render_scale": 4,
+        "method": "Exact vector front-figure excerpt from the original manual; no product geometry redrawn",
+        "source_pdf_sha256": "96ae7301243bf69c863438268fe89ac7f22af7669e88f2dc3e3f23cf5695656f"
+      }
+    },
+    {
+      "id": "axis-a1210",
+      "brand": "Axis",
+      "model": "AXIS A1210 Network Door Controller",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "axis-e68d3a76ed5b"
+      ],
+      "source_image_url": "https://www.axis.com/sites/axis/files/styles/standard_1360_x_auto/public/2022-10/a1210_front_2208.png.webp?itok=fKUCo3CW",
+      "source_page_url": "https://www.axis.com/en-gb/products/axis-a1210",
+      "image_credit": "Axis Communications official A1210 front product image",
+      "image_type": "official-manufacturer-product-image",
+      "source_pdf_page": null,
+      "asset_file": "images/axis-a1210.webp",
+      "source_asset_sha256": "b1e7d48efa6e747b91e8a38d5a85da09473097a5437c5152afae846b91fe5bf8",
+      "source_asset_dimensions": [
+        1360,
+        1360
+      ],
+      "source_asset_bytes": 21068,
+      "visual_review": "Selected image reviewed at useful resolution and on the final labelled contact sheet; full pictured hardware front retained. Drawings and exposed boards are explicitly identified.",
+      "identification_notes": "White controller enclosure with a central cover screw, shallow inset lid and Axis branding near the lower edge. The source gallery explicitly identifies this full front view as A1210.",
+      "applicability_limits": "This is the enclosed one-door A1210, not the bare A1210-B board. The exact linked PDF is offered by the official A1210 help page; its observed edition is T10181041, 2026-10 (M11.6). Check the product label and installed AXIS OS; a similar enclosure does not establish the model or available software functions.",
+      "uk_evidence": "UK manufacturer product/support material or UK-hosted archive/manual; UK prioritisation is not a claim of installed-market share."
+    },
+    {
+      "id": "axis-a1601",
+      "brand": "Axis",
+      "model": "AXIS A1601 Network Door Controller",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "axis-61e97b138384"
+      ],
+      "source_image_url": "https://www.axis.com/sites/axis/files/styles/square_500x500_/public/2020-05/a1601_top_1806_1600px.png.webp?itok=CEcInrcE",
+      "source_page_url": "https://www.axis.com/en-gb/products/axis-a1601/support",
+      "image_credit": "Axis Communications official A1601 enclosure/front product image",
+      "image_type": "official-manufacturer-product-image",
+      "source_pdf_page": null,
+      "asset_file": "images/axis-a1601.webp",
+      "source_asset_sha256": "ab823a534bbf0bce940a74aa5b9a8ead347b5f27da3718737d1187e1bff2f028",
+      "source_asset_dimensions": [
+        500,
+        500
+      ],
+      "source_asset_bytes": 2338,
+      "visual_review": "Selected image reviewed at useful resolution and on the final labelled contact sheet; full pictured hardware front retained. Drawings and exposed boards are explicitly identified.",
+      "identification_notes": "Near-square white controller cover with a small retaining screw low on the face and Axis branding along the bottom. The official product-support image identifies this enclosure as A1601.",
+      "applicability_limits": "The linked manual is specifically A1601, observed T10125657, 2026-09 (M15.3). A1001 and other Axis controller covers can look similar, so verify the installed label. Do not infer AXIS OS, controller configuration or A1610 compatibility from the casing.",
+      "uk_evidence": "UK manufacturer product/support material or UK-hosted archive/manual; UK prioritisation is not a claim of installed-market share."
+    },
+    {
+      "id": "axis-a1610",
+      "brand": "Axis",
+      "model": "AXIS A1610 Network Door Controller",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "axis-807465e12fb4"
+      ],
+      "source_image_url": "https://www.axis.com/sites/axis/files/styles/standard_1360_x_auto/public/2023-10/a1610_front_2212-Productimageswithcropping%20%281%29.png.webp?itok=0ai9Mwai",
+      "source_page_url": "https://www.axis.com/products/axis-a1610",
+      "image_credit": "Axis Communications official A1610 front product image",
+      "image_type": "official-manufacturer-product-image",
+      "source_pdf_page": null,
+      "asset_file": "images/axis-a1610.webp",
+      "source_asset_sha256": "c563fc879145ba451f10fcedcddf4e515b6f63f6694703b6adcfa4680631cc42",
+      "source_asset_dimensions": [
+        1360,
+        1360
+      ],
+      "source_asset_bytes": 19484,
+      "visual_review": "Selected image reviewed at useful resolution and on the final labelled contact sheet; full pictured hardware front retained. Drawings and exposed boards are explicitly identified.",
+      "identification_notes": "White enclosed controller with an inset lid, central cover screw and lower cable-entry section. This complete front image comes from the A1610 product gallery.",
+      "applicability_limits": "The photograph shows the enclosed A1610 two-door controller, not an A1610-B bare board or A1601. The linked manual was observed as T10181937, 2026-09 (M12.3). Confirm the label and installed AXIS OS before selecting configuration instructions.",
+      "uk_evidence": "UK manufacturer product/support material or UK-hosted archive/manual; UK prioritisation is not a claim of installed-market share."
+    },
+    {
+      "id": "axis-a8207-ve-mk-ii",
+      "brand": "Axis",
+      "model": "AXIS A8207-VE Mk II video door station",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "axis-24d3db8fee6a"
+      ],
+      "source_image_url": "https://www.axis.com/sites/axis/files/styles/standard_1360_x_auto/public/2023-05/a8207_ve_front_w_lights_2305-Productimageswithcropping.png.webp?itok=V4hwfLzK",
+      "source_page_url": "https://www.axis.com/en-gb/products/axis-a8207-ve-mk-ii",
+      "image_credit": "Axis Communications official A8207-VE Mk II product-page front image",
+      "image_type": "official-manufacturer-product-image",
+      "source_pdf_page": null,
+      "asset_file": "images/axis-a8207-ve-mk-ii.webp",
+      "source_asset_sha256": "6fcac9aa616885e32b78520b0e044694a640d0f8496c21664b07ae09b0267e29",
+      "source_asset_dimensions": [
+        1360,
+        1360
+      ],
+      "source_asset_bytes": 21310,
+      "visual_review": "Selected image reviewed at useful resolution and on the final labelled contact sheet; full pictured hardware front retained. Drawings and exposed boards are explicitly identified.",
+      "identification_notes": "Tall dark door station with camera and speaker at the top, illuminated status symbols, a physical numeric keypad and a large circular call control below. The full front photograph is supplied on the Mk II product page.",
+      "applicability_limits": "The archive link is specifically the Mk II manual, observed T10176599, 2026-07 (M25.2). The original A8207-VE can look similar; confirm the Mk II product label. AXIS OS and the connected access-control system determine the installed functions.",
+      "uk_evidence": "UK manufacturer product/support material or UK-hosted archive/manual; UK prioritisation is not a claim of installed-market share."
+    },
+    {
+      "id": "axis-i8016-lve",
+      "brand": "Axis",
+      "model": "AXIS I8016-LVE video intercom",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "axis-5a2b49188c66"
+      ],
+      "source_image_url": "https://www.axis.com/sites/axis/files/styles/standard_1360_x_auto/public/2021-01/1600_i8016-lve-angle-left-led-on-2012.png.webp?itok=04UQXnMl",
+      "source_page_url": "https://www.axis.com/products/axis-i8016-lve",
+      "image_credit": "Axis Communications official I8016-LVE angled front product photograph",
+      "image_type": "official-manufacturer-product-image",
+      "source_pdf_page": null,
+      "asset_file": "images/axis-i8016-lve.webp",
+      "source_asset_sha256": "bd37d64dc195f7a994ac1b9a3893450ffbcae9844653b28cef9f9ffc6478c8a8",
+      "source_asset_dimensions": [
+        1360,
+        1360
+      ],
+      "source_asset_bytes": 25636,
+      "visual_review": "Selected image reviewed at useful resolution and on the final labelled contact sheet; full pictured hardware front retained. Drawings and exposed boards are explicitly identified.",
+      "identification_notes": "Compact metal intercom plate with a horizontal dark camera window, speech slots below it and a round illuminated call button to the right. The manufacturer photograph preserves the entire front and side outline.",
+      "applicability_limits": "The linked manual is for I8016-LVE, observed T10154915, 2026-10 (M25.2). Mounting accessories and integrations vary, and the photo does not determine the installed AXIS OS or door-controller configuration. I8116-E is a different device.",
+      "uk_evidence": "UK manufacturer product/support material or UK-hosted archive/manual; UK prioritisation is not a claim of installed-market share."
+    },
+    {
+      "id": "axis-i8116-e",
+      "brand": "Axis",
+      "model": "AXIS I8116-E video intercom",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "axis-9eb878a6de8d"
+      ],
+      "source_image_url": "https://www.axis.com/sites/axis/files/styles/standard_1360_x_auto/public/2023-06/i8116e_front_2210-Productimage.png.webp?itok=In5ewg8z",
+      "source_page_url": "https://www.axis.com/en-gb/products/axis-i8116-e",
+      "image_credit": "Axis Communications official white I8116-E front product photograph",
+      "image_type": "official-manufacturer-product-image",
+      "source_pdf_page": null,
+      "asset_file": "images/axis-i8116-e.webp",
+      "source_asset_sha256": "6247f0064d15744beb7d2f01a7a06bb841b440082013b11d5486652c9b2a08b6",
+      "source_asset_dimensions": [
+        1360,
+        1360
+      ],
+      "source_asset_bytes": 14778,
+      "visual_review": "Selected image reviewed at useful resolution and on the final labelled contact sheet; full pictured hardware front retained. Drawings and exposed boards are explicitly identified.",
+      "identification_notes": "Narrow entrance intercom with a large circular camera near the top, horizontal speaker slots in the middle and an illuminated round call button below. The selected full front image shows the white finish.",
+      "applicability_limits": "White and black finishes are grouped as one I8116-E family. The linked manual is I8116-E, observed T10183848, 2026-10 (M18.2). Confirm the model label, installed AXIS OS and integration; the similar name does not make I8016-LVE instructions interchangeable.",
+      "uk_evidence": "UK manufacturer product/support material or UK-hosted archive/manual; UK prioritisation is not a claim of installed-market share."
+    },
+    {
+      "id": "farfisa-fc52pl",
+      "brand": "Farfisa",
+      "model": "FC52PL Profilo access-control keypad",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "farfisa-16a21ff231e3"
+      ],
+      "source_image_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Farfisa%20Intercom%20keypad%20manual%20-%20Copy.pdf",
+      "source_page_url": "https://www.farfisa.com/catalogo/tastiera-controllo-accessi-fc52pl.html",
+      "image_credit": "Farfisa manufacturer manual front drawing, archived by UK Watch Security, PDF page 1",
+      "image_type": "official-manufacturer-manual-drawing",
+      "source_pdf_page": 1,
+      "asset_file": "images/farfisa-fc52pl.png",
+      "source_asset_sha256": "fb013479551c39521237f96767d5268658079c954bce787976c499373097be44",
+      "source_asset_dimensions": [
+        268,
+        364
+      ],
+      "source_asset_bytes": 23498,
+      "visual_review": "Selected image reviewed at useful resolution and on the final labelled contact sheet; full pictured hardware front retained. Drawings and exposed boards are explicitly identified.",
+      "identification_notes": "Exact manual front drawing of the compact Profilo keypad: rounded end trims, two status symbols and twelve circular keys arranged 1–9 above A, 0 and B. Original manual pointer lines remain visible.",
+      "applicability_limits": "The hash-matched two-page leaflet explicitly identifies FC52PL in a one-way audio kit with PL11PED. The keypad is pictured with its mounting frame; the diagram is not a photograph or evidence that every Profilo module shares the same electronics. Check the keypad code and terminal labels before using the linked instructions.",
+      "uk_evidence": "UK manufacturer product/support material or UK-hosted archive/manual; UK prioritisation is not a claim of installed-market share.",
+      "pdf_extraction": {
+        "panel_id": "farfisa-fc52pl",
+        "source_pdf": "farfisa-16a21ff231e3.pdf",
+        "page_one_based": 1,
+        "clip_pdf_points": [
+          147,
+          463,
+          214,
+          554
+        ],
+        "render_scale": 4,
+        "method": "Exact vector front-figure excerpt from the original manual; no product geometry redrawn",
+        "source_pdf_sha256": "e956e5dc498623a6cf3aec708c8b2cdffed7b4f8158c1d52a3ba4668704a80cc"
+      }
+    },
+    {
+      "id": "videx-vprox20",
+      "brand": "Videx",
+      "model": "VProx 20 one-door controller",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "videx-ff4de2ba5194"
+      ],
+      "source_image_url": "https://www.videxuk.com/wp-content/uploads/2017/01/PT-932x932-VP20.jpg",
+      "source_page_url": "https://www.videxuk.com/product/vprox-controllers/",
+      "image_credit": "Videx UK official VProx 20 product photograph; blank margins trimmed without upscaling",
+      "image_type": "official-manufacturer-product-image",
+      "source_pdf_page": null,
+      "asset_file": "images/videx-vprox20.jpg",
+      "source_asset_sha256": "26fbe48085c5ccec5465234b1ab77004d428998d91e011d79ddaadb095ba6129",
+      "source_asset_dimensions": [
+        388,
+        448
+      ],
+      "source_asset_bytes": 35774,
+      "visual_review": "Selected image reviewed at useful resolution and on the final labelled contact sheet; full pictured hardware front retained. Drawings and exposed boards are explicitly identified.",
+      "identification_notes": "Small DIN-style controller with a VproX-labelled front, key/tag reading symbol and a vertical group of programming controls on the left. The photograph is the controller itself, rather than an external door reader.",
+      "applicability_limits": "The linked manual is Art. VproX-20, 66251390-EN V2.0 dated 06/11/2015, for one door and twenty keys. Do not substitute the wider VProx 100 or the multi-door keypad controllers. Confirm the full printed code and installed revision.",
+      "uk_evidence": "UK manufacturer product/support material or UK-hosted archive/manual; UK prioritisation is not a claim of installed-market share.",
+      "processing": {
+        "image": "videx-vprox20.jpg",
+        "original_image": "research/original-videx-vprox20.jpg",
+        "original_dimensions": [
+          932,
+          932
+        ],
+        "crop_pixels": [
+          275,
+          245,
+          663,
+          693
+        ],
+        "output_dimensions": [
+          388,
+          448
+        ],
+        "processing": "Trim blank white margins only with 28-pixel padding; no upscaling, sharpening, redrawing or alteration to the hardware."
+      }
+    },
+    {
+      "id": "videx-vprox100",
+      "brand": "Videx",
+      "model": "VProx 100 two-door controller",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "videx-5b516900d33a"
+      ],
+      "source_image_url": "https://www.videxuk.com/wp-content/uploads/2017/01/PT-932x932-VP100.jpg",
+      "source_page_url": "https://www.videxuk.com/product/vprox-controllers/",
+      "image_credit": "Videx UK official VProx 100 product photograph; blank margins trimmed without upscaling",
+      "image_type": "official-manufacturer-product-image",
+      "source_pdf_page": null,
+      "asset_file": "images/videx-vprox100.jpg",
+      "source_asset_sha256": "1b27fb1aed016ffa5c73f82d4edd3595ef5086d3763cf3efd34f9b96d2e8887b",
+      "source_asset_dimensions": [
+        638,
+        404
+      ],
+      "source_asset_bytes": 62932,
+      "visual_review": "Selected image reviewed at useful resolution and on the final labelled contact sheet; full pictured hardware front retained. Drawings and exposed boards are explicitly identified.",
+      "identification_notes": "Wide DIN-style access controller with a two-digit display, small function buttons and a prominent key/tag reading area. VproX and Videx markings are visible on the complete front.",
+      "applicability_limits": "The linked VPROX 100 technical manual is edition 1.2, 04/02/2011, code 66250650, covering the 100-user two-entrance controller. Capacity, terminals and programming differ from VP20 and VP250. Check the exact controller label and revision.",
+      "uk_evidence": "UK manufacturer product/support material or UK-hosted archive/manual; UK prioritisation is not a claim of installed-market share.",
+      "processing": {
+        "image": "videx-vprox100.jpg",
+        "original_image": "research/original-videx-vprox100.jpg",
+        "original_dimensions": [
+          932,
+          932
+        ],
+        "crop_pixels": [
+          148,
+          272,
+          786,
+          676
+        ],
+        "output_dimensions": [
+          638,
+          404
+        ],
+        "processing": "Trim blank white margins only with 28-pixel padding; no upscaling, sharpening, redrawing or alteration to the hardware."
+      }
+    },
+    {
+      "id": "videx-vprox250",
+      "brand": "Videx",
+      "model": "VProx 250 controller — exposed board reference",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "videx-96db973fa326"
+      ],
+      "source_image_url": "https://www.videxuk.com/wp-content/uploads/2017/01/PT-932x932-VP250.jpg",
+      "source_page_url": "https://www.videxuk.com/product/vprox-controllers/",
+      "image_credit": "Videx UK official VProx 250 exposed controller-board photograph; blank margins trimmed",
+      "image_type": "official-manufacturer-controller-board-photograph",
+      "source_pdf_page": null,
+      "asset_file": "images/videx-vprox250.jpg",
+      "source_asset_sha256": "3b11456ba7ce6f5c00233a3a8fd0b7fe0408a5981b52e58dcd81947844aee026",
+      "source_asset_dimensions": [
+        687,
+        481
+      ],
+      "source_asset_bytes": 108612,
+      "visual_review": "Selected image reviewed at useful resolution and on the final labelled contact sheet; full pictured hardware front retained. Drawings and exposed boards are explicitly identified.",
+      "identification_notes": "Exposed VPROX-250 controller board and programming face, with segmented numeric display, three-column keypad, central key/tag reader area and terminal blocks below. This is an internal board reference, not an exterior cabinet photograph.",
+      "applicability_limits": "The linked VPROX 250 manual is version 1.1 for the 250-key, three-door system. Its segmented display and programming differ from the LCD VProx 1000/4000 controllers. Confirm the model label and board revision; the picture does not show the fitted enclosure.",
+      "uk_evidence": "UK manufacturer product/support material or UK-hosted archive/manual; UK prioritisation is not a claim of installed-market share.",
+      "processing": {
+        "image": "videx-vprox250.jpg",
+        "original_image": "research/original-videx-vprox250.jpg",
+        "original_dimensions": [
+          932,
+          932
+        ],
+        "crop_pixels": [
+          115,
+          211,
+          802,
+          692
+        ],
+        "output_dimensions": [
+          687,
+          481
+        ],
+        "processing": "Trim blank white margins only with 28-pixel padding; no upscaling, sharpening, redrawing or alteration to the hardware."
+      }
+    },
+    {
+      "id": "videx-vprox1000-4000",
+      "brand": "Videx",
+      "model": "VProx 1000 / 4000 LCD controller family",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "videx-22a2e2a33153",
+        "videx-8f3aa6d49c49"
+      ],
+      "source_image_url": "https://www.videxuk.com/wp-content/uploads/2017/01/PT-932x932-VP4000.jpg",
+      "source_page_url": "https://www.videxuk.com/product/vprox-controllers/",
+      "image_credit": "Videx UK official VProx 4000 open-cabinet photograph; blank margins trimmed",
+      "image_type": "official-manufacturer-product-image",
+      "source_pdf_page": null,
+      "asset_file": "images/videx-vprox4000.jpg",
+      "source_asset_sha256": "9a2c08f586ce4f970a169f3aee92fc87447c54492ff2fb049f592285c6581ed9",
+      "source_asset_dimensions": [
+        707,
+        628
+      ],
+      "source_asset_bytes": 94013,
+      "visual_review": "Selected image reviewed at useful resolution and on the final labelled contact sheet; full pictured hardware front retained. Drawings and exposed boards are explicitly identified.",
+      "identification_notes": "Open metal enclosure with the controller face mounted inside: LCD and numeric keypad on the right, labelled key/tag area on the left. The pictured example is VProx 4000; the related LCD-equipped 1000 and 4000 models are grouped to avoid duplicate-looking entries.",
+      "applicability_limits": "Choose the manual matching the printed controller model: VproX 1000-M version 3.3 or VproX 4000-M version 1.2. They have different capacities and model-specific settings. The photograph is an open 4000 cabinet reference, not proof that an unidentified 1000/4000 installation uses the same board or firmware revision.",
+      "uk_evidence": "UK manufacturer product/support material or UK-hosted archive/manual; UK prioritisation is not a claim of installed-market share.",
+      "processing": {
+        "image": "videx-vprox4000.jpg",
+        "original_image": "research/original-videx-vprox4000.jpg",
+        "original_dimensions": [
+          932,
+          932
+        ],
+        "crop_pixels": [
+          105,
+          142,
+          812,
+          770
+        ],
+        "output_dimensions": [
+          707,
+          628
+        ],
+        "processing": "Trim blank white margins only with 28-pixel padding; no upscaling, sharpening, redrawing or alteration to the hardware."
+      }
+    },
+    {
+      "id": "videx-sc24000",
+      "brand": "Videx",
+      "model": "SC24000 S-Prox two-door controller",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "videx-75ace2163fbd"
+      ],
+      "source_image_url": "https://www.videxuk.com/wp-content/uploads/2017/01/PT-932x932-SPROX-SC24000.jpg",
+      "source_page_url": "https://www.videxuk.com/product/sc24000-proximity-controller/",
+      "image_credit": "Videx UK official SC24000 controller photograph; blank margins trimmed without upscaling",
+      "image_type": "official-manufacturer-product-image",
+      "source_pdf_page": null,
+      "asset_file": "images/videx-sc24000.jpg",
+      "source_asset_sha256": "93a5bd7c6d8157d6e756ba4ec94504f639917fb065086179313fcb049e6e8b4e",
+      "source_asset_dimensions": [
+        596,
+        599
+      ],
+      "source_asset_bytes": 82977,
+      "visual_review": "Selected image reviewed at useful resolution and on the final labelled contact sheet; full pictured hardware front retained. Drawings and exposed boards are explicitly identified.",
+      "identification_notes": "Compact controller module with exposed terminal rows and a large green connection/function label across its top. The complete manufacturer photograph is explicitly associated with SC24000 S-Prox.",
+      "applicability_limits": "The linked twelve-page SC24000 S-Prox manual is the ENUK-VB2 file for this two-entrance shadow-card controller. It is not the Portal Plus EWS/EWSi controller even though some reader products overlap. Verify the SC24000 model and revision before using its configuration instructions.",
+      "uk_evidence": "UK manufacturer product/support material or UK-hosted archive/manual; UK prioritisation is not a claim of installed-market share.",
+      "processing": {
+        "image": "videx-sc24000.jpg",
+        "original_image": "research/original-videx-sc24000.jpg",
+        "original_dimensions": [
+          932,
+          932
+        ],
+        "crop_pixels": [
+          172,
+          180,
+          768,
+          779
+        ],
+        "output_dimensions": [
+          596,
+          599
+        ],
+        "processing": "Trim blank white margins only with 28-pixel padding; no upscaling, sharpening, redrawing or alteration to the hardware."
+      }
+    }
+  ],
+  "manual_verification": [
+    {
+      "record_id": "aiphone-6fbba6604334",
+      "catalogue_title": "Aiphone GT Install-Op Manual 0311",
+      "catalogue_models": [
+        "GT"
+      ],
+      "source_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Aiphone%20GT%20Install-Op%20Manual%200311.pdf",
+      "research_file": "research/aiphone-6fbba6604334.pdf",
+      "pages": 60,
+      "bytes": 7117221,
+      "observed_sha256": "23fb9592a5fb93631f937c6d51582d2deb5599f3c94b1925cbc6cead5b0b6b3e",
+      "catalogue_sha256": "23fb9592a5fb93631f937c6d51582d2deb5599f3c94b1925cbc6cead5b0b6b3e",
+      "hash_verification": "matches-pinned-catalogue-hash",
+      "observed_edition": "0311 A OI; exact GT-DM and legacy modular GT system",
+      "identity_evidence": "PDF pages 10–11 identify the four modular unit pairs and their entrance arrangements; page 12 explicitly identifies GT-DM/GT-DMV. GTV-DES202 is the legacy 2-by-2 video/digital assembly shown on the separate UK manufacturer specification sheet."
+    },
+    {
+      "record_id": "axis-02e843dd3ba5",
+      "catalogue_title": "AXIS A1001 and AXIS Entry Manager — User manual",
+      "catalogue_models": [
+        "AXIS A1001 and AXIS Entry Manager"
+      ],
+      "source_url": "https://help.axis.com/download/um_a1001_t10010336_2511.pdf",
+      "research_file": "research/axis-02e843dd3ba5.pdf",
+      "pages": 70,
+      "bytes": 917936,
+      "observed_sha256": "96ae7301243bf69c863438268fe89ac7f22af7669e88f2dc3e3f23cf5695656f",
+      "catalogue_sha256": null,
+      "hash_verification": "observed-download-hash-only; catalogue has no pinned hash",
+      "observed_edition": "T10010336, 2025-11 (M26.2)",
+      "identity_evidence": "Exact model is printed in the downloaded manufacturer manual title or opening page; the matching manufacturer product page and selected photograph were checked."
+    },
+    {
+      "record_id": "axis-24d3db8fee6a",
+      "catalogue_title": "AXIS A8207-VE Mk II Network Video Door Station — User manual",
+      "catalogue_models": [
+        "AXIS A8207-VE Mk II Network Video Door Station"
+      ],
+      "source_url": "https://help.axis.com/download/um_a8207_ve_mk_ii_t10176599_2607.pdf",
+      "research_file": "research/axis-24d3db8fee6a.pdf",
+      "pages": 30,
+      "bytes": 480536,
+      "observed_sha256": "975d7042f52782a791ee15bc91bd29776f35e3d4509f8bf9db9669c7638ef51f",
+      "catalogue_sha256": null,
+      "hash_verification": "observed-download-hash-only; catalogue has no pinned hash",
+      "observed_edition": "T10176599, 2026-07 (M25.2)",
+      "identity_evidence": "Exact model is printed in the downloaded manufacturer manual title or opening page; the matching manufacturer product page and selected photograph were checked."
+    },
+    {
+      "record_id": "axis-5a2b49188c66",
+      "catalogue_title": "AXIS I8016-LVE Network Video Intercom — User manual",
+      "catalogue_models": [
+        "AXIS I8016-LVE Network Video Intercom"
+      ],
+      "source_url": "https://help.axis.com/download/um_i8016_lve_t10154915_2607.pdf",
+      "research_file": "research/axis-5a2b49188c66.pdf",
+      "pages": 28,
+      "bytes": 483098,
+      "observed_sha256": "bbed8f83f2e0e1c519955189b280e00791562a5fb3fd2906da9b527741a0cf4e",
+      "catalogue_sha256": null,
+      "hash_verification": "observed-download-hash-only; catalogue has no pinned hash",
+      "observed_edition": "T10154915, 2026-10 (M25.2)",
+      "identity_evidence": "Exact model is printed in the downloaded manufacturer manual title or opening page; the matching manufacturer product page and selected photograph were checked."
+    },
+    {
+      "record_id": "axis-61e97b138384",
+      "catalogue_title": "AXIS A1601 Network Door Controller — User manual",
+      "catalogue_models": [
+        "AXIS A1601 Network Door Controller"
+      ],
+      "source_url": "https://help.axis.com/download/um_a1601_t10125657_2610.pdf",
+      "research_file": "research/axis-61e97b138384.pdf",
+      "pages": 66,
+      "bytes": 508218,
+      "observed_sha256": "0f1be09a5a7439c1389730da70242e67e684ebb3ce1c31a2649a35d5b0317c7e",
+      "catalogue_sha256": null,
+      "hash_verification": "observed-download-hash-only; catalogue has no pinned hash",
+      "observed_edition": "T10125657, 2026-09 (M15.3)",
+      "identity_evidence": "Exact model is printed in the downloaded manufacturer manual title or opening page; the matching manufacturer product page and selected photograph were checked."
+    },
+    {
+      "record_id": "axis-807465e12fb4",
+      "catalogue_title": "AXIS A1610 Network Door Controller — User manual",
+      "catalogue_models": [
+        "AXIS A1610 Network Door Controller"
+      ],
+      "source_url": "https://help.axis.com/download/um_a1610_t10181937_2610.pdf",
+      "research_file": "research/axis-807465e12fb4.pdf",
+      "pages": 24,
+      "bytes": 300507,
+      "observed_sha256": "3caabc315a42f2fb466ee481002f3ee3e9c53394d2ac181ef54cec2444a60a1b",
+      "catalogue_sha256": null,
+      "hash_verification": "observed-download-hash-only; catalogue has no pinned hash",
+      "observed_edition": "T10181937, 2026-09 (M12.3)",
+      "identity_evidence": "Exact model is printed in the downloaded manufacturer manual title or opening page; the matching manufacturer product page and selected photograph were checked."
+    },
+    {
+      "record_id": "axis-9eb878a6de8d",
+      "catalogue_title": "AXIS I8116-E Network Video Intercom — User manual",
+      "catalogue_models": [
+        "AXIS I8116-E Network Video Intercom"
+      ],
+      "source_url": "https://help.axis.com/download/um_i8116_e_t10183848_2607.pdf",
+      "research_file": "research/axis-9eb878a6de8d.pdf",
+      "pages": 30,
+      "bytes": 565816,
+      "observed_sha256": "d9b735d8089831a09114afedb1d9f91660c59e9d4bd00c269d5978319beb96c6",
+      "catalogue_sha256": null,
+      "hash_verification": "observed-download-hash-only; catalogue has no pinned hash",
+      "observed_edition": "T10183848, 2026-10 (M18.2)",
+      "identity_evidence": "Exact model is printed in the downloaded manufacturer manual title or opening page; the matching manufacturer product page and selected photograph were checked."
+    },
+    {
+      "record_id": "axis-e68d3a76ed5b",
+      "catalogue_title": "AXIS A1210 Network Door Controller — User manual",
+      "catalogue_models": [
+        "AXIS A1210 Network Door Controller"
+      ],
+      "source_url": "https://help.axis.com/download/um_a1210_t10181041_2610.pdf",
+      "research_file": "research/axis-e68d3a76ed5b.pdf",
+      "pages": 22,
+      "bytes": 248455,
+      "observed_sha256": "a926bb7278960d71e7d85afb9059f2f0b7423a5b72db800e4027ef2a572b318c",
+      "catalogue_sha256": null,
+      "hash_verification": "observed-download-hash-only; catalogue has no pinned hash",
+      "observed_edition": "T10181041, 2026-10 (M11.6)",
+      "identity_evidence": "The downloaded PDF begins with a contents page and has no model-title cover. Identity was checked through the official help.axis.com/en-us/axis-a1210 page: its heading identifies AXIS A1210 Network Door Controller and its Download PDF link opens this exact catalogue URL. Edition is read from the PDF footer."
+    },
+    {
+      "record_id": "farfisa-16a21ff231e3",
+      "catalogue_title": "Farfisa Intercom keypad manual - Copy",
+      "catalogue_models": [
+        "Intercom keypad"
+      ],
+      "source_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Farfisa%20Intercom%20keypad%20manual%20-%20Copy.pdf",
+      "research_file": "research/farfisa-16a21ff231e3.pdf",
+      "pages": 2,
+      "bytes": 551088,
+      "observed_sha256": "e956e5dc498623a6cf3aec708c8b2cdffed7b4f8158c1d52a3ba4668704a80cc",
+      "catalogue_sha256": "e956e5dc498623a6cf3aec708c8b2cdffed7b4f8158c1d52a3ba4668704a80cc",
+      "hash_verification": "matches-pinned-catalogue-hash",
+      "observed_edition": "Two-page one-way audio kit leaflet containing FC52PL; no edition inferred",
+      "identity_evidence": "PDF page 1 adjustment diagram and page 2 connections explicitly identify FC52PL in the PL11PED one-way audio kit. The manufacturer FC52PL page separately confirms product identity."
+    },
+    {
+      "record_id": "videx-22a2e2a33153",
+      "catalogue_title": "VProx VP1000 Installation Manual",
+      "catalogue_models": [
+        "VProx VP1000"
+      ],
+      "source_url": "https://www.videxuk.com/wp-content/uploads/2017/01/Vprox1000_Manual.pdf",
+      "research_file": "research/videx-22a2e2a33153.pdf",
+      "pages": 11,
+      "bytes": 969726,
+      "observed_sha256": "e8c136e9968ed5bd5f63badd4dacc027f353c3f3515ad8d85e5484c5d44f4f42",
+      "catalogue_sha256": null,
+      "hash_verification": "observed-download-hash-only; catalogue has no pinned hash",
+      "observed_edition": "VproX 1000-M version 3.3",
+      "identity_evidence": "Exact model is printed in the downloaded manufacturer manual title or opening page; the matching manufacturer product page and selected photograph were checked."
+    },
+    {
+      "record_id": "videx-5b516900d33a",
+      "catalogue_title": "VProx VP100 Installation Manual",
+      "catalogue_models": [
+        "VProx VP100"
+      ],
+      "source_url": "https://www.videxuk.com/wp-content/uploads/2017/01/VProx100_Manual.pdf",
+      "research_file": "research/videx-5b516900d33a.pdf",
+      "pages": 8,
+      "bytes": 165358,
+      "observed_sha256": "c5a848f96a757442b0a1d6145e4867484c4d8b0f32254fb30e57bc5dcdc3db9b",
+      "catalogue_sha256": null,
+      "hash_verification": "observed-download-hash-only; catalogue has no pinned hash",
+      "observed_edition": "Edition 1.2, 04/02/2011, code 66250650",
+      "identity_evidence": "Exact model is printed in the downloaded manufacturer manual title or opening page; the matching manufacturer product page and selected photograph were checked."
+    },
+    {
+      "record_id": "videx-75ace2163fbd",
+      "catalogue_title": "SC24000 S-Prox installation manual",
+      "catalogue_models": [
+        "SC24000"
+      ],
+      "source_url": "https://www.videxuk.com/wp-content/uploads/2018/04/SC24000_Manual_ENUK-VB2.pdf",
+      "research_file": "research/videx-75ace2163fbd.pdf",
+      "pages": 12,
+      "bytes": 5616466,
+      "observed_sha256": "e331ec47b70a7b557ffb2c7661fb1bfdaa1bace225ce71e6dc1a7a04cb14fe43",
+      "catalogue_sha256": null,
+      "hash_verification": "observed-download-hash-only; catalogue has no pinned hash",
+      "observed_edition": "SC24000_Manual_ENUK-VB2.pdf; VB2 is the filename, not an asserted printed revision",
+      "identity_evidence": "Exact model is printed in the downloaded manufacturer manual title or opening page; the matching manufacturer product page and selected photograph were checked."
+    },
+    {
+      "record_id": "videx-8f3aa6d49c49",
+      "catalogue_title": "VProx VP4000 Installation Manual",
+      "catalogue_models": [
+        "VProx VP4000"
+      ],
+      "source_url": "https://www.videxuk.com/wp-content/uploads/2017/01/Vprox4000_Manual.pdf",
+      "research_file": "research/videx-8f3aa6d49c49.pdf",
+      "pages": 16,
+      "bytes": 1144861,
+      "observed_sha256": "ae8eeb1258294f4d7961e2591c047ba4910f988086aaf74fb88bee075fbdeaa0",
+      "catalogue_sha256": null,
+      "hash_verification": "observed-download-hash-only; catalogue has no pinned hash",
+      "observed_edition": "VproX 4000-M version 1.2",
+      "identity_evidence": "Exact model is printed in the downloaded manufacturer manual title or opening page; the matching manufacturer product page and selected photograph were checked."
+    },
+    {
+      "record_id": "videx-96db973fa326",
+      "catalogue_title": "VProx VP250 Installation Manual",
+      "catalogue_models": [
+        "VProx VP250"
+      ],
+      "source_url": "https://www.videxuk.com/wp-content/uploads/2017/01/VProx250_Manual.pdf",
+      "research_file": "research/videx-96db973fa326.pdf",
+      "pages": 6,
+      "bytes": 622542,
+      "observed_sha256": "bf2b56743e938385453ec1a90045c320e2c0464443e1af613c5baa2c5d50ac8f",
+      "catalogue_sha256": null,
+      "hash_verification": "observed-download-hash-only; catalogue has no pinned hash",
+      "observed_edition": "VPROX 250 version 1.1",
+      "identity_evidence": "Exact model is printed in the downloaded manufacturer manual title or opening page; the matching manufacturer product page and selected photograph were checked."
+    },
+    {
+      "record_id": "videx-ff4de2ba5194",
+      "catalogue_title": "VProx VP20 Installation Manual",
+      "catalogue_models": [
+        "VProx VP20"
+      ],
+      "source_url": "https://www.videxuk.com/wp-content/uploads/2017/01/VProx20_Manual.pdf",
+      "research_file": "research/videx-ff4de2ba5194.pdf",
+      "pages": 4,
+      "bytes": 389101,
+      "observed_sha256": "489fe6204fd5d37551361554eb8ec1436bbfe17ed0c67bebbdf11ede9e8d5851",
+      "catalogue_sha256": null,
+      "hash_verification": "observed-download-hash-only; catalogue has no pinned hash",
+      "observed_edition": "66251390-EN V2.0, 06/11/2015",
+      "identity_evidence": "Exact model is printed in the downloaded manufacturer manual title or opening page; the matching manufacturer product page and selected photograph were checked."
+    }
+  ],
+  "candidates": [
+    {
+      "id": "came-bpt-targha",
+      "brand": "CAME / BPT",
+      "model": "Targha entrance panel family",
+      "category": "access-control",
+      "status": "research-deferred",
+      "record_ids": [],
+      "considered_catalogue_record_ids": [
+        "came-bpt-aa6078374efd"
+      ],
+      "source_page_url": "https://www.bptintercoms.co.uk/manuals.html",
+      "attempted_url": "https://docs.came.com/pdf/FB00971-EN.pdf?1644594043",
+      "retrieval_http_status": 404,
+      "attempts": 1,
+      "reason": "The catalogue lead is AGATAkit C200, not proof that all Targha variants are covered. Its public PDF returned 404 on one attempt. No image or manual mapping was invented."
+    },
+    {
+      "id": "came-bpt-strikemaster",
+      "brand": "CAME / BPT",
+      "model": "Strikemaster entrance panel",
+      "category": "access-control",
+      "status": "research-deferred",
+      "record_ids": [],
+      "considered_catalogue_record_ids": [
+        "came-bpt-1adb0809da40"
+      ],
+      "source_page_url": "https://www.bptintercoms.co.uk/manuals.html",
+      "attempted_url": "https://cf.bptintercoms.co.uk/media/wysiwyg/CameBPT-Manual/BPT-Strikemaster.pdf",
+      "retrieval_http_status": 403,
+      "attempts": 1,
+      "reason": "The existing exact-title PDF lead returned 403 on one public retrieval attempt. No challenge bypass or repeated retry; no image was substituted."
+    },
+    {
+      "id": "came-bpt-storm-vr",
+      "brand": "CAME / BPT",
+      "model": "Storm VR entrance panel",
+      "category": "access-control",
+      "status": "research-deferred",
+      "record_ids": [],
+      "considered_catalogue_record_ids": [
+        "came-bpt-debc22c5b6e1"
+      ],
+      "source_page_url": "https://www.bptintercoms.co.uk/manuals.html",
+      "attempted_url": "https://cf.bptintercoms.co.uk/media/wysiwyg/CameBPT-Manual/BPT-STORM-VR.pdf",
+      "retrieval_http_status": 403,
+      "attempts": 1,
+      "reason": "The existing exact-title PDF lead returned 403 on one public retrieval attempt. No challenge bypass or repeated retry; no unverified front was substituted."
+    },
+    {
+      "id": "comelit-3one6-sense",
+      "brand": "Comelit",
+      "model": "3ONE6 Sense entrance panel",
+      "category": "access-control",
+      "status": "research-deferred",
+      "record_ids": [],
+      "considered_catalogue_record_ids": [
+        "comelit-96fce5a539a7"
+      ],
+      "source_page_url": "https://comelit-pac.co.uk/installer/products/door-entry-systems/3one6/",
+      "reason": "Downloaded candidate manual is a 3457U 8-inch touch module Wiegand integration manual. It does not establish applicability to 3ONE6 Sense. Touch imagery and manual were not reassigned to the buttonless Sense panel."
+    },
+    {
+      "id": "aes-603-legacy",
+      "brand": "AES",
+      "model": "603 legacy wireless entrance panel",
+      "category": "access-control",
+      "status": "research-deferred",
+      "record_ids": [],
+      "considered_catalogue_record_ids": [
+        "aes-bdc411a3a630"
+      ],
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php",
+      "reason": "The two-page Ver.3 manual was downloaded and identifies 603 AB/ABK/HB/HBK with the 1200 keypad model. A clear attributable complete front for that legacy generation was not verified. No newer Prime panel was used as a substitute."
+    }
+  ],
+  "grouping_decisions": [
+    {
+      "id": "videx-vprox1000-4000",
+      "reason": "Related LCD and numeric-keypad controllers grouped as one pictured family; photo shows an open VProx 4000 cabinet. The exact 1000 and 4000 manuals remain separately linked with distinct version/capacity limits."
+    },
+    {
+      "id": "axis-i8116-e",
+      "reason": "White and black finishes grouped as one hardware family; no cosmetic duplicate count."
+    },
+    {
+      "id": "aiphone-gt-modular",
+      "reason": "The complete four-module GTV-DES202 assembly is visually distinct from the one-piece GT-DM; frame and direct-call variations are not counted separately."
+    }
+  ],
+  "excluded_or_rejected": [
+    {
+      "subject": "Farfisa FC52PL manufacturer thumbnail",
+      "reason": "The original 300-by-300 JPEG contains only a tiny hardware image. Replaced with the exact readable vector front figure from the hash-matched manufacturer manual; the rejected thumbnail is retained for research."
+    },
+    {
+      "subject": "AXIS A1001 product support thumbnail and datasheet",
+      "reason": "The support thumbnail combines a computer screen and device, and the candidate datasheet has no useful product front. Selected the exact manual page-5 cover figure with callouts retained."
+    },
+    {
+      "subject": "Urmet, Elvox/Vimar, 2N and BTicino",
+      "reason": "No exact records found in the supplied catalogue baseline. This bounded batch prioritises verified existing manual links over further picture-only entries."
+    },
+    {
+      "subject": "Aiphone LEF internal master/handsets; readers, fobs and controller expansion accessories",
+      "reason": "Not added as extra panel families. No accessories or cosmetic variants used to increase the count."
+    }
+  ],
+  "validation": {
+    "new_ids_against_baseline": true,
+    "all_record_ids_exist": true,
+    "all_record_categories_match": true,
+    "all_assets_decode": true,
+    "selected_assets_only_in_images_directory": true,
+    "all_selected_images_visually_reviewed": true,
+    "no_generated_or_lookalike_hardware_images": true,
+    "no_pdf_files_for_application_import": true
+  },
+  "notes": [
+    "Source PDFs remain research inputs only. The importer uses panels.json, selected images and this audit; no manual PDFs are copied to the app.",
+    "Image hashes in this audit are the selected input assets. The app importer converts/resizes them and records separate delivered WebP hashes.",
+    "Axis PDF URL date suffixes sometimes differ from the printed document footer. Observed editions are recorded from the actual retrieved PDF, not guessed from its URL.",
+    "Thirteen catalogue records lack pinned hashes. Their hashes are observations of downloaded files, not claims of equality to an archived snapshot.",
+    "VProx 250 is labelled an exposed controller-board reference. VProx 1000/4000 is labelled an open 4000 cabinet reference.",
+    "Blank margins only were trimmed from Videx photos, without upscaling. A1001 and FC52PL figures are exact PDF excerpts, explicitly labelled as drawings."
+  ]
+}

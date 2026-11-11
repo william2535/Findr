@@ -1,0 +1,656 @@
+[
+  {
+    "id": "aico-fire-devices",
+    "brand": "Aico",
+    "category": "fire",
+    "title": "Aico device pack",
+    "description": "Sourced device pictures, exact model codes and matched manufacturer documents for identification on site.",
+    "scope": "Selected device families with archive documents and separately verified device references. Confirm the label, protocol and document edition. Shared appearance does not establish compatibility.",
+    "device_ids": [
+      "aico-ei3014",
+      "aico-ei3016",
+      "aico-ei3024",
+      "aico-ei3030",
+      "aico-ei660i",
+      "aico-ei650i",
+      "aico-ei630i",
+      "aico-ei144e",
+      "aico-ei146e",
+      "aico-ei3000mrf",
+      "aico-ei450",
+      "aico-mcp401rc"
+    ],
+    "record_ids": [
+      "aico-0b817031d733",
+      "aico-0d5d7df89314",
+      "aico-33d08994b662",
+      "aico-3940aa649cda",
+      "aico-4fb4b285b074",
+      "aico-5520615bdeb8",
+      "aico-55f3ba358d2a",
+      "aico-6d83ddd276c6",
+      "aico-8b45527b51c1",
+      "aico-957a8189361b",
+      "aico-a107023f8485",
+      "aico-d3fb97090714",
+      "aico-efec1bd3d80d",
+      "aico-f4d4866ac694",
+      "device-doc-aico-22884205c611",
+      "device-doc-aico-6c128c0b705a",
+      "device-doc-aico-7dbcfdf98ccb",
+      "device-doc-aico-8f8b5876b06d"
+    ],
+    "record_count": 18,
+    "direct_pdf_count": 18,
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "supplementary_record_ids": [
+      "device-doc-aico-22884205c611",
+      "device-doc-aico-6c128c0b705a",
+      "device-doc-aico-7dbcfdf98ccb",
+      "device-doc-aico-8f8b5876b06d"
+    ]
+  },
+  {
+    "id": "ajax-security-devices",
+    "brand": "Ajax",
+    "category": "security",
+    "title": "Ajax device pack",
+    "description": "Sourced device pictures, exact model codes and matched manufacturer documents for identification on site.",
+    "scope": "Selected device families with archive documents and separately verified device references. Confirm the label, protocol and document edition. Shared appearance does not establish compatibility.",
+    "device_ids": [
+      "ajax-motionprotect",
+      "ajax-motionprotect-plus",
+      "ajax-combiprotect",
+      "ajax-doorprotect",
+      "ajax-doorprotect-plus",
+      "ajax-glassprotect",
+      "ajax-homesiren",
+      "ajax-streetsiren",
+      "ajax-motioncam",
+      "ajax-motionprotect-curtain"
+    ],
+    "record_ids": [
+      "ajax-20acb6e3d08d",
+      "ajax-31ec417c87c3",
+      "ajax-3837d17e4660",
+      "ajax-4d6ca373b0b7",
+      "ajax-5d2fa14fb8ca",
+      "ajax-7e7baaa693fd",
+      "ajax-af0b7d4e7c33",
+      "ajax-bf92b9a58fdb",
+      "ajax-f0ce8387a135",
+      "ajax-f9691d9be788",
+      "device-doc-ajax-26155dac817d",
+      "device-doc-ajax-3b7dbd6db378",
+      "device-doc-ajax-44764eb47998",
+      "device-doc-ajax-53339097c1a5",
+      "device-doc-ajax-740eadda7644",
+      "device-doc-ajax-9486bbc86323",
+      "device-doc-ajax-b17f6521ffcf",
+      "device-doc-ajax-c05166983480",
+      "device-doc-ajax-cf09dfff46dd"
+    ],
+    "record_count": 19,
+    "direct_pdf_count": 9,
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "supplementary_record_ids": [
+      "device-doc-ajax-26155dac817d",
+      "device-doc-ajax-3b7dbd6db378",
+      "device-doc-ajax-44764eb47998",
+      "device-doc-ajax-53339097c1a5",
+      "device-doc-ajax-740eadda7644",
+      "device-doc-ajax-9486bbc86323",
+      "device-doc-ajax-b17f6521ffcf",
+      "device-doc-ajax-c05166983480",
+      "device-doc-ajax-cf09dfff46dd"
+    ]
+  },
+  {
+    "id": "apollo-fire-devices",
+    "brand": "Apollo",
+    "category": "fire",
+    "title": "Apollo device pack",
+    "description": "Sourced device pictures, exact model codes and matched manufacturer documents for identification on site.",
+    "scope": "Selected device families with archive documents and separately verified device references. Confirm the label, protocol and document edition. Shared appearance does not establish compatibility.",
+    "device_ids": [
+      "apollo-xp95-optical-55000-620",
+      "apollo-xp95-heat-a2s-55000-420",
+      "apollo-discovery-optical-58000-600",
+      "apollo-soteria-dual-optical-heat-sa5100-710",
+      "apollo-orbis-optical-orb-op-12001",
+      "apollo-series65-optical-55000-317",
+      "apollo-intelligent-mcp-sa5900-908",
+      "apollo-xpander-mcp-xpa-mc-14101",
+      "apollo-intelligent-sounder-vid-sa5500-350",
+      "apollo-intelligent-io-sa4700-102",
+      "apollo-xpert7-base-45681-210",
+      "apollo-xpert8-base-sa5000-200",
+      "apollo-reach-loop-interface-rw1700-030",
+      "apollo-minidisc-remote-indicator-53832-070",
+      "apollo-auto-align-beam-sa7100-100",
+      "apollo-xp95-ir3-flame-55000-024",
+      "apollo-xpander-diversity-interface-xpa-in-14050",
+      "apollo-orbis-diode-base-orb-db-00003"
+    ],
+    "record_ids": [
+      "apollo-00c3936bf0fc",
+      "apollo-07744a0bb623",
+      "apollo-0f80e75d8a7b",
+      "apollo-1288f40f26a2",
+      "apollo-2323fa59b7f0",
+      "apollo-33c5f6586bfd",
+      "apollo-7e9f50267330",
+      "apollo-9739bb7328db",
+      "apollo-ae612a27ea60",
+      "apollo-d632a36424b9",
+      "apollo-e4ec6992b586",
+      "apollo-f27ce8642ca3",
+      "apollo-fe50a6c32956",
+      "apollo-ff8644c57eb9",
+      "device-doc-apollo-0c937f028eba",
+      "device-doc-apollo-44ca8b979263",
+      "device-doc-apollo-9fa419f06047",
+      "facp-1f98cd15-ad27-4365-8c16-aeac5a39d515"
+    ],
+    "record_count": 18,
+    "direct_pdf_count": 18,
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "supplementary_record_ids": [
+      "device-doc-apollo-0c937f028eba",
+      "device-doc-apollo-44ca8b979263",
+      "device-doc-apollo-9fa419f06047"
+    ]
+  },
+  {
+    "id": "c-tec-fire-devices",
+    "brand": "C-TEC",
+    "category": "fire",
+    "title": "C-TEC device pack",
+    "description": "Sourced device pictures, exact model codes and matched manufacturer documents for identification on site.",
+    "scope": "Selected device families with archive documents and separately verified device references. Confirm the label, protocol and document edition. Shared appearance does not establish compatibility.",
+    "device_ids": [
+      "c-tec-ca402",
+      "c-tec-ca414",
+      "c-tec-ca416",
+      "c-tec-ca408-base",
+      "c-tec-ca470-call-point",
+      "c-tec-ca730-interface",
+      "c-tec-ca459a-w-vad-base"
+    ],
+    "record_ids": [
+      "device-doc-c-tec-1a72f739e6d0",
+      "device-doc-c-tec-41e341b9c547",
+      "device-doc-c-tec-7ad9393daf5b",
+      "device-doc-c-tec-97eb0a9793d9",
+      "device-doc-c-tec-cb5ba501ef82",
+      "device-doc-c-tec-df7988f16dc3",
+      "device-doc-c-tec-f18a6fbbfbc7"
+    ],
+    "record_count": 7,
+    "direct_pdf_count": 7,
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "supplementary_record_ids": [
+      "device-doc-c-tec-1a72f739e6d0",
+      "device-doc-c-tec-41e341b9c547",
+      "device-doc-c-tec-7ad9393daf5b",
+      "device-doc-c-tec-97eb0a9793d9",
+      "device-doc-c-tec-cb5ba501ef82",
+      "device-doc-c-tec-df7988f16dc3",
+      "device-doc-c-tec-f18a6fbbfbc7"
+    ]
+  },
+  {
+    "id": "ems-fire-devices",
+    "brand": "EMS",
+    "category": "fire",
+    "title": "EMS device pack",
+    "description": "Sourced device pictures, exact model codes and matched manufacturer documents for identification on site.",
+    "scope": "Selected device families with archive documents and separately verified device references. Confirm the label, protocol and document edition. Shared appearance does not establish compatibility.",
+    "device_ids": [
+      "ems-firecell-optical-fcx-177-001",
+      "ems-firecell-sounder-detector-base-fcx-191-000",
+      "ems-firecell-wall-sounder-vad-fc-315-wa2",
+      "ems-firecell-call-point-fc-200-002",
+      "ems-firecell-dual-io-fc-610-001",
+      "ems-fusion-rlm-fcx-532-001",
+      "ems-firecell-rcc-230v-fc-555-001",
+      "ems-firecell-radio-hub-fcx-500-004"
+    ],
+    "record_ids": [
+      "device-doc-ems-0df7986de600",
+      "device-doc-ems-2f0d72961ef4",
+      "device-doc-ems-777d6bd3e405",
+      "device-doc-ems-a93fc764968b",
+      "device-doc-ems-c103ba80a56c",
+      "device-doc-ems-c40857c87e50",
+      "device-doc-ems-cf888f19e273",
+      "device-doc-ems-de2c0fb8aa1f"
+    ],
+    "record_count": 8,
+    "direct_pdf_count": 2,
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "supplementary_record_ids": [
+      "device-doc-ems-0df7986de600",
+      "device-doc-ems-2f0d72961ef4",
+      "device-doc-ems-777d6bd3e405",
+      "device-doc-ems-a93fc764968b",
+      "device-doc-ems-c103ba80a56c",
+      "device-doc-ems-c40857c87e50",
+      "device-doc-ems-cf888f19e273",
+      "device-doc-ems-de2c0fb8aa1f"
+    ]
+  },
+  {
+    "id": "fike-fire-devices",
+    "brand": "Fike",
+    "category": "fire",
+    "title": "Fike device pack",
+    "description": "Sourced device pictures, exact model codes and matched manufacturer documents for identification on site.",
+    "scope": "Selected device families with archive documents and separately verified device references. Confirm the label, protocol and document edition. Shared appearance does not establish compatibility.",
+    "device_ids": [
+      "fike-twinflex-multipoint-asd",
+      "fike-sita-multipoint-asd",
+      "fike-twinflex-mcp-402-0006",
+      "fike-sita-mcp-403-0006",
+      "fike-twinflex-io-802-0006",
+      "fike-sita-io-803-0006",
+      "fike-twinflex-sounder-vad-f0296336",
+      "fike-sita-soundpoint-313-0001"
+    ],
+    "record_ids": [
+      "fike-078df373e6a6",
+      "fike-0a81dc0dbbc1",
+      "fike-1b2de37e6684",
+      "fike-44f428530108",
+      "fike-538db8f6d1d5",
+      "fike-594585b67819",
+      "fike-6fec87fdf63f",
+      "fike-77a5c9cbeaa2"
+    ],
+    "record_count": 8,
+    "direct_pdf_count": 8,
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "supplementary_record_ids": []
+  },
+  {
+    "id": "gent-fire-devices",
+    "brand": "Gent",
+    "category": "fire",
+    "title": "Gent device pack",
+    "description": "Sourced device pictures, exact model codes and matched manufacturer documents for identification on site.",
+    "scope": "Selected device families with archive documents and separately verified device references. Confirm the label, protocol and document edition. Shared appearance does not establish compatibility.",
+    "device_ids": [
+      "gent-squad-legacy-family",
+      "gent-s4-700-base",
+      "gent-s4-348xx-mcp",
+      "gent-s4-34450-interface",
+      "gent-s3-v-r-voice-sounder"
+    ],
+    "record_ids": [
+      "device-doc-gent-9c36c632ebd9",
+      "facp-7538be76-f958-46e4-99f6-c718601bb349",
+      "gent-0ba4cfc5de7c"
+    ],
+    "record_count": 3,
+    "direct_pdf_count": 3,
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "supplementary_record_ids": [
+      "device-doc-gent-9c36c632ebd9"
+    ]
+  },
+  {
+    "id": "hochiki-fire-devices",
+    "brand": "Hochiki",
+    "category": "fire",
+    "title": "Hochiki device pack",
+    "description": "Sourced device pictures, exact model codes and matched manufacturer documents for identification on site.",
+    "scope": "Selected device families with archive documents and separately verified device references. Confirm the label, protocol and document edition. Shared appearance does not establish compatibility.",
+    "device_ids": [
+      "hochiki-aln-en",
+      "hochiki-acc-en",
+      "hochiki-atj-en",
+      "hochiki-acd-en",
+      "hochiki-acb-ew",
+      "hochiki-ybn-r3",
+      "hochiki-ybv-r4",
+      "hochiki-chq-ws2",
+      "hochiki-chq-wsb2",
+      "hochiki-ybo-bs",
+      "hochiki-chq-ari",
+      "hochiki-chq-sim",
+      "hochiki-chq-dim2-sci",
+      "hochiki-hcp-e-sci",
+      "hochiki-tch-b200",
+      "hochiki-soc-e3n",
+      "hochiki-dcd-ae3-ce3",
+      "hochiki-drd-e"
+    ],
+    "record_ids": [
+      "device-doc-hochiki-25693c776dcc"
+    ],
+    "record_count": 1,
+    "direct_pdf_count": 1,
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "supplementary_record_ids": [
+      "device-doc-hochiki-25693c776dcc"
+    ]
+  },
+  {
+    "id": "nittan-fire-devices",
+    "brand": "Nittan",
+    "category": "fire",
+    "title": "Nittan device pack",
+    "description": "Sourced device pictures, exact model codes and matched manufacturer documents for identification on site.",
+    "scope": "Selected device families with archive documents and separately verified device references. Confirm the label, protocol and document edition. Shared appearance does not establish compatibility.",
+    "device_ids": [
+      "nittan-evc-ir",
+      "nittan-ev-h-cs",
+      "nittan-ev-hiop-sb-sci",
+      "nittan-ev-mcp2-sci-ip67",
+      "nittan-ev-mcp2-sci-ip24",
+      "nittan-ev-240v-mra",
+      "nittan-ev-dph-cs",
+      "nittan-ev-mini-ip2",
+      "nittan-ev-ps",
+      "nittan-ev-2i1o"
+    ],
+    "record_ids": [
+      "device-doc-nittan-24b1fd056ba7",
+      "device-doc-nittan-2baa1e344172",
+      "device-doc-nittan-4e12fd384d8c",
+      "device-doc-nittan-509751ace6d5",
+      "device-doc-nittan-60acce3d2e53",
+      "device-doc-nittan-651d5abec767",
+      "device-doc-nittan-92f082662910",
+      "device-doc-nittan-c2305fc3416e",
+      "device-doc-nittan-c65c530f2411",
+      "device-doc-nittan-f912292fc103"
+    ],
+    "record_count": 10,
+    "direct_pdf_count": 10,
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "supplementary_record_ids": [
+      "device-doc-nittan-24b1fd056ba7",
+      "device-doc-nittan-2baa1e344172",
+      "device-doc-nittan-4e12fd384d8c",
+      "device-doc-nittan-509751ace6d5",
+      "device-doc-nittan-60acce3d2e53",
+      "device-doc-nittan-651d5abec767",
+      "device-doc-nittan-92f082662910",
+      "device-doc-nittan-c2305fc3416e",
+      "device-doc-nittan-c65c530f2411",
+      "device-doc-nittan-f912292fc103"
+    ]
+  },
+  {
+    "id": "notifier-fire-devices",
+    "brand": "Notifier",
+    "category": "fire",
+    "title": "Notifier device pack",
+    "description": "Sourced device pictures, exact model codes and matched manufacturer documents for identification on site.",
+    "scope": "Selected device families with archive documents and separately verified device references. Confirm the label, protocol and document edition. Shared appearance does not establish compatibility.",
+    "device_ids": [
+      "notifier-device-nfxi-opt",
+      "notifier-device-b501ap",
+      "notifier-device-nfxi-beam",
+      "notifier-device-nrx-opt",
+      "notifier-device-nrx-heat",
+      "notifier-device-nrx-wcp",
+      "notifier-device-nrxi-gate",
+      "notifier-device-nrx-rep",
+      "notifier-device-nrx-irk"
+    ],
+    "record_ids": [
+      "device-doc-notifier-05a7316dffbe",
+      "device-doc-notifier-722c2bfa968b",
+      "device-doc-notifier-c96d59e70df0"
+    ],
+    "record_count": 3,
+    "direct_pdf_count": 3,
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "supplementary_record_ids": [
+      "device-doc-notifier-05a7316dffbe",
+      "device-doc-notifier-722c2bfa968b",
+      "device-doc-notifier-c96d59e70df0"
+    ]
+  },
+  {
+    "id": "optex-security-devices",
+    "brand": "Optex",
+    "category": "security",
+    "title": "Optex device pack",
+    "description": "Sourced device pictures, exact model codes and matched manufacturer documents for identification on site.",
+    "scope": "Selected device families with archive documents and separately verified device references. Confirm the label, protocol and document edition. Shared appearance does not establish compatibility.",
+    "device_ids": [
+      "optex-vxi-am",
+      "optex-qxi-st",
+      "optex-wxi-st",
+      "optex-ftn-st",
+      "optex-flx-s-st",
+      "optex-rxc-st",
+      "optex-rxc-dt"
+    ],
+    "record_ids": [
+      "device-doc-optex-0e24f35a8e1a",
+      "device-doc-optex-133f7df088cd",
+      "device-doc-optex-4db79e533f2a",
+      "device-doc-optex-6c50f85965a3",
+      "device-doc-optex-f26b1b42fc56",
+      "optex-1cb70a0528ac",
+      "optex-41bd61569d20"
+    ],
+    "record_count": 7,
+    "direct_pdf_count": 7,
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "supplementary_record_ids": [
+      "device-doc-optex-0e24f35a8e1a",
+      "device-doc-optex-133f7df088cd",
+      "device-doc-optex-4db79e533f2a",
+      "device-doc-optex-6c50f85965a3",
+      "device-doc-optex-f26b1b42fc56"
+    ]
+  },
+  {
+    "id": "orisec-security-devices",
+    "brand": "Orisec",
+    "category": "security",
+    "title": "Orisec device pack",
+    "description": "Sourced device pictures, exact model codes and matched manufacturer documents for identification on site.",
+    "scope": "Selected device families with archive documents and separately verified device references. Confirm the label, protocol and document edition. Shared appearance does not establish compatibility.",
+    "device_ids": [
+      "orisec-ir-100",
+      "orisec-dt-200",
+      "orisec-w-mc-c",
+      "orisec-sd-wired",
+      "orisec-es-120-130-wired"
+    ],
+    "record_ids": [
+      "orisec-806438c080d2"
+    ],
+    "record_count": 1,
+    "direct_pdf_count": 1,
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "supplementary_record_ids": []
+  },
+  {
+    "id": "protec-fire-devices",
+    "brand": "Protec",
+    "category": "fire",
+    "title": "Protec device pack",
+    "description": "Sourced device pictures, exact model codes and matched manufacturer documents for identification on site.",
+    "scope": "Selected device families with archive documents and separately verified device references. Confirm the label, protocol and document edition. Shared appearance does not establish compatibility.",
+    "device_ids": [
+      "protec-6000plus-op",
+      "protec-6000plus-ht",
+      "protec-6000plus-ophtco",
+      "protec-6000-mcp",
+      "protec-6000-mcp-wp",
+      "protec-6000plus-base",
+      "protec-6000-2io",
+      "protec-6000-lcm",
+      "protec-ug4dp-duct-detector",
+      "protec-6000-ssr-vad",
+      "protec-6000-dcm",
+      "protec-6000-lpza"
+    ],
+    "record_ids": [
+      "protec-0be7c2a76eef",
+      "protec-19c2f3a94324",
+      "protec-339b6a0f3290",
+      "protec-3d5612b83a2a",
+      "protec-5b9f06e51aac",
+      "protec-6d5775af2bdd",
+      "protec-8fe34afdfd9e",
+      "protec-9e5e03fd774a",
+      "protec-a7baa334bd77",
+      "protec-ce38ec46cb37",
+      "protec-f00b03bef0a0",
+      "protec-f6b672126de1"
+    ],
+    "record_count": 12,
+    "direct_pdf_count": 12,
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "supplementary_record_ids": []
+  },
+  {
+    "id": "pyronix-security-devices",
+    "brand": "Pyronix",
+    "category": "security",
+    "title": "Pyronix device pack",
+    "description": "Sourced device pictures, exact model codes and matched manufacturer documents for identification on site.",
+    "scope": "Selected device families with archive documents and separately verified device references. Confirm the label, protocol and document edition. Shared appearance does not establish compatibility.",
+    "device_ids": [
+      "pyronix-kx12dq-we",
+      "pyronix-xdl12tt-we",
+      "pyronix-mc1z1-we",
+      "pyronix-mcexternal-we",
+      "pyronix-nano-shock-we",
+      "pyronix-kx15dt-rins549"
+    ],
+    "record_ids": [
+      "pyronix-12dc1a0275b5"
+    ],
+    "record_count": 1,
+    "direct_pdf_count": 1,
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "supplementary_record_ids": []
+  },
+  {
+    "id": "texecom-security-devices",
+    "brand": "Texecom",
+    "category": "security",
+    "title": "Texecom device pack",
+    "description": "Sourced device pictures, exact model codes and matched manufacturer documents for identification on site.",
+    "scope": "Selected device families with archive documents and separately verified device references. Confirm the label, protocol and document edition. Shared appearance does not establish compatibility.",
+    "device_ids": [
+      "texecom-capture-wired-wall",
+      "texecom-capture-wireless-wall",
+      "texecom-capture-wired-ceiling",
+      "texecom-impaq-sc",
+      "texecom-impaq-sc-w",
+      "texecom-micro-contact-w",
+      "texecom-micro-shock-w",
+      "texecom-impaq-glass-break",
+      "texecom-odyssey-x-wired"
+    ],
+    "record_ids": [
+      "texecom-0faf7b484b7a",
+      "texecom-2e8386a1d8f4",
+      "texecom-3973d2c533e7",
+      "texecom-4e1e0135f4bf",
+      "texecom-778b363ae34b",
+      "texecom-d0db73f4ddd3",
+      "texecom-d710b6c6465d",
+      "texecom-f166805d48dc"
+    ],
+    "record_count": 8,
+    "direct_pdf_count": 8,
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "supplementary_record_ids": []
+  },
+  {
+    "id": "the-fire-beam-company-fire-devices",
+    "brand": "The Fire Beam Company",
+    "category": "fire",
+    "title": "The Fire Beam Company device pack",
+    "description": "Sourced device pictures, exact model codes and matched manufacturer documents for identification on site.",
+    "scope": "Selected device families with archive documents and separately verified device references. Confirm the label, protocol and document edition. Shared appearance does not establish compatibility.",
+    "device_ids": [
+      "fire-beam-blue",
+      "fire-beam-xtra"
+    ],
+    "record_ids": [
+      "device-doc-the-fire-beam-company-5e3186d7eb4f",
+      "device-doc-the-fire-beam-company-9ea9d54e1f2c",
+      "device-doc-the-fire-beam-company-ef8e716e192b",
+      "device-doc-the-fire-beam-company-f9652cff6119"
+    ],
+    "record_count": 4,
+    "direct_pdf_count": 4,
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "supplementary_record_ids": [
+      "device-doc-the-fire-beam-company-5e3186d7eb4f",
+      "device-doc-the-fire-beam-company-9ea9d54e1f2c",
+      "device-doc-the-fire-beam-company-ef8e716e192b",
+      "device-doc-the-fire-beam-company-f9652cff6119"
+    ]
+  },
+  {
+    "id": "bosch-security-devices",
+    "brand": "Bosch",
+    "category": "security",
+    "title": "Bosch device pack",
+    "description": "Original manufacturer device photographs and matched installation sheets for the listed wired detector families. Check the complete model and suffix on the device.",
+    "scope": "Selected wired intruder detectors only. Shared exterior photographs do not identify an exact model, sensing variant, installed grade or panel wiring configuration. Linked manuals are the named historical editions, not a claim of the latest release.",
+    "device_ids": [
+      "bosch-device-blue-line-gen2-wp",
+      "bosch-device-blue-line-gen2-w12"
+    ],
+    "record_ids": [
+      "bosch-0ba92138ab30",
+      "bosch-c221490fad45"
+    ],
+    "record_count": 2,
+    "direct_pdf_count": 2,
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "supplementary_record_ids": []
+  },
+  {
+    "id": "risco-security-devices",
+    "brand": "Risco",
+    "category": "security",
+    "title": "Risco device pack",
+    "description": "Original manufacturer device photographs and matched installation sheets for the listed wired detector families. Check the complete model and suffix on the device.",
+    "scope": "Selected wired intruder detectors only. Shared exterior photographs do not identify an exact model, sensing variant, installed grade or panel wiring configuration. Linked manuals are the named historical editions, not a claim of the latest release.",
+    "device_ids": [
+      "risco-device-bware-rk515dtgl",
+      "risco-device-iwise-dt-g3"
+    ],
+    "record_ids": [
+      "risco-00a6655953a1",
+      "risco-e8aee4e7a650"
+    ],
+    "record_count": 2,
+    "direct_pdf_count": 2,
+    "repository_url": "https://github.com/william2535/MANUALARCHIVES",
+    "source_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+    "supplementary_record_ids": []
+  }
+]

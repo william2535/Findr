@@ -1,0 +1,244 @@
+{
+  "release": "0.6.0",
+  "date": "2026-10-29",
+  "scope": "Source-pinned local keypad emulator coverage",
+  "countingRules": {
+    "documentedEntries": "All entries in the existing source atlas: menus, fields, value choices and reference rows. This is not an emulator screen count.",
+    "reachableEmulatorNodes": "Unique model node IDs reachable from at least one configured access root, including conditional choice branches. Shared nodes and repeated record instances are counted once.",
+    "editableSettingNodes": "Reachable choice, numeric, text and independent-flag fields. The same field edited for different zones/users/groups is counted once.",
+    "operationalAndStatusNodes": "Reachable action, omit, zone display, event log, walk test/results, output test and read-only status handlers.",
+    "referenceOnlyNodes": "Reachable source-labelled info nodes with no claimed physical interaction. A source reference does not establish complete emulation fidelity.",
+    "physicalScreens": "Not measured or claimed. No manufacturer firmware or physical panel is running."
+  },
+  "profiles": [
+    {
+      "profileId": "galaxy-dimension",
+      "title": "Galaxy Dimension",
+      "demoModel": "Galaxy Dimension GD-48 · Mk7",
+      "sourceAtlasSha256": "0bd4c554315e444a6cc2f3bbfed7abcc091f519d67593c47a0803a9a19965c77",
+      "accessRoots": [
+        {
+          "id": "galaxy-engineer-full",
+          "label": "Engineer · Full Menu",
+          "edition": "IE1-0063 Rev 1.0"
+        },
+        {
+          "id": "galaxy-user-full",
+          "label": "Manager · Full Menu",
+          "edition": "IU1-0063 Rev 1.0"
+        },
+        {
+          "id": "galaxy-quick",
+          "label": "Manager · factory Quick Menu",
+          "edition": "Factory slots · IU1-0063 Rev 1.0"
+        }
+      ],
+      "documentedEntries": 1365,
+      "reachableEmulatorNodes": 853,
+      "navigableMenuNodes": 193,
+      "editableSettingNodes": 231,
+      "operationalAndStatusNodes": 62,
+      "referenceOnlyNodes": 367,
+      "modeCounts": {
+        "menu": 193,
+        "omit": 2,
+        "action": 44,
+        "zones": 4,
+        "log": 2,
+        "status": 3,
+        "info": 367,
+        "walk-results": 2,
+        "walk": 4,
+        "outputs": 1,
+        "text": 21,
+        "number": 40,
+        "flags": 47,
+        "choice": 123
+      },
+      "sourceGapCount": 10
+    },
+    {
+      "profileId": "texecom-premier-elite",
+      "title": "Premier Elite 48",
+      "demoModel": "Premier Elite48 · LCDLP",
+      "sourceAtlasSha256": "30d782b92af0563cae2da6c9f374befc469cec893474f3d51bd5be08cbd96f47",
+      "accessRoots": [
+        {
+          "id": "eng",
+          "label": "Engineer · INS176-9",
+          "edition": "INS176-9"
+        },
+        {
+          "id": "arming",
+          "label": "Arming · INS177-9",
+          "edition": "INS177-9"
+        },
+        {
+          "id": "user-menu",
+          "label": "User menu · INS177-9",
+          "edition": "INS177-9"
+        }
+      ],
+      "documentedEntries": 956,
+      "reachableEmulatorNodes": 451,
+      "navigableMenuNodes": 50,
+      "editableSettingNodes": 202,
+      "operationalAndStatusNodes": 35,
+      "referenceOnlyNodes": 164,
+      "modeCounts": {
+        "menu": 50,
+        "choice": 73,
+        "flags": 65,
+        "text": 20,
+        "number": 44,
+        "info": 164,
+        "log": 4,
+        "outputs": 15,
+        "walk": 2,
+        "zones": 2,
+        "action": 10,
+        "omit": 2
+      },
+      "sourceGapCount": 9
+    },
+    {
+      "profileId": "scantronic-ion",
+      "title": "i-on40H+",
+      "demoModel": "i-on40H+ · KEY-KP01",
+      "sourceAtlasSha256": "9b2c84c53a7edf6ed9b4e70583132ecd552bc661e00be1eb53c82e67f0c64d41",
+      "accessRoots": [
+        {
+          "id": "installer-v6",
+          "label": "Installer · partitioned v6",
+          "edition": "6.0.xx"
+        },
+        {
+          "id": "installer-v6-part-setting",
+          "label": "Installer · part-setting v6",
+          "edition": "6.0.xx"
+        },
+        {
+          "id": "user-v7",
+          "label": "Master user · v7",
+          "edition": "7.02.xx"
+        }
+      ],
+      "documentedEntries": 1189,
+      "reachableEmulatorNodes": 810,
+      "navigableMenuNodes": 178,
+      "editableSettingNodes": 287,
+      "operationalAndStatusNodes": 25,
+      "referenceOnlyNodes": 320,
+      "modeCounts": {
+        "menu": 178,
+        "info": 320,
+        "text": 77,
+        "choice": 135,
+        "flags": 35,
+        "number": 40,
+        "outputs": 12,
+        "walk": 5,
+        "zones": 1,
+        "action": 2,
+        "log": 4,
+        "omit": 1
+      },
+      "sourceGapCount": 8
+    },
+    {
+      "profileId": "orisec-cp",
+      "title": "Orisec CP",
+      "demoModel": "Orisec CP-50 · MK-700",
+      "sourceAtlasSha256": "2aab89d34b04416d2768bb250cc7d6b1ca108ddf5b1af22daaf6ad2bcac38637",
+      "accessRoots": [
+        {
+          "id": "engineer",
+          "label": "Engineer · INS008",
+          "edition": "INS008 (2018)"
+        },
+        {
+          "id": "user",
+          "label": "User · INS023",
+          "edition": "INS023 (2017)"
+        }
+      ],
+      "documentedEntries": 856,
+      "reachableEmulatorNodes": 576,
+      "navigableMenuNodes": 43,
+      "editableSettingNodes": 374,
+      "operationalAndStatusNodes": 31,
+      "referenceOnlyNodes": 128,
+      "modeCounts": {
+        "menu": 43,
+        "choice": 277,
+        "text": 6,
+        "flags": 37,
+        "info": 128,
+        "number": 54,
+        "outputs": 2,
+        "walk": 2,
+        "zones": 2,
+        "log": 14,
+        "action": 10,
+        "omit": 1
+      },
+      "sourceGapCount": 9
+    }
+  ],
+  "totals": {
+    "documentedEntries": 4366,
+    "reachableEmulatorNodes": 2690,
+    "navigableMenuNodes": 464,
+    "editableSettingNodes": 1094,
+    "operationalAndStatusNodes": 153,
+    "referenceOnlyNodes": 979
+  },
+  "checks": {
+    "configCommand": "node --test --test-isolation=none --test-reporter=spec tests/emulator-config.test.mjs",
+    "configTestsPassed": 20,
+    "configTestsFailed": 0,
+    "reachableNodesWithoutSourceReferences": 0
+  },
+  "auditCorrections": [
+    "Galaxy Force V.21 remains unavailable on internal and external Telecom; no invented 0/1 editor.",
+    "External Telecom Fail to Communicate retains attempt-count semantics without an invented range; Backup Module retains its distinct documented ordering.",
+    "Trigger and group record selection precedes the dependent Status/Groups or Telephone/Account fields.",
+    "Galaxy PA Delay, Part Alarm, Power Delay, Delay Alarm and Fail to Set preserve separate per-group values.",
+    "Galaxy Set Override/Reset Levels fault categories are separate fields, not mutually exclusive values for the whole parameter.",
+    "Galaxy Key/SW Level conflict is retained as an evidence gap instead of reusing another parameter’s accepted range.",
+    "Source editions, Quick Menu slots, Scantronic configuration modes and duplicate option numbers remain explicitly separated."
+  ],
+  "limitations": [
+    "The app is a local training simulation with fictional devices and values. It has no panel transport or physical signalling.",
+    "Exact firmware timing, every confirmation sequence, manufacturer text libraries and the complete LCD rendering are not reproduced.",
+    "The source atlas retains 36 evidence questions. Additional info screens identify behaviour whose editor or sequence is not verified.",
+    "Stored settings train programming and selection; not every stored setting changes the simulated alarm behaviour.",
+    "No physical keypad, panel or native mobile device has been verified for this report."
+  ],
+  "hardwareVerified": false,
+  "releaseVerification": {
+    "automatedTestsPassed": 180,
+    "automatedTestsFailed": 0,
+    "engineTestsPassed": 32,
+    "configurationTestsPassed": 20,
+    "browserChecked": [
+      "Galaxy numeric zone selection, function edit and reload persistence",
+      "Texecom per-zone Yes/No edit, cancel and next field",
+      "Scantronic staged omission, confirmed restoration and walk-test detector input",
+      "Orisec physical menu navigation, character insertion, helper save and shared zone label",
+      "Galaxy local print preview from edited demo state",
+      "All four layouts at 320px iframe width: no horizontal overflow"
+    ],
+    "android": {
+      "versionName": "0.6.0",
+      "versionCode": 9,
+      "package": "com.findr.app",
+      "bytes": 20283302,
+      "sha256": "6205b9c2dc0f3f58ee048045675b0493afbe76b73e9e4b044241afcf82ee7481",
+      "matchingBundledAppAssets": 642,
+      "signerSha256": "6075a73725dac5a3cc1f7b6b32c5e1df907cd1ca4b5b611f4c1c1d2fd502fefd"
+    },
+    "nativeInstallationTested": false,
+    "productionBrowserVerification": "Not available in this browser environment; deployment status is checked through Sites."
+  }
+}

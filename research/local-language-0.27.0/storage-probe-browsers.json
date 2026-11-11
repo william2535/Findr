@@ -1,0 +1,16 @@
+[
+  {
+    "browser": "chromium",
+    "ok": true,
+    "keys": [],
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36"
+  },
+  {
+    "browser": "webkit",
+    "ok": false,
+    "code": "STORAGE_UNAVAILABLE",
+    "message": "This browser is not retaining local model downloads. No model download was started. Saved manuals and conversations are unchanged. Check browser storage or use labelled manual extracts.",
+    "keys": [],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15"
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "webVersion": "0.25.0",
+  "apkVersion": "0.14.1",
+  "regression": {
+    "command": "node --test --test-isolation=none tests/*.test.mjs",
+    "passed": 1128,
+    "failed": 0,
+    "durationMs": 28300.61418
+  },
+  "typecheck": {
+    "command": "node node_modules/typescript/bin/tsc --noEmit",
+    "exitCode": 0
+  },
+  "build": {
+    "command": "node scripts/run-framework.mjs build",
+    "exitCode": 0
+  },
+  "publicBuild": {
+    "command": "node scripts/verify-public-build.mjs",
+    "verified": true,
+    "publicFiles": 1341,
+    "buildBytes": 139774937,
+    "largestStaticAssetBytes": 24126768,
+    "archivedReleaseFilesExcluded": 40,
+    "nativeOnlyFilesExcluded": [
+      "app/data/download-map.json"
+    ]
+  },
+  "offline": {
+    "assets": 1294,
+    "bytes": 82595813,
+    "revision": "684e4535e8fd"
+  },
+  "publication": "Verified separately through Sites after source commit and archive upload; this record establishes local build only."
+}

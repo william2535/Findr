@@ -1,0 +1,1345 @@
+[
+  {
+    "id": "device-doc-aico-8f8b5876b06d",
+    "brand": "Aico",
+    "category": "fire",
+    "models": [
+      "Ei144e",
+      "Ei146e"
+    ],
+    "title": "Ei140e series smoke and heat alarm instructions — B20412 Rev2",
+    "type": "manufacturer reference",
+    "url": "https://www.aico.co.uk/wp-content/uploads/2021/06/Ei140e-Series.pdf",
+    "source": "https://www.aico.co.uk/product/ei144e-heat-alarm/",
+    "revision": "B20412 Rev2, 2023",
+    "status": "file-hash",
+    "sha256": "8f8b5876b06de0e1fd9a920a4da3823b738508dad2334c924d2ebdf3d089e852",
+    "bytes": 2913696,
+    "pages": 30,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "aico-3c1e5028796a"
+    ]
+  },
+  {
+    "id": "device-doc-aico-22884205c611",
+    "brand": "Aico",
+    "category": "fire",
+    "models": [
+      "Ei3000MRF"
+    ],
+    "title": "Ei3000MRF SmartLINK module instructions — B19047 Rev6",
+    "type": "manufacturer reference",
+    "url": "https://www.aico.co.uk/wp-content/uploads/2024/10/B19047-R6-Ei3000MRF-UC-ENG.pdf",
+    "source": "https://www.aico.co.uk/product/ei3000mrf-smartlink-module/",
+    "revision": "B19047 Rev6, 2024",
+    "status": "file-hash",
+    "sha256": "22884205c611820750da890bc787c37288421f260faf2e12fc3a1394d3014d37",
+    "bytes": 2109510,
+    "pages": 24,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "aico-6ee64921f39b"
+    ]
+  },
+  {
+    "id": "device-doc-aico-6c128c0b705a",
+    "brand": "Aico",
+    "category": "fire",
+    "models": [
+      "Ei3014",
+      "Ei3016",
+      "Ei3024"
+    ],
+    "title": "Ei3014 / Ei3016 / Ei3024 instruction manual — B20224 Rev4",
+    "type": "manufacturer reference",
+    "url": "https://www.aico.co.uk/wp-content/uploads/2025/02/B20224-R4-Ei301430163024-UK-SERIES-UC-ENG.pdf",
+    "source": "https://www.aico.co.uk/product/ei3014-heat-alarm/",
+    "revision": "B20224 Rev4, 2025",
+    "status": "file-hash",
+    "sha256": "6c128c0b705ac601a55a5902c3f788932d72df8e92622a633fb96607d6bcfb66",
+    "bytes": 2566567,
+    "pages": 52,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "aico-fb1ec779904f"
+    ]
+  },
+  {
+    "id": "device-doc-aico-7dbcfdf98ccb",
+    "brand": "Aico",
+    "category": "fire",
+    "models": [
+      "Ei3030"
+    ],
+    "title": "Ei3030 fire and carbon monoxide alarm instructions — B20665 Rev4",
+    "type": "manufacturer reference",
+    "url": "https://www.aico.co.uk/wp-content/uploads/2025/02/B20665-R4-Ei3030-UK-SERIES-UC-ENG.pdf",
+    "source": "https://www.aico.co.uk/product/ei3030-multi-sensor-fire-and-carbon-monoxide-alarm/",
+    "revision": "B20665 Rev4, 2025",
+    "status": "file-hash",
+    "sha256": "7dbcfdf98ccb6bac7fa482d85f19a6c5450e55dd323984e8b5cb049861cae124",
+    "bytes": 2503823,
+    "pages": 64,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "aico-2b6abe9e7cf7"
+    ]
+  },
+  {
+    "id": "device-doc-ajax-9486bbc86323",
+    "brand": "Ajax",
+    "category": "security",
+    "models": [
+      "CombiProtect"
+    ],
+    "title": "CombiProtect — manufacturer user manual (29 June 2020)",
+    "type": "manufacturer reference",
+    "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-CombiProtect-User-Manual.pdf",
+    "source": "https://ajax.systems/support/manuals/combiprotect/",
+    "revision": "29 June 2020",
+    "status": "file-hash",
+    "sha256": "9486bbc86323f8293eb3d23596e8a627ac27b16c03efd44d34e91ece9d9cb45f",
+    "bytes": 721072,
+    "pages": 15,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "ajax-af0b7d4e7c33"
+    ]
+  },
+  {
+    "id": "device-doc-ajax-b17f6521ffcf",
+    "brand": "Ajax",
+    "category": "security",
+    "models": [
+      "DoorProtect Plus"
+    ],
+    "title": "DoorProtect Plus — manufacturer user manual (17 July 2020)",
+    "type": "manufacturer reference",
+    "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-DoorProtect-Plus-User-Manual.pdf",
+    "source": "https://ajax.systems/support/manuals/doorprotect-plus/",
+    "revision": "17 July 2020",
+    "status": "file-hash",
+    "sha256": "b17f6521ffcf438bbeb48ae9eb1c04f58d5742f74b0476e9cc2224f3ea37c165",
+    "bytes": 800607,
+    "pages": 17,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "ajax-7e7baaa693fd"
+    ]
+  },
+  {
+    "id": "device-doc-ajax-cf09dfff46dd",
+    "brand": "Ajax",
+    "category": "security",
+    "models": [
+      "DoorProtect"
+    ],
+    "title": "DoorProtect — manufacturer user manual (30 June 2020)",
+    "type": "manufacturer reference",
+    "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-DoorProtect-User-Manual.pdf",
+    "source": "https://ajax.systems/support/manuals/doorprotect/",
+    "revision": "30 June 2020",
+    "status": "file-hash",
+    "sha256": "cf09dfff46dddf1d39f5deb2b110d742e514774966e12e7c4df60cb7dc643770",
+    "bytes": 560616,
+    "pages": 15,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "ajax-31ec417c87c3"
+    ]
+  },
+  {
+    "id": "device-doc-ajax-c05166983480",
+    "brand": "Ajax",
+    "category": "security",
+    "models": [
+      "GlassProtect"
+    ],
+    "title": "GlassProtect — manufacturer user manual (8 June 2020)",
+    "type": "manufacturer reference",
+    "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-GlassProtect-User-Manual.pdf",
+    "source": "https://ajax.systems/support/manuals/glassprotect/",
+    "revision": "8 June 2020",
+    "status": "file-hash",
+    "sha256": "c05166983480808ac4de20426050901713ba15dff335a1b4292d426ba7a0ce60",
+    "bytes": 530525,
+    "pages": 14,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "ajax-f9691d9be788"
+    ]
+  },
+  {
+    "id": "device-doc-ajax-53339097c1a5",
+    "brand": "Ajax",
+    "category": "security",
+    "models": [
+      "HomeSiren"
+    ],
+    "title": "HomeSiren — manufacturer user manual (8 June 2020)",
+    "type": "manufacturer reference",
+    "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-HomeSiren-User-Manual.pdf",
+    "source": "https://ajax.systems/support/manuals/homesiren/",
+    "revision": "8 June 2020",
+    "status": "file-hash",
+    "sha256": "53339097c1a5d94bb9a86131ae0c824b12ffbcb8e672956f6ef43e1800f4c872",
+    "bytes": 517865,
+    "pages": 13,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "ajax-5d2fa14fb8ca"
+    ]
+  },
+  {
+    "id": "device-doc-ajax-44764eb47998",
+    "brand": "Ajax",
+    "category": "security",
+    "models": [
+      "MotionCam"
+    ],
+    "title": "MotionCam — manufacturer user manual (3 June 2020)",
+    "type": "manufacturer reference",
+    "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-MotionCam-User-Manual.pdf",
+    "source": "https://ajax.systems/support/manuals/motioncam/",
+    "revision": "3 June 2020",
+    "status": "file-hash",
+    "sha256": "44764eb47998d5c529972d008f591e9505b5c7ddda0ad6d0dc4ec17b19d3c72a",
+    "bytes": 1977249,
+    "pages": 21,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "ajax-3837d17e4660"
+    ]
+  },
+  {
+    "id": "device-doc-ajax-740eadda7644",
+    "brand": "Ajax",
+    "category": "security",
+    "models": [
+      "MotionProtect",
+      "MotionProtect Plus"
+    ],
+    "title": "MotionProtect / MotionProtect Plus — manufacturer user manual (10 June 2020)",
+    "type": "manufacturer reference",
+    "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-MotionProtect-and-MotionProtect-Plus-User-Manual.pdf",
+    "source": "https://ajax.systems/support/manuals/motionprotect/",
+    "revision": "10 June 2020",
+    "status": "file-hash",
+    "sha256": "740eadda76447faeeabf58f2b61e73a48538d69c17f6593732cfa194ea8c7522",
+    "bytes": 763093,
+    "pages": 15,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "ajax-bf92b9a58fdb",
+      "ajax-f0ce8387a135"
+    ]
+  },
+  {
+    "id": "device-doc-ajax-26155dac817d",
+    "brand": "Ajax",
+    "category": "security",
+    "models": [
+      "MotionProtect Curtain"
+    ],
+    "title": "MotionProtect Curtain — manufacturer user manual (6 November 2020)",
+    "type": "manufacturer reference",
+    "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-MotionProtect-Curtain-User-Manual.pdf",
+    "source": "https://ajax.systems/support/manuals/motionprotect-curtain/",
+    "revision": "6 November 2020",
+    "status": "file-hash",
+    "sha256": "26155dac817d50d9c06cdbda1ec22fd93ef8a71959f0cb5ab6a457ceff665150",
+    "bytes": 677951,
+    "pages": 23,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "ajax-20acb6e3d08d"
+    ]
+  },
+  {
+    "id": "device-doc-ajax-3b7dbd6db378",
+    "brand": "Ajax",
+    "category": "security",
+    "models": [
+      "StreetSiren"
+    ],
+    "title": "StreetSiren — manufacturer user manual (27 May 2020)",
+    "type": "manufacturer reference",
+    "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-StreetSiren-User-Manual.pdf",
+    "source": "https://ajax.systems/support/manuals/streetsiren/",
+    "revision": "27 May 2020",
+    "status": "file-hash",
+    "sha256": "3b7dbd6db378a597639976ccef27254476bb063f4fabebe01b2d190373cbb360",
+    "bytes": 741175,
+    "pages": 13,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "ajax-4d6ca373b0b7"
+    ]
+  },
+  {
+    "id": "device-doc-apollo-44ca8b979263",
+    "brand": "Apollo",
+    "category": "fire",
+    "models": [
+      "55000-620APO",
+      "XP95 Optical Smoke Detector"
+    ],
+    "title": "PP2610 XP95 Optical Smoke Detector Data Sheet",
+    "type": "manufacturer reference",
+    "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0006476_0001.pdf",
+    "source": "https://apollo-fire.co.uk/products/xp95/detector/55000-620apo-xp95-optical-smoke-detector/",
+    "revision": "PP2610/2021/Issue 2",
+    "status": "file-hash",
+    "sha256": "44ca8b979263a0afc199e32dfd474353f53a66b1d10009214c35f51ce051309e",
+    "bytes": 503895,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "apollo-0f80e75d8a7b"
+    ]
+  },
+  {
+    "id": "device-doc-apollo-0c937f028eba",
+    "brand": "Apollo",
+    "category": "fire",
+    "models": [
+      "55000-420APO",
+      "XP95 Heat Detector (A2S)"
+    ],
+    "title": "PP2611 XP95 Heat Detector Data Sheet",
+    "type": "manufacturer reference",
+    "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0006477_0001.pdf",
+    "source": "https://apollo-fire.co.uk/products/xp95/detector/55000-420apo-xp95-heat-detector-a2s/",
+    "revision": "PP2611/2018/Issue 1",
+    "status": "file-hash",
+    "sha256": "0c937f028eba869be22bde1e92b0989d60a10af890972723b1bb444c4aae1a5f",
+    "bytes": 573574,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "apollo-0f80e75d8a7b"
+    ]
+  },
+  {
+    "id": "device-doc-apollo-9fa419f06047",
+    "brand": "Apollo",
+    "category": "fire",
+    "models": [
+      "55000-317APO",
+      "Series 65 Optical Smoke Detector"
+    ],
+    "title": "PP2613 Series 65 Optical Smoke Detector Datasheet",
+    "type": "manufacturer reference",
+    "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0004602_0001.pdf",
+    "source": "https://apollo-fire.co.uk/products/series-65/detector/55000-317apo-series-65-optical-smoke-detector/",
+    "revision": "PP2613/2023/Issue 2",
+    "status": "file-hash",
+    "sha256": "9fa419f06047cd85b95db1589151f04028ab9a691ae564982a37ac5f8b82eeb1",
+    "bytes": 331630,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": []
+  },
+  {
+    "id": "device-doc-c-tec-97eb0a9793d9",
+    "brand": "C-TEC",
+    "category": "fire",
+    "models": [
+      "CA402"
+    ],
+    "title": "C-TEC CA402 CAST programmable heat detector datasheet — DFU4020000 Rev 7",
+    "type": "manufacturer reference",
+    "url": "https://www.modernalarm.hu/dok/c-tec/CA402_CAST_Heat-Detector_Datasheet.pdf",
+    "source": "https://www.modernalarm.hu/:erzekelok-aljzatok/34600/c-tec-ca402-programozhat-h-rz-kel-34600-",
+    "revision": "DFU4020000 Rev 7, 05/08/21",
+    "status": "file-hash",
+    "sha256": "97eb0a9793d9a2cb8bbc6baf2c64b9540d20f2919fcb3d98ea4ec01ad1d85da0",
+    "bytes": 365401,
+    "pages": 1,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "c-tec-2e87e50967d6"
+    ]
+  },
+  {
+    "id": "device-doc-c-tec-c355db94ca7a",
+    "brand": "C-TEC",
+    "category": "fire",
+    "models": [
+      "CA402"
+    ],
+    "title": "C-TEC CA402 CAST programmable heat detector — manufacturer product datasheet",
+    "type": "manufacturer reference",
+    "url": null,
+    "source": "https://www.acornfiresecurity.com/index.php?route=extension/module/document/download&filename=CA402%20Datasheet.pdf",
+    "revision": null,
+    "status": "file-hash",
+    "sha256": "c355db94ca7ab2070db5c34b1246bdf3ab22a9aab31f40ebea6d9be54347519c",
+    "bytes": 406794,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "c-tec-2e87e50967d6"
+    ],
+    "original_download_url": "https://www.acornfiresecurity.com/index.php?route=extension/module/document/download&filename=CA402%20Datasheet.pdf",
+    "download_mode": "source-only",
+    "retired_from_packs": true,
+    "delivery_note": "Open the source to download this edition, then use Import PDF in FINDR."
+  },
+  {
+    "id": "device-doc-c-tec-1a72f739e6d0",
+    "brand": "C-TEC",
+    "category": "fire",
+    "models": [
+      "CA408"
+    ],
+    "title": "C-TEC CA408 CAST detector base wiring — DFU0002408 Rev 2",
+    "type": "manufacturer reference",
+    "url": "https://c-techelp.zendesk.com/hc/en-gb/article_attachments/5979798085535",
+    "source": "https://c-tec.com/info/cast-devices/",
+    "revision": "Rev 2, 05/08/2021",
+    "status": "file-hash",
+    "sha256": "1a72f739e6d0b3655e75212dfc71fccde2c4f037fa3da4adc13217fecc624cca",
+    "bytes": 230354,
+    "pages": 1,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "c-tec-d8b148951306"
+    ]
+  },
+  {
+    "id": "device-doc-c-tec-41e341b9c547",
+    "brand": "C-TEC",
+    "category": "fire",
+    "models": [
+      "CA414"
+    ],
+    "title": "C-TEC CA414 CAST multisensor fire detector datasheet — DFU4140000 Rev 7",
+    "type": "manufacturer reference",
+    "url": "https://www.modernalarm.hu/dok/c-tec/CA414_CAST_Multisensor-Fire-Detector_Datasheet.pdf",
+    "source": "https://www.modernalarm.hu/:erzekelok-aljzatok/34604/c-tec-ca414-programozhat-multi-szenzoros-rz-kel-34604-",
+    "revision": "DFU4140000 Rev 7, 05/08/21",
+    "status": "file-hash",
+    "sha256": "41e341b9c547aad8e56a321a76c863063f0ed4aa0e01e6aacd0905608393e265",
+    "bytes": 370932,
+    "pages": 1,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "c-tec-e495d2c3dfda"
+    ]
+  },
+  {
+    "id": "device-doc-c-tec-af925ff0ac67",
+    "brand": "C-TEC",
+    "category": "fire",
+    "models": [
+      "CA414"
+    ],
+    "title": "C-TEC CA414 CAST multisensor fire detector — manufacturer product datasheet",
+    "type": "manufacturer reference",
+    "url": null,
+    "source": "https://www.acornfiresecurity.com/index.php?route=extension/module/document/download&filename=C-Tec/CA414%20Datasheet.pdf",
+    "revision": null,
+    "status": "file-hash",
+    "sha256": "af925ff0ac67444f0233dc16dec4cad8a538f02ad8f996742227c25a2ff96780",
+    "bytes": 389403,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "c-tec-e495d2c3dfda"
+    ],
+    "original_download_url": "https://www.acornfiresecurity.com/index.php?route=extension/module/document/download&filename=C-Tec/CA414%20Datasheet.pdf",
+    "download_mode": "source-only",
+    "retired_from_packs": true,
+    "delivery_note": "Open the source to download this edition, then use Import PDF in FINDR."
+  },
+  {
+    "id": "device-doc-c-tec-7ad9393daf5b",
+    "brand": "C-TEC",
+    "category": "fire",
+    "models": [
+      "CA416"
+    ],
+    "title": "C-TEC CA416 CAST optical smoke detector datasheet — DFU4160000 Rev 8",
+    "type": "manufacturer reference",
+    "url": "https://modernalarm.hu/dok/c-tec/CA416_CAST_Optical-Smoke-Detector_Datasheet.pdf",
+    "source": "https://www.modernalarm.hu/:erzekelok-aljzatok/34605/c-tec-ca416-optikai-f-st-rz-kel-34605-",
+    "revision": "DFU4160000 Rev 8, 05/08/21",
+    "status": "file-hash",
+    "sha256": "7ad9393daf5b385609d88d3e05ae4a3a6c59ae0b8c54358ad5f4bc5ef072dd40",
+    "bytes": 367778,
+    "pages": 1,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "c-tec-5a8b44fceac5"
+    ]
+  },
+  {
+    "id": "device-doc-c-tec-9310045e0f57",
+    "brand": "C-TEC",
+    "category": "fire",
+    "models": [
+      "CA416"
+    ],
+    "title": "C-TEC CA416 CAST optical smoke detector — manufacturer product datasheet",
+    "type": "manufacturer reference",
+    "url": null,
+    "source": "https://www.acornfiresecurity.com/index.php?route=extension/module/document/download&filename=C-Tec/C-TEC-CA416.pdf",
+    "revision": null,
+    "status": "file-hash",
+    "sha256": "9310045e0f57b5179bc96dba10144e419be42ebc8b9124b1593e9da2d234c451",
+    "bytes": 387709,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "c-tec-5a8b44fceac5"
+    ],
+    "original_download_url": "https://www.acornfiresecurity.com/index.php?route=extension/module/document/download&filename=C-Tec/C-TEC-CA416.pdf",
+    "download_mode": "source-only",
+    "retired_from_packs": true,
+    "delivery_note": "Open the source to download this edition, then use Import PDF in FINDR."
+  },
+  {
+    "id": "device-doc-c-tec-c1e5b7a7bd89",
+    "brand": "C-TEC",
+    "category": "fire",
+    "models": [
+      "CA459A/W"
+    ],
+    "title": "C-TEC CA459A/W CAST corridor VAD-only base — manufacturer product datasheet",
+    "type": "manufacturer reference",
+    "url": null,
+    "source": "https://www.acornfiresecurity.com/index.php?filename=C-TEC-CA459A_W.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+    "revision": null,
+    "status": "file-hash",
+    "sha256": "c1e5b7a7bd89c13d0507eb52c0c920479f96197b635650f2aa3d3e824f309226",
+    "bytes": 406799,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "c-tec-282f93b99372"
+    ],
+    "original_download_url": "https://www.acornfiresecurity.com/index.php?filename=C-TEC-CA459A_W.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+    "download_mode": "source-only",
+    "retired_from_packs": true,
+    "delivery_note": "Open the source to download this edition, then use Import PDF in FINDR."
+  },
+  {
+    "id": "device-doc-c-tec-8533dbee907d",
+    "brand": "C-TEC",
+    "category": "fire",
+    "models": [
+      "CA470"
+    ],
+    "title": "C-TEC CA470 CAST red manual call point — manufacturer product datasheet",
+    "type": "manufacturer reference",
+    "url": null,
+    "source": "https://www.acornfiresecurity.com/index.php?filename=CA470.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+    "revision": null,
+    "status": "file-hash",
+    "sha256": "8533dbee907d2f6f4f80ec1f6d787f791bba259a3b06abca91bdc6ecb4d6ffdc",
+    "bytes": 339880,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "c-tec-6406a8f43584"
+    ],
+    "original_download_url": "https://www.acornfiresecurity.com/index.php?filename=CA470.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+    "download_mode": "source-only",
+    "retired_from_packs": true,
+    "delivery_note": "Open the source to download this edition, then use Import PDF in FINDR."
+  },
+  {
+    "id": "device-doc-c-tec-cb5ba501ef82",
+    "brand": "C-TEC",
+    "category": "fire",
+    "models": [
+      "CA470",
+      "CA47067",
+      "CA470Y",
+      "CA470GR",
+      "CA470B",
+      "CA470W"
+    ],
+    "title": "C-TEC CA470 range call point instructions — DFU4700000 Rev 9",
+    "type": "manufacturer reference",
+    "url": "https://www.eufireandsecurity.com/wp-content/uploads/2025/07/DFU4700000-CA470-CAST-Manual-Call-Point-Rev-9.pdf",
+    "source": "https://c-tec.com/info/cast-devices/",
+    "revision": "Rev 9, 01/06/2024",
+    "status": "file-hash",
+    "sha256": "cb5ba501ef827a576800999d9834b434dc72f70195918a663faae09a7c13027c",
+    "bytes": 467453,
+    "pages": 1,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "c-tec-6406a8f43584"
+    ]
+  },
+  {
+    "id": "device-doc-c-tec-7da7a3d9afa0",
+    "brand": "C-TEC",
+    "category": "fire",
+    "models": [
+      "CA730"
+    ],
+    "title": "C-TEC CA730 CAST input/output module — manufacturer product datasheet",
+    "type": "manufacturer reference",
+    "url": null,
+    "source": "https://www.acornfiresecurity.com/index.php?route=extension/module/document/download&filename=CA730.pdf",
+    "revision": null,
+    "status": "file-hash",
+    "sha256": "7da7a3d9afa0a9451014d862dcb2f49a7d96d6674d0edbee50f2bfbf98da52e6",
+    "bytes": 477384,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "c-tec-95700bacc3bf"
+    ],
+    "original_download_url": "https://www.acornfiresecurity.com/index.php?route=extension/module/document/download&filename=CA730.pdf",
+    "download_mode": "source-only",
+    "retired_from_packs": true,
+    "delivery_note": "Open the source to download this edition, then use Import PDF in FINDR."
+  },
+  {
+    "id": "device-doc-c-tec-f18a6fbbfbc7",
+    "brand": "C-TEC",
+    "category": "fire",
+    "models": [
+      "CA730"
+    ],
+    "title": "C-TEC CA730 input/output module instructions — DFU7300000 Rev 11",
+    "type": "manufacturer reference",
+    "url": "https://www.eufireandsecurity.com/wp-content/uploads/2025/09/DFU7300000-CA730-CAST-IO-Module-Rev-11.pdf",
+    "source": "https://c-tec.com/info/cast-devices/",
+    "revision": "Rev 11, 01/06/2024",
+    "status": "file-hash",
+    "sha256": "f18a6fbbfbc7fb6a1356c4458d959053c5bf51b953ed30553c95e0fda0679d89",
+    "bytes": 449509,
+    "pages": 1,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "c-tec-95700bacc3bf"
+    ]
+  },
+  {
+    "id": "device-doc-c-tec-df7988f16dc3",
+    "brand": "C-TEC",
+    "category": "fire",
+    "models": [
+      "CA431A/W",
+      "CA432A/W",
+      "CA456A/W",
+      "CA459A/W",
+      "CA460A/W"
+    ],
+    "title": "C-TEC CAST base sounder and VAD range installation instructions — DFU4315010 Rev 15",
+    "type": "manufacturer reference",
+    "url": "https://www.modernalarm.hu/dok/c-tec/DFU4315010-CAST-Base-Mount-Sounder-VAD-Range-Rev-15.pdf",
+    "source": "https://c-tec.com/info/cast-devices/",
+    "revision": "DFU4315010 Rev 15, 01/06/22",
+    "status": "file-hash",
+    "sha256": "df7988f16dc371b405b3661cea2ae78e26bf120ad6081eeda22b5e9c4143bbea",
+    "bytes": 744746,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "c-tec-282f93b99372"
+    ]
+  },
+  {
+    "id": "device-doc-ems-de2c0fb8aa1f",
+    "brand": "EMS",
+    "category": "fire",
+    "models": [
+      "FCX-177-001",
+      "FireCell optical detector FCX-177-001"
+    ],
+    "title": "MK119 FireCell Wireless Optical Smoke Detector Product Datasheet",
+    "type": "manufacturer reference",
+    "url": null,
+    "source": "https://huvo.co.uk/wp-content/uploads/2025/12/FCX-177-001.pdf",
+    "revision": "Issue 7, 26/06/2025",
+    "status": "file-hash",
+    "sha256": "de2c0fb8aa1f80927bd4260932dbe586b420feec8261992273e064810b7bc334",
+    "bytes": 1069092,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": [],
+    "original_download_url": "https://huvo.co.uk/wp-content/uploads/2025/12/FCX-177-001.pdf",
+    "download_mode": "source-only",
+    "delivery_note": "Automatic download is unavailable from this publisher. Open the source, or use Import PDF with a matching copy you already have."
+  },
+  {
+    "id": "device-doc-ems-c103ba80a56c",
+    "brand": "EMS",
+    "category": "fire",
+    "models": [
+      "FCX-191-000",
+      "FireCell sounder/detector base FCX-191-000"
+    ],
+    "title": "MK121 FireCell Wireless Combined Sounder Detector Product Datasheet",
+    "type": "manufacturer reference",
+    "url": null,
+    "source": "https://huvo.co.uk/product/ems-firecell-wireless-sounder-base-for-detectors/",
+    "revision": "Issue 5, 17/06/2021",
+    "status": "file-hash",
+    "sha256": "c103ba80a56cc6faa527b1155cba4a59edf8a7fbf34c1a0d6b3777fe9ecaa0d7",
+    "bytes": 164221,
+    "pages": 1,
+    "origin": "device-reference",
+    "related_archive_record_ids": [],
+    "original_download_url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Wireless-Sounder-Detector-Base.pdf",
+    "download_mode": "source-only",
+    "delivery_note": "Automatic download is unavailable from this publisher. Open the source, or use Import PDF with a matching copy you already have."
+  },
+  {
+    "id": "device-doc-ems-cf888f19e273",
+    "brand": "EMS",
+    "category": "fire",
+    "models": [
+      "FC-315-WA2",
+      "FireCell wall sounder VAD FC-315-WA2"
+    ],
+    "title": "MK123 FireCell Wireless Wall Sounder Beacon Product Datasheet",
+    "type": "manufacturer reference",
+    "url": "https://www.safefiredirect.co.uk/media/bss/productattachment/EMS_FC-171-002_FC-315-WA2_Datasheet.pdf",
+    "source": "https://www.safefiredirect.co.uk/media/bss/productattachment/EMS_FC-171-002_FC-315-WA2_Datasheet.pdf",
+    "revision": "Issue 4, 02/10/2018",
+    "status": "file-hash",
+    "sha256": "cf888f19e273e2471a365748ceea9c93871494ebd85d743156a5616c85dcbe96",
+    "bytes": 283815,
+    "pages": 1,
+    "origin": "device-reference",
+    "related_archive_record_ids": []
+  },
+  {
+    "id": "device-doc-ems-0df7986de600",
+    "brand": "EMS",
+    "category": "fire",
+    "models": [
+      "FCX-500-004",
+      "FireCell Radio Hub FCX-500-004"
+    ],
+    "title": "MK125 FireCell Radio Hub Product Datasheet",
+    "type": "manufacturer reference",
+    "url": null,
+    "source": "https://huvo.co.uk/product/ems-firecell-radio-hub/",
+    "revision": "Issue 4, 02/10/2018",
+    "status": "file-hash",
+    "sha256": "0df7986de600c0cf4a177eecf00c10620bfae78c23aef61995f48c742fc2cc2c",
+    "bytes": 712181,
+    "pages": 1,
+    "origin": "device-reference",
+    "related_archive_record_ids": [],
+    "original_download_url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Radio-Hub.pdf",
+    "download_mode": "source-only",
+    "delivery_note": "Automatic download is unavailable from this publisher. Open the source, or use Import PDF with a matching copy you already have."
+  },
+  {
+    "id": "device-doc-ems-777d6bd3e405",
+    "brand": "EMS",
+    "category": "fire",
+    "models": [
+      "FC-555-001",
+      "FireCell 230 V RCC FC-555-001"
+    ],
+    "title": "MK126 FireCell 230Vac Radio Cluster Communicator Product Datasheet",
+    "type": "manufacturer reference",
+    "url": null,
+    "source": "https://huvo.co.uk/product/ems-firecell-radio-cluster-communicator/",
+    "revision": "Issue 5, 03/10/2018",
+    "status": "file-hash",
+    "sha256": "777d6bd3e40513cc306e394974cba19b70b995395a8f396040802844c82a9f86",
+    "bytes": 313929,
+    "pages": 1,
+    "origin": "device-reference",
+    "related_archive_record_ids": [],
+    "original_download_url": "https://huvo.co.uk/wp-content/uploads/2024/09/EMS-FireCell-230VAC-RCC.pdf",
+    "download_mode": "source-only",
+    "delivery_note": "Automatic download is unavailable from this publisher. Open the source, or use Import PDF with a matching copy you already have."
+  },
+  {
+    "id": "device-doc-ems-a93fc764968b",
+    "brand": "EMS",
+    "category": "fire",
+    "models": [
+      "FCX-532-001",
+      "Fusion RLM FCX-532-001"
+    ],
+    "title": "MK127 FireCell Fusion RLM Product Datasheet",
+    "type": "manufacturer reference",
+    "url": "https://www.firesense.co.uk/amfile/file/download/file/399/product/2472/",
+    "source": "https://www.firesense.co.uk/amfile/file/download/file/399/product/2472/",
+    "revision": "Issue 7, 24/09/2024",
+    "status": "file-hash",
+    "sha256": "a93fc764968b96a6dce97eeb0c3ace6b9baecb909a581bc1845882319413723e",
+    "bytes": 227012,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": []
+  },
+  {
+    "id": "device-doc-ems-c40857c87e50",
+    "brand": "EMS",
+    "category": "fire",
+    "models": [
+      "FC-200-002",
+      "FireCell call point FC-200-002"
+    ],
+    "title": "MK128 FireCell Wireless Call Point Product Datasheet",
+    "type": "manufacturer reference",
+    "url": null,
+    "source": "https://huvo.co.uk/product/ems-firecell-wireless-call-point/",
+    "revision": "Issue 4, 02/10/2018",
+    "status": "file-hash",
+    "sha256": "c40857c87e504849762f3c855546683f28a430cb96bd0346581fa3c6b236bdd5",
+    "bytes": 700922,
+    "pages": 1,
+    "origin": "device-reference",
+    "related_archive_record_ids": [],
+    "original_download_url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Call-Point.pdf",
+    "download_mode": "source-only",
+    "delivery_note": "Automatic download is unavailable from this publisher. Open the source, or use Import PDF with a matching copy you already have."
+  },
+  {
+    "id": "device-doc-ems-2f0d72961ef4",
+    "brand": "EMS",
+    "category": "fire",
+    "models": [
+      "FC-610-001",
+      "FireCell dual I/O FC-610-001"
+    ],
+    "title": "MK129 FireCell Input / Output Unit Product Datasheet",
+    "type": "manufacturer reference",
+    "url": null,
+    "source": "https://huvo.co.uk/product/ems-firecell-input-output-unit/",
+    "revision": "Issue 5, 03/10/2018",
+    "status": "file-hash",
+    "sha256": "2f0d72961ef41fc9854f5707d4f454689b1f559db94d0dbadd7a44d7aa7a9ee9",
+    "bytes": 255595,
+    "pages": 1,
+    "origin": "device-reference",
+    "related_archive_record_ids": [],
+    "original_download_url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Input-Output-Unit.pdf",
+    "download_mode": "source-only",
+    "delivery_note": "Automatic download is unavailable from this publisher. Open the source, or use Import PDF with a matching copy you already have."
+  },
+  {
+    "id": "device-doc-gent-9c36c632ebd9",
+    "brand": "Gent",
+    "category": "fire",
+    "models": [
+      "S4-34800",
+      "S4-34842",
+      "S4-34805",
+      "S4-34845"
+    ],
+    "title": "Gent S4-348XX manual call point installation — 4188-855 Issue 7",
+    "type": "manufacturer reference",
+    "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/manuals-and-guides/installation-guides/gent-112425/hon-ba-fire-4188-855.pdf?download=false",
+    "source": "https://buildings.honeywell.com/gb/en/products/by-category/fire-life-safety/manual-call-points-pull-stations-and-panic-buttons/manual-call-points-pull-stations/manual-call-point-s4-with-glass-element",
+    "revision": "Issue 7, November 2021",
+    "status": "file-hash",
+    "sha256": "9c36c632ebd9d444656c0274139a4efd893e108b8104b8c7a16d532d4f4d122e",
+    "bytes": 1154917,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": []
+  },
+  {
+    "id": "device-doc-hochiki-25693c776dcc",
+    "brand": "Hochiki",
+    "category": "fire",
+    "models": [
+      "ALN-EN",
+      "ACC-EN",
+      "ATJ-EN",
+      "ACD-EN",
+      "ACB-EW",
+      "YBN-R/3",
+      "YBV-R/4",
+      "CHQ-WS2",
+      "CHQ-WSB2",
+      "YBO-BS",
+      "CHQ-ARI",
+      "CHQ-SIM",
+      "CHQ-DIM2(SCI)",
+      "HCP-E(SCI)",
+      "TCH-B200",
+      "SOC-E3N",
+      "DCD-AE3",
+      "DCD-CE3",
+      "DRD-E"
+    ],
+    "title": "Hochiki Europe Product Guide - Issue 33, March 2026",
+    "type": "manufacturer reference",
+    "url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+    "source": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+    "revision": "9-5-0-321 / ISS33 / MAR26",
+    "status": "file-hash",
+    "sha256": "25693c776dcc86b823870dc205b9051a37daaa9dad46c974136abf626f3bed3a",
+    "bytes": 11777900,
+    "pages": 56,
+    "origin": "device-reference",
+    "related_archive_record_ids": []
+  },
+  {
+    "id": "device-doc-nittan-60acce3d2e53",
+    "brand": "Nittan",
+    "category": "fire",
+    "models": [
+      "EV-240V MRA"
+    ],
+    "title": "Nittan EV-240V MRA reference - EV-240V MRA Installation Leaflet Issue 1",
+    "type": "manufacturer reference",
+    "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/ev-240vmra_installmanual.pdf",
+    "source": "https://www.nittan.com/english/product/ev-240v-mra/",
+    "revision": "EV-240V MRA Installation Leaflet Issue 1",
+    "status": "file-hash",
+    "sha256": "60acce3d2e53aa94eb7c74ecb05222e962a78b3daddd8527c909fb901693c1a1",
+    "bytes": 306264,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "nittan-695cd16504ab"
+    ]
+  },
+  {
+    "id": "device-doc-nittan-c2305fc3416e",
+    "brand": "Nittan",
+    "category": "fire",
+    "models": [
+      "EV-2I1O"
+    ],
+    "title": "Nittan EV-2I1O reference - IIS-EV-2I1O (-EU) Issue 4, 04/03/2019",
+    "type": "manufacturer reference",
+    "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-2I1O%28EU%29%20Iss%204%20Installation%20instruction%20sheet.pdf",
+    "source": "https://www.nittan.com/english/product/ev-2i1o/",
+    "revision": "IIS-EV-2I1O (-EU) Issue 4, 04/03/2019",
+    "status": "file-hash",
+    "sha256": "c2305fc3416e3f064559a41b2354f47d95f75878a213313e64dbcc7f760e4de4",
+    "bytes": 458432,
+    "pages": 4,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "nittan-ea9adebcd190"
+    ]
+  },
+  {
+    "id": "device-doc-nittan-24b1fd056ba7",
+    "brand": "Nittan",
+    "category": "fire",
+    "models": [
+      "EV-DPH-CS"
+    ],
+    "title": "Nittan EV-DPH-CS reference - NISM/EV-DPH/01 Issue 1, May 2010",
+    "type": "manufacturer reference",
+    "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/NISM-EV-DPH-01_Manual.pdf",
+    "source": "https://www.nittan.com/english/product/ev-dph-cs/",
+    "revision": "NISM/EV-DPH/01 Issue 1, May 2010",
+    "status": "file-hash",
+    "sha256": "24b1fd056ba7e0312ffcbab08909ff71399bc9815901d7ca4e708524a2513339",
+    "bytes": 764598,
+    "pages": 10,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "nittan-6fd49a400a54"
+    ]
+  },
+  {
+    "id": "device-doc-nittan-2baa1e344172",
+    "brand": "Nittan",
+    "category": "fire",
+    "models": [
+      "EV-H-CS"
+    ],
+    "title": "Nittan EV-H-CS reference - NISM/EV-H/05, September 2015",
+    "type": "manufacturer reference",
+    "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/ev-h_a1r_techmanual.pdf",
+    "source": "https://www.nittan.com/english/product/ev-h-cs/",
+    "revision": "NISM/EV-H/05, September 2015",
+    "status": "file-hash",
+    "sha256": "2baa1e344172062e5c91021267dc7904d1ac981cc87700a5df5289500910fda8",
+    "bytes": 195034,
+    "pages": 7,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "nittan-14089a9905eb"
+    ]
+  },
+  {
+    "id": "device-doc-nittan-f912292fc103",
+    "brand": "Nittan",
+    "category": "fire",
+    "models": [
+      "EV-HIOP-SB-SCI"
+    ],
+    "title": "Nittan EV-HIOP-SB-SCI reference - IIS-EV-HIOP-SB-SCI Issue 9, 20/10/2016",
+    "type": "manufacturer reference",
+    "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-HIOP-SB-SCI_Iss_7_Instruction_leaflet.pdf",
+    "source": "https://www.nittan.com/english/product/ev-hiop-sb-sci/",
+    "revision": "IIS-EV-HIOP-SB-SCI Issue 9, 20/10/2016",
+    "status": "file-hash",
+    "sha256": "f912292fc103239e1d4ea38eba311a74309a8dc0cf6d105c61d00313ef976eb6",
+    "bytes": 326478,
+    "pages": 1,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "nittan-14b8944e8de0"
+    ]
+  },
+  {
+    "id": "device-doc-nittan-509751ace6d5",
+    "brand": "Nittan",
+    "category": "fire",
+    "models": [
+      "EV-MCP2-SCI-IP24"
+    ],
+    "title": "Nittan EV-MCP2-SCI-IP24 reference - IIS-EV-MCP2-SCI-IP24 Issue 3, 08/10/2019",
+    "type": "manufacturer reference",
+    "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-MCP2-SCI-IP24%20Iss%203%20Installation%20instruction%20sheet.pdf",
+    "source": "https://www.nittan.com/english/product/ev-mcp2-sci-ip24/",
+    "revision": "IIS-EV-MCP2-SCI-IP24 Issue 3, 08/10/2019",
+    "status": "file-hash",
+    "sha256": "509751ace6d5abdb7675d679c7d844cdbb5abbd4cf67dd11413f08f49d486fb8",
+    "bytes": 214302,
+    "pages": 1,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "nittan-62c9c1d3b106"
+    ]
+  },
+  {
+    "id": "device-doc-nittan-92f082662910",
+    "brand": "Nittan",
+    "category": "fire",
+    "models": [
+      "EV-MCP2-SCI-IP67"
+    ],
+    "title": "Nittan EV-MCP2-SCI-IP67 reference - IIS-EV-MCP2-SCI-IP67 Issue 2, 08/10/2019",
+    "type": "manufacturer reference",
+    "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-MCP2-SCI-IP67%20Iss%202%20Installation%20instruction%20sheet.pdf",
+    "source": "https://www.nittan.com/english/product/ev-mcp2-sci-ip67/",
+    "revision": "IIS-EV-MCP2-SCI-IP67 Issue 2, 08/10/2019",
+    "status": "file-hash",
+    "sha256": "92f082662910775f8f633359f84188014201ac5fd1926f7a0e2320dd0c80d93c",
+    "bytes": 341095,
+    "pages": 1,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "nittan-1a1a18b53ab3"
+    ]
+  },
+  {
+    "id": "device-doc-nittan-c65c530f2411",
+    "brand": "Nittan",
+    "category": "fire",
+    "models": [
+      "EV-Mini IP2"
+    ],
+    "title": "Nittan EV-Mini IP2 reference - IIS-EV-Mini IP2 Issue 4, 18/01/2019",
+    "type": "manufacturer reference",
+    "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-Mini%20IP2%20Iss%204%20Installation%20instruction%20sheet.pdf",
+    "source": "https://www.nittan.com/english/product/ev-mini-ip2/",
+    "revision": "IIS-EV-Mini IP2 Issue 4, 18/01/2019",
+    "status": "file-hash",
+    "sha256": "c65c530f2411588278a1e09401f4ad7bcf395488f011d27493ce257ec0a91866",
+    "bytes": 273328,
+    "pages": 4,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "nittan-702bcab0c22a"
+    ]
+  },
+  {
+    "id": "device-doc-nittan-651d5abec767",
+    "brand": "Nittan",
+    "category": "fire",
+    "models": [
+      "EV-PS"
+    ],
+    "title": "Nittan EV-PS reference - NISM/EV-PS/01 Issue 1, May 2010",
+    "type": "manufacturer reference",
+    "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/ev-ps_techmanual.pdf",
+    "source": "https://www.nittan.com/english/product/ev-ps/",
+    "revision": "NISM/EV-PS/01 Issue 1, May 2010",
+    "status": "file-hash",
+    "sha256": "651d5abec767d4674524a8b7bbad471b908c4b85a1008ca4e3d049c6b03709e1",
+    "bytes": 887499,
+    "pages": 10,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "nittan-bd4b83c91afc"
+    ]
+  },
+  {
+    "id": "device-doc-nittan-4e12fd384d8c",
+    "brand": "Nittan",
+    "category": "fire",
+    "models": [
+      "EVC-IR"
+    ],
+    "title": "Nittan EVC-IR reference - NISM-EVC-IR Issue 9",
+    "type": "manufacturer reference",
+    "url": "https://www.nittan.com/english/cms/wp-content/uploads/2026/06/NISM-EVC-IR-Tech-Manual-Iss-9.pdf",
+    "source": "https://www.nittan.com/english/product/evc-ir/",
+    "revision": "NISM-EVC-IR Issue 9",
+    "status": "file-hash",
+    "sha256": "4e12fd384d8c18dadcfe71cb75553a65bf1485f0cf4959ac0977ead569365dc0",
+    "bytes": 266377,
+    "pages": 6,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "nittan-0ac170ea49ab"
+    ]
+  },
+  {
+    "id": "device-doc-notifier-05a7316dffbe",
+    "brand": "Notifier",
+    "category": "fire",
+    "models": [
+      "NRX-OPT",
+      "NRX-TDIFF",
+      "NRX-TFIX58",
+      "NRX-WCP",
+      "NRXI-GATE",
+      "NRX-REP",
+      "NRX-IRK"
+    ],
+    "title": "Notifier Agile wireless fire detection - 990-182_0919",
+    "type": "manufacturer reference",
+    "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-uk/hba-fire-Agile-Wireless-Fire-Detection-990-182-0919.pdf?download=false",
+    "source": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-uk/hba-fire-Agile-Wireless-Fire-Detection-990-182-0919.pdf?download=false",
+    "revision": "990-182_0919, September 2019",
+    "status": "file-hash",
+    "sha256": "05a7316dffbe411403d95f86c8885a5a5ef2954cae4ee3af854d2a0cc6a6d56e",
+    "bytes": 439386,
+    "pages": 3,
+    "origin": "device-reference",
+    "related_archive_record_ids": []
+  },
+  {
+    "id": "device-doc-notifier-722c2bfa968b",
+    "brand": "Notifier",
+    "category": "fire",
+    "models": [
+      "NFX-OPT",
+      "NFXI-OPT",
+      "B501AP"
+    ],
+    "title": "Notifier NFX-OPT / NFXI-OPT and B501AP - English manufacturer datasheet",
+    "type": "manufacturer reference",
+    "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-it/HBT-Fire-NFX-OPT-ENG.pdf?download=false",
+    "source": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-it/HBT-Fire-NFX-OPT-ENG.pdf?download=false",
+    "revision": "D-532.3-NFX-ENG Rev. A.1, October 2009",
+    "status": "file-hash",
+    "sha256": "722c2bfa968b04f1a3f7e27071344ee6eb48be7ba7553bc5ebc601b90dd44188",
+    "bytes": 1715533,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": []
+  },
+  {
+    "id": "device-doc-notifier-c96d59e70df0",
+    "brand": "Notifier",
+    "category": "fire",
+    "models": [
+      "NFXI-OPT",
+      "B501AP",
+      "NFXI-BEAM-E",
+      "NFXI-BEAM-TE",
+      "NRX-OPT",
+      "NRX-TDIFF",
+      "NRX-TFIX58",
+      "NRX-WCP",
+      "NRXI-GATE",
+      "NRX-REP",
+      "NRX-IRK"
+    ],
+    "title": "Notifier UK Black Book - 2023 product reference",
+    "type": "manufacturer reference",
+    "url": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/downloads/Fire-EMEA-NOTIFIER-2023-Black-Book_digital.pdf",
+    "source": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/downloads/Fire-EMEA-NOTIFIER-2023-Black-Book_digital.pdf",
+    "revision": "2023 edition",
+    "status": "file-hash",
+    "sha256": "c96d59e70df050fed1f927d38ba0cc6d2ab4143b80deae3f868bb80132c7d5d0",
+    "bytes": 13158971,
+    "pages": 106,
+    "origin": "device-reference",
+    "related_archive_record_ids": []
+  },
+  {
+    "id": "device-doc-optex-0e24f35a8e1a",
+    "brand": "Optex",
+    "category": "security",
+    "models": [
+      "FTN-ST"
+    ],
+    "title": "FTN-ST compact outdoor PIR — manufacturer datasheet",
+    "type": "manufacturer reference",
+    "url": "https://optex.imgix.net/downloads/sensor-downloads/Intrusion-Detection/Data-Sheets/optex-ftn-st_ftn-r_ftn-ram_ftn-am-datasheet.pdf",
+    "source": "https://www.optex-europe.com/products/intrusion-detection/ftn-st",
+    "revision": "No. 75119-00-15747-1002",
+    "status": "file-hash",
+    "sha256": "0e24f35a8e1a903a6154f6fe3c13f176d92ff2f277fba39ef850088a62fa6069",
+    "bytes": 1309488,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": []
+  },
+  {
+    "id": "device-doc-optex-f26b1b42fc56",
+    "brand": "Optex",
+    "category": "security",
+    "models": [
+      "FLX-S-ST"
+    ],
+    "title": "FlipX FLX-S-ST indoor PIR — manufacturer datasheet",
+    "type": "manufacturer reference",
+    "url": "https://optex.imgix.net/downloads/sensor-downloads/Intrusion-Detection/Data-Sheets/optex-flipx-standard-datasheet-en-web.pdf",
+    "source": "https://www.optex-europe.com/products/intrusion-detection/flx-s-st",
+    "revision": "Revision not stated in the supplied manufacturer datasheet",
+    "status": "file-hash",
+    "sha256": "f26b1b42fc56d6a6cb632b12d8d3b2c17c3a85d101ffdc25fb53b6ebed2d5075",
+    "bytes": 3033306,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": []
+  },
+  {
+    "id": "device-doc-optex-6c50f85965a3",
+    "brand": "Optex",
+    "category": "security",
+    "models": [
+      "QXI-ST"
+    ],
+    "title": "QXI-ST outdoor wide-angle PIR — manufacturer datasheet",
+    "type": "manufacturer reference",
+    "url": "https://optex.imgix.net/downloads/sensor-downloads/Intrusion-Detection/Data-Sheets/optex-qxi-datasheet-En.pdf",
+    "source": "https://www.optex-europe.com/products/intrusion-detection/qxi-st",
+    "revision": "No. 00000-01-15747-1911-OE (2019)",
+    "status": "file-hash",
+    "sha256": "6c50f85965a3a2fce37331f4bb6615b1d0f17a7773d4fd9b4160ef4e18a6cd31",
+    "bytes": 3983750,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": []
+  },
+  {
+    "id": "device-doc-optex-4db79e533f2a",
+    "brand": "Optex",
+    "category": "security",
+    "models": [
+      "VXI-AM"
+    ],
+    "title": "VXI-AM outdoor PIR with anti-masking — manufacturer datasheet",
+    "type": "manufacturer reference",
+    "url": "https://optex.imgix.net/downloads/sensor-downloads/Intrusion-Detection/Data-Sheets/optex-vxi-series-datasheet-en.pdf",
+    "source": "https://www.optex-europe.com/products/intrusion-detection/vxi-am",
+    "revision": "Revision not stated in the supplied manufacturer datasheet",
+    "status": "file-hash",
+    "sha256": "4db79e533f2af8ac0fe8d81ed28b396828e08831a768af143f826f1805e01406",
+    "bytes": 1610677,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": []
+  },
+  {
+    "id": "device-doc-optex-133f7df088cd",
+    "brand": "Optex",
+    "category": "security",
+    "models": [
+      "WXI-ST"
+    ],
+    "title": "WXI-ST outdoor 180-degree PIR — manufacturer datasheet",
+    "type": "manufacturer reference",
+    "url": "https://optex.imgix.net/downloads/sensor-downloads/Intrusion-Detection/Data-Sheets/optex-wxi-datasheet-en.pdf",
+    "source": "https://www.optex-europe.com/products/intrusion-detection/wxi-st",
+    "revision": "Revision not stated in the supplied manufacturer datasheet",
+    "status": "file-hash",
+    "sha256": "133f7df088cdf34dca6fc65ecb1ba3f55639bc42a5e8a7fdecc1b25d18f4609c",
+    "bytes": 1637780,
+    "pages": 4,
+    "origin": "device-reference",
+    "related_archive_record_ids": []
+  },
+  {
+    "id": "device-doc-the-fire-beam-company-5e3186d7eb4f",
+    "brand": "The Fire Beam Company",
+    "category": "fire",
+    "models": [
+      "FIREBEAM BLUE"
+    ],
+    "title": "Fire Beam BLUE manufacturer datasheet",
+    "type": "manufacturer reference",
+    "url": "https://thefirebeamcompany.com/user-zone/pdf/Fire-Beam-BLUE-Datasheet.pdf",
+    "source": "https://thefirebeamcompany.com/user-zone/",
+    "revision": "Undated manufacturer datasheet, retrieved 30 October 2026",
+    "status": "file-hash",
+    "sha256": "5e3186d7eb4fae05438b3ee49d36f10b7cd29e261747dae5d3ea2fbe5def98e6",
+    "bytes": 824918,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": []
+  },
+  {
+    "id": "device-doc-the-fire-beam-company-ef8e716e192b",
+    "brand": "The Fire Beam Company",
+    "category": "fire",
+    "models": [
+      "FIREBEAM BLUE"
+    ],
+    "title": "Fire Beam BLUE user guide — issue 0165-05",
+    "type": "manufacturer reference",
+    "url": "https://thefirebeamcompany.com/user-zone/pdf/Fire-Beam-BLUE-User-Guide-0165-05.pdf",
+    "source": "https://thefirebeamcompany.com/user-zone/",
+    "revision": "0165-05, Rev05, 22 April 2026",
+    "status": "file-hash",
+    "sha256": "ef8e716e192bc1d7120129374698f6ffd1f4f4560de79321f589048ee297becd",
+    "bytes": 6868242,
+    "pages": 28,
+    "origin": "device-reference",
+    "related_archive_record_ids": []
+  },
+  {
+    "id": "device-doc-the-fire-beam-company-f9652cff6119",
+    "brand": "The Fire Beam Company",
+    "category": "fire",
+    "models": [
+      "FIREBEAM XTRA"
+    ],
+    "title": "Fire Beam Xtra manufacturer datasheet",
+    "type": "manufacturer reference",
+    "url": "https://thefirebeamcompany.com/user-zone/pdf/Fire-Beam-Xtra-Datasheet.pdf",
+    "source": "https://thefirebeamcompany.com/user-zone/",
+    "revision": "Undated manufacturer datasheet, retrieved 30 October 2026",
+    "status": "file-hash",
+    "sha256": "f9652cff611921fcd8b698a1be134483d2cdf31296f2961e251462b2c524c4e5",
+    "bytes": 815283,
+    "pages": 2,
+    "origin": "device-reference",
+    "related_archive_record_ids": []
+  },
+  {
+    "id": "device-doc-the-fire-beam-company-9ea9d54e1f2c",
+    "brand": "The Fire Beam Company",
+    "category": "fire",
+    "models": [
+      "FIREBEAM XTRA"
+    ],
+    "title": "Fire Beam Xtra user guide — issue 0025-12",
+    "type": "manufacturer reference",
+    "url": "https://thefirebeamcompany.com/user-zone/pdf/Fire-Beam-Xtra-User-Guide-0025-12.pdf",
+    "source": "https://thefirebeamcompany.com/user-zone/",
+    "revision": "0025-12, Rev12, 22 April 2026",
+    "status": "file-hash",
+    "sha256": "9ea9d54e1f2c6ea887646ef03e63cac1532e471c496be732ed009a48fa6b66e8",
+    "bytes": 3543204,
+    "pages": 16,
+    "origin": "device-reference",
+    "related_archive_record_ids": [
+      "the-fire-beam-company-7f8db7c4abfe"
+    ]
+  }
+]

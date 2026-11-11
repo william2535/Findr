@@ -1,0 +1,220 @@
+{
+  "date": "2026-10-29",
+  "batch": "Haes remote terminals and reviewed legacy backlog",
+  "accepted": 5,
+  "resolved_legacy_candidate": "haes-multi-tech",
+  "candidates": [
+    {
+      "id": "haes-elan-remote-terminals",
+      "brand": "Haes",
+      "model": "Elan Remote Terminals HS-5010 / HS-5020",
+      "status": "verified-image",
+      "source_page_url": "https://haes-tech.com/downloads/elan-remote-terminal-technical-data-sheet",
+      "source_document_url": "https://haes-tech.com/app/uploads/2020/01/Elan-Remote-Terminals-Technical-Data-Sheet-1.pdf",
+      "source_sha256": "bee04aca45492359e94bbd2f4c919ccdca11e4702f2455823e9ecde27d369210",
+      "source_pdf_page": 1,
+      "pdf_crop_points": [
+        333,
+        126,
+        553,
+        306
+      ],
+      "image": "haes-elan-remote-terminals.png",
+      "reason": "Inspected original manufacturer page and exact exterior image."
+    },
+    {
+      "id": "haes-elan-touch-10",
+      "brand": "Haes",
+      "model": "Elan TOUCH-10 remote terminal",
+      "status": "verified-image",
+      "source_page_url": "https://haes-tech.com/downloads/elan-touch-control-terminal-technical-data-sheet-2",
+      "source_document_url": "https://haes-tech.com/app/uploads/2020/01/Elan-Touch-Control-Terminal-Technical-Data-Sheet-1.pdf",
+      "source_sha256": "e286fa21514d27d2e05871d1b8f6afbe233ca36969b38d0243bfb83abc5010a1",
+      "source_pdf_page": 1,
+      "pdf_crop_points": [
+        334,
+        139,
+        553,
+        295
+      ],
+      "image": "haes-elan-touch-10.png",
+      "reason": "Inspected original manufacturer page and exact exterior image."
+    },
+    {
+      "id": "haes-esento-rdu",
+      "brand": "Haes",
+      "model": "Esento XL-RDU remote display",
+      "status": "verified-image",
+      "source_page_url": "https://haes-tech.com/downloads/esento-rdu-technical-data-sheet",
+      "source_document_url": "https://haes-tech.com/app/uploads/2019/08/Esento-Remote-Display-Technical-Data-Sheet-2.pdf",
+      "source_sha256": "126cd314388847cf850e55dafb924d7201b4539cf053fbdda192409e1f8df744",
+      "source_pdf_page": 1,
+      "pdf_crop_points": [
+        357,
+        144,
+        553,
+        312
+      ],
+      "image": "haes-esento-rdu.png",
+      "reason": "Inspected original manufacturer page and exact exterior image."
+    },
+    {
+      "id": "haes-esento-repeater",
+      "brand": "Haes",
+      "model": "Esento 12-zone repeater",
+      "status": "verified-image",
+      "source_page_url": "https://haes-tech.com/downloads/esento-repeater-technical-data-sheet-3",
+      "source_document_url": "https://haes-tech.com/app/uploads/2019/08/Esento-Repeater-Technical-Data-Sheet-2.pdf",
+      "source_sha256": "2a16553954f852234405b231f3605801d67ce2f7aa5e297808cfc577e8ee714e",
+      "source_pdf_page": 1,
+      "pdf_crop_points": [
+        357,
+        144,
+        553,
+        312
+      ],
+      "image": "haes-esento-repeater.png",
+      "reason": "Inspected original manufacturer page and exact exterior image."
+    },
+    {
+      "id": "haes-multi-tech",
+      "brand": "Haes",
+      "model": "Multi-Tech FCPTEC-HS-4200 / HS-4400",
+      "status": "verified-image",
+      "source_page_url": "https://haes-tech.com/downloads/multi-tech-user-manual",
+      "source_document_url": "https://haes-tech.com/app/uploads/2019/10/Multitech-user-manual.pdf",
+      "source_sha256": "4fcbe61ccc927a64d6bc23f288a653b489ebf2cfd178e52b51c5bfaa60ee1b56",
+      "source_pdf_page": 4,
+      "pdf_crop_points": [
+        70,
+        108,
+        512,
+        464
+      ],
+      "image": "haes-multi-tech.png",
+      "reason": "Clear, coloured, manufacturer-labelled fascia drawing in the separate User Manual resolves the visual reference; an exterior photograph remains unavailable."
+    },
+    {
+      "id": "simplex-4100",
+      "brand": "Simplex",
+      "model": "4100",
+      "status": "awaiting-image-review",
+      "reason": "The official 4100-M001 Issue1.2 manual shows a faint Australian operator-interface drawing. A clear exterior photograph for the intended legacy 4100 variant remains unverified; 4100U and4100ES photographs are not substitutes.",
+      "record_ids": [
+        "facp-6cc18b4b-c119-4d72-922c-7511ef87e447",
+        "facp-542dd48b-6d3a-4d40-a52d-1aa8130e58bf",
+        "facp-c4641de6-7659-4791-896b-44185dc91eeb"
+      ],
+      "reviewed": "2026-10-29",
+      "source_document_url": "https://docs.johnsoncontrols.com/simplex/api/khub/documents/t6f4epQOVWTdkM6bOU5aig/content",
+      "source_sha256": "fb3cfd01b3713bce270b0bae38e939d6f88911ceb5e908dd91234257b17fbcbd"
+    },
+    {
+      "id": "haes-level-1-4-twin",
+      "brand": "Haes",
+      "model": "Level 1-4 TWIN",
+      "status": "unresolved",
+      "reason": "Rechecked the manufacturer manual and public sources. The available boards, connection diagrams or text do not establish a clear exterior/fascia identification image.",
+      "record_ids": [
+        "haes-317313906c9c"
+      ],
+      "reviewed": "2026-10-29",
+      "source_document_url": "https://haes-tech.com/app/uploads/2019/10/Level-1-4-TWIN-manual.pdf",
+      "source_sha256": "fd728024d454356b8c8e86bca3af5b59831d56765046ba68524a4a585d9e9444"
+    },
+    {
+      "id": "haes-level-2-1cd",
+      "brand": "Haes",
+      "model": "Level 2-1CD",
+      "status": "unresolved",
+      "reason": "Rechecked the manufacturer manual and public sources. The available boards, connection diagrams or text do not establish a clear exterior/fascia identification image.",
+      "record_ids": [
+        "haes-4770add6f3df"
+      ],
+      "reviewed": "2026-10-29",
+      "source_document_url": "https://haes-tech.com/app/uploads/2019/10/Level-2-1CD-manual.pdf",
+      "source_sha256": "ceefb8951a76e46c0b2aa906f0b56835fc6067a4e82849ca9dee830ed8190ad3"
+    },
+    {
+      "id": "haes-firemax",
+      "brand": "Haes",
+      "model": "Firemax",
+      "status": "unresolved",
+      "reason": "Rechecked the manufacturer manual and public sources. The available boards, connection diagrams or text do not establish a clear exterior/fascia identification image.",
+      "record_ids": [
+        "haes-653dc7d77bcb"
+      ],
+      "reviewed": "2026-10-29",
+      "source_document_url": "https://haes-tech.com/app/uploads/2019/10/Firemax-installation-manual.pdf",
+      "source_sha256": "4253630cab5d07a57f88bb840b7f4fb452fd4af8e6282d9ab5e4ba0ec9c79ff0"
+    },
+    {
+      "id": "haes-9012",
+      "brand": "Haes",
+      "model": "9012",
+      "status": "unresolved",
+      "reason": "Rechecked the manufacturer scan, including its drawing sheets. It contains text and connection/board diagrams, without a clear verified exterior or complete fascia image.",
+      "record_ids": [
+        "haes-7f89a3aecdc0"
+      ],
+      "reviewed": "2026-10-29",
+      "source_document_url": "https://haes-tech.com/app/uploads/2019/10/9012-manual.pdf",
+      "source_sha256": "7e74ef6f2aeda62a02dbda471acffcdc8f2fd8d3cc75916ff1d277dfd3078cbc"
+    },
+    {
+      "id": "haes-9001sd",
+      "brand": "Haes",
+      "model": "9001SD",
+      "status": "unresolved",
+      "reason": "Rechecked the manufacturer scan, including its drawing sheets. It contains text and connection/board diagrams, without a clear verified exterior or complete fascia image.",
+      "record_ids": [
+        "haes-a9a2076a7531"
+      ],
+      "reviewed": "2026-10-29",
+      "source_document_url": "https://haes-tech.com/app/uploads/2019/10/9001SD-manual.pdf",
+      "source_sha256": "a77a16100d79cf813ebe3431fcbcd053f67a36b3b14676396f49b5414f9e8ca2"
+    },
+    {
+      "id": "haes-level-1-4",
+      "brand": "Haes",
+      "model": "Level 1-4",
+      "status": "unresolved",
+      "reason": "Rechecked the manufacturer manual and public sources. The available boards, connection diagrams or text do not establish a clear exterior/fascia identification image.",
+      "record_ids": [
+        "haes-af1a326cf3f3"
+      ],
+      "reviewed": "2026-10-29",
+      "source_document_url": "https://haes-tech.com/app/uploads/2019/10/Level-1-4-manual.pdf",
+      "source_sha256": "c91840e6023de6650e1e4608f9be1caa20dae83259c017481011217d4a094c81"
+    },
+    {
+      "id": "haes-6000-series",
+      "brand": "Haes",
+      "model": "6000 Series",
+      "status": "unresolved",
+      "reason": "The available official source is a one-page connection schematic. It does not show a usable cabinet or front fascia.",
+      "record_ids": [
+        "haes-b06e971644c9"
+      ],
+      "reviewed": "2026-10-29",
+      "source_document_url": "https://haes-tech.com/app/uploads/2019/10/6000-Series-manual.pdf",
+      "source_sha256": "8034202a88e5cd209610f9c89975fb125e9db0d235b28a4be06dce7959e0855c"
+    },
+    {
+      "id": "haes-8000-series",
+      "brand": "Haes",
+      "model": "8000 Series",
+      "status": "unresolved",
+      "reason": "Rechecked the manufacturer scan, including its drawing sheets. It contains text and connection/board diagrams, without a clear verified exterior or complete fascia image.",
+      "record_ids": [
+        "haes-bd3b175ffb6c"
+      ],
+      "reviewed": "2026-10-29",
+      "source_document_url": "https://haes-tech.com/app/uploads/2019/10/8000-Series-manual.pdf",
+      "source_sha256": "e5dc8f3354dd65550eb7a8659db4da24f91e3eb8cbc16d717fd801915f1121fa"
+    }
+  ],
+  "policy": "Only original manufacturer photographs or explicitly labelled original fascia illustrations. No generated reconstruction, replacement model, or internal board diagram is presented as an exterior photo.",
+  "uk_source": "https://haes-tech.com/about-us",
+  "visualQA": "All five source-page renders and final crops inspected."
+}

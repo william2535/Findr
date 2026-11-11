@@ -1,0 +1,1833 @@
+{
+  "release": "0.24.0",
+  "baselineCommit": "b126f5b4c54709aa161416963d0cf9dde91d8d72",
+  "reviewedOn": "2026-11-02",
+  "method": "All 45 existing XFP/Twinflex catalogue candidates were fetched or reused from prior retrieved source files. PDF headers, page counts, full text and SHA256 were inspected. Covers/model scope/revision and critical variant boundaries were reviewed. Existing records were not rewritten.",
+  "counts": {
+    "catalogueRecords": 45,
+    "retrievedPdfs": 45,
+    "uniquePdfHashes": 41,
+    "canonicalDocumentEditions": 34,
+    "hashPinnedMatches": 18,
+    "hashPinnedMismatches": 0,
+    "failedRetrievals": 0,
+    "manualFamilies": 10
+  },
+  "records": [
+    {
+      "recordId": "c-tec-028dbe8ececd",
+      "catalogueTitle": "C-Tec Addressable XFP — User guide",
+      "url": "https://irp-cdn.multiscreensite.com/cdbd5f30/files/uploaded/Liberty%20Systems_Ctec%20Addressable%20Fire%20Alarm%20XFP_USER_MANUAL.pdf",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://irp-cdn.multiscreensite.com/cdbd5f30/files/uploaded/Liberty%20Systems_Ctec%20Addressable%20Fire%20Alarm%20XFP_USER_MANUAL.pdf",
+      "retrieval": "retrieved",
+      "bytes": 866575,
+      "sha256": "909a50a15d5a2ad08844379ed30a1870e42166f343a7618e73fae09937974184",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-028dbe8ececd.pdf",
+      "pdfPages": 28,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-028dbe8ececd",
+        "title": "XFP user manual and log book",
+        "role": "user-guide",
+        "variant": "XFP Apollo/Hochiki 16- and 32-zone panels",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU2000510",
+        "edition": "Rev 1",
+        "pdfPages": 28,
+        "sha256": "909a50a15d5a2ad08844379ed30a1870e42166f343a7618e73fae09937974184",
+        "bytes": 866575,
+        "sourceUrl": "https://irp-cdn.multiscreensite.com/cdbd5f30/files/uploaded/Liberty%20Systems_Ctec%20Addressable%20Fire%20Alarm%20XFP_USER_MANUAL.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "Alternate copy of c-tec-fdc84bc5cbd5. Its own PDF hash remains distinct where bytes differ; no source-page hash is substituted."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "e88008e3597e460241605ccb2cb5859e4fae994403b9a48d01f132f19ef16e67",
+        "canonicalRecordId": "c-tec-fdc84bc5cbd5"
+      }
+    },
+    {
+      "recordId": "c-tec-04746f03b810",
+      "catalogueTitle": "App Note – How to set up a PC’s Serial Comm Port for an XFP Fire Panel or Quantec Controller – DFU0000232",
+      "url": "https://c-tec.com/download?wpdmdl=12917",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://c-tec.com/download?wpdmdl=12917",
+      "retrieval": "retrieved",
+      "bytes": 442126,
+      "sha256": "f3893fb8bd35063f788ad0c6ac2816d6d58325bece82a5ed1c4d6b42b241bf05",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-04746f03b810.pdf",
+      "pdfPages": 4,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-04746f03b810",
+        "title": "Setting up a serial comm port on a PC",
+        "role": "application-note",
+        "variant": "XFP / Quantec serial-PC connection",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU0000232",
+        "edition": "Rev 1",
+        "pdfPages": 4,
+        "sha256": "f3893fb8bd35063f788ad0c6ac2816d6d58325bece82a5ed1c4d6b42b241bf05",
+        "bytes": 442126,
+        "sourceUrl": "https://c-tec.com/download?wpdmdl=12917",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "PC/serial connection reference for XFP and Quantec. It does not establish the installed panel protocol or every PC/adapter combination."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "ec0950c45b336f292edd23aef542ea42daa62408fb441644add14bcf01852791",
+        "canonicalRecordId": "c-tec-04746f03b810"
+      }
+    },
+    {
+      "recordId": "c-tec-0a668ed869a3",
+      "catalogueTitle": "XFP CAST Quick Start Programming Guide – DFU5020010",
+      "url": "https://c-tec.com/download?wpdmdl=12796",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://c-tec.com/download?wpdmdl=12796",
+      "retrieval": "retrieved",
+      "bytes": 1638050,
+      "sha256": "a20a4ad6fcb6523225a899f03f63bf702e86d797b004ae199455de431e5b7335",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-0a668ed869a3.pdf",
+      "pdfPages": 16,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-0a668ed869a3",
+        "title": "CAST XFP commissioning and programming quick start",
+        "role": "quick-start",
+        "variant": "CAST XFP501E/CA, XFP501/CA, XFP502/CA",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU5020010",
+        "edition": "Rev 4",
+        "pdfPages": 16,
+        "sha256": "a20a4ad6fcb6523225a899f03f63bf702e86d797b004ae199455de431e5b7335",
+        "bytes": 1638050,
+        "sourceUrl": "https://c-tec.com/download?wpdmdl=12796",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "324bdb1ef793cdeba7f6599f5be656821d4c1cd12db83881f16dc07bc00ab4ea",
+        "canonicalRecordId": "c-tec-0a668ed869a3"
+      }
+    },
+    {
+      "recordId": "c-tec-0fb079726b4a",
+      "catalogueTitle": "CTEC XFP QUICK START GUIDE",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%20QUICK%20START%20GUIDE.pdf",
+      "catalogueSha256": "2a506f4a378f8c8f8d4d0d49f032b4e445c02ef7112d20a3300c4c286b82e447",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%20QUICK%20START%20GUIDE.pdf",
+      "retrieval": "retrieved",
+      "bytes": 2027017,
+      "sha256": "2a506f4a378f8c8f8d4d0d49f032b4e445c02ef7112d20a3300c4c286b82e447",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-0fb079726b4a.pdf",
+      "catalogueHashMatches": true,
+      "pdfPages": 12,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-0fb079726b4a",
+        "title": "XFP worked-example quick guide",
+        "role": "quick-start",
+        "variant": "XFP Apollo/Hochiki 16- and 32-zone panels",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU2200533",
+        "edition": "Rev 3",
+        "pdfPages": 12,
+        "sha256": "2a506f4a378f8c8f8d4d0d49f032b4e445c02ef7112d20a3300c4c286b82e447",
+        "bytes": 2027017,
+        "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%20QUICK%20START%20GUIDE.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "Worked example, not an exhaustive substitute for the matching engineering manual. Loop 2 examples apply only to a fitted two-loop panel."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "3dc740a57431cf5cc95f75dc5e804072bd746ca6ffc7ede0fe14603a5d565f41",
+        "canonicalRecordId": "c-tec-0fb079726b4a",
+        "alternateRecordIds": [
+          "c-tec-bad126e83df2"
+        ],
+        "duplicateEvidence": [
+          {
+            "recordId": "c-tec-bad126e83df2",
+            "kind": "same-edition-and-normalized-full-text",
+            "sha256": "73dc5d5ec2c9d31d74200a58955d4ba4574d1f5f686de6ef81c35141e140e323"
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "c-tec-198b97fe8de2",
+      "catalogueTitle": "App Note – How to set up an Input/Output Unit on an XFP Fire Panel – DFU0000242",
+      "url": "https://c-tec.com/download?wpdmdl=12920",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://c-tec.com/download?wpdmdl=12920",
+      "retrieval": "retrieved",
+      "bytes": 260189,
+      "sha256": "2f55db015d999fb66735c7f738455da7b63b01bb3a0246109e329ac3210f9186",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-198b97fe8de2.pdf",
+      "pdfPages": 3,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-198b97fe8de2",
+        "title": "Setting up an I/O unit on the XFP panel",
+        "role": "application-note",
+        "variant": "XFP Programming Tools I/O-unit workflow",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU0000242",
+        "edition": "Rev 1",
+        "pdfPages": 3,
+        "sha256": "2f55db015d999fb66735c7f738455da7b63b01bb3a0246109e329ac3210f9186",
+        "bytes": 260189,
+        "sourceUrl": "https://c-tec.com/download?wpdmdl=12920",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "Programming Tools workflow. The generic XFP title does not establish CAST compatibility; shown with the non-CAST XFP references only."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "57196879d6c7eb9d3b9c9073a392de18ff682eb9c1970118a2d66d98a1cb92e5",
+        "canonicalRecordId": "c-tec-198b97fe8de2"
+      }
+    },
+    {
+      "recordId": "c-tec-232499eefc01",
+      "catalogueTitle": "XFP CAST Single Loop 16 Zone Fire Panel Engineers Manual – DFU5010000",
+      "url": "https://c-tec.com/download?wpdmdl=12792",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://c-tec.com/download?wpdmdl=12792",
+      "retrieval": "retrieved",
+      "bytes": 8147813,
+      "sha256": "16c760d21ffefb1e2bf1070f3134c6cb36a894c43039501723f1ff35d442ca4d",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-232499eefc01.pdf",
+      "pdfPages": 48,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-232499eefc01",
+        "title": "CAST XFP 16-zone engineering manual",
+        "role": "installation",
+        "variant": "CAST XFP501E/CA, one loop / 16 zones",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU5010000",
+        "edition": "Rev 5, 1 October 2021",
+        "pdfPages": 48,
+        "sha256": "16c760d21ffefb1e2bf1070f3134c6cb36a894c43039501723f1ff35d442ca4d",
+        "bytes": 8147813,
+        "sourceUrl": "https://c-tec.com/download?wpdmdl=12792",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "d2a35112a1e3c39ed28c1ce3a4aab627432b5e244bc330725c492d544357fc84",
+        "canonicalRecordId": "c-tec-232499eefc01"
+      }
+    },
+    {
+      "recordId": "c-tec-40778770b4ea",
+      "catalogueTitle": "App Note – How to connect an FF502P sounder extender to an XFP CAST system – DFU5010050",
+      "url": "https://c-tec.com/download?wpdmdl=12923",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://c-tec.com/download?wpdmdl=12923",
+      "retrieval": "retrieved",
+      "bytes": 1555260,
+      "sha256": "1f005bf71102444c7f444ad0e766c7e246a592e5d5aa1d8d02cf49c6593a5e8b",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-40778770b4ea.pdf",
+      "pdfPages": 1,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-40778770b4ea",
+        "title": "CAST sounder extender module",
+        "role": "application-note",
+        "variant": "CAST XFP501E/CA, XFP501/CA, XFP502/CA with FF502P",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU5010050",
+        "edition": "Rev 1",
+        "pdfPages": 1,
+        "sha256": "1f005bf71102444c7f444ad0e766c7e246a592e5d5aa1d8d02cf49c6593a5e8b",
+        "bytes": 1555260,
+        "sourceUrl": "https://c-tec.com/download?wpdmdl=12923",
+        "evidencePages": [
+          1
+        ],
+        "notes": [],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "7d2c716971c7a4387beb9f573c37dadce0fc9903aa3f51e85fa94571a52fd50d",
+        "canonicalRecordId": "c-tec-40778770b4ea"
+      }
+    },
+    {
+      "recordId": "c-tec-44b03d254ee3",
+      "catalogueTitle": "XFP single loop 16 zone fire panel manual200510 Rev1",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/XFP%20single%20loop%2016%20zone%20fire%20panel%20manual200510%20Rev1.pdf",
+      "catalogueSha256": null,
+      "retrieval": "retained-source-file",
+      "bytes": 1437451,
+      "sha256": "e65934abe0148df1d9230c032e8a008e2c043310f36971f06802937cc79c642b",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-44b03d254ee3.pdf",
+      "pdfPages": 36,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-44b03d254ee3",
+        "title": "XFP 16-zone engineering manual — historical Rev 1",
+        "role": "installation",
+        "variant": "XFP single-loop / 16-zone Apollo/Hochiki family",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU1200510",
+        "edition": "Rev 1",
+        "pdfPages": 36,
+        "sha256": "e65934abe0148df1d9230c032e8a008e2c043310f36971f06802937cc79c642b",
+        "bytes": 1437451,
+        "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/XFP%20single%20loop%2016%20zone%20fire%20panel%20manual200510%20Rev1.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "26b62e9cd96344cae10aee08b3bc4bda83b51a3740725eba2158cd79c85e1a86",
+        "canonicalRecordId": "c-tec-44b03d254ee3",
+        "alternateRecordIds": [
+          "c-tec-bcc7b50374e1"
+        ],
+        "duplicateEvidence": [
+          {
+            "recordId": "c-tec-bcc7b50374e1",
+            "kind": "identical-pdf-bytes",
+            "sha256": "e65934abe0148df1d9230c032e8a008e2c043310f36971f06802937cc79c642b"
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "c-tec-48ad981ee969",
+      "catalogueTitle": "CTEC XFP USER MANUAL",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%20USER%20MANUAL.pdf",
+      "catalogueSha256": "8c9b2b9ba2cc5f5eaf63fe7971d04379e87b0e552283004e37b9aa3fe26a7822",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%20USER%20MANUAL.pdf",
+      "retrieval": "retrieved",
+      "bytes": 867488,
+      "sha256": "8c9b2b9ba2cc5f5eaf63fe7971d04379e87b0e552283004e37b9aa3fe26a7822",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-48ad981ee969.pdf",
+      "catalogueHashMatches": true,
+      "pdfPages": 28,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-48ad981ee969",
+        "title": "XFP user manual and log book",
+        "role": "user-guide",
+        "variant": "XFP Apollo/Hochiki 16- and 32-zone panels",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU2000510",
+        "edition": "Rev 1",
+        "pdfPages": 28,
+        "sha256": "8c9b2b9ba2cc5f5eaf63fe7971d04379e87b0e552283004e37b9aa3fe26a7822",
+        "bytes": 867488,
+        "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%20USER%20MANUAL.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "Alternate copy of c-tec-fdc84bc5cbd5. Its own PDF hash remains distinct where bytes differ; no source-page hash is substituted."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "e88008e3597e460241605ccb2cb5859e4fae994403b9a48d01f132f19ef16e67",
+        "canonicalRecordId": "c-tec-fdc84bc5cbd5"
+      }
+    },
+    {
+      "recordId": "c-tec-6a8ae5ddd7bc",
+      "catalogueTitle": "XFP Apollo/Hochiki Single Loop 16 Zone Fire Panel Engineering Manual – DFU1200510",
+      "url": "https://c-tec.com/download?wpdmdl=12092",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://c-tec.com/download?wpdmdl=12092",
+      "retrieval": "retrieved",
+      "bytes": 5162007,
+      "sha256": "dd2afe39b0a4b2fcb2ad6c83559edc812ab0d43b8db8e3f23423a13e8eed556d",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-6a8ae5ddd7bc.pdf",
+      "pdfPages": 36,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-6a8ae5ddd7bc",
+        "title": "XFP 16-zone engineering manual",
+        "role": "installation",
+        "variant": "XFP501E/X and XFP501E/H, one loop / 16 zones",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU1200510",
+        "edition": "Rev 3",
+        "pdfPages": 36,
+        "sha256": "dd2afe39b0a4b2fcb2ad6c83559edc812ab0d43b8db8e3f23423a13e8eed556d",
+        "bytes": 5162007,
+        "sourceUrl": "https://c-tec.com/download?wpdmdl=12092",
+        "evidencePages": [
+          1,
+          17,
+          18,
+          20
+        ],
+        "notes": [
+          "Rev 3 names XFP501E/X and XFP501E/H. Its access-level tree on PDF page 17 matches the historical Rev 1 tree; page 20 explicitly labels network/repeater options as non-redundant and not assessed to EN54-2."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "27ae6fee30e2307efefff7dcb86365bac6f303d30c8b3b0674ba837b6105eaaf",
+        "canonicalRecordId": "c-tec-6a8ae5ddd7bc"
+      }
+    },
+    {
+      "recordId": "c-tec-70f490a601e3",
+      "catalogueTitle": "XFP — User manual and log book",
+      "url": "https://www.srsalertfire.ie/uploads/WsOIx2U5/XFPUserManual.pdf",
+      "catalogueSha256": "1710cb3359701fc524a96ed38fc165502b62d4737c0d94d1175ef0466773bc14",
+      "retrieval": "retained-source-file",
+      "bytes": 1536974,
+      "sha256": "1710cb3359701fc524a96ed38fc165502b62d4737c0d94d1175ef0466773bc14",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-70f490a601e3.pdf",
+      "catalogueHashMatches": true,
+      "pdfPages": 28,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-70f490a601e3",
+        "title": "XFP user manual and log book — historical DFU2000501 imprint",
+        "role": "user-guide",
+        "variant": "Historical non-CAST XFP 16- and 32-zone panels",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU2000501",
+        "edition": "Rev 2",
+        "pdfPages": 28,
+        "sha256": "1710cb3359701fc524a96ed38fc165502b62d4737c0d94d1175ef0466773bc14",
+        "bytes": 1536974,
+        "sourceUrl": "https://www.srsalertfire.ie/uploads/WsOIx2U5/XFPUserManual.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "The cover and footers print DFU2000501 Rev 2, unlike the DFU2000510 imprint on the other user guide. The printed identity is preserved; no revision ordering between the two document numbers is inferred."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "2a59ba91b74e4afc0a2d3bc195e851970a2a208008b799ec35ccb4d570defbcb",
+        "canonicalRecordId": "c-tec-70f490a601e3"
+      }
+    },
+    {
+      "recordId": "c-tec-7a271192baf6",
+      "catalogueTitle": "App Note – How to connect intrinsically safe conventional devices to an XFP CAST System – DFU5010051",
+      "url": "https://c-tec.com/download?wpdmdl=12921",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://c-tec.com/download?wpdmdl=12921",
+      "retrieval": "retrieved",
+      "bytes": 1754797,
+      "sha256": "53f32e87ccf2da3bb79d2e1dcb899f8324daebb804273f5581ae4d84ae40b187",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-7a271192baf6.pdf",
+      "pdfPages": 1,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-7a271192baf6",
+        "title": "CAST module using third-party intrinsically safe devices",
+        "role": "application-note",
+        "variant": "CAST CA730/CA731/CA732 with supported third-party intrinsically safe devices",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU5010051",
+        "edition": "Rev 1",
+        "pdfPages": 1,
+        "sha256": "53f32e87ccf2da3bb79d2e1dcb899f8324daebb804273f5581ae4d84ae40b187",
+        "bytes": 1754797,
+        "sourceUrl": "https://c-tec.com/download?wpdmdl=12921",
+        "evidencePages": [
+          1
+        ],
+        "notes": [],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "e6ca35383f48da4f0c560812850cfc546d2149281776491a5fbe719c1019af8c",
+        "canonicalRecordId": "c-tec-7a271192baf6"
+      }
+    },
+    {
+      "recordId": "c-tec-8d00eda1933e",
+      "catalogueTitle": "CTEC XFP 1 or 2 loop 32 Zone fire panel manual",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%201%20or%202%20loop%2032%20Zone%20fire%20panel%20manual.pdf",
+      "catalogueSha256": "50587e4ad4d11b215df5d2ce36e9983f955b559e591370a1ede90a1f0fc5032b",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%201%20or%202%20loop%2032%20Zone%20fire%20panel%20manual.pdf",
+      "retrieval": "retrieved",
+      "bytes": 1133655,
+      "sha256": "50587e4ad4d11b215df5d2ce36e9983f955b559e591370a1ede90a1f0fc5032b",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-8d00eda1933e.pdf",
+      "catalogueHashMatches": true,
+      "pdfPages": 36,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-8d00eda1933e",
+        "title": "XFP 32-zone engineering manual — historical Rev 1",
+        "role": "installation",
+        "variant": "XFP one- or two-loop / 32-zone Apollo/Hochiki family",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU2200510",
+        "edition": "Rev 1",
+        "pdfPages": 36,
+        "sha256": "50587e4ad4d11b215df5d2ce36e9983f955b559e591370a1ede90a1f0fc5032b",
+        "bytes": 1133655,
+        "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%201%20or%202%20loop%2032%20Zone%20fire%20panel%20manual.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "2f452e8e1e81de222f342883720d77a2094be6f0d5c5942ed1e2d18b2083baba",
+        "canonicalRecordId": "c-tec-8d00eda1933e",
+        "alternateRecordIds": [
+          "c-tec-f1f33890ad6a"
+        ],
+        "duplicateEvidence": [
+          {
+            "recordId": "c-tec-f1f33890ad6a",
+            "kind": "identical-pdf-bytes",
+            "sha256": "50587e4ad4d11b215df5d2ce36e9983f955b559e591370a1ede90a1f0fc5032b"
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "c-tec-8f8f7b76fc27",
+      "catalogueTitle": "XFP CAST 1-2 Loop 32 Zone Fire Panel Engineers Manual – DFU5010020",
+      "url": "https://c-tec.com/download?wpdmdl=12854",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://c-tec.com/download?wpdmdl=12854",
+      "retrieval": "retrieved",
+      "bytes": 10106426,
+      "sha256": "431f7b8d2b72bc84992d661a01891bcc85a632fe90bd3210101c2494c1f87ff1",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-8f8f7b76fc27.pdf",
+      "pdfPages": 48,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-8f8f7b76fc27",
+        "title": "CAST XFP 32-zone engineering manual",
+        "role": "installation",
+        "variant": "CAST XFP501/CA and XFP502/CA, 32 zones",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU5010020",
+        "edition": "Rev 5, 1 October 2021",
+        "pdfPages": 48,
+        "sha256": "431f7b8d2b72bc84992d661a01891bcc85a632fe90bd3210101c2494c1f87ff1",
+        "bytes": 10106426,
+        "sourceUrl": "https://c-tec.com/download?wpdmdl=12854",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "Alternate copy of facp-0723eb66-9f2a-4313-bcc3-2de5e276bcbe. Its own PDF hash remains distinct where bytes differ; no source-page hash is substituted."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "b9309a31f407fe07f5b25f4a6886afb25b823c8150dbece06d1f9b6f0d501869",
+        "canonicalRecordId": "facp-0723eb66-9f2a-4313-bcc3-2de5e276bcbe"
+      }
+    },
+    {
+      "recordId": "c-tec-9ff94272bfcc",
+      "catalogueTitle": "XFP CAST Fire Panel Users Manual – DFU5020000",
+      "url": "https://c-tec.com/download?wpdmdl=12794",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://c-tec.com/download?wpdmdl=12794",
+      "retrieval": "retrieved",
+      "bytes": 1168928,
+      "sha256": "d7a5192c6d60e046df53eaab94305c3370fe6bb987439b35a92af3e315c3d57a",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-9ff94272bfcc.pdf",
+      "pdfPages": 24,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-9ff94272bfcc",
+        "title": "CAST XFP user manual and log book",
+        "role": "user-guide",
+        "variant": "CAST XFP501E/CA, XFP501/CA, XFP502/CA",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU5020000",
+        "edition": "Rev 3",
+        "pdfPages": 24,
+        "sha256": "d7a5192c6d60e046df53eaab94305c3370fe6bb987439b35a92af3e315c3d57a",
+        "bytes": 1168928,
+        "sourceUrl": "https://c-tec.com/download?wpdmdl=12794",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "Alternate copy of facp-3363e064-e6ce-4d60-9343-6744ae180a07. Its own PDF hash remains distinct where bytes differ; no source-page hash is substituted."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "c9a35e13f93928ef6d42ac837281a03b5ec3896baec74367f6bcc047816b78c0",
+        "canonicalRecordId": "facp-3363e064-e6ce-4d60-9343-6744ae180a07"
+      }
+    },
+    {
+      "recordId": "c-tec-b03be75d8eb7",
+      "catalogueTitle": "XFP Apollo/Hochiki 1-2 Loop 32 Zone Fire Panel Engineering Manual – DFU2200510",
+      "url": "https://c-tec.com/download?wpdmdl=12095",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://c-tec.com/download?wpdmdl=12095",
+      "retrieval": "retrieved",
+      "bytes": 1146161,
+      "sha256": "a56ad3e3160fa617e4d024dba54bc0e378f5542855be71ee3a35b90083b1faea",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-b03be75d8eb7.pdf",
+      "pdfPages": 36,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-b03be75d8eb7",
+        "title": "XFP 32-zone engineering manual",
+        "role": "installation",
+        "variant": "XFP one- or two-loop / 32-zone Apollo/Hochiki family",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU2200510",
+        "edition": "Rev 2",
+        "pdfPages": 36,
+        "sha256": "a56ad3e3160fa617e4d024dba54bc0e378f5542855be71ee3a35b90083b1faea",
+        "bytes": 1146161,
+        "sourceUrl": "https://c-tec.com/download?wpdmdl=12095",
+        "evidencePages": [
+          1,
+          17,
+          18
+        ],
+        "notes": [
+          "Alternate copy of c-tec-ba3f93b60d06. Its own PDF hash remains distinct where bytes differ; no source-page hash is substituted."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "ccc52c47fbc199c8d2ecbe67276c1301287934675cb35b7d26e97fd3251a8cd1",
+        "canonicalRecordId": "c-tec-ba3f93b60d06"
+      }
+    },
+    {
+      "recordId": "c-tec-ba3f93b60d06",
+      "catalogueTitle": "CTEC XFP 1 OR 2 LOOP 32Z LPCB ENG MANUAL DFU2200510 R2",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP_1_OR_2_LOOP_32Z_LPCB_ENG_MANUAL_DFU2200510_R2.pdf",
+      "catalogueSha256": "a56ad3e3160fa617e4d024dba54bc0e378f5542855be71ee3a35b90083b1faea",
+      "retrieval": "retained-source-file",
+      "bytes": 1146161,
+      "sha256": "a56ad3e3160fa617e4d024dba54bc0e378f5542855be71ee3a35b90083b1faea",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-ba3f93b60d06.pdf",
+      "catalogueHashMatches": true,
+      "pdfPages": 36,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-ba3f93b60d06",
+        "title": "XFP 32-zone engineering manual",
+        "role": "installation",
+        "variant": "XFP one- or two-loop / 32-zone Apollo/Hochiki family",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU2200510",
+        "edition": "Rev 2",
+        "pdfPages": 36,
+        "sha256": "a56ad3e3160fa617e4d024dba54bc0e378f5542855be71ee3a35b90083b1faea",
+        "bytes": 1146161,
+        "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP_1_OR_2_LOOP_32Z_LPCB_ENG_MANUAL_DFU2200510_R2.pdf",
+        "evidencePages": [
+          1,
+          17,
+          18
+        ],
+        "notes": [],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "ccc52c47fbc199c8d2ecbe67276c1301287934675cb35b7d26e97fd3251a8cd1",
+        "canonicalRecordId": "c-tec-ba3f93b60d06",
+        "alternateRecordIds": [
+          "c-tec-b03be75d8eb7"
+        ],
+        "duplicateEvidence": [
+          {
+            "recordId": "c-tec-b03be75d8eb7",
+            "kind": "identical-pdf-bytes",
+            "sha256": "a56ad3e3160fa617e4d024dba54bc0e378f5542855be71ee3a35b90083b1faea"
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "c-tec-bad126e83df2",
+      "catalogueTitle": "XFP Apollo/Hochiki Fire Panel Quick Start Guide – DFU2200533",
+      "url": "https://c-tec.com/download?wpdmdl=12094",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://c-tec.com/download?wpdmdl=12094",
+      "retrieval": "retrieved",
+      "bytes": 2024593,
+      "sha256": "73dc5d5ec2c9d31d74200a58955d4ba4574d1f5f686de6ef81c35141e140e323",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-bad126e83df2.pdf",
+      "pdfPages": 12,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-bad126e83df2",
+        "title": "XFP worked-example quick guide",
+        "role": "quick-start",
+        "variant": "XFP Apollo/Hochiki 16- and 32-zone panels",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU2200533",
+        "edition": "Rev 3",
+        "pdfPages": 12,
+        "sha256": "73dc5d5ec2c9d31d74200a58955d4ba4574d1f5f686de6ef81c35141e140e323",
+        "bytes": 2024593,
+        "sourceUrl": "https://c-tec.com/download?wpdmdl=12094",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "Worked example, not an exhaustive substitute for the matching engineering manual. Loop 2 examples apply only to a fitted two-loop panel.",
+          "Alternate copy of c-tec-0fb079726b4a. Its own PDF hash remains distinct where bytes differ; no source-page hash is substituted."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "3dc740a57431cf5cc95f75dc5e804072bd746ca6ffc7ede0fe14603a5d565f41",
+        "canonicalRecordId": "c-tec-0fb079726b4a"
+      }
+    },
+    {
+      "recordId": "c-tec-bcc7b50374e1",
+      "catalogueTitle": "CTEC XFP single loop 16 zone fire panel manual200510 Rev1",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%20single%20loop%2016%20zone%20fire%20panel%20manual200510%20Rev1.pdf",
+      "catalogueSha256": "e65934abe0148df1d9230c032e8a008e2c043310f36971f06802937cc79c642b",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%20single%20loop%2016%20zone%20fire%20panel%20manual200510%20Rev1.pdf",
+      "retrieval": "retrieved",
+      "bytes": 1437451,
+      "sha256": "e65934abe0148df1d9230c032e8a008e2c043310f36971f06802937cc79c642b",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-bcc7b50374e1.pdf",
+      "catalogueHashMatches": true,
+      "pdfPages": 36,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-bcc7b50374e1",
+        "title": "XFP 16-zone engineering manual — historical Rev 1",
+        "role": "installation",
+        "variant": "XFP single-loop / 16-zone Apollo/Hochiki family",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU1200510",
+        "edition": "Rev 1",
+        "pdfPages": 36,
+        "sha256": "e65934abe0148df1d9230c032e8a008e2c043310f36971f06802937cc79c642b",
+        "bytes": 1437451,
+        "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%20single%20loop%2016%20zone%20fire%20panel%20manual200510%20Rev1.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "Alternate copy of c-tec-44b03d254ee3. Its own PDF hash remains distinct where bytes differ; no source-page hash is substituted."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "26b62e9cd96344cae10aee08b3bc4bda83b51a3740725eba2158cd79c85e1a86",
+        "canonicalRecordId": "c-tec-44b03d254ee3"
+      }
+    },
+    {
+      "recordId": "c-tec-dc870927185e",
+      "catalogueTitle": "App Note – How to add third-party detectors to a CAST I/O Unit via non-voltage contact wiring – DFU5010052",
+      "url": "https://c-tec.com/download?wpdmdl=12926",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://c-tec.com/download?wpdmdl=12926",
+      "retrieval": "retrieved",
+      "bytes": 1792246,
+      "sha256": "e6ca0b67b07df7eeca439e25ccc4b516168ccb83c858bf2d8c052df40ae73438",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-dc870927185e.pdf",
+      "pdfPages": 1,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-dc870927185e",
+        "title": "CAST non-voltage contact wiring",
+        "role": "application-note",
+        "variant": "CAST CA730/CA731/CA732 non-voltage fire/fault contacts",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU5010052",
+        "edition": "Rev 1",
+        "pdfPages": 1,
+        "sha256": "e6ca0b67b07df7eeca439e25ccc4b516168ccb83c858bf2d8c052df40ae73438",
+        "bytes": 1792246,
+        "sourceUrl": "https://c-tec.com/download?wpdmdl=12926",
+        "evidencePages": [
+          1
+        ],
+        "notes": [],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "f4e4eb0fdf97febe3bdca4dbe90b909d7dc9f4660486e237fa58bd62412a3a67",
+        "canonicalRecordId": "c-tec-dc870927185e"
+      }
+    },
+    {
+      "recordId": "c-tec-e9818d7e23a6",
+      "catalogueTitle": "CTEC XFP 16Z REPEATER MANUAL",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%2016Z%20REPEATER%20MANUAL.pdf",
+      "catalogueSha256": "1f9195fd27dc603994db1d0cc4f63e8dc24b99426a40b93c834dd38536959508",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%2016Z%20REPEATER%20MANUAL.pdf",
+      "retrieval": "retrieved",
+      "bytes": 568423,
+      "sha256": "1f9195fd27dc603994db1d0cc4f63e8dc24b99426a40b93c834dd38536959508",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-e9818d7e23a6.pdf",
+      "catalogueHashMatches": true,
+      "pdfPages": 8,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-e9818d7e23a6",
+        "title": "XFP 16-zone repeater installation manual",
+        "role": "repeater",
+        "variant": "XFP 16-zone repeater, historical edition",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU1200502",
+        "edition": "Rev 1",
+        "pdfPages": 8,
+        "sha256": "1f9195fd27dc603994db1d0cc4f63e8dc24b99426a40b93c834dd38536959508",
+        "bytes": 568423,
+        "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%2016Z%20REPEATER%20MANUAL.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "298bd45f1c06285e60d99996d7ffc4858f92271cc01c2ad9f9843139047b1bc6",
+        "canonicalRecordId": "c-tec-e9818d7e23a6"
+      }
+    },
+    {
+      "recordId": "c-tec-ec140ad546f0",
+      "catalogueTitle": "CTEC XFP 32Z REPEATER MANUAL",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%2032Z%20REPEATER%20MANUAL.pdf",
+      "catalogueSha256": "6c8f2ec56d9b5ad84e351a63ffd57d0d810a592064ab76feef23e19819aa5f10",
+      "retrieval": "retained-source-file",
+      "bytes": 302159,
+      "sha256": "6c8f2ec56d9b5ad84e351a63ffd57d0d810a592064ab76feef23e19819aa5f10",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-ec140ad546f0.pdf",
+      "catalogueHashMatches": true,
+      "pdfPages": 8,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-ec140ad546f0",
+        "title": "XFP 32-zone repeater installation manual",
+        "role": "repeater",
+        "variant": "XFP 32-zone repeater, historical edition",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU2200502",
+        "edition": "Rev 1",
+        "pdfPages": 8,
+        "sha256": "6c8f2ec56d9b5ad84e351a63ffd57d0d810a592064ab76feef23e19819aa5f10",
+        "bytes": 302159,
+        "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%2032Z%20REPEATER%20MANUAL.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "a0f78c7e32135a061e7c250f750caf96608fc5a0744d4b80b63ac86ccf9d6a1e",
+        "canonicalRecordId": "c-tec-ec140ad546f0"
+      }
+    },
+    {
+      "recordId": "c-tec-f1f33890ad6a",
+      "catalogueTitle": "XFP 1 or 2 loop 32 Zone fire panel manual",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/XFP%201%20or%202%20loop%2032%20Zone%20fire%20panel%20manual.pdf",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/XFP%201%20or%202%20loop%2032%20Zone%20fire%20panel%20manual.pdf",
+      "retrieval": "retrieved",
+      "bytes": 1133655,
+      "sha256": "50587e4ad4d11b215df5d2ce36e9983f955b559e591370a1ede90a1f0fc5032b",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-f1f33890ad6a.pdf",
+      "pdfPages": 36,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-f1f33890ad6a",
+        "title": "XFP 32-zone engineering manual — historical Rev 1",
+        "role": "installation",
+        "variant": "XFP one- or two-loop / 32-zone Apollo/Hochiki family",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU2200510",
+        "edition": "Rev 1",
+        "pdfPages": 36,
+        "sha256": "50587e4ad4d11b215df5d2ce36e9983f955b559e591370a1ede90a1f0fc5032b",
+        "bytes": 1133655,
+        "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/XFP%201%20or%202%20loop%2032%20Zone%20fire%20panel%20manual.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "Alternate copy of c-tec-8d00eda1933e. Its own PDF hash remains distinct where bytes differ; no source-page hash is substituted."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "2f452e8e1e81de222f342883720d77a2094be6f0d5c5942ed1e2d18b2083baba",
+        "canonicalRecordId": "c-tec-8d00eda1933e"
+      }
+    },
+    {
+      "recordId": "c-tec-fdc84bc5cbd5",
+      "catalogueTitle": "XFP Apollo/Hochiki Fire Panel User Manual – DFU2000510",
+      "url": "https://c-tec.com/download?wpdmdl=12093",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://c-tec.com/download?wpdmdl=12093",
+      "retrieval": "retrieved",
+      "bytes": 866575,
+      "sha256": "909a50a15d5a2ad08844379ed30a1870e42166f343a7618e73fae09937974184",
+      "pdfPath": "/tmp/fire-service-0.24.0/c-tec-fdc84bc5cbd5.pdf",
+      "pdfPages": 28,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "c-tec-fdc84bc5cbd5",
+        "title": "XFP user manual and log book",
+        "role": "user-guide",
+        "variant": "XFP Apollo/Hochiki 16- and 32-zone panels",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU2000510",
+        "edition": "Rev 1",
+        "pdfPages": 28,
+        "sha256": "909a50a15d5a2ad08844379ed30a1870e42166f343a7618e73fae09937974184",
+        "bytes": 866575,
+        "sourceUrl": "https://c-tec.com/download?wpdmdl=12093",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "e88008e3597e460241605ccb2cb5859e4fae994403b9a48d01f132f19ef16e67",
+        "canonicalRecordId": "c-tec-fdc84bc5cbd5",
+        "alternateRecordIds": [
+          "c-tec-028dbe8ececd",
+          "c-tec-48ad981ee969"
+        ],
+        "duplicateEvidence": [
+          {
+            "recordId": "c-tec-028dbe8ececd",
+            "kind": "identical-pdf-bytes",
+            "sha256": "909a50a15d5a2ad08844379ed30a1870e42166f343a7618e73fae09937974184"
+          },
+          {
+            "recordId": "c-tec-48ad981ee969",
+            "kind": "same-edition-and-normalized-full-text",
+            "sha256": "8c9b2b9ba2cc5f5eaf63fe7971d04379e87b0e552283004e37b9aa3fe26a7822"
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "facp-0723eb66-9f2a-4313-bcc3-2de5e276bcbe",
+      "catalogueTitle": "CAST XFP Fire Alarm Control Panels — Manual (2021, source-listed)",
+      "url": "https://docs.facpmanuals.com/manuals/C-TEC/cast_xfp_fire_alarm_control_panels-manual-2021-rev5.pdf",
+      "catalogueSha256": "a4768a8ae39daccff1f4a9fcf7be470fa43752636409be5c77a51e8922bafdca",
+      "httpStatus": 200,
+      "resolvedUrl": "https://docs.facpmanuals.com/manuals/C-TEC/cast_xfp_fire_alarm_control_panels-manual-2021-rev5.pdf",
+      "retrieval": "retrieved",
+      "bytes": 9842367,
+      "sha256": "a4768a8ae39daccff1f4a9fcf7be470fa43752636409be5c77a51e8922bafdca",
+      "pdfPath": "/tmp/fire-service-0.24.0/facp-0723eb66-9f2a-4313-bcc3-2de5e276bcbe.pdf",
+      "catalogueHashMatches": true,
+      "pdfPages": 48,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "facp-0723eb66-9f2a-4313-bcc3-2de5e276bcbe",
+        "title": "CAST XFP 32-zone engineering manual",
+        "role": "installation",
+        "variant": "CAST XFP501/CA and XFP502/CA, 32 zones",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU5010020",
+        "edition": "Rev 5, 1 October 2021",
+        "pdfPages": 48,
+        "sha256": "a4768a8ae39daccff1f4a9fcf7be470fa43752636409be5c77a51e8922bafdca",
+        "bytes": 9842367,
+        "sourceUrl": "https://docs.facpmanuals.com/manuals/C-TEC/cast_xfp_fire_alarm_control_panels-manual-2021-rev5.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "Archive title is generic CAST XFP; the actual cover is specifically DFU5010020 Rev 5 for the 32-zone XFP501/CA and XFP502/CA."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "b9309a31f407fe07f5b25f4a6886afb25b823c8150dbece06d1f9b6f0d501869",
+        "canonicalRecordId": "facp-0723eb66-9f2a-4313-bcc3-2de5e276bcbe",
+        "alternateRecordIds": [
+          "c-tec-8f8f7b76fc27"
+        ],
+        "duplicateEvidence": [
+          {
+            "recordId": "c-tec-8f8f7b76fc27",
+            "kind": "same-edition-and-normalized-full-text",
+            "sha256": "431f7b8d2b72bc84992d661a01891bcc85a632fe90bd3210101c2494c1f87ff1"
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "facp-3363e064-e6ce-4d60-9343-6744ae180a07",
+      "catalogueTitle": "CAST XFP Series — User Guide",
+      "url": "https://docs.facpmanuals.com/manuals/C-TEC/cast_xfp_series-user-guide-rev3.pdf",
+      "catalogueSha256": "84c2f31381f993851c99ba61225e16c6249520b4d7bd01485908685e06a03383",
+      "retrieval": "retained-source-file",
+      "bytes": 1112973,
+      "sha256": "84c2f31381f993851c99ba61225e16c6249520b4d7bd01485908685e06a03383",
+      "pdfPath": "/tmp/fire-service-0.24.0/facp-3363e064-e6ce-4d60-9343-6744ae180a07.pdf",
+      "catalogueHashMatches": true,
+      "pdfPages": 24,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "facp-3363e064-e6ce-4d60-9343-6744ae180a07",
+        "title": "CAST XFP user manual and log book",
+        "role": "user-guide",
+        "variant": "CAST XFP501E/CA, XFP501/CA, XFP502/CA",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "DFU5020000",
+        "edition": "Rev 3",
+        "pdfPages": 24,
+        "sha256": "84c2f31381f993851c99ba61225e16c6249520b4d7bd01485908685e06a03383",
+        "bytes": 1112973,
+        "sourceUrl": "https://docs.facpmanuals.com/manuals/C-TEC/cast_xfp_series-user-guide-rev3.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "c9a35e13f93928ef6d42ac837281a03b5ec3896baec74367f6bcc047816b78c0",
+        "canonicalRecordId": "facp-3363e064-e6ce-4d60-9343-6744ae180a07",
+        "alternateRecordIds": [
+          "c-tec-9ff94272bfcc"
+        ],
+        "duplicateEvidence": [
+          {
+            "recordId": "c-tec-9ff94272bfcc",
+            "kind": "same-edition-and-normalized-full-text",
+            "sha256": "d7a5192c6d60e046df53eaab94305c3370fe6bb987439b35a92af3e315c3d57a"
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "facp-3951622c-6e1a-4f99-bf64-63c86b8f2320",
+      "catalogueTitle": "TwinflexPro2 — Datasheet",
+      "url": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro2-datasheet-26-1592.pdf",
+      "catalogueSha256": "49d00c41869dca87b1bfb785647d356dbae271ede7ca4e8e3cbe4d0ac62c82b7",
+      "httpStatus": 200,
+      "resolvedUrl": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro2-datasheet-26-1592.pdf",
+      "retrieval": "retrieved",
+      "bytes": 884072,
+      "sha256": "49d00c41869dca87b1bfb785647d356dbae271ede7ca4e8e3cbe4d0ac62c82b7",
+      "pdfPath": "/tmp/fire-service-0.24.0/facp-3951622c-6e1a-4f99-bf64-63c86b8f2320.pdf",
+      "catalogueHashMatches": true,
+      "pdfPages": 2,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "facp-3951622c-6e1a-4f99-bf64-63c86b8f2320",
+        "title": "TWINFLEXpro² datasheet",
+        "role": "datasheet",
+        "variant": "TWINFLEXpro² 2/4/8-zone panels",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "26-1592",
+        "edition": "Revision not printed",
+        "pdfPages": 2,
+        "sha256": "49d00c41869dca87b1bfb785647d356dbae271ede7ca4e8e3cbe4d0ac62c82b7",
+        "bytes": 884072,
+        "sourceUrl": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro2-datasheet-26-1592.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "Product data only, not an installation or commissioning procedure. Describes the system as analogue non-addressable with conventional-type cabling."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "d8df8cb6e152f1d10c49de38b24d83fddfca3c013e49ca6a6afab12bce53bbff",
+        "canonicalRecordId": "facp-3951622c-6e1a-4f99-bf64-63c86b8f2320"
+      }
+    },
+    {
+      "recordId": "facp-53d7f2b3-b7fd-495d-8711-13b42717beef",
+      "catalogueTitle": "TWINFLEXpro2 Repeater Panel — Installation, Operations",
+      "url": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro2_repeater_panel-installation-rev3.pdf",
+      "catalogueSha256": "477ac1158a8731a9842e33d9a50d607a13b420019d7b8a6557cf79ad3164b208",
+      "retrieval": "retained-source-file",
+      "bytes": 1603368,
+      "sha256": "477ac1158a8731a9842e33d9a50d607a13b420019d7b8a6557cf79ad3164b208",
+      "pdfPath": "/tmp/fire-service-0.24.0/facp-53d7f2b3-b7fd-495d-8711-13b42717beef.pdf",
+      "catalogueHashMatches": true,
+      "pdfPages": 24,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "facp-53d7f2b3-b7fd-495d-8711-13b42717beef",
+        "title": "TWINFLEXpro² repeater engineering and commissioning manual",
+        "role": "repeater",
+        "variant": "TWINFLEXpro² repeater",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "26-1192",
+        "edition": "Rev 3",
+        "pdfPages": 24,
+        "sha256": "477ac1158a8731a9842e33d9a50d607a13b420019d7b8a6557cf79ad3164b208",
+        "bytes": 1603368,
+        "sourceUrl": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro2_repeater_panel-installation-rev3.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "2fce5348edfbb59b98995fda7b384e0a30ffcd43274bd85a313083db017f225b",
+        "canonicalRecordId": "facp-53d7f2b3-b7fd-495d-8711-13b42717beef",
+        "alternateRecordIds": [
+          "fike-3c239eca4f2f"
+        ],
+        "duplicateEvidence": [
+          {
+            "recordId": "fike-3c239eca4f2f",
+            "kind": "same-edition-and-normalized-full-text",
+            "sha256": "0a1602698e8e8c3cafa4f45500df6e4b785c487a686028dad789e3cb17923566"
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "facp-84b32234-d383-4482-bb1f-ab9e308f9a79",
+      "catalogueTitle": "TWINFLEXpro — User Guide",
+      "url": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro-user-guide-rev3.pdf",
+      "catalogueSha256": "21625a083d1fef1f541a384d3dbdff8e400393aabcf0bf140f0008009199225f",
+      "httpStatus": 200,
+      "resolvedUrl": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro-user-guide-rev3.pdf",
+      "retrieval": "retrieved",
+      "bytes": 653029,
+      "sha256": "21625a083d1fef1f541a384d3dbdff8e400393aabcf0bf140f0008009199225f",
+      "pdfPath": "/tmp/fire-service-0.24.0/facp-84b32234-d383-4482-bb1f-ab9e308f9a79.pdf",
+      "catalogueHashMatches": true,
+      "pdfPages": 32,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "facp-84b32234-d383-4482-bb1f-ab9e308f9a79",
+        "title": "TWINFLEXpro user guide — V2.00+",
+        "role": "user-guide",
+        "variant": "TWINFLEXpro from V2.00",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "26-1028",
+        "edition": "Issue 3",
+        "pdfPages": 32,
+        "sha256": "21625a083d1fef1f541a384d3dbdff8e400393aabcf0bf140f0008009199225f",
+        "bytes": 653029,
+        "sourceUrl": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro-user-guide-rev3.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "26106662a12cec2af71e269f09ca049e853d9d1d037256fc02c7d2e6da78987d",
+        "canonicalRecordId": "facp-84b32234-d383-4482-bb1f-ab9e308f9a79"
+      }
+    },
+    {
+      "recordId": "facp-9a6ff66a-da2a-43c3-83b8-56daa9579367",
+      "catalogueTitle": "TWINFLEXpro2 Repeater Panel — User Guide",
+      "url": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro2_repeater_panel-user-guide-rev3.pdf",
+      "catalogueSha256": "cbe30be1d04107b1eb08c8bfe16ab2dec773e59ac0d77aabaef4f312c8b25aa0",
+      "httpStatus": 200,
+      "resolvedUrl": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro2_repeater_panel-user-guide-rev3.pdf",
+      "retrieval": "retrieved",
+      "bytes": 1253145,
+      "sha256": "cbe30be1d04107b1eb08c8bfe16ab2dec773e59ac0d77aabaef4f312c8b25aa0",
+      "pdfPath": "/tmp/fire-service-0.24.0/facp-9a6ff66a-da2a-43c3-83b8-56daa9579367.pdf",
+      "catalogueHashMatches": true,
+      "pdfPages": 16,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "facp-9a6ff66a-da2a-43c3-83b8-56daa9579367",
+        "title": "TWINFLEXpro² repeater user manual",
+        "role": "repeater",
+        "variant": "TWINFLEXpro² repeater from V3.00",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "26-1194",
+        "edition": "Rev 3",
+        "pdfPages": 16,
+        "sha256": "cbe30be1d04107b1eb08c8bfe16ab2dec773e59ac0d77aabaef4f312c8b25aa0",
+        "bytes": 1253145,
+        "sourceUrl": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro2_repeater_panel-user-guide-rev3.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "c73e7fc7421c53fa6bf440607db2240357a4f4303ab701229e0c62fed004f51a",
+        "canonicalRecordId": "facp-9a6ff66a-da2a-43c3-83b8-56daa9579367",
+        "alternateRecordIds": [
+          "fike-ccc737b20ef3"
+        ],
+        "duplicateEvidence": [
+          {
+            "recordId": "fike-ccc737b20ef3",
+            "kind": "same-edition-and-normalized-full-text",
+            "sha256": "e274bc10a4837fe424752c4e9edb4a760951c73ea2de643a645eadaad3cf7cd9"
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "facp-9e607562-03e2-429b-bcc3-b8f7dab17b75",
+      "catalogueTitle": "TWINFLEX pro2 — User Guide",
+      "url": "https://docs.facpmanuals.com/manuals/Fike/twinflex_pro2-user-guide-rev5.pdf",
+      "catalogueSha256": "f9142c9807f388c9e4ce65507d8ceb906a4ff609a3c9e98f6181ee981373aaf3",
+      "httpStatus": 200,
+      "resolvedUrl": "https://docs.facpmanuals.com/manuals/Fike/twinflex_pro2-user-guide-rev5.pdf",
+      "retrieval": "retrieved",
+      "bytes": 1542304,
+      "sha256": "f9142c9807f388c9e4ce65507d8ceb906a4ff609a3c9e98f6181ee981373aaf3",
+      "pdfPath": "/tmp/fire-service-0.24.0/facp-9e607562-03e2-429b-bcc3-b8f7dab17b75.pdf",
+      "catalogueHashMatches": true,
+      "pdfPages": 32,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "facp-9e607562-03e2-429b-bcc3-b8f7dab17b75",
+        "title": "TWINFLEXpro² user guide",
+        "role": "user-guide",
+        "variant": "TWINFLEXpro² from V3.00",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "26-1028",
+        "edition": "Rev 5",
+        "pdfPages": 32,
+        "sha256": "f9142c9807f388c9e4ce65507d8ceb906a4ff609a3c9e98f6181ee981373aaf3",
+        "bytes": 1542304,
+        "sourceUrl": "https://docs.facpmanuals.com/manuals/Fike/twinflex_pro2-user-guide-rev5.pdf",
+        "evidencePages": [
+          1,
+          9
+        ],
+        "notes": [
+          "Actual cover/body identify pro² V3.00+ and Rev 5. An older Issue 3 template string remains in extracted cover text."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "29c3ad5d70616b33bd1091caf8d591b6fcaf9b19eeda82aabc73f34a1628abb2",
+        "canonicalRecordId": "facp-9e607562-03e2-429b-bcc3-b8f7dab17b75",
+        "alternateRecordIds": [
+          "fike-d32c7e8d452f"
+        ],
+        "duplicateEvidence": [
+          {
+            "recordId": "fike-d32c7e8d452f",
+            "kind": "same-edition-and-normalized-full-text",
+            "sha256": "db16c3ba68dc8f9234577453ec6f9a76764ce4b809aa0c9528e86f03d0f0dabe"
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "facp-b767ef00-666c-4aeb-b313-f01aedb50f75",
+      "catalogueTitle": "TwinflexPro2 Panels and Accessories — Brochure",
+      "url": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro2_panels_and_accessories-brochure.pdf",
+      "catalogueSha256": "49a0b04e7f74fa1dd7ee40e19e17ef172b3d785f5c72dda0d09220a65e367988",
+      "httpStatus": 200,
+      "resolvedUrl": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro2_panels_and_accessories-brochure.pdf",
+      "retrieval": "retrieved",
+      "bytes": 1659101,
+      "sha256": "49a0b04e7f74fa1dd7ee40e19e17ef172b3d785f5c72dda0d09220a65e367988",
+      "pdfPath": "/tmp/fire-service-0.24.0/facp-b767ef00-666c-4aeb-b313-f01aedb50f75.pdf",
+      "catalogueHashMatches": true,
+      "pdfPages": 6,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "facp-b767ef00-666c-4aeb-b313-f01aedb50f75",
+        "title": "TWINFLEXpro² panels and accessories brochure",
+        "role": "brochure",
+        "variant": "TWINFLEXpro² panels and accessories",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": null,
+        "edition": "Revision not printed",
+        "pdfPages": 6,
+        "sha256": "49a0b04e7f74fa1dd7ee40e19e17ef172b3d785f5c72dda0d09220a65e367988",
+        "bytes": 1659101,
+        "sourceUrl": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro2_panels_and_accessories-brochure.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "Sales brochure; the document says it must not be used for installation purposes."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "8839d5f05157cf08909aa6d76bdb4e0e698dc4f48fde01a0a06d5404d0f3a75b",
+        "canonicalRecordId": "facp-b767ef00-666c-4aeb-b313-f01aedb50f75"
+      }
+    },
+    {
+      "recordId": "facp-e0c77fed-eac0-4811-9d59-b38fa3bb9ae1",
+      "catalogueTitle": "Twinflex V3 — Installation, Operations, Programming",
+      "url": "https://docs.facpmanuals.com/manuals/Fike/twinflex_v3-installation-rev9.pdf",
+      "catalogueSha256": "9eb355ddad892d6e00829f0dee50cc28fe05b1a85269c57416899a3b435b7b89",
+      "httpStatus": 200,
+      "resolvedUrl": "https://docs.facpmanuals.com/manuals/Fike/twinflex_v3-installation-rev9.pdf",
+      "retrieval": "retrieved",
+      "bytes": 2515980,
+      "sha256": "9eb355ddad892d6e00829f0dee50cc28fe05b1a85269c57416899a3b435b7b89",
+      "pdfPath": "/tmp/fire-service-0.24.0/facp-e0c77fed-eac0-4811-9d59-b38fa3bb9ae1.pdf",
+      "catalogueHashMatches": true,
+      "pdfPages": 53,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "facp-e0c77fed-eac0-4811-9d59-b38fa3bb9ae1",
+        "title": "Original Twinflex V3 engineering and commissioning instructions",
+        "role": "installation",
+        "variant": "Original Twinflex V3; not TWINFLEXpro or pro²",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "26-0338",
+        "edition": "Issue 9",
+        "pdfPages": 53,
+        "sha256": "9eb355ddad892d6e00829f0dee50cc28fe05b1a85269c57416899a3b435b7b89",
+        "bytes": 2515980,
+        "sourceUrl": "https://docs.facpmanuals.com/manuals/Fike/twinflex_v3-installation-rev9.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "Twinflex V3 is the older product name in this document; the numeral must not be confused with pro² firmware V3.00+."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "09bdc0cd2b092c6e764a56775439385546d7c7de37ccf7fbecc1bbc010afc6d4",
+        "canonicalRecordId": "facp-e0c77fed-eac0-4811-9d59-b38fa3bb9ae1"
+      }
+    },
+    {
+      "recordId": "facp-f31fae22-b4b5-4c1a-bae2-8a24f4987f41",
+      "catalogueTitle": "TwinflexPro2 — Brochure",
+      "url": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro2-brochure.pdf",
+      "catalogueSha256": "812c747f4f2614c174dca26d3bf9b45a1a0055fb88b886c9360739b8a3731015",
+      "httpStatus": 200,
+      "resolvedUrl": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro2-brochure.pdf",
+      "retrieval": "retrieved",
+      "bytes": 1667051,
+      "sha256": "812c747f4f2614c174dca26d3bf9b45a1a0055fb88b886c9360739b8a3731015",
+      "pdfPath": "/tmp/fire-service-0.24.0/facp-f31fae22-b4b5-4c1a-bae2-8a24f4987f41.pdf",
+      "catalogueHashMatches": true,
+      "pdfPages": 6,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "facp-f31fae22-b4b5-4c1a-bae2-8a24f4987f41",
+        "title": "TWINFLEXpro² system brochure",
+        "role": "brochure",
+        "variant": "TWINFLEXpro² system",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": null,
+        "edition": "Revision not printed",
+        "pdfPages": 6,
+        "sha256": "812c747f4f2614c174dca26d3bf9b45a1a0055fb88b886c9360739b8a3731015",
+        "bytes": 1667051,
+        "sourceUrl": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro2-brochure.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "Sales brochure; the document says it must not be used for installation purposes."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "6f02dbbafebd4828450f2ce8ee49f733889ab17f66545ea5a0f0be1362241688",
+        "canonicalRecordId": "facp-f31fae22-b4b5-4c1a-bae2-8a24f4987f41"
+      }
+    },
+    {
+      "recordId": "fike-2d9c958c8ea7",
+      "catalogueTitle": "Twinflex Sounder F0296337",
+      "url": "https://my.fike.com/_fike_new_docs/943743c8-3ecf-421e-8a16-5de0d39d63ab.pdf",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://my.fike.com/_fike_new_docs/943743c8-3ecf-421e-8a16-5de0d39d63ab.pdf",
+      "retrieval": "retrieved",
+      "bytes": 691780,
+      "sha256": "7e71af2531c0cea5d2b524fc8e62b1c91bc52f057f6be759fc70daa1aed2a908",
+      "pdfPath": "/tmp/fire-service-0.24.0/fike-2d9c958c8ea7.pdf",
+      "pdfPages": 4,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "fike-2d9c958c8ea7",
+        "title": "F0296337 Twinflex sounder installation instructions",
+        "role": "accessory",
+        "variant": "F0296337 Twinflex 2-wire sounder; check control-panel compatibility",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "26-1879",
+        "edition": "Issue 04",
+        "pdfPages": 4,
+        "sha256": "7e71af2531c0cea5d2b524fc8e62b1c91bc52f057f6be759fc70daa1aed2a908",
+        "bytes": 691780,
+        "sourceUrl": "https://my.fike.com/_fike_new_docs/943743c8-3ecf-421e-8a16-5de0d39d63ab.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "e18d22db01e15b092df4ebd5e25ea43e2ecdd67fc0473634137f09eac762414e",
+        "canonicalRecordId": "fike-2d9c958c8ea7"
+      }
+    },
+    {
+      "recordId": "fike-3c239eca4f2f",
+      "catalogueTitle": "TWINFLEXpro2 Repeater Manual",
+      "url": "https://my.fike.com/_fike_new_docs/b12bc15a-5211-4f0d-a4c4-20d9dc31dd8c.pdf",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://my.fike.com/_fike_new_docs/b12bc15a-5211-4f0d-a4c4-20d9dc31dd8c.pdf",
+      "retrieval": "retrieved",
+      "bytes": 1605336,
+      "sha256": "0a1602698e8e8c3cafa4f45500df6e4b785c487a686028dad789e3cb17923566",
+      "pdfPath": "/tmp/fire-service-0.24.0/fike-3c239eca4f2f.pdf",
+      "pdfPages": 24,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "fike-3c239eca4f2f",
+        "title": "TWINFLEXpro² repeater engineering and commissioning manual",
+        "role": "repeater",
+        "variant": "TWINFLEXpro² repeater",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "26-1192",
+        "edition": "Rev 3",
+        "pdfPages": 24,
+        "sha256": "0a1602698e8e8c3cafa4f45500df6e4b785c487a686028dad789e3cb17923566",
+        "bytes": 1605336,
+        "sourceUrl": "https://my.fike.com/_fike_new_docs/b12bc15a-5211-4f0d-a4c4-20d9dc31dd8c.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "Alternate copy of facp-53d7f2b3-b7fd-495d-8711-13b42717beef. Its own PDF hash remains distinct where bytes differ; no source-page hash is substituted."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "2fce5348edfbb59b98995fda7b384e0a30ffcd43274bd85a313083db017f225b",
+        "canonicalRecordId": "facp-53d7f2b3-b7fd-495d-8711-13b42717beef"
+      }
+    },
+    {
+      "recordId": "fike-538db8f6d1d5",
+      "catalogueTitle": "Twinflex Sounder VAD F0296336",
+      "url": "https://my.fike.com/_fike_new_docs/941829b3-1802-4861-8ca9-ac3c3bcdfa88.pdf",
+      "catalogueSha256": null,
+      "retrieval": "retained-source-file",
+      "bytes": 652911,
+      "sha256": "fb3af336d1852b905ecd93f0c8661105ededf8dea5b4ba54337e447c48218960",
+      "pdfPath": "/tmp/fire-service-0.24.0/fike-538db8f6d1d5.pdf",
+      "pdfPages": 4,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "fike-538db8f6d1d5",
+        "title": "F0296336 Twinflex sounder/VAD installation instructions",
+        "role": "accessory",
+        "variant": "F0296336 Twinflex 2-wire sounder/VAD; check control-panel compatibility",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "26-1878",
+        "edition": "Issue 04",
+        "pdfPages": 4,
+        "sha256": "fb3af336d1852b905ecd93f0c8661105ededf8dea5b4ba54337e447c48218960",
+        "bytes": 652911,
+        "sourceUrl": "https://my.fike.com/_fike_new_docs/941829b3-1802-4861-8ca9-ac3c3bcdfa88.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "9c47be0a63c4fa86ac98c1096f710c3abb1e9296b65531e83155a1350dc7fe38",
+        "canonicalRecordId": "fike-538db8f6d1d5"
+      }
+    },
+    {
+      "recordId": "fike-567bab4e7b04",
+      "catalogueTitle": "Twinflex Legacy Eng&Comm Manual",
+      "url": "https://my.fike.com/_fike_docs/Fire_Detection/Control_Panels/EN_Panels_FST/Twinflex/Manuals/TWINFLEXpro_Panel_EngComManual_26-0959-13.pdf",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://my.fike.com/_fike_docs/Fire_Detection/Control_Panels/EN_Panels_FST/Twinflex/Manuals/TWINFLEXpro_Panel_EngComManual_26-0959-13.pdf",
+      "retrieval": "retrieved",
+      "bytes": 4262496,
+      "sha256": "cd8fe4bf32d3d4e94f1920127281968072e7b7871833bb29fb8d89fdd3949c6d",
+      "pdfPath": "/tmp/fire-service-0.24.0/fike-567bab4e7b04.pdf",
+      "pdfPages": 78,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "fike-567bab4e7b04",
+        "title": "TWINFLEXpro engineering and commissioning manual — V2.00+",
+        "role": "installation",
+        "variant": "TWINFLEXpro from V2.00",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "26-0959",
+        "edition": "Issue 13, January 2013",
+        "pdfPages": 78,
+        "sha256": "cd8fe4bf32d3d4e94f1920127281968072e7b7871833bb29fb8d89fdd3949c6d",
+        "bytes": 4262496,
+        "sourceUrl": "https://my.fike.com/_fike_docs/Fire_Detection/Control_Panels/EN_Panels_FST/Twinflex/Manuals/TWINFLEXpro_Panel_EngComManual_26-0959-13.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "Legacy pro V2.00+ edition. It is not the original Twinflex V3 or the pro² V3.00+ manual."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "93b1ba4cde3297d78fbe446908172fd1ac9c34b31118e8d073b42aa1731b13e6",
+        "canonicalRecordId": "fike-567bab4e7b04"
+      }
+    },
+    {
+      "recordId": "fike-5dc5d2f9885d",
+      "catalogueTitle": "TWINFLEXpro² battery boxes",
+      "url": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/TwinflexPro/Conventional%20Control%20Panels/Manuals/TWINFLEX%20pro2%20%20Battery%20Boxes%2026-1538-02.pdf",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/TwinflexPro/Conventional%20Control%20Panels/Manuals/TWINFLEX%20pro2%20%20Battery%20Boxes%2026-1538-02.pdf",
+      "retrieval": "retrieved",
+      "bytes": 1225299,
+      "sha256": "bdc7d70330fe4365a0847644af1a84b9d3905c416d1e63e538fbd11434095a8b",
+      "pdfPath": "/tmp/fire-service-0.24.0/fike-5dc5d2f9885d.pdf",
+      "pdfPages": 4,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "fike-5dc5d2f9885d",
+        "title": "TWINFLEXpro² external battery box instructions",
+        "role": "accessory",
+        "variant": "TWINFLEXpro² external battery box 505-0020",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "26-1538",
+        "edition": "Issue 02",
+        "pdfPages": 4,
+        "sha256": "bdc7d70330fe4365a0847644af1a84b9d3905c416d1e63e538fbd11434095a8b",
+        "bytes": 1225299,
+        "sourceUrl": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/TwinflexPro/Conventional%20Control%20Panels/Manuals/TWINFLEX%20pro2%20%20Battery%20Boxes%2026-1538-02.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "16469fa3c8896eeb709df99a7e6b7127912de3b3c734cf6a9cfc36967cf857e5",
+        "canonicalRecordId": "fike-5dc5d2f9885d"
+      }
+    },
+    {
+      "recordId": "fike-6cfbefcbbb78",
+      "catalogueTitle": "TWINFLEXpro Eng&ComManual",
+      "url": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/TwinflexPro/Conventional%20Control%20Panels/Manuals/TWINFLEXpro%20Panel%20Eng&ComManual%2026-0959-18.pdf",
+      "catalogueSha256": null,
+      "retrieval": "retained-source-file",
+      "bytes": 5328796,
+      "sha256": "19a3a00c9300574c53573cbdda4eb98fa240e6a7c633bbd5003fec9b439ef5cd",
+      "pdfPath": "/tmp/fire-service-0.24.0/fike-6cfbefcbbb78.pdf",
+      "pdfPages": 80,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "fike-6cfbefcbbb78",
+        "title": "TWINFLEXpro² engineering and commissioning manual",
+        "role": "installation",
+        "variant": "TWINFLEXpro² from V3.00",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "26-0959",
+        "edition": "Rev 18, October 2020",
+        "pdfPages": 80,
+        "sha256": "19a3a00c9300574c53573cbdda4eb98fa240e6a7c633bbd5003fec9b439ef5cd",
+        "bytes": 5328796,
+        "sourceUrl": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/TwinflexPro/Conventional%20Control%20Panels/Manuals/TWINFLEXpro%20Panel%20Eng&ComManual%2026-0959-18.pdf",
+        "evidencePages": [
+          1,
+          2,
+          20
+        ],
+        "notes": [
+          "The archive title says TWINFLEXpro, but the visible cover/body identify TWINFLEXpro² V3.00+ and Rev 18. Extracted text retains an Issue 14 Draft template string which is not visible on the rendered cover."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "87b6f64aeff8757938d58e2774383deb3d91a1db99a713c1401c3f35b6933f12",
+        "canonicalRecordId": "fike-6cfbefcbbb78"
+      }
+    },
+    {
+      "recordId": "fike-788e7bd5bdad",
+      "catalogueTitle": "TWINFLEXpro2 Expansion Card",
+      "url": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/TwinflexPro/Conventional%20Control%20Panels/Manuals/TWINFLEXpro%20Panel%20Expansion%20Board%2026-1135-1.pdf",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/TwinflexPro/Conventional%20Control%20Panels/Manuals/TWINFLEXpro%20Panel%20Expansion%20Board%2026-1135-1.pdf",
+      "retrieval": "retrieved",
+      "bytes": 382833,
+      "sha256": "d6306146d6dae66e5d2dcc85737c25583b3854d1b14e34633590a0310c9a4aa5",
+      "pdfPath": "/tmp/fire-service-0.24.0/fike-788e7bd5bdad.pdf",
+      "pdfPages": 4,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "fike-788e7bd5bdad",
+        "title": "505-0006 Twinflex expansion card instructions",
+        "role": "accessory",
+        "variant": "505-0006 Twinflex expansion card, 4-zone panel only",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "26-1135",
+        "edition": "Issue 1",
+        "pdfPages": 4,
+        "sha256": "d6306146d6dae66e5d2dcc85737c25583b3854d1b14e34633590a0310c9a4aa5",
+        "bytes": 382833,
+        "sourceUrl": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/TwinflexPro/Conventional%20Control%20Panels/Manuals/TWINFLEXpro%20Panel%20Expansion%20Board%2026-1135-1.pdf",
+        "evidencePages": [
+          1,
+          3
+        ],
+        "notes": [
+          "The accessory sheet names the 4-zone TWINFLEXpro only and excludes the 2-zone and earlier Twinflex/Checkpoint Plus. Current pro² engineering manual26-0959Rev18 PDFpage 20 also explicitly supports expansion card 505-0006. Do not infer compatibility from the archive title alone."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "d53c67d00ba2627af89cf3dcd028f83af74c83c4e724ce3573d8206f0cf21a5f",
+        "canonicalRecordId": "fike-788e7bd5bdad",
+        "corroboratingSources": [
+          {
+            "recordId": "fike-6cfbefcbbb78",
+            "pdfPage": 20,
+            "sha256": "19a3a00c9300574c53573cbdda4eb98fa240e6a7c633bbd5003fec9b439ef5cd",
+            "finding": "The current pro² engineering manual explicitly lists 505-0006 as a compatible four-zone Twinflex expansion card."
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "fike-96c0a23f2943",
+      "catalogueTitle": "TWINFLEXpro² Conventional Expansion Card",
+      "url": "https://my.fike.com/_fike_docs/Fire_Detection/Control_Panels/EN_Panels_FST/Twinflex/Manuals/TWINFLEX_pro2_Conventional_Expansion_card___26-1509-2.pdf",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://my.fike.com/_fike_docs/Fire_Detection/Control_Panels/EN_Panels_FST/Twinflex/Manuals/TWINFLEX_pro2_Conventional_Expansion_card___26-1509-2.pdf",
+      "retrieval": "retrieved",
+      "bytes": 740503,
+      "sha256": "efd12d718da113c9df856c6c6b8062c64ba2caa007e5bf260e698fc59dc49de5",
+      "pdfPath": "/tmp/fire-service-0.24.0/fike-96c0a23f2943.pdf",
+      "pdfPages": 4,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "fike-96c0a23f2943",
+        "title": "505-0007 TWINFLEXpro² conventional expansion card instructions",
+        "role": "accessory",
+        "variant": "505-0007 conventional expansion card, 4-zone TWINFLEXpro² only",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "26-1509",
+        "edition": "Issue 2",
+        "pdfPages": 4,
+        "sha256": "efd12d718da113c9df856c6c6b8062c64ba2caa007e5bf260e698fc59dc49de5",
+        "bytes": 740503,
+        "sourceUrl": "https://my.fike.com/_fike_docs/Fire_Detection/Control_Panels/EN_Panels_FST/Twinflex/Manuals/TWINFLEX_pro2_Conventional_Expansion_card___26-1509-2.pdf",
+        "evidencePages": [
+          1,
+          3
+        ],
+        "notes": [
+          "Only for a 4-zone pro² main panel; expressly excludes 2-zone pro² and earlier TwinflexPro/Checkpoint Plus. Zones 5–8 become conventional zones and cannot distinguish smoke from MCP fire signals."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "60fa1f040ce03a302a299a824fda9fb802b100747d7965cf9b48b41ae41c33b9",
+        "canonicalRecordId": "fike-96c0a23f2943"
+      }
+    },
+    {
+      "recordId": "fike-ccc737b20ef3",
+      "catalogueTitle": "TWINFLEXpro Repeater UserGuide",
+      "url": "https://my.fike.com/_fike_new_docs/ce3cc9f4-6356-4766-95a2-45515693a63e.pdf",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://my.fike.com/_fike_new_docs/ce3cc9f4-6356-4766-95a2-45515693a63e.pdf",
+      "retrieval": "retrieved",
+      "bytes": 1280261,
+      "sha256": "e274bc10a4837fe424752c4e9edb4a760951c73ea2de643a645eadaad3cf7cd9",
+      "pdfPath": "/tmp/fire-service-0.24.0/fike-ccc737b20ef3.pdf",
+      "pdfPages": 16,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "fike-ccc737b20ef3",
+        "title": "TWINFLEXpro² repeater user manual",
+        "role": "repeater",
+        "variant": "TWINFLEXpro² repeater from V3.00",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "26-1194",
+        "edition": "Rev 3",
+        "pdfPages": 16,
+        "sha256": "e274bc10a4837fe424752c4e9edb4a760951c73ea2de643a645eadaad3cf7cd9",
+        "bytes": 1280261,
+        "sourceUrl": "https://my.fike.com/_fike_new_docs/ce3cc9f4-6356-4766-95a2-45515693a63e.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "The archive title says TWINFLEXpro Repeater; the actual source is the pro² repeater user manual for V3.00+.",
+          "Alternate copy of facp-9a6ff66a-da2a-43c3-83b8-56daa9579367. Its own PDF hash remains distinct where bytes differ; no source-page hash is substituted."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "c73e7fc7421c53fa6bf440607db2240357a4f4303ab701229e0c62fed004f51a",
+        "canonicalRecordId": "facp-9a6ff66a-da2a-43c3-83b8-56daa9579367"
+      }
+    },
+    {
+      "recordId": "fike-d32c7e8d452f",
+      "catalogueTitle": "TWINFLEXpro UserGuide",
+      "url": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/TwinflexPro/Conventional%20Control%20Panels/Manuals/TWINFLEXpro%20Panel%20UserGuide%2026-1028-5.pdf",
+      "catalogueSha256": null,
+      "httpStatus": 200,
+      "resolvedUrl": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/TwinflexPro/Conventional%20Control%20Panels/Manuals/TWINFLEXpro%20Panel%20UserGuide%2026-1028-5.pdf",
+      "retrieval": "retrieved",
+      "bytes": 1635267,
+      "sha256": "db16c3ba68dc8f9234577453ec6f9a76764ce4b809aa0c9528e86f03d0f0dabe",
+      "pdfPath": "/tmp/fire-service-0.24.0/fike-d32c7e8d452f.pdf",
+      "pdfPages": 32,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "fike-d32c7e8d452f",
+        "title": "TWINFLEXpro² user guide",
+        "role": "user-guide",
+        "variant": "TWINFLEXpro² from V3.00",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "26-1028",
+        "edition": "Rev 5",
+        "pdfPages": 32,
+        "sha256": "db16c3ba68dc8f9234577453ec6f9a76764ce4b809aa0c9528e86f03d0f0dabe",
+        "bytes": 1635267,
+        "sourceUrl": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/TwinflexPro/Conventional%20Control%20Panels/Manuals/TWINFLEXpro%20Panel%20UserGuide%2026-1028-5.pdf",
+        "evidencePages": [
+          1,
+          9
+        ],
+        "notes": [
+          "The archive title says TWINFLEXpro, but the actual cover/body identify TWINFLEXpro² V3.00+ and Rev 5. An older Issue 3 template string remains in extracted cover text.",
+          "Alternate copy of facp-9e607562-03e2-429b-bcc3-b8f7dab17b75. Its own PDF hash remains distinct where bytes differ; no source-page hash is substituted."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "29c3ad5d70616b33bd1091caf8d591b6fcaf9b19eeda82aabc73f34a1628abb2",
+        "canonicalRecordId": "facp-9e607562-03e2-429b-bcc3-b8f7dab17b75"
+      }
+    },
+    {
+      "recordId": "fike-fc894e8e5796",
+      "catalogueTitle": "Twinflex Pro Installation Manual",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Twinflex%20Pro%20Installation%20Manual.pdf",
+      "catalogueSha256": null,
+      "retrieval": "retained-source-file",
+      "bytes": 1575823,
+      "sha256": "d67d8409213042ba956bd3c98c92135038bb8af67ebee53dee79b09339b90e70",
+      "pdfPath": "/tmp/fire-service-0.24.0/fike-fc894e8e5796.pdf",
+      "pdfPages": 70,
+      "status": "retrieved-pdf",
+      "verifiedMetadata": {
+        "recordId": "fike-fc894e8e5796",
+        "title": "TWINFLEXpro engineering and commissioning manual — historical V1.00+",
+        "role": "installation",
+        "variant": "TWINFLEXpro from V1.00",
+        "verificationStatus": "verified",
+        "deliveryStatus": "retrieved-pdf",
+        "documentNumber": "26-0959",
+        "edition": "Issue 7, November 2011",
+        "pdfPages": 70,
+        "sha256": "d67d8409213042ba956bd3c98c92135038bb8af67ebee53dee79b09339b90e70",
+        "bytes": 1575823,
+        "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Twinflex%20Pro%20Installation%20Manual.pdf",
+        "evidencePages": [
+          1,
+          2
+        ],
+        "notes": [
+          "Historical pro V1.00+ edition. It is not the pro² V3.00+ manual."
+        ],
+        "verifiedOn": "2026-11-02",
+        "textSha256": "37c7e5e3c6ac47dec7c4c52286eb704b0fb48e266d7360030e176afb72600d49",
+        "canonicalRecordId": "fike-fc894e8e5796"
+      }
+    }
+  ],
+  "criticalFindings": [
+    {
+      "topic": "XFP protocols/cabinets",
+      "finding": "Non-CAST 16/32 manuals, CAST 16/32 manuals and repeaters remain separate. Official 16-zone engineering Rev 3 matches the Rev 1 access tree; newer network caveat retained."
+    },
+    {
+      "topic": "Fike generations",
+      "finding": "Original Twinflex V3, pro V1/V2 and pro² V3 are distinct. Stale pro archive titles for current Rev 18 installer / Rev 5 user / Rev 3 repeater no longer establish a pro association."
+    },
+    {
+      "topic": "Text layer versus rendered cover",
+      "finding": "Fike current covers visibly show Rev 18 and Rev 5; old Issue 14 Draft / Issue 3 strings exist in extracted template text. These are recorded as extraction artifacts, not assumed visual version badges."
+    },
+    {
+      "topic": "Expansion cards",
+      "finding": "505-0007 excludes earlier pro and 2-zone pro². 505-0006 pro sheet is additionally corroborated for pro² by Rev 18 engineering PDF page 20; only 4-zone expansion is supported."
+    },
+    {
+      "topic": "Duplicate copies",
+      "finding": "Four alias groups have identical PDF bytes. Further aliases share document identity/edition and normalized full text; distinct PDF hashes stay separate for page-opening verification."
+    }
+  ]
+}

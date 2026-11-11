@@ -1,0 +1,90 @@
+{
+  "syntheticReference": true,
+  "system": "Select the SOURCE IDs that answer QUESTION. Reply only S1 or S2 or NONE; do not rewrite source text.",
+  "results": [
+    {
+      "name": "single event history",
+      "expected": "S1",
+      "user": "SOURCE S1: Event history procedure. 1. From the home display, select View. 2. Select Log. 3. Use the arrow keys to scroll through the events. 4. Press Exit to return to the home display.\nQUESTION: how do i chek the evnt histry on this panel?",
+      "reply": {
+        "text": "SOURCE S1: Event history procedure. 1. From the home display,",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 3825.199999999255,
+          "inputTokens": 112,
+          "outputTokens": 16,
+          "firstTokenMs": 2076,
+          "generationMs": 4090,
+          "tokensPerSecond": 3.9119804400977998
+        }
+      }
+    },
+    {
+      "name": "single contextual menu",
+      "expected": "S1",
+      "user": "PRIOR QUESTION: How do I view the event history?\nSOURCE S1: Event history procedure. 1. From the home display, select View. 2. Select Log. 3. Use the arrow keys to scroll through the events. 4. Press Exit to return to the home display.\nQUESTION: where is that menu?",
+      "reply": {
+        "text": "SOURCE S1: Event history procedure. 1. From the home display,",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 118,
+          "outputTokens": 16,
+          "firstTokenMs": 2064.4000000003725,
+          "generationMs": 4036.9000000003725,
+          "tokensPerSecond": 3.963437290990246
+        }
+      }
+    },
+    {
+      "name": "single PSU nominal voltage",
+      "expected": "S1",
+      "user": "SOURCE S1: This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A.\nQUESTION: What is the nominal power supply output voltage?",
+      "reply": {
+        "text": "SOURCE S2: The nominal power supply output voltage is 24 V.",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 98,
+          "outputTokens": 16,
+          "firstTokenMs": 1831.5999999996275,
+          "generationMs": 3805.5,
+          "tokensPerSecond": 4.204440940743661
+        }
+      }
+    },
+    {
+      "name": "single absent evidence",
+      "expected": "NONE",
+      "user": "SOURCE S1: This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A.\nQUESTION: What battery capacity is required for this power supply?",
+      "reply": {
+        "text": "SOURCE S2: The battery capacity is 100 Ah.",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 99,
+          "outputTokens": 15,
+          "firstTokenMs": 1675.3999999985099,
+          "generationMs": 3431.89999999851,
+          "tokensPerSecond": 4.370756723682658
+        }
+      }
+    }
+  ]
+}

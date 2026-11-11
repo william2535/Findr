@@ -1,0 +1,22 @@
+/* FINDR identity; the working tools keep their familiar controls. */
+.project-badge{display:inline-flex;background:#ffd600;color:#111;font-size:10px;font-weight:800;letter-spacing:.08em;padding:8px 11px;border-radius:5px;margin:0 0 16px}
+.home-intro h1{font-size:clamp(40px,7vw,68px);letter-spacing:-.05em}.home-intro>p{max-width:550px}.home-pack-card,.emulator-landing .emulator-profile-card{border-radius:16px}.emulator-landing .practice-profile-visual{background:radial-gradient(ellipse at 50% 65%,#51471e,#20201b 76%)}.emulator-landing .practice-visual-caption{color:#ffe14a}.emulator-landing .emulator-intro{background:#242218;border-color:#655b2b}.emulator-landing .emulator-profile-card:hover{border-color:#ffd600}.emulator-landing .practice-profile-body .primary{background:#ffd600;color:#111}
+.wiring-equipment{display:grid;gap:8px;margin:0 0 14px;padding:10px;border:1px solid #444438;border-radius:10px;background:#25251e}.wiring-equipment-item{display:flex;align-items:center;gap:10px;min-width:0}.wiring-equipment-item img{width:58px;height:58px;flex:0 0 58px;object-fit:contain;background:#fff;border-radius:7px;padding:4px;box-sizing:border-box}.wiring-equipment-item>span{font-size:12px;line-height:1.35;color:#efefdf;overflow-wrap:anywhere}.wiring-equipment-item small{display:block;color:#c5c5ac;font-size:10px;margin-top:4px}.wiring-equipment>small,.wiring-equipment-missing{font-size:10px;color:#b6b6a9;line-height:1.4}.wiring-family-card .wiring-equipment{padding:7px}.wiring-family-card .wiring-equipment-item{gap:7px}.wiring-family-card .wiring-equipment-item img{width:42px;height:42px;flex-basis:42px}.wiring-family-card .wiring-equipment-item>span{font-size:10px}
+@media(max-width:600px){.home-intro>p{font-size:14px}.wiring-family-card .wiring-equipment-item{flex-wrap:wrap}.wiring-family-card .wiring-equipment-item>span{flex:1 1 60px}}
+
+
+.emulator-landing .practice-visual-bottom{color:#dedbc6}.wiring-card>.wiring-equipment{margin:12px 12px 0}.wiring-card>.wiring-equipment-missing{margin:12px}
+
+/* A blank, full-viewport terminal. No app chrome or console-window frame. */
+body:has(#fault-terminal-entry){overflow:hidden;background:#000}
+body:has(#fault-terminal-entry)>.header,body:has(#fault-terminal-entry)>footer,body:has(#fault-terminal-entry)>.skip-link,body:has(#fault-terminal-entry)>#visit-return{display:none}
+body:has(#fault-terminal-entry)>#toast{visibility:hidden}
+#fault-terminal-entry{position:fixed;inset:0;z-index:10000;box-sizing:border-box;width:100%;height:100vh;height:100dvh;overflow:auto;background:#000;color:#b4b4b4;padding:clamp(90px,18vh,180px) clamp(24px,8vw,120px) 80px;font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;outline:none}
+#fault-terminal-entry h1{font:400 clamp(19px,3.2vw,32px)/1.5 ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;letter-spacing:0;margin:0;color:inherit;text-shadow:0 0 9px #b4b4b433;min-height:1.5em}
+.fault-entry-type{display:block;box-sizing:content-box;overflow:hidden;white-space:nowrap;width:20ch;border-right:2px solid currentColor;animation:fault-entry-write 3s steps(20,end) .65s both,fault-entry-cursor .8s step-end infinite}
+#fault-terminal-entry button{font:inherit;font-size:16px;background:transparent;color:#b4b4b4;border:1px solid transparent;border-radius:0;min-height:48px;padding:10px 4px;text-align:left;touch-action:manipulation}
+#fault-terminal-entry button:hover{color:#e7e7e7}#fault-terminal-entry button:focus-visible{outline:1px solid #b4b4b4;outline-offset:4px}
+.fault-entry-start{margin-top:30px;animation:fault-entry-reveal .01s 3.7s both}
+#fault-entry-skip{position:absolute;right:max(24px,env(safe-area-inset-right));bottom:max(22px,env(safe-area-inset-bottom));font-size:12px!important;color:#8f8f8f!important}
+@keyframes fault-entry-write{from{width:0}to{width:20ch}}@keyframes fault-entry-cursor{50%{border-color:transparent}}@keyframes fault-entry-reveal{from{visibility:hidden;opacity:0}to{visibility:visible;opacity:1}}
+@media(prefers-reduced-motion:reduce){.fault-entry-type,.fault-entry-start{animation:none}.fault-entry-type{width:20ch}}

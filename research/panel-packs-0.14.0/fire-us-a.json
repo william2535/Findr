@@ -1,0 +1,2709 @@
+{
+  "batch": "fire-us-a",
+  "reviewed": "2026-10-30",
+  "scope": "Fire-Lite and Silent Knight pictured families from original manufacturer publications held by the existing Manual Archives catalogue. No catalogue mutation.",
+  "archive_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+  "count": 23,
+  "by_brand": {
+    "Fire-Lite": 13,
+    "Silent Knight": 10
+  },
+  "distinct_linked_records": 51,
+  "uk_priority_count": 0,
+  "source_policy": "Technical identity and model scope come from original manufacturer-authored PDFs; FACP Manuals is their existing archive host. Images are extracted from those exact documents, never generated or substituted. Official Honeywell product/document pages independently corroborate the families.",
+  "image_transformations": "Original raster image extraction or exact PDF product-area crop; blank white margin removal only. No invented hardware or synthetic face alterations.",
+  "panels": [
+    {
+      "id": "fire-lite-es-series",
+      "model": "ES-50X / ES-200X / ES-1000X fascia family",
+      "source_document_records": [
+        {
+          "id": "facp-1746fa9b-1aa1-4807-a676-e955b2fdd780",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "ES-50X Series"
+          ],
+          "title": "ES-50X Series — Datasheet (2023, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/es-50x_series-datasheet.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "70eb792ed25300eda4dc9563bf972e261f399cac6c9d4d86f53f9fe8f34ba5b1",
+          "bytes": 7233954,
+          "pages": 4
+        },
+        {
+          "id": "facp-42d66a97-1dd2-4d3b-b9d6-f68f191e3ec6",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "ES-200X Series"
+          ],
+          "title": "ES-200X Series — Datasheet (2023, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/es-200x_series-datasheet.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "2d5c23dc7424f07b13a534832fee8a19e07797643e5d6e463e45092e08d14cd3",
+          "bytes": 6497452,
+          "pages": 4
+        },
+        {
+          "id": "facp-37883af0-c97c-4e5e-96b6-783bed35c7f5",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "ES-1000X Series"
+          ],
+          "title": "ES-1000X Series — Datasheet (2023, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/es-1000x_series-datasheet-2023.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "64eb405716ee0b3d52d21c721bbc600c5e09d123b1ac1bdd8b29df79343d480b",
+          "bytes": 5589100,
+          "pages": 4
+        }
+      ],
+      "image": {
+        "id": "fire-lite-es-series",
+        "source_key": "fl-es50x",
+        "source_pdf": "fl-es50x.pdf",
+        "source_pdf_sha256": "70eb792ed25300eda4dc9563bf972e261f399cac6c9d4d86f53f9fe8f34ba5b1",
+        "extraction": {
+          "page": 1,
+          "crop_pdf_points": [
+            350,
+            121,
+            548,
+            340
+          ],
+          "render_scale": 3
+        },
+        "output": "fire-lite-es-series.png",
+        "dimensions": [
+          565,
+          640
+        ],
+        "sha256": "fa91adb34b245cc6a00ad4c29680521a913e654f452d33990f8392bb49f89e53"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-1722019e-bc3f-4e2a-ad66-8684fe6f5ae1",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "ES-50X"
+          ],
+          "title": "ES-50X — Installation, Operations, Programming (2022, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/es-50x-installation-2022.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "45cdb965bd466c082b8f5f5d8e3051764335824c76bba84583f3ef48af91273b",
+          "bytes": 2873936,
+          "pages": 168
+        },
+        {
+          "id": "facp-1746fa9b-1aa1-4807-a676-e955b2fdd780",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "ES-50X Series"
+          ],
+          "title": "ES-50X Series — Datasheet (2023, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/es-50x_series-datasheet.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "70eb792ed25300eda4dc9563bf972e261f399cac6c9d4d86f53f9fe8f34ba5b1",
+          "bytes": 7233954,
+          "pages": 4
+        },
+        {
+          "id": "facp-37883af0-c97c-4e5e-96b6-783bed35c7f5",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "ES-1000X Series"
+          ],
+          "title": "ES-1000X Series — Datasheet (2023, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/es-1000x_series-datasheet-2023.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "64eb405716ee0b3d52d21c721bbc600c5e09d123b1ac1bdd8b29df79343d480b",
+          "bytes": 5589100,
+          "pages": 4
+        },
+        {
+          "id": "facp-42d66a97-1dd2-4d3b-b9d6-f68f191e3ec6",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "ES-200X Series"
+          ],
+          "title": "ES-200X Series — Datasheet (2023, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/es-200x_series-datasheet.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "2d5c23dc7424f07b13a534832fee8a19e07797643e5d6e463e45092e08d14cd3",
+          "bytes": 6497452,
+          "pages": 4
+        },
+        {
+          "id": "facp-6a064dee-894c-463d-a0d7-1311aadc96a0",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "ES-1000X"
+          ],
+          "title": "ES-1000X — Installation, Operations, Programming (2023, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/es-1000x-installation-2023.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "4f691b9bc2e92a59931360a5719696fbde7a4cce19adcf10c1e7dcb9baf5443c",
+          "bytes": 2734975,
+          "pages": 170
+        },
+        {
+          "id": "facp-fe57c3ed-49d4-4b79-b40a-eb028e8be1e6",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "ES-200X"
+          ],
+          "title": "ES-200X — Installation, Operations, Programming (2022, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/es-200x-installation-2022.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "b55af9b1f1f492c87fa3a71b8839761613ed89e8deffc904fd92ebc66894b95f",
+          "bytes": 3533949,
+          "pages": 172
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/lp/show-to-go",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "fire-lite-ms2",
+      "model": "MS-2 / MS-2E",
+      "source_document_records": [
+        {
+          "id": "facp-9c3c3385-3149-4d78-877d-13ceb4d7718a",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-2"
+          ],
+          "title": "MS-2 — Datasheet (2011, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-2-datasheet-2011.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "3aaa1b2d67163aa03990e11029882def8bde0a67d1c773fce649617b904d8d7a",
+          "bytes": 83782,
+          "pages": 2
+        }
+      ],
+      "image": {
+        "id": "fire-lite-ms2",
+        "source_key": "fl-ms2",
+        "source_pdf": "fl-ms2.pdf",
+        "source_pdf_sha256": "3aaa1b2d67163aa03990e11029882def8bde0a67d1c773fce649617b904d8d7a",
+        "extraction": {
+          "page": 1,
+          "xref": 34,
+          "image_pdf_rect": [
+            [
+              332.1000061035156,
+              133.13999938964844,
+              544.1400146484375,
+              367.67999267578125
+            ]
+          ]
+        },
+        "output": "fire-lite-ms2.png",
+        "dimensions": [
+          333,
+          397
+        ],
+        "sha256": "a95c15965a8e5f47aff13f8447afd042d9a086d88ff96b185fd15bbcc48630de"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-7da937d1-a7d6-42cb-a777-bc7e34e43d39",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-2 and MS-4"
+          ],
+          "title": "MS-2 and MS-4 — Installation, Operations, Programming (2014, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-2_and_ms-4.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "328a6bda768f2efaebae26f205449b1b7f9a4200ad79126c17e3663443a17c39",
+          "bytes": 1326595,
+          "pages": 56
+        },
+        {
+          "id": "facp-9c3c3385-3149-4d78-877d-13ceb4d7718a",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-2"
+          ],
+          "title": "MS-2 — Datasheet (2011, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-2-datasheet-2011.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "3aaa1b2d67163aa03990e11029882def8bde0a67d1c773fce649617b904d8d7a",
+          "bytes": 83782,
+          "pages": 2
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/products/by-category/control-panels/fire-control-panels/fire-alarm-control-panels/ms-2-and-ms-4-fire-alarm-control-panels",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "fire-lite-ms4",
+      "model": "MS-4 / MS-4E",
+      "source_document_records": [
+        {
+          "id": "facp-d96855fc-c36c-4d5f-8f5e-76ec5124874c",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-4"
+          ],
+          "title": "MS-4 — Datasheet (2012, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-4-datasheet-2012.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "21cbbe5e986cb903c41feec97471a22d25ff0b3b80439beaa9cf54115fd077c6",
+          "bytes": 88053,
+          "pages": 2
+        }
+      ],
+      "image": {
+        "id": "fire-lite-ms4",
+        "source_key": "fl-ms4",
+        "source_pdf": "fl-ms4.pdf",
+        "source_pdf_sha256": "21cbbe5e986cb903c41feec97471a22d25ff0b3b80439beaa9cf54115fd077c6",
+        "extraction": {
+          "page": 1,
+          "xref": 34,
+          "image_pdf_rect": [
+            [
+              343.0799865722656,
+              120.72000122070312,
+              533.1599731445312,
+              352.3800048828125
+            ]
+          ]
+        },
+        "output": "fire-lite-ms4.png",
+        "dimensions": [
+          363,
+          408
+        ],
+        "sha256": "a96b4508121e56aa18fc65f8fc3e1a023ac5ef2f3d723a640a9f604f2bd6aef5"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-7da937d1-a7d6-42cb-a777-bc7e34e43d39",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-2 and MS-4"
+          ],
+          "title": "MS-2 and MS-4 — Installation, Operations, Programming (2014, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-2_and_ms-4.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "328a6bda768f2efaebae26f205449b1b7f9a4200ad79126c17e3663443a17c39",
+          "bytes": 1326595,
+          "pages": 56
+        },
+        {
+          "id": "facp-d96855fc-c36c-4d5f-8f5e-76ec5124874c",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-4"
+          ],
+          "title": "MS-4 — Datasheet (2012, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-4-datasheet-2012.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "21cbbe5e986cb903c41feec97471a22d25ff0b3b80439beaa9cf54115fd077c6",
+          "bytes": 88053,
+          "pages": 2
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/products/by-category/control-panels/fire-control-panels/fire-alarm-control-panels/ms-2-and-ms-4-fire-alarm-control-panels",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "fire-lite-ms5ud-ms10ud",
+      "model": "MS-5UD / MS-10UD Series",
+      "source_document_records": [
+        {
+          "id": "facp-d36027c4-0c4b-4d70-99de-97c93c2d29ba",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-5UD and MS-10UD Series"
+          ],
+          "title": "MS-5UD and MS-10UD Series — Datasheet (2010, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-5ud_and_ms-10ud_series-datasheet-2010-revd.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "035b6035ce5ee8f40a2066fcee42e9402cdb7e4becc29def519295b2b5904aee",
+          "bytes": 178448,
+          "pages": 4
+        }
+      ],
+      "image": {
+        "id": "fire-lite-ms5ud-ms10ud",
+        "source_key": "fl-ms5ud10ud",
+        "source_pdf": "fl-ms5ud10ud.pdf",
+        "source_pdf_sha256": "035b6035ce5ee8f40a2066fcee42e9402cdb7e4becc29def519295b2b5904aee",
+        "extraction": {
+          "page": 1,
+          "xref": 53,
+          "image_pdf_rect": [
+            [
+              321.9599914550781,
+              183.96002197265625,
+              541.7999877929688,
+              311.6400146484375
+            ]
+          ]
+        },
+        "output": "fire-lite-ms5ud-ms10ud.png",
+        "dimensions": [
+          675,
+          381
+        ],
+        "sha256": "34006d8297a3c6b6dc91046c0f74777d5085ad46645623ef78b09e1ba7445bdb"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-0acc694b-46bf-4449-9c9a-90588a7ceec8",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-5UD and MS-10UD"
+          ],
+          "title": "MS-5UD and MS-10UD — Installation, Operations, Programming (2018, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-5ud_and_ms-10ud-installation-2018.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "3066ae8835ffe535a51cac160cf6b0d102515d0c9e653b33d9597765da599288",
+          "bytes": 2854694,
+          "pages": 136
+        },
+        {
+          "id": "facp-d36027c4-0c4b-4d70-99de-97c93c2d29ba",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-5UD and MS-10UD Series"
+          ],
+          "title": "MS-5UD and MS-10UD Series — Datasheet (2010, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-5ud_and_ms-10ud_series-datasheet-2010-revd.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "035b6035ce5ee8f40a2066fcee42e9402cdb7e4becc29def519295b2b5904aee",
+          "bytes": 178448,
+          "pages": 4
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/brands/our-brands/firelite",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "fire-lite-ms25",
+      "model": "MS-25 Rev 2",
+      "source_document_records": [
+        {
+          "id": "facp-d5e19b8b-46b4-4e36-b953-cba880b1bd8e",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-25 Rev 2"
+          ],
+          "title": "MS-25 Rev 2 — Datasheet (2011, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-25_rev_2-datasheet-2011.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "056f0986052ab5bd2c25d483c3c2b6574ed089dfafc4a36e3c03478aa25b6a65",
+          "bytes": 214466,
+          "pages": 4
+        }
+      ],
+      "image": {
+        "id": "fire-lite-ms25",
+        "source_key": "fl-ms25",
+        "source_pdf": "fl-ms25.pdf",
+        "source_pdf_sha256": "056f0986052ab5bd2c25d483c3c2b6574ed089dfafc4a36e3c03478aa25b6a65",
+        "extraction": {
+          "page": 1,
+          "xref": 51,
+          "image_pdf_rect": [
+            [
+              350.2200012207031,
+              123.77999877929688,
+              529.1309814453125,
+              371.2200012207031
+            ]
+          ]
+        },
+        "output": "fire-lite-ms25.png",
+        "dimensions": [
+          558,
+          774
+        ],
+        "sha256": "de84aee7c3b83b6993d74d8892037c140b68e9baca2d8fd798253e30df202fcc"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-a11cacb4-dbe5-4348-831b-49e2e0bfbdb9",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-25, MS-25C and MS-25E"
+          ],
+          "title": "MS-25, MS-25C and MS-25E — Installation, Operations, Programming (2011, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-25-ms-25c-ms-25e-installation.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "11113b8b92f864d7c72cdf2799e342971af495074c76659b2d7ed8236a320b4a",
+          "bytes": 2319017,
+          "pages": 106
+        },
+        {
+          "id": "facp-d5e19b8b-46b4-4e36-b953-cba880b1bd8e",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-25 Rev 2"
+          ],
+          "title": "MS-25 Rev 2 — Datasheet (2011, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-25_rev_2-datasheet-2011.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "056f0986052ab5bd2c25d483c3c2b6574ed089dfafc4a36e3c03478aa25b6a65",
+          "bytes": 214466,
+          "pages": 4
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/brands/our-brands/firelite/resources/discontinued-products",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "fire-lite-ms9050ud",
+      "model": "MS-9050UD / MS-9050UDE",
+      "source_document_records": [
+        {
+          "id": "facp-04050529-d12a-4077-ad55-7574a99505a5",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-9050UD"
+          ],
+          "title": "MS-9050UD — Datasheet (2012, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9050ud-datasheet-2012.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "5bbb00b67d87d506e49a27f6ed603a9496ee07d188e7d844a935f7a97fedd8b0",
+          "bytes": 703846,
+          "pages": 4
+        }
+      ],
+      "image": {
+        "id": "fire-lite-ms9050ud",
+        "source_key": "fl-ms9050ud",
+        "source_pdf": "fl-ms9050ud.pdf",
+        "source_pdf_sha256": "5bbb00b67d87d506e49a27f6ed603a9496ee07d188e7d844a935f7a97fedd8b0",
+        "extraction": {
+          "page": 1,
+          "xref": 71,
+          "image_pdf_rect": [
+            [
+              356.4599914550781,
+              124.86001586914062,
+              512.4859619140625,
+              303.4200134277344
+            ]
+          ]
+        },
+        "output": "fire-lite-ms9050ud.png",
+        "dimensions": [
+          317,
+          368
+        ],
+        "sha256": "e4cba272a77d6db88e585a44d6da7581955ba83885255f2e4981de17b885c619"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-04050529-d12a-4077-ad55-7574a99505a5",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-9050UD"
+          ],
+          "title": "MS-9050UD — Datasheet (2012, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9050ud-datasheet-2012.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "5bbb00b67d87d506e49a27f6ed603a9496ee07d188e7d844a935f7a97fedd8b0",
+          "bytes": 703846,
+          "pages": 4
+        },
+        {
+          "id": "facp-b0036d9c-0b45-48f0-a506-d7384478b737",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-9050UD"
+          ],
+          "title": "MS-9050UD — Installation, Operations, Programming (2015, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9050ud-installation-2015.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "96252bbf7c97f61294dafbbf8954317bdbd0db10125823800edd0de9f6a9e639",
+          "bytes": 2909290,
+          "pages": 192
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/brands/our-brands/firelite/resources/discontinued-products",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "fire-lite-ms9200",
+      "model": "MS-9200 original family",
+      "source_document_records": [
+        {
+          "id": "facp-e7ed0df9-f033-4b29-b841-640f0ff337d5",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-9200"
+          ],
+          "title": "MS-9200 — Datasheet (2005, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9200-datasheet-2005.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "63db4dba46dd3f64b28d0bbbffe7beb15a781e82fdbc0a517d3207d795a8343d",
+          "bytes": 919499,
+          "pages": 4
+        }
+      ],
+      "image": {
+        "id": "fire-lite-ms9200",
+        "source_key": "fl-ms9200",
+        "source_pdf": "fl-ms9200.pdf",
+        "source_pdf_sha256": "63db4dba46dd3f64b28d0bbbffe7beb15a781e82fdbc0a517d3207d795a8343d",
+        "extraction": {
+          "page": 1,
+          "xref": 125,
+          "image_pdf_rect": [
+            [
+              353.79998779296875,
+              239.60000610351562,
+              524.199951171875,
+              443.1000061035156
+            ]
+          ]
+        },
+        "output": "fire-lite-ms9200.png",
+        "dimensions": [
+          592,
+          707
+        ],
+        "sha256": "fc5cefbe36c2516fa993d204a60a94c1a7092a7e539503c854167b32a09b367e"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-5b9c2fcc-479f-4972-b486-06b164bada0c",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-9200"
+          ],
+          "title": "MS-9200 — Installation, Operations, Programming (2002, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9200-installation-2002.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "135ff484099a9ea785ba778412236f7404f1dd291f9e2835fd0976f20c49f871",
+          "bytes": 3173507,
+          "pages": 92
+        },
+        {
+          "id": "facp-e7ed0df9-f033-4b29-b841-640f0ff337d5",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-9200"
+          ],
+          "title": "MS-9200 — Datasheet (2005, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9200-datasheet-2005.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "63db4dba46dd3f64b28d0bbbffe7beb15a781e82fdbc0a517d3207d795a8343d",
+          "bytes": 919499,
+          "pages": 4
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/brands/our-brands/firelite/resources/discontinued-products",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "fire-lite-ms9200udls-rev3",
+      "model": "MS-9200UDLS Rev 3",
+      "source_document_records": [
+        {
+          "id": "facp-eca38154-2a8b-4986-a6c1-f843c8bfa9c7",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-9200UDLS Rev 3"
+          ],
+          "title": "MS-9200UDLS Rev 3 — Datasheet (2010, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9200udls_rev_3-datasheet-2010.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "e4c3d55f4ff2a21e0c325e2c91939e880391c5f4253b7a913e968de462c6815b",
+          "bytes": 992972,
+          "pages": 6
+        }
+      ],
+      "image": {
+        "id": "fire-lite-ms9200udls-rev3",
+        "source_key": "fl-ms9200udls",
+        "source_pdf": "fl-ms9200udls.pdf",
+        "source_pdf_sha256": "e4c3d55f4ff2a21e0c325e2c91939e880391c5f4253b7a913e968de462c6815b",
+        "extraction": {
+          "page": 1,
+          "xref": 79,
+          "image_pdf_rect": [
+            [
+              323.6400146484375,
+              125.57998657226562,
+              542.1600341796875,
+              375.29998779296875
+            ]
+          ]
+        },
+        "output": "fire-lite-ms9200udls-rev3.png",
+        "dimensions": [
+          581,
+          682
+        ],
+        "sha256": "8057eed7e2085fc1d7129c0fef5ff1845861c16e1b580328b71e72e82d60644d"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-caadfb5c-97a9-48b5-bed7-932f6c6973ac",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-9200UDLS"
+          ],
+          "title": "MS-9200UDLS — Installation, Operations, Programming (2015, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9200udls-installation-2015.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "626e8934eac98944b6538f0167b7db3acfa7ab1f93991dbaddd02a4eaccd09d3",
+          "bytes": 2903913,
+          "pages": 204
+        },
+        {
+          "id": "facp-eca38154-2a8b-4986-a6c1-f843c8bfa9c7",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-9200UDLS Rev 3"
+          ],
+          "title": "MS-9200UDLS Rev 3 — Datasheet (2010, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9200udls_rev_3-datasheet-2010.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "e4c3d55f4ff2a21e0c325e2c91939e880391c5f4253b7a913e968de462c6815b",
+          "bytes": 992972,
+          "pages": 6
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/brands/our-brands/firelite/resources/discontinued-products",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "fire-lite-ms9600ls-udls",
+      "model": "MS-9600LS / MS-9600UDLS",
+      "source_document_records": [
+        {
+          "id": "facp-8082407b-0493-4da7-90ac-b4bc87952bb4",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-9600LS and MS-9600UDLS"
+          ],
+          "title": "MS-9600LS and MS-9600UDLS — Datasheet (2019, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9600ls_and_ms-9600udls-datasheet-2019.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "0680725a53e0b9ac964c0a2acb5e1a56ef8c60ab57799c6d810bbfe672d59783",
+          "bytes": 932925,
+          "pages": 6
+        }
+      ],
+      "image": {
+        "id": "fire-lite-ms9600ls-udls",
+        "source_key": "fl-ms9600ls",
+        "source_pdf": "fl-ms9600ls.pdf",
+        "source_pdf_sha256": "0680725a53e0b9ac964c0a2acb5e1a56ef8c60ab57799c6d810bbfe672d59783",
+        "extraction": {
+          "page": 1,
+          "xref": 79,
+          "image_pdf_rect": [
+            [
+              334.260009765625,
+              122.28001403808594,
+              558.5400390625,
+              376.9200134277344
+            ]
+          ]
+        },
+        "output": "fire-lite-ms9600ls-udls.png",
+        "dimensions": [
+          580,
+          677
+        ],
+        "sha256": "bdc340219fb4080d3d9429256f68f42b39e88a782654797835c4328686f5b22f"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-6402e30a-38ed-4b36-b6fb-addd49774cc5",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-9600LS and MS-9600UDLS"
+          ],
+          "title": "MS-9600LS and MS-9600UDLS — Installation, Operations, Programming (2015, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9600ls_and_ms-9600udls-installation-2015.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "0a9996f04f5732588590ca9033b6261f204c3e2f3546b29aeee43c7a23e576fa",
+          "bytes": 2770710,
+          "pages": 184
+        },
+        {
+          "id": "facp-8082407b-0493-4da7-90ac-b4bc87952bb4",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-9600LS and MS-9600UDLS"
+          ],
+          "title": "MS-9600LS and MS-9600UDLS — Datasheet (2019, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9600ls_and_ms-9600udls-datasheet-2019.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "0680725a53e0b9ac964c0a2acb5e1a56ef8c60ab57799c6d810bbfe672d59783",
+          "bytes": 932925,
+          "pages": 6
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/brands/our-brands/firelite",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "fire-lite-mrp2001-mrp2002",
+      "model": "MRP-2001 / MRP-2002 releasing-panel family",
+      "source_document_records": [
+        {
+          "id": "facp-70dac307-942a-4240-8514-69599dacb746",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MRP-2001 Control Panel"
+          ],
+          "title": "MRP-2001 Control Panel — Datasheet (2012, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/mrp-2001_control_panel-datasheet-2012.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "ff0b75fa9aea3b26ffcd2982ad92e4a0f1d35fb9e4596bbc72be7eaa3e8e2229",
+          "bytes": 634654,
+          "pages": 4
+        },
+        {
+          "id": "facp-75a115e9-1518-4908-be9e-db5ffb1f2c84",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MRP-2002 Release Panel"
+          ],
+          "title": "MRP-2002 Release Panel — Datasheet (2016, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/mrp-2002_release_panel-datasheet-2016.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "590de2cace3ff9212300b92b8ce8c8b5d71ae5a2e14853812a0c450e01e2580a",
+          "bytes": 781663,
+          "pages": 4
+        }
+      ],
+      "image": {
+        "id": "fire-lite-mrp2001-mrp2002",
+        "source_key": "fl-mrp2002",
+        "source_pdf": "fl-mrp2002.pdf",
+        "source_pdf_sha256": "590de2cace3ff9212300b92b8ce8c8b5d71ae5a2e14853812a0c450e01e2580a",
+        "extraction": {
+          "page": 1,
+          "xref": 43,
+          "image_pdf_rect": [
+            [
+              341.3999938964844,
+              124.86001586914062,
+              520.9990234375,
+              337.20001220703125
+            ]
+          ]
+        },
+        "output": "fire-lite-mrp2001-mrp2002.png",
+        "dimensions": [
+          561,
+          664
+        ],
+        "sha256": "14f02e6b174b4d5a7f5b15dc8d176112c8e5baf69dcff18bc9ed10fb86e2cded"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-70dac307-942a-4240-8514-69599dacb746",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MRP-2001 Control Panel"
+          ],
+          "title": "MRP-2001 Control Panel — Datasheet (2012, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/mrp-2001_control_panel-datasheet-2012.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "ff0b75fa9aea3b26ffcd2982ad92e4a0f1d35fb9e4596bbc72be7eaa3e8e2229",
+          "bytes": 634654,
+          "pages": 4
+        },
+        {
+          "id": "facp-75a115e9-1518-4908-be9e-db5ffb1f2c84",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MRP-2002 Release Panel"
+          ],
+          "title": "MRP-2002 Release Panel — Datasheet (2016, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/mrp-2002_release_panel-datasheet-2016.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "590de2cace3ff9212300b92b8ce8c8b5d71ae5a2e14853812a0c450e01e2580a",
+          "bytes": 781663,
+          "pages": 4
+        },
+        {
+          "id": "facp-974c2ca9-1459-403e-a1ee-badfb4dcc314",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MRP-2002"
+          ],
+          "title": "MRP-2002 — Installation, Operations, Programming (2017, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/mrp-2002-installation-2017.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "8bd0c07adf21b1184645cd6bf95aa0a175d6af550dbfec24a7ae595daea4d8d5",
+          "bytes": 2845883,
+          "pages": 160
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/brands/our-brands/firelite",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "fire-lite-ms5210ud",
+      "model": "MS-5210UD",
+      "source_document_records": [
+        {
+          "id": "facp-aab0ab31-9cd4-4b2d-8f68-22c9f4d2c058",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-5210UD"
+          ],
+          "title": "MS-5210UD — Datasheet (2004, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-5210ud-datasheet-2004.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "ba584b1ae5f9f52a3d47adcf1bdfe7081faeee8b3dae55c81c5a0f71bcc5e7be",
+          "bytes": 739927,
+          "pages": 3
+        }
+      ],
+      "image": {
+        "id": "fire-lite-ms5210ud",
+        "source_key": "fl-ms5210ud",
+        "source_pdf": "fl-ms5210ud.pdf",
+        "source_pdf_sha256": "ba584b1ae5f9f52a3d47adcf1bdfe7081faeee8b3dae55c81c5a0f71bcc5e7be",
+        "extraction": {
+          "page": 1,
+          "xref": 112,
+          "image_pdf_rect": [
+            [
+              394.8999938964844,
+              181.6999969482422,
+              545.0999755859375,
+              351.0
+            ]
+          ]
+        },
+        "output": "fire-lite-ms5210ud.png",
+        "dimensions": [
+          292,
+          337
+        ],
+        "sha256": "db5bef89f152dce9c0e1dd19561f9230c25b1b120beb4c99d24d7625eef836fd"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-aab0ab31-9cd4-4b2d-8f68-22c9f4d2c058",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-5210UD"
+          ],
+          "title": "MS-5210UD — Datasheet (2004, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-5210ud-datasheet-2004.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "ba584b1ae5f9f52a3d47adcf1bdfe7081faeee8b3dae55c81c5a0f71bcc5e7be",
+          "bytes": 739927,
+          "pages": 3
+        },
+        {
+          "id": "facp-f49e62f4-ed5d-4294-b635-a1cafc40108b",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "MS-5210UD"
+          ],
+          "title": "MS-5210UD — Installation, Operations, Programming (2002, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-5210ud-installation-2002.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "f090292450b924e1567f6944c875b52cfe5d3bbbf2dbd8d8a1e6c4eba57764c6",
+          "bytes": 2929322,
+          "pages": 124
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/brands/our-brands/firelite/resources/discontinued-products",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "fire-lite-sensiscan200",
+      "model": "Sensiscan 200",
+      "source_document_records": [
+        {
+          "id": "facp-f31f8355-8267-4768-bc58-c1466111339a",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "Sensiscan 200"
+          ],
+          "title": "Sensiscan 200 — Datasheet (1998, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/sensiscan_200-datasheet-1998.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "0d281a68c4eef2f379ef3c94a72fd140593807fa964449bd589d7b3f72c6a581",
+          "bytes": 793162,
+          "pages": 4
+        }
+      ],
+      "image": {
+        "id": "fire-lite-sensiscan200",
+        "source_key": "fl-sensiscan200",
+        "source_pdf": "fl-sensiscan200.pdf",
+        "source_pdf_sha256": "0d281a68c4eef2f379ef3c94a72fd140593807fa964449bd589d7b3f72c6a581",
+        "extraction": {
+          "page": 1,
+          "crop_pdf_points": [
+            321,
+            188,
+            555,
+            474
+          ],
+          "render_scale": 3
+        },
+        "output": "fire-lite-sensiscan200.png",
+        "dimensions": [
+          697,
+          847
+        ],
+        "sha256": "ca93277be4d026b437fb142d063996bbd73d5b549e153370e7659966f9a6aa92"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-62e4169b-e032-43f3-8270-750d3d382801",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "Sensiscan 200"
+          ],
+          "title": "Sensiscan 200 — Installation, Operations, Programming (1996, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/sensiscan_200-installation-1996.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "0f824768e89f2eaa457f836553e81799a9ab0a925a403969c219b2684b098f10",
+          "bytes": 1455575,
+          "pages": 69
+        },
+        {
+          "id": "facp-f31f8355-8267-4768-bc58-c1466111339a",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "Sensiscan 200"
+          ],
+          "title": "Sensiscan 200 — Datasheet (1998, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/sensiscan_200-datasheet-1998.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "0d281a68c4eef2f379ef3c94a72fd140593807fa964449bd589d7b3f72c6a581",
+          "bytes": 793162,
+          "pages": 4
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/brands/our-brands/firelite/resources/discontinued-products",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "fire-lite-sensiscan2000",
+      "model": "Sensiscan 2000",
+      "source_document_records": [
+        {
+          "id": "facp-065e6f49-e26c-4c2a-988e-b2c5e5b3c6a7",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "Sensiscan 2000"
+          ],
+          "title": "Sensiscan 2000 — Datasheet (2002, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/sensiscan_2000-datasheet-2002.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "e922beb2789f064e1d31880919259f9991f9b3c96a454c3ba499c811e7b2c2f3",
+          "bytes": 1068316,
+          "pages": 4
+        }
+      ],
+      "image": {
+        "id": "fire-lite-sensiscan2000",
+        "source_key": "fl-sensiscan2000",
+        "source_pdf": "fl-sensiscan2000.pdf",
+        "source_pdf_sha256": "e922beb2789f064e1d31880919259f9991f9b3c96a454c3ba499c811e7b2c2f3",
+        "extraction": {
+          "page": 1,
+          "crop_pdf_points": [
+            367,
+            175,
+            553,
+            407
+          ],
+          "render_scale": 3
+        },
+        "output": "fire-lite-sensiscan2000.png",
+        "dimensions": [
+          547,
+          689
+        ],
+        "sha256": "97a700c6df43298331cb695a43ed918b5b0844092bb23e2796b2c41b0e665a2b"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-065e6f49-e26c-4c2a-988e-b2c5e5b3c6a7",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "Sensiscan 2000"
+          ],
+          "title": "Sensiscan 2000 — Datasheet (2002, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/sensiscan_2000-datasheet-2002.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "e922beb2789f064e1d31880919259f9991f9b3c96a454c3ba499c811e7b2c2f3",
+          "bytes": 1068316,
+          "pages": 4
+        },
+        {
+          "id": "facp-782c0e97-88ad-4370-b79e-36fce22ea0e6",
+          "brand": "Fire-Lite",
+          "category": "fire",
+          "models": [
+            "Sensiscan 2000"
+          ],
+          "title": "Sensiscan 2000 — Installation, Operations, Programming (1996, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/sensiscan_2000-installation-1996.pdf",
+          "source": "https://facpmanuals.com/manuals/fire-lite",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "79c3049a23574ba8083d7641f2f201c406d377471ea7b8d1da0da5a7b0412885",
+          "bytes": 2249054,
+          "pages": 74
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/brands/our-brands/firelite/resources/discontinued-products",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "silent-knight-6700",
+      "model": "6700",
+      "source_document_records": [
+        {
+          "id": "facp-43d8f2e8-941c-4b06-9b84-9600cdc58fc1",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "6700"
+          ],
+          "title": "6700 — Datasheet (2018, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/6700-datasheet-2018.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "6c11fd0ec6242ace67beac3816d3a0e7439442cd72adb4b5548d8247b4509c50",
+          "bytes": 127660,
+          "pages": 4
+        }
+      ],
+      "image": {
+        "id": "silent-knight-6700",
+        "source_key": "sk-6700",
+        "source_pdf": "sk-6700.pdf",
+        "source_pdf_sha256": "6c11fd0ec6242ace67beac3816d3a0e7439442cd72adb4b5548d8247b4509c50",
+        "extraction": {
+          "page": 1,
+          "xref": 104,
+          "image_pdf_rect": [
+            [
+              387.4679870605469,
+              94.48799133300781,
+              550.4519653320312,
+              287.47198486328125
+            ]
+          ]
+        },
+        "output": "silent-knight-6700.png",
+        "dimensions": [
+          506,
+          597
+        ],
+        "sha256": "6892ada4b1f107e95f9b4680d2db9e6ab70bb5e8cef56214c7356f6219a6dffc"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-43d8f2e8-941c-4b06-9b84-9600cdc58fc1",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "6700"
+          ],
+          "title": "6700 — Datasheet (2018, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/6700-datasheet-2018.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "6c11fd0ec6242ace67beac3816d3a0e7439442cd72adb4b5548d8247b4509c50",
+          "bytes": 127660,
+          "pages": 4
+        },
+        {
+          "id": "facp-e2a6120d-be88-44a1-a4e6-05f00f1b975d",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "6700"
+          ],
+          "title": "6700 — Installation, Operations (2017, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/6700-installation-2017.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "6e6b6cae27be6cecaa499a9e59f4379bf76d7caf73444b312fbcae73eaf26ad4",
+          "bytes": 4548708,
+          "pages": 172
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/lp/show-to-go",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "silent-knight-6808-6820",
+      "model": "6808 / 6820 standard fascia family",
+      "source_document_records": [
+        {
+          "id": "facp-b17ff2e1-d5ac-460b-9775-62319d5d2e87",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "6808"
+          ],
+          "title": "6808 — Datasheet (2022, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/6808-datasheet-2022.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "07380a8bb91cb201378d93224d5de2d6a670d56991827c5a9c2b61ca905efe8a",
+          "bytes": 165806,
+          "pages": 4
+        },
+        {
+          "id": "facp-a6329b0a-1af4-46d3-911a-785495ce3922",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "6820"
+          ],
+          "title": "6820 — Datasheet (2022, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/6820-datasheet-2022.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "1215c0e3f8454d720268c42c11ace4cba7c17502ebe3461453536ccdb30e9c92",
+          "bytes": 180775,
+          "pages": 4
+        }
+      ],
+      "image": {
+        "id": "silent-knight-6808-6820",
+        "source_key": "sk-6808",
+        "source_pdf": "sk-6808.pdf",
+        "source_pdf_sha256": "07380a8bb91cb201378d93224d5de2d6a670d56991827c5a9c2b61ca905efe8a",
+        "extraction": {
+          "page": 1,
+          "xref": 56,
+          "image_pdf_rect": [
+            [
+              403.8599853515625,
+              121.67999267578125,
+              575.5079956054688,
+              395.8800048828125
+            ]
+          ]
+        },
+        "output": "silent-knight-6808-6820.png",
+        "dimensions": [
+          710,
+          1140
+        ],
+        "sha256": "370779fb31ec1749d774b78362f66f46a9533df18bc826fa4d9ed0ddc8518419"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-2e541f5a-4865-4066-8591-a259949af24e",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "6820 and 6820EVS"
+          ],
+          "title": "6820 and 6820EVS — Installation, Operations, Programming (2022, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/6820-6820evs-installation-2022.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "dbc5ecb7991f6f80b4f6277d35374491a058dea5b693e0a62581565018d9c382",
+          "bytes": 2491367,
+          "pages": 170
+        },
+        {
+          "id": "facp-8b5cd210-27b7-45f0-9f15-c53a433ab5b5",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "6808"
+          ],
+          "title": "6808 — Installation, Operations, Programming (2017, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/6808-installation.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "c001439fae56881b78d54323b041dc276e78d8a1b590a1174b3bb097849f4d33",
+          "bytes": 4860731,
+          "pages": 202
+        },
+        {
+          "id": "facp-a6329b0a-1af4-46d3-911a-785495ce3922",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "6820"
+          ],
+          "title": "6820 — Datasheet (2022, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/6820-datasheet-2022.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "1215c0e3f8454d720268c42c11ace4cba7c17502ebe3461453536ccdb30e9c92",
+          "bytes": 180775,
+          "pages": 4
+        },
+        {
+          "id": "facp-b17ff2e1-d5ac-460b-9775-62319d5d2e87",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "6808"
+          ],
+          "title": "6808 — Datasheet (2022, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/6808-datasheet-2022.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "07380a8bb91cb201378d93224d5de2d6a670d56991827c5a9c2b61ca905efe8a",
+          "bytes": 165806,
+          "pages": 4
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/lp/show-to-go",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "silent-knight-6820evs",
+      "model": "6820EVS",
+      "source_document_records": [
+        {
+          "id": "facp-8238596a-abff-4728-8775-5294b8f5965b",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "6820EVS"
+          ],
+          "title": "6820EVS — Datasheet (2022, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/6820evs-datasheet-2022.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "c740d86814aa0fd91195e14188bce583d32b21226eacc22bc53eba9688bfa545",
+          "bytes": 170362,
+          "pages": 4
+        }
+      ],
+      "image": {
+        "id": "silent-knight-6820evs",
+        "source_key": "sk-6820evs",
+        "source_pdf": "sk-6820evs.pdf",
+        "source_pdf_sha256": "c740d86814aa0fd91195e14188bce583d32b21226eacc22bc53eba9688bfa545",
+        "extraction": {
+          "page": 1,
+          "xref": 53,
+          "image_pdf_rect": [
+            [
+              403.9800109863281,
+              122.760009765625,
+              574.3280029296875,
+              341.760009765625
+            ]
+          ]
+        },
+        "output": "silent-knight-6820evs.png",
+        "dimensions": [
+          705,
+          906
+        ],
+        "sha256": "65d40f3de7767512f40996ee66fd337e8c72d273f770b7fcfbf9649140f56720"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-2e541f5a-4865-4066-8591-a259949af24e",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "6820 and 6820EVS"
+          ],
+          "title": "6820 and 6820EVS — Installation, Operations, Programming (2022, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/6820-6820evs-installation-2022.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "dbc5ecb7991f6f80b4f6277d35374491a058dea5b693e0a62581565018d9c382",
+          "bytes": 2491367,
+          "pages": 170
+        },
+        {
+          "id": "facp-8238596a-abff-4728-8775-5294b8f5965b",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "6820EVS"
+          ],
+          "title": "6820EVS — Datasheet (2022, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/6820evs-datasheet-2022.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "c740d86814aa0fd91195e14188bce583d32b21226eacc22bc53eba9688bfa545",
+          "bytes": 170362,
+          "pages": 4
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/lp/show-to-go",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "silent-knight-5208",
+      "model": "5208 / SK-5208",
+      "source_document_records": [
+        {
+          "id": "facp-7b2daa15-40c5-4c81-8229-cba59569eb74",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "5208"
+          ],
+          "title": "5208 — Datasheet (2013, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5208-datasheet-2013.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "6807e938a2094fb5c442153104e469b0f22d4f5967976ddf07536b1e6b98c421",
+          "bytes": 178756,
+          "pages": 2
+        }
+      ],
+      "image": {
+        "id": "silent-knight-5208",
+        "source_key": "sk-5208",
+        "source_pdf": "sk-5208.pdf",
+        "source_pdf_sha256": "6807e938a2094fb5c442153104e469b0f22d4f5967976ddf07536b1e6b98c421",
+        "extraction": {
+          "page": 1,
+          "xref": 35,
+          "image_pdf_rect": [
+            [
+              398.0,
+              292.9639892578125,
+              557.9743041992188,
+              535.9639892578125
+            ]
+          ]
+        },
+        "output": "silent-knight-5208.png",
+        "dimensions": [
+          431,
+          697
+        ],
+        "sha256": "ce1241265789ac6c1dd9f158eaa7ae9c8038b3435bce71b53b6c0b52f0ce609c"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-7b2daa15-40c5-4c81-8229-cba59569eb74",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "5208"
+          ],
+          "title": "5208 — Datasheet (2013, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5208-datasheet-2013.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "6807e938a2094fb5c442153104e469b0f22d4f5967976ddf07536b1e6b98c421",
+          "bytes": 178756,
+          "pages": 2
+        },
+        {
+          "id": "facp-8a171b0c-1e20-4d49-b366-7d2119d758d2",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "5208"
+          ],
+          "title": "5208 — Installation, Operations, Programming (2017, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5208-installation-2017.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "7c9b0691ff6d702a784502e0953f87cf21a50badea1d9309e8dd59a8bb1418f1",
+          "bytes": 2134296,
+          "pages": 102
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/brands/our-brands/silent-knight",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "silent-knight-sk2",
+      "model": "SK-2 / SK-2E",
+      "source_document_records": [
+        {
+          "id": "facp-22d56e88-dc59-4802-8727-b9e715797c7b",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "SK-2"
+          ],
+          "title": "SK-2 — Datasheet (2012, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/sk-2-datasheet-2012.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "eb4bcbca78cf69e9b935182746489caae5a7e75c49ba585f2abb9726caf654e2",
+          "bytes": 781196,
+          "pages": 2
+        }
+      ],
+      "image": {
+        "id": "silent-knight-sk2",
+        "source_key": "sk-sk2",
+        "source_pdf": "sk-sk2.pdf",
+        "source_pdf_sha256": "eb4bcbca78cf69e9b935182746489caae5a7e75c49ba585f2abb9726caf654e2",
+        "extraction": {
+          "page": 1,
+          "xref": 11,
+          "image_pdf_rect": [
+            [
+              391.239013671875,
+              279.31201171875,
+              558.6641845703125,
+              473.8258056640625
+            ]
+          ]
+        },
+        "output": "silent-knight-sk2.png",
+        "dimensions": [
+          399,
+          436
+        ],
+        "sha256": "2a5066735511d0d34b58ce58fd0bad7425a6187b6936a354f9c64783b745c921"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-22d56e88-dc59-4802-8727-b9e715797c7b",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "SK-2"
+          ],
+          "title": "SK-2 — Datasheet (2012, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/sk-2-datasheet-2012.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "eb4bcbca78cf69e9b935182746489caae5a7e75c49ba585f2abb9726caf654e2",
+          "bytes": 781196,
+          "pages": 2
+        },
+        {
+          "id": "facp-5d7d77fa-64f5-4fac-a33d-30a2262ef4db",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "SK-2 and SK-4"
+          ],
+          "title": "SK-2 and SK-4 — Installation, Operations, Programming (2014, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/sk-2_and_sk-4-installation-2014.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "2198077ec8466d935044b25b58e839533e47eb92725b29b60c04b78326122b18",
+          "bytes": 1152609,
+          "pages": 56
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/brands/our-brands/silent-knight",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "silent-knight-sk4",
+      "model": "SK-4 / SK-4E",
+      "source_document_records": [
+        {
+          "id": "facp-d0bb974f-7ec9-4993-bc41-2e2211da3853",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "SK-4"
+          ],
+          "title": "SK-4 — Datasheet (2012, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/sk-4-datasheet-2012.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "c8d6aa4f693b0bcef071b9094ffeaf7458a71f2f3d403b830e34c8d5d5a2bd04",
+          "bytes": 819152,
+          "pages": 2
+        }
+      ],
+      "image": {
+        "id": "silent-knight-sk4",
+        "source_key": "sk-sk4",
+        "source_pdf": "sk-sk4.pdf",
+        "source_pdf_sha256": "c8d6aa4f693b0bcef071b9094ffeaf7458a71f2f3d403b830e34c8d5d5a2bd04",
+        "extraction": {
+          "page": 1,
+          "xref": 11,
+          "image_pdf_rect": [
+            [
+              395.79998779296875,
+              274.24798583984375,
+              554.199951171875,
+              448.6427001953125
+            ]
+          ]
+        },
+        "output": "silent-knight-sk4.png",
+        "dimensions": [
+          307,
+          338
+        ],
+        "sha256": "2fc99a3850b546284ab1812494a81e49a510c4eaf05d951ec8d329da59f5246c"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-5d7d77fa-64f5-4fac-a33d-30a2262ef4db",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "SK-2 and SK-4"
+          ],
+          "title": "SK-2 and SK-4 — Installation, Operations, Programming (2014, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/sk-2_and_sk-4-installation-2014.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "2198077ec8466d935044b25b58e839533e47eb92725b29b60c04b78326122b18",
+          "bytes": 1152609,
+          "pages": 56
+        },
+        {
+          "id": "facp-d0bb974f-7ec9-4993-bc41-2e2211da3853",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "SK-4"
+          ],
+          "title": "SK-4 — Datasheet (2012, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/sk-4-datasheet-2012.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "c8d6aa4f693b0bcef071b9094ffeaf7458a71f2f3d403b830e34c8d5d5a2bd04",
+          "bytes": 819152,
+          "pages": 2
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/products/by-category/control-panels/fire-control-panels/expansion-modules/sk-4-and-sk-4e-fire-alarm-control-panel-module",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "silent-knight-5700",
+      "model": "IntelliKnight 5700",
+      "source_document_records": [
+        {
+          "id": "facp-52461c36-16c1-4825-8f27-a66dbcad626b",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "5700"
+          ],
+          "title": "5700 — Datasheet (2014, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5700-datasheet-2014.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "90c52ef5dbc6f6d1192ad0b538724dcfca667af68c947e3dae83d7b338b718c1",
+          "bytes": 711038,
+          "pages": 2
+        }
+      ],
+      "image": {
+        "id": "silent-knight-5700",
+        "source_key": "sk-5700",
+        "source_pdf": "sk-5700.pdf",
+        "source_pdf_sha256": "90c52ef5dbc6f6d1192ad0b538724dcfca667af68c947e3dae83d7b338b718c1",
+        "extraction": {
+          "page": 1,
+          "xref": 3,
+          "image_pdf_rect": [
+            [
+              358.7099914550781,
+              291.84100341796875,
+              509.4423828125,
+              471.18182373046875
+            ]
+          ]
+        },
+        "output": "silent-knight-5700.png",
+        "dimensions": [
+          471,
+          560
+        ],
+        "sha256": "42592dc9f4537b2c1ef5df9a8a8181d82430cc98d858b7671f00be67ed69c906"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-1fb58002-2789-4bc0-b845-51ba169719f1",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "5700"
+          ],
+          "title": "5700 — Installation, Operations, Programming (2017, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5700-installation-2017.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "f616c362be7e26adfd32203a6fc0adfd10a8ddf8ea9b603386fcd5312a12a284",
+          "bytes": 4364942,
+          "pages": 180
+        },
+        {
+          "id": "facp-52461c36-16c1-4825-8f27-a66dbcad626b",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "5700"
+          ],
+          "title": "5700 — Datasheet (2014, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5700-datasheet-2014.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "90c52ef5dbc6f6d1192ad0b538724dcfca667af68c947e3dae83d7b338b718c1",
+          "bytes": 711038,
+          "pages": 2
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/brands/our-brands/silent-knight/resources/discontinued-products",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "silent-knight-5808-5820xl",
+      "model": "IntelliKnight 5808 / 5820XL fascia family",
+      "source_document_records": [
+        {
+          "id": "facp-96da9e6e-98d1-4c11-8efe-a2da6a6f41e0",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "5808"
+          ],
+          "title": "5808 — Datasheet (2013, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5808-datasheet-2013.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "9918d489ce4eb0dee7d5a866c49d2be20413ab03ad578099603426799ff6d11c",
+          "bytes": 169403,
+          "pages": 2
+        },
+        {
+          "id": "facp-007e31e8-64b3-454c-9f96-902329fe96ac",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "5820XL"
+          ],
+          "title": "5820XL — Datasheet (2017, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5820xl-datasheet-2017.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "a6877510157042680323e273998a18846525e2e926658f8e4ce95b6f104dad15",
+          "bytes": 518232,
+          "pages": 4
+        }
+      ],
+      "image": {
+        "id": "silent-knight-5808-5820xl",
+        "source_key": "sk-5808",
+        "source_pdf": "sk-5808.pdf",
+        "source_pdf_sha256": "9918d489ce4eb0dee7d5a866c49d2be20413ab03ad578099603426799ff6d11c",
+        "extraction": {
+          "page": 1,
+          "xref": 39,
+          "image_pdf_rect": [
+            [
+              390.5840148925781,
+              275.7480163574219,
+              500.41680908203125,
+              456.7524108886719
+            ]
+          ]
+        },
+        "output": "silent-knight-5808-5820xl.png",
+        "dimensions": [
+          250,
+          411
+        ],
+        "sha256": "a9f638fc2394ac34fdbb8bcfa1f773a27de59afa4bbd91b98b4e046e9da67e5c"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-007e31e8-64b3-454c-9f96-902329fe96ac",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "5820XL"
+          ],
+          "title": "5820XL — Datasheet (2017, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5820xl-datasheet-2017.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "a6877510157042680323e273998a18846525e2e926658f8e4ce95b6f104dad15",
+          "bytes": 518232,
+          "pages": 4
+        },
+        {
+          "id": "facp-96da9e6e-98d1-4c11-8efe-a2da6a6f41e0",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "5808"
+          ],
+          "title": "5808 — Datasheet (2013, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5808-datasheet-2013.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "9918d489ce4eb0dee7d5a866c49d2be20413ab03ad578099603426799ff6d11c",
+          "bytes": 169403,
+          "pages": 2
+        },
+        {
+          "id": "facp-c4abc902-8ced-4fd3-807a-a1c71c04b583",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "5808"
+          ],
+          "title": "5808 — Installation, Operations, Programming (2017, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5808-installation.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "81be8dd692dae853b43ffbadb212569f73cd3ffaf6ea4d9a6bb193b6d8bcaa15",
+          "bytes": 4047656,
+          "pages": 180
+        },
+        {
+          "id": "facp-c5f5b043-1775-47ef-8f89-80dc6d8a5fcf",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "5820XL and 5820XL-EVS"
+          ],
+          "title": "5820XL and 5820XL-EVS — Installation, Operations, Programming (2017, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5820xl_and_5820xl-evs-installation.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "be35f2a502d049b55a5e0ddefa09d0466917b755a9be98c90f038df51a7076f0",
+          "bytes": 4605031,
+          "pages": 237
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/brands/our-brands/silent-knight/resources/discontinued-products",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "silent-knight-5820xl-evs",
+      "model": "IntelliKnight 5820XL-EVS",
+      "source_document_records": [
+        {
+          "id": "facp-3eb4bd29-3753-4b66-b34b-a874dd62ff3d",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "5820XL-EVS"
+          ],
+          "title": "5820XL-EVS — Datasheet (2016, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5820xl-evs-datasheet-2016.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "692e60604ead482a0a9af2d95c574690104b322cd3b00e54950e60058400ced2",
+          "bytes": 262277,
+          "pages": 2
+        }
+      ],
+      "image": {
+        "id": "silent-knight-5820xl-evs",
+        "source_key": "sk-5820xlevs",
+        "source_pdf": "sk-5820xlevs.pdf",
+        "source_pdf_sha256": "692e60604ead482a0a9af2d95c574690104b322cd3b00e54950e60058400ced2",
+        "extraction": {
+          "page": 1,
+          "xref": 35,
+          "image_pdf_rect": [
+            [
+              386.40411376953125,
+              235.39898681640625,
+              516.183837890625,
+              416.09368896484375
+            ]
+          ]
+        },
+        "output": "silent-knight-5820xl-evs.png",
+        "dimensions": [
+          406,
+          565
+        ],
+        "sha256": "063c93ff72cbd194349387c87b1f63629abfe3159fbb4c8fd87cf7070408487f"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-3eb4bd29-3753-4b66-b34b-a874dd62ff3d",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "5820XL-EVS"
+          ],
+          "title": "5820XL-EVS — Datasheet (2016, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5820xl-evs-datasheet-2016.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "692e60604ead482a0a9af2d95c574690104b322cd3b00e54950e60058400ced2",
+          "bytes": 262277,
+          "pages": 2
+        },
+        {
+          "id": "facp-c5f5b043-1775-47ef-8f89-80dc6d8a5fcf",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "5820XL and 5820XL-EVS"
+          ],
+          "title": "5820XL and 5820XL-EVS — Installation, Operations, Programming (2017, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5820xl_and_5820xl-evs-installation.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "be35f2a502d049b55a5e0ddefa09d0466917b755a9be98c90f038df51a7076f0",
+          "bytes": 4605031,
+          "pages": 237
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/brands/our-brands/silent-knight/resources/discontinued-products",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    },
+    {
+      "id": "silent-knight-ifp2000",
+      "model": "Farenhyt IFP-2000",
+      "source_document_records": [
+        {
+          "id": "facp-0002d651-5207-4c1c-ba4b-320c5a4b1fd7",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "IFP-2000 and RPS-2000"
+          ],
+          "title": "IFP-2000 and RPS-2000 — Datasheet (2013, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/ifp-2000_and_rps-2000-datasheet-2013.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "96b6c1161c7dea3253ef68782753c3c01894f800ba96fb38d1d94a32f29374ed",
+          "bytes": 627911,
+          "pages": 2
+        }
+      ],
+      "image": {
+        "id": "silent-knight-ifp2000",
+        "source_key": "sk-ifp2000",
+        "source_pdf": "sk-ifp2000.pdf",
+        "source_pdf_sha256": "96b6c1161c7dea3253ef68782753c3c01894f800ba96fb38d1d94a32f29374ed",
+        "extraction": {
+          "page": 1,
+          "xref": 8,
+          "image_pdf_rect": [
+            [
+              406.1390075683594,
+              198.74899291992188,
+              510.3544921875,
+              369.72979736328125
+            ]
+          ]
+        },
+        "output": "silent-knight-ifp2000.png",
+        "dimensions": [
+          317,
+          530
+        ],
+        "sha256": "fac8ce94b28b7d99a881d9d2706e3b0cdb6aa437fdd4b3f2370f7b99b68f2766"
+      },
+      "linked_documents": [
+        {
+          "id": "facp-0002d651-5207-4c1c-ba4b-320c5a4b1fd7",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "IFP-2000 and RPS-2000"
+          ],
+          "title": "IFP-2000 and RPS-2000 — Datasheet (2013, source-listed)",
+          "type": "datasheet",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/ifp-2000_and_rps-2000-datasheet-2013.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "96b6c1161c7dea3253ef68782753c3c01894f800ba96fb38d1d94a32f29374ed",
+          "bytes": 627911,
+          "pages": 2
+        },
+        {
+          "id": "facp-f30db5d7-ed7f-4b0e-a54e-bb08d7b1a538",
+          "brand": "Silent Knight",
+          "category": "fire",
+          "models": [
+            "IFP-2000 and RPS-2000"
+          ],
+          "title": "IFP-2000 and RPS-2000 — Installation, Operations, Programming (2008, source-listed)",
+          "type": "installation",
+          "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/ifp-2000_and_rps-2000-installation-2008.pdf",
+          "source": "https://facpmanuals.com/manuals/silent_knight",
+          "revision": null,
+          "status": "complete-file",
+          "sha256": "15fe27b6f324cc237730f663f003026a2333c9e2ca7b5bf0cfbb4194152f55ae",
+          "bytes": 3611893,
+          "pages": 238
+        }
+      ],
+      "manufacturer_corroboration_url": "https://buildings.honeywell.com/us/en/brands/our-brands/silent-knight/resources/discontinued-products",
+      "review": "Full first pages and extracted product images visually inspected. Document labels distinguish the specific model; shared fascias are grouped with explicit scope limits."
+    }
+  ],
+  "deferred": [
+    {
+      "id": "silent-knight-5207",
+      "model": "5207",
+      "reason": "The retrieved 1998 manufacturer datasheet contains only a small open-cabinet photo. It was inspected but excluded in favour of clearer exterior identification references."
+    }
+  ],
+  "grouped_families": [
+    {
+      "id": "fire-lite-es-series",
+      "reason": "One ES family visual reference with three distinct model manuals; photo specifically ES-50X."
+    },
+    {
+      "id": "fire-lite-mrp2001-mrp2002",
+      "reason": "Related releasing-panel enclosure grouped once. Photo specifically MRP-2002; MRP-2001 and MRP-2002 functions/document applicability remain separate."
+    },
+    {
+      "id": "silent-knight-6808-6820",
+      "reason": "Closely shared standard-panel fascia, picture specifically 6808, model label required."
+    },
+    {
+      "id": "silent-knight-5808-5820xl",
+      "reason": "Closely shared legacy fascia, picture specifically 5808, model label required."
+    }
+  ],
+  "document_verification": {
+    "date": "2026-10-30",
+    "all_linked_pdfs_retrieved": true,
+    "verified_pdf_count": 51,
+    "method": "Every linked URL returned a complete PDF and parsed successfully. Manufacturer model/title and edition text on opening pages reviewed against the card scope. PDF byte counts, page counts and SHA-256 are recorded here for reproducibility; original catalogue identities/status are not changed.",
+    "records": [
+      {
+        "id": "facp-1722019e-bc3f-4e2a-ad66-8684fe6f5ae1",
+        "title": "ES-50X — Installation, Operations, Programming (2022, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/es-50x-installation-2022.pdf",
+        "bytes": 2873936,
+        "sha256": "45cdb965bd466c082b8f5f5d8e3051764335824c76bba84583f3ef48af91273b",
+        "pages": 168,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-1746fa9b-1aa1-4807-a676-e955b2fdd780",
+        "title": "ES-50X Series — Datasheet (2023, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/es-50x_series-datasheet.pdf",
+        "bytes": 7233954,
+        "sha256": "70eb792ed25300eda4dc9563bf972e261f399cac6c9d4d86f53f9fe8f34ba5b1",
+        "pages": 4,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-37883af0-c97c-4e5e-96b6-783bed35c7f5",
+        "title": "ES-1000X Series — Datasheet (2023, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/es-1000x_series-datasheet-2023.pdf",
+        "bytes": 5589100,
+        "sha256": "64eb405716ee0b3d52d21c721bbc600c5e09d123b1ac1bdd8b29df79343d480b",
+        "pages": 4,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-42d66a97-1dd2-4d3b-b9d6-f68f191e3ec6",
+        "title": "ES-200X Series — Datasheet (2023, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/es-200x_series-datasheet.pdf",
+        "bytes": 6497452,
+        "sha256": "2d5c23dc7424f07b13a534832fee8a19e07797643e5d6e463e45092e08d14cd3",
+        "pages": 4,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-6a064dee-894c-463d-a0d7-1311aadc96a0",
+        "title": "ES-1000X — Installation, Operations, Programming (2023, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/es-1000x-installation-2023.pdf",
+        "bytes": 2734975,
+        "sha256": "4f691b9bc2e92a59931360a5719696fbde7a4cce19adcf10c1e7dcb9baf5443c",
+        "pages": 170,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-fe57c3ed-49d4-4b79-b40a-eb028e8be1e6",
+        "title": "ES-200X — Installation, Operations, Programming (2022, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/es-200x-installation-2022.pdf",
+        "bytes": 3533949,
+        "sha256": "b55af9b1f1f492c87fa3a71b8839761613ed89e8deffc904fd92ebc66894b95f",
+        "pages": 172,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-7da937d1-a7d6-42cb-a777-bc7e34e43d39",
+        "title": "MS-2 and MS-4 — Installation, Operations, Programming (2014, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-2_and_ms-4.pdf",
+        "bytes": 1326595,
+        "sha256": "328a6bda768f2efaebae26f205449b1b7f9a4200ad79126c17e3663443a17c39",
+        "pages": 56,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-9c3c3385-3149-4d78-877d-13ceb4d7718a",
+        "title": "MS-2 — Datasheet (2011, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-2-datasheet-2011.pdf",
+        "bytes": 83782,
+        "sha256": "3aaa1b2d67163aa03990e11029882def8bde0a67d1c773fce649617b904d8d7a",
+        "pages": 2,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-d96855fc-c36c-4d5f-8f5e-76ec5124874c",
+        "title": "MS-4 — Datasheet (2012, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-4-datasheet-2012.pdf",
+        "bytes": 88053,
+        "sha256": "21cbbe5e986cb903c41feec97471a22d25ff0b3b80439beaa9cf54115fd077c6",
+        "pages": 2,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-0acc694b-46bf-4449-9c9a-90588a7ceec8",
+        "title": "MS-5UD and MS-10UD — Installation, Operations, Programming (2018, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-5ud_and_ms-10ud-installation-2018.pdf",
+        "bytes": 2854694,
+        "sha256": "3066ae8835ffe535a51cac160cf6b0d102515d0c9e653b33d9597765da599288",
+        "pages": 136,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-d36027c4-0c4b-4d70-99de-97c93c2d29ba",
+        "title": "MS-5UD and MS-10UD Series — Datasheet (2010, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-5ud_and_ms-10ud_series-datasheet-2010-revd.pdf",
+        "bytes": 178448,
+        "sha256": "035b6035ce5ee8f40a2066fcee42e9402cdb7e4becc29def519295b2b5904aee",
+        "pages": 4,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-a11cacb4-dbe5-4348-831b-49e2e0bfbdb9",
+        "title": "MS-25, MS-25C and MS-25E — Installation, Operations, Programming (2011, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-25-ms-25c-ms-25e-installation.pdf",
+        "bytes": 2319017,
+        "sha256": "11113b8b92f864d7c72cdf2799e342971af495074c76659b2d7ed8236a320b4a",
+        "pages": 106,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-d5e19b8b-46b4-4e36-b953-cba880b1bd8e",
+        "title": "MS-25 Rev 2 — Datasheet (2011, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-25_rev_2-datasheet-2011.pdf",
+        "bytes": 214466,
+        "sha256": "056f0986052ab5bd2c25d483c3c2b6574ed089dfafc4a36e3c03478aa25b6a65",
+        "pages": 4,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-04050529-d12a-4077-ad55-7574a99505a5",
+        "title": "MS-9050UD — Datasheet (2012, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9050ud-datasheet-2012.pdf",
+        "bytes": 703846,
+        "sha256": "5bbb00b67d87d506e49a27f6ed603a9496ee07d188e7d844a935f7a97fedd8b0",
+        "pages": 4,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-b0036d9c-0b45-48f0-a506-d7384478b737",
+        "title": "MS-9050UD — Installation, Operations, Programming (2015, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9050ud-installation-2015.pdf",
+        "bytes": 2909290,
+        "sha256": "96252bbf7c97f61294dafbbf8954317bdbd0db10125823800edd0de9f6a9e639",
+        "pages": 192,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-5b9c2fcc-479f-4972-b486-06b164bada0c",
+        "title": "MS-9200 — Installation, Operations, Programming (2002, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9200-installation-2002.pdf",
+        "bytes": 3173507,
+        "sha256": "135ff484099a9ea785ba778412236f7404f1dd291f9e2835fd0976f20c49f871",
+        "pages": 92,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-e7ed0df9-f033-4b29-b841-640f0ff337d5",
+        "title": "MS-9200 — Datasheet (2005, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9200-datasheet-2005.pdf",
+        "bytes": 919499,
+        "sha256": "63db4dba46dd3f64b28d0bbbffe7beb15a781e82fdbc0a517d3207d795a8343d",
+        "pages": 4,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-caadfb5c-97a9-48b5-bed7-932f6c6973ac",
+        "title": "MS-9200UDLS — Installation, Operations, Programming (2015, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9200udls-installation-2015.pdf",
+        "bytes": 2903913,
+        "sha256": "626e8934eac98944b6538f0167b7db3acfa7ab1f93991dbaddd02a4eaccd09d3",
+        "pages": 204,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-eca38154-2a8b-4986-a6c1-f843c8bfa9c7",
+        "title": "MS-9200UDLS Rev 3 — Datasheet (2010, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9200udls_rev_3-datasheet-2010.pdf",
+        "bytes": 992972,
+        "sha256": "e4c3d55f4ff2a21e0c325e2c91939e880391c5f4253b7a913e968de462c6815b",
+        "pages": 6,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-6402e30a-38ed-4b36-b6fb-addd49774cc5",
+        "title": "MS-9600LS and MS-9600UDLS — Installation, Operations, Programming (2015, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9600ls_and_ms-9600udls-installation-2015.pdf",
+        "bytes": 2770710,
+        "sha256": "0a9996f04f5732588590ca9033b6261f204c3e2f3546b29aeee43c7a23e576fa",
+        "pages": 184,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-8082407b-0493-4da7-90ac-b4bc87952bb4",
+        "title": "MS-9600LS and MS-9600UDLS — Datasheet (2019, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-9600ls_and_ms-9600udls-datasheet-2019.pdf",
+        "bytes": 932925,
+        "sha256": "0680725a53e0b9ac964c0a2acb5e1a56ef8c60ab57799c6d810bbfe672d59783",
+        "pages": 6,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-70dac307-942a-4240-8514-69599dacb746",
+        "title": "MRP-2001 Control Panel — Datasheet (2012, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/mrp-2001_control_panel-datasheet-2012.pdf",
+        "bytes": 634654,
+        "sha256": "ff0b75fa9aea3b26ffcd2982ad92e4a0f1d35fb9e4596bbc72be7eaa3e8e2229",
+        "pages": 4,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-75a115e9-1518-4908-be9e-db5ffb1f2c84",
+        "title": "MRP-2002 Release Panel — Datasheet (2016, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/mrp-2002_release_panel-datasheet-2016.pdf",
+        "bytes": 781663,
+        "sha256": "590de2cace3ff9212300b92b8ce8c8b5d71ae5a2e14853812a0c450e01e2580a",
+        "pages": 4,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-974c2ca9-1459-403e-a1ee-badfb4dcc314",
+        "title": "MRP-2002 — Installation, Operations, Programming (2017, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/mrp-2002-installation-2017.pdf",
+        "bytes": 2845883,
+        "sha256": "8bd0c07adf21b1184645cd6bf95aa0a175d6af550dbfec24a7ae595daea4d8d5",
+        "pages": 160,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-aab0ab31-9cd4-4b2d-8f68-22c9f4d2c058",
+        "title": "MS-5210UD — Datasheet (2004, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-5210ud-datasheet-2004.pdf",
+        "bytes": 739927,
+        "sha256": "ba584b1ae5f9f52a3d47adcf1bdfe7081faeee8b3dae55c81c5a0f71bcc5e7be",
+        "pages": 3,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-f49e62f4-ed5d-4294-b635-a1cafc40108b",
+        "title": "MS-5210UD — Installation, Operations, Programming (2002, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/ms-5210ud-installation-2002.pdf",
+        "bytes": 2929322,
+        "sha256": "f090292450b924e1567f6944c875b52cfe5d3bbbf2dbd8d8a1e6c4eba57764c6",
+        "pages": 124,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-62e4169b-e032-43f3-8270-750d3d382801",
+        "title": "Sensiscan 200 — Installation, Operations, Programming (1996, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/sensiscan_200-installation-1996.pdf",
+        "bytes": 1455575,
+        "sha256": "0f824768e89f2eaa457f836553e81799a9ab0a925a403969c219b2684b098f10",
+        "pages": 69,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-f31f8355-8267-4768-bc58-c1466111339a",
+        "title": "Sensiscan 200 — Datasheet (1998, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/sensiscan_200-datasheet-1998.pdf",
+        "bytes": 793162,
+        "sha256": "0d281a68c4eef2f379ef3c94a72fd140593807fa964449bd589d7b3f72c6a581",
+        "pages": 4,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-065e6f49-e26c-4c2a-988e-b2c5e5b3c6a7",
+        "title": "Sensiscan 2000 — Datasheet (2002, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/sensiscan_2000-datasheet-2002.pdf",
+        "bytes": 1068316,
+        "sha256": "e922beb2789f064e1d31880919259f9991f9b3c96a454c3ba499c811e7b2c2f3",
+        "pages": 4,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-782c0e97-88ad-4370-b79e-36fce22ea0e6",
+        "title": "Sensiscan 2000 — Installation, Operations, Programming (1996, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Fire-Lite/sensiscan_2000-installation-1996.pdf",
+        "bytes": 2249054,
+        "sha256": "79c3049a23574ba8083d7641f2f201c406d377471ea7b8d1da0da5a7b0412885",
+        "pages": 74,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-43d8f2e8-941c-4b06-9b84-9600cdc58fc1",
+        "title": "6700 — Datasheet (2018, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/6700-datasheet-2018.pdf",
+        "bytes": 127660,
+        "sha256": "6c11fd0ec6242ace67beac3816d3a0e7439442cd72adb4b5548d8247b4509c50",
+        "pages": 4,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-e2a6120d-be88-44a1-a4e6-05f00f1b975d",
+        "title": "6700 — Installation, Operations (2017, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/6700-installation-2017.pdf",
+        "bytes": 4548708,
+        "sha256": "6e6b6cae27be6cecaa499a9e59f4379bf76d7caf73444b312fbcae73eaf26ad4",
+        "pages": 172,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-2e541f5a-4865-4066-8591-a259949af24e",
+        "title": "6820 and 6820EVS — Installation, Operations, Programming (2022, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/6820-6820evs-installation-2022.pdf",
+        "bytes": 2491367,
+        "sha256": "dbc5ecb7991f6f80b4f6277d35374491a058dea5b693e0a62581565018d9c382",
+        "pages": 170,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-8b5cd210-27b7-45f0-9f15-c53a433ab5b5",
+        "title": "6808 — Installation, Operations, Programming (2017, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/6808-installation.pdf",
+        "bytes": 4860731,
+        "sha256": "c001439fae56881b78d54323b041dc276e78d8a1b590a1174b3bb097849f4d33",
+        "pages": 202,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-a6329b0a-1af4-46d3-911a-785495ce3922",
+        "title": "6820 — Datasheet (2022, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/6820-datasheet-2022.pdf",
+        "bytes": 180775,
+        "sha256": "1215c0e3f8454d720268c42c11ace4cba7c17502ebe3461453536ccdb30e9c92",
+        "pages": 4,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-b17ff2e1-d5ac-460b-9775-62319d5d2e87",
+        "title": "6808 — Datasheet (2022, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/6808-datasheet-2022.pdf",
+        "bytes": 165806,
+        "sha256": "07380a8bb91cb201378d93224d5de2d6a670d56991827c5a9c2b61ca905efe8a",
+        "pages": 4,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-8238596a-abff-4728-8775-5294b8f5965b",
+        "title": "6820EVS — Datasheet (2022, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/6820evs-datasheet-2022.pdf",
+        "bytes": 170362,
+        "sha256": "c740d86814aa0fd91195e14188bce583d32b21226eacc22bc53eba9688bfa545",
+        "pages": 4,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-7b2daa15-40c5-4c81-8229-cba59569eb74",
+        "title": "5208 — Datasheet (2013, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5208-datasheet-2013.pdf",
+        "bytes": 178756,
+        "sha256": "6807e938a2094fb5c442153104e469b0f22d4f5967976ddf07536b1e6b98c421",
+        "pages": 2,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-8a171b0c-1e20-4d49-b366-7d2119d758d2",
+        "title": "5208 — Installation, Operations, Programming (2017, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5208-installation-2017.pdf",
+        "bytes": 2134296,
+        "sha256": "7c9b0691ff6d702a784502e0953f87cf21a50badea1d9309e8dd59a8bb1418f1",
+        "pages": 102,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-22d56e88-dc59-4802-8727-b9e715797c7b",
+        "title": "SK-2 — Datasheet (2012, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/sk-2-datasheet-2012.pdf",
+        "bytes": 781196,
+        "sha256": "eb4bcbca78cf69e9b935182746489caae5a7e75c49ba585f2abb9726caf654e2",
+        "pages": 2,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-5d7d77fa-64f5-4fac-a33d-30a2262ef4db",
+        "title": "SK-2 and SK-4 — Installation, Operations, Programming (2014, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/sk-2_and_sk-4-installation-2014.pdf",
+        "bytes": 1152609,
+        "sha256": "2198077ec8466d935044b25b58e839533e47eb92725b29b60c04b78326122b18",
+        "pages": 56,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-d0bb974f-7ec9-4993-bc41-2e2211da3853",
+        "title": "SK-4 — Datasheet (2012, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/sk-4-datasheet-2012.pdf",
+        "bytes": 819152,
+        "sha256": "c8d6aa4f693b0bcef071b9094ffeaf7458a71f2f3d403b830e34c8d5d5a2bd04",
+        "pages": 2,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-1fb58002-2789-4bc0-b845-51ba169719f1",
+        "title": "5700 — Installation, Operations, Programming (2017, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5700-installation-2017.pdf",
+        "bytes": 4364942,
+        "sha256": "f616c362be7e26adfd32203a6fc0adfd10a8ddf8ea9b603386fcd5312a12a284",
+        "pages": 180,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-52461c36-16c1-4825-8f27-a66dbcad626b",
+        "title": "5700 — Datasheet (2014, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5700-datasheet-2014.pdf",
+        "bytes": 711038,
+        "sha256": "90c52ef5dbc6f6d1192ad0b538724dcfca667af68c947e3dae83d7b338b718c1",
+        "pages": 2,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-007e31e8-64b3-454c-9f96-902329fe96ac",
+        "title": "5820XL — Datasheet (2017, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5820xl-datasheet-2017.pdf",
+        "bytes": 518232,
+        "sha256": "a6877510157042680323e273998a18846525e2e926658f8e4ce95b6f104dad15",
+        "pages": 4,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-96da9e6e-98d1-4c11-8efe-a2da6a6f41e0",
+        "title": "5808 — Datasheet (2013, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5808-datasheet-2013.pdf",
+        "bytes": 169403,
+        "sha256": "9918d489ce4eb0dee7d5a866c49d2be20413ab03ad578099603426799ff6d11c",
+        "pages": 2,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-c4abc902-8ced-4fd3-807a-a1c71c04b583",
+        "title": "5808 — Installation, Operations, Programming (2017, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5808-installation.pdf",
+        "bytes": 4047656,
+        "sha256": "81be8dd692dae853b43ffbadb212569f73cd3ffaf6ea4d9a6bb193b6d8bcaa15",
+        "pages": 180,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-c5f5b043-1775-47ef-8f89-80dc6d8a5fcf",
+        "title": "5820XL and 5820XL-EVS — Installation, Operations, Programming (2017, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5820xl_and_5820xl-evs-installation.pdf",
+        "bytes": 4605031,
+        "sha256": "be35f2a502d049b55a5e0ddefa09d0466917b755a9be98c90f038df51a7076f0",
+        "pages": 237,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-3eb4bd29-3753-4b66-b34b-a874dd62ff3d",
+        "title": "5820XL-EVS — Datasheet (2016, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/5820xl-evs-datasheet-2016.pdf",
+        "bytes": 262277,
+        "sha256": "692e60604ead482a0a9af2d95c574690104b322cd3b00e54950e60058400ced2",
+        "pages": 2,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-0002d651-5207-4c1c-ba4b-320c5a4b1fd7",
+        "title": "IFP-2000 and RPS-2000 — Datasheet (2013, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/ifp-2000_and_rps-2000-datasheet-2013.pdf",
+        "bytes": 627911,
+        "sha256": "96b6c1161c7dea3253ef68782753c3c01894f800ba96fb38d1d94a32f29374ed",
+        "pages": 2,
+        "valid_pdf": true
+      },
+      {
+        "id": "facp-f30db5d7-ed7f-4b0e-a54e-bb08d7b1a538",
+        "title": "IFP-2000 and RPS-2000 — Installation, Operations, Programming (2008, source-listed)",
+        "url": "https://docs.facpmanuals.com/manuals/Silent_Knight/ifp-2000_and_rps-2000-installation-2008.pdf",
+        "bytes": 3611893,
+        "sha256": "15fe27b6f324cc237730f663f003026a2333c9e2ca7b5bf0cfbb4194152f55ae",
+        "pages": 238,
+        "valid_pdf": true
+      }
+    ]
+  },
+  "validation": {
+    "unique_panel_ids": 23,
+    "all_images_exist": true,
+    "source_image_bytes": 4199599,
+    "minimum_image_dimension": 250,
+    "visual_review_contact_sheets": [
+      "research/pictures-00.jpg",
+      "research/pictures-01.jpg"
+    ],
+    "no_existing_panel_ids_reused": true,
+    "no_catalogue_mutation": true,
+    "no_uk_priority_claims": true
+  }
+}

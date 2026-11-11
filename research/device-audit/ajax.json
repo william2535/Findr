@@ -1,0 +1,403 @@
+{
+  "brand": "Ajax",
+  "category": "security",
+  "review_date": "2026-10-30",
+  "device_family_count": 10,
+  "device_ids": [
+    "ajax-motionprotect",
+    "ajax-motionprotect-plus",
+    "ajax-combiprotect",
+    "ajax-doorprotect",
+    "ajax-doorprotect-plus",
+    "ajax-glassprotect",
+    "ajax-homesiren",
+    "ajax-streetsiren",
+    "ajax-motioncam",
+    "ajax-motionprotect-curtain"
+  ],
+  "scope": "Intruder detector/contact/sounder identification pack. No control panels or keypads. Colour options are not counted separately.",
+  "source_method": "Primary manufacturer pages and original manufacturer PDFs. Independent hosts are disclosed for preserved original PDFs. Product images are real manufacturer assets or exact PDF illustrations.",
+  "document_review": {
+    "device-doc-ajax-740eadda7644": {
+      "file": "research/Ajax-MotionProtect-and-MotionProtect-Plus-User-Manual.pdf",
+      "sha256": "740eadda76447faeeabf58f2b61e73a48538d69c17f6593732cfa194ea8c7522",
+      "bytes": 763093,
+      "pages": 15,
+      "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-MotionProtect-and-MotionProtect-Plus-User-Manual.pdf",
+      "models_checked_in_pdf": [
+        "MotionProtect",
+        "MotionProtect Plus"
+      ],
+      "printed_edition": "10 June 2020",
+      "document_kind": "Manufacturer document, preserved original PDF bytes",
+      "source_page_url": "https://ajax.systems/support/manuals/motionprotect/"
+    },
+    "device-doc-ajax-9486bbc86323": {
+      "file": "research/Ajax-CombiProtect-User-Manual.pdf",
+      "sha256": "9486bbc86323f8293eb3d23596e8a627ac27b16c03efd44d34e91ece9d9cb45f",
+      "bytes": 721072,
+      "pages": 15,
+      "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-CombiProtect-User-Manual.pdf",
+      "models_checked_in_pdf": [
+        "CombiProtect"
+      ],
+      "printed_edition": "29 June 2020",
+      "document_kind": "Manufacturer document, preserved original PDF bytes",
+      "source_page_url": "https://ajax.systems/support/manuals/combiprotect/"
+    },
+    "device-doc-ajax-cf09dfff46dd": {
+      "file": "research/Ajax-DoorProtect-User-Manual.pdf",
+      "sha256": "cf09dfff46dddf1d39f5deb2b110d742e514774966e12e7c4df60cb7dc643770",
+      "bytes": 560616,
+      "pages": 15,
+      "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-DoorProtect-User-Manual.pdf",
+      "models_checked_in_pdf": [
+        "DoorProtect"
+      ],
+      "printed_edition": "30 June 2020",
+      "document_kind": "Manufacturer document, preserved original PDF bytes",
+      "source_page_url": "https://ajax.systems/support/manuals/doorprotect/"
+    },
+    "device-doc-ajax-b17f6521ffcf": {
+      "file": "research/Ajax-DoorProtect-Plus-User-Manual.pdf",
+      "sha256": "b17f6521ffcf438bbeb48ae9eb1c04f58d5742f74b0476e9cc2224f3ea37c165",
+      "bytes": 800607,
+      "pages": 17,
+      "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-DoorProtect-Plus-User-Manual.pdf",
+      "models_checked_in_pdf": [
+        "DoorProtect Plus"
+      ],
+      "printed_edition": "17 July 2020",
+      "document_kind": "Manufacturer document, preserved original PDF bytes",
+      "source_page_url": "https://ajax.systems/support/manuals/doorprotect-plus/"
+    },
+    "device-doc-ajax-c05166983480": {
+      "file": "research/Ajax-GlassProtect-User-Manual.pdf",
+      "sha256": "c05166983480808ac4de20426050901713ba15dff335a1b4292d426ba7a0ce60",
+      "bytes": 530525,
+      "pages": 14,
+      "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-GlassProtect-User-Manual.pdf",
+      "models_checked_in_pdf": [
+        "GlassProtect"
+      ],
+      "printed_edition": "8 June 2020",
+      "document_kind": "Manufacturer document, preserved original PDF bytes",
+      "source_page_url": "https://ajax.systems/support/manuals/glassprotect/"
+    },
+    "device-doc-ajax-53339097c1a5": {
+      "file": "research/Ajax-HomeSiren-User-Manual.pdf",
+      "sha256": "53339097c1a5d94bb9a86131ae0c824b12ffbcb8e672956f6ef43e1800f4c872",
+      "bytes": 517865,
+      "pages": 13,
+      "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-HomeSiren-User-Manual.pdf",
+      "models_checked_in_pdf": [
+        "HomeSiren"
+      ],
+      "printed_edition": "8 June 2020",
+      "document_kind": "Manufacturer document, preserved original PDF bytes",
+      "source_page_url": "https://ajax.systems/support/manuals/homesiren/"
+    },
+    "device-doc-ajax-3b7dbd6db378": {
+      "file": "research/Ajax-StreetSiren-User-Manual.pdf",
+      "sha256": "3b7dbd6db378a597639976ccef27254476bb063f4fabebe01b2d190373cbb360",
+      "bytes": 741175,
+      "pages": 13,
+      "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-StreetSiren-User-Manual.pdf",
+      "models_checked_in_pdf": [
+        "StreetSiren"
+      ],
+      "printed_edition": "27 May 2020",
+      "document_kind": "Manufacturer document, preserved original PDF bytes",
+      "source_page_url": "https://ajax.systems/support/manuals/streetsiren/"
+    },
+    "device-doc-ajax-44764eb47998": {
+      "file": "research/Ajax-MotionCam-User-Manual.pdf",
+      "sha256": "44764eb47998d5c529972d008f591e9505b5c7ddda0ad6d0dc4ec17b19d3c72a",
+      "bytes": 1977249,
+      "pages": 21,
+      "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-MotionCam-User-Manual.pdf",
+      "models_checked_in_pdf": [
+        "MotionCam"
+      ],
+      "printed_edition": "3 June 2020",
+      "document_kind": "Manufacturer document, preserved original PDF bytes",
+      "source_page_url": "https://ajax.systems/support/manuals/motioncam/"
+    },
+    "device-doc-ajax-26155dac817d": {
+      "file": "research/Ajax-MotionProtect-Curtain-User-Manual.pdf",
+      "sha256": "26155dac817d50d9c06cdbda1ec22fd93ef8a71959f0cb5ab6a457ceff665150",
+      "bytes": 677951,
+      "pages": 23,
+      "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-MotionProtect-Curtain-User-Manual.pdf",
+      "models_checked_in_pdf": [
+        "MotionProtect Curtain"
+      ],
+      "printed_edition": "6 November 2020",
+      "document_kind": "Manufacturer document, preserved original PDF bytes",
+      "source_page_url": "https://ajax.systems/support/manuals/motionprotect-curtain/"
+    }
+  },
+  "photo_review": [
+    {
+      "device_id": "ajax-motionprotect",
+      "source_page_url": "https://ajax.systems/support/manuals/motionprotect/",
+      "source_image_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-MotionProtect-and-MotionProtect-Plus-User-Manual.pdf",
+      "research_image": "research/Ajax-MotionProtect-and-MotionProtect-Plus-User-Manual-hero.png",
+      "original_image_sha256": "453ecdfcd84e445f6b900f4207ec9ebf3b0b7b194307e4c93570996b676e2b2b",
+      "original_dimensions": [
+        800,
+        420
+      ],
+      "output_sha256": "a2a63a41fc05dd106d935bb3fd526e7b3175ba07379ab802479bb947006bec9e",
+      "output_dimensions": [
+        800,
+        420
+      ],
+      "source_pdf_page": 1,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Exact model illustration extracted from page 1; the MotionProtect/Plus manual explicitly shares one housing illustration. No inferred distinction from appearance.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "ajax-motionprotect-plus",
+      "source_page_url": "https://ajax.systems/support/manuals/motionprotect-plus/",
+      "source_image_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-MotionProtect-and-MotionProtect-Plus-User-Manual.pdf",
+      "research_image": "research/Ajax-MotionProtect-and-MotionProtect-Plus-User-Manual-hero.png",
+      "original_image_sha256": "453ecdfcd84e445f6b900f4207ec9ebf3b0b7b194307e4c93570996b676e2b2b",
+      "original_dimensions": [
+        800,
+        420
+      ],
+      "output_sha256": "a2a63a41fc05dd106d935bb3fd526e7b3175ba07379ab802479bb947006bec9e",
+      "output_dimensions": [
+        800,
+        420
+      ],
+      "source_pdf_page": 1,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Exact model illustration extracted from page 1; the MotionProtect/Plus manual explicitly shares one housing illustration. No inferred distinction from appearance.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "ajax-combiprotect",
+      "source_page_url": "https://ajax.systems/support/manuals/combiprotect/",
+      "source_image_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-CombiProtect-User-Manual.pdf",
+      "research_image": "research/Ajax-CombiProtect-User-Manual-hero.png",
+      "original_image_sha256": "df4d4da13529ae1896d3c5e042a3236ca43afd74846131661ab860c0fa6c1cc4",
+      "original_dimensions": [
+        800,
+        420
+      ],
+      "output_sha256": "b574f048ac5a3d3ce4008caffebe0d6a60872d621b5211aad62a7b3acd994886",
+      "output_dimensions": [
+        800,
+        420
+      ],
+      "source_pdf_page": 1,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Exact model illustration extracted from page 1; the MotionProtect/Plus manual explicitly shares one housing illustration. No inferred distinction from appearance.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "ajax-doorprotect",
+      "source_page_url": "https://ajax.systems/support/manuals/doorprotect/",
+      "source_image_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-DoorProtect-User-Manual.pdf",
+      "research_image": "research/Ajax-DoorProtect-User-Manual-hero.png",
+      "original_image_sha256": "04b4f92118db9974a162096478a1876b2f96735b764d38e6049e4c3afabd597d",
+      "original_dimensions": [
+        800,
+        420
+      ],
+      "output_sha256": "b643b0b0138a383954616958e6697a00d7f6f527b6a20c596cc2c3e6f6e19215",
+      "output_dimensions": [
+        800,
+        420
+      ],
+      "source_pdf_page": 1,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Exact model illustration extracted from page 1; the MotionProtect/Plus manual explicitly shares one housing illustration. No inferred distinction from appearance.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "ajax-doorprotect-plus",
+      "source_page_url": "https://ajax.systems/support/manuals/doorprotect-plus/",
+      "source_image_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-DoorProtect-Plus-User-Manual.pdf",
+      "research_image": "research/Ajax-DoorProtect-Plus-User-Manual-hero.png",
+      "original_image_sha256": "04b4f92118db9974a162096478a1876b2f96735b764d38e6049e4c3afabd597d",
+      "original_dimensions": [
+        800,
+        420
+      ],
+      "output_sha256": "b643b0b0138a383954616958e6697a00d7f6f527b6a20c596cc2c3e6f6e19215",
+      "output_dimensions": [
+        800,
+        420
+      ],
+      "source_pdf_page": 1,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Exact model illustration extracted from page 1; the MotionProtect/Plus manual explicitly shares one housing illustration. No inferred distinction from appearance.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "ajax-glassprotect",
+      "source_page_url": "https://ajax.systems/support/manuals/glassprotect/",
+      "source_image_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-GlassProtect-User-Manual.pdf",
+      "research_image": "research/Ajax-GlassProtect-User-Manual-hero.png",
+      "original_image_sha256": "998965e62c9992a2e93da60d0cf642304f5b002f51d83bfa29e4dd4aa1ee2908",
+      "original_dimensions": [
+        800,
+        420
+      ],
+      "output_sha256": "ee0581feeb449f6e63d21f32167cfe1343a074ea888fd90c63b89cf5c82a4ec7",
+      "output_dimensions": [
+        800,
+        420
+      ],
+      "source_pdf_page": 1,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Exact model illustration extracted from page 1; the MotionProtect/Plus manual explicitly shares one housing illustration. No inferred distinction from appearance.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "ajax-homesiren",
+      "source_page_url": "https://ajax.systems/support/manuals/homesiren/",
+      "source_image_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-HomeSiren-User-Manual.pdf",
+      "research_image": "research/Ajax-HomeSiren-User-Manual-hero.png",
+      "original_image_sha256": "608bf525bc77c7b5cad2e7c2958f4716e304ededc748942ab5a679daa1129a3c",
+      "original_dimensions": [
+        800,
+        420
+      ],
+      "output_sha256": "820b712a69487f67328ac36408baba1602c3ae5258ce57e5495176803e767258",
+      "output_dimensions": [
+        800,
+        420
+      ],
+      "source_pdf_page": 1,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Exact model illustration extracted from page 1; the MotionProtect/Plus manual explicitly shares one housing illustration. No inferred distinction from appearance.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "ajax-streetsiren",
+      "source_page_url": "https://ajax.systems/support/manuals/streetsiren/",
+      "source_image_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-StreetSiren-User-Manual.pdf",
+      "research_image": "research/Ajax-StreetSiren-User-Manual-hero.png",
+      "original_image_sha256": "e786d960d83c0252aaf8fcd4f0be2cbc64b0775c2ea463bb2bcd99d38bd92840",
+      "original_dimensions": [
+        800,
+        420
+      ],
+      "output_sha256": "cb14fffb96c3f0b1454e26634e6cbeb741aa15ca6e61ca52bd0b77cbbbe44fa0",
+      "output_dimensions": [
+        800,
+        420
+      ],
+      "source_pdf_page": 1,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Exact model illustration extracted from page 1; the MotionProtect/Plus manual explicitly shares one housing illustration. No inferred distinction from appearance.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "ajax-motioncam",
+      "source_page_url": "https://ajax.systems/support/manuals/motioncam/",
+      "source_image_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-MotionCam-User-Manual.pdf",
+      "research_image": "research/Ajax-MotionCam-User-Manual-hero.png",
+      "original_image_sha256": "61d6737dad749e5546a67881750ab402c6842456994bb391a553244f7cda8386",
+      "original_dimensions": [
+        800,
+        420
+      ],
+      "output_sha256": "4340d0f1002bbd49d412aaa11bc421a49029218791b3bec0a0cae71895fcff4a",
+      "output_dimensions": [
+        800,
+        420
+      ],
+      "source_pdf_page": 1,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Exact model illustration extracted from page 1; the MotionProtect/Plus manual explicitly shares one housing illustration. No inferred distinction from appearance.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "ajax-motionprotect-curtain",
+      "source_page_url": "https://ajax.systems/support/manuals/motionprotect-curtain/",
+      "source_image_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-MotionProtect-Curtain-User-Manual.pdf",
+      "research_image": "research/Ajax-MotionProtect-Curtain-User-Manual-hero.png",
+      "original_image_sha256": "060279615d2f7352ba9f87c3809e688705261d75bc58abdbe21abbe3f6d226ef",
+      "original_dimensions": [
+        800,
+        420
+      ],
+      "output_sha256": "33063d5f24343934083df397407ed34b70c7b023d6e62f9dfb4afca40b225769",
+      "output_dimensions": [
+        800,
+        420
+      ],
+      "source_pdf_page": 1,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Exact model illustration extracted from page 1; the MotionProtect/Plus manual explicitly shares one housing illustration. No inferred distinction from appearance.",
+      "reviewed_visually": true
+    }
+  ],
+  "online_only_device_ids": [],
+  "failures_and_deferrals": [
+    {
+      "url": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2Fmpcurtain_og_fa97d49eae%401.jpg&1777766789",
+      "out": "ajax/research/ajax-20acb6e3d08d-hero.jpg",
+      "error": "HTTP Error 400: Bad Request"
+    },
+    {
+      "url": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2Fdoorprotect_og_image_d4af2be0e9%401.jpg&1777766915",
+      "out": "ajax/research/ajax-31ec417c87c3-hero.jpg",
+      "error": "HTTP Error 400: Bad Request"
+    },
+    {
+      "url": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2Fmotioncam_og_image_ca2decc345%401.jpg&1777771653",
+      "out": "ajax/research/ajax-3837d17e4660-hero.jpg",
+      "error": "HTTP Error 400: Bad Request"
+    },
+    {
+      "url": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2FSS_W_d8572599bc%401.jpg&1777769371",
+      "out": "ajax/research/ajax-4d6ca373b0b7-hero.jpg",
+      "error": "HTTP Error 400: Bad Request"
+    },
+    {
+      "url": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2FHS_W_46fc0c61c6%401.jpg&1777772478",
+      "out": "ajax/research/ajax-5d2fa14fb8ca-hero.jpg",
+      "error": "HTTP Error 400: Bad Request"
+    },
+    {
+      "url": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2Fdoorprotect_plus_og_e6c4eb2522%401.jpg&1777767022",
+      "out": "ajax/research/ajax-7e7baaa693fd-hero.jpg",
+      "error": "HTTP Error 400: Bad Request"
+    },
+    {
+      "url": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2FCP_W_731f0b0a8a%401.jpg&1777768735",
+      "out": "ajax/research/ajax-af0b7d4e7c33-hero.jpg",
+      "error": "HTTP Error 400: Bad Request"
+    },
+    {
+      "url": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2Fmotionprotect_og_image_1513bf0b30%401.jpg&1777762842",
+      "out": "ajax/research/ajax-bf92b9a58fdb-hero.jpg",
+      "error": "HTTP Error 400: Bad Request"
+    },
+    {
+      "url": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2Fmotionprotect_plus_og_image_f21fb06aa9%401.jpg&1777769110",
+      "out": "ajax/research/ajax-f0ce8387a135-hero.jpg",
+      "error": "HTTP Error 400: Bad Request"
+    },
+    {
+      "url": "https://ajax.systems/api/cdn-img/?img=%2Fupload%2Fglassprotect_og_image_4e7ae2a0fe%401.jpg&1777769151",
+      "out": "ajax/research/ajax-f9691d9be788-hero.jpg",
+      "error": "HTTP Error 400: Bad Request"
+    }
+  ],
+  "review_limits": "Identification reference, not proof of exact hardware generation, regional approval or panel compatibility. Existing archive IDs retained only after matching brand/category and retrieved document scope. Manufacturer pages may change after review.",
+  "special_findings": [
+    "Current official manuals were downloaded and read as HTML. Their /api/cdn-img public photo endpoint returned HTTP 400; no unverified image was used.",
+    "Exact illustrations came from the first page of nine original manufacturer manuals independently hosted by Intelligent Security. Dates, hashes, PDF bytes, page counts and model names were checked.",
+    "Every card retains the exact current official online archive reference and adds the explicitly dated 2020 PDF; no PDF was synthesized from an online page.",
+    "MotionProtect and Plus share the original manual photo. Their different sensing technologies are explicit; no claim that the cover distinguishes them.",
+    "MotionCam has Jeweller and Wings. Historic hub/repeater limits are not promoted as current compatibility advice."
+  ]
+}

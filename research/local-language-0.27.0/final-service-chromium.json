@@ -1,0 +1,71 @@
+{
+  "browser": "chromium",
+  "profile": "/tmp/findr027-model-chromium-profile",
+  "syntheticReference": true,
+  "offlineVerified": false,
+  "checks": [
+    "Pinned model files installed and whole-file hashes verified",
+    "Actual worker WASM CPU model generated output",
+    "Follow-up ran against the same loaded model and conversation"
+  ],
+  "measurements": [
+    {
+      "stage": "cold actual inference",
+      "text": "To check the event history on this panel, you can use the following steps:\n\n1. Open the event log by selecting View, then Log.\n2. Scroll through the events by using the arrow keys to navigate through the list.\n3. You can also use the \"Next\" and \"Previous\"",
+      "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+      "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+      "backend": "wasm",
+      "interpretationOnly": true,
+      "contextTruncated": false,
+      "metrics": {
+        "loadMs": 3704.7000000011176,
+        "inputTokens": 102,
+        "outputTokens": 64,
+        "firstTokenMs": 2038.5999999996275,
+        "generationMs": 12535.5,
+        "tokensPerSecond": 5.105500378923856
+      }
+    },
+    {
+      "stage": "warm contextual follow-up",
+      "text": "The menu you're referring to is the \"Log\" panel, specifically the \"View\" and \"Log\" sections.",
+      "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+      "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+      "backend": "wasm",
+      "interpretationOnly": true,
+      "contextTruncated": false,
+      "metrics": {
+        "loadMs": 0,
+        "inputTokens": 182,
+        "outputTokens": 25,
+        "firstTokenMs": 4365.9000000003725,
+        "generationMs": 9839.10000000149,
+        "tokensPerSecond": 2.5408828043211487
+      }
+    }
+  ],
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "hardwareConcurrency": 5,
+    "deviceMemory": 16,
+    "webGPU": true
+  },
+  "model": {
+    "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+    "title": "SmolLM2 360M Instruct · int8 · local CPU",
+    "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+    "dtype": "q8",
+    "backend": "wasm",
+    "parameters": 360000000,
+    "license": "Apache-2.0",
+    "originalModel": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct",
+    "modelCard": "https://huggingface.co/onnx-community/SmolLM2-360M-Instruct-ONNX",
+    "maxInputTokens": 768,
+    "maxNewTokens": 96,
+    "limits": "Compact local language model. Interpretations need source checks. It does not verify electrical procedures, measurements or compatibility. CPU replies can take tens of seconds; saved references remain available.",
+    "bytes": 366642692,
+    "runtimeBytes": 22563501
+  },
+  "qualityNote": "Generated text is recorded for inspection, not asserted to be technically correct. Quick Questions source/evidence guards are tested separately.",
+  "passed": true
+}

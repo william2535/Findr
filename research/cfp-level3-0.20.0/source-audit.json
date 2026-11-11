@@ -1,0 +1,295 @@
+{
+  "checkedOn": "2026-11-02",
+  "baselineCommit": "ed00c1fa0479ccfc5c111abeec4de2eac33f1843",
+  "sourceId": "cfp-engineer-rev1",
+  "document": "DFU7004010 Rev 1",
+  "sha256": "6e04b478f4fe32f3f33a0365e660a5629a6621882a6231b3f2d56985d6c1ace8",
+  "bytes": 1033522,
+  "pageCount": 24,
+  "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CFP%202%2C4%2C8%20zone%20conventional%20fire%20panel%20manual.pdf",
+  "frontSource": {
+    "id": "cfp-user-rev2",
+    "document": "DFU7001020 Rev 2",
+    "pdfPage": 6,
+    "printedPage": "6",
+    "figure": "Panel layout/accessing the controls"
+  },
+  "mainPCBSource": {
+    "pdfPage": 16,
+    "printedPage": "16",
+    "figure": "Figure 12 — Location of programming tools on Main Control PCB"
+  },
+  "functionOrder": [
+    "coincidence",
+    "nonlatching",
+    "delays",
+    "test",
+    "system-fault",
+    "repeater-fault",
+    "open-circuit",
+    "short-circuit",
+    "sounder-status"
+  ],
+  "functionEvidence": [
+    {
+      "id": "coincidence",
+      "label": "Coincidence",
+      "kind": "programming",
+      "scope": "Pairs 1/2, 3/4, 5/6, 7/8; Next Option confirms each staged choice.",
+      "sourceRefs": [
+        {
+          "sourceId": "cfp-engineer-rev1",
+          "pdfPage": 16,
+          "printedPage": "16",
+          "section": ""
+        },
+        {
+          "sourceId": "cfp-engineer-rev1",
+          "pdfPage": 16,
+          "printedPage": "16",
+          "section": "Function sequence"
+        }
+      ],
+      "warning": "The manual marks this function as non-compliant with EN54-2. Fictional training only."
+    },
+    {
+      "id": "nonlatching",
+      "label": "Nonlatching",
+      "kind": "programming",
+      "scope": "Individual zones; Next Option confirms each staged choice.",
+      "sourceRefs": [
+        {
+          "sourceId": "cfp-engineer-rev1",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": ""
+        },
+        {
+          "sourceId": "cfp-engineer-rev1",
+          "pdfPage": 16,
+          "printedPage": "16",
+          "section": "Function sequence"
+        }
+      ],
+      "warning": "The manual marks this function as non-compliant with EN54-2. Fictional training only."
+    },
+    {
+      "id": "delays",
+      "label": "Delays",
+      "kind": "programming",
+      "scope": "Zones 1–8, Remote Output, Auxiliary Output, then zone 1; shared VR1 period.",
+      "sourceRefs": [
+        {
+          "sourceId": "cfp-engineer-rev1",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": ""
+        },
+        {
+          "sourceId": "cfp-engineer-rev1",
+          "pdfPage": 16,
+          "printedPage": "16",
+          "section": "Function sequence"
+        }
+      ]
+    },
+    {
+      "id": "test",
+      "label": "Test",
+      "kind": "programming",
+      "scope": "Individual zones; exit level 3 before testing and restore test assignments afterward.",
+      "sourceRefs": [
+        {
+          "sourceId": "cfp-engineer-rev1",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": ""
+        },
+        {
+          "sourceId": "cfp-engineer-rev1",
+          "pdfPage": 16,
+          "printedPage": "16",
+          "section": "Function sequence"
+        }
+      ]
+    },
+    {
+      "id": "system-fault",
+      "label": "System fault",
+      "kind": "diagnostic",
+      "scope": "Read-only codes: zone indicator 1 watchdog, 2 site-memory corruption, 3 PLL.",
+      "sourceRefs": [
+        {
+          "sourceId": "cfp-engineer-rev1",
+          "pdfPage": 21,
+          "printedPage": "21",
+          "section": ""
+        },
+        {
+          "sourceId": "cfp-engineer-rev1",
+          "pdfPage": 16,
+          "printedPage": "16",
+          "section": "Function sequence"
+        }
+      ]
+    },
+    {
+      "id": "repeater-fault",
+      "label": "Repeater fault",
+      "kind": "diagnostic",
+      "scope": "Read-only indicators correspond to repeater numbers 1–8.",
+      "sourceRefs": [
+        {
+          "sourceId": "cfp-engineer-rev1",
+          "pdfPage": 22,
+          "printedPage": "22",
+          "section": ""
+        },
+        {
+          "sourceId": "cfp-engineer-rev1",
+          "pdfPage": 16,
+          "printedPage": "16",
+          "section": "Function sequence"
+        }
+      ]
+    },
+    {
+      "id": "open-circuit",
+      "label": "Open circuit",
+      "kind": "diagnostic",
+      "scope": "Read-only zone fault indications for known open-circuit faults.",
+      "sourceRefs": [
+        {
+          "sourceId": "cfp-engineer-rev1",
+          "pdfPage": 19,
+          "printedPage": "19",
+          "section": ""
+        },
+        {
+          "sourceId": "cfp-engineer-rev1",
+          "pdfPage": 16,
+          "printedPage": "16",
+          "section": "Function sequence"
+        }
+      ]
+    },
+    {
+      "id": "short-circuit",
+      "label": "Short circuit",
+      "kind": "diagnostic",
+      "scope": "Read-only zone fault indications for known short-circuit faults.",
+      "sourceRefs": [
+        {
+          "sourceId": "cfp-engineer-rev1",
+          "pdfPage": 19,
+          "printedPage": "19",
+          "section": ""
+        },
+        {
+          "sourceId": "cfp-engineer-rev1",
+          "pdfPage": 16,
+          "printedPage": "16",
+          "section": "Function sequence"
+        }
+      ]
+    },
+    {
+      "id": "sounder-status",
+      "label": "Sounder status",
+      "kind": "programming",
+      "scope": "Direct toggle: three quick flashes and a longer gap means new-zone resound; equal on/off means no resound.",
+      "sourceRefs": [
+        {
+          "sourceId": "cfp-engineer-rev1",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": ""
+        },
+        {
+          "sourceId": "cfp-engineer-rev1",
+          "pdfPage": 16,
+          "printedPage": "16",
+          "section": "Function sequence"
+        }
+      ]
+    }
+  ],
+  "delayRange": {
+    "minimum": 1,
+    "maximum": 10,
+    "unit": "minutes",
+    "pages": [
+      15,
+      17
+    ],
+    "note": "The drawing includes a 0 tick; permitted programming text explicitly specifies 1–10 minutes."
+  },
+  "testTiming": {
+    "soundingSecondsApproximate": 1,
+    "offSecondsApproximate": 8,
+    "page": 15,
+    "indicatorDiscrepancy": "Page15 describes quick pulsing Test/zone indicators; page17 says steady after Escape Access. This release states the source distinction and avoids asserting universal firmware blink timing."
+  },
+  "behaviourLimits": [
+    "No live circuit/mains procedure is supplied by the cover control.",
+    "No automatic access exit or lid sensor is inferred from replacing the simulated cover.",
+    "Only Next Option-confirmed programming selections are committed in the training model; exact unconfirmed engineering exit/wrap behaviour is not separately stated.",
+    "All diagnostics use labelled synthetic inputs. No physical cable-break location is inferred."
+  ],
+  "preservation": {
+    "sigmaProfileSha256": "17f8ee4ff1fb6d6550367560b4428baaab5dc3a60c48fca28497f9e715fcaef8",
+    "legacyCFPLessonsSha256": "123c24938651eaf926402e781660a048181ccb61e1c83ddd3428d8ff8bd4fca2",
+    "originalCFPLessonIds": [
+      "cfp-code-access",
+      "cfp-lamps",
+      "cfp-fault-mute",
+      "cfp-resound",
+      "cfp-clear-reset",
+      "cfp-evacuate",
+      "cfp-zone-restore",
+      "cfp-cancel-toggle"
+    ],
+    "originalSigmaLessonIds": [
+      "sigma-lamps",
+      "sigma-access",
+      "sigma-fault-mute",
+      "sigma-resound",
+      "sigma-clear-reset",
+      "sigma-zone-restore",
+      "sigma-sounder-restore",
+      "sigma-test-restore"
+    ]
+  },
+  "newLessons": [
+    {
+      "id": "cfp-cover-engineering",
+      "steps": 4
+    },
+    {
+      "id": "cfp-engineering-coincidence",
+      "steps": 12
+    },
+    {
+      "id": "cfp-engineering-nonlatching",
+      "steps": 14
+    },
+    {
+      "id": "cfp-engineering-delays",
+      "steps": 24
+    },
+    {
+      "id": "cfp-engineering-walk-test",
+      "steps": 15
+    },
+    {
+      "id": "cfp-engineering-resound",
+      "steps": 6
+    },
+    {
+      "id": "cfp-engineering-diagnostics",
+      "steps": 18
+    }
+  ],
+  "newLessonCount": 7,
+  "newStepCount": 93
+}

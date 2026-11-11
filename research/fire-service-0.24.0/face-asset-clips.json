@@ -1,0 +1,62 @@
+[
+  {
+    "asset": "xfp-16-fascia.png",
+    "source": "c-tec-6a8ae5ddd7bc.pdf",
+    "pdfPage": 14,
+    "clipPoints": [
+      84.5,
+      129.4,
+      534.5,
+      324.5
+    ],
+    "scale": 3
+  },
+  {
+    "asset": "xfp-32-fascia.png",
+    "source": "c-tec-b03be75d8eb7.pdf",
+    "pdfPage": 14,
+    "clipPoints": [
+      65.4,
+      142.1,
+      529.4,
+      338.1
+    ],
+    "scale": 3
+  },
+  {
+    "asset": "xfp-32-instructions.png",
+    "source": "c-tec-b03be75d8eb7.pdf",
+    "pdfPage": 14,
+    "clipPoints": [
+      65.4,
+      365.8,
+      529.4,
+      453.4
+    ],
+    "scale": 3
+  },
+  {
+    "asset": "xfp-16-memory-unlock.png",
+    "source": "c-tec-6a8ae5ddd7bc.pdf",
+    "pdfPage": 18,
+    "clipPoints": [
+      348.5,
+      586,
+      539,
+      703
+    ],
+    "scale": 3
+  },
+  {
+    "asset": "xfp-32-memory-unlock.png",
+    "source": "c-tec-b03be75d8eb7.pdf",
+    "pdfPage": 18,
+    "clipPoints": [
+      354,
+      586,
+      540,
+      692
+    ],
+    "scale": 3
+  }
+]

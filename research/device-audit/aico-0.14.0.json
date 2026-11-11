@@ -1,0 +1,522 @@
+{
+  "batch": "aico-0.14.0",
+  "verified_date": "2026-10-30",
+  "brand": "Aico",
+  "scope": "Device identification and matched manufacturer references; no new emulator or commissioning workflow.",
+  "devices": [
+    {
+      "id": "aico-ei3014",
+      "model_codes": [
+        "Ei3014"
+      ],
+      "source_page_url": "https://www.aico.co.uk/product/ei3014-heat-alarm/",
+      "source_image_url": "https://www.aico.co.uk/wp-content/uploads/2020/08/EI3014_MAIN-600x600.jpg",
+      "original_image_sha256": "6f22492e36146a32438c81c652cc3b05afc09c120c3520b728f3a9e16beb1626",
+      "image_sha256": "2ae75f24a89afafe26a0c359bd53b0ff32fabd26c1a72757a73c94b36824fb06",
+      "image_dimensions": [
+        600,
+        600
+      ],
+      "record_ids": [
+        "aico-0d5d7df89314",
+        "device-doc-aico-6c128c0b705a"
+      ],
+      "notes": "3000-series housing marked Heat Alarm, with the heat sensor identified in the Rev4 overview. Check Ei3014 on the label; Ei3016 and Ei3024 use similar shells.",
+      "limits": "Aico domestic alarm system. This is not a commercial addressable-loop detector; check the underside model label and whether an RF module is actually fitted."
+    },
+    {
+      "id": "aico-ei3016",
+      "model_codes": [
+        "Ei3016"
+      ],
+      "source_page_url": "https://www.aico.co.uk/product/ei3016-optical-smoke-alarm/",
+      "source_image_url": "https://www.aico.co.uk/wp-content/uploads/2020/08/EI3016_MAIN-600x600.jpg",
+      "original_image_sha256": "328fab840af735007acc54f9a9a3a650b4dc3cd400fa667543f3775b9d872c76",
+      "image_sha256": "ab7f8bafcebf522aef5e91e8e4dea6fa9fb4b1a8bec58eb7896b6f615d33acd2",
+      "image_dimensions": [
+        600,
+        600
+      ],
+      "record_ids": [
+        "aico-0b817031d733",
+        "device-doc-aico-6c128c0b705a"
+      ],
+      "notes": "3000-series optical smoke alarm. The manufacturer picture has Optical Smoke Alarm wording; confirm Ei3016 on the base label.",
+      "limits": "Aico domestic alarm system. This is not a commercial addressable-loop detector; check the underside model label and whether an RF module is actually fitted."
+    },
+    {
+      "id": "aico-ei3024",
+      "model_codes": [
+        "Ei3024"
+      ],
+      "source_page_url": "https://www.aico.co.uk/product/ei3024-multi-sensor-fire-alarm/",
+      "source_image_url": "https://www.aico.co.uk/wp-content/uploads/2020/08/EI3024_MAIN-600x600.jpg",
+      "original_image_sha256": "37e75a829b55b105d7d840740f6733a5dd5730b10a2a3a78d3cc349cdfa8e415",
+      "image_sha256": "8a95f6d4a7b7ae8452a3ea6b9199108f88e4767c3eab729b13d000a0d833c031",
+      "image_dimensions": [
+        600,
+        600
+      ],
+      "record_ids": [
+        "device-doc-aico-6c128c0b705a"
+      ],
+      "notes": "3000-series optical smoke and heat multisensor. Its shared housing does not make it an Ei3014, Ei3016 or Ei3030.",
+      "limits": "Aico domestic alarm system. This is not a commercial addressable-loop detector; check the underside model label and whether an RF module is actually fitted. Ei3024 is a fire multisensor, not the Ei3030 fire-and-CO model."
+    },
+    {
+      "id": "aico-ei3030",
+      "model_codes": [
+        "Ei3030"
+      ],
+      "source_page_url": "https://www.aico.co.uk/product/ei3030-multi-sensor-fire-and-carbon-monoxide-alarm/",
+      "source_image_url": "https://www.aico.co.uk/wp-content/uploads/2020/08/EI3030_MAIN-600x600.jpg",
+      "original_image_sha256": "118ecf28242ca9a15050b5b9d3b4a98481f950991bee1317cedf8fb5d98e7e85",
+      "image_sha256": "cd65898119a8e122d94ad24655e989339b04d2e205780f516b07132dd2aa61fd",
+      "image_dimensions": [
+        600,
+        600
+      ],
+      "record_ids": [
+        "aico-4fb4b285b074",
+        "device-doc-aico-7dbcfdf98ccb"
+      ],
+      "notes": "Manufacturer photo carries Multi-Sensor Fire & Carbon Monoxide Alarm wording. The model uses optical, heat and electrochemical CO sensing; check Ei3030 on the label.",
+      "limits": "Aico domestic alarm system. This is not a commercial addressable-loop detector; check the underside model label and whether an RF module is actually fitted. The linked B20665 Rev4 is specifically for Ei3030; do not apply the Ei3024 manual as a substitute."
+    },
+    {
+      "id": "aico-ei660i",
+      "model_codes": [
+        "Ei660i"
+      ],
+      "source_page_url": "https://www.aico.co.uk/product/ei660i-multi-sensor-fire-alarm/",
+      "source_image_url": "https://www.aico.co.uk/wp-content/uploads/2022/10/EI660I_MAIN-600x600.jpg",
+      "original_image_sha256": "215df0b142b445ccf6997923cc5d43a7d406862aa4430a54da401f7694ee1f46",
+      "image_sha256": "8fbc02225d6224ac224f9d4f6ccc9ee11ac019458c3f9265975904af8c116a04",
+      "image_dimensions": [
+        600,
+        600
+      ],
+      "record_ids": [
+        "aico-957a8189361b",
+        "aico-6d83ddd276c6"
+      ],
+      "notes": "Optical-and-heat alarm in the Ei600 housing. The Rev3 model chart identifies Ei660i as RF-upgradable; Ei660iRF is a separately labelled variant.",
+      "limits": "Battery domestic alarm, not a panel-loop head. Confirm the model and fitted module; the picture alone does not prove radio interconnection."
+    },
+    {
+      "id": "aico-ei650i",
+      "model_codes": [
+        "Ei650i"
+      ],
+      "source_page_url": "https://www.aico.co.uk/product/ei650i-battery-optical-alarm/",
+      "source_image_url": "https://www.aico.co.uk/wp-content/uploads/2020/07/EI650I_MAIN-600x600.jpg",
+      "original_image_sha256": "320e7442922d2fd492597f937fa196959222eba813dc7692b3a26ffdc9051deb",
+      "image_sha256": "a19ad129fa6a3d40324d8ecf1addd678d9d92cacd74ededdc2b81e6cfd235284",
+      "image_dimensions": [
+        600,
+        600
+      ],
+      "record_ids": [
+        "aico-33d08994b662",
+        "aico-6d83ddd276c6"
+      ],
+      "notes": "Round optical smoke alarm with a central test/hush button. The Ei600 Rev3 model chart distinguishes standalone Ei650i from Ei650iRF.",
+      "limits": "Ei650i has no RF interconnect or RF-upgrade tick in the linked model chart. Do not identify it as Ei650iRF or assume that an Ei600MRF can be added."
+    },
+    {
+      "id": "aico-ei630i",
+      "model_codes": [
+        "Ei630i"
+      ],
+      "source_page_url": "https://www.aico.co.uk/product/ei630i-battery-heat-alarm/",
+      "source_image_url": "https://www.aico.co.uk/wp-content/uploads/2022/05/EI630I_MAIN-600x600.jpg",
+      "original_image_sha256": "9d83476adc68343653d821cfbe802cd5bb5d369a480c27947a198742477df644",
+      "image_sha256": "a22ab21bc93daaac9f1ecf104831eaae92d6b17f33899f663bdcd85fbe269bd1",
+      "image_dimensions": [
+        600,
+        600
+      ],
+      "record_ids": [
+        "aico-8b45527b51c1",
+        "aico-6d83ddd276c6"
+      ],
+      "notes": "Ei600 heat-only alarm. Its similar round enclosure also appears on optical and multisensor variants; the model label and sensor type distinguish it.",
+      "limits": "The Rev3 chart identifies Ei630i as RF-upgradable and Ei630iRF as an RF-interconnected variant. A radio module is not established by this exterior picture."
+    },
+    {
+      "id": "aico-ei144e",
+      "model_codes": [
+        "Ei144e"
+      ],
+      "source_page_url": "https://www.aico.co.uk/product/ei144e-heat-alarm/",
+      "source_image_url": "https://www.aico.co.uk/wp-content/uploads/2022/03/EI144_MAIN-600x600.jpg",
+      "original_image_sha256": "89f3888b10ad05a5cdbb8f095a38d16a17c6384aed9b33cfe7da514e7139cf6c",
+      "image_sha256": "33b69d5ac63f1e2da45367c25a46562b5b96c8b6764553d48b9c716c1c525a18",
+      "image_dimensions": [
+        600,
+        600
+      ],
+      "record_ids": [
+        "aico-55f3ba358d2a",
+        "device-doc-aico-8f8b5876b06d"
+      ],
+      "notes": "140e heat alarm with a visible central heat-sensor cage in the product photo. The linked overview distinguishes it from the smooth-faced Ei146e optical model.",
+      "limits": "This is the 140e generation with replaceable alkaline backup, not the rechargeable 3000-series head. RF requires the appropriate separately specified base/accessory."
+    },
+    {
+      "id": "aico-ei146e",
+      "model_codes": [
+        "Ei146e"
+      ],
+      "source_page_url": "https://www.aico.co.uk/product/ei146e-optical-smoke-alarm/",
+      "source_image_url": "https://www.aico.co.uk/wp-content/uploads/2022/03/EI146_MAIN-600x600.jpg",
+      "original_image_sha256": "7b33907017d235fc7da22394c5d2a697498a73bca117b50ea2a74b45f9eaddfb",
+      "image_sha256": "a192081bc2860520e8487d4e109433b47bf797bcbce3cc4dae01679ab9440911",
+      "image_dimensions": [
+        600,
+        600
+      ],
+      "record_ids": [
+        "aico-d3fb97090714",
+        "device-doc-aico-8f8b5876b06d"
+      ],
+      "notes": "140e optical smoke alarm with the smooth central test/hush area and side smoke vents. Confirm Ei146e on the label.",
+      "limits": "The 140e instruction manual covers Ei144e and Ei146e. Do not infer heat sensing, a rechargeable backup or RF capability from a similar Easi-fit housing."
+    },
+    {
+      "id": "aico-ei3000mrf",
+      "model_codes": [
+        "Ei3000MRF"
+      ],
+      "source_page_url": "https://www.aico.co.uk/product/ei3000mrf-smartlink-module/",
+      "source_image_url": "https://www.aico.co.uk/wp-content/uploads/2020/08/EI3000MRF_MAIN-600x600.jpg",
+      "original_image_sha256": "3c0a9b1c7335fe04b8a09e3e3cb5ce2c35a304e620274c4e0c2797bcdd7f345e",
+      "image_sha256": "7c6ec1df7ddd7bbaeeb28cff6f7d0854cdf652cf0b037d8115765df5f56999f0",
+      "image_dimensions": [
+        600,
+        600
+      ],
+      "record_ids": [
+        "aico-5520615bdeb8",
+        "device-doc-aico-22884205c611"
+      ],
+      "notes": "Small plug-in radio module with a flexible antenna. It fits inside the supported 3000-series alarm rather than replacing the alarm head.",
+      "limits": "Ei3000MRF is not the Ei600MRF used by supported battery alarms. Check the alarm model, module edition and supported network functions in the linked Rev6 instructions."
+    },
+    {
+      "id": "aico-ei450",
+      "model_codes": [
+        "Ei450"
+      ],
+      "source_page_url": "https://www.aico.co.uk/product/ei450-radiolink-alarm-controller/",
+      "source_image_url": "https://www.aico.co.uk/wp-content/uploads/2020/07/Ei450-front-600x600.jpg",
+      "original_image_sha256": "022af9f9d4c4c4a7214e5d485ba38109576ec05b66a07b5df7542913151c5f42",
+      "image_sha256": "ee79f24309ee70460485f426a026f6995874346d31f283458ab437304a99a76d",
+      "image_dimensions": [
+        600,
+        600
+      ],
+      "record_ids": [
+        "aico-f4d4866ac694",
+        "aico-efec1bd3d80d"
+      ],
+      "notes": "Square wall control with Fire and CO indicators and a central test/control button. The linked sheet identifies test, locate and silence functions.",
+      "limits": "Reference scope is the Ei450 controller in the November 2022 datasheet and B17493 Rev9 manual. Check exact alarm/accessory generations for later RadioLINK Connect and SmartLINK functions."
+    },
+    {
+      "id": "aico-mcp401rc",
+      "model_codes": [
+        "MCP401RC"
+      ],
+      "source_page_url": "https://www.aico.co.uk/product/mcp401rc-hard-wired-manual-call-point/",
+      "source_image_url": "https://www.aico.co.uk/wp-content/uploads/2020/07/MCP401RC_MAIN-600x600.jpg",
+      "original_image_sha256": "ce18211a073ab581e5c93769b047c240b76fc9ed7bd75ff6fb2e0cc03e39984e",
+      "image_sha256": "d92091868ee72aa46ff0ddbdc6ac6a43f72b5e4cf9a24b41a241fcbe415f51e0",
+      "image_dimensions": [
+        600,
+        600
+      ],
+      "record_ids": [
+        "aico-a107023f8485",
+        "aico-3940aa649cda"
+      ],
+      "notes": "Red resettable call point with a black operating spot and opposing arrows. Confirm MCP401RC on the unit; the housing resembles conventional and addressable call points from other systems.",
+      "limits": "This is an Aico domestic interconnect accessory, not an addressable-loop MCP. The Rev2 instruction leaflet is dated 2008 and lists earlier alarm models; check the exact series against the linked product page and later datasheet."
+    }
+  ],
+  "documents": [
+    {
+      "record_id": "device-doc-aico-6c128c0b705a",
+      "url": "https://www.aico.co.uk/wp-content/uploads/2025/02/B20224-R4-Ei301430163024-UK-SERIES-UC-ENG.pdf",
+      "sha256": "6c128c0b705ac601a55a5902c3f788932d72df8e92622a633fb96607d6bcfb66",
+      "bytes": 2566567,
+      "pages": 52,
+      "revision": "B20224 Rev4, 2025",
+      "inspected_pdf_pages": [
+        1,
+        6,
+        7,
+        8,
+        9,
+        24,
+        52
+      ],
+      "archive_hash_matches": false,
+      "brand": "Aico"
+    },
+    {
+      "record_id": "device-doc-aico-7dbcfdf98ccb",
+      "url": "https://www.aico.co.uk/wp-content/uploads/2025/02/B20665-R4-Ei3030-UK-SERIES-UC-ENG.pdf",
+      "sha256": "7dbcfdf98ccb6bac7fa482d85f19a6c5450e55dd323984e8b5cb049861cae124",
+      "bytes": 2503823,
+      "pages": 64,
+      "revision": "B20665 Rev4, 2025",
+      "inspected_pdf_pages": [
+        1,
+        6,
+        7,
+        8,
+        21,
+        64
+      ],
+      "archive_hash_matches": false,
+      "brand": "Aico"
+    },
+    {
+      "record_id": "device-doc-aico-22884205c611",
+      "url": "https://www.aico.co.uk/wp-content/uploads/2024/10/B19047-R6-Ei3000MRF-UC-ENG.pdf",
+      "sha256": "22884205c611820750da890bc787c37288421f260faf2e12fc3a1394d3014d37",
+      "bytes": 2109510,
+      "pages": 24,
+      "revision": "B19047 Rev6, 2024",
+      "inspected_pdf_pages": [
+        1,
+        3,
+        4,
+        5,
+        24
+      ],
+      "archive_hash_matches": false,
+      "brand": "Aico"
+    },
+    {
+      "record_id": "aico-6d83ddd276c6",
+      "url": "https://www.aico.co.uk/wp-content/uploads/2022/10/b20267-r3-ei600-series-u-c-eng-master_uk.pdf",
+      "sha256": "c11d74204ac4454d7d297f4c71f776e11493b1cda4746dbde651794779ed5143",
+      "bytes": 1807833,
+      "pages": 48,
+      "revision": "B20267 Rev3, 2025",
+      "inspected_pdf_pages": [
+        1,
+        7,
+        8,
+        9,
+        48
+      ],
+      "archive_hash_matches": true,
+      "brand": "Aico"
+    },
+    {
+      "record_id": "device-doc-aico-8f8b5876b06d",
+      "url": "https://www.aico.co.uk/wp-content/uploads/2021/06/Ei140e-Series.pdf",
+      "sha256": "8f8b5876b06de0e1fd9a920a4da3823b738508dad2334c924d2ebdf3d089e852",
+      "bytes": 2913696,
+      "pages": 30,
+      "revision": "B20412 Rev2, 2023",
+      "inspected_pdf_pages": [
+        1,
+        3,
+        4,
+        30
+      ],
+      "archive_hash_matches": false,
+      "brand": "Aico"
+    },
+    {
+      "record_id": "aico-efec1bd3d80d",
+      "url": "https://www.aico.co.uk/wp-content/uploads/2021/06/Ei450-Radio-Link-Instructions.pdf",
+      "sha256": "b855177c9566182e2078b358aad3f2ca96639e1821ea3c4ab2bdcdcdf807c989",
+      "bytes": 1992627,
+      "pages": 24,
+      "revision": "B17493 Rev9; printed copyright year 2029 is not a verified publication date",
+      "inspected_pdf_pages": [
+        1,
+        3,
+        4,
+        17,
+        24
+      ],
+      "archive_hash_matches": true,
+      "brand": "Aico"
+    },
+    {
+      "record_id": "aico-5520615bdeb8",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/Aico-Data-Sheet-Ei3000MRF.pdf",
+      "sha256": "18e2fe67deb6eeba1159cd4e10a1abd0186ade3be2bbfaedd1f79bbfe41934be",
+      "bytes": 809280,
+      "pages": 1,
+      "revision": "Rev 2",
+      "inspected_pdf_pages": [
+        1
+      ],
+      "archive_hash_matches": true,
+      "brand": "Aico"
+    },
+    {
+      "record_id": "aico-957a8189361b",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2022/09/Datasheet_Ei660iMulti-Sensor-Fire-Alarm_26-Sep-2022-1.pdf",
+      "sha256": "e07d0227385a0247876b92cd6e5a674c5922f80288a0285a941b49ab56cdfa80",
+      "bytes": 209789,
+      "pages": 1,
+      "revision": null,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "archive_hash_matches": true,
+      "brand": "Aico"
+    },
+    {
+      "record_id": "aico-d3fb97090714",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/Datasheet_Ei146eOptical-Smoke-Alarm_24-Mar-2022.pdf",
+      "sha256": "8ceb48d230de1ba694b51eec30db0af5bac4649b929b72546cbc9f3cb6308317",
+      "bytes": 244429,
+      "pages": 1,
+      "revision": null,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "archive_hash_matches": true,
+      "brand": "Aico"
+    },
+    {
+      "record_id": "aico-0d5d7df89314",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/Aico-Data-Sheet-Ei3014.pdf",
+      "sha256": "c664d1ff49711540800284846b9a62673e379b31746dacc028dc7fe13e99f546",
+      "bytes": 349102,
+      "pages": 1,
+      "revision": null,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "archive_hash_matches": true,
+      "brand": "Aico"
+    },
+    {
+      "record_id": "aico-55f3ba358d2a",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/Datasheet_Ei144eEi144e_27-Jan-2023-1.pdf",
+      "sha256": "08488e1b0b64b89bc8e2a522aa61f7ab2c0c665ee372b499d0bd20d44a59bbc5",
+      "bytes": 1085284,
+      "pages": 1,
+      "revision": null,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "archive_hash_matches": true,
+      "brand": "Aico"
+    },
+    {
+      "record_id": "aico-a107023f8485",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/Datasheet_MCP401RCManual-Call-Point_18-Nov-2022.pdf",
+      "sha256": "e1533f2a1af89e30449a5bcd65c0af041d1ba3e6b70499bed973c8ce8d72644b",
+      "bytes": 189513,
+      "pages": 1,
+      "revision": null,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "archive_hash_matches": true,
+      "brand": "Aico"
+    },
+    {
+      "record_id": "aico-4fb4b285b074",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2023/07/Datasheet_Ei3030Ei3030_20-Jul-2023.pdf",
+      "sha256": "34bda10a183ee374c272934cc79f66beae28cea170dc24b3643deed160c244c2",
+      "bytes": 234435,
+      "pages": 1,
+      "revision": null,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "archive_hash_matches": true,
+      "brand": "Aico"
+    },
+    {
+      "record_id": "aico-f4d4866ac694",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/Datasheet_Ei450RadioLINK-Alarm-Controller_18-Nov-2022-1.pdf",
+      "sha256": "0b9559ecad43bc318c42166a04bf4d5a25177debaa581f2269d6767af264a20b",
+      "bytes": 213208,
+      "pages": 1,
+      "revision": null,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "archive_hash_matches": true,
+      "brand": "Aico"
+    },
+    {
+      "record_id": "aico-8b45527b51c1",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2022/07/Datasheet_Ei630iHeat-Alarm_07-Jul-2022.pdf",
+      "sha256": "9081f91d30416f6947760bc3e21ea7f071699f9eb198145c5d53339836532098",
+      "bytes": 207690,
+      "pages": 1,
+      "revision": null,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "archive_hash_matches": true,
+      "brand": "Aico"
+    },
+    {
+      "record_id": "aico-0b817031d733",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/11/Datasheet_Ei3016Optical-Smoke-Alarm_22-Nov-2021.pdf",
+      "sha256": "29d4011e7488cdb637482ec60fd0e94b36d01b8cad93b4a9e006c633300e40aa",
+      "bytes": 5740537,
+      "pages": 1,
+      "revision": null,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "archive_hash_matches": true,
+      "brand": "Aico"
+    },
+    {
+      "record_id": "aico-3940aa649cda",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/MCP401RC-Instructions-Rev2.pdf",
+      "sha256": "9bc26ac591276431fc756d47895d07e54246fced1e0ceb42c91c26e435ea679e",
+      "bytes": 161917,
+      "pages": 2,
+      "revision": "Rev 2",
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "archive_hash_matches": true,
+      "brand": "Aico"
+    },
+    {
+      "record_id": "aico-33d08994b662",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/Datasheet_Ei650iOptical-Smoke-Alarm_19-Oct-2022-1.pdf",
+      "sha256": "f097003fc11a4f96118aa7fae7873a6d190aaee17ea37651d73f54190c35cdf4",
+      "bytes": 211750,
+      "pages": 1,
+      "revision": null,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "archive_hash_matches": true,
+      "brand": "Aico"
+    }
+  ],
+  "review_notes": [
+    "Actual manufacturer photographs, no generated hardware. Model suffixes and RF/loop compatibility remain separate from exterior appearance.",
+    "Ei650i standalone versus Ei650iRF is explicitly checked against B20267 Rev3 page 8. Ei630i and Ei660i have the optional Ei600MRF module tick.",
+    "Ei450 B17493 Rev9 prints copyright 2029 on PDF page 24. The verified archive bytes match; that year is not used as a validated publication date.",
+    "MCP401RC Rev2 is an older 2008 leaflet; its older-model compatibility scope is disclosed on the device card.",
+    "The Ei144e and Ei3000MRF one-page datasheets have weak text extraction. Their rendered pages were visually checked."
+  ],
+  "visual_review": {
+    "product_photos": true,
+    "manual_covers_and_model_overviews": true,
+    "method": "Original images decoded and inspected on a contact sheet; PDF text checked against model/edition pages and rendered ambiguous pages."
+  }
+}

@@ -1,0 +1,1329 @@
+{
+  "synthetic": true,
+  "baseline": "b126f5b4c54709aa161416963d0cf9dde91d8d72",
+  "description": "Fictional prior settings and completed lessons generated with committed web0.23.0 engines. No real site or panel observations.",
+  "engineHashes": {
+    "gent-engine.mjs": "6f843d2388011b1883ed71a2b5581817f19453389aeebfd64c27fac79e37fb51",
+    "gent-nano-engine.mjs": "7070d40195b1b6e7bbe1baddfeac5efed3bd9713a3f1053ff4ad83d5525fbe4e",
+    "conventional-fire-engine.mjs": "8ce6ba2593e360625087e3fa3abee919930c345a308a8c3858a5755be31bb33f",
+    "emulator-engine.mjs": "49b86b4375bc9bf2cdac86b3d2642226268c29dec881493c57aae851b40a0f22"
+  },
+  "settings": {
+    "conventional-fire-trainer-v1:c-tec-cfp-standard": {
+      "version": 1,
+      "profileId": "c-tec-cfp-standard",
+      "state": {
+        "version": 1,
+        "profileId": "c-tec-cfp-standard",
+        "sourceVersion": "2026-11-02.3",
+        "scenarioId": "normal",
+        "sequence": 9,
+        "keyEnabled": true,
+        "codeAccess": false,
+        "codeBuffer": "",
+        "inputs": {
+          "Z1": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z2": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z3": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z4": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z5": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z6": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z7": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z8": {
+            "alarm": false,
+            "fault": false
+          }
+        },
+        "faults": {
+          "power": false,
+          "sounder": false
+        },
+        "fireZones": [],
+        "silencedZones": [],
+        "soundersRequested": false,
+        "evacuation": false,
+        "buzzerSilenced": false,
+        "disabledZones": [],
+        "disabledOutputs": [],
+        "testZones": [],
+        "selection": null,
+        "sigmaMode": null,
+        "sigmaZone": "Z1",
+        "modeChooser": false,
+        "lampTest": false,
+        "log": [
+          {
+            "key": "KEYSWITCH",
+            "kind": "key",
+            "ok": true,
+            "message": "Simulated enable key turned on. Authorised controls are available.",
+            "sequence": 1,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-user-rev2",
+                "pdfPage": 6,
+                "printedPage": "6",
+                "section": "Control fascia / access"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "cover",
+            "ok": true,
+            "message": "Training cover removed. Press the actual SW8 control to enter access level 3.",
+            "sequence": 2,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "delay-setting",
+            "ok": true,
+            "message": "VR1 set to 3 minute(s) for subsequent delayed alarms in this fictional installation.",
+            "sequence": 3,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": ""
+              },
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": "Function sequence"
+              }
+            ]
+          },
+          {
+            "key": "ENGINEER",
+            "kind": "engineering",
+            "ok": true,
+            "message": "Access level 3: Coincidence. Unconfirmed training drafts are not applied.",
+            "sequence": 4,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": ""
+              },
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": "Function sequence"
+              }
+            ]
+          },
+          {
+            "key": "NEXT_OPTION",
+            "kind": "engineering",
+            "ok": true,
+            "message": "Z1-Z2 selected. Enable/Disable stages a change; Next Option confirms it.",
+            "sequence": 5,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": ""
+              },
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": "Function sequence"
+              }
+            ]
+          },
+          {
+            "key": "TOGGLE",
+            "kind": "engineering",
+            "ok": true,
+            "message": "Z1-Z2 staged on. Press Next Option to confirm.",
+            "sequence": 6,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": ""
+              },
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": "Function sequence"
+              }
+            ]
+          },
+          {
+            "key": "NEXT_OPTION",
+            "kind": "engineering",
+            "ok": true,
+            "message": "Z1-Z2 confirmed. Z3-Z4 selected.",
+            "sequence": 7,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": ""
+              },
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": "Function sequence"
+              }
+            ]
+          },
+          {
+            "key": "EXIT",
+            "kind": "engineering",
+            "ok": true,
+            "message": "Access level 3 exited. Confirmed settings remain; an unconfirmed training draft was not applied.",
+            "sequence": 8,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": ""
+              },
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": "Function sequence"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "cover",
+            "ok": true,
+            "message": "Training cover refitted.",
+            "sequence": 9,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16"
+              }
+            ]
+          }
+        ],
+        "lastAction": {
+          "key": "",
+          "kind": "cover",
+          "ok": true,
+          "message": "Training cover refitted.",
+          "sequence": 9,
+          "sourceRefs": [
+            {
+              "sourceId": "cfp-engineer-rev1",
+              "pdfPage": 16,
+              "printedPage": "16"
+            }
+          ]
+        },
+        "cfpEngineeringVersion": 1,
+        "coverOpen": false,
+        "engineering": null,
+        "settings": {
+          "coincidencePairs": [
+            "Z1-Z2"
+          ],
+          "nonLatchingZones": [],
+          "delayedZones": [],
+          "delayedOutputs": [],
+          "delayMinutes": 3,
+          "resoundNewZone": true,
+          "delaysEnabled": true
+        },
+        "simulationSeconds": 0,
+        "pendingDelays": {},
+        "testStartedAt": {},
+        "manualOverride": false,
+        "overrideDelays": false,
+        "diagnostics": {
+          "systemFaults": [],
+          "systemInputs": [],
+          "repeaters": []
+        }
+      },
+      "completed": {
+        "cfp-code-access": {
+          "at": "2026-11-01T12:00:00.000Z",
+          "withHints": true
+        }
+      },
+      "hints": true,
+      "faceZoom": "fit"
+    },
+    "conventional-fire-trainer-v1:kentec-sigma-cp": {
+      "version": 1,
+      "profileId": "kentec-sigma-cp",
+      "state": {
+        "version": 1,
+        "profileId": "kentec-sigma-cp",
+        "sourceVersion": "2026-11-02.3",
+        "scenarioId": "normal",
+        "sequence": 10,
+        "keyEnabled": true,
+        "codeAccess": false,
+        "codeBuffer": "",
+        "inputs": {
+          "Z1": {
+            "alarm": false,
+            "fault": false,
+            "alarmKind": "detector"
+          },
+          "Z2": {
+            "alarm": false,
+            "fault": false,
+            "alarmKind": "detector"
+          },
+          "Z3": {
+            "alarm": false,
+            "fault": false,
+            "alarmKind": "detector"
+          },
+          "Z4": {
+            "alarm": false,
+            "fault": false,
+            "alarmKind": "detector"
+          },
+          "Z5": {
+            "alarm": false,
+            "fault": false,
+            "alarmKind": "detector"
+          },
+          "Z6": {
+            "alarm": false,
+            "fault": false,
+            "alarmKind": "detector"
+          },
+          "Z7": {
+            "alarm": false,
+            "fault": false,
+            "alarmKind": "detector"
+          },
+          "Z8": {
+            "alarm": false,
+            "fault": false,
+            "alarmKind": "detector"
+          }
+        },
+        "faults": {
+          "power": false,
+          "sounder": false
+        },
+        "fireZones": [],
+        "silencedZones": [],
+        "soundersRequested": false,
+        "evacuation": false,
+        "buzzerSilenced": false,
+        "disabledZones": [],
+        "disabledOutputs": [],
+        "testZones": [],
+        "selection": null,
+        "sigmaMode": null,
+        "sigmaZone": "Z1",
+        "modeChooser": false,
+        "lampTest": false,
+        "log": [
+          {
+            "key": "KEYSWITCH",
+            "kind": "key",
+            "ok": true,
+            "message": "Simulated enable key turned on. Authorised controls are available.",
+            "sequence": 1,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 9,
+                "printedPage": "9",
+                "section": "Control fascia / access"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "cover",
+            "ok": true,
+            "message": "Training cover opened. Write Enable is a separate ON/OFF control.",
+            "sequence": 2,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": ""
+              },
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": ""
+              },
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 18,
+                "printedPage": "18",
+                "section": ""
+              },
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 19,
+                "printedPage": "19",
+                "section": ""
+              },
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 23,
+                "printedPage": "23",
+                "section": ""
+              }
+            ]
+          },
+          {
+            "key": "WRITE_ENABLE",
+            "kind": "sigma-engineering",
+            "ok": true,
+            "message": "Write Enable ON: level 3 configuration. The display starting point is fictional; use Mode (+10), Select (+1) and Enter to set a documented option.",
+            "sequence": 3,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": "Table 8 — configuration codes"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "sigma-configuration-target",
+            "ok": true,
+            "message": "Training starting point 01 loaded. This is not a physical Mode/Select sequence or a claim about code wrap.",
+            "sequence": 4,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": "Table 8 — configuration codes"
+              }
+            ]
+          },
+          {
+            "key": "ENTER",
+            "kind": "sigma-engineering",
+            "ok": true,
+            "message": "Code 01 set: Sounder delay: 1 minute. The flashing units dot records this training setting.",
+            "sequence": 5,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": "Table 8 — configuration codes"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "sigma-configuration-target",
+            "ok": true,
+            "message": "Training starting point 31 loaded. This is not a physical Mode/Select sequence or a claim about code wrap.",
+            "sequence": 6,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": "Table 8 — configuration codes"
+              }
+            ]
+          },
+          {
+            "key": "ENTER",
+            "kind": "sigma-engineering",
+            "ok": true,
+            "message": "Code 31 set: Zone 1: Detector alarm delayed. The flashing units dot records this training setting.",
+            "sequence": 7,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": "Table 8 — configuration codes"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "sigma-configuration-target",
+            "ok": true,
+            "message": "Training starting point 29 loaded. This is not a physical Mode/Select sequence or a claim about code wrap.",
+            "sequence": 8,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": "Table 8 — configuration codes"
+              }
+            ]
+          },
+          {
+            "key": "ENTER",
+            "kind": "sigma-engineering",
+            "ok": true,
+            "message": "Code 29 set: Do not re-sound alarms from another zone. The flashing units dot records this training setting.",
+            "sequence": 9,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": "Table 8 — configuration codes"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "cover",
+            "ok": true,
+            "message": "Training cover refitted. Write Enable remains ON; reopen to switch it OFF.",
+            "sequence": 10,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": "Table 8 — configuration codes"
+              }
+            ]
+          }
+        ],
+        "lastAction": {
+          "key": "",
+          "kind": "cover",
+          "ok": true,
+          "message": "Training cover refitted. Write Enable remains ON; reopen to switch it OFF.",
+          "sequence": 10,
+          "sourceRefs": [
+            {
+              "sourceId": "sigma-main-25",
+              "pdfPage": 17,
+              "printedPage": "17",
+              "section": "Table 8 — configuration codes"
+            }
+          ]
+        },
+        "sigmaEngineeringVersion": 1,
+        "coverOpen": false,
+        "writeEnabled": true,
+        "engineering": {
+          "code": "29"
+        },
+        "sigmaLastCode": "29",
+        "sigmaConfig": {
+          "codes": [
+            "10",
+            "31",
+            "29",
+            "01"
+          ],
+          "delaysEnabled": false
+        },
+        "sigmaDiagnostics": {
+          "active": [],
+          "cpuLatched": false
+        },
+        "simulationSeconds": 0,
+        "pendingDelays": {},
+        "pendingNonLatch": {},
+        "sigmaManualSound": false,
+        "sigmaLocalRelayRequested": false,
+        "trainingCheckpoints": []
+      },
+      "completed": {
+        "sigma-lamps": {
+          "at": "2026-11-01T12:00:00.000Z",
+          "withHints": true
+        }
+      },
+      "hints": true,
+      "faceZoom": "fit"
+    },
+    "gent-vigilon-trainer-v1": {
+      "version": 1,
+      "state": {
+        "version": 1,
+        "panelId": "gent-vigilon",
+        "fixtureId": "findr-gent-training-site",
+        "mapVersion": "0.12.1",
+        "sourceFingerprint": "gent-vigilon-4188-1025-2015:e065bfe4221da2a1ab1d02df943b2c5442d21abfd519fe6c13c3369201473caa|gent-vigilon-4188-856-2015:a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998|gent-vigilon-4188-1024-2015:c64000863faf305f1949a96cc0356576a7bb7229a117424cc1a72bcfe9f439d6|gent-vigilon-plus-basic-training-archive:1f1eb22abf19c69e38019524c70ea90424b45285d76218d1e63ae45b8f800dd3",
+        "scenarioId": "normal",
+        "accessLevel": 2,
+        "authenticatedLevel": 0,
+        "menuOpen": false,
+        "nodeId": null,
+        "trail": [],
+        "form": {},
+        "cursor": 0,
+        "insertMode": false,
+        "shift": false,
+        "inputs": {
+          "L1D1": "normal",
+          "L1D2": "normal",
+          "L1D3": "fault",
+          "L1D4": "normal",
+          "L2D1": "normal",
+          "L2D2": "normal"
+        },
+        "disabledDevices": [],
+        "disabledZones": [],
+        "testZones": [],
+        "fireEvents": [],
+        "faults": {
+          "L1D3-removed": {
+            "id": "L1D3-removed",
+            "device": "L1D3",
+            "loop": 1,
+            "address": 3,
+            "message": "Lost Device",
+            "kind": "device"
+          }
+        },
+        "buzzer": true,
+        "sounders": false,
+        "alarmSounders": false,
+        "manualSounders": false,
+        "history": [
+          {
+            "type": "fault-detected",
+            "sequence": 4,
+            "at": "29/10/2026 09:00",
+            "message": "Lost Device",
+            "device": "L1D3",
+            "origin": "panel-simulation"
+          },
+          {
+            "type": "system",
+            "sequence": 3,
+            "at": "2026-10-29T09:00:00Z",
+            "message": "Training scenario loaded",
+            "origin": "trainer"
+          },
+          {
+            "type": "restore",
+            "sequence": 2,
+            "at": "2026-10-29T08:50:00Z",
+            "message": "Practice device restored",
+            "device": "L1D1",
+            "origin": "trainer"
+          },
+          {
+            "type": "disablement",
+            "sequence": 1,
+            "at": "2026-10-29T08:45:00Z",
+            "message": "Practice sensing disabled",
+            "device": "L1D1",
+            "origin": "trainer"
+          }
+        ],
+        "sequence": 4,
+        "lastEvent": null,
+        "lastAction": null,
+        "message": "",
+        "display": null,
+        "viewMode": null,
+        "viewIndex": 0,
+        "fireIndex": 0,
+        "labels": {
+          "devices": {
+            "L1D1": "RECEPTION OPTICAL SENSOR",
+            "L1D2": "MAIN ENTRANCE MCP",
+            "L1D3": "GROUND FLOOR OFFICE SENSOR",
+            "L1D4": "GROUND FLOOR INTERFACE",
+            "L2D1": "FIRST FLOOR LANDING SENSOR",
+            "L2D2": "FIRST FLOOR STAIR MCP"
+          },
+          "zones": {
+            "Z1": "Reception and entrance",
+            "Z2": "Ground floor offices",
+            "Z3": "First floor"
+          },
+          "ios": {
+            "L1D4:1": "PLANT MONITOR INPUT",
+            "L1D4:2": "TRAINING OUTPUT A",
+            "L1D4:3": "TRAINING OUTPUT B",
+            "L1D4:4": "SPARE TRAINING LINE"
+          },
+          "local": "FINDR TRAINING CENTRE",
+          "custom": "OFFLINE PRACTICE - NO LIVE CONNECTION"
+        },
+        "trainingPin": "2468",
+        "clock": {
+          "hour": 9,
+          "minute": 0,
+          "day": 29,
+          "month": 10,
+          "year": 2026
+        },
+        "clockDraft": null,
+        "clockIndex": 0,
+        "printer": {
+          "enabled": false,
+          "feeds": 0,
+          "tests": 0,
+          "lastJob": null
+        },
+        "savedConfiguration": {
+          "labels": {
+            "devices": {
+              "L1D1": "RECEPTION OPTICAL SENSOR",
+              "L1D2": "MAIN ENTRANCE MCP",
+              "L1D3": "GROUND FLOOR OFFICE SENSOR",
+              "L1D4": "GROUND FLOOR INTERFACE",
+              "L2D1": "FIRST FLOOR LANDING SENSOR",
+              "L2D2": "FIRST FLOOR STAIR MCP"
+            },
+            "zones": {
+              "Z1": "Reception and entrance",
+              "Z2": "Ground floor offices",
+              "Z3": "First floor"
+            },
+            "ios": {
+              "L1D4:1": "PLANT MONITOR INPUT",
+              "L1D4:2": "TRAINING OUTPUT A",
+              "L1D4:3": "TRAINING OUTPUT B",
+              "L1D4:4": "SPARE TRAINING LINE"
+            },
+            "local": "FINDR TRAINING CENTRE",
+            "custom": "OFFLINE PRACTICE - NO LIVE CONNECTION"
+          },
+          "trainingPin": "2468",
+          "clock": {
+            "hour": 9,
+            "minute": 0,
+            "day": 29,
+            "month": 10,
+            "year": 2026
+          }
+        },
+        "dirty": false,
+        "displayTestRemainingMs": 0,
+        "testCycles": {},
+        "testSuppressedInputs": [],
+        "elapsedMs": 0,
+        "menuIdleMs": 0
+      },
+      "completed": {
+        "gent-menu-basics": {
+          "at": "2026-11-01T08:00:00.000Z",
+          "withHints": true
+        }
+      },
+      "hints": true
+    },
+    "gent-nano-trainer-v1": {
+      "version": 1,
+      "state": {
+        "version": 1,
+        "panelId": "gent-nano",
+        "fixtureId": "findr-nano-training-site",
+        "mapVersion": "0.11.0",
+        "sourceFingerprint": "nano-operator-9:1e1de98fe28d734efc476d31e47638bf1640094dbe9ce453265d072f8afb47fe|nano-installation-11:7006fd9dd77c03893ec0e5f158a7984c112bd72cb6d2d7616e811265b2a20483|nano-commissioning-3:f438d67b353cb0014d6cf45b4d348d0e1157a0f4d3b5009c31de8a6a07e5a79e",
+        "scenarioId": "normal",
+        "nodeId": "status",
+        "menuOpen": false,
+        "menuIndex": 0,
+        "trail": [],
+        "form": {},
+        "cursor": 0,
+        "viewIndex": 0,
+        "fireIndex": 0,
+        "statusOverview": false,
+        "accessLevel": 1,
+        "authenticatedLevel": 0,
+        "trainingPin": "2468",
+        "deviceDisablementLevel": 2,
+        "inputs": {
+          "D1": "normal",
+          "D2": "normal",
+          "D3": "normal",
+          "D4": "normal",
+          "D5": "normal",
+          "D6": "normal",
+          "D7": "normal"
+        },
+        "disabledDevices": [],
+        "disabledZones": [],
+        "disabledSectors": [],
+        "disabledChannels": [],
+        "disabledOutputs": [],
+        "testZones": [],
+        "weeklyTest": false,
+        "testCycles": {},
+        "testSuppressedInputs": [],
+        "fireEvents": [],
+        "faults": {
+          "mains-failed": {
+            "id": "mains-failed",
+            "message": "Mains supply failed",
+            "kind": "power",
+            "active": true,
+            "physicalActive": true,
+            "at": "12:00 30/10/2026"
+          }
+        },
+        "buzzer": true,
+        "sounders": false,
+        "alarmSounders": false,
+        "manualSounders": false,
+        "masterAlarmsActive": false,
+        "fireRelayActive": false,
+        "sectorOutputs": {
+          "S1": false,
+          "S2": false,
+          "S3": false,
+          "S4": false,
+          "S5": false,
+          "S6": false,
+          "S7": false,
+          "S8": false,
+          "S9": false,
+          "S10": false,
+          "S11": false,
+          "S12": false,
+          "S13": false,
+          "S14": false,
+          "S15": false,
+          "S16": false
+        },
+        "plantActive": false,
+        "dayOverride": "NONE",
+        "dayOverrideRemainingMs": 0,
+        "delayRemainingMs": 0,
+        "verifyRemainingMs": 0,
+        "displayTestRemainingMs": 0,
+        "clock": {
+          "hour": 12,
+          "minute": 0,
+          "day": 30,
+          "month": 10,
+          "year": 2026
+        },
+        "history": [
+          {
+            "type": "fault-detected",
+            "message": "Mains supply failed",
+            "sequence": 4,
+            "at": "12:00 30/10/2026",
+            "origin": "panel-simulation"
+          },
+          {
+            "type": "system",
+            "message": "Training scenario loaded",
+            "sequence": 3,
+            "at": "2026-10-30T09:00:00Z",
+            "origin": "trainer"
+          },
+          {
+            "type": "restore",
+            "message": "Practice device enabled",
+            "sequence": 2,
+            "at": "2026-10-30T08:50:00Z",
+            "origin": "trainer",
+            "device": "D1"
+          },
+          {
+            "type": "disablement",
+            "message": "Practice device disabled",
+            "sequence": 1,
+            "at": "2026-10-30T08:45:00Z",
+            "origin": "trainer",
+            "device": "D1"
+          }
+        ],
+        "sequence": 4,
+        "lastEvent": null,
+        "lastAction": null,
+        "message": "",
+        "menuIdleMs": 0,
+        "elapsedMs": 0,
+        "selectedDevice": "D1",
+        "selectedChannel": "D4C1",
+        "weeklyMcpIndex": 0,
+        "printer": {
+          "fitted": false,
+          "jobs": []
+        },
+        "dayDraft": null,
+        "conditionTimes": {}
+      },
+      "completed": {
+        "nano-panel-basics": {
+          "at": "2026-11-01T08:05:00.000Z",
+          "withHints": true
+        }
+      },
+      "hints": true
+    },
+    "keypad-emulator-state-v1": {
+      "version": 1,
+      "profiles": {
+        "galaxy-dimension": {
+          "schemaVersion": 1,
+          "profileId": "galaxy-dimension",
+          "rootId": "galaxy-engineer-full",
+          "trail": [
+            {
+              "id": "@galaxy-engineer-full",
+              "cursor": 0,
+              "context": {},
+              "namespace": {}
+            }
+          ],
+          "digits": "",
+          "editor": null,
+          "confirm": null,
+          "pendingJump": [],
+          "runtimeState": {},
+          "eventCapacity": 150,
+          "records": {
+            "zone": [
+              {
+                "id": "1001",
+                "label": "FRONT DOOR"
+              },
+              {
+                "id": "1002",
+                "label": "HALL PIR"
+              },
+              {
+                "id": "1003",
+                "label": "OFFICE PIR"
+              },
+              {
+                "id": "1004",
+                "label": "STORE PIR"
+              }
+            ],
+            "user": [
+              {
+                "id": "001",
+                "label": "Demo manager"
+              },
+              {
+                "id": "002",
+                "label": "Demo user 2"
+              },
+              {
+                "id": "003",
+                "label": "Demo user 3"
+              },
+              {
+                "id": "004",
+                "label": "Demo user 4"
+              }
+            ],
+            "output": [
+              {
+                "id": "1",
+                "label": "Bell"
+              },
+              {
+                "id": "2",
+                "label": "Strobe"
+              },
+              {
+                "id": "3",
+                "label": "Output 3"
+              },
+              {
+                "id": "4",
+                "label": "Output 4"
+              }
+            ],
+            "area": [
+              {
+                "id": "A",
+                "label": "Area A"
+              },
+              {
+                "id": "B",
+                "label": "Area B"
+              },
+              {
+                "id": "C",
+                "label": "Area C"
+              },
+              {
+                "id": "D",
+                "label": "Area D"
+              }
+            ],
+            "group": [
+              {
+                "id": "1",
+                "label": "Group 1"
+              },
+              {
+                "id": "2",
+                "label": "Group 2"
+              },
+              {
+                "id": "3",
+                "label": "Group 3"
+              },
+              {
+                "id": "4",
+                "label": "Group 4"
+              }
+            ],
+            "keypad": [
+              {
+                "id": "1",
+                "label": "Keypad 1"
+              },
+              {
+                "id": "2",
+                "label": "Keypad 2"
+              }
+            ],
+            "module": [
+              {
+                "id": "1",
+                "label": "Module 1"
+              },
+              {
+                "id": "2",
+                "label": "Module 2"
+              }
+            ],
+            "schedule": [
+              {
+                "id": "1",
+                "label": "Schedule 1"
+              },
+              {
+                "id": "2",
+                "label": "Schedule 2"
+              },
+              {
+                "id": "3",
+                "label": "Schedule 3"
+              },
+              {
+                "id": "4",
+                "label": "Schedule 4"
+              }
+            ],
+            "trigger": [
+              {
+                "id": "1",
+                "label": "PA/Duress"
+              },
+              {
+                "id": "2",
+                "label": "Intruder"
+              },
+              {
+                "id": "3",
+                "label": "24 Hours"
+              },
+              {
+                "id": "4",
+                "label": "Security"
+              },
+              {
+                "id": "5",
+                "label": "Custom Zones"
+              },
+              {
+                "id": "6",
+                "label": "Fire"
+              },
+              {
+                "id": "7",
+                "label": "Set Fault"
+              },
+              {
+                "id": "8",
+                "label": "Omit"
+              },
+              {
+                "id": "9",
+                "label": "Tamper"
+              },
+              {
+                "id": "10",
+                "label": "Setting"
+              },
+              {
+                "id": "11",
+                "label": "Reset/Cancel"
+              },
+              {
+                "id": "12",
+                "label": "Modules/Comms"
+              },
+              {
+                "id": "13",
+                "label": "Elec Status"
+              },
+              {
+                "id": "14",
+                "label": "Menu Access"
+              },
+              {
+                "id": "15",
+                "label": "Trouble"
+              },
+              {
+                "id": "16",
+                "label": "Log Zone"
+              },
+              {
+                "id": "17",
+                "label": "Max Tag"
+              },
+              {
+                "id": "18",
+                "label": "Zone Restoral"
+              },
+              {
+                "id": "19",
+                "label": "RF Supervision"
+              },
+              {
+                "id": "20",
+                "label": "Fault"
+              }
+            ],
+            "link": [
+              {
+                "id": "1",
+                "label": "link 1"
+              },
+              {
+                "id": "2",
+                "label": "link 2"
+              },
+              {
+                "id": "3",
+                "label": "link 3"
+              },
+              {
+                "id": "4",
+                "label": "link 4"
+              }
+            ]
+          },
+          "values": {},
+          "committedValues": {},
+          "pendingChoice": null,
+          "clipboard": null,
+          "lastReport": null,
+          "zoneStates": {
+            "1001": "secure",
+            "1002": "secure",
+            "1003": "secure",
+            "1004": "secure"
+          },
+          "zoneTypes": {
+            "1001": "Final",
+            "1002": "Exit",
+            "1003": "Spare",
+            "1004": "Intruder"
+          },
+          "zoneNames": {
+            "1001": "SYNTHETIC RETAINED PIR",
+            "1002": "HALL PIR",
+            "1003": "OFFICE PIR",
+            "1004": "STORE PIR"
+          },
+          "zoneAreas": {
+            "1001": {
+              "A": true
+            },
+            "1002": {
+              "A": true
+            },
+            "1003": {
+              "A": true
+            },
+            "1004": {
+              "A": true
+            }
+          },
+          "zoneOmitEnabled": {
+            "1001": true,
+            "1002": true,
+            "1003": true,
+            "1004": true
+          },
+          "omittedZones": {
+            "1001": false,
+            "1002": false,
+            "1003": false,
+            "1004": false
+          },
+          "diagnosticOmissions": {},
+          "draftOmissions": null,
+          "outputStates": {
+            "Bell": false,
+            "Strobe": false
+          },
+          "walk": {
+            "running": false,
+            "hits": [],
+            "selected": [],
+            "allowed": [],
+            "view": 0
+          },
+          "testFlow": null,
+          "events": [
+            {
+              "id": "event-engineer",
+              "label": "+ENGINEER",
+              "time": "10:05 29 OCT",
+              "details": "PRACTICE SESSION",
+              "zone": "",
+              "category": "",
+              "logs": [],
+              "fixture": true,
+              "simulated": false
+            },
+            {
+              "id": "event-intruder",
+              "label": "INTRUDER",
+              "time": "09:42 29 OCT",
+              "details": "STORE PIR",
+              "zone": "1004",
+              "category": "",
+              "logs": [],
+              "fixture": true,
+              "simulated": false
+            },
+            {
+              "id": "event-walk-end",
+              "label": "WALK TEST –",
+              "time": "09:20 29 OCT",
+              "details": "PRACTICE TEST",
+              "zone": "",
+              "category": "",
+              "logs": [],
+              "fixture": true,
+              "simulated": false
+            }
+          ],
+          "armed": false,
+          "armingMode": "Unset",
+          "alarm": false,
+          "chime": false,
+          "changed": false,
+          "loggedOut": false,
+          "details": false,
+          "eventIndex": 0,
+          "feedback": "Resumed this fictional panel’s saved settings. Tests are stopped and unconfirmed edits are discarded.",
+          "steps": 0,
+          "history": []
+        }
+      }
+    }
+  },
+  "schedule": {
+    "id": "synthetic-fire024-import",
+    "site": "SYNTHETIC previous site",
+    "panel": "Previous addressable panel",
+    "filename": "synthetic-prior-schedule.csv",
+    "fileHash": "e349a51222b18329065488c59189f92b41b5f04d8d761a5364166c6c7c585db8",
+    "format": "CSV",
+    "importedAt": 1,
+    "exportDate": "",
+    "panelCatalogueId": "c-tec-xfp-32-zone",
+    "headers": [
+      "Loop",
+      "Address",
+      "Zone",
+      "Location",
+      "Device type"
+    ],
+    "mapping": {
+      "panel": -1,
+      "node": -1,
+      "loop": 0,
+      "address": 1,
+      "subAddress": -1,
+      "zone": 2,
+      "location": 3,
+      "type": 4,
+      "manufacturer": -1,
+      "model": -1,
+      "partNumber": -1,
+      "exportDate": -1
+    },
+    "rows": [
+      {
+        "id": "2",
+        "panel": "",
+        "node": "",
+        "loop": "01",
+        "address": "037",
+        "subAddress": "",
+        "zone": "002",
+        "location": "SYNTHETIC retained device label",
+        "type": "optical detector",
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "exportDate": "",
+        "rawValues": [
+          "01",
+          "037",
+          "002",
+          "SYNTHETIC retained device label",
+          "optical detector"
+        ]
+      }
+    ]
+  },
+  "importParserHash": "1235088e5ab5503377c42ddd144281440b082c87b4f60b3f0fbca10060beafc7"
+}

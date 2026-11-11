@@ -1,0 +1,77 @@
+{
+  "release": "0.20.0",
+  "status": "passed",
+  "testedAt": "2026-11-02T19:51:16.696239+00:00",
+  "build": "51cc91133d8e",
+  "scope": "Supplemental check after the Fire Zones title/top-bracket CSS correction; runtime logic is unchanged.",
+  "script": "scripts/qa-cfp-level3-visual.cjs",
+  "scriptSha256": "7c6e8f9f394202a3909b9fa2231569791ffe2a8c8c68e9f952106469c1fba2c8",
+  "command": "FINDR_PLAYWRIGHT_PATH=/opt/codex/cua_node/lib/node_modules/playwright node scripts/qa-cfp-level3-visual.cjs",
+  "results": [
+    {
+      "width": 390,
+      "height": 844,
+      "status": "passed",
+      "offline": true,
+      "cacheNames": [
+        "findr-shell-51cc91133d8e"
+      ],
+      "checks": "Fire Zones heading clear of all numbers; fit/zoom no overflow and zoomed keys >=44px; cover/SW8/Next commit; PCB image loads offline; active programming/settings retained; SW8 and exit work offline; CFP and earlier Gent PDFs render offline; old Sigma and marker unchanged; no page errors"
+    },
+    {
+      "width": 1440,
+      "height": 844,
+      "status": "passed",
+      "offline": true,
+      "cacheNames": [
+        "findr-shell-51cc91133d8e"
+      ],
+      "checks": "Fire Zones heading clear of all numbers; fit/zoom no overflow and zoomed keys >=44px; cover/SW8/Next commit; PCB image loads offline; active programming/settings retained; SW8 and exit work offline; CFP and earlier Gent PDFs render offline; old Sigma and marker unchanged; no page errors"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "final-front-1440.png",
+      "sha256": "6ce65a5ad86acd46016be198734afbbc895b1a59c11e3e1a952f84df9b6c26fe"
+    },
+    {
+      "file": "final-front-390.png",
+      "sha256": "2e77fb6e5024b122da50e0fb5f7cbf2c6549104b7b01bac695c68ad70dabd1f0"
+    },
+    {
+      "file": "final-front-zoom-1440.png",
+      "sha256": "abae9fd0897853187a55e3e3e7405c1e9b207fa0ebda904b944bfe99b7aec175"
+    },
+    {
+      "file": "final-front-zoom-390.png",
+      "sha256": "ef26a30218613669f24280b8347ea69cf874f3685e5e614f1043eba1a691f07f"
+    },
+    {
+      "file": "final-pcb-1440.png",
+      "sha256": "f7466694114b66b040eb5071caf918a8301d1265ee127c09e6159431e2ed98c7"
+    },
+    {
+      "file": "final-pcb-390.png",
+      "sha256": "80b9b4af11808e699a7bcd7dfe8b68b8b399c46e027e27dd19f8a4a3d19f823e"
+    },
+    {
+      "file": "final-pcb-zoom-1440.png",
+      "sha256": "f2417f43b0e7c58c2a9a21068c2c6d17335f7b74a953acd743f579235a9c00e7"
+    },
+    {
+      "file": "final-pcb-zoom-390.png",
+      "sha256": "76f0ea6cecd7a85ce6703f7853b1bf99e4593454d1dca2411cd52826c8fada44"
+    }
+  ],
+  "exhaustiveEvidence": {
+    "file": "browser-validation.json",
+    "build": "afc4869465ca",
+    "scope": "All 23 lessons and 158 steps at each width; complete engine/UI/offline preservation assertions. Captured before the isolated heading CSS correction; original files preserved."
+  },
+  "resolvedFinding": "The Fire Zones title and top border previously overlapped the red zone-number row. Both-width bounding-box assertions and screenshot review now confirm the heading sits above all numbers.",
+  "limits": [
+    "Local app and Chromium viewport emulation, not publication or physical iPhone Safari/panel certification.",
+    "Synthetic inputs and old-state preservation fixtures. Local checked source PDF bytes substitute for the network API during initial CFP download; subsequent reads use the real saved PDF store.",
+    "No exhaustive lesson rerun was needed for the isolated CSS positioning correction; the final asset revision received the scoped visual/offline checks recorded here."
+  ]
+}

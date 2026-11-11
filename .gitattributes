@@ -1,0 +1,4 @@
+# PDF offsets and signed/encrypted fixtures must retain their original bytes.
+tests/fixtures/**/*.pdf binary
+# Keep vendored upstream bytes identical to the recorded provenance hashes.
+public/app/vendor/local-language/** -whitespace

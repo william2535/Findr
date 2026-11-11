@@ -1,0 +1,129 @@
+{
+  "baselineCommit": "e8691d604f07fc882a803892d4c6ca7f8722a869",
+  "scope": "Existing manual identities, PDF delivery maps, model/pack associations, nine keypad menu maps, original fire trainer source data, lessons and reviewed wiring picture metadata remain byte-identical. The generated practice version may follow the app version; all other practice data remains semantically identical.",
+  "files": [
+    {
+      "path": "public/app/data/catalogue.json",
+      "bytes": 5944194,
+      "sha256": "905804559c630f0bc7f5f910fef3d663dd2b8905bc958dbe339eb49f6a5a2334"
+    },
+    {
+      "path": "public/app/data/device-documents.json",
+      "bytes": 49341,
+      "sha256": "2634849efe7fff1b16ba2dc7fc7cdc9ffce65a2c8891492099d3360a7b9f57b9"
+    },
+    {
+      "path": "public/app/data/devices.json",
+      "bytes": 223257,
+      "sha256": "1f3680310e9a830034ea3253016b08cc46ea66bc5a33463890d816cd50d94f38"
+    },
+    {
+      "path": "public/app/data/device-packs.json",
+      "bytes": 24835,
+      "sha256": "8269cfd48de401e84e6c6473aba91599fddec4a6e5b8ef6c921d46d4d53b8d5d"
+    },
+    {
+      "path": "public/app/data/panels.json",
+      "bytes": 940517,
+      "sha256": "e30e577d51cf22586646817963bc8dce46a64cd23e7f5388f0ecca392e0d3b64"
+    },
+    {
+      "path": "public/app/data/packs.json",
+      "bytes": 116630,
+      "sha256": "0e7a85adc48092f9aed12868c12ad6abcd6980396f9ed4c730b8d72cae821ea2"
+    },
+    {
+      "path": "public/app/data/download-map.json",
+      "bytes": 1537090,
+      "sha256": "503da2cd87cbd877c66041d9ee9a681686c138441ce10381330a0d15ccd8de8c"
+    },
+    {
+      "path": "lib/download-map.json",
+      "bytes": 1537090,
+      "sha256": "503da2cd87cbd877c66041d9ee9a681686c138441ce10381330a0d15ccd8de8c"
+    },
+    {
+      "path": "public/app/data/menu-maps/ade-accenta-optima.json",
+      "bytes": 132438,
+      "sha256": "066872cdd8fe55719702e7e4402b979dd360346398c774f8ecfd91656b2f1952"
+    },
+    {
+      "path": "public/app/data/menu-maps/galaxy-dimension.json",
+      "bytes": 668369,
+      "sha256": "7130c14eb9d08f5c78146a2fab546109d6bea977794d2944b1860988c2adfb5c"
+    },
+    {
+      "path": "public/app/data/menu-maps/hkc-quantum70.json",
+      "bytes": 366953,
+      "sha256": "8bd312abbc5556ba806c893d1d470eae22fc176a4a5930266f6d45c46177c697"
+    },
+    {
+      "path": "public/app/data/menu-maps/menvier-mseries.json",
+      "bytes": 431202,
+      "sha256": "1570087d72ed53e165abfa8136886f7deaf89a8a6a4b01a9aa8a3ec3bac1adb2"
+    },
+    {
+      "path": "public/app/data/menu-maps/orisec-cp.json",
+      "bytes": 400133,
+      "sha256": "9ecc0fe2222cb666ddc64f02b140e2b9090bdf1524a695dd5253e1eca18c55af"
+    },
+    {
+      "path": "public/app/data/menu-maps/pyronix-enforcer.json",
+      "bytes": 471246,
+      "sha256": "983726a0462371ebcab8c0fbd324e7f308ed76b70d2d9b788e56326da295d3c2"
+    },
+    {
+      "path": "public/app/data/menu-maps/risco-lightsys2.json",
+      "bytes": 407933,
+      "sha256": "eecacfba9c7ac51dfc95c2eba39c75f560280c64957c122c9cb5e4d691b275cf"
+    },
+    {
+      "path": "public/app/data/menu-maps/scantronic-ion.json",
+      "bytes": 500510,
+      "sha256": "fb23ee567b83f40da230541627ad02e6314b43132d9b03d7b70de2fa96d09476"
+    },
+    {
+      "path": "public/app/data/menu-maps/texecom-premier-elite.json",
+      "bytes": 404848,
+      "sha256": "a47f40ef7f4b30dfb14bbbbbb6ea01fc9178d4df3814e5a00684dbb8f22bff94"
+    },
+    {
+      "path": "public/app/data/gent-vigilon.json",
+      "bytes": 144144,
+      "sha256": "d5455f274a579f6c9c694bb1a0a3ce79fb9b62a99ca49842651881af2b82ec23"
+    },
+    {
+      "path": "public/app/data/gent-nano.json",
+      "bytes": 90474,
+      "sha256": "c7ffb137e87e1c655d1faa86c516b53b2cc7abd66504510a2d8645ea406888ac"
+    },
+    {
+      "path": "public/app/data/gent-lessons.json",
+      "bytes": 185838,
+      "sha256": "0d26eb81e889e76f85118b4686047d982aa9ae83d00805a45c96f0fb5ce7bd37"
+    },
+    {
+      "path": "public/app/data/gent-nano-lessons.json",
+      "bytes": 200061,
+      "sha256": "bc4f81dce0580d7433c313a4490ce2c854f8825097e072781581b4b860187c7b"
+    },
+    {
+      "path": "public/app/data/conventional-fire.json",
+      "bytes": 163242,
+      "sha256": "28e9d860e3c832459006df43fb993c832cb3ee3c26e8f8679a4f31f17846e532"
+    },
+    {
+      "path": "public/app/data/wiring-diagrams.json",
+      "bytes": 210583,
+      "sha256": "e54b6a0757df727f9ab6af300b826ebd0f3f055d8e0adda359552f884aaf44f1"
+    }
+  ],
+  "practiceData": {
+    "path": "public/app/data/practice.json",
+    "excludeTopLevelKeys": [
+      "version"
+    ],
+    "canonicalJson": "UTF-8 JSON with recursively sorted object keys, compact separators, unescaped Unicode",
+    "sha256": "26d3af1ed71abe67045ea0250dfbdf7fa3b603b1597596bc33c2de830316d41e"
+  }
+}

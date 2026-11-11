@@ -1,0 +1,406 @@
+{
+  "batch": "ems-0.14.0",
+  "verified_date": "2026-10-30",
+  "brand": "EMS",
+  "scope": "Eight FireCell device families; genuine EMS manufacturer datasheets from verified distributor mirrors, with older editions explicitly identified.",
+  "image_processing": "Original PDF image XRefs from visually inspected page 1, flattened onto white and converted to WebP quality 93. No generated hardware.",
+  "devices": [
+    {
+      "id": "ems-firecell-optical-fcx-177-001",
+      "document_id": "device-doc-ems-de2c0fb8aa1f",
+      "publisher": "EMS Ltd",
+      "host_role": "distributor mirror of manufacturer PDF",
+      "source_url": "https://huvo.co.uk/wp-content/uploads/2025/12/FCX-177-001.pdf",
+      "document_url": "https://huvo.co.uk/wp-content/uploads/2025/12/FCX-177-001.pdf",
+      "manufacturer_listing": "https://emsgroup.co.uk/product/detector/",
+      "title": "MK119 FireCell Wireless Optical Smoke Detector Product Datasheet",
+      "revision": "Issue 7, 26/06/2025",
+      "sha256": "de2c0fb8aa1f80927bd4260932dbe586b420feec8261992273e064810b7bc334",
+      "bytes": 1069092,
+      "pages": 2,
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "verified_model_codes": [
+        "FCX-177-001"
+      ],
+      "image_pdf_page": 1,
+      "image_pdf_xref": 59,
+      "image_sha256": "8ec19f52ee89dfd27ce7d3d69794717941e189e13805e96be7038812b3cbdf5d",
+      "image_dimensions": [
+        688,
+        638
+      ],
+      "identification_and_scope": "Round optical head shown on its deep wireless detector base. Confirm FCX-177-001 on the head and the separate base label. The head-only code is pictured assembled with a base; the sheet specifies FCX-170-001 as the wireless base. This is FireCell, not SmartCell or a generic wired Orbis assembly."
+    },
+    {
+      "id": "ems-firecell-sounder-detector-base-fcx-191-000",
+      "document_id": "device-doc-ems-c103ba80a56c",
+      "publisher": "EMS Ltd",
+      "host_role": "distributor mirror of manufacturer PDF",
+      "source_url": "https://huvo.co.uk/product/ems-firecell-wireless-sounder-base-for-detectors/",
+      "document_url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Wireless-Sounder-Detector-Base.pdf",
+      "manufacturer_listing": "https://emsgroup.co.uk/product/firecell-combined-detector-sounder/",
+      "title": "MK121 FireCell Wireless Combined Sounder Detector Product Datasheet",
+      "revision": "Issue 5, 17/06/2021",
+      "sha256": "c103ba80a56cc6faa527b1155cba4a59edf8a7fbf34c1a0d6b3777fe9ecaa0d7",
+      "bytes": 164221,
+      "pages": 1,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "verified_model_codes": [
+        "FCX-191-000"
+      ],
+      "image_pdf_page": 1,
+      "image_pdf_xref": 1749,
+      "image_sha256": "af91e74db45236cece90c9b4e5ca8e807a43ccdb6edeb916f24806b005ea1920",
+      "image_dimensions": [
+        716,
+        555
+      ],
+      "identification_and_scope": "Broad circular wireless sounder base, shown by EMS with a detector head fitted. This card identifies the base code. FCX-191-000 is base only; the head is separate. The 2021 sheet lists supported detector heads and mentions visual-indicator variants, but this card does not identify a VID or VAD base."
+    },
+    {
+      "id": "ems-firecell-wall-sounder-vad-fc-315-wa2",
+      "document_id": "device-doc-ems-cf888f19e273",
+      "publisher": "EMS Ltd",
+      "host_role": "distributor mirror of manufacturer PDF",
+      "source_url": "https://www.safefiredirect.co.uk/media/bss/productattachment/EMS_FC-171-002_FC-315-WA2_Datasheet.pdf",
+      "document_url": "https://www.safefiredirect.co.uk/media/bss/productattachment/EMS_FC-171-002_FC-315-WA2_Datasheet.pdf",
+      "manufacturer_listing": "https://emsgroup.co.uk/support/firedatasheetsmanuals/",
+      "title": "MK123 FireCell Wireless Wall Sounder Beacon Product Datasheet",
+      "revision": "Issue 4, 02/10/2018",
+      "sha256": "cf888f19e273e2471a365748ceea9c93871494ebd85d743156a5616c85dcbe96",
+      "bytes": 283815,
+      "pages": 1,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "verified_model_codes": [
+        "FC-315-WA2"
+      ],
+      "image_pdf_page": 1,
+      "image_pdf_xref": 83,
+      "image_sha256": "cebb1f1b6342ee8e6e68c74e519fa8c06d9969a61893330cd20c6bbbe13e28ef",
+      "image_dimensions": [
+        475,
+        664
+      ],
+      "identification_and_scope": "Red wall sounder/VAD head shown assembled on the deeper wireless base. The manufacturer sheet calls it a wall sounder beacon and specifies EN54-23. FC-315-WA2 head only; the pictured assembly uses FC-171-002 wireless base. This 2018 sheet covers the wall version, not a ceiling VAD or visual-indicator-only head."
+    },
+    {
+      "id": "ems-firecell-call-point-fc-200-002",
+      "document_id": "device-doc-ems-c40857c87e50",
+      "publisher": "EMS Ltd",
+      "host_role": "distributor mirror of manufacturer PDF",
+      "source_url": "https://huvo.co.uk/product/ems-firecell-wireless-call-point/",
+      "document_url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Call-Point.pdf",
+      "manufacturer_listing": "https://emsgroup.co.uk/support/firedatasheetsmanuals/",
+      "title": "MK128 FireCell Wireless Call Point Product Datasheet",
+      "revision": "Issue 4, 02/10/2018",
+      "sha256": "c40857c87e504849762f3c855546683f28a430cb96bd0346581fa3c6b236bdd5",
+      "bytes": 700922,
+      "pages": 1,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "verified_model_codes": [
+        "FC-200-002"
+      ],
+      "image_pdf_page": 1,
+      "image_pdf_xref": 62,
+      "image_sha256": "1529e40110415b4b4948d80fce07915c8b5f3a68b74cdb32cb34279967482735",
+      "image_dimensions": [
+        650,
+        581
+      ],
+      "identification_and_scope": "Red resettable wireless call point with a transparent protective cover, as pictured in EMS datasheet MK128. FC-200-002 edition pictured in the 2018 sheet. Confirm the label before using it for another FireCell front style, a SmartCell call point or a wired lookalike."
+    },
+    {
+      "id": "ems-firecell-dual-io-fc-610-001",
+      "document_id": "device-doc-ems-2f0d72961ef4",
+      "publisher": "EMS Ltd",
+      "host_role": "distributor mirror of manufacturer PDF",
+      "source_url": "https://huvo.co.uk/product/ems-firecell-input-output-unit/",
+      "document_url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Input-Output-Unit.pdf",
+      "manufacturer_listing": "https://emsgroup.co.uk/product/firecell-dual-i-o/",
+      "title": "MK129 FireCell Input / Output Unit Product Datasheet",
+      "revision": "Issue 5, 03/10/2018",
+      "sha256": "2f0d72961ef41fc9854f5707d4f454689b1f559db94d0dbadd7a44d7aa7a9ee9",
+      "bytes": 255595,
+      "pages": 1,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "verified_model_codes": [
+        "FC-610-001"
+      ],
+      "image_pdf_page": 1,
+      "image_pdf_xref": 58,
+      "image_sha256": "5204df0c48d5d9cf047f7b0cf57b2e580749f8daef472cfb0331aeac9934cb35",
+      "image_dimensions": [
+        356,
+        666
+      ],
+      "identification_and_scope": "Tall grey enclosure for two monitored inputs and two voltage-free outputs. Read FC-610-001 on the unit label. This is the 2018 FC-610-001 design, not the newer FC-41-0202. Its optional FC-620-001 auxiliary relay is separate; the I/O image does not imply a mains-switching output."
+    },
+    {
+      "id": "ems-fusion-rlm-fcx-532-001",
+      "document_id": "device-doc-ems-a93fc764968b",
+      "publisher": "EMS Ltd",
+      "host_role": "distributor mirror of manufacturer PDF",
+      "source_url": "https://www.firesense.co.uk/amfile/file/download/file/399/product/2472/",
+      "document_url": "https://www.firesense.co.uk/amfile/file/download/file/399/product/2472/",
+      "manufacturer_listing": "https://emsgroup.co.uk/support/firedatasheetsmanuals/",
+      "title": "MK127 FireCell Fusion RLM Product Datasheet",
+      "revision": "Issue 7, 24/09/2024",
+      "sha256": "a93fc764968b96a6dce97eeb0c3ace6b9baecb909a581bc1845882319413723e",
+      "bytes": 227012,
+      "pages": 2,
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "verified_model_codes": [
+        "FCX-532-001"
+      ],
+      "image_pdf_page": 1,
+      "image_pdf_xref": 70,
+      "image_sha256": "6696053f06b9db7c45ced649202c9c29bce43fd9ebd6e0c996e6c52645a66995",
+      "image_dimensions": [
+        1200,
+        797
+      ],
+      "identification_and_scope": "White rectangular module with FusionRLM branding on its front label. It is the loop-to-radio interface for the documented FireCell devices. FCX-532-001 per the 2024 sheet. Similar Radio Hub and RCC enclosures have different roles; an XP95 connection alone does not establish approval for a particular panel or site."
+    },
+    {
+      "id": "ems-firecell-rcc-230v-fc-555-001",
+      "document_id": "device-doc-ems-777d6bd3e405",
+      "publisher": "EMS Ltd",
+      "host_role": "distributor mirror of manufacturer PDF",
+      "source_url": "https://huvo.co.uk/product/ems-firecell-radio-cluster-communicator/",
+      "document_url": "https://huvo.co.uk/wp-content/uploads/2024/09/EMS-FireCell-230VAC-RCC.pdf",
+      "manufacturer_listing": "https://emsgroup.co.uk/support/firedatasheetsmanuals/",
+      "title": "MK126 FireCell 230Vac Radio Cluster Communicator Product Datasheet",
+      "revision": "Issue 5, 03/10/2018",
+      "sha256": "777d6bd3e40513cc306e394974cba19b70b995395a8f396040802844c82a9f86",
+      "bytes": 313929,
+      "pages": 1,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "verified_model_codes": [
+        "FC-555-001"
+      ],
+      "image_pdf_page": 1,
+      "image_pdf_xref": 68,
+      "image_sha256": "65019bb76696bc4aa2cdb68e8a08468e129df2625ddf35f324c93719d12cddd5",
+      "image_dimensions": [
+        584,
+        483
+      ],
+      "identification_and_scope": "Cream RCC enclosure pictured with a V3 badge in the manufacturer’s 2018 sheet. The sheet lists FC-555-001; confirm the actual code and edition on the label. FC-555-001 mains-powered RCC per MK126 Issue 5, not the 24 V version. The remote-aerial FC-555-331 is separately listed; a shared enclosure does not establish the supply or aerial option."
+    },
+    {
+      "id": "ems-firecell-radio-hub-fcx-500-004",
+      "document_id": "device-doc-ems-0df7986de600",
+      "publisher": "EMS Ltd",
+      "host_role": "distributor mirror of manufacturer PDF",
+      "source_url": "https://huvo.co.uk/product/ems-firecell-radio-hub/",
+      "document_url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Radio-Hub.pdf",
+      "manufacturer_listing": "https://emsgroup.co.uk/product/firecell-hub/",
+      "title": "MK125 FireCell Radio Hub Product Datasheet",
+      "revision": "Issue 4, 02/10/2018",
+      "sha256": "0df7986de600c0cf4a177eecf00c10620bfae78c23aef61995f48c742fc2cc2c",
+      "bytes": 712181,
+      "pages": 1,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "verified_model_codes": [
+        "FCX-500-004"
+      ],
+      "image_pdf_page": 1,
+      "image_pdf_xref": 72,
+      "image_sha256": "bde69754bfc128ce3c5a03af94f661c316d84d85e6a846b06de900f79d225621",
+      "image_dimensions": [
+        588,
+        486
+      ],
+      "identification_and_scope": "Radio Hub enclosure with a small front status label. The Hub links the panel loop to the FireCell RCC infrastructure. FCX-500-004 in the 2018 sheet; remote-aerial FCX-500-444 is a separate listed variant. Shared Hub/RCC appearance and a distributor’s current listing do not establish edition interchangeability."
+    }
+  ],
+  "supplementary_documents": [
+    {
+      "id": "device-doc-ems-de2c0fb8aa1f",
+      "brand": "EMS",
+      "category": "fire",
+      "models": [
+        "FCX-177-001",
+        "FireCell optical detector FCX-177-001"
+      ],
+      "title": "MK119 FireCell Wireless Optical Smoke Detector Product Datasheet",
+      "type": "manufacturer reference",
+      "url": "https://huvo.co.uk/wp-content/uploads/2025/12/FCX-177-001.pdf",
+      "source": "https://huvo.co.uk/wp-content/uploads/2025/12/FCX-177-001.pdf",
+      "revision": "Issue 7, 26/06/2025",
+      "status": "file-hash",
+      "sha256": "de2c0fb8aa1f80927bd4260932dbe586b420feec8261992273e064810b7bc334",
+      "bytes": 1069092,
+      "pages": 2,
+      "origin": "device-reference",
+      "related_archive_record_ids": []
+    },
+    {
+      "id": "device-doc-ems-c103ba80a56c",
+      "brand": "EMS",
+      "category": "fire",
+      "models": [
+        "FCX-191-000",
+        "FireCell sounder/detector base FCX-191-000"
+      ],
+      "title": "MK121 FireCell Wireless Combined Sounder Detector Product Datasheet",
+      "type": "manufacturer reference",
+      "url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Wireless-Sounder-Detector-Base.pdf",
+      "source": "https://huvo.co.uk/product/ems-firecell-wireless-sounder-base-for-detectors/",
+      "revision": "Issue 5, 17/06/2021",
+      "status": "file-hash",
+      "sha256": "c103ba80a56cc6faa527b1155cba4a59edf8a7fbf34c1a0d6b3777fe9ecaa0d7",
+      "bytes": 164221,
+      "pages": 1,
+      "origin": "device-reference",
+      "related_archive_record_ids": []
+    },
+    {
+      "id": "device-doc-ems-cf888f19e273",
+      "brand": "EMS",
+      "category": "fire",
+      "models": [
+        "FC-315-WA2",
+        "FireCell wall sounder VAD FC-315-WA2"
+      ],
+      "title": "MK123 FireCell Wireless Wall Sounder Beacon Product Datasheet",
+      "type": "manufacturer reference",
+      "url": "https://www.safefiredirect.co.uk/media/bss/productattachment/EMS_FC-171-002_FC-315-WA2_Datasheet.pdf",
+      "source": "https://www.safefiredirect.co.uk/media/bss/productattachment/EMS_FC-171-002_FC-315-WA2_Datasheet.pdf",
+      "revision": "Issue 4, 02/10/2018",
+      "status": "file-hash",
+      "sha256": "cf888f19e273e2471a365748ceea9c93871494ebd85d743156a5616c85dcbe96",
+      "bytes": 283815,
+      "pages": 1,
+      "origin": "device-reference",
+      "related_archive_record_ids": []
+    },
+    {
+      "id": "device-doc-ems-c40857c87e50",
+      "brand": "EMS",
+      "category": "fire",
+      "models": [
+        "FC-200-002",
+        "FireCell call point FC-200-002"
+      ],
+      "title": "MK128 FireCell Wireless Call Point Product Datasheet",
+      "type": "manufacturer reference",
+      "url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Call-Point.pdf",
+      "source": "https://huvo.co.uk/product/ems-firecell-wireless-call-point/",
+      "revision": "Issue 4, 02/10/2018",
+      "status": "file-hash",
+      "sha256": "c40857c87e504849762f3c855546683f28a430cb96bd0346581fa3c6b236bdd5",
+      "bytes": 700922,
+      "pages": 1,
+      "origin": "device-reference",
+      "related_archive_record_ids": []
+    },
+    {
+      "id": "device-doc-ems-2f0d72961ef4",
+      "brand": "EMS",
+      "category": "fire",
+      "models": [
+        "FC-610-001",
+        "FireCell dual I/O FC-610-001"
+      ],
+      "title": "MK129 FireCell Input / Output Unit Product Datasheet",
+      "type": "manufacturer reference",
+      "url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Input-Output-Unit.pdf",
+      "source": "https://huvo.co.uk/product/ems-firecell-input-output-unit/",
+      "revision": "Issue 5, 03/10/2018",
+      "status": "file-hash",
+      "sha256": "2f0d72961ef41fc9854f5707d4f454689b1f559db94d0dbadd7a44d7aa7a9ee9",
+      "bytes": 255595,
+      "pages": 1,
+      "origin": "device-reference",
+      "related_archive_record_ids": []
+    },
+    {
+      "id": "device-doc-ems-a93fc764968b",
+      "brand": "EMS",
+      "category": "fire",
+      "models": [
+        "FCX-532-001",
+        "Fusion RLM FCX-532-001"
+      ],
+      "title": "MK127 FireCell Fusion RLM Product Datasheet",
+      "type": "manufacturer reference",
+      "url": "https://www.firesense.co.uk/amfile/file/download/file/399/product/2472/",
+      "source": "https://www.firesense.co.uk/amfile/file/download/file/399/product/2472/",
+      "revision": "Issue 7, 24/09/2024",
+      "status": "file-hash",
+      "sha256": "a93fc764968b96a6dce97eeb0c3ace6b9baecb909a581bc1845882319413723e",
+      "bytes": 227012,
+      "pages": 2,
+      "origin": "device-reference",
+      "related_archive_record_ids": []
+    },
+    {
+      "id": "device-doc-ems-777d6bd3e405",
+      "brand": "EMS",
+      "category": "fire",
+      "models": [
+        "FC-555-001",
+        "FireCell 230 V RCC FC-555-001"
+      ],
+      "title": "MK126 FireCell 230Vac Radio Cluster Communicator Product Datasheet",
+      "type": "manufacturer reference",
+      "url": "https://huvo.co.uk/wp-content/uploads/2024/09/EMS-FireCell-230VAC-RCC.pdf",
+      "source": "https://huvo.co.uk/product/ems-firecell-radio-cluster-communicator/",
+      "revision": "Issue 5, 03/10/2018",
+      "status": "file-hash",
+      "sha256": "777d6bd3e40513cc306e394974cba19b70b995395a8f396040802844c82a9f86",
+      "bytes": 313929,
+      "pages": 1,
+      "origin": "device-reference",
+      "related_archive_record_ids": []
+    },
+    {
+      "id": "device-doc-ems-0df7986de600",
+      "brand": "EMS",
+      "category": "fire",
+      "models": [
+        "FCX-500-004",
+        "FireCell Radio Hub FCX-500-004"
+      ],
+      "title": "MK125 FireCell Radio Hub Product Datasheet",
+      "type": "manufacturer reference",
+      "url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Radio-Hub.pdf",
+      "source": "https://huvo.co.uk/product/ems-firecell-radio-hub/",
+      "revision": "Issue 4, 02/10/2018",
+      "status": "file-hash",
+      "sha256": "0df7986de600c0cf4a177eecf00c10620bfae78c23aef61995f48c742fc2cc2c",
+      "bytes": 712181,
+      "pages": 1,
+      "origin": "device-reference",
+      "related_archive_record_ids": []
+    }
+  ],
+  "review_notes": [
+    "Manufacturer emsgroup.co.uk returned HTTP 503 for seven product/PDF requests and subsequent browser checks. No failed EMS URL is used as a downloadable reference.",
+    "Eight mirror PDFs were downloaded successfully with HTTP 200 and inspected for the EMS branding, document code, revision, actual product codes and manufacturer figure. Titles and card text come from those documents, not reseller compatibility assertions.",
+    "No associations to unrelated SmartCell or FirePoint panel records were added.",
+    "Older FC-610-001 I/O is kept distinct from FC-41-0202. RCC and Hub source figures carry V3 badges; the cards retain the exact unsuffixed codes actually printed in their 2018 sheets, without inventing a V3 ordering suffix or conflating alternate-power variants.",
+    "Combined sounder/detector card identifies FCX-191-000 base only; manufacturer photo includes a fitted head. Optical and wall-VAD head-only codes similarly disclose the pictured separate base.",
+    "Securitysuppliers.ie source returned HTTP 403; it was not retried or used. Acorn was excluded. WDC deferred because this bounded batch already includes eight verified functional families."
+  ],
+  "visual_review": "Each final card image was inspected on the per-brand contact sheet and compared with its source product page or manufacturer PDF illustration. Shared housing, assembled-head/base and edition limitations were retained."
+}

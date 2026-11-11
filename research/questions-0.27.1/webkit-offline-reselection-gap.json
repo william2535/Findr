@@ -1,0 +1,1743 @@
+{
+  "browser": "webkit",
+  "width": 390,
+  "physicalIPhone": false,
+  "syntheticManuals": true,
+  "modelMode": "Explicit manual-extract fallback; no model download required for picker verification",
+  "checks": [
+    "Empty saved library keeps the question and offers upload / archive",
+    "An exact-model question opens saved selection even with one matching PDF; nothing auto-selects",
+    "Reload restores saved-manual selection and exact pending question without replaying transcript",
+    "Selecting and confirming saved PDF resumes the original question with page-backed extracts",
+    "Contextual follow-up retains the explicitly chosen panel manual",
+    "A new component question selects its own saved manual within the same chat"
+  ],
+  "measurements": [
+    {
+      "operation": "Select saved manual through identity",
+      "id": "qa-panel",
+      "elapsedMs": 630.5372990000001
+    },
+    {
+      "operation": "Select saved manual through identity",
+      "id": "qa-psu",
+      "elapsedMs": 362.57188999999926
+    },
+    {
+      "operation": "Select saved manual through identity",
+      "id": "qa-panel",
+      "elapsedMs": 53.60950599999978
+    }
+  ],
+  "status": "failed",
+  "environment": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15",
+  "browserVersion": "26.0",
+  "error": "Error: Timed out: async()=>{const db=await import('./db.mjs'),e=await import('./quick-questions-engine.mjs'),s=await db.setting('quick-questions-v1'),c=s.conversations.find(c=>c.id===s.activeId);ret\n    at poll (file:///workspace/sites/findr/scripts/verify-questions0271-browser.mjs:21:173)\n    at async answer (file:///workspace/sites/findr/scripts/verify-questions0271-browser.mjs:27:230)\n    at async file:///workspace/sites/findr/scripts/verify-questions0271-browser.mjs:38:215",
+  "state": {
+    "schemaVersion": 1,
+    "version": "2026-11-10.2",
+    "id": "2ac7cf9c-a2a6-4cf3-94d6-40215b548a21",
+    "mode": "quick-questions",
+    "title": "How do I view the event history on the Test Bench FINDR-QA-100 panel?",
+    "createdAt": 1794314561061,
+    "updatedAt": 1794314563799,
+    "status": "open",
+    "phase": "select_saved_manual",
+    "messages": [
+      {
+        "id": "2570bbab-58b6-46bc-8faa-ba23137b5d35",
+        "role": "assistant",
+        "text": "What do you want to know?",
+        "createdAt": 1794314561062,
+        "kind": "quick_prompt",
+        "bodyText": "What do you want to know?",
+        "terminalPromptKey": "quick-question",
+        "terminalKind": "question",
+        "options": [],
+        "sourceRefs": [],
+        "explanation": ""
+      },
+      {
+        "id": "2b5587ad-c832-48ec-bb4a-a70eb2b6e0db",
+        "role": "user",
+        "text": "How do I view the event history on the Test Bench FINDR-QA-100 panel?",
+        "createdAt": 1794314561142,
+        "kind": "quick_input",
+        "inputId": "f23599e9-c36a-48f0-a069-c280ad8225ca"
+      },
+      {
+        "id": "3e6d022c-2512-41e9-bb87-ff16906bff2a",
+        "role": "assistant",
+        "text": "Which saved manual are you asking about? Select it below and I’ll check the equipment with you.\n[1] Use a saved manual\n[2] Find a manual\n[3] Upload PDF\n[4] I haven’t got it",
+        "createdAt": 1794314561142,
+        "kind": "quick_prompt",
+        "bodyText": "Which saved manual are you asking about? Select it below and I’ll check the equipment with you.",
+        "terminalPromptKey": "quick-select-saved:265f6365-0127-4900-be91-ec9c6ca2c750:equipment",
+        "terminalKind": "select_saved_manual",
+        "options": [
+          {
+            "value": "saved",
+            "label": "Use a saved manual",
+            "aliases": [
+              "saved",
+              "saved manuals"
+            ],
+            "number": 1
+          },
+          {
+            "value": "archive",
+            "label": "Find a manual",
+            "aliases": [
+              "find manual",
+              "manual archives",
+              "search manuals"
+            ],
+            "number": 2
+          },
+          {
+            "value": "upload",
+            "label": "Upload PDF",
+            "aliases": [
+              "upload",
+              "upload a manual",
+              "upload pdf",
+              "upload a pdf"
+            ],
+            "number": 3
+          },
+          {
+            "value": "manual_unavailable",
+            "label": "I haven’t got it",
+            "aliases": [
+              "i haven't got it",
+              "no manual",
+              "unavailable"
+            ],
+            "number": 4
+          }
+        ],
+        "sourceRefs": [],
+        "explanation": "Choose the manual yourself, even when only one is saved. A model mentioned in a question does not select a document or confirm its applicability."
+      },
+      {
+        "id": "cf3fb941-350f-43ce-b24a-16faddf59025",
+        "role": "user",
+        "text": "Selected saved manual: Test Bench FINDR-QA-100 panel",
+        "createdAt": 1794314561598,
+        "kind": "manual_selection",
+        "manualId": "qa-panel"
+      },
+      {
+        "id": "1c359d37-5fad-4628-9009-7a895e09ddda",
+        "role": "assistant",
+        "text": "Reading your manual…",
+        "createdAt": 1794314561606,
+        "kind": "manual_processing"
+      },
+      {
+        "id": "d75db6c8-5f9b-4ee4-9084-3c027cc75686",
+        "role": "assistant",
+        "text": "Test Bench FINDR-QA-100 panel is readable and attached. I’ve kept your pending question.",
+        "createdAt": 1794314562028,
+        "kind": "manual_attached",
+        "manualId": "qa-panel",
+        "contentHash": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9"
+      },
+      {
+        "id": "e5558f0c-f047-4bc4-89e1-e392b2d37288",
+        "role": "assistant",
+        "text": "This looks like a Test Bench FINDR-QA-100 manual for fire. Have I got the installed equipment right?\n[1] Yes\n[2] Change equipment",
+        "createdAt": 1794314562028,
+        "kind": "quick_prompt",
+        "bodyText": "This looks like a Test Bench FINDR-QA-100 manual for fire. Have I got the installed equipment right?",
+        "terminalPromptKey": "quick-identity:qa-panel",
+        "terminalKind": "identity",
+        "options": [
+          {
+            "value": "yes",
+            "label": "Yes",
+            "aliases": [
+              "correct",
+              "that's right"
+            ],
+            "number": 1
+          },
+          {
+            "value": "change_equipment",
+            "label": "Change equipment",
+            "aliases": [
+              "no",
+              "change",
+              "wrong"
+            ],
+            "number": 2
+          }
+        ],
+        "sourceRefs": [],
+        "explanation": "Confirm the device label, supported variants and document revision before using equipment-specific instructions."
+      },
+      {
+        "id": "6c731405-0021-4149-984b-0efafc1b18c6",
+        "role": "user",
+        "text": "yes",
+        "createdAt": 1794314562156,
+        "kind": "quick_input",
+        "inputId": "23b501b4-13dd-4923-a82c-d8f9409cf1da"
+      },
+      {
+        "id": "e55abcbf-b302-45f6-8fca-01483323a53c",
+        "role": "assistant",
+        "text": "Got it — Test Bench FINDR-QA-100 (panel).",
+        "createdAt": 1794314562158,
+        "kind": "equipment_confirmed",
+        "equipmentId": "3b770691-f093-46e6-9db4-1d8c7134221e"
+      },
+      {
+        "id": "203f9677-ed33-4488-8ab9-88e18d56ede0",
+        "role": "assistant",
+        "text": "I’ve found relevant passages. I’ll check them against your question.",
+        "createdAt": 1794314562165,
+        "kind": "quick_prompt",
+        "bodyText": "I’ve found relevant passages. I’ll check them against your question.",
+        "terminalPromptKey": "quick-generating:5853e14a-a979-4d3c-8559-9c2a1075e335",
+        "terminalKind": "generating",
+        "options": [],
+        "sourceRefs": [],
+        "explanation": ""
+      },
+      {
+        "id": "e8cd1764-a20c-4610-9cf6-ceb0f22191a6",
+        "role": "assistant",
+        "text": "The local language model is not ready on this device. Your question and manuals are saved.\n[1] Prepare local model\n[2] Manual extracts only — no language model\n[3] Choose manuals",
+        "createdAt": 1794314562208,
+        "kind": "quick_prompt",
+        "bodyText": "The local language model is not ready on this device. Your question and manuals are saved.",
+        "terminalPromptKey": "quick-model-required",
+        "terminalKind": "model_required",
+        "options": [
+          {
+            "value": "model_setup",
+            "label": "Prepare local model",
+            "aliases": [
+              "download model",
+              "prepare model",
+              "retry"
+            ],
+            "number": 1
+          },
+          {
+            "value": "manual_extracts",
+            "label": "Manual extracts only — no language model",
+            "aliases": [
+              "extracts",
+              "manual extracts",
+              "limited mode"
+            ],
+            "number": 2
+          },
+          {
+            "value": "manuals",
+            "label": "Choose manuals",
+            "aliases": [
+              "manuals"
+            ],
+            "number": 3
+          }
+        ],
+        "sourceRefs": [],
+        "explanation": "Manual-extract mode uses local retrieval only and cannot provide a language-model answer. There is no automatic online inference fallback."
+      },
+      {
+        "id": "a485254d-f506-41e7-b8c9-c73235935797",
+        "role": "user",
+        "text": "manual extracts",
+        "createdAt": 1794314562331,
+        "kind": "quick_input",
+        "inputId": "9e781068-e87f-49a7-b067-3f07aa72c717"
+      },
+      {
+        "id": "e1aa8bfa-f8b2-4baf-8111-e99f3e07306b",
+        "role": "assistant",
+        "text": "Manual extracts only — no language-model answer. These passages may help; they do not establish the complete answer.\n1. “SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench. Model: FINDR-QA-100. Revision: QA-027. Section 2 - Viewing event history For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history.”\n\nApplies to the recorded equipment: Test Bench FINDR-QA-100 not established. These are shortened excerpts; check the cited page for surrounding conditions and the full procedure. Check the cited pages, or add the relevant manual, diagram or configuration detail.",
+        "createdAt": 1794314562334,
+        "kind": "manual_extracts",
+        "answerId": "0b83cb54-6db1-40f3-9b91-018a5c7b8eae",
+        "sourceRefs": [
+          {
+            "sourceId": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9:pdf-2:0",
+            "citationId": "S1",
+            "manualId": "qa-panel",
+            "contentHash": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+            "processorVersion": "2026-11-10.2",
+            "title": "Test Bench FINDR-QA-100 panel",
+            "revision": "QA-027",
+            "models": [
+              "FINDR-QA-100"
+            ],
+            "page": 2,
+            "pdfPage": 2,
+            "printedPage": null,
+            "section": null,
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench. Model: FINDR-QA-100. Revision: QA-027. Section 2 - Viewing event history For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history.",
+            "excerpt": "SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench. Model: FINDR-QA-100. Revision: QA-027. Section 2 - Viewing event history For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history.",
+            "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+          }
+        ],
+        "model": {
+          "id": null,
+          "revision": null,
+          "backend": null,
+          "metrics": {},
+          "ran": false,
+          "outputAccepted": false,
+          "sourceSelection": [],
+          "generatedProseUsed": false,
+          "validationIssues": [
+            "The local model did not return an independently supported quotation. Review the exact retrieved material or add the missing manual information."
+          ]
+        },
+        "interpretationPolicy": "Only exact supported manual wording is presented as documented. This does not authorise a test or confirm a cause."
+      },
+      {
+        "id": "a1f5648b-0c55-43c9-a4b4-c2f7ded0e8e4",
+        "role": "assistant",
+        "text": "What else do you want to know?",
+        "createdAt": 1794314562334,
+        "kind": "quick_prompt",
+        "bodyText": "What else do you want to know?",
+        "terminalPromptKey": "quick-question",
+        "terminalKind": "question",
+        "options": [],
+        "sourceRefs": [],
+        "explanation": ""
+      },
+      {
+        "id": "093f7fb9-d19a-4297-a15c-50bc1df64f88",
+        "role": "user",
+        "text": "Where is that menu?",
+        "createdAt": 1794314562429,
+        "kind": "quick_input",
+        "inputId": "235ff52d-775e-453e-a121-2ffef70618e7"
+      },
+      {
+        "id": "cc9225e2-75d1-4d92-8e48-ed5464e3740e",
+        "role": "assistant",
+        "text": "I’ve found relevant passages. I’ll check them against your question.",
+        "createdAt": 1794314562433,
+        "kind": "quick_prompt",
+        "bodyText": "I’ve found relevant passages. I’ll check them against your question.",
+        "terminalPromptKey": "quick-generating:f9956bf6-57de-480f-a707-eea8d897ef1f",
+        "terminalKind": "generating",
+        "options": [],
+        "sourceRefs": [],
+        "explanation": ""
+      },
+      {
+        "id": "ac72b6d0-8dc8-4d9b-865a-540fad33e176",
+        "role": "assistant",
+        "text": "The local language model is not ready on this device. Your question and manuals are saved.\n[1] Prepare local model\n[2] Manual extracts only — no language model\n[3] Choose manuals",
+        "createdAt": 1794314562452,
+        "kind": "quick_prompt",
+        "bodyText": "The local language model is not ready on this device. Your question and manuals are saved.",
+        "terminalPromptKey": "quick-model-required",
+        "terminalKind": "model_required",
+        "options": [
+          {
+            "value": "model_setup",
+            "label": "Prepare local model",
+            "aliases": [
+              "download model",
+              "prepare model",
+              "retry"
+            ],
+            "number": 1
+          },
+          {
+            "value": "manual_extracts",
+            "label": "Manual extracts only — no language model",
+            "aliases": [
+              "extracts",
+              "manual extracts",
+              "limited mode"
+            ],
+            "number": 2
+          },
+          {
+            "value": "manuals",
+            "label": "Choose manuals",
+            "aliases": [
+              "manuals"
+            ],
+            "number": 3
+          }
+        ],
+        "sourceRefs": [],
+        "explanation": "Manual-extract mode uses local retrieval only and cannot provide a language-model answer. There is no automatic online inference fallback."
+      },
+      {
+        "id": "d95e2893-2e59-4f0c-8f6f-16b997c515ce",
+        "role": "user",
+        "text": "manual extracts",
+        "createdAt": 1794314562525,
+        "kind": "quick_input",
+        "inputId": "07e18e54-850f-4252-bfcf-d096b22bdb7c"
+      },
+      {
+        "id": "ed998263-7eb3-4cc2-9028-4e5236e65e45",
+        "role": "assistant",
+        "text": "Manual extracts only — no language-model answer. These passages may help; they do not establish the complete answer.\n1. “SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench. Model: FINDR-QA-100. Revision: QA-027. Section 2 - Viewing event history For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history.”\n\nApplies to the recorded equipment: Test Bench FINDR-QA-100 not established. These are shortened excerpts; check the cited page for surrounding conditions and the full procedure. Check the cited pages, or add the relevant manual, diagram or configuration detail.",
+        "createdAt": 1794314562527,
+        "kind": "manual_extracts",
+        "answerId": "0daf71d4-73fc-4187-bcd1-1cc6c35ec58f",
+        "sourceRefs": [
+          {
+            "sourceId": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9:pdf-2:0",
+            "citationId": "S1",
+            "manualId": "qa-panel",
+            "contentHash": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+            "processorVersion": "2026-11-10.2",
+            "title": "Test Bench FINDR-QA-100 panel",
+            "revision": "QA-027",
+            "models": [
+              "FINDR-QA-100"
+            ],
+            "page": 2,
+            "pdfPage": 2,
+            "printedPage": null,
+            "section": null,
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench. Model: FINDR-QA-100. Revision: QA-027. Section 2 - Viewing event history For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history.",
+            "excerpt": "SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench. Model: FINDR-QA-100. Revision: QA-027. Section 2 - Viewing event history For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history.",
+            "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+          }
+        ],
+        "model": {
+          "id": null,
+          "revision": null,
+          "backend": null,
+          "metrics": {},
+          "ran": false,
+          "outputAccepted": false,
+          "sourceSelection": [],
+          "generatedProseUsed": false,
+          "validationIssues": [
+            "The local model did not return an independently supported quotation. Review the exact retrieved material or add the missing manual information."
+          ]
+        },
+        "interpretationPolicy": "Only exact supported manual wording is presented as documented. This does not authorise a test or confirm a cause."
+      },
+      {
+        "id": "e8cbd1ec-f6d2-4879-b484-e5a9fc00e849",
+        "role": "assistant",
+        "text": "What else do you want to know?",
+        "createdAt": 1794314562527,
+        "kind": "quick_prompt",
+        "bodyText": "What else do you want to know?",
+        "terminalPromptKey": "quick-question",
+        "terminalKind": "question",
+        "options": [],
+        "sourceRefs": [],
+        "explanation": ""
+      },
+      {
+        "id": "75d25503-5fdd-428a-a98d-2ee32d07109e",
+        "role": "user",
+        "text": "What is the nominal output voltage of the external PSU?",
+        "createdAt": 1794314563050,
+        "kind": "quick_input",
+        "inputId": "1b24f00d-2646-4930-9144-2a04c0bbaaec"
+      },
+      {
+        "id": "d1837fdb-2933-4269-b96d-e4aa603c07b9",
+        "role": "assistant",
+        "text": "Which saved manual are you asking about? Choose the PSU manual. Select it below and I’ll check the equipment with you.\n[1] Use a saved manual\n[2] Find a manual\n[3] Upload PDF\n[4] I haven’t got it",
+        "createdAt": 1794314563051,
+        "kind": "quick_prompt",
+        "bodyText": "Which saved manual are you asking about? Choose the PSU manual. Select it below and I’ll check the equipment with you.",
+        "terminalPromptKey": "quick-select-saved:ff76e1ce-f007-4035-bd72-c6fc04cf51c5:PSU",
+        "terminalKind": "select_saved_manual",
+        "options": [
+          {
+            "value": "saved",
+            "label": "Use a saved manual",
+            "aliases": [
+              "saved",
+              "saved manuals"
+            ],
+            "number": 1
+          },
+          {
+            "value": "archive",
+            "label": "Find a manual",
+            "aliases": [
+              "find manual",
+              "manual archives",
+              "search manuals"
+            ],
+            "number": 2
+          },
+          {
+            "value": "upload",
+            "label": "Upload PDF",
+            "aliases": [
+              "upload",
+              "upload a manual",
+              "upload pdf",
+              "upload a pdf"
+            ],
+            "number": 3
+          },
+          {
+            "value": "manual_unavailable",
+            "label": "I haven’t got it",
+            "aliases": [
+              "i haven't got it",
+              "no manual",
+              "unavailable"
+            ],
+            "number": 4
+          }
+        ],
+        "sourceRefs": [],
+        "explanation": "Choose the manual yourself, even when only one is saved. A model mentioned in a question does not select a document or confirm its applicability."
+      },
+      {
+        "id": "bd7baafc-a3a6-447b-8a4a-8d4c3a5916c7",
+        "role": "user",
+        "text": "Selected saved manual: Test Bench FINDR-PSU-24 power supply",
+        "createdAt": 1794314563125,
+        "kind": "manual_selection",
+        "manualId": "qa-psu"
+      },
+      {
+        "id": "479ac5a0-da3e-4b26-8c9b-49bc587adfa5",
+        "role": "assistant",
+        "text": "Reading your manual…",
+        "createdAt": 1794314563138,
+        "kind": "manual_processing"
+      },
+      {
+        "id": "732f7d66-8e9b-4bba-941e-3814de8291cc",
+        "role": "assistant",
+        "text": "Test Bench FINDR-PSU-24 power supply is readable and attached. I’ve kept your pending question.",
+        "createdAt": 1794314563347,
+        "kind": "manual_attached",
+        "manualId": "qa-psu",
+        "contentHash": "0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310"
+      },
+      {
+        "id": "7e887f7f-f6bd-43f2-ae0f-4d41207ce0f4",
+        "role": "assistant",
+        "text": "This looks like a Test Bench QA-PSU-24 manual. Have I got the installed equipment right?\n[1] Yes\n[2] Change equipment",
+        "createdAt": 1794314563347,
+        "kind": "quick_prompt",
+        "bodyText": "This looks like a Test Bench QA-PSU-24 manual. Have I got the installed equipment right?",
+        "terminalPromptKey": "quick-identity:qa-psu",
+        "terminalKind": "identity",
+        "options": [
+          {
+            "value": "yes",
+            "label": "Yes",
+            "aliases": [
+              "correct",
+              "that's right"
+            ],
+            "number": 1
+          },
+          {
+            "value": "change_equipment",
+            "label": "Change equipment",
+            "aliases": [
+              "no",
+              "change",
+              "wrong"
+            ],
+            "number": 2
+          }
+        ],
+        "sourceRefs": [],
+        "explanation": "Confirm the device label, supported variants and document revision before using equipment-specific instructions."
+      },
+      {
+        "id": "07272f18-115a-47c6-a64d-02eed00f3356",
+        "role": "user",
+        "text": "yes",
+        "createdAt": 1794314563439,
+        "kind": "quick_input",
+        "inputId": "184c5236-a93d-4fb2-a354-1d0e9d468862"
+      },
+      {
+        "id": "ed04bd17-512c-493c-9e22-e0ad0372c66e",
+        "role": "assistant",
+        "text": "Got it — Test Bench QA-PSU-24 (PSU).",
+        "createdAt": 1794314563440,
+        "kind": "equipment_confirmed",
+        "equipmentId": "a580d7dc-2655-429a-b41e-2c86ee3ea5b1"
+      },
+      {
+        "id": "f1825fa8-407b-4cf0-a69b-68ab6268e588",
+        "role": "assistant",
+        "text": "I’ve found relevant passages. I’ll check them against your question.",
+        "createdAt": 1794314563442,
+        "kind": "quick_prompt",
+        "bodyText": "I’ve found relevant passages. I’ll check them against your question.",
+        "terminalPromptKey": "quick-generating:32a5cddb-3c60-43e2-8094-3d41a096991f",
+        "terminalKind": "generating",
+        "options": [],
+        "sourceRefs": [],
+        "explanation": ""
+      },
+      {
+        "id": "dce2be93-8a30-4ee4-88ef-93ebcae59ec1",
+        "role": "assistant",
+        "text": "The local language model is not ready on this device. Your question and manuals are saved.\n[1] Prepare local model\n[2] Manual extracts only — no language model\n[3] Choose manuals",
+        "createdAt": 1794314563474,
+        "kind": "quick_prompt",
+        "bodyText": "The local language model is not ready on this device. Your question and manuals are saved.",
+        "terminalPromptKey": "quick-model-required",
+        "terminalKind": "model_required",
+        "options": [
+          {
+            "value": "model_setup",
+            "label": "Prepare local model",
+            "aliases": [
+              "download model",
+              "prepare model",
+              "retry"
+            ],
+            "number": 1
+          },
+          {
+            "value": "manual_extracts",
+            "label": "Manual extracts only — no language model",
+            "aliases": [
+              "extracts",
+              "manual extracts",
+              "limited mode"
+            ],
+            "number": 2
+          },
+          {
+            "value": "manuals",
+            "label": "Choose manuals",
+            "aliases": [
+              "manuals"
+            ],
+            "number": 3
+          }
+        ],
+        "sourceRefs": [],
+        "explanation": "Manual-extract mode uses local retrieval only and cannot provide a language-model answer. There is no automatic online inference fallback."
+      },
+      {
+        "id": "08cfb7cb-2d31-44d4-83a0-fe62e806d16e",
+        "role": "user",
+        "text": "manual extracts",
+        "createdAt": 1794314563599,
+        "kind": "quick_input",
+        "inputId": "edd40ca2-4597-4b16-b152-2fef28e760c1"
+      },
+      {
+        "id": "ec7579ae-2c23-474f-a37b-143229fd4115",
+        "role": "assistant",
+        "text": "Manual extracts only — no language-model answer. These passages may help; they do not establish the complete answer.\n1. “Equipment: External power supply PSU Document type: Datasheet Revision: QA-027 Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product.”\n\nApplies to the recorded equipment: Test Bench QA-PSU-24 not established. These are shortened excerpts; check the cited page for surrounding conditions and the full procedure. Check the cited pages, or add the relevant manual, diagram or configuration detail.",
+        "createdAt": 1794314563600,
+        "kind": "manual_extracts",
+        "answerId": "b6872f4a-5caa-4353-ae3f-4cea18d34ce5",
+        "sourceRefs": [
+          {
+            "sourceId": "0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310:pdf-1:0",
+            "citationId": "S1",
+            "manualId": "qa-psu",
+            "contentHash": "0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310",
+            "processorVersion": "2026-11-10.2",
+            "title": "Test Bench FINDR-PSU-24 power supply",
+            "revision": "QA-027",
+            "models": [
+              "QA-PSU-24"
+            ],
+            "page": 1,
+            "pdfPage": 1,
+            "printedPage": null,
+            "section": null,
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "Equipment: External power supply PSU Document type: Datasheet Revision: QA-027 Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product.",
+            "excerpt": "Equipment: External power supply PSU Document type: Datasheet Revision: QA-027 Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product.",
+            "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+          }
+        ],
+        "model": {
+          "id": null,
+          "revision": null,
+          "backend": null,
+          "metrics": {},
+          "ran": false,
+          "outputAccepted": false,
+          "sourceSelection": [],
+          "generatedProseUsed": false,
+          "validationIssues": [
+            "The local model did not return an independently supported quotation. Review the exact retrieved material or add the missing manual information."
+          ]
+        },
+        "interpretationPolicy": "Only exact supported manual wording is presented as documented. This does not authorise a test or confirm a cause."
+      },
+      {
+        "id": "883576ac-c0b7-4e3c-aa9e-6bd951faf840",
+        "role": "assistant",
+        "text": "What else do you want to know?",
+        "createdAt": 1794314563601,
+        "kind": "quick_prompt",
+        "bodyText": "What else do you want to know?",
+        "terminalPromptKey": "quick-question",
+        "terminalKind": "question",
+        "options": [],
+        "sourceRefs": [],
+        "explanation": ""
+      },
+      {
+        "id": "0d8229d8-f0b0-4885-b846-b41c8a09b1c1",
+        "role": "user",
+        "text": "How do I view the event history on the panel?",
+        "createdAt": 1794314563694,
+        "kind": "quick_input",
+        "inputId": "f1d12752-1f5b-4084-a4bd-f3bedb92249e"
+      },
+      {
+        "id": "18f68ded-a701-414b-94f2-3f8aab65c81c",
+        "role": "assistant",
+        "text": "Which saved manual are you asking about? Select it below and I’ll check the equipment with you.\n[1] Use a saved manual\n[2] Find a manual\n[3] Upload PDF\n[4] I haven’t got it",
+        "createdAt": 1794314563695,
+        "kind": "quick_prompt",
+        "bodyText": "Which saved manual are you asking about? Select it below and I’ll check the equipment with you.",
+        "terminalPromptKey": "quick-select-saved:073d9289-613a-4f88-a6cc-b20655ea7e19:equipment",
+        "terminalKind": "select_saved_manual",
+        "options": [
+          {
+            "value": "saved",
+            "label": "Use a saved manual",
+            "aliases": [
+              "saved",
+              "saved manuals"
+            ],
+            "number": 1
+          },
+          {
+            "value": "archive",
+            "label": "Find a manual",
+            "aliases": [
+              "find manual",
+              "manual archives",
+              "search manuals"
+            ],
+            "number": 2
+          },
+          {
+            "value": "upload",
+            "label": "Upload PDF",
+            "aliases": [
+              "upload",
+              "upload a manual",
+              "upload pdf",
+              "upload a pdf"
+            ],
+            "number": 3
+          },
+          {
+            "value": "manual_unavailable",
+            "label": "I haven’t got it",
+            "aliases": [
+              "i haven't got it",
+              "no manual",
+              "unavailable"
+            ],
+            "number": 4
+          }
+        ],
+        "sourceRefs": [],
+        "explanation": "Choose the manual yourself, even when only one is saved. A model mentioned in a question does not select a document or confirm its applicability."
+      },
+      {
+        "id": "aed2922e-6608-414e-b1fd-2048b498d9c2",
+        "role": "user",
+        "text": "Selected saved manual: Test Bench FINDR-QA-100 panel",
+        "createdAt": 1794314563764,
+        "kind": "manual_selection",
+        "manualId": "qa-panel"
+      },
+      {
+        "id": "0bc3df73-b71f-4569-8561-d6834004de92",
+        "role": "assistant",
+        "text": "Reading your manual…",
+        "createdAt": 1794314563782,
+        "kind": "manual_processing"
+      },
+      {
+        "id": "320d9b76-71ae-4312-86b1-3b0514efb87c",
+        "role": "assistant",
+        "text": "This PDF is invalid or has too little readable text. Choose a readable complete copy or relevant pages.\n[1] Retry\n[2] Choose another manual\n[3] Error details",
+        "createdAt": 1794314563799,
+        "kind": "quick_prompt",
+        "bodyText": "This PDF is invalid or has too little readable text. Choose a readable complete copy or relevant pages.",
+        "terminalPromptKey": "quick-error:INVALID_PDF",
+        "terminalKind": "error",
+        "options": [
+          {
+            "value": "upload",
+            "label": "Retry",
+            "aliases": [
+              "retry"
+            ],
+            "number": 1
+          },
+          {
+            "value": "saved",
+            "label": "Choose another manual",
+            "aliases": [
+              "saved"
+            ],
+            "number": 2
+          },
+          {
+            "value": "error_details",
+            "label": "Error details",
+            "aliases": [
+              "details"
+            ],
+            "number": 3
+          }
+        ],
+        "sourceRefs": [],
+        "explanation": ""
+      }
+    ],
+    "equipment": [
+      {
+        "systemTypes": [
+          "fire"
+        ],
+        "manufacturer": "Test Bench",
+        "manufacturerCandidates": [
+          "Test Bench"
+        ],
+        "model": "FINDR-QA-100",
+        "models": [
+          "FINDR-QA-100"
+        ],
+        "familyOnly": false,
+        "equipmentType": "panel",
+        "equipmentTypes": [
+          "panel",
+          "PSU"
+        ],
+        "documentType": "User guide",
+        "revision": "QA-027",
+        "variants": [],
+        "requiresVariant": false,
+        "uncertain": false,
+        "confirmed": true,
+        "evidence": [
+          {
+            "page": 1,
+            "quote": "AL \nManufacturer: Test Bench\nModel: FINDR-QA-100\nEquipment: Fire alarm control panel\nDocument type: User guide\nRevision: QA-027\nThis fictional fire alarm control panel exists only for browser verification. The model\nnames, buttons and behav",
+            "field": "systemTypes",
+            "value": "fire"
+          },
+          {
+            "page": 1,
+            "quote": "THETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL \nManufacturer: Test Bench\nModel: FINDR-QA-100\nEquipment: Fire alarm control panel\nDocument type: User guide\nRevision: QA-027\nThis fictional fire alarm control panel exists only for browser verifi",
+            "field": "manufacturer",
+            "value": "Test Bench"
+          },
+          {
+            "page": 1,
+            "quote": "ONLY - NOT A REAL EQUIPMENT MANUAL \nManufacturer: Test Bench\nModel: FINDR-QA-100\nEquipment: Fire alarm control panel\nDocument type: User guide\nRevision: QA-027\nThis fictional fire alarm control panel exists only for browser verification. Th",
+            "field": "models",
+            "value": "FINDR-QA-100"
+          },
+          {
+            "page": 1,
+            "quote": "AL \nManufacturer: Test Bench\nModel: FINDR-QA-100\nEquipment: Fire alarm control panel\nDocument type: User guide\nRevision: QA-027\nThis fictional fire alarm control panel exists only for browser verification. The model\nnames, buttons and behav",
+            "field": "equipmentType",
+            "value": "panel"
+          },
+          {
+            "page": 2,
+            "quote": "n before answering how walk test is performed. The external\npower supply is a separate component. This panel guide does not establish the PSU\nterminal assignments, current rating or operating voltage. \nSynthetic printed page Q-2 / PDF page",
+            "field": "equipmentType",
+            "value": "PSU"
+          },
+          {
+            "page": 1,
+            "quote": "R-QA-100\nEquipment: Fire alarm control panel\nDocument type: User guide\nRevision: QA-027\nThis fictional fire alarm control panel exists only for browser verification. The model\nnames, buttons and behaviour below do not describe real equipmen",
+            "field": "documentType",
+            "value": "User guide"
+          },
+          {
+            "page": 1,
+            "quote": "uipment: Fire alarm control panel\nDocument type: User guide\nRevision: QA-027\nThis fictional fire alarm control panel exists only for browser verification. The model\nnames, buttons and behaviour below do not describe real equipment. Confirm",
+            "field": "revision",
+            "value": "QA-027"
+          }
+        ],
+        "basis": "Unconfirmed suggestions extracted from manual contents. Confirm the installed label and applicable variant.",
+        "id": "3b770691-f093-46e6-9db4-1d8c7134221e",
+        "confirmedAt": 1794314562157,
+        "confirmationSource": "engineer"
+      },
+      {
+        "systemTypes": [],
+        "manufacturer": "Test Bench",
+        "manufacturerCandidates": [
+          "Test Bench"
+        ],
+        "model": "QA-PSU-24",
+        "models": [
+          "QA-PSU-24"
+        ],
+        "familyOnly": false,
+        "equipmentType": "PSU",
+        "equipmentTypes": [
+          "PSU"
+        ],
+        "documentType": "Datasheet",
+        "revision": "QA-027",
+        "variants": [],
+        "requiresVariant": false,
+        "uncertain": true,
+        "confirmed": true,
+        "evidence": [
+          {
+            "page": 1,
+            "quote": "THETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL \nManufacturer: Test Bench\nModel: QA-PSU-24\nEquipment: External power supply PSU\nDocument type: Datasheet\nRevision: QA-027\nSection 1 - Fictional output specification\nThis test-only external power",
+            "field": "manufacturer",
+            "value": "Test Bench"
+          },
+          {
+            "page": 1,
+            "quote": "ONLY - NOT A REAL EQUIPMENT MANUAL \nManufacturer: Test Bench\nModel: QA-PSU-24\nEquipment: External power supply PSU\nDocument type: Datasheet\nRevision: QA-027\nSection 1 - Fictional output specification\nThis test-only external power supply pro",
+            "field": "models",
+            "value": "QA-PSU-24"
+          },
+          {
+            "page": 1,
+            "quote": "A REAL EQUIPMENT MANUAL \nManufacturer: Test Bench\nModel: QA-PSU-24\nEquipment: External power supply PSU\nDocument type: Datasheet\nRevision: QA-027\nSection 1 - Fictional output specification\nThis test-only external power supply provides a nom",
+            "field": "equipmentType",
+            "value": "PSU"
+          },
+          {
+            "page": 1,
+            "quote": "-PSU-24\nEquipment: External power supply PSU\nDocument type: Datasheet\nRevision: QA-027\nSection 1 - Fictional output specification\nThis test-only external power supply provides a nominal 24 V DC output. The fictional\noutput labels are V+ and",
+            "field": "documentType",
+            "value": "Datasheet"
+          },
+          {
+            "page": 1,
+            "quote": "uipment: External power supply PSU\nDocument type: Datasheet\nRevision: QA-027\nSection 1 - Fictional output specification\nThis test-only external power supply provides a nominal 24 V DC output. The fictional\noutput labels are V+ and V-. The s",
+            "field": "revision",
+            "value": "QA-027"
+          }
+        ],
+        "basis": "Unconfirmed suggestions extracted from manual contents. Confirm the installed label and applicable variant.",
+        "id": "a580d7dc-2655-429a-b41e-2c86ee3ea5b1",
+        "confirmedAt": 1794314563440,
+        "confirmationSource": "engineer"
+      }
+    ],
+    "manuals": [
+      {
+        "manualId": "qa-panel",
+        "contentHash": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+        "processorVersion": "2026-11-10.2",
+        "title": "Test Bench FINDR-QA-100 panel",
+        "filename": "qa-panel.pdf",
+        "usable": true,
+        "pageCount": 2,
+        "readablePageCount": 2,
+        "quality": {
+          "readablePages": 2,
+          "unreadablePages": [],
+          "readableCharacters": 1983,
+          "ocrPages": 0,
+          "warning": null
+        },
+        "identity": {
+          "systemTypes": [
+            "fire"
+          ],
+          "manufacturer": "Test Bench",
+          "manufacturerCandidates": [
+            "Test Bench"
+          ],
+          "model": "FINDR-QA-100",
+          "models": [
+            "FINDR-QA-100"
+          ],
+          "familyOnly": false,
+          "equipmentType": "panel",
+          "equipmentTypes": [
+            "panel",
+            "PSU"
+          ],
+          "documentType": "User guide",
+          "revision": "QA-027",
+          "variants": [],
+          "requiresVariant": false,
+          "uncertain": false,
+          "confirmed": false,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "AL \nManufacturer: Test Bench\nModel: FINDR-QA-100\nEquipment: Fire alarm control panel\nDocument type: User guide\nRevision: QA-027\nThis fictional fire alarm control panel exists only for browser verification. The model\nnames, buttons and behav",
+              "field": "systemTypes",
+              "value": "fire"
+            },
+            {
+              "page": 1,
+              "quote": "THETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL \nManufacturer: Test Bench\nModel: FINDR-QA-100\nEquipment: Fire alarm control panel\nDocument type: User guide\nRevision: QA-027\nThis fictional fire alarm control panel exists only for browser verifi",
+              "field": "manufacturer",
+              "value": "Test Bench"
+            },
+            {
+              "page": 1,
+              "quote": "ONLY - NOT A REAL EQUIPMENT MANUAL \nManufacturer: Test Bench\nModel: FINDR-QA-100\nEquipment: Fire alarm control panel\nDocument type: User guide\nRevision: QA-027\nThis fictional fire alarm control panel exists only for browser verification. Th",
+              "field": "models",
+              "value": "FINDR-QA-100"
+            },
+            {
+              "page": 1,
+              "quote": "AL \nManufacturer: Test Bench\nModel: FINDR-QA-100\nEquipment: Fire alarm control panel\nDocument type: User guide\nRevision: QA-027\nThis fictional fire alarm control panel exists only for browser verification. The model\nnames, buttons and behav",
+              "field": "equipmentType",
+              "value": "panel"
+            },
+            {
+              "page": 2,
+              "quote": "n before answering how walk test is performed. The external\npower supply is a separate component. This panel guide does not establish the PSU\nterminal assignments, current rating or operating voltage. \nSynthetic printed page Q-2 / PDF page",
+              "field": "equipmentType",
+              "value": "PSU"
+            },
+            {
+              "page": 1,
+              "quote": "R-QA-100\nEquipment: Fire alarm control panel\nDocument type: User guide\nRevision: QA-027\nThis fictional fire alarm control panel exists only for browser verification. The model\nnames, buttons and behaviour below do not describe real equipmen",
+              "field": "documentType",
+              "value": "User guide"
+            },
+            {
+              "page": 1,
+              "quote": "uipment: Fire alarm control panel\nDocument type: User guide\nRevision: QA-027\nThis fictional fire alarm control panel exists only for browser verification. The model\nnames, buttons and behaviour below do not describe real equipment. Confirm",
+              "field": "revision",
+              "value": "QA-027"
+            }
+          ],
+          "basis": "Unconfirmed suggestions extracted from manual contents. Confirm the installed label and applicable variant."
+        },
+        "equipmentRole": "Test Bench FINDR-QA-100 · panel",
+        "equipmentId": "3b770691-f093-46e6-9db4-1d8c7134221e",
+        "addedAt": 1794314562027,
+        "pages": [
+          {
+            "page": 1,
+            "method": "text",
+            "confidence": null,
+            "quality": {
+              "readable": true,
+              "characters": 834,
+              "words": 118,
+              "method": "text",
+              "confidence": null,
+              "reason": null
+            }
+          },
+          {
+            "page": 2,
+            "method": "text",
+            "confidence": null,
+            "quality": {
+              "readable": true,
+              "characters": 1149,
+              "words": 173,
+              "method": "text",
+              "confidence": null,
+              "reason": null
+            }
+          }
+        ],
+        "confirmedIdentity": {
+          "systemTypes": [
+            "fire"
+          ],
+          "manufacturer": "Test Bench",
+          "manufacturerCandidates": [
+            "Test Bench"
+          ],
+          "model": "FINDR-QA-100",
+          "models": [
+            "FINDR-QA-100"
+          ],
+          "familyOnly": false,
+          "equipmentType": "panel",
+          "equipmentTypes": [
+            "panel",
+            "PSU"
+          ],
+          "documentType": "User guide",
+          "revision": "QA-027",
+          "variants": [],
+          "requiresVariant": false,
+          "uncertain": false,
+          "confirmed": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "AL \nManufacturer: Test Bench\nModel: FINDR-QA-100\nEquipment: Fire alarm control panel\nDocument type: User guide\nRevision: QA-027\nThis fictional fire alarm control panel exists only for browser verification. The model\nnames, buttons and behav",
+              "field": "systemTypes",
+              "value": "fire"
+            },
+            {
+              "page": 1,
+              "quote": "THETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL \nManufacturer: Test Bench\nModel: FINDR-QA-100\nEquipment: Fire alarm control panel\nDocument type: User guide\nRevision: QA-027\nThis fictional fire alarm control panel exists only for browser verifi",
+              "field": "manufacturer",
+              "value": "Test Bench"
+            },
+            {
+              "page": 1,
+              "quote": "ONLY - NOT A REAL EQUIPMENT MANUAL \nManufacturer: Test Bench\nModel: FINDR-QA-100\nEquipment: Fire alarm control panel\nDocument type: User guide\nRevision: QA-027\nThis fictional fire alarm control panel exists only for browser verification. Th",
+              "field": "models",
+              "value": "FINDR-QA-100"
+            },
+            {
+              "page": 1,
+              "quote": "AL \nManufacturer: Test Bench\nModel: FINDR-QA-100\nEquipment: Fire alarm control panel\nDocument type: User guide\nRevision: QA-027\nThis fictional fire alarm control panel exists only for browser verification. The model\nnames, buttons and behav",
+              "field": "equipmentType",
+              "value": "panel"
+            },
+            {
+              "page": 2,
+              "quote": "n before answering how walk test is performed. The external\npower supply is a separate component. This panel guide does not establish the PSU\nterminal assignments, current rating or operating voltage. \nSynthetic printed page Q-2 / PDF page",
+              "field": "equipmentType",
+              "value": "PSU"
+            },
+            {
+              "page": 1,
+              "quote": "R-QA-100\nEquipment: Fire alarm control panel\nDocument type: User guide\nRevision: QA-027\nThis fictional fire alarm control panel exists only for browser verification. The model\nnames, buttons and behaviour below do not describe real equipmen",
+              "field": "documentType",
+              "value": "User guide"
+            },
+            {
+              "page": 1,
+              "quote": "uipment: Fire alarm control panel\nDocument type: User guide\nRevision: QA-027\nThis fictional fire alarm control panel exists only for browser verification. The model\nnames, buttons and behaviour below do not describe real equipment. Confirm",
+              "field": "revision",
+              "value": "QA-027"
+            }
+          ],
+          "basis": "Unconfirmed suggestions extracted from manual contents. Confirm the installed label and applicable variant.",
+          "id": "3b770691-f093-46e6-9db4-1d8c7134221e",
+          "confirmedAt": 1794314562157,
+          "confirmationSource": "engineer"
+        }
+      },
+      {
+        "manualId": "qa-psu",
+        "contentHash": "0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310",
+        "processorVersion": "2026-11-10.2",
+        "title": "Test Bench FINDR-PSU-24 power supply",
+        "filename": "qa-psu.pdf",
+        "usable": true,
+        "pageCount": 1,
+        "readablePageCount": 1,
+        "quality": {
+          "readablePages": 1,
+          "unreadablePages": [],
+          "readableCharacters": 994,
+          "ocrPages": 0,
+          "warning": null
+        },
+        "identity": {
+          "systemTypes": [],
+          "manufacturer": "Test Bench",
+          "manufacturerCandidates": [
+            "Test Bench"
+          ],
+          "model": "QA-PSU-24",
+          "models": [
+            "QA-PSU-24"
+          ],
+          "familyOnly": false,
+          "equipmentType": "PSU",
+          "equipmentTypes": [
+            "PSU"
+          ],
+          "documentType": "Datasheet",
+          "revision": "QA-027",
+          "variants": [],
+          "requiresVariant": false,
+          "uncertain": true,
+          "confirmed": false,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "THETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL \nManufacturer: Test Bench\nModel: QA-PSU-24\nEquipment: External power supply PSU\nDocument type: Datasheet\nRevision: QA-027\nSection 1 - Fictional output specification\nThis test-only external power",
+              "field": "manufacturer",
+              "value": "Test Bench"
+            },
+            {
+              "page": 1,
+              "quote": "ONLY - NOT A REAL EQUIPMENT MANUAL \nManufacturer: Test Bench\nModel: QA-PSU-24\nEquipment: External power supply PSU\nDocument type: Datasheet\nRevision: QA-027\nSection 1 - Fictional output specification\nThis test-only external power supply pro",
+              "field": "models",
+              "value": "QA-PSU-24"
+            },
+            {
+              "page": 1,
+              "quote": "A REAL EQUIPMENT MANUAL \nManufacturer: Test Bench\nModel: QA-PSU-24\nEquipment: External power supply PSU\nDocument type: Datasheet\nRevision: QA-027\nSection 1 - Fictional output specification\nThis test-only external power supply provides a nom",
+              "field": "equipmentType",
+              "value": "PSU"
+            },
+            {
+              "page": 1,
+              "quote": "-PSU-24\nEquipment: External power supply PSU\nDocument type: Datasheet\nRevision: QA-027\nSection 1 - Fictional output specification\nThis test-only external power supply provides a nominal 24 V DC output. The fictional\noutput labels are V+ and",
+              "field": "documentType",
+              "value": "Datasheet"
+            },
+            {
+              "page": 1,
+              "quote": "uipment: External power supply PSU\nDocument type: Datasheet\nRevision: QA-027\nSection 1 - Fictional output specification\nThis test-only external power supply provides a nominal 24 V DC output. The fictional\noutput labels are V+ and V-. The s",
+              "field": "revision",
+              "value": "QA-027"
+            }
+          ],
+          "basis": "Unconfirmed suggestions extracted from manual contents. Confirm the installed label and applicable variant."
+        },
+        "equipmentRole": "Test Bench QA-PSU-24 · PSU",
+        "equipmentId": "a580d7dc-2655-429a-b41e-2c86ee3ea5b1",
+        "addedAt": 1794314563346,
+        "pages": [
+          {
+            "page": 1,
+            "method": "text",
+            "confidence": null,
+            "quality": {
+              "readable": true,
+              "characters": 994,
+              "words": 135,
+              "method": "text",
+              "confidence": null,
+              "reason": null
+            }
+          }
+        ],
+        "confirmedIdentity": {
+          "systemTypes": [],
+          "manufacturer": "Test Bench",
+          "manufacturerCandidates": [
+            "Test Bench"
+          ],
+          "model": "QA-PSU-24",
+          "models": [
+            "QA-PSU-24"
+          ],
+          "familyOnly": false,
+          "equipmentType": "PSU",
+          "equipmentTypes": [
+            "PSU"
+          ],
+          "documentType": "Datasheet",
+          "revision": "QA-027",
+          "variants": [],
+          "requiresVariant": false,
+          "uncertain": true,
+          "confirmed": true,
+          "evidence": [
+            {
+              "page": 1,
+              "quote": "THETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL \nManufacturer: Test Bench\nModel: QA-PSU-24\nEquipment: External power supply PSU\nDocument type: Datasheet\nRevision: QA-027\nSection 1 - Fictional output specification\nThis test-only external power",
+              "field": "manufacturer",
+              "value": "Test Bench"
+            },
+            {
+              "page": 1,
+              "quote": "ONLY - NOT A REAL EQUIPMENT MANUAL \nManufacturer: Test Bench\nModel: QA-PSU-24\nEquipment: External power supply PSU\nDocument type: Datasheet\nRevision: QA-027\nSection 1 - Fictional output specification\nThis test-only external power supply pro",
+              "field": "models",
+              "value": "QA-PSU-24"
+            },
+            {
+              "page": 1,
+              "quote": "A REAL EQUIPMENT MANUAL \nManufacturer: Test Bench\nModel: QA-PSU-24\nEquipment: External power supply PSU\nDocument type: Datasheet\nRevision: QA-027\nSection 1 - Fictional output specification\nThis test-only external power supply provides a nom",
+              "field": "equipmentType",
+              "value": "PSU"
+            },
+            {
+              "page": 1,
+              "quote": "-PSU-24\nEquipment: External power supply PSU\nDocument type: Datasheet\nRevision: QA-027\nSection 1 - Fictional output specification\nThis test-only external power supply provides a nominal 24 V DC output. The fictional\noutput labels are V+ and",
+              "field": "documentType",
+              "value": "Datasheet"
+            },
+            {
+              "page": 1,
+              "quote": "uipment: External power supply PSU\nDocument type: Datasheet\nRevision: QA-027\nSection 1 - Fictional output specification\nThis test-only external power supply provides a nominal 24 V DC output. The fictional\noutput labels are V+ and V-. The s",
+              "field": "revision",
+              "value": "QA-027"
+            }
+          ],
+          "basis": "Unconfirmed suggestions extracted from manual contents. Confirm the installed label and applicable variant.",
+          "id": "a580d7dc-2655-429a-b41e-2c86ee3ea5b1",
+          "confirmedAt": 1794314563440,
+          "confirmationSource": "engineer"
+        }
+      }
+    ],
+    "questions": [
+      {
+        "id": "265f6365-0127-4900-be91-ec9c6ca2c750",
+        "raw": "How do I view the event history on the Test Bench FINDR-QA-100 panel?",
+        "question": "How do I view the event history on the Test Bench FINDR-QA-100 panel?",
+        "createdAt": 1794314561142,
+        "status": "evidence_incomplete",
+        "equipmentId": "3b770691-f093-46e6-9db4-1d8c7134221e",
+        "manualSelectionRequired": false,
+        "selectedManualId": "qa-panel",
+        "selectedManualHash": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+        "answerId": "0b83cb54-6db1-40f3-9b91-018a5c7b8eae"
+      },
+      {
+        "id": "7f66c7ee-e0fe-4618-9d57-e0e6c40f31a3",
+        "raw": "Where is that menu?",
+        "question": "Where is that menu?",
+        "createdAt": 1794314562429,
+        "status": "evidence_incomplete",
+        "equipmentId": "3b770691-f093-46e6-9db4-1d8c7134221e",
+        "followUpTo": "0b83cb54-6db1-40f3-9b91-018a5c7b8eae",
+        "contextQuestion": "How do I view the event history on the Test Bench FINDR-QA-100 panel?",
+        "answerId": "0daf71d4-73fc-4187-bcd1-1cc6c35ec58f"
+      },
+      {
+        "id": "ff76e1ce-f007-4035-bd72-c6fc04cf51c5",
+        "raw": "What is the nominal output voltage of the external PSU?",
+        "question": "What is the nominal output voltage of the external PSU?",
+        "createdAt": 1794314563050,
+        "status": "evidence_incomplete",
+        "equipmentId": "a580d7dc-2655-429a-b41e-2c86ee3ea5b1",
+        "manualSelectionRequired": false,
+        "selectedManualId": "qa-psu",
+        "selectedManualHash": "0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310",
+        "answerId": "b6872f4a-5caa-4353-ae3f-4cea18d34ce5"
+      },
+      {
+        "id": "073d9289-613a-4f88-a6cc-b20655ea7e19",
+        "raw": "How do I view the event history on the panel?",
+        "question": "How do I view the event history on the panel?",
+        "createdAt": 1794314563695,
+        "status": "pending",
+        "equipmentId": null,
+        "manualSelectionRequired": true
+      }
+    ],
+    "answers": [
+      {
+        "id": "0b83cb54-6db1-40f3-9b91-018a5c7b8eae",
+        "questionId": "265f6365-0127-4900-be91-ec9c6ca2c750",
+        "question": "How do I view the event history on the Test Bench FINDR-QA-100 panel?",
+        "text": "Manual extracts only — no language-model answer. These passages may help; they do not establish the complete answer.\n1. “SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench. Model: FINDR-QA-100. Revision: QA-027. Section 2 - Viewing event history For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history.”\n\nApplies to the recorded equipment: Test Bench FINDR-QA-100 not established. These are shortened excerpts; check the cited page for surrounding conditions and the full procedure. Check the cited pages, or add the relevant manual, diagram or configuration detail.",
+        "claims": [
+          {
+            "text": "SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench. Model: FINDR-QA-100. Revision: QA-027. Section 2 - Viewing event history For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history.",
+            "sourceRefs": [
+              {
+                "sourceId": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9:pdf-2:0",
+                "citationId": "S1",
+                "manualId": "qa-panel",
+                "contentHash": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+                "processorVersion": "2026-11-10.2",
+                "title": "Test Bench FINDR-QA-100 panel",
+                "revision": "QA-027",
+                "models": [
+                  "FINDR-QA-100"
+                ],
+                "page": 2,
+                "pdfPage": 2,
+                "printedPage": null,
+                "section": null,
+                "method": "text",
+                "requiresSourceReview": false,
+                "quote": "SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench. Model: FINDR-QA-100. Revision: QA-027. Section 2 - Viewing event history For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history.",
+                "excerpt": "SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench. Model: FINDR-QA-100. Revision: QA-027. Section 2 - Viewing event history For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history.",
+                "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+              }
+            ],
+            "documented": true,
+            "answersQuestion": false
+          }
+        ],
+        "sourceRefs": [
+          {
+            "sourceId": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9:pdf-2:0",
+            "citationId": "S1",
+            "manualId": "qa-panel",
+            "contentHash": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+            "processorVersion": "2026-11-10.2",
+            "title": "Test Bench FINDR-QA-100 panel",
+            "revision": "QA-027",
+            "models": [
+              "FINDR-QA-100"
+            ],
+            "page": 2,
+            "pdfPage": 2,
+            "printedPage": null,
+            "section": null,
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench. Model: FINDR-QA-100. Revision: QA-027. Section 2 - Viewing event history For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history.",
+            "excerpt": "SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench. Model: FINDR-QA-100. Revision: QA-027. Section 2 - Viewing event history For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history.",
+            "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+          }
+        ],
+        "createdAt": 1794314562333,
+        "supported": false,
+        "answersQuestion": "not_independently_verified",
+        "coverage": "verbatim_excerpts_only",
+        "model": {
+          "id": null,
+          "revision": null,
+          "backend": null,
+          "metrics": {},
+          "ran": false,
+          "outputAccepted": false,
+          "sourceSelection": [],
+          "generatedProseUsed": false,
+          "validationIssues": [
+            "The local model did not return an independently supported quotation. Review the exact retrieved material or add the missing manual information."
+          ]
+        },
+        "limitedFallback": true
+      },
+      {
+        "id": "0daf71d4-73fc-4187-bcd1-1cc6c35ec58f",
+        "questionId": "7f66c7ee-e0fe-4618-9d57-e0e6c40f31a3",
+        "question": "Where is that menu?",
+        "text": "Manual extracts only — no language-model answer. These passages may help; they do not establish the complete answer.\n1. “SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench. Model: FINDR-QA-100. Revision: QA-027. Section 2 - Viewing event history For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history.”\n\nApplies to the recorded equipment: Test Bench FINDR-QA-100 not established. These are shortened excerpts; check the cited page for surrounding conditions and the full procedure. Check the cited pages, or add the relevant manual, diagram or configuration detail.",
+        "claims": [
+          {
+            "text": "SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench. Model: FINDR-QA-100. Revision: QA-027. Section 2 - Viewing event history For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history.",
+            "sourceRefs": [
+              {
+                "sourceId": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9:pdf-2:0",
+                "citationId": "S1",
+                "manualId": "qa-panel",
+                "contentHash": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+                "processorVersion": "2026-11-10.2",
+                "title": "Test Bench FINDR-QA-100 panel",
+                "revision": "QA-027",
+                "models": [
+                  "FINDR-QA-100"
+                ],
+                "page": 2,
+                "pdfPage": 2,
+                "printedPage": null,
+                "section": null,
+                "method": "text",
+                "requiresSourceReview": false,
+                "quote": "SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench. Model: FINDR-QA-100. Revision: QA-027. Section 2 - Viewing event history For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history.",
+                "excerpt": "SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench. Model: FINDR-QA-100. Revision: QA-027. Section 2 - Viewing event history For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history.",
+                "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+              }
+            ],
+            "documented": true,
+            "answersQuestion": false
+          }
+        ],
+        "sourceRefs": [
+          {
+            "sourceId": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9:pdf-2:0",
+            "citationId": "S1",
+            "manualId": "qa-panel",
+            "contentHash": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+            "processorVersion": "2026-11-10.2",
+            "title": "Test Bench FINDR-QA-100 panel",
+            "revision": "QA-027",
+            "models": [
+              "FINDR-QA-100"
+            ],
+            "page": 2,
+            "pdfPage": 2,
+            "printedPage": null,
+            "section": null,
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench. Model: FINDR-QA-100. Revision: QA-027. Section 2 - Viewing event history For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history.",
+            "excerpt": "SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench. Model: FINDR-QA-100. Revision: QA-027. Section 2 - Viewing event history For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history.",
+            "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+          }
+        ],
+        "createdAt": 1794314562527,
+        "supported": false,
+        "answersQuestion": "not_independently_verified",
+        "coverage": "verbatim_excerpts_only",
+        "model": {
+          "id": null,
+          "revision": null,
+          "backend": null,
+          "metrics": {},
+          "ran": false,
+          "outputAccepted": false,
+          "sourceSelection": [],
+          "generatedProseUsed": false,
+          "validationIssues": [
+            "The local model did not return an independently supported quotation. Review the exact retrieved material or add the missing manual information."
+          ]
+        },
+        "limitedFallback": true
+      },
+      {
+        "id": "b6872f4a-5caa-4353-ae3f-4cea18d34ce5",
+        "questionId": "ff76e1ce-f007-4035-bd72-c6fc04cf51c5",
+        "question": "What is the nominal output voltage of the external PSU?",
+        "text": "Manual extracts only — no language-model answer. These passages may help; they do not establish the complete answer.\n1. “Equipment: External power supply PSU Document type: Datasheet Revision: QA-027 Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product.”\n\nApplies to the recorded equipment: Test Bench QA-PSU-24 not established. These are shortened excerpts; check the cited page for surrounding conditions and the full procedure. Check the cited pages, or add the relevant manual, diagram or configuration detail.",
+        "claims": [
+          {
+            "text": "Equipment: External power supply PSU Document type: Datasheet Revision: QA-027 Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product.",
+            "sourceRefs": [
+              {
+                "sourceId": "0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310:pdf-1:0",
+                "citationId": "S1",
+                "manualId": "qa-psu",
+                "contentHash": "0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310",
+                "processorVersion": "2026-11-10.2",
+                "title": "Test Bench FINDR-PSU-24 power supply",
+                "revision": "QA-027",
+                "models": [
+                  "QA-PSU-24"
+                ],
+                "page": 1,
+                "pdfPage": 1,
+                "printedPage": null,
+                "section": null,
+                "method": "text",
+                "requiresSourceReview": false,
+                "quote": "Equipment: External power supply PSU Document type: Datasheet Revision: QA-027 Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product.",
+                "excerpt": "Equipment: External power supply PSU Document type: Datasheet Revision: QA-027 Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product.",
+                "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+              }
+            ],
+            "documented": true,
+            "answersQuestion": false
+          }
+        ],
+        "sourceRefs": [
+          {
+            "sourceId": "0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310:pdf-1:0",
+            "citationId": "S1",
+            "manualId": "qa-psu",
+            "contentHash": "0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310",
+            "processorVersion": "2026-11-10.2",
+            "title": "Test Bench FINDR-PSU-24 power supply",
+            "revision": "QA-027",
+            "models": [
+              "QA-PSU-24"
+            ],
+            "page": 1,
+            "pdfPage": 1,
+            "printedPage": null,
+            "section": null,
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "Equipment: External power supply PSU Document type: Datasheet Revision: QA-027 Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product.",
+            "excerpt": "Equipment: External power supply PSU Document type: Datasheet Revision: QA-027 Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product.",
+            "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+          }
+        ],
+        "createdAt": 1794314563600,
+        "supported": false,
+        "answersQuestion": "not_independently_verified",
+        "coverage": "verbatim_excerpts_only",
+        "model": {
+          "id": null,
+          "revision": null,
+          "backend": null,
+          "metrics": {},
+          "ran": false,
+          "outputAccepted": false,
+          "sourceSelection": [],
+          "generatedProseUsed": false,
+          "validationIssues": [
+            "The local model did not return an independently supported quotation. Review the exact retrieved material or add the missing manual information."
+          ]
+        },
+        "limitedFallback": true
+      }
+    ],
+    "corrections": [],
+    "observations": [],
+    "handledInputIds": [
+      "f23599e9-c36a-48f0-a069-c280ad8225ca",
+      "23b501b4-13dd-4923-a82c-d8f9409cf1da",
+      "9e781068-e87f-49a7-b067-3f07aa72c717",
+      "235ff52d-775e-453e-a121-2ffef70618e7",
+      "07e18e54-850f-4252-bfcf-d096b22bdb7c",
+      "1b24f00d-2646-4930-9144-2a04c0bbaaec",
+      "184c5236-a93d-4fb2-a354-1d0e9d468862",
+      "edd40ca2-4597-4b16-b152-2fef28e760c1",
+      "f1d12752-1f5b-4084-a4bd-f3bedb92249e"
+    ],
+    "eventIds": [],
+    "activeEquipmentId": null,
+    "pendingQuestionId": "073d9289-613a-4f88-a6cc-b20655ea7e19",
+    "pendingGeneration": null,
+    "pendingIdentity": null,
+    "manualCandidates": [],
+    "returnPhase": null,
+    "notice": {
+      "key": "quick-error:INVALID_PDF",
+      "kind": "error",
+      "text": "This PDF is invalid or has too little readable text. Choose a readable complete copy or relevant pages.",
+      "options": [
+        {
+          "value": "upload",
+          "label": "Retry",
+          "aliases": [
+            "retry"
+          ]
+        },
+        {
+          "value": "saved",
+          "label": "Choose another manual",
+          "aliases": [
+            "saved"
+          ]
+        },
+        {
+          "value": "error_details",
+          "label": "Error details",
+          "aliases": [
+            "details"
+          ]
+        }
+      ]
+    },
+    "modelState": {
+      "ready": false,
+      "code": "MODEL_NOT_READY",
+      "message": "The local model resources are not installed. Open Local resources to download them, or use labelled manual extracts."
+    },
+    "ui": {
+      "draft": ""
+    },
+    "lastPromptSignature": "[\"quick-error:INVALID_PDF\",\"This PDF is invalid or has too little readable text. Choose a readable complete copy or relevant pages.\",[{\"value\":\"upload\",\"label\":\"Retry\",\"aliases\":[\"retry\"],\"number\":1},{\"value\":\"saved\",\"label\":\"Choose another manual\",\"aliases\":[\"saved\"],\"number\":2},{\"value\":\"error_details\",\"label\":\"Error details\",\"aliases\":[\"details\"],\"number\":3}]]",
+    "proposedEquipment": null,
+    "targetRole": "",
+    "offline": true,
+    "savedManualCount": 2,
+    "identityDraft": null,
+    "identityField": null,
+    "lastError": {
+      "code": "INVALID_PDF",
+      "message": "The I/O read operation failed.",
+      "stage": "manual",
+      "details": {
+        "stage": "validation",
+        "page": null,
+        "pdfjsVersion": "5.6.205",
+        "runtime": {
+          "version": "2026-11-10.2",
+          "pdfjsVersion": "5.6.205",
+          "textReader": "ReadableStream.getReader",
+          "readableStreams": true,
+          "nativeAsyncIteration": false
+        },
+        "exception": {
+          "name": "Error",
+          "message": "The I/O read operation failed.",
+          "stack": "codedError@http://127.0.0.1:8088/app/manual-analysis.mjs:16:67\nanalyseManual@http://127.0.0.1:8088/app/manual-analysis.mjs:176:161",
+          "code": "INVALID_PDF",
+          "cause": {
+            "name": "NotReadableError",
+            "message": "The I/O read operation failed.",
+            "stack": ""
+          }
+        }
+      },
+      "createdAt": 1794314563799
+    },
+    "lastErrorDetails": {
+      "stage": "validation",
+      "page": null,
+      "pdfjsVersion": "5.6.205",
+      "runtime": {
+        "version": "2026-11-10.2",
+        "pdfjsVersion": "5.6.205",
+        "textReader": "ReadableStream.getReader",
+        "readableStreams": true,
+        "nativeAsyncIteration": false
+      },
+      "exception": {
+        "name": "Error",
+        "message": "The I/O read operation failed.",
+        "stack": "codedError@http://127.0.0.1:8088/app/manual-analysis.mjs:16:67\nanalyseManual@http://127.0.0.1:8088/app/manual-analysis.mjs:176:161",
+        "code": "INVALID_PDF",
+        "cause": {
+          "name": "NotReadableError",
+          "message": "The I/O read operation failed.",
+          "stack": ""
+        }
+      }
+    },
+    "generationHistory": [
+      {
+        "requestId": "5853e14a-a979-4d3c-8559-9c2a1075e335",
+        "questionId": "265f6365-0127-4900-be91-ec9c6ca2c750",
+        "status": "completed",
+        "model": {
+          "id": null,
+          "revision": null,
+          "backend": null,
+          "metrics": {},
+          "ran": false,
+          "outputAccepted": false,
+          "sourceSelection": [],
+          "generatedProseUsed": false,
+          "validationIssues": [
+            "The local model did not return an independently supported quotation. Review the exact retrieved material or add the missing manual information."
+          ]
+        }
+      },
+      {
+        "requestId": "f9956bf6-57de-480f-a707-eea8d897ef1f",
+        "questionId": "7f66c7ee-e0fe-4618-9d57-e0e6c40f31a3",
+        "status": "completed",
+        "model": {
+          "id": null,
+          "revision": null,
+          "backend": null,
+          "metrics": {},
+          "ran": false,
+          "outputAccepted": false,
+          "sourceSelection": [],
+          "generatedProseUsed": false,
+          "validationIssues": [
+            "The local model did not return an independently supported quotation. Review the exact retrieved material or add the missing manual information."
+          ]
+        }
+      },
+      {
+        "requestId": "32a5cddb-3c60-43e2-8094-3d41a096991f",
+        "questionId": "ff76e1ce-f007-4035-bd72-c6fc04cf51c5",
+        "status": "completed",
+        "model": {
+          "id": null,
+          "revision": null,
+          "backend": null,
+          "metrics": {},
+          "ran": false,
+          "outputAccepted": false,
+          "sourceSelection": [],
+          "generatedProseUsed": false,
+          "validationIssues": [
+            "The local model did not return an independently supported quotation. Review the exact retrieved material or add the missing manual information."
+          ]
+        }
+      }
+    ]
+  },
+  "pageErrors": []
+}

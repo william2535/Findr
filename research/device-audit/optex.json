@@ -1,0 +1,273 @@
+{
+  "brand": "Optex",
+  "category": "security",
+  "review_date": "2026-10-30",
+  "device_family_count": 7,
+  "device_ids": [
+    "optex-vxi-am",
+    "optex-qxi-st",
+    "optex-wxi-st",
+    "optex-ftn-st",
+    "optex-flx-s-st",
+    "optex-rxc-st",
+    "optex-rxc-dt"
+  ],
+  "scope": "Intruder detector/contact/sounder identification pack. No control panels or keypads. Colour options are not counted separately.",
+  "source_method": "Primary manufacturer pages and original manufacturer PDFs. Independent hosts are disclosed for preserved original PDFs. Product images are real manufacturer assets or exact PDF illustrations.",
+  "document_review": {
+    "optex-41bd61569d20": {
+      "file": "research/optex-41bd61569d20.pdf",
+      "sha256": "a8e1ad708920e569775cabd136055bc1f0a64d294038c70b4d9a5d3933550f3f",
+      "bytes": 1093969,
+      "pages": 2,
+      "url": "https://navi.optex.net/manual/08832/5918959_RXC-ST_STPL_181214op_web.pdf",
+      "catalogue_hash_match": true,
+      "printed_edition": "No. 59-1895-9",
+      "models_checked_in_pdf": [
+        "RXC-ST"
+      ],
+      "relevant_pdf_pages": [
+        1,
+        2
+      ]
+    },
+    "optex-1cb70a0528ac": {
+      "file": "research/optex-1cb70a0528ac.pdf",
+      "sha256": "93a8f971102bf65d375dfedc9895a0e00aff6385326e3dfc6c85f4d754b6f94c",
+      "bytes": 942832,
+      "pages": 2,
+      "url": "https://s3-eu-west-1.amazonaws.com/optex-europe/sensor-downloads/Intrusion-Detection/Manuals/optex-rxc-dt-manual-mutli-lingual.pdf",
+      "catalogue_hash_match": true,
+      "printed_edition": "No. 59-1954-1",
+      "models_checked_in_pdf": [
+        "RXC-DT"
+      ],
+      "relevant_pdf_pages": [
+        1,
+        2
+      ]
+    },
+    "device-doc-optex-4db79e533f2a": {
+      "file": "research/vxi-am-datasheet.pdf",
+      "sha256": "4db79e533f2af8ac0fe8d81ed28b396828e08831a768af143f826f1805e01406",
+      "bytes": 1610677,
+      "pages": 2,
+      "url": "https://optex.imgix.net/downloads/sensor-downloads/Intrusion-Detection/Data-Sheets/optex-vxi-series-datasheet-en.pdf",
+      "models_checked_in_pdf": [
+        "VXI-AM"
+      ],
+      "printed_edition": "Revision not stated in the supplied manufacturer datasheet",
+      "document_kind": "Manufacturer document, preserved original PDF bytes",
+      "source_page_url": "https://www.optex-europe.com/products/intrusion-detection/vxi-am"
+    },
+    "device-doc-optex-6c50f85965a3": {
+      "file": "research/qxi-st-datasheet.pdf",
+      "sha256": "6c50f85965a3a2fce37331f4bb6615b1d0f17a7773d4fd9b4160ef4e18a6cd31",
+      "bytes": 3983750,
+      "pages": 2,
+      "url": "https://optex.imgix.net/downloads/sensor-downloads/Intrusion-Detection/Data-Sheets/optex-qxi-datasheet-En.pdf",
+      "models_checked_in_pdf": [
+        "QXI-ST"
+      ],
+      "printed_edition": "No. 00000-01-15747-1911-OE (2019)",
+      "document_kind": "Manufacturer document, preserved original PDF bytes",
+      "source_page_url": "https://www.optex-europe.com/products/intrusion-detection/qxi-st"
+    },
+    "device-doc-optex-133f7df088cd": {
+      "file": "research/wxi-st-datasheet.pdf",
+      "sha256": "133f7df088cdf34dca6fc65ecb1ba3f55639bc42a5e8a7fdecc1b25d18f4609c",
+      "bytes": 1637780,
+      "pages": 4,
+      "url": "https://optex.imgix.net/downloads/sensor-downloads/Intrusion-Detection/Data-Sheets/optex-wxi-datasheet-en.pdf",
+      "models_checked_in_pdf": [
+        "WXI-ST"
+      ],
+      "printed_edition": "Revision not stated in the supplied manufacturer datasheet",
+      "document_kind": "Manufacturer document, preserved original PDF bytes",
+      "source_page_url": "https://www.optex-europe.com/products/intrusion-detection/wxi-st"
+    },
+    "device-doc-optex-0e24f35a8e1a": {
+      "file": "research/ftn-st-datasheet.pdf",
+      "sha256": "0e24f35a8e1a903a6154f6fe3c13f176d92ff2f277fba39ef850088a62fa6069",
+      "bytes": 1309488,
+      "pages": 2,
+      "url": "https://optex.imgix.net/downloads/sensor-downloads/Intrusion-Detection/Data-Sheets/optex-ftn-st_ftn-r_ftn-ram_ftn-am-datasheet.pdf",
+      "models_checked_in_pdf": [
+        "FTN-ST"
+      ],
+      "printed_edition": "No. 75119-00-15747-1002",
+      "document_kind": "Manufacturer document, preserved original PDF bytes",
+      "source_page_url": "https://www.optex-europe.com/products/intrusion-detection/ftn-st"
+    },
+    "device-doc-optex-f26b1b42fc56": {
+      "file": "research/flx-s-st-datasheet.pdf",
+      "sha256": "f26b1b42fc56d6a6cb632b12d8d3b2c17c3a85d101ffdc25fb53b6ebed2d5075",
+      "bytes": 3033306,
+      "pages": 2,
+      "url": "https://optex.imgix.net/downloads/sensor-downloads/Intrusion-Detection/Data-Sheets/optex-flipx-standard-datasheet-en-web.pdf",
+      "models_checked_in_pdf": [
+        "FLX-S-ST"
+      ],
+      "printed_edition": "Revision not stated in the supplied manufacturer datasheet",
+      "document_kind": "Manufacturer document, preserved original PDF bytes",
+      "source_page_url": "https://www.optex-europe.com/products/intrusion-detection/flx-s-st"
+    }
+  },
+  "photo_review": [
+    {
+      "device_id": "optex-vxi-am",
+      "source_page_url": "https://www.optex-europe.com/products/intrusion-detection/vxi-am",
+      "source_image_url": "https://optex.imgix.net/assets/vxi-wired-side.png?crop=focalpoint&fp-x=0.5&fp-y=0.5&fp-debug=false&fm=webp&auto=format&w=3072&fm=png&q=80&fit=crop",
+      "research_image": "research/vxi-am-photo.png",
+      "original_image_sha256": "4894e3caad7a2f5adf0267eaf711425264ddcfa806fbfb85a2f2a485d44554cb",
+      "original_dimensions": [
+        3072,
+        3072
+      ],
+      "output_sha256": "dddc5fea78e9135b51d23e94d6a12cd64f78b5fe4f4e3a26112e69e47d432d3a",
+      "output_dimensions": [
+        900,
+        900
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Tall outdoor VXI housing; official picture is the wired version.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "optex-qxi-st",
+      "source_page_url": "https://www.optex-europe.com/products/intrusion-detection/qxi-st",
+      "source_image_url": "https://optex.imgix.net/assets/QXI-Prod-3q-1k-01.png?crop=focalpoint&fp-x=0.5&fp-y=0.5&fp-debug=false&fm=webp&auto=format&w=3072&fm=png&q=80&fit=crop",
+      "research_image": "research/qxi-st-photo.png",
+      "original_image_sha256": "76aaabf56333c51558fdafb86c9ccf453241ed6d7a70e16f5e51c1ecd9c56b25",
+      "original_dimensions": [
+        3072,
+        3072
+      ],
+      "output_sha256": "263f034c81d313ae7500e0d1a02ff11b3c4177addd49109b77bfd65de5e24c85",
+      "output_dimensions": [
+        900,
+        900
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Smooth two-part outdoor QXI enclosure shown in the exact QXI-ST product page.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "optex-wxi-st",
+      "source_page_url": "https://www.optex-europe.com/products/intrusion-detection/wxi-st",
+      "source_image_url": "https://optex.imgix.net/assets/Product-Images/wxi_image.png?crop=focalpoint&fp-x=0.5&fp-y=0.5&fp-debug=false&fm=webp&auto=format&w=3072&fm=png&q=80&fit=crop",
+      "research_image": "research/wxi-st-photo.png",
+      "original_image_sha256": "462ed560c5d8a5d8b30ca6f99adb84eb7b37c974c1a392c18f77199a40bbc2ef",
+      "original_dimensions": [
+        3072,
+        1815
+      ],
+      "output_sha256": "962ff1e18d4f49424d21a7b3849998db003dca1d3c3c03cb02ee2a81928a1b7f",
+      "output_dimensions": [
+        1100,
+        650
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Official WXI-ST photo of the broad outdoor housing and curved detection window.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "optex-ftn-st",
+      "source_page_url": "https://www.optex-europe.com/products/intrusion-detection/ftn-st",
+      "source_image_url": "https://optex.imgix.net/assets/Product-Images/FTN.png?crop=focalpoint&fp-x=0.5&fp-y=0.5&fp-debug=false&fm=webp&auto=format&w=3072&fm=png&q=80&fit=crop",
+      "research_image": "research/ftn-st-photo.png",
+      "original_image_sha256": "f6b1f1483cdb0dc6c857e0943127c4d6313df097155e08df5f310412a4521dd6",
+      "original_dimensions": [
+        3072,
+        1815
+      ],
+      "output_sha256": "70ae4a057dc90556ee94243b608a9b5987db5f7ab1d52bf872748d08622ac161",
+      "output_dimensions": [
+        1100,
+        650
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Slender FTN body with upper/lower window sections, as pictured on the manufacturer FTN-ST page.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "optex-flx-s-st",
+      "source_page_url": "https://www.optex-europe.com/products/intrusion-detection/flx-s-st",
+      "source_image_url": "https://optex.imgix.net/assets/flipx-34.png",
+      "research_image": "research/flx-s-st-full.png",
+      "original_image_sha256": "3b2bb827158a1cdc36ead485ed07d6a1d785705f285c7f8e8c10e17f52bd621a",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "output_sha256": "c11152bdacbdb7c4885aae3ec23f4d812c21bbddfda71e4660ec05053cb00f02",
+      "output_dimensions": [
+        900,
+        900
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Complete FlipX Standard housing, using the official three-quarter product view rather than the close-up lens image.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "optex-rxc-st",
+      "source_page_url": "https://www.optex-europe.com/products/intrusion-detection/rxc-st",
+      "source_image_url": "https://optex.imgix.net/assets/RX-front.png?crop=focalpoint&fp-x=0.5&fp-y=0.5&fp-debug=false&fm=webp&auto=format&w=3072&fm=png&q=80&fit=crop",
+      "research_image": "research/rxc-st-photo.png",
+      "original_image_sha256": "5528c56e9c05b4689b91fbd7f537b73bf4b2f35a554dc75d5980de77fd2989ae",
+      "original_dimensions": [
+        3072,
+        3072
+      ],
+      "output_sha256": "7abc5149511b6b070cd148cffb855b9fb999c885178736ae65e9bfac07317012",
+      "output_dimensions": [
+        900,
+        900
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Official RXC product-page photograph. RXC-ST and RXC-DT share this outward style, so the label is necessary.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "optex-rxc-dt",
+      "source_page_url": "https://www.optex-europe.com/products/intrusion-detection/rxc-dt",
+      "source_image_url": "https://optex.imgix.net/assets/RX-front.png?crop=focalpoint&fp-x=0.5&fp-y=0.5&fp-debug=false&fm=webp&auto=format&w=3072&fm=png&q=80&fit=crop",
+      "research_image": "research/rxc-dt-photo.png",
+      "original_image_sha256": "5528c56e9c05b4689b91fbd7f537b73bf4b2f35a554dc75d5980de77fd2989ae",
+      "original_dimensions": [
+        3072,
+        3072
+      ],
+      "output_sha256": "7abc5149511b6b070cd148cffb855b9fb999c885178736ae65e9bfac07317012",
+      "output_dimensions": [
+        900,
+        900
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Official RXC product-page photograph. RXC-ST and RXC-DT share this outward style, so the label is necessary.",
+      "reviewed_visually": true
+    }
+  ],
+  "online_only_device_ids": [],
+  "failures_and_deferrals": [
+    {
+      "url": "https://www.optex-europe.com/products/intrusion-detection/bxs-st",
+      "out": "optex/research/bxs-st.html",
+      "error": "HTTP Error 500: Internal Server Error"
+    }
+  ],
+  "review_limits": "Identification reference, not proof of exact hardware generation, regional approval or panel compatibility. Existing archive IDs retained only after matching brand/category and retrieved document scope. Manufacturer pages may change after review.",
+  "special_findings": [
+    "RXC-ST and RXC-DT manufacturer pages mark the products discontinued; entries disclose legacy status.",
+    "The RXC-ST page links a DT datasheet, so it is deliberately not associated. The exact RXC-ST/STPL installation manual is used.",
+    "The FLX-S-ST first gallery picture was only a macro close-up; replaced with the full manufacturer three-quarter image.",
+    "Only wired Optex models are included. No assumption that battery-operated -R products contain a compatible radio transmitter."
+  ]
+}

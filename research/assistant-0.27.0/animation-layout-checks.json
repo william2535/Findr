@@ -1,0 +1,252 @@
+[
+  {
+    "browser": "chromium",
+    "version": "154.0.8037.57",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "physicalIPhone": false,
+    "syntheticManual": true,
+    "samples": [
+      {
+        "label": "Opening introduction",
+        "queued": [
+          {
+            "height": 0,
+            "display": "none"
+          },
+          {
+            "height": 0,
+            "display": "none"
+          }
+        ],
+        "active": {
+          "visible": 4,
+          "full": 21,
+          "top": 175.46875,
+          "bottom": 199.265625,
+          "logTop": 158.46875,
+          "logBottom": 611.46875
+        }
+      },
+      {
+        "label": "Manual question and three queued options",
+        "queued": [
+          {
+            "height": 0,
+            "display": "none"
+          },
+          {
+            "height": 0,
+            "display": "none"
+          },
+          {
+            "height": 0,
+            "display": "none"
+          }
+        ],
+        "active": {
+          "visible": 3,
+          "full": 20,
+          "top": 337.859375,
+          "bottom": 361.65625,
+          "logTop": 158.46875,
+          "logBottom": 611.46875
+        }
+      },
+      {
+        "label": "Manual processed while identification waits in the same transcript",
+        "queued": [
+          {
+            "height": 0,
+            "display": "none"
+          },
+          {
+            "height": 0,
+            "display": "none"
+          },
+          {
+            "height": 0,
+            "display": "none"
+          },
+          {
+            "height": 0,
+            "display": "none"
+          },
+          {
+            "height": 0,
+            "display": "none"
+          },
+          {
+            "height": 0,
+            "display": "none"
+          }
+        ],
+        "active": {
+          "visible": 16,
+          "full": 58,
+          "top": 469.671875,
+          "bottom": 493.46875,
+          "logTop": 153.6875,
+          "logBottom": 610.6875
+        }
+      },
+      {
+        "label": "Equipment identification visibly types",
+        "queued": [
+          {
+            "height": 0,
+            "display": "none"
+          },
+          {
+            "height": 0,
+            "display": "none"
+          }
+        ],
+        "active": {
+          "visible": 14,
+          "full": 86,
+          "top": 474.4375,
+          "bottom": 498.234375,
+          "logTop": 153.6875,
+          "logBottom": 610.6875
+        }
+      }
+    ],
+    "status": "passed",
+    "checks": [
+      "Queued rows have zero layout height",
+      "Active typing remains visible after PDF import",
+      "Tap reveals the current message",
+      "Active option is tappable and at least 44px",
+      "Reduced motion reveals all pending output",
+      "Full transcript text and manual remain saved"
+    ]
+  },
+  {
+    "browser": "webkit",
+    "version": "26.0",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "physicalIPhone": false,
+    "syntheticManual": true,
+    "samples": [
+      {
+        "label": "Opening introduction",
+        "queued": [
+          {
+            "height": 0,
+            "display": "none"
+          },
+          {
+            "height": 0,
+            "display": "none"
+          }
+        ],
+        "active": {
+          "visible": 8,
+          "full": 21,
+          "top": 169,
+          "bottom": 192,
+          "logTop": 152,
+          "logBottom": 612
+        }
+      },
+      {
+        "label": "Manual question and three queued options",
+        "queued": [
+          {
+            "height": 0,
+            "display": "none"
+          },
+          {
+            "height": 0,
+            "display": "none"
+          },
+          {
+            "height": 0,
+            "display": "none"
+          }
+        ],
+        "active": {
+          "visible": 5,
+          "full": 20,
+          "top": 329,
+          "bottom": 352,
+          "logTop": 152,
+          "logBottom": 612
+        }
+      },
+      {
+        "label": "Manual processed while identification waits in the same transcript",
+        "queued": [
+          {
+            "height": 0,
+            "display": "none"
+          },
+          {
+            "height": 0,
+            "display": "none"
+          },
+          {
+            "height": 0,
+            "display": "none"
+          },
+          {
+            "height": 0,
+            "display": "none"
+          },
+          {
+            "height": 0,
+            "display": "none"
+          },
+          {
+            "height": 0,
+            "display": "none"
+          }
+        ],
+        "active": {
+          "visible": 23,
+          "full": 58,
+          "top": 496,
+          "bottom": 519,
+          "logTop": 152,
+          "logBottom": 612
+        }
+      },
+      {
+        "label": "Equipment identification visibly types",
+        "queued": [
+          {
+            "height": 0,
+            "display": "none"
+          },
+          {
+            "height": 0,
+            "display": "none"
+          }
+        ],
+        "active": {
+          "visible": 20,
+          "full": 86,
+          "top": 477,
+          "bottom": 500,
+          "logTop": 152,
+          "logBottom": 612
+        }
+      }
+    ],
+    "status": "passed",
+    "checks": [
+      "Queued rows have zero layout height",
+      "Active typing remains visible after PDF import",
+      "Tap reveals the current message",
+      "Active option is tappable and at least 44px",
+      "Reduced motion reveals all pending output",
+      "Full transcript text and manual remain saved"
+    ]
+  }
+]

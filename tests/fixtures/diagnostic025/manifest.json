@@ -1,0 +1,42 @@
+{
+  "synthetic-elmdene-component-scan.pdf": {
+    "bytes": 97919,
+    "sha256": "d3f72c67bdd69d46a96600705cae437f86e1b5faa3cad6b5bba6c3e5dab79b73",
+    "synthetic": true
+  },
+  "synthetic-elmdene-component.pdf": {
+    "bytes": 2145,
+    "sha256": "5842fde48f4adae871ae1305b278c68c882ba11bd72e5ee5990e9da36c1f30dd",
+    "synthetic": true
+  },
+  "synthetic-large-cancellation.pdf": {
+    "bytes": 37120,
+    "sha256": "806e28e973067f6e15c0803fd5bee04ad43aca1fb7b61a1556c600bd33711deb",
+    "synthetic": true
+  },
+  "synthetic-malformed.pdf": {
+    "bytes": 49,
+    "sha256": "4aa609982caafdc069a6f9ebdcdd8096d9c94970fd07428ee37bd81b711cc15e",
+    "synthetic": true
+  },
+  "synthetic-premier-elite-scan.pdf": {
+    "bytes": 167697,
+    "sha256": "c3d7f8a2f12d3f1ac24d1716441ea430b06033ccd179f69e04f84187ce2780d1",
+    "synthetic": true
+  },
+  "synthetic-premier-elite-text.pdf": {
+    "bytes": 4084,
+    "sha256": "f17ed26918995987832590df05bd398bf2ae753a216dc817c741fb95335befce",
+    "synthetic": true
+  },
+  "synthetic-reference-injection.pdf": {
+    "bytes": 2946,
+    "sha256": "e068029f99cd5e1e354d914e2c6fddd37beada33a869aab582c08c1d27e86d58",
+    "synthetic": true
+  },
+  "synthetic-unreadable.pdf": {
+    "bytes": 1498,
+    "sha256": "055ef3c6cc85a25b99603bdbdbfae83ae3389e1cef9dee6a40a22d54493ed8a3",
+    "synthetic": true
+  }
+}

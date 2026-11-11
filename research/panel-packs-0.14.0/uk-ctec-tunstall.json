@@ -1,0 +1,358 @@
+{
+  "date": "2026-10-30",
+  "panel_count": 8,
+  "panel_ids": [
+    "c-tec-fp-range",
+    "c-tec-mfp-range",
+    "c-tec-cfp760-repeater",
+    "c-tec-xfp510-16-repeater",
+    "tunstall-communicall-vi-ip-control",
+    "tunstall-communicall-vi-ip-gxv3240",
+    "tunstall-communicall-vi-ip-gxv3275",
+    "tunstall-communicall-digital-video-room"
+  ],
+  "sources": [
+    {
+      "id": "c-tec-62322e9ef971",
+      "source_url": "https://www.srsalertfire.ie/uploads/EuHB7cpK/C-TecFPRangeInstallandUserManual.pdf",
+      "resolved_url": "https://www.srsalertfire.ie/uploads/EuHB7cpK/C-TecFPRangeInstallandUserManual.pdf",
+      "bytes": 127744,
+      "sha256": "0c7673aba3668d69bef6e1c1880adce3fba3cab780113eb72af2b217aeb1794c",
+      "file": "c-tec-62322e9ef971.pdf",
+      "kind": "archive",
+      "matches_archive_hash": true
+    },
+    {
+      "id": "c-tec-35371d57ca3f",
+      "source_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/MFP%204-28%20zone%20fire%20panel%20install%20manual.pdf",
+      "resolved_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/MFP%204-28%20zone%20fire%20panel%20install%20manual.pdf",
+      "bytes": 119914,
+      "sha256": "c20cfda5a77ef6b98dfdd5274b0b1f6ff36ca65056c8d7a6ea3668a3184fef87",
+      "file": "c-tec-35371d57ca3f.pdf",
+      "kind": "archive",
+      "matches_archive_hash": true
+    },
+    {
+      "id": "c-tec-71e2d26e5669",
+      "source_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CFP%20repeater%20panel%20install%20manual.pdf",
+      "resolved_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CFP%20repeater%20panel%20install%20manual.pdf",
+      "bytes": 617624,
+      "sha256": "bfd5d6d36a25141cebc2dbd624505bbe224418533ae227b5bc1ac201b998223c",
+      "file": "c-tec-71e2d26e5669.pdf",
+      "kind": "archive",
+      "matches_archive_hash": true
+    },
+    {
+      "id": "c-tec-e9818d7e23a6",
+      "source_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%2016Z%20REPEATER%20MANUAL.pdf",
+      "resolved_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%2016Z%20REPEATER%20MANUAL.pdf",
+      "bytes": 568423,
+      "sha256": "1f9195fd27dc603994db1d0cc4f63e8dc24b99426a40b93c834dd38536959508",
+      "file": "c-tec-e9818d7e23a6.pdf",
+      "kind": "archive",
+      "matches_archive_hash": true
+    },
+    {
+      "id": "c-tec-ec140ad546f0",
+      "source_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%2032Z%20REPEATER%20MANUAL.pdf",
+      "resolved_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%2032Z%20REPEATER%20MANUAL.pdf",
+      "bytes": 302159,
+      "sha256": "6c8f2ec56d9b5ad84e351a63ffd57d0d810a592064ab76feef23e19819aa5f10",
+      "file": "c-tec-ec140ad546f0.pdf",
+      "kind": "archive",
+      "matches_archive_hash": true
+    },
+    {
+      "id": "global-fire-equipment-c9b43f4bf7c3",
+      "source_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Global%20GFE%20358N%20_rev%202-new%20version%202006.%203.%2031%28modify%29.pdf",
+      "resolved_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Global%20GFE%20358N%20_rev%202-new%20version%202006.%203.%2031%28modify%29.pdf",
+      "bytes": 4298377,
+      "sha256": "01fd7c5e6e4c3922adbeeccd7ffbb2dc77eacab2164d059fc80cf89d7b86d57f",
+      "file": "global-fire-equipment-c9b43f4bf7c3.pdf",
+      "kind": "archive",
+      "matches_archive_hash": true
+    },
+    {
+      "id": "tunstall-0889762b594a",
+      "source_url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/d9507044a3_vi-ip-user-guide_301118v9_issue_final.pdf",
+      "resolved_url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/d9507044a3_vi-ip-user-guide_301118v9_issue_final.pdf",
+      "bytes": 861303,
+      "sha256": "e9c467811d0f4c545ec8741bc79bdb599c1f983d78c0d875e15cab306a3bf9c9",
+      "file": "tunstall-0889762b594a.pdf",
+      "kind": "archive",
+      "matches_archive_hash": true
+    },
+    {
+      "id": "tunstall-1d7103b3c85f",
+      "source_url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/d9507043b1_communicall-vi-ip-manager-guide-pc-pbx-phase-2.pdf",
+      "resolved_url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/d9507043b1_communicall-vi-ip-manager-guide-pc-pbx-phase-2.pdf",
+      "bytes": 3520534,
+      "sha256": "09b1a7b0f5dfec58dded383636d7649e614dd18c596c3ee0c437ce8e4371994b",
+      "file": "tunstall-1d7103b3c85f.pdf",
+      "kind": "archive",
+      "matches_archive_hash": true
+    },
+    {
+      "id": "tunstall-7b5ae9a6ad34",
+      "source_url": "https://www.tunstall.co.uk/downloads/communicall-digital-user-guide/",
+      "resolved_url": "https://www.tunstall.co.uk/wp-content/uploads/2026/04/Communicall_Digital_User_Guide_1.4_V2_300726.pdf",
+      "bytes": 2027849,
+      "sha256": "526ab255f13361436004636b64b9ab26981d8c731e29624659d3dc12e81363bd",
+      "file": "tunstall-7b5ae9a6ad34.pdf",
+      "kind": "archive",
+      "matches_archive_hash": true
+    },
+    {
+      "id": "tunstall-b76b00808f8c",
+      "source_url": "https://www.tunstall.co.uk/downloads/communicall-digital-datasheet/",
+      "resolved_url": "https://www.tunstall.co.uk/wp-content/uploads/2026/04/product_sheet_tunstall_communicall_digital_UK.pdf",
+      "bytes": 285773,
+      "sha256": "e42818848f83d7734a8bc5b176eefd1edbe61b161e7a9e93b8651a1e9d2053a8",
+      "file": "tunstall-b76b00808f8c.pdf",
+      "kind": "archive",
+      "matches_archive_hash": true
+    },
+    {
+      "id": "tunstall-ef413d7936f7",
+      "source_url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/communicall-vi-ip-datasheet-2021.pdf",
+      "resolved_url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/communicall-vi-ip-datasheet-2021.pdf",
+      "bytes": 261887,
+      "sha256": "ca32c28f5b76d9e4a2e09d4764d0ea8a8f4e50b0ea247e1d4dd6336e7b591473",
+      "file": "tunstall-ef413d7936f7.pdf",
+      "kind": "archive",
+      "matches_archive_hash": true
+    },
+    {
+      "id": "fp",
+      "source_url": "https://c-tec.com/product/conventional-fire-systems/fpmfp-1-28-zone-fire-panels/fp-14-zone-conventional-fire-alarm-panel/",
+      "resolved_url": "https://c-tec.com/product/conventional-fire-systems/fpmfp-1-28-zone-fire-panels/fp-14-zone-conventional-fire-alarm-panel/",
+      "bytes": 278,
+      "sha256": "6d12d64c5639e8a7c9c298af7cb5cddcc077c25a4d764457ae34e3c540db658d",
+      "file": "fp.html",
+      "kind": "manufacturer-page",
+      "og_image": null,
+      "images": [],
+      "pdf_links": []
+    },
+    {
+      "id": "mfp",
+      "source_url": "https://c-tec.com/product/conventional-fire-systems/fpmfp-1-28-zone-fire-panels/ff516-mfp-16-zone-conventional-fire-alarm-panel-expandable-to-28-zones/",
+      "resolved_url": "https://c-tec.com/product/conventional-fire-systems/fpmfp-1-28-zone-fire-panels/ff516-mfp-16-zone-conventional-fire-alarm-panel-expandable-to-28-zones/",
+      "bytes": 308,
+      "sha256": "5f6a513a7d05ff189ecfebf7f6a6ad5df7ca00236b2abb36cf5e1d861789a955",
+      "file": "mfp.html",
+      "kind": "manufacturer-page",
+      "og_image": null,
+      "images": [],
+      "pdf_links": []
+    },
+    {
+      "id": "cfp-repeater",
+      "source_url": "https://c-tec.com/product/two-wire-fire-systems/cfp-2-8-zone-alarmsense-panels/cfp760-8-zone-repeater-panel/",
+      "resolved_url": "https://c-tec.com/product/two-wire-fire-systems/cfp-2-8-zone-alarmsense-panels/cfp760-8-zone-repeater-panel/",
+      "bytes": 265,
+      "sha256": "7171ad771bb7c7cad7f258d3a6484043f04e15da321281f09208575059d3589d",
+      "file": "cfp-repeater.html",
+      "kind": "manufacturer-page",
+      "og_image": null,
+      "images": [],
+      "pdf_links": []
+    },
+    {
+      "id": "xfp16-repeater",
+      "source_url": "https://c-tec.com/product/addressable-fire-systems/hochiki-esp/xfp-1-2-loop-fire-panels-hochiki-esp/xfp510-16-16-zone-repeater-panel-all-protocols/",
+      "resolved_url": "https://c-tec.com/product/addressable-fire-systems/hochiki-esp/xfp-1-2-loop-fire-panels-hochiki-esp/xfp510-16-16-zone-repeater-panel-all-protocols/",
+      "bytes": 306,
+      "sha256": "6a1a2c38adf92f500bc60d3ebe7dd498411b30c0646878cfd0520babc1e67d84",
+      "file": "xfp16-repeater.html",
+      "kind": "manufacturer-page",
+      "og_image": null,
+      "images": [],
+      "pdf_links": []
+    },
+    {
+      "id": "xfp-resources",
+      "source_url": "https://c-tec.com/info/xfp-fire-panel-resources",
+      "resolved_url": "https://c-tec.com/info/xfp-fire-panel-resources",
+      "bytes": 198,
+      "sha256": "f6a775a1fafa2a41e0508fb4f3a596fbf82194e486fe90f3d4437c5eb471be56",
+      "file": "xfp-resources.html",
+      "kind": "manufacturer-page",
+      "og_image": null,
+      "images": [],
+      "pdf_links": []
+    },
+    {
+      "id": "tunstall-digital",
+      "source_url": "https://www.tunstall.co.uk/products/warden-call-systems/communicall-digital/",
+      "resolved_url": "https://www.tunstall.co.uk/products/warden-call-systems/communicall-digital/",
+      "bytes": 253343,
+      "sha256": "e5a4b42a5c5eba42762e97ffaeb2669ff3097231bd0ff5666afcb6cfbcac5ed1",
+      "file": "tunstall-digital.html",
+      "kind": "manufacturer-page",
+      "og_image": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/DMC_280126_Tunstall_Clough_ct-54-2-scaled.jpg",
+      "images": [
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/02/dna-nav.svg",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/02/Tunstall-logo-white.svg",
+          "alt": "Tunstall logo white"
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/DMC_030326_Tunstall_callcentre-18-1024x681.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/DMC_030326_Tunstall_cloughcourt-74-1024x681.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/lifeline-digital-bedside_content-1024x819.webp",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/DMC_030326_Tunstall_callcentre-2-1024x681.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/DMC_030326_Tunstall_cloughcourt-2-1024x681.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/DMC_030326_Tunstall_callcentre-18-1024x681.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/DMC_030326_Tunstall_cloughcourt-74-1024x681.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/lifeline-digital-bedside_content-1024x819.webp",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/DMC_030326_Tunstall_callcentre-2-1024x681.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/DMC_030326_Tunstall_cloughcourt-2-1024x681.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/02/left-corner-overlay-tb2c.svg",
+          "alt": "left corner overlay tb2c"
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/DMC_280126_Tunstall_Clough_ct-54-2-scaled.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/02/dna-line-hero-overlay.svg",
+          "alt": "dna line hero overlay"
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/07/22.08.21_CUTTINGS-Communicall-Vi-Speech-Module-with-Door-Entry-Vertical-Surface-7-scaled.jpg",
+          "alt": "Lady sitting on the bed reading with Tunstall Communicall Vi Speech Module at the forefront."
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/02/left-corner-overlay-tb2c.svg",
+          "alt": "left corner overlay tb2c"
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/Screenshot-2026-03-07-at-14.04.18.png",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/02/OVERLAY-TOP-RIGHT.svg",
+          "alt": "OVERLAY - TOP RIGHT"
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/DMC_280126_Tunstall_Clough_ct-22-1024x681.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/tun_brand_image.webp",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/DMC_030326_Tunstall_cloughcourt-42-1024x681.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/DMC_030326_Tunstall_callcentre-21-1024x681.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/02/left-corner-overlay-tb2c.svg",
+          "alt": "left corner overlay tb2c"
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/Screenshot-2026-03-07-at-14.04.18.png",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/DMC_030326_Tunstall_callcentre-7-scaled.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/02/dna-nav.svg",
+          "alt": ""
+        },
+        {
+          "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/02/Tunstall-logo-white.svg",
+          "alt": "Tunstall logo white"
+        }
+      ],
+      "pdf_links": [
+        {
+          "url": "https://www.tunstall.co.uk/downloads/communicall-digital-quick-reference-guide/",
+          "text": "Click to view"
+        },
+        {
+          "url": "https://www.tunstall.co.uk/downloads/communicall-digital-user-guide/",
+          "text": "Click to view"
+        },
+        {
+          "url": "https://www.tunstall.co.uk/downloads/communicall-digital-datasheet/",
+          "text": "Click to view"
+        }
+      ]
+    }
+  ],
+  "image_sources": [
+    {
+      "id": "ctec-fp",
+      "url": "https://www.thesafetycentre.co.uk/pub/media/catalog/product/cache/66673e676dee9cd8274211e1f139aa55/f/f/ff384-2.jpg",
+      "bytes": 19426,
+      "sha256": "b531ec4cc37a3c05c08a43716e954b1e4474089cc4e40ca02c66d913fbb94364"
+    },
+    {
+      "id": "ctec-mfp",
+      "url": "https://www.thesafetycentre.co.uk/pub/media/catalog/product/cache/66673e676dee9cd8274211e1f139aa55/f/f/ff516.jpg",
+      "bytes": 18574,
+      "sha256": "02380ebc6405710c6f3eedc28909d2ff0cd834c123561049424fbdd204e56285"
+    },
+    {
+      "id": "ctec-cfp-repeater",
+      "url": "https://innovateelectricalsupplies.co.uk/wp-content/uploads/2017/08/cfp760.jpg",
+      "bytes": 85718,
+      "sha256": "80347ef1c494f9d09c5621106ceacb6fbca55bdc8ed217a35a5e008020fd13c6"
+    },
+    {
+      "id": "ctec-xfp16-repeater",
+      "url": "https://mastertrade.co.uk/media/catalog/product/cache/40cf53316aaf5bdd250f04b48e3abd4b/c/t/ctec-xfp510-16_1.jpg",
+      "bytes": 39827,
+      "sha256": "175fd383f6186c98abeb855a9e17c00e86b9962e31ca856e9d1f2c52c8c11f6a"
+    }
+  ],
+  "review": {
+    "all_images_visually_inspected": true,
+    "manufacturer_authored_document_hashes_matched_archive": true,
+    "rejected": {
+      "global-fire-equipment-c9b43f4bf7c3": "The file named GFE 358N is a two-page GFE-AD detector installation sheet, not a panel manual. No panel card or association was added."
+    },
+    "scope": "C-TEC FP/MFP are grouped families with explicitly labelled representative pictures; repeaters and Tunstall room units explicitly disclose their hardware role."
+  }
+}

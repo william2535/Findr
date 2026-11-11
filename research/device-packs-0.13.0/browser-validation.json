@@ -1,0 +1,41 @@
+{
+  "release": "0.13.0",
+  "preview_url": "http://terminal.local:4173/",
+  "checks_passed": [
+    "Release0.13.0 shows24devicefamilies/3packs and matching APK path",
+    "Release Explore device packs opens app/#devices",
+    "Exact55000-317search returnsonefamily",
+    "Device modal showscode,protocol,limits,sourcecredit",
+    "Supplementaldatasheet showsDeviceReferencebadge andexactrevision",
+    "DownloadsDevicepacks listsGent5/3docs,Apollo12/12docs,CTEC7/9docs",
+    "C-TEC Sounder/visualalarmfilter returnsCA459A/W VAD-onlybase",
+    "CTECpack opens7families/9documents and all7imagesloaded",
+    "320px and390px frames have no horizontaloverflow",
+    "320px longS-Quadcode dialog fits and showsall13codes",
+    "320pxDownloads exposesallfour tabs"
+  ],
+  "phone_widths": [
+    {
+      "frame": 390,
+      "client": 375,
+      "scroll": 375
+    },
+    {
+      "frame": 320,
+      "client": 305,
+      "scroll": 305
+    }
+  ],
+  "long_code_dialog_width": {
+    "client": 252,
+    "scroll": 252
+  },
+  "limits": [
+    "HTTPpreview doesnot supportserviceworkerinstallation; physicalofflineinstallationnotverified",
+    "PreviewrelaycouldnotfetchApolloSeries65PDF: Publisherunavailable. ActualPDFbytes/hashverifiedindependently; productiondownloadtestpending."
+  ],
+  "screenshots": [
+    "device-pack-preview.jpg",
+    "phone-preview.jpg"
+  ]
+}

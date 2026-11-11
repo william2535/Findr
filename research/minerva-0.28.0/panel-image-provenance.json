@@ -1,0 +1,40 @@
+[
+  {
+    "file": "panels/tyco-minerva-mx.webp",
+    "sourceId": "mx-operating-issue5",
+    "source_url": "https://docs.facpmanuals.com/manuals/Tyco/mx1000_series-operating-instructions-2004-rev5.pdf",
+    "source_pdf_sha256": "36a61c77885611d2e3ecaa5f3cdaead4294d96266780d32f61947368bfec928f",
+    "pdf_page": 3,
+    "printed_page": "3",
+    "crop_points": [
+      72,
+      102,
+      537,
+      727
+    ],
+    "clockwise_rotation": 90,
+    "width": 1250,
+    "height": 930,
+    "sha256": "ae0d07de6be12880bace36b51f7a75ab6e9aae5b717929931d72c1f3d8cc9235",
+    "credit": "Tyco Safety Products, manufacturer Operating Instructions 17A-05-O Issue 5, figure excerpt."
+  },
+  {
+    "file": "panels/tyco-minerva-mx2.webp",
+    "sourceId": "mx-operating-issue5",
+    "source_url": "https://docs.facpmanuals.com/manuals/Tyco/mx1000_series-operating-instructions-2004-rev5.pdf",
+    "source_pdf_sha256": "36a61c77885611d2e3ecaa5f3cdaead4294d96266780d32f61947368bfec928f",
+    "pdf_page": 4,
+    "printed_page": "4",
+    "crop_points": [
+      56,
+      106,
+      532,
+      724
+    ],
+    "clockwise_rotation": 0,
+    "width": 952,
+    "height": 1236,
+    "sha256": "6e978a711b7037b1b36788ef93bab0d5247e6074739440eea453757988f027c8",
+    "credit": "Tyco Safety Products, manufacturer Operating Instructions 17A-05-O Issue 5, figure excerpt."
+  }
+]

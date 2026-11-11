@@ -1,0 +1,189 @@
+{
+  "release": "0.12.2",
+  "reviewed": "2026-10-30",
+  "scope": "Six additional Hikvision recorder fascia families and one Tunstall local alarm receiver. Distinct model variants with shared fronts are grouped; sensors and cosmetic variants excluded.",
+  "candidates": [
+    {
+      "id": "hikvision-ds7600ni-q1-k1-b",
+      "brand": "Hikvision",
+      "model": "DS-7600NI-Q1 / DS-7600NI-K1(B)",
+      "status": "verified-image",
+      "record_ids": [
+        "hikvision-0768b41d0172"
+      ],
+      "source_image_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000002/S000000007/S000000026/OFR000040/M000000560/User_Manual/Baseline_User-Manual_DS-7600NI-Q-%26-K_Network-Video-Recorder_V3.4.98_20180124.pdf",
+      "source_page_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000002/S000000007/S000000026/OFR000040/M000000560/User_Manual/Baseline_User-Manual_DS-7600NI-Q-%26-K_Network-Video-Recorder_V3.4.98_20180124.pdf",
+      "source_pdf_page": 15,
+      "notes": "A shared front does not distinguish Q1 from K1(B), channel count or PoE ports. Read the recorder label and match the exact suffix; this drawing is from the V3.4.98 manual, not a claim about later Q/K revisions."
+    },
+    {
+      "id": "hikvision-ds7600ni-q2",
+      "brand": "Hikvision",
+      "model": "DS-7600NI-Q2 / Q2/P",
+      "status": "verified-image",
+      "record_ids": [
+        "hikvision-0768b41d0172"
+      ],
+      "source_image_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000002/S000000007/S000000026/OFR000040/M000000560/User_Manual/Baseline_User-Manual_DS-7600NI-Q-%26-K_Network-Video-Recorder_V3.4.98_20180124.pdf",
+      "source_page_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000002/S000000007/S000000026/OFR000040/M000000560/User_Manual/Baseline_User-Manual_DS-7600NI-Q-%26-K_Network-Video-Recorder_V3.4.98_20180124.pdf",
+      "source_pdf_page": 15,
+      "notes": "Check the exact DS-7608NI-Q2, DS-7616NI-Q2 or PoE model label. This is the fascia documented in the V3.4.98 manual; newer hardware revisions can differ."
+    },
+    {
+      "id": "hikvision-ds7600ni-i2-m2",
+      "brand": "Hikvision",
+      "model": "DS-7600NI-I2 / M2 compact NVR",
+      "status": "verified-image",
+      "record_ids": [
+        "hikvision-1125f8ee4ab1"
+      ],
+      "source_image_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000132/S000000007/S000000008/OFR031209/M000060964/SM000061899/Data_Sheet/Datasheet-of-DS-7608NI-M2_8P_V4.63.010_20230805.pdf",
+      "source_page_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000132/S000000007/S000000008/OFR031209/M000060964/SM000061899/Data_Sheet/Datasheet-of-DS-7608NI-M2_8P_V4.63.010_20230805.pdf",
+      "source_pdf_page": 1,
+      "notes": "Use this as a shared-fascia comparison. Read the full I2 or M2 model, channel count, PoE suffix and firmware version before choosing settings. Other I/M chassis are not represented by this photograph."
+    },
+    {
+      "id": "hikvision-ds7700ni-i4-b",
+      "brand": "Hikvision",
+      "model": "DS-7700NI-I4(B) / I4/P(B)",
+      "status": "verified-image",
+      "record_ids": [
+        "hikvision-1125f8ee4ab1"
+      ],
+      "source_image_url": "https://assets.hikvision.com/prd/normal/all/image/m000000592/MB-202Y-P-HIKVISION.png",
+      "source_page_url": "https://www.hikvision.com/mena-en/products/IP-Products/Network-Video-Recorders/Pro-Series/ds-7716ni-i4-16p-b-/",
+      "source_pdf_page": null,
+      "notes": "The pictured unit is DS-7716NI-I4/16P(B). Confirm the full product label; the image does not establish that non-B revisions or other I/M-series recorders have the same front."
+    },
+    {
+      "id": "hikvision-ds7200hthi-k2",
+      "brand": "Hikvision",
+      "model": "DS-7200HTHI-K2",
+      "status": "verified-image",
+      "record_ids": [
+        "hikvision-402e1404c3c9",
+        "hikvision-843e18ff8f4c"
+      ],
+      "source_image_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Hik%20DS-7200HTHI-K2%28S%29.pdf",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Hik%20DS-7200HTHI-K2%28S%29.pdf",
+      "source_pdf_page": 1,
+      "notes": "The archive filename includes “(S)”, but the document itself is titled DS-7200HTHI-K2 SERIES. Confirm the installed model; do not infer an S, SSD or AcuSense variant from this front."
+    },
+    {
+      "id": "hikvision-ds7200-huhi-hqhi-shared",
+      "brand": "Hikvision",
+      "model": "DS-7200HUHI-K1 / K2 · iDS-7200HQHI-K2/4S",
+      "status": "verified-image",
+      "record_ids": [
+        "hikvision-33ef73b31fac",
+        "hikvision-99836bb972fa",
+        "hikvision-56f1411c7038",
+        "hikvision-843e18ff8f4c"
+      ],
+      "source_image_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Hik%20DS-7200HUHI-K1.pdf",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Hik%20DS-7200HUHI-K1.pdf",
+      "source_pdf_page": 1,
+      "notes": "Read the full label to distinguish HUHI and iDS-HQHI. The linked Turbo HD manual lists the DS-HUHI models and iDS-7208/7216HQHI-K2/4S in its applicability tables (PDF pages 7–8); match the exact model and firmware. The separate AcuSense datasheet title is /4S, despite the archive filename’s shorter K2_S wording."
+    },
+    {
+      "id": "tunstall-careassist",
+      "brand": "Tunstall",
+      "model": "CareAssist portable alarm receiver",
+      "status": "verified-image",
+      "record_ids": [
+        "tunstall-0df937d562c4",
+        "tunstall-64a2f3bacca0"
+      ],
+      "source_image_url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/careassist-datasheet.pdf",
+      "source_page_url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/careassist-datasheet.pdf",
+      "source_pdf_page": 1,
+      "notes": "Confirm CareAssist and its product label. The linked datasheet and programming/user guide are CareAssist-specific; this picture does not identify associated sensors or a different Tunstall system."
+    }
+  ],
+  "manual_checks": [
+    {
+      "record_id": "hikvision-0768b41d0172",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000002/S000000007/S000000026/OFR000040/M000000560/User_Manual/Baseline_User-Manual_DS-7600NI-Q-%26-K_Network-Video-Recorder_V3.4.98_20180124.pdf",
+      "sha256": "782deb4d0ef5ef23de9dd09936148ff75722319a34a1fe8ee7048540cc632f68",
+      "matches_catalogue_sha256": true,
+      "pdf_pages": 222
+    },
+    {
+      "record_id": "hikvision-1125f8ee4ab1",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000002/S000000007/S000000026/OFR000040/M000000599/User_Manual/UD33768B_Baseline_Network-Video-Recorder-I-and-M-Series_User-Manual_V4.63.010_20230609.pdf",
+      "sha256": "6b595269ee4fd6c87e20b0dd99de1ed3e42b584ee4f69a331d51125956eb6315",
+      "matches_catalogue_sha256": true,
+      "pdf_pages": 202
+    },
+    {
+      "record_id": "hikvision-33ef73b31fac",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Hik%20DS-7200HUHI-K1.pdf",
+      "sha256": "dd35f095d5418baa70a60872ee09cb740f35bc2ed78a3745d9727200ab3537c5",
+      "matches_catalogue_sha256": true,
+      "pdf_pages": 4
+    },
+    {
+      "record_id": "hikvision-402e1404c3c9",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Hik%20DS-7200HTHI-K2%28S%29.pdf",
+      "sha256": "3b4a9de8ee80e086e6ccdf6b1ec6cdb7ca385589db3713117df774fb24962eac",
+      "matches_catalogue_sha256": true,
+      "pdf_pages": 4
+    },
+    {
+      "record_id": "hikvision-56f1411c7038",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Hik%20Vision%20iDS-7200HQHI-K2_S.pdf",
+      "sha256": "1abdebb7efd10385405113c3141a60be8f7cb4360443a57575c722f2ef3f591c",
+      "matches_catalogue_sha256": true,
+      "pdf_pages": 3
+    },
+    {
+      "record_id": "hikvision-843e18ff8f4c",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000132/S000000133/S000000134/OFR000180/M000005752/User_Manual/UD25801B_Baseline_User-Manual-of-Turbo-HD-Digital-Video-Recorder_V4.28.000_20211012.pdf",
+      "sha256": "c4b498c875b89a88f82e8d23ac7c2a02f3a4af6df799437f6cf87df79e869d78",
+      "matches_catalogue_sha256": true,
+      "pdf_pages": 165
+    },
+    {
+      "record_id": "hikvision-99836bb972fa",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Hik%20DS-7200HUHI-K2%28S%29.pdf",
+      "sha256": "c8cb486623fc78d2288c29c12f28371dbd45d7cfa5e29e20b6606987f3bc9be6",
+      "matches_catalogue_sha256": true,
+      "pdf_pages": 4
+    },
+    {
+      "record_id": "tunstall-0df937d562c4",
+      "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/careassist-datasheet.pdf",
+      "sha256": "72f66402855b842edac68a54e397e0e4f170a9c7bf61de45eefae5d642c32971",
+      "matches_catalogue_sha256": true,
+      "pdf_pages": 2
+    },
+    {
+      "record_id": "tunstall-64a2f3bacca0",
+      "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/d6707281f1_careassist_programming_and_user_guide.pdf",
+      "sha256": "948724ab9eb7e27257c9b77939ecc953930cbf7785cb7a7fd540dc61594b90fa",
+      "matches_catalogue_sha256": true,
+      "pdf_pages": 24
+    }
+  ],
+  "visual_review": "Every chosen original product image or manual figure inspected. Embedded PDF images extracted with original soft masks; no generated substitute hardware. The I2 and M2 photos and three shared HUHI/HQHI datasheet photos compared visually.",
+  "additional_primary_sources": [
+    {
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000132/S000000007/S000000008/OFR031209/M000060964/SM000061899/Data_Sheet/Datasheet-of-DS-7608NI-M2_8P_V4.63.010_20230805.pdf",
+      "sha256": "92beb72b95f525535344ca17fddc6d183fe6cb9c40976875007f207274ca4462",
+      "page": 1
+    },
+    {
+      "url": "https://www.hikvision.com/en/products/IP-Products/Network-Video-Recorders/Pro-Series/ds-7608ni-i2-8p/"
+    },
+    {
+      "url": "https://www.hikvision.com/mena-en/products/IP-Products/Network-Video-Recorders/Pro-Series/ds-7716ni-i4-16p-b-/"
+    }
+  ],
+  "publication_limits": [
+    "Manufacturer datasheet photographs are visual references, not a claim of exact firmware or channel count.",
+    "The general Turbo HD manual covers multiple families; its exact DS-HUHI and iDS-HQHI applicability pages are stated in the grouped card.",
+    "The external manual catalogue is unchanged; picture source PDFs are not bundled into the app."
+  ],
+  "independent_review": "Second reviewer verified every concrete model alias, image and the nine source-PDF hashes. Root checked Turbo HD PDF page 8 directly and clarified the documented iDS-HQHI-K2/4S applicability.",
+  "final_label_review": "Q2/P and I4/P(B) family headings retain the manufacturer slash separator; a hyphen shorthand was removed before publication."
+}

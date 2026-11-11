@@ -1,0 +1,500 @@
+{
+  "release": "0.12.3",
+  "category": "cctv",
+  "added_count": 7,
+  "manual_linked_count": 7,
+  "picture_only_count": 0,
+  "review_date": "2026-10-30",
+  "method": "Manufacturer product photographs and one manufacturer-manual front illustration; exact archive IDs checked against the unchanged catalogue. Original and Mk II S22 generations separated; shared case variants grouped with label checks. All selected figures visually reviewed.",
+  "candidates": [
+    {
+      "id": "axis-s3008-family",
+      "brand": "Axis",
+      "model": "S3008 / S3008 Mk II",
+      "category": "cctv",
+      "status": "verified-image",
+      "record_ids": [
+        "axis-b9141b2a8113",
+        "axis-b91683674770"
+      ]
+    },
+    {
+      "id": "axis-s3016",
+      "brand": "Axis",
+      "model": "S3016",
+      "category": "cctv",
+      "status": "verified-image",
+      "record_ids": [
+        "axis-00676181a6dd"
+      ]
+    },
+    {
+      "id": "axis-s2208-s2212-original",
+      "brand": "Axis",
+      "model": "Camera Station S2208 / S2212 (original)",
+      "category": "cctv",
+      "status": "verified-image",
+      "record_ids": [
+        "axis-42a011d91da4",
+        "axis-67055448c3fa"
+      ]
+    },
+    {
+      "id": "axis-s2216-s2224-original",
+      "brand": "Axis",
+      "model": "Camera Station S2216 / S2224 (original)",
+      "category": "cctv",
+      "status": "verified-image",
+      "record_ids": [
+        "axis-60405be926be",
+        "axis-8cb3ffcfd7aa"
+      ]
+    },
+    {
+      "id": "axis-s2208-s2212-mk-ii",
+      "brand": "Axis",
+      "model": "Camera Station S2208 Mk II / S2212 Mk II",
+      "category": "cctv",
+      "status": "verified-image",
+      "record_ids": [
+        "axis-1eee2e06c7c6",
+        "axis-23ad08792150"
+      ]
+    },
+    {
+      "id": "axis-s2216-s2224-mk-ii",
+      "brand": "Axis",
+      "model": "Camera Station S2216 Mk II / S2224 Mk II",
+      "category": "cctv",
+      "status": "verified-image",
+      "record_ids": [
+        "axis-1ec54677a9ea",
+        "axis-95538522227d"
+      ]
+    },
+    {
+      "id": "honeywell-hrde4x4",
+      "brand": "Honeywell",
+      "model": "HRDE4X4",
+      "category": "cctv",
+      "status": "verified-image",
+      "record_ids": [
+        "honeywell-fe7c63c2f043",
+        "honeywell-4f5136f7b0f1"
+      ]
+    }
+  ],
+  "source_checks": [
+    {
+      "record_id": "axis-b9141b2a8113",
+      "url": "https://help.axis.com/download/um_s3008_t10152902_2607.pdf",
+      "catalogue_sha256": null,
+      "final_url": "https://help.axis.com/download/um_s3008_t10152902_2607.pdf",
+      "sha256": "49925fab3de24cb90eb595e529458c37dd34d9ff19b7ebdcad2d3d747e1a06f7",
+      "hash_matches": null,
+      "bytes": 214467,
+      "pages": 24,
+      "title": "AXISS3008Recorder\nUser manual\nAXIS S3008 Recorder\n",
+      "figure_pages": [
+        {
+          "page": 17,
+          "excerpt": "17\nProduct overview\n1\nUSB port\n2\nStatus LED\n3\nPower button\n4\nHard drive LED\n5\nAlarm buzzer\n6\nHard drive\n7\nGrounding\n8\nControl button\n9\nLAN port\n10\nPoE port (8x)\n11\nPower input\nPower button\n•\nTo shut d",
+          "embedded_images": 0,
+          "drawings": 2104
+        }
+      ]
+    },
+    {
+      "record_id": "axis-b91683674770",
+      "url": "https://help.axis.com/download/um_s3008_mk_ii_t10191657_2607.pdf",
+      "catalogue_sha256": null,
+      "final_url": "https://help.axis.com/download/um_s3008_mk_ii_t10191657_2607.pdf",
+      "sha256": "1dfb1391f3e6cfc1e48f5d64f2f69258b89fe29b4d30ffcf0b915179a0105f8c",
+      "hash_matches": null,
+      "bytes": 192053,
+      "pages": 14,
+      "title": "AXISS3008MkIIRec\norder\nUser manual\nAXIS S3008 Mk II Recorder\n",
+      "figure_pages": [
+        {
+          "page": 7,
+          "excerpt": "7\nProduct overview\n1\nHard drive\n2\nAlarm buzzer\n3\nUSB port\n4\nStatus LED\n5\nPower button\n6\nHard drive LED\n7\nGrounding\n8\nLAN port\n9\nPoE port (8x)\n10\nControl button\n11\nPower input\nPower button\n•\nTo shut do",
+          "embedded_images": 0,
+          "drawings": 1677
+        }
+      ]
+    },
+    {
+      "record_id": "axis-00676181a6dd",
+      "url": "https://help.axis.com/download/um_s3016_t10186767_2607.pdf",
+      "catalogue_sha256": null,
+      "final_url": "https://help.axis.com/download/um_s3016_t10186767_2607.pdf",
+      "sha256": "f6e835e73778bbbd227ae16641834253b7075861820f90540d060a2690c28c50",
+      "hash_matches": null,
+      "bytes": 208641,
+      "pages": 20,
+      "title": "AXISS3016Recorder\nUser manual\nAXIS S3016 Recorder\n",
+      "figure_pages": [
+        {
+          "page": 13,
+          "excerpt": "13\nSpecifications\nProduct overview\n1\nUSB 3.0 port\n2\nProduct status LED\n3\nHard drives status LEDs\n4\nPoE/Network status LEDs\n5\nPower connector\n6\nPoE ports\n7\nAUX RJ45 port\n8\nLAN RJ45 port\n9\nLAN SFP port\n",
+          "embedded_images": 0,
+          "drawings": 2415
+        }
+      ]
+    },
+    {
+      "record_id": "axis-42a011d91da4",
+      "url": "https://help.axis.com/download/um_s2208_t10134965_2412.pdf",
+      "catalogue_sha256": null,
+      "final_url": "https://help.axis.com/download/um_s2208_t10134965_2412.pdf",
+      "sha256": "29460f174eefb96c6891ff231b881be52e4438a35fc17747f967020add85b055",
+      "hash_matches": null,
+      "bytes": 820270,
+      "pages": 45,
+      "title": "AXIS Camera Station S22 Appliance Series\nAXIS Camera Station S2208 Appliance\nAXIS Camera Station S2212 Appliance\nAXIS Camera Station S2216 Appliance\nAXIS Camera Station S2224 Appliance\nUser manual\n",
+      "figure_pages": [
+        {
+          "page": 40,
+          "excerpt": "AXIS Camera Station S22 Appliance Series\nProduct overview\nProduct overview\nFront side\n1\n2\n3\n4\n5\n6\n7\n8\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n13\n14\n15\n16\n11\n12\n1\n2\n3\n4\n21\n22\n23\n24\n5\n6\n7\n8\n9\n10",
+          "embedded_images": 0,
+          "drawings": 476
+        },
+        {
+          "page": 41,
+          "excerpt": "AXIS Camera Station S22 Appliance Series\nProduct overview\nRear side\n1\n3\n5\n7\n2\n4\n6\n8\n1\n3\n5\n7\n2\n4\n6\n8\n9\n11\n13\n15\n10\n12\n14\n16\n1\n3\n5\n7\n2\n4\n6\n8\n9\n11\n10\n12\n1\n3\n5\n7\n2\n4\n6\n8\n9\n11\n13\n15\n10\n12\n14\n16\n17\n19\n21\n23",
+          "embedded_images": 0,
+          "drawings": 660
+        },
+        {
+          "page": 42,
+          "excerpt": "AXIS Camera Station S22 Appliance Series\nProduct overview\nSpecifications\nFront LEDs\nLED indicator\nColor\nIndication\nPower\nGreen\nServer on\nNetwork ports\nGreen\nLink state\nBlinks amber\nHard drive activity",
+          "embedded_images": 0,
+          "drawings": 95
+        }
+      ]
+    },
+    {
+      "record_id": "axis-1eee2e06c7c6",
+      "url": "https://help.axis.com/download/um_s2208_mk_ii_t10199908_2607.pdf",
+      "catalogue_sha256": null,
+      "final_url": "https://help.axis.com/download/um_s2208_mk_ii_t10199908_2607.pdf",
+      "sha256": "c4365e7b30fd92bd0eb110b6d0bd07ad069e7dc74cce64ffe54336c1d623707e",
+      "hash_matches": null,
+      "bytes": 506131,
+      "pages": 36,
+      "title": "Usermanual\nAXISCameraStationS2208Mk\nIIAppliance\nUser manual\nAXIS Camera Station S2208 Mk II Appliance\n",
+      "figure_pages": [
+        {
+          "page": 31,
+          "excerpt": "31\nSpecifications\nProduct overview\nFront and rear\n1\nPower connector\n2\nSwitch reset button\n3\n1 GbE Ethernet port — Server uplink\n4\n1 GbE PoE Ethernet ports\n5\n1 GbE Ethernet port — Switch uplink (RJ45)\n",
+          "embedded_images": 0,
+          "drawings": 1844
+        }
+      ]
+    },
+    {
+      "record_id": "axis-23ad08792150",
+      "url": "https://help.axis.com/download/um_s2212_mk_ii_t10207040_2607.pdf",
+      "catalogue_sha256": null,
+      "final_url": "https://help.axis.com/download/um_s2212_mk_ii_t10207040_2607.pdf",
+      "sha256": "e6dcab256dd45340c4008335a89a27e885ac7229bcd80378ea3b9065cb424c6b",
+      "hash_matches": null,
+      "bytes": 524954,
+      "pages": 38,
+      "title": "Usermanual\nAXISCameraStationS2212Mk\nIIAppliance\nUser manual\nAXIS Camera Station S2212 Mk II Appliance\n",
+      "figure_pages": [
+        {
+          "page": 3,
+          "excerpt": "Log in to the switch's management page .................................................................................................26\nRunning configuration........................................",
+          "embedded_images": 0,
+          "drawings": 1
+        },
+        {
+          "page": 33,
+          "excerpt": "33\nSpecifications\nProduct overview\nFront and rear\n1\nPower connector\n2\nSwitch reset button\n3\n1 GbE Ethernet port — Server uplink\n4\n1 GbE PoE Ethernet ports\n5\n1 GbE Ethernet port — Switch uplink (SFP)\n6",
+          "embedded_images": 0,
+          "drawings": 1875
+        }
+      ]
+    },
+    {
+      "record_id": "axis-1ec54677a9ea",
+      "url": "https://help.axis.com/download/um_s2216_mk_ii_t10207038_2609.pdf",
+      "catalogue_sha256": null,
+      "final_url": "https://help.axis.com/download/um_s2216_mk_ii_t10207038_2609.pdf",
+      "sha256": "b79374935fda441f9c5fc1a634826d3d1d19a2eb0a350cc15ff723fb7e0eeed5",
+      "hash_matches": null,
+      "bytes": 513636,
+      "pages": 40,
+      "title": "Usermanual\nAXISCameraStationS2216Mk\nIIAppliance\nUser manual\nAXIS Camera Station S2216 Mk II Appliance\n",
+      "figure_pages": [
+        {
+          "page": 3,
+          "excerpt": "Manage the built-in switch...........................................................................................................................27\nAbout the built-in switch.......................",
+          "embedded_images": 0,
+          "drawings": 1
+        },
+        {
+          "page": 34,
+          "excerpt": "34\nSpecifications\nProduct overview\nFront and rear\n1\nPower connector\n2\nSwitch reset button\n3\n1 GbE Ethernet port — Server uplink\n4\n1 GbE PoE Ethernet ports\n5\n1 GbE Ethernet port — Switch uplink (SFP)\n6",
+          "embedded_images": 0,
+          "drawings": 2085
+        }
+      ]
+    },
+    {
+      "record_id": "honeywell-4f5136f7b0f1",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/HRDE4X4QuickInstallV1.pdf",
+      "catalogue_sha256": "ddc03e15938ee071625c0268e14a700c770c0e99861927adacbf5edd7eb53938",
+      "final_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/HRDE4X4QuickInstallV1.pdf",
+      "sha256": "ddc03e15938ee071625c0268e14a700c770c0e99861927adacbf5edd7eb53938",
+      "hash_matches": true,
+      "bytes": 517748,
+      "pages": 2,
+      "title": "Document 900.0573 – 02/06 – Rev 1.00\nHRDE4X4 Quick Installation Guide\n1  \nEasy Video / Audio Connections — Set Composite / VGA Monitor and \nStart Recording\n2  \nView Live Cameras, Listen to Live Audio and Record Indicator Status\n3  \nAccess Programming Menus — Set the Date and Time\nVIDEO IN\nCH1\nCH2\nCH",
+      "figure_pages": [
+        {
+          "page": 1,
+          "excerpt": "Document 900.0573 – 02/06 – Rev 1.00\nHRDE4X4 Quick Installation Guide\n1  \nEasy Video / Audio Connections — Set Composite / VGA Monitor and \nStart Recording\n2  \nView Live Cameras, Listen to Live Audio ",
+          "embedded_images": 5,
+          "drawings": 248
+        }
+      ]
+    },
+    {
+      "record_id": "honeywell-fe7c63c2f043",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Honeywell%20HRDE4X4%20DVR.pdf",
+      "catalogue_sha256": "60398ef7241fad31050308c69815828e8d12236e6a1e2fd53f87967762a49950",
+      "final_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Honeywell%20HRDE4X4%20DVR.pdf",
+      "sha256": "60398ef7241fad31050308c69815828e8d12236e6a1e2fd53f87967762a49950",
+      "hash_matches": true,
+      "bytes": 7155395,
+      "pages": 80,
+      "title": "User Guide\nHRDE4X4\nDocument 900.0399 – 08/08 – Rev 3.01\nDigital Video\nRecorder\n",
+      "figure_pages": [
+        {
+          "page": 5,
+          "excerpt": "Rev 3.01\nv\nDocument 900.0399\n08/08\nContents\n1\nIntroduction   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 1\nFeatures  .  .  .  .  .  .  .  .  . ",
+          "embedded_images": 0,
+          "drawings": 2
+        },
+        {
+          "page": 7,
+          "excerpt": "Rev 3.01\nvii\nDocument 900.0399\n08/08\nFigures\nNTSC/PAL Operation Switch .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 7\nRear Panel Connections and Switches",
+          "embedded_images": 0,
+          "drawings": 2
+        },
+        {
+          "page": 9,
+          "excerpt": "Rev 3.01\nix\nDocument 900.0399\n08/08\nTables\nRear Panel Connectors and Switches  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 7\nFront Panel LEDs .  .  .  .  .  .  .  .  .",
+          "embedded_images": 0,
+          "drawings": 2
+        },
+        {
+          "page": 11,
+          "excerpt": "Rev 3.01\n1\nDocument 900.0399\n08/08\n1\nIntroduction\nFeatures\nYour HRDE4x4 digital video recorder (referred to as DVR throughout this document) is a \nstand-alone and/or networked video and audio recordin",
+          "embedded_images": 0,
+          "drawings": 8
+        },
+        {
+          "page": 21,
+          "excerpt": "Rev 3.01\n11\nDocument 900.0399\n08/08\n3\nDVR Configuration\nThis chapter explains:\n•\nFront panel LEDs and controls\n•\nInitial DVR setup\n•\nConfiguring live and recording modes\n•\nSetting motion zones\n•\nSetti",
+          "embedded_images": 0,
+          "drawings": 139
+        },
+        {
+          "page": 22,
+          "excerpt": "Rev 3.01\n12\nDocument 900.0399\n08/08\nUSB Port\nThere is a USB port on the left side of the front panel. You can use this port to save video \nclips or stills onto a USB stick (see Archiving Video, page 3",
+          "embedded_images": 0,
+          "drawings": 60
+        },
+        {
+          "page": 23,
+          "excerpt": "Rev 3.01\n13\nDocument 900.0399\n08/08\nInitial Setup\nBefore using your DVR for the first time, you need to establish some initial settings:\n•\ndate and time\n•\ndisplay language\n•\ncamera settings\n•\nrecordin",
+          "embedded_images": 1,
+          "drawings": 77
+        },
+        {
+          "page": 34,
+          "excerpt": "Rev 3.01\n24\nDocument 900.0399\n08/08\nFigure 3-12\nStorage Setup Screen\nTable 3-10 describes the Storage field options.\nSaving Setup\nTo preserve the setup values that you have selected, open the SAVE SET",
+          "embedded_images": 1,
+          "drawings": 11
+        },
+        {
+          "page": 35,
+          "excerpt": "Rev 3.01\n25\nDocument 900.0399\n08/08\n4\nFront Panel Operation\nThis chapter explains:\n•\nLive viewing\n•\nSearching\n•\nPlaying back\n•\nLive networked remote monitoring\n•\nArchiving video to a USB memory stick\n",
+          "embedded_images": 1,
+          "drawings": 7
+        },
+        {
+          "page": 44,
+          "excerpt": "Rev 3.01\n34\nDocument 900.0399\n08/08\nArchiving Still Images onto USB\nStill images can be captured and archived onto the hard drive in live mode or while playing \nback recorded video. In live mode, pres",
+          "embedded_images": 1,
+          "drawings": 3
+        },
+        {
+          "page": 45,
+          "excerpt": "Rev 3.01\n35\nDocument 900.0399\n08/08\nTransferring Still Images or Video onto USB\nTo begin transferring stored images or video to a USB stick, connect the DVR to a USB \nstick through the USB port on the",
+          "embedded_images": 2,
+          "drawings": 4
+        },
+        {
+          "page": 65,
+          "excerpt": "Rev 3.01\n55\nDocument 900.0399\n08/08\nA\nDVR Firmware Upgrade\nThis appendix covers upgrading the firmware on your DVR unit. Check the Honeywell Video \nSystems website for firmware upgrades at http://www.",
+          "embedded_images": 0,
+          "drawings": 4
+        },
+        {
+          "page": 77,
+          "excerpt": "Rev 3.01\n67\nDocument 900.0399\n04/08\nIndex\nA\nadding a site using RAS 51\nadmin password 18\nADSL 22\narchive search 31\narchiving 33, 34\narchiving still images onto USB 34\narchiving video onto USB 34\naudio",
+          "embedded_images": 0,
+          "drawings": 2
+        }
+      ]
+    },
+    {
+      "record_id": "axis-95538522227d",
+      "url": "https://help.axis.com/download/um_s2224_mk_ii_t10207039_2609.pdf",
+      "catalogue_sha256": null,
+      "sha256": "b106aca1d65a43d560a0898de4d00b9c5761e0850c67b2e81b4839b5173f3fcc",
+      "hash_matches": null,
+      "bytes": 520268,
+      "pages": 40,
+      "title": "Usermanual\nAXISCameraStationS2224Mk\nIIAppliance\nUser manual\nAXIS Camera Station S2224 Mk II Appliance\n",
+      "figure_pages": [
+        {
+          "page": 3,
+          "excerpt": "Manage the built-in switch...........................................................................................................................27\nAbout the built-in switch.......................................................................................................................27\nL"
+        },
+        {
+          "page": 34,
+          "excerpt": "34\nSpecifications\nProduct overview\nFront and rear\n1\nPower connector\n2\nSwitch reset button\n3\n1 GbE Ethernet port — Server uplink\n4\n1 GbE PoE Ethernet ports\n5\n1 GbE Ethernet port — Switch uplink (SFP)\n6\n1 GbE Ethernet port — Switch uplink (RJ45)\n7\nServer reset button\n8\nUSB 2.0 ports\n9\nHDMI ports\n10\nPo"
+        }
+      ]
+    },
+    {
+      "record_id": "axis-67055448c3fa",
+      "url": "https://help.axis.com/download/um_s2212_t10134965_2412.pdf",
+      "catalogue_sha256": null,
+      "sha256": "29460f174eefb96c6891ff231b881be52e4438a35fc17747f967020add85b055",
+      "hash_matches": null,
+      "bytes": 820270,
+      "pages": 45,
+      "title": "AXIS Camera Station S22 Appliance Series\nAXIS Camera Station S2208 Appliance\nAXIS Camera Station S2212 Appliance\nAXIS Camera Station S2216 Appliance\nAXIS Camera Station S2224 Appliance\nUser manual\n",
+      "figure_pages": [
+        40
+      ]
+    },
+    {
+      "record_id": "axis-60405be926be",
+      "url": "https://help.axis.com/download/um_s2216_t10134965_2412.pdf",
+      "catalogue_sha256": null,
+      "sha256": "29460f174eefb96c6891ff231b881be52e4438a35fc17747f967020add85b055",
+      "hash_matches": null,
+      "bytes": 820270,
+      "pages": 45,
+      "title": "AXIS Camera Station S22 Appliance Series\nAXIS Camera Station S2208 Appliance\nAXIS Camera Station S2212 Appliance\nAXIS Camera Station S2216 Appliance\nAXIS Camera Station S2224 Appliance\nUser manual\n",
+      "figure_pages": [
+        40
+      ]
+    },
+    {
+      "record_id": "axis-8cb3ffcfd7aa",
+      "url": "https://help.axis.com/download/um_s2224_t10134965_2412.pdf",
+      "catalogue_sha256": null,
+      "sha256": "29460f174eefb96c6891ff231b881be52e4438a35fc17747f967020add85b055",
+      "hash_matches": null,
+      "bytes": 820270,
+      "pages": 45,
+      "title": "AXIS Camera Station S22 Appliance Series\nAXIS Camera Station S2208 Appliance\nAXIS Camera Station S2212 Appliance\nAXIS Camera Station S2216 Appliance\nAXIS Camera Station S2224 Appliance\nUser manual\n",
+      "figure_pages": [
+        40
+      ]
+    }
+  ],
+  "image_checks": [
+    {
+      "name": "s3008",
+      "url": "https://www.axis.com/sites/axis/files/styles/square_500x500_/public/2020-07/s3008_front_2003_1600.png.webp?itok=GLAiRndz",
+      "page_url": "https://www.axis.com/products/axis-s3008/support",
+      "filename": "axis-s3008.webp",
+      "alt": "AXIS S3008 from the front",
+      "sha256": "e40a57acc05df437d88514544142048c017c24bfa15426de08720cb81c8c9886",
+      "bytes": 3778,
+      "path": "/workspace/scratch/163ad62fc051/picture-batches-0.12.3/uk-cctv/sources/axis-s3008.webp"
+    },
+    {
+      "name": "s3008-mk-ii",
+      "url": "https://www.axis.com/sites/axis/files/styles/standard_1360_x_auto/public/2023-11/s3008mkII_companion_recorder_angle_left_2309-Productimageswithcropping.png.webp?itok=tnsJuzBb",
+      "page_url": "https://www.axis.com/en-gb/products/axis-s3008-mk-ii",
+      "filename": "axis-s3008-mk-ii.webp",
+      "alt": "Black recorder AXIS S3008 MK II with a round button with green light.",
+      "sha256": "c27cac320b4f52d4876b0a51bcaee7deb489f15975b341b4ed2562de8032e505",
+      "bytes": 25290,
+      "path": "/workspace/scratch/163ad62fc051/picture-batches-0.12.3/uk-cctv/images/axis-s3008-mk-ii.webp"
+    },
+    {
+      "name": "s3016",
+      "url": "https://www.axis.com/sites/axis/files/styles/standard_1360_x_auto/public/2023-11/S3016_angle_left_2302.png.webp?itok=D2PVc3TV",
+      "page_url": "https://www.axis.com/en-gb/products/axis-s3016",
+      "filename": "axis-s3016.webp",
+      "alt": "AXIS S3016 Recorder, 1U Rack formfactor",
+      "sha256": "5bd256bdff669b98c12f781e4d6e40f6c98d364d38d2c02bfe1213b6bd48bf88",
+      "bytes": 28602,
+      "path": "/workspace/scratch/163ad62fc051/picture-batches-0.12.3/uk-cctv/images/axis-s3016.webp"
+    },
+    {
+      "name": "s2208-mk-ii",
+      "url": "https://www.axis.com/sites/axis/files/styles/standard_1360_x_auto/public/2024-11/90757.png.webp?itok=Ab3PqLL1",
+      "page_url": "https://www.axis.com/en-gb/products/axis-s2208-mk-ii",
+      "filename": "axis-s2208-mk-ii.webp",
+      "alt": "Black AXIS S2208 Mk II in angle from above and front",
+      "sha256": "878e48fe8610fe2fe2887721344fe4f1980d12883ff75f43d67b31a41254fc74",
+      "bytes": 20050,
+      "path": "/workspace/scratch/163ad62fc051/picture-batches-0.12.3/uk-cctv/images/axis-s2208-mk-ii.webp"
+    },
+    {
+      "name": "s2216-mk-ii",
+      "url": "https://www.axis.com/sites/axis/files/styles/standard_1360_x_auto/public/2024-11/90766.png.webp?itok=9o1nk3ax",
+      "page_url": "https://www.axis.com/en-gb/products/axis-s2216-mk-ii",
+      "filename": "axis-s2216-mk-ii.webp",
+      "alt": "AXIS S2216 Mk II in black, seen from front and above",
+      "sha256": "f1ba6ad3f70437d0b661b53d3251b3c83f5158e1e0e57472e655280a95235cde",
+      "bytes": 14066,
+      "path": "/workspace/scratch/163ad62fc051/picture-batches-0.12.3/uk-cctv/images/axis-s2216-mk-ii.webp"
+    }
+  ],
+  "exclusions": [
+    {
+      "record_id": "dedicated-micros-6f198974d3fb",
+      "title": "Uniplex DXPro",
+      "reason": "Multiplexer manual, not a recorder family; excluded from this recorder batch."
+    },
+    {
+      "record_id": "dedicated-micros-7cd744b1a539",
+      "title": "Uniplex Series 1 and 2",
+      "reason": "Multiplexer manual, not a recorder family."
+    },
+    {
+      "record_id": "dedicated-micros-7f0642d062e7",
+      "title": "Network Viewing Software",
+      "reason": "Software guide, not a hardware front image source."
+    }
+  ],
+  "hash_note": "Axis archive records do not pin PDF hashes. Recorded Axis SHA-256 values describe the fetched manufacturer documents only; they are not archive equality claims. Both Honeywell files match their catalogue hashes.",
+  "uk_priority_basis": "Current Axis families use official en-gb product pages; original S22 manufacturer support lists UK declarations. Legacy Honeywell HRDE4X4 is documented in the UKWatch engineer archive.",
+  "independent_review": {
+    "result": "passed",
+    "entries": 7,
+    "linked_record_ids": 13,
+    "checks": [
+      "Catalogue model, brand, category and document titles match",
+      "Four original S22 PDFs byte-identical; all four front diagrams on page 40",
+      "Mk II standalone and rack figures corroborate grouped case styles",
+      "S2208 and S2216 photos equal original embedded xref 21 bytes",
+      "Honeywell HRDE4X4 figure is PDF page 21 / printed page 11",
+      "All selected official image hashes match"
+    ],
+    "correction": "Repeated Mk II in both family model names to remove heading ambiguity."
+  }
+}

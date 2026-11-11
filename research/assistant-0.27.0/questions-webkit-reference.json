@@ -1,0 +1,265 @@
+{
+  "environment": {
+    "browser": "webkit",
+    "version": "26.0",
+    "os": "Linux container",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "persistentProfile": true,
+    "physicalIPhone": false,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15"
+  },
+  "syntheticManuals": true,
+  "offline": false,
+  "useModel": false,
+  "profile": "Isolated persistent QA profile; no user data",
+  "checks": [
+    "Separate Fault Finder and Quick Questions entries create distinct saved conversations",
+    "New Quick Questions output visibly types, with tap-to-complete",
+    "Question before manual asks a focused equipment clarification",
+    "Cancelled picker keeps question; uploaded unseen manual is identified, confirmed and resumes labelled manual-extract fallback",
+    "Supporting PDF page reference opens actual saved manual",
+    "Natural follow-up retains equipment, manual and previous question context",
+    "Scrollback stays put while new transcript lines arrive; Latest message restores follow",
+    "Reload restores full answers and source references without replaying old animation",
+    "Reduced motion and Shift+Enter multiline input",
+    "Phone portrait and keyboard-like 390\u00d7500 viewport keep composer reachable",
+    "Additional component manual preserves panel and conversation, then resumes question",
+    "BACK retains original question and answer while reassessing a correction",
+    "Explicit transfer makes a separate Fault Finder job with manuals/context, without invented completed checks",
+    "Independent question histories reopen without replacing Fault Finder"
+  ],
+  "measurements": [
+    {
+      "kind": "PDF import",
+      "file": "synthetic-quick-panel.pdf",
+      "ms": 129.62716499999988
+    },
+    {
+      "kind": "Question response",
+      "question": "How do I view the event history on this panel?",
+      "wallMs": 211.55223599999954
+    },
+    {
+      "kind": "Question response",
+      "question": "Where is that menu?",
+      "wallMs": 157.11476199999925
+    },
+    {
+      "kind": "PDF import",
+      "file": "synthetic-quick-psu.pdf",
+      "ms": 137.76432699999896
+    },
+    {
+      "kind": "Question response",
+      "question": "What about the external PSU?",
+      "wallMs": 201.04223199999979
+    },
+    {
+      "kind": "Question response",
+      "question": "SYNTHETIC correction: what nominal voltage is documented for the external PSU?",
+      "wallMs": 229.80191899999954
+    }
+  ],
+  "answers": [
+    {
+      "question": "How do I view the event history on this panel?",
+      "text": "Manual extracts only \u2014 no language-model answer. These passages may help; they do not establish the complete answer.\n1. \u201cFor this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history. The EVENT HISTORY menu is inside VIEW. Step two selects EVENT HISTORY after VIEW has already been opened. Viewing the log does not clear its entries or reset a fault. This\u201d\n2. \u201cManufacturer: Test Bench Model: FINDR-QA-100 Equipment: Fire alarm control panel Document type: User guide Revision: QA-027 This fictional fire alarm control panel exists only for browser verification. The model names, buttons and behaviour below do not describe real equipment. Confirm the equipment label before applying any actual manufacturer procedure. This fixture supports read-only questions about event history.\u201d\n\nApplies to the recorded equipment: Test Bench FINDR-QA-100 not established. These are shortened excerpts; check the cited page for surrounding conditions and the full procedure. Check the cited pages, or add the relevant manual, diagram or configuration detail.",
+      "sourceRefs": [
+        {
+          "sourceId": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9:pdf-2:0",
+          "citationId": "S1",
+          "manualId": "local-2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+          "contentHash": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+          "processorVersion": "2026-11-10.2",
+          "title": "synthetic-quick-panel",
+          "revision": "QA-027",
+          "models": [
+            "FINDR-QA-100"
+          ],
+          "page": 2,
+          "pdfPage": 2,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history. The EVENT HISTORY menu is inside VIEW. Step two selects EVENT HISTORY after VIEW has already been opened. Viewing the log does not clear its entries or reset a fault. This",
+          "excerpt": "For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history. The EVENT HISTORY menu is inside VIEW. Step two selects EVENT HISTORY after VIEW has already been opened. Viewing the log does not clear its entries or reset a fault. This",
+          "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+        },
+        {
+          "sourceId": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9:pdf-1:0",
+          "citationId": "S2",
+          "manualId": "local-2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+          "contentHash": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+          "processorVersion": "2026-11-10.2",
+          "title": "synthetic-quick-panel",
+          "revision": "QA-027",
+          "models": [
+            "FINDR-QA-100"
+          ],
+          "page": 1,
+          "pdfPage": 1,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "Manufacturer: Test Bench Model: FINDR-QA-100 Equipment: Fire alarm control panel Document type: User guide Revision: QA-027 This fictional fire alarm control panel exists only for browser verification. The model names, buttons and behaviour below do not describe real equipment. Confirm the equipment label before applying any actual manufacturer procedure. This fixture supports read-only questions about event history.",
+          "excerpt": "Manufacturer: Test Bench Model: FINDR-QA-100 Equipment: Fire alarm control panel Document type: User guide Revision: QA-027 This fictional fire alarm control panel exists only for browser verification. The model names, buttons and behaviour below do not describe real equipment. Confirm the equipment label before applying any actual manufacturer procedure. This fixture supports read-only questions about event history.",
+          "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+        }
+      ],
+      "model": {
+        "id": null,
+        "revision": null,
+        "backend": null,
+        "metrics": {},
+        "ran": false,
+        "outputAccepted": false,
+        "validationIssues": [
+          "The local model did not return an independently supported quotation. Review the exact retrieved material or add the missing manual information."
+        ]
+      }
+    },
+    {
+      "question": "Where is that menu?",
+      "text": "Manual extracts only \u2014 no language-model answer. These passages may help; they do not establish the complete answer.\n1. \u201cFor this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history. The EVENT HISTORY menu is inside VIEW. Step two selects EVENT HISTORY after VIEW has already been opened. Viewing the log does not clear its entries or reset a fault. This\u201d\n2. \u201cManufacturer: Test Bench Model: FINDR-QA-100 Equipment: Fire alarm control panel Document type: User guide Revision: QA-027 This fictional fire alarm control panel exists only for browser verification. The model names, buttons and behaviour below do not describe real equipment. Confirm the equipment label before applying any actual manufacturer procedure. This fixture supports read-only questions about event history.\u201d\n\nApplies to the recorded equipment: Test Bench FINDR-QA-100 not established. These are shortened excerpts; check the cited page for surrounding conditions and the full procedure. Check the cited pages, or add the relevant manual, diagram or configuration detail.",
+      "sourceRefs": [
+        {
+          "sourceId": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9:pdf-2:0",
+          "citationId": "S1",
+          "manualId": "local-2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+          "contentHash": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+          "processorVersion": "2026-11-10.2",
+          "title": "synthetic-quick-panel",
+          "revision": "QA-027",
+          "models": [
+            "FINDR-QA-100"
+          ],
+          "page": 2,
+          "pdfPage": 2,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history. The EVENT HISTORY menu is inside VIEW. Step two selects EVENT HISTORY after VIEW has already been opened. Viewing the log does not clear its entries or reset a fault. This",
+          "excerpt": "For this fictional panel, the read-only event history is available from the front controls. 1. Press VIEW on the panel front. 2. Select EVENT HISTORY from the displayed menu. 3. Use the UP and DOWN buttons to browse the stored events. 4. Press BACK to leave event history. The EVENT HISTORY menu is inside VIEW. Step two selects EVENT HISTORY after VIEW has already been opened. Viewing the log does not clear its entries or reset a fault. This",
+          "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+        },
+        {
+          "sourceId": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9:pdf-1:0",
+          "citationId": "S2",
+          "manualId": "local-2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+          "contentHash": "2475557ef0679af4d7b0def844f539cb164ff5e9331c95df3c77d4c8bda7e0f9",
+          "processorVersion": "2026-11-10.2",
+          "title": "synthetic-quick-panel",
+          "revision": "QA-027",
+          "models": [
+            "FINDR-QA-100"
+          ],
+          "page": 1,
+          "pdfPage": 1,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "Manufacturer: Test Bench Model: FINDR-QA-100 Equipment: Fire alarm control panel Document type: User guide Revision: QA-027 This fictional fire alarm control panel exists only for browser verification. The model names, buttons and behaviour below do not describe real equipment. Confirm the equipment label before applying any actual manufacturer procedure. This fixture supports read-only questions about event history.",
+          "excerpt": "Manufacturer: Test Bench Model: FINDR-QA-100 Equipment: Fire alarm control panel Document type: User guide Revision: QA-027 This fictional fire alarm control panel exists only for browser verification. The model names, buttons and behaviour below do not describe real equipment. Confirm the equipment label before applying any actual manufacturer procedure. This fixture supports read-only questions about event history.",
+          "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+        }
+      ],
+      "model": {
+        "id": null,
+        "revision": null,
+        "backend": null,
+        "metrics": {},
+        "ran": false,
+        "outputAccepted": false,
+        "validationIssues": [
+          "The local model did not return an independently supported quotation. Review the exact retrieved material or add the missing manual information."
+        ]
+      }
+    },
+    {
+      "question": "What about the external PSU?",
+      "text": "Manual extracts only \u2014 no language-model answer. These passages may help; they do not establish the complete answer.\n1. \u201cSYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench Model: QA-PSU-24 Equipment: External power supply PSU Document type: Datasheet Revision: QA-027 Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values\u201d\n\nApplies to the recorded equipment: Test Bench QA-PSU-24 not established. These are shortened excerpts; check the cited page for surrounding conditions and the full procedure. Check the cited pages, or add the relevant manual, diagram or configuration detail.",
+      "sourceRefs": [
+        {
+          "sourceId": "0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310:pdf-1:0",
+          "citationId": "S1",
+          "manualId": "local-0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310",
+          "contentHash": "0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310",
+          "processorVersion": "2026-11-10.2",
+          "title": "synthetic-quick-psu",
+          "revision": "QA-027",
+          "models": [
+            "QA-PSU-24"
+          ],
+          "page": 1,
+          "pdfPage": 1,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench Model: QA-PSU-24 Equipment: External power supply PSU Document type: Datasheet Revision: QA-027 Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values",
+          "excerpt": "SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL Manufacturer: Test Bench Model: QA-PSU-24 Equipment: External power supply PSU Document type: Datasheet Revision: QA-027 Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values",
+          "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+        }
+      ],
+      "model": {
+        "id": null,
+        "revision": null,
+        "backend": null,
+        "metrics": {},
+        "ran": false,
+        "outputAccepted": false,
+        "validationIssues": [
+          "The local model did not return an independently supported quotation. Review the exact retrieved material or add the missing manual information."
+        ]
+      }
+    },
+    {
+      "question": "SYNTHETIC correction: what nominal voltage is documented for the external PSU?",
+      "text": "Manual extracts only \u2014 no language-model answer. These passages may help; they do not establish the complete answer.\n1. \u201cManufacturer: Test Bench Model: QA-PSU-24 Equipment: External power supply PSU Document type: Datasheet Revision: QA-027 Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product. No wiring\u201d\n\nApplies to the recorded equipment: Test Bench QA-PSU-24 not established. These are shortened excerpts; check the cited page for surrounding conditions and the full procedure. Check the cited pages, or add the relevant manual, diagram or configuration detail.",
+      "sourceRefs": [
+        {
+          "sourceId": "0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310:pdf-1:0",
+          "citationId": "S1",
+          "manualId": "local-0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310",
+          "contentHash": "0ab6a90c4957fb551b9281e9078f9144ae37d25de1ad1547f7045dd289a5b310",
+          "processorVersion": "2026-11-10.2",
+          "title": "synthetic-quick-psu",
+          "revision": "QA-027",
+          "models": [
+            "QA-PSU-24"
+          ],
+          "page": 1,
+          "pdfPage": 1,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "Manufacturer: Test Bench Model: QA-PSU-24 Equipment: External power supply PSU Document type: Datasheet Revision: QA-027 Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product. No wiring",
+          "excerpt": "Manufacturer: Test Bench Model: QA-PSU-24 Equipment: External power supply PSU Document type: Datasheet Revision: QA-027 Section 1 - Fictional output specification This test-only external power supply provides a nominal 24 V DC output. The fictional output labels are V+ and V-. The stated continuous current rating is 1 A. These values are synthetic retrieval targets, not specifications for an installed product. No wiring",
+          "relationship": "Verbatim text from a successfully read PDF page; installed equipment and procedure scope still require confirmation."
+        }
+      ],
+      "model": {
+        "id": null,
+        "revision": null,
+        "backend": null,
+        "metrics": {},
+        "ran": false,
+        "outputAccepted": false,
+        "validationIssues": [
+          "The local model did not return an independently supported quotation. Review the exact retrieved material or add the missing manual information."
+        ]
+      }
+    }
+  ],
+  "status": "passed",
+  "pageErrors": [],
+  "externalRequests": []
+}

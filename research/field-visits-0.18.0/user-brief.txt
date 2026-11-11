@@ -1,0 +1,611 @@
+FINDR | Field fault finding and the engineer’s test log
+Research and implementation brief for Codex
+UK fire and security service work • 2 November 2026 • v1.0
+
+READ THIS FIRST
+An engineer on a call-out should be able to answer three questions from a phone. What has actually been tested? Where does the evidence place the problem? What is the next worthwhile check that this engineer can safely carry out here? The useful output may be a short section of cable to inspect, a failed function, or a well-prepared return visit. A component name is only useful when the evidence supports it.
+
+Use this file as a product specification and research pack. It describes proposed behaviour for the existing FINDR Fault Finder and its log. It does not assume which fields the current Codex branch already saves. Inspect that branch first. FINDR’s existing offline panel identification, manual packs, Hints and Menu Finder are the intended entry points. Code and firmware-specific instructions belong in verified model packs. The route cards below specify evidence to gather and how to use it, not authority to work on equipment.
+
+Navigation
+01  Instructions to Codex and engineer workflow
+02  Safety, authority and impairment gates
+03  What the log must record
+04  Shared power, cabling and localisation routes                         P01–P09
+05  Fire detection, indication, warning and interfaces                    F01–F15
+06  Access control, locking and escape                                    A01–A10
+07  CCTV, network video and recording                                     C01–C12
+08  Intruder detection, signalling and peripherals                        I01–I12
+09  Next-test engine, data contract and source-controlled profiles
+10  Worked call-outs, return visits and example export
+11  Acceptance tests, migration and release checks
+12  Research register with direct links and manual locators
+
+01  INSTRUCTIONS TO CODEX AND ENGINEER WORKFLOW
+
+Implement this inside the existing fault-finding journey. Inspect the current entry points, question trees, test-log storage and export, offline update path, versioned packs, site/panel context and older saved visits. Map each requirement to existing behaviour before adding anything. Keep one visit thread across a symptom, manual lookup, emulator hint and return from a hint. Keep the current Yes / No / I don’t know question controls. Put measurements, multiple selections, exceptions and notes on a separate “Log a test” card. Make every route accessible from Start even when no panel download or internet is available.
+
+First screen. Choose Fire alarm / Access control / CCTV / Intruder or “Several systems”. Enter the exact complaint, then “Showing now / Intermittent / Cleared before arrival / Unable to inspect”. Mark who saw it. Offer event history or a photo of the indication before reset. Identify location, affected scope (one device, section, circuit, controller, site, unknown), affected function and immediate safety impact. Permit “Unknown model” and a useful observation-only journey.
+
+Example on the phone
+Reported fault     Door 2 won’t release on a normal access request.
+Already observed   Valid grant event at 09:12. Relay audible. Exit route available and verified under the site arrangements.
+FINDR asks         “Did the voltage across the connected lock change during that same request?”
+Yes                Log both values, actual door movement and the documented lock mode. If voltage follows the correct release state, inspect mechanics or a second lock.
+No                 Identify the switching side and independent lock feed. Compare the relay’s actual switched path with voltage across the lock.
+I don’t know       Offer the matched wiring diagram or record inaccessible test points. Keep the grant and click as the facts known so far.
+A required escape failure would interrupt this routine request and take the engineer straight to G0/G1.
+
+During a visit. Show one next question, its reason, the evidence it is intended to separate, and buttons for “Log result”, “Already tested”, “Can’t do this here” and “Add my own test”. Keep the current asset/point visible. Remember meter mode and units but require fresh readings and test state. Offer “Same points, other state” and “Same test, next location” to reduce typing. A suggested test never becomes a completed test until the engineer enters or confirms a result. A prior test from a different state can be viewed but cannot silently satisfy it.
+
+Finish or pause. Show fault while present, best-supported location, evidence for and against each explanation, effect on coverage/egress/monitoring, restoration status and named follow-up. A site may be left under an agreed impairment plan. “Fault free on arrival” and “monitor for recurrence” are first-class outcomes. Generate an office-ready narrative and structured export from the same records. Provide search by site, printed device text, location, test type, route ID, evidence state and outstanding action.
+
+Scope of research. UK non-domestic service work, with English fire-safety context for the worked examples. Confirm the applicable nation, premises, original design, later changes, current contract, risk assessment, approved cause-and-effect and equipment manuals. The standards references identify scope. They do not supply licensed clause text or generic pass limits. A manufacturer may use the same family name across several circuit types. Match product, regional variant, PCB/loop card, protocol, firmware and manual revision before enabling a model-specific test. [REF S01–S08, S11–S13]
+
+02  SAFETY, AUTHORITY AND IMPAIRMENT GATES
+
+G0 Immediate risk. Ask about actual fire/smoke, an unconfirmed alarm, electric shock/burning, exposed dangerous parts or loss of required escape. If present or credibly reported, stop routine diagnostics and follow the site emergency process. Record notification, affected area, time and who now owns the response. A system fault alongside a fire event does not downgrade the fire event. A failed required escape function goes immediately to the site’s responsible person/arranged response, even if a relay test succeeded. [REF S01–S06, A04–A05]
+
+G1 Service impact. Before interrupting protection, agree the scope and test window, occupied areas, site contact, monitoring/ARC (alarm receiving centre) arrangements, isolation authority, temporary cover and restoration owner. Identify downstream doors, lifts, plant, suppression, signalling, shared LAN and shared PSUs. Record all existing disablements separately from those introduced on this visit. Every new impairment has start time, area, reason, measures, owner, expiry/review time and an individual restoration check. If the expected effects or authority are unknown, stay with non-disruptive evidence. [REF S04–S06, A04–A05, I04]
+
+G2 Electrical state. Prefer observation, manufacturer diagnostics and dead tests where effective. Record separate permissions for read-only access, impairment, isolation, measurement on energised equipment and changes. Software answers cannot establish electrical competence. For work on or near a live conductor where danger may arise, all conditions of Electricity at Work Regulations regulation 14 must be met. Capture why making dead is unreasonable in the circumstances, why the live work is reasonable and what suitable precautions apply. Escalate to a suitably competent person if any condition, safe access or equipment is missing. A request to log L–N/L–E/N–E must never generate a routine instruction to open an energised panel. [REF S01–S03]
+
+G3 Proving dead is its own record. A competent person identifies all sources and possible backfeeds, isolates and secures them using the approved procedure, and proves dead at the point of work. Record the suitable two-pole voltage indicator/test lamp, proving unit or approved proving method, successful proof before and after, actual point, conductor pairs checked and result. For single-phase equipment where applicable, distinguish L–N, L–PE and N–PE. Other conductors/supplies require their own checks. No voltage on one pair, a non-contact pen, a panel LED or a software checkbox cannot establish safe isolation. An unsuccessful final proof invalidates the proof sequence. Record secondary sources including batteries or independent PSUs. Restoration/re-energisation is a separate authorised action. [REF S01–S03, S09]
+
+G4 Instrument and circuit compatibility. Never offer Ω, diode or continuity on energised circuits. Account for stored energy and alternate feeds, verify the isolated test span and remaining parallel paths. Do not put a current meter across a supply. Do not offer insulation-resistance testing on connected panels, detectors, barriers, network equipment or other electronics. Unknown electronics, surge devices or inaccessible ends block the test until a competent person identifies and separates the span under the applicable method. No default insulation-test voltage. No improvised PoE pin probing, no automatic link-outs, fuse uprating, disabling earth monitoring, changing alarm thresholds or defaulting panels/recorders as a troubleshooting shortcut. [REF S01–S03, P03, F02, C02, C06]
+
+G5 Special systems. Intrinsically safe (IS) or hazardous-area circuits require the site permit, equipment drawing, barrier data and appropriate competence/test equipment. Generic circuit-splitting and portable test-set suggestions end at that gate. Extinguishing release, smoke control, lift homing, critical plant and occupied escape doors require the relevant system owner and a coordinated cause-and-effect test. Store safe observations and missing prerequisites. Do not propose an uncontrolled actuation, bypass or emergency release defeat. [REF S04–S07]
+
+G6 Restoration. Require an account of every temporary disconnection, test mode, inhibit, ARC test state, network change and physical link. Record the exact normal configuration restored, end-to-end functional retest, remaining faults and disablements, monitoring taken off test and acknowledgement by the appropriate site contact. Unverified restoration is prominently displayed. A fault-free panel or a green tile alone cannot prove devices, doors, recording or remote transmission work. [REF S04–S06, F01, A04–A05, I04]
+
+03  WHAT THE LOG MUST RECORD
+
+Organise data into Visit → Incident → Asset or path → Test events → Findings → Restoration/Handover. One visit may have unrelated incidents. A shared supply incident may affect more than one discipline. Each result has an ID, timestamp, engineer, source, and link to the incident and suggestion that led to it, if any. Allow manual logging at any time, including tests performed before FINDR was opened.
+
+Visit and baseline
+• Site reference, local time zone, engineer/team, call-out or return, reported-by role, site contact role, access/permit limits, premises in use, monitoring status, current service impact, reported onset, last known good, recent installation/configuration/building changes, environmental factors. Contact routes for the next engineer can remain local.
+• Store exact displayed words/code, event time as shown and clock offset if known, panel LED flash pattern or photo, first event and following events. Keep current state, historic events, engineer observation, customer account and imported design as different evidence types. Record a normal comparator including what makes it comparable.
+• Asset identity. Manufacturer/model/variant/firmware/protocol where known, node/zone/loop/address/subaddress/expander/input/door/camera/channel/port, physical floor/room/riser/JB, asset label, power domain, cable section, direction and upstream/downstream peers. “Zone 2” in a fire panel and “Zone 2” on an intruder expander are different IDs.
+• Topology. Select radial, return loop, spur/branch, bus, star IP, point-to-point, wireless/mesh, mixed, unknown. Record physical sequence evidence (as-fitted drawing, trace, manufacturer map, field observation, unverified download). Import identities, labels and expected configuration as dated hints. Preserve disagreements with field observations. Never convert consecutive addresses into physical neighbours.
+
+Test event field dictionary
+• Test kind. Panel display/log, observation, visual inspection, terminal voltage, voltage drop between endpoints, resistance, continuity, contact transition, earth-fault indication, load/current, battery condition/capacity method, panel/loop diagnostics, controlled comparison/substitution, functional activation, signal receipt, pipe flow/transport, wireless/link, PoE, IP/stream, playback/export, or custom.
+• Test point A and B with asset, terminal marking, local reference and physical location. A voltage across the lock +/−, either side of a closed relay contact, and COM relative to PSU 0 V are three different quantities. Preserve probe polarity and actual signed reading. AC protective earth is “PE”. DC 0 V, screen/drain, chassis and PE must be separately selectable.
+• Electrical state and loading. Energised/isolated/proved status/unknown, connected/disconnected at which end(s), equipment still attached, end component in/out/type, circuit feed direction, any parallel path, source type (mains, DC, battery, PoE, external), standby/alarm/active/night/moving, load present and observed action. Record supply and equipment reading timestamps. Do not calculate drop from unmatched load states without marking the comparison invalid.
+• Instrument. Type, ID where required, mode, suitable range/rating, proving/check record where applicable, units, range limit or resolution, lead compensation when used. Distinguish panel-reported values from meter readings. Keep setpoint, nominal label and measured values separate.
+• Value. Numeric with unit and optional min/max, qualitative status, OL/overrange, unstable, no indication, no data, blocked, or inconclusive. “0”, “OL”, “no reading”, “not tested” and “unknown” are different. A continuity buzzer indicates an instrument-dependent path, not an acceptable resistance or cable certification. Preserve raw entry, normalised unit and precision (e.g. 1.967 kΩ → 1967 Ω). Do not coerce unknown to zero.
+• Interpretation. Expected value/range or expected state transition, exact source + manual locator + model/profile/scope + operating state. Permit manual comparison with an identified known-good reference marked as such. Without a valid comparator, store the reading and offer a reasoned next observation. Never mark “pass” from a generic default. Record uncertainty, contradiction and next action separately.
+• Execution. Suggested / performed and recorded by engineer / declined / inaccessible / not permitted / unsafe / equipment unavailable / fault absent / deferred / superseded. A status of “No” answers a question. It does not mean a test failed. Corrections append events linked to originals. Record attachments and who actually witnessed each result.
+
+Quick-add test catalogue for a small phone screen
+Show the relevant group first. “More tests” exposes all groups and a free-text action. A test type selects the form. Its presence on this list never authorises the activity.
+• Power and load. Input supply evidence, proving-dead record, PSU LED code, channel output, voltage at load, feed-side/return-side drop, minimum under activation, battery unit/string, charger indication, standby test or supported current method. Offer separate boxes for instrument, load state and actual reference.
+• Cable and contact. Known radial/loop/spur, origin and far end, input/outgoing pair at each location, conductor end-to-end, pair-to-pair or conductor-to-screen on a verified isolated span, contact open/closed transition, EOL type/location or physical continuity trace. Offer “both ends confirmed”, “only local end accessible” and “unknown path”.
+• Fire. Exact panel/loop/zone event, device inventory/drift, in/out loop diagnostic, isolator status, physical device activation, sounder/VAD response by area, output module demand/feedback, per-pipe airflow, transport time at named sample point, beam indication, wireless translator or ARC receipt.
+• Access. Credential presentation/event, permission decision, relay demand, lock voltage in both states, door physically released/resecured, RTE transition, door contact, local emergency release test, fire release test, ACU status, event delivery or configuration sync.
+• CCTV. Device uptime, port state/PoE allocation and draw, wiremap or isolated coax test, IP identity, camera direct stream, recorder channel stream, main/substream comparison, local vs remote view, camera-to-recorder clock, clip search, playback/export verification, PTZ control or ANPR event.
+• Intruder. Zone profile and displayed state/resistance, detector supply, separate alarm/tamper/mask transitions, contact gap, walk-test result at device and keypad, bus/expander health, wireless supervision/battery, bell/strobe test, setting sequence, communicator path and ARC event/restore.
+• Work and evidence. Visual inspection, drawing/label discrepancy, comparative known-good test, environmental observation, before/after repair, access unavailable, limited test, return equipment required, temporary impairment/restoration and user-added custom test. Store a file/photo reference offline and an explicit note if an attachment was unavailable.
+
+Test pairs that need separate UI buttons
+“Voltage across this device” is the difference between its two supply terminals. “Voltage across this contact” is between the contact’s two terminals in a named state. “Voltage at this terminal” needs a named reference. On an intact closed contact under load, a small drop can be expected. Across an open contact the reading depends on the supply and available return/load paths. Neither a zero reading nor a near-supply reading across an arbitrary gap can locate a break by itself. For a powered radial, measure comparable pairs at successive points when authorised. For a de-energised bare conductor, prove end-to-end continuity on that conductor. Do not confuse either test with a reading between two intentionally separate cores. On an addressable data loop, a basic DC meter can show a value while communications fail. Record the supported panel/test-set diagnostic for protocol behaviour. [REF P03, F01–F04, A01]
+
+A permitted split test needs its own event. Identify the physical section and alternate feeds, record both original terminations and coverage impact, then record the indication with the first and second sections separately as allowed by the manufacturer. A fault that disappears when either section is tested alone may be load-dependent, intermittent or an interaction. Preserve that result. Do not force a left/right answer. A midpoint is useful only if it divides a verified physical path and can be accessed and restored safely. [REF F01–F04, P01, P03]
+
+End-of-visit fields
+Choose an outcome from this list. Confirmed cause with supporting test and retest / localised to section / plausible cause awaiting proof / restored function, cause unknown / intermittent not reproduced / access blocked / referred to another trade / further visit required. Restoration state and incident outcome are independent. Record named role/owner, due or agreed review time, missing access/tools/documentation, and what would change the conclusion. Keep original and after-repair observations even where the display now looks identical.
+
+04  SHARED POWER, CABLING AND LOCALISATION ROUTES
+
+How to read sections 04–08. Each unprefixed card ID is a proposed route. “Ask” is a discriminating observation. “Log” supplies the test fields. “Branch” tells Codex how the next suggestion changes. A branch is only eligible after section 02 and the exact model’s test conditions have been satisfied. Bracketed REF identifiers point to the source register in section 12. Route IDs are unprefixed. A reference anchors the equipment behaviour or measurement principle. The order of questions and ranking are product design.
+
+P01 | Equipment dead or “mains fail”
+Ask whether the head unit is dark, has switched to standby battery, reports an AC failure, or only one output has failed. Log clocked events, other loads on the same supply, isolator label/status where safely visible, PSU indicators, separate input and output channels and secondary sources. If the unit is on battery, investigate incoming supply and its monitoring before calling the whole PSU dead. If one output fails while another works, go to P03. If access to mains is unauthorised, record “input unverified”, the safe-side observations and electrical referral. [REF S01–S03, P01]
+
+P02 | Authorised mains verification or a recorded safe isolation
+Select the task the competent person is performing. Options are diagnostic verification on an energised single-phase input, or proving dead after isolation. Log terminal/location, L–N, L–PE, N–PE individually, indication or actual V AC, supply state, test device and separate authority/proving record. Unexpected results, including an unexpected potential to PE, require competent investigation. Do not identify a lost neutral or good earth solely from this pattern. Low N–PE is not proof of protective-conductor continuity. Never infer safe isolation from three previously typed values. For a confirmed suitable input with DC output absent under the specified condition, follow P03. For unresolved input safety, stop the mains branch. [REF S01–S03, S09, P01]
+
+P03 | Supply present at source, load dead or resets
+Ask for rated output and actual loaded voltage at the correct PSU +/− and equipment +/− during the same condition, plus each protected output indicator. Record local references, output channel, fuses/status, polarity, stalled/idle/activated state, other branches sharing the output and evidence of intermittent reset. If source and load both sag, investigate common supply, overload or a dragging branch under the manufacturer’s procedure. If source holds but load falls, narrow supply and return path, joints, relay and fuse-holder connections. If satisfactory voltage reaches the equipment during failure, turn to device, signal or mechanics. An unloaded reading cannot clear a loaded circuit. [REF P01, P03, A01]
+
+P04 | Voltage drop only under demand
+Ask whether the failure coincides with alarm sounders, unlocking, IR illumination, PTZ travel, radio transmission or AC loss. Capture paired readings at source and load before and during that event and actual load current if available via a suitable method. Record cable route/length if known, connectors, multiple loads and minimum captured values. For steady DC, source voltage minus load voltage is meaningful only for comparable points, polarity, shared supply and load state. If localised to the path, separate feed-side and return-side losses with suitable authorised measurements. If equipment demands exceed the documented supply capacity, refer for design review. [REF P01, P03, C01–C02]
+
+P05 | Battery, charger or standby fault
+Ask for exact fault indication, not just “new batteries needed”. Log PSU/model, battery chemistry/model, individual units, rated Ah, series/parallel arrangement, age/date code, ambient condition, physical condition, connectors/interlink/fuses, charger status, each unit and string voltage with state/time, and supported test method. Treat swelling, damage or overheating as a safety escalation. Mains healthy with battery fault → inspect connections and model fault codes. Voltage present at rest → capacity unverified. Approved load/capacity test fails under documented conditions → distinguish battery, charging, cabling or over-demand before replacement. Record restored charge/standby status and any remaining impairment. [REF P01–P02]
+
+P06 | Suspected open on a known radial
+Ask feed end, actual cable order, branches, last verified working point and first failed point. At permissible test points log the differential supply/signal observation across the intended pair, same mode and load. Distinguish incoming from outgoing and positive from return conductor. On a valid simple radial, evidence on the incoming side of B and absence at the incoming side of adjacent C focuses inspection on B’s outgoing termination, the intervening run and C’s incoming termination. An open return, missing feed, local isolator or bad reference can look alike. On an isolated bare span, test each conductor end-to-end if available. Record far-end disposition and expected lead/cable resistance. If adjacency is unknown, report a search area and seek trace/drawing. [REF P03–P04, F01–F03]
+
+P07 | Short, earth fault or unstable leakage
+Ask which device reports the fault and whether conductor-to-conductor, conductor-to-screen/earth or a supervision condition is actually indicated. Record polarity where the device supports it, wet areas/works, circuit/time and alternate feeds. Use panel diagnostics and drawings first. If authorised, separate only documented sections with effects controlled and track which removal changes the indication. A fault following a section supports localisation. Shared paths, multiple faults and rerouted feeds can mask it. On a fully isolated, identified bare span, separate conductor-to-conductor and conductor-to-screen tests under the applicable method. Never remove protective earth to clear a fault. [REF S01–S03, P03, F01–F02]
+
+P08 | Intermittent / first engineer could not reproduce
+Ask for first fault and restore timestamps, frequency/duration, clock drift and symptom shared across devices. Correlate doors moving, stock handling, HVAC cycles, rain, IR change, power transfer, building work and user operation. Record baseline when healthy plus evidence needed during recurrence. An approved temporary logger has owner, duration, sampling/trigger needs, attachment point, review date and safe removal plan. An absence of repeat during the visit stays “not reproduced”. If the only differentiating point is inaccessible, go to handover. Do not encourage substituting unrelated parts. [REF F05, C01, C05, I01]
+
+P09 | Substitute, divide a circuit, or compare a known-good path
+Ask whether there is a compatible, independently verified comparator and whether the comparison would affect other protection. Record original configuration and point, candidate changed, one variable changed at a time, same state/load, before/after and restoration. If failure follows the device under equivalent conditions, confidence in that asset increases. If it remains on a route/port/channel, investigate that path. If multiple variables move at once, mark “inconclusive” and state why. Every temporary change gets a restoration item. For life-safety circuits a panel-supported diagnostic usually comes first. [REF F01–F03, A03, C02, C06]
+
+05  FIRE ALARMS
+
+F01 | Conventional detection zone open
+Ask panel variant, exact zone fault, whether it identifies open versus short, compatible bases/head-removal monitoring, end-of-line (EOL) component and its true position. Log last working/first failed physical device, in/out terminals, prescribed standby indication, head present/seated, EOL type/location and recent head swaps. A capacitor/active EOL cannot be judged against a resistor value. If a head is missing, verify the base arrangement and what downstream function is affected. If healthy up to one boundary use P06. Where the correct panel-local EOL test is permitted and clears the indication, the field circuit is implicated but protection is interrupted. Remove temporary components, reinstate the true EOL and functionally prove the repaired zone. [REF F01, F11, P03]
+
+F02 | Conventional zone short or unexpected alarm indication
+Ask which state the actual panel assigned to low impedance and what devices/interfaces are connected. Log detector/MCP indication, latched state, works/water, whether the symptom is reported as a fire event or fault, and relevant configuration. Treat an active fire alarm as an emergency until handled under the site procedure. If a documented supervised section changes the indication, narrow that section. If the panel does not behave as its matched manual predicts with the prescribed field test setup, escalate panel/input investigation. Do not model a universal “short equals fire” or “short equals fault”. [REF F01, F11, S04–S05]
+
+F03 | Addressable loop open, devices may still respond
+Ask if there is a return loop, spurs, isolators, more than one break, a card fault, or an undocumented alteration. Capture topology provenance, loop/driver/protocol, out/in diagnostics, devices seen from each supported direction, number expected/seen, and overlap or boundary witnesses. A loop break can be visible while every device is still polled. If diagnostics indicate a boundary, name the two physical points and unexamined joints. Use P06/P07 under a controlled method. With only logical addresses, offer the panel loop map/manual, not a physical break location. If an entire leg or several sections are missing, test topology and isolator explanations before assuming a single open. [REF F02–F04, F10]
+
+F04 | Short-circuit isolator active / group missing
+Ask which isolators indicate operation, which side is fed, what responds either side and where local/spur power originates. Record isolator type/status and physical positions, missing points, devices at either boundary and time of first event. Compare the lost segment with the as-fitted map. An isolator can bound a short. An isolated segment can contain a damaged cable, wet base or device. An address range or isolator LED alone does not identify a bad detector. Escalate if multiple segments, unsupported protocols or hazardous-area devices make isolation ambiguous. Restore and verify all formerly lost devices and both loop paths. [REF F02–F04, F10, S07]
+
+F05 | One missing, wrong type or duplicate address
+Ask programmed identity versus actual label, protocol, address/subaddress method, base/head identity, compatibility, last change, and which neighbours respond. Compare live inventory with the dated download. Repeated conflicts at one address warrant checking both physical identities. One missing point with adjacent devices healthy warrants inspecting the local base, head, settings and feed as applicable. Preserve device serial/location where available. Do not auto-learn or delete a missing device to silence the mismatch. Retest the correct physical point, text/zone and intended actions under authorised conditions. [REF F02–F04]
+
+F06 | Sounder/VAD circuit fault or fails only on alarm
+Ask loop-powered device vs conventional supervised notification circuit vs separate local PSU. Log circuit/zone, EOL and polarity method, standby/alarm readings at source and affected device, output command, silence/disablements, affected count, current/loading if available and visible/audible response. Supervision voltage may be reversed, pulsed or otherwise different in standby. A normal supervision indication cannot prove warning under load. One output sags on activation → P03/P04. Correct alarm drive at one failed device → inspect compatibility/setup/device and adjacent joints. Test agreed affected areas and restore sounder/VAD functions. For IS circuits use F15. [REF F01–F03, F10–F11, P01]
+
+F07 | Earth-fault indication, possibly intermittent
+Ask panel/PSU location, exact earth indication, onset near rain/building work, earthed screens or ancillary paths. Preserve history before resets. Where supported, capture polarity/direction and card meter results. Apollo’s automated negative-conductor earth-location function has specific Soteria/isolator and circuit-condition requirements. Do not offer it as a universal XP95 tool. If authorised separation identifies one field circuit, follow that boundary. Otherwise consider panel, PSU, network or ancillary paths. Record all temporary impairments and verify clearance on complete reconnection. [REF F01–F04, P03]
+
+F08 | Contamination / pre-alarm / repeated unwanted alarm
+Ask exact event type and whether actual fire was excluded under the site response. Log detector model/type, analogue/contamination trend where supported, environment and time (steam, dust, insects, fumes or work), comparison with equivalent detector and room use. If event matches a recurring exposure, recommend site/environment investigation. If a single head’s supported trend departs from peers, inspect/service using its manual. A high reading alone cannot select a replacement or sensitivity setting. Verify approved detector response and record recurrence review. [REF F02–F03, F09, S04–S05]
+
+F09 | Aspirating detector intermittent low/high airflow
+Ask which local ASD fault, which active pipe(s), exact code and restore time. A host panel’s common fault hides detail. Log per-pipe current flow with units and baseline, commissioned values, filter/aspirator status, active pipe config, HVAC/building pressure, obstructions, sampling holes, end caps, joints, works and access to the far end. A low reading directs inspection towards restrictions, filter, aspirator and pressure effects. High flow can be consistent with an open joint or changed pipe. Neither uniquely identifies a hole or a break. One pipe vs all pipes changes the next inspection. Preserve the event log if currently normal. Do not normalise away the evidence. After authorised repair, compare with design and verify sampling/transport performance using the prescribed method. [REF F05–F06]
+
+F10 | Beam detector fault, alignment or obstruction
+Ask exact model and indicator sequence. Distinguish fault from fire, obstruction from alignment/compensation, and beam detector from a conventional zone reporting its relay. Log mounting/reflector, sight line, stock lifts, temporary obstruction, sunlight/condensation, optics and mounting movement. If the local beam is healthy but the host remains in fault, investigate relay wiring/supply/EOL. If the beam itself reports fault, consult the matched indicator table before alignment. Obtain safe access and approved optical test method. Verify fire and fault reporting at both device and panel. [REF F07, F01, S04]
+
+F11 | Panel network/repeater/node communications lost
+Ask whether local panels still function and whether loss is one node, one path or the network. Capture node IDs, exact peer messages, timestamps, physical medium, topology/redundancy, interface/card power/status, last extension/firmware change and local event visibility at peers. One dark node → check local source and link. Devices all normal locally but remote events absent → investigate inter-panel path/compatibility. Never infer that local operation proves networked cause-and-effect. Obtain cross-node functional verification before closure. [REF F03–F04, P01]
+
+F12 | Interface commanded but door/plant does not respond
+Ask which initiating event, approved cause-and-effect row, delay, coincidence, zone/group, inhibit, output module and destination are involved. Capture initiating event → panel command → physical contact/state → downstream controller input or release circuit → observed end action and feedback. If there is no command, examine logic/configuration with the authorised owner. If command and contact change but field action is absent, follow independent power, wiring and actuator at the interface. Report the precise boundary and impact. A door release test also uses A05. Lift/plant/releasing equipment requires G5. [REF F03–F04, A04–A05, S06]
+
+F13 | Local fire event works but remote transmission fails
+Ask which separately monitored functions should be transmitted (fire, fault, restore), whether ARC test was arranged and which account/path received which signal. Log panel output, communicator input, power, path status, timestamp/clock offset and actual ARC confirmation. If panel event occurred but communicator input did not change, investigate interface/wiring. If communicator saw it and ARC did not, take the path/provider branch I11. Do not generate an unscheduled test call or accept “connected” as proof of delivery. Verify correct transmission and restoration. [REF I04, S04–S05]
+
+F14 | Wireless fire device missing, tamper or battery
+Ask if a single device or all children of a translator/expander are lost. Log signal/quality and timestamp from the compatible tool, battery type/status, tamper, translator power/loop, parent, recent structural changes and neighbouring healthy devices. Group lost → check common translator/expander before declaring multiple devices faulty. Single lost → compare predicted/actual RF path, enclosure, battery and tamper. An old signal snapshot cannot prove present coverage. Verify supervision and agreed fire function after repair. [REF F08, F02]
+
+F15 | Hazardous-area sounder/barrier or specialist interface
+Ask location classification, barrier/isolator and device exact model, approved design/control drawing, permitted instrument and test point, safe-side input/output relationship, supply channel and fault indication. Unknown authorisation/design → record safe-side observations and escalate to the competent specialist. Do not infer how many devices one barrier supports, suggest generic continuity testing in the area, or substitute a standard sounder. Verify restoration through the authorised procedure for that installation. [REF S07, F03, P01]
+
+06  ACCESS CONTROL
+
+Start with the door’s purpose. Record door ID and side, route of escape, physical means of exit, lock type (maglock, strike, bolt, motor lock or mechanical), documented fail mode, when power is expected at the lock, dedicated/shared PSU and actual fire/emergency-release design. “Fail secure” describes lock behaviour on loss of power. It does not by itself describe whether people can escape mechanically. Check the approved door design before interpreting any voltage. [REF A01, A04–A05, S04, S06]
+
+A01 | Token presented, door does not open
+Ask whether a read event exists for this reader/door/time and whether it says accepted, denied, unknown or nothing. Log local LED/buzzer only as model-specific evidence, event text, same token elsewhere and a known-authorised comparison token at the same reader with permission. No event → A02/A06. Denied → A03. Granted → log controller output and physical response, then A04. A working exit button narrows the issue but may operate a different path. [REF A02, A07]
+
+A02 | Reader dark, no read or intermittent read
+Ask if controller and reader are powered during failure, all credentials vs one technology, reader protocol, cable extension and common reference per device drawing. Log reader supply at its terminals, status, controller input activity, reader port and state of comparable reader. Reader unpowered → trace supply and return. Powered without event → check actual protocol, physical link and compatible token. On OSDP use matched address/baud/secure-channel diagnostic if supported, on Wiegand use its wiring and format. Avoid logging keys or complete credentials. [REF A02, A06–A08, P03]
+
+A03 | Access denied / new token works elsewhere
+Ask exact denial text and event time. Log access level, time profile, reader direction, expiry/disablement, anti-passback/interlock or lockdown rules if installed, ACU online state, sync status, test-token role and clock. One user only → compare entitlement and credential type. All users on one door → look at policy, controller time/config sync or reader mapping. Granted event redirects to A04. Changes require customer authority and a before/after record. Never suggest broadly granting access to test a denial. [REF A02, A07]
+
+A04 | Access granted, relay clicks, lock fails
+Ask relay type (volt-free/dry, powered output, controller-specific), contact chosen COM/NO/NC and independent lock feed. Log controller command, source +/−, COM relative to the actual lock PSU return, switched NO/NC relative to that same return, and voltage across lock +/−, locked/requested/released with load connected. Log what physically happened. First identify whether positive or return is switched and which terminal is upstream. Expected feed missing at its upstream contact → trace fuse/feed. Correct upstream state but outgoing terminal does not follow the command → verify contact choice/wiring/relay. Terminal switches but lock +/− does not follow → trace cable, emergency-release chain, return and alternate feeds. Correct drive but no movement → inspect lock/strike alignment or loading. A dry contact does not produce its own supply. [REF A01–A02, A07, P03]
+
+A05 | Escape door fails to release on fire/emergency demand
+Escalate the failed escape function immediately under G0/G1. Identify whether this is a lock that must release, a hold-open magnet that must let a door close, or a mechanically free-egress door. Identify each required action from the site strategy. Log actual physical escape/closure, initiating event, fire relay, hardwired release path or controller/server logic, local emergency release if fitted, PSU(s), lock voltage/state and reset sequence. Where Paxton’s software integration is used, its server dependency matters. Emergency hardware and site design must be assessed separately. A relay transition with a lock still powered leaves the path impaired. Arrange approved end-to-end retest at each affected door and record responsible-person acceptance. [REF A04–A05, F03, S04, S06]
+
+A06 | ACU offline / messages pending / several doors down after extension
+Ask one ACU, downstream group or all controllers, TCP/IP vs RS485, and whether access still works locally. Log last communication, server service and network interface state, ACU LEDs/power, topology, bus end positions, new spur/extension, converter type, recent change, event backlog and last configuration received. One segment lost → identify boundary on the physical data line. All lost → check common host/interface/supply first. Paxton Net2 RS485 termination checks are conditional on its topology, cable and isolated setup. Do not apply them to OSDP or intruder buses. After repair verify event upload, authorised credential operation and current configuration at the door. [REF A03–A04, A07]
+
+A07 | RTE works differently from emergency release
+Identify request-to-exit (RTE) input versus a physical emergency release in the lock supply. Log push-button action, controller input/event, release time, controller relay, local emergency device state and physical door response separately. If RTE input never changes, inspect local contact/wiring and configuration. If it changes and lock does not release, use A04. A working RTE does not validate emergency release. Test the independent emergency path only within the approved site procedure and restore it. [REF A04–A05, A07]
+
+A08 | Door forced / held / contact appears inverted
+Ask what the leaf physically did at the event time and whether access had been granted. Log contact/magnet alignment, closed/open input at ACU, sensor type and wiring mode, debounce/held time if documented, door closer/latch and event order. If the leaf shuts but input stays open, investigate contact, alignment or input path. If the input changes correctly but an alarm persists, investigate timing/policy. If the leaf itself fails to close/latch, refer for door hardware. A software timer cannot repair it. [REF A02, A07, S06]
+
+A09 | Lock holds when it should release, or will not resecure
+Ask design mode, whether only entry or escape is affected, emergency-release/fire state, schedules/free-access period and real mechanical condition. Capture commanded state, lock terminal voltage with load, door-open vs closed behaviour, hold/release timing and any parallel PSU or backfeed. Command absent → permissions/hold logic. Command correct but voltage inconsistent → A04. Voltage correct but latch binds or maglock face misaligned → refer to the appropriate door/lock maintainer. Retest open, close and resecure as well as required escape. [REF A01, A04–A05, A07]
+
+A10 | Intercom call works, remote release fails
+Map call station → master/app → release event/contact → downstream ACU or lock PSU → door. Capture whether audio/video/call setup succeeds, whether release is granted, relay mode/duration, output/contact change, ACU input and physical door operation. Good media with no release command selects permissions/mapping. Command present selects the electrical/mechanical branch. If both call and release fail, investigate common power/network. Exact intercom terminals and menus require the matching intercom manual. Otherwise route only by observation. [REF A01, A07, C04]
+
+07  CCTV, NETWORK VIDEO AND RECORDING
+
+Model the actual path. Camera → local DC/PoE source → switch or NVR PoE port → uplink/VLAN → recorder/channel/storage → viewing/export client. For analogue, substitute coax/baluns/media converters, DVR input and any separate PTZ control. For a wireless bridge, record both radios and both wired ends. Store physical port, logical channel and actual camera ID separately. Start with “No power / No link / Link but offline / Live view fails / Live works but recording fails / Image poor / Control fails / Remote only / Intermittent”. [REF C01–C07]
+
+C01 | No power or no Ethernet link
+Identify the camera and switch port. Record whether the supply is local, standard PoE or proprietary/passive. Check visible indications, neighbours and link state at both ends. Log PSE (power sourcing equipment) model/port admin status, power detection/class/allocation, remaining budget, link up/down and last change. Camera specification and patch points. No power allocated → compatibility, enabled port, pairs and budget. Power allocated but no link → patch/run/device and link errors. Approved comparison with a known-good compatible lead/port/device can divide the path. Avoid arbitrary injectors or supplying power twice. [REF C01–C02, P04]
+
+C02 | Camera drops at dusk, when IR/heater/PTZ operates
+Ask whether link loss, camera reboot/uptime or just image change coincides with IR, heater or movement. Log day/night state, model maximum demand vs PSE allocation and total headroom, other simultaneous loads, port event/error counters, cable/run, stream status and recorder gap. Camera reboots and power events coincide → shared power margin/cabling branch P04. Stream stalls while camera stays up → C05/C07. Never diagnose PoE insufficiency from “after dark” alone. Confirm stability during the same demand and verify playback across that time. [REF C01–C02, C04–C05, C07]
+
+C03 | Link up, NVR says offline or network abnormal
+Ask exact recorder code and whether an authorised client on the correct camera network can reach the device. Log recorder interface incl. private PoE LAN vs building LAN, IP/subnet/VLAN, channel binding, current address source, duplicate-IP evidence, approved discovery result, device identity and time. Wrong subnet/duplicate/mapping → liaise with network owner. Correct identity and reachable but add fails → C04. No response to ping alone is insufficient. ICMP may be blocked. Do not scan unrelated networks or change customer IP addressing without permission. [REF C03–C04]
+
+C04 | Camera reachable, recorder rejects stream/login
+Record exact error, time, activation/credential status (no secrets), account permissions/lockout, compatible protocol/profile, stream URL reference without credentials, codec, resolution, main/substream and recorder limits. If local authorised live stream works but recorder authentication is refused, investigate identity, account state or integration compatibility. If substream works but main stream fails, compare codec/profile/bitrate and decode limits. Avoid repeated credential guesses, factory resets or unapproved firmware changes. Confirm both displayed stream and stored playback. [REF C03–C05]
+
+C05 | Several feeds freeze / cameras flap on one switch or bridge
+Group by switch, uplink, power domain, NVR and time. Log negotiated link, error/discard counters over an interval, uplink traffic, stream bitrates, recorder utilisation and effect at a local camera view. One branch fails together → inspect shared uplink/switch/PoE. All local camera views work but recorder feeds freeze → recorder bandwidth/storage/client decode. For a wireless bridge, record power/link at both ends and approved radio metrics/obstruction. Refer network changes to IT. Successful pings are insufficient evidence of stable video throughput. [REF C01–C02, C04–C05]
+
+C06 | Analogue/coax camera blank, incompatible or distorted
+Ask DVR input type and actual camera format (TVI/AHD/CVI/CVBS as applicable), supported resolution, channel mapping, camera power, BNC/balun/converter and PoC (power over coax) status. Log local compatible test monitor/known-good short run and recorder input comparison where authorised. With all supplies including PoC removed and both ends disconnected, test centre continuity end-to-end, shield continuity end-to-end, and centre-to-shield with far end open. OL on centre-to-shield in that setup is expected. OL end-to-end on the same conductor supports a break. A terminator/device changes the measurement. TDR distance is a cable-length estimate affected by cable settings, not a map coordinate. [REF C06, P03, P05]
+
+C07 | Live image poor, focus lost or washed out
+Ask day/night, live vs recorded, one or all cameras and whether the scene is static or moving. Log focus point, condition of dome/film, water/condensation, nearby IR-reflective surface, backlight, lighting, exposure/shutter, compression and motion blur. Good daytime image with night haze → check IR reflections/dome/scene before network settings. Sharp static image with blurred moving subjects → inspect lighting and exposure trade-off. Good direct image but poor recorder/client → compare stream profile/display and export. Save privacy-minimised comparison images only if authorised. [REF C07, C04–C05, S10]
+
+C08 | Live view works, no recording at requested time
+Ask exact camera/channel, recorder clock/timezone/DST, time searched, role/permission, continuous vs event schedule and recording destination. Log last successful clip, disk status, retention/overwrite policy, schedule/trigger, stream assigned and whether a new authorised test event is captured. Other cameras record on same storage → examine channel schedule/event mapping. All fail → storage/service/time. Recent playback works but older interval absent → retention, gaps or wrong clock. Do not format/initialise a disk as a diagnostic. Verify a new recording by actual playback and export if required, including timestamp. [REF C05, S10]
+
+C09 | Missing clips, intermittent recording or retention shorter than expected
+Log exact missing intervals, clock jumps, disconnect and storage errors, camera-side continuity where supported, aggregate bitrate/throughput, disk health/utilisation and actual retention vs agreed objective. Gaps aligned with link drops → C05. Continuous live stream with storage alarms or all-channel gaps → recording path/service. Full storage can invoke configured retention/overwrite. Distinguish expected deletion from failure. Protect existing footage, record preservation request and consult authorised owner before disruptive action. [REF C04–C05, S10]
+
+C10 | PTZ picture good but control fails, or PTZ resets
+Ask whether power/stream remains stable during movement. Log actual controllable channel, operator permission/control priority, supported IP control or separate analogue telemetry, protocol/address/baud if applicable, preset vs manual movement, obstruction and reboot events. Stable camera with no control → control mapping/permissions/telemetry. Reboot under movement → C02. Jog works but preset wrong → preset mapping/limits. Capture original settings. Use the PTZ’s own manual, safe access and approved movement envelope. [REF C01, C09, C04]
+
+C11 | Local viewing works, remote/mobile client fails
+Log which clients are affected, local NVR playback proof, service state, DNS/time/certificate/account/role, authorised remote connection method, site IT contact and whether another authorised client works. One user → account/client/role. All remote users with local recording healthy → remote path/service or policy. Do not suggest port forwarding, disabling firewall controls or exposing a recorder to the internet as automatic fixes. Record “local recording verified / remote access unavailable” separately. [REF C04–C05, S10]
+
+C12 | ANPR camera online but missed reads or wrong events
+Ask whether plates are legible in an authorised original frame, whether the analytic produced a read, and whether that result reached its destination. Log capture position, vehicle direction/speed, lighting, plate size/blur/angle per model guide, analytic region/schedule and event delivery. Unreadable frame → optical/capture branch C07. Legible frame with no local result → analytic settings/model. Local result with no barrier/recorder event → downstream integration. Use a consented test target or mask identifiers in the export. [REF C08, C07, S10]
+
+08  INTRUDER ALARMS
+
+Identify panel, expander/RIO/input hardware and actual programmed wiring. Offer NC, NO, double-pole independent alarm/tamper, single EOL, double-balanced/DEOL, triple EOL with fault/mask, powered/bus input, wireless and unknown. Terms vary by manufacturer. Record detector supply independently from alarm, tamper, mask or fault contacts. Cable colours are observations only. Photograph terminal legends, jumper positions and far-end mapping before authorised replacement. [REF I01–I03, I05]
+
+I01 | Zone high resistance, open, short or tamper
+Ask whether the value was reported by panel diagnostics or measured on a truly isolated field pair. Log point, detector contact state, enclosure state, EOL layout, active zone profile, which ends are lifted, passive items still connected, range and reading with units. High resistance/OL is not evidence of a low-resistance conductor short. One end lifted with an expander/EOL still connected cannot prove a bare cable faulty. If panel values move appropriately between secure/alarm but the display still faults, check active profile, tamper/mask and event history. If field evidence is incomplete, identify the missing endpoint and arrange access. [REF I01–I03, P03]
+
+I02 | Door contact transitions but panel reports unexpected state
+Log contact type, magnet position/gap, door closed/opened slowly, zone resistance or state in each position, separate tamper or intermediate door alarm/relay and whether this is an instantaneous or latched indication. On verified Galaxy Dimension 1 kΩ double-balanced wiring, approximately 1 kΩ closed and 2 kΩ active can be expected in the applicable table. Other profiles differ. Example readings 996 Ω and 1967 Ω become interpretable only after identifying the exact programmed profile, zone override and where the measurement came from. Failure to change at the contact → alignment/contact diagnosis. Local change but no change at RIO → investigate intermediate wiring or relay. [REF I02, P03]
+
+I03 | PIR/dual-tech has power but no zone activation
+Log sensor +/− at device during walk test, settling/walk-test mode, PIR and microwave indications where supported, logic mode/range, actual relay/contact change, tamper state, zone display, partition/area and physical test movement. Sensor indicates detection but panel zone does not change → trace relay wiring/EOL/input. Sensor never indicates and supply meets its own specification → inspect test conditions, optics, coverage/setup and sensor. A disabled walk-test LED is not proof of a dead sensor. Verify the intended zone at the keypad as well as local response. [REF I01–I03]
+
+I04 | Replacement DT causes persistent tamper or mask
+Identify old and new model terminal legends, onboard resistors/jumpers, external resistors still fitted, whether tamper is separate or combined, and program at the actual input. Log secure/alarm/lid-open and mask/fault states only where supported. Compare panel labels with matching diagrams. Two sets of resistors or using an EOL terminal as if it were an independent tamper contact can change the encoded states. Capture marked-up terminal names, never infer function from yellow/blue cores or brand alone. Unknown replacement diagram → request that device manual and log a return. Restore and prove both alarm and tamper. [REF I01–I03]
+
+I05 | One case tamper vs several devices reporting tamper
+Compare first event, tamper loop/zone topology, lid/back tamper, shared auxiliary loss, expander communications and opening/closing sequence. One detector affected with correct supply → inspect device, mounting and monitored contact. Several devices simultaneous → check common tamper, expander, PSU and cable before treating them as independent alarms. If panel uses a global tamper loop, record loss of localisation and identify next accessible joint. Do not offer permanently linking tamper to clear the condition. [REF I01–I03, P01]
+
+I06 | Expander, RIO or keypad offline
+Ask how many peripherals on that branch, local power at module, module address, bus topology/termination for this panel, first lost peer, recent extension or duplicate assignment. Log panel diagnostics and physical module LEDs, bus path and timestamps. Module unpowered → P03. Powered, group lost beyond an extension → cable/termination/address/shared data path. Investigate actual network rules. Single lost with others communicating → local module/branch/address. A whole expander going offline is a more informative lead than simultaneous individual zone opens. Verify inputs, tampers and bus diagnostics afterwards. [REF I01–I02, P01]
+
+I07 | Random PIR alarms or anti-mask/fault
+Capture exact event designation, area/armed state, time cluster, source zone, movement/animals, HVAC/draught, sunlight, obstructions, spray/cleaning and vibration. For a supported anti-mask unit separate mask, fault and alarm indications and test each intended condition by the manual. A brief motion test can pass while environmental alarms recur. If detections coincide with environmental change, record correlation and plan observation. If events coincide with supply dips, follow P04/P08. Avoid reducing sensitivity or removing protection as an automatic fix. [REF I01, I03, I07]
+
+I08 | Wireless supervision, jamming or low battery
+Record device/parent, type of radio fault, one vs many devices, last message/time, current qualified signal metrics, configured supervision/test intervals, batteries and polarity per manual, recent obstructions/interference and route where supported. One weak device → check local battery, siting or path. Several simultaneous losses → receiver/panel power, common RF conditions, path/repeater or communications. “Jamming” reported by the system is evidence of an RF condition, not proof of intent. Test at the device’s installed position, respect wake/sleep behaviour, verify a current message and supervision. [REF I01, I05]
+
+I09 | External sounder/strobe, bell tamper or fails under load
+Identify unit, SAB/SCB or other supported mode, local battery, hold-off supply, trigger polarity, separate strobe and tamper return. Log configured bell test vs real trigger, panel output observation, external supply at device during demand, lid/back tamper and result with occupant/ARC arrangements. If trigger changes but device supply collapses → P03/P04. If no trigger → examine programming/output. If local supply/trigger are correct → device-specific self-test/service. Battery-backed sounders can operate on loss of supply. Use authorised procedure and safe access. [REF I01, I06, P01]
+
+I10 | Won’t set / entry-exit disorder / one area affected
+Ask exact reason displayed, open zones, tamper, comms faults, omitted zones, area/partition, final exit/entry route, user role, part/full set and time. Log sequence and zone transitions without storing user codes. Zone never restores → door/contact branch. All needed states correct but wrong area/time/permission → review configuration with authority. A required zone omission, forced set or lowered grade is not a repair. Retest the agreed setting and entry/exit behaviour, including affected monitoring under the arranged test window. [REF I01–I02, I05]
+
+I11 | Signalling failure, one path or ARC misses an event
+Record communicator model and method (pin/digital integration), configured paths, independent path statuses, last poll/fail/restore, panel event, communicator input/event, transmission and ARC acknowledgement with matching account/event/restore/time. One path lost with another functioning means redundancy degraded. Healthy paths with missing event → look at input mapping/account/service status. Alert arrived under wrong identity → configuration/ARC investigation. Do not unplug working paths to force a test automatically. Close only the functions confirmed with the monitoring provider and document outstanding path faults. [REF I04, I01]
+
+I12 | Panel reboots, time lost or AUX fault across detectors
+Record exact panel/expander clocks and restart events, loss of mains, battery state, charger/aux output and field devices affected, load/cable conditions, recurrence with bell or peripheral activation. Stable voltage at panel but low at expander under load → P03/P04. Several powered detectors simultaneously losing alarm relays may reflect a common AUX failure. A recent battery change does not establish charging or usable capacity. Verify normal powered operation, alarm/tamper and supported standby/restore under the approved plan. [REF I01–I02, P01–P02]
+
+09  NEXT-TEST ENGINE AND DATA CONTRACT
+
+Eligibility must run before ranking. With a pending emergency show only escalation/fact capture. For each candidate require compatible topology/asset type, current state, access, competence and authority, needed impairment controls, suitable instrument and model source when the action requires one. A positive answer to one gate never grants another. Missing prerequisites yield one safe clarification, a read-only observation or a return visit, not a lower-confidence instruction to perform a blocked test.
+
+Deterministic ranking for offline use. Begin with exact event, timing, scope and non-disruptive status indicators. Next prefer observations that distinguish two still-plausible explanations. Use the nearest accessible boundary, an available known-good comparator or a matched manufacturer's diagnostic before disruptive testing. Group several losses by shared feed, bus, switch, translator, PSU or floor. De-prioritise mass replacement hypotheses. Prefer comparable evidence captured during the actual symptom. Tie-break by reduced disruption, practicality, then a stable route/test ID. A rank is a choice of next question, not a probability. Explain it in one sentence (“All three failed channels share switch SW2. Its uplink state separates an uplink failure from three camera faults”).
+
+Answers. Yes records the asserted observation and follows its defined branch. No records the opposite *only* for a single clearly defined proposition under the stated conditions. I don’t know creates an unknown and presents another available discriminator or manual lookup. Blocked records a reason/tool/access need and suppresses that step for this visit unless the prerequisite changes. A fresh condition or new repair permits a linked retest. Handle contradictions by showing both readings, checking point/state/time/instrument and suggesting a repeat under comparable conditions. Do not silently select the latest reading when conditions differ.
+
+Inference labels. “Reported” is an account. “observed” is a fact. “consistent with” is a hypothesis. “localised” needs evidenced boundaries and topology. “cause verified” needs a discriminating finding, identified cause and appropriate verification. “Function restored” and “cause unproven” may coexist. A cleared event, a successful reset, or a swapped part followed by silence cannot establish the cause alone. The engineer confirms the final conclusion. Allow multiple faults. Once one path is restored, rerun unresolved symptoms against remaining evidence.
+
+Logical record contract for adaptation to the existing application
+Visit {id, schemaVersion, localTimeZone, engineerRef, siteRef, parentVisitId, state, incidents[], restorationItems[], handover}
+Incident {id, systemTypes[], exactComplaint, currentSymptomState, provenance, impact, assetRefs[], eventRefs[], candidateFindings[], diagnosisState}
+Asset {id, kind, manufacturer, model, variant, firmware, firmwareKnown, protocol, protocolKnown, localAddress, label, location, powerDomain, parentId, edges[{peerId, relation, provenance, observedAt, confidenceClass}]}
+TestEvent {id, incidentId, assetIds, ruleId?, ruleRevision?, sourceProfileId?, eventTime, capturedTime, clockSource, actor, testKind, method, points[], circuitState, operatingState, comparator?, instrument?, result, interpretation?, attachments[], supersedes?, blockedReason?, suggestionId?}
+Result {kind: numeric | range | state | transition | indication | overrange | fluctuating | unavailable, rawText, value?, min?, max?, unit?, resolution?, source: panel | meter | instrument | visual | human_report | import, executionState}
+Rule {id, revision, family, symptom, hypotheses[], eligibleWhen[], hardBlocks[], question, why, testTemplate, yesTarget, noTarget, unknownTarget, blockedTarget, evidenceToCollect[], interpretationCases[], nextIfContradiction, retestCriteria, sourceRefs[], reviewStatus}
+Impairment {id, affectedAssetOrFunction, existingOrIntroduced, start, authorisedByRole, measures, owner, reviewBy, restoredAt?, restoredBy?, verificationEventIds[], monitoringReceipt?, residualRisk?}
+Finding {id, text, evidenceForIds[], counterEvidenceIds[], limits, state, verifiedBy?, verificationTestIds[]}
+SourceProfile {id, manufacturer, model/variant, firmwareRange?, protocol?, wiringMode?, inputHardware?, manualId, revision, section/page, condition, referenceType, comparatorUnit?, boundaries?, applicabilityNotes, status, verifiedByRole, verifiedDate, supersedes?}
+
+Worked machine-readable test event (synthetic, using illustrative local IDs)
+{
+  "id": "evt-17",
+  "incidentId": "job-04-door2",
+  "assetIds": ["door2-lock"],
+  "ruleId": "A04",
+  "ruleRevision": "example-1",
+  "testKind": "device_terminal_voltage",
+  "method": "dc_voltage_across_loaded_lock",
+  "points": [
+    {"role": "positive_probe", "assetId": "door2-lock", "terminal": "+"},
+    {"role": "reference_probe", "assetId": "door2-lock", "terminal": "-"}
+  ],
+  "eventTime": "2026-10-21T10:16:00+01:00",
+  "capturedTime": "2026-10-21T10:17:00+01:00",
+  "actor": "engineer-on-visit",
+  "circuitState": "energised_connected",
+  "operatingState": "authorised_release_demand",
+  "instrument": {"type": "DMM", "mode": "V_DC"},
+  "result": {"kind": "numeric", "value": 12.1, "unit": "V_DC", "rawText": "12.1", "source": "meter", "executionState": "performed"},
+  "interpretation": {"status": "recorded_only", "reason": "Compare with normal-state reading, approved door behaviour and separate physical release observation."}
+}
+Store the relay command, lock voltage and physical door outcome as separate events at their own times. Reuse existing app enums where equivalent. This payload describes one observation. No firmware limit or life-safety pass is implied.
+
+Three example rule transitions to map to existing IDs
+• F03.Q1 asks “Is there a verified return path on this circuit?” Yes → obtain supported directional loop evidence. No → confirm a radial/spur and use P06. Unknown → consult as-fitted map and panel documentation. Blocked → record affected coverage and access owner. Never treat “No overview drawing” as evidence that there is no return.
+• A04.Q1 asks “Did the controller record a grant for this attempt?” Yes → compare physical relay command/state with actual lock drive. No → A01/A03. Unknown → request local event history or permitted comparator if inaccessible. Blocked → record time/door and request server/controller access. A click is an observation only.
+• I01.Q1 asks “Is the field span isolated from all sources and both ends identified for this resistance test?” Yes → gather remaining connected components and exact intended resistance test. No → suppress Ω test and prefer panel status or authorised isolation plan. Unknown → record accessible observations. No ohms prompt. Blocked → prepare return with expander ID and access required.
+
+Profile tiers
+T0 Observation only. Enter exact symptom, visible indicator, topology and model request. T1 Generic inference. Identify bounded possibilities without fixed ranges or menu keys. T2 Verified manufacturer action/range. Requires an exact applicable document, checked locator, configuration/state match, current competent review and required gates. T3 Specialist or design change. Record evidence and route to the appropriate owner. Never use a search snippet, guessed manual, emulator approximation or model family alone as a numeric comparator.
+
+Candidate profile examples for human review
+• The C-TEC CFP Standard manual DFU7004010 covers detector wiring and fault diagnosis. This version uses a capacitor at the last device on a detection zone and a resistor on a conventional sounder circuit. Configure two separate expected-component types. Reject a rule that uses a sounder EOL to diagnose a detector zone. The separately named AlarmSense variant has different circuit behaviour. [REF F01, F11]
+• The Advanced MxPro 5 manual 680-165 §3.3.6 gives a panel loop meter reporting outgoing/incoming readings and loading. Capture displayed fields and installed loop card/protocol. Do not transplant its readings or key sequence to Gent. Gent Vigilon has its own loop-map facility. [REF F03–F04]
+• For the Apollo intelligent test set, feature availability depends on protocol/device. An automated negative-leg earth search has Soteria isolator prerequisites. The test set can supply the circuit, so attach it only by the manufacturer’s procedure with conflicting power sources excluded. Gate any impairment. [REF F02]
+• For Galaxy Dimension, use wiring tables 2-7/2-8 and parameter 51.46 with the applicable zone override. Save the actual programmed profile and input hardware. On a compatible hardwired RIO, Display Zones option 21 can show zone resistance and the RIO’s supply voltage. Preserve their different meanings. Daily resistance extrema, when supported, are useful for a fault absent on arrival. For the supported option 09 double-balanced example, 996 Ω secure and 1967 Ω open/active are plausible states. A 2 kΩ alarm state is not a bare conductor open. Never infer the profile from those two readings. [REF I02]
+• For Texecom Premier Elite, INS176-15 pp. 32 and 60 distinguish Double Pole/EOL and alternative arrangements. In the documented single normally closed (NC) detector drawing with 2.2 kΩ EOL and 4.7 kΩ across the alarm contact, nominal network values for secure and alarm are about 2.2 and 6.9 kΩ respectively. These are ideal network totals, not firmware acceptance bands. Tamper, short response, other modes and mask values have distinct rules. [REF I01]
+• For Paxton Net2, APN-1061’s isolated RS485 test is cable-specific. Its diagnostic band across each specified pair is 60–87 Ω for the stated CAT5 setup, 60–76 Ω for the stated Belden setup. Do not use those figures as bus-wide defaults or as a substitute for communications and door retest. APN-1086 illustrates switching the lock PSU’s 0 V, so a healthy COM can be near 0 V in one state. Model the actual wiring. [REF A01, A03]
+• For CCTV, record the camera model’s maximum consumption for the installed accessories/mode and the supplying port’s available allocation. A nominal port class or aggregate switch budget alone is insufficient. Recorder purposes (continuous recording vs event schedules) and device clocks belong to the profile/visit rather than a universal time window. [REF C01–C02, C05]
+
+Offline pack and manual matching
+Key packs by manufacturer + exact model/variant + subsystem + supported revision/firmware. Rank Manual Archives materials by manufacturer document ID and locator, then match panel, device, base, option card, PSU or reader as separate assets. If the panel download says “optical” it may identify a family only. Show “exact model unconfirmed” and allow an engineer-confirmed photo/part number. Offer the matching device manual and panel manual side by side. Record import date, file/version reference and whether correspondence was checked on site. A dated download is expected configuration, never live telemetry or proof of cable order.
+Ship summaries and verified metadata offline. Use downloaded manuals only where available and permitted. Show “manual not downloaded” without breaking the log. If two manuals disagree, retain both, block the conflicting comparator and offer manufacturer support. Distinguish verified, draft, stale and withdrawn rules. Updating a pack must not rewrite the interpretation saved with an old test. Keep a human-review workflow for exact menu steps, numerical thresholds, IS and site-specific life-safety routes. Do not hard-code default engineer codes, credentials, bypass instructions or live-control capability.
+
+10  WORKED CALL-OUTS AND HANDOVER
+
+Illustrative fixtures for Codex. All times, site labels and measurements here are synthetic. Use them to test routing, never as default limits. Each example deliberately leaves something unproved.
+
+W01 | Radial open, from vague report to useful location
+On arrival the panel shows an open on conventional zone 3. The engineer has the drawing and safe authorised access. The zone uses a model-specific EOL. The drawing and a field trace establish the physical order plant-room MCP → JB-7 → corridor base → last detector. The floor stays protected only under an agreed impairment plan.
+In the first authorised functional test the panel registers the upstream MCP. It does not register the downstream detector. This is a functional boundary, not yet an electrical break. In the second test, comparable standby readings across the indicated pairs agree at the MCP outgoing and JB-7 incoming terminals. The corridor base incoming pair differs. The bare-span test, after both ends and parallel devices are isolated and identified, shows one conductor discontinuous between JB-7 outgoing and corridor base incoming, while the other conductor has a path.
+Next inspect both terminations and any joints on that specific span. If a loose termination is found, record its location, authorised repair and repeated same-span measurement. Confirm EOL reinstated at the last device, zone normal, appropriate device response including beyond the repair and all test states restored. If JB-7 order had been taken only from device numbers, the correct next action would have been a route trace instead. [REF F01, P03]
+
+W02 | Addressable break without missing devices
+Panel records “loop open”, configured inventory all present, two-ended topology confirmed. The app retains both facts. Next useful evidence is supported directional diagnostics and physical map, then boundary inspection. Missing count zero does not cancel the loss of return-path integrity. If only the address list is available, output “Loop 1 return integrity impaired. Physical span unverified.” Request the appropriate loop diagnostic/access and a method to test the affected path without uncontrolled loss of coverage. [REF F02–F04]
+
+W03 | Galaxy zone through a door alarm / DT on inaccessible expander
+Case A. A confirmed compatible Galaxy double-balanced profile, same input, and panel-reported 996 Ω door closed / 1967 Ω door open fit the expected transition. Record that the zone repeatedly restores when the door closes. Separately capture any persistent high-resistance event and its time. Next check the intermediate relay/contact and wiring during the reported symptom. Healthy observations now do not disprove an intermittent fault.
+Case B. The technician at a DT has separated local cores but cannot access the expander. Previous resistance observation “high” has no recorded isolation or remote-end disposition. Save it as historical, method unverified. Suppress further Ω prompts on a connected/unknown circuit. If authorised, collect panel zone status for lid fitted/opened and walk test, detector model/terminal photos and current supply at the device. Return needs expander key/access, input/zone mapping, wiring profile and both endpoints for controlled testing. The engineer recorded detector-side observations. Distinguishing the cable, detector and input requires access to the remote end. [REF I01–I03, P03]
+
+W04 | Door relay clicks, lock 2 stays powered
+During the planned fire test two doors should release. Door 1 releases and door 2 does not. Escalate door 2’s failed escape function immediately. Log expected cause-and-effect, physical observations and impact. Check whether the controller and lock use independent DC supplies. Compare the correct PSU and the voltage across lock 2 in normal then release demand, with load connected. A relay LED changes and the lock pair stays at its normal holding voltage in both states. This supports investigating the switched path, independent feed, emergency-release circuit or parallel feed. It does not prove the relay itself faulty. If the actual lock voltage drops as designed yet the door sticks, move to mechanical/second-lock investigation. Final evidence is the physical door doing what the strategy requires on fire and in its normal restored state. [REF A01, A04–A05, S04, S06]
+
+W05 | Aspirating low flow clears before visit
+Site reports a morning low-flow event. Host panel is normal at 12:00. VEP history shows low flow on pipe 2, restored 07:48. Other pipes had no related event. Log detector time offset, displayed pipe levels now, commissioned baseline if available and which sections/filters were accessible. Ask about HVAC start, loading-bay activity and recent work on pipe 2. Do not mark pipe damaged or normalise new flow. If access at height is required, hand over the pipe drawing, point numbering, OEM tool access, suitable access equipment, access window and the event timeline. Record whether coverage is currently verified and what arrangements the site agreed pending investigation. [REF F05–F06]
+
+W06 | PTZ disappears when an ANPR camera is added
+First determine whether the cameras share a PSU, PoE budget, uplink, coax converter or only the recorder. If one is IP and the other analogue, “same NVR” does not imply the same cable or power. If the PTZ centre conductor reads OL end-to-end on an isolated known span with both ends identified, while shield continuity is present, localise the centre path to that span. Inspect connectors before condemning the cable. If PoE logs show a denied allocation when IR demand rises instead, investigate the switch budget and maximum demand of both devices. Verify both cameras, PTZ movement, night mode if relevant, and a stored clip. [REF C01–C02, C05–C06, C09, P05]
+
+W07 | Power-supply call-out with three mains test fields
+In this synthetic event an authorised competent person recorded 231 V AC L–N, 232 V AC L–PE, 1.2 V AC N–PE at the same input and time, with a separately recorded operating state and authority. This documents potential differences at that point. It does not prove protective conductor integrity, safe isolation or battery capacity. Next compare the PSU’s own indicators, protected output under current load and at the affected device. If input access was unavailable, the app should still create a useful log with all three readings marked “not tested” and an electrician referral. [REF S01–S03, S09, P01]
+
+W08 | Camera is live but time search comes back empty
+Local live view is good. Camera 04 is the only channel with missing playback. The recorder clock differs from the engineer’s phone by an hour. Correcting the search window finds yesterday’s clips. A new approved event at the actual test time still has no clip. Keep the two issues separate. Next compare channel 04 schedule/event source/storage with one working channel and check for a new event and resulting recording. Preserve original clock information and existing footage. Success is playing the new clip at its known time, not displaying a green recording icon. [REF C05, S10]
+
+W09 | Shared failure spanning disciplines
+One fire interface history, three doors and a small CCTV switch all show trouble within a minute after building work. Ask whether time bases agree, then confirm their actual supply/network dependencies from drawings and labels. If doors and switch share an ancillary PSU but the fire loop has a separate supply, open linked incidents instead of assuming all four faults have the same cause. Check each distinct protection/recording function on restoration. Verification of the PSU alone cannot close linked incidents. [REF P01, F03–F04, A01, C01–C02]
+
+Example handover text generated from completed fields only
+“09:14. Intruder input RIO-2/Z4, rear-store DT. Intermittent high-resistance event recorded by the panel. Detector accessible. Expander room locked. Walk test changed the zone at the keypad at 09:28. Field-pair resistance and input-side comparison were not tested because the remote terminations were inaccessible. Cause remains open. No new omissions introduced. Site keyholder to arrange expander-room access for return. Next engineer needs the input wiring profile, detector manual, authorised test window and both circuit ends. Confirm the panel/ARC status recorded on the visit before any further tests.”
+If actual monitoring/restoration is unknown, export “not confirmed” and the owner of the follow-up. Never invent a client signature or a positive retest.
+
+Minimum export layout
+Visit/site/engineer and time zone | What was reported | As found | Affected protection/functions | Tests in order, including exact points, state, values/units and source | Findings and evidence limits | Actions/parts | Retest results | Disablements/test modes before, introduced, restored or outstanding | ARC/site notifications and receipts | Return visit/actions, owner and agreed date. Offer a short plain-text handover, a full human-readable report and a versioned structured JSON export. Keep unsupported/unknown fields explicit.
+
+11  ACCEPTANCE TESTS, MIGRATION AND RELEASE CHECKS
+
+Codex should implement fixtures through the normal UI and offline data path. Assert both the expected suggestion AND the suggestion that must be suppressed. This verifies behaviour even when wording evolves.
+
+T01 Existing log entry with free text and no model loads, edits and exports. Original text remains, no invented test date/model/result.
+T02 Unknown circuit and generic “open circuit” → ask topology/indication. No resistor threshold or “between 10 and 11”.
+T03 Simple radial with field-confirmed adjacent good/bad points → nominate span and both terminations. With an unverified branch, widen boundary and request a trace.
+T04 Return loop reports open with all addresses present → directional diagnostic/topology branch. No “fault cleared” or mandatory missing device.
+T05 C-TEC CFP Standard detector zone vs sounder output → distinct EOL type. Temporary local termination remains outstanding until removed and end-to-end retest recorded.
+T06 Addressable loop/mixed protocol → suppress constant-voltage pass rule. Apollo Soteria-only Earth Search must be absent for unmatched XP95 equipment.
+T07 No authority to open a mains enclosure → observation/referral. Log supports L–N, L–PE and N–PE as three untested fields. Never mark mains absent or safe.
+T08 Prior energised L–N/L–PE/N–PE readings → excluded from proving-dead workflow. Failed instrument proof after test invalidates proof even if every pair showed absence.
+T09 Mode Ω with power unknown, battery still connected or remote source unidentified → suppress measurement. Historically typed value stays unverified. Do not overwrite it.
+T10 OL, 0 Ω, missing, fluctuating and “not tested” survive local persistence and export as distinct. kΩ/Ω conversion cannot change raw precision.
+T11 Unknown intruder profile and one end lifted → no “cable short” diagnosis. Verified Galaxy option and matching transitions → interpret within that profile only.
+T12 Texecom documented DEOL vs TEOL → distinguish network totals and fault/mask states. Do not reuse Texecom bands for a Galaxy or a different input mode.
+T13 No expander access → next safe observations and return-visit requirements. Blocked step does not reappear in a loop.
+T14 Access event denied → credentials/time profile branch. Access granted and relay clicks → verify actual lock drive and mechanics. No automatic “bad PSU” or “door released”.
+T15 Escape door fails a planned fire release → immediate impairment/notification. Block normal closure until restored or explicitly handed over impaired.
+T16 Switched-negative lock design → no universal expectation of positive voltage at COM. Dry contact without external supply must never be rendered as a powered output.
+T17 ASD fault no longer active, event log available → original pipe/time/code + baseline + return plan. Suppress automatic normalisation and “fixed”.
+T18 PoE camera resets at night with exhausted budget → power/cable branch. Stable powered camera with night haze → optical branch. Day/night correlation alone cannot confirm either.
+T19 Link up, ICMP blocked, recorder says offline → check network identity, authorised reachability and recorder error. Never suggest disabling the firewall.
+T20 Live present, playback missing → clock/channel/schedule/storage path. No format-disk, reset or proof of recording until clip plays.
+T21 On a fully isolated analogue run, centre-to-shield OL with far end open → expected for that test. Centre end-to-end OL on same span → possible discontinuity. Unknown PoC blocks Ω test.
+T22 ARC transmitter online but no matching receipt → delivery unproven. One path lost but alternate works → redundancy still impaired.
+T23 IS/hazardous area or suppression output with missing specialist authority → safe-side evidence and handover. No ordinary meter injection or uncontrolled output activation.
+T24 Two conflicting readings under different loads → show both, request comparable state. One does not supersede the other.
+T25 Engineer answers I don’t know twice or declines an inaccessible check → other discriminating evidence or handover. Never convert to No or count as a failed test.
+T26 Fault clears after reset or substitution without discriminating evidence → function restored or not reproduced, cause unverified.
+T27 App killed/reopened offline mid-visit → resume exact point with events and impairments intact. Retried saves/imports do not duplicate tests, or silently drop edits.
+T28 Pack updated mid-visit → earlier source/rule revision and interpretation retained. New suggestion identifies its own revision.
+T29 Old information imported for panel with changed device labels → show conflict, never overwrite engineer-confirmed location or infer physical order.
+T30 Pre-existing disablement plus one introduced on visit → store separately. Restoring the new one does not erase the previous impairment.
+T31 Missing source pack or conflicting manual variants → record facts, offer manual download/identification. Suppress unverified limits and button sequences.
+T32 Export/share with redaction on → omit credentials, token IDs, sensitive network details and identifiable images where not authorised. Retain evidence status and open actions.
+T33 Multi-system incident → common-cause hypothesis is possible, yet each function has its own verification state.
+T34 A real fire is reported during testing, or a required exit cannot be used → emergency/site process takes precedence over every routine rule.
+T35 Cleared warning but no site/ARC acknowledgement → verification field stays pending. Cannot export “fully reinstated”.
+T36 Manual test entered without suggestion → included in the same timeline with issuer, source and provenance. Repeating a comparable test links to, but does not replace, the prior result.
+
+Implementation sequence
+1. Inspect and document actual Fault Finder/log entry paths, existing enums/keys, where pack content and old visits live, export and offline behaviour. Use the existing store and navigation. Reuse existing component IDs and deep links to Hints, Menu Finder and downloads where supported.
+2. Add versioned event/impairment model, backward-compatible reader and lazy/idempotent migration. Convert legacy text into a legacy observation with known timestamps only. Preserve original content and backups. Enable quick manual logging and export before switching ranking on.
+3. Deliver shared guardrails and path model, then the complete four-discipline route catalogue. Prefer read-only and low-impact cards when prerequisites are missing. Drive cards from inspectable data and existing UI components. Avoid separate logic per screen or a hidden online AI dependency.
+4. Add reviewed model profiles behind feature gates, field-match confidence and manual locators. Package routes for offline use, detect duplicate rules/missing targets, ensure an unknown/blocked exit for every node. Hold unverified numbers and key sequences in draft while shipping the useful generic routes.
+5. Test migrations, crash/retry, storage-full handling (keep unsaved state visible), redacted export, offline reload and the fixtures above. Test one-handed portrait use on a phone and confirm that sticky “Log a test”, “Why this check?”, current asset and “Can’t test” remain visible while the numeric keyboard is open. Include a handover preview and correction before sharing.
+6. In the implementation report, name the routes and profiles actually shipped, remaining draft/unverified, migrations, files changed, checks run and any safety-critical routes not yet reviewed. Only claim support for an exact model when its pack is matched and verified.
+
+Data minimisation. Keep visit notes offline by default under the app’s existing security model. Separate identifying site/contact information from technical facts. Apply company retention/access policy. Do not store engineer codes, credential secrets, stream passwords, raw tokens, ARC authentication details or unnecessary footage. Allow local aliases/redaction for IPs, locations, account references and faces/plates in reports. Require intentional user action to export. Preserve standalone historical records if the manual pack is later removed. [REF S10]
+
+12  RESEARCH REGISTER
+
+Sources checked for this edition on 2 November 2026. Manufacturer documents explain particular products, national guidance informs the safety and service boundaries, and standards listings establish scope. The proposed fields, choice of next question, scoring order, fixtures and exports are FINDR product design. Some manuals are legacy or manufacturer-authored copies on distributor sites. Match the installed revision and regional product before enabling operational detail. Keep an offline citation stub even if the manual cannot be downloaded.
+
+[REF S01] UK legislation | Electricity at Work Regulations 1989, regs. 12–14 and 16. Isolation, precautions on dead equipment, live-work conditions and competence. GB legal context. Select jurisdiction on site.
+https://www.legislation.gov.uk/uksi/1989/635/pdfs/uksi_19890635_en.pdf
+
+[REF S02] HSE | HSG85, Electricity at work: Safe working practices. Live-work decision and paras. 53–55 on proving dead and proving the indicator.
+https://www.hse.gov.uk/pubns/priced/hsg85.pdf
+
+[REF S03] HSE | GS38, Electrical test equipment for use on low voltage electrical systems, 4th edition. Test equipment and preference for dead testing.
+https://www.hse.gov.uk/pubns/books/gs38.htm
+
+[REF S04] UK Government | Fire safety risk assessment: small and medium places of assembly. See escape routes/doors and electronic locks. Premises-specific English guidance.
+https://www.gov.uk/government/publications/fire-safety-risk-assessment-small-and-medium-places-of-assembly/fire-safety-risk-assessment-small-and-medium-places-of-assembly-accessible
+
+[REF S05] NSI | Publication of BS 5839-1:2025, non-domestic fire detection and alarm systems. Scope/news summary. Use the applicable licensed standard and building records when decisions depend on a clause.
+https://www.nsi.org.uk/publication-of-bs-5839-12025-issued-for-fire-alarm-systems-in-non-domestic-premises/
+
+[REF S06] Fire Industry Association | Guidance update on BS 7273-4:2015+A2:2023. Door release design and actuation categories. Check the approved site strategy.
+https://www.fia.uk.com/news/fia-releases-updated-guidance-on-bs-7273-4-2015-a2-2023.html
+
+[REF S07] HSE | Electricity in potentially explosive atmospheres. Hazardous-area equipment and specialist approach.
+https://www.hse.gov.uk/electricity/explosive.htm
+
+[REF S08] NSI | NACOSS Gold approval criteria, June 2024, scheme reference for intruder/hold-up alarms, electronic access control and CCTV. Context for PD 6662 / BS EN 50131 and applicable system-specific requirements, not a live numeric reference.
+https://www.nsi.org.uk/wp-content/uploads/2012/06/SF-002.8-NACOSS-Gold-approval-criteria-Jun-2024.pdf
+
+[REF S09] Electrical Safety First | Best Practice Guide 2, issue 4.2, safe isolation procedures for low voltage installations. See “Proving dead” and indicator/proving sequence.
+https://www.electricalsafetyfirst.org.uk/media/btoiv1h5/best_practice-guide-2_issue-4-2.pdf
+
+[REF S10] ICO | Guidance on video surveillance (including CCTV). See access, retention, security and disclosure. Apply current organisational policy and applicable law when sharing evidence.
+https://ico.org.uk/media/for-organisations/uk-gdpr-guidance-and-resources/cctv-and-video-surveillance/guidance-on-video-surveillance-including-cctv-1-0.pdf
+
+[REF S11] BSI | BS EN 60839-11-1, electronic access control system and components requirements. Scope includes recognition, indication, logging and communications.
+https://knowledge.bsigroup.com/products/alarm-and-electronic-security-systems-electronic-access-control-systems-system-and-components-requirements
+
+[REF S12] BSI | BS EN IEC 62676-4:2025, video surveillance system application guidelines. Establish the site’s operational requirements and applicable edition.
+https://standardsdevelopment.bsigroup.com/projects/2024-00047
+
+[REF S13] BSI | PD 6662:2017, UK scheme for applying European intrusion and hold-up alarm standards. Confirm grade, agreed design and relevant equipment.
+https://knowledge.bsigroup.com/products/scheme-for-the-application-of-european-standards-for-intrusion-and-hold-up-alarm-systems-1
+
+[REF P01] Elmdene | 2405ST, PAK200789_04A. Operating instructions, troubleshooting and diagnostic LED tables. Power/charger/battery/output indications are product-specific.
+https://www.elmdene.co.uk/product/manual/PAK200789_04A_2405ST.pdf
+
+[REF P02] Yuasa UK | Battery installation, commissioning and maintenance guide. Commissioning, maintenance and discharge testing. Match battery type and duty.
+https://www.yuasa.com/uk/info-hub/battery-installation-commissioning-and-maintenance-guide
+
+[REF P03] Fluke | Models 15B/17B user manual, Making Measurements, pp. 5–7. Voltage/current/resistance/continuity methods and energy-state precautions. Meter-specific buzzer threshold.
+https://assets.fluke.com/manuals/15b17b__umeng0300.pdf
+
+[REF P04] Fluke Networks | MicroScanner2, Twisted pair test results. Wiremap, pair errors and cable fault location. Cable qualification/certification requires appropriate additional testing.
+https://www.flukenetworks.com/knowledge-base/microscanner2/twisted-pair-test-results-microscanner2
+
+[REF P05] Fluke Networks | MicroScanner2, Testing coaxial cabling. Open, short and termination-dependent indications.
+https://www.flukenetworks.com/knowledge-base/microscanner2/testing-coaxial-cabling-microscanner2
+
+[REF F01] C-TEC | CFP Standard Engineers Manual, DFU7004010. Detector/sounder wiring and fault diagnosis. See printed pp. 7–8 and 19 onwards. Match the exact CFP version.
+https://c-tec.com/download?wpdmdl=13537
+
+[REF F02] Apollo Fire Detectors | Apollo Test Set User Manual, PP2625, issue 4. Device/loop tests, test-set supplies and Earth fault location search. Observe protocol and isolator limits.
+https://www.apollo-fire.co.uk/globalassets/downloadable-content/pp2625_apollo-test-set-user-manual_issue-4.pdf
+
+[REF F03] Advanced | MxPro 5 product manual, 680-165, distributor-hosted manufacturer copy. §§3.3.2–3.3.7 for device/history/loop meter/scope. Output groups and logic in §3.3.20. Check current hardware/manual before shipping.
+https://www.eufireandsecurity.com/wp-content/uploads/2025/03/MxPro5-Product-Manual.pdf
+
+[REF F04] Gent by Honeywell | Vigilon commissioning instructions, 4188-856, UK GentExpert technical resource. See “Checking a loop map” and loop break fault descriptions. Variant/card differences matter.
+https://www.gentexpert.co.uk/downloads/Addressable/Vigilon/VIG1-24_72/4188-856.pdf
+
+[REF F05] Xtralis | VESDA-E VEP-A10-P Product Guide, 22071 rev 16, distributor-hosted manufacturer document. Airflow screen, §8 troubleshooting and appendix A commissioning records.
+https://eurofyre.co.uk/wp-content/uploads/2023/10/22071_16_VESDA-E_VEP-A10-P_Product_Guide_A4_IE_lores.pdf
+
+[REF F06] Fire Industry Association | Design, Installation, Commissioning & Maintenance of Aspirating Smoke Detection Systems. See sampling points, testing, transport time and maintenance. Legacy guidance. Prefer current site/model procedure for actual tests.
+https://fia.uk.com/static/uploaded/440ce5b2-6824-4fdb-ab20a887f80722d6.pdf
+
+[REF F07] FFE | Fireray One User Guide, 0044-092. Alignment, operation, status indications and troubleshooting. Select matching detector and guide.
+https://ffeuk.com/hubfs/FFE%20Literature%20-%20New/Fireray/Fireray%20One/User%20Guides/0044-092_Fireray_One_User_Guide_%28EN%29.pdf?hsLang=en
+
+[REF F08] Hyfire | TauREX user manual. Wireless topology, device status, radio/link quality and maintenance views. Use the returned document version with the installed Taurus equipment.
+https://hyfirewireless.com/wp-content/uploads/2022/05/L20-TAUEX-1400-P.2-TAUREX-User-Manual-Hyfire.pdf
+
+[REF F09] North Yorkshire Fire & Rescue Service | Common causes of false alarms. Environmental sources for unwanted alarm investigation.
+https://www.northyorksfire.gov.uk/business-safety/reducing-false-alarms/common-causes/
+
+[REF F10] Apollo | XP95 negative isolator 55000-720APO. Short-circuit isolation and recovery. Applies to this product, not every isolator type.
+https://apollo-fire.co.uk/products/xp95/isolator/55000-720apo-isolator-negative/
+
+[REF F11] C-TEC | CFP AlarmSense fire panel installation and maintenance manual. Two-wire zone behaviour and conventional sounder diagnostics. Compare with CFP Standard [REF F01].
+https://c-tec.com/download?wpdmdl=12203
+
+[REF A01] Paxton | Net2 APN-1086, lock with independent power supply. Voltage-free relay, external supply and switched-return wiring example.
+https://www.paxton-access.com/wp-content/uploads/2019/03/AN1086.pdf
+
+[REF A02] Paxton | Net2 APN-1059-AE, valid token denied access. Token indication, events, authorisation and door operation. Supplement with locally applicable variant.
+https://www.paxton-access.com/wp-content/uploads/2020/01/AN1059-AE.pdf
+
+[REF A03] Paxton | Net2 APN-1061, ACUs not responding on RS485. See “Testing the Data Line”, isolation requirements and separate cable-dependent ranges.
+https://www.paxton-access.com/wp-content/uploads/2019/03/AN1061.pdf
+
+[REF A04] Paxton | Net2 APN-1031, integration with a fire alarm. Inputs, selected doors and dependency on running server for this software feature.
+https://www.paxton-access.com/wp-content/uploads/2019/03/AN1031.pdf
+
+[REF A05] Paxton | APN-1090, advice on access control for fire exits. Separate physical means of escape/emergency release from controller logic. Site fire strategy remains essential.
+https://www.paxton-access.com/wp-content/uploads/2019/03/AN1090.pdf
+
+[REF A06] Axis | AXIS A4030-E Reader technical documentation. Reader configuration and OSDP capabilities. Check the selected reader/controller.
+https://help.axis.com/en-us/axis-a4030-e
+
+[REF A07] Paxton | Net2 plus control unit instructions, distributor-hosted manufacturer document. ACU/reader/input/relay and communications. Legacy hardware example.
+https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Paxton%20Net2%2B.pdf
+
+[REF A08] Axis | Why choose OSDP over Wiegand in access control? Technology differences, supervision and secure channel. Not a site wiring diagram.
+https://www.axis.com/dam/public/50/2e/5a/white-paper-why-choose-osdp-over-wiegand-in-access-control-en-US-485168.pdf
+
+[REF C01] Axis | Typical and maximum power consumption in Axis cameras. Configuration, IR, motors, heaters and worst-case power.
+https://whitepapers.axis.com/en-us/typical-and-maximum-power-consumption-in-axis-cameras
+
+[REF C02] Cisco | Troubleshooting Power over Ethernet (PoE), Catalyst troubleshooting guide. Individual port, budget and device/cabling comparisons. Commands are platform-specific.
+https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3750/software/troubleshooting/g_power_over_ethernet.html
+
+[REF C03] Hikvision | Network Abnormal in NVR camera management. IP, addressability and NVR-side network setup. Exact recorder error and model determine the route.
+https://supportusa.hikvision.com/support/solutions/articles/17000129444-why-is-the-ip-camera-showing-network-abnormal-on-my-nvr-camera-management-screen-/
+
+[REF C04] Axis | Troubleshooting guide for network connection. Bandwidth, network troubleshooting and evidence for support.
+https://help.axis.com/en-us/troubleshooting-network
+
+[REF C05] Axis | AXIS Camera Station 5 troubleshooting guide. Recording gaps, disappearing recordings, storage and playback. Generalise diagnostic layers only. Interface names belong to that product.
+https://help.axis.com/en-us/axis-camera-station-troubleshooting-guide
+
+[REF C06] Hikvision | How to troubleshoot an analog camera. Source format, DVR compatibility, local testing and channel/cable comparisons.
+https://supportusa.hikvision.com/support/solutions/articles/17000129936-how-to-troubleshoot-my-analog-camera-
+
+[REF C07] Axis | Troubleshooting guide for image quality. Exposure, noise, IR reflections, lighting and optical effects.
+https://help.axis.com/en-us/troubleshooting-image-quality
+
+[REF C08] Axis | AXIS Q1800-LE License Plate Camera user manual. Mounting, capture conditions and licence plate recognition troubleshooting.
+https://help.axis.com/en-us/axis-q1800-le
+
+[REF C09] Axis | P5515-E PTZ user manual for firmware prior to 7.20. Troubleshooting PTZ control and motor power (p. 58). Legacy model example.
+https://www.axis.com/dam/public/03/9f/20/axis-p5515-e--user-manual-prior-to-720-en-US-104889.pdf
+
+[REF I01] Texecom | Premier Elite Series Installation Manual INS176-15. Zone circuits (p. 32), zone wiring (p. 60), engineer utilities/View Zone Status and expander/radio diagnostics. Match panel and firmware.
+https://branding.texe.com/uk/uploads/INS176-15_Premier_Elite_Series_Installation_Manual_4.pdf
+
+[REF I02] Honeywell | Galaxy Dimension Installer Manual, distributor-hosted manufacturer copy. Zone wiring, tables 2-7/2-8, Display Zones option 21, parameter 51.46 and per-zone resistance settings. Verify model/RIO revision.
+https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Galaxy%20Dimension%20Install%20Manual.pdf
+
+[REF I03] Pyronix | KX15DT installation guide, RINS549-14. Device terminals, EOL links, local indications and walk test.
+https://www.pyronix.com/wp-content/uploads/sites/2/2018/06/KX15DT-Installation-Guide.pdf
+
+[REF I04] CSL | DualCom Pro 2 Range installation manual. Testing section and fire input/restore signalling. Record what the receiving centre actually received.
+https://www.csl-group.com/data/manuals/52848/dualcom-pro-2-range.pdf
+
+[REF I05] Pyronix | Enforcer UK programming manual, RINS1904. Radio diagnostics, input/bell signal strength and event/setting context. Use matched firmware.
+https://www.pyronix.com/wp-content/uploads/sites/2/2017/10/downloads/995.pdf
+
+[REF I06] Texecom | Premier Elite Odyssey 5. SAB/SCB modes, hold-off and tamper. Use installation guide for actual terminals and safe service steps.
+https://www.texe.com/products/premier-elite-odyssey-5/
+
+[REF I07] Pyronix | KX15DTAM installation guide. Mask, alarm, fault/EOL links and LED states. Distinguish it from the non-AM KX15DT.
+https://www.pyronix.com/wp-content/uploads/sites/2/2018/06/KX15DTAM-Installation-Guide.pdf
+
+End of brief.

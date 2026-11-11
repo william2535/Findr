@@ -1,0 +1,4441 @@
+{
+  "groups": [
+    {
+      "id": "power",
+      "title": "Power / battery",
+      "subtitle": "Mains, supply, charger or battery warning",
+      "questions": [
+        {
+          "id": "mains_message",
+          "text": "Does the panel explicitly report mains / AC failure?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 19,
+              "section": "§17 Power supply: displayed supply and battery faults"
+            },
+            {
+              "sourceId": "gent-ops-1999",
+              "page": 15,
+              "section": "Typical fault messages"
+            }
+          ]
+        },
+        {
+          "id": "battery_message",
+          "text": "Is there a battery-specific fault message?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 19,
+              "section": "§17 Power supply: displayed supply and battery faults"
+            }
+          ]
+        },
+        {
+          "id": "recent_outage",
+          "text": "Did a recorded mains outage happen before this fault?",
+          "hint": "Check the site log or ask the responsible person.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-engineer",
+              "page": 20,
+              "section": "§1.2 Power supply faults: discharged batteries"
+            }
+          ]
+        },
+        {
+          "id": "disconnected_message",
+          "text": "Does the message specifically say battery disconnected?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 19,
+              "section": "§17 Power supply: displayed supply and battery faults"
+            }
+          ]
+        },
+        {
+          "id": "charger_message",
+          "text": "Does the panel explicitly report charger / PSU failure?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 19,
+              "section": "§17 Power supply: displayed supply and battery faults"
+            }
+          ]
+        },
+        {
+          "id": "battery_impedance",
+          "text": "Does the panel explicitly report battery high impedance?",
+          "hint": "Copy the actual message. It can relate to batteries or their connection path; do not infer it from a generic supply lamp.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 19,
+              "section": "§17 Power supply: displayed supply and battery faults"
+            }
+          ]
+        },
+        {
+          "id": "battery_low_voltage",
+          "text": "Does the panel explicitly report low battery voltage?",
+          "hint": "Use the stated message, not an unmeasured guess about battery condition.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 19,
+              "section": "§17 Power supply: displayed supply and battery faults"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "mains_supply",
+          "title": "Mains supply path problem",
+          "summary": "The panel may be relying on its standby supply.",
+          "checks": [
+            "Record the exact supply message and first occurrence."
+          ],
+          "likelihoods": {
+            "mains_message": 0.95,
+            "battery_message": 0.35,
+            "recent_outage": 0.85,
+            "disconnected_message": 0.1,
+            "charger_message": 0.2,
+            "battery_impedance": 0.2,
+            "battery_low_voltage": 0.65
+          },
+          "sources": [
+            {
+              "id": "kentec-syncro",
+              "title": "Kentec Syncro Product Manual Man-1055 Issue 26 (May 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1055.pdf",
+              "recordId": "kentec-724b56a14295",
+              "page": 19,
+              "section": "§17 Power supply: displayed supply and battery faults",
+              "appliesTo": "Syncro models and Hochiki/Apollo/Argus protocol configurations covered by issue 26. Installed configuration and firmware determine the applicable behavior.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1055",
+              "revision": "Issue 26, May 2016",
+              "pageCount": 38,
+              "sha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd"
+            },
+            {
+              "id": "ctec-cfp-engineer",
+              "title": "C-TEC CFP Standard Installation & Maintenance Manual DFU7004010 Rev 4 (1 November 2021)",
+              "url": "https://c-tec.com/download?wpdmdl=13537",
+              "recordId": "c-tec-fc443e51b6e1",
+              "page": 19,
+              "section": "§1.2 Power supply faults",
+              "appliesTo": "CFP Standard 2/4/8-zone conventional panels covered by Rev 4; do not apply its EOL, LED or diagnostic arrangements to AlarmSense or other panels.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view0",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7004010",
+              "revision": "Rev 4, 01/11/21",
+              "pageCount": 24
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "battery_condition",
+          "title": "Discharged or deteriorated batteries",
+          "summary": "A low battery warning does not, by itself, prove replacement is needed.",
+          "checks": [
+            "Compare the fault time with the last outage and recorded battery test."
+          ],
+          "likelihoods": {
+            "mains_message": 0.35,
+            "battery_message": 0.9,
+            "recent_outage": 0.8,
+            "disconnected_message": 0.1,
+            "charger_message": 0.25,
+            "battery_impedance": 0.8,
+            "battery_low_voltage": 0.9
+          },
+          "sources": [
+            {
+              "id": "ctec-cfp-engineer",
+              "title": "C-TEC CFP Standard Installation & Maintenance Manual DFU7004010 Rev 4 (1 November 2021)",
+              "url": "https://c-tec.com/download?wpdmdl=13537",
+              "recordId": "c-tec-fc443e51b6e1",
+              "page": 20,
+              "section": "§1.2 Power supply faults: low voltage and battery condition",
+              "appliesTo": "CFP Standard 2/4/8-zone conventional panels covered by Rev 4; do not apply its EOL, LED or diagnostic arrangements to AlarmSense or other panels.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view0",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7004010",
+              "revision": "Rev 4, 01/11/21",
+              "pageCount": 24
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "battery_path",
+          "title": "Battery connection or protection path",
+          "summary": "The standby supply may not be available to the panel.",
+          "checks": [
+            "Keep “disconnected”, “low” and “high impedance” messages separate in your notes.",
+            "Compare any high-impedance message with the last recorded battery/connection assessment; the message alone does not identify the component."
+          ],
+          "likelihoods": {
+            "mains_message": 0.15,
+            "battery_message": 0.9,
+            "recent_outage": 0.25,
+            "disconnected_message": 0.95,
+            "charger_message": 0.25,
+            "battery_impedance": 0.85,
+            "battery_low_voltage": 0.45
+          },
+          "sources": [
+            {
+              "id": "kentec-syncro",
+              "title": "Kentec Syncro Product Manual Man-1055 Issue 26 (May 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1055.pdf",
+              "recordId": "kentec-724b56a14295",
+              "page": 19,
+              "section": "§17 Power supply: displayed supply and battery faults",
+              "appliesTo": "Syncro models and Hochiki/Apollo/Argus protocol configurations covered by issue 26. Installed configuration and firmware determine the applicable behavior.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1055",
+              "revision": "Issue 26, May 2016",
+              "pageCount": 38,
+              "sha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd"
+            },
+            {
+              "id": "ctec-cfp-engineer",
+              "title": "C-TEC CFP Standard Installation & Maintenance Manual DFU7004010 Rev 4 (1 November 2021)",
+              "url": "https://c-tec.com/download?wpdmdl=13537",
+              "recordId": "c-tec-fc443e51b6e1",
+              "page": 20,
+              "section": "§1.2 Power supply faults: batteries and leads with high resistance",
+              "appliesTo": "CFP Standard 2/4/8-zone conventional panels covered by Rev 4; do not apply its EOL, LED or diagnostic arrangements to AlarmSense or other panels.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view0",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7004010",
+              "revision": "Rev 4, 01/11/21",
+              "pageCount": 24
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "charger_psu",
+          "title": "Charger or power-supply equipment fault",
+          "summary": "A supply indication can originate inside the equipment.",
+          "checks": [
+            "Record the charger message; open the exact-model diagnostic section."
+          ],
+          "likelihoods": {
+            "mains_message": 0.35,
+            "battery_message": 0.65,
+            "recent_outage": 0.2,
+            "disconnected_message": 0.15,
+            "charger_message": 0.95,
+            "battery_impedance": 0.4,
+            "battery_low_voltage": 0.7
+          },
+          "sources": [
+            {
+              "id": "kentec-syncro",
+              "title": "Kentec Syncro Product Manual Man-1055 Issue 26 (May 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1055.pdf",
+              "recordId": "kentec-724b56a14295",
+              "page": 19,
+              "section": "§17 Power supply: displayed supply and battery faults",
+              "appliesTo": "Syncro models and Hochiki/Apollo/Argus protocol configurations covered by issue 26. Installed configuration and firmware determine the applicable behavior.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1055",
+              "revision": "Issue 26, May 2016",
+              "pageCount": 38,
+              "sha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd"
+            }
+          ],
+          "status": "hypothesis"
+        }
+      ],
+      "category": "fire"
+    },
+    {
+      "id": "loop",
+      "title": "Loop open / short circuit",
+      "subtitle": "Loop integrity or isolated section",
+      "questions": [
+        {
+          "id": "loop_open",
+          "text": "Does the fault text specifically say loop open circuit?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 11,
+              "section": "§9 Detection circuits: power from both OUT and IN after an open circuit"
+            }
+          ]
+        },
+        {
+          "id": "loop_short",
+          "text": "Does it explicitly report a loop short circuit?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 11,
+              "section": "§9 Detection circuits: power from both OUT and IN after an open circuit"
+            },
+            {
+              "sourceId": "gent-ops-1999",
+              "page": 15,
+              "section": "Typical fault messages"
+            }
+          ]
+        },
+        {
+          "id": "isolator",
+          "text": "Is an operated isolator already indicated or documented?",
+          "hint": "Record its location if known. Do not operate or bypass it for this question.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 11,
+              "section": "§9 Detection circuits: power from both OUT and IN after an open circuit"
+            }
+          ]
+        },
+        {
+          "id": "integrity",
+          "text": "Does the panel report high resistance / circuit integrity instead?",
+          "hint": "Only answer Yes when this is the actual indication.",
+          "sourceRefs": [
+            {
+              "sourceId": "advanced-mxpro5-features",
+              "page": 12,
+              "section": "Hardware Features / Wiring fault monitoring (PDF page 7, left-hand printed page 12)",
+              "pdfPage": 7
+            },
+            {
+              "sourceId": "advanced-mxpro5-release-notes",
+              "page": null,
+              "section": "v60.03.00: EN54-13 monitoring disabled as default"
+            }
+          ]
+        },
+        {
+          "id": "works",
+          "text": "Did the fault start immediately after documented cable or device work?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "hochiki-esp-comms",
+              "page": null,
+              "section": "Symptoms; Likely causes"
+            }
+          ]
+        },
+        {
+          "id": "loop_bad_data",
+          "text": "Does the panel explicitly report bad data on this loop?",
+          "hint": "Only use a displayed or logged bad-data message. Do not start an engineer diagnostic test to answer.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 32,
+              "section": "§25.1 Loop Data Test: bad data and possible sources"
+            }
+          ]
+        },
+        {
+          "id": "loop_all_devices_present",
+          "text": "Does the current device-status list show every expected address on this loop?",
+          "hint": "A single open circuit can leave devices communicating from both loop ends. Use a complete current list; if you only know that no missing-device warning is shown, choose I don’t know.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 11,
+              "section": "§9 Detection circuits: power from both OUT and IN after an open circuit"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "loop_break",
+          "title": "Broken or interrupted loop path",
+          "summary": "An interrupted loop can still leave all addresses communicating when the panel supplies the circuit from both ends.",
+          "checks": [
+            "Compare the first fault time with the work log.",
+            "Record the loop number and which devices remain visible.",
+            "Keep the open-circuit indication and the device-status list together; all addresses present does not prove loop continuity."
+          ],
+          "likelihoods": {
+            "loop_open": 0.9,
+            "loop_short": 0.1,
+            "isolator": 0.15,
+            "integrity": 0.2,
+            "works": 0.8,
+            "loop_bad_data": 0.25,
+            "loop_all_devices_present": 0.85
+          },
+          "sources": [
+            {
+              "id": "kentec-syncro",
+              "title": "Kentec Syncro Product Manual Man-1055 Issue 26 (May 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1055.pdf",
+              "recordId": "kentec-724b56a14295",
+              "page": 11,
+              "section": "§9 Detection circuits: power from both OUT and IN after an open circuit",
+              "appliesTo": "Syncro models and Hochiki/Apollo/Argus protocol configurations covered by issue 26. Installed configuration and firmware determine the applicable behavior.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1055",
+              "revision": "Issue 26, May 2016",
+              "pageCount": 38,
+              "sha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd"
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "loop_isolated_short",
+          "title": "Shorted section isolated from the loop",
+          "summary": "An operated isolator can leave the remaining loop communicating.",
+          "checks": [
+            "Record every associated short / isolator indication.",
+            "Use the loop drawing to note the affected section."
+          ],
+          "likelihoods": {
+            "loop_open": 0.75,
+            "loop_short": 0.95,
+            "isolator": 0.95,
+            "integrity": 0.15,
+            "works": 0.55,
+            "loop_bad_data": 0.35,
+            "loop_all_devices_present": 0.65
+          },
+          "sources": [
+            {
+              "id": "kentec-syncro",
+              "title": "Kentec Syncro Product Manual Man-1055 Issue 26 (May 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1055.pdf",
+              "recordId": "kentec-724b56a14295",
+              "page": 11,
+              "section": "§9 Detection circuits: power from both OUT and IN after an open circuit",
+              "appliesTo": "Syncro models and Hochiki/Apollo/Argus protocol configurations covered by issue 26. Installed configuration and firmware determine the applicable behavior.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1055",
+              "revision": "Issue 26, May 2016",
+              "pageCount": 38,
+              "sha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd"
+            },
+            {
+              "id": "gent-ops-1999",
+              "title": "GENT Vigilon Operating Manual VIG-MAN-OPS, Issue 1, January 1999",
+              "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/manuals-and-guides/repair-and-maintenance-guides/gent-112425/hon-ba-fire-vigop.pdf?download=false",
+              "recordId": "gent-f03fe5ba8e30",
+              "page": 15,
+              "section": "Typical fault messages",
+              "appliesTo": "Legacy Vigilon covered by VIG-MAN-OPS issue 1 (1999); message examples are not universal GENT wording.",
+              "publisher": "GENT / Honeywell",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn271view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "VIG-MAN-OPS",
+              "revision": "Issue 1, January 1999",
+              "pageCount": 58
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "loop_connection",
+          "title": "Poor connection or circuit integrity",
+          "summary": "Connection quality can affect a monitored circuit.",
+          "checks": [
+            "Compare any displayed integrity warning with the model’s monitoring description."
+          ],
+          "likelihoods": {
+            "loop_open": 0.55,
+            "loop_short": 0.15,
+            "isolator": 0.2,
+            "integrity": 0.9,
+            "works": 0.75,
+            "loop_bad_data": 0.85,
+            "loop_all_devices_present": 0.75
+          },
+          "sources": [
+            {
+              "id": "kentec-syncro",
+              "title": "Kentec Syncro Product Manual Man-1055 Issue 26 (May 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1055.pdf",
+              "recordId": "kentec-724b56a14295",
+              "page": 32,
+              "section": "§25.1 Loop Data Test: bad data and possible sources",
+              "appliesTo": "Syncro models and Hochiki/Apollo/Argus protocol configurations covered by issue 26. Installed configuration and firmware determine the applicable behavior.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1055",
+              "revision": "Issue 26, May 2016",
+              "pageCount": 38,
+              "sha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd"
+            },
+            {
+              "id": "advanced-mxpro5-features",
+              "title": "Advanced MxPro 5 UK/Ireland brochure: Hardware Features",
+              "url": "https://www.advancedco.com/wp-content/uploads/MxPro-5-UK-IRE-Brochure-KC.pdf",
+              "recordId": null,
+              "page": 12,
+              "section": "Hardware Features / Wiring fault monitoring (PDF page 7, left-hand printed page 12)",
+              "appliesTo": "MxPro 5 with the relevant transmission-path monitoring enabled. This brochure does not establish the fault text, threshold or enabled state on another panel.",
+              "publisher": "Advanced Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn293view0",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "pageCount": 17,
+              "pdfPage": 7,
+              "revision": "Edition hosted on 30 October 2026; revision not stated in the cited table"
+            }
+          ],
+          "status": "hypothesis"
+        }
+      ],
+      "category": "fire"
+    },
+    {
+      "id": "earth",
+      "title": "Earth fault",
+      "subtitle": "Unwanted path to earth",
+      "questions": [
+        {
+          "id": "water",
+          "text": "Is water ingress or dampness already visible at relevant equipment?",
+          "hint": "Observe from a safe position; do not touch wet electrical equipment.",
+          "sourceRefs": [
+            {
+              "sourceId": "hochiki-esp-comms",
+              "page": null,
+              "section": "Symptoms; Likely causes"
+            }
+          ]
+        },
+        {
+          "id": "weather",
+          "text": "Do the recorded fault times coincide with rain or condensation?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "hochiki-esp-comms",
+              "page": null,
+              "section": "Symptoms; Likely causes"
+            }
+          ]
+        },
+        {
+          "id": "visible_damage",
+          "text": "Is cable or enclosure damage visible near the affected area?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 30,
+              "section": "§24.4 Power supply: earth-fault detection"
+            }
+          ]
+        },
+        {
+          "id": "earth_confirmed",
+          "text": "Does the panel actually identify an earth fault?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 19,
+              "section": "§17 Power supply: displayed supply and battery faults"
+            }
+          ]
+        },
+        {
+          "id": "earth_after_work",
+          "text": "Did the earth fault first appear after recorded work in the affected area?",
+          "hint": "Use timestamps in the existing work and fault records. Timing is context, not proof that the work caused the fault.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 30,
+              "section": "§24.4 Power supply: earth-fault detection"
+            },
+            {
+              "sourceId": "hochiki-esp-comms",
+              "page": null,
+              "section": "Symptoms; Likely causes"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "earth_moisture",
+          "title": "Moisture-related leakage",
+          "summary": "Water ingress is a possible source of an earth path.",
+          "checks": [
+            "Record the location and weather pattern for the engineer’s investigation."
+          ],
+          "likelihoods": {
+            "water": 0.95,
+            "weather": 0.85,
+            "visible_damage": 0.4,
+            "earth_confirmed": 0.9,
+            "earth_after_work": 0.35
+          },
+          "sources": [
+            {
+              "id": "hochiki-esp-comms",
+              "title": "Hochiki Europe: Why do several devices on my addressable loop report random communication faults?",
+              "url": "https://web.hochikieurope.com/en-gb/knowledge-base/random-communication-faults-on-hochiki-esp-addressable-loops",
+              "recordId": null,
+              "page": null,
+              "section": "Symptoms; Likely causes",
+              "appliesTo": "Hochiki ESP analogue addressable loops in the UK/Europe, including the listed ESP sensors, modules and call points; not every addressable protocol.",
+              "publisher": "Hochiki Europe",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn257view4",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "sourceType": "manufacturer-support-webpage"
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "earth_path",
+          "title": "Circuit conductor contacting earth",
+          "summary": "An unintended conductive path needs localisation.",
+          "checks": [
+            "Record visible damage and associated faults.",
+            "Record the exact earth-fault description and panel model from the normal front display."
+          ],
+          "likelihoods": {
+            "water": 0.25,
+            "weather": 0.3,
+            "visible_damage": 0.85,
+            "earth_confirmed": 0.9,
+            "earth_after_work": 0.8
+          },
+          "sources": [
+            {
+              "id": "kentec-syncro",
+              "title": "Kentec Syncro Product Manual Man-1055 Issue 26 (May 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1055.pdf",
+              "recordId": "kentec-724b56a14295",
+              "page": 30,
+              "section": "§24.4 Power supply: earth-fault detection",
+              "appliesTo": "Syncro models and Hochiki/Apollo/Argus protocol configurations covered by issue 26. Installed configuration and firmware determine the applicable behavior.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1055",
+              "revision": "Issue 26, May 2016",
+              "pageCount": 38,
+              "sha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd"
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "earth_unlocalised",
+          "title": "Earth fault not yet localised",
+          "summary": "The available observations do not locate the affected circuit or component.",
+          "checks": [
+            "Capture the full fault list for model-specific investigation."
+          ],
+          "likelihoods": {
+            "water": 0.4,
+            "weather": 0.4,
+            "visible_damage": 0.4,
+            "earth_confirmed": 0.65,
+            "earth_after_work": 0.5
+          },
+          "sources": [
+            {
+              "id": "kentec-syncro",
+              "title": "Kentec Syncro Product Manual Man-1055 Issue 26 (May 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1055.pdf",
+              "recordId": "kentec-724b56a14295",
+              "page": 30,
+              "section": "§24.4 Power supply: earth-fault detection",
+              "appliesTo": "Syncro models and Hochiki/Apollo/Argus protocol configurations covered by issue 26. Installed configuration and firmware determine the applicable behavior.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1055",
+              "revision": "Issue 26, May 2016",
+              "pageCount": 38,
+              "sha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd"
+            }
+          ],
+          "status": "hypothesis"
+        }
+      ],
+      "category": "fire"
+    },
+    {
+      "id": "device",
+      "title": "Missing device / communication",
+      "subtitle": "Lost, unexpected or unreliable address",
+      "questions": [
+        {
+          "id": "single",
+          "text": "Is the same single address affected each time?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "gent-ops-1999",
+              "page": 15,
+              "section": "Typical fault messages"
+            },
+            {
+              "sourceId": "hochiki-esp-comms",
+              "page": null,
+              "section": "Symptoms; Likely causes"
+            }
+          ]
+        },
+        {
+          "id": "many",
+          "text": "Are several addresses on one loop affected together?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "hochiki-esp-comms",
+              "page": null,
+              "section": "Symptoms; Likely causes"
+            }
+          ]
+        },
+        {
+          "id": "changed",
+          "text": "Was a device replaced or configuration changed just before this started?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "hochiki-esp-comms",
+              "page": null,
+              "section": "Symptoms; Likely causes"
+            }
+          ]
+        },
+        {
+          "id": "mismatch",
+          "text": "Does the display report an unexpected device, wrong type or duplicate address?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 9,
+              "section": "§7.2 Configuring the panel: double addresses"
+            },
+            {
+              "sourceId": "hochiki-esp-comms",
+              "page": null,
+              "section": "Symptoms; Likely causes"
+            }
+          ]
+        },
+        {
+          "id": "removed",
+          "text": "Is the identified device visibly missing from its normal position?",
+          "hint": "Do not remove a device to answer this.",
+          "sourceRefs": [
+            {
+              "sourceId": "gent-ops-1999",
+              "page": 15,
+              "section": "Typical fault messages"
+            },
+            {
+              "sourceId": "ctec-cfp-user",
+              "page": 9,
+              "section": "Fault conditions: detector removal on conventional zones"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "local_device",
+          "title": "Local device or connection problem",
+          "summary": "A lost-device indication identifies failed communication, not necessarily a failed detector.",
+          "checks": [
+            "Note the exact loop/address and the visible device identity."
+          ],
+          "likelihoods": {
+            "single": 0.9,
+            "many": 0.15,
+            "changed": 0.55,
+            "mismatch": 0.2,
+            "removed": 0.95
+          },
+          "sources": [
+            {
+              "id": "gent-ops-1999",
+              "title": "GENT Vigilon Operating Manual VIG-MAN-OPS, Issue 1, January 1999",
+              "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/manuals-and-guides/repair-and-maintenance-guides/gent-112425/hon-ba-fire-vigop.pdf?download=false",
+              "recordId": "gent-f03fe5ba8e30",
+              "page": 15,
+              "section": "Typical fault messages",
+              "appliesTo": "Legacy Vigilon covered by VIG-MAN-OPS issue 1 (1999); message examples are not universal GENT wording.",
+              "publisher": "GENT / Honeywell",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn271view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "VIG-MAN-OPS",
+              "revision": "Issue 1, January 1999",
+              "pageCount": 58
+            },
+            {
+              "id": "hochiki-esp-comms",
+              "title": "Hochiki Europe: Why do several devices on my addressable loop report random communication faults?",
+              "url": "https://web.hochikieurope.com/en-gb/knowledge-base/random-communication-faults-on-hochiki-esp-addressable-loops",
+              "recordId": null,
+              "page": null,
+              "section": "Symptoms; Likely causes",
+              "appliesTo": "Hochiki ESP analogue addressable loops in the UK/Europe, including the listed ESP sensors, modules and call points; not every addressable protocol.",
+              "publisher": "Hochiki Europe",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn257view4",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "sourceType": "manufacturer-support-webpage"
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "shared_loop",
+          "title": "Shared loop communication problem",
+          "summary": "A common path problem may affect several addresses.",
+          "checks": [
+            "Compare fault timestamps and locations on the loop drawing."
+          ],
+          "likelihoods": {
+            "single": 0.25,
+            "many": 0.95,
+            "changed": 0.45,
+            "mismatch": 0.2,
+            "removed": 0.15
+          },
+          "sources": [
+            {
+              "id": "hochiki-esp-comms",
+              "title": "Hochiki Europe: Why do several devices on my addressable loop report random communication faults?",
+              "url": "https://web.hochikieurope.com/en-gb/knowledge-base/random-communication-faults-on-hochiki-esp-addressable-loops",
+              "recordId": null,
+              "page": null,
+              "section": "Symptoms; Likely causes",
+              "appliesTo": "Hochiki ESP analogue addressable loops in the UK/Europe, including the listed ESP sensors, modules and call points; not every addressable protocol.",
+              "publisher": "Hochiki Europe",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn257view4",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "sourceType": "manufacturer-support-webpage"
+            },
+            {
+              "id": "kentec-syncro",
+              "title": "Kentec Syncro Product Manual Man-1055 Issue 26 (May 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1055.pdf",
+              "recordId": "kentec-724b56a14295",
+              "page": 32,
+              "section": "§25.1 Loop Data Test: bad data and possible sources",
+              "appliesTo": "Syncro models and Hochiki/Apollo/Argus protocol configurations covered by issue 26. Installed configuration and firmware determine the applicable behavior.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1055",
+              "revision": "Issue 26, May 2016",
+              "pageCount": 38,
+              "sha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd"
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "device_config",
+          "title": "Device / configuration mismatch",
+          "summary": "The installed equipment and stored device list may differ.",
+          "checks": [
+            "Compare the current inventory with the approved device schedule without changing either."
+          ],
+          "likelihoods": {
+            "single": 0.65,
+            "many": 0.55,
+            "changed": 0.9,
+            "mismatch": 0.95,
+            "removed": 0.2
+          },
+          "sources": [
+            {
+              "id": "kentec-syncro",
+              "title": "Kentec Syncro Product Manual Man-1055 Issue 26 (May 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1055.pdf",
+              "recordId": "kentec-724b56a14295",
+              "page": 9,
+              "section": "§7.2 Configuring the panel: double addresses",
+              "appliesTo": "Syncro models and Hochiki/Apollo/Argus protocol configurations covered by issue 26. Installed configuration and firmware determine the applicable behavior.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1055",
+              "revision": "Issue 26, May 2016",
+              "pageCount": 38,
+              "sha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd"
+            },
+            {
+              "id": "hochiki-esp-comms",
+              "title": "Hochiki Europe: Why do several devices on my addressable loop report random communication faults?",
+              "url": "https://web.hochikieurope.com/en-gb/knowledge-base/random-communication-faults-on-hochiki-esp-addressable-loops",
+              "recordId": null,
+              "page": null,
+              "section": "Symptoms; Likely causes",
+              "appliesTo": "Hochiki ESP analogue addressable loops in the UK/Europe, including the listed ESP sensors, modules and call points; not every addressable protocol.",
+              "publisher": "Hochiki Europe",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn257view4",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "sourceType": "manufacturer-support-webpage"
+            }
+          ],
+          "status": "hypothesis"
+        }
+      ],
+      "category": "fire"
+    },
+    {
+      "id": "sounder",
+      "title": "Sounder / monitored output",
+      "subtitle": "Sounder fault, open or short indication",
+      "questions": [
+        {
+          "id": "output_open",
+          "text": "Does the message explicitly say output / sounder open circuit?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 15,
+              "section": "§11 Panel Sounder circuits; §12 Sounder controllers"
+            },
+            {
+              "sourceId": "gent-ops-1999",
+              "page": 15,
+              "section": "Typical fault messages"
+            }
+          ]
+        },
+        {
+          "id": "output_short",
+          "text": "Does it explicitly say output / sounder short circuit?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 15,
+              "section": "§11 Panel Sounder circuits; §12 Sounder controllers"
+            },
+            {
+              "sourceId": "gent-ops-1999",
+              "page": 15,
+              "section": "Typical fault messages"
+            }
+          ]
+        },
+        {
+          "id": "disablement",
+          "text": "Is the indication labelled disablement rather than fault?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "gent-ops-1999",
+              "page": 17,
+              "section": "Typical disablement messages"
+            },
+            {
+              "sourceId": "ctec-cfp-user",
+              "page": 10,
+              "section": "Disablements: option/effect table"
+            }
+          ]
+        },
+        {
+          "id": "output_changed",
+          "text": "Was this circuit altered shortly before the indication appeared?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 15,
+              "section": "§11 Panel Sounder circuits; §12 Sounder controllers"
+            }
+          ]
+        },
+        {
+          "id": "output_supply_fault",
+          "text": "Does the panel report a power-supply fault for this output?",
+          "hint": "Use the fault assigned to this output or its identified sounder controller, not an unrelated supply fault elsewhere.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 15,
+              "section": "§11 Panel Sounder circuits; §12 Sounder controllers"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "sounder_open",
+          "title": "Open circuit or end-of-line path",
+          "summary": "The supervised path may be incomplete.",
+          "checks": [
+            "Record the output number and the documented end-of-line arrangement."
+          ],
+          "likelihoods": {
+            "output_open": 0.95,
+            "output_short": 0.1,
+            "disablement": 0.1,
+            "output_changed": 0.8,
+            "output_supply_fault": 0.25
+          },
+          "sources": [
+            {
+              "id": "kentec-syncro",
+              "title": "Kentec Syncro Product Manual Man-1055 Issue 26 (May 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1055.pdf",
+              "recordId": "kentec-724b56a14295",
+              "page": 15,
+              "section": "§11 Panel Sounder circuits; §12 Sounder controllers",
+              "appliesTo": "Syncro models and Hochiki/Apollo/Argus protocol configurations covered by issue 26. Installed configuration and firmware determine the applicable behavior.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1055",
+              "revision": "Issue 26, May 2016",
+              "pageCount": 38,
+              "sha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd"
+            },
+            {
+              "id": "gent-ops-1999",
+              "title": "GENT Vigilon Operating Manual VIG-MAN-OPS, Issue 1, January 1999",
+              "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/manuals-and-guides/repair-and-maintenance-guides/gent-112425/hon-ba-fire-vigop.pdf?download=false",
+              "recordId": "gent-f03fe5ba8e30",
+              "page": 15,
+              "section": "Typical fault messages",
+              "appliesTo": "Legacy Vigilon covered by VIG-MAN-OPS issue 1 (1999); message examples are not universal GENT wording.",
+              "publisher": "GENT / Honeywell",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn271view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "VIG-MAN-OPS",
+              "revision": "Issue 1, January 1999",
+              "pageCount": 58
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "sounder_short",
+          "title": "Short circuit on the monitored output",
+          "summary": "The output’s monitored wiring needs model-specific investigation.",
+          "checks": [
+            "Record the circuit number and any related device faults."
+          ],
+          "likelihoods": {
+            "output_open": 0.1,
+            "output_short": 0.95,
+            "disablement": 0.1,
+            "output_changed": 0.7,
+            "output_supply_fault": 0.35
+          },
+          "sources": [
+            {
+              "id": "kentec-syncro",
+              "title": "Kentec Syncro Product Manual Man-1055 Issue 26 (May 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1055.pdf",
+              "recordId": "kentec-724b56a14295",
+              "page": 15,
+              "section": "§11 Panel Sounder circuits; §12 Sounder controllers",
+              "appliesTo": "Syncro models and Hochiki/Apollo/Argus protocol configurations covered by issue 26. Installed configuration and firmware determine the applicable behavior.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1055",
+              "revision": "Issue 26, May 2016",
+              "pageCount": 38,
+              "sha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd"
+            },
+            {
+              "id": "gent-ops-1999",
+              "title": "GENT Vigilon Operating Manual VIG-MAN-OPS, Issue 1, January 1999",
+              "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/manuals-and-guides/repair-and-maintenance-guides/gent-112425/hon-ba-fire-vigop.pdf?download=false",
+              "recordId": "gent-f03fe5ba8e30",
+              "page": 15,
+              "section": "Typical fault messages",
+              "appliesTo": "Legacy Vigilon covered by VIG-MAN-OPS issue 1 (1999); message examples are not universal GENT wording.",
+              "publisher": "GENT / Honeywell",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn271view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "VIG-MAN-OPS",
+              "revision": "Issue 1, January 1999",
+              "pageCount": 58
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "sounder_disabled",
+          "title": "Output is intentionally or automatically disabled",
+          "summary": "Disablement and hardware fault are different conditions.",
+          "checks": [
+            "Compare the display with the site’s current impairment record."
+          ],
+          "likelihoods": {
+            "output_open": 0.1,
+            "output_short": 0.1,
+            "disablement": 0.95,
+            "output_changed": 0.5,
+            "output_supply_fault": 0.1
+          },
+          "sources": [
+            {
+              "id": "gent-ops-1999",
+              "title": "GENT Vigilon Operating Manual VIG-MAN-OPS, Issue 1, January 1999",
+              "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/manuals-and-guides/repair-and-maintenance-guides/gent-112425/hon-ba-fire-vigop.pdf?download=false",
+              "recordId": "gent-f03fe5ba8e30",
+              "page": 17,
+              "section": "Typical disablement messages",
+              "appliesTo": "Legacy Vigilon covered by VIG-MAN-OPS issue 1 (1999); message examples are not universal GENT wording.",
+              "publisher": "GENT / Honeywell",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn271view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "VIG-MAN-OPS",
+              "revision": "Issue 1, January 1999",
+              "pageCount": 58
+            },
+            {
+              "id": "ctec-cfp-user",
+              "title": "C-TEC CFP 2/4/8-zone User Manual & Log Book DFU7001020 Rev 2",
+              "url": "https://c-tec.com/download?wpdmdl=12076",
+              "recordId": null,
+              "page": 10,
+              "section": "Disablements: option/effect table",
+              "appliesTo": "CFP models listed in DFU7001020 Rev 2. Delay indicators and available functions vary by model; use the normal, non-selection display.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7001020",
+              "revision": "Rev 2",
+              "pageCount": 20,
+              "sha256": "f4445ea23e6f6fc95a6732ed57b6591dac6d85b3e26f7c6b81dabcec0c0d5333"
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "sounder_supply",
+          "title": "Monitored output supply problem",
+          "summary": "Some sounder controllers supervise a separate supply as well as the output wiring.",
+          "checks": [
+            "Record the controller identity and its supply message.",
+            "Compare the output with the existing supply schedule."
+          ],
+          "likelihoods": {
+            "output_open": 0.3,
+            "output_short": 0.35,
+            "disablement": 0.1,
+            "output_changed": 0.45,
+            "output_supply_fault": 0.95
+          },
+          "sources": [
+            {
+              "id": "kentec-syncro",
+              "title": "Kentec Syncro Product Manual Man-1055 Issue 26 (May 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1055.pdf",
+              "recordId": "kentec-724b56a14295",
+              "page": 15,
+              "section": "§11 Panel Sounder circuits; §12 Sounder controllers",
+              "appliesTo": "Syncro models and Hochiki/Apollo/Argus protocol configurations covered by issue 26. Installed configuration and firmware determine the applicable behavior.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1055",
+              "revision": "Issue 26, May 2016",
+              "pageCount": 38,
+              "sha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd"
+            }
+          ],
+          "status": "hypothesis"
+        }
+      ],
+      "category": "fire"
+    },
+    {
+      "id": "network",
+      "title": "Network / repeater",
+      "subtitle": "Missing node or communication fault",
+      "questions": [
+        {
+          "id": "node_dark",
+          "text": "Is the affected remote panel visibly unpowered?",
+          "hint": "Use its normal front indicators; do not interrupt its supply.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-network",
+              "page": 12,
+              "section": "§12.4 Network node missing: loss of power or both network paths"
+            }
+          ]
+        },
+        {
+          "id": "network_open",
+          "text": "Does the display specifically report a network open / short circuit?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-network",
+              "page": 11,
+              "section": "§12.1 Network open or short circuit fault"
+            }
+          ]
+        },
+        {
+          "id": "network_changed",
+          "text": "Did the fault follow a recorded node / network configuration change?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-network",
+              "page": 12,
+              "section": "§12.2–12.8: card, node, addressing and communications faults"
+            }
+          ]
+        },
+        {
+          "id": "address_message",
+          "text": "Does it explicitly mention incorrect address or unexpected node / card?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-network",
+              "page": 12,
+              "section": "§12.2–12.8: card, node, addressing and communications faults"
+            }
+          ]
+        },
+        {
+          "id": "local_normal",
+          "text": "Does the remote panel show normal local operation while the network fault remains?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-network",
+              "page": 11,
+              "section": "§12.1 Network open or short circuit fault"
+            },
+            {
+              "sourceId": "kentec-network",
+              "page": 12,
+              "section": "§12.4 Network node missing: loss of power or both network paths"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "network_path",
+          "title": "Network transmission path problem",
+          "summary": "Communication between nodes may be interrupted.",
+          "checks": [
+            "Record which nodes report the fault and their neighbouring nodes."
+          ],
+          "likelihoods": {
+            "node_dark": 0.15,
+            "network_open": 0.95,
+            "network_changed": 0.5,
+            "address_message": 0.15,
+            "local_normal": 0.9
+          },
+          "sources": [
+            {
+              "id": "kentec-network",
+              "title": "Kentec Syncro Networking Manual Man-1058 Issue 06 (December 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1058.pdf",
+              "recordId": "kentec-d90c17977bf2",
+              "page": 11,
+              "section": "§12.1 Network open or short circuit fault",
+              "appliesTo": "Syncro network covered by issue 06; node numbering, processing and fault descriptions are model-specific.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view3",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1058",
+              "revision": "Issue 06, December 2016",
+              "pageCount": 12
+            },
+            {
+              "id": "kentec-network",
+              "title": "Kentec Syncro Networking Manual Man-1058 Issue 06 (December 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1058.pdf",
+              "recordId": "kentec-d90c17977bf2",
+              "page": 12,
+              "section": "§12.2–12.8: card, node, addressing and communications faults",
+              "appliesTo": "Syncro network covered by issue 06; node numbering, processing and fault descriptions are model-specific.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view3",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1058",
+              "revision": "Issue 06, December 2016",
+              "pageCount": 12
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "node_power",
+          "title": "Remote node power or equipment problem",
+          "summary": "A remote unit may be unavailable while other equipment remains active.",
+          "checks": [
+            "Record the remote panel’s visible supply and fault indications."
+          ],
+          "likelihoods": {
+            "node_dark": 0.95,
+            "network_open": 0.25,
+            "network_changed": 0.2,
+            "address_message": 0.15,
+            "local_normal": 0.1
+          },
+          "sources": [
+            {
+              "id": "kentec-network",
+              "title": "Kentec Syncro Networking Manual Man-1058 Issue 06 (December 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1058.pdf",
+              "recordId": "kentec-d90c17977bf2",
+              "page": 12,
+              "section": "§12.4 Network node missing: loss of power or both network paths",
+              "appliesTo": "Syncro network covered by issue 06; node numbering, processing and fault descriptions are model-specific.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view3",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1058",
+              "revision": "Issue 06, December 2016",
+              "pageCount": 12
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "network_config",
+          "title": "Node addressing / configuration mismatch",
+          "summary": "The expected network and reported node identity may differ.",
+          "checks": [
+            "Compare node labels with the approved network schedule."
+          ],
+          "likelihoods": {
+            "node_dark": 0.1,
+            "network_open": 0.15,
+            "network_changed": 0.9,
+            "address_message": 0.95,
+            "local_normal": 0.8
+          },
+          "sources": [
+            {
+              "id": "kentec-network",
+              "title": "Kentec Syncro Networking Manual Man-1058 Issue 06 (December 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1058.pdf",
+              "recordId": "kentec-d90c17977bf2",
+              "page": 12,
+              "section": "§12.2–12.8: card, node, addressing and communications faults",
+              "appliesTo": "Syncro network covered by issue 06; node numbering, processing and fault descriptions are model-specific.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view3",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1058",
+              "revision": "Issue 06, December 2016",
+              "pageCount": 12
+            }
+          ],
+          "status": "hypothesis"
+        }
+      ],
+      "category": "fire"
+    },
+    {
+      "id": "system",
+      "title": "System / processor fault",
+      "subtitle": "System, watchdog or memory indication",
+      "questions": [
+        {
+          "id": "watchdog",
+          "text": "Does the fault text specifically mention watchdog / processor restart?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-engineer",
+              "page": 21,
+              "section": "§1.3 System faults: watchdog"
+            }
+          ]
+        },
+        {
+          "id": "memory",
+          "text": "Does it explicitly mention memory, configuration or checksum?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-engineer",
+              "page": 21,
+              "section": "§1.3 System faults: site memory corruption"
+            }
+          ]
+        },
+        {
+          "id": "recurring",
+          "text": "Has the same fault returned according to the event log?",
+          "hint": "Use the displayed information or existing records; choose “I don’t know” if unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-engineer",
+              "page": 21,
+              "section": "§1.3 System faults"
+            },
+            {
+              "sourceId": "gent-ops-1999",
+              "page": 14,
+              "section": "Fault conditions: historic events"
+            }
+          ]
+        },
+        {
+          "id": "system_generic_only",
+          "text": "Is System Fault the only available description?",
+          "hint": "Answer Yes if neither the normal display nor existing service records identify a more specific system fault. Do not open the panel for a diagnostic code.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-user",
+              "page": 9,
+              "section": "Fault conditions: System Fault"
+            }
+          ]
+        },
+        {
+          "id": "system_recent_config",
+          "text": "Was a configuration change recorded immediately before the fault?",
+          "hint": "Read the work log or existing event report. A preceding change is context and does not prove corruption.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-engineer",
+              "page": 21,
+              "section": "§1.3 System faults: site-specific data"
+            },
+            {
+              "sourceId": "advanced-mxpro5-release-notes",
+              "page": null,
+              "section": "v60.03.00: Configuration changes are now logged"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "processor",
+          "title": "Processor / watchdog event",
+          "summary": "The indication needs panel-specific assessment.",
+          "checks": [
+            "Preserve the event history and exact message for technical support."
+          ],
+          "likelihoods": {
+            "watchdog": 0.95,
+            "memory": 0.2,
+            "recurring": 0.6,
+            "system_generic_only": 0.3,
+            "system_recent_config": 0.35
+          },
+          "sources": [
+            {
+              "id": "ctec-cfp-engineer",
+              "title": "C-TEC CFP Standard Installation & Maintenance Manual DFU7004010 Rev 4 (1 November 2021)",
+              "url": "https://c-tec.com/download?wpdmdl=13537",
+              "recordId": "c-tec-fc443e51b6e1",
+              "page": 21,
+              "section": "§1.3 System faults",
+              "appliesTo": "CFP Standard 2/4/8-zone conventional panels covered by Rev 4; do not apply its EOL, LED or diagnostic arrangements to AlarmSense or other panels.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view0",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7004010",
+              "revision": "Rev 4, 01/11/21",
+              "pageCount": 24
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "memory_config",
+          "title": "Memory / configuration integrity issue",
+          "summary": "Stored data or control hardware may need specialist attention.",
+          "checks": [
+            "Record software identification if visible and the last documented change."
+          ],
+          "likelihoods": {
+            "watchdog": 0.3,
+            "memory": 0.95,
+            "recurring": 0.65,
+            "system_generic_only": 0.3,
+            "system_recent_config": 0.8
+          },
+          "sources": [
+            {
+              "id": "ctec-cfp-engineer",
+              "title": "C-TEC CFP Standard Installation & Maintenance Manual DFU7004010 Rev 4 (1 November 2021)",
+              "url": "https://c-tec.com/download?wpdmdl=13537",
+              "recordId": "c-tec-fc443e51b6e1",
+              "page": 21,
+              "section": "§1.3 System faults",
+              "appliesTo": "CFP Standard 2/4/8-zone conventional panels covered by Rev 4; do not apply its EOL, LED or diagnostic arrangements to AlarmSense or other panels.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view0",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7004010",
+              "revision": "Rev 4, 01/11/21",
+              "pageCount": 24
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "system_unclassified",
+          "title": "System fault not yet classified",
+          "summary": "A general system indication does not identify the internal failure by itself.",
+          "checks": [
+            "Keep the visible message and event time for technical support.",
+            "Record model and software details only if already available."
+          ],
+          "likelihoods": {
+            "watchdog": 0.15,
+            "memory": 0.15,
+            "recurring": 0.5,
+            "system_generic_only": 0.95,
+            "system_recent_config": 0.4
+          },
+          "sources": [
+            {
+              "id": "ctec-cfp-user",
+              "title": "C-TEC CFP 2/4/8-zone User Manual & Log Book DFU7001020 Rev 2",
+              "url": "https://c-tec.com/download?wpdmdl=12076",
+              "recordId": null,
+              "page": 9,
+              "section": "Fault conditions: System Fault",
+              "appliesTo": "CFP models listed in DFU7001020 Rev 2. Delay indicators and available functions vary by model; use the normal, non-selection display.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7001020",
+              "revision": "Rev 2",
+              "pageCount": 20,
+              "sha256": "f4445ea23e6f6fc95a6732ed57b6591dac6d85b3e26f7c6b81dabcec0c0d5333"
+            },
+            {
+              "id": "ctec-cfp-engineer",
+              "title": "C-TEC CFP Standard Installation & Maintenance Manual DFU7004010 Rev 4 (1 November 2021)",
+              "url": "https://c-tec.com/download?wpdmdl=13537",
+              "recordId": "c-tec-fc443e51b6e1",
+              "page": 21,
+              "section": "§1.3 System faults",
+              "appliesTo": "CFP Standard 2/4/8-zone conventional panels covered by Rev 4; do not apply its EOL, LED or diagnostic arrangements to AlarmSense or other panels.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view0",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7004010",
+              "revision": "Rev 4, 01/11/21",
+              "pageCount": 24
+            }
+          ],
+          "status": "hypothesis"
+        }
+      ],
+      "category": "fire"
+    },
+    {
+      "id": "fire_conventional_zone",
+      "title": "Conventional zone circuit",
+      "subtitle": "Zone wiring, detector removal or a zone control state",
+      "category": "fire",
+      "questions": [
+        {
+          "id": "cz_fault",
+          "text": "Is a fault indicated for a numbered detection zone?",
+          "hint": "Use the normal display or an existing service record. Choose “I don’t know” if this information is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-user",
+              "page": 9,
+              "section": "Fault conditions: Zone Faults"
+            }
+          ]
+        },
+        {
+          "id": "cz_open",
+          "text": "Does an existing report explicitly identify an open circuit on this zone?",
+          "hint": "Use a normal display or an existing engineer report. Some panels reveal this detail only behind the cover; choose I don’t know rather than opening it.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-engineer",
+              "page": 19,
+              "section": "§1.1 Zone faults"
+            }
+          ]
+        },
+        {
+          "id": "cz_short",
+          "text": "Does an existing report explicitly identify a short circuit on this zone?",
+          "hint": "Do not infer a short from a general zone lamp. Use an already available report or normal display.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-engineer",
+              "page": 19,
+              "section": "§1.1 Zone faults"
+            }
+          ]
+        },
+        {
+          "id": "cz_head_missing",
+          "text": "Is a detector head visibly absent from a base in this zone?",
+          "hint": "Observe from a safe position. Do not remove, reseat or reach a detector to answer.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-user",
+              "page": 9,
+              "section": "Fault conditions: Zone Faults"
+            }
+          ]
+        },
+        {
+          "id": "cz_recent_work",
+          "text": "Was work on this zone recorded just before the indication appeared?",
+          "hint": "Use the work record. The timing helps describe the incident but does not establish the cause.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-engineer",
+              "page": 19,
+              "section": "§1.1 Zone faults"
+            }
+          ]
+        },
+        {
+          "id": "cz_disabled",
+          "text": "Is the affected zone currently indicated as disabled?",
+          "hint": "Use the normal display or an existing service record. Choose “I don’t know” if this information is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-user",
+              "page": 10,
+              "section": "Disablements: option/effect table"
+            }
+          ]
+        },
+        {
+          "id": "cz_test",
+          "text": "Is the affected zone currently indicated as being in test?",
+          "hint": "Use the normal display or an existing service record. Choose “I don’t know” if this information is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-walktest",
+              "page": 2,
+              "section": "Step 5: identifying the final test state"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "cz_open_path",
+          "title": "Zone continuity or end-of-line path",
+          "summary": "The supervised zone path may be incomplete; the required termination is panel-specific.",
+          "checks": [
+            "Record the zone number and exact wording.",
+            "Compare with the approved zone drawing and existing service report."
+          ],
+          "likelihoods": {
+            "cz_fault": 0.9,
+            "cz_open": 0.95,
+            "cz_short": 0.1,
+            "cz_head_missing": 0.3,
+            "cz_recent_work": 0.75,
+            "cz_disabled": 0.1,
+            "cz_test": 0.1
+          },
+          "sources": [
+            {
+              "id": "ctec-cfp-engineer",
+              "title": "C-TEC CFP Standard Installation & Maintenance Manual DFU7004010 Rev 4 (1 November 2021)",
+              "url": "https://c-tec.com/download?wpdmdl=13537",
+              "recordId": "c-tec-fc443e51b6e1",
+              "page": 19,
+              "section": "§1.1 Zone faults",
+              "appliesTo": "CFP Standard 2/4/8-zone conventional panels covered by Rev 4; do not apply its EOL, LED or diagnostic arrangements to AlarmSense or other panels.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view0",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7004010",
+              "revision": "Rev 4, 01/11/21",
+              "pageCount": 24
+            },
+            {
+              "id": "ctec-cfp-engineer",
+              "title": "C-TEC CFP Standard Installation & Maintenance Manual DFU7004010 Rev 4 (1 November 2021)",
+              "url": "https://c-tec.com/download?wpdmdl=13537",
+              "recordId": "c-tec-fc443e51b6e1",
+              "page": 7,
+              "section": "Typical detector circuit wiring",
+              "appliesTo": "CFP Standard 2/4/8-zone conventional panels covered by Rev 4; do not apply its EOL, LED or diagnostic arrangements to AlarmSense or other panels.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view0",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7004010",
+              "revision": "Rev 4, 01/11/21",
+              "pageCount": 24
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "cz_short_path",
+          "title": "Shorted zone circuit",
+          "summary": "A short indication points to the zone circuit, without identifying the damaged part.",
+          "checks": [
+            "Record the short indication and any visible external damage.",
+            "Note the last documented work on that zone."
+          ],
+          "likelihoods": {
+            "cz_fault": 0.9,
+            "cz_open": 0.1,
+            "cz_short": 0.95,
+            "cz_head_missing": 0.2,
+            "cz_recent_work": 0.75,
+            "cz_disabled": 0.1,
+            "cz_test": 0.1
+          },
+          "sources": [
+            {
+              "id": "ctec-cfp-engineer",
+              "title": "C-TEC CFP Standard Installation & Maintenance Manual DFU7004010 Rev 4 (1 November 2021)",
+              "url": "https://c-tec.com/download?wpdmdl=13537",
+              "recordId": "c-tec-fc443e51b6e1",
+              "page": 19,
+              "section": "§1.1 Zone faults",
+              "appliesTo": "CFP Standard 2/4/8-zone conventional panels covered by Rev 4; do not apply its EOL, LED or diagnostic arrangements to AlarmSense or other panels.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view0",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7004010",
+              "revision": "Rev 4, 01/11/21",
+              "pageCount": 24
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "cz_removed_detector",
+          "title": "Detector head missing from its base",
+          "summary": "A removed detector can produce a conventional zone fault.",
+          "checks": [
+            "Record the visible empty base and zone.",
+            "Compare the device position with the existing zone plan."
+          ],
+          "likelihoods": {
+            "cz_fault": 0.9,
+            "cz_open": 0.65,
+            "cz_short": 0.1,
+            "cz_head_missing": 0.95,
+            "cz_recent_work": 0.65,
+            "cz_disabled": 0.1,
+            "cz_test": 0.1
+          },
+          "sources": [
+            {
+              "id": "ctec-cfp-user",
+              "title": "C-TEC CFP 2/4/8-zone User Manual & Log Book DFU7001020 Rev 2",
+              "url": "https://c-tec.com/download?wpdmdl=12076",
+              "recordId": null,
+              "page": 9,
+              "section": "Fault conditions: Zone Faults",
+              "appliesTo": "CFP models listed in DFU7001020 Rev 2. Delay indicators and available functions vary by model; use the normal, non-selection display.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7001020",
+              "revision": "Rev 2",
+              "pageCount": 20,
+              "sha256": "f4445ea23e6f6fc95a6732ed57b6591dac6d85b3e26f7c6b81dabcec0c0d5333"
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "cz_control_state",
+          "title": "Zone disabled or in test",
+          "summary": "The shared zone indicator may be describing an operating state rather than wiring failure.",
+          "checks": [
+            "Record the accompanying Disablement or Test indication.",
+            "Compare it with the current impairment or test record."
+          ],
+          "likelihoods": {
+            "cz_fault": 0.2,
+            "cz_open": 0.1,
+            "cz_short": 0.1,
+            "cz_head_missing": 0.15,
+            "cz_recent_work": 0.5,
+            "cz_disabled": 0.85,
+            "cz_test": 0.85
+          },
+          "sources": [
+            {
+              "id": "ctec-cfp-user",
+              "title": "C-TEC CFP 2/4/8-zone User Manual & Log Book DFU7001020 Rev 2",
+              "url": "https://c-tec.com/download?wpdmdl=12076",
+              "recordId": null,
+              "page": 7,
+              "section": "What the indicator lights mean",
+              "appliesTo": "CFP models listed in DFU7001020 Rev 2. Delay indicators and available functions vary by model; use the normal, non-selection display.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7001020",
+              "revision": "Rev 2",
+              "pageCount": 20,
+              "sha256": "f4445ea23e6f6fc95a6732ed57b6591dac6d85b3e26f7c6b81dabcec0c0d5333"
+            },
+            {
+              "id": "ctec-cfp-user",
+              "title": "C-TEC CFP 2/4/8-zone User Manual & Log Book DFU7001020 Rev 2",
+              "url": "https://c-tec.com/download?wpdmdl=12076",
+              "recordId": null,
+              "page": 10,
+              "section": "Disablements: option/effect table",
+              "appliesTo": "CFP models listed in DFU7001020 Rev 2. Delay indicators and available functions vary by model; use the normal, non-selection display.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7001020",
+              "revision": "Rev 2",
+              "pageCount": 20,
+              "sha256": "f4445ea23e6f6fc95a6732ed57b6591dac6d85b3e26f7c6b81dabcec0c0d5333"
+            },
+            {
+              "id": "ctec-cfp-walktest",
+              "title": "C-TEC application note 0005.0: CFP Walk Test Mode, DFU0000702 Rev 1",
+              "url": "https://c-tec.com/download?wpdmdl=12352",
+              "recordId": null,
+              "page": 2,
+              "section": "Step 5: identifying the final test state",
+              "appliesTo": "CFP panels covered by this application note. Cited only to identify an already active test condition, not to instruct entering test or opening the panel.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU0000702",
+              "revision": "Rev 1",
+              "pageCount": 2
+            }
+          ],
+          "status": "hypothesis"
+        }
+      ]
+    },
+    {
+      "id": "fire_unwanted_alarm",
+      "title": "Unwanted alarm follow-up",
+      "subtitle": "Review a completed incident; these answers cannot rule out fire",
+      "category": "fire",
+      "questions": [
+        {
+          "id": "ua_call_point",
+          "text": "Does the incident record identify a call point as the first alarm input?",
+          "hint": "Use the recorded first event. This does not show whether the activation was genuine, accidental or deliberate.",
+          "sourceRefs": [
+            {
+              "sourceId": "apollo-unwanted-alarms",
+              "page": null,
+              "section": "What are False Alarms, and how do they occur?; Manual Call Point related false alarms"
+            }
+          ]
+        },
+        {
+          "id": "ua_test",
+          "text": "Was a system test recorded at the time of the activation?",
+          "hint": "Use the test log for the completed incident; do not start a test.",
+          "sourceRefs": [
+            {
+              "sourceId": "apollo-unwanted-alarms",
+              "page": null,
+              "section": "What are False Alarms, and how do they occur?; Manual Call Point related false alarms"
+            }
+          ]
+        },
+        {
+          "id": "ua_steam",
+          "text": "Was steam recorded near the detector at the time?",
+          "hint": "Use contemporaneous observations from the completed incident; absence of a report means I don’t know.",
+          "sourceRefs": [
+            {
+              "sourceId": "hochiki-unwanted-alarms",
+              "page": null,
+              "section": "Common causes; §5 Investigate and record every false alarm"
+            }
+          ]
+        },
+        {
+          "id": "ua_cooking",
+          "text": "Were cooking fumes recorded near the detector at the time?",
+          "hint": "Use the normal display or an existing service record. Choose “I don’t know” if this information is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "apollo-unwanted-alarms",
+              "page": null,
+              "section": "What are False Alarms, and how do they occur?; Manual Call Point related false alarms"
+            },
+            {
+              "sourceId": "hochiki-unwanted-alarms",
+              "page": null,
+              "section": "Common causes; §5 Investigate and record every false alarm"
+            }
+          ]
+        },
+        {
+          "id": "ua_dust",
+          "text": "Was dust-producing work recorded near the detector at the time?",
+          "hint": "Use the normal display or an existing service record. Choose “I don’t know” if this information is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "hochiki-unwanted-alarms",
+              "page": null,
+              "section": "Common causes; §5 Investigate and record every false alarm"
+            }
+          ]
+        },
+        {
+          "id": "ua_contamination",
+          "text": "Does an existing service record identify contamination at this detector?",
+          "hint": "Use a service finding or explicit contamination warning. Do not open or clean the detector to answer.",
+          "sourceRefs": [
+            {
+              "sourceId": "hochiki-unwanted-alarms",
+              "page": null,
+              "section": "Common causes; §5 Investigate and record every false alarm"
+            }
+          ]
+        },
+        {
+          "id": "ua_repeat",
+          "text": "Do earlier incident records name the same detector location?",
+          "hint": "Use the normal display or an existing service record. Choose “I don’t know” if this information is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "hochiki-unwanted-alarms",
+              "page": null,
+              "section": "Common causes; §5 Investigate and record every false alarm"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "ua_environment",
+          "title": "Environmental particles reaching the detector",
+          "summary": "Steam, cooking fumes or work dust are documented unwanted-activation mechanisms; their presence does not rule out fire.",
+          "checks": [
+            "Record the activity and time already reported.",
+            "Keep the detector identity with the incident record."
+          ],
+          "likelihoods": {
+            "ua_call_point": 0.1,
+            "ua_test": 0.15,
+            "ua_steam": 0.9,
+            "ua_cooking": 0.9,
+            "ua_dust": 0.8,
+            "ua_contamination": 0.3,
+            "ua_repeat": 0.45
+          },
+          "sources": [
+            {
+              "id": "apollo-unwanted-alarms",
+              "title": "Apollo Fire Detectors: How do you reduce the risk of Manual Call Point false alarms? (9 June 2020)",
+              "url": "https://apollo-fire.co.uk/news/how-do-you-reduce-the-risk-of-manual-call-point-false-alarms/",
+              "recordId": null,
+              "page": null,
+              "section": "What are False Alarms, and how do they occur?; Manual Call Point related false alarms",
+              "appliesTo": "General unwanted-activation examples from Apollo. These examples cannot classify a current incident as false or determine anyone’s intent.",
+              "publisher": "Apollo Fire Detectors",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn257view3",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "sourceType": "manufacturer-technical-article"
+            },
+            {
+              "id": "hochiki-unwanted-alarms",
+              "title": "Hochiki Europe: How do I reduce false alarms on a fire alarm system?",
+              "url": "https://web.hochikieurope.com/en-gb/knowledge-base/reduce-false-alarms-on-a-fire-alarm-system",
+              "recordId": null,
+              "page": null,
+              "section": "Common causes; §5 Investigate and record every false alarm",
+              "appliesTo": "General guidance for Hochiki Europe detectors/panels in the UK. FINDR uses the observation examples, not the article’s standards advice or modification procedures.",
+              "publisher": "Hochiki Europe",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn271view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "sourceType": "manufacturer-support-webpage"
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "ua_contaminated_detector",
+          "title": "Contamination or maintenance concern",
+          "summary": "A contamination finding or repeated activations warrants a model-specific service review.",
+          "checks": [
+            "Compare existing contamination findings with incident dates.",
+            "Record the last completed service visit."
+          ],
+          "likelihoods": {
+            "ua_call_point": 0.1,
+            "ua_test": 0.15,
+            "ua_steam": 0.35,
+            "ua_cooking": 0.35,
+            "ua_dust": 0.65,
+            "ua_contamination": 0.95,
+            "ua_repeat": 0.85
+          },
+          "sources": [
+            {
+              "id": "hochiki-unwanted-alarms",
+              "title": "Hochiki Europe: How do I reduce false alarms on a fire alarm system?",
+              "url": "https://web.hochikieurope.com/en-gb/knowledge-base/reduce-false-alarms-on-a-fire-alarm-system",
+              "recordId": null,
+              "page": null,
+              "section": "Common causes; §5 Investigate and record every false alarm",
+              "appliesTo": "General guidance for Hochiki Europe detectors/panels in the UK. FINDR uses the observation examples, not the article’s standards advice or modification procedures.",
+              "publisher": "Hochiki Europe",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn271view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "sourceType": "manufacturer-support-webpage"
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "ua_call_point_event",
+          "title": "Call-point activation recorded",
+          "summary": "A call-point origin identifies an input, not the reason or intent of its operation.",
+          "checks": [
+            "Retain the call-point location and witnessed account.",
+            "Do not infer malicious operation from the alarm log."
+          ],
+          "likelihoods": {
+            "ua_call_point": 0.95,
+            "ua_test": 0.25,
+            "ua_steam": 0.1,
+            "ua_cooking": 0.1,
+            "ua_dust": 0.15,
+            "ua_contamination": 0.1,
+            "ua_repeat": 0.4
+          },
+          "sources": [
+            {
+              "id": "apollo-unwanted-alarms",
+              "title": "Apollo Fire Detectors: How do you reduce the risk of Manual Call Point false alarms? (9 June 2020)",
+              "url": "https://apollo-fire.co.uk/news/how-do-you-reduce-the-risk-of-manual-call-point-false-alarms/",
+              "recordId": null,
+              "page": null,
+              "section": "What are False Alarms, and how do they occur?; Manual Call Point related false alarms",
+              "appliesTo": "General unwanted-activation examples from Apollo. These examples cannot classify a current incident as false or determine anyone’s intent.",
+              "publisher": "Apollo Fire Detectors",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn257view3",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "sourceType": "manufacturer-technical-article"
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "ua_test_activity",
+          "title": "Recorded testing activity",
+          "summary": "An activation coinciding with a recorded test may relate to that work; the incident still needs reconciliation.",
+          "checks": [
+            "Compare the recorded test scope with the first alarm input.",
+            "Keep the test time and person’s existing report together."
+          ],
+          "likelihoods": {
+            "ua_call_point": 0.5,
+            "ua_test": 0.95,
+            "ua_steam": 0.1,
+            "ua_cooking": 0.1,
+            "ua_dust": 0.15,
+            "ua_contamination": 0.15,
+            "ua_repeat": 0.3
+          },
+          "sources": [
+            {
+              "id": "apollo-unwanted-alarms",
+              "title": "Apollo Fire Detectors: How do you reduce the risk of Manual Call Point false alarms? (9 June 2020)",
+              "url": "https://apollo-fire.co.uk/news/how-do-you-reduce-the-risk-of-manual-call-point-false-alarms/",
+              "recordId": null,
+              "page": null,
+              "section": "What are False Alarms, and how do they occur?; Manual Call Point related false alarms",
+              "appliesTo": "General unwanted-activation examples from Apollo. These examples cannot classify a current incident as false or determine anyone’s intent.",
+              "publisher": "Apollo Fire Detectors",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn257view3",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "sourceType": "manufacturer-technical-article"
+            }
+          ],
+          "status": "hypothesis"
+        }
+      ]
+    },
+    {
+      "id": "fire_disablement_test",
+      "title": "Disablement / test indication",
+      "subtitle": "Identify the current state before treating it as a component fault",
+      "category": "fire",
+      "questions": [
+        {
+          "id": "dt_general",
+          "text": "Is the General Disablement indication active?",
+          "hint": "Use the normal display or an existing service record. Choose “I don’t know” if this information is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-user",
+              "page": 7,
+              "section": "What the indicator lights mean"
+            },
+            {
+              "sourceId": "gent-ops-1999",
+              "page": 17,
+              "section": "Typical disablement messages"
+            }
+          ]
+        },
+        {
+          "id": "dt_detection",
+          "text": "Does the current status identify a disabled detection zone?",
+          "hint": "Use the normal display or an existing service record. Choose “I don’t know” if this information is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-user",
+              "page": 10,
+              "section": "Disablements: option/effect table"
+            },
+            {
+              "sourceId": "gent-ops-1999",
+              "page": 17,
+              "section": "Typical disablement messages"
+            }
+          ]
+        },
+        {
+          "id": "dt_output",
+          "text": "Does the current status identify a disabled alarm output?",
+          "hint": "Use the normal display or an existing service record. Choose “I don’t know” if this information is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-user",
+              "page": 10,
+              "section": "Disablements: option/effect table"
+            },
+            {
+              "sourceId": "gent-ops-1999",
+              "page": 17,
+              "section": "Typical disablement messages"
+            }
+          ]
+        },
+        {
+          "id": "dt_test",
+          "text": "Does the panel currently indicate Test or On Test?",
+          "hint": "Use the normal display or an existing service record. Choose “I don’t know” if this information is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-walktest",
+              "page": 2,
+              "section": "Step 5: identifying the final test state"
+            },
+            {
+              "sourceId": "kentec-syncro",
+              "page": 24,
+              "section": "§18.2.11 Disablement action; §18.2.12 Test mode action"
+            }
+          ]
+        },
+        {
+          "id": "dt_delays",
+          "text": "Does the panel indicate that output delays are enabled?",
+          "hint": "Enabled is not the same as counting down. Use the exact model’s indication and the existing delay schedule.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-user",
+              "page": 12,
+              "section": "Notes on Delays"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "dt_detection_disabled",
+          "title": "Detection zone disabled",
+          "summary": "The reported detection area may be excluded from normal processing.",
+          "checks": [
+            "Record the named zone and affected location.",
+            "Compare it with the current impairment record; do not change the state to answer."
+          ],
+          "likelihoods": {
+            "dt_general": 0.9,
+            "dt_detection": 0.95,
+            "dt_output": 0.2,
+            "dt_test": 0.15,
+            "dt_delays": 0.2
+          },
+          "sources": [
+            {
+              "id": "ctec-cfp-user",
+              "title": "C-TEC CFP 2/4/8-zone User Manual & Log Book DFU7001020 Rev 2",
+              "url": "https://c-tec.com/download?wpdmdl=12076",
+              "recordId": null,
+              "page": 10,
+              "section": "Disablements: option/effect table",
+              "appliesTo": "CFP models listed in DFU7001020 Rev 2. Delay indicators and available functions vary by model; use the normal, non-selection display.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7001020",
+              "revision": "Rev 2",
+              "pageCount": 20,
+              "sha256": "f4445ea23e6f6fc95a6732ed57b6591dac6d85b3e26f7c6b81dabcec0c0d5333"
+            },
+            {
+              "id": "gent-ops-1999",
+              "title": "GENT Vigilon Operating Manual VIG-MAN-OPS, Issue 1, January 1999",
+              "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/manuals-and-guides/repair-and-maintenance-guides/gent-112425/hon-ba-fire-vigop.pdf?download=false",
+              "recordId": "gent-f03fe5ba8e30",
+              "page": 17,
+              "section": "Typical disablement messages",
+              "appliesTo": "Legacy Vigilon covered by VIG-MAN-OPS issue 1 (1999); message examples are not universal GENT wording.",
+              "publisher": "GENT / Honeywell",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn271view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "VIG-MAN-OPS",
+              "revision": "Issue 1, January 1999",
+              "pageCount": 58
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "dt_output_disabled",
+          "title": "Alarm output disabled",
+          "summary": "The reported output may be excluded from normal operation.",
+          "checks": [
+            "Record the output identity and current status.",
+            "Compare with the current impairment record."
+          ],
+          "likelihoods": {
+            "dt_general": 0.9,
+            "dt_detection": 0.2,
+            "dt_output": 0.95,
+            "dt_test": 0.2,
+            "dt_delays": 0.2
+          },
+          "sources": [
+            {
+              "id": "ctec-cfp-user",
+              "title": "C-TEC CFP 2/4/8-zone User Manual & Log Book DFU7001020 Rev 2",
+              "url": "https://c-tec.com/download?wpdmdl=12076",
+              "recordId": null,
+              "page": 10,
+              "section": "Disablements: option/effect table",
+              "appliesTo": "CFP models listed in DFU7001020 Rev 2. Delay indicators and available functions vary by model; use the normal, non-selection display.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7001020",
+              "revision": "Rev 2",
+              "pageCount": 20,
+              "sha256": "f4445ea23e6f6fc95a6732ed57b6591dac6d85b3e26f7c6b81dabcec0c0d5333"
+            },
+            {
+              "id": "gent-ops-1999",
+              "title": "GENT Vigilon Operating Manual VIG-MAN-OPS, Issue 1, January 1999",
+              "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/manuals-and-guides/repair-and-maintenance-guides/gent-112425/hon-ba-fire-vigop.pdf?download=false",
+              "recordId": "gent-f03fe5ba8e30",
+              "page": 17,
+              "section": "Typical disablement messages",
+              "appliesTo": "Legacy Vigilon covered by VIG-MAN-OPS issue 1 (1999); message examples are not universal GENT wording.",
+              "publisher": "GENT / Honeywell",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn271view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "VIG-MAN-OPS",
+              "revision": "Issue 1, January 1999",
+              "pageCount": 58
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "dt_test_active",
+          "title": "Test state active",
+          "summary": "Test mode changes normal responses according to the panel and site configuration.",
+          "checks": [
+            "Record the zones or inputs named by the existing test status.",
+            "Compare the displayed state with the authorised test record."
+          ],
+          "likelihoods": {
+            "dt_general": 0.3,
+            "dt_detection": 0.2,
+            "dt_output": 0.3,
+            "dt_test": 0.95,
+            "dt_delays": 0.2
+          },
+          "sources": [
+            {
+              "id": "ctec-cfp-walktest",
+              "title": "C-TEC application note 0005.0: CFP Walk Test Mode, DFU0000702 Rev 1",
+              "url": "https://c-tec.com/download?wpdmdl=12352",
+              "recordId": null,
+              "page": 2,
+              "section": "Step 5: identifying the final test state",
+              "appliesTo": "CFP panels covered by this application note. Cited only to identify an already active test condition, not to instruct entering test or opening the panel.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU0000702",
+              "revision": "Rev 1",
+              "pageCount": 2
+            },
+            {
+              "id": "kentec-syncro",
+              "title": "Kentec Syncro Product Manual Man-1055 Issue 26 (May 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1055.pdf",
+              "recordId": "kentec-724b56a14295",
+              "page": 24,
+              "section": "§18.2.11 Disablement action; §18.2.12 Test mode action",
+              "appliesTo": "Syncro models and Hochiki/Apollo/Argus protocol configurations covered by issue 26. Installed configuration and firmware determine the applicable behavior.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1055",
+              "revision": "Issue 26, May 2016",
+              "pageCount": 38,
+              "sha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd"
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "dt_delay_enabled",
+          "title": "Programmed delay indication",
+          "summary": "On some CFP models, enabled delays also produce General Disablement; they are not a wiring-fault diagnosis.",
+          "checks": [
+            "Compare the exact panel model with its indicator table.",
+            "Record enabled delays separately from a running countdown."
+          ],
+          "likelihoods": {
+            "dt_general": 0.85,
+            "dt_detection": 0.15,
+            "dt_output": 0.2,
+            "dt_test": 0.1,
+            "dt_delays": 0.95
+          },
+          "sources": [
+            {
+              "id": "ctec-cfp-user",
+              "title": "C-TEC CFP 2/4/8-zone User Manual & Log Book DFU7001020 Rev 2",
+              "url": "https://c-tec.com/download?wpdmdl=12076",
+              "recordId": null,
+              "page": 12,
+              "section": "Notes on Delays",
+              "appliesTo": "CFP models listed in DFU7001020 Rev 2. Delay indicators and available functions vary by model; use the normal, non-selection display.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7001020",
+              "revision": "Rev 2",
+              "pageCount": 20,
+              "sha256": "f4445ea23e6f6fc95a6732ed57b6591dac6d85b3e26f7c6b81dabcec0c0d5333"
+            },
+            {
+              "id": "ctec-cfp-user",
+              "title": "C-TEC CFP 2/4/8-zone User Manual & Log Book DFU7001020 Rev 2",
+              "url": "https://c-tec.com/download?wpdmdl=12076",
+              "recordId": null,
+              "page": 7,
+              "section": "What the indicator lights mean",
+              "appliesTo": "CFP models listed in DFU7001020 Rev 2. Delay indicators and available functions vary by model; use the normal, non-selection display.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7001020",
+              "revision": "Rev 2",
+              "pageCount": 20,
+              "sha256": "f4445ea23e6f6fc95a6732ed57b6591dac6d85b3e26f7c6b81dabcec0c0d5333"
+            }
+          ],
+          "status": "hypothesis"
+        }
+      ]
+    },
+    {
+      "id": "fire_outputs_not_operating",
+      "title": "Expected output not operating",
+      "subtitle": "Recorded sounder, beacon or relay response differs from expectation",
+      "category": "fire",
+      "questions": [
+        {
+          "id": "on_disabled",
+          "text": "Is the affected output currently listed as disabled?",
+          "hint": "Use the normal display or an existing service record. Choose “I don’t know” if this information is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-user",
+              "page": 10,
+              "section": "Disablements: option/effect table"
+            },
+            {
+              "sourceId": "gent-ops-1999",
+              "page": 17,
+              "section": "Typical disablement messages"
+            }
+          ]
+        },
+        {
+          "id": "on_delay",
+          "text": "Does the panel show a delay currently running for the affected response?",
+          "hint": "Use a running-delay indication, not merely a label saying delays are enabled. Follow the site emergency procedure for a current fire.",
+          "sourceRefs": [
+            {
+              "sourceId": "ctec-cfp-user",
+              "page": 12,
+              "section": "Notes on Delays"
+            }
+          ]
+        },
+        {
+          "id": "on_silenced",
+          "text": "Does the event record show an alarm-silence action before the observed absence of output?",
+          "hint": "Use the normal display or an existing service record. Choose “I don’t know” if this information is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 25,
+              "section": "§18.3.3 Silenceable"
+            }
+          ]
+        },
+        {
+          "id": "on_circuit_fault",
+          "text": "Is a circuit fault reported for this output?",
+          "hint": "Use the normal display or an existing service record. Choose “I don’t know” if this information is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 15,
+              "section": "§11 Panel Sounder circuits; §12 Sounder controllers"
+            }
+          ]
+        },
+        {
+          "id": "on_supply_fault",
+          "text": "Is a supply fault reported for this output’s controller?",
+          "hint": "Use the normal display or an existing service record. Choose “I don’t know” if this information is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 15,
+              "section": "§11 Panel Sounder circuits; §12 Sounder controllers"
+            }
+          ]
+        },
+        {
+          "id": "on_test",
+          "text": "Was the affected response in a recorded test mode at the time?",
+          "hint": "Use the normal display or an existing service record. Choose “I don’t know” if this information is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 24,
+              "section": "§18.2.11 Disablement action; §18.2.12 Test mode action"
+            }
+          ]
+        },
+        {
+          "id": "on_expected",
+          "text": "Does the approved cause-and-effect record require this output for the recorded input?",
+          "hint": "Use the existing approved record. If it is unavailable, choose I don’t know; do not activate the input or output for this question.",
+          "sourceRefs": [
+            {
+              "sourceId": "kentec-syncro",
+              "page": 24,
+              "section": "§18.3 Outputs: configurable attributes"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "on_inhibited",
+          "title": "Disablement or test-related inhibition",
+          "summary": "The displayed control state may prevent the expected response.",
+          "checks": [
+            "Record the precise disabled/test item.",
+            "Compare it with the impairment or test record."
+          ],
+          "likelihoods": {
+            "on_disabled": 0.95,
+            "on_delay": 0.15,
+            "on_silenced": 0.2,
+            "on_circuit_fault": 0.15,
+            "on_supply_fault": 0.15,
+            "on_test": 0.9,
+            "on_expected": 0.8
+          },
+          "sources": [
+            {
+              "id": "ctec-cfp-user",
+              "title": "C-TEC CFP 2/4/8-zone User Manual & Log Book DFU7001020 Rev 2",
+              "url": "https://c-tec.com/download?wpdmdl=12076",
+              "recordId": null,
+              "page": 10,
+              "section": "Disablements: option/effect table",
+              "appliesTo": "CFP models listed in DFU7001020 Rev 2. Delay indicators and available functions vary by model; use the normal, non-selection display.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7001020",
+              "revision": "Rev 2",
+              "pageCount": 20,
+              "sha256": "f4445ea23e6f6fc95a6732ed57b6591dac6d85b3e26f7c6b81dabcec0c0d5333"
+            },
+            {
+              "id": "kentec-syncro",
+              "title": "Kentec Syncro Product Manual Man-1055 Issue 26 (May 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1055.pdf",
+              "recordId": "kentec-724b56a14295",
+              "page": 24,
+              "section": "§18.2.11 Disablement action; §18.2.12 Test mode action",
+              "appliesTo": "Syncro models and Hochiki/Apollo/Argus protocol configurations covered by issue 26. Installed configuration and firmware determine the applicable behavior.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1055",
+              "revision": "Issue 26, May 2016",
+              "pageCount": 38,
+              "sha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd"
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "on_delayed",
+          "title": "A configured output delay is running",
+          "summary": "A running delay can postpone an otherwise expected response.",
+          "checks": [
+            "Record the delay indication and event time already shown.",
+            "Compare the response with the approved delay schedule."
+          ],
+          "likelihoods": {
+            "on_disabled": 0.1,
+            "on_delay": 0.95,
+            "on_silenced": 0.2,
+            "on_circuit_fault": 0.1,
+            "on_supply_fault": 0.1,
+            "on_test": 0.2,
+            "on_expected": 0.85
+          },
+          "sources": [
+            {
+              "id": "ctec-cfp-user",
+              "title": "C-TEC CFP 2/4/8-zone User Manual & Log Book DFU7001020 Rev 2",
+              "url": "https://c-tec.com/download?wpdmdl=12076",
+              "recordId": null,
+              "page": 12,
+              "section": "Notes on Delays",
+              "appliesTo": "CFP models listed in DFU7001020 Rev 2. Delay indicators and available functions vary by model; use the normal, non-selection display.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7001020",
+              "revision": "Rev 2",
+              "pageCount": 20,
+              "sha256": "f4445ea23e6f6fc95a6732ed57b6591dac6d85b3e26f7c6b81dabcec0c0d5333"
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "on_silenced_output",
+          "title": "Silenceable output following a silence action",
+          "summary": "An output configured as silenceable may stop after an alarm-silence event.",
+          "checks": [
+            "Compare the existing silence event with the observed time.",
+            "Check the approved output description without changing it."
+          ],
+          "likelihoods": {
+            "on_disabled": 0.1,
+            "on_delay": 0.15,
+            "on_silenced": 0.95,
+            "on_circuit_fault": 0.1,
+            "on_supply_fault": 0.1,
+            "on_test": 0.2,
+            "on_expected": 0.8
+          },
+          "sources": [
+            {
+              "id": "kentec-syncro",
+              "title": "Kentec Syncro Product Manual Man-1055 Issue 26 (May 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1055.pdf",
+              "recordId": "kentec-724b56a14295",
+              "page": 25,
+              "section": "§18.3.3 Silenceable",
+              "appliesTo": "Syncro models and Hochiki/Apollo/Argus protocol configurations covered by issue 26. Installed configuration and firmware determine the applicable behavior.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1055",
+              "revision": "Issue 26, May 2016",
+              "pageCount": 38,
+              "sha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd"
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "on_path_supply",
+          "title": "Output wiring or supply problem",
+          "summary": "An associated circuit or controller-supply fault may affect the response.",
+          "checks": [
+            "Keep the output and supply fault identifiers together.",
+            "Record the affected equipment from its external label."
+          ],
+          "likelihoods": {
+            "on_disabled": 0.1,
+            "on_delay": 0.1,
+            "on_silenced": 0.15,
+            "on_circuit_fault": 0.9,
+            "on_supply_fault": 0.9,
+            "on_test": 0.2,
+            "on_expected": 0.9
+          },
+          "sources": [
+            {
+              "id": "kentec-syncro",
+              "title": "Kentec Syncro Product Manual Man-1055 Issue 26 (May 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1055.pdf",
+              "recordId": "kentec-724b56a14295",
+              "page": 15,
+              "section": "§11 Panel Sounder circuits; §12 Sounder controllers",
+              "appliesTo": "Syncro models and Hochiki/Apollo/Argus protocol configurations covered by issue 26. Installed configuration and firmware determine the applicable behavior.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1055",
+              "revision": "Issue 26, May 2016",
+              "pageCount": 38,
+              "sha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd"
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "on_response_logic",
+          "title": "Cause-and-effect or event-type mismatch",
+          "summary": "Output responses depend on configuration and the initiating event; one visible alarm does not establish every expected action.",
+          "checks": [
+            "Compare the recorded input with the approved response matrix.",
+            "Record any discrepancy for the service engineer."
+          ],
+          "likelihoods": {
+            "on_disabled": 0.15,
+            "on_delay": 0.25,
+            "on_silenced": 0.25,
+            "on_circuit_fault": 0.2,
+            "on_supply_fault": 0.2,
+            "on_test": 0.2,
+            "on_expected": 0.15
+          },
+          "sources": [
+            {
+              "id": "kentec-syncro",
+              "title": "Kentec Syncro Product Manual Man-1055 Issue 26 (May 2016)",
+              "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1055.pdf",
+              "recordId": "kentec-724b56a14295",
+              "page": 24,
+              "section": "§18.3 Outputs: configurable attributes",
+              "appliesTo": "Syncro models and Hochiki/Apollo/Argus protocol configurations covered by issue 26. Installed configuration and firmware determine the applicable behavior.",
+              "publisher": "Kentec Electronics",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn255view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "Man-1055",
+              "revision": "Issue 26, May 2016",
+              "pageCount": 38,
+              "sha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd"
+            },
+            {
+              "id": "ctec-cfp-user",
+              "title": "C-TEC CFP 2/4/8-zone User Manual & Log Book DFU7001020 Rev 2",
+              "url": "https://c-tec.com/download?wpdmdl=12076",
+              "recordId": null,
+              "page": 8,
+              "section": "Fire conditions: manual sounder operation and other outputs",
+              "appliesTo": "CFP models listed in DFU7001020 Rev 2. Delay indicators and available functions vary by model; use the normal, non-selection display.",
+              "publisher": "C-TEC",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn260view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "DFU7001020",
+              "revision": "Rev 2",
+              "pageCount": 20,
+              "sha256": "f4445ea23e6f6fc95a6732ed57b6591dac6d85b3e26f7c6b81dabcec0c0d5333"
+            }
+          ],
+          "status": "hypothesis"
+        }
+      ]
+    },
+    {
+      "id": "fire_beam",
+      "title": "Optical beam detector fault",
+      "subtitle": "Obscuration, compensation, alignment, light or controller indication",
+      "category": "fire",
+      "questions": [
+        {
+          "id": "beam_obstruction",
+          "text": "Is an object visibly crossing the beam path?",
+          "hint": "Observe only from a safe position; do not block the beam or move equipment to test it.",
+          "sourceRefs": [
+            {
+              "sourceId": "ffe-fireray-hub",
+              "page": 4,
+              "section": "§2 General information: line of sight"
+            },
+            {
+              "sourceId": "ffe-fireray-hub",
+              "page": 20,
+              "section": "§22 Error codes"
+            }
+          ]
+        },
+        {
+          "id": "beam_obscuration",
+          "text": "Does the controller explicitly report a rapid-obscuration fault?",
+          "hint": "Fireray Hub Reflective example: E-06. Use the exact model manual for other systems.",
+          "sourceRefs": [
+            {
+              "sourceId": "ffe-fireray-hub",
+              "page": 20,
+              "section": "§22 Error codes"
+            }
+          ]
+        },
+        {
+          "id": "beam_compensation",
+          "text": "Does the detector report a compensation-limit fault?",
+          "hint": "Fireray Hub Reflective example: E-03. Fireray One uses its own status indications; do not transfer codes between models.",
+          "sourceRefs": [
+            {
+              "sourceId": "ffe-fireray-hub",
+              "page": 20,
+              "section": "§21 Cleaning: compensation limits"
+            },
+            {
+              "sourceId": "ffe-fireray-one",
+              "page": 15,
+              "section": "Status Indications and Troubleshooting"
+            }
+          ]
+        },
+        {
+          "id": "beam_alignment",
+          "text": "Does the controller explicitly report that the detector is not aligned?",
+          "hint": "Fireray Hub Reflective example: E-05. Use a displayed message or existing service report.",
+          "sourceRefs": [
+            {
+              "sourceId": "ffe-fireray-hub",
+              "page": 20,
+              "section": "§22 Error codes"
+            }
+          ]
+        },
+        {
+          "id": "beam_ambient_light",
+          "text": "Does the controller explicitly report an ambient-light fault?",
+          "hint": "Fireray Hub Reflective example: E-20. Record the message without shining light at the detector.",
+          "sourceRefs": [
+            {
+              "sourceId": "ffe-fireray-hub",
+              "page": 20,
+              "section": "§22 Error codes"
+            }
+          ]
+        },
+        {
+          "id": "beam_communication",
+          "text": "Does the controller explicitly report detector-communication failure?",
+          "hint": "Fireray Hub Reflective example: E-01. A generic fire-panel zone fault is not enough to answer Yes.",
+          "sourceRefs": [
+            {
+              "sourceId": "ffe-fireray-hub",
+              "page": 20,
+              "section": "§22 Error codes"
+            }
+          ]
+        },
+        {
+          "id": "beam_low_power",
+          "text": "Does the controller explicitly report low supply power?",
+          "hint": "Fireray Hub Reflective example: E-21. Do not measure or interrupt the supply to answer.",
+          "sourceRefs": [
+            {
+              "sourceId": "ffe-fireray-hub",
+              "page": 20,
+              "section": "§22 Error codes"
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "beam_blocked_path",
+          "title": "Obstructed optical path",
+          "summary": "An obstruction can cause a rapid loss of the received beam.",
+          "checks": [
+            "Record the visible obstruction and detector location.",
+            "Keep the exact fault code with the observation."
+          ],
+          "likelihoods": {
+            "beam_obstruction": 0.95,
+            "beam_obscuration": 0.95,
+            "beam_compensation": 0.2,
+            "beam_alignment": 0.3,
+            "beam_ambient_light": 0.15,
+            "beam_communication": 0.1,
+            "beam_low_power": 0.1
+          },
+          "sources": [
+            {
+              "id": "ffe-fireray-hub",
+              "title": "FFE Fireray Hub Reflective User Guide 0044-102-03",
+              "url": "https://ffeuk.com/hubfs/website/resources/Fireray/Fireray_Hub_Reflective/User_Guides/0044-102_Fireray_Hub_Reflective_User_Guide_(EN).pdf",
+              "recordId": null,
+              "page": 20,
+              "section": "§22 Error codes",
+              "appliesTo": "Fireray Hub Reflective controller/head system covered by 0044-102-03. E-codes apply to this model only; other beam detectors have different indicators.",
+              "publisher": "FFE",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn259view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "0044-102",
+              "revision": "03",
+              "pageCount": 24,
+              "sha256": "f6f143f6e819a5ed911edebf761fea05527c4210c101754c1dc79e494f49fd08"
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "beam_optics",
+          "title": "Optics contamination / compensation limit",
+          "summary": "Accumulated contamination can exhaust the detector’s compensation range.",
+          "checks": [
+            "Record the compensation indication and last service date.",
+            "Note any externally visible soiling without touching the optics."
+          ],
+          "likelihoods": {
+            "beam_obstruction": 0.2,
+            "beam_obscuration": 0.3,
+            "beam_compensation": 0.95,
+            "beam_alignment": 0.3,
+            "beam_ambient_light": 0.2,
+            "beam_communication": 0.1,
+            "beam_low_power": 0.1
+          },
+          "sources": [
+            {
+              "id": "ffe-fireray-hub",
+              "title": "FFE Fireray Hub Reflective User Guide 0044-102-03",
+              "url": "https://ffeuk.com/hubfs/website/resources/Fireray/Fireray_Hub_Reflective/User_Guides/0044-102_Fireray_Hub_Reflective_User_Guide_(EN).pdf",
+              "recordId": null,
+              "page": 20,
+              "section": "§21 Cleaning: compensation limits",
+              "appliesTo": "Fireray Hub Reflective controller/head system covered by 0044-102-03. E-codes apply to this model only; other beam detectors have different indicators.",
+              "publisher": "FFE",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn259view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "0044-102",
+              "revision": "03",
+              "pageCount": 24,
+              "sha256": "f6f143f6e819a5ed911edebf761fea05527c4210c101754c1dc79e494f49fd08"
+            },
+            {
+              "id": "ffe-fireray-one",
+              "title": "FFE Fireray One User Guide 0044-092-05",
+              "url": "https://ffeuk.com/hubfs/website/resources/Fireray/Fireray_One/User_Guides/0044-092_Fireray_One_User_Guide_(EN).pdf",
+              "recordId": null,
+              "page": 15,
+              "section": "Status Indications and Troubleshooting",
+              "appliesTo": "Fireray One covered by 0044-092-05. Its flash indications are different from Fireray Hub E-codes; no code or flash-rate interchange is assumed.",
+              "publisher": "FFE",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn259view2",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "0044-092",
+              "revision": "05",
+              "pageCount": 16,
+              "sha256": "299915b3abf18cefb564b81db82275ff43f6bd24a86d94244cbba19f68ab60c5"
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "beam_alignment_issue",
+          "title": "Alignment condition requires assessment",
+          "summary": "The alignment status may explain the fault, without identifying what disturbed it.",
+          "checks": [
+            "Record the alignment message.",
+            "Compare with recent work or movement already recorded for this location."
+          ],
+          "likelihoods": {
+            "beam_obstruction": 0.4,
+            "beam_obscuration": 0.4,
+            "beam_compensation": 0.25,
+            "beam_alignment": 0.95,
+            "beam_ambient_light": 0.2,
+            "beam_communication": 0.1,
+            "beam_low_power": 0.1
+          },
+          "sources": [
+            {
+              "id": "ffe-fireray-hub",
+              "title": "FFE Fireray Hub Reflective User Guide 0044-102-03",
+              "url": "https://ffeuk.com/hubfs/website/resources/Fireray/Fireray_Hub_Reflective/User_Guides/0044-102_Fireray_Hub_Reflective_User_Guide_(EN).pdf",
+              "recordId": null,
+              "page": 20,
+              "section": "§22 Error codes",
+              "appliesTo": "Fireray Hub Reflective controller/head system covered by 0044-102-03. E-codes apply to this model only; other beam detectors have different indicators.",
+              "publisher": "FFE",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn259view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "0044-102",
+              "revision": "03",
+              "pageCount": 24,
+              "sha256": "f6f143f6e819a5ed911edebf761fea05527c4210c101754c1dc79e494f49fd08"
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "beam_light_interference",
+          "title": "Strong external light affecting reception",
+          "summary": "Ambient-light interference is a distinct reported fault on the referenced controller.",
+          "checks": [
+            "Note direct sunlight or strong light already visible near the detector.",
+            "Record when the light and fault were observed."
+          ],
+          "likelihoods": {
+            "beam_obstruction": 0.15,
+            "beam_obscuration": 0.2,
+            "beam_compensation": 0.15,
+            "beam_alignment": 0.2,
+            "beam_ambient_light": 0.95,
+            "beam_communication": 0.1,
+            "beam_low_power": 0.1
+          },
+          "sources": [
+            {
+              "id": "ffe-fireray-hub",
+              "title": "FFE Fireray Hub Reflective User Guide 0044-102-03",
+              "url": "https://ffeuk.com/hubfs/website/resources/Fireray/Fireray_Hub_Reflective/User_Guides/0044-102_Fireray_Hub_Reflective_User_Guide_(EN).pdf",
+              "recordId": null,
+              "page": 20,
+              "section": "§22 Error codes",
+              "appliesTo": "Fireray Hub Reflective controller/head system covered by 0044-102-03. E-codes apply to this model only; other beam detectors have different indicators.",
+              "publisher": "FFE",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn259view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "0044-102",
+              "revision": "03",
+              "pageCount": 24,
+              "sha256": "f6f143f6e819a5ed911edebf761fea05527c4210c101754c1dc79e494f49fd08"
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "beam_controller_link",
+          "title": "Controller, detector link or supply concern",
+          "summary": "A communication or supply indication needs its own model-specific assessment.",
+          "checks": [
+            "Record the controller and head identifiers.",
+            "Keep communication and power messages separate in the report."
+          ],
+          "likelihoods": {
+            "beam_obstruction": 0.1,
+            "beam_obscuration": 0.1,
+            "beam_compensation": 0.1,
+            "beam_alignment": 0.15,
+            "beam_ambient_light": 0.1,
+            "beam_communication": 0.9,
+            "beam_low_power": 0.9
+          },
+          "sources": [
+            {
+              "id": "ffe-fireray-hub",
+              "title": "FFE Fireray Hub Reflective User Guide 0044-102-03",
+              "url": "https://ffeuk.com/hubfs/website/resources/Fireray/Fireray_Hub_Reflective/User_Guides/0044-102_Fireray_Hub_Reflective_User_Guide_(EN).pdf",
+              "recordId": null,
+              "page": 20,
+              "section": "§22 Error codes",
+              "appliesTo": "Fireray Hub Reflective controller/head system covered by 0044-102-03. E-codes apply to this model only; other beam detectors have different indicators.",
+              "publisher": "FFE",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn259view1",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "0044-102",
+              "revision": "03",
+              "pageCount": 24,
+              "sha256": "f6f143f6e819a5ed911edebf761fea05527c4210c101754c1dc79e494f49fd08"
+            }
+          ],
+          "status": "hypothesis"
+        }
+      ]
+    },
+    {
+      "id": "fire_aspirating_airflow",
+      "title": "Aspirating detector airflow",
+      "subtitle": "Low/high flow, sampling pipe or filter observations",
+      "category": "fire",
+      "questions": [
+        {
+          "id": "asd_low",
+          "text": "Does the detector explicitly report low airflow?",
+          "hint": "Use the normal display or an existing service record. Choose “I don’t know” if this information is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "xtralis-vesda-airflow-guide",
+              "page": 21,
+              "section": "§14.2.3.2 Fault detection: broken pipe / blocked pipe examples"
+            },
+            {
+              "sourceId": "xtralis-vesda-maintenance",
+              "page": 8,
+              "section": "§3.2 Checking Airflow",
+              "pdfPage": 14
+            }
+          ]
+        },
+        {
+          "id": "asd_high",
+          "text": "Does the detector explicitly report high airflow?",
+          "hint": "Use the normal display or an existing service record. Choose “I don’t know” if this information is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "xtralis-vesda-airflow-guide",
+              "page": 21,
+              "section": "§14.2.3.2 Fault detection: broken pipe / blocked pipe examples"
+            },
+            {
+              "sourceId": "xtralis-vesda-maintenance",
+              "page": 8,
+              "section": "§3.2 Checking Airflow",
+              "pdfPage": 14
+            }
+          ]
+        },
+        {
+          "id": "asd_pipe_damage",
+          "text": "Is a sampling pipe visibly damaged?",
+          "hint": "Observe accessible pipework from a safe position. Do not disconnect or repair it to answer.",
+          "sourceRefs": [
+            {
+              "sourceId": "xtralis-vesda-airflow-guide",
+              "page": 21,
+              "section": "§14.2.3.2 Fault detection: broken pipe / blocked pipe examples"
+            },
+            {
+              "sourceId": "xtralis-vesda-maintenance",
+              "page": 8,
+              "section": "§3.2 Checking Airflow",
+              "pdfPage": 14
+            }
+          ]
+        },
+        {
+          "id": "asd_hole_covered",
+          "text": "Is a labelled sampling hole visibly covered?",
+          "hint": "Record an existing visible cover or obstruction. Do not cover, clear or enlarge a hole to test airflow.",
+          "sourceRefs": [
+            {
+              "sourceId": "xtralis-vesda-airflow-guide",
+              "page": 21,
+              "section": "§14.2.3.2 Fault detection: broken pipe / blocked pipe examples"
+            },
+            {
+              "sourceId": "xtralis-vesda-maintenance",
+              "page": 8,
+              "section": "§3.2 Checking Airflow",
+              "pdfPage": 14
+            }
+          ]
+        },
+        {
+          "id": "asd_ventilation_change",
+          "text": "Was a building-ventilation change recorded before the airflow fault?",
+          "hint": "Use the normal display or an existing service record. Choose “I don’t know” if this information is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "xtralis-vesda-maintenance",
+              "page": 8,
+              "section": "§3.2 Checking Airflow",
+              "pdfPage": 14
+            }
+          ]
+        },
+        {
+          "id": "asd_pipe_change",
+          "text": "Was a sampling-pipe layout change recorded before the airflow fault?",
+          "hint": "Use the normal display or an existing service record. Choose “I don’t know” if this information is unavailable.",
+          "sourceRefs": [
+            {
+              "sourceId": "xtralis-vesda-maintenance",
+              "page": 8,
+              "section": "§3.2 Checking Airflow",
+              "pdfPage": 14
+            }
+          ]
+        },
+        {
+          "id": "asd_filter",
+          "text": "Does the detector explicitly report a filter fault?",
+          "hint": "Use the actual filter indication. Filter warnings and airflow faults are not interchangeable.",
+          "sourceRefs": [
+            {
+              "sourceId": "xtralis-vesda-maintenance",
+              "page": 8,
+              "section": "§3.3 Checking the Filter(s)",
+              "pdfPage": 14
+            }
+          ]
+        }
+      ],
+      "causes": [
+        {
+          "id": "asd_restriction",
+          "title": "Restriction in the sampling path",
+          "summary": "Blocked sampling paths are one possible explanation for low flow.",
+          "checks": [
+            "Record the pipe identity and any visible covered hole.",
+            "Compare existing flow history for the same pipe."
+          ],
+          "likelihoods": {
+            "asd_low": 0.9,
+            "asd_high": 0.1,
+            "asd_pipe_damage": 0.25,
+            "asd_hole_covered": 0.95,
+            "asd_ventilation_change": 0.25,
+            "asd_pipe_change": 0.45,
+            "asd_filter": 0.35
+          },
+          "sources": [
+            {
+              "id": "xtralis-vesda-airflow-guide",
+              "title": "Xtralis: A Guide to the FIA Code of Practice for Aspirating Smoke Detector Systems, 12951_02",
+              "url": "https://xtralis.com/file/7504",
+              "recordId": null,
+              "page": 21,
+              "section": "§14.2.3.2 Fault detection: broken pipe / blocked pipe examples",
+              "appliesTo": "Historical Xtralis VESDA guide referring to the February 2012 FIA code. Used only for broken-pipe/high-flow and blocked-pipe/low-flow examples, not as current UK compliance advice.",
+              "publisher": "Xtralis",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn259view0",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "12951",
+              "revision": "02; historical guide to FIA COP issue 3 (2012)",
+              "pageCount": 24,
+              "sha256": "c763635bb7373ed04d2311ece9ffb1d6a8dff31e8822e1558d8af63fac42230d"
+            },
+            {
+              "id": "xtralis-vesda-maintenance",
+              "title": "Xtralis VESDA Maintenance Guide 10256_09 (April 2020)",
+              "url": "https://www.acornfiresecurity.com/index.php?filename=Xtralis%2FVesda+Maintenance+Guide.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+              "recordId": null,
+              "page": 8,
+              "section": "§3.2 Checking Airflow",
+              "appliesTo": "VESDA VLP, VLS, VLC, VLF and VLI covered by 10256_09; not a VESDA-E product guide. Flow units, thresholds and filter behavior differ by model.",
+              "publisher": "Xtralis",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn271view0",
+              "provenance": "Manufacturer-authored Xtralis PDF hosted by Acorn Fire & Security; Xtralis copyright, document number, contact details and product scope verified; distributor watermark is present.",
+              "documentNumber": "10256",
+              "revision": "09, April 2020",
+              "pageCount": 58,
+              "pdfPage": 14
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "asd_pipe_leak",
+          "title": "Leak or break in sampling pipework",
+          "summary": "A broken sampling path can increase measured flow.",
+          "checks": [
+            "Record the location of visible damage.",
+            "Compare with the existing pipe drawing."
+          ],
+          "likelihoods": {
+            "asd_low": 0.15,
+            "asd_high": 0.9,
+            "asd_pipe_damage": 0.95,
+            "asd_hole_covered": 0.1,
+            "asd_ventilation_change": 0.25,
+            "asd_pipe_change": 0.65,
+            "asd_filter": 0.1
+          },
+          "sources": [
+            {
+              "id": "xtralis-vesda-airflow-guide",
+              "title": "Xtralis: A Guide to the FIA Code of Practice for Aspirating Smoke Detector Systems, 12951_02",
+              "url": "https://xtralis.com/file/7504",
+              "recordId": null,
+              "page": 21,
+              "section": "§14.2.3.2 Fault detection: broken pipe / blocked pipe examples",
+              "appliesTo": "Historical Xtralis VESDA guide referring to the February 2012 FIA code. Used only for broken-pipe/high-flow and blocked-pipe/low-flow examples, not as current UK compliance advice.",
+              "publisher": "Xtralis",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn259view0",
+              "provenance": "Manufacturer-authored material on the manufacturer website",
+              "documentNumber": "12951",
+              "revision": "02; historical guide to FIA COP issue 3 (2012)",
+              "pageCount": 24,
+              "sha256": "c763635bb7373ed04d2311ece9ffb1d6a8dff31e8822e1558d8af63fac42230d"
+            },
+            {
+              "id": "xtralis-vesda-maintenance",
+              "title": "Xtralis VESDA Maintenance Guide 10256_09 (April 2020)",
+              "url": "https://www.acornfiresecurity.com/index.php?filename=Xtralis%2FVesda+Maintenance+Guide.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+              "recordId": null,
+              "page": 8,
+              "section": "§3.2 Checking Airflow",
+              "appliesTo": "VESDA VLP, VLS, VLC, VLF and VLI covered by 10256_09; not a VESDA-E product guide. Flow units, thresholds and filter behavior differ by model.",
+              "publisher": "Xtralis",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn271view0",
+              "provenance": "Manufacturer-authored Xtralis PDF hosted by Acorn Fire & Security; Xtralis copyright, document number, contact details and product scope verified; distributor watermark is present.",
+              "documentNumber": "10256",
+              "revision": "09, April 2020",
+              "pageCount": 58,
+              "pdfPage": 14
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "asd_environment_layout",
+          "title": "Ventilation or pipe-design change",
+          "summary": "Ventilation and sampling-layout changes can alter the detector’s flow conditions.",
+          "checks": [
+            "Compare recorded changes with the first fault time.",
+            "Keep the approved sampling design with the report."
+          ],
+          "likelihoods": {
+            "asd_low": 0.6,
+            "asd_high": 0.65,
+            "asd_pipe_damage": 0.25,
+            "asd_hole_covered": 0.15,
+            "asd_ventilation_change": 0.9,
+            "asd_pipe_change": 0.9,
+            "asd_filter": 0.2
+          },
+          "sources": [
+            {
+              "id": "xtralis-vesda-maintenance",
+              "title": "Xtralis VESDA Maintenance Guide 10256_09 (April 2020)",
+              "url": "https://www.acornfiresecurity.com/index.php?filename=Xtralis%2FVesda+Maintenance+Guide.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+              "recordId": null,
+              "page": 8,
+              "section": "§3.2 Checking Airflow",
+              "appliesTo": "VESDA VLP, VLS, VLC, VLF and VLI covered by 10256_09; not a VESDA-E product guide. Flow units, thresholds and filter behavior differ by model.",
+              "publisher": "Xtralis",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn271view0",
+              "provenance": "Manufacturer-authored Xtralis PDF hosted by Acorn Fire & Security; Xtralis copyright, document number, contact details and product scope verified; distributor watermark is present.",
+              "documentNumber": "10256",
+              "revision": "09, April 2020",
+              "pageCount": 58,
+              "pdfPage": 14
+            }
+          ],
+          "status": "hypothesis"
+        },
+        {
+          "id": "asd_detector_service",
+          "title": "Filter, aspirator or detector condition",
+          "summary": "Filter loading and detector/aspirator condition are other possible sources of flow change.",
+          "checks": [
+            "Record the separate filter and airflow indications.",
+            "Compare with existing maintenance records; a percentage reading alone is not a diagnosis."
+          ],
+          "likelihoods": {
+            "asd_low": 0.8,
+            "asd_high": 0.2,
+            "asd_pipe_damage": 0.15,
+            "asd_hole_covered": 0.2,
+            "asd_ventilation_change": 0.25,
+            "asd_pipe_change": 0.25,
+            "asd_filter": 0.95
+          },
+          "sources": [
+            {
+              "id": "xtralis-vesda-maintenance",
+              "title": "Xtralis VESDA Maintenance Guide 10256_09 (April 2020)",
+              "url": "https://www.acornfiresecurity.com/index.php?filename=Xtralis%2FVesda+Maintenance+Guide.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+              "recordId": null,
+              "page": 8,
+              "section": "§3.2 Checking Airflow",
+              "appliesTo": "VESDA VLP, VLS, VLC, VLF and VLI covered by 10256_09; not a VESDA-E product guide. Flow units, thresholds and filter behavior differ by model.",
+              "publisher": "Xtralis",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn271view0",
+              "provenance": "Manufacturer-authored Xtralis PDF hosted by Acorn Fire & Security; Xtralis copyright, document number, contact details and product scope verified; distributor watermark is present.",
+              "documentNumber": "10256",
+              "revision": "09, April 2020",
+              "pageCount": 58,
+              "pdfPage": 14
+            },
+            {
+              "id": "xtralis-vesda-maintenance",
+              "title": "Xtralis VESDA Maintenance Guide 10256_09 (April 2020)",
+              "url": "https://www.acornfiresecurity.com/index.php?filename=Xtralis%2FVesda+Maintenance+Guide.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+              "recordId": null,
+              "page": 8,
+              "section": "§3.3 Checking the Filter(s)",
+              "appliesTo": "VESDA VLP, VLS, VLC, VLF and VLI covered by 10256_09; not a VESDA-E product guide. Flow units, thresholds and filter behavior differ by model.",
+              "publisher": "Xtralis",
+              "retrievedOn": "2026-10-30",
+              "searchRef": "turn271view0",
+              "provenance": "Manufacturer-authored Xtralis PDF hosted by Acorn Fire & Security; Xtralis copyright, document number, contact details and product scope verified; distributor watermark is present.",
+              "documentNumber": "10256",
+              "revision": "09, April 2020",
+              "pageCount": 58,
+              "pdfPage": 14
+            }
+          ],
+          "status": "hypothesis"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "gent-ops-1999",
+      "title": "GENT Vigilon Operating Manual VIG-MAN-OPS, Issue 1, January 1999",
+      "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/manuals-and-guides/repair-and-maintenance-guides/gent-112425/hon-ba-fire-vigop.pdf?download=false",
+      "recordId": "gent-f03fe5ba8e30",
+      "page": 15,
+      "section": "Typical fault messages; disablement messages p17",
+      "appliesTo": "Legacy Vigilon covered by VIG-MAN-OPS issue 1 (1999); message examples are not universal GENT wording.",
+      "publisher": "GENT / Honeywell",
+      "retrievedOn": "2026-10-30",
+      "searchRef": "turn271view1",
+      "provenance": "Manufacturer-authored material on the manufacturer website",
+      "documentNumber": "VIG-MAN-OPS",
+      "revision": "Issue 1, January 1999",
+      "pageCount": 58
+    },
+    {
+      "id": "ctec-cfp-engineer",
+      "title": "C-TEC CFP Standard Installation & Maintenance Manual DFU7004010 Rev 4 (1 November 2021)",
+      "url": "https://c-tec.com/download?wpdmdl=13537",
+      "recordId": "c-tec-fc443e51b6e1",
+      "page": 18,
+      "section": "Fault diagnosis, pp18–22",
+      "appliesTo": "CFP Standard 2/4/8-zone conventional panels covered by Rev 4; do not apply its EOL, LED or diagnostic arrangements to AlarmSense or other panels.",
+      "publisher": "C-TEC",
+      "retrievedOn": "2026-10-30",
+      "searchRef": "turn260view0",
+      "provenance": "Manufacturer-authored material on the manufacturer website",
+      "documentNumber": "DFU7004010",
+      "revision": "Rev 4, 01/11/21",
+      "pageCount": 24
+    },
+    {
+      "id": "ctec-cfp-user",
+      "title": "C-TEC CFP 2/4/8-zone User Manual & Log Book DFU7001020 Rev 2",
+      "url": "https://c-tec.com/download?wpdmdl=12076",
+      "recordId": null,
+      "page": 7,
+      "section": "Indicator meanings; faults p9; disablements p10; delays p12",
+      "appliesTo": "CFP models listed in DFU7001020 Rev 2. Delay indicators and available functions vary by model; use the normal, non-selection display.",
+      "publisher": "C-TEC",
+      "retrievedOn": "2026-10-30",
+      "searchRef": "turn260view1",
+      "provenance": "Manufacturer-authored material on the manufacturer website",
+      "documentNumber": "DFU7001020",
+      "revision": "Rev 2",
+      "pageCount": 20,
+      "sha256": "f4445ea23e6f6fc95a6732ed57b6591dac6d85b3e26f7c6b81dabcec0c0d5333"
+    },
+    {
+      "id": "ctec-cfp-walktest",
+      "title": "C-TEC application note 0005.0: CFP Walk Test Mode, DFU0000702 Rev 1",
+      "url": "https://c-tec.com/download?wpdmdl=12352",
+      "recordId": null,
+      "page": 2,
+      "section": "Final test-state indication, step 5",
+      "appliesTo": "CFP panels covered by this application note. Cited only to identify an already active test condition, not to instruct entering test or opening the panel.",
+      "publisher": "C-TEC",
+      "retrievedOn": "2026-10-30",
+      "searchRef": "turn260view2",
+      "provenance": "Manufacturer-authored material on the manufacturer website",
+      "documentNumber": "DFU0000702",
+      "revision": "Rev 1",
+      "pageCount": 2
+    },
+    {
+      "id": "kentec-syncro",
+      "title": "Kentec Syncro Product Manual Man-1055 Issue 26 (May 2016)",
+      "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1055.pdf",
+      "recordId": "kentec-724b56a14295",
+      "page": 11,
+      "section": "§9 Detection circuits; §17 Power supply p19; §18 Inputs/outputs pp23–26; §25.1 Loop Data Test p32",
+      "appliesTo": "Syncro models and Hochiki/Apollo/Argus protocol configurations covered by issue 26. Installed configuration and firmware determine the applicable behavior.",
+      "publisher": "Kentec Electronics",
+      "retrievedOn": "2026-10-30",
+      "searchRef": "turn255view2",
+      "provenance": "Manufacturer-authored material on the manufacturer website",
+      "documentNumber": "Man-1055",
+      "revision": "Issue 26, May 2016",
+      "pageCount": 38,
+      "sha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd"
+    },
+    {
+      "id": "kentec-network",
+      "title": "Kentec Syncro Networking Manual Man-1058 Issue 06 (December 2016)",
+      "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1058.pdf",
+      "recordId": "kentec-d90c17977bf2",
+      "page": 11,
+      "section": "§12 Network faults, pp11–12",
+      "appliesTo": "Syncro network covered by issue 06; node numbering, processing and fault descriptions are model-specific.",
+      "publisher": "Kentec Electronics",
+      "retrievedOn": "2026-10-30",
+      "searchRef": "turn255view3",
+      "provenance": "Manufacturer-authored material on the manufacturer website",
+      "documentNumber": "Man-1058",
+      "revision": "Issue 06, December 2016",
+      "pageCount": 12
+    },
+    {
+      "id": "hochiki-esp-comms",
+      "title": "Hochiki Europe: Why do several devices on my addressable loop report random communication faults?",
+      "url": "https://web.hochikieurope.com/en-gb/knowledge-base/random-communication-faults-on-hochiki-esp-addressable-loops",
+      "recordId": null,
+      "page": null,
+      "section": "Applies to; Symptoms; Likely causes",
+      "appliesTo": "Hochiki ESP analogue addressable loops in the UK/Europe, including the listed ESP sensors, modules and call points; not every addressable protocol.",
+      "publisher": "Hochiki Europe",
+      "retrievedOn": "2026-10-30",
+      "searchRef": "turn257view4",
+      "provenance": "Manufacturer-authored material on the manufacturer website",
+      "sourceType": "manufacturer-support-webpage"
+    },
+    {
+      "id": "advanced-mxpro5-features",
+      "title": "Advanced MxPro 5 UK/Ireland brochure: Hardware Features",
+      "url": "https://www.advancedco.com/wp-content/uploads/MxPro-5-UK-IRE-Brochure-KC.pdf",
+      "recordId": null,
+      "page": 12,
+      "section": "Hardware Features / Wiring fault monitoring (PDF page 7, left-hand printed page 12)",
+      "appliesTo": "MxPro 5 with the relevant transmission-path monitoring enabled. This brochure does not establish the fault text, threshold or enabled state on another panel.",
+      "publisher": "Advanced Electronics",
+      "retrievedOn": "2026-10-30",
+      "searchRef": "turn293view0",
+      "provenance": "Manufacturer-authored material on the manufacturer website",
+      "pageCount": 17,
+      "pdfPage": 7,
+      "revision": "Edition hosted on 30 October 2026; revision not stated in the cited table"
+    },
+    {
+      "id": "advanced-mxpro5-release-notes",
+      "title": "Advanced MxPro 5 firmware release notes: v60.03.00 monitoring and event logging",
+      "url": "https://www.advancedco.com/product/flash/mxpro-5-firmware-releases/",
+      "recordId": null,
+      "page": null,
+      "section": "v60.03.00: EN54-13 monitoring disabled as default; Configuration changes are now logged",
+      "appliesTo": "MxPro 5 firmware v60.03.00 entries only; cited to show that monitoring and log facilities depend on firmware/configuration, not to recommend firmware changes.",
+      "publisher": "Advanced Electronics",
+      "retrievedOn": "2026-10-30",
+      "searchRef": "turn294view0",
+      "provenance": "Manufacturer-authored material on the manufacturer website",
+      "sourceType": "manufacturer-release-notes"
+    },
+    {
+      "id": "apollo-unwanted-alarms",
+      "title": "Apollo Fire Detectors: How do you reduce the risk of Manual Call Point false alarms? (9 June 2020)",
+      "url": "https://apollo-fire.co.uk/news/how-do-you-reduce-the-risk-of-manual-call-point-false-alarms/",
+      "recordId": null,
+      "page": null,
+      "section": "What are False Alarms, and how do they occur?; Manual Call Point related false alarms",
+      "appliesTo": "General unwanted-activation examples from Apollo. These examples cannot classify a current incident as false or determine anyone’s intent.",
+      "publisher": "Apollo Fire Detectors",
+      "retrievedOn": "2026-10-30",
+      "searchRef": "turn257view3",
+      "provenance": "Manufacturer-authored material on the manufacturer website",
+      "sourceType": "manufacturer-technical-article"
+    },
+    {
+      "id": "hochiki-unwanted-alarms",
+      "title": "Hochiki Europe: How do I reduce false alarms on a fire alarm system?",
+      "url": "https://web.hochikieurope.com/en-gb/knowledge-base/reduce-false-alarms-on-a-fire-alarm-system",
+      "recordId": null,
+      "page": null,
+      "section": "Common causes; Investigate and record every false alarm",
+      "appliesTo": "General guidance for Hochiki Europe detectors/panels in the UK. FINDR uses the observation examples, not the article’s standards advice or modification procedures.",
+      "publisher": "Hochiki Europe",
+      "retrievedOn": "2026-10-30",
+      "searchRef": "turn271view2",
+      "provenance": "Manufacturer-authored material on the manufacturer website",
+      "sourceType": "manufacturer-support-webpage"
+    },
+    {
+      "id": "ffe-fireray-hub",
+      "title": "FFE Fireray Hub Reflective User Guide 0044-102-03",
+      "url": "https://ffeuk.com/hubfs/website/resources/Fireray/Fireray_Hub_Reflective/User_Guides/0044-102_Fireray_Hub_Reflective_User_Guide_(EN).pdf",
+      "recordId": null,
+      "page": 20,
+      "section": "§21 Cleaning; §22 Error codes",
+      "appliesTo": "Fireray Hub Reflective controller/head system covered by 0044-102-03. E-codes apply to this model only; other beam detectors have different indicators.",
+      "publisher": "FFE",
+      "retrievedOn": "2026-10-30",
+      "searchRef": "turn259view1",
+      "provenance": "Manufacturer-authored material on the manufacturer website",
+      "documentNumber": "0044-102",
+      "revision": "03",
+      "pageCount": 24,
+      "sha256": "f6f143f6e819a5ed911edebf761fea05527c4210c101754c1dc79e494f49fd08"
+    },
+    {
+      "id": "ffe-fireray-one",
+      "title": "FFE Fireray One User Guide 0044-092-05",
+      "url": "https://ffeuk.com/hubfs/website/resources/Fireray/Fireray_One/User_Guides/0044-092_Fireray_One_User_Guide_(EN).pdf",
+      "recordId": null,
+      "page": 15,
+      "section": "Status Indications and Troubleshooting",
+      "appliesTo": "Fireray One covered by 0044-092-05. Its flash indications are different from Fireray Hub E-codes; no code or flash-rate interchange is assumed.",
+      "publisher": "FFE",
+      "retrievedOn": "2026-10-30",
+      "searchRef": "turn259view2",
+      "provenance": "Manufacturer-authored material on the manufacturer website",
+      "documentNumber": "0044-092",
+      "revision": "05",
+      "pageCount": 16,
+      "sha256": "299915b3abf18cefb564b81db82275ff43f6bd24a86d94244cbba19f68ab60c5"
+    },
+    {
+      "id": "xtralis-vesda-maintenance",
+      "title": "Xtralis VESDA Maintenance Guide 10256_09 (April 2020)",
+      "url": "https://www.acornfiresecurity.com/index.php?filename=Xtralis%2FVesda+Maintenance+Guide.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+      "recordId": null,
+      "page": 8,
+      "section": "§3.2 Checking Airflow; §3.3 Checking the Filter(s) (PDF page 14)",
+      "appliesTo": "VESDA VLP, VLS, VLC, VLF and VLI covered by 10256_09; not a VESDA-E product guide. Flow units, thresholds and filter behavior differ by model.",
+      "publisher": "Xtralis",
+      "retrievedOn": "2026-10-30",
+      "searchRef": "turn271view0",
+      "provenance": "Manufacturer-authored Xtralis PDF hosted by Acorn Fire & Security; Xtralis copyright, document number, contact details and product scope verified; distributor watermark is present.",
+      "documentNumber": "10256",
+      "revision": "09, April 2020",
+      "pageCount": 58,
+      "pdfPage": 14
+    },
+    {
+      "id": "xtralis-vesda-airflow-guide",
+      "title": "Xtralis: A Guide to the FIA Code of Practice for Aspirating Smoke Detector Systems, 12951_02",
+      "url": "https://xtralis.com/file/7504",
+      "recordId": null,
+      "page": 21,
+      "section": "§14.2.3.2 Fault detection",
+      "appliesTo": "Historical Xtralis VESDA guide referring to the February 2012 FIA code. Used only for broken-pipe/high-flow and blocked-pipe/low-flow examples, not as current UK compliance advice.",
+      "publisher": "Xtralis",
+      "retrievedOn": "2026-10-30",
+      "searchRef": "turn259view0",
+      "provenance": "Manufacturer-authored material on the manufacturer website",
+      "documentNumber": "12951",
+      "revision": "02; historical guide to FIA COP issue 3 (2012)",
+      "pageCount": 24,
+      "sha256": "c763635bb7373ed04d2311ece9ffb1d6a8dff31e8822e1558d8af63fac42230d"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "fire-editorial-ranking",
+      "groupIds": [
+        "power",
+        "loop",
+        "earth",
+        "device",
+        "sounder",
+        "network",
+        "system",
+        "fire_conventional_zone",
+        "fire_unwanted_alarm",
+        "fire_disablement_test",
+        "fire_outputs_not_operating",
+        "fire_beam",
+        "fire_aspirating_airflow"
+      ],
+      "claim": "All likelihood numbers are FINDR editorial design heuristics, not manufacturer probabilities, prevalence, failure rates or calibrated diagnostic confidence. Unknown answers supply no evidence. Related observations are not guaranteed statistically independent.",
+      "sourceRefs": [],
+      "kind": "editorial-method",
+      "limit": "Ranking must remain a list of possibilities with an unresolved outcome; no percentage diagnosis or automatic repair recommendation."
+    },
+    {
+      "id": "power-message-distinction",
+      "groupIds": [
+        "power"
+      ],
+      "claim": "Supply monitoring can separately identify mains, disconnected battery, low battery, high impedance and charger conditions.",
+      "sourceRefs": [
+        {
+          "sourceId": "kentec-syncro",
+          "page": 19,
+          "section": "§17 Power supply: displayed supply and battery faults"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "mains_message",
+        "battery_message",
+        "disconnected_message",
+        "charger_message",
+        "battery_impedance",
+        "battery_low_voltage"
+      ]
+    },
+    {
+      "id": "battery-impedance-not-component-proof",
+      "groupIds": [
+        "power"
+      ],
+      "claim": "Resistance in batteries or their leads can produce a supply fault; the indication alone does not identify the faulty part.",
+      "sourceRefs": [
+        {
+          "sourceId": "ctec-cfp-engineer",
+          "page": 20,
+          "section": "§1.2 Power supply faults: high-resistance batteries or leads"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "battery_impedance"
+      ],
+      "causeIds": [
+        "battery_condition",
+        "battery_path"
+      ]
+    },
+    {
+      "id": "loop-open-all-devices",
+      "groupIds": [
+        "loop"
+      ],
+      "claim": "The cited Syncro powers the circuit from both OUT and IN when loop continuity is open. All expected addresses can therefore remain visible during an open-circuit fault.",
+      "sourceRefs": [
+        {
+          "sourceId": "kentec-syncro",
+          "page": 11,
+          "section": "§9 Detection circuits: power from both OUT and IN after an open circuit"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "loop_open",
+        "loop_all_devices_present"
+      ],
+      "causeIds": [
+        "loop_break"
+      ],
+      "limit": "This supports coexistence, not a promise that every break/short topology leaves every device available. A missing-device warning is not a continuity test."
+    },
+    {
+      "id": "loop-isolation",
+      "groupIds": [
+        "loop"
+      ],
+      "claim": "Short-circuit isolators can separate a faulty loop section while other loop portions remain available.",
+      "sourceRefs": [
+        {
+          "sourceId": "kentec-syncro",
+          "page": 11,
+          "section": "§9 Detection circuits: power from both OUT and IN after an open circuit"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "loop_short",
+        "isolator"
+      ],
+      "causeIds": [
+        "loop_isolated_short"
+      ]
+    },
+    {
+      "id": "loop-bad-data",
+      "groupIds": [
+        "loop",
+        "device"
+      ],
+      "claim": "Bad data has several documented sources, including connections, interference, circuit leakage, excessive resistance and devices.",
+      "sourceRefs": [
+        {
+          "sourceId": "kentec-syncro",
+          "page": 32,
+          "section": "§25.1 Loop Data Test: bad data and possible sources"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "loop_bad_data"
+      ],
+      "causeIds": [
+        "loop_connection",
+        "shared_loop"
+      ],
+      "limit": "No observation here identifies a particular component or proves that interference is present."
+    },
+    {
+      "id": "integrity-monitoring-conditional",
+      "groupIds": [
+        "loop"
+      ],
+      "claim": "Advanced describes extra resistance/partial-short monitoring, but its enabled state depends on firmware/configuration.",
+      "sourceRefs": [
+        {
+          "sourceId": "advanced-mxpro5-features",
+          "page": 12,
+          "section": "Hardware Features / Wiring fault monitoring (PDF page 7, left-hand printed page 12)",
+          "pdfPage": 7
+        },
+        {
+          "sourceId": "advanced-mxpro5-release-notes",
+          "page": null,
+          "section": "v60.03.00: EN54-13 monitoring disabled as default"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "integrity"
+      ],
+      "causeIds": [
+        "loop_connection"
+      ]
+    },
+    {
+      "id": "earth-water-and-path",
+      "groupIds": [
+        "earth"
+      ],
+      "claim": "Hochiki lists an earth fault, including water ingress, among loop-communication causes; Syncro defines an earth-fault detection condition.",
+      "sourceRefs": [
+        {
+          "sourceId": "hochiki-esp-comms",
+          "page": null,
+          "section": "Symptoms; Likely causes"
+        },
+        {
+          "sourceId": "kentec-syncro",
+          "page": 30,
+          "section": "§24.4 Power supply: earth-fault detection"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "water",
+        "earth_confirmed"
+      ],
+      "causeIds": [
+        "earth_moisture",
+        "earth_path"
+      ]
+    },
+    {
+      "id": "observational-timing-not-causation",
+      "groupIds": [
+        "earth",
+        "loop",
+        "device",
+        "sounder",
+        "network",
+        "system",
+        "fire_conventional_zone"
+      ],
+      "claim": "Questions about prior work, weather and configuration changes collect chronology. Their links to candidate causes are editorial hypotheses, not manufacturer statements that correlation proves a cause.",
+      "sourceRefs": [
+        {
+          "sourceId": "hochiki-esp-comms",
+          "page": null,
+          "section": "Symptoms; Likely causes"
+        },
+        {
+          "sourceId": "ctec-cfp-engineer",
+          "page": 19,
+          "section": "§1.1 Zone faults"
+        },
+        {
+          "sourceId": "ctec-cfp-engineer",
+          "page": 21,
+          "section": "§1.3 System faults"
+        }
+      ],
+      "kind": "editorial-inference",
+      "questionIds": [
+        "weather",
+        "visible_damage",
+        "earth_after_work",
+        "works",
+        "changed",
+        "output_changed",
+        "network_changed",
+        "system_recent_config",
+        "cz_recent_work"
+      ]
+    },
+    {
+      "id": "lost-device-not-failed-detector",
+      "groupIds": [
+        "device"
+      ],
+      "claim": "The GENT message list defines a lost device as one that is not communicating; it does not by itself establish detector failure.",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-ops-1999",
+          "page": 15,
+          "section": "Typical fault messages"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "single",
+        "removed"
+      ],
+      "causeIds": [
+        "local_device"
+      ]
+    },
+    {
+      "id": "configuration-mismatch",
+      "groupIds": [
+        "device"
+      ],
+      "claim": "The Syncro manual describes duplicate addresses; Hochiki includes physical-device/list mismatch among communication-fault causes.",
+      "sourceRefs": [
+        {
+          "sourceId": "kentec-syncro",
+          "page": 9,
+          "section": "§7.2 Configuring the panel: double addresses"
+        },
+        {
+          "sourceId": "hochiki-esp-comms",
+          "page": null,
+          "section": "Symptoms; Likely causes"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "mismatch",
+        "changed"
+      ],
+      "causeIds": [
+        "device_config"
+      ]
+    },
+    {
+      "id": "sounder-supply-monitoring",
+      "groupIds": [
+        "sounder",
+        "fire_outputs_not_operating"
+      ],
+      "claim": "Referenced sounder controllers monitor the output wiring and an additional power supply.",
+      "sourceRefs": [
+        {
+          "sourceId": "kentec-syncro",
+          "page": 15,
+          "section": "§11 Panel Sounder circuits; §12 Sounder controllers"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "output_supply_fault",
+        "on_supply_fault"
+      ],
+      "causeIds": [
+        "sounder_supply",
+        "on_path_supply"
+      ]
+    },
+    {
+      "id": "network-missing-not-one-cause",
+      "groupIds": [
+        "network"
+      ],
+      "claim": "A missing Syncro node can result from lost power or loss of both network connections; addressing faults are separately identified.",
+      "sourceRefs": [
+        {
+          "sourceId": "kentec-network",
+          "page": 12,
+          "section": "§12.4 Network node missing: loss of power or both network paths"
+        },
+        {
+          "sourceId": "kentec-network",
+          "page": 12,
+          "section": "§12.2–12.8: card, node, addressing and communications faults"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "node_dark",
+        "address_message"
+      ],
+      "causeIds": [
+        "node_power",
+        "network_config"
+      ],
+      "limit": "A locally normal panel does not establish that its network path is healthy."
+    },
+    {
+      "id": "system-generic-indication",
+      "groupIds": [
+        "system"
+      ],
+      "claim": "CFP separates watchdog, site-memory and PLL events internally; the common external System Fault indication does not select one of them.",
+      "sourceRefs": [
+        {
+          "sourceId": "ctec-cfp-engineer",
+          "page": 21,
+          "section": "§1.3 System faults"
+        },
+        {
+          "sourceId": "ctec-cfp-user",
+          "page": 9,
+          "section": "Fault conditions: System Fault"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "watchdog",
+        "memory",
+        "system_generic_only"
+      ],
+      "causeIds": [
+        "processor",
+        "memory_config",
+        "system_unclassified"
+      ],
+      "limit": "Internal access-level-three diagnosis is excluded from FINDR follow-up checks."
+    },
+    {
+      "id": "conventional-zone-monitored",
+      "groupIds": [
+        "fire_conventional_zone"
+      ],
+      "claim": "The referenced CFP supervises zone open/short conditions and detector removal; detailed open/short diagnosis may require internal engineer access.",
+      "sourceRefs": [
+        {
+          "sourceId": "ctec-cfp-engineer",
+          "page": 18,
+          "section": "Fault indications"
+        },
+        {
+          "sourceId": "ctec-cfp-engineer",
+          "page": 19,
+          "section": "§1.1 Zone faults"
+        },
+        {
+          "sourceId": "ctec-cfp-user",
+          "page": 9,
+          "section": "Fault conditions: Zone Faults"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "cz_fault",
+        "cz_open",
+        "cz_short",
+        "cz_head_missing"
+      ],
+      "causeIds": [
+        "cz_open_path",
+        "cz_short_path",
+        "cz_removed_detector"
+      ]
+    },
+    {
+      "id": "conventional-zone-indicator-context",
+      "groupIds": [
+        "fire_conventional_zone",
+        "fire_disablement_test"
+      ],
+      "claim": "Zone indication can describe fault, disablement or test; interpretation needs accompanying status and the exact model.",
+      "sourceRefs": [
+        {
+          "sourceId": "ctec-cfp-user",
+          "page": 7,
+          "section": "What the indicator lights mean"
+        },
+        {
+          "sourceId": "ctec-cfp-walktest",
+          "page": 2,
+          "section": "Step 5: identifying the final test state"
+        },
+        {
+          "sourceId": "ctec-cfp-user",
+          "page": 10,
+          "section": "Disablements: option/effect table"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "cz_disabled",
+        "cz_test",
+        "dt_general",
+        "dt_detection",
+        "dt_test"
+      ],
+      "causeIds": [
+        "cz_control_state"
+      ]
+    },
+    {
+      "id": "unwanted-observations-only",
+      "groupIds": [
+        "fire_unwanted_alarm"
+      ],
+      "claim": "Manufacturer examples include airborne non-fire influences, contamination, call-point operation and test activity; they are retrospective investigation leads.",
+      "sourceRefs": [
+        {
+          "sourceId": "apollo-unwanted-alarms",
+          "page": null,
+          "section": "What are False Alarms, and how do they occur?; Manual Call Point related false alarms"
+        },
+        {
+          "sourceId": "hochiki-unwanted-alarms",
+          "page": null,
+          "section": "Common causes; §5 Investigate and record every false alarm"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "ua_call_point",
+        "ua_test",
+        "ua_steam",
+        "ua_cooking",
+        "ua_dust",
+        "ua_contamination",
+        "ua_repeat"
+      ],
+      "limit": "No combination of answers classifies a live alarm as false or establishes intent; follow the site emergency procedure for a current or suspected fire."
+    },
+    {
+      "id": "disablement-and-delay-distinct",
+      "groupIds": [
+        "fire_disablement_test"
+      ],
+      "claim": "The CFP user guide distinguishes disabled areas/outputs and programmed delays, with model-dependent indication overlap.",
+      "sourceRefs": [
+        {
+          "sourceId": "ctec-cfp-user",
+          "page": 10,
+          "section": "Disablements: option/effect table"
+        },
+        {
+          "sourceId": "ctec-cfp-user",
+          "page": 12,
+          "section": "Notes on Delays"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "dt_general",
+        "dt_detection",
+        "dt_output",
+        "dt_delays"
+      ],
+      "causeIds": [
+        "dt_detection_disabled",
+        "dt_output_disabled",
+        "dt_delay_enabled"
+      ]
+    },
+    {
+      "id": "test-can-inhibit-selected-outputs",
+      "groupIds": [
+        "fire_disablement_test",
+        "fire_outputs_not_operating"
+      ],
+      "claim": "Syncro test-mode inputs can suppress selected responses through the configured cause-and-effect logic.",
+      "sourceRefs": [
+        {
+          "sourceId": "kentec-syncro",
+          "page": 24,
+          "section": "§18.2.11 Disablement action; §18.2.12 Test mode action"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "dt_test",
+        "on_test"
+      ],
+      "causeIds": [
+        "dt_test_active",
+        "on_inhibited"
+      ],
+      "limit": "Do not assume every panel test mode suppresses every output."
+    },
+    {
+      "id": "output-state-and-configuration",
+      "groupIds": [
+        "fire_outputs_not_operating"
+      ],
+      "claim": "Disablement, a running delay, a silenceable response and configured output attributes are distinct reasons an expected output may not be active.",
+      "sourceRefs": [
+        {
+          "sourceId": "ctec-cfp-user",
+          "page": 10,
+          "section": "Disablements: option/effect table"
+        },
+        {
+          "sourceId": "ctec-cfp-user",
+          "page": 12,
+          "section": "Notes on Delays"
+        },
+        {
+          "sourceId": "kentec-syncro",
+          "page": 25,
+          "section": "§18.3.3 Silenceable"
+        },
+        {
+          "sourceId": "kentec-syncro",
+          "page": 24,
+          "section": "§18.3 Outputs: configurable attributes"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "on_disabled",
+        "on_delay",
+        "on_silenced",
+        "on_expected"
+      ],
+      "causeIds": [
+        "on_inhibited",
+        "on_delayed",
+        "on_silenced_output",
+        "on_response_logic"
+      ]
+    },
+    {
+      "id": "beam-model-specific-faults",
+      "groupIds": [
+        "fire_beam"
+      ],
+      "claim": "Fireray Hub Reflective distinguishes obscuration, compensation, alignment, ambient light, detector communication and low-power faults.",
+      "sourceRefs": [
+        {
+          "sourceId": "ffe-fireray-hub",
+          "page": 20,
+          "section": "§22 Error codes"
+        },
+        {
+          "sourceId": "ffe-fireray-hub",
+          "page": 20,
+          "section": "§21 Cleaning: compensation limits"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "beam_obscuration",
+        "beam_compensation",
+        "beam_alignment",
+        "beam_ambient_light",
+        "beam_communication",
+        "beam_low_power"
+      ],
+      "limit": "Hub E-codes are not Fireray One flash codes. Record the model and exact indication before using the examples."
+    },
+    {
+      "id": "beam-compensation",
+      "groupIds": [
+        "fire_beam"
+      ],
+      "claim": "Both cited FFE guides link compensation limits with accumulated optical contamination.",
+      "sourceRefs": [
+        {
+          "sourceId": "ffe-fireray-hub",
+          "page": 20,
+          "section": "§21 Cleaning: compensation limits"
+        },
+        {
+          "sourceId": "ffe-fireray-one",
+          "page": 15,
+          "section": "Status Indications and Troubleshooting"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "beam_compensation"
+      ],
+      "causeIds": [
+        "beam_optics"
+      ]
+    },
+    {
+      "id": "asd-flow-direction",
+      "groupIds": [
+        "fire_aspirating_airflow"
+      ],
+      "claim": "The Xtralis guide uses a broken pipe as a high-flow example and blocked pipes/holes as low-flow examples.",
+      "sourceRefs": [
+        {
+          "sourceId": "xtralis-vesda-airflow-guide",
+          "page": 21,
+          "section": "§14.2.3.2 Fault detection: broken pipe / blocked pipe examples"
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "asd_low",
+        "asd_high",
+        "asd_pipe_damage",
+        "asd_hole_covered"
+      ],
+      "causeIds": [
+        "asd_restriction",
+        "asd_pipe_leak"
+      ],
+      "limit": "Examples do not make the direction of flow a unique diagnosis or establish universal thresholds."
+    },
+    {
+      "id": "asd-multiple-causes",
+      "groupIds": [
+        "fire_aspirating_airflow"
+      ],
+      "claim": "Xtralis maintenance guidance lists filter, blockages, leaks, ventilation/layout, aspirator and contamination influences on airflow.",
+      "sourceRefs": [
+        {
+          "sourceId": "xtralis-vesda-maintenance",
+          "page": 8,
+          "section": "§3.2 Checking Airflow",
+          "pdfPage": 14
+        },
+        {
+          "sourceId": "xtralis-vesda-maintenance",
+          "page": 8,
+          "section": "§3.3 Checking the Filter(s)",
+          "pdfPage": 14
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "questionIds": [
+        "asd_ventilation_change",
+        "asd_pipe_change",
+        "asd_filter"
+      ],
+      "causeIds": [
+        "asd_environment_layout",
+        "asd_detector_service"
+      ]
+    },
+    {
+      "id": "asd-normalized-reading",
+      "groupIds": [
+        "fire_aspirating_airflow"
+      ],
+      "claim": "A percentage flow reading is relative to the last normalization and need not represent absolute flow; compare the same sampling pipe and model-specific units.",
+      "sourceRefs": [
+        {
+          "sourceId": "xtralis-vesda-maintenance",
+          "page": 8,
+          "section": "§3.2 Checking Airflow",
+          "pdfPage": 14
+        }
+      ],
+      "kind": "manufacturer-fact",
+      "limit": "FINDR does not advise normalizing, changing thresholds, blocking holes or disconnecting sampling pipes."
+    }
+  ],
+  "scenarios": [
+    {
+      "groupId": "fire_conventional_zone",
+      "answers": {
+        "cz_fault": "yes",
+        "cz_open": "unknown",
+        "cz_short": "no",
+        "cz_head_missing": "yes",
+        "cz_recent_work": "unknown",
+        "cz_disabled": "no",
+        "cz_test": "no"
+      },
+      "expectedCause": "cz_removed_detector"
+    },
+    {
+      "groupId": "fire_unwanted_alarm",
+      "answers": {
+        "ua_call_point": "no",
+        "ua_test": "no",
+        "ua_steam": "yes",
+        "ua_cooking": "no",
+        "ua_dust": "no",
+        "ua_contamination": "no",
+        "ua_repeat": "unknown"
+      },
+      "expectedCause": "ua_environment"
+    },
+    {
+      "groupId": "fire_disablement_test",
+      "answers": {
+        "dt_general": "no",
+        "dt_detection": "no",
+        "dt_output": "no",
+        "dt_test": "yes",
+        "dt_delays": "no"
+      },
+      "expectedCause": "dt_test_active"
+    },
+    {
+      "groupId": "fire_outputs_not_operating",
+      "answers": {
+        "on_disabled": "no",
+        "on_delay": "yes",
+        "on_silenced": "no",
+        "on_circuit_fault": "no",
+        "on_supply_fault": "no",
+        "on_test": "no",
+        "on_expected": "yes"
+      },
+      "expectedCause": "on_delayed"
+    },
+    {
+      "groupId": "fire_beam",
+      "answers": {
+        "beam_obstruction": "no",
+        "beam_obscuration": "no",
+        "beam_compensation": "no",
+        "beam_alignment": "no",
+        "beam_ambient_light": "yes",
+        "beam_communication": "no",
+        "beam_low_power": "no"
+      },
+      "expectedCause": "beam_light_interference"
+    },
+    {
+      "groupId": "fire_aspirating_airflow",
+      "answers": {
+        "asd_low": "no",
+        "asd_high": "yes",
+        "asd_pipe_damage": "yes",
+        "asd_hole_covered": "no",
+        "asd_ventilation_change": "no",
+        "asd_pipe_change": "unknown",
+        "asd_filter": "no"
+      },
+      "expectedCause": "asd_pipe_leak"
+    },
+    {
+      "groupId": "loop",
+      "answers": {
+        "loop_open": "yes",
+        "loop_short": "no",
+        "isolator": "no",
+        "integrity": "no",
+        "works": "unknown",
+        "loop_bad_data": "no",
+        "loop_all_devices_present": "yes"
+      },
+      "expectedCause": "loop_break"
+    }
+  ]
+}

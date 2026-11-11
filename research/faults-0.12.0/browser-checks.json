@@ -1,0 +1,47 @@
+{
+  "version": "0.12.0",
+  "environment": "Managed preview in cloud Chrome; local fictional sessions only",
+  "date": "2026-10-30",
+  "checks": [
+    "New answers appear in exact order: Yes, No, I don’t know; no tentative buttons.",
+    "Existing Kentec Syncro loop session loads the expanded seven-question guide.",
+    "I don’t know advances without weighting causes; Undo last answer restores the previous unanswered step.",
+    "Question source disclosure expands with manual titles, printed pages, applicability and reference-download controls.",
+    "All seven loop answers unknown finish with More evidence needed and possibility labels.",
+    "Copied all-unknown report states Unresolved — more evidence needed and insufficient evidence, without listing ranked candidate titles.",
+    "Fire fault-type screen contains all 13 groups.",
+    "Complete conventional-zone scenario using all three answer choices returns Detector head missing from its base as strongest match.",
+    "Prepared app footer displays FINDR / 0.12.0."
+  ],
+  "responsiveChecks": [
+    {
+      "frameWidth": 390,
+      "documentClientWidth": 375,
+      "documentScrollWidth": 375,
+      "answerCount": 3,
+      "answerButtonHeights": [
+        57,
+        57,
+        57
+      ]
+    },
+    {
+      "frameWidth": 320,
+      "documentClientWidth": 305,
+      "documentScrollWidth": 305,
+      "answerCount": 3,
+      "answerButtonHeights": [
+        57,
+        57,
+        57
+      ]
+    }
+  ],
+  "screenshot": "fault-finder-0.12.0-proof.jpg",
+  "temporaryViewportPageRemoved": true,
+  "limits": [
+    "Phone widths were checked in same-origin browser frames, not physical phones.",
+    "HTTP managed preview does not validate installed service-worker offline operation.",
+    "No physical Android installation or live-panel diagnosis was tested."
+  ]
+}

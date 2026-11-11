@@ -1,0 +1,1339 @@
+{
+  "schemaVersion": 1,
+  "version": "2026-11-10.4",
+  "procedures": [
+    {
+      "id": "mxpro4-walk-test-680-015-rev10",
+      "operation": "walk-test",
+      "matchTerms": [
+        "walk test",
+        "walktest",
+        "walk-test",
+        "test zones",
+        "zone test",
+        "one person test"
+      ],
+      "manual": {
+        "recordId": "advanced-8f3ba6ecfc7f",
+        "sha256": "5b0e02d2f682d6039474e94716b2f75f10868dc33fa3e6764c0b43c3c50b86a4",
+        "title": "Advanced MxPro4 — User guide",
+        "documentNumber": "680-015",
+        "revision": "10",
+        "models": [
+          "MxPro4",
+          "Mx-4100",
+          "Mx-4100/L",
+          "Mx-4200",
+          "Mx-4200/D",
+          "Mx-4400",
+          "Mx-4400/D",
+          "Mx-4400/LE",
+          "Mx-4800"
+        ],
+        "pageCount": 40
+      },
+      "scope": {
+        "models": [
+          "MxPro4",
+          "Mx-4100",
+          "Mx-4100/L",
+          "Mx-4200",
+          "Mx-4200/D",
+          "Mx-4400",
+          "Mx-4400/D",
+          "Mx-4400/LE",
+          "Mx-4800"
+        ],
+        "familyAliases": [
+          "MxPro"
+        ],
+        "allowFamilyQuestion": true,
+        "sharedProcedure": false,
+        "label": "For MxPro4 panels covered by user guide 680-015, revision 10.",
+        "refs": [
+          {
+            "page": 5,
+            "printedPage": "5",
+            "quote": "Mx-4100, Mx-4100/L, Mx-4200, Mx-4200/D, Mx-4400",
+            "section": "1.1 Standards — covered products"
+          }
+        ]
+      },
+      "anchors": [
+        {
+          "page": 5,
+          "printedPage": "5",
+          "quote": "Mx-4100, Mx-4100/L, Mx-4200, Mx-4200/D, Mx-4400",
+          "section": "1.1 Standards — covered products"
+        },
+        {
+          "page": 40,
+          "printedPage": "40",
+          "quote": "Doc Number: 680-015",
+          "section": "Document identification"
+        },
+        {
+          "page": 40,
+          "printedPage": "40",
+          "quote": "Revision: 10",
+          "section": "Document identification"
+        },
+        {
+          "page": 31,
+          "printedPage": "31",
+          "quote": "The Test Zones function provides the means to implement a one-person walk test",
+          "section": "3.10.1 Test – Zones"
+        },
+        {
+          "page": 32,
+          "printedPage": "32",
+          "quote": "Selecting the FINISHED TEST option will cancel all zone tests.",
+          "section": "3.10.1 Test – Zones"
+        }
+      ],
+      "prerequisites": [
+        {
+          "text": "Use authorised Level 2 access with permission for zone testing. If fitted, use the access key; otherwise press MENU → ENABLE CONTROLS → ✔, enter your authorised password and press ✔.",
+          "refs": [
+            {
+              "page": 10,
+              "printedPage": "10",
+              "quote": "Level 2 Authorised User",
+              "section": "3.1 Access Levels"
+            },
+            {
+              "page": 31,
+              "printedPage": "31",
+              "quote": "If the current User ID does not have the necessary permission",
+              "section": "3.10.1 Test – Zones"
+            },
+            {
+              "page": 10,
+              "printedPage": "10",
+              "quote": "If the panel has an access key switch fitted, use the key",
+              "section": "3.1.1 Changing from Access Level 1 to Level 2"
+            },
+            {
+              "page": 10,
+              "printedPage": "10",
+              "quote": "To enable the controls, ensure the “Enable Controls” option is highlighted",
+              "section": "3.1.1.1 Menu Access"
+            },
+            {
+              "page": 10,
+              "printedPage": "10",
+              "quote": "Enter the password using the number buttons and then press the ✔ button",
+              "section": "3.1.1.1 Menu Access"
+            }
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "text": "Press MENU. Use the arrow buttons and ✔ to select TEST, then ZONES.",
+          "refs": [
+            {
+              "page": 18,
+              "printedPage": "18",
+              "quote": "Press the ‘Menu’ button to bring up the display menu.",
+              "section": "3.6.1 Using the Buttons to Navigate Menus"
+            },
+            {
+              "page": 17,
+              "printedPage": "17",
+              "quote": "Configure one or more zones for walk test.",
+              "section": "3.6 Menu Functions"
+            },
+            {
+              "page": 31,
+              "printedPage": "31",
+              "quote": "buttons to highlight the required menu option and then press the ✔ button",
+              "section": "3.10.1 Test – Zones"
+            }
+          ]
+        },
+        {
+          "text": "Choose WITHOUT SOUNDERS or WITH SOUNDERS, then press ✔.",
+          "refs": [
+            {
+              "page": 31,
+              "printedPage": "31",
+              "quote": "select whether the sounders will activate (for about 10-seconds)",
+              "section": "3.10.1 Test – Zones"
+            },
+            {
+              "page": 31,
+              "printedPage": "31",
+              "quote": "WITH SOUNDERS",
+              "section": "3.10.1 Test – Zones"
+            },
+            {
+              "page": 31,
+              "printedPage": "31",
+              "quote": "buttons to highlight the required menu option and then press the ✔ button",
+              "section": "3.10.1 Test – Zones"
+            }
+          ]
+        },
+        {
+          "text": "Highlight each zone to test and press ✔. Check it shows IN TEST and the Test indicator is lit.",
+          "refs": [
+            {
+              "page": 31,
+              "printedPage": "31",
+              "quote": "highlight the required zone and then press the ✔ button to change",
+              "section": "3.10.1 Test – Zones"
+            },
+            {
+              "page": 31,
+              "printedPage": "31",
+              "quote": "IN TEST",
+              "section": "3.10.1 Test – Zones"
+            },
+            {
+              "page": 31,
+              "printedPage": "31",
+              "quote": "the Test Indicator will be illuminated",
+              "section": "3.10.1 Test – Zones"
+            }
+          ]
+        },
+        {
+          "text": "Operate the call point with its test key, or apply test smoke to the smoke detector. A registered test shows ! beside the zone; the sounders operate if selected.",
+          "refs": [
+            {
+              "page": 31,
+              "printedPage": "31",
+              "quote": "break glass test on a call point or introducing test smoke into a smoke detector",
+              "section": "3.10.1 Test – Zones"
+            },
+            {
+              "page": 31,
+              "printedPage": "31",
+              "quote": "exclamation mark (!) on the display",
+              "section": "3.10.1 Test – Zones"
+            },
+            {
+              "page": 31,
+              "printedPage": "31",
+              "quote": "sounders will activate (for about 10-seconds)",
+              "section": "3.10.1 Test – Zones"
+            }
+          ]
+        },
+        {
+          "text": "Remove the call-point test key or allow the detector smoke to clear. The panel automatically resets that test condition.",
+          "refs": [
+            {
+              "page": 31,
+              "printedPage": "31",
+              "quote": "When the activating test key is removed from the call point or the smoke clears",
+              "section": "3.10.1 Test – Zones"
+            },
+            {
+              "page": 31,
+              "printedPage": "31",
+              "quote": "panel will automatically reset and clear the test condition",
+              "section": "3.10.1 Test – Zones"
+            }
+          ]
+        },
+        {
+          "text": "When finished, press Esc and select FINISHED TEST. Check that the Test LED goes out.",
+          "refs": [
+            {
+              "page": 32,
+              "printedPage": "32",
+              "quote": "To leave the Zone Test menu, press the ‘Esc’ button.",
+              "section": "3.10.1 Test – Zones"
+            },
+            {
+              "page": 32,
+              "printedPage": "32",
+              "quote": "Selecting the FINISHED TEST option will cancel all zone tests.",
+              "section": "3.10.1 Test – Zones"
+            },
+            {
+              "page": 32,
+              "printedPage": "32",
+              "quote": "The Test LED will then extinguish.",
+              "section": "3.10.1 Test – Zones"
+            }
+          ]
+        }
+      ],
+      "effects": [
+        {
+          "text": "WITH SOUNDERS activates the sounders selected during commissioning for about 10 seconds per activation. KEEP ZONES IN TEST leaves the test active and the Test LED lit.",
+          "refs": [
+            {
+              "page": 31,
+              "printedPage": "31",
+              "quote": "sounders will activate (for about 10-seconds)",
+              "section": "3.10.1 Test – Zones"
+            },
+            {
+              "page": 31,
+              "printedPage": "31",
+              "quote": "programmed during commissioning to define which of the sounders",
+              "section": "3.10.1 Test – Zones"
+            },
+            {
+              "page": 32,
+              "printedPage": "32",
+              "quote": "KEEP ZONES IN TEST option.",
+              "section": "3.10.1 Test – Zones"
+            },
+            {
+              "page": 32,
+              "printedPage": "32",
+              "quote": "The Test LED will stay illuminated if this option is selected.",
+              "section": "3.10.1 Test – Zones"
+            }
+          ]
+        }
+      ],
+      "followUps": {
+        "menuLocation": [
+          {
+            "text": "At Level 2, press MENU, highlight TEST and press ✔, then select ZONES. If controls are disabled, use the access key or MENU → ENABLE CONTROLS → ✔ and your authorised password.",
+            "refs": [
+              {
+                "page": 10,
+                "printedPage": "10",
+                "quote": "Level 2 Authorised User",
+                "section": "3.1 Access Levels"
+              },
+              {
+                "page": 18,
+                "printedPage": "18",
+                "quote": "Press the ‘Menu’ button to bring up the display menu.",
+                "section": "3.6.1 Using the Buttons to Navigate Menus"
+              },
+              {
+                "page": 17,
+                "printedPage": "17",
+                "quote": "Configure one or more zones for walk test.",
+                "section": "3.6 Menu Functions"
+              },
+              {
+                "page": 31,
+                "printedPage": "31",
+                "quote": "buttons to highlight the required menu option and then press the ✔ button",
+                "section": "3.10.1 Test – Zones"
+              },
+              {
+                "page": 10,
+                "printedPage": "10",
+                "quote": "If the panel has an access key switch fitted, use the key",
+                "section": "3.1.1 Changing from Access Level 1 to Level 2"
+              },
+              {
+                "page": 10,
+                "printedPage": "10",
+                "quote": "To enable the controls, ensure the “Enable Controls” option is highlighted",
+                "section": "3.1.1.1 Menu Access"
+              },
+              {
+                "page": 10,
+                "printedPage": "10",
+                "quote": "Enter the password using the number buttons and then press the ✔ button",
+                "section": "3.1.1.1 Menu Access"
+              }
+            ]
+          }
+        ],
+        "nextStep": [
+          {
+            "text": "If you are at TEST → ZONES, choose WITHOUT SOUNDERS or WITH SOUNDERS and press ✔. Then highlight the required zone and press ✔ so it shows IN TEST.",
+            "refs": [
+              {
+                "page": 31,
+                "printedPage": "31",
+                "quote": "select whether the sounders will activate (for about 10-seconds)",
+                "section": "3.10.1 Test – Zones"
+              },
+              {
+                "page": 31,
+                "printedPage": "31",
+                "quote": "WITH SOUNDERS",
+                "section": "3.10.1 Test – Zones"
+              },
+              {
+                "page": 31,
+                "printedPage": "31",
+                "quote": "buttons to highlight the required menu option and then press the ✔ button",
+                "section": "3.10.1 Test – Zones"
+              },
+              {
+                "page": 31,
+                "printedPage": "31",
+                "quote": "highlight the required zone and then press the ✔ button to change",
+                "section": "3.10.1 Test – Zones"
+              },
+              {
+                "page": 31,
+                "printedPage": "31",
+                "quote": "IN TEST",
+                "section": "3.10.1 Test – Zones"
+              }
+            ]
+          }
+        ],
+        "stopTest": [
+          {
+            "text": "Press Esc from Zone Test and choose FINISHED TEST. This cancels all zone tests and the Test LED goes out. KEEP ZONES IN TEST leaves testing active.",
+            "refs": [
+              {
+                "page": 32,
+                "printedPage": "32",
+                "quote": "To leave the Zone Test menu, press the ‘Esc’ button.",
+                "section": "3.10.1 Test – Zones"
+              },
+              {
+                "page": 32,
+                "printedPage": "32",
+                "quote": "Selecting the FINISHED TEST option will cancel all zone tests.",
+                "section": "3.10.1 Test – Zones"
+              },
+              {
+                "page": 32,
+                "printedPage": "32",
+                "quote": "The Test LED will then extinguish.",
+                "section": "3.10.1 Test – Zones"
+              },
+              {
+                "page": 32,
+                "printedPage": "32",
+                "quote": "KEEP ZONES IN TEST option.",
+                "section": "3.10.1 Test – Zones"
+              },
+              {
+                "page": 32,
+                "printedPage": "32",
+                "quote": "The Test LED will stay illuminated if this option is selected.",
+                "section": "3.10.1 Test – Zones"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "mxpro5-walk-test-680-166-rev04",
+      "operation": "walk-test",
+      "matchTerms": [
+        "walk test",
+        "walktest",
+        "walk-test",
+        "test zones",
+        "zone test",
+        "one person test"
+      ],
+      "manual": {
+        "recordId": "advanced-0254975c10bd",
+        "sha256": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+        "title": "Advanced MxPro5 — User guide",
+        "documentNumber": "680-166",
+        "revision": "04",
+        "models": [
+          "MxPro5",
+          "Mx-5100",
+          "Mx-5200",
+          "Mx-5400",
+          "Mx-5800",
+          "Mx-5100V",
+          "Mx-5200V",
+          "Mx-5400V",
+          "Mx-5800V",
+          "Mx-5100N",
+          "Mx-5200N",
+          "Mx-5400N",
+          "Mx-5800N"
+        ],
+        "pageCount": 43
+      },
+      "scope": {
+        "models": [
+          "MxPro5",
+          "Mx-5100",
+          "Mx-5200",
+          "Mx-5400",
+          "Mx-5800",
+          "Mx-5100V",
+          "Mx-5200V",
+          "Mx-5400V",
+          "Mx-5800V",
+          "Mx-5100N",
+          "Mx-5200N",
+          "Mx-5400N",
+          "Mx-5800N"
+        ],
+        "familyAliases": [
+          "MxPro"
+        ],
+        "allowFamilyQuestion": true,
+        "sharedProcedure": false,
+        "label": "For MxPro5 panels covered by user guide 680-166, revision 04.",
+        "refs": [
+          {
+            "page": 5,
+            "printedPage": "5",
+            "quote": "Mx-5100, Mx-5200, Mx-5400, MX-5800",
+            "section": "1.1 Standards — covered products"
+          }
+        ]
+      },
+      "anchors": [
+        {
+          "page": 5,
+          "printedPage": "5",
+          "quote": "Mx-5100, Mx-5200, Mx-5400, MX-5800",
+          "section": "1.1 Standards — covered products"
+        },
+        {
+          "page": 43,
+          "printedPage": "43",
+          "quote": "Doc Number: 680-166",
+          "section": "Document identification"
+        },
+        {
+          "page": 43,
+          "printedPage": "43",
+          "quote": "Revision: 04",
+          "section": "Document identification"
+        },
+        {
+          "page": 33,
+          "printedPage": "33",
+          "quote": "The Test Zones function provides the means to implement a one-person walk test",
+          "section": "3.13.1 Test – Zones"
+        },
+        {
+          "page": 34,
+          "printedPage": "34",
+          "quote": "Selecting the FINISHED TEST option will cancel all zone tests.",
+          "section": "3.13.1 Test – Zones"
+        }
+      ],
+      "prerequisites": [
+        {
+          "text": "Use authorised Level 2 access with permission for zone testing. If fitted, use the access key; otherwise press MENU → ENABLE CONTROLS → ✔, enter your authorised password and press ✔.",
+          "refs": [
+            {
+              "page": 10,
+              "printedPage": "10",
+              "quote": "Level 2 Authorised User",
+              "section": "3.1 Access Levels"
+            },
+            {
+              "page": 33,
+              "printedPage": "33",
+              "quote": "If the current User ID does not have the necessary permission",
+              "section": "3.13.1 Test – Zones"
+            },
+            {
+              "page": 11,
+              "printedPage": "11",
+              "quote": "If the panel has an access key switch fitted, use the key",
+              "section": "3.1.1 Changing from Access Level 1 to Level 2"
+            },
+            {
+              "page": 11,
+              "printedPage": "11",
+              "quote": "To enable the controls, ensure the “Enable Controls” option is highlighted",
+              "section": "3.1.1.1 Menu Access"
+            },
+            {
+              "page": 11,
+              "printedPage": "11",
+              "quote": "Enter the password using the number buttons and then press the ✔ button",
+              "section": "3.1.1.1 Menu Access"
+            }
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "text": "Press MENU. Use the arrow buttons and ✔ to select TEST, then ZONES.",
+          "refs": [
+            {
+              "page": 19,
+              "printedPage": "19",
+              "quote": "Press the ‘Menu’ button to bring up the display menu.",
+              "section": "3.8.1 Using the Buttons to Navigate Menus"
+            },
+            {
+              "page": 18,
+              "printedPage": "18",
+              "quote": "Configure one or more zones for walk test.",
+              "section": "3.8 Menu Functions"
+            },
+            {
+              "page": 33,
+              "printedPage": "33",
+              "quote": "buttons to highlight the required menu option and then press the ✔ button",
+              "section": "3.13.1 Test – Zones"
+            }
+          ]
+        },
+        {
+          "text": "Choose WITHOUT SOUNDERS or WITH SOUNDERS, then press ✔.",
+          "refs": [
+            {
+              "page": 33,
+              "printedPage": "33",
+              "quote": "select whether the sounders will activate (for about 10-seconds)",
+              "section": "3.13.1 Test – Zones"
+            },
+            {
+              "page": 33,
+              "printedPage": "33",
+              "quote": "WITH SOUNDERS",
+              "section": "3.13.1 Test – Zones"
+            },
+            {
+              "page": 33,
+              "printedPage": "33",
+              "quote": "buttons to highlight the required menu option and then press the ✔ button",
+              "section": "3.13.1 Test – Zones"
+            }
+          ]
+        },
+        {
+          "text": "Highlight each zone to test and press ✔. Check it shows IN TEST and the Test indicator is lit.",
+          "refs": [
+            {
+              "page": 33,
+              "printedPage": "33",
+              "quote": "highlight the required zone and then press the ✔ button to change",
+              "section": "3.13.1 Test – Zones"
+            },
+            {
+              "page": 33,
+              "printedPage": "33",
+              "quote": "IN TEST",
+              "section": "3.13.1 Test – Zones"
+            },
+            {
+              "page": 33,
+              "printedPage": "33",
+              "quote": "the Test Indicator will be illuminated",
+              "section": "3.13.1 Test – Zones"
+            }
+          ]
+        },
+        {
+          "text": "Operate the call point with its test key, or apply test smoke to the smoke detector. A registered test shows ! beside the zone; the sounders operate if selected.",
+          "refs": [
+            {
+              "page": 33,
+              "printedPage": "33",
+              "quote": "break glass test on a call point or introducing test smoke into a smoke detector",
+              "section": "3.13.1 Test – Zones"
+            },
+            {
+              "page": 33,
+              "printedPage": "33",
+              "quote": "exclamation mark (!) on the display",
+              "section": "3.13.1 Test – Zones"
+            },
+            {
+              "page": 33,
+              "printedPage": "33",
+              "quote": "sounders will activate (for about 10-seconds)",
+              "section": "3.13.1 Test – Zones"
+            }
+          ]
+        },
+        {
+          "text": "Remove the call-point test key or allow the detector smoke to clear. The panel automatically resets that test condition.",
+          "refs": [
+            {
+              "page": 34,
+              "printedPage": "34",
+              "quote": "When the activating test key is removed from the call point or the smoke clears",
+              "section": "3.13.1 Test – Zones"
+            },
+            {
+              "page": 34,
+              "printedPage": "34",
+              "quote": "panel will automatically reset and clear the test condition",
+              "section": "3.13.1 Test – Zones"
+            }
+          ]
+        },
+        {
+          "text": "When finished, press Esc and select FINISHED TEST. Check that the Test LED goes out.",
+          "refs": [
+            {
+              "page": 34,
+              "printedPage": "34",
+              "quote": "To leave the Zone Test menu, press the ‘Esc’ button.",
+              "section": "3.13.1 Test – Zones"
+            },
+            {
+              "page": 34,
+              "printedPage": "34",
+              "quote": "Selecting the FINISHED TEST option will cancel all zone tests.",
+              "section": "3.13.1 Test – Zones"
+            },
+            {
+              "page": 34,
+              "printedPage": "34",
+              "quote": "The Test LED will then extinguish.",
+              "section": "3.13.1 Test – Zones"
+            }
+          ]
+        }
+      ],
+      "effects": [
+        {
+          "text": "WITH SOUNDERS activates the sounders selected during commissioning for about 10 seconds per activation. KEEP ZONES IN TEST leaves the test active and the Test LED lit.",
+          "refs": [
+            {
+              "page": 33,
+              "printedPage": "33",
+              "quote": "sounders will activate (for about 10-seconds)",
+              "section": "3.13.1 Test – Zones"
+            },
+            {
+              "page": 33,
+              "printedPage": "33",
+              "quote": "programmed during commissioning to define which of the sounders",
+              "section": "3.13.1 Test – Zones"
+            },
+            {
+              "page": 34,
+              "printedPage": "34",
+              "quote": "KEEP ZONES IN TEST option.",
+              "section": "3.13.1 Test – Zones"
+            },
+            {
+              "page": 34,
+              "printedPage": "34",
+              "quote": "The Test LED will stay illuminated if this option is selected.",
+              "section": "3.13.1 Test – Zones"
+            }
+          ]
+        }
+      ],
+      "followUps": {
+        "menuLocation": [
+          {
+            "text": "At Level 2, press MENU, highlight TEST and press ✔, then select ZONES. If controls are disabled, use the access key or MENU → ENABLE CONTROLS → ✔ and your authorised password.",
+            "refs": [
+              {
+                "page": 10,
+                "printedPage": "10",
+                "quote": "Level 2 Authorised User",
+                "section": "3.1 Access Levels"
+              },
+              {
+                "page": 19,
+                "printedPage": "19",
+                "quote": "Press the ‘Menu’ button to bring up the display menu.",
+                "section": "3.8.1 Using the Buttons to Navigate Menus"
+              },
+              {
+                "page": 18,
+                "printedPage": "18",
+                "quote": "Configure one or more zones for walk test.",
+                "section": "3.8 Menu Functions"
+              },
+              {
+                "page": 33,
+                "printedPage": "33",
+                "quote": "buttons to highlight the required menu option and then press the ✔ button",
+                "section": "3.13.1 Test – Zones"
+              },
+              {
+                "page": 11,
+                "printedPage": "11",
+                "quote": "If the panel has an access key switch fitted, use the key",
+                "section": "3.1.1 Changing from Access Level 1 to Level 2"
+              },
+              {
+                "page": 11,
+                "printedPage": "11",
+                "quote": "To enable the controls, ensure the “Enable Controls” option is highlighted",
+                "section": "3.1.1.1 Menu Access"
+              },
+              {
+                "page": 11,
+                "printedPage": "11",
+                "quote": "Enter the password using the number buttons and then press the ✔ button",
+                "section": "3.1.1.1 Menu Access"
+              }
+            ]
+          }
+        ],
+        "nextStep": [
+          {
+            "text": "If you are at TEST → ZONES, choose WITHOUT SOUNDERS or WITH SOUNDERS and press ✔. Then highlight the required zone and press ✔ so it shows IN TEST.",
+            "refs": [
+              {
+                "page": 33,
+                "printedPage": "33",
+                "quote": "select whether the sounders will activate (for about 10-seconds)",
+                "section": "3.13.1 Test – Zones"
+              },
+              {
+                "page": 33,
+                "printedPage": "33",
+                "quote": "WITH SOUNDERS",
+                "section": "3.13.1 Test – Zones"
+              },
+              {
+                "page": 33,
+                "printedPage": "33",
+                "quote": "buttons to highlight the required menu option and then press the ✔ button",
+                "section": "3.13.1 Test – Zones"
+              },
+              {
+                "page": 33,
+                "printedPage": "33",
+                "quote": "highlight the required zone and then press the ✔ button to change",
+                "section": "3.13.1 Test – Zones"
+              },
+              {
+                "page": 33,
+                "printedPage": "33",
+                "quote": "IN TEST",
+                "section": "3.13.1 Test – Zones"
+              }
+            ]
+          }
+        ],
+        "stopTest": [
+          {
+            "text": "Press Esc from Zone Test and choose FINISHED TEST. This cancels all zone tests and the Test LED goes out. KEEP ZONES IN TEST leaves testing active.",
+            "refs": [
+              {
+                "page": 34,
+                "printedPage": "34",
+                "quote": "To leave the Zone Test menu, press the ‘Esc’ button.",
+                "section": "3.13.1 Test – Zones"
+              },
+              {
+                "page": 34,
+                "printedPage": "34",
+                "quote": "Selecting the FINISHED TEST option will cancel all zone tests.",
+                "section": "3.13.1 Test – Zones"
+              },
+              {
+                "page": 34,
+                "printedPage": "34",
+                "quote": "The Test LED will then extinguish.",
+                "section": "3.13.1 Test – Zones"
+              },
+              {
+                "page": 34,
+                "printedPage": "34",
+                "quote": "KEEP ZONES IN TEST option.",
+                "section": "3.13.1 Test – Zones"
+              },
+              {
+                "page": 34,
+                "printedPage": "34",
+                "quote": "The Test LED will stay illuminated if this option is selected.",
+                "section": "3.13.1 Test – Zones"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "gent-vigilon-en-zone-test-4188-856-issue7",
+      "operation": "walk-test",
+      "matchTerms": [
+        "walk test",
+        "walktest",
+        "walk-test",
+        "test zones",
+        "zone test",
+        "one person test"
+      ],
+      "manual": {
+        "recordId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+        "sha256": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+        "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+        "documentNumber": "4188-856",
+        "revision": "Issue 7, 07/15",
+        "models": [
+          "Vigilon",
+          "Vigilon 4/6 Loop and Compact",
+          "Vigilon Compact"
+        ],
+        "pageCount": 162
+      },
+      "scope": {
+        "models": [
+          "Vigilon",
+          "Vigilon 4/6 Loop and Compact",
+          "Vigilon Compact"
+        ],
+        "familyAliases": [
+          "Vigilon"
+        ],
+        "allowFamilyQuestion": true,
+        "sharedProcedure": false,
+        "requiredVariant": [
+          "EN Vigilon (MCC/MCB V4.53 or higher)"
+        ],
+        "label": "For EN Vigilon 4/6-loop / Compact panels using the MCC/MCB V4.53-or-higher menu map in 4188-856, issue 7 (07/15). This is Zone Test, not the separate BS Commission mode.",
+        "refs": [
+          {
+            "page": 81,
+            "printedPage": "81",
+            "quote": "Zone Test mode is applicable for EN VIGILON 4/6-loop panel, VIGILON Compact panel and",
+            "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+          },
+          {
+            "page": 105,
+            "printedPage": "105",
+            "quote": "V4.53 or higher",
+            "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+          },
+          {
+            "page": 105,
+            "printedPage": "105",
+            "quote": "EN Vigilon",
+            "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+          },
+          {
+            "page": 81,
+            "printedPage": "81",
+            "quote": "'Commission' mode (for BS panels only)",
+            "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+          }
+        ],
+        "variantAliases": {
+          "EN Vigilon (MCC/MCB V4.53 or higher)": [
+            "EN Vigilon V4.53",
+            "EN Vigilon 4.53"
+          ]
+        }
+      },
+      "anchors": [
+        {
+          "page": 1,
+          "printedPage": "1",
+          "quote": "Generic Commissioning Instructions",
+          "section": "Document cover"
+        },
+        {
+          "page": 1,
+          "printedPage": "1",
+          "quote": "for Vigilon 4/6 loop & Compact range of fire panels & network nodes",
+          "section": "Document cover"
+        },
+        {
+          "page": 81,
+          "printedPage": "81",
+          "quote": "4188-856_issue 7_07/15_Generic Vigilon (Compact + VA) Comms.",
+          "section": "Document footer"
+        },
+        {
+          "page": 81,
+          "printedPage": "81",
+          "quote": "Zone Test mode is applicable for EN VIGILON 4/6-loop panel, VIGILON Compact panel and",
+          "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+        },
+        {
+          "page": 105,
+          "printedPage": "105",
+          "quote": "V4.53 or higher",
+          "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+        },
+        {
+          "page": 105,
+          "printedPage": "105",
+          "quote": "Menu map 1",
+          "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+        },
+        {
+          "page": 81,
+          "printedPage": "81",
+          "quote": "On completion of all tests, switch Off the [Test] mode and notice the 'Test'",
+          "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+        }
+      ],
+      "prerequisites": [
+        {
+          "text": "Use authorised engineer (Level 3) access. Before testing, obtain customer consent, inform affected people and the alarm receiving centre where connected, and arrange isolation of interfaced plant under the site procedure.",
+          "refs": [
+            {
+              "page": 53,
+              "printedPage": "53",
+              "quote": "Access level 3 is for the ENGINEER.",
+              "section": "Useful menu options — Password or PIN code"
+            },
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "Tests should be carried out following customer consent.",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            },
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "all affected personnel on the site are informed",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            },
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "where there is a link to an alarm receiving centre",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            },
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "equipment interfaced to the fire alarm system should be isolated.",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            }
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "text": "Press Menu On/Off → Test/Eng → UserCode and enter your authorised engineering password.",
+          "refs": [
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "Press Menu On/Off",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            },
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "button and select [Test/Eng] -> [UserCode] and enter the Engineering password",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            }
+          ]
+        },
+        {
+          "text": "Use <etc> → Test → Test, then On. There are two Test selections in this EN menu map; do not use the separate Commission branch.",
+          "refs": [
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "Press <etc> and select [Test]",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            },
+            {
+              "page": 105,
+              "printedPage": "105",
+              "quote": "Menu map 1",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+            },
+            {
+              "page": 105,
+              "printedPage": "105",
+              "quote": "[FreeBlok]",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+            },
+            {
+              "page": 105,
+              "printedPage": "105",
+              "quote": "[Datalog]",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+            },
+            {
+              "page": 105,
+              "printedPage": "105",
+              "quote": "[Test]",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+            },
+            {
+              "page": 105,
+              "printedPage": "105",
+              "quote": "[Off]",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+            },
+            {
+              "page": 105,
+              "printedPage": "105",
+              "quote": "[On]",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+            }
+          ]
+        },
+        {
+          "text": "At the Zone entry, enter the zone number to test and select Enter. Check that the Test LED is lit.",
+          "refs": [
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "number and select [Enter]",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            },
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "The 'Test' LED is lit",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            }
+          ]
+        },
+        {
+          "text": "Test the devices in that zone with the appropriate test equipment. With the default reset/silence behaviour, a fire event sounds the alarms for 5 seconds, then silences and resets automatically.",
+          "refs": [
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "used when testing devices in a zone.",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            },
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "Where applicable read the instructions supplied with",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            },
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "following a fire event the alarms sound for 5 seconds and",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            },
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "then automatically the alarms are silenced followed by a panel reset.",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            }
+          ]
+        },
+        {
+          "text": "When finished, return through the same Test → Test route and select Off. At the Zone entry, enter the tested zone and select Enter. Check that the Test LED goes out; a completed test cycle or leaving the menu does not switch test mode off.",
+          "refs": [
+            {
+              "page": 105,
+              "printedPage": "105",
+              "quote": "Menu map 1",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+            },
+            {
+              "page": 105,
+              "printedPage": "105",
+              "quote": "[Off]",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+            },
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "number and select [Enter]",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            },
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "On completion of all tests, switch Off the [Test] mode and notice the 'Test'",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            },
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "LED also switches Off.",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            }
+          ]
+        }
+      ],
+      "effects": [
+        {
+          "text": "Zone Test inhibits delay-block, network, auxiliary and clean-contact relay functions described by the manual. Zones not in test continue normal operation.",
+          "refs": [
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "The panel inhibits the",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            },
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "operation of delay block functions, network functions, auxiliary and clean contact relay's operation",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            },
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "All zones of the system that are not in zone test mode will operate normally.",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            }
+          ]
+        },
+        {
+          "text": "Source note: the route follows the EN menu diagram on page 105. The shorter prose on page 81 differs in its Test/Zone ordering. If the displayed options do not match this map, confirm the panel version before proceeding.",
+          "refs": [
+            {
+              "page": 105,
+              "printedPage": "105",
+              "quote": "Menu map 1",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+            },
+            {
+              "page": 81,
+              "printedPage": "81",
+              "quote": "and then select [Zone]",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+            }
+          ]
+        }
+      ],
+      "followUps": {
+        "menuLocation": [
+          {
+            "text": "Open Menu On/Off → Test/Eng → UserCode using authorised engineer access. Select <etc> → Test → Test to reach On/Off on the EN V4.53-or-higher map.",
+            "refs": [
+              {
+                "page": 81,
+                "printedPage": "81",
+                "quote": "button and select [Test/Eng] -> [UserCode] and enter the Engineering password",
+                "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+              },
+              {
+                "page": 53,
+                "printedPage": "53",
+                "quote": "Access level 3 is for the ENGINEER.",
+                "section": "Useful menu options — Password or PIN code"
+              },
+              {
+                "page": 105,
+                "printedPage": "105",
+                "quote": "V4.53 or higher",
+                "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+              },
+              {
+                "page": 105,
+                "printedPage": "105",
+                "quote": "Menu map 1",
+                "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+              },
+              {
+                "page": 105,
+                "printedPage": "105",
+                "quote": "[FreeBlok]",
+                "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+              },
+              {
+                "page": 105,
+                "printedPage": "105",
+                "quote": "[Datalog]",
+                "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+              },
+              {
+                "page": 105,
+                "printedPage": "105",
+                "quote": "[Test]",
+                "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+              },
+              {
+                "page": 105,
+                "printedPage": "105",
+                "quote": "[On]",
+                "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+              }
+            ]
+          }
+        ],
+        "nextStep": [
+          {
+            "text": "If you are at the Test → Test choices, select On. At the Zone entry, enter the zone number and select Enter. Check the Test LED is lit. If your screen differs, tell me the options shown before pressing anything else.",
+            "refs": [
+              {
+                "page": 105,
+                "printedPage": "105",
+                "quote": "Menu map 1",
+                "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+              },
+              {
+                "page": 105,
+                "printedPage": "105",
+                "quote": "[On]",
+                "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+              },
+              {
+                "page": 81,
+                "printedPage": "81",
+                "quote": "number and select [Enter]",
+                "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+              },
+              {
+                "page": 81,
+                "printedPage": "81",
+                "quote": "The 'Test' LED is lit",
+                "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+              }
+            ]
+          }
+        ],
+        "stopTest": [
+          {
+            "text": "Return through Test/Eng with authorised engineer access, then <etc> → Test → Test → Off. At the Zone entry, enter the tested zone, select Enter, and check the Test LED goes out. Leaving the menu or an automatic reset is not the Off action.",
+            "refs": [
+              {
+                "page": 81,
+                "printedPage": "81",
+                "quote": "button and select [Test/Eng] -> [UserCode] and enter the Engineering password",
+                "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+              },
+              {
+                "page": 53,
+                "printedPage": "53",
+                "quote": "Access level 3 is for the ENGINEER.",
+                "section": "Useful menu options — Password or PIN code"
+              },
+              {
+                "page": 105,
+                "printedPage": "105",
+                "quote": "Menu map 1",
+                "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+              },
+              {
+                "page": 105,
+                "printedPage": "105",
+                "quote": "[Off]",
+                "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+              },
+              {
+                "page": 81,
+                "printedPage": "81",
+                "quote": "number and select [Enter]",
+                "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+              },
+              {
+                "page": 81,
+                "printedPage": "81",
+                "quote": "On completion of all tests, switch Off the [Test] mode and notice the 'Test'",
+                "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+              },
+              {
+                "page": 81,
+                "printedPage": "81",
+                "quote": "LED also switches Off.",
+                "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceReview": {
+        "reviewedOn": "2026-11-10",
+        "diagramPages": [
+          105
+        ],
+        "prosePages": [
+          53,
+          81
+        ],
+        "note": "Route is a documented interpretation of the EN map, retaining the prose/map disagreement already recorded in the 0.12.1 emulator source audit. No hardware verification or universal Vigilon scope is claimed."
+      }
+    }
+  ]
+}

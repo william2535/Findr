@@ -1,0 +1,25 @@
+{
+  "version": "0.11.2",
+  "versionCode": 17,
+  "package": "com.findr.app",
+  "signerCertificateSha256": "6075a73725dac5a3cc1f7b6b32c5e1df907cd1ca4b5b611f4c1c1d2fd502fefd",
+  "signatureVerified": true,
+  "signatureSchemes": [
+    "v2",
+    "v3"
+  ],
+  "minSdk": 26,
+  "targetSdk": 35,
+  "permissions": [
+    "android.permission.INTERNET"
+  ],
+  "bytes": 21726917,
+  "sha256": "d145b931adc5327356d6405f2e7f8b0b518e27e5b8a0800561f187fe105d3dbb",
+  "appFiles": 712,
+  "allBundledAssetsMatch": true,
+  "nativeDownloadIndexBundled": true,
+  "appIconPixelsMatch": true,
+  "signerMatchesPreviousRelease": true,
+  "releaseCopyMatches": true,
+  "physicalInstallTested": false
+}

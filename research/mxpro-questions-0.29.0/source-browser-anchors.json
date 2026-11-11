@@ -1,0 +1,46 @@
+{
+  "environment": {
+    "browser": "Chromium",
+    "version": "154.0.8037.57",
+    "os": "Linux container",
+    "physicalIPhone": false
+  },
+  "source": "real downloaded PDFs using FINDR pdf-runtime.mjs",
+  "results": [
+    {
+      "recordId": "advanced-8f3ba6ecfc7f",
+      "pdfjs": "5.6.205",
+      "checkedPages": [
+        5,
+        10,
+        17,
+        18,
+        31,
+        32,
+        40
+      ],
+      "anchors": 49,
+      "elapsedMs": 145,
+      "failures": [],
+      "allAnchorsMatch": true
+    },
+    {
+      "recordId": "advanced-0254975c10bd",
+      "pdfjs": "5.6.205",
+      "checkedPages": [
+        5,
+        10,
+        11,
+        18,
+        19,
+        33,
+        34,
+        43
+      ],
+      "anchors": 49,
+      "elapsedMs": 306,
+      "failures": [],
+      "allAnchorsMatch": true
+    }
+  ]
+}

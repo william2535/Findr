@@ -1,0 +1,9 @@
+{
+  "syntheticArchiveResponse": true,
+  "checks": [
+    "First-save failure withholds Start; Retry persists complete intro and retains same new job",
+    "Inline archive search → real existing download/store bridge → PDF analysis → conversational identity",
+    "Saved-manual sheet returns to same job, records selection and reuses local PDF without duplicate/download"
+  ],
+  "status": "passed"
+}

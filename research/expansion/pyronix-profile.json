@@ -1,0 +1,1012 @@
+{
+  "id": "pyronix-enforcer",
+  "brand": "Pyronix",
+  "title": "Enforcer V11",
+  "keypad": "Enforcer integrated LCD keypad",
+  "edition": "V11 \u00b7 SAP102028847-02 / Extended User Rev-02",
+  "scope": "Seven selected Engineer and Master Manager exercises alongside the full source-pinned emulator. Engineer programming and Day Alarm manager omission have separate access contexts.",
+  "panelIds": [
+    "pyronix-enforcer-v11"
+  ],
+  "allFixtureValuesSimulated": true,
+  "fixtureNotice": "All values, names, addresses, events and readings are fictional FINDR practice data.",
+  "sessionStart": "Already authorised practice session",
+  "lcdNotice": "Documented menu labels; populated screens, spacing and response times are illustrative.",
+  "enterLabel": "YES",
+  "backLabel": "NO",
+  "editLabel": "YES",
+  "directMenuCodes": false,
+  "rightIsEnter": false,
+  "leftIsBack": false,
+  "zoneDigits": 2,
+  "commitOnExit": true,
+  "exitFromRoot": false,
+  "exitChecks": false,
+  "exitPrompt": [
+    "Exit Engineer?",
+    "YES to save and leave"
+  ],
+  "hideTypeCodes": false,
+  "markCurrentType": true,
+  "typeLabel": "Input Type",
+  "walkStopWithEnter": false,
+  "reverseLogScroll": false,
+  "rightLogDetails": false,
+  "circuit": "Fictional wired DEOL input; wireless readings are not resistance measurements.",
+  "readings": {
+    "secure": "2k20",
+    "active": "6k90",
+    "tamper": "O/C"
+  },
+  "statusLabels": {
+    "secure": "C \u00b7 Closed",
+    "active": "O \u00b7 Open",
+    "tamper": "T \u00b7 Tamper"
+  },
+  "navigation": {
+    "menuNextKey": "back",
+    "menuPreviousKey": "previous",
+    "recordNextKey": "right",
+    "recordPreviousKey": "left",
+    "fieldNextKey": "enter",
+    "fieldPreviousKey": "cancel",
+    "exitKey": "back",
+    "questionMenus": true,
+    "choiceNextKey": "right",
+    "choicePreviousKey": "left",
+    "exitEditorToParent": true,
+    "logNextKey": "area-d",
+    "logPreviousKey": "previous"
+  },
+  "zones": [
+    {
+      "address": "01",
+      "name": "FRONT DOOR",
+      "type": "Final Exit",
+      "omitEnabled": false,
+      "areas": [
+        "A"
+      ]
+    },
+    {
+      "address": "02",
+      "name": "HALL PIR",
+      "type": "Intruder",
+      "omitEnabled": true,
+      "areas": [
+        "A"
+      ]
+    },
+    {
+      "address": "03",
+      "name": "PLANT ROOM",
+      "type": "Day Alarm",
+      "omitEnabled": true,
+      "areas": [
+        "A"
+      ]
+    },
+    {
+      "address": "04",
+      "name": "OFFICE PIR",
+      "type": "Intruder",
+      "omitEnabled": true,
+      "areas": [
+        "A"
+      ]
+    },
+    {
+      "address": "33",
+      "name": "REAR CONTACT",
+      "type": "Intruder",
+      "omitEnabled": true,
+      "areas": [
+        "A"
+      ]
+    },
+    {
+      "address": "34",
+      "name": "STORE PIR",
+      "type": "Intruder",
+      "omitEnabled": true,
+      "areas": [
+        "A"
+      ]
+    },
+    {
+      "address": "35",
+      "name": "WORKSHOP PIR",
+      "type": "Intruder",
+      "omitEnabled": true,
+      "areas": [
+        "A"
+      ]
+    },
+    {
+      "address": "36",
+      "name": "SIDE CONTACT",
+      "type": "Intruder",
+      "omitEnabled": true,
+      "areas": [
+        "A"
+      ]
+    }
+  ],
+  "zoneTypes": [
+    {
+      "code": "00",
+      "label": "Unused"
+    },
+    {
+      "code": "01",
+      "label": "Fire"
+    },
+    {
+      "code": "02",
+      "label": "Gas"
+    },
+    {
+      "code": "03",
+      "label": "HU"
+    },
+    {
+      "code": "04",
+      "label": "Silent HU"
+    },
+    {
+      "code": "05",
+      "label": "Tamper"
+    },
+    {
+      "code": "06",
+      "label": "Intruder"
+    },
+    {
+      "code": "07",
+      "label": "Final Exit"
+    },
+    {
+      "code": "08",
+      "label": "Entry Route"
+    },
+    {
+      "code": "09",
+      "label": "ER (Part FX)"
+    },
+    {
+      "code": "10",
+      "label": "FX (Part ER)"
+    },
+    {
+      "code": "11",
+      "label": "PTS"
+    },
+    {
+      "code": "12",
+      "label": "Switcher"
+    },
+    {
+      "code": "13",
+      "label": "Day Alarm"
+    },
+    {
+      "code": "16",
+      "label": "Fault"
+    },
+    {
+      "code": "20",
+      "label": "Keyswitch Latched"
+    },
+    {
+      "code": "21",
+      "label": "Entry Shock Input"
+    },
+    {
+      "code": "23",
+      "label": "Keyswitch Pulsed"
+    },
+    {
+      "code": "32",
+      "label": "Flood"
+    },
+    {
+      "code": "42",
+      "label": "Medical"
+    },
+    {
+      "code": "44",
+      "label": "ATE Line Fail"
+    }
+  ],
+  "sources": [
+    {
+      "id": "prog",
+      "title": "Enforcer V11 Programming Guide",
+      "edition": "Document SAP 102028847-02",
+      "url": "https://cdn.connectec.uk/Images/Products/alarms/enforcer-v11-programming-guide.pdf",
+      "publisher": "Pyronix Ltd",
+      "totalPdfPages": 60,
+      "sha256": "92f47ace93369e6a407e5f217652ad727eb3ed69ca1403ac70aadc1c627ed0a7",
+      "pageNumbering": "1-based PDF pages equal printed page numbers; communications front matter uses roman numerals before page4.",
+      "scope": "Manufacturer-authored Enforcer V11 document hosted by a distributor/installer mirror. Official legacy download redirects were unusable during this audit."
+    },
+    {
+      "id": "comms",
+      "title": "Enforcer V11 Communications Guide",
+      "edition": "Document SAP 102028846-01",
+      "url": "https://cdn.connectec.uk/Images/Products/alarms/enforcer-v11-communications-guide-en.pdf",
+      "publisher": "Pyronix Ltd",
+      "totalPdfPages": 28,
+      "sha256": "75162c4f14a16da98bbd49be16244f061cbfe82e8da40c6f5fb630ba0a6e41b1",
+      "pageNumbering": "1-based PDF pages equal printed page numbers; communications front matter uses roman numerals before page4.",
+      "scope": "Manufacturer-authored Enforcer V11 document hosted by a distributor/installer mirror. Official legacy download redirects were unusable during this audit."
+    },
+    {
+      "id": "user",
+      "title": "Wireless Alarm System Extended User Guide",
+      "edition": "Enforcer V11 \u00b7 Rev-02",
+      "url": "https://eaglesecuritysolutions.co.uk/user-manual/pyronix-wireless-alarm-system-extended-user-guide.pdf",
+      "publisher": "Pyronix Ltd",
+      "totalPdfPages": 40,
+      "sha256": "a5a835b03ff6242b2ae28e64752bf6d57f4cf86259ba5ba521ac318939927f4c",
+      "pageNumbering": "1-based PDF pages equal printed page numbers; communications front matter uses roman numerals before page4.",
+      "scope": "Manufacturer-authored Enforcer V11 document hosted by a distributor/installer mirror. Official legacy download redirects were unusable during this audit."
+    }
+  ],
+  "events": [
+    {
+      "id": "power_restored",
+      "label": "Mains Restored",
+      "zone": "",
+      "time": "09:14 29/10",
+      "details": "Fictional panel supply",
+      "logs": [
+        "panel"
+      ],
+      "category": "mandatory"
+    },
+    {
+      "id": "power_failed",
+      "label": "Mains Failure",
+      "zone": "",
+      "time": "09:12 29/10",
+      "details": "Fictional panel supply",
+      "logs": [
+        "panel"
+      ],
+      "category": "mandatory"
+    },
+    {
+      "id": "alarm_hall",
+      "label": "Intruder Alarm",
+      "zone": "02",
+      "time": "08:04 29/10",
+      "details": "HALL PIR \u00b7 demo areaA",
+      "logs": [
+        "panel",
+        "alarm"
+      ],
+      "category": "mandatory"
+    },
+    {
+      "id": "access_demo",
+      "label": "Access Granted",
+      "zone": "",
+      "time": "07:58 29/10",
+      "details": "Demo user2 \u00b7 fictional reader",
+      "logs": [
+        "access"
+      ],
+      "category": "access"
+    }
+  ],
+  "keys": [
+    {
+      "id": "0",
+      "label": "0",
+      "ariaLabel": "0"
+    },
+    {
+      "id": "1",
+      "label": "1",
+      "ariaLabel": "1"
+    },
+    {
+      "id": "2",
+      "label": "2",
+      "ariaLabel": "2"
+    },
+    {
+      "id": "3",
+      "label": "3",
+      "ariaLabel": "3"
+    },
+    {
+      "id": "4",
+      "label": "4",
+      "ariaLabel": "4"
+    },
+    {
+      "id": "5",
+      "label": "5",
+      "ariaLabel": "5"
+    },
+    {
+      "id": "6",
+      "label": "6",
+      "ariaLabel": "6"
+    },
+    {
+      "id": "7",
+      "label": "7",
+      "ariaLabel": "7"
+    },
+    {
+      "id": "8",
+      "label": "8",
+      "ariaLabel": "8"
+    },
+    {
+      "id": "9",
+      "label": "9",
+      "ariaLabel": "9"
+    },
+    {
+      "id": "enter",
+      "label": "YES",
+      "ariaLabel": "YES: enter or accept the displayed option"
+    },
+    {
+      "id": "back",
+      "label": "NO",
+      "ariaLabel": "NO: next menu question, or leave the current option"
+    },
+    {
+      "id": "logout",
+      "label": "A",
+      "ariaLabel": "A: exit a main menu or select area A"
+    },
+    {
+      "id": "previous",
+      "label": "B",
+      "ariaLabel": "B: previous menu question, newer log entry or area B"
+    },
+    {
+      "id": "cancel",
+      "label": "C",
+      "ariaLabel": "C: previous field, log details or area C"
+    },
+    {
+      "id": "area-d",
+      "label": "D",
+      "ariaLabel": "D: older log entry or area D"
+    },
+    {
+      "id": "left",
+      "label": "\u25c0",
+      "ariaLabel": "Left arrow: previous record or value"
+    },
+    {
+      "id": "right",
+      "label": "\u25b6",
+      "ariaLabel": "Right arrow: next record or value"
+    }
+  ],
+  "controls": [
+    {
+      "label": "NO / B",
+      "description": "Move forward/back through menu questions. NO also leaves an active option."
+    },
+    {
+      "label": "YES",
+      "description": "Enter the shown question; accept and advance a programmed field."
+    },
+    {
+      "label": "\u25c0 / \u25b6",
+      "description": "Select records and values using the separate arrow buttons."
+    },
+    {
+      "label": "C / D in the log",
+      "description": "C shows details; D advances to an older event. B moves newer."
+    },
+    {
+      "label": "A",
+      "description": "Quick exit from a main menu; in an area field it selects areaA."
+    },
+    {
+      "label": "Programming save",
+      "description": "Engineer configuration is committed at exit; values and devices in FINDR are fictional."
+    }
+  ],
+  "limitations": [
+    "Guided exercises contain selected branches; the free-use emulator provides the broader documented menu tree.",
+    "This baseline is Enforcer V11, not a claim about EURO, Enforcer V10 or later V12 firmware.",
+    "Wireless learning, real communications, battery loads and physical sounder behaviour are not simulated.",
+    "Some printed value ranges/codes conflict or are incomplete; those fields are marked in Sources & accuracy.",
+    "Predictive text and real keypad multi-tap timing are not reproduced.",
+    "No matching physical keypad has been used to verify timing or screen-by-screen firmware fidelity."
+  ],
+  "omissionInfo": {
+    "label": "Pyronix omission context",
+    "meaning": "Master Manager OMIT INPUTS is the documented Day Alarm-only route. Ordinary omittable input bypass during setting is a separate workflow and is not substituted here.",
+    "duration": "The guide says this manager omission lasts until the system has been armed and disarmed.",
+    "restore": "Automatic reinstatement follows the documented arm/disarm cycle. Repeated-choice display details require matching keypad verification."
+  },
+  "nodes": {
+    "root": {
+      "kind": "menu",
+      "label": "ENGINEER MENU",
+      "parent": null,
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "7",
+          "pdfPage": 7
+        }
+      ],
+      "selectedSubset": true,
+      "children": [
+        "inputs",
+        "logs",
+        "tests",
+        "diagnostics",
+        "exit"
+      ]
+    },
+    "inputs": {
+      "kind": "zone-select",
+      "label": "CHANGE INPUTS?",
+      "parent": "root",
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "18",
+          "pdfPage": 18
+        }
+      ],
+      "next": "input-type",
+      "numericSelection": true
+    },
+    "input-type": {
+      "kind": "type",
+      "label": "Input Type",
+      "parent": "inputs",
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "18",
+          "pdfPage": 18
+        }
+      ]
+    },
+    "logs": {
+      "kind": "menu",
+      "label": "REVIEW LOGS?",
+      "parent": "root",
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "30",
+          "pdfPage": 30
+        }
+      ],
+      "selectedSubset": true,
+      "menuWrap": false,
+      "children": [
+        "panel-log"
+      ]
+    },
+    "panel-log": {
+      "kind": "log",
+      "label": "Panel Log?",
+      "parent": "logs",
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "30",
+          "pdfPage": 30
+        }
+      ],
+      "detailsKey": "cancel",
+      "logNextKey": "area-d",
+      "logPreviousKey": "previous",
+      "logSummaryKey": "logout"
+    },
+    "tests": {
+      "kind": "menu",
+      "label": "ENGINEER TESTS?",
+      "parent": "root",
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "31",
+          "pdfPage": 31
+        }
+      ],
+      "selectedSubset": true,
+      "menuWrap": false,
+      "children": [
+        "walk-ready"
+      ]
+    },
+    "walk-ready": {
+      "kind": "walk-ready",
+      "label": "Walk Test?",
+      "parent": "tests",
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "32",
+          "pdfPage": 32
+        }
+      ],
+      "next": "walk-run",
+      "lines": [
+        "Walk Test Areas",
+        "A \u00b7 demo area selected"
+      ]
+    },
+    "walk-run": {
+      "kind": "walk-run",
+      "label": "Walk Test",
+      "parent": "walk-ready",
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "32",
+          "pdfPage": 32
+        }
+      ],
+      "all": true,
+      "finishKey": "back"
+    },
+    "diagnostics": {
+      "kind": "menu",
+      "label": "DIAGNOSTICS?",
+      "parent": "root",
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "34",
+          "pdfPage": 34
+        }
+      ],
+      "selectedSubset": true,
+      "menuWrap": false,
+      "children": [
+        "wireless",
+        "wired"
+      ]
+    },
+    "wireless": {
+      "kind": "menu",
+      "label": "Wireless Devices?",
+      "parent": "diagnostics",
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "36",
+          "pdfPage": 36
+        }
+      ],
+      "selectedSubset": true,
+      "menuWrap": false,
+      "children": [
+        "wireless-inputs"
+      ]
+    },
+    "wireless-inputs": {
+      "kind": "zones",
+      "label": "View Inputs?",
+      "parent": "wireless",
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "36",
+          "pdfPage": 36
+        }
+      ],
+      "recordIds": [
+        "01",
+        "02",
+        "03",
+        "04"
+      ],
+      "numericSelection": true,
+      "resistance": false,
+      "detailsKey": false
+    },
+    "wired": {
+      "kind": "menu",
+      "label": "Wired Devices?",
+      "parent": "diagnostics",
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "36",
+          "pdfPage": 36
+        }
+      ],
+      "selectedSubset": true,
+      "menuWrap": false,
+      "children": [
+        "wired-view"
+      ]
+    },
+    "wired-view": {
+      "kind": "menu",
+      "label": "View Inputs?",
+      "parent": "wired",
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "36",
+          "pdfPage": 36
+        }
+      ],
+      "selectedSubset": true,
+      "menuWrap": false,
+      "children": [
+        "wired-inputs"
+      ]
+    },
+    "wired-inputs": {
+      "kind": "zones",
+      "label": "Endstation Inputs?",
+      "parent": "wired-view",
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "36",
+          "pdfPage": 36
+        }
+      ],
+      "recordIds": [
+        "33",
+        "34"
+      ],
+      "numericSelection": true,
+      "resistance": false,
+      "detailsKey": "enter"
+    },
+    "exit": {
+      "kind": "logout",
+      "label": "EXIT ENGINEER MENU",
+      "parent": "root",
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "43",
+          "pdfPage": 43
+        }
+      ],
+      "confirmExit": true
+    },
+    "manager-root": {
+      "kind": "menu",
+      "label": "MASTER MANAGER MENU",
+      "parent": null,
+      "sourceRefs": [
+        {
+          "sourceId": "user",
+          "printedPage": "14",
+          "pdfPage": 14
+        }
+      ],
+      "sessionRoot": true,
+      "selectedSubset": true,
+      "children": [
+        "omit-day"
+      ]
+    },
+    "omit-day": {
+      "kind": "zone-omit",
+      "label": "OMIT INPUTS?",
+      "parent": "manager-root",
+      "sourceRefs": [
+        {
+          "sourceId": "user",
+          "printedPage": "16",
+          "pdfPage": 16
+        }
+      ],
+      "toggleKeys": [
+        "enter"
+      ],
+      "toggleLabel": "YES",
+      "finishKey": "back",
+      "eligibleOnly": true,
+      "eligibleZoneTypes": [
+        "Day Alarm"
+      ],
+      "numericSelection": true
+    }
+  },
+  "tasks": [
+    {
+      "id": "read-wireless-input",
+      "title": "Check a wireless input",
+      "description": "Find the fictional Hall PIR on input02 and read its live practice state.",
+      "path": [
+        "Engineer menu",
+        "DIAGNOSTICS?",
+        "Wireless Devices?",
+        "View Inputs?",
+        "Input02"
+      ],
+      "routeNodeIds": [
+        "root",
+        "diagnostics",
+        "wireless",
+        "wireless-inputs"
+      ],
+      "goal": {
+        "kind": "zone",
+        "zone": "02"
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "36",
+          "pdfPage": 36
+        }
+      ],
+      "sessionStart": "Already authorised Engineer practice",
+      "hints": [
+        "Use NO forward and B backward through the selected practice menu.",
+        "Enter DIAGNOSTICS with YES, then Wireless Devices and View Inputs.",
+        "Choose input02 with the separate arrow keys."
+      ],
+      "aliases": [
+        "zone status",
+        "detector open closed",
+        "wireless input"
+      ],
+      "initialStates": {
+        "02": "active"
+      }
+    },
+    {
+      "id": "read-wired-resistance",
+      "title": "Read a wired input resistance",
+      "description": "View input33 on the fictional I/O board, then use YES for its resistance detail.",
+      "path": [
+        "Engineer menu",
+        "DIAGNOSTICS?",
+        "Wired Devices?",
+        "View Inputs?",
+        "Endstation Inputs?",
+        "Input33"
+      ],
+      "routeNodeIds": [
+        "root",
+        "diagnostics",
+        "wired",
+        "wired-view",
+        "wired-inputs"
+      ],
+      "goal": {
+        "kind": "zone",
+        "zone": "33",
+        "resistance": true
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "36",
+          "pdfPage": 36
+        }
+      ],
+      "sessionStart": "Already authorised Engineer practice",
+      "hints": [
+        "Use NO/B to find DIAGNOSTICS and YES to enter.",
+        "Choose Wired Devices, View Inputs and Endstation Inputs with YES.",
+        "Select input33 using the separate arrows; YES reveals its fictional resistance."
+      ],
+      "aliases": [
+        "zone resistance",
+        "ohms",
+        "wired detector"
+      ]
+    },
+    {
+      "id": "last-alarm",
+      "title": "Find the last alarm and its details",
+      "description": "Browse the local panel log and use C to see which fictional detector caused the alarm.",
+      "path": [
+        "Engineer menu",
+        "REVIEW LOGS?",
+        "Panel Log?",
+        "Hall PIR alarm"
+      ],
+      "routeNodeIds": [
+        "root",
+        "logs",
+        "panel-log"
+      ],
+      "goal": {
+        "kind": "log",
+        "event": "alarm_hall",
+        "details": true
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "30",
+          "pdfPage": 30
+        }
+      ],
+      "sessionStart": "Already authorised Engineer practice",
+      "hints": [
+        "Find REVIEW LOGS using NO/B; YES enters Panel Log.",
+        "D moves to an older event; B moves to a newer event.",
+        "At the Hall PIR alarm, press C for the additional detail."
+      ],
+      "aliases": [
+        "last alarm",
+        "alarm history",
+        "event log",
+        "what set it off"
+      ]
+    },
+    {
+      "id": "walk-test",
+      "title": "Walk-test the Hall PIR",
+      "description": "Start the fictional areaA walk test, activate and restore input02, then finish with NO.",
+      "path": [
+        "Engineer menu",
+        "ENGINEER TESTS?",
+        "Walk Test?",
+        "AreaA",
+        "Hall PIR"
+      ],
+      "routeNodeIds": [
+        "root",
+        "tests",
+        "walk-ready",
+        "walk-run"
+      ],
+      "goal": {
+        "kind": "walk",
+        "zone": "02"
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "32",
+          "pdfPage": 32
+        }
+      ],
+      "sessionStart": "Already authorised Engineer practice",
+      "hints": [
+        "Open ENGINEER TESTS, then Walk Test. The selected exercise already chooses areaA.",
+        "Use the external demo controls to activate and restore input02.",
+        "Press NO to end this practice walk test."
+      ],
+      "aliases": [
+        "walk testing",
+        "test detector",
+        "test PIR"
+      ]
+    },
+    {
+      "id": "change-input-type",
+      "title": "Change a demo input type",
+      "description": "Select input04 and accept Entry Route (08) for this fictional input. Engineer exit is a separate exercise.",
+      "path": [
+        "Engineer menu",
+        "CHANGE INPUTS?",
+        "Input04",
+        "Input Type"
+      ],
+      "routeNodeIds": [
+        "root",
+        "inputs",
+        "input-type"
+      ],
+      "goal": {
+        "kind": "type",
+        "zone": "04",
+        "value": "Entry Route",
+        "commit": false
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "18",
+          "pdfPage": 18
+        }
+      ],
+      "sessionStart": "Already authorised Engineer practice",
+      "hints": [
+        "Choose CHANGE INPUTS with YES.",
+        "Select input04 with the separate arrows and press YES.",
+        "Type08 or select Entry Route with the arrows, then press YES. Real Engineer programming is committed at exit."
+      ],
+      "aliases": [
+        "zone programming",
+        "input function",
+        "detector type"
+      ]
+    },
+    {
+      "id": "omit-day-alarm",
+      "title": "Omit a Day Alarm input",
+      "description": "Temporarily omit the fictional Plant Room Day Alarm input03 through the authorised Master Manager menu.",
+      "path": [
+        "Master Manager menu",
+        "OMIT INPUTS?",
+        "Input03"
+      ],
+      "routeNodeIds": [
+        "manager-root",
+        "omit-day"
+      ],
+      "goal": {
+        "kind": "omission",
+        "zone": "03",
+        "value": true
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "user",
+          "printedPage": "16",
+          "pdfPage": 16
+        }
+      ],
+      "sessionStart": "Already authorised Master Manager practice",
+      "hints": [
+        "This manager route applies only to Day Alarm inputs; ordinary setting-time omission is different.",
+        "Enter OMIT INPUTS with YES and choose the fictional input03.",
+        "Press YES to omit the demo input, then NO to finish this selected practice route."
+      ],
+      "aliases": [
+        "disable device",
+        "omit detector",
+        "bypass input",
+        "day alarm omission"
+      ],
+      "category": "omission",
+      "startNodeId": "manager-root",
+      "sessionLabel": "SIMULATED MASTER MANAGER SESSION",
+      "initialOmissions": {
+        "03": false
+      },
+      "completionMessage": "The fictional Day Alarm input is omitted. On the documented panel this omission clears after an arm/disarm cycle."
+    },
+    {
+      "id": "exit-engineer",
+      "title": "Leave Engineer mode and save",
+      "description": "Use the documented exit entry to leave the authorised fictional Engineer session.",
+      "path": [
+        "Engineer menu",
+        "EXIT ENGINEER MENU"
+      ],
+      "routeNodeIds": [
+        "root",
+        "exit"
+      ],
+      "goal": {
+        "kind": "logout"
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "prog",
+          "printedPage": "43",
+          "pdfPage": 43
+        }
+      ],
+      "sessionStart": "Already authorised Engineer practice",
+      "hints": [
+        "Use NO/B to locate EXIT ENGINEER MENU.",
+        "Press YES to enter; confirm the FINDR exit prompt with YES.",
+        "A also provides the documented quick-exit route from a main-menu screen."
+      ],
+      "aliases": [
+        "save changes",
+        "exit programming",
+        "leave engineer"
+      ]
+    }
+  ]
+}

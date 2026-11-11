@@ -1,0 +1,53 @@
+{
+  "synthetic": true,
+  "environment": "Linux Chromium desktop and viewport emulation; not physical iPhone/Safari",
+  "offline": true,
+  "results": [
+    {
+      "width": 390,
+      "status": "passed",
+      "offline": true,
+      "import": {
+        "filename": "synthetic-premier-elite-scan.pdf",
+        "elapsedMs": 2339.013573
+      },
+      "responseMs": [
+        72.69874000000073,
+        63.99629899999945,
+        62.63248500000009,
+        71.5957699999999,
+        55.22309099999984,
+        67.05602399999952,
+        68.15108099999998,
+        55.07068000000072,
+        62.24811000000045
+      ],
+      "confirmedAwaitingParts": true,
+      "checks": [
+        "manual compulsory",
+        "text/scanned PDF import",
+        "system/model/variant confirmation",
+        "free fault",
+        "relevant manual page",
+        "open saved PDF",
+        "Yes/No/unknown route",
+        "answer correction",
+        "ambiguous reading clarification",
+        "reading correction",
+        "second component manual",
+        "history scroll preserved",
+        "newest shortcut",
+        "reduced motion",
+        "keyboard-like viewport",
+        "resistor and comparable voltage calculators",
+        "derived calculation saved with duplicate-tap guard",
+        "Give up",
+        "review/export JSON/full/short",
+        "reload/resume",
+        "Fault found awaiting parts",
+        "legacy preservation"
+      ]
+    }
+  ],
+  "status": "passed"
+}

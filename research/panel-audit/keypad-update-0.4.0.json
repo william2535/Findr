@@ -1,0 +1,185 @@
+{
+  "version": "0.4.0",
+  "reviewedAt": "2026-10-29",
+  "purpose": "Provenance and accuracy review for recognisable keypad styles and eight new omission/reinstatement exercises. The original 0.3.0 audit remains in keypad-practice.json.",
+  "scope": {
+    "visuals": "HTML/CSS style references to named physical keypads, with covers open where applicable. Not exact firmware or complete product emulation.",
+    "newTasks": 8,
+    "totalTasks": 27,
+    "fixture": "One fictional ordinary intruder PIR zone per profile.",
+    "disableMeaning": "Omit the detector's zone; do not power off, disconnect or permanently decommission hardware.",
+    "access": "Each lesson starts after the relevant user or engineer authorisation. No real credentials, panel transport or live commands are present.",
+    "notSimulated": [
+      "Actual setting/unsetting",
+      "Automatic reinstatement on disarm",
+      "Special 24-hour or fire-device isolation",
+      "Vibration and ATM exceptions",
+      "Complete alarm or tamper signalling"
+    ]
+  },
+  "profiles": [
+    {
+      "profileId": "galaxy-dimension",
+      "panel": "Galaxy Dimension",
+      "visualKeypad": "Honeywell Galaxy Mk7 / KeyProx",
+      "visualReference": "https://buildings.honeywell.com/gb/en/products/by-category/intrusion-detection/keypads-and-user-interfaces/galaxy-mk7-keypad-and-keyprox",
+      "recognition": "Tall ivory case, inset green LCD, round four-column keypad with A, B, ent and esc at the right.",
+      "session": "Existing authorised full-menu context; 10 Setting contains 11 Omit Zones.",
+      "omit": "Browse only eligible zones with A/B, select Hall PIR 1002, press #, then esc.",
+      "restore": "Return to the same list and toggle # again, then esc.",
+      "behaviour": "# applies immediately; esc retains the chosen state. ent starts setting on the real panel and is explicitly outside this lesson.",
+      "limits": "Standard zones reinstate on unset. Vibration and ATM rules differ. The source includes zone tamper in omission, so the trainer makes no universal claim that omitted tampers remain active.",
+      "sources": [
+        {
+          "title": "Galaxy Dimension Installer Manual",
+          "edition": "IE1-0063 Rev 1.0",
+          "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Galaxy%20Dimension%20Install%20Manual.pdf",
+          "printedPages": [
+            "6-11",
+            "6-12"
+          ],
+          "pdfPages": [
+            85,
+            86
+          ],
+          "provenance": "Manufacturer-authored PDF on installer archive"
+        },
+        {
+          "title": "Galaxy Dimension User Guide",
+          "edition": "IU1-0063 Rev 1.0",
+          "url": "https://dawsonsawyer.co.uk/?mdocs-file=754",
+          "printedPages": [
+            12
+          ],
+          "pdfPages": [
+            20
+          ],
+          "provenance": "Manufacturer-authored PDF on public archive; Quick Menu numbering is not mixed into the Full Menu exercise"
+        }
+      ]
+    },
+    {
+      "profileId": "texecom-premier-elite",
+      "panel": "Premier Elite 48",
+      "visualKeypad": "Texecom Premier Elite LCDLP",
+      "visualReference": "https://www.texe.com/products/premier-elite-lcdlp/",
+      "recognition": "Black display bezel, blue LCD, oval keys, Yes/0/No bottom numeric row and separate Omit/Reset/Chime/Part/Area/Menu controls.",
+      "session": "Separate authorised user prompt. Omission is not inserted into Engineer Utils.",
+      "omit": "Press Omit, choose zone 002, press Omit, then Menu.",
+      "restore": "Repeat on the same zone to remove its leading omission star, then Menu.",
+      "behaviour": "The right-hand star marks eligibility; the left-hand star marks omission. Menu and No remain distinct controls.",
+      "limits": "Normal disarm reinstatement can be changed by installer programming. The distinct 24-hour omission route and Engineer Diagnostic Omit are excluded.",
+      "sources": [
+        {
+          "title": "Premier Elite Series Master User Guide",
+          "edition": "INS177-9",
+          "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/02/01102934/INS177-9_Premier_Elite_Series_Master_User_Guide-3.pdf",
+          "printedPages": [
+            7,
+            23,
+            26
+          ],
+          "pdfPages": [
+            7,
+            23,
+            26
+          ],
+          "provenance": "Manufacturer-hosted original; p7 identifies the physical layout, p23 supports this lesson, p26 distinguishes the excluded 24-hour route"
+        }
+      ]
+    },
+    {
+      "profileId": "scantronic-ion",
+      "panel": "i-on40H+",
+      "visualKeypad": "Eaton KEY-KP01",
+      "visualReference": "https://www.eaton.com/ie/en-gb/catalog/safety-security-and-emergency-communications/surface-intruder-keypad.html",
+      "recognition": "Grey bezel, navigation cluster below LCD, cross/tick/menu keys, A-D setting column and numeric keypad to the right.",
+      "session": "Separate authorised User menu. Existing Installer exercises retain their v6 guide context.",
+      "omit": "Select Omit Zones, browse to zone 002, change I to O with right arrow, then tick to store.",
+      "restore": "Change O to I with right arrow and tick to store.",
+      "behaviour": "Only eligible zones are listed. A changed marker is a draft until tick; the lesson cannot complete before storing.",
+      "limits": "The guide says normal operation resumes on unset. FINDR's Back discards unconfirmed drafts; that bounded trainer rule is labelled and not asserted as a sourced firmware behaviour.",
+      "sources": [
+        {
+          "title": "i-on Series User Guide",
+          "edition": "Issue 3, 10 August 2020",
+          "url": "https://www.eaton.com/content/dam/eaton/products/safety-security-emergency-communications/security-intruder-alarm-systems/i-on-series-admin-and-user-guides/eaton-intrusion-i-on-user-guide-en.pdf",
+          "printedPages": [
+            8
+          ],
+          "pdfPages": [
+            8
+          ],
+          "provenance": "Official manufacturer-hosted original; this user route is kept distinct from the named v6 Installer guide"
+        }
+      ]
+    },
+    {
+      "profileId": "orisec-cp",
+      "panel": "Legacy CP-25 / CP-50 for omission lessons",
+      "visualKeypad": "Orisec MK-700, satin chrome style",
+      "visualReference": "https://www.orisec.co.uk/keypads/mk-700-series-keypads/",
+      "recognition": "Wide metal face, black bezel and blue LCD, Enter/0/Clear bottom numeric row, Arm/Part/Area/Omit column and diamond arrow cluster.",
+      "session": "Separate already-authorised Master/Manager user menu.",
+      "omit": "Select Omit zones, choose zone 02, toggle to tick with left/right, then Back.",
+      "restore": "Toggle the same zone to cross, then Back.",
+      "behaviour": "Tick means omitted; cross means monitored; -- marks an ineligible zone.",
+      "limits": "Automatic reinstatement depends on the installer option. Omission source covers CP-25/CP-50; existing CP-100 engineer exercises do not extend this user lesson to every CP model.",
+      "sources": [
+        {
+          "title": "CP-25 / CP-50 User Guide",
+          "edition": "INS023, 2017",
+          "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Orisec%20CP%2025-50%20User%20Guide.pdf",
+          "printedPages": [
+            21
+          ],
+          "pdfPages": [
+            21
+          ],
+          "provenance": "Manufacturer-authored PDF on installer archive"
+        },
+        {
+          "title": "CP-25 / CP-50 / CP-100 Installation Manual",
+          "edition": "INS008, 2018",
+          "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Orisec%20CP%2025-50-100%20Install%20Manual.pdf",
+          "printedPages": [
+            8
+          ],
+          "pdfPages": [
+            8
+          ],
+          "provenance": "Manufacturer-authored PDF; names the supported MK-700 keypad"
+        }
+      ]
+    }
+  ],
+  "reviewedCorrections": [
+    "Each physical model is explicitly named and linked to the manufacturer reference; model appearance does not imply identical firmware.",
+    "The old generic keypad rendering is replaced with separate per-model arrangements, including Texecom Omit and the Orisec navigation cluster.",
+    "User omission roots are separate from engineer menus. Existing engineer routes and task IDs are preserved.",
+    "Ineligible zones cannot be omitted; Galaxy and Scantronic lists filter them out.",
+    "Texecom incomplete numeric entry cannot toggle the previously displayed zone.",
+    "Omission changes remain separate from detector electrical status and zone type.",
+    "Texecom Ready follows secure detector fixtures rather than login state; its Omit LED follows the simulated omission state.",
+    "Restoration has an explicit paired task and starts with the target zone omitted.",
+    "Stale limitations stating no simulated omission were revised; electrical shutdown and special-zone behaviours are not implied."
+  ],
+  "verificationBoundary": "This audit reviews manufacturer evidence and source behaviour. Browser layout, build, APK packaging and deployment verification are performed by the release owner. No physical keypad or panel was connected.",
+  "releaseValidation": {
+    "automatedTests": {
+      "passed": 66,
+      "failed": 0,
+      "coverage": "27 complete exercise routes, omission edge cases, previous practice behaviours, Safari cache and launch recovery"
+    },
+    "browserPreview": "Desktop chooser and Galaxy omit/restore; 390px frame for Texecom, Scantronic and Orisec omit flows; pending vs saved indication and both mobile jump controls checked.",
+    "previewScreenshot": "keypad-preview-0.4.0.jpg",
+    "android": {
+      "version": "0.4.0",
+      "versionCode": 6,
+      "signature": "Existing signer; APK v2/v3 verified",
+      "bundledAppFilesCompared": 629,
+      "sha256": "98b788187ac5829113542def66558ee847b6f114b83c943ff60b753abb4ec965"
+    },
+    "limits": "Browser preview does not provide service workers. No physical iPhone, Android or real alarm panel was tested."
+  }
+}

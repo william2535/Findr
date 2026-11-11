@@ -1,0 +1,129 @@
+{
+  "release": "0.14.1",
+  "checked_at": "2026-10-30T15:58:04.029665+00:00",
+  "site": "https://findr-fault-finder.snowyskunk12.chatgpt.site",
+  "all_checks_passed": true,
+  "request_count": 12,
+  "retries": 0,
+  "apk": {
+    "check": "Published APK",
+    "passed": true,
+    "http_status": 200,
+    "bytes": 24126768,
+    "sha256": "b46ed914f92d9715980e74555cdf9f85487530232fa09040f17729d54b075353"
+  },
+  "checksum": {
+    "check": "Published checksum",
+    "passed": true,
+    "http_status": 200,
+    "contents": "b46ed914f92d9715980e74555cdf9f85487530232fa09040f17729d54b075353  FINDR-0.14.1.apk"
+  },
+  "source_only_references": [
+    {
+      "id": "device-doc-ems-0df7986de600",
+      "url": null,
+      "download_mode": "source-only",
+      "sha256": "0df7986de600c0cf4a177eecf00c10620bfae78c23aef61995f48c742fc2cc2c",
+      "hash_unchanged": true
+    },
+    {
+      "id": "device-doc-ems-2f0d72961ef4",
+      "url": null,
+      "download_mode": "source-only",
+      "sha256": "2f0d72961ef41fc9854f5707d4f454689b1f559db94d0dbadd7a44d7aa7a9ee9",
+      "hash_unchanged": true
+    },
+    {
+      "id": "device-doc-ems-777d6bd3e405",
+      "url": null,
+      "download_mode": "source-only",
+      "sha256": "777d6bd3e40513cc306e394974cba19b70b995395a8f396040802844c82a9f86",
+      "hash_unchanged": true
+    },
+    {
+      "id": "device-doc-ems-c103ba80a56c",
+      "url": null,
+      "download_mode": "source-only",
+      "sha256": "c103ba80a56cc6faa527b1155cba4a59edf8a7fbf34c1a0d6b3777fe9ecaa0d7",
+      "hash_unchanged": true
+    },
+    {
+      "id": "device-doc-ems-c40857c87e50",
+      "url": null,
+      "download_mode": "source-only",
+      "sha256": "c40857c87e504849762f3c855546683f28a430cb96bd0346581fa3c6b236bdd5",
+      "hash_unchanged": true
+    },
+    {
+      "id": "device-doc-ems-de2c0fb8aa1f",
+      "url": null,
+      "download_mode": "source-only",
+      "sha256": "de2c0fb8aa1f80927bd4260932dbe586b420feec8261992273e064810b7bc334",
+      "hash_unchanged": true
+    }
+  ],
+  "ems_pack": {
+    "id": "ems-fire-devices",
+    "device_count": 8,
+    "record_count": 8,
+    "direct_pdf_count": 2,
+    "device_ids_unchanged": true,
+    "record_ids_unchanged": true
+  },
+  "disabled_routes": [
+    {
+      "check": "Disabled relay device-doc-ems-0df7986de600",
+      "passed": true,
+      "http_status": 404,
+      "body": "Manual not in this catalogue snapshot."
+    },
+    {
+      "check": "Disabled relay device-doc-ems-2f0d72961ef4",
+      "passed": true,
+      "http_status": 404,
+      "body": "Manual not in this catalogue snapshot."
+    },
+    {
+      "check": "Disabled relay device-doc-ems-777d6bd3e405",
+      "passed": true,
+      "http_status": 404,
+      "body": "Manual not in this catalogue snapshot."
+    },
+    {
+      "check": "Disabled relay device-doc-ems-c103ba80a56c",
+      "passed": true,
+      "http_status": 404,
+      "body": "Manual not in this catalogue snapshot."
+    },
+    {
+      "check": "Disabled relay device-doc-ems-c40857c87e50",
+      "passed": true,
+      "http_status": 404,
+      "body": "Manual not in this catalogue snapshot."
+    },
+    {
+      "check": "Disabled relay device-doc-ems-de2c0fb8aa1f",
+      "passed": true,
+      "http_status": 404,
+      "body": "Manual not in this catalogue snapshot."
+    }
+  ],
+  "working_ems_pdfs": [
+    {
+      "check": "Working EMS PDF device-doc-ems-a93fc764968b",
+      "passed": true,
+      "http_status": 200,
+      "bytes": 227012,
+      "sha256": "a93fc764968b96a6dce97eeb0c3ace6b9baecb909a581bc1845882319413723e",
+      "hash_match": true
+    },
+    {
+      "check": "Working EMS PDF device-doc-ems-cf888f19e273",
+      "passed": true,
+      "http_status": 200,
+      "bytes": 283815,
+      "sha256": "cf888f19e273e2471a365748ceea9c93871494ebd85d743156a5616c85dcbe96",
+      "hash_match": true
+    }
+  ]
+}

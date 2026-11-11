@@ -1,0 +1,96 @@
+%PDF-1.3
+%“Œ‹ž ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/Contents 8 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 7 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+5 0 obj
+<<
+/PageMode /UseNone /Pages 7 0 R /Type /Catalog
+>>
+endobj
+6 0 obj
+<<
+/Author (FINDR synthetic QA fixture generator) /CreationDate (D:20000101000000+00'00') /Creator (anonymous) /Keywords () /ModDate (D:20000101000000+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (unspecified) /Title (SYNTHETIC QA-PSU-24 Datasheet QA-027) /Trapped /False
+>>
+endobj
+7 0 obj
+<<
+/Count 1 /Kids [ 4 0 R ] /Type /Pages
+>>
+endobj
+8 0 obj
+<<
+/Length 1649
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+BT /F2 13 Tf 15.6 TL ET
+BT 1 0 0 1 42 805 Tm (SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL) Tj T* ET
+BT /F1 11 Tf 13.2 TL ET
+BT 1 0 0 1 42 776 Tm (Manufacturer: Test Bench) Tj T* ET
+BT 1 0 0 1 42 759 Tm (Model: QA-PSU-24) Tj T* ET
+BT 1 0 0 1 42 742 Tm (Equipment: External power supply PSU) Tj T* ET
+BT 1 0 0 1 42 725 Tm (Document type: Datasheet) Tj T* ET
+BT 1 0 0 1 42 708 Tm (Revision: QA-027) Tj T* ET
+BT 1 0 0 1 42 679 Tm (Section 1 - Fictional output specification) Tj T* ET
+BT 1 0 0 1 42 662 Tm (This test-only external power supply provides a nominal 24 V DC output. The fictional) Tj T* ET
+BT 1 0 0 1 42 645 Tm (output labels are V+ and V-. The stated continuous current rating is 1 A. These values) Tj T* ET
+BT 1 0 0 1 42 628 Tm (are synthetic retrieval targets, not specifications for an installed product. No wiring) Tj T* ET
+BT 1 0 0 1 42 611 Tm (procedure, live measurement instruction, isolation sequence or acceptable fault-test) Tj T* ET
+BT 1 0 0 1 42 594 Tm (threshold is established by this fixture. A single measured voltage does not prove that) Tj T* ET
+BT 1 0 0 1 42 577 Tm (an installation is healthy. This document applies only to QA-PSU-24, not to other) Tj T* ET
+BT 1 0 0 1 42 560 Tm (external supplies. The panel user guide and PSU datasheet must remain associated with) Tj T* ET
+BT 1 0 0 1 42 543 Tm (their separate pieces of equipment. Relevant operating conditions and the exact) Tj T* ET
+BT 1 0 0 1 42 526 Tm (manufacturer procedure must be established for real tests.) Tj T* ET
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 42 30 Tm (Synthetic printed page Q-1 / PDF page 1) Tj T* ET
+ 
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000321 00000 n 
+0000000524 00000 n 
+0000000592 00000 n 
+0000000908 00000 n 
+0000000967 00000 n 
+trailer
+<<
+/ID 
+[<1917481e63938c1f0b47183f3f0dcd22><1917481e63938c1f0b47183f3f0dcd22>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 6 0 R
+/Root 5 0 R
+/Size 9
+>>
+startxref
+2667
+%%EOF

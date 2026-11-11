@@ -1,0 +1,24 @@
+{
+  "release": "0.13.1",
+  "preview_url": "http://terminal.local:4173/",
+  "device_browse_families": 24,
+  "pack_counts": {
+    "Gent": {
+      "families": 5,
+      "documents": 3
+    },
+    "Apollo": {
+      "families": 12,
+      "documents": 12
+    },
+    "C-TEC": {
+      "families": 7,
+      "documents": 7
+    }
+  },
+  "navigation": "Release Explore device packs \u2192 Browse device packs \u2192 Downloads Device packs",
+  "screenshot": "device-packs-preview.jpg",
+  "live_source_check": "Pending publication",
+  "inherited_mobile_validation": "../device-packs-0.13.0/browser-validation.json",
+  "layout_and_device_images_unchanged": true
+}

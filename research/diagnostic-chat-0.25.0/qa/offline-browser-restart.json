@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "synthetic": true,
+  "environment": "Linux Chromium persistent profile, actual browser process/profile restart; not physical iPhone/Safari",
+  "network": "Playwright browser context offline before navigation",
+  "checks": [
+    "pending question and saved partial reading clarification survive browser restart",
+    "event IDs and transcript preserved without duplicate saves",
+    "previously saved PDF opens offline",
+    "previously unseen scanned component manual OCR on first use after offline restart",
+    "second component resumes original reading clarification"
+  ],
+  "scannedComponentImportMs": 21.228150999999343,
+  "scannedComponentProcessing": {
+    "extractionMs": 37,
+    "ocrMs": 1372,
+    "indexingMs": 21,
+    "totalMs": 1556
+  },
+  "scannedComponentMethods": [
+    "ocr"
+  ],
+  "scannedComponentHash": "d3f72c67bdd69d46a96600705cae437f86e1b5faa3cad6b5bba6c3e5dab79b73"
+}

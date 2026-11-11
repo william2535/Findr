@@ -1,0 +1,120 @@
+{
+  "release": "0.10.0",
+  "validatedOn": "2026-10-30",
+  "projectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
+  "previousReleaseCommit": "e50c97684195d52ce17414a2e1244c396d1e1699",
+  "model": {
+    "family": "Vigilon",
+    "variant": "Full-size EN Vigilon 4/6-loop panel with 2 km loop cards",
+    "models": [
+      "VIG1-24",
+      "VIG1-72"
+    ],
+    "operatorDocument": "gent-vigilon-4188-1025-2015",
+    "menuMapDocument": "gent-vigilon-4188-856-2015",
+    "menuMapFirmware": "EN54 (V4), MCC/MCB V4.53 or higher as printed in Appendix A-1",
+    "editionBoundary": "This is the July 2015 classic full-size family, not a claimed match for Vigilon Plus, Compact, Compact VA, Nano or every later firmware revision.",
+    "practiceConfiguration": "Fictional single local panel, two commissioned loops, three zones, six devices; integral printer fitted and initially off.",
+    "display": {
+      "rows": 8,
+      "columns": 40
+    },
+    "selectionReason": "The operator manual and matching dated generic menu appendix provide strong, inspectable source coverage; no market-share claim is made."
+  },
+  "gent": {
+    "screens": 96,
+    "interactiveScreens": 65,
+    "referenceScreens": 31,
+    "sourceCatalogueRoutes": 343,
+    "routeStatuses": {
+      "conditional": 34,
+      "conflict": 5,
+      "implemented": 20,
+      "reference": 284
+    },
+    "tracks": 4,
+    "lessons": 18,
+    "lessonSteps": 183,
+    "helpArticles": 28,
+    "glossaryTerms": 16,
+    "scenarios": 8,
+    "sourceLimits": 18
+  },
+  "verification": {
+    "tests": 479,
+    "passed": 479,
+    "failed": 0,
+    "testLog": "test-results.txt",
+    "webBuildSucceeded": true,
+    "webPublicFilesByteIdentical": 738,
+    "apkAppFilesByteIdentical": 706,
+    "precacheAssets": 703,
+    "precacheBuild": "e30f18c02ed9",
+    "newGentFilesPrecached": true,
+    "qaFixtureAbsent": true,
+    "priorNineProfilesDeepEqual": true,
+    "priorPicturesPacksCatalogueKnowledgeCoverageByteIdentical": true,
+    "publicAssetDirectoriesHaveNoOrphans": true,
+    "cleanBuildBytes": 247786399
+  },
+  "browser": {
+    "preview": "managed internal QA",
+    "completeLessons": [
+      "gent-disable-device",
+      "gent-enable-device"
+    ],
+    "checks": [
+      "Source-cited panel controls and LED colours",
+      "Learner-tapped highlights and completion state",
+      "Saved completion count across reopening",
+      "Restore lesson handoff with explicit active-disablement notice",
+      "Help search on phone width",
+      "Source-conflict menu search has no fabricated physical-key drill",
+      "320 and390pixel frames have contained page width",
+      "Whole-panel fit and larger-key view",
+      "Release page opens /app/#gent and links new APK"
+    ],
+    "screenshot": "browser-preview.jpg",
+    "limits": [
+      "Internal HTTP preview does not support Service Worker installation; offline assets and worker behavior validated by tests and build audit.",
+      "Android package was built and signature/assets checked; not installed on a physical Android device.",
+      "No physical GENT panel firmware validation has been performed."
+    ]
+  },
+  "preserved": {
+    "intruderProfiles": 9,
+    "intruderGuidedLessons": 62,
+    "picturedFamilies": 441,
+    "packs": 58,
+    "catalogueRecords": 12377
+  },
+  "android": {
+    "versionCode": 14,
+    "versionName": "0.10.0",
+    "minimumSdk": 26,
+    "targetSdk": 35,
+    "permissions": [
+      "android.permission.INTERNET"
+    ],
+    "apk": "public/releases/FINDR-0.10.0.apk",
+    "bytes": 21681412,
+    "sha256": "16ec248042f51a23dd330c63a201e86a288b3a2ab91205b85f5121177c22ba05",
+    "signingCertificateSha256": "6075a73725dac5a3cc1f7b6b32c5e1df907cd1ca4b5b611f4c1c1d2fd502fefd",
+    "v2SignatureVerified": true,
+    "v3SignatureVerified": true
+  },
+  "contentHashes": {
+    "public/app/gent-engine.mjs": "2a089ca7a5113eccfcd6c2bb958e7de3df14e9861292f71072759602073edc5c",
+    "public/app/gent.mjs": "10b206fed4479e9ab48dc57b171c4cca03977b9d1742f30a393c83887935de6b",
+    "public/app/gent.css": "ea7f68ccf885baf2e6013ef01cd55fbd7deaa40174fd77312bb69f9f98ae1daf",
+    "public/app/data/gent-vigilon.json": "7525543ddc3f121190c5f60fb8ffec093a5c75f6a272a21379c18d41a164575f",
+    "public/app/data/gent-lessons.json": "8a09987459f8b938a1ce83642f8832a37b70583608e4da99009a234e94dd5e12"
+  },
+  "packaging": {
+    "firstSaveRejected": "Expanded archive exceeded 256 MiB",
+    "rejectedExpandedBytes": 269216671,
+    "cause": "Obsolete installer copy retained in generated build output",
+    "fix": "Clean output before build, remove orphan files from source-owned public directories after build, verify every public asset and enforce the hosting size limit",
+    "historicalPublicInstallersPreserved": true
+  }
+}

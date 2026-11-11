@@ -1,0 +1,800 @@
+{
+  "release": "0.24.0",
+  "status": "passed",
+  "build": "eb71adfd7e4a",
+  "testedAt": "2026-11-02T22:06:43.117Z",
+  "browser": "154.0.8037.57",
+  "command": "FINDR_PLAYWRIGHT_PATH=/opt/codex/cua_node/lib/node_modules/playwright node scripts/qa-fire-service.cjs",
+  "scriptSha256": "9cd6b1945703414e27577262590a7f007fde3a1d5e47bae0266ac33ee3c2f6e1",
+  "results": [
+    {
+      "width": 390,
+      "height": 844,
+      "status": "passed",
+      "offline": true,
+      "xfp": [
+        {
+          "variant": "32",
+          "targets": [
+            {
+              "label": "Menu",
+              "width": 73.734375,
+              "height": 73.875
+            },
+            {
+              "label": "More information",
+              "width": 73.734375,
+              "height": 73.875
+            },
+            {
+              "label": "Silence internal sounder",
+              "width": 73.734375,
+              "height": 73.875
+            },
+            {
+              "label": "Up / digit 1",
+              "width": 69.984375,
+              "height": 68.59375
+            },
+            {
+              "label": "Accept / digit 2",
+              "width": 69.984375,
+              "height": 68.59375
+            },
+            {
+              "label": "Down / digit 3",
+              "width": 69.984375,
+              "height": 68.59375
+            },
+            {
+              "label": "Escape / digit 4",
+              "width": 69.984375,
+              "height": 68.59375
+            },
+            {
+              "label": "Control panel reset",
+              "width": 73.734375,
+              "height": 73.875
+            },
+            {
+              "label": "Investigate",
+              "width": 73.734375,
+              "height": 73.875
+            },
+            {
+              "label": "Silence / resound sounders",
+              "width": 73.734375,
+              "height": 73.875
+            },
+            {
+              "label": "Access key — O / I",
+              "width": 87.484375,
+              "height": 84.984375
+            }
+          ],
+          "lessons": {
+            "lessons": 10,
+            "steps": 56,
+            "physicalActions": 147
+          }
+        },
+        {
+          "variant": "16",
+          "targets": [
+            {
+              "label": "More information",
+              "width": 95.828125,
+              "height": 50.328125
+            },
+            {
+              "label": "Up / digit 1",
+              "width": 45,
+              "height": 44
+            },
+            {
+              "label": "Accept / digit 2",
+              "width": 45,
+              "height": 44
+            },
+            {
+              "label": "Down / digit 3",
+              "width": 45,
+              "height": 44
+            },
+            {
+              "label": "Escape / digit 4",
+              "width": 45,
+              "height": 44
+            },
+            {
+              "label": "Menu",
+              "width": 95.828125,
+              "height": 50.328125
+            },
+            {
+              "label": "Silence internal sounder",
+              "width": 95.828125,
+              "height": 50.328125
+            },
+            {
+              "label": "Control panel reset",
+              "width": 95.828125,
+              "height": 50.328125
+            },
+            {
+              "label": "Silence / resound sounders",
+              "width": 95.828125,
+              "height": 50.328125
+            },
+            {
+              "label": "Investigate",
+              "width": 95.828125,
+              "height": 50.328125
+            },
+            {
+              "label": "Access key — O / I",
+              "width": 87.109375,
+              "height": 75.5
+            }
+          ],
+          "lessons": {
+            "lessons": 10,
+            "steps": 56,
+            "physicalActions": 147
+          }
+        }
+      ],
+      "twinflex": {
+        "targets": [
+          {
+            "label": "Silence alarms",
+            "width": 51.703125,
+            "height": 51.734375
+          },
+          {
+            "label": "Reset system",
+            "width": 51.703125,
+            "height": 51.734375
+          },
+          {
+            "label": "Sound alarms",
+            "width": 51.703125,
+            "height": 51.734375
+          },
+          {
+            "label": "Silence buzzer",
+            "width": 51.703125,
+            "height": 51.734375
+          },
+          {
+            "label": "Enable controls key",
+            "width": 51.078125,
+            "height": 51.734375
+          },
+          {
+            "label": "Up",
+            "width": 68.515625,
+            "height": 50.609375
+          },
+          {
+            "label": "Right",
+            "width": 57.296875,
+            "height": 49.484375
+          },
+          {
+            "label": "Down",
+            "width": 68.515625,
+            "height": 50.609375
+          },
+          {
+            "label": "Left",
+            "width": 57.296875,
+            "height": 49.484375
+          },
+          {
+            "label": "Enter",
+            "width": 76,
+            "height": 76.46875
+          },
+          {
+            "label": "Digit 1",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Digit 2",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Digit 3",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Digit 4",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Digit 5",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Digit 6",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Digit 7",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Digit 8",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Digit 9",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Escape (*)",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Digit 0",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Backspace (#)",
+            "width": 53.875,
+            "height": 53.984375
+          }
+        ],
+        "lessons": {
+          "lessons": 9,
+          "steps": 64,
+          "physicalActions": 178
+        }
+      },
+      "maps": [
+        {
+          "id": "xfp",
+          "nodes": 73,
+          "sourceDocuments": 3,
+          "referenceNode": "print-history",
+          "interactiveNode": "access2"
+        },
+        {
+          "id": "twinflex",
+          "nodes": 129,
+          "sourceDocuments": 2,
+          "referenceNode": "activate-fire-relay",
+          "interactiveNode": "root"
+        }
+      ],
+      "offlineCache": [
+        {
+          "cache": "findr-shell-eb71adfd7e4a",
+          "build": "eb71adfd7e4a",
+          "version": "0.24.0",
+          "assetCount": 1271
+        }
+      ],
+      "oldViews": [
+        "#fire-panel/c-tec-cfp-standard",
+        "#fire-panel/kentec-sigma-cp",
+        "#gent",
+        "#nano",
+        "#emulator/galaxy-dimension"
+      ],
+      "browserErrors": [],
+      "sourceManuals": [
+        {
+          "id": "c-tec-b03be75d8eb7",
+          "sha256": "a56ad3e3160fa617e4d024dba54bc0e378f5542855be71ee3a35b90083b1faea",
+          "bytes": 1146161
+        },
+        {
+          "id": "fike-6cfbefcbbb78",
+          "sha256": "19a3a00c9300574c53573cbdda4eb98fa240e6a7c633bbd5003fec9b439ef5cd",
+          "bytes": 5328796
+        }
+      ],
+      "preservedSettingKeys": [
+        "conventional-fire-trainer-v1:c-tec-cfp-standard",
+        "conventional-fire-trainer-v1:kentec-sigma-cp",
+        "gent-vigilon-trainer-v1",
+        "gent-nano-trainer-v1",
+        "keypad-emulator-state-v1"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 844,
+      "status": "passed",
+      "offline": true,
+      "xfp": [
+        {
+          "variant": "32",
+          "targets": [
+            {
+              "label": "Menu",
+              "width": 73.734375,
+              "height": 73.875
+            },
+            {
+              "label": "More information",
+              "width": 73.734375,
+              "height": 73.875
+            },
+            {
+              "label": "Silence internal sounder",
+              "width": 73.734375,
+              "height": 73.875
+            },
+            {
+              "label": "Up / digit 1",
+              "width": 69.984375,
+              "height": 68.59375
+            },
+            {
+              "label": "Accept / digit 2",
+              "width": 69.984375,
+              "height": 68.59375
+            },
+            {
+              "label": "Down / digit 3",
+              "width": 69.984375,
+              "height": 68.59375
+            },
+            {
+              "label": "Escape / digit 4",
+              "width": 69.984375,
+              "height": 68.59375
+            },
+            {
+              "label": "Control panel reset",
+              "width": 73.734375,
+              "height": 73.875
+            },
+            {
+              "label": "Investigate",
+              "width": 73.734375,
+              "height": 73.875
+            },
+            {
+              "label": "Silence / resound sounders",
+              "width": 73.734375,
+              "height": 73.875
+            },
+            {
+              "label": "Access key — O / I",
+              "width": 87.484375,
+              "height": 84.984375
+            }
+          ],
+          "lessons": {
+            "lessons": 10,
+            "steps": 56,
+            "physicalActions": 147
+          }
+        },
+        {
+          "variant": "16",
+          "targets": [
+            {
+              "label": "More information",
+              "width": 95.828125,
+              "height": 50.328125
+            },
+            {
+              "label": "Up / digit 1",
+              "width": 45,
+              "height": 44
+            },
+            {
+              "label": "Accept / digit 2",
+              "width": 45,
+              "height": 44
+            },
+            {
+              "label": "Down / digit 3",
+              "width": 45,
+              "height": 44
+            },
+            {
+              "label": "Escape / digit 4",
+              "width": 45,
+              "height": 44
+            },
+            {
+              "label": "Menu",
+              "width": 95.828125,
+              "height": 50.328125
+            },
+            {
+              "label": "Silence internal sounder",
+              "width": 95.828125,
+              "height": 50.328125
+            },
+            {
+              "label": "Control panel reset",
+              "width": 95.828125,
+              "height": 50.328125
+            },
+            {
+              "label": "Silence / resound sounders",
+              "width": 95.828125,
+              "height": 50.328125
+            },
+            {
+              "label": "Investigate",
+              "width": 95.828125,
+              "height": 50.328125
+            },
+            {
+              "label": "Access key — O / I",
+              "width": 87.109375,
+              "height": 75.5
+            }
+          ],
+          "lessons": {
+            "lessons": 10,
+            "steps": 56,
+            "physicalActions": 147
+          }
+        }
+      ],
+      "twinflex": {
+        "targets": [
+          {
+            "label": "Silence alarms",
+            "width": 51.703125,
+            "height": 51.734375
+          },
+          {
+            "label": "Reset system",
+            "width": 51.703125,
+            "height": 51.734375
+          },
+          {
+            "label": "Sound alarms",
+            "width": 51.703125,
+            "height": 51.734375
+          },
+          {
+            "label": "Silence buzzer",
+            "width": 51.703125,
+            "height": 51.734375
+          },
+          {
+            "label": "Enable controls key",
+            "width": 51.078125,
+            "height": 51.734375
+          },
+          {
+            "label": "Up",
+            "width": 68.515625,
+            "height": 50.609375
+          },
+          {
+            "label": "Right",
+            "width": 57.296875,
+            "height": 49.484375
+          },
+          {
+            "label": "Down",
+            "width": 68.515625,
+            "height": 50.609375
+          },
+          {
+            "label": "Left",
+            "width": 57.296875,
+            "height": 49.484375
+          },
+          {
+            "label": "Enter",
+            "width": 76,
+            "height": 76.46875
+          },
+          {
+            "label": "Digit 1",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Digit 2",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Digit 3",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Digit 4",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Digit 5",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Digit 6",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Digit 7",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Digit 8",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Digit 9",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Escape (*)",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Digit 0",
+            "width": 53.875,
+            "height": 53.984375
+          },
+          {
+            "label": "Backspace (#)",
+            "width": 53.875,
+            "height": 53.984375
+          }
+        ],
+        "lessons": {
+          "lessons": 9,
+          "steps": 64,
+          "physicalActions": 178
+        }
+      },
+      "maps": [
+        {
+          "id": "xfp",
+          "nodes": 73,
+          "sourceDocuments": 3,
+          "referenceNode": "print-history",
+          "interactiveNode": "access2"
+        },
+        {
+          "id": "twinflex",
+          "nodes": 129,
+          "sourceDocuments": 2,
+          "referenceNode": "activate-fire-relay",
+          "interactiveNode": "root"
+        }
+      ],
+      "offlineCache": [
+        {
+          "cache": "findr-shell-eb71adfd7e4a",
+          "build": "eb71adfd7e4a",
+          "version": "0.24.0",
+          "assetCount": 1271
+        }
+      ],
+      "oldViews": [
+        "#fire-panel/c-tec-cfp-standard",
+        "#fire-panel/kentec-sigma-cp",
+        "#gent",
+        "#nano",
+        "#emulator/galaxy-dimension"
+      ],
+      "browserErrors": [],
+      "sourceManuals": [
+        {
+          "id": "c-tec-b03be75d8eb7",
+          "sha256": "a56ad3e3160fa617e4d024dba54bc0e378f5542855be71ee3a35b90083b1faea",
+          "bytes": 1146161
+        },
+        {
+          "id": "fike-6cfbefcbbb78",
+          "sha256": "19a3a00c9300574c53573cbdda4eb98fa240e6a7c633bbd5003fec9b439ef5cd",
+          "bytes": 5328796
+        }
+      ],
+      "preservedSettingKeys": [
+        "conventional-fire-trainer-v1:c-tec-cfp-standard",
+        "conventional-fire-trainer-v1:kentec-sigma-cp",
+        "gent-vigilon-trainer-v1",
+        "gent-nano-trainer-v1",
+        "keypad-emulator-state-v1"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "xfp32-controls-390.png",
+      "sha256": "45e56911953977842df441b12a97258ed895e60a0bec7043866343e1a36ae593"
+    },
+    {
+      "file": "xfp32-front-390.png",
+      "sha256": "d148ed4561e5fea62ba3a9933e061574167c86cc35b1e5eb3eb68c85f8bf6ab8"
+    },
+    {
+      "file": "xfp32-lesson-390.png",
+      "sha256": "541cc2984a5e66e05cf4dc61c44ff8c9f717f403c30c25423469573559d42891"
+    },
+    {
+      "file": "xfp16-controls-390.png",
+      "sha256": "2bfcd386cf5d97f0c63f9a13979917fc80f71c1135763e3ccfcca2fbb3eb77c0"
+    },
+    {
+      "file": "xfp16-front-390.png",
+      "sha256": "1b886fd41bc5516820afccf004f4faf534e99c3d94d664d17ebb9f03f75fcff9"
+    },
+    {
+      "file": "xfp16-lesson-390.png",
+      "sha256": "76b16041a591519c7f975e9799a3b0f989943dcd42bdffc5e495615d182d54bc"
+    },
+    {
+      "file": "twinflex-controls-390.png",
+      "sha256": "c840f4342a58d2be961b449739e83c52806d4826f7dce070a1be2f167754226a"
+    },
+    {
+      "file": "twinflex-front-390.png",
+      "sha256": "9717b2ebb6b38cf3f42347a9c4350b26d50205dd18edfea8b37cf6b16a4e365a"
+    },
+    {
+      "file": "twinflex-keypad-closed-390.png",
+      "sha256": "89cb4dfa65a81f065951d7ef8ac3a2e42ef608e486facf01429f27f36b692c65"
+    },
+    {
+      "file": "twinflex-reset-required-390.png",
+      "sha256": "5b540670641bfef12fad90a140be9421ba1a9e58ca4cf60335c87d5b0c375980"
+    },
+    {
+      "file": "twinflex-lesson-390.png",
+      "sha256": "7164ebc8d4557a12b7b7b78657f625f25d82df87ff53c0aaf321413a4fd9aeac"
+    },
+    {
+      "file": "xfp-installer-pdf-390.png",
+      "sha256": "0d28170db42cc157e0fdaa2cb9f1f827582c0da7353e1401c36f8fd41db5e6af"
+    },
+    {
+      "file": "xfp-manuals-alias-390.png",
+      "sha256": "874abbee8e1fb94ad64b64a70805c144107a5323865eae11f3f16b3ee00bb184"
+    },
+    {
+      "file": "twinflex-installer-pdf-390.png",
+      "sha256": "a8c087a0f2a8b5a17b9ffe8b4f6d7a01e547c9fc225f23eed5cbd66e94a94956"
+    },
+    {
+      "file": "xfp16-scoped-hints-390.png",
+      "sha256": "073aa8f6bceed4f3902b1d338d40dba9e65f2d303e6d25e239cce9cacefcc799"
+    },
+    {
+      "file": "xfp-reference-390.png",
+      "sha256": "ab8afe4598edb74d4a0b8e9c1e48a20314763619764e07860c432bd6909e9761"
+    },
+    {
+      "file": "twinflex-reference-390.png",
+      "sha256": "569a5e87e8d35093417c1bc638037e0e80d6d54e15598c96f7d4279325775db9"
+    },
+    {
+      "file": "twinflex-offline-390.png",
+      "sha256": "44d05d637da53620b95209abd5f53621465a90f5d72a261c61edeedd971e1bb2"
+    },
+    {
+      "file": "xfp32-controls-1440.png",
+      "sha256": "141e0b2f446626eab6b10341f00d8b8b8588c0aee7061c9caf80d9de8eafaa51"
+    },
+    {
+      "file": "xfp32-front-1440.png",
+      "sha256": "1f9ea4cb4cf5e7b43a696fea3e1b15598ccce9dffcd499ebd8d0a65dc81f19f7"
+    },
+    {
+      "file": "xfp32-lesson-1440.png",
+      "sha256": "2218795da32a8f4424ecaef876eafb1e284c2b0ed057930979a656d536df3f8e"
+    },
+    {
+      "file": "xfp16-controls-1440.png",
+      "sha256": "ddb991872d28b1fac99a6860e6cfd1b4651fb8db5ab99d64f346a04a73fd40c7"
+    },
+    {
+      "file": "xfp16-front-1440.png",
+      "sha256": "42feafcd59b9799ef9889945970fa8978e9cda53fdc2ec0659f62b66fa00448a"
+    },
+    {
+      "file": "xfp16-lesson-1440.png",
+      "sha256": "92fe947ed7d7e512df5d38fe4c7dff2e4870fe4a1f82aaa22de9177f54694b98"
+    },
+    {
+      "file": "twinflex-controls-1440.png",
+      "sha256": "52bf71a1a53d317ac0f993ec8c2cb1ce3471eb5172f946e03e315de0be16c41e"
+    },
+    {
+      "file": "twinflex-front-1440.png",
+      "sha256": "75759f0536aa85324ca0c37fa16017caa68a9b58120732557af45ed90bf03e29"
+    },
+    {
+      "file": "twinflex-keypad-closed-1440.png",
+      "sha256": "6f02053165436b5f5c07ecc02c4354f12395683dc1ebaecc13d7f558ba56b8e0"
+    },
+    {
+      "file": "twinflex-reset-required-1440.png",
+      "sha256": "5a0aa6d63d8a915620a2ab0059ed783f1ac6a58ff1a4ea53bab149f66c891e7e"
+    },
+    {
+      "file": "twinflex-lesson-1440.png",
+      "sha256": "9fcd0af9e0685684b6eea17f41649a01ae8da220f70d4139bf3099e698e00274"
+    },
+    {
+      "file": "xfp-installer-pdf-1440.png",
+      "sha256": "2c9d6e24c52877bc635273275cb0325175a86ba58c18591e8ec6371b4b5687c1"
+    },
+    {
+      "file": "xfp-manuals-alias-1440.png",
+      "sha256": "b33da6d202a3bfb64131564e3449412f39f7eac02595ea346d655c922a92201c"
+    },
+    {
+      "file": "twinflex-installer-pdf-1440.png",
+      "sha256": "908586638180ffc04aae0efe22d6c1b0c6a1bb0072a30d1a94e5a019456ed4bf"
+    },
+    {
+      "file": "xfp16-scoped-hints-1440.png",
+      "sha256": "d43d1e596b111e0d886ac8796b98bf3bbe7464337dba4a1433bc043b5fa67bc1"
+    },
+    {
+      "file": "xfp-reference-1440.png",
+      "sha256": "9b7457cad562ea4e5c036ac4ef888c83481fb1ea8246f8b143e0c114b7deb667"
+    },
+    {
+      "file": "twinflex-reference-1440.png",
+      "sha256": "90a81e053a1a319218952d145aceb388308f55252a7670688fc40572744c307d"
+    },
+    {
+      "file": "twinflex-offline-1440.png",
+      "sha256": "d999f2a44989796f868426cff77721968d41b004547b41d05d32797b7b3cca39"
+    }
+  ],
+  "runtimeFiles": {
+    "app.mjs": "4abcb5beda966a88253c583c7c3df401f7efe320bcdceeee17319cfd3c084ff9",
+    "xfp.mjs": "41396bf1c52f8c47abda6f440bf22fb5cc7a86baabf85dc65628e535f0c3f89d",
+    "xfp-engine.mjs": "f5330fe7bde0919705c4c1387de40275db423af8d43cef06dc6bb8fc059d8dcf",
+    "xfp-face.mjs": "9808905528f749dfc51b62ddacc2a0172aa5f2445ab0d00a000964a95174e91f",
+    "xfp.css": "7e00a4eac8e3302eda6a2a75178ecf7b5e962373da878f3497116d333a173ec8",
+    "twinflex.mjs": "db158d4de5b4f52d11c72a233d17c687632c9fd6dd1e10d005fe810ad5c16efb",
+    "twinflex-engine.mjs": "c00ac26373ab2bbe59ec43ae268d018772ed18e076401b06e4e062d52d8ce2a9",
+    "twinflex-face.mjs": "4cce6f5c695a77995be46174355930cb91433a3658191db2dfbd7d785984b564",
+    "twinflex.css": "a703d00975438142ca153df32c93c38e8e5b6c37149792259df65000ee85c094",
+    "onsite.mjs": "e60e3d90a1ef1069b6fd040e98e13087575e11c452225d7f5dab416e523207ec",
+    "menu-map-registry.mjs": "a4a722e2539880e942f55d59ada533bd5b47787ee9f23f236d037636571a7124",
+    "data/xfp.json": "40c692dbe28627e16e41adef548381cb1202deb3b4b0d6c7ee21f3a0b723c4bb",
+    "data/twinflex.json": "b0fd8530026d93e3ac65ef3ec11baf2c486b6b42daa987de9eb796a3eeb25730",
+    "data/fire-service-manuals.json": "7b8878ff08bc5495a9b3dc12533acc01dd068d80bd54cb9e54ae80b6a34aba60",
+    "data/menu-maps/xfp.json": "8b5213be61d1fe7b9cd73948db0d6a8c073f000f902fb3d024da359f511d7db2",
+    "data/menu-maps/twinflex.json": "ae145f4d907bb63fcdf59b6843a56478df26c933c4a43b817f92761eca7311d2",
+    "precache.js": "375a252abb7e6e7314b18d2fecd1caebbb285f6b47de759b538156a4d8ac9a30"
+  },
+  "limits": [
+    "Chromium viewport emulation at 390×844 and 1440×844; not physical iPhone/Safari testing",
+    "Source-manual front drawings and original manufacturer photographs compared to rendered faces; not physical hardware certification",
+    "All stored site records, readings, inputs, programming and lesson fixtures are explicitly synthetic",
+    "Manual API intercepted with exact verified local source PDF bytes; publisher availability is a separate verification",
+    "Reference-only source menu entries remain indexed without invented hardware outcomes",
+    "Publication, native packaging and complete regression/build results reported separately by release owner"
+  ]
+}

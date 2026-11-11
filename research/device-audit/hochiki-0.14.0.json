@@ -1,0 +1,216 @@
+{
+  "batch": "hochiki-0.14.0",
+  "verified_date": "2026-10-30",
+  "brand": "Hochiki",
+  "scope": "Pictured device identification and accurately labelled manufacturer references. No new live-panel operations or commissioning workflow.",
+  "source_method": "Recovered original manufacturer PDFs and original manufacturer web assets. PDF photographs extracted with their transparency masks; no generated hardware imagery.",
+  "devices": [
+    {
+      "id": "hochiki-aln-en",
+      "document_id": "device-doc-hochiki-25693c776dcc",
+      "pdf_page": 7,
+      "image_xref": 759,
+      "model_heading_present": true,
+      "image_sha256": "c4a45254db6618d02838801e0fc1428a9801b67df68112298c413d217b9a01b3",
+      "exact_image_column_reviewed": true
+    },
+    {
+      "id": "hochiki-acc-en",
+      "document_id": "device-doc-hochiki-25693c776dcc",
+      "pdf_page": 7,
+      "image_xref": 140,
+      "model_heading_present": true,
+      "image_sha256": "79551216d452872d8e890fb4f2498680e87105f3c7ba62f81dc04d69679775bb",
+      "exact_image_column_reviewed": true
+    },
+    {
+      "id": "hochiki-atj-en",
+      "document_id": "device-doc-hochiki-25693c776dcc",
+      "pdf_page": 7,
+      "image_xref": 144,
+      "model_heading_present": true,
+      "image_sha256": "2589b67e89c7fb1fcaae5c07fba426e89a420276c2c394cd094f617f834a6b29",
+      "exact_image_column_reviewed": true
+    },
+    {
+      "id": "hochiki-acd-en",
+      "document_id": "device-doc-hochiki-25693c776dcc",
+      "pdf_page": 7,
+      "image_xref": 136,
+      "model_heading_present": true,
+      "image_sha256": "fdd2c0926599a099e124f8ad7edf17e0555b364902e7423f73a57de45680f3ab",
+      "exact_image_column_reviewed": true
+    },
+    {
+      "id": "hochiki-acb-ew",
+      "document_id": "device-doc-hochiki-25693c776dcc",
+      "pdf_page": 8,
+      "image_xref": 157,
+      "model_heading_present": true,
+      "image_sha256": "3c4a78f512f0e43624c3d05ccb93c93d984a69b2bccc647afb696de5c36e5e0a",
+      "exact_image_column_reviewed": true
+    },
+    {
+      "id": "hochiki-ybn-r3",
+      "document_id": "device-doc-hochiki-25693c776dcc",
+      "pdf_page": 9,
+      "image_xref": 164,
+      "model_heading_present": true,
+      "image_sha256": "85af2a952c1253e604058641e1a6a69628651665db518bdb1a1a1f76a92ffb80",
+      "exact_image_column_reviewed": true
+    },
+    {
+      "id": "hochiki-ybv-r4",
+      "document_id": "device-doc-hochiki-25693c776dcc",
+      "pdf_page": 9,
+      "image_xref": 166,
+      "model_heading_present": true,
+      "image_sha256": "654c6fdb556bedf2f33600bc260cf5f592179296cc262aa2851ec53fe9259d83",
+      "exact_image_column_reviewed": true
+    },
+    {
+      "id": "hochiki-chq-ws2",
+      "document_id": "device-doc-hochiki-25693c776dcc",
+      "pdf_page": 10,
+      "image_xref": 177,
+      "model_heading_present": true,
+      "image_sha256": "9ce1ee2e4f3db95b0a12fe59d2c49789c1740f4d4a16a480c50cb90ad1eebc2c",
+      "exact_image_column_reviewed": true
+    },
+    {
+      "id": "hochiki-chq-wsb2",
+      "document_id": "device-doc-hochiki-25693c776dcc",
+      "pdf_page": 10,
+      "image_xref": 175,
+      "model_heading_present": true,
+      "image_sha256": "111f4c6fe3d18be2c54c65ec592cff67a90057c5347318edb434af8c74c848d1",
+      "exact_image_column_reviewed": true
+    },
+    {
+      "id": "hochiki-ybo-bs",
+      "document_id": "device-doc-hochiki-25693c776dcc",
+      "pdf_page": 11,
+      "image_xref": 194,
+      "model_heading_present": true,
+      "image_sha256": "fc213c721de61ca7c964af62a1ad14905f873fc55ec5652caec2ffdc413ebb5d",
+      "exact_image_column_reviewed": true
+    },
+    {
+      "id": "hochiki-chq-ari",
+      "document_id": "device-doc-hochiki-25693c776dcc",
+      "pdf_page": 12,
+      "image_xref": 201,
+      "model_heading_present": true,
+      "image_sha256": "c0af6c322ad0e549527d718a19793aebbf37dc2021f5f452219881665e6cbae1",
+      "exact_image_column_reviewed": true
+    },
+    {
+      "id": "hochiki-chq-sim",
+      "document_id": "device-doc-hochiki-25693c776dcc",
+      "pdf_page": 13,
+      "image_xref": 212,
+      "model_heading_present": true,
+      "image_sha256": "f10ecd623824f7fb6694af53b1212d5a43610b3c56887a458b99557691d987d8",
+      "exact_image_column_reviewed": true
+    },
+    {
+      "id": "hochiki-chq-dim2-sci",
+      "document_id": "device-doc-hochiki-25693c776dcc",
+      "pdf_page": 14,
+      "image_xref": 225,
+      "model_heading_present": true,
+      "image_sha256": "e8ba85ec05d2a026fa1a6896d6f8ce50b2b8cd481c7fada413cdee1179e36fbb",
+      "exact_image_column_reviewed": true
+    },
+    {
+      "id": "hochiki-hcp-e-sci",
+      "document_id": "device-doc-hochiki-25693c776dcc",
+      "pdf_page": 16,
+      "image_xref": 249,
+      "model_heading_present": true,
+      "image_sha256": "6d70785987a991468fdeffb3c801fa0c31d41e3e351f25718262b11c42b88f96",
+      "exact_image_column_reviewed": true
+    },
+    {
+      "id": "hochiki-tch-b200",
+      "document_id": "device-doc-hochiki-25693c776dcc",
+      "pdf_page": 17,
+      "image_xref": 268,
+      "model_heading_present": true,
+      "image_sha256": "81de468a3219c75edac737a0b0ee55330a9d470f062f8795b78c5c653cee3cf0",
+      "exact_image_column_reviewed": true
+    },
+    {
+      "id": "hochiki-soc-e3n",
+      "document_id": "device-doc-hochiki-25693c776dcc",
+      "pdf_page": 19,
+      "image_xref": 287,
+      "model_heading_present": true,
+      "image_sha256": "eb809b6bc98ec6fe262f364cf919c2771595cfe29402be347fa6c387a05d5904",
+      "exact_image_column_reviewed": true
+    },
+    {
+      "id": "hochiki-dcd-ae3-ce3",
+      "document_id": "device-doc-hochiki-25693c776dcc",
+      "pdf_page": 19,
+      "image_xref": 283,
+      "model_heading_present": true,
+      "image_sha256": "d9a76f7cc4902c7cae3fdb60560299c3019e1841b9e2eb08abf9a2b1f7645f6b",
+      "exact_image_column_reviewed": true
+    },
+    {
+      "id": "hochiki-drd-e",
+      "document_id": "device-doc-hochiki-25693c776dcc",
+      "pdf_page": 20,
+      "image_xref": 294,
+      "model_heading_present": true,
+      "image_sha256": "b3392f040609c841181effec39eabad486d361f86b99b1c8d42e7f85c00f5e29",
+      "exact_image_column_reviewed": true
+    }
+  ],
+  "supplementary_documents": [
+    {
+      "id": "device-doc-hochiki-25693c776dcc",
+      "brand": "Hochiki",
+      "category": "fire",
+      "models": [
+        "ALN-EN",
+        "ACC-EN",
+        "ATJ-EN",
+        "ACD-EN",
+        "ACB-EW",
+        "YBN-R/3",
+        "YBV-R/4",
+        "CHQ-WS2",
+        "CHQ-WSB2",
+        "YBO-BS",
+        "CHQ-ARI",
+        "CHQ-SIM",
+        "CHQ-DIM2(SCI)",
+        "HCP-E(SCI)",
+        "TCH-B200",
+        "SOC-E3N",
+        "DCD-AE3",
+        "DCD-CE3",
+        "DRD-E"
+      ],
+      "title": "Hochiki Europe Product Guide - Issue 33, March 2026",
+      "type": "manufacturer reference",
+      "url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "source": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "revision": "9-5-0-321 / ISS33 / MAR26",
+      "status": "file-hash",
+      "sha256": "25693c776dcc86b823870dc205b9051a37daaa9dad46c974136abf626f3bed3a",
+      "bytes": 11777900,
+      "pages": 56,
+      "origin": "device-reference",
+      "related_archive_record_ids": []
+    }
+  ],
+  "review_notes": [
+    "The only linked reference is correctly labelled a product guide, not an installation manual.",
+    "CHQ-WS2 uses page 10 XRef 177; CHQ-WSB2 uses the adjacent, different beacon image XRef 175.",
+    "DCD-AE3 and DCD-CE3 remain one shared-photo family rather than duplicate colour or temperature cards."
+  ],
+  "visual_review": "Source page layouts and final contact sheets reviewed before integration; exact model labels distinguish similar housings."
+}

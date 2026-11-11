@@ -1,0 +1,130 @@
+{
+  "generated": "2026-10-29",
+  "batch": "other-panels",
+  "entries": 19,
+  "new_entries": 17,
+  "replaced_existing_ids": [
+    "haes-fusion",
+    "risco-lightsys"
+  ],
+  "verified_ids": [
+    "eaton-scantronic-i-on-series",
+    "haes-9002-9004",
+    "haes-elan",
+    "haes-elan-hs-5200",
+    "haes-elan-hs-5400",
+    "haes-elan-hs-5800",
+    "haes-fusion",
+    "haes-surveyor-9002-a",
+    "honeywell-vista-15p",
+    "honeywell-vista-20p",
+    "honeywell-vista-21ip",
+    "pyronix-enforcer-v11",
+    "risco-lightsys",
+    "tynetec-reach",
+    "tynetec-reach-ip",
+    "tynetec-reach-plus",
+    "tynetec-reach-plus-gsm",
+    "tynetec-reach-ultra",
+    "visonic-powermax-plus"
+  ],
+  "unresolved": [
+    {
+      "id": "haes-level-1-4-twin",
+      "brand": "Haes",
+      "model": "Level 1-4 TWIN",
+      "status": "unresolved",
+      "reason": "Reviewed the available manufacturer manual and searched public product sources; no verified exterior photograph was located in this pass. Original document remains available in the pack.",
+      "record_ids": [
+        "haes-317313906c9c"
+      ]
+    },
+    {
+      "id": "haes-level-2-1cd",
+      "brand": "Haes",
+      "model": "Level 2-1CD",
+      "status": "unresolved",
+      "reason": "Reviewed the available manufacturer manual and searched public product sources; no verified exterior photograph was located in this pass. Original document remains available in the pack.",
+      "record_ids": [
+        "haes-4770add6f3df"
+      ]
+    },
+    {
+      "id": "haes-firemax",
+      "brand": "Haes",
+      "model": "Firemax",
+      "status": "unresolved",
+      "reason": "Reviewed the available manufacturer manual and searched public product sources; no verified exterior photograph was located in this pass. Original document remains available in the pack.",
+      "record_ids": [
+        "haes-653dc7d77bcb"
+      ]
+    },
+    {
+      "id": "haes-9012",
+      "brand": "Haes",
+      "model": "9012",
+      "status": "unresolved",
+      "reason": "Reviewed the available manufacturer manual and searched public product sources; no verified exterior photograph was located in this pass. Original document remains available in the pack.",
+      "record_ids": [
+        "haes-7f89a3aecdc0"
+      ]
+    },
+    {
+      "id": "haes-multi-tech",
+      "brand": "Haes",
+      "model": "Multi-Tech",
+      "status": "unresolved",
+      "reason": "Manufacturer manual has a labelled front-control schematic, but a verified exterior product photograph remains missing.",
+      "record_ids": [
+        "haes-922a67a98d46"
+      ]
+    },
+    {
+      "id": "haes-9001sd",
+      "brand": "Haes",
+      "model": "9001SD",
+      "status": "unresolved",
+      "reason": "Reviewed the available manufacturer manual and searched public product sources; no verified exterior photograph was located in this pass. Original document remains available in the pack.",
+      "record_ids": [
+        "haes-a9a2076a7531"
+      ]
+    },
+    {
+      "id": "haes-level-1-4",
+      "brand": "Haes",
+      "model": "Level 1-4",
+      "status": "unresolved",
+      "reason": "Reviewed the available manufacturer manual and searched public product sources; no verified exterior photograph was located in this pass. Original document remains available in the pack.",
+      "record_ids": [
+        "haes-af1a326cf3f3"
+      ]
+    },
+    {
+      "id": "haes-6000-series",
+      "brand": "Haes",
+      "model": "6000 Series",
+      "status": "unresolved",
+      "reason": "Reviewed the available manufacturer manual and searched public product sources; no verified exterior photograph was located in this pass. Original document remains available in the pack.",
+      "record_ids": [
+        "haes-b06e971644c9"
+      ]
+    },
+    {
+      "id": "haes-8000-series",
+      "brand": "Haes",
+      "model": "8000 Series",
+      "status": "unresolved",
+      "reason": "Reviewed the available manufacturer manual and searched public product sources; no verified exterior photograph was located in this pass. Original document remains available in the pack.",
+      "record_ids": [
+        "haes-bd3b175ffb6c"
+      ]
+    }
+  ],
+  "notes": [
+    "All assets visually reviewed against the linked product page or manufacturer PDF page; no invented artwork.",
+    "HS-5800 is an image-only reference: the existing Elan installation manual covers HS-5100/5200/5400, so HS-5800 deliberately has no matched record IDs.",
+    "Haes Elan and Surveyor gap IDs are retained with explicit HS-5100 and 9004 captions; their other documented cabinet variants have separate pictures.",
+    "i-on family asset is explicitly labelled a manufacturer illustration. Surveyor assets are scans of historical photographs.",
+    "Recovered Enforcer uses a labelled distributor image; VISTA images come from Resideo product pages and visibly shared cabinets are explicitly explained."
+  ]
+}

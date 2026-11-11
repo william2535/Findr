@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-11",
+  "assetURL": "https://findr-fault-finder.floodyyy21.chatgpt.site/app/vendor/ocr/eng.traineddata.gz",
+  "existingPublishedAsset": [
+    {
+      "requestMode": "raw",
+      "bodyBytes": 1967599,
+      "bodySHA256": "f1c22599ed6fd3eb821d87fdb43e09f98b61179a4abe38c43cfca2cdcb9f5ec2",
+      "first16Bytes": "1f8b0800000000000203ccbbf7971cd5",
+      "headers": [
+        "HTTP/1.1 200 OK",
+        "HTTP/2 200 ",
+        "content-type: application/octet-stream",
+        "content-length: 1967599",
+        "cf-cache-status: HIT",
+        "cache-control: public, max-age=0, must-revalidate",
+        "server: envoy"
+      ]
+    },
+    {
+      "requestMode": "decoded",
+      "bodyBytes": 1967599,
+      "bodySHA256": "f1c22599ed6fd3eb821d87fdb43e09f98b61179a4abe38c43cfca2cdcb9f5ec2",
+      "first16Bytes": "1f8b0800000000000203ccbbf7971cd5",
+      "headers": [
+        "HTTP/1.1 200 OK",
+        "HTTP/2 200 ",
+        "content-type: application/octet-stream",
+        "content-length: 1967599",
+        "cf-cache-status: HIT",
+        "cache-control: public, max-age=0, must-revalidate",
+        "server: envoy"
+      ]
+    }
+  ],
+  "previewBrowserResponse": {
+    "kind": "Inspect actual OCR asset transport",
+    "status": "passed",
+    "at": "2026-11-11T11:42:29.942Z",
+    "elapsedMs": 261.7000000011176,
+    "requestingPage": "/__qa_helpers032/index.html",
+    "requestingPageControlled": false,
+    "url": "http://127.0.0.1:4173/app/vendor/ocr/eng.traineddata.gz?qa_transport=53bf76ea-1829-4873-84d0-47c78906d09f",
+    "statusCode": 200,
+    "headers": {
+      "cache-control": "no-cache",
+      "connection": "keep-alive",
+      "content-length": "1967599",
+      "content-type": "application/octet-stream",
+      "date": "Wed, 11 Nov 2026 11:42:29 GMT",
+      "keep-alive": "timeout=5",
+      "vary": "Origin"
+    },
+    "receivedBytes": 1967599,
+    "sha256": "f1c22599ed6fd3eb821d87fdb43e09f98b61179a4abe38c43cfca2cdcb9f5ec2",
+    "first16Bytes": "1f8b0800000000000203ccbbf7971cd5",
+    "matchesCompressed": true,
+    "matchesInflated": false,
+    "expected": {
+      "compressed": {
+        "bytes": 1967599,
+        "sha256": "f1c22599ed6fd3eb821d87fdb43e09f98b61179a4abe38c43cfca2cdcb9f5ec2"
+      },
+      "inflated": {
+        "bytes": 4113088,
+        "sha256": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2"
+      }
+    },
+    "note": "Ordinary browser fetch from the QA document outside /app/ service-worker scope. The response is inspected only; no cache entry or manifest is modified."
+  },
+  "manifestExpectedCompressed": {
+    "bytes": 1967599,
+    "sha256": "f1c22599ed6fd3eb821d87fdb43e09f98b61179a4abe38c43cfca2cdcb9f5ec2"
+  },
+  "inflatedBody": {
+    "bytes": 4113088,
+    "sha256": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2"
+  },
+  "integrityCheckBypassed": false,
+  "previewCause": {
+    "source": "Vite bundled sirv toHeaders() in node_modules/vite/dist/node/chunks/node.js",
+    "finding": "Adds Content-Encoding: gzip based on a .gz filename even for a gzip data file",
+    "browserFailureObserved": "asset_integrity at ./vendor/ocr/eng.traineddata.gz"
+  },
+  "previewRepair": {
+    "file": "vite.config.ts",
+    "scope": "Development serve mode and the exact /app/vendor/ocr/eng.traineddata.gz path only",
+    "behavior": "Serves unchanged data bytes with application/octet-stream, correct length and no Content-Encoding",
+    "productionAssetUnchanged": true,
+    "serviceWorkerIntegrityUnchanged": true,
+    "canonicalPreviewRestart": "sites-preview stop; sites-preview start /workspace/sites/findr/.sites-checkout",
+    "returnedURL": "http://127.0.0.1:4173/",
+    "postRepairBrowserVerification": "passed: actual response matches original compressed bytes and no Content-Encoding"
+  },
+  "evidenceFile": "browser-preconstraint-selection.json"
+}

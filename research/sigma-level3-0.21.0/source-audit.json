@@ -1,0 +1,1827 @@
+{
+  "checkedOn": "2026-11-02",
+  "release": "0.21.0",
+  "baselineCommit": "3d6f286119accef7c86f80cc74cb4461a9153b9d",
+  "profileId": "kentec-sigma-cp",
+  "sourceId": "sigma-main-25",
+  "recordId": "kentec-0d82d93522c3",
+  "sha256": "ce2da02ef49b615e68ae7a1e69b9ffcc54efd8970bbacb9b1589f484d3e30dd6",
+  "sourceBytes": 834385,
+  "sourcePages": 24,
+  "edition": "Man-1078 Issue25,April2024",
+  "catalogueHashVerified": false,
+  "frontSource": {
+    "sourceId": "sigma-main-25",
+    "pdfPage": 9,
+    "printedPage": "9",
+    "section": "5. Control panel fascia"
+  },
+  "switchSource": {
+    "sourceId": "sigma-main-25",
+    "pdfPage": 16,
+    "printedPage": "16",
+    "section": "Figure8—Write Enable aperture"
+  },
+  "preservation": {
+    "cfpProfileSha256": "795f3b2ef86458e5ae3d802330e44a20680821d5d1f4048f1f6e511dfe1fb62b",
+    "legacySigmaLessonsSha256": "d8f4f3210f426ec29bfe548889f24f28f64c77c6ad638f66942ea7d9099a4570",
+    "originalSigmaLessonIds": [
+      "sigma-lamps",
+      "sigma-access",
+      "sigma-fault-mute",
+      "sigma-resound",
+      "sigma-clear-reset",
+      "sigma-zone-restore",
+      "sigma-sounder-restore",
+      "sigma-test-restore"
+    ],
+    "originalFrontControlIds": [
+      "SOUNDERS",
+      "BUZZER",
+      "RESET",
+      "LAMP_TEST",
+      "MODE",
+      "SELECT",
+      "ENTER",
+      "KEYSWITCH"
+    ]
+  },
+  "counts": {
+    "configurationCodes": 103,
+    "implementedCodes": 48,
+    "referenceOnlyCodes": 55,
+    "newLessons": 5,
+    "newSteps": 79,
+    "totalConventionalLessons": 28,
+    "totalConventionalSteps": 237,
+    "callOuts": 5
+  },
+  "limits": [
+    "A fictional eight-zone K11080M2 K-series fixture with common alarm operation. It is not a T-series wiring or CP-A AlarmSense simulator.",
+    "This conventional panel identifies circuits by zone, not individual addressed detectors. Disablement affects the whole selected zone. Adding or replacing a detector is circuit work followed by checks and testing; there is no detector enrolment menu.",
+    "Active-device warning on a disabled zone is scoped to sigma_CP 214.hex or later, as stated by the main manual. It is not assumed for older panels.",
+    "The operator manuals do not establish the complete MODE cycle order. An explicit training target chooser avoids inventing a hardware press count. Engineering start, wrap and alphabetic code-entry details are also not fully documented.",
+    "Page 16 says move Write Enable to the right for access level 3, while page 19 calls the normal/off position right. The trainer uses ON/OFF labels and does not assert a switch direction.",
+    "The manual describes Enter setting an engineering option and a flashing dot showing that it is set; it does not explicitly describe unsetting it with a second press. Restore training configuration is a separate simulation action, not a hardware button sequence.",
+    "Test auto-reset is described only as after a few seconds. Non-latching zones may take up to 20 seconds to reset when sounders operate. Advancing the training clock or test cycle does not certify a measured hardware timer.",
+    "Removing or refitting the simulated cover does not change Write Enable or erase settings. The cover-off illustration shows the source panel plate and switch aperture, not an invented view of the full cabinet, power supply or batteries.",
+    "Only supported configuration effects are simulated. T-series/zonal sounder, ancillary-board, intrinsically safe barrier, short-circuit threshold and unverified version-specific options remain reference-only. No live electrical work, detector compatibility decision or real repair is certified.",
+    "The source user guide has an Issue 06 cover and _05 page footers. The newer Issue 25 main manual is primary; saved/downloaded Sigma records are not hash-pinned by the archive and their edition must be checked."
+  ],
+  "configurationCodes": [
+    {
+      "code": "00",
+      "label": "Sounder delay: 30 seconds",
+      "group": "delay-time",
+      "kind": "choice",
+      "scope": "Common sounder delay period; requires selected detector/call-point delay codes and access-level-2 Ad.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "sounder-delay-time"
+    },
+    {
+      "code": "01",
+      "label": "Sounder delay: 1 minute",
+      "group": "delay-time",
+      "kind": "choice",
+      "scope": "Common sounder delay period; requires selected detector/call-point delay codes and access-level-2 Ad.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "sounder-delay-time"
+    },
+    {
+      "code": "02",
+      "label": "Sounder delay: 2 minutes",
+      "group": "delay-time",
+      "kind": "choice",
+      "scope": "Common sounder delay period; requires selected detector/call-point delay codes and access-level-2 Ad.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "sounder-delay-time"
+    },
+    {
+      "code": "03",
+      "label": "Sounder delay: 3 minutes",
+      "group": "delay-time",
+      "kind": "choice",
+      "scope": "Common sounder delay period; requires selected detector/call-point delay codes and access-level-2 Ad.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "sounder-delay-time"
+    },
+    {
+      "code": "04",
+      "label": "Sounder delay: 4 minutes",
+      "group": "delay-time",
+      "kind": "choice",
+      "scope": "Common sounder delay period; requires selected detector/call-point delay codes and access-level-2 Ad.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "sounder-delay-time"
+    },
+    {
+      "code": "05",
+      "label": "Sounder delay: 5 minutes",
+      "group": "delay-time",
+      "kind": "choice",
+      "scope": "Common sounder delay period; requires selected detector/call-point delay codes and access-level-2 Ad.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "sounder-delay-time"
+    },
+    {
+      "code": "06",
+      "label": "Sounder delay: 6 minutes",
+      "group": "delay-time",
+      "kind": "choice",
+      "scope": "Common sounder delay period; requires selected detector/call-point delay codes and access-level-2 Ad.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "sounder-delay-time"
+    },
+    {
+      "code": "07",
+      "label": "Sounder delay: 7 minutes",
+      "group": "delay-time",
+      "kind": "choice",
+      "scope": "Common sounder delay period; requires selected detector/call-point delay codes and access-level-2 Ad.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "sounder-delay-time"
+    },
+    {
+      "code": "08",
+      "label": "Sounder delay: 8 minutes",
+      "group": "delay-time",
+      "kind": "choice",
+      "scope": "Common sounder delay period; requires selected detector/call-point delay codes and access-level-2 Ad.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "sounder-delay-time"
+    },
+    {
+      "code": "09",
+      "label": "Sounder delay: 9 minutes",
+      "group": "delay-time",
+      "kind": "choice",
+      "scope": "Common sounder delay period; requires selected detector/call-point delay codes and access-level-2 Ad.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "sounder-delay-time"
+    },
+    {
+      "code": "10",
+      "label": "Common alarm mode",
+      "group": "alarm-mode",
+      "kind": "choice",
+      "scope": "Common sounders operate on an eligible fire.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "common-alarm"
+    },
+    {
+      "code": "11",
+      "label": "Two-stage alarm mode",
+      "group": "alarm-mode",
+      "kind": "choice",
+      "scope": "Requires zonal sounder hardware and configuration not represented by this common-sounder K-series fixture.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "12",
+      "label": "Zoned alarm mode",
+      "group": "alarm-mode",
+      "kind": "choice",
+      "scope": "Requires zonal sounder hardware and configuration not represented by this common-sounder K-series fixture.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "21",
+      "label": "Disable fire buzzer",
+      "group": "panel-options",
+      "kind": "flag",
+      "scope": "The buzzer does not operate on a fire condition; this does not silence the separate engineering or watchdog warning.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "disable-fire-buzzer",
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "22",
+      "label": "Disable fault output",
+      "group": "panel-options",
+      "kind": "flag",
+      "scope": "The fault relay does not operate except upon total power failure; a relay flag does not remove the indicated fault.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "disable-fault-output",
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "23",
+      "label": "Disable earth fault monitoring",
+      "group": "panel-options",
+      "kind": "flag",
+      "scope": "Earth-fault monitoring is disabled; the simulated earth input is retained, not repaired.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "disable-earth-monitoring"
+    },
+    {
+      "code": "24",
+      "label": "Pulsed remote control output",
+      "group": "panel-options",
+      "kind": "flag",
+      "scope": "The manual describes Aux 24V pulsing 1 second on / 1 second off. Physical output behaviour is not simulated.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "25",
+      "label": "Enable sounders on detection circuits",
+      "group": "panel-options",
+      "kind": "flag",
+      "scope": "Default for two-wire T-series. This K-series common-sounder fixture does not model detection-circuit sounders.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "26",
+      "label": "Disable fire output",
+      "group": "panel-options",
+      "kind": "flag",
+      "scope": "The fire relay does not operate on alarm. This is separate from the local fire relay.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "disable-fire-output"
+    },
+    {
+      "code": "27",
+      "label": "Remove Aux 24V upon panel reset",
+      "group": "panel-options",
+      "kind": "flag",
+      "scope": "The manual describes an approximately five-second supply interruption; no physical supply or reset timing is simulated.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "28",
+      "label": "Indicate call-point activation",
+      "group": "panel-options",
+      "kind": "flag",
+      "scope": "Source requires a call point with a 270R resistance; Pu and indicator differences do not establish field-device identity in this fixture.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "29",
+      "label": "Do not re-sound alarms from another zone",
+      "group": "panel-options",
+      "kind": "flag",
+      "scope": "After alarm silence, a subsequent zone activation does not re-sound the alarms.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "no-new-zone-resound"
+    },
+    {
+      "code": "2A",
+      "label": "Treat call-point alarm as detector alarm",
+      "group": "panel-options",
+      "kind": "flag",
+      "scope": "Version 215 onward. Trigger discrimination is not established for every panel covered by the 214+ training scope.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "firmwareMinimum": "sigma_CP 215.hex"
+    },
+    {
+      "code": "31",
+      "label": "Zone 1: Detector alarm delayed",
+      "group": "detector-delay",
+      "kind": "flag",
+      "scope": "Selected-zone detector alarms delay common sounder outputs by code 00–09 only when access-level-2 Ad is enabled.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "detector-delay"
+    },
+    {
+      "code": "32",
+      "label": "Zone 2: Detector alarm delayed",
+      "group": "detector-delay",
+      "kind": "flag",
+      "scope": "Selected-zone detector alarms delay common sounder outputs by code 00–09 only when access-level-2 Ad is enabled.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "detector-delay"
+    },
+    {
+      "code": "33",
+      "label": "Zone 3: Detector alarm delayed",
+      "group": "detector-delay",
+      "kind": "flag",
+      "scope": "Selected-zone detector alarms delay common sounder outputs by code 00–09 only when access-level-2 Ad is enabled.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "detector-delay"
+    },
+    {
+      "code": "34",
+      "label": "Zone 4: Detector alarm delayed",
+      "group": "detector-delay",
+      "kind": "flag",
+      "scope": "Selected-zone detector alarms delay common sounder outputs by code 00–09 only when access-level-2 Ad is enabled.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "detector-delay"
+    },
+    {
+      "code": "35",
+      "label": "Zone 5: Detector alarm delayed",
+      "group": "detector-delay",
+      "kind": "flag",
+      "scope": "Selected-zone detector alarms delay common sounder outputs by code 00–09 only when access-level-2 Ad is enabled.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "detector-delay"
+    },
+    {
+      "code": "36",
+      "label": "Zone 6: Detector alarm delayed",
+      "group": "detector-delay",
+      "kind": "flag",
+      "scope": "Selected-zone detector alarms delay common sounder outputs by code 00–09 only when access-level-2 Ad is enabled.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "detector-delay"
+    },
+    {
+      "code": "37",
+      "label": "Zone 7: Detector alarm delayed",
+      "group": "detector-delay",
+      "kind": "flag",
+      "scope": "Selected-zone detector alarms delay common sounder outputs by code 00–09 only when access-level-2 Ad is enabled.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "detector-delay"
+    },
+    {
+      "code": "38",
+      "label": "Zone 8: Detector alarm delayed",
+      "group": "detector-delay",
+      "kind": "flag",
+      "scope": "Selected-zone detector alarms delay common sounder outputs by code 00–09 only when access-level-2 Ad is enabled.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "detector-delay"
+    },
+    {
+      "code": "41",
+      "label": "Zone 1: Call-point alarm delayed",
+      "group": "call-point-delay",
+      "kind": "flag",
+      "scope": "Selected-zone call-point alarms delay common sounder outputs by code 00–09 only when access-level-2 Ad is enabled.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "call-point-delay"
+    },
+    {
+      "code": "42",
+      "label": "Zone 2: Call-point alarm delayed",
+      "group": "call-point-delay",
+      "kind": "flag",
+      "scope": "Selected-zone call-point alarms delay common sounder outputs by code 00–09 only when access-level-2 Ad is enabled.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "call-point-delay"
+    },
+    {
+      "code": "43",
+      "label": "Zone 3: Call-point alarm delayed",
+      "group": "call-point-delay",
+      "kind": "flag",
+      "scope": "Selected-zone call-point alarms delay common sounder outputs by code 00–09 only when access-level-2 Ad is enabled.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "call-point-delay"
+    },
+    {
+      "code": "44",
+      "label": "Zone 4: Call-point alarm delayed",
+      "group": "call-point-delay",
+      "kind": "flag",
+      "scope": "Selected-zone call-point alarms delay common sounder outputs by code 00–09 only when access-level-2 Ad is enabled.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "call-point-delay"
+    },
+    {
+      "code": "45",
+      "label": "Zone 5: Call-point alarm delayed",
+      "group": "call-point-delay",
+      "kind": "flag",
+      "scope": "Selected-zone call-point alarms delay common sounder outputs by code 00–09 only when access-level-2 Ad is enabled.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "call-point-delay"
+    },
+    {
+      "code": "46",
+      "label": "Zone 6: Call-point alarm delayed",
+      "group": "call-point-delay",
+      "kind": "flag",
+      "scope": "Selected-zone call-point alarms delay common sounder outputs by code 00–09 only when access-level-2 Ad is enabled.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "call-point-delay"
+    },
+    {
+      "code": "47",
+      "label": "Zone 7: Call-point alarm delayed",
+      "group": "call-point-delay",
+      "kind": "flag",
+      "scope": "Selected-zone call-point alarms delay common sounder outputs by code 00–09 only when access-level-2 Ad is enabled.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "call-point-delay"
+    },
+    {
+      "code": "48",
+      "label": "Zone 8: Call-point alarm delayed",
+      "group": "call-point-delay",
+      "kind": "flag",
+      "scope": "Selected-zone call-point alarms delay common sounder outputs by code 00–09 only when access-level-2 Ad is enabled.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "call-point-delay"
+    },
+    {
+      "code": "51",
+      "label": "Zone 1: Contributes to ancillary coincidence output",
+      "group": "ancillary-coincidence",
+      "kind": "flag",
+      "scope": "Contributes to the ancillary-board coincidence output; no ancillary board is represented by this fixture.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "52",
+      "label": "Zone 2: Contributes to ancillary coincidence output",
+      "group": "ancillary-coincidence",
+      "kind": "flag",
+      "scope": "Contributes to the ancillary-board coincidence output; no ancillary board is represented by this fixture.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "53",
+      "label": "Zone 3: Contributes to ancillary coincidence output",
+      "group": "ancillary-coincidence",
+      "kind": "flag",
+      "scope": "Contributes to the ancillary-board coincidence output; no ancillary board is represented by this fixture.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "54",
+      "label": "Zone 4: Contributes to ancillary coincidence output",
+      "group": "ancillary-coincidence",
+      "kind": "flag",
+      "scope": "Contributes to the ancillary-board coincidence output; no ancillary board is represented by this fixture.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "55",
+      "label": "Zone 5: Contributes to ancillary coincidence output",
+      "group": "ancillary-coincidence",
+      "kind": "flag",
+      "scope": "Contributes to the ancillary-board coincidence output; no ancillary board is represented by this fixture.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "56",
+      "label": "Zone 6: Contributes to ancillary coincidence output",
+      "group": "ancillary-coincidence",
+      "kind": "flag",
+      "scope": "Contributes to the ancillary-board coincidence output; no ancillary board is represented by this fixture.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "57",
+      "label": "Zone 7: Contributes to ancillary coincidence output",
+      "group": "ancillary-coincidence",
+      "kind": "flag",
+      "scope": "Contributes to the ancillary-board coincidence output; no ancillary board is represented by this fixture.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "58",
+      "label": "Zone 8: Contributes to ancillary coincidence output",
+      "group": "ancillary-coincidence",
+      "kind": "flag",
+      "scope": "Contributes to the ancillary-board coincidence output; no ancillary board is represented by this fixture.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 17,
+          "printedPage": "17",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "61",
+      "label": "Zone 1: Configured for I.S. barrier",
+      "group": "intrinsically-safe",
+      "kind": "flag",
+      "scope": "Changes the detection threshold for an intrinsically safe barrier. No barrier or electrical threshold is simulated.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "62",
+      "label": "Zone 2: Configured for I.S. barrier",
+      "group": "intrinsically-safe",
+      "kind": "flag",
+      "scope": "Changes the detection threshold for an intrinsically safe barrier. No barrier or electrical threshold is simulated.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "63",
+      "label": "Zone 3: Configured for I.S. barrier",
+      "group": "intrinsically-safe",
+      "kind": "flag",
+      "scope": "Changes the detection threshold for an intrinsically safe barrier. No barrier or electrical threshold is simulated.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "64",
+      "label": "Zone 4: Configured for I.S. barrier",
+      "group": "intrinsically-safe",
+      "kind": "flag",
+      "scope": "Changes the detection threshold for an intrinsically safe barrier. No barrier or electrical threshold is simulated.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "65",
+      "label": "Zone 5: Configured for I.S. barrier",
+      "group": "intrinsically-safe",
+      "kind": "flag",
+      "scope": "Changes the detection threshold for an intrinsically safe barrier. No barrier or electrical threshold is simulated.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "66",
+      "label": "Zone 6: Configured for I.S. barrier",
+      "group": "intrinsically-safe",
+      "kind": "flag",
+      "scope": "Changes the detection threshold for an intrinsically safe barrier. No barrier or electrical threshold is simulated.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "67",
+      "label": "Zone 7: Configured for I.S. barrier",
+      "group": "intrinsically-safe",
+      "kind": "flag",
+      "scope": "Changes the detection threshold for an intrinsically safe barrier. No barrier or electrical threshold is simulated.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "68",
+      "label": "Zone 8: Configured for I.S. barrier",
+      "group": "intrinsically-safe",
+      "kind": "flag",
+      "scope": "Changes the detection threshold for an intrinsically safe barrier. No barrier or electrical threshold is simulated.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ]
+    },
+    {
+      "code": "71",
+      "label": "Zone 1: Short circuit indicates alarm",
+      "group": "short-circuit-alarm",
+      "kind": "flag",
+      "scope": "Changes the electrical threshold for older systems without short-circuit monitoring. No circuit threshold is simulated.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "72",
+      "label": "Zone 2: Short circuit indicates alarm",
+      "group": "short-circuit-alarm",
+      "kind": "flag",
+      "scope": "Changes the electrical threshold for older systems without short-circuit monitoring. No circuit threshold is simulated.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "73",
+      "label": "Zone 3: Short circuit indicates alarm",
+      "group": "short-circuit-alarm",
+      "kind": "flag",
+      "scope": "Changes the electrical threshold for older systems without short-circuit monitoring. No circuit threshold is simulated.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "74",
+      "label": "Zone 4: Short circuit indicates alarm",
+      "group": "short-circuit-alarm",
+      "kind": "flag",
+      "scope": "Changes the electrical threshold for older systems without short-circuit monitoring. No circuit threshold is simulated.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "75",
+      "label": "Zone 5: Short circuit indicates alarm",
+      "group": "short-circuit-alarm",
+      "kind": "flag",
+      "scope": "Changes the electrical threshold for older systems without short-circuit monitoring. No circuit threshold is simulated.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "76",
+      "label": "Zone 6: Short circuit indicates alarm",
+      "group": "short-circuit-alarm",
+      "kind": "flag",
+      "scope": "Changes the electrical threshold for older systems without short-circuit monitoring. No circuit threshold is simulated.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "77",
+      "label": "Zone 7: Short circuit indicates alarm",
+      "group": "short-circuit-alarm",
+      "kind": "flag",
+      "scope": "Changes the electrical threshold for older systems without short-circuit monitoring. No circuit threshold is simulated.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "78",
+      "label": "Zone 8: Short circuit indicates alarm",
+      "group": "short-circuit-alarm",
+      "kind": "flag",
+      "scope": "Changes the electrical threshold for older systems without short-circuit monitoring. No circuit threshold is simulated.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "81",
+      "label": "Zone 1: Non-latching",
+      "group": "non-latching",
+      "kind": "flag",
+      "scope": "Self-resets after the input is removed. The manual allows up to 20 seconds when sounders operate; training time is explicit, not a measured acceptance test.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "non-latching",
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "82",
+      "label": "Zone 2: Non-latching",
+      "group": "non-latching",
+      "kind": "flag",
+      "scope": "Self-resets after the input is removed. The manual allows up to 20 seconds when sounders operate; training time is explicit, not a measured acceptance test.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "non-latching",
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "83",
+      "label": "Zone 3: Non-latching",
+      "group": "non-latching",
+      "kind": "flag",
+      "scope": "Self-resets after the input is removed. The manual allows up to 20 seconds when sounders operate; training time is explicit, not a measured acceptance test.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "non-latching",
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "84",
+      "label": "Zone 4: Non-latching",
+      "group": "non-latching",
+      "kind": "flag",
+      "scope": "Self-resets after the input is removed. The manual allows up to 20 seconds when sounders operate; training time is explicit, not a measured acceptance test.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "non-latching",
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "85",
+      "label": "Zone 5: Non-latching",
+      "group": "non-latching",
+      "kind": "flag",
+      "scope": "Self-resets after the input is removed. The manual allows up to 20 seconds when sounders operate; training time is explicit, not a measured acceptance test.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "non-latching",
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "86",
+      "label": "Zone 6: Non-latching",
+      "group": "non-latching",
+      "kind": "flag",
+      "scope": "Self-resets after the input is removed. The manual allows up to 20 seconds when sounders operate; training time is explicit, not a measured acceptance test.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "non-latching",
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "87",
+      "label": "Zone 7: Non-latching",
+      "group": "non-latching",
+      "kind": "flag",
+      "scope": "Self-resets after the input is removed. The manual allows up to 20 seconds when sounders operate; training time is explicit, not a measured acceptance test.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "non-latching",
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "88",
+      "label": "Zone 8: Non-latching",
+      "group": "non-latching",
+      "kind": "flag",
+      "scope": "Self-resets after the input is removed. The manual allows up to 20 seconds when sounders operate; training time is explicit, not a measured acceptance test.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "non-latching",
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "91",
+      "label": "Zone 1: Does not sound alarms",
+      "group": "common-sounder-inhibit",
+      "kind": "flag",
+      "scope": "Prevents the selected zone operating the two common sounder outputs; this is not zone disablement.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "common-sounder-inhibit"
+    },
+    {
+      "code": "92",
+      "label": "Zone 2: Does not sound alarms",
+      "group": "common-sounder-inhibit",
+      "kind": "flag",
+      "scope": "Prevents the selected zone operating the two common sounder outputs; this is not zone disablement.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "common-sounder-inhibit"
+    },
+    {
+      "code": "93",
+      "label": "Zone 3: Does not sound alarms",
+      "group": "common-sounder-inhibit",
+      "kind": "flag",
+      "scope": "Prevents the selected zone operating the two common sounder outputs; this is not zone disablement.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "common-sounder-inhibit"
+    },
+    {
+      "code": "94",
+      "label": "Zone 4: Does not sound alarms",
+      "group": "common-sounder-inhibit",
+      "kind": "flag",
+      "scope": "Prevents the selected zone operating the two common sounder outputs; this is not zone disablement.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "common-sounder-inhibit"
+    },
+    {
+      "code": "95",
+      "label": "Zone 5: Does not sound alarms",
+      "group": "common-sounder-inhibit",
+      "kind": "flag",
+      "scope": "Prevents the selected zone operating the two common sounder outputs; this is not zone disablement.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "common-sounder-inhibit"
+    },
+    {
+      "code": "96",
+      "label": "Zone 6: Does not sound alarms",
+      "group": "common-sounder-inhibit",
+      "kind": "flag",
+      "scope": "Prevents the selected zone operating the two common sounder outputs; this is not zone disablement.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "common-sounder-inhibit"
+    },
+    {
+      "code": "97",
+      "label": "Zone 7: Does not sound alarms",
+      "group": "common-sounder-inhibit",
+      "kind": "flag",
+      "scope": "Prevents the selected zone operating the two common sounder outputs; this is not zone disablement.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "common-sounder-inhibit"
+    },
+    {
+      "code": "98",
+      "label": "Zone 8: Does not sound alarms",
+      "group": "common-sounder-inhibit",
+      "kind": "flag",
+      "scope": "Prevents the selected zone operating the two common sounder outputs; this is not zone disablement.",
+      "status": "implemented",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "effect": "common-sounder-inhibit"
+    },
+    {
+      "code": "A1",
+      "label": "Zone 1: Any alarm delayed",
+      "group": "input-persistence",
+      "kind": "flag",
+      "scope": "Requires the zone to remain triggered for 30 continuous seconds before alarm. Not simulated in this fixture.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "A2",
+      "label": "Zone 2: Any alarm delayed",
+      "group": "input-persistence",
+      "kind": "flag",
+      "scope": "Requires the zone to remain triggered for 30 continuous seconds before alarm. Not simulated in this fixture.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "A3",
+      "label": "Zone 3: Any alarm delayed",
+      "group": "input-persistence",
+      "kind": "flag",
+      "scope": "Requires the zone to remain triggered for 30 continuous seconds before alarm. Not simulated in this fixture.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "A4",
+      "label": "Zone 4: Any alarm delayed",
+      "group": "input-persistence",
+      "kind": "flag",
+      "scope": "Requires the zone to remain triggered for 30 continuous seconds before alarm. Not simulated in this fixture.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "A5",
+      "label": "Zone 5: Any alarm delayed",
+      "group": "input-persistence",
+      "kind": "flag",
+      "scope": "Requires the zone to remain triggered for 30 continuous seconds before alarm. Not simulated in this fixture.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "A6",
+      "label": "Zone 6: Any alarm delayed",
+      "group": "input-persistence",
+      "kind": "flag",
+      "scope": "Requires the zone to remain triggered for 30 continuous seconds before alarm. Not simulated in this fixture.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "A7",
+      "label": "Zone 7: Any alarm delayed",
+      "group": "input-persistence",
+      "kind": "flag",
+      "scope": "Requires the zone to remain triggered for 30 continuous seconds before alarm. Not simulated in this fixture.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "A8",
+      "label": "Zone 8: Any alarm delayed",
+      "group": "input-persistence",
+      "kind": "flag",
+      "scope": "Requires the zone to remain triggered for 30 continuous seconds before alarm. Not simulated in this fixture.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2."
+    },
+    {
+      "code": "C1",
+      "label": "Zone 1: Zonal sounders inhibited",
+      "group": "zonal-sounder-inhibit",
+      "kind": "flag",
+      "scope": "Version SIGMA242.HEX and above; supports conventional bases on T-series zonal circuits. This fixture does not establish this hardware/revision.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "firmwareMinimum": "SIGMA242.HEX"
+    },
+    {
+      "code": "C2",
+      "label": "Zone 2: Zonal sounders inhibited",
+      "group": "zonal-sounder-inhibit",
+      "kind": "flag",
+      "scope": "Version SIGMA242.HEX and above; supports conventional bases on T-series zonal circuits. This fixture does not establish this hardware/revision.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "firmwareMinimum": "SIGMA242.HEX"
+    },
+    {
+      "code": "C3",
+      "label": "Zone 3: Zonal sounders inhibited",
+      "group": "zonal-sounder-inhibit",
+      "kind": "flag",
+      "scope": "Version SIGMA242.HEX and above; supports conventional bases on T-series zonal circuits. This fixture does not establish this hardware/revision.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "firmwareMinimum": "SIGMA242.HEX"
+    },
+    {
+      "code": "C4",
+      "label": "Zone 4: Zonal sounders inhibited",
+      "group": "zonal-sounder-inhibit",
+      "kind": "flag",
+      "scope": "Version SIGMA242.HEX and above; supports conventional bases on T-series zonal circuits. This fixture does not establish this hardware/revision.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "firmwareMinimum": "SIGMA242.HEX"
+    },
+    {
+      "code": "C5",
+      "label": "Zone 5: Zonal sounders inhibited",
+      "group": "zonal-sounder-inhibit",
+      "kind": "flag",
+      "scope": "Version SIGMA242.HEX and above; supports conventional bases on T-series zonal circuits. This fixture does not establish this hardware/revision.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "firmwareMinimum": "SIGMA242.HEX"
+    },
+    {
+      "code": "C6",
+      "label": "Zone 6: Zonal sounders inhibited",
+      "group": "zonal-sounder-inhibit",
+      "kind": "flag",
+      "scope": "Version SIGMA242.HEX and above; supports conventional bases on T-series zonal circuits. This fixture does not establish this hardware/revision.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "firmwareMinimum": "SIGMA242.HEX"
+    },
+    {
+      "code": "C7",
+      "label": "Zone 7: Zonal sounders inhibited",
+      "group": "zonal-sounder-inhibit",
+      "kind": "flag",
+      "scope": "Version SIGMA242.HEX and above; supports conventional bases on T-series zonal circuits. This fixture does not establish this hardware/revision.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "firmwareMinimum": "SIGMA242.HEX"
+    },
+    {
+      "code": "C8",
+      "label": "Zone 8: Zonal sounders inhibited",
+      "group": "zonal-sounder-inhibit",
+      "kind": "flag",
+      "scope": "Version SIGMA242.HEX and above; supports conventional bases on T-series zonal circuits. This fixture does not establish this hardware/revision.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "firmwareMinimum": "SIGMA242.HEX"
+    },
+    {
+      "code": "E1",
+      "label": "Zone 1: Will not operate fire relay",
+      "group": "zone-fire-relay-inhibit",
+      "kind": "flag",
+      "scope": "Version SIGMA242.HEX and above; inhibits the fire relay for the selected zone. This fixture does not establish that revision.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2.",
+      "firmwareMinimum": "SIGMA242.HEX"
+    },
+    {
+      "code": "E2",
+      "label": "Zone 2: Will not operate fire relay",
+      "group": "zone-fire-relay-inhibit",
+      "kind": "flag",
+      "scope": "Version SIGMA242.HEX and above; inhibits the fire relay for the selected zone. This fixture does not establish that revision.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2.",
+      "firmwareMinimum": "SIGMA242.HEX"
+    },
+    {
+      "code": "E3",
+      "label": "Zone 3: Will not operate fire relay",
+      "group": "zone-fire-relay-inhibit",
+      "kind": "flag",
+      "scope": "Version SIGMA242.HEX and above; inhibits the fire relay for the selected zone. This fixture does not establish that revision.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2.",
+      "firmwareMinimum": "SIGMA242.HEX"
+    },
+    {
+      "code": "E4",
+      "label": "Zone 4: Will not operate fire relay",
+      "group": "zone-fire-relay-inhibit",
+      "kind": "flag",
+      "scope": "Version SIGMA242.HEX and above; inhibits the fire relay for the selected zone. This fixture does not establish that revision.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2.",
+      "firmwareMinimum": "SIGMA242.HEX"
+    },
+    {
+      "code": "E5",
+      "label": "Zone 5: Will not operate fire relay",
+      "group": "zone-fire-relay-inhibit",
+      "kind": "flag",
+      "scope": "Version SIGMA242.HEX and above; inhibits the fire relay for the selected zone. This fixture does not establish that revision.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2.",
+      "firmwareMinimum": "SIGMA242.HEX"
+    },
+    {
+      "code": "E6",
+      "label": "Zone 6: Will not operate fire relay",
+      "group": "zone-fire-relay-inhibit",
+      "kind": "flag",
+      "scope": "Version SIGMA242.HEX and above; inhibits the fire relay for the selected zone. This fixture does not establish that revision.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2.",
+      "firmwareMinimum": "SIGMA242.HEX"
+    },
+    {
+      "code": "E7",
+      "label": "Zone 7: Will not operate fire relay",
+      "group": "zone-fire-relay-inhibit",
+      "kind": "flag",
+      "scope": "Version SIGMA242.HEX and above; inhibits the fire relay for the selected zone. This fixture does not establish that revision.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2.",
+      "firmwareMinimum": "SIGMA242.HEX"
+    },
+    {
+      "code": "E8",
+      "label": "Zone 8: Will not operate fire relay",
+      "group": "zone-fire-relay-inhibit",
+      "kind": "flag",
+      "scope": "Version SIGMA242.HEX and above; inhibits the fire relay for the selected zone. This fixture does not establish that revision.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "sigma-main-25",
+          "pdfPage": 18,
+          "printedPage": "18",
+          "section": "Table 8 — configuration codes"
+        }
+      ],
+      "warning": "The manual marks this option as not complying with EN54-2.",
+      "firmwareMinimum": "SIGMA242.HEX"
+    }
+  ],
+  "newLessonIds": [
+    "sigma-cover-engineering",
+    "sigma-configure-resound",
+    "sigma-configure-delay",
+    "sigma-add-replace-detector",
+    "sigma-internal-faults"
+  ]
+}

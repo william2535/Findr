@@ -1,0 +1,881 @@
+{
+  "date": "2026-10-30",
+  "scope": "New pictured panel families, preserved archive IDs; regional applicability explicit",
+  "pictured_families": 31,
+  "brands": [
+    "Gamewell FCI",
+    "Napco",
+    "Potter",
+    "Radionics"
+  ],
+  "unique_document_ids": 77,
+  "authoritative_checks": [
+    "https://www.pottersignal.com/ipa-fire-alarm/fire-control-panels",
+    "https://www.pottersignal.com/fire/afc-series",
+    "https://www.pottersignal.com/pfc-fire-alarm/fire-alarm-control-panels",
+    "https://www.pottersignal.com/news/potter-upgrades-lcd-displays-in-multiple-fire-alarm-control-panel-models",
+    "https://buildings.honeywell.com/us/en/brands/our-brands/gamewell-fci",
+    "https://napcosecurity.com/news/firelink-facp/"
+  ],
+  "excluded": [
+    {
+      "id": "gamewell-fci-fc72",
+      "reason": "Source picture is only 98 by 91 pixels; excluded rather than upscale a very poor identification image."
+    }
+  ],
+  "items": [
+    {
+      "id": "potter-ipa-small",
+      "source_document_id": "facp-df581004-d049-47db-9145-5b42c250d670",
+      "source_document_title": "IPA-100 — Datasheet (2022, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Potter/ipa-100-datasheet-2022-revh.pdf",
+      "document_sha256": "f0d2499aee15dae83327ae33367e8de90b75aae7f5616e1948c7b19e308b4bcc",
+      "document_bytes": 988279,
+      "document_pages": 5,
+      "source_image_url": "https://www.pottersignal.com/product/images/IPA-100.png",
+      "source_page_url": "https://www.pottersignal.com/ipa-fire-alarm/fire-control-panels/fire-control-panel-ipa-100",
+      "source_pdf_page": null,
+      "crop_bounds": null,
+      "image_dimensions": [
+        330,
+        374
+      ],
+      "image_sha256": "4295be16863344d4aeab1f1fbdaf395b4933da2a154a4a390588c4fdf6046862",
+      "record_ids": [
+        "facp-0a586718-16b5-4e03-8407-d826093df79e",
+        "facp-62a132a8-5cbc-4fc0-9eae-ab8284668f58",
+        "facp-d8d719ae-fbee-4061-a911-d9d49df3af6f",
+        "facp-df581004-d049-47db-9145-5b42c250d670"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "potter-ipa-4000",
+      "source_document_id": "facp-8cb273c7-179e-49b5-9c12-9647f79dcf65",
+      "source_document_title": "IPA-4000 — Datasheet (2023, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Potter/ipa-4000-datasheet-2023-revj.pdf",
+      "document_sha256": "dcda30d99581eb9ebe847899e3d3af3dd2b858e0381fbf88351a1d163866800e",
+      "document_bytes": 506973,
+      "document_pages": 5,
+      "source_image_url": "https://www.pottersignal.com/product/images/IPA-4000.png",
+      "source_page_url": "https://www.pottersignal.com/ipa-fire-alarm/fire-control-panels/fire-control-panel-ipa-4000",
+      "source_pdf_page": null,
+      "crop_bounds": null,
+      "image_dimensions": [
+        330,
+        517
+      ],
+      "image_sha256": "2afbf3777e2b8468626112567ab7363df530c5d5b0eec1ab10b81f62b336c9d7",
+      "record_ids": [
+        "facp-3601ca06-c77a-4f7b-a260-441d00341af8",
+        "facp-8cb273c7-179e-49b5-9c12-9647f79dcf65",
+        "facp-ae442ce0-98da-4211-8f34-1f319a701bed"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "potter-ipa-4000v",
+      "source_document_id": "facp-777e485e-6b17-4c88-9adc-4fc73d0f0d42",
+      "source_document_title": "IPA-4000V — Datasheet (2023, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Potter/ipa-4000v-datasheet-2023-revd.pdf",
+      "document_sha256": "4e11b596375921944bd44c371831640f142fd02d6d72c792530b02ed8c142312",
+      "document_bytes": 664532,
+      "document_pages": 6,
+      "source_image_url": "https://www.pottersignal.com/product/images/IPA-4000v.png",
+      "source_page_url": "https://www.pottersignal.com/voice-evacuation/integrated-voice-panels/ipa-4000v",
+      "source_pdf_page": null,
+      "crop_bounds": null,
+      "image_dimensions": [
+        330,
+        491
+      ],
+      "image_sha256": "6e9562730b4923932353ff1ce5812c07665e7a22b4ba497fab06412efc558520",
+      "record_ids": [
+        "facp-777e485e-6b17-4c88-9adc-4fc73d0f0d42",
+        "facp-a295d4f0-c41e-4758-bc6c-6b2a74a41faf"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "potter-afc-small",
+      "source_document_id": "facp-902392a9-55bc-411d-a37e-50182dd56e28",
+      "source_document_title": "AFC-100 — Datasheet (2022, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Potter/afc-100-datasheet-2022.pdf",
+      "document_sha256": "f4521aefe7f1d3363cc9fac817430b79fa533390244e85dcb47ef3a3fd77b126",
+      "document_bytes": 994179,
+      "document_pages": 5,
+      "source_image_url": "https://www.pottersignal.com/product/images/AFC-100.png",
+      "source_page_url": "https://www.pottersignal.com/fire/afc-series",
+      "source_pdf_page": null,
+      "crop_bounds": null,
+      "image_dimensions": [
+        330,
+        374
+      ],
+      "image_sha256": "48fe4e37eb817cb21d2df30cddb0e31c9151fa912e5a79ce42feb1a33f3211e2",
+      "record_ids": [
+        "facp-2b8c9f3f-06e1-4d0a-b47c-b54e91a2008b",
+        "facp-902392a9-55bc-411d-a37e-50182dd56e28",
+        "facp-bb9387e6-b0df-4ac1-944d-69dafdde0176",
+        "facp-e5c4c520-e717-45ac-b155-4b466141c366"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "potter-afc-1000",
+      "source_document_id": "facp-9c2267d1-2d37-4e64-9dae-38a888413aa8",
+      "source_document_title": "AFC-1000 — Datasheet (2022, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Potter/afc-1000-datasheet-2022.pdf",
+      "document_sha256": "7ebb53533f27da883c16f61e248aaa66cb1ee589b63b6f31c6f3d84c153dc1e8",
+      "document_bytes": 939597,
+      "document_pages": 5,
+      "source_image_url": "https://www.pottersignal.com/product/images/AFC-1000.png",
+      "source_page_url": "https://www.pottersignal.com/fire/afc-series",
+      "source_pdf_page": null,
+      "crop_bounds": null,
+      "image_dimensions": [
+        330,
+        518
+      ],
+      "image_sha256": "e9fad63cfd7f81362eb59e8026486e337c7bf86f5172710a3d5493ddbff34def",
+      "record_ids": [
+        "facp-9c2267d1-2d37-4e64-9dae-38a888413aa8",
+        "facp-ec7419ef-20e6-4b18-a8e0-96d184a2160c"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "potter-afc-1000v",
+      "source_document_id": "facp-cf41c3cf-f4b8-4c5d-9b3f-292ef21e17d8",
+      "source_document_title": "AFC-1000V — Datasheet (2021, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Potter/afc-1000v-datasheet-2021.pdf",
+      "document_sha256": "fc85e9fae96e27db8bb5e535573358f53a4dceebc7d99eac6cf5ebfaa6647c22",
+      "document_bytes": 1113861,
+      "document_pages": 3,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Potter/afc-1000v-datasheet-2021.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Potter/afc-1000v-datasheet-2021.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        387.401,
+        109.987,
+        511.488,
+        294.735
+      ],
+      "image_dimensions": [
+        518,
+        770
+      ],
+      "image_sha256": "d4b92f49a8ff13a030ce4c9092bc611fa736e8b6a7ff15912f696aebcfe58088",
+      "record_ids": [
+        "facp-cf41c3cf-f4b8-4c5d-9b3f-292ef21e17d8"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "potter-arc-100",
+      "source_document_id": "facp-12a0abf9-8f2f-409b-8743-6124d60685f4",
+      "source_document_title": "ARC-100 — Datasheet (2022, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Potter/arc-100-datasheet-2022.pdf",
+      "document_sha256": "f4ef1e115e89128c8d7b03c385447e80691d0cf87b739dacda343fb4def9f9da",
+      "document_bytes": 1019339,
+      "document_pages": 5,
+      "source_image_url": "https://www.pottersignal.com/product/images/ARC-100.png",
+      "source_page_url": "https://www.pottersignal.com/fire/afc-series",
+      "source_pdf_page": null,
+      "crop_bounds": null,
+      "image_dimensions": [
+        330,
+        374
+      ],
+      "image_sha256": "22c0f1279bed88eb33620bcaaae30a44f7690ce2f6ca5d11a28689da08335f41",
+      "record_ids": [
+        "facp-12a0abf9-8f2f-409b-8743-6124d60685f4",
+        "facp-fe368449-a4d6-458f-9824-852fc4aeef2c"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "potter-pfc-4064",
+      "source_document_id": "facp-f51d4686-b44c-45cf-9007-9f8b955e089e",
+      "source_document_title": "PFC-4064 — Datasheet (2019, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-4064-datasheet-2019-reve.pdf",
+      "document_sha256": "bf8583ce9806292106e42597cdc4b4e06a2c419634a55fc3efac8c94ee26eb40",
+      "document_bytes": 951625,
+      "document_pages": 5,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-4064-datasheet-2019-reve.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-4064-datasheet-2019-reve.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        368.749,
+        107.945,
+        531.251,
+        321.412
+      ],
+      "image_dimensions": [
+        609,
+        800
+      ],
+      "image_sha256": "7c9e6aaacd2126aa4b9614f53e29bf671b90083609f110f7bbdbc6feef8640aa",
+      "record_ids": [
+        "facp-d2f7e398-207f-4959-99dc-b15ff74b3760",
+        "facp-f0e5769f-f78d-460e-9b1d-5b40f0df94e8",
+        "facp-f51d4686-b44c-45cf-9007-9f8b955e089e"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "potter-pfc-6006",
+      "source_document_id": "facp-5fb612ea-84d1-4f48-b7dd-1f9db404b189",
+      "source_document_title": "PFC-6006 — Datasheet (2019, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-6006-datasheet-2019-reve.pdf",
+      "document_sha256": "78ae2b17408863e44d7d9b07246eb91c11a1e0d8d707ae2fb789164c6f657594",
+      "document_bytes": 972304,
+      "document_pages": 2,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-6006-datasheet-2019-reve.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-6006-datasheet-2019-reve.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        379.848,
+        110.764,
+        520.152,
+        295.171
+      ],
+      "image_dimensions": [
+        585,
+        769
+      ],
+      "image_sha256": "833395df3eae8139c5761d31d382f46f62e8769f8174455e88b9df5da9ad1d2f",
+      "record_ids": [
+        "facp-57940338-a3a9-4daf-a85d-0d28ba118ed1",
+        "facp-5fb612ea-84d1-4f48-b7dd-1f9db404b189",
+        "facp-cb7dac67-2457-4429-a8d2-81edb8f05ed5"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "potter-pfc-6030-6075",
+      "source_document_id": "facp-a735f024-8931-4a00-aa5f-af415ae2079e",
+      "source_document_title": "PFC-6075 — Datasheet (2013, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-6075-datasheet-2013-revc.pdf",
+      "document_sha256": "68eb68cdf0fc9510044466adf930820e9ddb4ff29eb605433ba1d5f236d2ed2b",
+      "document_bytes": 1397772,
+      "document_pages": 3,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-6075-datasheet-2013-revc.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-6075-datasheet-2013-revc.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        82.233,
+        105.926,
+        259.005,
+        307.137
+      ],
+      "image_dimensions": [
+        726,
+        829
+      ],
+      "image_sha256": "33df7301a7882eb5a9a3dea73d93104058c69abeb5a7a12ab4c261c5b7ea23dd",
+      "record_ids": [
+        "facp-4c2c4906-32a4-42d6-ae53-ecad4331e37e",
+        "facp-8f113765-7d4f-42b1-92f7-a125cebdb60d",
+        "facp-a735f024-8931-4a00-aa5f-af415ae2079e",
+        "facp-f53853f9-163f-440d-9cea-36c7b6e3c492"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "potter-pfc-6200-6800",
+      "source_document_id": "facp-7868dfa0-489f-4357-add2-d3d3ab167cd3",
+      "source_document_title": "PFC-6800 — Datasheet (2018, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-6800-datasheet-2018-revd.pdf",
+      "document_sha256": "d06550ca1e62dc85b0206d76720247e55c68709d1671d364dd0b9820275eef77",
+      "document_bytes": 1486405,
+      "document_pages": 3,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-6800-datasheet-2018-revd.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-6800-datasheet-2018-revd.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        94.013,
+        97.23,
+        230.461,
+        308.955
+      ],
+      "image_dimensions": [
+        558,
+        875
+      ],
+      "image_sha256": "19d10aa6d38ea0391163cdcb3fa1c8276d6f9411319490676eeaa23c0ade9ea4",
+      "record_ids": [
+        "facp-6d1777ae-a0b2-423f-b777-ab8bdc4ec8ad",
+        "facp-6f778678-eade-4ced-81e2-909f1a96f039",
+        "facp-7868dfa0-489f-4357-add2-d3d3ab167cd3",
+        "facp-e61078f2-e5d4-43c9-8a75-aa7601ea8e83"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "potter-pfc-6075r",
+      "source_document_id": "facp-38662fda-4639-4f22-b5bc-00477d147a92",
+      "source_document_title": "PFC-6075R — Datasheet (2013, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-6075r-datasheet-2013-revb.pdf",
+      "document_sha256": "e38b18be029c48ea9c55151fcac375b1c72b9fd5b2f5d115ff193d41df4d25e9",
+      "document_bytes": 1656785,
+      "document_pages": 4,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-6075r-datasheet-2013-revb.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-6075r-datasheet-2013-revb.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        63.988,
+        98.8,
+        296.04,
+        362.817
+      ],
+      "image_dimensions": [
+        600,
+        685
+      ],
+      "image_sha256": "7ab59ca08a3b3299719c13f590dec22604d3a43ca3de673195aa8e21a1d75a12",
+      "record_ids": [
+        "facp-38662fda-4639-4f22-b5bc-00477d147a92",
+        "facp-e1728adb-ddc7-4f39-b215-b21a762f3b11"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "potter-pfc-4410rc",
+      "source_document_id": "facp-0ecb8fc1-e737-4da4-aefa-13469e6d3039",
+      "source_document_title": "PFC-4410RC — Datasheet (2020, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-4410rc-datasheet-2020-revd.pdf",
+      "document_sha256": "09bd282cd628a8be7bcd3d458579892fed5e68b4cf6d3998b3c0a1ca7d66bf62",
+      "document_bytes": 1106822,
+      "document_pages": 2,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-4410rc-datasheet-2020-revd.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-4410rc-datasheet-2020-revd.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        102.692,
+        106.0,
+        278.072,
+        331.007
+      ],
+      "image_dimensions": [
+        731,
+        938
+      ],
+      "image_sha256": "1c78441805f3d17767ac21aa53f00f66dd05844cec168ae6df2cd0c0df0722e1",
+      "record_ids": [
+        "facp-0ecb8fc1-e737-4da4-aefa-13469e6d3039",
+        "facp-27795fad-2f41-42a8-8b39-e4762f40e4af",
+        "facp-5317ab3b-eac3-4eda-8f97-a21195977a5b"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "potter-pfc-5002",
+      "source_document_id": "facp-b64831c8-91a2-4fef-9c79-dc9c3f9a7d2d",
+      "source_document_title": "PFC-5002 — Datasheet (2008, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-5002-datasheet-2008-revj.pdf",
+      "document_sha256": "152eca4781e1b55e55fe18e9235b31f67a1d44feb3da4d62c4dd41b3b72f0ebd",
+      "document_bytes": 992570,
+      "document_pages": 2,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-5002-datasheet-2008-revj.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-5002-datasheet-2008-revj.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        93.044,
+        86.5,
+        269.989,
+        263.455
+      ],
+      "image_dimensions": [
+        738,
+        738
+      ],
+      "image_sha256": "2e304ec9f64ab1d935bae12da02f95a0d42941aff4d9beef67fd1f92acd67cf2",
+      "record_ids": [
+        "facp-b64831c8-91a2-4fef-9c79-dc9c3f9a7d2d"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "potter-pfc-5008",
+      "source_document_id": "facp-c88628ee-5d5a-44f7-ab2a-51090566f3df",
+      "source_document_title": "PFC-5008 — Datasheet (2018, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-5008-datasheet-2018-revg.pdf",
+      "document_sha256": "35bef09d1ce3d3b30ee9c5c30a8c6cd0591779cd06b369df3cb0995a6cd0b346",
+      "document_bytes": 963448,
+      "document_pages": 2,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-5008-datasheet-2018-revg.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Potter/pfc-5008-datasheet-2018-revg.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        96.927,
+        107.0,
+        259.095,
+        293.0
+      ],
+      "image_dimensions": [
+        837,
+        960
+      ],
+      "image_sha256": "8e51ddcf4378dfa857d5778449e91e00e1918664527201af68a6f32de7a11707",
+      "record_ids": [
+        "facp-c88628ee-5d5a-44f7-ab2a-51090566f3df"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "potter-pfc-2000rc",
+      "source_document_id": "facp-b842bbfd-5080-429e-b07a-b57ca6aa5083",
+      "source_document_title": "PFC 2000RC — Datasheet (2002, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Potter/pfc_2000rc-datasheet-2002-revh.pdf",
+      "document_sha256": "3709f1eaa05a52de3f8a18a76e871586bfa220346b899b8b289f877df068f44f",
+      "document_bytes": 905747,
+      "document_pages": 2,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Potter/pfc_2000rc-datasheet-2002-revh.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Potter/pfc_2000rc-datasheet-2002-revh.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        358.3,
+        117.0,
+        539.95,
+        355.5
+      ],
+      "image_dimensions": [
+        476,
+        625
+      ],
+      "image_sha256": "6f0ce29843e626049d38f1cec562d81579a692596a76990d07d5cc5bdad93129",
+      "record_ids": [
+        "facp-87188dc3-ddc7-4ba3-8f29-b1498b49b7eb",
+        "facp-b842bbfd-5080-429e-b07a-b57ca6aa5083"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "gamewell-fci-s3",
+      "source_document_id": "facp-79d32052-9fde-4666-9d2e-fd20d321618f",
+      "source_document_title": "S3 Series Control Panel — Datasheet (2017, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/s3_series_control_panel-datasheet-2017.pdf",
+      "document_sha256": "9447543743ff523a4dce816e669ad57f3b07b880f60daa77d343862aadf73d0d",
+      "document_bytes": 710844,
+      "document_pages": 5,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/s3_series_control_panel-datasheet-2017.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/s3_series_control_panel-datasheet-2017.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        402.48,
+        161.1,
+        528.346,
+        339.12
+      ],
+      "image_dimensions": [
+        262,
+        372
+      ],
+      "image_sha256": "df8494f846af4c5731a3f75ee19fb7bee02c4ab84475b5b69cc867084905f552",
+      "record_ids": [
+        "facp-79d32052-9fde-4666-9d2e-fd20d321618f",
+        "facp-8eaf3631-8332-4f9d-9b6c-dd82db73465f"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "gamewell-fci-e3",
+      "source_document_id": "facp-2cb9ec75-8789-48f7-9178-310e31116e2a",
+      "source_document_title": "E3 Series — Datasheet (2020, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/e3_series-datasheet.pdf",
+      "document_sha256": "fdf11d1f4d09787ec8385ea0cb67b68b171d8c822ae4fa8e6f7320c7a4d371bc",
+      "document_bytes": 129377,
+      "document_pages": 3,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/e3_series-datasheet.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/e3_series-datasheet.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        403.8,
+        126.66,
+        488.16,
+        286.56
+      ],
+      "image_dimensions": [
+        293,
+        469
+      ],
+      "image_sha256": "129b1f55e5640a0eed59f4c334f2219a9d8e7c3cf20a1061832ff81bf7f198a8",
+      "record_ids": [
+        "facp-2cb9ec75-8789-48f7-9178-310e31116e2a",
+        "facp-4ae41783-df36-4014-8fae-6fe0f66c1815"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "gamewell-fci-7100",
+      "source_document_id": "facp-c46b6134-4247-405c-88c5-f4ef499a90df",
+      "source_document_title": "7100 Series — Datasheet (2015, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/7100_series-datasheet-2015.pdf",
+      "document_sha256": "adec6ec8dfcee5ea0b18cbc789b7f4613124c7aff891fc0673f2b9ee1dabc6ac",
+      "document_bytes": 808930,
+      "document_pages": 3,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/7100_series-datasheet-2015.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/7100_series-datasheet-2015.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        402.72,
+        214.56,
+        516.963,
+        344.76
+      ],
+      "image_dimensions": [
+        476,
+        543
+      ],
+      "image_sha256": "a1e5aa609f3d0525bdc40fad954ce8343b010e92dd4649a3fedaeff263a48956",
+      "record_ids": [
+        "facp-3c9a53f2-c0bc-47ff-a752-f23f7873d58c",
+        "facp-82c0faa9-93f9-4f09-8a0c-58daf490ee50",
+        "facp-c46b6134-4247-405c-88c5-f4ef499a90df"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "gamewell-fci-gwf-7075",
+      "source_document_id": "facp-8cf4802d-170d-41a5-9565-26465908d5e0",
+      "source_document_title": "GWF-7075 — Datasheet (2020, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/gwf-7075-datasheet-2020.pdf",
+      "document_sha256": "527f9eee4851699eb82530a62cae7cf151b13f89cdf8743b28d5a33387e23394",
+      "document_bytes": 77041,
+      "document_pages": 3,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/gwf-7075-datasheet-2020.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/gwf-7075-datasheet-2020.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        394.02,
+        162.48,
+        541.826,
+        346.32
+      ],
+      "image_dimensions": [
+        308,
+        384
+      ],
+      "image_sha256": "0d3a5458bff6d57086ed7d57af9513a017e3135f4fe836d54ccacffc85a853c7",
+      "record_ids": [
+        "facp-18116d13-5e1c-4195-917d-716349755276",
+        "facp-51059bb6-c89e-4216-9e4d-7c7dcab0a827",
+        "facp-8cf4802d-170d-41a5-9565-26465908d5e0"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "gamewell-fci-flex-4-8",
+      "source_document_id": "facp-563bb5c1-fc81-481f-927f-a056737cc1d9",
+      "source_document_title": "Flex 4 and Flex 8 — Datasheet (2001, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/flex_4_and_flex_8-datasheet-2001.pdf",
+      "document_sha256": "89454e64d5f10cfa72097b4aefb88bb28d84aafef5eadc99d45f336f286ab51e",
+      "document_bytes": 689046,
+      "document_pages": 4,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/flex_4_and_flex_8-datasheet-2001.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/flex_4_and_flex_8-datasheet-2001.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        358.9,
+        173.05,
+        500.799,
+        322.3
+      ],
+      "image_dimensions": [
+        296,
+        312
+      ],
+      "image_sha256": "15581779431f33ab625c7019545ba2ae0113c89ab89dd29a1792fa93c9ad7fc1",
+      "record_ids": [
+        "facp-563bb5c1-fc81-481f-927f-a056737cc1d9",
+        "facp-735b60d1-0c7c-44eb-bd4a-90eec21b16b1",
+        "facp-8fb7d89f-6aca-4cb3-8f47-a62aab0672a2",
+        "facp-faf75670-4c29-4309-87d5-db3c81966bf8"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "gamewell-fci-flex-402-404",
+      "source_document_id": "facp-edcbe497-132d-4953-b018-8385865572ba",
+      "source_document_title": "Flex 404 — Datasheet (2006, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/flex_404-datasheet-2006.pdf",
+      "document_sha256": "b460ae5f34a0658b91a1458a71b658278fc2bc0bd931e6d4205d89a039abcfb7",
+      "document_bytes": 77758,
+      "document_pages": 2,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/flex_404-datasheet-2006.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/flex_404-datasheet-2006.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        56.5,
+        145.15,
+        215.84,
+        320.85
+      ],
+      "image_dimensions": [
+        332,
+        366
+      ],
+      "image_sha256": "d309b1050befdf6bf3b61f2b07e3a57ee82822657082ee56baecb55ba92fb404",
+      "record_ids": [
+        "facp-1a736a5c-1511-4395-9b38-b97038fdbb80",
+        "facp-b658aa63-fbf9-4dc7-9ffb-0db5cde9b029",
+        "facp-edcbe497-132d-4953-b018-8385865572ba"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "gamewell-fci-flex-410",
+      "source_document_id": "facp-627867d0-1b6d-4c8e-9171-173dac920315",
+      "source_document_title": "Flex 410 — Datasheet (2018, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/flex_410-datasheet-2018.pdf",
+      "document_sha256": "e374fdc8bb63daf0a10b0e283501381ee0ad5b36b8c526f9b06dd3aaf9848922",
+      "document_bytes": 70862,
+      "document_pages": 3,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/flex_410-datasheet-2018.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/flex_410-datasheet-2018.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        421.44,
+        161.22,
+        533.657,
+        331.14
+      ],
+      "image_dimensions": [
+        234,
+        355
+      ],
+      "image_sha256": "c4de1087d97cde0913ac8536bf88e3ed9d56fdd9a2269108efacbcd684d92a7c",
+      "record_ids": [
+        "facp-627867d0-1b6d-4c8e-9171-173dac920315",
+        "facp-8b0c762d-4cd6-4570-9cb0-db8020146063"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "gamewell-fci-identiflex-100",
+      "source_document_id": "facp-f0827a7e-26ad-429e-906c-d0c34eb9873b",
+      "source_document_title": "IdentiFlex 100 — Datasheet (2012, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/identiflex_100-datasheet-2012.pdf",
+      "document_sha256": "61a13971f2132a89345aff86cab53e094c291ee0346f5b47bce62ee2a7ec2049",
+      "document_bytes": 632306,
+      "document_pages": 2,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/identiflex_100-datasheet-2012.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/identiflex_100-datasheet-2012.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        405.18,
+        211.14,
+        508.862,
+        358.8
+      ],
+      "image_dimensions": [
+        216,
+        308
+      ],
+      "image_sha256": "49989b17ed45a75c61724495321443d38c6a7ddf45c323b6cd1b20c1dc6f6c0c",
+      "record_ids": [
+        "facp-f0827a7e-26ad-429e-906c-d0c34eb9873b"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "gamewell-fci-identiflex-602ve",
+      "source_document_id": "facp-75b167ed-225a-4314-a784-04f7fdc5fa40",
+      "source_document_title": "IdentiFlex 602VE — Datasheet (2007, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/identiflex_602ve-datasheet-2007.pdf",
+      "document_sha256": "06ecd57dd9720f331c5dfea1c41bda19abaeca625e1a308a3a84f9697f75f1e9",
+      "document_bytes": 634585,
+      "document_pages": 4,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/identiflex_602ve-datasheet-2007.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/identiflex_602ve-datasheet-2007.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        405.84,
+        215.16,
+        503.229,
+        348.24
+      ],
+      "image_dimensions": [
+        203,
+        278
+      ],
+      "image_sha256": "0da72d80b83849597ee14ccc241c8b324f7b4173d35a973b5c4b3004c9209188",
+      "record_ids": [
+        "facp-75b167ed-225a-4314-a784-04f7fdc5fa40"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "gamewell-fci-identiflex-610ve",
+      "source_document_id": "facp-2b76c6a2-b288-4293-baa3-25d239628f56",
+      "source_document_title": "IdentiFlex 610VE — Datasheet (2000, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/identiflex_610ve-datasheet-2000.pdf",
+      "document_sha256": "76a5815c5fcf0d152e906b824f34f70713cbf7106390adc10dae2bbd0ffd817e",
+      "document_bytes": 731358,
+      "document_pages": 4,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/identiflex_610ve-datasheet-2000.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/identiflex_610ve-datasheet-2000.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        297.04,
+        83.52,
+        495.76,
+        348.36
+      ],
+      "image_dimensions": [
+        675,
+        900
+      ],
+      "image_sha256": "756ec3a7d72489a4dc83b8a1891f93439abb7e48019a92b1357eef48e6735bb6",
+      "record_ids": [
+        "facp-2b76c6a2-b288-4293-baa3-25d239628f56"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "gamewell-fci-identiflex-650",
+      "source_document_id": "facp-0474a156-d59c-4930-a282-05c2c00383e1",
+      "source_document_title": "IdentiFlex 650 — Datasheet (2007, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/identiflex_650-datasheet-2007.pdf",
+      "document_sha256": "4655cc1268def3f86d885b0304a01cc95f9dc7fc2255a2e08490c9b7250774f3",
+      "document_bytes": 627863,
+      "document_pages": 4,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/identiflex_650-datasheet-2007.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/identiflex_650-datasheet-2007.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        401.52,
+        200.52,
+        501.96,
+        335.52
+      ],
+      "image_dimensions": [
+        144,
+        288
+      ],
+      "image_sha256": "ad0efc12e42c8ebd837550f5a5de8992f7082ba4e228689a3484fb592332516c",
+      "record_ids": [
+        "facp-0474a156-d59c-4930-a282-05c2c00383e1",
+        "facp-1e225dad-01a7-4a8e-a730-86b6b1024481",
+        "facp-573fd11a-21ca-45e7-b1e5-bc9fe980b68f",
+        "facp-f468a5c7-b828-4e3a-99c0-b09bfe984ec2"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "gamewell-fci-7200",
+      "source_document_id": "facp-6079de4d-7642-4233-b11b-949bb21fffab",
+      "source_document_title": "7200 Series Control — Datasheet (1997, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/7200_series_control-datasheet-1997.pdf",
+      "document_sha256": "daf4b8bdbf1e2263c65fc4717f10c2278cf1a8520ce964a30cabf0a9326d9f63",
+      "document_bytes": 107111,
+      "document_pages": 4,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/7200_series_control-datasheet-1997.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Gamewell_FCI/7200_series_control-datasheet-1997.pdf",
+      "source_pdf_page": 1,
+      "crop_bounds": [
+        368.8,
+        160.4,
+        505.907,
+        342.301
+      ],
+      "image_dimensions": [
+        286,
+        380
+      ],
+      "image_sha256": "b83aa5b9798bf26b62e1be018b30726aa8420812545b45300f4b671630005ca3",
+      "record_ids": [
+        "facp-6079de4d-7642-4233-b11b-949bb21fffab",
+        "facp-e4d3b330-8ab9-4874-88fe-8e7ef99229a5",
+        "facp-f1a7d7f7-fc1c-4d28-ba40-050e456a4f33"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "napco-firelink",
+      "source_document_id": "facp-d53ca131-92c2-4f2a-8f73-5bfa1eb31807",
+      "source_document_title": "FireLink Getting Started Guide — Manual (2018, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Napco/firelink_getting_started_guide-2018.pdf",
+      "document_sha256": "7e71e1530bcb0ef7448596057972208fe4a9e7940462edbe78c317831ed254a4",
+      "document_bytes": 192389,
+      "document_pages": 2,
+      "source_image_url": "https://napcosecurity.com/assets/images/FireLink-6-13-18.jpg",
+      "source_page_url": "https://napcosecurity.com/news/firelink-facp/",
+      "source_pdf_page": null,
+      "crop_bounds": [
+        38,
+        217,
+        369,
+        558
+      ],
+      "image_dimensions": [
+        331,
+        341
+      ],
+      "image_sha256": "ae6499dae4736926c96f39d9d01940a341d90912128cb1020ce52e8191de19b0",
+      "record_ids": [
+        "facp-d53ca131-92c2-4f2a-8f73-5bfa1eb31807"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "radionics-d7024",
+      "source_document_id": "facp-0fb8797e-982d-4295-84ae-53098416c467",
+      "source_document_title": "D7024 — Installation, Operations, Programming (1997, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Radionics/d7024-installation-1997.pdf",
+      "document_sha256": "c85b8832fedfc8801f2bb9d12a9b746ab16a7340117556ef35f89e866960d8db",
+      "document_bytes": 887763,
+      "document_pages": 28,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Radionics/d7024-installation-1997.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Radionics/d7024-installation-1997.pdf",
+      "source_pdf_page": 11,
+      "crop_bounds": [
+        247.0,
+        201.0,
+        365.0,
+        369.0
+      ],
+      "image_dimensions": [
+        354,
+        504
+      ],
+      "image_sha256": "85099150d92920362e1fc411d761a5f2dbd9aeb0207ee63bba86f56a33812de0",
+      "record_ids": [
+        "facp-0fb8797e-982d-4295-84ae-53098416c467",
+        "facp-85984947-9e0d-414f-9b41-93b7dbebc225"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    },
+    {
+      "id": "radionics-d9024-d10024",
+      "source_document_id": "facp-5fd30b71-4c04-4eeb-b285-5bf152038bc6",
+      "source_document_title": "D9024 and D10024 — Operations (1997, source-listed)",
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Radionics/d9024_and_d10024-operations-1997.pdf",
+      "document_sha256": "9576e42f488cb17e54de7e6618df381d456e4e0835c5c602b8536c573994dace",
+      "document_bytes": 977812,
+      "document_pages": 13,
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Radionics/d9024_and_d10024-operations-1997.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Radionics/d9024_and_d10024-operations-1997.pdf",
+      "source_pdf_page": 4,
+      "crop_bounds": [
+        135.0,
+        306.0,
+        510.0,
+        548.0
+      ],
+      "image_dimensions": [
+        1125,
+        726
+      ],
+      "image_sha256": "65c59087eae3c37291f811b6fa9106a569f8b01d3be53bcf90865163837459f1",
+      "record_ids": [
+        "facp-0b6f9226-4b8a-486b-8955-09ce02e64c61",
+        "facp-5fd30b71-4c04-4eeb-b285-5bf152038bc6",
+        "facp-cbcd2d31-9fd9-486d-8d8f-96296d5103fa",
+        "facp-e81019ab-e8bb-43ad-96e6-eaff979f7e1f"
+      ],
+      "visual_review": "Manufacturer panel picture or front-control drawing inspected; logos/certification marks were excluded. PDF image placement transformations were honoured."
+    }
+  ]
+}

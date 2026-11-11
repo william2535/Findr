@@ -1,0 +1,78 @@
+{
+  "url": "https://findr-fault-finder.floodyyy21.chatgpt.site/app/#home",
+  "appVersion": "0.30.0",
+  "environment": {
+    "browser": "Chromium 154.0.8037.57",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "touchEmulated": true,
+    "physicalPhone": false,
+    "serviceWorkers": "block"
+  },
+  "settings": {
+    "interfaceMotion": "on",
+    "motionPaused": "false"
+  },
+  "reducedMotion": false,
+  "sampledTimes": [
+    0,
+    500,
+    1000,
+    1500,
+    2000,
+    2500,
+    3000,
+    4000,
+    5000
+  ],
+  "metrics": [
+    {
+      "selector": ".home-intro h1",
+      "box": [
+        20,
+        260,
+        370,
+        299
+      ],
+      "changedPixels": 0,
+      "fromMs": 0,
+      "toMs": 0,
+      "regionPixels": 13650,
+      "percentChanged": 0.0,
+      "threshold": "max RGB-channel difference >12/255"
+    },
+    {
+      "selector": ".home-quick-links",
+      "box": [
+        20,
+        376,
+        370,
+        547
+      ],
+      "changedPixels": 0,
+      "fromMs": 0,
+      "toMs": 0,
+      "regionPixels": 59850,
+      "percentChanged": 0.0,
+      "threshold": "max RGB-channel difference >12/255"
+    },
+    {
+      "selector": "Home main content",
+      "box": [
+        20,
+        120,
+        370,
+        600
+      ],
+      "changedPixels": 158,
+      "fromMs": 500,
+      "toMs": 4000,
+      "regionPixels": 168000,
+      "percentChanged": 0.094,
+      "threshold": "max RGB-channel difference >12/255"
+    }
+  ],
+  "observation": "Title and Home action boxes are stable while enabled decorative motion is running; the large animated import card begins at y603.6. Measurements use identical boxes to the new Chromium390 run."
+}

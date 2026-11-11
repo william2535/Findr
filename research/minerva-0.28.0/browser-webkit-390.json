@@ -1,0 +1,227 @@
+{
+  "status": "passed",
+  "browser": "webkit",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "physicalIPhone": false,
+  "hardwareVerified": false,
+  "fixture": "FINDR fictional training panel",
+  "serviceWorkers": "blocked for UI checks",
+  "checks": [
+    "#home: neutral site backgrounds, text and borders; navigation and portrait layout remain reachable",
+    "#faults: neutral site backgrounds, text and borders; navigation and portrait layout remain reachable",
+    "#quick-questions: neutral site backgrounds, text and borders; navigation and portrait layout remain reachable",
+    "#downloads/all: neutral site backgrounds, text and borders; navigation and portrait layout remain reachable",
+    "#emulator: neutral site backgrounds, text and borders; navigation and portrait layout remain reachable",
+    "Emulators library opens the source-scoped MX/MX2 panel through its normal card",
+    "HINTS is available immediately and offers source-linked guided tasks",
+    "FIND A MENU reaches Event Log with physical-key login hints and recovers from a wrong turn without applying an effect",
+    "Hints can be hidden and restored through the shared HINTS control without losing the current route",
+    "Guidance stops before isolation; deliberate point isolation survives reload and De-Isolate restores it",
+    "Distinct MX and MX2 front panels retain state, including MX2 zone indicators and source scope",
+    "Phone portrait has large duplicate physical controls and a usable menu search at keyboard-like height"
+  ],
+  "colours": [
+    {
+      "route": "#home",
+      "colours": [
+        {
+          "selector": "body",
+          "background": "rgb(11, 11, 11)",
+          "text": "rgb(238, 238, 238)",
+          "border": "rgb(238, 238, 238)",
+          "shadow": "none"
+        },
+        {
+          "selector": ".header",
+          "background": "rgba(12, 12, 12, 0.96)",
+          "text": "rgb(238, 238, 238)",
+          "border": "rgb(238, 238, 238)",
+          "shadow": "none"
+        },
+        {
+          "selector": ".home-about",
+          "background": "rgba(0, 0, 0, 0)",
+          "text": "rgb(238, 238, 238)",
+          "border": "rgb(59, 59, 59)",
+          "shadow": "none"
+        },
+        {
+          "selector": ".home-import-callout",
+          "background": "rgb(31, 31, 31)",
+          "text": "rgb(238, 238, 238)",
+          "border": "rgb(84, 84, 84)",
+          "shadow": "rgb(255, 218, 61) 3px 0px 0px 0px inset"
+        }
+      ]
+    },
+    {
+      "route": "#faults",
+      "colours": [
+        {
+          "selector": "body",
+          "background": "rgb(4, 4, 4)",
+          "text": "rgb(238, 238, 238)",
+          "border": "rgb(238, 238, 238)",
+          "shadow": "none"
+        },
+        {
+          "selector": ".terminal-session",
+          "background": "rgb(4, 4, 4)",
+          "text": "rgb(228, 228, 228)",
+          "border": "rgb(228, 228, 228)",
+          "shadow": "none"
+        }
+      ]
+    },
+    {
+      "route": "#quick-questions",
+      "colours": [
+        {
+          "selector": "body",
+          "background": "rgb(4, 4, 4)",
+          "text": "rgb(238, 238, 238)",
+          "border": "rgb(238, 238, 238)",
+          "shadow": "none"
+        },
+        {
+          "selector": ".terminal-session",
+          "background": "rgb(4, 4, 4)",
+          "text": "rgb(228, 228, 228)",
+          "border": "rgb(228, 228, 228)",
+          "shadow": "none"
+        },
+        {
+          "selector": ".terminal-job-bar",
+          "background": "rgba(0, 0, 0, 0)",
+          "text": "rgb(169, 169, 169)",
+          "border": "rgb(169, 169, 169)",
+          "shadow": "none"
+        },
+        {
+          "selector": ".terminal-line[data-role=\"assistant\"] .terminal-text",
+          "background": "rgba(0, 0, 0, 0)",
+          "text": "rgb(228, 228, 228)",
+          "border": "rgb(228, 228, 228)",
+          "shadow": "none"
+        }
+      ]
+    },
+    {
+      "route": "#downloads/all",
+      "colours": [
+        {
+          "selector": "body",
+          "background": "rgb(11, 11, 11)",
+          "text": "rgb(238, 238, 238)",
+          "border": "rgb(238, 238, 238)",
+          "shadow": "none"
+        },
+        {
+          "selector": ".manual",
+          "background": "rgb(23, 23, 23)",
+          "text": "rgb(238, 238, 238)",
+          "border": "rgb(59, 59, 59)",
+          "shadow": "none"
+        },
+        {
+          "selector": ".manual",
+          "background": "rgb(23, 23, 23)",
+          "text": "rgb(238, 238, 238)",
+          "border": "rgb(59, 59, 59)",
+          "shadow": "none"
+        },
+        {
+          "selector": ".manual",
+          "background": "rgb(23, 23, 23)",
+          "text": "rgb(238, 238, 238)",
+          "border": "rgb(59, 59, 59)",
+          "shadow": "none"
+        },
+        {
+          "selector": ".storage",
+          "background": "rgb(23, 23, 23)",
+          "text": "rgb(184, 184, 184)",
+          "border": "rgb(59, 59, 59)",
+          "shadow": "none"
+        }
+      ]
+    },
+    {
+      "route": "#emulator",
+      "colours": [
+        {
+          "selector": "body",
+          "background": "rgb(11, 11, 11)",
+          "text": "rgb(238, 238, 238)",
+          "border": "rgb(238, 238, 238)",
+          "shadow": "none"
+        },
+        {
+          "selector": ".emulator-profile-card",
+          "background": "rgb(23, 23, 23)",
+          "text": "rgb(238, 238, 238)",
+          "border": "rgb(70, 70, 70)",
+          "shadow": "none"
+        },
+        {
+          "selector": ".emulator-profile-card",
+          "background": "rgb(23, 23, 23)",
+          "text": "rgb(238, 238, 238)",
+          "border": "rgb(70, 70, 70)",
+          "shadow": "none"
+        },
+        {
+          "selector": ".emulator-profile-card",
+          "background": "rgb(23, 23, 23)",
+          "text": "rgb(238, 238, 238)",
+          "border": "rgb(70, 70, 70)",
+          "shadow": "none"
+        },
+        {
+          "selector": ".emulator-intro",
+          "background": "rgb(31, 31, 31)",
+          "text": "rgb(238, 238, 238)",
+          "border": "rgb(84, 84, 84)",
+          "shadow": "rgb(255, 218, 61) 3px 0px 0px 0px inset"
+        }
+      ]
+    }
+  ],
+  "pageErrors": [],
+  "browserVersion": "26.0",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15",
+  "appVersion": "0.28.0",
+  "hintRoutes": [
+    {
+      "target": "event-view",
+      "keys": [
+        "F1",
+        "F3",
+        "0",
+        "1",
+        "2",
+        "4",
+        "6",
+        "8",
+        "1",
+        "0",
+        "F5",
+        "5",
+        "1"
+      ]
+    },
+    {
+      "target": "isolate-point-loop",
+      "keys": [
+        "F1",
+        "F1",
+        "3",
+        "1",
+        "1"
+      ]
+    }
+  ]
+}

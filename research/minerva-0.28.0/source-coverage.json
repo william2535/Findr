@@ -1,0 +1,160 @@
+{
+  "source": {
+    "id": "mx-operating-issue5",
+    "recordId": "facp-ec7a65d3-2379-41c6-987d-b091da8b3e53",
+    "title": "MX Addressable Fire Controllers \u2014 Operating Instructions",
+    "publisher": "Tyco Safety Products",
+    "publication": "17A-05-O",
+    "edition": "Issue 5 \u00b7 11/04",
+    "revision": "5",
+    "firmware": "5.0",
+    "url": "https://docs.facpmanuals.com/manuals/Tyco/mx1000_series-operating-instructions-2004-rev5.pdf",
+    "pdfUrl": "https://docs.facpmanuals.com/manuals/Tyco/mx1000_series-operating-instructions-2004-rev5.pdf",
+    "totalPdfPages": 35,
+    "sha256": "36a61c77885611d2e3ecaa5f3cdaead4294d96266780d32f61947368bfec928f",
+    "checked": "2026-11-10"
+  },
+  "menus": 16,
+  "screens": 58,
+  "nodes": 74,
+  "lessons": 7,
+  "referenceOnly": [
+    "initialisation-count",
+    "diagnostics"
+  ],
+  "boundaries": [
+    {
+      "id": "diagnostics-submenu",
+      "nodeId": "diagnostics",
+      "sourceRefs": [
+        {
+          "sourceId": "mx-operating-issue5",
+          "pdfPage": 25,
+          "page": 25,
+          "printedPage": "25",
+          "section": "3.11"
+        }
+      ],
+      "reason": "Diagnostics entry is drawn, but no diagnostic submenu or procedure is supplied."
+    },
+    {
+      "id": "initialisation-selector",
+      "nodeId": "initialisation-count",
+      "sourceRefs": [
+        {
+          "sourceId": "mx-operating-issue5",
+          "pdfPage": 29,
+          "page": 29,
+          "printedPage": "29",
+          "section": "3.11.2.4"
+        }
+      ],
+      "reason": "Software Initialisation Count readout/reset described, but its numbered menu selector is not stated."
+    },
+    {
+      "id": "firmware",
+      "sourceRefs": [
+        {
+          "sourceId": "mx-operating-issue5",
+          "pdfPage": 5,
+          "page": 5,
+          "printedPage": "5",
+          "section": "1 Introduction"
+        }
+      ],
+      "reason": "This source explicitly states Firmware Version 5.0; newer versions must be checked against their own documents."
+    },
+    {
+      "id": "configuration",
+      "sourceRefs": [
+        {
+          "sourceId": "mx-operating-issue5",
+          "pdfPage": 29,
+          "page": 29,
+          "printedPage": "29",
+          "section": "3.11.3"
+        }
+      ],
+      "reason": "Only Change Text and its conditional Restart are documented. Adding/deleting devices and full project configuration are not in this manual."
+    },
+    {
+      "id": "mx2-function",
+      "sourceRefs": [
+        {
+          "sourceId": "mx-operating-issue5",
+          "pdfPage": 8,
+          "page": 8,
+          "printedPage": "8",
+          "section": "Fig.4"
+        },
+        {
+          "sourceId": "mx-operating-issue5",
+          "pdfPage": 9,
+          "page": 9,
+          "printedPage": "9",
+          "section": "2.1.4"
+        }
+      ],
+      "reason": "MX2 diagram shows FUNCTION while prose excludes SPARE. No unsupported action is assigned."
+    },
+    {
+      "id": "maintenance-source-typo",
+      "sourceRefs": [
+        {
+          "sourceId": "mx-operating-issue5",
+          "pdfPage": 28,
+          "page": 28,
+          "printedPage": "28",
+          "section": "3.11.2"
+        }
+      ],
+      "reason": "The Maintenance illustration shows a Total/Print readout instead of numbered menu labels. Only explicitly stated numbers are used."
+    },
+    {
+      "id": "loop-counter-menu-visibility",
+      "sourceRefs": [
+        {
+          "sourceId": "mx-operating-issue5",
+          "pdfPage": 17,
+          "page": 17,
+          "printedPage": "17",
+          "section": "Table 1"
+        },
+        {
+          "sourceId": "mx-operating-issue5",
+          "pdfPage": 24,
+          "page": 24,
+          "printedPage": "24",
+          "section": "3.10.5"
+        }
+      ],
+      "reason": "The p23 menu illustration omits option5; p24 explicitly says select5 and p17 restricts it to CustomerManager2."
+    },
+    {
+      "id": "view-print-access",
+      "sourceRefs": [
+        {
+          "sourceId": "mx-operating-issue5",
+          "pdfPage": 17,
+          "page": 17,
+          "printedPage": "17",
+          "section": "Table 1"
+        }
+      ],
+      "reason": "Table 1 marks View/print status from Operator4 but its ViewFaults row from Operator3. The parent retains the stricter documented Operator4 entry; no lower-level shortcut is invented."
+    },
+    {
+      "id": "physical-order",
+      "sourceRefs": [
+        {
+          "sourceId": "mx-operating-issue5",
+          "pdfPage": 25,
+          "page": 25,
+          "printedPage": "25",
+          "section": "3.10.5.1\u20132"
+        }
+      ],
+      "reason": "Counter and scan tables are indexed by address. The source does not establish physical cable order."
+    }
+  ]
+}

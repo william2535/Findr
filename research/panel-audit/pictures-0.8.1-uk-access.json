@@ -1,0 +1,661 @@
+{
+  "batch": "uk-access",
+  "review_date": "2026-10-29",
+  "scope": "13 new UK-relevant access-control and door-entry panel families",
+  "catalogue_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+  "previous_pictured_families_at_review": 396,
+  "counts": {
+    "new_pictured_families": 13,
+    "brands": 4,
+    "official_manufacturer_product_images": 12,
+    "supplier_product_photographs": 1,
+    "unique_linked_archive_records": 11,
+    "cards_without_linked_archive_records": 3
+  },
+  "candidates": [
+    {
+      "id": "paxton-entry-standard",
+      "brand": "Paxton",
+      "model": "Entry Standard entrance panel",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "paxton-05010921f400",
+        "paxton-b98571b1ff19"
+      ],
+      "source_page_url": "https://www.paxton-access.com/products/entry-standard-panel-surface-mount/",
+      "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2024/05/337-420-Net2-Entry-Standard-Panel-Surface-Mount-812x742.jpg",
+      "source_pdf_page": null,
+      "image_sha256_original": "8922d87a58acc399ee2efd50ab61ccd79f044e71365370622cc2cac7edbc7689",
+      "image_dimensions_original": [
+        812,
+        742
+      ],
+      "delivered_image_sha256": "8922d87a58acc399ee2efd50ab61ccd79f044e71365370622cc2cac7edbc7689",
+      "delivered_image_dimensions": [
+        812,
+        742
+      ],
+      "image_processing": {
+        "operation": "none"
+      },
+      "identity_evidence": "Official UK product page identifies 337-420, displays this image and links INS-20400 and APN-1144. Downloaded INS-20400 page 2 lists 337-400/410/420.",
+      "uk_evidence_url": "https://www.paxton-access.com/products/entry-standard-panel-surface-mount/",
+      "manual_matching": [
+        {
+          "record_id": "paxton-05010921f400",
+          "evidence": "Downloaded original manual INS-20400 page 2 lists Standard product codes 337-400/410/420."
+        },
+        {
+          "record_id": "paxton-b98571b1ff19",
+          "evidence": "Official Standard product page directly links APN-1144 configuring an Entry panel."
+        }
+      ],
+      "visual_review": "Pass: recognisable real manufacturer or supplier image; no generated fascia or substitute model.",
+      "limitations": "External door-entry station. Confirm the product label and mounting version; 337-400, 337-410 and 337-420 share this design family. INS-20400 covers these Standard panels and the separate VR range. This is distinct from the Entry control unit and indoor monitor."
+    },
+    {
+      "id": "paxton-entry-vr",
+      "brand": "Paxton",
+      "model": "Entry VR entrance panel",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "paxton-05010921f400",
+        "paxton-b98571b1ff19"
+      ],
+      "source_page_url": "https://www.paxton-access.com/products/entry-vr-panel-surface-mount/",
+      "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2024/05/337-520-Net2-Entry-VR-Panel-Surface-Mount-812x742.jpg",
+      "source_pdf_page": null,
+      "image_sha256_original": "2c6776676c64dcffd57a474e95dc32aebb23fb67dc795d1b799e6ebfeb13b533",
+      "image_dimensions_original": [
+        812,
+        742
+      ],
+      "delivered_image_sha256": "2c6776676c64dcffd57a474e95dc32aebb23fb67dc795d1b799e6ebfeb13b533",
+      "delivered_image_dimensions": [
+        812,
+        742
+      ],
+      "image_processing": {
+        "operation": "none"
+      },
+      "identity_evidence": "Official UK product page identifies 337-520 and directly links INS-20400/APN-1144. Downloaded INS-20400 page 2 lists 337-500/510/520.",
+      "uk_evidence_url": "https://www.paxton-access.com/products/entry-vr-panel-surface-mount/",
+      "manual_matching": [
+        {
+          "record_id": "paxton-05010921f400",
+          "evidence": "Original INS-20400 page 2 lists VR product codes 337-500/510/520."
+        },
+        {
+          "record_id": "paxton-b98571b1ff19",
+          "evidence": "Official VR page directly links this configuration application note."
+        }
+      ],
+      "visual_review": "Pass: recognisable real manufacturer or supplier image; no generated fascia or substitute model.",
+      "limitations": "External door-entry station, with flush, surface and rain-hood variants grouped together. Confirm 337-500/510/520 and the installed revision. The shared INS-20400 manual also includes Standard panels; use the VR-specific illustrations."
+    },
+    {
+      "id": "paxton-entry-touch",
+      "brand": "Paxton",
+      "model": "Entry Touch entrance panel",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "paxton-2fe0a807083c",
+        "paxton-8c9844ab63d8"
+      ],
+      "source_page_url": "https://www.paxton-access.com/products/entry-touch-panel-surface-mount/",
+      "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2024/05/337-620-Net2-Entry-Touch-surface-mount-5240-812x742.jpg",
+      "source_pdf_page": null,
+      "image_sha256_original": "e672b1e889aea1279fdd9b66f7fb70346ab9dc6be8b604c4b0894b7c0f364ac2",
+      "image_dimensions_original": [
+        812,
+        742
+      ],
+      "delivered_image_sha256": "e672b1e889aea1279fdd9b66f7fb70346ab9dc6be8b604c4b0894b7c0f364ac2",
+      "delivered_image_dimensions": [
+        812,
+        742
+      ],
+      "image_processing": {
+        "operation": "none"
+      },
+      "identity_evidence": "Official UK page identifies 337-620 and directly links INS-20404 and APN-1161. The downloaded INS-20404 page 2 shows 337-600/610/620.",
+      "uk_evidence_url": "https://www.paxton-access.com/products/entry-touch-panel-surface-mount/",
+      "manual_matching": [
+        {
+          "record_id": "paxton-2fe0a807083c",
+          "evidence": "Downloaded original INS-20404 explicitly lists all three Touch product codes."
+        },
+        {
+          "record_id": "paxton-8c9844ab63d8",
+          "evidence": "Official Touch product page links APN-1161 configuring a Touch Entry panel."
+        }
+      ],
+      "visual_review": "Pass: recognisable real manufacturer or supplier image; no generated fascia or substitute model.",
+      "limitations": "External touchscreen door-entry station, distinct from a Paxton indoor monitor. The family includes 337-600/610/620 mounting variants. Use the Touch-specific INS-20404 and APN-1161 references; Standard/VR key sequences do not establish Touch operation."
+    },
+    {
+      "id": "videx-4000-series",
+      "brand": "Videx",
+      "model": "4000 Series entrance panels",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "videx-71584a1cfad2",
+        "videx-67288af5dd35"
+      ],
+      "source_page_url": "https://www.videxuk.com/series/4000-series/",
+      "source_image_url": "https://www.videxuk.com/wp-content/uploads/2026/09/4000-900x473_72ppi_2025.jpg",
+      "source_pdf_page": null,
+      "image_sha256_original": "6fe0d8496ca02bcd0d2af619c9f5e81b4a9dc47fd0538e6c492f0956aefedd7a",
+      "image_dimensions_original": [
+        900,
+        473
+      ],
+      "delivered_image_sha256": "9661878228db72cd73c35f6986d73658b6f00d6ccd930e2078392b93b6bda3bc",
+      "delivered_image_dimensions": [
+        692,
+        297
+      ],
+      "image_processing": {
+        "operation": "outer-whitespace-crop",
+        "bounds_xyxy_exclusive": [
+          104,
+          88,
+          796,
+          385
+        ],
+        "source_dimensions": [
+          900,
+          473
+        ],
+        "content": "Complete original family badge and every pictured assembly retained; no internal content removed or redrawn."
+      },
+      "identity_evidence": "Official Videx UK 4000 Series page identifies this modular family. Its observed Open Graph image shows complete 4000 assemblies, replacing a less useful module-only header. Original 4K-N manual pages 6–7 describe 4000 Series door-station assembly; VX2200 manual lists the family.",
+      "uk_evidence_url": "https://www.videxuk.com/series/4000-series/",
+      "manual_matching": [
+        {
+          "record_id": "videx-71584a1cfad2",
+          "evidence": "Downloaded original 4K-N audio-kit manual; 4000 Series mounting pages 6–7. Configuration-specific, not a universal family manual."
+        },
+        {
+          "record_id": "videx-67288af5dd35",
+          "evidence": "Original VX2200 manual contents identifies 4000/8000 functional panels on pages 10–12. Applicable only to VX2200-fitted configurations."
+        }
+      ],
+      "visual_review": "Pass: recognisable real manufacturer or supplier image; no generated fascia or substitute model.",
+      "limitations": "A visual family spanning several audio, video and system configurations. The linked 4K-N audio-kit manual and VX2200 system manual cover their named configurations only. Check the individual module numbers and bus system; this picture does not establish VX2300, IPure or other wiring compatibility."
+    },
+    {
+      "id": "videx-8000-series",
+      "brand": "Videx",
+      "model": "8000 Series entrance panels",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "videx-4d21eba8ed26",
+        "videx-67288af5dd35"
+      ],
+      "source_page_url": "https://www.videxuk.com/series/8000-series/",
+      "source_image_url": "https://www.videxuk.com/wp-content/uploads/2026/09/8000-900x473_72ppi_2025.jpg",
+      "source_pdf_page": null,
+      "image_sha256_original": "236906d8d98c4ac10a929cdc2cf9f751ad37e2a55c23eef53421356ea0a76d04",
+      "image_dimensions_original": [
+        900,
+        473
+      ],
+      "delivered_image_sha256": "0d64f179b79f486419c87d2fd6dc62026fc30aa6881dfbbc13d5777c9907bb35",
+      "delivered_image_dimensions": [
+        692,
+        291
+      ],
+      "image_processing": {
+        "operation": "outer-whitespace-crop",
+        "bounds_xyxy_exclusive": [
+          104,
+          90,
+          796,
+          381
+        ],
+        "source_dimensions": [
+          900,
+          473
+        ],
+        "content": "Complete original family badge and every pictured assembly retained; no internal content removed or redrawn."
+      },
+      "identity_evidence": "Official UK 8000 Series page identifies the family and the Open Graph image of complete assemblies. Downloaded 8K/380 manual pages 4–5 identify 8000 Series door-station mounting; VX2200 manual separately lists 8000 functional panels.",
+      "uk_evidence_url": "https://www.videxuk.com/series/8000-series/",
+      "manual_matching": [
+        {
+          "record_id": "videx-4d21eba8ed26",
+          "evidence": "Original 8K/380 audio-kit manual explicitly covers 8000 Series station mounting on pages 4–5; retain telephone-interface kit scope."
+        },
+        {
+          "record_id": "videx-67288af5dd35",
+          "evidence": "Original VX2200 manual covers 8000 functional panels in the named VX2200 system."
+        }
+      ],
+      "visual_review": "Pass: recognisable real manufacturer or supplier image; no generated fascia or substitute model.",
+      "limitations": "Confirm each fitted module and system. The linked 8K/380 manual concerns the telephone-interface audio kit; the VX2200 manual concerns VX2200 configurations. An 8000 enclosure or similar appearance to the older 800 Series does not identify its electronics or make every family manual applicable."
+    },
+    {
+      "id": "videx-vr4k",
+      "brand": "Videx",
+      "model": "VR4K entrance panels",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "videx-4e79c67edad1",
+        "videx-67288af5dd35"
+      ],
+      "source_page_url": "https://www.videxuk.com/series/vr4k-series/",
+      "source_image_url": "https://www.videxuk.com/wp-content/uploads/2026/09/VR4K-900x473_72ppi_2025.jpg",
+      "source_pdf_page": null,
+      "image_sha256_original": "aed29851376393a69cba815931a937d69972fdcd125076b45941a122ef4a3bc2",
+      "image_dimensions_original": [
+        900,
+        473
+      ],
+      "delivered_image_sha256": "5a4da2b8fa01ff36b9633d2bcf18c963d499bfe4650403f115e24a5050d3562d",
+      "delivered_image_dimensions": [
+        692,
+        265
+      ],
+      "image_processing": {
+        "operation": "outer-whitespace-crop",
+        "bounds_xyxy_exclusive": [
+          104,
+          104,
+          796,
+          369
+        ],
+        "source_dimensions": [
+          900,
+          473
+        ],
+        "content": "Complete original family badge and every pictured assembly retained; no internal content removed or redrawn."
+      },
+      "identity_evidence": "Official UK VR4K family page supplies a complete-assembly family image. Original VR4K-1 cover was visually compared, and VX2200 manual page 63 names VR4K2W functional panels. A kit photograph containing a handset and PSU was rejected as the card image.",
+      "uk_evidence_url": "https://www.videxuk.com/series/vr4k-series/",
+      "manual_matching": [
+        {
+          "record_id": "videx-4e79c67edad1",
+          "evidence": "Downloaded original Videx technical manual edition 1.1, explicitly VR4K-1 one-button audio kit; cover image inspected."
+        },
+        {
+          "record_id": "videx-67288af5dd35",
+          "evidence": "Original VX2200 manual page 63 identifies Art.138/VR4K2W vandal-resistant functional panels; system-specific reference only."
+        }
+      ],
+      "visual_review": "Pass: recognisable real manufacturer or supplier image; no generated fascia or substitute model.",
+      "limitations": "The archived VR4K-1 manual is for the one-button audio kit, while the VX2200 manual identifies the VR4K2W/138-amplifier configuration. These references do not cover every multi-button, camera, keypad or GSM variant pictured in the family. Read the module label before choosing instructions."
+    },
+    {
+      "id": "videx-vr120",
+      "brand": "Videx",
+      "model": "VR120 entrance panels",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "videx-0d50f2fb3ce0"
+      ],
+      "source_page_url": "https://www.videxuk.com/product/vr120-series-audio-panels/",
+      "source_image_url": "https://www.videxuk.com/wp-content/uploads/2026/10/VR120-136-6.jpg",
+      "source_pdf_page": null,
+      "image_sha256_original": "8f814d1d68c2e9756b20bc92fbeab69976630b97f4468cbad2eba991c82fdd5f",
+      "image_dimensions_original": [
+        787,
+        787
+      ],
+      "delivered_image_sha256": "8f814d1d68c2e9756b20bc92fbeab69976630b97f4468cbad2eba991c82fdd5f",
+      "delivered_image_dimensions": [
+        787,
+        787
+      ],
+      "image_processing": {
+        "operation": "none"
+      },
+      "identity_evidence": "Official UK audio-panel page presents the exact VR120-136-6 image. Downloaded catalogue PDF cover reads VR120, 136 amplifier; cover visually inspected and text confirmed. Catalogue VX120 spelling retained in archive, not repeated as a new model identity.",
+      "uk_evidence_url": "https://www.videxuk.com/product/vr120-series-audio-panels/",
+      "manual_matching": [
+        {
+          "record_id": "videx-0d50f2fb3ce0",
+          "evidence": "Downloaded original manual headed VR120 Vandal Resistant Audio and Video Door Entry Systems (136 Amplifier), edition 1.0."
+        }
+      ],
+      "visual_review": "Pass: recognisable real manufacturer or supplier image; no generated fascia or substitute model.",
+      "limitations": "The linked original manual is headed VR120 with the 136 amplifier, despite the catalogue title spelling VX120-136. Button count, camera, codelock and amplifier variants differ. Check the amplifier and panel labels; this image does not establish 138/VX2200 compatibility."
+    },
+    {
+      "id": "videx-sp300",
+      "brand": "Videx",
+      "model": "SP300 digital entrance panel",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "videx-67288af5dd35"
+      ],
+      "source_page_url": "https://www.videxuk.com/product/sp300-series-digital-door-panel-3/",
+      "source_image_url": "https://www.videxuk.com/wp-content/uploads/2026/07/SP300-1_v1.jpg",
+      "source_pdf_page": null,
+      "image_sha256_original": "a709d57772dd634b4d6852de865922a885dbc4118322781a08e1be4fe18199f4",
+      "image_dimensions_original": [
+        1181,
+        1181
+      ],
+      "delivered_image_sha256": "a709d57772dd634b4d6852de865922a885dbc4118322781a08e1be4fe18199f4",
+      "delivered_image_dimensions": [
+        1181,
+        1181
+      ],
+      "image_processing": {
+        "operation": "none"
+      },
+      "identity_evidence": "Official UK product page identifies the SP300 series and the displayed SP300-1 image. Original VX2200 technical manual edition 1.6 page 63 explicitly names SP300/SP301 digital front panels.",
+      "uk_evidence_url": "https://www.videxuk.com/product/sp300-series-digital-door-panel-3/",
+      "manual_matching": [
+        {
+          "record_id": "videx-67288af5dd35",
+          "evidence": "Downloaded original VX2200 edition 1.6 page 63 names SP300/SP301; use as a system reference with suffix/revision check."
+        }
+      ],
+      "visual_review": "Pass: recognisable real manufacturer or supplier image; no generated fascia or substitute model.",
+      "limitations": "Confirm the full suffix, audio/video configuration and installed VX2200 revision. The linked VX2200 manual explicitly includes SP300/SP301 as digital front panels, but is a system reference and does not establish every newer SP300 variant or menu revision."
+    },
+    {
+      "id": "videx-4212",
+      "brand": "Videx",
+      "model": "4212 digital audio entrance panel",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "videx-37219de9edf7"
+      ],
+      "source_page_url": "https://www.videxuk.com/product/4212-series-digital-audio-panels/",
+      "source_image_url": "https://www.videxuk.com/wp-content/uploads/2016/12/PT-932x932-4212-UK.jpg",
+      "source_pdf_page": null,
+      "image_sha256_original": "4bb4979837be382599ff0e15e6cfe781ca90f40696318b62fd8e37561ede7141",
+      "image_dimensions_original": [
+        932,
+        932
+      ],
+      "delivered_image_sha256": "4bb4979837be382599ff0e15e6cfe781ca90f40696318b62fd8e37561ede7141",
+      "delivered_image_dimensions": [
+        932,
+        932
+      ],
+      "image_processing": {
+        "operation": "none"
+      },
+      "identity_evidence": "Official UK audio-panel page has a 4212-UK image filename. Downloaded original AN0029 explicitly identifies the 4212 VX2200 digital entrance panel. The current product page has a conflicting V-suffix in one audio variant table, so no 4212V alias or video-variant claim is inferred from it.",
+      "uk_evidence_url": "https://www.videxuk.com/product/4212-series-digital-audio-panels/",
+      "manual_matching": [
+        {
+          "record_id": "videx-37219de9edf7",
+          "evidence": "Downloaded original AN0029, Using the Wiegand output on the 4212 to communicate with 3rd-party access control. Narrow application-note scope."
+        }
+      ],
+      "visual_review": "Pass: recognisable real manufacturer or supplier image; no generated fascia or substitute model.",
+      "limitations": "Confirm 4212/UK versus video or scrolling variants and the full product suffix. The linked AN0029 is specifically a Wiegand integration application note for the 4212; it is not a complete installation or menu manual. A similar fascia alone cannot establish firmware or connected access-controller behaviour."
+    },
+    {
+      "id": "came-bpt-mtm",
+      "brand": "CAME / BPT",
+      "model": "MTM modular entrance panels",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [],
+      "source_page_url": "https://www.came.com/uk/installers/solutions/intercom-systems/entry-panels/mtm",
+      "source_image_url": "https://static.came.com/img/public/Video_Entry_Systems/series/MTM_WEB.png",
+      "source_pdf_page": null,
+      "image_sha256_original": "8024bcdd5aab7421cb9d29b9d4f8f8ed310ff1fcfdc3eae1d6f8a3d226b135d2",
+      "image_dimensions_original": [
+        768,
+        768
+      ],
+      "delivered_image_sha256": "8024bcdd5aab7421cb9d29b9d4f8f8ed310ff1fcfdc3eae1d6f8a3d226b135d2",
+      "delivered_image_dimensions": [
+        768,
+        768
+      ],
+      "image_processing": {
+        "operation": "none"
+      },
+      "identity_evidence": "Official CAME UK MTM page identifies this family and enumerates distinct modules/systems. Original CAME FA01479-EN 07/2020 was inspected at a distributor mirror and explicitly names MTMA/01 and MTMV/01; the exact catalogue URL returns HTTP 404.",
+      "uk_evidence_url": "https://www.came.com/uk/installers/solutions/intercom-systems/entry-panels/mtm",
+      "manual_matching": [
+        {
+          "candidate_record_id": "came-bpt-b75735610fa8",
+          "decision": "Not linked while the catalogue source is unavailable.",
+          "evidence": "Exact family and document code verified in original CAME FA01479-EN, 07/2020, available at https://www.teletec.se/media/support/documents/2/0/2039220397951.pdf. Catalogue source currently HTTP 404; no new association is added until source repair.",
+          "availability": "catalogue-source-unavailable",
+          "verified_mirror_url": "https://www.teletec.se/media/support/documents/2/0/2039220397951.pdf"
+        }
+      ],
+      "visual_review": "Pass: recognisable real manufacturer or supplier image; no generated fascia or substitute model.",
+      "limitations": "This is the MTM family, with several distinct bus systems and optional modules. No verified working archive manual is linked here; the historical MTM programming record needs source repair. Confirm the fitted module and matching manual edition. The pictured fascia does not identify an X1, IP, GSM or 200-system unit."
+    },
+    {
+      "id": "came-bpt-lithos",
+      "brand": "CAME / BPT",
+      "model": "Lithos video entrance panel",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [],
+      "source_page_url": "https://www.came.com/in/en/installers/solutions/lithos",
+      "source_image_url": "https://static.came.com/img/installer/Video_Entry_Systems/series/LITHOS_WEB.png",
+      "source_pdf_page": null,
+      "image_sha256_original": "2b3b96bc66678b974d1215bb3892a21801811088ab37e47532da400cb58d3a50",
+      "image_dimensions_original": [
+        1440,
+        810
+      ],
+      "delivered_image_sha256": "2b3b96bc66678b974d1215bb3892a21801811088ab37e47532da400cb58d3a50",
+      "delivered_image_dimensions": [
+        1440,
+        810
+      ],
+      "image_processing": {
+        "operation": "none"
+      },
+      "identity_evidence": "Official manufacturer page identifies Lithos LVC/01 and LC/01. The reviewed hero image shows the video camera and finished call-button assembly, replacing an unpopulated base-unit image. CAME UK systems-overview PDF independently lists Lithos for the UK range.",
+      "uk_evidence_url": "https://www.came.com/uk/sites/uk/files/2019-04/BPT-Systems-Function.pdf",
+      "manual_matching": [
+        {
+          "candidate_record_id": "came-bpt-4d3367a306c2",
+          "decision": "Not linked. Catalogue entry is an AGATAkit X1 LVC kit manual, not a general Lithos-family manual, and the indexed source returned HTTP 404 during review."
+        }
+      ],
+      "visual_review": "Pass: recognisable real manufacturer or supplier image; no generated fascia or substitute model.",
+      "limitations": "Confirm LVC/01 and its X1 system. Similar LC/01 audio versions and different button inserts exist. No verified working archive manual is linked here: the related AGATAkit X1 LVC kit record requires source repair and should not be treated as a universal Lithos manual."
+    },
+    {
+      "id": "came-bpt-thangram",
+      "brand": "CAME / BPT",
+      "model": "Thangram video entrance panels",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [],
+      "source_page_url": "https://www.came.com/ae/en/installers/solutions/thangram",
+      "source_image_url": "https://static.came.com/img/installer/Video_Entry_Systems/series/THANGRAM_WEB.png",
+      "source_pdf_page": null,
+      "image_sha256_original": "fde2c2ba8accfeb620cebddabe5df4be5264fb0f9bf7602a2497e9e64d2e33f4",
+      "image_dimensions_original": [
+        1440,
+        810
+      ],
+      "delivered_image_sha256": "fde2c2ba8accfeb620cebddabe5df4be5264fb0f9bf7602a2497e9e64d2e33f4",
+      "delivered_image_dimensions": [
+        1440,
+        810
+      ],
+      "image_processing": {
+        "operation": "none"
+      },
+      "identity_evidence": "Official CAME family page identifies Thangram and the exact observed THANGRAM_WEB hero image. Its model table distinguishes DVC/01, DVC/08 and DVC/IP rather than implying the pictured fascia proves one of them. CAME UK systems-overview PDF also lists Thangram.",
+      "uk_evidence_url": "https://www.came.com/uk/sites/uk/files/2019-04/BPT-Systems-Function.pdf",
+      "manual_matching": [],
+      "visual_review": "Pass: recognisable real manufacturer or supplier image; no generated fascia or substitute model.",
+      "limitations": "Visual family identification only. Thangram includes different DVC video and DC audio electronics and several system types. The finished fascia cannot identify X1, XIP or IP360 wiring or model suffix. No exact Thangram manual match exists in the current archive snapshot."
+    },
+    {
+      "id": "act-10",
+      "brand": "Acre / Vanderbilt",
+      "model": "ACT10 standalone keypad controller",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "act-6137ac1ea5e1"
+      ],
+      "source_page_url": "https://dooraccesssupplies.com/products/acre-act10-keypad-l9057",
+      "source_image_url": "https://dooraccesssupplies.com/cdn/shop/files/Act10.jpg?v=1787221310&width=832",
+      "source_pdf_page": null,
+      "image_sha256_original": "ee2274aa918779d42f62da41eb0714a6876b37b6c4deb7cc7f93d5664da26457",
+      "image_dimensions_original": [
+        500,
+        500
+      ],
+      "delivered_image_sha256": "ee2274aa918779d42f62da41eb0714a6876b37b6c4deb7cc7f93d5664da26457",
+      "delivered_image_dimensions": [
+        500,
+        500
+      ],
+      "image_processing": {
+        "operation": "none"
+      },
+      "identity_evidence": "Exact ACT10/L9057 supplier product photograph; original ACT operating and installation manual cover was rendered and visually compared. Its text identifies ACT10 and publication 18-00001, matching the archive SHA-256. UK distributor listing independently identifies ACT10.",
+      "uk_evidence_url": "https://saundersonsecurity.co.uk/act-10-electronic-keypad-grey.html",
+      "manual_matching": [
+        {
+          "record_id": "act-6137ac1ea5e1",
+          "evidence": "Downloaded original ACT10 operating/installation manual 18-00001. Cover image inspected; SHA-256 exactly matches the catalogue. Archive filename/title is broader than the actual ACT10 document."
+        }
+      ],
+      "visual_review": "Pass: recognisable real manufacturer or supplier image; no generated fascia or substitute model.",
+      "limitations": "Confirm the ACT10 model label and installed revision. This is a standalone keypad/controller, not an ACTpro reader or door controller. The archive filename mentions ACT10 and ACT20, but the retrieved original document is specifically ACT10 publication 18-00001; no ACT20 picture or compatibility claim is made."
+    }
+  ],
+  "excluded_items": [
+    {
+      "model": "Paxton Entry flush/surface/rain-hood variants",
+      "status": "duplicate",
+      "reason": "Mounting variants are grouped under the three distinct Standard, VR and Touch families; they are not counted as nine new panels."
+    },
+    {
+      "model": "Paxton Entry control unit, Net2 controllers and Paxton10 controllers",
+      "status": "duplicate",
+      "reason": "Existing pictured controller cards are retained; new additions are external entrance stations."
+    },
+    {
+      "model": "Videx 4000/8000 loose-module array images",
+      "status": "excluded",
+      "reason": "Replaced by official images of complete assembled entrance panels, making field recognition clearer."
+    },
+    {
+      "model": "Videx VR4K audio kit composite",
+      "status": "excluded",
+      "reason": "Image included a handset and PSU. Replaced with the manufacturer’s complete-panel family presentation."
+    },
+    {
+      "model": "CAME Thangram DVC/IP uncovered base image",
+      "status": "excluded",
+      "reason": "The bare carrier does not resemble the completed external face; replaced by official finished fascia."
+    },
+    {
+      "model": "CAME Lithos unpopulated call-module base image",
+      "status": "excluded",
+      "reason": "Replaced by the manufacturer’s assembled video-panel image."
+    },
+    {
+      "model": "ACT20",
+      "status": "excluded",
+      "reason": "No verified distinct image obtained. The legacy catalogue filename mentioning ACT20 is not evidence for an ACT20 picture; downloaded content is ACT10-specific."
+    },
+    {
+      "model": "Standalone reader modules, keyfobs, buttons, power supplies and handsets",
+      "status": "accessory",
+      "reason": "Not used to pad the panel count; this batch focuses on entrance panels and a standalone keypad controller."
+    },
+    {
+      "model": "CDVI beyond A22, further warden/nurse-call systems",
+      "status": "excluded",
+      "reason": "Deferred pending distinct verified panel/control-unit evidence. No substitute photograph or weak manual association was added."
+    },
+    {
+      "model": "Videx SP301 and 4212 video/scrolling suffixes",
+      "status": "excluded",
+      "reason": "Not counted separately from an exact pictured SP300-1 or 4212/UK audio identity. Similar appearance does not prove the variant."
+    }
+  ],
+  "limitations": [
+    "Images identify appearance, not firmware, menu completeness, installed options or wiring. No emulator behaviour was changed by this pictured pack.",
+    "Videx 4000/8000/VR4K and CAME MTM/Thangram are manufacturer-defined visual families. Individual electronics and fitted modules must be checked before selecting a manual.",
+    "ACT10 uses a correctly identified supplier photograph with visible Vanderbilt branding; the original ACT10 manual verifies fascia identity. It is not presented as an official current ACRE photograph.",
+    "Paxton official product photographs contain the manufacturer’s small promotional badge. Original artwork is retained unaltered.",
+    "CAME MTM archive URL for FA01479-EN returned HTTP 404. Exact original document was verified at a distributor mirror, but no new archive association is added until source repair. All three CAME cards are picture-only. No catalogue URL was changed.",
+    "Lithos has no linked record in this batch because the related AGATAkit X1 LVC source returned 404 and is kit-specific. Thangram has no exact matching catalogue record.",
+    "Current Videx 4212 audio page contains a conflicting V-suffix in its variant table. Image filename and original AN0029 establish 4212 audio; no V/video identity was inferred.",
+    "Archive titles retain legacy naming: VX120-136 points to an original VR120/136 manual, while the ACT10-and-20 filename retrieves an ACT10 document. Cards use the inspected document identities.",
+    "Only the outer white margins of the Videx 4000/8000/VR4K manufacturer composites were cropped, preserving the complete family badge and all assemblies. Exact exclusive crop bounds and original/delivered hashes are recorded per candidate.",
+    "Only manifests and selected image assets are intended for importer integration. PDF downloads, HTML snapshots, extracted text and superseded images remain intermediate research."
+  ],
+  "source_availability_issues": [
+    {
+      "record_id": "came-bpt-b75735610fa8",
+      "url": "https://docs.came.com/pdf/FA01479-EN.pdf?1644315056",
+      "status": "HTTP 404",
+      "verified_original_document_mirror": "https://www.teletec.se/media/support/documents/2/0/2039220397951.pdf",
+      "document": "CAME FA01479-EN, 07/2020, MTMA/01 and MTMV/01"
+    },
+    {
+      "record_id": "came-bpt-4d3367a306c2",
+      "url": "https://docs.came.com/pdf/FA01395-EN.pdf?1644594043",
+      "status": "HTTP 404",
+      "decision": "Not newly linked to Lithos"
+    }
+  ],
+  "validation": {
+    "unique_new_ids": true,
+    "no_existing_id_collisions": true,
+    "canonical_category": "access-control",
+    "all_record_ids_exist": true,
+    "record_categories_match": true,
+    "record_brands_match_or_documented_legacy_brand": true,
+    "legacy_brand_mapping": {
+      "act-10": "Picture groups under Acre / Vanderbilt; exact manual remains an ACT catalogue record. Supplier identifies ACRE ACT10 and photograph visibly says Vanderbilt."
+    },
+    "all_selected_images_decode": true,
+    "source_pdf_page_null_for_product_images": true,
+    "all_13_images_visually_reviewed": true,
+    "no_generated_images": true,
+    "no_global_files_modified": true
+  },
+  "source_reference_examples": [
+    {
+      "url": "https://www.paxton-access.com/product-types/entry-panels/",
+      "retrieval_ref": "turn189view2"
+    },
+    {
+      "url": "https://www.videxuk.com/series/4000-series/",
+      "retrieval_ref": "turn205view0"
+    },
+    {
+      "url": "https://www.videxuk.com/series/8000-series/",
+      "retrieval_ref": "turn205view1"
+    },
+    {
+      "url": "https://www.came.com/uk/installers/solutions/intercom-systems/entry-panels/mtm",
+      "retrieval_ref": "turn204search1"
+    },
+    {
+      "url": "https://www.came.com/uk/sites/uk/files/2019-04/BPT-Systems-Function.pdf",
+      "retrieval_ref": "turn203search21"
+    },
+    {
+      "url": "https://dooraccesssupplies.com/products/acre-act10-keypad-l9057",
+      "retrieval_ref": "turn177search7"
+    }
+  ]
+}

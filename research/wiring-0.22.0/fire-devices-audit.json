@@ -1,0 +1,3437 @@
+{
+  "release": "0.22.0",
+  "reviewedOn": "2026-11-02",
+  "batch": "fire devices",
+  "scope": "Existing archived fire-device installation references, selected supplementary archived datasheets and dedicated Hochiki installation guides. This is a selected reviewed batch, not a claim of complete archive coverage.",
+  "imageMethod": {
+    "source": "Original retrieved PDF bytes",
+    "selection": "Visual inspection of source-page renders/contact sheets, then manual applicability/edition review",
+    "derivative": "Complete PDF page rendered with PyMuPDF and encoded lossless WebP",
+    "defaultWidth": 1600,
+    "largerPages": "1800\u20133400 pixels for small print and imposed multi-page sheets",
+    "croppedOutputs": false,
+    "generatedOrRedrawnDiagrams": false
+  },
+  "counts": {
+    "retrievedPdfs": 59,
+    "retrievalFailures": 0,
+    "pinnedSourceHashesMatched": 36,
+    "unpinnedSourcesRecorded": 23,
+    "sourceHashMismatches": 0,
+    "visuallyCheckedPdfPages": 74,
+    "selectedPdfPages": 55,
+    "selectedManuals": 48,
+    "brands": 9,
+    "devicePictureEntriesAssociated": 54,
+    "imageBytes": 11360710
+  },
+  "validation": {
+    "checks": [
+      "unique entry IDs",
+      "unique record/source-hash/PDF-page selection",
+      "all selected pages visually reviewed",
+      "source hashes",
+      "image hashes",
+      "lossless image dimensions/bytes",
+      "PDF page bounds",
+      "existing device IDs",
+      "record URL/category consistency"
+    ],
+    "errors": []
+  },
+  "associationNotes": [
+    "Generic CHQ-ARI device row is deliberately not linked to the CHQ-ARI(CLR)-only manual. That diagram remains searchable in the manual gallery.",
+    "ESP sensor instructions explicitly cover the listed sensor families and all variants. Only illustrated base types and applicable existing device rows are associated. YBN-R/3(SCI) refers to a different wiring instruction.",
+    "Protec 6000PLUS/BASE is associated with the archived common-base datasheet because the source explicitly provides its separate loop wiring drawing.",
+    "No new manual records, device rows, panel rows, pack membership, source URLs, or saved-PDF identity hashes were modified."
+  ],
+  "retrievals": [
+    {
+      "recordId": "gent-0ba4cfc5de7c",
+      "title": "gent-honeywell-S4-Sensor-Sounder-Speech-Strobe-rangedata-and-installation",
+      "url": "https://www.midlandfiresecurity.co.uk/wp-content/uploads/2019/05/gent-honeywell-S4-Sensor-Sounder-Speech-Strobe-rangedata-and-installation.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/gent-0ba4cfc5de7c.pdf",
+      "reusedLocal": true,
+      "status": "retrieved",
+      "sourceSha256": "85edede462352343e420789b5ffff962c54e48583236a9ad562db84a10d13c7c",
+      "bytes": 5513896,
+      "pages": 20,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 2,
+          "lines": [
+            "In - Out wiring to S-Quad bases"
+          ]
+        },
+        {
+          "page": 4,
+          "lines": [
+            "Make the cable connections."
+          ]
+        },
+        {
+          "page": 5,
+          "lines": [
+            "The base has terminals for external cables to allow it to be"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": "2",
+          "entryId": "gent-0ba4cfc5de7c-p2-squad-base-loop-io"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        2
+      ],
+      "edition": "4188-779 Issue 10, December 2013, Part 1",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-gent-9c36c632ebd9",
+      "title": "Gent S4-348XX manual call point installation \u2014 4188-855 Issue 7",
+      "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/manuals-and-guides/installation-guides/gent-112425/hon-ba-fire-4188-855.pdf?download=false",
+      "expectedSha256": "9c36c632ebd9d444656c0274139a4efd893e108b8104b8c7a16d532d4f4d122e",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-gent-9c36c632ebd9.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "9c36c632ebd9d444656c0274139a4efd893e108b8104b8c7a16d532d4f4d122e",
+      "bytes": 1154917,
+      "pages": 2,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "Terminals",
+            "Protective Earth connection terminal.",
+            "Terminal block"
+          ]
+        },
+        {
+          "page": 2,
+          "lines": [
+            "the terminals."
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "entryId": "device-doc-gent-9c36c632ebd9-p2-mcp-loop"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1,
+        2
+      ],
+      "edition": "4188-855 Issue 7, 11/2021",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "apollo-0f80e75d8a7b",
+      "title": "XP95/Discovery Mounting Bases Installation Guide",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0002037_0001.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/apollo-0f80e75d8a7b.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "a3b11944f1ddcf5ed62e6794c1ab12734508e7c229c900cba5f67fc3dfb27cbd",
+      "bytes": 628225,
+      "pages": 2,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "Schematic Wiring Diagram - XP95/Discovery mounting base",
+            "Schematic Wiring Diagram of XP95/Discovery Detector Circuit with a Common Remote LED.",
+            "Schematic Wiring Diagram - XP95/Discovery mounting base",
+            "Schematic Wiring Diagram of XP95/Discovery Detector Circuit with a Common Remote LED."
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 1,
+          "printedPage": null,
+          "entryId": "apollo-0f80e75d8a7b-p1-xp95-discovery-base"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1
+      ],
+      "edition": "39214-481/2008/Issue 1",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "apollo-fe50a6c32956",
+      "title": "Soteria Multi-Sensor and Tri-Sensor Detectors Installation Instructions",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0007743_0001.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/apollo-fe50a6c32956.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "e11c709064d8180d7905607a17090c70b527ee83c8a13dcbe6e7c3a546dac0bb",
+      "bytes": 135249,
+      "pages": 2,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 2,
+          "lines": [
+            "Terminal",
+            "Remote indicator positive connection",
+            "(internal connection to positive)",
+            "Remote indicator negative connection"
+          ]
+        }
+      ],
+      "selectedPages": [],
+      "visuallyCheckedPdfPages": [
+        1,
+        2
+      ],
+      "edition": "39215-408/Issue 1",
+      "reviewOutcome": "not selected",
+      "reason": "Both pages visually checked: detector/bases lists, addressing and terminal-description table, but no wiring picture. The separate XPERT 8 base wiring guide is included."
+    },
+    {
+      "recordId": "apollo-2323fa59b7f0",
+      "title": "ORBIS Detector Head Installation Guide",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0001978_0001.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/apollo-2323fa59b7f0.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "18cd4ddb890d123d36cf7d3f1be6dbec7723067491b1af9d032c2ec89ff5b225",
+      "bytes": 72410,
+      "pages": 2,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "Fit a detector* to the \ufb01 rst base. If the wiring is connected in the correct",
+            "If the detector LED fails to \ufb02 ash check the wiring and power to the"
+          ]
+        }
+      ],
+      "selectedPages": [],
+      "visuallyCheckedPdfPages": [],
+      "edition": "39214-211/Issue 2",
+      "reviewOutcome": "not selected",
+      "reason": "Text-screened head commissioning/locking instructions; no page selected. The separate Orbis TimeSaver base wiring guide is included."
+    },
+    {
+      "recordId": "apollo-33c5f6586bfd",
+      "title": "Intelligent Manual Call Point Installation Guide",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0000082_0001.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/apollo-33c5f6586bfd.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "85927dcf376349796bde07cbfb3c6f881c9c73dae0fc66bbf3f1b70d084a88e0",
+      "bytes": 1324938,
+      "pages": 2,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "Earth Continuity Terminal"
+          ]
+        },
+        {
+          "page": 2,
+          "lines": [
+            "that the system wiring is fault free. Earth faults on data loops or interface",
+            "zone wiring may cause communication errors. Many fault conditions",
+            "are the result of simple wiring errors. Check all connections to the unit."
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 1,
+          "printedPage": null,
+          "entryId": "apollo-33c5f6586bfd-p1-intelligent-mcp-loop"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1
+      ],
+      "edition": "39214-996/Issue 4",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "apollo-ff8644c57eb9",
+      "title": "XPander Manual Call Point Installation Guide",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0007894_0001.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/apollo-ff8644c57eb9.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "ff2b48fbbd626e14fedb7eb2dfa6cca366127409ebe68f6637524d09a96099dc",
+      "bytes": 619081,
+      "pages": 5,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 2,
+          "lines": [
+            "When reassembling the device, observe the hinged connection located on the devices top edge \ufb01rst, prior to closing the"
+          ]
+        },
+        {
+          "page": 4,
+          "lines": [
+            "molex connection.",
+            "Reconnect the molex connection."
+          ]
+        }
+      ],
+      "selectedPages": [],
+      "visuallyCheckedPdfPages": [],
+      "edition": "MK290 Issue 1, 01/01/2021",
+      "reviewOutcome": "not selected",
+      "reason": "Text-screened wireless call-point assembly, battery and Molex connection instructions; no field-wiring page selected. This does not prove that no other applicable document exists."
+    },
+    {
+      "recordId": "apollo-07744a0bb623",
+      "title": "Intelligent Open-Area Audio Visual Device Installation Guide",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/Intelligent-Open-Area-Audio-Visual-Device-Installation-Guide.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/apollo-07744a0bb623.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "57e1b0bb230d26fed8dbb02523abe8ad630117469f2f33b4ced4a30bd9e4c90c",
+      "bytes": 4871957,
+      "pages": 2,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "For wiring, follow instructions on base installation guide. Do not fit an",
+            "Many fault conditions are the result of simple wiring errors. Check",
+            "all connections to the unit.",
+            "Incorrect loop wiring (polarity reversed)"
+          ]
+        }
+      ],
+      "selectedPages": [],
+      "visuallyCheckedPdfPages": [],
+      "edition": "39215-320/EN/Issue 8",
+      "reviewOutcome": "not selected",
+      "reason": "The installation text directs wiring to the separate base installation guide; no page from this leaflet selected."
+    },
+    {
+      "recordId": "apollo-7e9f50267330",
+      "title": "39215-159 Intelligent Input/Output Unit Installation Guide",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0000707_0001.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/apollo-7e9f50267330.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "119d0f2e5aa91ce215c9d848ae9170a53d86fa21292f2b664e0bd5d828405cea",
+      "bytes": 720807,
+      "pages": 2,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 2,
+          "lines": [
+            "the system wiring is fault free. Earth faults on data loops or interface zone",
+            "wiring may cause communication errors. Many fault conditions are the",
+            "result of simple wiring errors. Check all connections to the unit.",
+            "should be connected to any terminal of this Input/Output Unit.",
+            "Incorrect loop wiring",
+            "Incorrect input wiring",
+            "Incorrect wiring",
+            "Incorrect loop wiring",
+            "Incorrect wiring",
+            "Short-circuit on loop wiring",
+            "Wiring reverse polarity"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "entryId": "apollo-7e9f50267330-p2-io-input-examples"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        2
+      ],
+      "edition": "39215-159/Issue 3",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "apollo-1288f40f26a2",
+      "title": "XPERT 8 Intelligent Mounting Base Installation Guide",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0001909_0001.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/apollo-1288f40f26a2.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "ccea11eb907ee063520c10e0eb49a4d87c20adbea1dead28de1e05c020f87a6f",
+      "bytes": 1424996,
+      "pages": 2,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "For wiring, please see Fig 1, 2 & 3"
+          ]
+        },
+        {
+          "page": 2,
+          "lines": [
+            "Schematic Wiring Diagram - XPERT 8 Mounting Base",
+            "Schematic Wiring Diagram - XPERT 8 Mounting Base Detector",
+            "Schematic Wiring Diagram - XPERT 8 Mounting Base Detector"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "entryId": "apollo-1288f40f26a2-p2-xpert8-base-loop"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        2
+      ],
+      "edition": "39215-005/Issue 3",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "apollo-00c3936bf0fc",
+      "title": "PP5099 REACH Wireless User Manual FW1.0.3 R1",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0007831_0001.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/apollo-00c3936bf0fc.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "4b709b2c5ddf5f1d0b0684c738ba088a24dd77babd415d29a2a5f17a9a4b4d64",
+      "bytes": 3227785,
+      "pages": 27,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 2,
+          "lines": [
+            "Wiring Considerations"
+          ]
+        },
+        {
+          "page": 3,
+          "lines": [
+            "structures where wired installation or long site downtime is not possible.",
+            "Wireless system, beyond the basic fit and wiring of the Quick Start Guides that are included with the product"
+          ]
+        },
+        {
+          "page": 4,
+          "lines": [
+            "Wiring Considerations",
+            "REACH Wireless is a hybrid wireless solution, meaning it must be connected to a wired loop to function and cannot operate",
+            "ed to the wired addressable loop in order to communicate with the wired loop\u2019s control panel and in order to power on. It",
+            "will act as the bridge between the wired and wireless network, translating communications between the wired panel and"
+          ]
+        },
+        {
+          "page": 5,
+          "lines": [
+            "REACH Wireless products interface with an Apollo XP95 wired loop, via the RW1700-030APO Loop Interface, so it is impor\u00ad",
+            "tant to identify up-front potential locations to either break into an existing wired loop or where to run a new loop to.",
+            "ble, for example in a building extension, where the existing wired loop will only run to the boundary of where the products"
+          ]
+        },
+        {
+          "page": 6,
+          "lines": [
+            "mounting and wiring knock-outs.",
+            "your wiring in to the addressable loop.",
+            "ones as the loop terminals are located at the top of the PCB"
+          ]
+        },
+        {
+          "page": 7,
+          "lines": [
+            "nals as-per the wiring diagram.",
+            "Ensure that the loop is powered-off before wiring in",
+            "When wired into the loop and after ensuring that cables are",
+            "in the correct terminals, power the loop back on."
+          ]
+        },
+        {
+          "page": 8,
+          "lines": [
+            "\u2022 Loop-Out / Loop-In port: See Installation section for wiring diagram"
+          ]
+        },
+        {
+          "page": 9,
+          "lines": [
+            "No connection from one or more devices in.",
+            "USB Connection"
+          ]
+        },
+        {
+          "page": 10,
+          "lines": [
+            "\u0007RW1700-030APO Loop Interface is physically installed, connected to the wired addressable loop and"
+          ]
+        },
+        {
+          "page": 11,
+          "lines": [
+            "Interface will use on the wired addressable loop.",
+            "Note: Although the RW1700-030APO Loop Interface is wired-in to the loop and powered-on, it will not announce itself"
+          ]
+        },
+        {
+          "page": 12,
+          "lines": [
+            "Note: The battery polarity (+/-) symbols may be on the battery terminals, printed on the PCBA, applied with a label or be"
+          ]
+        },
+        {
+          "page": 13,
+          "lines": [
+            "Note: Although the RW1700-030APO Loop Interface is wired-in to the loop and powered-on, it will not announce itself"
+          ]
+        },
+        {
+          "page": 14,
+          "lines": [
+            "Interface, via the LCD display. This cannot be done via the wired fire panel as REACH is an XP95 protocol device."
+          ]
+        },
+        {
+          "page": 27,
+          "lines": [
+            "Loop connection lost/down",
+            "Loop connection restored",
+            "Check for device wiring and EOL",
+            "Supervised module input short: wiring short",
+            "Check for device wiring and EOL",
+            "Check for device wiring and EOL",
+            "Supervised module output channel short: wiring short",
+            "Check for device wiring and EOL"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 7,
+          "printedPage": "7 of 27",
+          "entryId": "apollo-00c3936bf0fc-p7-reach-loop-terminals"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        7
+      ],
+      "edition": "PP5099/2023/Issue 1; hub firmware 1.0.3",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "apollo-ae612a27ea60",
+      "title": "Minidisc Remote Indicator Installation Guide",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0007690_0001.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/apollo-ae612a27ea60.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "df337873e8f8a88c52dc345dd873b6a024e94bd3bf0c8a2728a7ed8c596c49a4",
+      "bytes": 1052105,
+      "pages": 1,
+      "catalogueHashMatches": null,
+      "candidatePages": [],
+      "selectedPages": [
+        {
+          "pdfPage": 1,
+          "printedPage": null,
+          "entryId": "apollo-ae612a27ea60-p1-minidisc-terminals"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1
+      ],
+      "edition": "39214-101 Issue 5A",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "apollo-e4ec6992b586",
+      "title": "39215-002 Intelligent Auto-Aligning Beam Detector User Guide",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0001887_0001.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/apollo-e4ec6992b586.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "127d2c19e1ebce71f86db686440146f83086def4feffa8ed8fc2889e82d6ecc9",
+      "bytes": 1788535,
+      "pages": 24,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 4,
+          "lines": [
+            "3. Wiring Diagram"
+          ]
+        },
+        {
+          "page": 12,
+          "lines": [
+            "Relay/Controller Wiring Test",
+            "It is possible to perform a Fire Test from the System Controller, to test the wiring to the Fire"
+          ]
+        },
+        {
+          "page": 20,
+          "lines": [
+            "\u2022 Check wiring between"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 4,
+          "printedPage": "4",
+          "entryId": "apollo-e4ec6992b586-p4-beam-controller"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        4
+      ],
+      "edition": "39215-002/Issue 1",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "apollo-d632a36424b9",
+      "title": "Base Mounted IR3 Installation Guide",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/base-mounted-ir3-installation-guide.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/apollo-d632a36424b9.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "f49637fcc5f08725063f69dd916e8e9a7fa01f25a3db6e16ae0319d678b7bcfc",
+      "bytes": 495231,
+      "pages": 4,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 3,
+          "lines": [
+            "Wiring",
+            "The flame detector has five connections: \u2013 Line 1, + Line 2, +Remote, \u2013Remote and functional",
+            "earth/screen. The connections are accessed by removing the detector from its base. See Fig 4 for",
+            "connection diagram.",
+            "Fig 4 IR3 Flame Detector base connections",
+            "Terminal Descriptions"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 3,
+          "printedPage": "6 / 3",
+          "entryId": "apollo-d632a36424b9-p3-ir3-base"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        3
+      ],
+      "edition": "PP2331/Issue 9, 2014",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "apollo-f27ce8642ca3",
+      "title": "XPander Loop Interface Installation Guide",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0008051_0001.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/apollo-f27ce8642ca3.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "44fc1a96d1a83246a55e4a377be904a60c3d6f501f0c060ba0abc8081be4393a",
+      "bytes": 458639,
+      "pages": 2,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 2,
+          "lines": [
+            "7 Connection wiring"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": "2 of 2",
+          "entryId": "apollo-f27ce8642ca3-p2-xpander-loop"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        2
+      ],
+      "edition": "39214-926/Issue 3, 26/06/2024",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "apollo-9739bb7328db",
+      "title": "Orbis TimeSaver Base Installation Guide",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/Orbis-TimeSaver-Base-Installation-Guide.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/apollo-9739bb7328db.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "b6af18c178efc82a2ca3587bae2b7cd0cf064adc3a30166e4309243ca014f474",
+      "bytes": 161837,
+      "pages": 2,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "Fig 1 shows the wiring terminals.  The terminal marked \u20184\u2019 on the base",
+            "wiring continuity",
+            "TimeSaver Base Wiring Guide",
+            "Fig 1 The Orbis base terminals",
+            "Terminal 4, Screen",
+            "Terminal 4, Screen"
+          ]
+        },
+        {
+          "page": 2,
+          "lines": [
+            "and OUT+ terminals.",
+            "Fig 2 Wiring diagram",
+            "the connection of a",
+            "terminals."
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 1,
+          "printedPage": null,
+          "entryId": "apollo-9739bb7328db-p1-orbis-base-terminals"
+        },
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "entryId": "apollo-9739bb7328db-p2-orbis-base-led"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1,
+        2
+      ],
+      "edition": "39214-208/Issue 3",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-c-tec-1a72f739e6d0",
+      "title": "C-TEC CA408 CAST detector base wiring \u2014 DFU0002408 Rev 2",
+      "url": "https://c-techelp.zendesk.com/hc/en-gb/article_attachments/5979798085535",
+      "expectedSha256": "1a72f739e6d0b3655e75212dfc71fccde2c4f037fa3da4adc13217fecc624cca",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-c-tec-1a72f739e6d0.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "1a72f739e6d0b3655e75212dfc71fccde2c4f037fa3da4adc13217fecc624cca",
+      "bytes": 230354,
+      "pages": 1,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "base and use as shown in steps 1, 2 & 4. See overleaf for wiring details.",
+            "WIRING DETAILS",
+            "\u2022\t Terminals can accept 0.25 to 2.5mm2",
+            "wiring.",
+            "\u2022\t Optional connection to a BF318"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 1,
+          "printedPage": null,
+          "entryId": "device-doc-c-tec-1a72f739e6d0-p1-cast-base"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1
+      ],
+      "edition": "DFU0002408 Rev 2, 05/08/2021",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-c-tec-cb5ba501ef82",
+      "title": "C-TEC CA470 range call point instructions \u2014 DFU4700000 Rev 9",
+      "url": "https://www.eufireandsecurity.com/wp-content/uploads/2025/07/DFU4700000-CA470-CAST-Manual-Call-Point-Rev-9.pdf",
+      "expectedSha256": "cb5ba501ef827a576800999d9834b434dc72f70195918a663faae09a7c13027c",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-c-tec-cb5ba501ef82.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "cb5ba501ef827a576800999d9834b434dc72f70195918a663faae09a7c13027c",
+      "bytes": 467453,
+      "pages": 1,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "Connections",
+            "CA470 Terminal",
+            "Ensure all wiring conforms to applicable local and/or national regulations.",
+            "electrical connections. The call point has a fixed, loop connector block comprising four terminals (2"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 1,
+          "printedPage": "1\u20132 of 2",
+          "entryId": "device-doc-c-tec-cb5ba501ef82-p1-cast-call-point"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1
+      ],
+      "edition": "DFU4700000 Rev 9, 01/06/2024",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-c-tec-f18a6fbbfbc7",
+      "title": "C-TEC CA730 input/output module instructions \u2014 DFU7300000 Rev 11",
+      "url": "https://www.eufireandsecurity.com/wp-content/uploads/2025/09/DFU7300000-CA730-CAST-IO-Module-Rev-11.pdf",
+      "expectedSha256": "f18a6fbbfbc7fb6a1356c4458d959053c5bf51b953ed30553c95e0fda0679d89",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-c-tec-f18a6fbbfbc7.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "f18a6fbbfbc7fb6a1356c4458d959053c5bf51b953ed30553c95e0fda0679d89",
+      "bytes": 449509,
+      "pages": 1,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "WIRED AS A",
+            "WIRED AS A",
+            "Terminal (CONN1)",
+            "\u2022\t All wiring must conform to local and/or national regulations.",
+            "\u2022\t CA730 terminals can accept 0.25 mm2 to 2.5 mm2 wiring.",
+            "Ensure EOL capacitor is fitted across the terminals of the last",
+            "Connections",
+            "care not to damage or dislodge any components when handling or wiring to the unit."
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 1,
+          "printedPage": "1\u20132 of 2",
+          "entryId": "device-doc-c-tec-f18a6fbbfbc7-p1-cast-io-zone"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1
+      ],
+      "edition": "DFU7300000 Rev 11, 01/06/2024",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-c-tec-df7988f16dc3",
+      "title": "C-TEC CAST base sounder and VAD range installation instructions \u2014 DFU4315010 Rev 15",
+      "url": "https://www.modernalarm.hu/dok/c-tec/DFU4315010-CAST-Base-Mount-Sounder-VAD-Range-Rev-15.pdf",
+      "expectedSha256": "df7988f16dc371b405b3661cea2ae78e26bf120ad6081eeda22b5e9c4143bbea",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-c-tec-df7988f16dc3.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "df7988f16dc371b405b3661cea2ae78e26bf120ad6081eeda22b5e9c4143bbea",
+      "bytes": 744746,
+      "pages": 2,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "The base device has screw terminals for the loop cable (see `CAST Loop Connections\u2019 section) and"
+          ]
+        },
+        {
+          "page": 2,
+          "lines": [
+            "Figure 2 - Connection to CAST Detector Base (Typical)",
+            "CAST Loop Connections",
+            "figure 1. Note the loop connections are polarity sensitive.",
+            "\u2022\t All wiring must conform to local or national regulations.",
+            "\u2022\t Slot head terminals can accept 0.25 mm2 to 2.5 mm2 wiring.",
+            "Figure 1 - Loop Connections (Typical)",
+            "Connection to an Optional CAST Detector"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": "2\u20133 of 4",
+          "entryId": "device-doc-c-tec-df7988f16dc3-p2-cast-base-sounder"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        2
+      ],
+      "edition": "DFU4315010 Rev 15, 01/06/22",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-aico-6c128c0b705a",
+      "title": "Ei3014 / Ei3016 / Ei3024 instruction manual \u2014 B20224 Rev4",
+      "url": "https://www.aico.co.uk/wp-content/uploads/2025/02/B20224-R4-Ei3014\uf0223016\uf0223024-UK-SERIES-UC-ENG.pdf",
+      "expectedSha256": "6c128c0b705ac601a55a5902c3f788932d72df8e92622a633fb96607d6bcfb66",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-aico-6c128c0b705a.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "6c128c0b705ac601a55a5902c3f788932d72df8e92622a633fb96607d6bcfb66",
+      "bytes": 2566567,
+      "pages": 52,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 3,
+          "lines": [
+            "2.6\t Mounting and wiring",
+            "2.7 \t Interconnecting Alarms"
+          ]
+        },
+        {
+          "page": 6,
+          "lines": [
+            "fire detection system, i.e. interconnected with Aico/Ei Electronics mains powered Multi-Sensor Fire or",
+            "Up to 12 Alarms can be interconnected so that if one senses fire, all Alarms sound. It can be a",
+            "hardwired interconnection, a wireless interconnection or a mixture of both (for the wireless option"
+          ]
+        },
+        {
+          "page": 9,
+          "lines": [
+            "Checks sensors, electronics, interconnection and sounder."
+          ]
+        },
+        {
+          "page": 10,
+          "lines": [
+            "Interconnection",
+            "Up to 12 units can be interconnected via a hardwired or wireless",
+            "terminal block and wiring cover, includes screws and wall plugs"
+          ]
+        },
+        {
+          "page": 12,
+          "lines": [
+            "WARNING: Mains operated Alarms must be installed and interconnected by a qualified electrician",
+            "The Alarm is designed to be permanently mounted, using its own built-in terminal block to connect",
+            "ATTENTION: The Alarm must not be connected when the house wiring insulation is being checked"
+          ]
+        },
+        {
+          "page": 15,
+          "lines": [
+            "Interconnect all Alarms",
+            "Interconnect all Alarms"
+          ]
+        },
+        {
+          "page": 16,
+          "lines": [
+            "interconnected to ensure the early warning will be heard."
+          ]
+        },
+        {
+          "page": 17,
+          "lines": [
+            "(interconnected) is installed in the master bedroom. This will help ensure that a responsible person"
+          ]
+        },
+        {
+          "page": 20,
+          "lines": [
+            "\u2022 \tLocate the Alarm at least 1m from dimmer controlled lights and wiring as some dimmers can cause",
+            "\u2022 \tLocate the Alarm at least 1.5m and route wiring at least 1m away from fluorescent light fittings"
+          ]
+        },
+        {
+          "page": 21,
+          "lines": [
+            "2.6 Mounting and wiring",
+            "wiring cover",
+            "3. Lift off the wiring cover as shown in Figure 4.",
+            "IC: Interconnect - see figures 5 and 6 and",
+            "WARNING: Wiring must be installed in"
+          ]
+        },
+        {
+          "page": 22,
+          "lines": [
+            "WARNING: Mixing (or poorly terminating) the Live and Neutral connections when interconnecting",
+            "premises for Live, Neutral and Interconnect wires.",
+            "\u2022 check that the Interconnect wire is NOT connected to Live, Neutral or Earth. Do not use an Earth",
+            "wire for the Interconnect line.",
+            "Note: The Alarm does not need to be earthed. However the terminal marked        is provided for the",
+            "To interconnect Alarms connect all the IC terminals together as shown in Figure 9 (see Interconnecting"
+          ]
+        },
+        {
+          "page": 23,
+          "lines": [
+            "leaving the top intact and replace the section. (If you are not using surface wiring, the removable",
+            "There are two other positions which are also suitable for the surface wiring to enter (and exit) the",
+            "5. Carefully align the mounting plate and screw into place. If using RF interconnection, ensure that all",
+            "mounting plates are facing the same orientation as shown in Figure 10 (see Interconnecting Alarms"
+          ]
+        },
+        {
+          "page": 24,
+          "lines": [
+            "section). Connect the wires to the terminal block. With recessed wiring, ensure the rear gasket",
+            "6. Replace the wiring cover and carefully line up the Alarm on the mounting plate and slide on (see",
+            "any interconnected Alarms also sound within this period. The test/hush button sounds the local",
+            "alarm and on release this alarm stops immediately, and all the interconnected Alarms can then be"
+          ]
+        },
+        {
+          "page": 25,
+          "lines": [
+            "2.7 Interconnecting Alarms",
+            "With interconnected Alarms, when one device detects fire, all will sound. All Alarms will sound but",
+            "Heat Alarms must always be interconnected to Smoke or Multi-Sensor Fire Alarms to ensure early",
+            "Any Ei3000 series Alarm can be hardwire interconnected with other Aico/Ei Electronics mains Alarms",
+            "Note: A maximum of 12 Fire / Smoke / Heat / CO Alarms and accessory devices can be interconnected",
+            "WARNING: Do not hardwire interconnect mains powered Alarms with low voltage or battery powered"
+          ]
+        },
+        {
+          "page": 26,
+          "lines": [
+            "Make electrical connections as shown in Figure",
+            "9. Wiring must be installed in compliance with",
+            "Interconnect : Black",
+            "The interconnect wire (minimum 0.75mm2 cable) must be treated as if it was Live. It should be",
+            "Alarms should be interconnected only within the confines of a single family living unit. If they are"
+          ]
+        },
+        {
+          "page": 27,
+          "lines": [
+            "The Alarm can also be RF interconnected to other RF Alarms and devices by installing an Ei3000MRF",
+            "SmartLINK Module. See the User manual for the Ei3000MRF for further details on RF interconnection.",
+            "It is also equipped to work in a hybrid system (combination of hard-wired and RF interconnected"
+          ]
+        },
+        {
+          "page": 31,
+          "lines": [
+            "(iv) \tInterconnected Alarms only - Test the first unit by pressing the test/hush button for 10 seconds.",
+            "hush button, the local alarm will stop sounding immediately and the interconnected Alarms will be",
+            "that the interconnection is OK. Check all the other Alarms in the same way."
+          ]
+        },
+        {
+          "page": 37,
+          "lines": [
+            "via interconnect"
+          ]
+        },
+        {
+          "page": 40,
+          "lines": [
+            "is depleted. The battery is not replaceable. Check fuses, circuit breakers and wiring to determine the"
+          ]
+        },
+        {
+          "page": 42,
+          "lines": [
+            "for 10 minutes.  This will also silence any interconnected Alarms for the"
+          ]
+        },
+        {
+          "page": 43,
+          "lines": [
+            "Interconnected Alarms do",
+            "is transmitted to all the interconnected Alarms.",
+            "\u2022\tIf this is not the case and you have a hardwired interconnection, we",
+            "\u2022\tIf the Alarm is fitted with an RF module for wireless interconnection,"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 26,
+          "printedPage": "26",
+          "entryId": "device-doc-aico-6c128c0b705a-p26-ei3000-interconnect"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        22,
+        26
+      ],
+      "edition": "B20224 Rev4, 2025",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-aico-7dbcfdf98ccb",
+      "title": "Ei3030 fire and carbon monoxide alarm instructions \u2014 B20665 Rev4",
+      "url": "https://www.aico.co.uk/wp-content/uploads/2025/02/B20665-R4-Ei3030-UK-SERIES-UC-ENG.pdf",
+      "expectedSha256": "7dbcfdf98ccb6bac7fa482d85f19a6c5450e55dd323984e8b5cb049861cae124",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-aico-7dbcfdf98ccb.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "7dbcfdf98ccb6bac7fa482d85f19a6c5450e55dd323984e8b5cb049861cae124",
+      "bytes": 2503823,
+      "pages": 64,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 2,
+          "lines": [
+            "that it does NOT require a safety connection",
+            "This identifies protective earthing terminals."
+          ]
+        },
+        {
+          "page": 3,
+          "lines": [
+            "2.5\t Mounting and wiring",
+            "2.6 \t Interconnecting Alarms"
+          ]
+        },
+        {
+          "page": 6,
+          "lines": [
+            "Up to 12 Alarms can be interconnected so that if one senses fire and/or CO, all Alarms sound. It can be",
+            "a hardwired interconnection, a wireless interconnection or a mixture of both (for the wireless option"
+          ]
+        },
+        {
+          "page": 8,
+          "lines": [
+            "Checks sensors, electronics, display, interconnection and sounder."
+          ]
+        },
+        {
+          "page": 9,
+          "lines": [
+            "Interconnection",
+            "Up to 12 units can be interconnected via a hardwired or wireless system",
+            "Supplied with Easi-fit anti-tamper mounting plate with integral terminal",
+            "block and wiring cover, includes screws and wall plugs"
+          ]
+        },
+        {
+          "page": 11,
+          "lines": [
+            "WARNING: Mains operated Alarms must be installed and interconnected by a qualified electrician",
+            "The Alarm is designed to be permanently mounted, using its own built-in terminal block to connect it",
+            "ATTENTION: The Alarm must not be connected when the house wiring insulation is being checked"
+          ]
+        },
+        {
+          "page": 15,
+          "lines": [
+            "Interconnect all Alarms",
+            "Interconnect all Alarms"
+          ]
+        },
+        {
+          "page": 18,
+          "lines": [
+            "\u2022\t\tLocate the Alarm at least 1.5m and route wiring at least 1m away from fluorescent light fittings",
+            "\u2022\tLocate the Alarm at least 1m from dimmer controlled lights and wiring as some dimmers can cause"
+          ]
+        },
+        {
+          "page": 19,
+          "lines": [
+            "2.5 Mounting and wiring",
+            "wiring cover",
+            "3. Lift off the wiring cover as shown in Figure 3.",
+            "IC: Interconnect - see figures 5 and 6 and",
+            "WARNING: Wiring must be installed in"
+          ]
+        },
+        {
+          "page": 20,
+          "lines": [
+            "WARNING: Mixing (or poorly terminating) the Live and Neutral connections when interconnecting",
+            "for Live, Neutral and Interconnect wires.",
+            "\u2022 check that the Interconnect wire is NOT connected to Live, Neutral or Earth. Do not use an Earth",
+            "wire for the Interconnect line.",
+            "Note: The Alarm does not need to be earthed. However the terminal marked        is provided for the"
+          ]
+        },
+        {
+          "page": 21,
+          "lines": [
+            "To interconnect Alarms connect all the IC terminals together as shown in Figure 8 (see \u201cInterconnecting",
+            "leaving the top intact and replace the section. (If you are not using surface wiring, the removable",
+            "There are two other positions which are also suitable for the surface wiring to enter (and exit) the",
+            "5.\tCarefully align the mounting plate and screw into place. Connect the wires to the terminal block.",
+            "With recessed wiring, ensure the rear gasket seals around the edge of the hole in the ceiling or wall.",
+            "6.\tReplace the wiring cover and carefully line up the Alarm on the mounting plate and slide on (see",
+            "interconnected Alarms also sound within this period. The test/hush button sounds the local alarm and"
+          ]
+        },
+        {
+          "page": 22,
+          "lines": [
+            "on release this alarm stops immediately, and all the interconnected Alarms can then be heard in the"
+          ]
+        },
+        {
+          "page": 23,
+          "lines": [
+            "2.6 Interconnecting Alarms",
+            "With interconnected Alarms, when one device detects Fire or CO, all will sound. All Alarms will sound",
+            "Any Ei3000 series Alarms can be hardwire interconnected with other Aico mains Alarms such as the",
+            "Note: A maximum of 12 devices can be interconnected in an Aico Alarm system.",
+            "WARNING: Do not hardwire interconnect mains powered Alarms with low voltage or battery"
+          ]
+        },
+        {
+          "page": 24,
+          "lines": [
+            "Make electrical connections as shown in Figure 8.",
+            "Wiring must be installed in compliance with",
+            "Interconnect : Black",
+            "The interconnect wire (minimum 0.75mm2",
+            "Alarms should be interconnected only within the confines of a single family living unit. If they are",
+            "The Alarm can also be RF interconnected to other RF Alarms and devices by installing an Ei3000MRF",
+            "SmartLINK Module. See the User manual for the Ei3000MRF for further details on RF interconnection.",
+            "It is also equipped to work in a hybrid system (combination of hard-wired and RF interconnected"
+          ]
+        },
+        {
+          "page": 31,
+          "lines": [
+            "The Alarm will also trigger all interconnected Alarms to sound, so that the occupier is alerted even if"
+          ]
+        },
+        {
+          "page": 32,
+          "lines": [
+            "interconnected Alarm"
+          ]
+        },
+        {
+          "page": 33,
+          "lines": [
+            "Note: In an interconnected system, an Alarm triggered by another Alarm will sound but will not flash"
+          ]
+        },
+        {
+          "page": 34,
+          "lines": [
+            "Note: To stop all Alarms on an interconnected system, press the test/hush button on the Alarm"
+          ]
+        },
+        {
+          "page": 35,
+          "lines": [
+            "Alternatively, in an interconnected system fitted with a Control switch, you can identify the source"
+          ]
+        },
+        {
+          "page": 38,
+          "lines": [
+            "(iv)\t Interconnected Alarms only - Test the first unit by pressing the test/hush button for 10 seconds.",
+            "test/hush button, the local Alarm will stop sounding immediately and the interconnected Alarms",
+            "verification that the interconnection is OK. Check all the other Alarms in the same way."
+          ]
+        },
+        {
+          "page": 46,
+          "lines": [
+            "via Interconnect"
+          ]
+        },
+        {
+          "page": 49,
+          "lines": [
+            "depleted. The battery is not replaceable. Check fuses, circuit breakers and wiring to determine the cause"
+          ]
+        },
+        {
+          "page": 51,
+          "lines": [
+            "the Alarm and any interconnected devices for 10 minutes. When"
+          ]
+        },
+        {
+          "page": 53,
+          "lines": [
+            "Interconnected Alarms do",
+            "\u2022\tIf this is not the case and you have a hardwired interconnection, we",
+            "\u2022\tIf the Alarm is fitted with an RF module for wireless interconnection,"
+          ]
+        },
+        {
+          "page": 55,
+          "lines": [
+            "door or if it is too far away. Interconnecting Alarms greatly improves the probability that they will"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 20,
+          "printedPage": "20",
+          "entryId": "device-doc-aico-7dbcfdf98ccb-p20-ei3030-base-terminals"
+        },
+        {
+          "pdfPage": 24,
+          "printedPage": "24",
+          "entryId": "device-doc-aico-7dbcfdf98ccb-p24-ei3030-interconnect"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        20,
+        24
+      ],
+      "edition": "B20665 Rev4, 2025",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "aico-6d83ddd276c6",
+      "title": "Ei600 series smoke / heat / multi-sensor alarms - instruction manual",
+      "url": "https://www.aico.co.uk/wp-content/uploads/2022/10/b20267-r3-ei600-series-u-c-eng-master_uk.pdf",
+      "expectedSha256": "c11d74204ac4454d7d297f4c71f776e11493b1cda4746dbde651794779ed5143",
+      "localFile": "/tmp/findr-wiring-fire-devices/aico-6d83ddd276c6.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "c11d74204ac4454d7d297f4c71f776e11493b1cda4746dbde651794779ed5143",
+      "bytes": 1807833,
+      "pages": 48,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 2,
+          "lines": [
+            "2.7 \t Interconnecting Alarms"
+          ]
+        },
+        {
+          "page": 7,
+          "lines": [
+            "in corridors and in closed rooms to give warning of fire without the need of any electrical wiring.",
+            "device if interconnected to one or more smoke / Multi-Sensor Fire Alarm(s). It is ideal for kitchens,",
+            "Up to 12 Alarms can be wirelessly interconnected by adding an Ei600MRF RadioLINK+ module."
+          ]
+        },
+        {
+          "page": 8,
+          "lines": [
+            "Interconnect"
+          ]
+        },
+        {
+          "page": 10,
+          "lines": [
+            "Checks sensors, electronics, interconnection, battery and sounder.",
+            "Interconnection",
+            "Up to 12 units can be RF interconnected (an Ei600MRF RadioLINK+"
+          ]
+        },
+        {
+          "page": 14,
+          "lines": [
+            "but most homes will require two or more (preferably interconnected) to ensure that a reliable early",
+            "each level, preferably interconnected.  Figure 1 illustrates where Alarms should be located in a typical"
+          ]
+        },
+        {
+          "page": 15,
+          "lines": [
+            "systems, the chances are it would not wake you.  Interconnecting the alarms wirelessly using an RF",
+            "All Heat Alarms must be interconnected to the Smoke / Multi-Sensor Fire Alarms to ensure that the early"
+          ]
+        },
+        {
+          "page": 16,
+          "lines": [
+            "or Multi-Sensor Fire Alarms on the escape routes. All the Alarms should be interconnected to"
+          ]
+        },
+        {
+          "page": 21,
+          "lines": [
+            "4. \tTaking care to avoid any electrical wiring in the ceiling,",
+            "5. If using an RF interconnection, ensure all Alarms are"
+          ]
+        },
+        {
+          "page": 22,
+          "lines": [
+            "Check that any interconnected Alarms also sound within this period."
+          ]
+        },
+        {
+          "page": 25,
+          "lines": [
+            "2.7 Interconnecting Alarms",
+            "With interconnected Alarms, when one device detects fire, all will sound. All Alarms will sound but",
+            "The Alarms can be RF interconnected to other Aico/Ei Electronics RF Alarms and devices by installing",
+            "interconnection.",
+            "Heat Alarms must always be interconnected to Smoke or Multi-Sensor Fire Alarms to ensure early",
+            "A maximum of 12 devices can be interconnected in an Aico/Ei Electronics Alarm system. If you wish",
+            "Alarms should be interconnected only within the confines of a single family living unit. If they are"
+          ]
+        },
+        {
+          "page": 27,
+          "lines": [
+            "(ii) \tIf the Alarms are interconnected using RF modules, hold down the Test button until the blue LED",
+            "(iii) Release the Test button. The Alarm and all interconnected Alarms should stop sounding and the"
+          ]
+        },
+        {
+          "page": 34,
+          "lines": [
+            "via interconnect"
+          ]
+        },
+        {
+          "page": 37,
+          "lines": [
+            "Test button briefly to silence the Alarm for 10 minutes. This will also silence any interconnected"
+          ]
+        },
+        {
+          "page": 38,
+          "lines": [
+            "Interconnected Alarms do not all sound",
+            "interconnected Alarms."
+          ]
+        },
+        {
+          "page": 45,
+          "lines": [
+            "alarms, accessories, bases, or system components that are not designed for compatible connection,"
+          ]
+        }
+      ],
+      "selectedPages": [],
+      "visuallyCheckedPdfPages": [],
+      "edition": "B20267 Rev3",
+      "reviewOutcome": "not selected",
+      "reason": "Battery-operated alarm instructions and wireless interconnection; no wired circuit page selected."
+    },
+    {
+      "recordId": "device-doc-aico-8f8b5876b06d",
+      "title": "Ei140e series smoke and heat alarm instructions \u2014 B20412 Rev2",
+      "url": "https://www.aico.co.uk/wp-content/uploads/2021/06/Ei140e-Series.pdf",
+      "expectedSha256": "8f8b5876b06de0e1fd9a920a4da3823b738508dad2334c924d2ebdf3d089e852",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-aico-8f8b5876b06d.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "8f8b5876b06de0e1fd9a920a4da3823b738508dad2334c924d2ebdf3d089e852",
+      "bytes": 2913696,
+      "pages": 30,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 2,
+          "lines": [
+            "WIRE TO TERMINALS ON THE MOUNTING PLATE AND FIX",
+            "ALARM AND ANY OTHER INTERCONNECTED UNITS SHOULD SOUND",
+            "Up to 12 Smoke/Heat Alarms can be interconnected so",
+            "Interconnection can be achieved by hardwire or through"
+          ]
+        },
+        {
+          "page": 4,
+          "lines": [
+            "interconnection (when applicable)",
+            "Interconnection",
+            "interconnected via a hardwired or",
+            "terminal block and wiring cover,"
+          ]
+        },
+        {
+          "page": 5,
+          "lines": [
+            "and interconnected by a qualified electrician in",
+            "using its own built-in terminal block to connect it to the",
+            "the house wiring insulation is being checked with high"
+          ]
+        },
+        {
+          "page": 7,
+          "lines": [
+            "Interconnect all Alarms",
+            "Interconnect all Alarms"
+          ]
+        },
+        {
+          "page": 8,
+          "lines": [
+            "All the Alarms should be interconnected to ensure"
+          ]
+        },
+        {
+          "page": 9,
+          "lines": [
+            "(interconnected) is installed in the master bedroom. This"
+          ]
+        },
+        {
+          "page": 11,
+          "lines": [
+            "lights and wiring as some dimmers can cause",
+            "\u2022 \tLocate the Alarm at least 1.5m and route wiring"
+          ]
+        },
+        {
+          "page": 12,
+          "lines": [
+            "2.6 Mounting and Wiring",
+            "electrical wiring in the ceiling/wall, drill holes using",
+            "3. \tLift off the wiring cover using a flat head screwdriver",
+            "The house wiring must be connected to the terminal block",
+            "WARNING: Wiring must be installed in compliance with",
+            "Neutral connections when interconnecting Alarms may",
+            "and Interconnect wires.",
+            "\u2022 check that the Interconnect wire is NOT connected to",
+            "Interconnect line.",
+            "WIRING COVER"
+          ]
+        },
+        {
+          "page": 13,
+          "lines": [
+            "the terminal marked       is provided for the convenience",
+            "To interconnect Alarms connect all the IC terminals",
+            "Interconnecting Alarms).",
+            "wiring, the removable section must be left in place for",
+            "the surface wiring to enter (and exit) the alarm, one next",
+            "place. Connect the wires to the terminal block.",
+            "With recessed wiring, ensure the rear gasket seals"
+          ]
+        },
+        {
+          "page": 14,
+          "lines": [
+            "6.\t Replace the wiring cover.",
+            "the interconnected Alarms will stop sounding a few",
+            "2.7 Interconnecting Alarms",
+            "With interconnected Alarms, when one device detects",
+            "Heat Alarms must always be interconnected to",
+            "a fire safety system i.e. when interconnected to one or",
+            "can be interconnected in an Aico/Ei Electronics Alarm",
+            "WARNING: Do not hardwire interconnect mains"
+          ]
+        },
+        {
+          "page": 15,
+          "lines": [
+            "Make electrical connections as shown in Figure 7.",
+            "Interconnect",
+            "The interconnect wire (minimum 0.75mm",
+            "These Smoke/Heat Alarms should be interconnected",
+            "The Alarm can also be RF interconnected to other RF"
+          ]
+        },
+        {
+          "page": 17,
+          "lines": [
+            "and wiring etc.)"
+          ]
+        },
+        {
+          "page": 18,
+          "lines": [
+            "(vi) Interconnected Alarms only - Test the first unit by",
+            "3 seconds later (if testing using RF interconnection",
+            "audible verification that the interconnection is OK."
+          ]
+        },
+        {
+          "page": 22,
+          "lines": [
+            "via interconnect"
+          ]
+        },
+        {
+          "page": 23,
+          "lines": [
+            "minutes. This will also silence any interconnected",
+            "3.\t INTERCONNECTED ALARMS DO NOT ALL",
+            "interconnected Alarms.",
+            "(2)\tIf this is not the case and you have a hardwired",
+            "interconnection, we recommend you consult a",
+            "wireless interconnection, check that all RF devices"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 15,
+          "printedPage": "15",
+          "entryId": "device-doc-aico-8f8b5876b06d-p15-ei140e-interconnect"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        12,
+        15
+      ],
+      "edition": "B20412 Rev2, 2023",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-aico-22884205c611",
+      "title": "Ei3000MRF SmartLINK module instructions \u2014 B19047 Rev6",
+      "url": "https://www.aico.co.uk/wp-content/uploads/2024/10/B19047-R6-Ei3000MRF-UC-ENG.pdf",
+      "expectedSha256": "22884205c611820750da890bc787c37288421f260faf2e12fc3a1394d3014d37",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-aico-22884205c611.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "22884205c611820750da890bc787c37288421f260faf2e12fc3a1394d3014d37",
+      "bytes": 2109510,
+      "pages": 24,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 3,
+          "lines": [
+            "CAUTION: The existing hard-wired interconnection may need to be",
+            "instruction manual). If a hard-wired connection and an RF connection exist"
+          ]
+        },
+        {
+          "page": 11,
+          "lines": [
+            "by a few millimeters to release the connection pins (Fig. 5a), repeat this"
+          ]
+        },
+        {
+          "page": 13,
+          "lines": [
+            "Mixed Hardwired Interconnect and Wireless Interconnect (Hybrid)",
+            "If the interconnected system includes a mix of CO and Fire detection,",
+            "it is important to know that the hardwire interconnect line does not",
+            "communicate the alarm type (Fire or CO), whereas the RF interconnection",
+            "does. In this case, RF only interconnect is recommended.",
+            "If a hybrid system is used, the hardwired interconnected sections should",
+            "If an Ei3028 Heat and CO Alarm is required on a hardwired section, it"
+          ]
+        },
+        {
+          "page": 15,
+          "lines": [
+            "If an interconnected RF system includes a mix of Carbon Monoxide/Dual"
+          ]
+        },
+        {
+          "page": 16,
+          "lines": [
+            "If, when checking the SmartLINK interconnection, some of the Alarms do"
+          ]
+        },
+        {
+          "page": 17,
+          "lines": [
+            "surfaces or wiring).",
+            "final positions (see above). The SmartLINK interconnection should then"
+          ]
+        },
+        {
+          "page": 22,
+          "lines": [
+            "Interconnect *:"
+          ]
+        }
+      ],
+      "selectedPages": [],
+      "visuallyCheckedPdfPages": [],
+      "edition": "B19047 Rev6",
+      "reviewOutcome": "not selected",
+      "reason": "RF-module installation and hybrid-system overview were text-screened; no terminal wiring page selected. Mains alarm interconnect diagrams are taken from the alarm manuals."
+    },
+    {
+      "recordId": "aico-efec1bd3d80d",
+      "title": "Ei450 Instructions",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/Ei450-Instructions.pdf",
+      "expectedSha256": "b855177c9566182e2078b358aad3f2ca96639e1821ea3c4ab2bdcdcdf807c989",
+      "localFile": "/tmp/findr-wiring-fire-devices/aico-efec1bd3d80d.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "b855177c9566182e2078b358aad3f2ca96639e1821ea3c4ab2bdcdcdf807c989",
+      "bytes": 1992627,
+      "pages": 24,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 15,
+          "lines": [
+            "accessories, bases, or system components that are not designed for compatible connection, modified by a third"
+          ]
+        },
+        {
+          "page": 16,
+          "lines": [
+            "If, when checking the RF interconnection, some of the Alarms do not respond to the Alarm Controller",
+            "Alarms (e.g. move them away from metal surfaces or wiring) as this can significantly improve signal",
+            "instructions). Then House Code all Alarms again in their final positions. The RF interconnection should"
+          ]
+        },
+        {
+          "page": 17,
+          "lines": [
+            "Interconnection:"
+          ]
+        }
+      ],
+      "selectedPages": [],
+      "visuallyCheckedPdfPages": [],
+      "edition": "B17493 Rev9",
+      "reviewOutcome": "not selected",
+      "reason": "Wireless controller instructions; no field-wiring page selected."
+    },
+    {
+      "recordId": "aico-3940aa649cda",
+      "title": "MCP401RC Instructions",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/MCP401RC-Instructions-Rev2.pdf",
+      "expectedSha256": "9bc26ac591276431fc756d47895d07e54246fced1e0ceb42c91c26e435ea679e",
+      "localFile": "/tmp/findr-wiring-fire-devices/aico-3940aa649cda.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "9bc26ac591276431fc756d47895d07e54246fced1e0ceb42c91c26e435ea679e",
+      "bytes": 161917,
+      "pages": 2,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "Route the wiring (Live, Neutral, Interconnect/Control and Earth)",
+            "Installation & Wiring",
+            "interconnect line and all interconnected alarms will sound. The MCP401RC switch element can be reset using",
+            "A maximum of 4 MCP401RC units can be installed on one system in addition to 12 interconnect alarms."
+          ]
+        },
+        {
+          "page": 2,
+          "lines": [
+            "Connect the wiring as shown in Figures 2 & 3 previously. Note: the Earth connection is for convenient",
+            "termination of the earth conductor and is not required for the safety of the unit. The wiring should be"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 1,
+          "printedPage": "1",
+          "entryId": "aico-3940aa649cda-p1-mcp401rc-interconnect"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1
+      ],
+      "edition": "B16073 Rev 2, 14/10/2008",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "protec-5b9f06e51aac",
+      "title": "6000PLUS/BASE Tech Sheet",
+      "url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000PLUS-BASE-Tech-sheet-Issue-0.pdf",
+      "expectedSha256": "903d63c4d204ed040dcd6efba72352adb2db60e70cccfa827215d2a2fc40d94b",
+      "localFile": "/tmp/findr-wiring-fire-devices/protec-5b9f06e51aac.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "903d63c4d204ed040dcd6efba72352adb2db60e70cccfa827215d2a2fc40d94b",
+      "bytes": 121557,
+      "pages": 1,
+      "catalogueHashMatches": true,
+      "candidatePages": [],
+      "selectedPages": [],
+      "visuallyCheckedPdfPages": [
+        1
+      ],
+      "edition": "TEC0007, 03/25",
+      "reviewOutcome": "not selected",
+      "reason": "One-page tech sheet visually checked: product photo and specification only. The separately archived MED2042 base wiring sheet is included."
+    },
+    {
+      "recordId": "protec-9e5e03fd774a",
+      "title": "6000/2IO Tech Sheet",
+      "url": "https://www.protec.co.uk/wp-content/uploads/2025/10/6000-2IO-Tech-sheet-Issue-0.pdf",
+      "expectedSha256": "11643d7d7586d32e735477876ed7e7114e2ef177c6dc89fd898097b8cab4012c",
+      "localFile": "/tmp/findr-wiring-fire-devices/protec-9e5e03fd774a.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "11643d7d7586d32e735477876ed7e7114e2ef177c6dc89fd898097b8cab4012c",
+      "bytes": 127116,
+      "pages": 1,
+      "catalogueHashMatches": true,
+      "candidatePages": [],
+      "selectedPages": [],
+      "visuallyCheckedPdfPages": [
+        1
+      ],
+      "edition": "TEC0053/0, 08/25",
+      "reviewOutcome": "not selected",
+      "reason": "One-page tech sheet visually checked: product photo and specification only; it refers to DEL2118 for technical documentation, which is not present in this batch."
+    },
+    {
+      "recordId": "protec-3d5612b83a2a",
+      "title": "6000/LCM Datasheet",
+      "url": "https://www.protec.co.uk/wp-content/uploads/2021/04/6000-LCM.pdf",
+      "expectedSha256": "ee5dd0b9bd1a88f15c18342fe4eb130b9ee05fad6c76b226c58f5ea1456c2234",
+      "localFile": "/tmp/findr-wiring-fire-devices/protec-3d5612b83a2a.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "ee5dd0b9bd1a88f15c18342fe4eb130b9ee05fad6c76b226c58f5ea1456c2234",
+      "bytes": 548984,
+      "pages": 2,
+      "catalogueHashMatches": true,
+      "candidatePages": [],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "entryId": "protec-3d5612b83a2a-p2-lcm-loop-zone"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        2
+      ],
+      "edition": "MED1442 Issue 5, \u00a9 2010\u20132021",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "protec-ce38ec46cb37",
+      "title": "6000/DCM Datasheet",
+      "url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-DCM-Smoke-Damper-Module.pdf",
+      "expectedSha256": "1e9752d8dc1b3d2adaf23b78f881835a4528439ba192c13f5a9168b2800c4e22",
+      "localFile": "/tmp/findr-wiring-fire-devices/protec-ce38ec46cb37.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "1e9752d8dc1b3d2adaf23b78f881835a4528439ba192c13f5a9168b2800c4e22",
+      "bytes": 558190,
+      "pages": 2,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "\u2022\t External Connections to Monitor and"
+          ]
+        },
+        {
+          "page": 2,
+          "lines": [
+            "Actuator Connections",
+            "Earth Connection (If Available)",
+            "Connections for a 24Vdc",
+            "External Connections for 3rd Party",
+            "External Connections for 3rd Party",
+            "Connection Diagram"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "entryId": "protec-ce38ec46cb37-p2-damper-module"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        2
+      ],
+      "edition": "MED2304 Issue 2, \u00a9 2019\u20132023",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "protec-19c2f3a94324",
+      "title": "6000/LPZA Datasheet",
+      "url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-LPZA-Issue-2.pdf",
+      "expectedSha256": "266a376b4a49340e5954621f100fc8fbb2f542b74a987d045539c17f1133ca75",
+      "localFile": "/tmp/findr-wiring-fire-devices/protec-19c2f3a94324.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "266a376b4a49340e5954621f100fc8fbb2f542b74a987d045539c17f1133ca75",
+      "bytes": 1640148,
+      "pages": 2,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "\u2022 Simple Expansion using Existing Wiring"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "entryId": "protec-19c2f3a94324-p2-lpza-loop-zone"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        2
+      ],
+      "edition": "MED1995 Issue 2, \u00a9 2022",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "fike-44f428530108",
+      "title": "TF MP ASD Installation Instructions",
+      "url": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/TwinflexPro/Conventional%20Control%20Panels/Manuals/TF%20MP%20ASD%20204-0001%20204-0003%20204-0012%20InstallInstructs%2026-0947-13.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/fike-44f428530108.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "c17442657a48c50feee3efe4a0e03290d03cfc5b3b3b984882935de5ecb4f79a",
+      "bytes": 522583,
+      "pages": 4,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "All wiring must be installed in compliance with the recommendations laid out by any local authority as well as any special",
+            "screened, fire resistant type (e.g. FP200 equivalent), and is to be wired in the form of a screened 2-core radial circuit (with no",
+            "length for termination. You may then terminate your cables directly into the terminal block according to the terminal labels. It",
+            "Terminal"
+          ]
+        },
+        {
+          "page": 2,
+          "lines": [
+            "(fig.1, page 1) shows how to make the zone positive, zone negative and screen connections between the control panel and",
+            "Twinflex Multipoint ASD detectors. Refer to the instructions of other Twinflex devices for their equivalent wiring/terminal",
+            "Please note that the SCRN terminal on the detector bases should only be connected to the zone cable screen and NOT to",
+            "the building earth. The cable screen is connected to earth at the panel end only, via the zone \u201cSCRN\u201d terminal (or EARTH",
+            "terminal on the Twinflex V3 2/4/8 Zone panels). It is important to maintain the screen continuity in order to protect against data"
+          ]
+        },
+        {
+          "page": 3,
+          "lines": [
+            "The remote LED terminals (\u2018Zone + & Remote LED -\u2019) may be used to connect"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 1,
+          "printedPage": null,
+          "entryId": "fike-44f428530108-p1-twinflex-multipoint"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1,
+        2
+      ],
+      "edition": "Document 26-0947-13",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "fike-77a5c9cbeaa2",
+      "title": "Sita MP ASD Installation Instructions",
+      "url": "https://my.fike.com/_fike_new_docs/8a702f3e-4883-42bf-8eda-0388fdd005c4.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/fike-77a5c9cbeaa2.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "e739faedc4b92569c9ff79ee2f090b6e1edb1e792cd1c93567bced754e4519b9",
+      "bytes": 675536,
+      "pages": 4,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "*For Remote LED use Terminals",
+            "All wiring must be installed in compliance with the recommendations laid out by any local authority as well as any special",
+            "It is to be wired in the form of a scrnd 2-core loop returning to the control panel. The use of spurs on this system is not",
+            "terminating devices to ensure all cables are correctly sleeved and connections are secure. Improper connections will prevent",
+            "The Loop +ve (positive) IN and the Loop +ve (positive) OUT connections are automatically",
+            "joined together (short circuit) by a spring arm between terminals 2 and 3 until the detector",
+            "SCRN terminal should only be connected to the loop scrn and NOT the building earth.",
+            "Terminal"
+          ]
+        },
+        {
+          "page": 2,
+          "lines": [
+            "The remote LED terminals may be used to connect a separate external LED unit",
+            "equipment may be connected to the detector remote LED terminals. Connection",
+            "is available from the detector via the auxiliary I/O terminals with the addition of a separate Sita multipoint boxed auxiliary",
+            "or equipment must not be connected directly to the detector auxiliary terminals otherwise damage may occur. This feature"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 1,
+          "printedPage": null,
+          "entryId": "fike-77a5c9cbeaa2-p1-sita-multipoint-terminals"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1
+      ],
+      "edition": "Document 26-0874-14",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "fike-6fec87fdf63f",
+      "title": "TF MCP Installation Instructions",
+      "url": "https://my.fike.com/_fike_new_docs/02181c3b-6298-45dc-af80-9816716c3522.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/fike-6fec87fdf63f.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "8b809a677ec11f3350d2ae9dbaab3f7fcba64ed9bad8e8b3c210518a030321d4",
+      "bytes": 684709,
+      "pages": 4,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "All wiring must be installed in compliance with the recommendations laid out by any local authority as well as any",
+            "2-core 1.5mm2 screened, fire resistant type (e.g. FP200 equivalent), and is to be wired in the form of a screened",
+            "devices to ensure all cables are correctly sleeved and connections are secure. Improper connections will prevent",
+            "terminal block. If using a metal back box, do not connect the screen to the back box earth terminal or allow it to",
+            "If surface mounting, connect the MCP wires into the appropriate terminals",
+            "If the MCP is being flush mounted, cut off crimp fork terminals, strip ends for",
+            "and terminate the MCP wires into the flying terminal block."
+          ]
+        },
+        {
+          "page": 2,
+          "lines": [
+            "sleeved and connections are secure. Improper connections will prevent a system from responding properly in",
+            "Connect the wires from the MCP front into the appropriate terminals in the back box. The MCP front is then fitted",
+            "Connections",
+            "Detectors). The above diagram shows how to make the zone positive, zone negative and screen connections",
+            "equivalent wiring/terminal labelling details.",
+            "Please note that the E terminal on the MCPs should only be connected to the zone cable screen and NOT to",
+            "the building earth. The cable screen is connected to earth at the panel end only, via the zone SCRN terminal (or",
+            "EARTH terminal on the Twinflex V3 2/4/8 Zone panels). It is important to maintain the screen/earth continuity in"
+          ]
+        },
+        {
+          "page": 3,
+          "lines": [
+            "The last device on the circuit must have its EOL signal enabled. Locate the switch and use a terminal driver to"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "entryId": "fike-6fec87fdf63f-p2-twinflex-call-point"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        2
+      ],
+      "edition": "Document 26-1834-02",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "fike-594585b67819",
+      "title": "Sita MCP Installation Instructions",
+      "url": "https://my.fike.com/_fike_new_docs/1ab59b39-88d2-4b6f-8805-7786a80534bd.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/fike-594585b67819.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "b367bc185ed3d86bc08ac009e96d714a75d80d96f05fbf85e25d63bcb1085f32",
+      "bytes": 523419,
+      "pages": 3,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "All wiring must be installed in compliance with the recommendations laid out by any local authority as well as any",
+            "It is to be wired in the form of a screened 2-core loop returning to the control panel. The use of spurs on",
+            "a suitable connection block (not supplied). Cut off crimp fork terminals, strip ends for",
+            "cables directly into a flying terminal block. If using a metal back box, do not connect the",
+            "screen to the back box earth terminal or allow it to come into contact with the metal box."
+          ]
+        },
+        {
+          "page": 2,
+          "lines": [
+            "connections are secure. Improper connections will prevent a system from responding properly in the event of a",
+            "The Loop +ve (positive) IN and the Loop +ve (positive) OUT connections are split within the module. For cable",
+            "otherwise the electronics will be damaged. Please note that the E terminal should only be connected to the loop",
+            "Terminal"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "entryId": "fike-594585b67819-p2-sita-call-point-terminals"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        2
+      ],
+      "edition": "Document 26-1835-02",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "fike-078df373e6a6",
+      "title": "TF IO Installation Instructions",
+      "url": "https://my.fike.com/_fike_new_docs/0373c9c3-e933-412e-aa08-7fb8a84d6a5d.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/fike-078df373e6a6.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "2c635d4768d96605c2fdbe0c37604c45b1e062c1a39304f1fb1fef95fb4c07c1",
+      "bytes": 584452,
+      "pages": 8,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "All wiring must be installed in compliance with the recommendations laid out by any local authority as well as any",
+            "2-core 1.5mm2 screened, fire resistant type (e.g. FP200 equivalent), and is to be wired in the form of a screened",
+            "ALL connections, including inputs, should be made via screened cable.",
+            "Care should be taken when terminating devices to ensure all cables are correctly sleeved and connections are",
+            "secure. Improper connections will prevent a system from responding properly in the event of a fire.",
+            "Connections"
+          ]
+        },
+        {
+          "page": 2,
+          "lines": [
+            "Zone Connections",
+            "Detectors). The above diagram shows how to make the zone positive, zone negative and screen connections",
+            "equivalent wiring/terminal labelling details.",
+            "Please note that the \u201cSCREEN\u201d terminals on the I/O Modules should only be connected to the zone cable screen",
+            "and NOT to the building earth or the back box earth terminal. The cable screen is connected to earth at the panel",
+            "end only, via the zone \u201cSCRN\u201d terminal (or EARTH terminal on the Twinflex V3 2/4/8 Zone panels). It is important"
+          ]
+        },
+        {
+          "page": 3,
+          "lines": [
+            "Input / Output Wiring",
+            "The physical connections are shown below"
+          ]
+        },
+        {
+          "page": 4,
+          "lines": [
+            "The two sets of contact terminals (NC1, NO1, COM1, EARTH and NC2, NO2, COM2, EARTH) may be used",
+            "to switch Live and Neutral mains voltages (it is recommended that all 230V AC mains voltage connections",
+            "The installation of these connections should only be carried out by suitably qualified persons whilst the mains"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "entryId": "fike-078df373e6a6-p2-twinflex-io-zone"
+        },
+        {
+          "pdfPage": 3,
+          "printedPage": null,
+          "entryId": "fike-078df373e6a6-p3-twinflex-io-input-output"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        2,
+        3,
+        4
+      ],
+      "edition": "Document 26-1034-13",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "fike-1b2de37e6684",
+      "title": "Sita I/O Module Installation Instructions",
+      "url": "https://my.fike.com/_fike_new_docs/56377394-750b-4543-90b1-16a1d520c9fc.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/fike-1b2de37e6684.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "be75c97fe95fcd29cd5eb2200711e03b6b0f33455a7f9f40ea561d299ef6bf6f",
+      "bytes": 944063,
+      "pages": 4,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "All wiring must be installed in compliance with the recommendations laid out by any local authority as well as any",
+            "of a 2-core 1.5mm2 screened, fire resistant type, and is to be wired in the form of a screened 2-core loop",
+            "terminating devices to ensure all cables are correctly sleeved and connections are secure. Improper connections",
+            "The Loop IN +VE (positive) and the Loop OUT +VE (positive) connections are split within the module, for cable",
+            "the electronics will be damaged. Please also note that the SCRN terminal should only be connected to the loop",
+            "Connection Schematic"
+          ]
+        },
+        {
+          "page": 2,
+          "lines": [
+            "the fire alarm system. The unit may be configured as an input or an output, not both. The physical connections"
+          ]
+        },
+        {
+          "page": 3,
+          "lines": [
+            "Important note: All 230V AC mains voltage connections should switch both Live and Neutral. The installation",
+            "of these connections should only be carried out by suitably qualified persons whilst the mains supply is fully"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 1,
+          "printedPage": null,
+          "entryId": "fike-1b2de37e6684-p1-sita-io-loop"
+        },
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "entryId": "fike-1b2de37e6684-p2-sita-io-examples"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1,
+        2
+      ],
+      "edition": "Document 26-0555-16",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "fike-0a81dc0dbbc1",
+      "title": "Sita SoundPoint Installation Instructions",
+      "url": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/Duonet%20&%20Quadnet/Addressable%20Control%20Panels/Manuals/Sita%20SoundPoint%20313-0001%20313-0002%20InstallInstructs%2026-0190-13.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/fike-0a81dc0dbbc1.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "a6bdb8ddee689f01836a8190b82426ec5be312aa9348dfe01fb8ddf481982aaf",
+      "bytes": 595135,
+      "pages": 4,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "All wiring must be installed in compliance with the recommendations laid out by any local authority as well as any",
+            "It is to be wired in the form of a screened 2-core loop returning to the control panel. The use of spurs on",
+            "attach the adaptor plate using the two screws provided and terminate the loop cables directly into a flying terminal",
+            "Care should be taken when terminating devices to ensure all cables are correctly sleeved and connections are",
+            "secure. Improper connections will prevent a system from responding properly in the event of a fire.",
+            "Terminal"
+          ]
+        },
+        {
+          "page": 2,
+          "lines": [
+            "The Loop +ve (positive) IN and the Loop +ve (positive) OUT connections are split within the module, for cable",
+            "electronics will be damaged. Please also note that the E terminal should only be connected to the loop screen",
+            "terminal in the backbox according to the wire colour. The Soundpoint front may then be installed by locating the",
+            "If the device is flush mounted then the loop cabling must be attached to the device via a suitable connection block",
+            "(not supplied). Cut off crimp fork terminals, strip ends for desired length and twist conductor strands together",
+            "neatly. Terminate your cables directly into a flying terminal block. If using a metal back box, do not connect the",
+            "screen to the back box earth terminal or allow it to come into contact with the metal box"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 1,
+          "printedPage": null,
+          "entryId": "fike-0a81dc0dbbc1-p1-sita-soundpoint-terminals"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1,
+        2
+      ],
+      "edition": "Document 26-0190-13",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-the-fire-beam-company-ef8e716e192b",
+      "title": "Fire Beam BLUE user guide \u2014 issue 0165-05",
+      "url": "https://thefirebeamcompany.com/user-zone/pdf/Fire-Beam-BLUE-User-Guide-0165-05.pdf",
+      "expectedSha256": "ef8e716e192bc1d7120129374698f6ffd1f4f4560de79321f589048ee297becd",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-the-fire-beam-company-ef8e716e192b.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "ef8e716e192bc1d7120129374698f6ffd1f4f4560de79321f589048ee297becd",
+      "bytes": 6868242,
+      "pages": 28,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 4,
+          "lines": [
+            "Note: For locations above 20m where Bluetooth connection is not achieved,you will"
+          ]
+        },
+        {
+          "page": 6,
+          "lines": [
+            "(see generic wiring",
+            "Ensure that all wiring is"
+          ]
+        },
+        {
+          "page": 7,
+          "lines": [
+            "GENERICWIRING CONFIGURATIONS",
+            "Here are suggested wiring configurations for single and multi heads on a zone",
+            "Most wiring diagrams can be found on our website in more detail and in PDFformat, go to www."
+          ]
+        },
+        {
+          "page": 8,
+          "lines": [
+            "OTHER WIRING DIAGRAMS"
+          ]
+        },
+        {
+          "page": 9,
+          "lines": [
+            "Your wiring should be flush and not flattened"
+          ]
+        },
+        {
+          "page": 28,
+          "lines": [
+            "connections in Beam Head",
+            "Connection of ancillary devices:Correct operation",
+            "Monitoring of detachabledetectors and connections:"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 7,
+          "printedPage": "7",
+          "entryId": "device-doc-the-fire-beam-company-ef8e716e192b-p7-beam-single-head"
+        },
+        {
+          "pdfPage": 8,
+          "printedPage": "8",
+          "entryId": "device-doc-the-fire-beam-company-ef8e716e192b-p8-beam-multiple-beams"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        7,
+        8
+      ],
+      "edition": "0165-05, Rev05, 22 April 2026",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-the-fire-beam-company-9ea9d54e1f2c",
+      "title": "Fire Beam Xtra user guide \u2014 issue 0025-12",
+      "url": "https://thefirebeamcompany.com/user-zone/pdf/Fire-Beam-Xtra-User-Guide-0025-12.pdf",
+      "expectedSha256": "9ea9d54e1f2c6ea887646ef03e63cac1532e471c496be732ed009a48fa6b66e8",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-the-fire-beam-company-9ea9d54e1f2c.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "9ea9d54e1f2c6ea887646ef03e63cac1532e471c496be732ed009a48fa6b66e8",
+      "bytes": 3543204,
+      "pages": 16,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 4,
+          "lines": [
+            "(see generic wiring diagram",
+            "that all wiring is below the",
+            "bottom colour coded terminals.",
+            "Your wiring should be",
+            "Wire to head using colour coded terminals.",
+            "If this connection is not made ERROR will appear",
+            "on the controller, this connection can be checked",
+            "terminals, they will read 110 ohm if OK or 220 ohm"
+          ]
+        },
+        {
+          "page": 5,
+          "lines": [
+            "Generic wiring configurations",
+            "thefirebeam is a conventional device, below are suggested wiring configurations for single and multi heads on",
+            "cases can also be powered from the loop. Most wiring diagrams can be found on our website in more detail and"
+          ]
+        },
+        {
+          "page": 6,
+          "lines": [
+            "Other wiring"
+          ]
+        },
+        {
+          "page": 11,
+          "lines": [
+            "checked by reading the resistance across the black and grey terminals,"
+          ]
+        },
+        {
+          "page": 16,
+          "lines": [
+            "connections in Beam Head.",
+            "Connection of ancillary devices: Correct operation"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 5,
+          "printedPage": "5",
+          "entryId": "device-doc-the-fire-beam-company-9ea9d54e1f2c-p5-beam-single-head"
+        },
+        {
+          "pdfPage": 6,
+          "printedPage": "6",
+          "entryId": "device-doc-the-fire-beam-company-9ea9d54e1f2c-p6-beam-multiple-beams"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        5,
+        6
+      ],
+      "edition": "0025-12, Rev12, 22 April 2026",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-hochiki-25693c776dcc",
+      "title": "Hochiki Europe Product Guide - Issue 33, March 2026",
+      "url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "expectedSha256": "25693c776dcc86b823870dc205b9051a37daaa9dad46c974136abf626f3bed3a",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-hochiki-25693c776dcc.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "25693c776dcc86b823870dc205b9051a37daaa9dad46c974136abf626f3bed3a",
+      "bytes": 11777900,
+      "pages": 56,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 9,
+          "lines": [
+            "f Rugged wiring contacts",
+            "f Quick Connection via square cable clamps",
+            "f Rugged wiring contacts",
+            "f Quick Connection via square cable clamps",
+            "f Fourth terminal enables SCI functionality."
+          ]
+        },
+        {
+          "page": 10,
+          "lines": [
+            "f Rugged wiring contacts",
+            "f Quick Connection via square cable clamps"
+          ]
+        },
+        {
+          "page": 13,
+          "lines": [
+            "leads, the unit also features a wiring terminal",
+            "block for loop connection."
+          ]
+        },
+        {
+          "page": 16,
+          "lines": [
+            "features plug-in wiring terminals for easy",
+            "features plug-in wiring terminals for easy"
+          ]
+        },
+        {
+          "page": 19,
+          "lines": [
+            "Detector. A third terminal provides integral",
+            "Detector. A third terminal provides integral",
+            "Heat Detector. A third terminal provides"
+          ]
+        },
+        {
+          "page": 20,
+          "lines": [
+            "response.  A third terminal provides integral"
+          ]
+        },
+        {
+          "page": 22,
+          "lines": [
+            "f Dedicated cable screen terminal",
+            "f Quick connection via square cable clamps",
+            "f Quick connections via square cable clamps",
+            "f Quick connections via square cable clamps",
+            "f Quick connections via square cable clamps"
+          ]
+        },
+        {
+          "page": 23,
+          "lines": [
+            "f Quick connections via square cable clamps",
+            "f Quick connections via square cable clamps"
+          ]
+        },
+        {
+          "page": 27,
+          "lines": [
+            "f Terminals can accommodate up to a 2.5mm2",
+            "f Terminals can accommodate up to a 2.5mm2",
+            "simple wiring.",
+            "f Terminals can accommodate up to a 2.5mm2",
+            "push-fit wiring terminals. The unit has been",
+            "f Terminals can accommodate up to a 2.5mm2"
+          ]
+        },
+        {
+          "page": 31,
+          "lines": [
+            "f Makes additions to existing wired systems",
+            "a fully intelligent wired to wireless Translator",
+            "alongside standard hard wired devices.",
+            "The Translator Module allows the connection",
+            "f Makes additions to existing wired systems",
+            "depending on the quality of connection",
+            "In addition, both the wireless and wired"
+          ]
+        },
+        {
+          "page": 34,
+          "lines": [
+            "f 4 x 20mm knockout connections",
+            "f 4 x 25mm knockout connections",
+            "f 1 x gland connection",
+            "f 4 x 20mm knockout connections",
+            "f 2 x cable gland connections"
+          ]
+        },
+        {
+          "page": 37,
+          "lines": [
+            "unmonitored connection to other systems"
+          ]
+        },
+        {
+          "page": 40,
+          "lines": [
+            "Connection for use on Hochiki devices that",
+            "feature the square programming terminal,",
+            "f Allows connection of \ufeffTCH-B200 programmer",
+            "be released automatically via a connection to",
+            "f Installer-friendly connection of cables"
+          ]
+        },
+        {
+          "page": 41,
+          "lines": [
+            "A Surface Wiring Adaptor which allows the",
+            "surface wiring (without conduit) to be"
+          ]
+        },
+        {
+          "page": 45,
+          "lines": [
+            "f Protects Wiring Terminals on Isolator Bases",
+            "f Provides glanded cable connections"
+          ]
+        },
+        {
+          "page": 50,
+          "lines": [
+            "information for the design, installation and wiring of emergency lighting products."
+          ]
+        }
+      ],
+      "selectedPages": [],
+      "visuallyCheckedPdfPages": [],
+      "edition": "9-5-0-321 / ISS33 / MAR26",
+      "reviewOutcome": "not selected",
+      "reason": "Product catalogue text-screened; no page selected. Dedicated archived Hochiki installation instructions provide the reviewed wiring pages instead."
+    },
+    {
+      "recordId": "device-doc-nittan-2baa1e344172",
+      "title": "Nittan EV-H-CS reference - NISM/EV-H/05, September 2015",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/ev-h_a1r_techmanual.pdf",
+      "expectedSha256": "2baa1e344172062e5c91021267dc7904d1ac981cc87700a5df5289500910fda8",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-nittan-2baa1e344172.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "2baa1e344172062e5c91021267dc7904d1ac981cc87700a5df5289500910fda8",
+      "bytes": 195034,
+      "pages": 7,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 3,
+          "lines": [
+            "Connections",
+            "* Non-polarised terminals",
+            "The EV-H heat sensor has two terminals for connection",
+            "onto the two wire loop. The remaining terminals provide a",
+            "indicator. Terminal 3 (RIL) is limited to 3mA. Terminal 2"
+          ]
+        },
+        {
+          "page": 4,
+          "lines": [
+            "ceiling level.  Pass the field wiring through the cable hole in",
+            "via the base mounting holes.  Connect the field wiring to",
+            "the base terminals, as detailed on page 6 making sure the",
+            "wiring does not obstruct fitting of the sensor head."
+          ]
+        },
+        {
+          "page": 5,
+          "lines": [
+            "separation of zone wiring from the cable carrying the"
+          ]
+        },
+        {
+          "page": 6,
+          "lines": [
+            "Section 10 - CONNECTIONS",
+            "Auxiliary terminal RIL current limited to 3mA. Base control is not current limited as the auxiliary equipment provides"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 6,
+          "printedPage": "5 of 6",
+          "entryId": "device-doc-nittan-2baa1e344172-p6-ev-h-base"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        6
+      ],
+      "edition": "NISM/EV-H/05, September 2015",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-nittan-f912292fc103",
+      "title": "Nittan EV-HIOP-SB-SCI reference - IIS-EV-HIOP-SB-SCI Issue 9, 20/10/2016",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-HIOP-SB-SCI_Iss_7_Instruction_leaflet.pdf",
+      "expectedSha256": "f912292fc103239e1d4ea38eba311a74309a8dc0cf6d105c61d00313ef976eb6",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-nittan-f912292fc103.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "f912292fc103239e1d4ea38eba311a74309a8dc0cf6d105c61d00313ef976eb6",
+      "bytes": 326478,
+      "pages": 1,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "the Loop IN Terminals. shown in Fig 1.",
+            "3. Connect loop IN & OUT wires to the terminals shown in Fig 1."
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 1,
+          "printedPage": null,
+          "entryId": "device-doc-nittan-f912292fc103-p1-hiop-sounder-terminals"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1
+      ],
+      "edition": "IIS-EV-HIOP-SB-SCI Issue 9, 20/10/2016",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-nittan-92f082662910",
+      "title": "Nittan EV-MCP2-SCI-IP67 reference - IIS-EV-MCP2-SCI-IP67 Issue 2, 08/10/2019",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-MCP2-SCI-IP67%20Iss%202%20Installation%20instruction%20sheet.pdf",
+      "expectedSha256": "92f082662910775f8f633359f84188014201ac5fd1926f7a0e2320dd0c80d93c",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-nittan-92f082662910.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "92f082662910775f8f633359f84188014201ac5fd1926f7a0e2320dd0c80d93c",
+      "bytes": 341095,
+      "pages": 1,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "4. Make the Loop connections as shown in figure 2 below and on the product Label. An"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 1,
+          "printedPage": null,
+          "entryId": "device-doc-nittan-92f082662910-p1-mcp-loop"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1
+      ],
+      "edition": "IIS-EV-MCP2-SCI-IP67 Issue 2, 08/10/2019",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-nittan-509751ace6d5",
+      "title": "Nittan EV-MCP2-SCI-IP24 reference - IIS-EV-MCP2-SCI-IP24 Issue 3, 08/10/2019",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-MCP2-SCI-IP24%20Iss%203%20Installation%20instruction%20sheet.pdf",
+      "expectedSha256": "509751ace6d5abdb7675d679c7d844cdbb5abbd4cf67dd11413f08f49d486fb8",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-nittan-509751ace6d5.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "509751ace6d5abdb7675d679c7d844cdbb5abbd4cf67dd11413f08f49d486fb8",
+      "bytes": 214302,
+      "pages": 1,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "4. Make the Loop connections as shown in figure 1 below, using the mating connectors"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 1,
+          "printedPage": null,
+          "entryId": "device-doc-nittan-509751ace6d5-p1-mcp-loop"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1
+      ],
+      "edition": "IIS-EV-MCP2-SCI-IP24 Issue 3, 08/10/2019",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-nittan-60acce3d2e53",
+      "title": "Nittan EV-240V MRA reference - EV-240V MRA Installation Leaflet Issue 1",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/ev-240vmra_installmanual.pdf",
+      "expectedSha256": "60acce3d2e53aa94eb7c74ecb05222e962a78b3daddd8527c909fb901693c1a1",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-nittan-60acce3d2e53.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "60acce3d2e53aa94eb7c74ecb05222e962a78b3daddd8527c909fb901693c1a1",
+      "bytes": 306264,
+      "pages": 2,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "electrical box. Terminal blocks complying with the",
+            "An approved low voltage terminal block must be",
+            "WIRING NOTES",
+            "2) All wiring must conform to the current edition",
+            "of IEE Wiring Regulations and BS5839 part 1.",
+            "4) For typical wiring configuration, see Figures 2"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": "2\u20133",
+          "entryId": "device-doc-nittan-60acce3d2e53-p2-mra-voltage-examples"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1,
+        2
+      ],
+      "edition": "EV-240V MRA Installation Leaflet Issue 1",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-nittan-24b1fd056ba7",
+      "title": "Nittan EV-DPH-CS reference - NISM/EV-DPH/01 Issue 1, May 2010",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/NISM-EV-DPH-01_Manual.pdf",
+      "expectedSha256": "24b1fd056ba7e0312ffcbab08909ff71399bc9815901d7ca4e708524a2513339",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-nittan-24b1fd056ba7.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "24b1fd056ba7e0312ffcbab08909ff71399bc9815901d7ca4e708524a2513339",
+      "bytes": 764598,
+      "pages": 10,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 3,
+          "lines": [
+            "Connections",
+            "* Non-polarised terminals",
+            "terminals for connection onto the two wire loop. The remaining",
+            "terminals provide a switched current sink function which operates",
+            "Terminal 3 (RIL) is limited to 3mA. Terminal 2 (Base Control) is"
+          ]
+        },
+        {
+          "page": 4,
+          "lines": [
+            "the field wiring through the cable hole in the centre and from the rear",
+            "wiring to the base terminals, as detailed on page 9 making sure the",
+            "wiring does not obstruct fitting of the detector head.  Fit the sensor"
+          ]
+        },
+        {
+          "page": 7,
+          "lines": [
+            "separation of zone wiring from the cable carrying the interference."
+          ]
+        },
+        {
+          "page": 9,
+          "lines": [
+            "Section 10 - CONNECTIONS",
+            "Auxiliary terminal RIL current limited to 3mA. Base control is not current"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 9,
+          "printedPage": "9",
+          "entryId": "device-doc-nittan-24b1fd056ba7-p9-ev-dph-base"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        9
+      ],
+      "edition": "NISM/EV-DPH/01 Issue 1, May 2010",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-nittan-c65c530f2411",
+      "title": "Nittan EV-Mini IP2 reference - IIS-EV-Mini IP2 Issue 4, 18/01/2019",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-Mini%20IP2%20Iss%204%20Installation%20instruction%20sheet.pdf",
+      "expectedSha256": "c65c530f2411588278a1e09401f4ad7bcf395488f011d27493ce257ec0a91866",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-nittan-c65c530f2411.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "c65c530f2411588278a1e09401f4ad7bcf395488f011d27493ce257ec0a91866",
+      "bytes": 273328,
+      "pages": 4,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 2,
+          "lines": [
+            "Connections"
+          ]
+        },
+        {
+          "page": 4,
+          "lines": [
+            "Loop wiring is not correct. An open or short circuit in the",
+            "Input wiring is not correct. An open circuit in the input",
+            "Input wiring is shorted.",
+            "Insulation in the input circuit is not enough. Input wiring is",
+            "Input wiring is not correct.",
+            "Input wiring is not correct. Input resistor is not connected."
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": "2 / 7",
+          "entryId": "device-doc-nittan-c65c530f2411-p2-mini-ip2-input"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        2
+      ],
+      "edition": "IIS-EV-Mini IP2 Issue 4, 18/01/2019",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-nittan-651d5abec767",
+      "title": "Nittan EV-PS reference - NISM/EV-PS/01 Issue 1, May 2010",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/ev-ps_techmanual.pdf",
+      "expectedSha256": "651d5abec767d4674524a8b7bbad471b908c4b85a1008ca4e3d049c6b03709e1",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-nittan-651d5abec767.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "651d5abec767d4674524a8b7bbad471b908c4b85a1008ca4e3d049c6b03709e1",
+      "bytes": 887499,
+      "pages": 10,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 3,
+          "lines": [
+            "Connections",
+            "terminals for connection onto the two wire loop, the DSCI variant has",
+            "four (+/- in , +/- out). Terminal 3 provides a switched current sink",
+            "as a remote Indicator. Terminal 3 (RIL) is limited to 2mA. Terminal 2"
+          ]
+        },
+        {
+          "page": 4,
+          "lines": [
+            "the field wiring through the cable hole in the centre and from the rear",
+            "wiring to the base terminals, as detailed on page 9 making sure the",
+            "wiring does not obstruct fitting of the detector head.  Fit the sensor"
+          ]
+        },
+        {
+          "page": 7,
+          "lines": [
+            "care should be given to the separation of zone wiring from"
+          ]
+        },
+        {
+          "page": 9,
+          "lines": [
+            "Section 10 - CONNECTIONS",
+            "Cable shield Wire Continuity connection",
+            "Cable shield Wire Continuity connection"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 9,
+          "printedPage": "9",
+          "entryId": "device-doc-nittan-651d5abec767-p9-ev-ps-base"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        9
+      ],
+      "edition": "NISM/EV-PS/01 Issue 1, May 2010",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-nittan-c2305fc3416e",
+      "title": "Nittan EV-2I1O reference - IIS-EV-2I1O (-EU) Issue 4, 04/03/2019",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-2I1O%28EU%29%20Iss%204%20Installation%20instruction%20sheet.pdf",
+      "expectedSha256": "c2305fc3416e3f064559a41b2354f47d95f75878a213313e64dbcc7f760e4de4",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-nittan-c2305fc3416e.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "c2305fc3416e3f064559a41b2354f47d95f75878a213313e64dbcc7f760e4de4",
+      "bytes": 458432,
+      "pages": 4,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 3,
+          "lines": [
+            "Loop wiring is not correct. An open or short circuit in the",
+            "Input wiring is not correct.",
+            "Input wiring is shorted.",
+            "Insulation in the input circuit is not enough. Input wiring is",
+            "Input wiring is not correct.",
+            "Input wiring is not correct. Input resistor is not connected.",
+            "Loop wiring is not correct.",
+            "Loop wiring is not correct."
+          ]
+        },
+        {
+          "page": 4,
+          "lines": [
+            "Connections"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 4,
+          "printedPage": "4\u20135",
+          "entryId": "device-doc-nittan-c2305fc3416e-p4-dual-input-relay"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        4
+      ],
+      "edition": "IIS-EV-2I1O (-EU) Issue 4, 04/03/2019",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "device-doc-notifier-722c2bfa968b",
+      "title": "Notifier NFX-OPT / NFXI-OPT and B501AP - English manufacturer datasheet",
+      "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-it/HBT-Fire-NFX-OPT-ENG.pdf?download=false",
+      "expectedSha256": "722c2bfa968b04f1a3f7e27071344ee6eb48be7ba7553bc5ebc601b90dd44188",
+      "localFile": "/tmp/findr-wiring-fire-devices/device-doc-notifier-722c2bfa968b.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "722c2bfa968b04f1a3f7e27071344ee6eb48be7ba7553bc5ebc601b90dd44188",
+      "bytes": 1715533,
+      "pages": 2,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "\u2022 Wiring: 2,5mmq"
+          ]
+        }
+      ],
+      "selectedPages": [],
+      "visuallyCheckedPdfPages": [
+        1,
+        2
+      ],
+      "edition": "D-532.3-NFX-ENG Rev. A.1, 10/2009",
+      "reviewOutcome": "not selected",
+      "reason": "Both pages visually checked: product/base photographs, specification and ordering information; no connection diagram. No Notifier wiring image is claimed from this datasheet."
+    },
+    {
+      "recordId": "protec-502abea1875d",
+      "title": "3000PLUS/BASE & 6000PLUS/BASE - Low profile common mounting base (datasheet and wiring diagrams)",
+      "url": "https://www.protec.co.uk/wp-content/uploads/2020/04/3000-6000PLUS-Standard-Base.pdf",
+      "expectedSha256": "906a3a6f0db18034e7850ba10ba724e409cefc6b7d76449d3e23a22d2a7aa7f5",
+      "localFile": "/tmp/findr-wiring-fire-devices/protec-502abea1875d.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "906a3a6f0db18034e7850ba10ba724e409cefc6b7d76449d3e23a22d2a7aa7f5",
+      "bytes": 1330071,
+      "pages": 2,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "connection to allow easy termination of",
+            "The base features robust wiring terminals",
+            "secure wiring termination. Terminals are",
+            "zone connections and the termination of",
+            "for the connection of an optional remote",
+            "\u2022 Screen / earth terminal available",
+            "\u2022 Robust terminal wiring"
+          ]
+        },
+        {
+          "page": 2,
+          "lines": [
+            "3000PLUS Detector Wiring Details",
+            "TERMINAL",
+            "6000PLUS Detector Wiring Details",
+            "TERMINAL"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "entryId": "protec-502abea1875d-p2-protec-common-base"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        2
+      ],
+      "edition": "MED2042 Issue 2, \u00a9 2015\u20132019",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "fike-538db8f6d1d5",
+      "title": "Twinflex Sounder VAD F0296336",
+      "url": "https://my.fike.com/_fike_new_docs/941829b3-1802-4861-8ca9-ac3c3bcdfa88.pdf",
+      "expectedSha256": null,
+      "localFile": "/tmp/findr-wiring-fire-devices/fike-538db8f6d1d5.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "fb3af336d1852b905ecd93f0c8661105ededf8dea5b4ba54337e447c48218960",
+      "bytes": 652911,
+      "pages": 4,
+      "catalogueHashMatches": null,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "length for installation. All wiring must be installed in compliance with the recommendations laid out by any local",
+            "Care should be taken when terminating devices to ensure all cables are correctly sleeved and connections are",
+            "secure. Improper connections will prevent a system from responding properly in the event of a fire. This product is"
+          ]
+        },
+        {
+          "page": 2,
+          "lines": [
+            "ZONE CONNECTIONS",
+            "Detectors). The above diagram shows how to make the zone positive, zone negative and SCRN connections",
+            "equivalent wiring/terminal labelling details.",
+            "Please note that the \u201cSCRN\u201d terminals on the sounder/VAD should only be connected to the zone cable SCRN",
+            "and NOT to the building earth or the back box earth terminal. The cable SCRN is connected to earth at the panel",
+            "end only, via the zone \u201cSCRN\u201d terminal (or earth terminal on the Twinflex Pro2 2/4/8 Zone panels). It is important",
+            "Connections",
+            "wired in the form of a screened 2-core radial circuit (with no spurs) from the control panel, terminating at the last"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "entryId": "fike-538db8f6d1d5-p2-twinflex-vad-zone"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1,
+        2
+      ],
+      "edition": "Document 26-1878-04",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "hochiki-7547f36e3e7f",
+      "title": "CHQ output modules \u2014 Installation instructions",
+      "url": "https://www.hochikiasiapacific.com/storage/product_resources/Installation%20Manual/1433750-00%20Installation%20Instructions%2001.pdf%20%28chq-drc2-sci%29.pdf",
+      "expectedSha256": "1aebdff7d7a3c789dc8be359736544cf32e473bdda18adcd6ed3a833405a5a17",
+      "localFile": "/tmp/findr-wiring-fire-devices/hochiki-7547f36e3e7f.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "1aebdff7d7a3c789dc8be359736544cf32e473bdda18adcd6ed3a833405a5a17",
+      "bytes": 585420,
+      "pages": 4,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "(Note: configuration of Wiring Terminal blocks differs between"
+          ]
+        },
+        {
+          "page": 2,
+          "lines": [
+            "LOOP CONNECTIONS"
+          ]
+        },
+        {
+          "page": 3,
+          "lines": [
+            "output, which has the N/O, N/C and COMMON contacts available via screw terminal contacts. This output is driven under the control"
+          ]
+        },
+        {
+          "page": 4,
+          "lines": [
+            "Terminate and connect field wiring as per the wiring",
+            "diagrams on pages 2 & 3 (and the terminal block",
+            "connections at the bottom of the unit. Hochiki recommends the SMB-2 and SMB-3 Boxes designed specifically for this",
+            "Terminate and connect field wiring as per the wiring diagrams on pages 2 & 3 (and the terminal block indications on"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": "2",
+          "entryId": "hochiki-7547f36e3e7f-p2-chq-dsc-sounder"
+        },
+        {
+          "pdfPage": 3,
+          "printedPage": "3",
+          "entryId": "hochiki-7547f36e3e7f-p3-chq-relay-controllers"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1,
+        2,
+        3
+      ],
+      "edition": "2-3-0-1730/ISS3/DEC13",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "hochiki-85ce4a38f43c",
+      "title": "CHQ-AB \u2014 Installation instructions",
+      "url": "https://www.hochikiasiapacific.com/storage/product_resources/Installation%20Manual/1460010-00%20Installation%20Instructions%2001.pdf%20%28chq-ab%29.pdf",
+      "expectedSha256": "0b532d3a401a5a44076c0a03f2ee9ff34ec352863bc61b9f9da64e1b0c4ea75a",
+      "localFile": "/tmp/findr-wiring-fire-devices/hochiki-85ce4a38f43c.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "0b532d3a401a5a44076c0a03f2ee9ff34ec352863bc61b9f9da64e1b0c4ea75a",
+      "bytes": 228565,
+      "pages": 2,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 2,
+          "lines": [
+            "Wiring and Locking Mechanism",
+            "The bases used with the beacon should be wired as",
+            "is 2.5mm2/terminal"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "entryId": "hochiki-85ce4a38f43c-p2-chq-ab-bases"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1,
+        2
+      ],
+      "edition": "2-3-0-568/ISS4/DEC13",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "hochiki-872585639bed",
+      "title": "CHQ-CB addressable beacons \u2014 Installation instructions",
+      "url": "https://www.hochikiaustralia.com/media/uploads/documentdownloads/CHQ-CB_Installation_Instructions.pdf",
+      "expectedSha256": "75f5b35d64d8588e54645844551c7ff7014fa39e57c2f8417ad87d8f97220b4e",
+      "localFile": "/tmp/findr-wiring-fire-devices/hochiki-872585639bed.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "75f5b35d64d8588e54645844551c7ff7014fa39e57c2f8417ad87d8f97220b4e",
+      "bytes": 311881,
+      "pages": 2,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 2,
+          "lines": [
+            "Wiring and Locking Mechanism",
+            "The bases used with the beacon should be wired as",
+            "mm2/terminal"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "entryId": "hochiki-872585639bed-p2-chq-cb-bases"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1,
+        2
+      ],
+      "edition": "2-3-0-1574/ISS1/JUNE14",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "hochiki-ea524f5d80ee",
+      "title": "CHQ-ARI(CLR) \u2014 Installation instructions",
+      "url": "https://assets.hochikiglobal.com/assetbank-hochikieurope/assetfile/31818.pdf",
+      "expectedSha256": "134cd17c1c21e56958964988dc4ed518fe2704424991b6d58ba01b2376585720",
+      "localFile": "/tmp/findr-wiring-fire-devices/hochiki-ea524f5d80ee.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "134cd17c1c21e56958964988dc4ed518fe2704424991b6d58ba01b2376585720",
+      "bytes": 212997,
+      "pages": 2,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 2,
+          "lines": [
+            "Wiring and Locking Mechanism",
+            "Indicator should be wired as shown in Fig 2",
+            "2.5mm2/terminal"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "entryId": "hochiki-ea524f5d80ee-p2-chq-ari-bases"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1,
+        2
+      ],
+      "edition": "2-3-0-617/ISS1/FEB05",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    },
+    {
+      "recordId": "hochiki-f97bdbde045d",
+      "title": "ESP sensors \u2014 Installation instructions",
+      "url": "https://www.hochikiasiapacific.com/storage/product_resources/Installation%20Manual/1412140-00%20Installation%20Instructions%2001.pdf%20%28aln-en%29.pdf",
+      "expectedSha256": "2a5e9c1f7c6e667a2758f451bb2d85661d880ebc590e96042a7a07f1d09acb9a",
+      "localFile": "/tmp/findr-wiring-fire-devices/hochiki-f97bdbde045d.pdf",
+      "httpStatus": 200,
+      "status": "retrieved",
+      "sourceSha256": "2a5e9c1f7c6e667a2758f451bb2d85661d880ebc590e96042a7a07f1d09acb9a",
+      "bytes": 447752,
+      "pages": 2,
+      "catalogueHashMatches": true,
+      "candidatePages": [
+        {
+          "page": 1,
+          "lines": [
+            "\uf071 The bases should be wired as shown in figure 1 below. Note that the ACB-EW",
+            "features flying leads for connection to the loop and is supplied with its own fixing",
+            "\uf071 Maximum wire thickness is 2.5mm2/terminal",
+            "\uf071 \u00c9paisseur de c\u00e2ble maximum : 2,5 mm2 / terminal",
+            "GB See instruction 2-3-0-1499 for YBN-R/3(SCI) and YBN-R/3(SCI)M wiring."
+          ]
+        },
+        {
+          "page": 2,
+          "lines": [
+            "\uf071 Lo spessore massimo del cavo \u00e8 2,5mm2/terminale",
+            "\uf071 El grosor m\u00e1ximo del cable es de 2,5mm2/terminal"
+          ]
+        }
+      ],
+      "selectedPages": [
+        {
+          "pdfPage": 1,
+          "printedPage": null,
+          "entryId": "hochiki-f97bdbde045d-p1-esp-sensor-bases"
+        }
+      ],
+      "visuallyCheckedPdfPages": [
+        1,
+        2
+      ],
+      "edition": "2-3-0-246/ISS19/AUG18",
+      "reviewOutcome": "selected",
+      "reason": "Source page images reviewed against original PDF renders; complete pages retained."
+    }
+  ],
+  "notRetrievedCandidates": [
+    {
+      "recordId": "device-doc-ems-de2c0fb8aa1f",
+      "title": "MK119 FireCell Wireless Optical Smoke Detector Product Datasheet",
+      "sourceUrl": null,
+      "status": "not attempted",
+      "reason": "Existing record has no direct PDF URL."
+    },
+    {
+      "recordId": "device-doc-ems-c103ba80a56c",
+      "title": "MK121 FireCell Wireless Combined Sounder Detector Product Datasheet",
+      "sourceUrl": null,
+      "status": "not attempted",
+      "reason": "Existing record has no direct PDF URL."
+    },
+    {
+      "recordId": "device-doc-ems-cf888f19e273",
+      "title": "MK123 FireCell Wireless Wall Sounder Beacon Product Datasheet",
+      "sourceUrl": "https://www.safefiredirect.co.uk/media/bss/productattachment/EMS_FC-171-002_FC-315-WA2_Datasheet.pdf",
+      "status": "not attempted",
+      "reason": "Wireless product datasheet outside this selected installation-manual batch; no wiring claim or image added."
+    },
+    {
+      "recordId": "device-doc-ems-0df7986de600",
+      "title": "MK125 FireCell Radio Hub Product Datasheet",
+      "sourceUrl": null,
+      "status": "not attempted",
+      "reason": "Existing record has no direct PDF URL."
+    },
+    {
+      "recordId": "device-doc-ems-777d6bd3e405",
+      "title": "MK126 FireCell 230Vac Radio Cluster Communicator Product Datasheet",
+      "sourceUrl": null,
+      "status": "not attempted",
+      "reason": "Existing record has no direct PDF URL."
+    },
+    {
+      "recordId": "device-doc-ems-a93fc764968b",
+      "title": "MK127 FireCell Fusion RLM Product Datasheet",
+      "sourceUrl": "https://www.firesense.co.uk/amfile/file/download/file/399/product/2472/",
+      "status": "not attempted",
+      "reason": "Wireless product datasheet outside this selected installation-manual batch; no wiring claim or image added."
+    },
+    {
+      "recordId": "device-doc-ems-c40857c87e50",
+      "title": "MK128 FireCell Wireless Call Point Product Datasheet",
+      "sourceUrl": null,
+      "status": "not attempted",
+      "reason": "Existing record has no direct PDF URL."
+    },
+    {
+      "recordId": "device-doc-ems-2f0d72961ef4",
+      "title": "MK129 FireCell Input / Output Unit Product Datasheet",
+      "sourceUrl": null,
+      "status": "not attempted",
+      "reason": "Existing record has no direct PDF URL."
+    }
+  ]
+}

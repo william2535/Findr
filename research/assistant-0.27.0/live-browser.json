@@ -1,0 +1,40 @@
+{
+  "base": "https://findr-fault-finder.floodyyy21.chatgpt.site",
+  "checks": [
+    "Served /app/version.mjs",
+    "Served /app/pdf-runtime.mjs",
+    "Served /app/index.html",
+    "Live Quick Questions asks for equipment without silently selecting VIEW",
+    "Live normal Fault Finder saved Advanced MxPro4 processes and reaches equipment confirmation"
+  ],
+  "environment": "Linux Chromium 154, 390x844",
+  "physicalIPhone": false,
+  "savedManual": {
+    "title": "Advanced mxpro4",
+    "contentHash": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e",
+    "usable": true,
+    "processorVersion": "2026-11-10.2",
+    "pages": 72,
+    "identity": {
+      "manufacturer": "Advanced",
+      "models": [
+        "Mx-4200",
+        "Mx-4200/D",
+        "Mx-4400",
+        "Mx-4400/D",
+        "Mx-4200V",
+        "Mx-4400V",
+        "Mx-4400V/LE",
+        "Mx-4800V",
+        "Mx-4200V/LE"
+      ],
+      "systemTypes": [
+        "fire"
+      ],
+      "equipmentType": "panel",
+      "requiresVariant": true
+    }
+  },
+  "status": "passed",
+  "errors": []
+}

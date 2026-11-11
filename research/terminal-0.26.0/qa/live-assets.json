@@ -1,0 +1,13 @@
+{
+  "webVersion": "0.26.0",
+  "androidVersion": "0.14.1",
+  "manifestCurrent": true,
+  "video": {
+    "status": 200,
+    "bytes": 465363,
+    "type": "video/mp4",
+    "sha": "7ee079c85ac1068524566dbba42c2a8039f23cad0c59fb10d43eff22049708b7"
+  },
+  "navigationVisible": true,
+  "status": "passed"
+}

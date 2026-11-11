@@ -1,0 +1,98 @@
+[
+  {
+    "width": 1440,
+    "panel": "xfp16",
+    "zoom": "fit",
+    "overflow": false,
+    "minimumWidth": 22.46875,
+    "minimumHeight": 21.359375
+  },
+  {
+    "width": 1440,
+    "panel": "xfp16",
+    "zoom": "large",
+    "overflow": false,
+    "minimumWidth": 45,
+    "minimumHeight": 44
+  },
+  {
+    "width": 1440,
+    "panel": "xfp32",
+    "zoom": "fit",
+    "overflow": false,
+    "minimumWidth": 34.953125,
+    "minimumHeight": 34.25
+  },
+  {
+    "width": 1440,
+    "panel": "xfp32",
+    "zoom": "large",
+    "overflow": false,
+    "minimumWidth": 69.984375,
+    "minimumHeight": 68.59375
+  },
+  {
+    "width": 1440,
+    "panel": "twinflex",
+    "zoom": "fit",
+    "overflow": false,
+    "minimumWidth": 38.28125,
+    "minimumHeight": 37.09375
+  },
+  {
+    "width": 1440,
+    "panel": "twinflex",
+    "zoom": "large",
+    "overflow": false,
+    "minimumWidth": 51.078125,
+    "minimumHeight": 49.484375
+  },
+  {
+    "width": 390,
+    "panel": "xfp16",
+    "zoom": "fit",
+    "overflow": false,
+    "minimumWidth": 7.734375,
+    "minimumHeight": 7.34375
+  },
+  {
+    "width": 390,
+    "panel": "xfp16",
+    "zoom": "large",
+    "overflow": false,
+    "minimumWidth": 45,
+    "minimumHeight": 44
+  },
+  {
+    "width": 390,
+    "panel": "xfp32",
+    "zoom": "fit",
+    "overflow": false,
+    "minimumWidth": 12.03125,
+    "minimumHeight": 11.78125
+  },
+  {
+    "width": 390,
+    "panel": "xfp32",
+    "zoom": "large",
+    "overflow": false,
+    "minimumWidth": 69.984375,
+    "minimumHeight": 68.59375
+  },
+  {
+    "width": 390,
+    "panel": "twinflex",
+    "zoom": "fit",
+    "overflow": false,
+    "minimumWidth": 13.46875,
+    "minimumHeight": 13.046875
+  },
+  {
+    "width": 390,
+    "panel": "twinflex",
+    "zoom": "large",
+    "overflow": false,
+    "minimumWidth": 51.078125,
+    "minimumHeight": 49.484375
+  }
+]

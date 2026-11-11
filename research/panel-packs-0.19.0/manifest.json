@@ -1,0 +1,357 @@
+{
+  "version": 1,
+  "date": "2026-11-02",
+  "base_web_version": "0.18.0",
+  "sources": [
+    {
+      "id": "c-tec-4b1267f3fefc",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CFP%202%2C4%2C8%20zone%20conventional%20fire%20panel%20manual.pdf",
+      "sha256": "6e04b478f4fe32f3f33a0365e660a5629a6621882a6231b3f2d56985d6c1ace8",
+      "bytes": 1033522,
+      "pdf_pages": 24,
+      "archive_sha256_matches": true,
+      "checked_on": "2026-11-02",
+      "title": "CFP 2,4,8 zone conventional fire panel manual"
+    },
+    {
+      "id": "c-tec-5332c9b751b2",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20CFP%20UNIVERSAL%20USER%20MNL%20DFU7001020_REV2.pdf",
+      "sha256": "f4445ea23e6f6fc95a6732ed57b6591dac6d85b3e26f7c6b81dabcec0c0d5333",
+      "bytes": 579604,
+      "pdf_pages": 20,
+      "archive_sha256_matches": true,
+      "checked_on": "2026-11-02",
+      "title": "CTEC CFP UNIVERSAL USER MNL DFU7001020 REV2"
+    },
+    {
+      "id": "c-tec-70f490a601e3",
+      "url": "https://www.srsalertfire.ie/uploads/WsOIx2U5/XFPUserManual.pdf",
+      "sha256": "1710cb3359701fc524a96ed38fc165502b62d4737c0d94d1175ef0466773bc14",
+      "bytes": 1536974,
+      "pdf_pages": 28,
+      "archive_sha256_matches": true,
+      "checked_on": "2026-11-02",
+      "title": "XFP — User manual and log book"
+    },
+    {
+      "id": "facp-3363e064-e6ce-4d60-9343-6744ae180a07",
+      "url": "https://docs.facpmanuals.com/manuals/C-TEC/cast_xfp_series-user-guide-rev3.pdf",
+      "sha256": "84c2f31381f993851c99ba61225e16c6249520b4d7bd01485908685e06a03383",
+      "bytes": 1112973,
+      "pdf_pages": 24,
+      "archive_sha256_matches": true,
+      "checked_on": "2026-11-02",
+      "title": "CAST XFP Series — User Guide"
+    },
+    {
+      "id": "facp-83774c58-7e6b-4111-8bc7-e54d9072f5eb",
+      "url": "https://docs.facpmanuals.com/manuals/C-TEC/eacie-user-guide-rev1.pdf",
+      "sha256": "bf68c25dcefc04c32123cbb46f8d84d1fafa96b1975e355079ae8b70589e80da",
+      "bytes": 1212127,
+      "pdf_pages": 10,
+      "archive_sha256_matches": true,
+      "checked_on": "2026-11-02",
+      "title": "EACIE — User Guide"
+    },
+    {
+      "id": "facp-86a53825-e9fa-4f20-89eb-5211cddbd9fb",
+      "url": "https://docs.facpmanuals.com/manuals/C-TEC/cast_zfp-user-guide-2022-rev3.pdf",
+      "sha256": "f8eafb3156e0a9f92c07371f388257ba9e712019c4d4fbc55cc8edba0be59a71",
+      "bytes": 2971887,
+      "pdf_pages": 24,
+      "archive_sha256_matches": true,
+      "checked_on": "2026-11-02",
+      "title": "CAST ZFP — User Guide (2022, source-listed)"
+    },
+    {
+      "id": "kentec-07eb8f5458c5",
+      "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1132.pdf",
+      "sha256": "68b57f09a1612749ba3677745b9e65f10e2f9a6f3ffa3d5da8d5223be689a97e",
+      "bytes": 247960,
+      "pdf_pages": 13,
+      "archive_sha256_matches": null,
+      "checked_on": "2026-11-02",
+      "title": "HydroSense CP-R — B3420 repeater operation and maintenance"
+    },
+    {
+      "id": "kentec-2a8e55fe4ae2",
+      "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1057.pdf",
+      "sha256": "a429d33380d135439ba7b4992fcd60d2b300912bf28c9f953f86c019298f26e0",
+      "bytes": 171101,
+      "pdf_pages": 8,
+      "archive_sha256_matches": null,
+      "checked_on": "2026-11-02",
+      "title": "Syncro — Multi-loop fire control panel user manual"
+    },
+    {
+      "id": "kentec-579029878abe",
+      "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1052.pdf",
+      "sha256": "2883d388d53540d5f9c0aeb635acbbb04467177a60d9919646740eb486cc3414",
+      "bytes": 178417,
+      "pdf_pages": 7,
+      "archive_sha256_matches": null,
+      "checked_on": "2026-11-02",
+      "title": "Solo Response — Repeater installation, commissioning and operation"
+    },
+    {
+      "id": "kentec-922756f21680",
+      "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1093.pdf",
+      "sha256": "9afcecdc1d954f77440e5db52dfe830117abc8551bc6243314d90fbedffc622f",
+      "bytes": 296672,
+      "pdf_pages": 14,
+      "archive_sha256_matches": null,
+      "checked_on": "2026-11-02",
+      "title": "Sigma CP-R — Repeater operation and maintenance manual"
+    },
+    {
+      "id": "kentec-e2d68c942c86",
+      "url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1064.pdf",
+      "sha256": "5296de49813d461628807ec7af8f85add240ff14a1ae2cab554e010c3f363e99",
+      "bytes": 237177,
+      "pdf_pages": 7,
+      "archive_sha256_matches": null,
+      "checked_on": "2026-11-02",
+      "title": "Solo 2 Response — Repeater installation, commissioning and operation"
+    }
+  ],
+  "new_panels": [
+    {
+      "id": "kentec-sigma-cp-r",
+      "brand": "Kentec",
+      "model": "Sigma CP-R 2 / 4 / 8-zone repeater",
+      "category": "fire",
+      "aliases": [
+        "Sigma CP-R",
+        "K01020M2",
+        "K01040M2",
+        "K01080M2",
+        "E01020L2",
+        "E01040L2",
+        "E01080L2"
+      ],
+      "record_ids": [
+        "kentec-922756f21680"
+      ],
+      "source_record_id": "kentec-922756f21680",
+      "source_pdf_page": 5,
+      "source_crop_points": [
+        207,
+        126,
+        537,
+        409
+      ],
+      "document_number": "Man-1093",
+      "document_revision": "Issue 06, May 2016",
+      "image_type": "manufacturer-manual-illustration",
+      "image_credit": "Kentec Man-1093, Issue 06, May 2016, PDF page 5; unchanged manufacturer figure",
+      "identification_notes": "Manufacturer fascia illustration of the mains-powered eight-zone repeater. Shared enclosure appearance does not identify two/four/eight zones or mains/24V supply.",
+      "applicability_limits": "Repeater family, not the Sigma CP main control panel. Man-1093 Issue 06 covers the six listed K/E variants. Check the complete label and revision; page 3 restricts compatibility to main-panel PCB part numbers with an alpha suffix.",
+      "uk_priority": true,
+      "uk_priority_order": 181
+    },
+    {
+      "id": "kentec-hydrosense-cp-r",
+      "brand": "Kentec",
+      "model": "HydroSense CP-R B3420 repeater",
+      "category": "fire",
+      "aliases": [
+        "HydroSense CP-R",
+        "Hydrosense CP-R",
+        "B3420"
+      ],
+      "record_ids": [
+        "kentec-07eb8f5458c5"
+      ],
+      "source_record_id": "kentec-07eb8f5458c5",
+      "source_pdf_page": 5,
+      "source_crop_points": [
+        210,
+        112,
+        539,
+        378
+      ],
+      "document_number": "Man-1132",
+      "document_revision": "Issue 03, June 2013",
+      "image_type": "manufacturer-manual-illustration",
+      "image_credit": "Kentec Man-1132, Issue 03, June 2013, PDF page 5; unchanged manufacturer figure",
+      "identification_notes": "Manufacturer fascia illustration for the mains-powered HydroSense water-detection repeater, with Alarm and water-detection labels.",
+      "applicability_limits": "Water-detection repeater, not a fire control panel or the HydroSense CP main panel. Man-1132 B3420 Issue 03 covers mains/24V variants; confirm the exact label and supply. Included alongside the existing HydroSense entries in the Kentec archive pack.",
+      "uk_priority": true,
+      "uk_priority_order": 181
+    },
+    {
+      "id": "kentec-solo-response",
+      "brand": "Kentec",
+      "model": "Solo Response addressable repeater",
+      "category": "fire",
+      "aliases": [
+        "Solo Response",
+        "Solo Response repeater"
+      ],
+      "record_ids": [
+        "kentec-579029878abe"
+      ],
+      "source_record_id": "kentec-579029878abe",
+      "source_pdf_page": 1,
+      "source_crop_points": [
+        239,
+        481,
+        524,
+        700
+      ],
+      "document_number": "Man-1052",
+      "document_revision": "Issue 02, November 1998",
+      "image_type": "manufacturer-manual-photograph",
+      "image_credit": "Kentec Man-1052, Issue 02, November 1998, PDF page 1; unchanged manufacturer figure",
+      "identification_notes": "Manufacturer manual cover photograph: pale moulded enclosure, central LCD/control strip and Solo badge.",
+      "applicability_limits": "Historical Solo Response repeater, not a Solo main panel or Solo 2 Response. Man-1052 Issue 02 describes a single-loop analogue-addressable repeater; verify the installed label, fitted options and applicable revision.",
+      "uk_priority": true,
+      "uk_priority_order": 181
+    },
+    {
+      "id": "kentec-solo-2-response",
+      "brand": "Kentec",
+      "model": "Solo 2 Response addressable repeater",
+      "category": "fire",
+      "aliases": [
+        "Solo 2 Response",
+        "Solo 2 Response repeater"
+      ],
+      "record_ids": [
+        "kentec-e2d68c942c86"
+      ],
+      "source_record_id": "kentec-e2d68c942c86",
+      "source_pdf_page": 1,
+      "source_crop_points": [
+        282,
+        514,
+        533,
+        736
+      ],
+      "document_number": "Man-1064",
+      "document_revision": "Issue 01, July 2002",
+      "image_type": "manufacturer-manual-photograph",
+      "image_credit": "Kentec Man-1064, Issue 01, July 2002, PDF page 1; unchanged manufacturer figure",
+      "identification_notes": "Manufacturer manual cover photograph: metal cabinet, horizontal zone indicators above the display, round controls and right-side key lock.",
+      "applicability_limits": "Historical Solo 2 Response repeater, not the Solo 2 main panel or earlier Solo Response. Man-1064 Issue 01 is retained with its actual edition; appearance does not establish firmware or optional facilities.",
+      "uk_priority": true,
+      "uk_priority_order": 181
+    }
+  ],
+  "manual_links": [
+    {
+      "record_id": "c-tec-5332c9b751b2",
+      "document_number": "DFU7001020",
+      "revision": "Rev 2",
+      "evidence_pdf_pages": [
+        1,
+        3,
+        6
+      ],
+      "panel_ids": [
+        "c-tec-cfp-standard",
+        "c-tec-cfp-economy",
+        "c-tec-cfp-alarmsense"
+      ],
+      "scope_note": "Checked user guide DFU7001020 Rev 2 is a family manual for CFP Standard, Economy and AlarmSense. Its page 3 feature chart distinguishes them; some sections do not apply to every variant. Match the panel label."
+    },
+    {
+      "record_id": "c-tec-4b1267f3fefc",
+      "document_number": "DFU7004010",
+      "revision": "Rev 1",
+      "evidence_pdf_pages": [
+        1,
+        3,
+        7
+      ],
+      "panel_ids": [
+        "c-tec-cfp-standard"
+      ],
+      "scope_note": "Checked Standard installation/maintenance manual DFU7004010 Rev 1 is linked separately. It must not be used as the AlarmSense or Economy engineering manual."
+    },
+    {
+      "record_id": "c-tec-70f490a601e3",
+      "document_number": "DFU2000501",
+      "revision": "Rev 2",
+      "evidence_pdf_pages": [
+        1,
+        6
+      ],
+      "panel_ids": [
+        "c-tec-xfp-16-zone",
+        "c-tec-xfp-32-zone"
+      ],
+      "scope_note": "Checked historical XFP user guide DFU2000501 Rev 2 shows both single-loop 16-zone and one/two-loop 32-zone layouts on page 6. It is not a CAST user guide; check the installed protocol and revision."
+    },
+    {
+      "record_id": "facp-3363e064-e6ce-4d60-9343-6744ae180a07",
+      "document_number": "DFU5020000",
+      "revision": "Rev 3",
+      "evidence_pdf_pages": [
+        1,
+        3
+      ],
+      "panel_ids": [
+        "c-tec-xfp-cast-16-zone",
+        "c-tec-xfp-cast-32-zone"
+      ],
+      "scope_note": "Checked CAST user guide DFU5020000 Rev 3 covers XFP501E/CA, XFP501/CA and XFP502/CA as listed on its cover. Do not substitute it for Apollo/Hochiki XFP variants."
+    },
+    {
+      "record_id": "facp-86a53825-e9fa-4f20-89eb-5211cddbd9fb",
+      "document_number": "DFU5030050",
+      "revision": "Rev 3, 1 May 2022",
+      "evidence_pdf_pages": [
+        1,
+        5,
+        7
+      ],
+      "panel_ids": [
+        "c-tec-zfp-cast"
+      ],
+      "scope_note": "Checked CAST ZFP user guide DFU5030050 Rev 3 (1 May 2022) covers the cabinet ranges on its cover. This is the CAST family edition, not the ZFP Apollo manual."
+    },
+    {
+      "record_id": "facp-83774c58-7e6b-4111-8bc7-e54d9072f5eb",
+      "document_number": "DFU5030070",
+      "revision": "Rev 1",
+      "evidence_pdf_pages": [
+        1,
+        4,
+        6
+      ],
+      "panel_ids": [
+        "c-tec-eacie"
+      ],
+      "scope_note": "Checked EACIE user guide DFU5030070 Rev 1 covers 1–4-loop evacuation alert equipment and states it is for Fire and Rescue Service use. It is not an ordinary fire-alarm user guide."
+    },
+    {
+      "record_id": "kentec-2a8e55fe4ae2",
+      "document_number": "Man-1057",
+      "revision": "Issue 09, June 2013",
+      "evidence_pdf_pages": [
+        1,
+        4,
+        5
+      ],
+      "panel_ids": [
+        "kentec-syncro"
+      ],
+      "scope_note": "Checked Syncro multi-loop user manual Man-1057 Issue 09 (June 2013) is linked as a historical edition. Do not assume it applies to Syncro AS, Lite, XT or every firmware revision."
+    }
+  ],
+  "withheld": [
+    {
+      "id": "kentec-k3200",
+      "reason": "Man-1049 fetched and read, but its cover collage does not verify a K3200 front photograph; no pictured card added."
+    },
+    {
+      "id": "c-tec-xfp510-32-repeater",
+      "reason": "Exact archive DFU2200502 Rev 1 hash verified, but manual has only rear/internal diagrams. Product image pages returned 403; no front picture invented."
+    },
+    {
+      "id": "c-tec-official-user-downloads",
+      "reason": "Six official download endpoints returned 403. Only the independently fetched exact archive editions named in this manifest are claimed as checked; official linked records are not rewritten."
+    }
+  ]
+}

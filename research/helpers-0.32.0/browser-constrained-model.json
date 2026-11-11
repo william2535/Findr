@@ -1,0 +1,302 @@
+{
+  "startedAt": "2026-11-11T11:57:43.822Z",
+  "actualModel": true,
+  "networkDisabledByHarness": false,
+  "tests": [
+    {
+      "kind": "readiness",
+      "at": "2026-11-11T11:58:35.753Z",
+      "helperCount": 2,
+      "frame": 1,
+      "helpersEngineVersion": "2026-11-11.2",
+      "localLanguageVersion": "2026-11-10.1",
+      "navigatorOnline": true,
+      "local": {
+        "supported": true,
+        "ready": true,
+        "installed": true,
+        "runtimeReady": true,
+        "missing": [],
+        "error": null,
+        "model": {
+          "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+          "title": "SmolLM2 360M Instruct · int8 · local CPU",
+          "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+          "dtype": "q8",
+          "backend": "wasm",
+          "parameters": 360000000,
+          "license": "Apache-2.0",
+          "originalModel": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct",
+          "modelCard": "https://huggingface.co/onnx-community/SmolLM2-360M-Instruct-ONNX",
+          "maxInputTokens": 768,
+          "maxNewTokens": 96,
+          "limits": "Compact local language model. Interpretations need source checks. It does not verify electrical procedures, measurements or compatibility. CPU replies can take tens of seconds; saved references remain available.",
+          "bytes": 366642692,
+          "runtimeBytes": 22563501
+        }
+      },
+      "shell": {
+        "ready": true,
+        "build": "a289b667d3b4",
+        "version": "0.32.0",
+        "verification": "sha256-v1",
+        "controlled": true
+      }
+    },
+    {
+      "kind": "Measured model turn",
+      "status": "measured",
+      "at": "2026-11-11T12:02:03.951Z",
+      "helperId": "58fb01cd-dc68-4c3c-8738-df469d845024",
+      "question": "How do I view the event history on an MxPro4 panel?",
+      "mode": "local-ai",
+      "modelUsed": true,
+      "coverage": "model_selected_manual_extract",
+      "model": {
+        "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "metrics": {
+          "loadMs": 123064.29999999888,
+          "inputTokens": 439,
+          "outputTokens": 3,
+          "firstTokenMs": 39549.59999999963,
+          "generationMs": 40864.79999999888,
+          "tokensPerSecond": 0.07341281494097811
+        },
+        "selection": {
+          "source": "S1",
+          "question": null
+        },
+        "choiceConstraint": {
+          "method": "model_logits_token_trie",
+          "allowed": [
+            "S1",
+            "S2",
+            "S3",
+            "NONE"
+          ],
+          "selected": "S1"
+        }
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "5b0e02d2f682d6039474e94716b2f75f10868dc33fa3e6764c0b43c3c50b86a4:pdf-22:0",
+          "citationId": "S1",
+          "manualId": "advanced-8f3ba6ecfc7f",
+          "contentHash": "5b0e02d2f682d6039474e94716b2f75f10868dc33fa3e6764c0b43c3c50b86a4",
+          "processorVersion": "2026-11-10.3",
+          "title": "Advanced MxPro4 — User guide",
+          "revision": "",
+          "models": [
+            "Mx-4100",
+            "Mx-4100/L",
+            "Mx-4200",
+            "Mx-4200/D",
+            "Mx-4400",
+            "Mx-4400/D",
+            "Mx-4400/LE",
+            "Mx-4800"
+          ],
+          "page": 22,
+          "pdfPage": 22,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "www.advancedco.com 22 3.7.8 View - Log After selecting to view the log option the display presents a pop-up window to allow selection between a view of all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.7.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001 .0 001 14/03/02 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001.",
+          "excerpt": "www.advancedco.com 22 3.7.8 View - Log After selecting to view the log option the display presents a pop-up window to allow selection between a view of all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.7.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001 .0 001 14/03/02 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001."
+        }
+      ],
+      "answer": "The saved manual says:\n\nwww.advancedco.com 22 3.7.8 View - Log After selecting to view the log option the display presents a pop-up window to allow selection between a view of all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.7.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001 .0 001 14/03/02 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001.\n\nThis is the cited manual wording; open the page for the complete procedure and surrounding conditions.",
+      "lastProgress": {
+        "id": "0e88d307-3482-4350-8ab5-d0be8aeb95b2",
+        "type": "progress",
+        "phase": "generate",
+        "message": "Generating locally · 3 tokens",
+        "tokens": 3,
+        "maxTokens": 3,
+        "elapsedMs": 167234.59999999963,
+        "operation": "generate"
+      }
+    },
+    {
+      "kind": "Real grounded model answer",
+      "status": "passed",
+      "at": "2026-11-11T12:02:03.951Z",
+      "elapsedMs": 171953.30000000075,
+      "helperId": "58fb01cd-dc68-4c3c-8738-df469d845024",
+      "question": "How do I view the event history on an MxPro4 panel?",
+      "mode": "local-ai",
+      "modelUsed": true,
+      "coverage": "model_selected_manual_extract",
+      "model": {
+        "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "metrics": {
+          "loadMs": 123064.29999999888,
+          "inputTokens": 439,
+          "outputTokens": 3,
+          "firstTokenMs": 39549.59999999963,
+          "generationMs": 40864.79999999888,
+          "tokensPerSecond": 0.07341281494097811
+        },
+        "selection": {
+          "source": "S1",
+          "question": null
+        },
+        "choiceConstraint": {
+          "method": "model_logits_token_trie",
+          "allowed": [
+            "S1",
+            "S2",
+            "S3",
+            "NONE"
+          ],
+          "selected": "S1"
+        }
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "5b0e02d2f682d6039474e94716b2f75f10868dc33fa3e6764c0b43c3c50b86a4:pdf-22:0",
+          "citationId": "S1",
+          "manualId": "advanced-8f3ba6ecfc7f",
+          "contentHash": "5b0e02d2f682d6039474e94716b2f75f10868dc33fa3e6764c0b43c3c50b86a4",
+          "processorVersion": "2026-11-10.3",
+          "title": "Advanced MxPro4 — User guide",
+          "revision": "",
+          "models": [
+            "Mx-4100",
+            "Mx-4100/L",
+            "Mx-4200",
+            "Mx-4200/D",
+            "Mx-4400",
+            "Mx-4400/D",
+            "Mx-4400/LE",
+            "Mx-4800"
+          ],
+          "page": 22,
+          "pdfPage": 22,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "www.advancedco.com 22 3.7.8 View - Log After selecting to view the log option the display presents a pop-up window to allow selection between a view of all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.7.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001 .0 001 14/03/02 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001.",
+          "excerpt": "www.advancedco.com 22 3.7.8 View - Log After selecting to view the log option the display presents a pop-up window to allow selection between a view of all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.7.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001 .0 001 14/03/02 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001."
+        }
+      ],
+      "answer": "The saved manual says:\n\nwww.advancedco.com 22 3.7.8 View - Log After selecting to view the log option the display presents a pop-up window to allow selection between a view of all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.7.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001 .0 001 14/03/02 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001.\n\nThis is the cited manual wording; open the page for the complete procedure and surrounding conditions.",
+      "conversation": {
+        "schemaVersion": 1,
+        "engineVersion": "2026-11-11.2",
+        "id": "b6f50b9d-cfeb-44ba-9488-0a35cecd62dc",
+        "title": "How do I view the event history on an MxPro4 panel?",
+        "createdAt": 1794398352000,
+        "updatedAt": 1794398353486,
+        "messages": [
+          {
+            "id": "3a414da0-b32f-48b6-8653-c3ba23834343",
+            "role": "user",
+            "text": "How do I view the event history on an MxPro4 panel?",
+            "createdAt": 1794398353486,
+            "kind": "user_input",
+            "sourceRefs": [],
+            "quickReplies": []
+          },
+          {
+            "id": "38042c59-6fa2-4cc9-b945-ab803af44b11",
+            "role": "assistant",
+            "text": "The saved manual says:\n\nwww.advancedco.com 22 3.7.8 View - Log After selecting to view the log option the display presents a pop-up window to allow selection between a view of all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.7.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001 .0 001 14/03/02 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001.\n\nThis is the cited manual wording; open the page for the complete procedure and surrounding conditions.",
+            "createdAt": 1794398353486,
+            "kind": "answer",
+            "sourceRefs": [
+              {
+                "sourceId": "5b0e02d2f682d6039474e94716b2f75f10868dc33fa3e6764c0b43c3c50b86a4:pdf-22:0",
+                "citationId": "S1",
+                "manualId": "advanced-8f3ba6ecfc7f",
+                "contentHash": "5b0e02d2f682d6039474e94716b2f75f10868dc33fa3e6764c0b43c3c50b86a4",
+                "processorVersion": "2026-11-10.3",
+                "title": "Advanced MxPro4 — User guide",
+                "revision": "",
+                "models": [
+                  "Mx-4100",
+                  "Mx-4100/L",
+                  "Mx-4200",
+                  "Mx-4200/D",
+                  "Mx-4400",
+                  "Mx-4400/D",
+                  "Mx-4400/LE",
+                  "Mx-4800"
+                ],
+                "page": 22,
+                "pdfPage": 22,
+                "printedPage": null,
+                "section": null,
+                "method": "text",
+                "requiresSourceReview": false,
+                "quote": "www.advancedco.com 22 3.7.8 View - Log After selecting to view the log option the display presents a pop-up window to allow selection between a view of all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.7.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001 .0 001 14/03/02 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001.",
+                "excerpt": "www.advancedco.com 22 3.7.8 View - Log After selecting to view the log option the display presents a pop-up window to allow selection between a view of all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.7.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001 .0 001 14/03/02 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001."
+              }
+            ],
+            "quickReplies": [],
+            "mode": "local-ai",
+            "modelUsed": true,
+            "model": {
+              "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+              "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+              "backend": "wasm",
+              "metrics": {
+                "loadMs": 123064.29999999888,
+                "inputTokens": 439,
+                "outputTokens": 3,
+                "firstTokenMs": 39549.59999999963,
+                "generationMs": 40864.79999999888,
+                "tokensPerSecond": 0.07341281494097811
+              },
+              "selection": {
+                "source": "S1",
+                "question": null
+              },
+              "choiceConstraint": {
+                "method": "model_logits_token_trie",
+                "allowed": [
+                  "S1",
+                  "S2",
+                  "S3",
+                  "NONE"
+                ],
+                "selected": "S1"
+              }
+            },
+            "coverage": "model_selected_manual_extract",
+            "steps": [],
+            "warnings": [],
+            "retrieval": "keyword_alias_matching_with_local_model_selection",
+            "engineVersion": "2026-11-11.2"
+          }
+        ],
+        "context": {
+          "observations": [],
+          "answeredQuestions": [],
+          "knownFields": {},
+          "pendingQuestion": null,
+          "investigation": null,
+          "confirmedModel": "MxPro 4",
+          "previousQuestion": "How do I view the event history on an MxPro4 panel?"
+        }
+      },
+      "lastProgress": {
+        "id": "0e88d307-3482-4350-8ab5-d0be8aeb95b2",
+        "type": "progress",
+        "phase": "generate",
+        "message": "Generating locally · 3 tokens",
+        "tokens": 3,
+        "maxTokens": 3,
+        "elapsedMs": 167234.59999999963,
+        "operation": "generate"
+      }
+    }
+  ],
+  "frames": 1
+}

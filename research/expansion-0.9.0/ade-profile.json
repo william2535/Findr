@@ -1,0 +1,748 @@
+{
+  "id": "ade-accenta-optima",
+  "brand": "ADE / Honeywell",
+  "title": "Accenta G4 / Optima LCD",
+  "keypad": "8EP417A LCD · Accenta G4 baseline",
+  "edition": "IU1-0040 Rev 1.0 (user); IE1-0040 Rev 1.1 (engineer)",
+  "scope": "Full documented LCD engineer tree, user1/user2 programming, day/chime and already-authorised setting/unsetting contexts. Reference-only LED presentation and physical/system effects are labelled.",
+  "panelIds": [
+    "ade-accenta-optima-lcd-keypad"
+  ],
+  "allFixtureValuesSimulated": true,
+  "fixtureNotice": "All detector names, code records, event times and settings are fictional FINDR practice data. No real alarm is connected.",
+  "sessionStart": "Already-authorised engineer practice session",
+  "lcdNotice": "Source-pinned phrases; populated values and display spacing are illustrative.",
+  "rightIsEnter": false,
+  "leftIsBack": false,
+  "commitOnExit": false,
+  "exitFromRoot": true,
+  "exitWithoutConfirmation": true,
+  "hideTypeCodes": true,
+  "exitChecks": false,
+  "reverseLogScroll": false,
+  "exitPrompt": [
+    "RESET",
+    "Leave programming"
+  ],
+  "enterLabel": "SET",
+  "backLabel": "RESET",
+  "editLabel": "CHIME",
+  "directMenuCodes": false,
+  "zoneDigits": 1,
+  "typeLabel": "Program role",
+  "circuit": "Contact status only. These manuals do not document a keypad resistance measurement.",
+  "readings": {
+    "secure": "Closed",
+    "active": "Open",
+    "tamper": "Tamper"
+  },
+  "statusLabels": {
+    "secure": "Secure",
+    "active": "Active",
+    "tamper": "Tamper"
+  },
+  "navigation": {
+    "directNumericMenus": true,
+    "menuNextKey": "next",
+    "menuPreviousKey": "__none__",
+    "recordNextKey": "next",
+    "recordPreviousKey": "__none__"
+  },
+  "zones": [
+    {
+      "address": "1",
+      "name": "Front Door",
+      "type": "Timed",
+      "omitEnabled": true
+    },
+    {
+      "address": "2",
+      "name": "Hall",
+      "type": "Inhibit",
+      "omitEnabled": true
+    },
+    {
+      "address": "3",
+      "name": "Living Room",
+      "type": "Intruder",
+      "omitEnabled": true
+    },
+    {
+      "address": "4",
+      "name": "Kitchen",
+      "type": "Intruder",
+      "omitEnabled": true
+    },
+    {
+      "address": "5",
+      "name": "Garage",
+      "type": "Intruder",
+      "omitEnabled": true
+    },
+    {
+      "address": "6",
+      "name": "Landing",
+      "type": "Intruder",
+      "omitEnabled": true
+    },
+    {
+      "address": "7",
+      "name": "Back Door",
+      "type": "Intruder",
+      "omitEnabled": true
+    },
+    {
+      "address": "8",
+      "name": "Fire Zone",
+      "type": "Fire",
+      "omitEnabled": false
+    }
+  ],
+  "zoneTypes": [
+    {
+      "code": null,
+      "label": "Unused"
+    },
+    {
+      "code": null,
+      "label": "Used"
+    },
+    {
+      "code": null,
+      "label": "Timed"
+    },
+    {
+      "code": null,
+      "label": "Inhibit"
+    }
+  ],
+  "events": [
+    {
+      "id": "engineer-access",
+      "label": "ENG ACCESS",
+      "number": 250,
+      "zone": "",
+      "time": "10:37:10 29-Oct",
+      "details": "Fictional engineer session",
+      "logs": [
+        "panel"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "47",
+          "pdfPage": 75
+        }
+      ]
+    },
+    {
+      "id": "mains-restored",
+      "label": "MAINS OK",
+      "number": 249,
+      "zone": "",
+      "time": "10:35:12 29-Oct",
+      "details": "Fictional mains power restored",
+      "logs": [
+        "panel"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "47",
+          "pdfPage": 75
+        }
+      ]
+    },
+    {
+      "id": "zone-2-alarm",
+      "label": "INTRUDER",
+      "number": 248,
+      "zone": "2",
+      "time": "10:33:00 29-Oct",
+      "details": "Zone2 Hall · fictional alarm",
+      "logs": [
+        "alarm"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "47",
+          "pdfPage": 75
+        }
+      ]
+    },
+    {
+      "id": "mains-failed",
+      "label": "MAINS FAIL",
+      "number": 247,
+      "zone": "",
+      "time": "10:31:00 29-Oct",
+      "details": "Fictional mains power failure",
+      "logs": [
+        "panel"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "47",
+          "pdfPage": 75
+        }
+      ]
+    },
+    {
+      "id": "program-set",
+      "label": "SET PROGRAM",
+      "number": 246,
+      "zone": "",
+      "time": "09:00:00 29-Oct",
+      "details": "Program1 · fictional set period",
+      "logs": [
+        "panel"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "47",
+          "pdfPage": 75
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ade-manuals",
+      "title": "Accenta/Optima User Guide and Accenta G4 Engineer’s Manual",
+      "edition": "IU1-0040 Rev 1.0 (user); IE1-0040 Rev 1.1 (engineer)",
+      "publisher": "Honeywell Security / ADE",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Accenta%20-%20Optima%20User%20Guide.pdf",
+      "totalPdfPages": 80,
+      "sha256": "63d08f22e4989314328c026abf5c9ff006fb93c5104ad50f37bd4c22f1128a8f",
+      "pageNumbering": "User: PDF 1–24, printed Arabic page +4. Engineer: PDF 25–80, printed Arabic page +28.",
+      "scope": "Original manufacturer booklet in a third-party archive. Accenta G4 with 8EP417A LCD keypad; the LED/Optima compact variations are distinguished. Revision footers are on PDF24 and PDF80.",
+      "archiveRecordId": "ade-cabf3c545321"
+    }
+  ],
+  "limitations": [
+    "IU1-0040 Rev1.0 User Guide + IE1-0040 Rev1.1 Engineer Manual, combined original manufacturer booklet. Accenta G4 LCD baseline; no G3 or built-in Optima compact LED menu substitution.",
+    "No hardware timing, PA gesture, live output or communicator is reproduced.",
+    "The full emulator includes all documented engineer menus; guided lessons are selected practice routes.",
+    "The precise omission ▲ behaviour remains explicitly unverified. Repeating a zone digit is not taught as reinstatement; unsetting restores omissions.",
+    "All fixture code values start empty. The app never asks for real credentials."
+  ],
+  "keys": [
+    {
+      "id": "0",
+      "label": "0",
+      "ariaLabel": "0"
+    },
+    {
+      "id": "1",
+      "label": "1",
+      "ariaLabel": "1"
+    },
+    {
+      "id": "2",
+      "label": "2",
+      "ariaLabel": "2"
+    },
+    {
+      "id": "3",
+      "label": "3",
+      "ariaLabel": "3"
+    },
+    {
+      "id": "4",
+      "label": "4",
+      "ariaLabel": "4"
+    },
+    {
+      "id": "5",
+      "label": "5",
+      "ariaLabel": "5"
+    },
+    {
+      "id": "6",
+      "label": "6",
+      "ariaLabel": "6"
+    },
+    {
+      "id": "7",
+      "label": "7",
+      "ariaLabel": "7"
+    },
+    {
+      "id": "8",
+      "label": "8",
+      "ariaLabel": "8"
+    },
+    {
+      "id": "9",
+      "label": "9",
+      "ariaLabel": "9"
+    },
+    {
+      "id": "next",
+      "label": "▲",
+      "ariaLabel": "Up arrow: next menu or zone; older log event"
+    },
+    {
+      "id": "chime",
+      "label": "CHIME",
+      "ariaLabel": "Chime; event log shortcut in programming"
+    },
+    {
+      "id": "omit",
+      "label": "OMIT",
+      "ariaLabel": "Omit; newer log event"
+    },
+    {
+      "id": "program",
+      "label": "PROG",
+      "ariaLabel": "Program; program menus or event number"
+    },
+    {
+      "id": "back",
+      "label": "RESET",
+      "ariaLabel": "Reset: return or documented save on specific screens"
+    },
+    {
+      "id": "enter",
+      "label": "SET",
+      "ariaLabel": "Set: select or confirm"
+    },
+    {
+      "id": "pa-left",
+      "label": "PA",
+      "ariaLabel": "Left panic button, recognition only"
+    },
+    {
+      "id": "pa-right",
+      "label": "PA",
+      "ariaLabel": "Right panic button, recognition only"
+    }
+  ],
+  "controls": [
+    {
+      "label": "▲ / SET / RESET",
+      "description": "▲ browses forward; SET selects or confirms; RESET returns. Check the screen note: some edits save on RESET."
+    },
+    {
+      "label": "0–9",
+      "description": "Enter the local menu digit directly. Zone addresses are single digits1–8."
+    },
+    {
+      "label": "CHIME / OMIT / PROG",
+      "description": "In engineer mode these open Event Log, Omit Allow & Double Knock, and Set Up Programs."
+    },
+    {
+      "label": "Event log",
+      "description": "CHIME then1. ▲ moves older, OMIT newer, SET shows details; PROG allows a three-digit event number."
+    }
+  ],
+  "omissionInfo": {
+    "label": "What “disable” means here",
+    "meaning": "Omit excludes an eligible Used + Omit Allow zone for one setting period; it does not power off the detector.",
+    "duration": "Omitted zones are restored automatically when the system is unset.",
+    "restore": "Open the User Unsetting context and tap any four fictional practice digits to demonstrate automatic restoration. A repeated-digit manual reinstatement gesture is not asserted."
+  },
+  "nodes": {
+    "root": {
+      "kind": "menu",
+      "label": "Engineer Program Mode",
+      "parent": null,
+      "children": [
+        "walk-active",
+        "alarm-test",
+        "log-menu"
+      ],
+      "autoDigits": true,
+      "shortcutKeys": {
+        "chime": "log-menu"
+      },
+      "virtual": true,
+      "selectedSubset": true,
+      "sourceRefs": [
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "18",
+          "pdfPage": 46
+        },
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "19",
+          "pdfPage": 47
+        },
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "30",
+          "pdfPage": 58
+        }
+      ]
+    },
+    "walk-active": {
+      "kind": "walk-run",
+      "label": "Walk Test",
+      "parent": "root",
+      "code": "0",
+      "all": true,
+      "finishKey": "back",
+      "restartKey": "enter",
+      "sourceRefs": [
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "18",
+          "pdfPage": 46
+        }
+      ]
+    },
+    "alarm-test": {
+      "kind": "bell",
+      "label": "Alarm Test",
+      "parent": "root",
+      "code": "1",
+      "outputs": [
+        "Bell",
+        "Strobe",
+        "Sounder"
+      ],
+      "outputToggleCodes": {
+        "1": "Bell",
+        "2": "Strobe",
+        "3": "Sounder"
+      },
+      "toggleKeys": [
+        "enter"
+      ],
+      "allOffKey": "0",
+      "stopOutputsOnExit": true,
+      "sourceRefs": [
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "19",
+          "pdfPage": 47
+        }
+      ]
+    },
+    "log-menu": {
+      "kind": "menu",
+      "label": "View Event Log",
+      "parent": "root",
+      "code": "C",
+      "children": [
+        "view-log"
+      ],
+      "autoDigits": true,
+      "sourceRefs": [
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "30",
+          "pdfPage": 58
+        }
+      ]
+    },
+    "view-log": {
+      "kind": "log",
+      "label": "LCD Event Log",
+      "parent": "log-menu",
+      "code": "1",
+      "detailsKey": "enter",
+      "logNextKey": "next",
+      "logPreviousKey": "omit",
+      "sourceRefs": [
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "30",
+          "pdfPage": 58
+        }
+      ]
+    },
+    "arming-root": {
+      "kind": "user-prompt",
+      "label": "Authorised Setting",
+      "parent": null,
+      "sessionRoot": true,
+      "lines": [
+        "Program 1 Set",
+        "Authorised demo user"
+      ],
+      "omitNode": "omit-zones",
+      "sourceRefs": [
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "6",
+          "pdfPage": 10
+        }
+      ]
+    },
+    "omit-zones": {
+      "kind": "zone-omit",
+      "label": "Omit Zones",
+      "parent": "arming-root",
+      "numericSelection": true,
+      "eligibleOnly": true,
+      "omitOnDigit": true,
+      "omitOnly": true,
+      "toggleKeys": [],
+      "finishKey": "enter",
+      "enterFinishesOmission": true,
+      "enterStartsSetting": true,
+      "sourceRefs": [
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "6",
+          "pdfPage": 10
+        }
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "id": "omit-zone",
+      "title": "Omit the Hall detector",
+      "description": "From the already-authorised exit procedure, omit zone2 for one set period. SET continues setting in this simulated lesson.",
+      "aliases": [
+        "disable detector",
+        "bypass Hall",
+        "omit zone2"
+      ],
+      "path": [
+        "OMIT",
+        "2",
+        "SET"
+      ],
+      "routeNodeIds": [
+        "arming-root",
+        "omit-zones"
+      ],
+      "hints": [
+        "OMIT",
+        "2",
+        "SET"
+      ],
+      "goal": {
+        "kind": "omission",
+        "zone": "2",
+        "value": true
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "6",
+          "pdfPage": 10
+        }
+      ],
+      "startNodeId": "arming-root",
+      "sessionLabel": "Already-authorised setting"
+    },
+    {
+      "id": "omit-garage",
+      "title": "Omit the Garage detector",
+      "description": "Practise selecting a different eligible zone by its actual single-digit address.",
+      "aliases": [
+        "omit garage",
+        "disable garage detector"
+      ],
+      "path": [
+        "OMIT",
+        "5",
+        "SET"
+      ],
+      "routeNodeIds": [
+        "arming-root",
+        "omit-zones"
+      ],
+      "hints": [
+        "OMIT",
+        "5",
+        "SET"
+      ],
+      "goal": {
+        "kind": "omission",
+        "zone": "5",
+        "value": true
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "6",
+          "pdfPage": 10
+        }
+      ],
+      "startNodeId": "arming-root",
+      "sessionLabel": "Already-authorised setting"
+    },
+    {
+      "id": "find-last-alarm",
+      "title": "Find the last intruder alarm",
+      "description": "Open the LCD event log, move to the Hall intruder event and view its associated details.",
+      "aliases": [
+        "last alarm",
+        "why did alarm go off"
+      ],
+      "path": [
+        "CHIME",
+        "1",
+        "▲ twice",
+        "SET"
+      ],
+      "routeNodeIds": [
+        "root",
+        "log-menu",
+        "view-log"
+      ],
+      "hints": [
+        "CHIME",
+        "1",
+        "▲ twice",
+        "SET"
+      ],
+      "goal": {
+        "kind": "log",
+        "event": "zone-2-alarm",
+        "details": true
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "30",
+          "pdfPage": 58
+        }
+      ]
+    },
+    {
+      "id": "find-mains-fault",
+      "title": "Find a mains failure in the log",
+      "description": "Read the fictional MAINS FAIL event and its details.",
+      "aliases": [
+        "power failure",
+        "mains fault"
+      ],
+      "path": [
+        "CHIME",
+        "1",
+        "▲ three times",
+        "SET"
+      ],
+      "routeNodeIds": [
+        "root",
+        "log-menu",
+        "view-log"
+      ],
+      "hints": [
+        "CHIME",
+        "1",
+        "▲ three times",
+        "SET"
+      ],
+      "goal": {
+        "kind": "log",
+        "event": "mains-failed",
+        "details": true
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "30",
+          "pdfPage": 58
+        }
+      ]
+    },
+    {
+      "id": "walk-test-pir",
+      "title": "Walk-test the Hall detector",
+      "description": "Enter Walk Test, activate the fictional Hall detector using the test control, then RESET to stop.",
+      "aliases": [
+        "test PIR",
+        "walk test detector"
+      ],
+      "path": [
+        "0 Walk Test",
+        "Activate zone2 below",
+        "RESET"
+      ],
+      "routeNodeIds": [
+        "root",
+        "walk-active"
+      ],
+      "hints": [
+        "0 Walk Test",
+        "Activate zone2 below",
+        "RESET"
+      ],
+      "goal": {
+        "kind": "walk",
+        "zone": "2"
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "18",
+          "pdfPage": 46
+        }
+      ]
+    },
+    {
+      "id": "bell-test",
+      "title": "Test and stop the bell",
+      "description": "Enter Alarm Test, switch the fictional Bell on with1, then off with1 or0.",
+      "aliases": [
+        "siren test",
+        "bell output test"
+      ],
+      "path": [
+        "1 Alarm Test",
+        "1 Bell on",
+        "1 Bell off",
+        "RESET"
+      ],
+      "routeNodeIds": [
+        "root",
+        "alarm-test"
+      ],
+      "hints": [
+        "1 Alarm Test",
+        "1 Bell on",
+        "1 Bell off",
+        "RESET"
+      ],
+      "goal": {
+        "kind": "bell"
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "19",
+          "pdfPage": 47
+        }
+      ]
+    },
+    {
+      "id": "leave-engineering",
+      "title": "Leave engineer programming",
+      "description": "Press RESET at the engineer menu to return from the already-authorised programming session.",
+      "aliases": [
+        "exit engineer",
+        "leave programming"
+      ],
+      "path": [
+        "RESET"
+      ],
+      "routeNodeIds": [
+        "root"
+      ],
+      "hints": [
+        "RESET"
+      ],
+      "goal": {
+        "kind": "logout"
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "ade-manuals",
+          "printedPage": "17",
+          "pdfPage": 45
+        }
+      ]
+    }
+  ]
+}

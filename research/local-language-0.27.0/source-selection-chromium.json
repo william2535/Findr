@@ -1,0 +1,90 @@
+{
+  "syntheticReference": true,
+  "system": "Select the SOURCE IDs that answer QUESTION. Reply only S1 or S2 or NONE; do not rewrite source text.",
+  "results": [
+    {
+      "name": "event history",
+      "expected": "S1",
+      "user": "SOURCE S1: Event history procedure. 1. From the home display, select View. 2. Select Log. 3. Use the arrow keys to scroll through the events. 4. Press Exit to return to the home display.\nSOURCE S2: FINDR synthetic panel manual, version 1.0, issued 2026.\nQUESTION: how do i chek the evnt histry on this panel?",
+      "reply": {
+        "text": "SOURCE S1: Event history procedure. 1. From the home display,",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 4383.9000000003725,
+          "inputTokens": 137,
+          "outputTokens": 16,
+          "firstTokenMs": 2449,
+          "generationMs": 4471,
+          "tokensPerSecond": 3.5786177588906285
+        }
+      }
+    },
+    {
+      "name": "contextual menu",
+      "expected": "S1",
+      "user": "PRIOR QUESTION: How do I view the event history?\nSOURCE S1: Event history procedure. 1. From the home display, select View. 2. Select Log. 3. Use the arrow keys to scroll through the events. 4. Press Exit to return to the home display.\nSOURCE S2: FINDR synthetic panel manual, version 1.0, issued 2026.\nQUESTION: where is that menu?",
+      "reply": {
+        "text": "SOURCE S1: Event history procedure. 1. From the home display,",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 143,
+          "outputTokens": 16,
+          "firstTokenMs": 2578.800000000745,
+          "generationMs": 4670.9000000003725,
+          "tokensPerSecond": 3.425464043331847
+        }
+      }
+    },
+    {
+      "name": "PSU nominal voltage",
+      "expected": "S2",
+      "user": "SOURCE S1: FINDR synthetic PSU installation manual, revision 2.\nSOURCE S2: PSU electrical specification: nominal output 24 V DC at the output terminals with the load connected.\nQUESTION: What is the nominal power supply output voltage with the load connected?",
+      "reply": {
+        "text": "SOURCE S1: FINDR synthetic PSU installation manual, revision 2",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 104,
+          "outputTokens": 16,
+          "firstTokenMs": 1869.2000000011176,
+          "generationMs": 3795.4000000003725,
+          "tokensPerSecond": 4.215629446171268
+        }
+      }
+    },
+    {
+      "name": "absent evidence",
+      "expected": "NONE",
+      "user": "SOURCE S1: Event history procedure. Select View, then Log.\nSOURCE S2: FINDR synthetic panel manual, version 1.0.\nQUESTION: What battery capacity is required for this panel?",
+      "reply": {
+        "text": "QUESTION: What is the battery capacity required for this panel?",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 89,
+          "outputTokens": 16,
+          "firstTokenMs": 1578.5999999996275,
+          "generationMs": 3531.9000000003725,
+          "tokensPerSecond": 4.530139584925483
+        }
+      }
+    }
+  ]
+}

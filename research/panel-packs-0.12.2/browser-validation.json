@@ -1,0 +1,50 @@
+{
+  "release": "0.12.2",
+  "date": "2026-10-30",
+  "preview_url": "http://terminal.local:4173/",
+  "checks": [
+    {
+      "name": "release page",
+      "result": "Shows version0.12.2, 63 new pictured families, total504 and the matching APK path."
+    },
+    {
+      "name": "UK-first identification",
+      "result": "504 families and61 brands; UK first selected; existing GENT, Advanced and Kentec leading cards retained."
+    },
+    {
+      "name": "EMS brand filter",
+      "result": "All three new FirePoint, SmartCell and FireCell2X-A pictures render with respective document counts1,1,0."
+    },
+    {
+      "name": "SmartCell manual association",
+      "result": "Card opens the exact SmartCell Control Panel User Guide Issue5 catalogue URL, with source and Save PDF controls. No download initiated."
+    },
+    {
+      "name": "Orisec phone layout",
+      "frame_width": 390,
+      "document_client_width": 375,
+      "document_scroll_width": 375,
+      "result": "All six new keypad families appear with Keypad reference labels. No horizontal overflow."
+    },
+    {
+      "name": "Fermax phone layout",
+      "frame_width": 320,
+      "document_client_width": 305,
+      "document_scroll_width": 305,
+      "result": "Search finds the four-family pack. Pack view renders pictures and explicitly states that no archive manuals are linked; no horizontal overflow."
+    }
+  ],
+  "screenshot": "research/panel-packs-0.12.2/pack-preview.jpg",
+  "console_review": "Only browser-extension metadata errors appeared in the sampled console output; no FINDR application error was observed.",
+  "limits": [
+    "The HTTP preview does not verify service-worker installation or a physical device offline launch.",
+    "Android signature and embedded-byte checks are separate; physical phone installation has not been tested."
+  ],
+  "temporary_qa_page_removed": true,
+  "automated_suite": {
+    "tests": 625,
+    "passed": 625,
+    "failed": 0,
+    "log": "research/panel-packs-0.12.2/test-results.txt"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "syntheticFailureInjection": true,
+  "environment": "Linux Chromium, 390px viewport",
+  "checks": [
+    "Skip intro enters manual choice in same persisted job",
+    "Cancelled software download offers resource retry, never clearer-PDF advice",
+    "Malformed PDF leaves usable manual state unchanged",
+    "OCR worker failure has OCR-specific transcript and retry",
+    "Unreadable page asks for another readable copy",
+    "Cancelled PDF processing attaches no partial analysis and preserves job",
+    "Storage failure visible, old saved state intact, pending transcript recoverable by Retry",
+    "0.25 saved job migrates without intro replay or lost transcript"
+  ],
+  "status": "passed"
+}

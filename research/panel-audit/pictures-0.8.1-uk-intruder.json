@@ -1,0 +1,509 @@
+{
+  "batch": "uk-intruder-0.8.1",
+  "reviewed_at": "2026-10-29",
+  "status": "final-assets-await-root-integration",
+  "added_picture_cards": 12,
+  "uk_priority_cards": 10,
+  "scope": "New intruder control-panel and shared-keypad picture families. Real manufacturer photographs and original manufacturer manual graphics only.",
+  "method": [
+    "Compared proposed identifiers and visual families with all 396 existing FINDR picture records.",
+    "Verified existing archive record identifiers against catalogue.json. No new archive entries invented.",
+    "Visually inspected original PDF pages and manufacturer photographs, then inspected final crops in a contact sheet.",
+    "Preserved shared-keypad limitations and grouped finish variants; source pictures do not imply complete emulator coverage.",
+    "Retained PDFs in work/ as research inputs only. Only reviewed raster assets are in images/."
+  ],
+  "limitations": [
+    "Photographs establish a source-correct visual reference, not the installed main-panel model, PCB revision, software menu version or product availability.",
+    "Menvier M800iD picture coverage must not broaden the existing M750/M800 emulator claim.",
+    "New HKC, Acre and Pyronix models with no exact bundled archive match intentionally have empty record_ids.",
+    "Paradox manual families remain outside UK priority because UK availability evidence was not established.",
+    "The manufacturer currently photographs EURO 76 L and SW-10270-T with their cabinets open; notes identify this explicitly."
+  ],
+  "candidates": [
+    {
+      "id": "menvier-m750-m800-m800id",
+      "brand": "Menvier",
+      "model": "M750 / M800 / M800iD",
+      "status": "verified-image",
+      "record_ids": [
+        "menvier-ba5f36ba3be0",
+        "menvier-c4c3c2f5d83d"
+      ],
+      "reason": "Original source and final crop visually inspected. Manufacturer M750/M800/M800iD datasheet shows the open-flap M Series keypad: blue LCD, left navigation column and ENT/ESC keys. One picture covers this shared exterior family.",
+      "source_image_url": "https://www.sourcesecurity.com/datasheets/menvier-security-m800/co-478-ga/1163_M750_M800_M800iD_Web%5B1%5D.pdf#page=1",
+      "source_page_url": "https://www.sourcesecurity.com/datasheets/menvier-security-m800/co-478-ga/1163_M750_M800_M800iD_Web%5B1%5D.pdf",
+      "image_type": "manufacturer-datasheet-keypad-product-image",
+      "source_pdf_page": 1,
+      "source_sha256": "e475a5d201b0c89ec91e2623588e16b85c5724a4ad74e686d2dbebf4816b1720",
+      "asset_sha256": "562f9323b12b55b1549aec2539a0f75f04dccef665636b4a1d15ba55a6329762",
+      "dimensions": [
+        885,
+        897
+      ],
+      "applicability_limits": "The pictured remote keypad is shared across systems. Confirm the main control-panel model, hardware and manual revision; fascia appearance alone cannot identify the connected panel or establish menu compatibility. M800iD is included for visual identification only. An emulator verified for M750/M800 must retain that narrower model scope. The linked PDF is a third-party-hosted copy of the original manufacturer document.",
+      "uk_priority": true,
+      "uk_evidence": [
+        "https://www.sourcesecurity.com/datasheets/menvier-security-m800/co-478-ga/1163_M750_M800_M800iD_Web%5B1%5D.pdf",
+        "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Menvier%20M800%20Installation%20Instructions.pdf"
+      ],
+      "source_document_url": "https://www.sourcesecurity.com/datasheets/menvier-security-m800/co-478-ga/1163_M750_M800_M800iD_Web%5B1%5D.pdf",
+      "source_crop_points": [
+        160,
+        108,
+        455,
+        407
+      ],
+      "asset_preparation": "Original manufacturer PDF page crop; no fascia, labels or buttons redrawn."
+    },
+    {
+      "id": "menvier-ts590-ts690-ts2500-networker",
+      "brand": "Menvier",
+      "model": "TS590 / TS690 / TS2500 Networker keypad",
+      "status": "verified-image",
+      "record_ids": [
+        "menvier-e10a7abd1424",
+        "menvier-5a2154540611",
+        "menvier-7d2af37dfd6f"
+      ],
+      "reason": "Original source and final crop visually inspected. Original TS590 operator-manual cover illustration of the Networker LCD keypad with A/B/C/D, ENT and ESC keys. TS690/TS690ID and TS2500 original manuals independently show compatible Networker LCD keypad designs.",
+      "source_image_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Menvier%20TS590%20User%20Guide.pdf#page=1",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Menvier%20TS590%20User%20Guide.pdf",
+      "image_type": "manufacturer-manual-keypad-illustration",
+      "source_pdf_page": 1,
+      "source_sha256": "2115e165e82fd1c609c077929bcfdd37fac87743ba0fa30fe58c93f34da37e5b",
+      "asset_sha256": "0a9c27c99920e22c06a04df2240463269e18399b26d86dc1a3e159c22080feec",
+      "dimensions": [
+        621,
+        684
+      ],
+      "applicability_limits": "The pictured remote keypad is shared across systems. Confirm the main control-panel model, hardware and manual revision; fascia appearance alone cannot identify the connected panel or establish menu compatibility. The TS690 guide also documents LED, starburst and arming-station variants; this picture represents the LCD style only. The linked PDF is a third-party-hosted copy of the original manufacturer document.",
+      "uk_priority": true,
+      "uk_evidence": [
+        "https://www.ukwatchsecurity.co.uk/engineers.php"
+      ],
+      "source_document_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Menvier%20TS590%20User%20Guide.pdf",
+      "source_crop_points": [
+        186,
+        282,
+        393,
+        510
+      ],
+      "asset_preparation": "Original manufacturer PDF page crop; no fascia, labels or buttons redrawn."
+    },
+    {
+      "id": "eaton-scantronic-9651-9751-9752-9851-9930",
+      "brand": "Eaton / Scantronic",
+      "model": "9651 / 9751 / 9752 / 9851 — 9930 keypad",
+      "status": "verified-image",
+      "record_ids": [
+        "eaton-scantronic-de36d5818888",
+        "eaton-scantronic-ad32f280c13f",
+        "eaton-scantronic-105c389dba94",
+        "eaton-scantronic-75f6b0a933f7"
+      ],
+      "reason": "Original source and final crop visually inspected. The 9851 user manual identifies this original exterior diagram as the 9930 LCD remote keypad. The 9651 and 9751 user guides and 9752 installation guide independently document use of the 9930 keypad.",
+      "source_image_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Scantronic%209851%20User%20Guide.pdf#page=4",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Scantronic%209851%20User%20Guide.pdf",
+      "image_type": "manufacturer-manual-keypad-illustration",
+      "source_pdf_page": 4,
+      "source_sha256": "99479ff85ae2b53c8ea31ffbf3d0a422f3d18554e2fe430e2a2c175c6bc80bd9",
+      "asset_sha256": "34f4919719816c0bd028999d37e9301f5bdbc74001c404a47e199ed6185ec686",
+      "dimensions": [
+        735,
+        531
+      ],
+      "applicability_limits": "The pictured remote keypad is shared across systems. Confirm the main control-panel model, hardware and manual revision; fascia appearance alone cannot identify the connected panel or establish menu compatibility. The 9752 installation guide also supports a 9940 keypad, which is not depicted. The source diagram retains its original small internal leader lines. The linked PDF is a third-party-hosted copy of the original manufacturer document.",
+      "uk_priority": true,
+      "uk_evidence": [
+        "https://www.ukwatchsecurity.co.uk/engineers.php"
+      ],
+      "source_document_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Scantronic%209851%20User%20Guide.pdf",
+      "source_crop_points": [
+        86,
+        157,
+        331,
+        334
+      ],
+      "asset_preparation": "Original manufacturer PDF page crop; no fascia, labels or buttons redrawn."
+    },
+    {
+      "id": "ade-accenta-optima-lcd-keypad",
+      "brand": "ADE",
+      "model": "Accenta / Optima LCD keypad",
+      "status": "verified-image",
+      "record_ids": [
+        "ade-cabf3c545321"
+      ],
+      "reason": "Original source and final crop visually inspected. Original Honeywell Accenta/Optima user-guide cover illustration of the LCD remote keypad, with the flip-down lid open. This is the LCD face, distinct from the LED-only Accenta G3 cards already in FINDR.",
+      "source_image_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Accenta%20-%20Optima%20User%20Guide.pdf#page=1",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Accenta%20-%20Optima%20User%20Guide.pdf",
+      "image_type": "manufacturer-manual-keypad-illustration",
+      "source_pdf_page": 1,
+      "source_sha256": "63d08f22e4989314328c026abf5c9ff006fb93c5104ad50f37bd4c22f1128a8f",
+      "asset_sha256": "4283a5c5f8684b3015f0e8c86c43ec4167226d297de01b7dee7e91af1ebf9068",
+      "dimensions": [
+        560,
+        685
+      ],
+      "applicability_limits": "The pictured remote keypad is shared across systems. Confirm the main control-panel model, hardware and manual revision; fascia appearance alone cannot identify the connected panel or establish menu compatibility. This archive guide is titled Accenta/Optima without an explicit generation in its title, so the card does not infer a G4 revision from appearance. The linked PDF is a third-party-hosted copy of the original manufacturer document.",
+      "uk_priority": true,
+      "uk_evidence": [
+        "https://www.ukwatchsecurity.co.uk/engineers.php"
+      ],
+      "source_document_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Accenta%20-%20Optima%20User%20Guide.pdf",
+      "source_crop_points": [
+        54,
+        253,
+        166,
+        390
+      ],
+      "asset_preparation": "Original manufacturer PDF page crop; no fascia, labels or buttons redrawn."
+    },
+    {
+      "id": "pyronix-euro-76-large-metal",
+      "brand": "Pyronix",
+      "model": "EURO 76 L",
+      "status": "verified-image",
+      "record_ids": [],
+      "reason": "Original source and final crop visually inspected. Official Pyronix EURO 76 L product photograph shows the large metal control enclosure open, with its control board and power-supply arrangement visible. The remote keypad is not part of this photograph.",
+      "source_image_url": "https://static.wixstatic.com/media/619595_2785c18b00ac48c1a1060798fc877080~mv2.jpeg/v1/fit/w_500,h_500,q_90/file.jpg",
+      "source_page_url": "https://www.pyronixltd.com/product-page/euro-76-large-metal",
+      "image_type": "official-manufacturer-product-image",
+      "source_pdf_page": null,
+      "source_sha256": "29ab3c9dd9aeaf336c6848559b9aa9d9a96e1afdd63fc27fe0f661d3c723bade",
+      "asset_sha256": "f5e11d172df3dab3fd1857886eff219d4e4230661dbeddb55c768d5662f671bb",
+      "dimensions": [
+        500,
+        500
+      ],
+      "applicability_limits": "Open-cabinet identification reference. Confirm the EURO76/L-UK main-panel label; a similar metal case does not establish the PCB model or firmware. This image is not used to represent EURO Mini, EURO 46, EURO 76 S or EURO 280. No matching bundled archive manual is currently attached to this model. The linked manufacturer page is the visual source, not an emulated-menu or complete-manual claim.",
+      "uk_priority": true,
+      "uk_evidence": [
+        "https://www.pyronixltd.com/product-list"
+      ],
+      "source_crop_pixels": null,
+      "asset_preparation": "Original manufacturer product image; subject unchanged."
+    },
+    {
+      "id": "pyronix-euro-enforcer-surface-keypad",
+      "brand": "Pyronix",
+      "model": "EURO / Enforcer surface keypad",
+      "status": "verified-image",
+      "record_ids": [],
+      "reason": "Original source and final crop visually inspected. Official product photograph of the satin-chrome surface-mount keypad, showing the LCD, numeric keys, A–D column and arrow keys. Pyronix identifies this keypad range as compatible with EURO and Enforcer systems; finishes are grouped in this one visual family.",
+      "source_image_url": "https://static.wixstatic.com/media/619595_d272316867234254adeb926f0c910e20~mv2.jpeg/v1/fit/w_500,h_500,q_90/file.jpg",
+      "source_page_url": "https://www.pyronixltd.com/product-page/satin-chrome-surface-mount-keypad",
+      "image_type": "official-manufacturer-keypad-product-image",
+      "source_pdf_page": null,
+      "source_sha256": "e49d5a8882689c258a7452104ea82209420af4dbb4e9a70b006f0ec827aafcbe",
+      "asset_sha256": "9ab0bbd42771d7266f74fb22e691f2fa5d8988d87b547da6c9c2726aed06ae92",
+      "dimensions": [
+        360,
+        296
+      ],
+      "applicability_limits": "The pictured remote keypad is shared across systems. Confirm the main control-panel model, hardware and manual revision; fascia appearance alone cannot identify the connected panel or establish menu compatibility. The photograph is the satin-chrome version; this card does not suggest all EURO or Enforcer keypads have this fascia. No matching bundled archive manual is currently attached to this model. The linked manufacturer page is the visual source, not an emulated-menu or complete-manual claim.",
+      "uk_priority": true,
+      "uk_evidence": [
+        "https://www.pyronixltd.com/product-list",
+        "https://www.pyronixltd.com/product-page/satin-chrome-surface-mount-keypad"
+      ],
+      "source_crop_pixels": [
+        70,
+        103,
+        430,
+        399
+      ],
+      "asset_preparation": "Original manufacturer product image; cropped outer blank margins only."
+    },
+    {
+      "id": "hkc-quantum-70",
+      "brand": "HKC",
+      "model": "Quantum 70",
+      "status": "verified-image",
+      "record_ids": [],
+      "reason": "Original source and final crop visually inspected. Official HKC Quantum 70 control-panel photograph, with the hinged keypad door open. The LCD and numeric keypad are integrated into the wireless control panel.",
+      "source_image_url": "https://assa-abloy-dev.asset.akeneo.cloud/variant_images/media/Q70_main_image.png",
+      "source_page_url": "https://www.hkcsecurity.com/gb/en/products/control-panels-packs/quantum-packs",
+      "image_type": "official-manufacturer-product-image",
+      "source_pdf_page": null,
+      "source_sha256": "49726342ba86d2e0ffe071c61713cde999f20bc5469e67916c9bdcd2b508e6af",
+      "asset_sha256": "de2449a3d19e60d7a203d404e8749b79491b3611b25ae921c905f446244cd8b5",
+      "dimensions": [
+        1940,
+        1171
+      ],
+      "applicability_limits": "The official GB product family page supplies the image and identifies Quantum 70. Verify the model label and revision before selecting instructions. No matching bundled archive manual is currently attached to this model. The linked manufacturer page is the visual source, not an emulated-menu or complete-manual claim.",
+      "uk_priority": true,
+      "uk_evidence": [
+        "https://www.hkcsecurity.com/gb/en/products/control-panels-packs"
+      ],
+      "source_crop_pixels": null,
+      "asset_preparation": "Original manufacturer product image; subject unchanged."
+    },
+    {
+      "id": "hkc-securehub",
+      "brand": "HKC",
+      "model": "SecureHub",
+      "status": "verified-image",
+      "record_ids": [],
+      "reason": "Original source and final crop visually inspected. Official HKC SecureHub product photograph shows the hub enclosure with its separate touch keypad. It is visibly different from the integrated Quantum 70 panel.",
+      "source_image_url": "https://assa-abloy-dev.asset.akeneo.cloud/variant_images/media/HUBandTouchKeypad_main_image.png",
+      "source_page_url": "https://www.hkcsecurity.com/gb/en/products/control-panels-packs/securehub",
+      "image_type": "official-manufacturer-product-image",
+      "source_pdf_page": null,
+      "source_sha256": "00de0cf658adcb274bd2a3032da86a4a9a705027f94e18c1b69c821f6ad85444",
+      "asset_sha256": "69948514fb3e0be23efa036969b8abe7b0bdd3886741167a457ef9b9858312e0",
+      "dimensions": [
+        625,
+        625
+      ],
+      "applicability_limits": "The pictured remote keypad is shared across systems. Confirm the main control-panel model, hardware and manual revision; fascia appearance alone cannot identify the connected panel or establish menu compatibility. The touch keypad can be shared with other HKC systems; identify SecureHub from the hub label, not from the keypad alone. No matching bundled archive manual is currently attached to this model. The linked manufacturer page is the visual source, not an emulated-menu or complete-manual claim.",
+      "uk_priority": true,
+      "uk_evidence": [
+        "https://www.hkcsecurity.com/gb/en/products/control-panels-packs"
+      ],
+      "source_crop_pixels": null,
+      "asset_preparation": "Original manufacturer product image; subject unchanged."
+    },
+    {
+      "id": "hkc-securewave-10270-touch",
+      "brand": "HKC",
+      "model": "SecureWave 10270 + touch keypad",
+      "status": "verified-image",
+      "record_ids": [],
+      "reason": "Original source and final crop visually inspected. Official SW-10270-T product photograph shows the opened hybrid-panel enclosure and the white touch keypad supplied with this pack. The case internals are visible because the manufacturer photographed the enclosure open.",
+      "source_image_url": "https://assa-abloy-dev.asset.akeneo.cloud/variant_images/media/SW_10270T_main_image.jpg",
+      "source_page_url": "https://www.hkcsecurity.com/gb/en/products/control-panels-packs/securewave-10270-with-touch-keypad-white",
+      "image_type": "official-manufacturer-product-image",
+      "source_pdf_page": null,
+      "source_sha256": "b871a0a3f9e53445615c5a0d20d3bfa62c9aad38d59b0e1b648b99a0c317ece7",
+      "asset_sha256": "005d70b8b388dd890cada1c212d45246b30f68e64456e189ac2d4c73d5b5f0e2",
+      "dimensions": [
+        1230,
+        3130
+      ],
+      "applicability_limits": "Open-cabinet identification reference. The SW-10270-T page compares the panel with the older SW-1070, but this photo is only identified as SW-10270-T and is not labelled as a SW-1070 picture. The touch keypad is shared; verify the main panel label. No matching bundled archive manual is currently attached to this model. The linked manufacturer page is the visual source, not an emulated-menu or complete-manual claim.",
+      "uk_priority": true,
+      "uk_evidence": [
+        "https://www.hkcsecurity.com/gb/en/products/control-panels-packs/securewave-10270-with-touch-keypad-white"
+      ],
+      "source_crop_pixels": [
+        250,
+        250,
+        1480,
+        3380
+      ],
+      "asset_preparation": "Original manufacturer product image; cropped outer blank margins only."
+    },
+    {
+      "id": "acre-vanderbilt-spc-comfort-keypad",
+      "brand": "Acre / Vanderbilt",
+      "model": "SPC Comfort keypad — SPCK620 / SPCK623",
+      "status": "verified-image",
+      "record_ids": [],
+      "reason": "Original source and final crop visually inspected. Official Acre SPCK620.100-N product photograph shows the Comfort keypad: large graphical LCD, four soft keys, circular directional controls and numeric keypad. The manufacturer describes the SPCK620/SPCK623 as one Comfort keypad family.",
+      "source_image_url": "https://ams.acresecurity.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTIxNzQsInB1ciI6ImJsb2JfaWQifX0=--6774110ab4f90d09813f2ed87eb0ffa1e15ae531/V54543f110b100_spck620100_026.jpg",
+      "source_page_url": "https://ams.acresecurity.com/documents/41",
+      "image_type": "official-manufacturer-keypad-product-image",
+      "source_pdf_page": null,
+      "source_sha256": "d1a98f18f317242d7da79464de7fb5ae69d61b9578466d2cb93de4af228e137d",
+      "asset_sha256": "c009060d5267fb9281f698d1153ba6f1e61b728377f524a5c43520bcceba5a39",
+      "dimensions": [
+        1350,
+        2210
+      ],
+      "applicability_limits": "The pictured remote keypad is shared across systems. Confirm the main control-panel model, hardware and manual revision; fascia appearance alone cannot identify the connected panel or establish menu compatibility. Card-reader and audio capabilities differ between SPCK620 and SPCK623; the manufacturer identifies the SPCK623 as the reader variant. Branding and regional revisions can differ. No matching bundled archive manual is currently attached to this model. The linked manufacturer page is the visual source, not an emulated-menu or complete-manual claim.",
+      "uk_priority": true,
+      "uk_evidence": [
+        "https://norbain.com/spck620100-lcd-keypad-with-graphical-display-vanderbilt-0548210",
+        "https://www.securitywarehouse.co.uk/catalog/intruder-alarm-equipment-c-36/security-control-panels-c-36_102/lcd-remote-keypads-c-36_102_107/siemans-lcd-keypad-with-graphical-display-p-5405.html"
+      ],
+      "source_crop_pixels": [
+        500,
+        80,
+        1850,
+        2290
+      ],
+      "asset_preparation": "Original manufacturer product image; cropped outer blank margins only."
+    },
+    {
+      "id": "paradox-esprit-616-626-636-646",
+      "brand": "Paradox",
+      "model": "Esprit 616 / 626 / 636 / 646 keypads",
+      "status": "verified-image",
+      "record_ids": [
+        "facp-d1179c1f-4372-4e66-9d50-cd9d17b8ed1f"
+      ],
+      "reason": "Original source and final crop visually inspected. Original Paradox Esprit user-manual cover contains four labelled keypad exterior drawings. All four remain together so users can distinguish the 616/626 and rounded-key 636/646 designs without treating them as separate control panels.",
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Paradox/esprit_616_626_636_and_646-operations-2001.pdf#page=1",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Paradox/esprit_616_626_636_and_646-operations-2001.pdf",
+      "image_type": "manufacturer-manual-keypad-illustration",
+      "source_pdf_page": 1,
+      "source_sha256": "1babae552e5df81e06ba8477134555aa6c2dcb562529b52d2b48de1f139e305e",
+      "asset_sha256": "0295179c0aa8101e6a4b71703942e88088128bcf92e9af922d723b6e81bdee49",
+      "dimensions": [
+        688,
+        748
+      ],
+      "applicability_limits": "The pictured remote keypad is shared across systems. Confirm the main control-panel model, hardware and manual revision; fascia appearance alone cannot identify the connected panel or establish menu compatibility. Source is the 2001 archive manual. UK-specific availability was not established in this source review, so the family is not assigned UK priority. The linked PDF is a third-party-hosted copy of the original manufacturer document.",
+      "uk_priority": false,
+      "uk_evidence": null,
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Paradox/esprit_616_626_636_and_646-operations-2001.pdf",
+      "source_crop_points": [
+        32,
+        96,
+        204,
+        283
+      ],
+      "asset_preparation": "Original manufacturer PDF page crop; no fascia, labels or buttons redrawn."
+    },
+    {
+      "id": "paradox-spectra-1689-1641",
+      "brand": "Paradox",
+      "model": "Spectra 1689 LED / 1641 LCD keypads",
+      "status": "verified-image",
+      "record_ids": [
+        "facp-e65ac5eb-ea67-4af8-8b75-231de29d61ad"
+      ],
+      "reason": "Original source and final crop visually inspected. Original Paradox Spectra manual cover shows the 1689 16-zone LED and 1641 LCD keypad fronts side by side, with original model labels retained. The flap is closed in this source picture.",
+      "source_image_url": "https://docs.facpmanuals.com/manuals/Paradox/spectra_1689_led_and_1641_lcd_keypads-operations-2002.pdf#page=1",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Paradox/spectra_1689_led_and_1641_lcd_keypads-operations-2002.pdf",
+      "image_type": "manufacturer-manual-keypad-product-image",
+      "source_pdf_page": 1,
+      "source_sha256": "950544256a686412f090119b3725c5e6cb6cd6aee5d20beb32430103fd302acc",
+      "asset_sha256": "9d4f5f10a9ad590180590dd6418d40fc36e9de8af117504d14bac2a289acf0e5",
+      "dimensions": [
+        780,
+        420
+      ],
+      "applicability_limits": "The pictured remote keypad is shared across systems. Confirm the main control-panel model, hardware and manual revision; fascia appearance alone cannot identify the connected panel or establish menu compatibility. Source is the 2002 archive manual. UK-specific availability was not established in this source review, so the family is not assigned UK priority. The linked PDF is a third-party-hosted copy of the original manufacturer document.",
+      "uk_priority": false,
+      "uk_evidence": null,
+      "source_document_url": "https://docs.facpmanuals.com/manuals/Paradox/spectra_1689_led_and_1641_lcd_keypads-operations-2002.pdf",
+      "source_crop_points": [
+        177,
+        360,
+        437,
+        500
+      ],
+      "asset_preparation": "Original manufacturer PDF page crop; no fascia, labels or buttons redrawn."
+    },
+    {
+      "id": "eaton-scantronic-500r-picture-review",
+      "brand": "Eaton / Scantronic",
+      "model": "500r",
+      "status": "needs-exterior-image",
+      "record_ids": [
+        "eaton-scantronic-de9041bab79e"
+      ],
+      "reason": "The existing two-page original user guide has operating-button symbols but no adequate full exterior image. It was not promoted using an invented or generic cabinet.",
+      "sources": [
+        "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Scantronic%20500r%20user%20guide.pdf"
+      ]
+    },
+    {
+      "id": "ade-g3-duplicate-review",
+      "brand": "ADE",
+      "model": "Accenta / Optima G3",
+      "status": "duplicate",
+      "record_ids": [
+        "ade-9bf4c8c60b6b"
+      ],
+      "reason": "The separately reviewed 16-page user guide depicts G3 equipment already covered by existing FINDR cards. Only the distinct LCD keypad from the other 80-page guide was added.",
+      "sources": [
+        "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/ADE%20Optima%20-%20Accenta%20user%20guide.pdf"
+      ]
+    },
+    {
+      "id": "pyronix-euro46-picture-review",
+      "brand": "Pyronix",
+      "model": "EURO 46",
+      "status": "excluded",
+      "record_ids": [],
+      "reason": "A supplier listing and old manufacturer catalogue were found, but the old manufacturer download currently redirects to a replacement site. No additional EURO 46 card was added with a loosely related EURO 76 photo.",
+      "sources": [
+        "https://secureforth.co.uk/product/pyronix-euro46-s-uk-pyronix-hyprid-euro-46-v10-panel/",
+        "https://www.pyronix.com/wp-content/uploads/sites/2/2018/06/RMKT090436-8-UK-Ireland-Product-Catalogue.pdf"
+      ]
+    },
+    {
+      "id": "dsc-impassa-picture-review",
+      "brand": "DSC",
+      "model": "IMPASSA SCW9057",
+      "status": "excluded",
+      "record_ids": [],
+      "reason": "Official model page was verified, but the advertised product-image URL returned a 212-byte placeholder instead of a usable photograph. The page primarily addresses North America. No generic substitute was added to this UK-focused batch.",
+      "sources": [
+        "https://www.dsc.com/index.php?id=1385&n=Products&o=view",
+        "https://cms.dsc.com/media/products/thumbs/l_SCW9057.jpg"
+      ]
+    },
+    {
+      "id": "acre-spc5350-picture-review",
+      "brand": "Acre / Vanderbilt",
+      "model": "SPC5350.320-L1",
+      "status": "excluded",
+      "record_ids": [],
+      "reason": "Official cabinet datasheet reviewed. The distinctive Comfort keypad was selected instead; no extra cabinet-family card was added merely to increase the count.",
+      "sources": [
+        "https://ams.acresecurity.com/documents/23"
+      ]
+    }
+  ],
+  "source_checks": {
+    "m_envier_ts690_lcd": {
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/MENVIER%20TS690%20User%20Guide.PDF",
+      "pdf_pages": [
+        3,
+        5
+      ]
+    },
+    "m_envier_ts2500_keypads": {
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Menvier%20TS2500%20Operator%20Manual.pdf",
+      "pdf_pages": [
+        1,
+        8,
+        9
+      ]
+    },
+    "scantronic_9651_9930": {
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Scantronic%209651%20User%20Guide.pdf",
+      "pdf_pages": [
+        3,
+        4
+      ]
+    },
+    "scantronic_9751_9930": {
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Scantronic%209751%20User%20Guide.pdf",
+      "pdf_pages": [
+        3,
+        4
+      ]
+    },
+    "scantronic_9752_9930_9940": {
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Scantronic%209752%20Installation%20Guide.pdf",
+      "pdf_pages": [
+        9,
+        15
+      ]
+    },
+    "hkc_uk_family_page": "https://www.hkcsecurity.com/gb/en/products/control-panels-packs",
+    "pyronix_current_product_list": "https://www.pyronixltd.com/product-list",
+    "acre_comfort_manufacturer": "https://ams.acresecurity.com/documents/41"
+  },
+  "validation": {
+    "unique_new_card_ids": 12,
+    "exact_existing_archive_record_links": 12,
+    "new_archive_records_created": 0,
+    "image_files_verified_with_pillow": 12,
+    "final_crops_visually_reviewed": 12,
+    "duplicate_image_hashes": 0,
+    "uk_evidenced_cards": 10,
+    "non_uk_prioritised_cards": 2,
+    "photo_or_product_image_cards": 8,
+    "manual_illustration_cards": 4,
+    "contact_sheet": "work/final-contact-sheet.jpg",
+    "all_shared_keypad_types_include_keypad": true,
+    "pdfs_excluded_from_images": true
+  }
+}

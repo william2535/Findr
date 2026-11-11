@@ -1,0 +1,24 @@
+[
+  {
+    "width": 390,
+    "fullscreen": true,
+    "typing": true,
+    "start": true,
+    "skip": true,
+    "escape": true,
+    "reducedMotion": true,
+    "offline": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "fullscreen": true,
+    "typing": true,
+    "start": true,
+    "skip": true,
+    "escape": true,
+    "reducedMotion": true,
+    "offline": true,
+    "errors": []
+  }
+]

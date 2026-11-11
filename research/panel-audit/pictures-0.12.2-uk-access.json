@@ -1,0 +1,464 @@
+{
+  "batch": "uk-access-0.12.2",
+  "verified_at": "2026-10-30",
+  "baseline_commit": "f6b2ef5984bdcf66ac8e9d57d90074df62f44163",
+  "scope": "17 new UK-priority access-control / entrance-panel families; identification pictures only, except the explicitly scoped existing Bell SPA/900 diagram link. No emulator or procedure additions.",
+  "counts": {
+    "verified_images": 17,
+    "primary_manufacturer_images": 17,
+    "supplier_images": 0,
+    "existing_archive_links": 1,
+    "picture_only_families": 16,
+    "deferred_candidates": 6
+  },
+  "qa": {
+    "contact_sheet": "research/contact-sheet-final.jpg",
+    "visually_reviewed": true,
+    "model_duplication_check": "IDs and family names checked against all baseline access-control pictures; the Paxton, Videx, CAME/BPT MTM/Lithos/Thangram and ACT10 families were already present and were not repeated.",
+    "asset_check": "All selected image files decode successfully in Pillow, all manifest IDs are new, and every selected record_id is present in the catalogue.",
+    "image_processing": "Downloaded original manufacturer assets. No synthetic images, redrawing or product alterations. Contact sheets use thumbnails solely for QA; the application integration script will perform its normal WebP conversion."
+  },
+  "manual_checks": [
+    {
+      "record_id": "bell-system-3d2a640154cc",
+      "linked_to": "bell-system-spa",
+      "sha256": "e207671e1b7e97a3d47bf50209bb74c56d27f7d26aed192d7ff7685e3c546859",
+      "sha256_matches_catalogue": true,
+      "verified_content": "Two pages, PD-042 Issue 2: AC door-entry wiring for up to ten 801-family telephones, 51/61 speech unit and 212 supply. Manufacturer SPA page explicitly places SPA panels in the 901–910 systems. Scope stated in the panel entry."
+    },
+    {
+      "record_id": "comelit-d7c06c1d4d0c",
+      "linked_to": null,
+      "verified_content": "Downloaded and read: IX0101S–IX0112S Switch panels for replacement of 3one6 Analog. Do not attach this narrowly scoped replacement-panel manual to the photographed two-column Switch plate."
+    },
+    {
+      "record_id": "bell-system-f486e15f011f",
+      "linked_to": null,
+      "verified_content": "Downloaded and read PD-097 Issue 3B: BSD1 versions 2 build 5/6, BS videophone versions 2 builds 1/2; kit uses BSP1 and also describes BS1/VR. This revision was not evidence for Bellini or Bellagio and was not linked to those pictures."
+    }
+  ],
+  "rejected_assets": [
+    {
+      "image": "Comelit Ultra lifestyle image, postiesternipaginauser_0000",
+      "reason": "Person obscures part of the fascia. Replaced with complete official product montage."
+    },
+    {
+      "image": "Comelit Ciao and Quadra lifestyle images",
+      "reason": "Replaced with clearer official front/side product images."
+    },
+    {
+      "image": "Entrotec Apex Four-panels.jpg and Elite elite_1.jpg",
+      "reason": "Replaced with clean full-panel primary header assets for clearer identification."
+    },
+    {
+      "image": "SteelTouch-web-1.webp and SteelTouch-web-7.webp",
+      "reason": "Lifestyle pictures crop the top portion of the panel. Both replaced with the complete 5-inch product image SteelTouch-web-8.webp; the different 8-inch web-9 image was not substituted."
+    }
+  ],
+  "candidates": [
+    {
+      "id": "bell-system-bellagio",
+      "brand": "Bell System",
+      "model": "Bellagio digital entrance panels",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "bell-bellagio.png",
+      "source_page_url": "https://bellsystem.co.uk/products/door-entry-panels/bellagio-range",
+      "source_image_url": "https://www.bellsystem.co.uk/uploads/bellagio_range498x300.png",
+      "image_credit": "Bell System manufacturer product photograph",
+      "raw_sha256": "ace79c16c31f260a6afe32ddd9d50b33ff0cca9fd039831234c20c4e258eeb84",
+      "raw_bytes": 281854,
+      "image_dimensions": [
+        617,
+        500
+      ],
+      "verification": "Product identity checked against the named primary manufacturer page. Downloaded photograph visually inspected in the QA contact sheets. No generated or substitute imagery.",
+      "scope": "Family identification only. Audio/video, proximity-reader and mounting options differ; the photograph does not establish the installed controller or programming revision. No matching Bellagio manual is linked in this pack."
+    },
+    {
+      "id": "bell-system-spa",
+      "brand": "Bell System",
+      "model": "SPA range / 900 Series entrance panels",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [
+        "bell-system-3d2a640154cc"
+      ],
+      "image": "bell-spa.png",
+      "source_page_url": "https://bellsystem.co.uk/products/door-entry-panels/spa-range",
+      "source_image_url": "https://www.bellsystem.co.uk/uploads/DEREK.png",
+      "image_credit": "Bell System manufacturer product photograph",
+      "raw_sha256": "15fd51bd50e1ebd3263c645ba6d601518160028107cf2fb48b4602d3e1b789f3",
+      "raw_bytes": 206987,
+      "image_dimensions": [
+        696,
+        559
+      ],
+      "verification": "Product identity checked against the named primary manufacturer page. Downloaded photograph visually inspected in the QA contact sheets. No generated or substitute imagery.",
+      "scope": "The linked archive record is the two-page PD-042 Issue 2 AC wiring diagram for up to ten 801-family telephones with a 51/61 speech unit. It is not a Bellissimo video, Bellagio digital or universal door-entry programming manual. Confirm the fitted components before using that diagram."
+    },
+    {
+      "id": "bell-system-vrp-lcp",
+      "brand": "Bell System",
+      "model": "VRP / LCP entrance panel range",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "bell-vrp-lcp.png",
+      "source_page_url": "https://bellsystem.co.uk/products/door-entry-panels/vrp-and-lcp-range",
+      "source_image_url": "https://www.bellsystem.co.uk/uploads/vrp_panel500x302.png",
+      "image_credit": "Bell System manufacturer product photograph",
+      "raw_sha256": "bbf19ee052b4a6a0ac6e6ae7f3ecbedfc8ec9d2559a1907224fcb8ec48124c24",
+      "raw_bytes": 283283,
+      "image_dimensions": [
+        577,
+        500
+      ],
+      "verification": "Product identity checked against the named primary manufacturer page. Downloaded photograph visually inspected in the QA contact sheets. No generated or substitute imagery.",
+      "scope": "VRP and LCP are grouped as the manufacturer presents them. Custom engraving, button positions, finishes and audio/video options vary, so the photograph cannot determine the exact bespoke panel or control system. No universal wiring or programming compatibility is implied; no exact manual is linked."
+    },
+    {
+      "id": "comelit-ultra",
+      "brand": "Comelit",
+      "model": "Ultra modular entrance panels",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "comelit-ultra.webp",
+      "source_page_url": "https://comelit-pac.co.uk/installer/products/door-entry-systems/ultra/",
+      "source_image_url": "https://comelit-pac.co.uk/wp-content/uploads/2023/02/Ultra-digital-color_product-image-header-1-e1677064452510.webp",
+      "image_credit": "Comelit manufacturer product photograph",
+      "raw_sha256": "76ec13cbac91b55572502a41eaa5f22a1fbedecbdfe49c3a7aef3c5571d247f2",
+      "raw_bytes": 45378,
+      "image_dimensions": [
+        840,
+        1078
+      ],
+      "verification": "Product identity checked against the named primary manufacturer page. Downloaded photograph visually inspected in the QA contact sheets. No generated or substitute imagery.",
+      "scope": "Ultra includes button, keypad and touchscreen arrangements, and both 2-wire and ViP systems. The front modules alone do not establish protocol, firmware or programming instructions. This pack supplies family identification; the archived UT9260M accessory manual has not been presented as a complete Ultra system manual."
+    },
+    {
+      "id": "comelit-quadra",
+      "brand": "Comelit",
+      "model": "Quadra audio/video entrance panel",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "comelit-quadra.webp",
+      "source_page_url": "https://comelit-pac.co.uk/installer/products/door-entry-systems/quadra/",
+      "source_image_url": "https://comelit-pac.co.uk/wp-content/uploads/2023/03/overflow-840x1120-it-Quadra.webp",
+      "image_credit": "Comelit manufacturer product photograph",
+      "raw_sha256": "cbef4db8715a8f65282b803db6024a280267c9a8519d9f653b03dc05d266735b",
+      "raw_bytes": 29116,
+      "image_dimensions": [
+        840,
+        1120
+      ],
+      "verification": "Product identity checked against the named primary manufacturer page. Downloaded photograph visually inspected in the QA contact sheets. No generated or substitute imagery.",
+      "scope": "Quadra faceplates can be configured with different call-button counts and finishes. The 4893M Simplebus 2 and 4899M ViP versions share this family appearance; verify the product label and system before choosing a manual. No exact Quadra archive document is linked in this pack."
+    },
+    {
+      "id": "comelit-ciao",
+      "brand": "Comelit",
+      "model": "Ciao audio entrance panels",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "comelit-ciao.png",
+      "source_page_url": "https://comelit-pac.co.uk/installer/products/door-entry-systems/ciao/",
+      "source_image_url": "https://comelit-pac.co.uk/wp-content/uploads/2023/02/ciao_robustaecompatta-1.png",
+      "image_credit": "Comelit manufacturer product photograph",
+      "raw_sha256": "435d68ae0a48f16a396ef9b3df5734c99056a17909696eb6707a71e0929ad676",
+      "raw_bytes": 710926,
+      "image_dimensions": [
+        1616,
+        1616
+      ],
+      "verification": "Product identity checked against the named primary manufacturer page. Downloaded photograph visually inspected in the QA contact sheets. No generated or substitute imagery.",
+      "scope": "Call-button modules and system variants differ. This is the Ciao audio family, not the visually related Quadra video unit. Verify the rear product code and wiring system; no Ciao installation or programming manual is linked here."
+    },
+    {
+      "id": "comelit-vandalcom",
+      "brand": "Comelit",
+      "model": "Vandalcom modular entrance panels",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "comelit-vandalcom.webp",
+      "source_page_url": "https://comelit-pac.co.uk/installer/products/door-entry-systems/vandalcom/",
+      "source_image_url": "https://comelit-pac.co.uk/wp-content/uploads/2023/03/overflow-840x1120-it-Vandalcom.webp",
+      "image_credit": "Comelit manufacturer product photograph",
+      "raw_sha256": "5942394eff6442210d3ddae22c7901b02e2a66bb9615ee191451f3a07880b7e7",
+      "raw_bytes": 23102,
+      "image_dimensions": [
+        840,
+        1120
+      ],
+      "verification": "Product identity checked against the named primary manufacturer page. Downloaded photograph visually inspected in the QA contact sheets. No generated or substitute imagery.",
+      "scope": "Vandalcom is configurable; module count, camera, nameplate layout, reader and finish can change. Identify the fitted electronic modules separately. This is a family photograph without an exact matching archived system manual."
+    },
+    {
+      "id": "comelit-switch",
+      "brand": "Comelit",
+      "model": "Switch entrance panel family",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "comelit-switch.webp",
+      "source_page_url": "https://comelit-pac.co.uk/installer/products/door-entry-systems/switch/",
+      "source_image_url": "https://comelit-pac.co.uk/wp-content/uploads/2023/01/pulsantiere-user_0002_175624302_1823611031153706_2082791064842141911_n.webp",
+      "image_credit": "Comelit manufacturer product photograph",
+      "raw_sha256": "ba6b6785b20b8255cb28a50c159c0d18d8b6dbff1d451e445553ff286deb2ba2",
+      "raw_bytes": 80310,
+      "image_dimensions": [
+        1000,
+        1000
+      ],
+      "verification": "Product identity checked against the named primary manufacturer page. Downloaded photograph visually inspected in the QA contact sheets. No generated or substitute imagery.",
+      "scope": "Switch plates are available in several column and button layouts. The existing archive manual for IX0101S–IX0112S covers specific one-column replacement panels for 3one6 Analog, not this photographed multi-column plate, so that record is deliberately not linked. Identify the full model code and fitted audio/video unit."
+    },
+    {
+      "id": "comelit-3one6-touch",
+      "brand": "Comelit",
+      "model": "3ONE6 Touch entrance panel",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "comelit-3one6.webp",
+      "source_page_url": "https://comelit-pac.co.uk/installer/products/door-entry-systems/3one6/",
+      "source_image_url": "https://comelit-pac.co.uk/wp-content/uploads/2023/01/pulsantiere-user_0000_Oggetto-vettoriale-avanzato.webp",
+      "image_credit": "Comelit manufacturer product photograph",
+      "raw_sha256": "17c905a05cbb139e9fdff6ac75cd7d2367be7ba3d289f43ccf4f4e7c7ceb3773",
+      "raw_bytes": 64358,
+      "image_dimensions": [
+        1000,
+        1000
+      ],
+      "verification": "Product identity checked against the named primary manufacturer page. Downloaded photograph visually inspected in the QA contact sheets. No generated or substitute imagery.",
+      "scope": "This image identifies the 3ONE6 Touch appearance only. The buttonless 3ONE6 Sense and older 3one6 Analog versions have different interfaces and are not aliases for this entry. Screen content, system electronics and firmware vary; no exact archived Touch manual is linked."
+    },
+    {
+      "id": "comelit-steeltouch-5",
+      "brand": "Comelit",
+      "model": "SteelTouch 5-inch entrance panel",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "comelit-steeltouch.webp",
+      "source_page_url": "https://comelit-pac.co.uk/installer/products/door-entry-systems/steeltouch/",
+      "source_image_url": "https://comelit-pac.co.uk/wp-content/uploads/2025/08/SteelTouch-web-8.webp",
+      "image_credit": "Comelit manufacturer product photograph",
+      "raw_sha256": "83126596998271dfa39bd057c412a7a060aca5206c690ec5df50ae926bc174cc",
+      "raw_bytes": 9682,
+      "image_dimensions": [
+        1296,
+        864
+      ],
+      "verification": "Full 5-inch product image found in the official SteelTouch page HTML alongside its IX8090S product link. Visually inspected complete fascia and distinguished from the separate 8-inch SteelTouch-web-9 image.",
+      "scope": "The picture is the narrow 5-inch style. SteelTouch also has an 8-inch design, while 2-wire and ViP versions require different product identification. Do not infer firmware, wiring or menu operation from the displayed screen; no exact SteelTouch manual is linked in this pack."
+    },
+    {
+      "id": "entrotec-apex",
+      "brand": "Entrotec",
+      "model": "Apex digital entrance panel",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "entrotec-apex.png",
+      "source_page_url": "https://www.came.com/entrotec/products/door-entry/apex",
+      "source_image_url": "https://www.came.com/entrotec/sites/entrotec/files/2022-02/Apex-Header.png",
+      "image_credit": "CAME Entrotec manufacturer product photograph",
+      "raw_sha256": "181bc4fd9a6a127ddb8d83a8f6bcf8d64032af9de2f3f6d6703463def8ad3b68",
+      "raw_bytes": 510317,
+      "image_dimensions": [
+        800,
+        800
+      ],
+      "verification": "Product identity checked against the named primary manufacturer page. Downloaded photograph visually inspected in the QA contact sheets. No generated or substitute imagery.",
+      "scope": "Apex can use different panel sizes and functional or digital layouts. This photo is the digital example, not every T17/T23 or bespoke variant. Confirm the system and model labels; no matching archived Apex manual is linked."
+    },
+    {
+      "id": "entrotec-elite-dda",
+      "brand": "Entrotec",
+      "model": "Elite DDA functional entrance panel",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "entrotec-elite.png",
+      "source_page_url": "https://www.came.com/entrotec/products/door-entry/elite",
+      "source_image_url": "https://www.came.com/entrotec/sites/entrotec/files/2022-02/Elite-DDA.png",
+      "image_credit": "CAME Entrotec manufacturer product photograph",
+      "raw_sha256": "ba83a06995359e3e7c115a6575ea1d6b1133cdfe5662d279db04df23ece769f4",
+      "raw_bytes": 226347,
+      "image_dimensions": [
+        800,
+        800
+      ],
+      "verification": "Product identity checked against the named primary manufacturer page. Downloaded photograph visually inspected in the QA contact sheets. No generated or substitute imagery.",
+      "scope": "Manufacturer example of the Elite functional/DDA style; engraving, button counts and accessibility options are site-specific. Similar custom fronts do not establish the internal system generation. No exact Elite archive manual is linked."
+    },
+    {
+      "id": "fermax-cityline",
+      "brand": "Fermax",
+      "model": "Cityline entrance panel family",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "fermax-cityline.jpg",
+      "source_page_url": "https://fermax.com/uk/products/2-wire-door-entry-system/outdoor-panels/placa-cityline",
+      "source_image_url": "https://fermax.com/.imaging/default/sl_subfamilies/webf0206/composition/bodegoncityline.jpg",
+      "image_credit": "Fermax manufacturer product photograph",
+      "raw_sha256": "18fbbf91e29b2619e7371dfcf368b14bfe015acdb0e03c528e3f3ab88253d4f4",
+      "raw_bytes": 55502,
+      "image_dimensions": [
+        800,
+        690
+      ],
+      "verification": "Product identity checked against the named primary manufacturer page. Downloaded photograph visually inspected in the QA contact sheets. No generated or substitute imagery.",
+      "scope": "Cityline spans different button layouts, sizes and system technologies. A matching fascia does not prove DUOX, older wiring systems or installed module revisions. This is visual family coverage; no matching Cityline archive manual is linked."
+    },
+    {
+      "id": "fermax-skyline",
+      "brand": "Fermax",
+      "model": "Skyline modular entrance panels",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "fermax-skyline.jpg",
+      "source_page_url": "https://fermax.com/uk/products/2-wire-door-entry-system/outdoor-panels/placa-skyline",
+      "source_image_url": "https://fermax.com/.imaging/default/sl_subfamilies/webf0207/composition/Skylinecompositiondisplayextra.jpg",
+      "image_credit": "Fermax manufacturer product photograph",
+      "raw_sha256": "75e3b8174abb594c99fc3d2e27b5c2a18a67e02d2f53b860d70c293944a5f622",
+      "raw_bytes": 93819,
+      "image_dimensions": [
+        1160,
+        980
+      ],
+      "verification": "Product identity checked against the named primary manufacturer page. Downloaded photograph visually inspected in the QA contact sheets. No generated or substitute imagery.",
+      "scope": "Skyline uses interchangeable modules; display style, keypad, call buttons, camera and protocol depend on the installed assembly. Do not use Cityline appearance or one photographed configuration to select wiring or programming. No exact Skyline archive manual is linked."
+    },
+    {
+      "id": "fermax-marine",
+      "brand": "Fermax",
+      "model": "Marine entrance panel family",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "fermax-marine.jpg",
+      "source_page_url": "https://fermax.com/uk/products/2-wire-door-entry-system/outdoor-panels/placa-marine",
+      "source_image_url": "https://fermax.com/.imaging/default/sl_subfamilies/webf0205/composition/Bodegonmarine2025.jpg",
+      "image_credit": "Fermax manufacturer product photograph",
+      "raw_sha256": "57ebcc515af7fc36c2564c772cebc257b81f05aff7480f2a332893f19c63c482",
+      "raw_bytes": 136073,
+      "image_dimensions": [
+        1226,
+        959
+      ],
+      "verification": "Product identity checked against the named primary manufacturer page. Downloaded photograph visually inspected in the QA contact sheets. No generated or substitute imagery.",
+      "scope": "Marine is a customisable family with audio/video, keypad, button and finish variations. Appearance does not identify DUOX Plus, MEET, SIP or older electronics. Confirm the exact panel and system; no Marine archive manual is linked."
+    },
+    {
+      "id": "fermax-cora-s6",
+      "brand": "Fermax",
+      "model": "CORA S6 DUOX Plus entrance panel (7701)",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "fermax-cora.png",
+      "source_page_url": "https://fermax.com/uk/products/2-wire-door-entry-system/outdoor-panels/cora-panel",
+      "source_image_url": "https://fermax.com/.imaging/default/sl_products/f07701/imagen/7701PLACAPR295DUOXPLUSS6pantalla.png",
+      "image_credit": "Fermax manufacturer product photograph",
+      "raw_sha256": "19b68f88f6e10deb4a5f1fbed44f0db797558346368ab7df4111e4125b58f1f2",
+      "raw_bytes": 769204,
+      "image_dimensions": [
+        1080,
+        1080
+      ],
+      "verification": "Product identity checked against the named primary manufacturer page. Downloaded photograph visually inspected in the QA contact sheets. No generated or substitute imagery.",
+      "scope": "This is the S6 7701 example. CORA S8, CoraKit, directory panels and optional reader arrangements are not the same product. Check the rear label and revision before choosing instructions. No CORA archive manual is linked."
+    },
+    {
+      "id": "pac-511-dci",
+      "brand": "PAC",
+      "model": "511 DCi DIN-mount one-door controller",
+      "category": "access-control",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "pac-511-dci.png",
+      "source_page_url": "https://pacgdx.com/product/controller-511-dci-din-mount/",
+      "source_image_url": "https://pacgdx.com/wp-content/uploads/2022/11/511din_1web.png",
+      "image_credit": "Comelit-PAC / PAC manufacturer product photograph",
+      "raw_sha256": "a9e93b9318e71ced92494b9a6c8b14f7723fa78606a0332053b7a75f0a519ae4",
+      "raw_bytes": 4533344,
+      "image_dimensions": [
+        2598,
+        2668
+      ],
+      "verification": "Product identity checked against the named primary manufacturer page. Downloaded photograph visually inspected in the QA contact sheets. No generated or substitute imagery.",
+      "scope": "This is the one-door IP controller, not a PAC reader, the two-door 512 series or a closed enclosure identification. Cabinet and power-supply versions may house the same controller. Verify the printed model and hardware revision; no exact archived 511 DCi manual is linked."
+    },
+    {
+      "id": "bell-system-bellini",
+      "brand": "Bell System",
+      "model": "Bellini entrance panel family",
+      "category": "access-control",
+      "status": "image-download-blocked",
+      "record_ids": [],
+      "source_page_url": "https://bellsystem.co.uk/products/door-entry-panels/bellini-series",
+      "source_image_url": "https://bellsystem.co.uk/uploads/bellini_range_2363x303.png",
+      "reason": "Official family and picture URL verified, but both direct public hosts returned a 202 HTML response rather than image bytes. A failed download was kept in research only. No substitute picture was used."
+    },
+    {
+      "id": "bell-system-portabello",
+      "brand": "Bell System",
+      "model": "Portabello entrance panel family",
+      "category": "access-control",
+      "status": "image-download-blocked",
+      "record_ids": [],
+      "source_page_url": "https://bellsystem.co.uk/products/door-entry-panels/portabello-range",
+      "source_image_url": "https://bellsystem.co.uk/uploads/PORTA.png",
+      "reason": "Official product identity and asset URL verified, but direct download returned HTML instead of a usable image. Deferred rather than substituting a visually similar SPA or VRP panel."
+    },
+    {
+      "id": "comelit-ikall",
+      "brand": "Comelit",
+      "model": "Ikall entrance panel family",
+      "category": "access-control",
+      "status": "research-deferred",
+      "record_ids": [],
+      "source_page_url": "https://pro.comelitgroup.com/en-gb/product/ikall-avdig",
+      "reason": "Manufacturer family page found; product site denied direct requests. No clear, complete Ikall image was obtained and inspected within this bounded batch. Existing accessory references do not establish a complete panel manual."
+    },
+    {
+      "id": "comelit-3one6-sense",
+      "brand": "Comelit",
+      "model": "3ONE6 Sense entrance panel",
+      "category": "access-control",
+      "status": "research-deferred",
+      "record_ids": [],
+      "source_page_url": "https://comelit-pac.co.uk/installer/products/door-entry-systems/3one6/",
+      "reason": "Manufacturer explicitly distinguishes Touch and Sense. The obtained Touch photograph was not reused for the buttonless Sense fascia."
+    },
+    {
+      "id": "came-bpt-targha",
+      "brand": "CAME / BPT",
+      "model": "Targha entrance panel family",
+      "category": "access-control",
+      "status": "research-deferred",
+      "record_ids": [],
+      "source_page_url": "https://static.came.com/doc/Catalogues/Video_Entry_System/VIDEO_ENTRY_CATALOGUE_EX_en.pdf",
+      "reason": "Primary catalogue lead found, but no exact front picture and revision mapping was completed. No existing AGATA kit or handset-only record was assumed to cover all Targha configurations."
+    },
+    {
+      "id": "pac-512-controllers",
+      "brand": "PAC",
+      "model": "512 DC / DCi controllers",
+      "category": "access-control",
+      "status": "research-deferred",
+      "record_ids": [],
+      "source_page_url": "https://pacgdx.com/product/controller-512-dc-din-mount/",
+      "reason": "Current exact product pages and an older catalogue show inconsistent ordering of DIN/cabinet part numbers in extracted text. The batch adds the separately verified 511 DCi only; 512 DC and DCi need model-specific photo and code checks."
+    }
+  ]
+}

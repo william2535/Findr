@@ -1,0 +1,1480 @@
+{
+  "status": "passed",
+  "environment": {
+    "browser": "chromium",
+    "version": "154.0.8037.57",
+    "os": "Linux container",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "physicalIPhone": false
+  },
+  "transport": "Real hash-verified PDFs served only at application /api/manual download boundary; PDF reader, indexing, engine, storage and UI unmodified",
+  "model": "No model installed in this profile; source-grounded retrieval/reviewed procedures",
+  "checks": [
+    "An actual previously stuck job resumes through local manual selection, variant confirmation and reload without losing history or duplicating its question"
+  ],
+  "measurements": [],
+  "answers": [
+    {
+      "id": "3133ceb5-41ed-4ecf-b892-2023ee614558",
+      "questionId": "00d08783-8c9e-4b8b-aa82-6e9af2289b4b",
+      "question": "Putting a gent vigilon on walk test",
+      "text": "For EN Vigilon 4/6-loop / Compact panels using the MCC/MCB V4.53-or-higher menu map in 4188-856, issue 7 (07/15). This is Zone Test, not the separate BS Commission mode.\n\nUse authorised engineer (Level 3) access. Before testing, obtain customer consent, inform affected people and the alarm receiving centre where connected, and arrange isolation of interfaced plant under the site procedure.\n\n1. Press Menu On/Off → Test/Eng → UserCode and enter your authorised engineering password.\n2. Use <etc> → Test → Test, then On. There are two Test selections in this EN menu map; do not use the separate Commission branch.\n3. At the Zone entry, enter the zone number to test and select Enter. Check that the Test LED is lit.\n4. Test the devices in that zone with the appropriate test equipment. With the default reset/silence behaviour, a fire event sounds the alarms for 5 seconds, then silences and resets automatically.\n5. When finished, return through the same Test → Test route and select Off. At the Zone entry, enter the tested zone and select Enter. Check that the Test LED goes out; a completed test cycle or leaving the menu does not switch test mode off.\n\nZone Test inhibits delay-block, network, auxiliary and clean-contact relay functions described by the manual. Zones not in test continue normal operation.\n\nSource note: the route follows the EN menu diagram on page 105. The shorter prose on page 81 differs in its Test/Zone ordering. If the displayed options do not match this map, confirm the panel version before proceeding.",
+      "createdAt": 1794352653563,
+      "supported": true,
+      "answersQuestion": true,
+      "coverage": "reviewed_manual_procedure",
+      "completeProcedure": true,
+      "packVersion": "2026-11-10.4",
+      "sourceRefs": [
+        {
+          "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+          "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+          "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+          "processorVersion": "2026-11-10.2",
+          "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+          "revision": "Issue 7, 07/15",
+          "models": [
+            "Vigilon",
+            "Vigilon 4/6 Loop and Compact",
+            "Vigilon Compact"
+          ],
+          "page": 81,
+          "pdfPage": 81,
+          "printedPage": "81",
+          "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "Press Menu On/Off",
+          "excerpt": "Press Menu On/Off",
+          "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment.",
+          "citationId": "S1"
+        },
+        {
+          "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+          "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+          "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+          "processorVersion": "2026-11-10.2",
+          "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+          "revision": "Issue 7, 07/15",
+          "models": [
+            "Vigilon",
+            "Vigilon 4/6 Loop and Compact",
+            "Vigilon Compact"
+          ],
+          "page": 105,
+          "pdfPage": 105,
+          "printedPage": "105",
+          "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "Menu map 1",
+          "excerpt": "Menu map 1",
+          "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment.",
+          "citationId": "S2"
+        },
+        {
+          "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-53",
+          "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+          "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+          "processorVersion": "2026-11-10.2",
+          "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+          "revision": "Issue 7, 07/15",
+          "models": [
+            "Vigilon",
+            "Vigilon 4/6 Loop and Compact",
+            "Vigilon Compact"
+          ],
+          "page": 53,
+          "pdfPage": 53,
+          "printedPage": "53",
+          "section": "Useful menu options — Password or PIN code",
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "Access level 3 is for the ENGINEER.",
+          "excerpt": "Access level 3 is for the ENGINEER.",
+          "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment.",
+          "citationId": "S3"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Press Menu On/Off → Test/Eng → UserCode and enter your authorised engineering password.",
+          "documented": true,
+          "sourceRefs": [
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "Press Menu On/Off",
+              "excerpt": "Press Menu On/Off",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "button and select [Test/Eng] -> [UserCode] and enter the Engineering password",
+              "excerpt": "button and select [Test/Eng] -> [UserCode] and enter the Engineering password",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            }
+          ]
+        },
+        {
+          "text": "Use <etc> → Test → Test, then On. There are two Test selections in this EN menu map; do not use the separate Commission branch.",
+          "documented": true,
+          "sourceRefs": [
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "Press <etc> and select [Test]",
+              "excerpt": "Press <etc> and select [Test]",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 105,
+              "pdfPage": 105,
+              "printedPage": "105",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "Menu map 1",
+              "excerpt": "Menu map 1",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 105,
+              "pdfPage": 105,
+              "printedPage": "105",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "[FreeBlok]",
+              "excerpt": "[FreeBlok]",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 105,
+              "pdfPage": 105,
+              "printedPage": "105",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "[Datalog]",
+              "excerpt": "[Datalog]",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 105,
+              "pdfPage": 105,
+              "printedPage": "105",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "[Test]",
+              "excerpt": "[Test]",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 105,
+              "pdfPage": 105,
+              "printedPage": "105",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "[Off]",
+              "excerpt": "[Off]",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 105,
+              "pdfPage": 105,
+              "printedPage": "105",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "[On]",
+              "excerpt": "[On]",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            }
+          ]
+        },
+        {
+          "text": "At the Zone entry, enter the zone number to test and select Enter. Check that the Test LED is lit.",
+          "documented": true,
+          "sourceRefs": [
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "number and select [Enter]",
+              "excerpt": "number and select [Enter]",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "The 'Test' LED is lit",
+              "excerpt": "The 'Test' LED is lit",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            }
+          ]
+        },
+        {
+          "text": "Test the devices in that zone with the appropriate test equipment. With the default reset/silence behaviour, a fire event sounds the alarms for 5 seconds, then silences and resets automatically.",
+          "documented": true,
+          "sourceRefs": [
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "used when testing devices in a zone.",
+              "excerpt": "used when testing devices in a zone.",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "Where applicable read the instructions supplied with",
+              "excerpt": "Where applicable read the instructions supplied with",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "following a fire event the alarms sound for 5 seconds and",
+              "excerpt": "following a fire event the alarms sound for 5 seconds and",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "then automatically the alarms are silenced followed by a panel reset.",
+              "excerpt": "then automatically the alarms are silenced followed by a panel reset.",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            }
+          ]
+        },
+        {
+          "text": "When finished, return through the same Test → Test route and select Off. At the Zone entry, enter the tested zone and select Enter. Check that the Test LED goes out; a completed test cycle or leaving the menu does not switch test mode off.",
+          "documented": true,
+          "sourceRefs": [
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 105,
+              "pdfPage": 105,
+              "printedPage": "105",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "Menu map 1",
+              "excerpt": "Menu map 1",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 105,
+              "pdfPage": 105,
+              "printedPage": "105",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "[Off]",
+              "excerpt": "[Off]",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "number and select [Enter]",
+              "excerpt": "number and select [Enter]",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "On completion of all tests, switch Off the [Test] mode and notice the 'Test'",
+              "excerpt": "On completion of all tests, switch Off the [Test] mode and notice the 'Test'",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "LED also switches Off.",
+              "excerpt": "LED also switches Off.",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            }
+          ]
+        }
+      ],
+      "procedureId": "gent-vigilon-en-zone-test-4188-856-issue7",
+      "operation": "walk-test",
+      "scope": {
+        "models": [
+          "Vigilon",
+          "Vigilon 4/6 Loop and Compact",
+          "Vigilon Compact"
+        ],
+        "familyAliases": [
+          "Vigilon"
+        ],
+        "allowFamilyQuestion": true,
+        "sharedProcedure": false,
+        "requiredVariant": [
+          "EN Vigilon (MCC/MCB V4.53 or higher)"
+        ],
+        "label": "For EN Vigilon 4/6-loop / Compact panels using the MCC/MCB V4.53-or-higher menu map in 4188-856, issue 7 (07/15). This is Zone Test, not the separate BS Commission mode.",
+        "refs": [
+          {
+            "page": 81,
+            "printedPage": "81",
+            "quote": "Zone Test mode is applicable for EN VIGILON 4/6-loop panel, VIGILON Compact panel and",
+            "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+          },
+          {
+            "page": 105,
+            "printedPage": "105",
+            "quote": "V4.53 or higher",
+            "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+          },
+          {
+            "page": 105,
+            "printedPage": "105",
+            "quote": "EN Vigilon",
+            "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1"
+          },
+          {
+            "page": 81,
+            "printedPage": "81",
+            "quote": "'Commission' mode (for BS panels only)",
+            "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)"
+          }
+        ],
+        "variantAliases": {
+          "EN Vigilon (MCC/MCB V4.53 or higher)": [
+            "EN Vigilon V4.53",
+            "EN Vigilon 4.53"
+          ]
+        },
+        "installedModelConfirmed": false,
+        "documentNumber": "4188-856",
+        "revision": "Issue 7, 07/15",
+        "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+        "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998"
+      },
+      "claims": [
+        {
+          "text": "For EN Vigilon 4/6-loop / Compact panels using the MCC/MCB V4.53-or-higher menu map in 4188-856, issue 7 (07/15). This is Zone Test, not the separate BS Commission mode.",
+          "documented": true,
+          "sourceRefs": [
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "Zone Test mode is applicable for EN VIGILON 4/6-loop panel, VIGILON Compact panel and",
+              "excerpt": "Zone Test mode is applicable for EN VIGILON 4/6-loop panel, VIGILON Compact panel and",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 105,
+              "pdfPage": 105,
+              "printedPage": "105",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "V4.53 or higher",
+              "excerpt": "V4.53 or higher",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 105,
+              "pdfPage": 105,
+              "printedPage": "105",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "EN Vigilon",
+              "excerpt": "EN Vigilon",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "'Commission' mode (for BS panels only)",
+              "excerpt": "'Commission' mode (for BS panels only)",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            }
+          ]
+        },
+        {
+          "text": "Use authorised engineer (Level 3) access. Before testing, obtain customer consent, inform affected people and the alarm receiving centre where connected, and arrange isolation of interfaced plant under the site procedure.",
+          "documented": true,
+          "sourceRefs": [
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-53",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 53,
+              "pdfPage": 53,
+              "printedPage": "53",
+              "section": "Useful menu options — Password or PIN code",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "Access level 3 is for the ENGINEER.",
+              "excerpt": "Access level 3 is for the ENGINEER.",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "Tests should be carried out following customer consent.",
+              "excerpt": "Tests should be carried out following customer consent.",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "all affected personnel on the site are informed",
+              "excerpt": "all affected personnel on the site are informed",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "where there is a link to an alarm receiving centre",
+              "excerpt": "where there is a link to an alarm receiving centre",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "equipment interfaced to the fire alarm system should be isolated.",
+              "excerpt": "equipment interfaced to the fire alarm system should be isolated.",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            }
+          ]
+        },
+        {
+          "text": "Press Menu On/Off → Test/Eng → UserCode and enter your authorised engineering password.",
+          "documented": true,
+          "sourceRefs": [
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "Press Menu On/Off",
+              "excerpt": "Press Menu On/Off",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "button and select [Test/Eng] -> [UserCode] and enter the Engineering password",
+              "excerpt": "button and select [Test/Eng] -> [UserCode] and enter the Engineering password",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            }
+          ]
+        },
+        {
+          "text": "Use <etc> → Test → Test, then On. There are two Test selections in this EN menu map; do not use the separate Commission branch.",
+          "documented": true,
+          "sourceRefs": [
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "Press <etc> and select [Test]",
+              "excerpt": "Press <etc> and select [Test]",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 105,
+              "pdfPage": 105,
+              "printedPage": "105",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "Menu map 1",
+              "excerpt": "Menu map 1",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 105,
+              "pdfPage": 105,
+              "printedPage": "105",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "[FreeBlok]",
+              "excerpt": "[FreeBlok]",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 105,
+              "pdfPage": 105,
+              "printedPage": "105",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "[Datalog]",
+              "excerpt": "[Datalog]",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 105,
+              "pdfPage": 105,
+              "printedPage": "105",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "[Test]",
+              "excerpt": "[Test]",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 105,
+              "pdfPage": 105,
+              "printedPage": "105",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "[Off]",
+              "excerpt": "[Off]",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 105,
+              "pdfPage": 105,
+              "printedPage": "105",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "[On]",
+              "excerpt": "[On]",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            }
+          ]
+        },
+        {
+          "text": "At the Zone entry, enter the zone number to test and select Enter. Check that the Test LED is lit.",
+          "documented": true,
+          "sourceRefs": [
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "number and select [Enter]",
+              "excerpt": "number and select [Enter]",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "The 'Test' LED is lit",
+              "excerpt": "The 'Test' LED is lit",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            }
+          ]
+        },
+        {
+          "text": "Test the devices in that zone with the appropriate test equipment. With the default reset/silence behaviour, a fire event sounds the alarms for 5 seconds, then silences and resets automatically.",
+          "documented": true,
+          "sourceRefs": [
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "used when testing devices in a zone.",
+              "excerpt": "used when testing devices in a zone.",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "Where applicable read the instructions supplied with",
+              "excerpt": "Where applicable read the instructions supplied with",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "following a fire event the alarms sound for 5 seconds and",
+              "excerpt": "following a fire event the alarms sound for 5 seconds and",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "then automatically the alarms are silenced followed by a panel reset.",
+              "excerpt": "then automatically the alarms are silenced followed by a panel reset.",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            }
+          ]
+        },
+        {
+          "text": "When finished, return through the same Test → Test route and select Off. At the Zone entry, enter the tested zone and select Enter. Check that the Test LED goes out; a completed test cycle or leaving the menu does not switch test mode off.",
+          "documented": true,
+          "sourceRefs": [
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 105,
+              "pdfPage": 105,
+              "printedPage": "105",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "Menu map 1",
+              "excerpt": "Menu map 1",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 105,
+              "pdfPage": 105,
+              "printedPage": "105",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "[Off]",
+              "excerpt": "[Off]",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "number and select [Enter]",
+              "excerpt": "number and select [Enter]",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "On completion of all tests, switch Off the [Test] mode and notice the 'Test'",
+              "excerpt": "On completion of all tests, switch Off the [Test] mode and notice the 'Test'",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "LED also switches Off.",
+              "excerpt": "LED also switches Off.",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            }
+          ]
+        },
+        {
+          "text": "Zone Test inhibits delay-block, network, auxiliary and clean-contact relay functions described by the manual. Zones not in test continue normal operation.",
+          "documented": true,
+          "sourceRefs": [
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "The panel inhibits the",
+              "excerpt": "The panel inhibits the",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "operation of delay block functions, network functions, auxiliary and clean contact relay's operation",
+              "excerpt": "operation of delay block functions, network functions, auxiliary and clean contact relay's operation",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "All zones of the system that are not in zone test mode will operate normally.",
+              "excerpt": "All zones of the system that are not in zone test mode will operate normally.",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            }
+          ]
+        },
+        {
+          "text": "Source note: the route follows the EN menu diagram on page 105. The shorter prose on page 81 differs in its Test/Zone ordering. If the displayed options do not match this map, confirm the panel version before proceeding.",
+          "documented": true,
+          "sourceRefs": [
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-105",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 105,
+              "pdfPage": 105,
+              "printedPage": "105",
+              "section": "Appendix A-1 — EN54 (V4) Test/Eng menu map 1",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "Menu map 1",
+              "excerpt": "Menu map 1",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            },
+            {
+              "sourceId": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998:pdf-81",
+              "manualId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+              "contentHash": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+              "processorVersion": "2026-11-10.2",
+              "title": "Gent Vigilon 4/6-loop & Compact — Generic Commissioning Instructions",
+              "revision": "Issue 7, 07/15",
+              "models": [
+                "Vigilon",
+                "Vigilon 4/6 Loop and Compact",
+                "Vigilon Compact"
+              ],
+              "page": 81,
+              "pdfPage": 81,
+              "printedPage": "81",
+              "section": "Installed equipment tests — Zone 'Test' mode (EN panels only)",
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "and then select [Zone]",
+              "excerpt": "and then select [Zone]",
+              "relationship": "Reviewed procedure supported by these words in the matching PDF revision. Model coverage is document scope, not confirmation of installed equipment."
+            }
+          ]
+        }
+      ],
+      "model": {
+        "ran": false,
+        "generatedProseUsed": false
+      },
+      "interpretationPolicy": "Source-reviewed wording, checked against the exact downloaded PDF hash and every supporting page quote. Document coverage does not confirm which equipment is installed."
+    }
+  ],
+  "downloads": [],
+  "pageErrors": [],
+  "offlineRequests": [],
+  "previous": {
+    "id": "15faa17c-cf5f-4014-85a2-10b368eff588",
+    "pendingQuestionId": "00d08783-8c9e-4b8b-aa82-6e9af2289b4b",
+    "phase": "download_confirm",
+    "messageCount": 13,
+    "questionCount": 1,
+    "manuals": [
+      "facp-7538be76-f958-46e4-99f6-c718601bb349"
+    ]
+  },
+  "reindexEvidence": {
+    "version": "2026-11-10.3",
+    "reindexedFrom": {
+      "processorVersion": "2026-11-10.2",
+      "processedAt": 1794352359843
+    },
+    "processedAt": 1794352359843,
+    "timing": {
+      "extractionMs": 2558,
+      "ocrMs": 41203,
+      "indexingMs": 94,
+      "totalMs": 44360,
+      "reindexMs": 78
+    },
+    "oldFound": true,
+    "samePageText": true,
+    "sameProcessedAt": true,
+    "pageCount": 162,
+    "identity": [
+      "Vigilon 4/6 loop & Compact",
+      "Vigilon Compact Voice Alarm",
+      "Vigilon Compact VA",
+      "Vigilon 4/6 loops & Compact",
+      "VIGILON Compact VA",
+      "Vigilon 4/6-loop"
+    ]
+  }
+}

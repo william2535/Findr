@@ -1,0 +1,1224 @@
+{
+  "startedAt": "2026-11-11T11:57:43.822Z",
+  "actualModel": true,
+  "networkDisabledByHarness": false,
+  "tests": [
+    {
+      "kind": "readiness",
+      "at": "2026-11-11T11:58:35.753Z",
+      "helperCount": 2,
+      "frame": 1,
+      "helpersEngineVersion": "2026-11-11.2",
+      "localLanguageVersion": "2026-11-10.1",
+      "navigatorOnline": true,
+      "local": {
+        "supported": true,
+        "ready": true,
+        "installed": true,
+        "runtimeReady": true,
+        "missing": [],
+        "error": null,
+        "model": {
+          "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+          "title": "SmolLM2 360M Instruct · int8 · local CPU",
+          "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+          "dtype": "q8",
+          "backend": "wasm",
+          "parameters": 360000000,
+          "license": "Apache-2.0",
+          "originalModel": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct",
+          "modelCard": "https://huggingface.co/onnx-community/SmolLM2-360M-Instruct-ONNX",
+          "maxInputTokens": 768,
+          "maxNewTokens": 96,
+          "limits": "Compact local language model. Interpretations need source checks. It does not verify electrical procedures, measurements or compatibility. CPU replies can take tens of seconds; saved references remain available.",
+          "bytes": 366642692,
+          "runtimeBytes": 22563501
+        }
+      },
+      "shell": {
+        "ready": true,
+        "build": "a289b667d3b4",
+        "version": "0.32.0",
+        "verification": "sha256-v1",
+        "controlled": true
+      }
+    },
+    {
+      "kind": "Measured model turn",
+      "status": "measured",
+      "at": "2026-11-11T12:02:03.951Z",
+      "helperId": "58fb01cd-dc68-4c3c-8738-df469d845024",
+      "question": "How do I view the event history on an MxPro4 panel?",
+      "mode": "local-ai",
+      "modelUsed": true,
+      "coverage": "model_selected_manual_extract",
+      "model": {
+        "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "metrics": {
+          "loadMs": 123064.29999999888,
+          "inputTokens": 439,
+          "outputTokens": 3,
+          "firstTokenMs": 39549.59999999963,
+          "generationMs": 40864.79999999888,
+          "tokensPerSecond": 0.07341281494097811
+        },
+        "selection": {
+          "source": "S1",
+          "question": null
+        },
+        "choiceConstraint": {
+          "method": "model_logits_token_trie",
+          "allowed": [
+            "S1",
+            "S2",
+            "S3",
+            "NONE"
+          ],
+          "selected": "S1"
+        }
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "5b0e02d2f682d6039474e94716b2f75f10868dc33fa3e6764c0b43c3c50b86a4:pdf-22:0",
+          "citationId": "S1",
+          "manualId": "advanced-8f3ba6ecfc7f",
+          "contentHash": "5b0e02d2f682d6039474e94716b2f75f10868dc33fa3e6764c0b43c3c50b86a4",
+          "processorVersion": "2026-11-10.3",
+          "title": "Advanced MxPro4 — User guide",
+          "revision": "",
+          "models": [
+            "Mx-4100",
+            "Mx-4100/L",
+            "Mx-4200",
+            "Mx-4200/D",
+            "Mx-4400",
+            "Mx-4400/D",
+            "Mx-4400/LE",
+            "Mx-4800"
+          ],
+          "page": 22,
+          "pdfPage": 22,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "www.advancedco.com 22 3.7.8 View - Log After selecting to view the log option the display presents a pop-up window to allow selection between a view of all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.7.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001 .0 001 14/03/02 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001.",
+          "excerpt": "www.advancedco.com 22 3.7.8 View - Log After selecting to view the log option the display presents a pop-up window to allow selection between a view of all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.7.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001 .0 001 14/03/02 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001."
+        }
+      ],
+      "answer": "The saved manual says:\n\nwww.advancedco.com 22 3.7.8 View - Log After selecting to view the log option the display presents a pop-up window to allow selection between a view of all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.7.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001 .0 001 14/03/02 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001.\n\nThis is the cited manual wording; open the page for the complete procedure and surrounding conditions.",
+      "lastProgress": {
+        "id": "0e88d307-3482-4350-8ab5-d0be8aeb95b2",
+        "type": "progress",
+        "phase": "generate",
+        "message": "Generating locally · 3 tokens",
+        "tokens": 3,
+        "maxTokens": 3,
+        "elapsedMs": 167234.59999999963,
+        "operation": "generate"
+      }
+    },
+    {
+      "kind": "Real grounded model answer",
+      "status": "passed",
+      "at": "2026-11-11T12:02:03.951Z",
+      "elapsedMs": 171953.30000000075,
+      "helperId": "58fb01cd-dc68-4c3c-8738-df469d845024",
+      "question": "How do I view the event history on an MxPro4 panel?",
+      "mode": "local-ai",
+      "modelUsed": true,
+      "coverage": "model_selected_manual_extract",
+      "model": {
+        "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "metrics": {
+          "loadMs": 123064.29999999888,
+          "inputTokens": 439,
+          "outputTokens": 3,
+          "firstTokenMs": 39549.59999999963,
+          "generationMs": 40864.79999999888,
+          "tokensPerSecond": 0.07341281494097811
+        },
+        "selection": {
+          "source": "S1",
+          "question": null
+        },
+        "choiceConstraint": {
+          "method": "model_logits_token_trie",
+          "allowed": [
+            "S1",
+            "S2",
+            "S3",
+            "NONE"
+          ],
+          "selected": "S1"
+        }
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "5b0e02d2f682d6039474e94716b2f75f10868dc33fa3e6764c0b43c3c50b86a4:pdf-22:0",
+          "citationId": "S1",
+          "manualId": "advanced-8f3ba6ecfc7f",
+          "contentHash": "5b0e02d2f682d6039474e94716b2f75f10868dc33fa3e6764c0b43c3c50b86a4",
+          "processorVersion": "2026-11-10.3",
+          "title": "Advanced MxPro4 — User guide",
+          "revision": "",
+          "models": [
+            "Mx-4100",
+            "Mx-4100/L",
+            "Mx-4200",
+            "Mx-4200/D",
+            "Mx-4400",
+            "Mx-4400/D",
+            "Mx-4400/LE",
+            "Mx-4800"
+          ],
+          "page": 22,
+          "pdfPage": 22,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "www.advancedco.com 22 3.7.8 View - Log After selecting to view the log option the display presents a pop-up window to allow selection between a view of all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.7.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001 .0 001 14/03/02 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001.",
+          "excerpt": "www.advancedco.com 22 3.7.8 View - Log After selecting to view the log option the display presents a pop-up window to allow selection between a view of all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.7.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001 .0 001 14/03/02 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001."
+        }
+      ],
+      "answer": "The saved manual says:\n\nwww.advancedco.com 22 3.7.8 View - Log After selecting to view the log option the display presents a pop-up window to allow selection between a view of all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.7.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001 .0 001 14/03/02 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001.\n\nThis is the cited manual wording; open the page for the complete procedure and surrounding conditions.",
+      "conversation": {
+        "schemaVersion": 1,
+        "engineVersion": "2026-11-11.2",
+        "id": "b6f50b9d-cfeb-44ba-9488-0a35cecd62dc",
+        "title": "How do I view the event history on an MxPro4 panel?",
+        "createdAt": 1794398352000,
+        "updatedAt": 1794398353486,
+        "messages": [
+          {
+            "id": "3a414da0-b32f-48b6-8653-c3ba23834343",
+            "role": "user",
+            "text": "How do I view the event history on an MxPro4 panel?",
+            "createdAt": 1794398353486,
+            "kind": "user_input",
+            "sourceRefs": [],
+            "quickReplies": []
+          },
+          {
+            "id": "38042c59-6fa2-4cc9-b945-ab803af44b11",
+            "role": "assistant",
+            "text": "The saved manual says:\n\nwww.advancedco.com 22 3.7.8 View - Log After selecting to view the log option the display presents a pop-up window to allow selection between a view of all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.7.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001 .0 001 14/03/02 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001.\n\nThis is the cited manual wording; open the page for the complete procedure and surrounding conditions.",
+            "createdAt": 1794398353486,
+            "kind": "answer",
+            "sourceRefs": [
+              {
+                "sourceId": "5b0e02d2f682d6039474e94716b2f75f10868dc33fa3e6764c0b43c3c50b86a4:pdf-22:0",
+                "citationId": "S1",
+                "manualId": "advanced-8f3ba6ecfc7f",
+                "contentHash": "5b0e02d2f682d6039474e94716b2f75f10868dc33fa3e6764c0b43c3c50b86a4",
+                "processorVersion": "2026-11-10.3",
+                "title": "Advanced MxPro4 — User guide",
+                "revision": "",
+                "models": [
+                  "Mx-4100",
+                  "Mx-4100/L",
+                  "Mx-4200",
+                  "Mx-4200/D",
+                  "Mx-4400",
+                  "Mx-4400/D",
+                  "Mx-4400/LE",
+                  "Mx-4800"
+                ],
+                "page": 22,
+                "pdfPage": 22,
+                "printedPage": null,
+                "section": null,
+                "method": "text",
+                "requiresSourceReview": false,
+                "quote": "www.advancedco.com 22 3.7.8 View - Log After selecting to view the log option the display presents a pop-up window to allow selection between a view of all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.7.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001 .0 001 14/03/02 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001.",
+                "excerpt": "www.advancedco.com 22 3.7.8 View - Log After selecting to view the log option the display presents a pop-up window to allow selection between a view of all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.7.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001 .0 001 14/03/02 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001."
+              }
+            ],
+            "quickReplies": [],
+            "mode": "local-ai",
+            "modelUsed": true,
+            "model": {
+              "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+              "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+              "backend": "wasm",
+              "metrics": {
+                "loadMs": 123064.29999999888,
+                "inputTokens": 439,
+                "outputTokens": 3,
+                "firstTokenMs": 39549.59999999963,
+                "generationMs": 40864.79999999888,
+                "tokensPerSecond": 0.07341281494097811
+              },
+              "selection": {
+                "source": "S1",
+                "question": null
+              },
+              "choiceConstraint": {
+                "method": "model_logits_token_trie",
+                "allowed": [
+                  "S1",
+                  "S2",
+                  "S3",
+                  "NONE"
+                ],
+                "selected": "S1"
+              }
+            },
+            "coverage": "model_selected_manual_extract",
+            "steps": [],
+            "warnings": [],
+            "retrieval": "keyword_alias_matching_with_local_model_selection",
+            "engineVersion": "2026-11-11.2"
+          }
+        ],
+        "context": {
+          "observations": [],
+          "answeredQuestions": [],
+          "knownFields": {},
+          "pendingQuestion": null,
+          "investigation": null,
+          "confirmedModel": "MxPro 4",
+          "previousQuestion": "How do I view the event history on an MxPro4 panel?"
+        }
+      },
+      "lastProgress": {
+        "id": "0e88d307-3482-4350-8ab5-d0be8aeb95b2",
+        "type": "progress",
+        "phase": "generate",
+        "message": "Generating locally · 3 tokens",
+        "tokens": 3,
+        "maxTokens": 3,
+        "elapsedMs": 167234.59999999963,
+        "operation": "generate"
+      }
+    },
+    {
+      "kind": "Measured model turn",
+      "status": "measured",
+      "at": "2026-11-11T12:05:09.680Z",
+      "helperId": "58fb01cd-dc68-4c3c-8738-df469d845024",
+      "question": "The panel is showing a battery fault.",
+      "mode": "local-ai",
+      "modelUsed": true,
+      "coverage": "model_selected_manual_extract",
+      "model": {
+        "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 447,
+          "outputTokens": 5,
+          "firstTokenMs": 51138.60000000149,
+          "generationMs": 58834.70000000112,
+          "tokensPerSecond": 0.08498386156468725
+        },
+        "selection": {
+          "source": "S1",
+          "question": "Q2"
+        },
+        "choiceConstraint": {
+          "method": "model_logits_token_trie",
+          "allowed": [
+            "S1 Q2",
+            "S1 Q3",
+            "S1 Q4",
+            "S1 Q5",
+            "S2 Q2",
+            "S2 Q3",
+            "S2 Q4",
+            "S2 Q5",
+            "S3 Q2",
+            "S3 Q3",
+            "S3 Q4",
+            "S3 Q5",
+            "NONE Q2",
+            "NONE Q3",
+            "NONE Q4",
+            "NONE Q5"
+          ],
+          "selected": "S1 Q2"
+        }
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32:pdf-17:1",
+          "citationId": "S1",
+          "manualId": "advanced-9e6af4fbfd7d",
+          "contentHash": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32",
+          "processorVersion": "2026-11-10.3",
+          "title": "MxPro4 — Installation",
+          "revision": "",
+          "models": [
+            "Mx-4100",
+            "Mx-4100/L",
+            "Mx-4200",
+            "Mx-4200/D",
+            "Mx-4400",
+            "Mx-4400/D",
+            "Mx-4400/LE",
+            "Mx-4800"
+          ],
+          "page": 17,
+          "pdfPage": 17,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables.",
+          "excerpt": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables."
+        }
+      ],
+      "answer": "The saved manual says:\n\ninstall AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables.\n\nIs the fault showing now?",
+      "lastProgress": {
+        "id": "8d4e8b1d-3182-47fc-9ff9-8f89ff42fa44",
+        "type": "progress",
+        "phase": "generate",
+        "message": "Generating locally · 5 tokens",
+        "tokens": 5,
+        "maxTokens": 5,
+        "elapsedMs": 58789.29999999888,
+        "operation": "generate"
+      }
+    },
+    {
+      "kind": "Measured model turn",
+      "status": "measured",
+      "at": "2026-11-11T12:07:24.354Z",
+      "helperId": "58fb01cd-dc68-4c3c-8738-df469d845024",
+      "question": "The display says \"Battery fault\".",
+      "mode": "local-ai",
+      "modelUsed": true,
+      "coverage": "model_selected_manual_extract",
+      "model": {
+        "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 678,
+          "outputTokens": 5,
+          "firstTokenMs": 112692.70000000112,
+          "generationMs": 119890.30000000075,
+          "tokensPerSecond": 0.04170479179716765
+        },
+        "selection": {
+          "source": "S1",
+          "question": "Q2"
+        },
+        "choiceConstraint": {
+          "method": "model_logits_token_trie",
+          "allowed": [
+            "S1 Q2",
+            "S1 Q3",
+            "S1 Q4",
+            "S1 Q5",
+            "S2 Q2",
+            "S2 Q3",
+            "S2 Q4",
+            "S2 Q5",
+            "S3 Q2",
+            "S3 Q3",
+            "S3 Q4",
+            "S3 Q5",
+            "NONE Q2",
+            "NONE Q3",
+            "NONE Q4",
+            "NONE Q5"
+          ],
+          "selected": "S1 Q2"
+        }
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e:pdf-4:1",
+          "citationId": "S1",
+          "manualId": "advanced-76cae27e9ec7",
+          "contentHash": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e",
+          "processorVersion": "2026-11-10.3",
+          "title": "Advanced mxpro4",
+          "revision": "",
+          "models": [
+            "Mx-4200",
+            "Mx-4200/D",
+            "Mx-4400",
+            "Mx-4400/D",
+            "Mx-4200V",
+            "Mx-4400V",
+            "Mx-4400V/LE",
+            "Mx-4800V",
+            "Mx-4200V/LE"
+          ],
+          "page": 4,
+          "pdfPage": 4,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "3.3.17.5 Trace Logging Mode 44 3.3.17.6 Detector Blinking 44 3.3.17.7 Earth Fault Notification 45 3.3.17.8 Routing Interface 45 3.3.17.9 Program ID 45 3.3.17.10 Config Data 45 4 SERVICE AND MAINTENA NCE 46 4.1 M AINTENANCE S CHEDULE 46 4.1.1 Daily Actions 46 4.1.2 Monthly Actions 46 4.1.3 Quarterly Actions 46 4.1.4 Annual Actions 46 4.2 R EPLACEMENT OF C OMPONENTS 47 4.2.1 Batteries 47 4.2.1.1 Standby Batteries 47 4.2.1.2 Lithium Battery 48 4.2.2 Liquid Crystal Display 48 5 APPENDICES 49 5.1 A PPENDIX 1 – F ORGOTTEN L EVEL 3 P ASSWORD 49 5.2 A PPENDIX 2 – R ECOMMENDED F IRE R ATED C ABLES 50 5.2.1 Detector Loop Lengths 51 5.2.2 Sounder Circuit Lengths 51 5.2.3 Fire / Fault Routing Circuit Lengths 52 5.2.4 Network Cables 52 5.3 A PPENDIX 3 – B ATTERY S TANDBY C ALCULATION C HART 53 5.3.1 Mx - 4200V / Mx - 4400V / Mx - 4800V 53 www.acornfiresecurity.com www.acornfiresecurity.com All manuals and user guides at all-guides.com",
+          "excerpt": "3.3.17.5 Trace Logging Mode 44 3.3.17.6 Detector Blinking 44 3.3.17.7 Earth Fault Notification 45 3.3.17.8 Routing Interface 45 3.3.17.9 Program ID 45 3.3.17.10 Config Data 45 4 SERVICE AND MAINTENA NCE 46 4.1 M AINTENANCE S CHEDULE 46 4.1.1 Daily Actions 46 4.1.2 Monthly Actions 46 4.1.3 Quarterly Actions 46 4.1.4 Annual Actions 46 4.2 R EPLACEMENT OF C OMPONENTS 47 4.2.1 Batteries 47 4.2.1.1 Standby Batteries 47 4.2.1.2 Lithium Battery 48 4.2.2 Liquid Crystal Display 48 5 APPENDICES 49 5.1 A PPENDIX 1 – F ORGOTTEN L EVEL 3 P ASSWORD 49 5.2 A PPENDIX 2 – R ECOMMENDED F IRE R ATED C ABLES 50 5.2.1 Detector Loop Lengths 51 5.2.2 Sounder Circuit Lengths 51 5.2.3 Fire / Fault Routing Circuit Lengths 52 5.2.4 Network Cables 52 5.3 A PPENDIX 3 – B ATTERY S TANDBY C ALCULATION C HART 53 5.3.1 Mx - 4200V / Mx - 4400V / Mx - 4800V 53 www.acornfiresecurity.com www.acornfiresecurity.com All manuals and user guides at all-guides.com"
+        }
+      ],
+      "answer": "The saved manual says:\n\n3.3.17.5 Trace Logging Mode 44 3.3.17.6 Detector Blinking 44 3.3.17.7 Earth Fault Notification 45 3.3.17.8 Routing Interface 45 3.3.17.9 Program ID 45 3.3.17.10 Config Data 45 4 SERVICE AND MAINTENA NCE 46 4.1 M AINTENANCE S CHEDULE 46 4.1.1 Daily Actions 46 4.1.2 Monthly Actions 46 4.1.3 Quarterly Actions 46 4.1.4 Annual Actions 46 4.2 R EPLACEMENT OF C OMPONENTS 47 4.2.1 Batteries 47 4.2.1.1 Standby Batteries 47 4.2.1.2 Lithium Battery 48 4.2.2 Liquid Crystal Display 48 5 APPENDICES 49 5.1 A PPENDIX 1 – F ORGOTTEN L EVEL 3 P ASSWORD 49 5.2 A PPENDIX 2 – R ECOMMENDED F IRE R ATED C ABLES 50 5.2.1 Detector Loop Lengths 51 5.2.2 Sounder Circuit Lengths 51 5.2.3 Fire / Fault Routing Circuit Lengths 52 5.2.4 Network Cables 52 5.3 A PPENDIX 3 – B ATTERY S TANDBY C ALCULATION C HART 53 5.3.1 Mx - 4200V / Mx - 4400V / Mx - 4800V 53 www.acornfiresecurity.com www.acornfiresecurity.com All manuals and user guides at all-guides.com\n\nIs the fault showing now?",
+      "lastProgress": {
+        "id": "a3542de5-6d06-4cab-928e-40b413430a3c",
+        "type": "progress",
+        "phase": "generate",
+        "message": "Generating locally · 5 tokens",
+        "tokens": 5,
+        "maxTokens": 5,
+        "elapsedMs": 119910.69999999925,
+        "operation": "generate"
+      }
+    },
+    {
+      "kind": "Measured model turn",
+      "status": "measured",
+      "at": "2026-11-11T12:08:22.209Z",
+      "helperId": "58fb01cd-dc68-4c3c-8738-df469d845024",
+      "question": "Yes, the fault is showing now.",
+      "mode": "local-ai",
+      "modelUsed": true,
+      "coverage": "model_selected_manual_extract",
+      "model": {
+        "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 459,
+          "outputTokens": 5,
+          "firstTokenMs": 43516.79999999888,
+          "generationMs": 46083.699999999255,
+          "tokensPerSecond": 0.10849823256379329
+        },
+        "selection": {
+          "source": "S1",
+          "question": "Q3"
+        },
+        "choiceConstraint": {
+          "method": "model_logits_token_trie",
+          "allowed": [
+            "S1 Q3",
+            "S1 Q4",
+            "S1 Q5",
+            "S1 Q6",
+            "S2 Q3",
+            "S2 Q4",
+            "S2 Q5",
+            "S2 Q6",
+            "S3 Q3",
+            "S3 Q4",
+            "S3 Q5",
+            "S3 Q6",
+            "NONE Q3",
+            "NONE Q4",
+            "NONE Q5",
+            "NONE Q6"
+          ],
+          "selected": "S1 Q3"
+        }
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32:pdf-17:1",
+          "citationId": "S1",
+          "manualId": "advanced-9e6af4fbfd7d",
+          "contentHash": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32",
+          "processorVersion": "2026-11-10.3",
+          "title": "MxPro4 — Installation",
+          "revision": "",
+          "models": [
+            "Mx-4100",
+            "Mx-4100/L",
+            "Mx-4200",
+            "Mx-4200/D",
+            "Mx-4400",
+            "Mx-4400/D",
+            "Mx-4400/LE",
+            "Mx-4800"
+          ],
+          "page": 17,
+          "pdfPage": 17,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables.",
+          "excerpt": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables."
+        }
+      ],
+      "answer": "The saved manual says:\n\ninstall AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables.\n\nWhich device or location is affected?",
+      "lastProgress": {
+        "id": "3456428f-9f69-4674-872a-a7623442bb76",
+        "type": "progress",
+        "phase": "generate",
+        "message": "Generating locally · 5 tokens",
+        "tokens": 5,
+        "maxTokens": 5,
+        "elapsedMs": 46125.70000000112,
+        "operation": "generate"
+      }
+    },
+    {
+      "kind": "Measured model turn",
+      "status": "measured",
+      "at": "2026-11-11T12:09:34.232Z",
+      "helperId": "58fb01cd-dc68-4c3c-8738-df469d845024",
+      "question": "No checks yet.",
+      "mode": "local-ai",
+      "modelUsed": true,
+      "coverage": "model_selected_manual_extract",
+      "model": {
+        "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 455,
+          "outputTokens": 5,
+          "firstTokenMs": 66315.29999999888,
+          "generationMs": 69185.89999999851,
+          "tokensPerSecond": 0.07226906060339039
+        },
+        "selection": {
+          "source": "S1",
+          "question": "Q4"
+        },
+        "choiceConstraint": {
+          "method": "model_logits_token_trie",
+          "allowed": [
+            "S1 Q4",
+            "S1 Q5",
+            "S1 Q6",
+            "S1 Q7",
+            "S2 Q4",
+            "S2 Q5",
+            "S2 Q6",
+            "S2 Q7",
+            "S3 Q4",
+            "S3 Q5",
+            "S3 Q6",
+            "S3 Q7",
+            "NONE Q4",
+            "NONE Q5",
+            "NONE Q6",
+            "NONE Q7"
+          ],
+          "selected": "S1 Q4"
+        }
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32:pdf-17:1",
+          "citationId": "S1",
+          "manualId": "advanced-9e6af4fbfd7d",
+          "contentHash": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32",
+          "processorVersion": "2026-11-10.3",
+          "title": "MxPro4 — Installation",
+          "revision": "",
+          "models": [
+            "Mx-4100",
+            "Mx-4100/L",
+            "Mx-4200",
+            "Mx-4200/D",
+            "Mx-4400",
+            "Mx-4400/D",
+            "Mx-4400/LE",
+            "Mx-4800"
+          ],
+          "page": 17,
+          "pdfPage": 17,
+          "printedPage": null,
+          "section": null,
+          "method": "text",
+          "requiresSourceReview": false,
+          "quote": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables.",
+          "excerpt": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables."
+        }
+      ],
+      "answer": "The saved manual says:\n\ninstall AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables.\n\nWhat checks have already been completed, and what were the results?",
+      "lastProgress": {
+        "id": "513a9244-db83-4484-8b5c-f34df70d1438",
+        "type": "progress",
+        "phase": "generate",
+        "message": "Generating locally · 5 tokens",
+        "tokens": 5,
+        "maxTokens": 5,
+        "elapsedMs": 69163.59999999963,
+        "operation": "generate"
+      }
+    },
+    {
+      "kind": "Actual local diagnostic follow-up",
+      "status": "passed",
+      "at": "2026-11-11T12:09:34.236Z",
+      "elapsedMs": 332244.2999999989,
+      "results": [
+        {
+          "question": "The panel is showing a battery fault.",
+          "answer": "The saved manual says:\n\ninstall AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables.\n\nIs the fault showing now?",
+          "coverage": "model_selected_manual_extract",
+          "model": {
+            "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+            "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+            "backend": "wasm",
+            "metrics": {
+              "loadMs": 0,
+              "inputTokens": 447,
+              "outputTokens": 5,
+              "firstTokenMs": 51138.60000000149,
+              "generationMs": 58834.70000000112,
+              "tokensPerSecond": 0.08498386156468725
+            },
+            "selection": {
+              "source": "S1",
+              "question": "Q2"
+            },
+            "choiceConstraint": {
+              "method": "model_logits_token_trie",
+              "allowed": [
+                "S1 Q2",
+                "S1 Q3",
+                "S1 Q4",
+                "S1 Q5",
+                "S2 Q2",
+                "S2 Q3",
+                "S2 Q4",
+                "S2 Q5",
+                "S3 Q2",
+                "S3 Q3",
+                "S3 Q4",
+                "S3 Q5",
+                "NONE Q2",
+                "NONE Q3",
+                "NONE Q4",
+                "NONE Q5"
+              ],
+              "selected": "S1 Q2"
+            }
+          },
+          "sourceRefs": [
+            {
+              "sourceId": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32:pdf-17:1",
+              "citationId": "S1",
+              "manualId": "advanced-9e6af4fbfd7d",
+              "contentHash": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32",
+              "processorVersion": "2026-11-10.3",
+              "title": "MxPro4 — Installation",
+              "revision": "",
+              "models": [
+                "Mx-4100",
+                "Mx-4100/L",
+                "Mx-4200",
+                "Mx-4200/D",
+                "Mx-4400",
+                "Mx-4400/D",
+                "Mx-4400/LE",
+                "Mx-4800"
+              ],
+              "page": 17,
+              "pdfPage": 17,
+              "printedPage": null,
+              "section": null,
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables.",
+              "excerpt": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables."
+            }
+          ],
+          "pendingQuestion": {
+            "field": "current",
+            "key": "current",
+            "text": "Is the fault showing now?",
+            "sourceRefs": [
+              {
+                "sourceId": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32:pdf-17:1",
+                "citationId": "S1",
+                "manualId": "advanced-9e6af4fbfd7d",
+                "contentHash": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32",
+                "processorVersion": "2026-11-10.3",
+                "title": "MxPro4 — Installation",
+                "revision": "",
+                "models": [
+                  "Mx-4100",
+                  "Mx-4100/L",
+                  "Mx-4200",
+                  "Mx-4200/D",
+                  "Mx-4400",
+                  "Mx-4400/D",
+                  "Mx-4400/LE",
+                  "Mx-4800"
+                ],
+                "page": 17,
+                "pdfPage": 17,
+                "printedPage": null,
+                "section": null,
+                "method": "text",
+                "requiresSourceReview": false,
+                "quote": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables.",
+                "excerpt": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables."
+              }
+            ],
+            "id": "2c17deed-b30a-4d23-9616-65a506971e1a"
+          },
+          "answeredQuestions": []
+        },
+        {
+          "question": "The display says \"Battery fault\".",
+          "answer": "The saved manual says:\n\n3.3.17.5 Trace Logging Mode 44 3.3.17.6 Detector Blinking 44 3.3.17.7 Earth Fault Notification 45 3.3.17.8 Routing Interface 45 3.3.17.9 Program ID 45 3.3.17.10 Config Data 45 4 SERVICE AND MAINTENA NCE 46 4.1 M AINTENANCE S CHEDULE 46 4.1.1 Daily Actions 46 4.1.2 Monthly Actions 46 4.1.3 Quarterly Actions 46 4.1.4 Annual Actions 46 4.2 R EPLACEMENT OF C OMPONENTS 47 4.2.1 Batteries 47 4.2.1.1 Standby Batteries 47 4.2.1.2 Lithium Battery 48 4.2.2 Liquid Crystal Display 48 5 APPENDICES 49 5.1 A PPENDIX 1 – F ORGOTTEN L EVEL 3 P ASSWORD 49 5.2 A PPENDIX 2 – R ECOMMENDED F IRE R ATED C ABLES 50 5.2.1 Detector Loop Lengths 51 5.2.2 Sounder Circuit Lengths 51 5.2.3 Fire / Fault Routing Circuit Lengths 52 5.2.4 Network Cables 52 5.3 A PPENDIX 3 – B ATTERY S TANDBY C ALCULATION C HART 53 5.3.1 Mx - 4200V / Mx - 4400V / Mx - 4800V 53 www.acornfiresecurity.com www.acornfiresecurity.com All manuals and user guides at all-guides.com\n\nIs the fault showing now?",
+          "coverage": "model_selected_manual_extract",
+          "model": {
+            "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+            "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+            "backend": "wasm",
+            "metrics": {
+              "loadMs": 0,
+              "inputTokens": 678,
+              "outputTokens": 5,
+              "firstTokenMs": 112692.70000000112,
+              "generationMs": 119890.30000000075,
+              "tokensPerSecond": 0.04170479179716765
+            },
+            "selection": {
+              "source": "S1",
+              "question": "Q2"
+            },
+            "choiceConstraint": {
+              "method": "model_logits_token_trie",
+              "allowed": [
+                "S1 Q2",
+                "S1 Q3",
+                "S1 Q4",
+                "S1 Q5",
+                "S2 Q2",
+                "S2 Q3",
+                "S2 Q4",
+                "S2 Q5",
+                "S3 Q2",
+                "S3 Q3",
+                "S3 Q4",
+                "S3 Q5",
+                "NONE Q2",
+                "NONE Q3",
+                "NONE Q4",
+                "NONE Q5"
+              ],
+              "selected": "S1 Q2"
+            }
+          },
+          "sourceRefs": [
+            {
+              "sourceId": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e:pdf-4:1",
+              "citationId": "S1",
+              "manualId": "advanced-76cae27e9ec7",
+              "contentHash": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e",
+              "processorVersion": "2026-11-10.3",
+              "title": "Advanced mxpro4",
+              "revision": "",
+              "models": [
+                "Mx-4200",
+                "Mx-4200/D",
+                "Mx-4400",
+                "Mx-4400/D",
+                "Mx-4200V",
+                "Mx-4400V",
+                "Mx-4400V/LE",
+                "Mx-4800V",
+                "Mx-4200V/LE"
+              ],
+              "page": 4,
+              "pdfPage": 4,
+              "printedPage": null,
+              "section": null,
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "3.3.17.5 Trace Logging Mode 44 3.3.17.6 Detector Blinking 44 3.3.17.7 Earth Fault Notification 45 3.3.17.8 Routing Interface 45 3.3.17.9 Program ID 45 3.3.17.10 Config Data 45 4 SERVICE AND MAINTENA NCE 46 4.1 M AINTENANCE S CHEDULE 46 4.1.1 Daily Actions 46 4.1.2 Monthly Actions 46 4.1.3 Quarterly Actions 46 4.1.4 Annual Actions 46 4.2 R EPLACEMENT OF C OMPONENTS 47 4.2.1 Batteries 47 4.2.1.1 Standby Batteries 47 4.2.1.2 Lithium Battery 48 4.2.2 Liquid Crystal Display 48 5 APPENDICES 49 5.1 A PPENDIX 1 – F ORGOTTEN L EVEL 3 P ASSWORD 49 5.2 A PPENDIX 2 – R ECOMMENDED F IRE R ATED C ABLES 50 5.2.1 Detector Loop Lengths 51 5.2.2 Sounder Circuit Lengths 51 5.2.3 Fire / Fault Routing Circuit Lengths 52 5.2.4 Network Cables 52 5.3 A PPENDIX 3 – B ATTERY S TANDBY C ALCULATION C HART 53 5.3.1 Mx - 4200V / Mx - 4400V / Mx - 4800V 53 www.acornfiresecurity.com www.acornfiresecurity.com All manuals and user guides at all-guides.com",
+              "excerpt": "3.3.17.5 Trace Logging Mode 44 3.3.17.6 Detector Blinking 44 3.3.17.7 Earth Fault Notification 45 3.3.17.8 Routing Interface 45 3.3.17.9 Program ID 45 3.3.17.10 Config Data 45 4 SERVICE AND MAINTENA NCE 46 4.1 M AINTENANCE S CHEDULE 46 4.1.1 Daily Actions 46 4.1.2 Monthly Actions 46 4.1.3 Quarterly Actions 46 4.1.4 Annual Actions 46 4.2 R EPLACEMENT OF C OMPONENTS 47 4.2.1 Batteries 47 4.2.1.1 Standby Batteries 47 4.2.1.2 Lithium Battery 48 4.2.2 Liquid Crystal Display 48 5 APPENDICES 49 5.1 A PPENDIX 1 – F ORGOTTEN L EVEL 3 P ASSWORD 49 5.2 A PPENDIX 2 – R ECOMMENDED F IRE R ATED C ABLES 50 5.2.1 Detector Loop Lengths 51 5.2.2 Sounder Circuit Lengths 51 5.2.3 Fire / Fault Routing Circuit Lengths 52 5.2.4 Network Cables 52 5.3 A PPENDIX 3 – B ATTERY S TANDBY C ALCULATION C HART 53 5.3.1 Mx - 4200V / Mx - 4400V / Mx - 4800V 53 www.acornfiresecurity.com www.acornfiresecurity.com All manuals and user guides at all-guides.com"
+            }
+          ],
+          "pendingQuestion": {
+            "field": "current",
+            "key": "current",
+            "text": "Is the fault showing now?",
+            "sourceRefs": [
+              {
+                "sourceId": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e:pdf-4:1",
+                "citationId": "S1",
+                "manualId": "advanced-76cae27e9ec7",
+                "contentHash": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e",
+                "processorVersion": "2026-11-10.3",
+                "title": "Advanced mxpro4",
+                "revision": "",
+                "models": [
+                  "Mx-4200",
+                  "Mx-4200/D",
+                  "Mx-4400",
+                  "Mx-4400/D",
+                  "Mx-4200V",
+                  "Mx-4400V",
+                  "Mx-4400V/LE",
+                  "Mx-4800V",
+                  "Mx-4200V/LE"
+                ],
+                "page": 4,
+                "pdfPage": 4,
+                "printedPage": null,
+                "section": null,
+                "method": "text",
+                "requiresSourceReview": false,
+                "quote": "3.3.17.5 Trace Logging Mode 44 3.3.17.6 Detector Blinking 44 3.3.17.7 Earth Fault Notification 45 3.3.17.8 Routing Interface 45 3.3.17.9 Program ID 45 3.3.17.10 Config Data 45 4 SERVICE AND MAINTENA NCE 46 4.1 M AINTENANCE S CHEDULE 46 4.1.1 Daily Actions 46 4.1.2 Monthly Actions 46 4.1.3 Quarterly Actions 46 4.1.4 Annual Actions 46 4.2 R EPLACEMENT OF C OMPONENTS 47 4.2.1 Batteries 47 4.2.1.1 Standby Batteries 47 4.2.1.2 Lithium Battery 48 4.2.2 Liquid Crystal Display 48 5 APPENDICES 49 5.1 A PPENDIX 1 – F ORGOTTEN L EVEL 3 P ASSWORD 49 5.2 A PPENDIX 2 – R ECOMMENDED F IRE R ATED C ABLES 50 5.2.1 Detector Loop Lengths 51 5.2.2 Sounder Circuit Lengths 51 5.2.3 Fire / Fault Routing Circuit Lengths 52 5.2.4 Network Cables 52 5.3 A PPENDIX 3 – B ATTERY S TANDBY C ALCULATION C HART 53 5.3.1 Mx - 4200V / Mx - 4400V / Mx - 4800V 53 www.acornfiresecurity.com www.acornfiresecurity.com All manuals and user guides at all-guides.com",
+                "excerpt": "3.3.17.5 Trace Logging Mode 44 3.3.17.6 Detector Blinking 44 3.3.17.7 Earth Fault Notification 45 3.3.17.8 Routing Interface 45 3.3.17.9 Program ID 45 3.3.17.10 Config Data 45 4 SERVICE AND MAINTENA NCE 46 4.1 M AINTENANCE S CHEDULE 46 4.1.1 Daily Actions 46 4.1.2 Monthly Actions 46 4.1.3 Quarterly Actions 46 4.1.4 Annual Actions 46 4.2 R EPLACEMENT OF C OMPONENTS 47 4.2.1 Batteries 47 4.2.1.1 Standby Batteries 47 4.2.1.2 Lithium Battery 48 4.2.2 Liquid Crystal Display 48 5 APPENDICES 49 5.1 A PPENDIX 1 – F ORGOTTEN L EVEL 3 P ASSWORD 49 5.2 A PPENDIX 2 – R ECOMMENDED F IRE R ATED C ABLES 50 5.2.1 Detector Loop Lengths 51 5.2.2 Sounder Circuit Lengths 51 5.2.3 Fire / Fault Routing Circuit Lengths 52 5.2.4 Network Cables 52 5.3 A PPENDIX 3 – B ATTERY S TANDBY C ALCULATION C HART 53 5.3.1 Mx - 4200V / Mx - 4400V / Mx - 4800V 53 www.acornfiresecurity.com www.acornfiresecurity.com All manuals and user guides at all-guides.com"
+              }
+            ],
+            "id": "ecd8906a-df6f-48b8-9be7-15b3db662c1c"
+          },
+          "answeredQuestions": []
+        },
+        {
+          "question": "Yes, the fault is showing now.",
+          "answer": "The saved manual says:\n\ninstall AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables.\n\nWhich device or location is affected?",
+          "coverage": "model_selected_manual_extract",
+          "model": {
+            "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+            "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+            "backend": "wasm",
+            "metrics": {
+              "loadMs": 0,
+              "inputTokens": 459,
+              "outputTokens": 5,
+              "firstTokenMs": 43516.79999999888,
+              "generationMs": 46083.699999999255,
+              "tokensPerSecond": 0.10849823256379329
+            },
+            "selection": {
+              "source": "S1",
+              "question": "Q3"
+            },
+            "choiceConstraint": {
+              "method": "model_logits_token_trie",
+              "allowed": [
+                "S1 Q3",
+                "S1 Q4",
+                "S1 Q5",
+                "S1 Q6",
+                "S2 Q3",
+                "S2 Q4",
+                "S2 Q5",
+                "S2 Q6",
+                "S3 Q3",
+                "S3 Q4",
+                "S3 Q5",
+                "S3 Q6",
+                "NONE Q3",
+                "NONE Q4",
+                "NONE Q5",
+                "NONE Q6"
+              ],
+              "selected": "S1 Q3"
+            }
+          },
+          "sourceRefs": [
+            {
+              "sourceId": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32:pdf-17:1",
+              "citationId": "S1",
+              "manualId": "advanced-9e6af4fbfd7d",
+              "contentHash": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32",
+              "processorVersion": "2026-11-10.3",
+              "title": "MxPro4 — Installation",
+              "revision": "",
+              "models": [
+                "Mx-4100",
+                "Mx-4100/L",
+                "Mx-4200",
+                "Mx-4200/D",
+                "Mx-4400",
+                "Mx-4400/D",
+                "Mx-4400/LE",
+                "Mx-4800"
+              ],
+              "page": 17,
+              "pdfPage": 17,
+              "printedPage": null,
+              "section": null,
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables.",
+              "excerpt": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables."
+            }
+          ],
+          "pendingQuestion": {
+            "field": "location",
+            "key": "location",
+            "text": "Which device or location is affected?",
+            "sourceRefs": [
+              {
+                "sourceId": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32:pdf-17:1",
+                "citationId": "S1",
+                "manualId": "advanced-9e6af4fbfd7d",
+                "contentHash": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32",
+                "processorVersion": "2026-11-10.3",
+                "title": "MxPro4 — Installation",
+                "revision": "",
+                "models": [
+                  "Mx-4100",
+                  "Mx-4100/L",
+                  "Mx-4200",
+                  "Mx-4200/D",
+                  "Mx-4400",
+                  "Mx-4400/D",
+                  "Mx-4400/LE",
+                  "Mx-4800"
+                ],
+                "page": 17,
+                "pdfPage": 17,
+                "printedPage": null,
+                "section": null,
+                "method": "text",
+                "requiresSourceReview": false,
+                "quote": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables.",
+                "excerpt": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables."
+              }
+            ],
+            "id": "befae28d-af15-46c5-9aba-16278cc5fc8f"
+          },
+          "answeredQuestions": [
+            {
+              "field": "current",
+              "key": "current",
+              "text": "Is the fault showing now?",
+              "sourceRefs": [
+                {
+                  "sourceId": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e:pdf-4:1",
+                  "citationId": "S1",
+                  "manualId": "advanced-76cae27e9ec7",
+                  "contentHash": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e",
+                  "processorVersion": "2026-11-10.3",
+                  "title": "Advanced mxpro4",
+                  "revision": "",
+                  "models": [
+                    "Mx-4200",
+                    "Mx-4200/D",
+                    "Mx-4400",
+                    "Mx-4400/D",
+                    "Mx-4200V",
+                    "Mx-4400V",
+                    "Mx-4400V/LE",
+                    "Mx-4800V",
+                    "Mx-4200V/LE"
+                  ],
+                  "page": 4,
+                  "pdfPage": 4,
+                  "printedPage": null,
+                  "section": null,
+                  "method": "text",
+                  "requiresSourceReview": false,
+                  "quote": "3.3.17.5 Trace Logging Mode 44 3.3.17.6 Detector Blinking 44 3.3.17.7 Earth Fault Notification 45 3.3.17.8 Routing Interface 45 3.3.17.9 Program ID 45 3.3.17.10 Config Data 45 4 SERVICE AND MAINTENA NCE 46 4.1 M AINTENANCE S CHEDULE 46 4.1.1 Daily Actions 46 4.1.2 Monthly Actions 46 4.1.3 Quarterly Actions 46 4.1.4 Annual Actions 46 4.2 R EPLACEMENT OF C OMPONENTS 47 4.2.1 Batteries 47 4.2.1.1 Standby Batteries 47 4.2.1.2 Lithium Battery 48 4.2.2 Liquid Crystal Display 48 5 APPENDICES 49 5.1 A PPENDIX 1 – F ORGOTTEN L EVEL 3 P ASSWORD 49 5.2 A PPENDIX 2 – R ECOMMENDED F IRE R ATED C ABLES 50 5.2.1 Detector Loop Lengths 51 5.2.2 Sounder Circuit Lengths 51 5.2.3 Fire / Fault Routing Circuit Lengths 52 5.2.4 Network Cables 52 5.3 A PPENDIX 3 – B ATTERY S TANDBY C ALCULATION C HART 53 5.3.1 Mx - 4200V / Mx - 4400V / Mx - 4800V 53 www.acornfiresecurity.com www.acornfiresecurity.com All manuals and user guides at all-guides.com",
+                  "excerpt": "3.3.17.5 Trace Logging Mode 44 3.3.17.6 Detector Blinking 44 3.3.17.7 Earth Fault Notification 45 3.3.17.8 Routing Interface 45 3.3.17.9 Program ID 45 3.3.17.10 Config Data 45 4 SERVICE AND MAINTENA NCE 46 4.1 M AINTENANCE S CHEDULE 46 4.1.1 Daily Actions 46 4.1.2 Monthly Actions 46 4.1.3 Quarterly Actions 46 4.1.4 Annual Actions 46 4.2 R EPLACEMENT OF C OMPONENTS 47 4.2.1 Batteries 47 4.2.1.1 Standby Batteries 47 4.2.1.2 Lithium Battery 48 4.2.2 Liquid Crystal Display 48 5 APPENDICES 49 5.1 A PPENDIX 1 – F ORGOTTEN L EVEL 3 P ASSWORD 49 5.2 A PPENDIX 2 – R ECOMMENDED F IRE R ATED C ABLES 50 5.2.1 Detector Loop Lengths 51 5.2.2 Sounder Circuit Lengths 51 5.2.3 Fire / Fault Routing Circuit Lengths 52 5.2.4 Network Cables 52 5.3 A PPENDIX 3 – B ATTERY S TANDBY C ALCULATION C HART 53 5.3.1 Mx - 4200V / Mx - 4400V / Mx - 4800V 53 www.acornfiresecurity.com www.acornfiresecurity.com All manuals and user guides at all-guides.com"
+                }
+              ],
+              "id": "ecd8906a-df6f-48b8-9be7-15b3db662c1c",
+              "answer": "Yes, the fault is showing now.",
+              "answeredAt": 1794398847896,
+              "provenance": "user_report"
+            }
+          ]
+        },
+        {
+          "question": "No checks yet.",
+          "answer": "The saved manual says:\n\ninstall AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables.\n\nWhat checks have already been completed, and what were the results?",
+          "coverage": "model_selected_manual_extract",
+          "model": {
+            "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+            "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+            "backend": "wasm",
+            "metrics": {
+              "loadMs": 0,
+              "inputTokens": 455,
+              "outputTokens": 5,
+              "firstTokenMs": 66315.29999999888,
+              "generationMs": 69185.89999999851,
+              "tokensPerSecond": 0.07226906060339039
+            },
+            "selection": {
+              "source": "S1",
+              "question": "Q4"
+            },
+            "choiceConstraint": {
+              "method": "model_logits_token_trie",
+              "allowed": [
+                "S1 Q4",
+                "S1 Q5",
+                "S1 Q6",
+                "S1 Q7",
+                "S2 Q4",
+                "S2 Q5",
+                "S2 Q6",
+                "S2 Q7",
+                "S3 Q4",
+                "S3 Q5",
+                "S3 Q6",
+                "S3 Q7",
+                "NONE Q4",
+                "NONE Q5",
+                "NONE Q6",
+                "NONE Q7"
+              ],
+              "selected": "S1 Q4"
+            }
+          },
+          "sourceRefs": [
+            {
+              "sourceId": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32:pdf-17:1",
+              "citationId": "S1",
+              "manualId": "advanced-9e6af4fbfd7d",
+              "contentHash": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32",
+              "processorVersion": "2026-11-10.3",
+              "title": "MxPro4 — Installation",
+              "revision": "",
+              "models": [
+                "Mx-4100",
+                "Mx-4100/L",
+                "Mx-4200",
+                "Mx-4200/D",
+                "Mx-4400",
+                "Mx-4400/D",
+                "Mx-4400/LE",
+                "Mx-4800"
+              ],
+              "page": 17,
+              "pdfPage": 17,
+              "printedPage": null,
+              "section": null,
+              "method": "text",
+              "requiresSourceReview": false,
+              "quote": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables.",
+              "excerpt": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables."
+            }
+          ],
+          "pendingQuestion": {
+            "field": "checks",
+            "key": "checks",
+            "text": "What checks have already been completed, and what were the results?",
+            "sourceRefs": [
+              {
+                "sourceId": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32:pdf-17:1",
+                "citationId": "S1",
+                "manualId": "advanced-9e6af4fbfd7d",
+                "contentHash": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32",
+                "processorVersion": "2026-11-10.3",
+                "title": "MxPro4 — Installation",
+                "revision": "",
+                "models": [
+                  "Mx-4100",
+                  "Mx-4100/L",
+                  "Mx-4200",
+                  "Mx-4200/D",
+                  "Mx-4400",
+                  "Mx-4400/D",
+                  "Mx-4400/LE",
+                  "Mx-4800"
+                ],
+                "page": 17,
+                "pdfPage": 17,
+                "printedPage": null,
+                "section": null,
+                "method": "text",
+                "requiresSourceReview": false,
+                "quote": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables.",
+                "excerpt": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables."
+              }
+            ],
+            "id": "a4629e00-9c74-4749-821e-13976f5b62d1"
+          },
+          "answeredQuestions": [
+            {
+              "field": "current",
+              "key": "current",
+              "text": "Is the fault showing now?",
+              "sourceRefs": [
+                {
+                  "sourceId": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e:pdf-4:1",
+                  "citationId": "S1",
+                  "manualId": "advanced-76cae27e9ec7",
+                  "contentHash": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e",
+                  "processorVersion": "2026-11-10.3",
+                  "title": "Advanced mxpro4",
+                  "revision": "",
+                  "models": [
+                    "Mx-4200",
+                    "Mx-4200/D",
+                    "Mx-4400",
+                    "Mx-4400/D",
+                    "Mx-4200V",
+                    "Mx-4400V",
+                    "Mx-4400V/LE",
+                    "Mx-4800V",
+                    "Mx-4200V/LE"
+                  ],
+                  "page": 4,
+                  "pdfPage": 4,
+                  "printedPage": null,
+                  "section": null,
+                  "method": "text",
+                  "requiresSourceReview": false,
+                  "quote": "3.3.17.5 Trace Logging Mode 44 3.3.17.6 Detector Blinking 44 3.3.17.7 Earth Fault Notification 45 3.3.17.8 Routing Interface 45 3.3.17.9 Program ID 45 3.3.17.10 Config Data 45 4 SERVICE AND MAINTENA NCE 46 4.1 M AINTENANCE S CHEDULE 46 4.1.1 Daily Actions 46 4.1.2 Monthly Actions 46 4.1.3 Quarterly Actions 46 4.1.4 Annual Actions 46 4.2 R EPLACEMENT OF C OMPONENTS 47 4.2.1 Batteries 47 4.2.1.1 Standby Batteries 47 4.2.1.2 Lithium Battery 48 4.2.2 Liquid Crystal Display 48 5 APPENDICES 49 5.1 A PPENDIX 1 – F ORGOTTEN L EVEL 3 P ASSWORD 49 5.2 A PPENDIX 2 – R ECOMMENDED F IRE R ATED C ABLES 50 5.2.1 Detector Loop Lengths 51 5.2.2 Sounder Circuit Lengths 51 5.2.3 Fire / Fault Routing Circuit Lengths 52 5.2.4 Network Cables 52 5.3 A PPENDIX 3 – B ATTERY S TANDBY C ALCULATION C HART 53 5.3.1 Mx - 4200V / Mx - 4400V / Mx - 4800V 53 www.acornfiresecurity.com www.acornfiresecurity.com All manuals and user guides at all-guides.com",
+                  "excerpt": "3.3.17.5 Trace Logging Mode 44 3.3.17.6 Detector Blinking 44 3.3.17.7 Earth Fault Notification 45 3.3.17.8 Routing Interface 45 3.3.17.9 Program ID 45 3.3.17.10 Config Data 45 4 SERVICE AND MAINTENA NCE 46 4.1 M AINTENANCE S CHEDULE 46 4.1.1 Daily Actions 46 4.1.2 Monthly Actions 46 4.1.3 Quarterly Actions 46 4.1.4 Annual Actions 46 4.2 R EPLACEMENT OF C OMPONENTS 47 4.2.1 Batteries 47 4.2.1.1 Standby Batteries 47 4.2.1.2 Lithium Battery 48 4.2.2 Liquid Crystal Display 48 5 APPENDICES 49 5.1 A PPENDIX 1 – F ORGOTTEN L EVEL 3 P ASSWORD 49 5.2 A PPENDIX 2 – R ECOMMENDED F IRE R ATED C ABLES 50 5.2.1 Detector Loop Lengths 51 5.2.2 Sounder Circuit Lengths 51 5.2.3 Fire / Fault Routing Circuit Lengths 52 5.2.4 Network Cables 52 5.3 A PPENDIX 3 – B ATTERY S TANDBY C ALCULATION C HART 53 5.3.1 Mx - 4200V / Mx - 4400V / Mx - 4800V 53 www.acornfiresecurity.com www.acornfiresecurity.com All manuals and user guides at all-guides.com"
+                }
+              ],
+              "id": "ecd8906a-df6f-48b8-9be7-15b3db662c1c",
+              "answer": "Yes, the fault is showing now.",
+              "answeredAt": 1794398847896,
+              "provenance": "user_report"
+            },
+            {
+              "field": "location",
+              "key": "location",
+              "text": "Which device or location is affected?",
+              "sourceRefs": [
+                {
+                  "sourceId": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32:pdf-17:1",
+                  "citationId": "S1",
+                  "manualId": "advanced-9e6af4fbfd7d",
+                  "contentHash": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32",
+                  "processorVersion": "2026-11-10.3",
+                  "title": "MxPro4 — Installation",
+                  "revision": "",
+                  "models": [
+                    "Mx-4100",
+                    "Mx-4100/L",
+                    "Mx-4200",
+                    "Mx-4200/D",
+                    "Mx-4400",
+                    "Mx-4400/D",
+                    "Mx-4400/LE",
+                    "Mx-4800"
+                  ],
+                  "page": 17,
+                  "pdfPage": 17,
+                  "printedPage": null,
+                  "section": null,
+                  "method": "text",
+                  "requiresSourceReview": false,
+                  "quote": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables.",
+                  "excerpt": "install AC Mains input and loop, sounder, relay and AUX outputs circuits. Use front knockout rows for upper chassis cables Use rear knockout rows for lower chassis cables Route battery cables through hole in upper battery shelf – Ensure that the hole is protected by a grommet. Field Installation Wiring Battery Wiring Internal arrangement showing recommended routing of cables."
+                }
+              ],
+              "id": "befae28d-af15-46c5-9aba-16278cc5fc8f",
+              "answer": "No checks yet.",
+              "answeredAt": 1794398902858,
+              "provenance": "user_report"
+            }
+          ]
+        }
+      ],
+      "observationCount": 4
+    }
+  ],
+  "frames": 1
+}

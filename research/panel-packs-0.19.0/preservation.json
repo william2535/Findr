@@ -1,0 +1,46 @@
+{
+  "previous_panel_count": 611,
+  "new_panel_count": 615,
+  "pack_count": 86,
+  "existing_images_unchanged": true,
+  "existing_panel_and_pack_links_preserved": true,
+  "enriched_panel_previous_record_ids": {
+    "c-tec-cfp-alarmsense": [
+      "c-tec-9ee63ad9f660"
+    ],
+    "c-tec-cfp-economy": [
+      "c-tec-94904b32eae0"
+    ],
+    "c-tec-cfp-standard": [
+      "c-tec-fc443e51b6e1"
+    ],
+    "c-tec-eacie": [
+      "c-tec-35a10028f0e3"
+    ],
+    "c-tec-xfp-16-zone": [
+      "c-tec-6a8ae5ddd7bc"
+    ],
+    "c-tec-xfp-32-zone": [
+      "c-tec-b03be75d8eb7"
+    ],
+    "c-tec-xfp-cast-16-zone": [
+      "c-tec-232499eefc01"
+    ],
+    "c-tec-xfp-cast-32-zone": [
+      "c-tec-8f8f7b76fc27"
+    ],
+    "c-tec-zfp-cast": [
+      "c-tec-aae3b8fb2f02"
+    ],
+    "kentec-syncro": [
+      "kentec-724b56a14295"
+    ]
+  },
+  "new_panel_ids": [
+    "kentec-sigma-cp-r",
+    "kentec-hydrosense-cp-r",
+    "kentec-solo-response",
+    "kentec-solo-2-response"
+  ],
+  "source_documents_checked": 11
+}

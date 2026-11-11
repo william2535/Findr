@@ -1,0 +1,1121 @@
+{
+  "reviewedOn": "2026-11-02",
+  "scope": "Security, access-control, CCTV and warden-call manual wiring pictures for FINDR 0.22.0",
+  "method": "Manually visually reviewed rendered source pages. Complete PDF pages rendered with PyMuPDF and encoded as lossless WebP, normally 1400 px wide and up to 2800 px for dense foldouts. No diagrams redrawn, terminals inferred, or source labels cropped. One sideways source drawing was rotated 270 degrees solely for reading orientation.",
+  "retrievals": [
+    {
+      "recordId": "texecom-031d1f7f736b",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Texecom%20Veritas%20R8%20Plus%20and%20Excell%20installation%20manual.pdf",
+      "title": "Texecom Veritas R8 Plus and Excell installation manual",
+      "localFile": "/tmp/findr-wiring-security/texecom-031d1f7f736b.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "8fe54c67b3932973b17010a2511b5f185ecf9434c1eab632abb40307a329737e",
+      "bytes": 1915376,
+      "pages": 44,
+      "catalogueSha256": null,
+      "catalogueHashMatches": null,
+      "edition": "Issue 10"
+    },
+    {
+      "recordId": "honeywell-18a74589d3d1",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Galaxy%20Dimension%20Install%20Manual.pdf",
+      "title": "Galaxy Dimension Install Manual",
+      "localFile": "/tmp/findr-wiring-security/honeywell-18a74589d3d1.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "b64fa5be0bd932ecb4bee89767ec1de60ef8742614548a005e982a5833812c14",
+      "bytes": 1777789,
+      "pages": 306,
+      "catalogueSha256": "b64fa5be0bd932ecb4bee89767ec1de60ef8742614548a005e982a5833812c14",
+      "catalogueHashMatches": true,
+      "edition": "IE1-0063 Rev 1.0"
+    },
+    {
+      "recordId": "orisec-01d0e0ac004c",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Orisec%20CP%2025-50-100%20Install%20Manual.pdf",
+      "title": "Orisec CP 25-50-100 Install Manual",
+      "localFile": "/tmp/findr-wiring-security/orisec-01d0e0ac004c.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "981dd38a39191492282d25b4d12cafb5a3e92fd6139dd4e959f4ba284276626c",
+      "bytes": 4905045,
+      "pages": 80,
+      "catalogueSha256": null,
+      "catalogueHashMatches": null,
+      "edition": "INS008, © 2018"
+    },
+    {
+      "recordId": "eaton-scantronic-105c389dba94",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Scantronic%209752%20Installation%20Guide.pdf",
+      "title": "Scantronic 9752 Installation Guide",
+      "localFile": "/tmp/findr-wiring-security/eaton-scantronic-105c389dba94.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "229072efb50a5a4eece53e18189adf3ca869b0c186f7ea33eeb0404d28b2b86b",
+      "bytes": 725349,
+      "pages": 44,
+      "catalogueSha256": "229072efb50a5a4eece53e18189adf3ca869b0c186f7ea33eeb0404d28b2b86b",
+      "catalogueHashMatches": true,
+      "edition": "497098, Issue 3"
+    },
+    {
+      "recordId": "pyronix-d915e92d5fff",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Pyronix%20Sterling%2010%20Install.pdf",
+      "title": "Pyronix Sterling 10 Install",
+      "localFile": "/tmp/findr-wiring-security/pyronix-d915e92d5fff.pdf",
+      "status": "failed",
+      "error": "Source exceeds 30 MiB review limit",
+      "edition": "Not verified; source retrieval failed"
+    },
+    {
+      "recordId": "bosch-0ba92138ab30",
+      "url": "https://resources.keenfinity.tech/public/documents/ISC_BDL2_WP6__WP12_Installation_Manual_all_2614427019.pdf",
+      "title": "Blue Line Gen2 Pet Friendly TriTech ISC-BDL2-WP6 / WP12 - installation guide",
+      "localFile": "/tmp/findr-wiring-security/bosch-0ba92138ab30.pdf",
+      "retrieval": "existing checked local PDF",
+      "status": "retrieved",
+      "sha256": "435411de48f7f486996f0b81e9a13df5601ddec6aede3428d442473bcce876ed",
+      "bytes": 1527455,
+      "pages": 2,
+      "catalogueSha256": "435411de48f7f486996f0b81e9a13df5601ddec6aede3428d442473bcce876ed",
+      "catalogueHashMatches": true,
+      "edition": "F.01U.140.810 | 10 | 2017.12"
+    },
+    {
+      "recordId": "bosch-3d8651b2effe",
+      "url": "https://resources.keenfinity.tech/public/documents/Blue_Line_Gen_2_Quick_Installation_Guide_all_71222140683.pdf",
+      "title": "Blue Line Gen2 TriTech motion detectors - quick installation guide",
+      "localFile": "/tmp/findr-wiring-security/bosch-3d8651b2effe.pdf",
+      "retrieval": "existing checked local PDF",
+      "status": "retrieved",
+      "sha256": "5d9ac566dee9eec5e926f6e2ecc1df51b1d92f0326a06cf597453132045bfbe4",
+      "bytes": 2723247,
+      "pages": 2,
+      "catalogueSha256": "5d9ac566dee9eec5e926f6e2ecc1df51b1d92f0326a06cf597453132045bfbe4",
+      "catalogueHashMatches": true,
+      "edition": "F.01U.140.813 | 12 | 2019.10"
+    },
+    {
+      "recordId": "risco-00a6655953a1",
+      "url": "https://www.pahedomotica.nl/wp-content/uploads/5IN1749_BWare-DT-G2-Detector-Installation-Instructions_multi.pdf",
+      "title": "BWare RK515DTGL K-Band DT Grade 2 - installation instructions",
+      "localFile": "/tmp/findr-wiring-security/risco-00a6655953a1.pdf",
+      "retrieval": "existing checked local PDF",
+      "status": "retrieved",
+      "sha256": "17ba44aea0fbaa826d7cc12d3012f84b9b1513b640c2a4306ed03046371292ba",
+      "bytes": 682398,
+      "pages": 2,
+      "catalogueSha256": "17ba44aea0fbaa826d7cc12d3012f84b9b1513b640c2a4306ed03046371292ba",
+      "catalogueHashMatches": true,
+      "edition": "5IN1749, 01/2012"
+    },
+    {
+      "recordId": "risco-e8aee4e7a650",
+      "url": "https://www.casmarglobal.com/media/akeneo_connector/media_files/M/I/MI_INTRUSI__N_IWISE_DT25_AM_G3_9ec2.pdf",
+      "title": "iWISE DT AM Grade 3 - installation instructions",
+      "localFile": "/tmp/findr-wiring-security/risco-e8aee4e7a650.pdf",
+      "retrieval": "existing checked local PDF",
+      "status": "retrieved",
+      "sha256": "d2fd6b2dd60c60dc4336ca7f0f6314067585ab47bbb5c968eb739096186c6404",
+      "bytes": 560055,
+      "pages": 2,
+      "catalogueSha256": "d2fd6b2dd60c60dc4336ca7f0f6314067585ab47bbb5c968eb739096186c6404",
+      "catalogueHashMatches": true,
+      "edition": "5IN2634 D, 08/2022"
+    },
+    {
+      "recordId": "texecom-24fe7d380381",
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/04/07093203/Odyssey-Series-Installation-Manual-INS154-7.pdf",
+      "title": "Odyssey Series Installation Manual",
+      "localFile": "/tmp/findr-wiring-security/texecom-24fe7d380381.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "be72473cc30197d4f9018def0f4933cb28863a74c7baf6dd1f38ec2909b0d474",
+      "bytes": 583838,
+      "pages": 17,
+      "catalogueSha256": null,
+      "catalogueHashMatches": null,
+      "edition": "INS154-7"
+    },
+    {
+      "recordId": "texecom-1ab5af345145",
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2023/02/10075049/SE-Capture-Grade-3-Wired-Installation-Manual.pdf",
+      "title": "SE Capture Grade 3 Wired Installation Manual",
+      "localFile": "/tmp/findr-wiring-security/texecom-1ab5af345145.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "943b5c61b123ba6523e5c9549f36668daae3b4654c374f115efb5e518856e989",
+      "bytes": 3423230,
+      "pages": 56,
+      "catalogueSha256": null,
+      "catalogueHashMatches": null,
+      "edition": "INS881EN-3 (Swedish text)"
+    },
+    {
+      "recordId": "pyronix-12dc1a0275b5",
+      "url": "https://dsc.hu/themes/frontend/documents/kx15dt-installation-manual-multilingual.pdf",
+      "title": "KX15DT - installation guide (RINS549-14)",
+      "localFile": "/tmp/findr-wiring-security/pyronix-12dc1a0275b5.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "2cd59b9ecb5aaa3d5052803c146704551c79e74bb6fce2225d6bd8476a7f8086",
+      "bytes": 13260308,
+      "pages": 4,
+      "catalogueSha256": "2cd59b9ecb5aaa3d5052803c146704551c79e74bb6fce2225d6bd8476a7f8086",
+      "catalogueHashMatches": true,
+      "edition": "RINS549-14"
+    },
+    {
+      "recordId": "orisec-f6e13696a504",
+      "url": "https://www.security-systems.nl/wp-content/uploads/downloads/ins145_incert_dt_200_am_eol_jumpers_instructions.pdf",
+      "title": "DT-200-AM - INCERT installation instructions",
+      "localFile": "/tmp/findr-wiring-security/orisec-f6e13696a504.pdf",
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "edition": "Not verified; source retrieval failed"
+    },
+    {
+      "recordId": "act-6137ac1ea5e1",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/ACT%2010%20and%2020%20digi%20keypad.pdf",
+      "title": "ACT 10 and 20 digi keypad",
+      "localFile": "/tmp/findr-wiring-security/act-6137ac1ea5e1.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "ab79a044fbc1e72ff88f68aa57169ccb3e794d3ed8dcd3de99472b21dfd9c582",
+      "bytes": 1096307,
+      "pages": 8,
+      "catalogueSha256": "ab79a044fbc1e72ff88f68aa57169ccb3e794d3ed8dcd3de99472b21dfd9c582",
+      "catalogueHashMatches": true,
+      "edition": "18-00001, © 2007"
+    },
+    {
+      "recordId": "paxton-191cfc4e7f90",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Net2%20Plus%20ACU.pdf",
+      "title": "Net2 Plus ACU",
+      "localFile": "/tmp/findr-wiring-security/paxton-191cfc4e7f90.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "a0eed9c3fa8cf37aa70636720bb9da2204fd5bad2639a30d009f52fd36c5dd7e",
+      "bytes": 2149453,
+      "pages": 8,
+      "catalogueSha256": null,
+      "catalogueHashMatches": null,
+      "edition": "INS-30080, 22/01/2010"
+    },
+    {
+      "recordId": "paxton-27e5d85e1edc",
+      "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1002.pdf",
+      "title": "APN-1002 – How to install a Switch2 system",
+      "localFile": "/tmp/findr-wiring-security/paxton-27e5d85e1edc.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "bdb8b49911524ff2caf56b363e89d2a5c858bdea7a7ebce740cc6a47b84c39a2",
+      "bytes": 1900228,
+      "pages": 3,
+      "catalogueSha256": null,
+      "catalogueHashMatches": null,
+      "edition": "APN-1002"
+    },
+    {
+      "recordId": "paxton-1929537a2caa",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Paxton%20Net2%20P38%20reader.pdf",
+      "title": "Paxton Net2 P38 reader",
+      "localFile": "/tmp/findr-wiring-security/paxton-1929537a2caa.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "69d86bdacc12fb783f7ae970fce989fe6f541553f5f1a3eb951b65382be6f682",
+      "bytes": 587404,
+      "pages": 4,
+      "catalogueSha256": null,
+      "catalogueHashMatches": null,
+      "edition": "INS-30023, 20/11/2009"
+    },
+    {
+      "recordId": "paxton-34d2fed7ef37",
+      "url": "https://www.paxton-access.com/wp-content/uploads/2019/04/ins-30076.pdf",
+      "title": "ins-30076 – TOUCHLOCK compact K series keypad",
+      "localFile": "/tmp/findr-wiring-security/paxton-34d2fed7ef37.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "c67a1441021062abc269ee20456b45d658e0c5afb506c57175442d44234e1c04",
+      "bytes": 710973,
+      "pages": 12,
+      "catalogueSha256": null,
+      "catalogueHashMatches": null,
+      "edition": "INS-30076 Rev E"
+    },
+    {
+      "recordId": "nvt-8589e51457ae",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/NVT%20cctv%20installationmanual.pdf",
+      "title": "NVT cctv installationmanual",
+      "localFile": "/tmp/findr-wiring-security/nvt-8589e51457ae.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "2c2091e1d30113bb0309f10d9476807ec7910fb96b39f55a5732e1744665b10d",
+      "bytes": 262723,
+      "pages": 2,
+      "catalogueSha256": null,
+      "catalogueHashMatches": null,
+      "edition": "451-436-1-G, © 2003"
+    },
+    {
+      "recordId": "bbv-0aa95402bc61",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/BBV%20Rx10X%20installation%20manual%20V3.05.pdf",
+      "title": "BBV Rx10X installation manual V3.05",
+      "localFile": "/tmp/findr-wiring-security/bbv-0aa95402bc61.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "81590387e7687d1f701e391a5938a67771c724d2cd7f550d42a59af9db002c7b",
+      "bytes": 1607013,
+      "pages": 40,
+      "catalogueSha256": "81590387e7687d1f701e391a5938a67771c724d2cd7f550d42a59af9db002c7b",
+      "catalogueHashMatches": true,
+      "edition": "Installation manual V3.05"
+    },
+    {
+      "recordId": "gjd-2946ac08c654",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Opal%20Elite%20install%20manual.pdf",
+      "title": "Elite external PIR installation manual",
+      "localFile": "/tmp/findr-wiring-security/gjd-2946ac08c654.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "63ff40e72c944000592267038b80f6dc8ca22f89b90d02dd17930ad7dd73a7cf",
+      "bytes": 938022,
+      "pages": 8,
+      "catalogueSha256": "63ff40e72c944000592267038b80f6dc8ca22f89b90d02dd17930ad7dd73a7cf",
+      "catalogueHashMatches": true,
+      "edition": "Edition not stated"
+    },
+    {
+      "recordId": "honeywell-4f5136f7b0f1",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/HRDE4X4QuickInstallV1.pdf",
+      "title": "HRDE4X4 quick installation guide",
+      "localFile": "/tmp/findr-wiring-security/honeywell-4f5136f7b0f1.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "ddc03e15938ee071625c0268e14a700c770c0e99861927adacbf5edd7eb53938",
+      "bytes": 517748,
+      "pages": 2,
+      "catalogueSha256": "ddc03e15938ee071625c0268e14a700c770c0e99861927adacbf5edd7eb53938",
+      "catalogueHashMatches": true,
+      "edition": "Document 900.0573, 02/06, Rev 1.00"
+    },
+    {
+      "recordId": "tunstall-3f3cf33597ec",
+      "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/d4107098d_universal_sensor_installation_and_user_guide.pdf",
+      "title": "Universal Sensor Installation and User Manual",
+      "localFile": "/tmp/findr-wiring-security/tunstall-3f3cf33597ec.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "9386fe2670229d45c217acf459c154e12d624a0bd880e6ad81edac6f827471f4",
+      "bytes": 677027,
+      "pages": 16,
+      "catalogueSha256": "9386fe2670229d45c217acf459c154e12d624a0bd880e6ad81edac6f827471f4",
+      "catalogueHashMatches": true,
+      "edition": "D4107098D"
+    },
+    {
+      "recordId": "tunstall-31748186a127",
+      "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/d6707135a_epilepsy_radio_transmitter_installation_guide.pdf",
+      "title": "Epilepsy Sensor Installation Guide",
+      "localFile": "/tmp/findr-wiring-security/tunstall-31748186a127.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "70b22ac7121b24a65860fe25b38d101089caee273dcbeae694c2b2aaa16c002e",
+      "bytes": 176751,
+      "pages": 2,
+      "catalogueSha256": "70b22ac7121b24a65860fe25b38d101089caee273dcbeae694c2b2aaa16c002e",
+      "catalogueHashMatches": true,
+      "edition": "D6707135A"
+    },
+    {
+      "recordId": "cornell-communications-18b8abfc6dd5",
+      "url": "https://docs.facpmanuals.com/manuals/Cornell_Communications/b-5243b_power_supply-datasheet.pdf",
+      "title": "B-5243B power supply datasheet",
+      "localFile": "/tmp/findr-wiring-security/cornell-communications-18b8abfc6dd5.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "ef98447c408d699d84ad3462b31f7887c5ea816e4c7b7c2b865af5dff6b5343d",
+      "bytes": 206578,
+      "pages": 1,
+      "catalogueSha256": "ef98447c408d699d84ad3462b31f7887c5ea816e4c7b7c2b865af5dff6b5343d",
+      "catalogueHashMatches": true,
+      "edition": "DB5243BC"
+    },
+    {
+      "recordId": "paxton-0ff722d66548",
+      "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-20005.pdf",
+      "title": "ins-20005 – Net2 I/O",
+      "localFile": "/tmp/findr-wiring-security/paxton-0ff722d66548.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "9cca76260c931b7fb3551bf5793de1cf5ff3014ca526297665ad90af1cb8b955",
+      "bytes": 2748162,
+      "pages": 10,
+      "catalogueSha256": null,
+      "catalogueHashMatches": null,
+      "edition": "INS-20005 Rev D"
+    },
+    {
+      "recordId": "texecom-778b363ae34b",
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/11/04115044/INS878EN-11-Capture-G2-Wired-wall-mount-detectors.pdf",
+      "title": "INS878EN-11 Capture G2 Wired wall mount detectors",
+      "localFile": "/tmp/findr-wiring-security/texecom-778b363ae34b.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "75d9984f07d7b68cb905762988d074e5e40847f6b32f124ba908f805e527a3b7",
+      "bytes": 14905157,
+      "pages": 76,
+      "catalogueSha256": null,
+      "catalogueHashMatches": null,
+      "edition": "INS878EN-11"
+    },
+    {
+      "recordId": "pyronix-05952749c9ff",
+      "url": "https://dsc.hu/themes/frontend/documents/kx15dtam-installation-manual-english-rins1664-1.pdf",
+      "title": "KX15DTAM - installation manual",
+      "localFile": "/tmp/findr-wiring-security/pyronix-05952749c9ff.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "c8c2516669e058c1660a8f3fe20d775f42c7b6d8b16c0aef64e16a1a79801bc5",
+      "bytes": 13865520,
+      "pages": 4,
+      "catalogueSha256": "c8c2516669e058c1660a8f3fe20d775f42c7b6d8b16c0aef64e16a1a79801bc5",
+      "catalogueHashMatches": true,
+      "edition": "RINS1664-1"
+    },
+    {
+      "recordId": "tynetec-cccbd788ab8a",
+      "url": "https://www.tynetec.co.uk/wp-content/uploads/2024/01/ZXT900_E-Advent-XT2-Wiring-Diagrams.pdf",
+      "title": "Advent XT2 Wiring Diagrams",
+      "localFile": "/tmp/findr-wiring-security/tynetec-cccbd788ab8a.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "85a512cba69c23fba981705acbc6ed3cbbd3104d2e3917dae680072404c5d036",
+      "bytes": 923903,
+      "pages": 8,
+      "catalogueSha256": "85a512cba69c23fba981705acbc6ed3cbbd3104d2e3917dae680072404c5d036",
+      "catalogueHashMatches": true,
+      "edition": "Drawing ZXT900, Mod C, 15/01/21 (reviewed sheets 1–4)"
+    },
+    {
+      "recordId": "tynetec-ceeb9047ffe7",
+      "url": "https://www.tynetec.co.uk/wp-content/uploads/2019/05/ZXT100_M-Advent-XT-Wiring-Diagrams-1.pdf",
+      "title": "Advent XT Wiring Diagrams",
+      "localFile": "/tmp/findr-wiring-security/tynetec-ceeb9047ffe7.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "ecd86a6573cf2c61c26e4ad4ef171f6f0e2bebb855dd10095daedaf9c23d5657",
+      "bytes": 1264490,
+      "pages": 10,
+      "catalogueSha256": "ecd86a6573cf2c61c26e4ad4ef171f6f0e2bebb855dd10095daedaf9c23d5657",
+      "catalogueHashMatches": true,
+      "edition": "Drawing ZXT100, Mod M, 25/04/19"
+    },
+    {
+      "recordId": "tynetec-0bf0ff779621",
+      "url": "https://www.tynetec.co.uk/wp-content/uploads/2019/05/WD0296_B-Advent_xt_CSL_DualCom_SafeLink_Wiring_Diagram-1.pdf",
+      "title": "Advent xt CSL DualCom SafeLink Wiring Diagram",
+      "localFile": "/tmp/findr-wiring-security/tynetec-0bf0ff779621.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "525b12f9eb59dd9ad9e9d96ff0e829263edca6e12923a87493b1fcc06fc096ec",
+      "bytes": 42351,
+      "pages": 1,
+      "catalogueSha256": "525b12f9eb59dd9ad9e9d96ff0e829263edca6e12923a87493b1fcc06fc096ec",
+      "catalogueHashMatches": true,
+      "edition": "Drawing WD0296, Mod B, 19/09/17"
+    },
+    {
+      "recordId": "tynetec-b9c2d63d6565",
+      "url": "https://www.tynetec.co.uk/wp-content/uploads/2019/05/ZSL045_A-Advent_xt_Strobe_Light_Wiring_Diagram-1.pdf",
+      "title": "Advent xt Strobe Light Wiring Diagram",
+      "localFile": "/tmp/findr-wiring-security/tynetec-b9c2d63d6565.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "e1a1791d84a40f0af474b3e07a320e47e17915dda423376358e64dafa50d68f2",
+      "bytes": 154732,
+      "pages": 1,
+      "catalogueSha256": "e1a1791d84a40f0af474b3e07a320e47e17915dda423376358e64dafa50d68f2",
+      "catalogueHashMatches": true,
+      "edition": "Drawing ZSL045, Mod A, 29/09/08"
+    },
+    {
+      "recordId": "tunstall-c5960e67d3f5",
+      "url": "https://www.tunstall.co.uk/wp-content/uploads/2026/03/d6707039a_rom_installation_guide.pdf",
+      "title": "Radio Output Module Installation Guide",
+      "localFile": "/tmp/findr-wiring-security/tunstall-c5960e67d3f5.pdf",
+      "retrieval": "source URL",
+      "status": "retrieved",
+      "sha256": "f816ff583308ca6096810048eed5557c6f32e99acb5be79cb4c16e9e7162ab5e",
+      "bytes": 26475,
+      "pages": 2,
+      "catalogueSha256": "f816ff583308ca6096810048eed5557c6f32e99acb5be79cb4c16e9e7162ab5e",
+      "catalogueHashMatches": true,
+      "edition": "D6707039A"
+    }
+  ],
+  "reviewedDocuments": [
+    {
+      "recordId": "act-6137ac1ea5e1",
+      "pages": [
+        {
+          "pdfPage": 6,
+          "printedPage": "6",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/act-6137ac1ea5e1-p6-typical-wiring.webp"
+        },
+        {
+          "pdfPage": 7,
+          "printedPage": "7",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/act-6137ac1ea5e1-p7-system-schematic.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "bbv-0aa95402bc61",
+      "pages": [
+        {
+          "pdfPage": 9,
+          "printedPage": "9",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1800,
+          "image": "wiring/bbv-0aa95402bc61-p9-pcb.webp"
+        },
+        {
+          "pdfPage": 15,
+          "printedPage": "15",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1800,
+          "image": "wiring/bbv-0aa95402bc61-p15-control.webp"
+        },
+        {
+          "pdfPage": 16,
+          "printedPage": "16",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1800,
+          "image": "wiring/bbv-0aa95402bc61-p16-alarm.webp"
+        },
+        {
+          "pdfPage": 17,
+          "printedPage": "17",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1800,
+          "image": "wiring/bbv-0aa95402bc61-p17-auxiliary.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "bosch-0ba92138ab30",
+      "pages": [
+        {
+          "pdfPage": 2,
+          "printedPage": "2",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 2200,
+          "image": "wiring/bosch-0ba92138ab30-p2-terminals.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "bosch-3d8651b2effe",
+      "pages": [
+        {
+          "pdfPage": 1,
+          "printedPage": null,
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 2800,
+          "image": "wiring/bosch-3d8651b2effe-p1-terminals.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "eaton-scantronic-105c389dba94",
+      "pages": [
+        {
+          "pdfPage": 18,
+          "printedPage": "14",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/eaton-scantronic-105c389dba94-p18-keypad-bus.webp"
+        },
+        {
+          "pdfPage": 24,
+          "printedPage": "20",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/eaton-scantronic-105c389dba94-p24-keypad.webp"
+        },
+        {
+          "pdfPage": 25,
+          "printedPage": "21",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/eaton-scantronic-105c389dba94-p25-sounder.webp"
+        },
+        {
+          "pdfPage": 27,
+          "printedPage": "23",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/eaton-scantronic-105c389dba94-p27-closed-circuit.webp"
+        },
+        {
+          "pdfPage": 28,
+          "printedPage": "24",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/eaton-scantronic-105c389dba94-p28-fully-supervised.webp"
+        },
+        {
+          "pdfPage": 30,
+          "printedPage": "26",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/eaton-scantronic-105c389dba94-p30-9954-expander.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "honeywell-18a74589d3d1",
+      "pages": [
+        {
+          "pdfPage": 20,
+          "printedPage": "2-8",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/honeywell-18a74589d3d1-p20-rs485.webp"
+        },
+        {
+          "pdfPage": 21,
+          "printedPage": "2-9",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/honeywell-18a74589d3d1-p21-twin-rs485.webp"
+        },
+        {
+          "pdfPage": 25,
+          "printedPage": "2-13",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/honeywell-18a74589d3d1-p25-zones.webp"
+        },
+        {
+          "pdfPage": 26,
+          "printedPage": "2-14",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/honeywell-18a74589d3d1-p26-option-10.webp"
+        },
+        {
+          "pdfPage": 27,
+          "printedPage": "2-15",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/honeywell-18a74589d3d1-p27-multiple-detectors.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "honeywell-4f5136f7b0f1",
+      "pages": [
+        {
+          "pdfPage": 1,
+          "printedPage": null,
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/honeywell-4f5136f7b0f1-p1-rear-connections.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "nvt-8589e51457ae",
+      "pages": [
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 2800,
+          "image": "wiring/nvt-8589e51457ae-p2-grounding.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "orisec-01d0e0ac004c",
+      "pages": [
+        {
+          "pdfPage": 18,
+          "printedPage": "18",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/orisec-01d0e0ac004c-p18-network.webp"
+        },
+        {
+          "pdfPage": 23,
+          "printedPage": "23",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/orisec-01d0e0ac004c-p23-zone-eol.webp"
+        },
+        {
+          "pdfPage": 24,
+          "printedPage": "24",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/orisec-01d0e0ac004c-p24-teol-outputs.webp"
+        },
+        {
+          "pdfPage": 25,
+          "printedPage": "25",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/orisec-01d0e0ac004c-p25-sounders.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "paxton-0ff722d66548",
+      "pages": [
+        {
+          "pdfPage": 3,
+          "printedPage": null,
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/paxton-0ff722d66548-p3-io.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "paxton-191cfc4e7f90",
+      "pages": [
+        {
+          "pdfPage": 1,
+          "printedPage": "1",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/paxton-191cfc4e7f90-p1-controller.webp"
+        },
+        {
+          "pdfPage": 4,
+          "printedPage": "4",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/paxton-191cfc4e7f90-p4-network.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "paxton-27e5d85e1edc",
+      "pages": [
+        {
+          "pdfPage": 2,
+          "printedPage": "2",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/paxton-27e5d85e1edc-p2-connections.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "paxton-34d2fed7ef37",
+      "pages": [
+        {
+          "pdfPage": 3,
+          "printedPage": null,
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/paxton-34d2fed7ef37-p3-wiring.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "pyronix-05952749c9ff",
+      "pages": [
+        {
+          "pdfPage": 1,
+          "printedPage": null,
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 2800,
+          "image": "wiring/pyronix-05952749c9ff-p1-quick-wiring.webp"
+        },
+        {
+          "pdfPage": 3,
+          "printedPage": null,
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 2800,
+          "image": "wiring/pyronix-05952749c9ff-p3-eol-options.webp"
+        },
+        {
+          "pdfPage": 4,
+          "printedPage": null,
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 2800,
+          "image": "wiring/pyronix-05952749c9ff-p4-panel-examples.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "pyronix-12dc1a0275b5",
+      "pages": [
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 2200,
+          "image": "wiring/pyronix-12dc1a0275b5-p2-eol.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "risco-00a6655953a1",
+      "pages": [
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 2800,
+          "image": "wiring/risco-00a6655953a1-p2-eol-terminals.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "risco-e8aee4e7a650",
+      "pages": [
+        {
+          "pdfPage": 2,
+          "printedPage": null,
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 2800,
+          "image": "wiring/risco-e8aee4e7a650-p2-eol-terminals.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "texecom-031d1f7f736b",
+      "pages": [
+        {
+          "pdfPage": 11,
+          "printedPage": "11",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/texecom-031d1f7f736b-p11-contacts.webp"
+        },
+        {
+          "pdfPage": 12,
+          "printedPage": "12",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/texecom-031d1f7f736b-p12-pir.webp"
+        },
+        {
+          "pdfPage": 13,
+          "printedPage": "13",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/texecom-031d1f7f736b-p13-eol.webp"
+        },
+        {
+          "pdfPage": 15,
+          "printedPage": "15",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/texecom-031d1f7f736b-p15-sounder.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "texecom-24fe7d380381",
+      "pages": [
+        {
+          "pdfPage": 7,
+          "printedPage": "7/17",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/texecom-24fe7d380381-p7-grade3.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "texecom-778b363ae34b",
+      "pages": [
+        {
+          "pdfPage": 19,
+          "printedPage": "19/76",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/texecom-778b363ae34b-p19-terminal-layout.webp"
+        },
+        {
+          "pdfPage": 20,
+          "printedPage": "20/76",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/texecom-778b363ae34b-p20-eol-selector.webp"
+        },
+        {
+          "pdfPage": 21,
+          "printedPage": "21/76",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/texecom-778b363ae34b-p21-elite24-64w.webp"
+        },
+        {
+          "pdfPage": 22,
+          "printedPage": "22/76",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/texecom-778b363ae34b-p22-elite48-640.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "tunstall-31748186a127",
+      "pages": [
+        {
+          "pdfPage": 2,
+          "printedPage": "1 of 2",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1400,
+          "image": "wiring/tunstall-31748186a127-p2-plug-connection.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "tynetec-0bf0ff779621",
+      "pages": [
+        {
+          "pdfPage": 1,
+          "printedPage": "Sheet 1 of 1",
+          "fullPage": true,
+          "rotationDegrees": 270,
+          "width": 2400,
+          "image": "wiring/tynetec-0bf0ff779621-p1-safelink.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "tynetec-b9c2d63d6565",
+      "pages": [
+        {
+          "pdfPage": 1,
+          "printedPage": "Sheet 1 of 1",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 1800,
+          "image": "wiring/tynetec-b9c2d63d6565-p1-strobe.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "tynetec-cccbd788ab8a",
+      "pages": [
+        {
+          "pdfPage": 1,
+          "printedPage": "Sheet 1 of 8",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 2800,
+          "image": "wiring/tynetec-cccbd788ab8a-p1-controller.webp"
+        },
+        {
+          "pdfPage": 2,
+          "printedPage": "Sheet 2 of 8",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 2800,
+          "image": "wiring/tynetec-cccbd788ab8a-p2-intercom.webp"
+        },
+        {
+          "pdfPage": 3,
+          "printedPage": "Sheet 3 of 8",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 2800,
+          "image": "wiring/tynetec-cccbd788ab8a-p3-auxiliary-devices.webp"
+        },
+        {
+          "pdfPage": 4,
+          "printedPage": "Sheet 4 of 8",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 2800,
+          "image": "wiring/tynetec-cccbd788ab8a-p4-door-telephone.webp"
+        }
+      ]
+    },
+    {
+      "recordId": "tynetec-ceeb9047ffe7",
+      "pages": [
+        {
+          "pdfPage": 1,
+          "printedPage": "Sheet 1 of 10",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 2800,
+          "image": "wiring/tynetec-ceeb9047ffe7-p1-controller.webp"
+        },
+        {
+          "pdfPage": 2,
+          "printedPage": "Sheet 2 of 10",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 2800,
+          "image": "wiring/tynetec-ceeb9047ffe7-p2-intercom.webp"
+        },
+        {
+          "pdfPage": 3,
+          "printedPage": "Sheet 3 of 10",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 2800,
+          "image": "wiring/tynetec-ceeb9047ffe7-p3-door-telephone.webp"
+        },
+        {
+          "pdfPage": 4,
+          "printedPage": "Sheet 4 of 10",
+          "fullPage": true,
+          "rotationDegrees": 0,
+          "width": 2800,
+          "image": "wiring/tynetec-ceeb9047ffe7-p4-remote-intercom.webp"
+        }
+      ]
+    }
+  ],
+  "skippedDocuments": [
+    {
+      "recordId": "pyronix-d915e92d5fff",
+      "reason": "Source exceeded the 30 MiB per-source review download limit; not reviewed."
+    },
+    {
+      "recordId": "orisec-f6e13696a504",
+      "reason": "Source returned HTTP 403; no reviewed page."
+    },
+    {
+      "recordId": "paxton-1929537a2caa",
+      "reason": "Catalogue title says Net2 P38 reader; actual source says NASIC P38 EM4100 Clock and Data. Excluded to avoid transferring that pinout to a Net2 reader."
+    },
+    {
+      "recordId": "gjd-2946ac08c654",
+      "reason": "Reviewed all candidate pages 2–7: specification, coverage, programming and installation text but no actual wiring picture; no diagram inferred."
+    },
+    {
+      "recordId": "cornell-communications-18b8abfc6dd5",
+      "reason": "Datasheet contains an enclosure illustration and electrical ratings but no connection diagram."
+    },
+    {
+      "recordId": "tunstall-3f3cf33597ec",
+      "reason": "Reviewed page 5 illustrates magnetic door-contact positioning; not a wiring picture."
+    },
+    {
+      "recordId": "tunstall-c5960e67d3f5",
+      "reason": "Reviewed page 2 gives wiring instructions in prose and a mounting template; no wiring picture."
+    },
+    {
+      "recordId": "texecom-1ab5af345145",
+      "reason": "Swedish Capture G3 manual; not selected. English Capture G2 is separately reviewed and is not presented as G3 coverage."
+    }
+  ],
+  "excludedCandidatePages": {
+    "texecom-24fe7d380381": [
+      5,
+      6
+    ],
+    "bosch-3d8651b2effe": [
+      2
+    ],
+    "pyronix-12dc1a0275b5": [
+      1
+    ],
+    "act-6137ac1ea5e1": [
+      8
+    ],
+    "paxton-27e5d85e1edc": [
+      3
+    ],
+    "paxton-34d2fed7ef37": [
+      7
+    ],
+    "paxton-0ff722d66548": [
+      1,
+      2,
+      4
+    ],
+    "nvt-8589e51457ae": [
+      1
+    ],
+    "tunstall-31748186a127": [
+      1
+    ],
+    "texecom-778b363ae34b": [
+      18
+    ]
+  },
+  "excludedCandidateReason": "Text-only, product/mounting/coverage pages, or less useful duplicate material; no source wiring diagram published for these candidate pages.",
+  "catalogueHashMismatches": [],
+  "coverage": {
+    "documents": 25,
+    "pictures": 56,
+    "imageBytes": 12701246,
+    "categories": {
+      "access-control": 7,
+      "cctv": 6,
+      "security": 32,
+      "warden-call": 11
+    }
+  },
+  "limitations": [
+    "Coverage is of reviewed source pictures, not all archive records or installed variants.",
+    "Whole-page legends remain visible; variant-specific diagrams do not establish family-wide compatibility.",
+    "Source record and PDF bytes retain their existing identities; no catalogue hashes or document links were rewritten."
+  ]
+}

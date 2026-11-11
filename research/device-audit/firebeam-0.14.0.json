@@ -1,0 +1,122 @@
+{
+  "batch": "firebeam-0.14.0",
+  "verified_date": "2026-10-30",
+  "brand": "The Fire Beam Company",
+  "scope": "Device identification and matched manufacturer references; no new emulator or commissioning workflow.",
+  "devices": [
+    {
+      "id": "fire-beam-blue",
+      "model_codes": [
+        "FIREBEAM BLUE"
+      ],
+      "source_page_url": "https://thefirebeamcompany.com/fire-beam-blue-optical-beam-smoke-detector/",
+      "source_image_url": "https://thefirebeamcompany.com/wp-content/uploads/product-box-fire-beam-blue.jpg",
+      "original_image_sha256": "05f2a90aaf260896332153e323b59547da11dae7d5c00fb96a34786ea150261a",
+      "image_sha256": "652b196fa655921b760dcdf8fdc24cb9477f422230a2ed46f233a965a27990f7",
+      "image_dimensions": [
+        700,
+        700
+      ],
+      "record_ids": [
+        "device-doc-the-fire-beam-company-ef8e716e192b",
+        "device-doc-the-fire-beam-company-5e3186d7eb4f"
+      ],
+      "notes": "Manufacturer photograph of the BLUE head. It is commissioned and controlled through the Fire Beam app, while fire/fault signalling remains wired.",
+      "limits": "Bluetooth is the local control link, not wireless signalling to the fire panel. Use the BLUE 0165-05 guide; the similar Xtra head uses a wired controller and a different guide."
+    },
+    {
+      "id": "fire-beam-xtra",
+      "model_codes": [
+        "FIREBEAM XTRA"
+      ],
+      "source_page_url": "https://thefirebeamcompany.com/fire-beam-xtra-optical-beam-smoke-detector/",
+      "source_image_url": "https://thefirebeamcompany.com/wp-content/uploads/product-box-fire-beam-xtra.jpg",
+      "original_image_sha256": "2a6861c29422b3f5dab7687ef078e761dfb30497a36e8520f8e816a12a78b282",
+      "image_sha256": "c082a3881459cb88e91176cc00a45e55ca3a5857e662a41d048ac21ba852df4e",
+      "image_dimensions": [
+        700,
+        700
+      ],
+      "record_ids": [
+        "device-doc-the-fire-beam-company-9ea9d54e1f2c",
+        "device-doc-the-fire-beam-company-f9652cff6119"
+      ],
+      "notes": "Manufacturer photograph of the Xtra head. The detector system uses a separate wired controller; check both labels when distinguishing it from BLUE or older Plus equipment.",
+      "limits": "Scope is Xtra issue 0025-12. It is not natively an addressable-loop device; a documented panel interface may be required. Older Plus and BLUE guides are not interchangeable."
+    }
+  ],
+  "documents": [
+    {
+      "record_id": "device-doc-the-fire-beam-company-ef8e716e192b",
+      "url": "https://thefirebeamcompany.com/user-zone/pdf/Fire-Beam-BLUE-User-Guide-0165-05.pdf",
+      "sha256": "ef8e716e192bc1d7120129374698f6ffd1f4f4560de79321f589048ee297becd",
+      "bytes": 6868242,
+      "pages": 28,
+      "revision": "0165-05, Rev05, 22 April 2026",
+      "inspected_pdf_pages": [
+        1,
+        6,
+        7,
+        8,
+        19,
+        28
+      ],
+      "archive_hash_matches": false,
+      "brand": "The Fire Beam Company"
+    },
+    {
+      "record_id": "device-doc-the-fire-beam-company-9ea9d54e1f2c",
+      "url": "https://thefirebeamcompany.com/user-zone/pdf/Fire-Beam-Xtra-User-Guide-0025-12.pdf",
+      "sha256": "9ea9d54e1f2c6ea887646ef03e63cac1532e471c496be732ed009a48fa6b66e8",
+      "bytes": 3543204,
+      "pages": 16,
+      "revision": "0025-12, Rev12, 22 April 2026",
+      "inspected_pdf_pages": [
+        1,
+        2,
+        4,
+        5,
+        16
+      ],
+      "archive_hash_matches": false,
+      "brand": "The Fire Beam Company"
+    },
+    {
+      "record_id": "device-doc-the-fire-beam-company-5e3186d7eb4f",
+      "url": "https://thefirebeamcompany.com/user-zone/pdf/Fire-Beam-BLUE-Datasheet.pdf",
+      "sha256": "5e3186d7eb4fae05438b3ee49d36f10b7cd29e261747dae5d3ea2fbe5def98e6",
+      "bytes": 824918,
+      "pages": 2,
+      "revision": "Undated manufacturer datasheet, retrieved 30 October 2026",
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "archive_hash_matches": false,
+      "brand": "The Fire Beam Company"
+    },
+    {
+      "record_id": "device-doc-the-fire-beam-company-f9652cff6119",
+      "url": "https://thefirebeamcompany.com/user-zone/pdf/Fire-Beam-Xtra-Datasheet.pdf",
+      "sha256": "f9652cff611921fcd8b698a1be134483d2cdf31296f2961e251462b2c524c4e5",
+      "bytes": 815283,
+      "pages": 2,
+      "revision": "Undated manufacturer datasheet, retrieved 30 October 2026",
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "archive_hash_matches": false,
+      "brand": "The Fire Beam Company"
+    }
+  ],
+  "review_notes": [
+    "Actual manufacturer photographs, no generated hardware. Model suffixes and RF/loop compatibility remain separate from exterior appearance.",
+    "BLUE Bluetooth control is explicitly separated from wired fire/fault relay signalling. The manufacturer datasheets contain formatting/technical inconsistencies; no sensitivity, output rating or blanket panel-compatibility claims are copied into device cards. Use the identified user-guide edition for actual details."
+  ],
+  "visual_review": {
+    "product_photos": true,
+    "manual_covers_and_model_overviews": true,
+    "method": "Original images decoded and inspected on a contact sheet; PDF text checked against model/edition pages and rendered ambiguous pages."
+  }
+}

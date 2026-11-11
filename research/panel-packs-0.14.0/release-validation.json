@@ -1,0 +1,57 @@
+{
+  "release": "0.14.0",
+  "checked_at": "2026-10-30T15:46:51.486301+00:00",
+  "tests": {
+    "command": "node --test --test-isolation=none tests/*.test.mjs",
+    "passed": 659,
+    "failed": 0,
+    "skipped": 0,
+    "duration_ms": 23072.284924
+  },
+  "web_build": {
+    "command": "build-site.mjs then scripts/verify-public-build.mjs",
+    "success": true,
+    "public_files": 1052,
+    "build_bytes": 93642603,
+    "native_download_map_excluded": true,
+    "retained_apk_versions": [
+      "0.14.0",
+      "0.13.2"
+    ],
+    "archived_release_files_excluded": 38,
+    "max_static_asset_bytes": 26214400,
+    "largest_static_asset_bytes": 25401109
+  },
+  "android": {
+    "version": "0.14.0",
+    "version_code": 25,
+    "bytes": 24126768,
+    "sha256": "e9d0366a76dda58bd442288660210cb94fcb74af87c2c8d98b9a8ba1cc3d1a17",
+    "signature_schemes": [
+      "v2",
+      "v3"
+    ],
+    "hosting_margin_bytes": 2087632
+  },
+  "offline_build": {
+    "hash": "5840ffc1000a",
+    "assets": 1023,
+    "bytes": 37414259
+  },
+  "browser_baseline": {
+    "release": "0.13.2",
+    "saved_pdfs": 5,
+    "offline_ready": true
+  },
+  "limits": [
+    "Local managed preview route was unavailable; live browser verification follows publication.",
+    "No physical iPhone or Android handset installation or airplane-mode test performed."
+  ],
+  "prior_publication_attempt": {
+    "version_number": 26,
+    "deployment_id": "appgdep_6ae4ba5b757081919b6c417aa6ba03c5",
+    "status": "failed",
+    "cause": "APK 29230963 bytes exceeds static asset limit26214400 bytes",
+    "resolution": "Seven unused source-master photos moved outside shipped assets with byte-exact originals retained in research/panel-originals. Earlier stored filenames resolve to unchanged catalogue images. Fresh APK build directories prevent retained obsolete ZIP entries; final APK has exact current app bytes and passes the individual-file size gate."
+  }
+}

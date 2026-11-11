@@ -1,0 +1,42 @@
+{
+  "browser": "chromium",
+  "width": 390,
+  "physicalIPhone": false,
+  "syntheticManuals": true,
+  "offlineReselectionProbe": true,
+  "modelMode": "Explicit manual-extract fallback; no model download required for picker verification",
+  "checks": [
+    "Empty saved library keeps the question and offers upload / archive",
+    "Reload refreshes an empty-library prompt after a manual is saved elsewhere",
+    "An exact-model question opens saved selection even with one matching PDF; nothing auto-selects",
+    "Leaving and returning to Quick Questions reopens its pending saved-manual selection",
+    "Reload restores saved-manual selection and exact pending question without replaying transcript",
+    "Selecting and confirming saved PDF resumes the original question with page-backed extracts",
+    "Contextual follow-up retains the explicitly chosen panel manual",
+    "A new component question selects its own saved manual within the same chat",
+    "Offline re-selection of already confirmed panel switches equipment and sources without duplicating manuals",
+    "Change equipment returns to deliberate saved-manual selection",
+    "Portrait and shortened keyboard-like viewport retain accessible composer without horizontal overflow"
+  ],
+  "measurements": [
+    {
+      "operation": "Select saved manual through identity",
+      "id": "qa-panel",
+      "elapsedMs": 600.6660269999998
+    },
+    {
+      "operation": "Select saved manual through identity",
+      "id": "qa-psu",
+      "elapsedMs": 397.65137500000037
+    },
+    {
+      "operation": "Select saved manual through identity",
+      "id": "qa-panel",
+      "elapsedMs": 64.14201899999989
+    }
+  ],
+  "status": "passed",
+  "environment": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+  "browserVersion": "154.0.8037.57",
+  "pageErrors": []
+}

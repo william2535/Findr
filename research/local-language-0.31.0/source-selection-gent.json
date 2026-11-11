@@ -1,0 +1,142 @@
+{
+  "syntheticReference": false,
+  "actualInference": true,
+  "modelFilesDownloadedThisRun": false,
+  "results": [
+    {
+      "promptName": "original",
+      "name": "actual Gent engineer question",
+      "expected": "S1",
+      "question": "Putting a gent vigilon on walk test",
+      "networkOffline": false,
+      "reply": {
+        "text": "[S3] 2009 operating instructions, PDF page 1",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 3924.89999999851,
+          "inputTokens": 249,
+          "outputTokens": 16,
+          "firstTokenMs": 5063.69999999553,
+          "generationMs": 7532.29999999702,
+          "tokensPerSecond": 2.124185175843545
+        }
+      },
+      "originalHarnessSelection": "S3",
+      "originalHarnessMatchedExpected": false,
+      "strictSelection": null,
+      "strictSelectionMatchedExpected": false
+    },
+    {
+      "promptName": "original",
+      "name": "Gent contextual follow-up",
+      "expected": "S1",
+      "question": "Is that the one that resets automatically?",
+      "previous": "Putting a gent vigilon on walk test",
+      "networkOffline": true,
+      "reply": {
+        "text": "Yes, that's the one that resets automatically.",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 262,
+          "outputTokens": 12,
+          "firstTokenMs": 5326.60000000149,
+          "generationMs": 7142.20000000298,
+          "tokensPerSecond": 1.6801545742201272
+        }
+      },
+      "originalHarnessSelection": null,
+      "originalHarnessMatchedExpected": false,
+      "strictSelection": null,
+      "strictSelectionMatchedExpected": false
+    },
+    {
+      "promptName": "original",
+      "name": "Gent weekly test question",
+      "expected": "S2",
+      "question": "How do I trigger the weekly test with a call point key?",
+      "networkOffline": true,
+      "reply": {
+        "text": "The SOURCE ID that best answers the QUESTION is:\n[S",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 254,
+          "outputTokens": 16,
+          "firstTokenMs": 5282.29999999702,
+          "generationMs": 7998,
+          "tokensPerSecond": 2.000500125031258
+        }
+      },
+      "originalHarnessSelection": null,
+      "originalHarnessMatchedExpected": false,
+      "strictSelection": null,
+      "strictSelectionMatchedExpected": false
+    },
+    {
+      "promptName": "original",
+      "name": "Gent missing battery spec",
+      "expected": "NONE",
+      "question": "What is the maximum battery capacity for this panel?",
+      "networkOffline": true,
+      "reply": {
+        "text": "The maximum battery capacity for the panel is 1000 mAh.",
+        "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "interpretationOnly": true,
+        "contextTruncated": false,
+        "metrics": {
+          "loadMs": 0,
+          "inputTokens": 251,
+          "outputTokens": 16,
+          "firstTokenMs": 5454.20000000298,
+          "generationMs": 8160.79999999702,
+          "tokensPerSecond": 1.960592098814558
+        }
+      },
+      "originalHarnessSelection": null,
+      "originalHarnessMatchedExpected": false,
+      "strictSelection": null,
+      "strictSelectionMatchedExpected": false
+    }
+  ],
+  "pageErrors": [],
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "hardwareConcurrency": 5,
+    "deviceMemory": 16,
+    "webGPU": true
+  },
+  "model": {
+    "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+    "title": "SmolLM2 360M Instruct \u00b7 int8 \u00b7 local CPU",
+    "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+    "dtype": "q8",
+    "backend": "wasm",
+    "parameters": 360000000,
+    "license": "Apache-2.0",
+    "originalModel": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct",
+    "modelCard": "https://huggingface.co/onnx-community/SmolLM2-360M-Instruct-ONNX",
+    "maxInputTokens": 768,
+    "maxNewTokens": 96,
+    "limits": "Compact local language model. Interpretations need source checks. It does not verify electrical procedures, measurements or compatibility. CPU replies can take tens of seconds; saved references remain available.",
+    "bytes": 366642692,
+    "runtimeBytes": 22563501
+  },
+  "offlineAfterColdLoad": true,
+  "unexpectedRequests": [],
+  "assessment": "Exploratory model quality benchmark, not a passing application acceptance test. Full generated outputs are retained; production guards must reject unsupported text."
+}

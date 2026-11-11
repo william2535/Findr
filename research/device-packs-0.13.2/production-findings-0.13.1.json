@@ -1,0 +1,36 @@
+{
+  "release": "0.13.1",
+  "published": true,
+  "deployment": {
+    "id": "appgdep_6ae4a8ef4bfc81919022f281b25e7258",
+    "status": "succeeded",
+    "url": "https://findr-fault-finder.snowyskunk12.chatgpt.site",
+    "version_id": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_c0b00fd4180081919adec27af10b5726",
+    "updated_at": "2026-10-30T14:26:28.899075+00:00"
+  },
+  "source_commit": "e2fdd025d21e190b90d8f4589cf50890ca0a9f66",
+  "replacement_ca414_pdf": {
+    "production_url": "https://findr-fault-finder.snowyskunk12.chatgpt.site/api/manual/device-doc-c-tec-41e341b9c547",
+    "browser_rendered": true,
+    "model": "CA414",
+    "printed_revision": "DFU4140000 Rev 7 05/08/21",
+    "pdf_pages": 1,
+    "saved_in_findr": true,
+    "download_result": "1/1 processed; 1 saved; 0 failed"
+  },
+  "update_observations": {
+    "previous_release": "0.13.0",
+    "prior_saved_pdfs": 4,
+    "initial_launcher_timeouts": true,
+    "eventually_ready_offline": true,
+    "reloaded_release": "0.13.1",
+    "saved_pdfs_preserved": true,
+    "mixed_device_data_confirmed": true,
+    "old_ca414_id": "device-doc-c-tec-af925ff0ac67",
+    "new_document_catalogue_confirmed_by_source_only_message": true,
+    "ca470_and_ca730_still_showed_two_documents": true,
+    "saved_pdfs_after_verified_download": 5
+  },
+  "next_release": "0.13.2",
+  "fix_scope": "Verify every cached and downloaded offline asset against its build hash; reuse only matching prior cache bytes; bound installation operations; activate only a complete verified cache."
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "device-doc-c-tec-97eb0a9793d9",
+    "sha256": "97eb0a9793d9a2cb8bbc6baf2c64b9540d20f2919fcb3d98ea4ec01ad1d85da0",
+    "pages": 1,
+    "bytes": 365401,
+    "model_coverage_confirmed": true,
+    "source_file": "/workspace/scratch/163ad62fc051/device-fix-0.13.1/ca402-modernalarm.pdf"
+  },
+  {
+    "id": "device-doc-c-tec-41e341b9c547",
+    "sha256": "41e341b9c547aad8e56a321a76c863063f0ed4aa0e01e6aacd0905608393e265",
+    "pages": 1,
+    "bytes": 370932,
+    "model_coverage_confirmed": true,
+    "source_file": "/workspace/scratch/163ad62fc051/device-fix-0.13.1/ca414-modernalarm.pdf"
+  },
+  {
+    "id": "device-doc-c-tec-7ad9393daf5b",
+    "sha256": "7ad9393daf5b385609d88d3e05ae4a3a6c59ae0b8c54358ad5f4bc5ef072dd40",
+    "pages": 1,
+    "bytes": 367778,
+    "model_coverage_confirmed": true,
+    "source_file": "/workspace/scratch/163ad62fc051/device-fix-0.13.1/ca416-modernalarm.pdf"
+  },
+  {
+    "id": "device-doc-c-tec-df7988f16dc3",
+    "sha256": "df7988f16dc371b405b3661cea2ae78e26bf120ad6081eeda22b5e9c4143bbea",
+    "pages": 2,
+    "bytes": 744746,
+    "model_coverage_confirmed": true,
+    "source_file": "/workspace/scratch/163ad62fc051/device-fix-0.13.1/vad/DFU4315010-Rev15.pdf"
+  }
+]

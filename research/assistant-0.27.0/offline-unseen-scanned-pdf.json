@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "browser": "Chromium154 Linux",
+  "networkDisabled": true,
+  "normalMenu": "Existing Fault Finder → MANUALS → Upload PDF → confirm identification",
+  "sameJobResumed": true,
+  "sameDiagnosticQuestion": true,
+  "elapsedMs": 3083.102831,
+  "analysis": {
+    "hash": "2b05de78de9aa5cd8e7c7fa43b5b686eba13bb814d568951ade210e2c455154f",
+    "filename": "synthetic-unseen-offline-scan.pdf",
+    "usable": true,
+    "reused": false,
+    "pages": [
+      {
+        "page": 1,
+        "method": "ocr",
+        "readable": true
+      },
+      {
+        "page": 2,
+        "method": "ocr",
+        "readable": true
+      }
+    ],
+    "identity": {
+      "manufacturer": "Texecom",
+      "model": "Premier Elite 24"
+    },
+    "timing": {
+      "extractionMs": 46,
+      "ocrMs": 2409,
+      "indexingMs": 28,
+      "totalMs": 2708
+    }
+  }
+}

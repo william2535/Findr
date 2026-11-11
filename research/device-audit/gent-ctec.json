@@ -1,0 +1,573 @@
+{
+  "release": "0.13.0",
+  "generated": "2026-10-30",
+  "scope": "First UK-priority Gent and C-TEC pictured device packs",
+  "device_count": 12,
+  "brands": {
+    "Gent": 5,
+    "C-TEC": 7
+  },
+  "document_count": 10,
+  "source_policy": "Manufacturer-authored public source material. C-TEC supplementary documents have independently verified IDs/hashes; they do not change archived records or claim to be byte-identical to those records.",
+  "images": [
+    {
+      "device_id": "gent-squad-legacy-family",
+      "picture_source_file": "gent-squad.pdf",
+      "source_pdf_page": 1,
+      "image_xref": null,
+      "image_crop_pdf_points": [
+        88,
+        116,
+        279,
+        259
+      ],
+      "picture_matches": "Dedicated archived manufacturer manual PDF page1 lists all13 codes and shows this range illustration. One family card, not13 repeated exact-model pictures. Page8 gives version-dependent compatibility; later VAD/self-test products excluded.",
+      "manual_record_ids": [
+        "gent-0ba4cfc5de7c"
+      ],
+      "image_sha256": "d105cb4a00996a71202804a101833d0d66edd6c96d1fc17b2ee3cbe192305eb7",
+      "image_dimensions": [
+        764,
+        572
+      ]
+    },
+    {
+      "device_id": "gent-s4-700-base",
+      "picture_source_file": "gent-base-image.bin",
+      "source_pdf_page": null,
+      "image_xref": null,
+      "image_crop_pdf_points": null,
+      "picture_matches": "Official product page specifically identifies S4-700; photograph marking reads S4-700. Dedicated archived 2013 manual PDFp1 lists S4-700 and PDFp3 gives base wiring.",
+      "manual_record_ids": [
+        "gent-0ba4cfc5de7c"
+      ],
+      "image_sha256": "32cca55e4bc02307911ae48050e59a80bc38cd84790b5652dfab39e11a02acea",
+      "image_dimensions": [
+        508,
+        429
+      ]
+    },
+    {
+      "device_id": "gent-s4-348xx-mcp",
+      "picture_source_file": "gent-mcp-instruction.pdf",
+      "source_pdf_page": 1,
+      "image_xref": 432,
+      "image_crop_pdf_points": null,
+      "picture_matches": "Official manufacturer installation leaflet 4188-855 Issue7 Nov2021 PDFp1 lists exact four product-code/element/cover mappings. Product picture extracted at xref432,536x528. Image shows body without optionalcover; no assumption cover included with every model.",
+      "manual_record_ids": [
+        "device-doc-gent-9c36c632ebd9"
+      ],
+      "image_sha256": "6088821f0b674ada7ea952c9c839f34ca0de1f3238468305aef897d29536ea83",
+      "image_dimensions": [
+        536,
+        528
+      ]
+    },
+    {
+      "device_id": "gent-s4-34450-interface",
+      "picture_source_file": "gent-interface-image.bin",
+      "source_pdf_page": null,
+      "image_xref": null,
+      "image_crop_pdf_points": null,
+      "picture_matches": "Official image explicitly named hbt-fire-s4-34450-interface-4-io-pcb-only. Officialpage is4-I/Omodule. Archived2015panelcommissioningPDFp11 explicitly lists S4-34450 fourInput/outputloop-powered; SHA matches catalogue. Does not claim full deviceinstallationleaflet.",
+      "manual_record_ids": [
+        "facp-7538be76-f958-46e4-99f6-c718601bb349"
+      ],
+      "image_sha256": "7389ec93e1deda6aaacbc3e57623ebf8c38ed73a0357ecf76804fefd16c56bf9",
+      "image_dimensions": [
+        413,
+        373
+      ]
+    },
+    {
+      "device_id": "gent-s3-v-r-voice-sounder",
+      "picture_source_file": "gent-speech-image.bin",
+      "source_pdf_page": null,
+      "image_xref": null,
+      "image_crop_pdf_points": null,
+      "picture_matches": "Officialimagebasename explicitlyS3-V-R. Archived2015PDFp12 listsS3-V-R asS3VoiceSounder/RedBody inMark3 table. NoEP/IP orVAD capability inferred fromgeneric productpage.",
+      "manual_record_ids": [
+        "facp-7538be76-f958-46e4-99f6-c718601bb349"
+      ],
+      "image_sha256": "e8aaae34a8894261fe0d1d7872c5219089d91de3f87f5412f66fee46f3e04a66",
+      "image_dimensions": [
+        316,
+        319
+      ]
+    },
+    {
+      "device_id": "c-tec-ca402",
+      "picture_source_file": "ctec-ca402-pdf-acorn.pdf",
+      "source_pdf_page": 1,
+      "image_xref": 29,
+      "image_crop_pdf_points": null,
+      "picture_matches": "Manufacturer-authored standalone product datasheet main title/part number isCA402; page1 imagexref29. Separately official archiveDFU text identifiesredring and CAST. SupplementaryPDF getsitsownrealID/hash,notrepresentedassamebytesasarchiveDFU.",
+      "manual_record_ids": [
+        "device-doc-c-tec-c355db94ca7a"
+      ],
+      "image_sha256": "efa77b9bfff9a80c72abfae7c14e485c9a7beaee498483d8b68e7374b90931ea",
+      "image_dimensions": [
+        800,
+        800
+      ]
+    },
+    {
+      "device_id": "c-tec-ca414",
+      "picture_source_file": "ctec-ca414-pdf.pdf",
+      "source_pdf_page": 1,
+      "image_xref": 29,
+      "image_crop_pdf_points": null,
+      "picture_matches": "Manufacturer-authored standalone product datasheet main title/part number isCA414; page1 imagexref29. Separately official archiveDFU text identifiesbluering and CAST. SupplementaryPDF getsitsownrealID/hash,notrepresentedassamebytesasarchiveDFU.",
+      "manual_record_ids": [
+        "device-doc-c-tec-af925ff0ac67"
+      ],
+      "image_sha256": "dcc8629412fad8e2aa56a5a5012f37e67e279b7ab4e3cbfb3cb85f35e45c7313",
+      "image_dimensions": [
+        800,
+        800
+      ]
+    },
+    {
+      "device_id": "c-tec-ca416",
+      "picture_source_file": "ctec-ca416-pdf.pdf",
+      "source_pdf_page": 1,
+      "image_xref": 29,
+      "image_crop_pdf_points": null,
+      "picture_matches": "Manufacturer-authored standalone product datasheet main title/part number isCA416; page1 imagexref29. Separately official archiveDFU text identifiesgreyring and CAST. SupplementaryPDF getsitsownrealID/hash,notrepresentedassamebytesasarchiveDFU.",
+      "manual_record_ids": [
+        "device-doc-c-tec-9310045e0f57"
+      ],
+      "image_sha256": "b2a9145d0534f82d65c314f793aeb0eb7753fb88687a56b161bfead680121613",
+      "image_dimensions": [
+        800,
+        800
+      ]
+    },
+    {
+      "device_id": "c-tec-ca408-base",
+      "picture_source_file": "ctec-ca408-pdf.pdf",
+      "source_pdf_page": 1,
+      "image_xref": 276,
+      "image_crop_pdf_points": null,
+      "picture_matches": "Downloaded from C-TEC Technical publichelp attachment. DFU0002408Rev2 05/08/21. PDFp1 centralbaseillustrationxref276 (419x411),completebasewithoutpointerarrows. OwnSHArecord; relatedarchiveofficialblocked.",
+      "manual_record_ids": [
+        "device-doc-c-tec-1a72f739e6d0"
+      ],
+      "image_sha256": "0585c4b2d76ec6fa41049c0cb9eef251a3440c74347a8639d72cd71ffb4b3034",
+      "image_dimensions": [
+        419,
+        411
+      ]
+    },
+    {
+      "device_id": "c-tec-ca470-call-point",
+      "picture_source_file": "ctec-ca470-pdf.pdf",
+      "source_pdf_page": 1,
+      "image_xref": 4,
+      "image_crop_pdf_points": null,
+      "picture_matches": "ExactCA470manufacturerproductPDFp1 imagexref4. SecondactualmanufacturerinstallationPDF DFU4700000Rev9 01/06/24 codeCA470 andvariants. Image344x331 retainedwithoutfabricateddetail; bothdocumentsfullyreviewed.",
+      "manual_record_ids": [
+        "device-doc-c-tec-8533dbee907d",
+        "device-doc-c-tec-cb5ba501ef82"
+      ],
+      "image_sha256": "97fee89e25b2c230bc36f8bb963b107b58b45421790e9a1f6bddf0a6045fa610",
+      "image_dimensions": [
+        344,
+        331
+      ]
+    },
+    {
+      "device_id": "c-tec-ca730-interface",
+      "picture_source_file": "ctec-ca730-product-pdf.pdf",
+      "source_pdf_page": 1,
+      "image_xref": 29,
+      "image_crop_pdf_points": null,
+      "picture_matches": "ExactCA730manufacturerproductdatasheetPDFp1 xref29 is2542x1849. LinkedinstallerPDF DFU7300000Rev11 01/06/24 confirmscodeandfunctions. Updatedinstallerrecordseparatefromoldproductdatasheet; noACratingcarriedintoappnotes.",
+      "manual_record_ids": [
+        "device-doc-c-tec-7da7a3d9afa0",
+        "device-doc-c-tec-f18a6fbbfbc7"
+      ],
+      "image_sha256": "908025ec420dc1776eef0875e2293cfdcb2fcbabd85b2e639e8f82a62f788ac8",
+      "image_dimensions": [
+        960,
+        698
+      ]
+    },
+    {
+      "device_id": "c-tec-ca459a-w-vad-base",
+      "picture_source_file": "ctec-ca459-pdf.pdf",
+      "source_pdf_page": 1,
+      "image_xref": 29,
+      "image_crop_pdf_points": null,
+      "picture_matches": "Manufacturerproductdatasheet title explicitlyCA459A/W andVADONLY. PDFp1imagexref29. OfficialarchiveDFU4315010Rev16 PDFp1 givesCA459A/WVAD-onlytable, noaudibleoutputclaim.",
+      "manual_record_ids": [
+        "device-doc-c-tec-c1e5b7a7bd89"
+      ],
+      "image_sha256": "76d6b596b7095be54151a28a14a76c130becab618924d2a2f06b5d83a3d8cca9",
+      "image_dimensions": [
+        642,
+        642
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "id": "device-doc-c-tec-c355db94ca7a",
+      "brand": "C-TEC",
+      "category": "fire",
+      "models": [
+        "CA402"
+      ],
+      "title": "C-TEC CA402 CAST programmable heat detector — manufacturer product datasheet",
+      "type": "manufacturer reference",
+      "url": "https://www.acornfiresecurity.com/index.php?route=extension/module/document/download&filename=CA402%20Datasheet.pdf",
+      "source": "https://c-tec.com/info/cast-devices/",
+      "revision": null,
+      "status": "file-hash",
+      "sha256": "c355db94ca7ab2070db5c34b1246bdf3ab22a9aab31f40ebea6d9be54347519c",
+      "bytes": 406794,
+      "pages": 2,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "c-tec-2e87e50967d6"
+      ]
+    },
+    {
+      "id": "device-doc-c-tec-af925ff0ac67",
+      "brand": "C-TEC",
+      "category": "fire",
+      "models": [
+        "CA414"
+      ],
+      "title": "C-TEC CA414 CAST multisensor fire detector — manufacturer product datasheet",
+      "type": "manufacturer reference",
+      "url": "https://www.acornfiresecurity.com/index.php?route=extension/module/document/download&filename=C-Tec/CA414%20Datasheet.pdf",
+      "source": "https://c-tec.com/info/cast-devices/",
+      "revision": null,
+      "status": "file-hash",
+      "sha256": "af925ff0ac67444f0233dc16dec4cad8a538f02ad8f996742227c25a2ff96780",
+      "bytes": 389403,
+      "pages": 2,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "c-tec-e495d2c3dfda"
+      ]
+    },
+    {
+      "id": "device-doc-c-tec-9310045e0f57",
+      "brand": "C-TEC",
+      "category": "fire",
+      "models": [
+        "CA416"
+      ],
+      "title": "C-TEC CA416 CAST optical smoke detector — manufacturer product datasheet",
+      "type": "manufacturer reference",
+      "url": "https://www.acornfiresecurity.com/index.php?route=extension/module/document/download&filename=C-Tec/C-TEC-CA416.pdf",
+      "source": "https://c-tec.com/info/cast-devices/",
+      "revision": null,
+      "status": "file-hash",
+      "sha256": "9310045e0f57b5179bc96dba10144e419be42ebc8b9124b1593e9da2d234c451",
+      "bytes": 387709,
+      "pages": 2,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "c-tec-5a8b44fceac5"
+      ]
+    },
+    {
+      "id": "device-doc-c-tec-1a72f739e6d0",
+      "brand": "C-TEC",
+      "category": "fire",
+      "models": [
+        "CA408"
+      ],
+      "title": "C-TEC CA408 CAST detector base wiring — DFU0002408 Rev 2",
+      "type": "manufacturer reference",
+      "url": "https://c-techelp.zendesk.com/hc/en-gb/article_attachments/5979798085535",
+      "source": "https://c-tec.com/info/cast-devices/",
+      "revision": "Rev 2, 05/08/2021",
+      "status": "file-hash",
+      "sha256": "1a72f739e6d0b3655e75212dfc71fccde2c4f037fa3da4adc13217fecc624cca",
+      "bytes": 230354,
+      "pages": 1,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "c-tec-d8b148951306"
+      ]
+    },
+    {
+      "id": "device-doc-c-tec-8533dbee907d",
+      "brand": "C-TEC",
+      "category": "fire",
+      "models": [
+        "CA470"
+      ],
+      "title": "C-TEC CA470 CAST red manual call point — manufacturer product datasheet",
+      "type": "manufacturer reference",
+      "url": "https://www.acornfiresecurity.com/index.php?filename=CA470.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+      "source": "https://c-tec.com/info/cast-devices/",
+      "revision": null,
+      "status": "file-hash",
+      "sha256": "8533dbee907d2f6f4f80ec1f6d787f791bba259a3b06abca91bdc6ecb4d6ffdc",
+      "bytes": 339880,
+      "pages": 2,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "c-tec-6406a8f43584"
+      ]
+    },
+    {
+      "id": "device-doc-c-tec-cb5ba501ef82",
+      "brand": "C-TEC",
+      "category": "fire",
+      "models": [
+        "CA470",
+        "CA47067",
+        "CA470Y",
+        "CA470GR",
+        "CA470B",
+        "CA470W"
+      ],
+      "title": "C-TEC CA470 range call point instructions — DFU4700000 Rev 9",
+      "type": "manufacturer reference",
+      "url": "https://www.eufireandsecurity.com/wp-content/uploads/2025/07/DFU4700000-CA470-CAST-Manual-Call-Point-Rev-9.pdf",
+      "source": "https://c-tec.com/info/cast-devices/",
+      "revision": "Rev 9, 01/06/2024",
+      "status": "file-hash",
+      "sha256": "cb5ba501ef827a576800999d9834b434dc72f70195918a663faae09a7c13027c",
+      "bytes": 467453,
+      "pages": 1,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "c-tec-6406a8f43584"
+      ]
+    },
+    {
+      "id": "device-doc-c-tec-7da7a3d9afa0",
+      "brand": "C-TEC",
+      "category": "fire",
+      "models": [
+        "CA730"
+      ],
+      "title": "C-TEC CA730 CAST input/output module — manufacturer product datasheet",
+      "type": "manufacturer reference",
+      "url": "https://www.acornfiresecurity.com/index.php?route=extension/module/document/download&filename=CA730.pdf",
+      "source": "https://c-tec.com/info/cast-devices/",
+      "revision": null,
+      "status": "file-hash",
+      "sha256": "7da7a3d9afa0a9451014d862dcb2f49a7d96d6674d0edbee50f2bfbf98da52e6",
+      "bytes": 477384,
+      "pages": 2,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "c-tec-95700bacc3bf"
+      ]
+    },
+    {
+      "id": "device-doc-c-tec-f18a6fbbfbc7",
+      "brand": "C-TEC",
+      "category": "fire",
+      "models": [
+        "CA730"
+      ],
+      "title": "C-TEC CA730 input/output module instructions — DFU7300000 Rev 11",
+      "type": "manufacturer reference",
+      "url": "https://www.eufireandsecurity.com/wp-content/uploads/2025/09/DFU7300000-CA730-CAST-IO-Module-Rev-11.pdf",
+      "source": "https://c-tec.com/info/cast-devices/",
+      "revision": "Rev 11, 01/06/2024",
+      "status": "file-hash",
+      "sha256": "f18a6fbbfbc7fb6a1356c4458d959053c5bf51b953ed30553c95e0fda0679d89",
+      "bytes": 449509,
+      "pages": 1,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "c-tec-95700bacc3bf"
+      ]
+    },
+    {
+      "id": "device-doc-c-tec-c1e5b7a7bd89",
+      "brand": "C-TEC",
+      "category": "fire",
+      "models": [
+        "CA459A/W"
+      ],
+      "title": "C-TEC CA459A/W CAST corridor VAD-only base — manufacturer product datasheet",
+      "type": "manufacturer reference",
+      "url": "https://www.acornfiresecurity.com/index.php?filename=C-TEC-CA459A_W.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+      "source": "https://c-tec.com/info/cast-devices/",
+      "revision": null,
+      "status": "file-hash",
+      "sha256": "c1e5b7a7bd89c13d0507eb52c0c920479f96197b635650f2aa3d3e824f309226",
+      "bytes": 406799,
+      "pages": 2,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "c-tec-282f93b99372"
+      ]
+    },
+    {
+      "id": "device-doc-gent-9c36c632ebd9",
+      "brand": "Gent",
+      "category": "fire",
+      "models": [
+        "S4-34800",
+        "S4-34842",
+        "S4-34805",
+        "S4-34845"
+      ],
+      "title": "Gent S4-348XX manual call point installation — 4188-855 Issue 7",
+      "type": "manufacturer reference",
+      "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/manuals-and-guides/installation-guides/gent-112425/hon-ba-fire-4188-855.pdf?download=false",
+      "source": "https://buildings.honeywell.com/gb/en/products/by-category/fire-life-safety/manual-call-points-pull-stations-and-panic-buttons/manual-call-points-pull-stations/manual-call-point-s4-with-glass-element",
+      "revision": "Issue 7, November 2021",
+      "status": "file-hash",
+      "sha256": "9c36c632ebd9d444656c0274139a4efd893e108b8104b8c7a16d532d4f4d122e",
+      "bytes": 1154917,
+      "pages": 2,
+      "origin": "device-reference",
+      "related_archive_record_ids": []
+    }
+  ],
+  "archive_download_checks": [
+    {
+      "record_id": "c-tec-282f93b99372",
+      "url": "https://c-tec.com/download?wpdmdl=22249",
+      "final_url": "https://c-tec.com/download?wpdmdl=22249",
+      "http_status": 202,
+      "is_pdf": false,
+      "bytes": 192,
+      "sha256_observed": "2c761db245a5681d59494ac6fc7b786e277f14cdbcc3b71e36e5a4f75245f96d",
+      "catalogue_sha256": null,
+      "hash_matches_catalogue": null,
+      "file": "c-tec-282f93b99372.html"
+    },
+    {
+      "record_id": "c-tec-2e87e50967d6",
+      "url": "https://c-tec.com/download?wpdmdl=12416",
+      "final_url": "https://c-tec.com/download?wpdmdl=12416",
+      "http_status": 202,
+      "is_pdf": false,
+      "bytes": 192,
+      "sha256_observed": "3078eb1e637edcd44857f926a39b3f1cce968335261045a609b3d02e3e3d77c9",
+      "catalogue_sha256": null,
+      "hash_matches_catalogue": null,
+      "file": "c-tec-2e87e50967d6.html"
+    },
+    {
+      "record_id": "c-tec-5a8b44fceac5",
+      "url": "https://c-tec.com/download?wpdmdl=22248",
+      "final_url": "https://c-tec.com/download?wpdmdl=22248",
+      "http_status": 202,
+      "is_pdf": false,
+      "bytes": 192,
+      "sha256_observed": "95192412c36f59e430d9a60ab5007172e226bd1096d0ca1db4c1467174bb656e",
+      "catalogue_sha256": null,
+      "hash_matches_catalogue": null,
+      "file": "c-tec-5a8b44fceac5.html"
+    },
+    {
+      "record_id": "c-tec-6406a8f43584",
+      "url": "https://c-tec.com/download?wpdmdl=12423",
+      "final_url": "https://c-tec.com/download?wpdmdl=12423",
+      "http_status": 202,
+      "is_pdf": false,
+      "bytes": 192,
+      "sha256_observed": "433bc19be18cafde40f1b5333c6d478537b5cc8450d4a2130ebfef7d7180855c",
+      "catalogue_sha256": null,
+      "hash_matches_catalogue": null,
+      "file": "c-tec-6406a8f43584.html"
+    },
+    {
+      "record_id": "c-tec-95700bacc3bf",
+      "url": "https://c-tec.com/download?wpdmdl=12129",
+      "final_url": "https://c-tec.com/download?wpdmdl=12129",
+      "http_status": 202,
+      "is_pdf": false,
+      "bytes": 192,
+      "sha256_observed": "5ad44ed2040d165ae34b4e766e81b37372c334aa13f54580af5fe61727797c0f",
+      "catalogue_sha256": null,
+      "hash_matches_catalogue": null,
+      "file": "c-tec-95700bacc3bf.html"
+    },
+    {
+      "record_id": "c-tec-d8b148951306",
+      "url": "https://c-tec.com/download?wpdmdl=38070",
+      "final_url": "https://c-tec.com/download?wpdmdl=38070",
+      "http_status": 202,
+      "is_pdf": false,
+      "bytes": 192,
+      "sha256_observed": "05c0604be48c4f2ee953666097137102cb04a8ba267c239a140bef883b9a7567",
+      "catalogue_sha256": null,
+      "hash_matches_catalogue": null,
+      "file": "c-tec-d8b148951306.html"
+    },
+    {
+      "record_id": "c-tec-e495d2c3dfda",
+      "url": "https://c-tec.com/download?wpdmdl=22244",
+      "final_url": "https://c-tec.com/download?wpdmdl=22244",
+      "http_status": 202,
+      "is_pdf": false,
+      "bytes": 192,
+      "sha256_observed": "25f32d97784a13adf6d10ebf41ad01d6d3fdf9c2afb956fcf6660bec27b8938c",
+      "catalogue_sha256": null,
+      "hash_matches_catalogue": null,
+      "file": "c-tec-e495d2c3dfda.html"
+    },
+    {
+      "record_id": "gent-0ba4cfc5de7c",
+      "url": "https://www.midlandfiresecurity.co.uk/wp-content/uploads/2019/05/gent-honeywell-S4-Sensor-Sounder-Speech-Strobe-rangedata-and-installation.pdf",
+      "http_status": 200,
+      "is_pdf": true,
+      "bytes": 5513896,
+      "sha256_observed": "85edede462352343e420789b5ffff962c54e48583236a9ad562db84a10d13c7c",
+      "catalogue_sha256": null,
+      "hash_matches_catalogue": null,
+      "actual_edition": "4188-779 Issue10 December2013"
+    },
+    {
+      "record_id": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+      "url": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon_and_vigilon_compact-installation-2015.pdf",
+      "http_status": 200,
+      "is_pdf": true,
+      "bytes": 10265001,
+      "sha256_observed": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+      "catalogue_sha256": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+      "hash_matches_catalogue": true,
+      "actual_edition": "4188-856 Issue7 July2015; commissioninginstructions despite archiveinstallationtitle"
+    }
+  ],
+  "rejections": [
+    {
+      "source": "Gent S-Quad heat / dual optical sounder product page photos",
+      "reason": "Generic strobe/VAD pictures do not establish the named exact sensor code. One scoped legacy familycard usesactualdedicatedmanualfigureinstead."
+    },
+    {
+      "source": "Honeywell download-centre SQUAD-(B).jpg andGent-SQUAD.jpg",
+      "reason": "Close-up and group photographs lackfullbody/exactcode coverage. Notused."
+    },
+    {
+      "source": "gent-4d383857e271",
+      "reason": "Currentlooking2025uploadpath actually servesVIG-MAN-INS Issue1.1 Oct1998,126pages. Not attached toS4/S3devicecards."
+    },
+    {
+      "source": "C-TEC direct productHTML and7archivePDF URLs",
+      "reason": "HTTP202HTMLCaptcha; checkedonce,notusedasworkingdownload. ManufacturerPDFs obtainedfromindependentpublicsourcesinstead."
+    },
+    {
+      "source": "firesense CA402 / firedetectionshop CA402 / DVS CA734",
+      "reason": "HTTP403. Noretriesorroutehopping."
+    }
+  ],
+  "unresolved": [
+    {
+      "brand": "Gent",
+      "model": "S-Quad exactcurrentVAD and Self-Test variants",
+      "reason": "Need code-specific image/document pairing; notborrowedfromlegacyfamily."
+    },
+    {
+      "brand": "C-TEC",
+      "model": "CA734 mini I/O",
+      "reason": "Candidatepublicmirrorblocked; keptoutsidefinishedbatch."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "webVersion": "0.26.0",
+  "androidVersion": "0.14.1",
+  "regression": {
+    "tests": 1187,
+    "pass": 1187,
+    "fail": 0,
+    "skip": 0
+  },
+  "finalMetadataRegression": {
+    "tests": 60,
+    "pass": 60
+  },
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "publicBuild": {
+    "publicFiles": 1347,
+    "nativeOnlyFilesExcluded": [
+      "app/data/download-map.json"
+    ],
+    "retainedApkVersions": [
+      "0.14.1",
+      "0.14.0"
+    ],
+    "archivedReleaseFilesExcluded": 40,
+    "archivedReleaseBytes": 439707096,
+    "orphanFilesRemoved": 41,
+    "maxStaticAssetBytes": 26214400,
+    "largestStaticAssetBytes": 24126768,
+    "buildBytes": 140475460,
+    "archiveAllowance": 1048576,
+    "verified": true
+  },
+  "offline": {
+    "revision": "480f4afaee4b",
+    "assets": 1298,
+    "bytes": 82711538,
+    "missingProcessingResources": 0
+  },
+  "publication": {
+    "status": "succeeded",
+    "siteVersion": 47,
+    "sourceCommit": "86ce11c2ae363df2c2ae0412fa5bd9f66a03f954",
+    "deploymentId": "appgdep_6af2f6b61f0081918a683aacb708a300",
+    "url": "https://findr-fault-finder.floodyyy21.chatgpt.site",
+    "liveBrowserWorkflow": "passed",
+    "liveAppVersion": "0.26.0",
+    "liveVideo": "HTTP 200 video/mp4; SHA256 matches reviewed artifact"
+  },
+  "environment": {
+    "node": "24.19.0",
+    "chromium": "154.0.8037.57",
+    "platform": "Linux x86_64",
+    "physicalIPhoneTested": false
+  }
+}

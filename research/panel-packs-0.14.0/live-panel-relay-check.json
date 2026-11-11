@@ -1,0 +1,67 @@
+{
+  "checked_at": "2026-10-30T15:38:07.366286+00:00",
+  "method": "Read-only GET against existing production manual relay; no source mutation",
+  "passed": true,
+  "results": [
+    {
+      "brand": "Potter",
+      "record_id": "facp-8cb273c7-179e-49b5-9c12-9647f79dcf65",
+      "endpoint": "https://findr-fault-finder.snowyskunk12.chatgpt.site/api/manual/facp-8cb273c7-179e-49b5-9c12-9647f79dcf65",
+      "expected_sha256": "dcda30d99581eb9ebe847899e3d3af3dd2b858e0381fbf88351a1d163866800e",
+      "expected_bytes": 506973,
+      "status": 200,
+      "content_type": "application/pdf",
+      "final_url": "https://findr-fault-finder.snowyskunk12.chatgpt.site/api/manual/facp-8cb273c7-179e-49b5-9c12-9647f79dcf65",
+      "bytes": 506973,
+      "sha256": "dcda30d99581eb9ebe847899e3d3af3dd2b858e0381fbf88351a1d163866800e",
+      "pdf_header": true,
+      "pdf_eof": true,
+      "passed": true
+    },
+    {
+      "brand": "Gamewell FCI",
+      "record_id": "facp-627867d0-1b6d-4c8e-9171-173dac920315",
+      "endpoint": "https://findr-fault-finder.snowyskunk12.chatgpt.site/api/manual/facp-627867d0-1b6d-4c8e-9171-173dac920315",
+      "expected_sha256": "e374fdc8bb63daf0a10b0e283501381ee0ad5b36b8c526f9b06dd3aaf9848922",
+      "expected_bytes": 70862,
+      "status": 200,
+      "content_type": "application/pdf",
+      "final_url": "https://findr-fault-finder.snowyskunk12.chatgpt.site/api/manual/facp-627867d0-1b6d-4c8e-9171-173dac920315",
+      "bytes": 70862,
+      "sha256": "e374fdc8bb63daf0a10b0e283501381ee0ad5b36b8c526f9b06dd3aaf9848922",
+      "pdf_header": true,
+      "pdf_eof": true,
+      "passed": true
+    },
+    {
+      "brand": "Napco",
+      "record_id": "facp-d53ca131-92c2-4f2a-8f73-5bfa1eb31807",
+      "endpoint": "https://findr-fault-finder.snowyskunk12.chatgpt.site/api/manual/facp-d53ca131-92c2-4f2a-8f73-5bfa1eb31807",
+      "expected_sha256": "7e71e1530bcb0ef7448596057972208fe4a9e7940462edbe78c317831ed254a4",
+      "expected_bytes": 192389,
+      "status": 200,
+      "content_type": "application/pdf",
+      "final_url": "https://findr-fault-finder.snowyskunk12.chatgpt.site/api/manual/facp-d53ca131-92c2-4f2a-8f73-5bfa1eb31807",
+      "bytes": 192389,
+      "sha256": "7e71e1530bcb0ef7448596057972208fe4a9e7940462edbe78c317831ed254a4",
+      "pdf_header": true,
+      "pdf_eof": true,
+      "passed": true
+    },
+    {
+      "brand": "Radionics",
+      "record_id": "facp-0fb8797e-982d-4295-84ae-53098416c467",
+      "endpoint": "https://findr-fault-finder.snowyskunk12.chatgpt.site/api/manual/facp-0fb8797e-982d-4295-84ae-53098416c467",
+      "expected_sha256": "c85b8832fedfc8801f2bb9d12a9b746ab16a7340117556ef35f89e866960d8db",
+      "expected_bytes": 887763,
+      "status": 200,
+      "content_type": "application/pdf",
+      "final_url": "https://findr-fault-finder.snowyskunk12.chatgpt.site/api/manual/facp-0fb8797e-982d-4295-84ae-53098416c467",
+      "bytes": 887763,
+      "sha256": "c85b8832fedfc8801f2bb9d12a9b746ab16a7340117556ef35f89e866960d8db",
+      "pdf_header": true,
+      "pdf_eof": true,
+      "passed": true
+    }
+  ]
+}

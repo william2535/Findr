@@ -1,0 +1,472 @@
+{
+  "batch": "uk-fire",
+  "release": "0.12.2",
+  "generated": "2026-10-30",
+  "baseline_commit": "f6b2ef5984bdcf66ac8e9d57d90074df62f44163",
+  "catalogue_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+  "existing_pictured_families_reviewed": 441,
+  "added_pictured_entries": 20,
+  "unique_archive_records_linked": 5,
+  "entries_with_archive_records": 6,
+  "scope": "UK-first fire control panels and distinct repeater faces. Model variants with the same manufacturer product photo are grouped; genuinely different enclosure/control versions remain separate. Images are visual identification references, not emulator/menu accuracy claims.",
+  "method": [
+    "Reviewed existing models and aliases before selection.",
+    "Used official manufacturer product images or exact manufacturer-document photographs and drawings where available.",
+    "Supplier images are credited, with primary model corroboration and limitations.",
+    "All 20 chosen images were opened and visually inspected. No generated or lookalike substitute images.",
+    "Only exact existing catalogue identifiers linked. Manufacturer research PDFs outside the archive do not invent new archive records.",
+    "No shared app files modified by this batch."
+  ],
+  "access_limits": [
+    {
+      "source": "https://kentec.co.uk/",
+      "issue": "Known official asset and PDF URLs returned a SiteGround CAPTCHA document rather than the image or PDF. No retries or endpoint variations after identification. Independent supplier photos and a manufacturer manual mirror were used."
+    },
+    {
+      "source": "https://emsgroup.co.uk/",
+      "issue": "HTML reads returned HTTP 503. Indexed official product content plus manufacturer-document copies and supplier pages were used; failed pages were not treated as downloaded evidence."
+    },
+    {
+      "source": "https://www.mysmartcell.com/",
+      "issue": "Home and public downloads pages returned HTTP 503. The exact archived EMS user guide downloaded successfully from pim.firesecurityproducts.com."
+    }
+  ],
+  "candidates": [
+    {
+      "id": "eaton-biwire-flexi",
+      "brand": "Eaton / Cooper",
+      "model": "BiWire Flexi 2 / 4 / 8 zone",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "eaton-flexi.png",
+      "source_image_url": "https://www.eaton.com/content/dam/eaton/products/safety-security-emergency-communications/fire/two-wire/biwire-flexi-panel/images/biwire-flexi-fire-panel.png",
+      "source_page_url": "https://www.eaton.com/gb/en-gb/catalog/fire-detection-systems/biwire-flexi-panel.html",
+      "verification_sources": [],
+      "source_pdf_page": null,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    },
+    {
+      "id": "eaton-biwire-conventional-repeater",
+      "brand": "Eaton / Cooper",
+      "model": "BiWire / conventional repeater EFBWCV-REPEATER",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "eaton-repeater.png",
+      "source_image_url": "https://www.eaton.com/content/dam/eaton/products/safety-security-emergency-communications/fire/two-wire/biwire-conventional-repeater-panel/images/biwire-repeater-alarm-panel.png",
+      "source_page_url": "https://www.eaton.com/gb/en-gb/catalog/fire-detection-systems/biwire-and-conventional-repeater-panel.html",
+      "verification_sources": [],
+      "source_pdf_page": null,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    },
+    {
+      "id": "eaton-cf50016",
+      "brand": "Eaton / Cooper",
+      "model": "CF50016 16 zone conventional",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "eaton-16zone.png",
+      "source_image_url": "https://www.eaton.com/mdmfiles/PDM89338961/fire-cf50016-zone-conventional-alarm-panel_L/500x500_72dpi",
+      "source_page_url": "https://www.eaton.com/gb/en-gb/catalog/fire-detection-systems/16-zone-conventional-panel.html",
+      "verification_sources": [
+        "https://www.eaton.com/gb/en-gb/skuPage.CF50016.html"
+      ],
+      "source_pdf_page": null,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    },
+    {
+      "id": "eaton-jsb-biwire-fx2200bw",
+      "brand": "Eaton / Cooper",
+      "model": "JSB BiWire FX2200BW series",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "eaton-jsb.png",
+      "source_image_url": "https://www.eaton.com/content/dam/eaton/products/safety-security-emergency-communications/fire/discontinued/jsb-biwire-control-panel-fx2200bw/fire-jsb-biwire-control-panel-fx2200bw-discontinued.png",
+      "source_page_url": "https://www.eaton.com/gb/en-gb/catalog/fire-systems/jsb-biwire-control-panel.html",
+      "verification_sources": [],
+      "source_pdf_page": null,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    },
+    {
+      "id": "kentec-syncro-view",
+      "brand": "Kentec",
+      "model": "Syncro View local LCD repeater",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [
+        "kentec-fc5709cc1627"
+      ],
+      "image": "kentec-syncro-view-full.jpg",
+      "source_image_url": "https://www.firesense.co.uk/media/catalog/product/cache/442ad8a0d982829060d5a3a398f89a60/s/y/syncro_view_3.jpg",
+      "source_page_url": "https://www.firesense.co.uk/kentec-syncro-view-local-lcd-repeater-panel/",
+      "verification_sources": [
+        "https://kentec.co.uk/product/syncro-view/"
+      ],
+      "source_pdf_page": null,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    },
+    {
+      "id": "kentec-taktis-vision",
+      "brand": "Kentec",
+      "model": "Taktis Vision EN network repeater",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [
+        "kentec-7f56ed0d54d0"
+      ],
+      "image": "kentec-taktis-vision.jpg",
+      "source_image_url": "https://www.acornfiresecurity.com/image/cache/data/Taktis-Vision-600x600.jpg",
+      "source_page_url": "https://www.acornfiresecurity.com/addressable-fire-alarm-equipment/addressable-panels/kentec-taktis-vision-repeater-panel",
+      "verification_sources": [
+        "https://kentec.co.uk/product/taktis-en/"
+      ],
+      "source_pdf_page": null,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    },
+    {
+      "id": "kentec-syncro-focus",
+      "brand": "Kentec",
+      "model": "Syncro Focus 3 button network repeater",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [
+        "kentec-bd8936356752"
+      ],
+      "image": "kentec-syncro-focus.png",
+      "source_image_url": "https://fire.sectron.com/manuals/en/Kentec/adressable/Syncro%20Focus.pdf",
+      "source_page_url": "https://fire.sectron.com/manuals/en/Kentec/adressable/Syncro%20Focus.pdf#page=11",
+      "verification_sources": [],
+      "source_pdf_page": 11,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    },
+    {
+      "id": "kentec-syncro-focus-plus",
+      "brand": "Kentec",
+      "model": "Syncro Focus+ 6 button network repeater",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [
+        "kentec-bd8936356752"
+      ],
+      "image": "kentec-syncro-focus-plus.png",
+      "source_image_url": "https://fire.sectron.com/manuals/en/Kentec/adressable/Syncro%20Focus.pdf",
+      "source_page_url": "https://fire.sectron.com/manuals/en/Kentec/adressable/Syncro%20Focus.pdf#page=12",
+      "verification_sources": [],
+      "source_pdf_page": 12,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    },
+    {
+      "id": "protec-6000-loop-repeater",
+      "brand": "Protec",
+      "model": "6000/LOOP/REPEATER remote display",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "protec-loop-repeater.png",
+      "source_image_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/loop-lcd.png",
+      "source_page_url": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/panels/6000-loop-repeater/",
+      "verification_sources": [],
+      "source_pdf_page": null,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    },
+    {
+      "id": "zeta-simplicity-plus",
+      "brand": "Zeta",
+      "model": "Simplicity Plus 64 / 126 / 252",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "zeta-simplicity.png",
+      "source_image_url": "https://www.zetaalarmsystems.com/wp-content/uploads/2024/04/SP-64-252-M-e1713968889379.png",
+      "source_page_url": "https://www.zetaalarmsystems.com/product/simplicity-plus-64-1-loop-64-devices/",
+      "verification_sources": [],
+      "source_pdf_page": null,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    },
+    {
+      "id": "zeta-simplicity-plus-repeater",
+      "brand": "Zeta",
+      "model": "Simplicity Plus fully functional repeater",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "zeta-simplicity-repeater.png",
+      "source_image_url": "https://www.zetaalarmsystems.com/wp-content/uploads/2024/04/SP-REP.png",
+      "source_page_url": "https://www.zetaalarmsystems.com/product/simplicity-fully-functional-repeater/",
+      "verification_sources": [],
+      "source_pdf_page": null,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    },
+    {
+      "id": "zeta-infinity-id2-plastic",
+      "brand": "Zeta",
+      "model": "Infinity ID2 2 / 4 / 8 zone — plastic enclosure",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "zeta-id2-plastic.png",
+      "source_image_url": "https://www.zetaalarmsystems.com/wp-content/uploads/2024/04/ID2-front-1024x872.png",
+      "source_page_url": "https://www.zetaalarmsystems.com/products/fire-alarm-systems/mkii-addressable/infinity-id2-panels/infinity-id2-panels-plastic-enclosure/",
+      "verification_sources": [],
+      "source_pdf_page": null,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    },
+    {
+      "id": "zeta-infinity-id2-metal",
+      "brand": "Zeta",
+      "model": "Infinity ID2 2 / 4 / 8 zone — metal enclosure",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "zeta-id2-metal.jpg",
+      "source_image_url": "https://www.zetaalarmsystems.com/wp-content/uploads/2024/04/ID2-METAL-1024x920.jpg",
+      "source_page_url": "https://www.zetaalarmsystems.com/products/fire-alarm-systems/mkii-addressable/infinity-id2-panels/infinity-id2-panels-metal-enclosure/",
+      "verification_sources": [],
+      "source_pdf_page": null,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    },
+    {
+      "id": "zeta-infinity-id2-repeater",
+      "brand": "Zeta",
+      "model": "Infinity ID2 fully functional LCD repeater",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "zeta-id2-repeater.png",
+      "source_image_url": "https://www.zetaalarmsystems.com/wp-content/uploads/2024/04/ID2-REP-front-1024x872.png",
+      "source_page_url": "https://www.zetaalarmsystems.com/products/fire-alarm-systems/mkii-addressable/infinity-id2-panels/infinity-id2-panels-plastic-enclosure/",
+      "verification_sources": [],
+      "source_pdf_page": null,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    },
+    {
+      "id": "ems-firepoint-system-5000",
+      "brand": "EMS",
+      "model": "FirePoint System 5000",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [
+        "facp-27d6774a-9edc-4b88-9a0c-f6eafb60aa2e"
+      ],
+      "image": "ems-firepoint5000-11.jpeg",
+      "source_image_url": "https://docs.facpmanuals.com/manuals/EMS/firepoint_system_5000-operations-2015.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/EMS/firepoint_system_5000-operations-2015.pdf#page=1",
+      "verification_sources": [],
+      "source_pdf_page": 1,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    },
+    {
+      "id": "ems-smartcell-control-panel",
+      "brand": "EMS",
+      "model": "SmartCell wireless control panel",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [
+        "ems-f31856176207"
+      ],
+      "image": "ems-smartcell.jpg",
+      "source_image_url": "https://www.safefiredirect.co.uk/media/catalog/product/cache/c77cb8e255d09cf3ba5fb174d54d4f0e/s/m/smartcellpanel-1.jpg",
+      "source_page_url": "https://www.safefiredirect.co.uk/ems-smartcell-wireless-fire-alarm-system-kit-builder.aspx",
+      "verification_sources": [
+        "https://emsgroup.co.uk/product/smartcell-wireless-control-panel/",
+        "https://pim.firesecurityproducts.com/sites/default/files/product_downloads/2024/user_manual/tsd113-0001-99_smartcell_control_panel_user_guide_issue_5.pdf"
+      ],
+      "source_pdf_page": null,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    },
+    {
+      "id": "ems-firecell-2xa",
+      "brand": "EMS",
+      "model": "FireCell 2X-A large cabinet control panel",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "ems-2xa-primary.png",
+      "source_image_url": "https://www.acornfiresecurity.com/index.php?filename=EMS%2FFC-2X-AF2-FB-W-99+Datasheet.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+      "source_page_url": "https://emsgroup.co.uk/product/2x-a-control-panel/",
+      "verification_sources": [],
+      "source_pdf_page": 1,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    },
+    {
+      "id": "fike-duonet",
+      "brand": "Fike",
+      "model": "Duonet 510-0001 1–2 loop",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "fike-duonet-datasheet-108.jpeg",
+      "source_image_url": "https://my.fike.com/_fike_docs/Fire_Detection/Control_Panels/EN_Panels_FST/Duonet_and_Quadnet/Data_Sheets/FST20901_Duonet_Control_Panel.pdf",
+      "source_page_url": "https://www.fike.com/product-documents/duonet-and-quadnet-systems/",
+      "verification_sources": [],
+      "source_pdf_page": 1,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    },
+    {
+      "id": "fike-quadnet",
+      "brand": "Fike",
+      "model": "Quadnet 507-0001 1–4 loop",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "fike-quadnet.jpg",
+      "source_image_url": "https://www.firetradesupplies.com/cdn/shop/products/507-0001-fike-quadnet-control-panel-1-4-loop-and-psu-855782.jpg?v=1681895767",
+      "source_page_url": "https://www.firetradesupplies.com/products/507-0001-quadnet-control-panel-1-4-loop-and-psu",
+      "verification_sources": [
+        "https://www.fike.com/product-documents/duonet-and-quadnet-systems/",
+        "https://my.fike.com/_fike_docs/Fire_Detection/Control_Panels/EN_Panels_FST/Duonet_and_Quadnet/Data_Sheets/FST20801_Quadnet_Control_Panel.pdf"
+      ],
+      "source_pdf_page": null,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    },
+    {
+      "id": "fike-duonet-quadnet-repeater",
+      "brand": "Fike",
+      "model": "Duonet / Quadnet network repeater",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [],
+      "image": "fike-repeater.jpg",
+      "source_image_url": "https://www.acornfiresecurity.com/image/cache/data/Quadnet-Repeater-400x400.jpg",
+      "source_page_url": "https://www.acornfiresecurity.com/addressable-fire-alarm-equipment/addressable-panels/fike-quadnet-repeater-panel-excl-back-box-507-0006",
+      "verification_sources": [
+        "https://www.fike.com/product-documents/duonet-and-quadnet-systems/",
+        "https://my.fike.com/_fike_docs/Fire_Detection/Control_Panels/EN_Panels_FST/Duonet_and_Quadnet/Manuals/26-0854_Quadnet_and_Duonet_Repeater_Panel_Engineering_and_Comissioning_Manual.pdf"
+      ],
+      "source_pdf_page": null,
+      "verification": "Downloaded asset opened and visually checked against its named product page or exact manufacturer document. Appearance, role and applicability limits are recorded in the panel entry.",
+      "uk_priority": true
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "brand": "Protec",
+      "model": "6400 / 6500 upgrade composite",
+      "status": "excluded",
+      "source": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/system-upgrades/6400-6500-panel-upgrade/",
+      "reason": "The official image is a before/after 6400-to-6500 upgrade composite, with a red arrow between two cabinets. It is not used as a standalone 6400 identification image because it could misidentify the replacement fascia. No new 6400 entry added."
+    },
+    {
+      "brand": "EMS",
+      "model": "FireCell 2X-A supplier Aritech-branded photo",
+      "status": "excluded",
+      "source": "https://www.firesense.co.uk/ems-2x-a-control-panel-large-cabinet-2-loop-6a-psu/",
+      "reason": "The supplier product illustration shows Aritech branding. Replaced with the correctly EMS-branded photo in EMS MK412 Issue 1, page 1."
+    },
+    {
+      "brand": "EMS",
+      "model": "SmartCell Intelligent Wireless Zone Monitor",
+      "status": "not-panel",
+      "record_ids": [
+        "ems-c4247831f008"
+      ],
+      "reason": "This programming guide is for the wireless zone monitor, not the SmartCell control panel. It is not crosslinked to the SmartCell panel entry."
+    },
+    {
+      "brand": "Kentec",
+      "model": "Syncro View Marine manual",
+      "status": "excluded",
+      "record_ids": [
+        "kentec-f3ebcdaf7f43"
+      ],
+      "reason": "The selected photograph and primary product page identify the standard Syncro View. Marine-specific record intentionally not attached."
+    },
+    {
+      "brand": "Hyfire",
+      "model": "Advanced-derived Hyfire control panels",
+      "status": "excluded",
+      "reason": "No distinct verified Hyfire fascia selected in this bounded batch. Existing Advanced families are retained without duplicating a lookalike as a different product."
+    },
+    {
+      "brand": "Haes",
+      "model": "Existing legacy image gaps",
+      "status": "excluded",
+      "reason": "Known unresolved legacy models remain unchanged. No exterior was inferred from wiring diagrams or PCB images."
+    }
+  ],
+  "visual_review_files": [
+    "review-first.jpg",
+    "review-second.jpg",
+    "review-third.jpg",
+    "review-final.jpg"
+  ],
+  "record_scope_notes": [
+    "EMS FirePoint System 5000 manual exactly matches the archived SHA256.",
+    "SmartCell Control Panel archive record ems-f31856176207 was found during the full models/title audit and linked; the wireless zone monitor record was excluded.",
+    "Syncro Focus and Focus+ source drawings are from Issue 04 pages 11/12; linked archive record is Issue 05 for the same named family and that edition distinction is visible in applicability limits.",
+    "Fike Duonet/Quadnet manufacturer documents were used for corroboration, but no exact controller/repeater manual IDs exist in the current archive snapshot, so those entries have empty record_ids."
+  ],
+  "source_document_checksums": [
+    {
+      "file": "ems-2xa-datasheet-mirror.pdf",
+      "bytes": 223867,
+      "pages": 2,
+      "sha256": "5dd9a1571e525b0a2dc2e72583f71fe917a0b0101749e5f649e7f1ab1670c719"
+    },
+    {
+      "file": "ems-firepoint5000.pdf",
+      "bytes": 764866,
+      "pages": 26,
+      "sha256": "4f8fc5dbffedbc6ef63405f16a5f442038b3e8064379445203846388c74010a8"
+    },
+    {
+      "file": "ems-smartcell-userguide.pdf",
+      "bytes": 6245517,
+      "pages": 28,
+      "sha256": "b561a531364a8b033b39e156b4c25b4f0e8409585779c4f6b1a831fc2d5190d7"
+    },
+    {
+      "file": "fike-duonet-datasheet.pdf",
+      "bytes": 441366,
+      "pages": 2,
+      "sha256": "1e4daa656ea8c294b7093059478c1b6c207ac86630c7a69d3a387d03c1d353f3"
+    },
+    {
+      "file": "fike-quadnet-datasheet.pdf",
+      "bytes": 148492,
+      "pages": 2,
+      "sha256": "4f22c5e1cf14042821708d9ca28e5e0fd87b0de75e00c69fd1515c01e3528eac"
+    },
+    {
+      "file": "fike-repeater-manual.pdf",
+      "bytes": 1507761,
+      "pages": 44,
+      "sha256": "d3ba92400955a4035742c5b4cde404e428d7079af39cf2ca503f91967fb09ccb"
+    },
+    {
+      "file": "kentec-syncro-focus-mirror.pdf",
+      "bytes": 520347,
+      "pages": 13,
+      "sha256": "1b826718b00271e951283e02552f194961f12f080f59592ea35bfc2a4d355f15"
+    },
+    {
+      "file": "kentec-syncro-focus.pdf",
+      "bytes": 214,
+      "pages": 1,
+      "sha256": "8fc907763973ccd67258440cb95e195aecf4290ea44367fbee3480a3c962d568"
+    }
+  ],
+  "visual_review_summary": "Final selected 20-image contact sheet inspected. All selected files are real exterior/fascia subjects. Manufacturer photographs and drawings retained without generated features. Supplier marks retained. EMS 2X-A uses its correctly branded manufacturer image. View/Focus/Focus+/Vision, Protec display/control variants, and Zeta panel/repeater labels are kept distinct. Fike shared fascia limitation is explicit."
+}

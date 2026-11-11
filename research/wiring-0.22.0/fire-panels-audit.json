@@ -1,0 +1,982 @@
+{
+  "batch": "fire-panels",
+  "reviewedOn": "2026-11-02",
+  "rendering": {
+    "tool": "PyMuPDF + Pillow",
+    "format": "lossless RGB WebP",
+    "targetPageWidth": 1400,
+    "cropped": false,
+    "annotationsOrRedrawing": false
+  },
+  "coverage": {
+    "retrievedDocuments": 35,
+    "retrievalFailures": 0,
+    "pinnedHashMismatches": 0,
+    "selectedDocuments": 32,
+    "images": 66,
+    "imageBytes": 7424472,
+    "withheldPagesForSourceContradiction": 2,
+    "linkedPanelFamilies": 31,
+    "diagramTypes": {
+      "wiring": 45,
+      "terminal-layout": 15,
+      "connection-example": 6
+    }
+  },
+  "limitations": [
+    "This curated batch is not complete archive coverage. A skipped document does not mean no wiring diagram exists for that panel.",
+    "Terminal layouts and connection photographs are labelled separately from complete circuit diagrams.",
+    "No catalogue record, existing PDF URL/hash, pack membership or device/panel identity was rewritten."
+  ],
+  "documents": [
+    {
+      "recordId": "advanced-9e6af4fbfd7d",
+      "title": "MxPro4 — Installation",
+      "sourceUrl": "https://www.srsalertfire.ie/uploads/VqRfVH0i/680-014-13MxPro4Installation.pdf",
+      "expectedSha256": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32",
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/advanced-9e6af4fbfd7d.pdf",
+      "sourceSha256": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32",
+      "bytes": 1781694,
+      "catalogueHashMatch": true,
+      "pages": 68,
+      "status": "retrieved",
+      "edition": "680-014 Revision 13",
+      "selectedPdfPages": [
+        24,
+        25
+      ],
+      "candidatePdfPagesInspected": [
+        24,
+        25
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "advanced-a18ea5cccf04",
+      "title": "MxPro5 — Product Manual",
+      "sourceUrl": "https://www.srsalertfire.ie/uploads/FCpZ1eWk/680-165-05MxPro5ProductManual.pdf",
+      "expectedSha256": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b",
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/advanced-a18ea5cccf04.pdf",
+      "sourceSha256": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b",
+      "bytes": 2804250,
+      "catalogueHashMatch": true,
+      "pages": 74,
+      "status": "retrieved",
+      "edition": "680-165 Revision 05; software 5000-050-04 onwards",
+      "selectedPdfPages": [
+        28,
+        29,
+        33
+      ],
+      "candidatePdfPagesInspected": [
+        28,
+        29,
+        33
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "advanced-c1f080ef94b1",
+      "title": "Axis EN 5000V — Installation, programming and commissioning manual",
+      "sourceUrl": "https://www.advancedco.com/wp-content/uploads/680-165V-07-Axis-EN-Product-Manual.pdf",
+      "expectedSha256": "ea38daebe63652fb5c30e490be892ebe1df5bf87f29e9ed9d7f35d04ca855238",
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/advanced-c1f080ef94b1.pdf",
+      "sourceSha256": "ea38daebe63652fb5c30e490be892ebe1df5bf87f29e9ed9d7f35d04ca855238",
+      "bytes": 2885501,
+      "catalogueHashMatch": true,
+      "pages": 84,
+      "status": "retrieved",
+      "edition": "680-165V Axis EN Revision 07; software 5000-050-04 onwards",
+      "selectedPdfPages": [
+        28,
+        29
+      ],
+      "candidatePdfPagesInspected": [
+        28,
+        29
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "advanced-d3af3c835ac8",
+      "title": "Mx4010-Mx4020 Remote Terminals",
+      "sourceUrl": "https://www.srsalertfire.ie/uploads/YOLnNoz6/680-029-03AMx4010-Mx4020RemoteTerminals.pdf",
+      "expectedSha256": "f581bbc61be53b7715b591177bc96ed07d7dab81af41ffbe1e053dd002195bc1",
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/advanced-d3af3c835ac8.pdf",
+      "sourceSha256": "f581bbc61be53b7715b591177bc96ed07d7dab81af41ffbe1e053dd002195bc1",
+      "bytes": 531703,
+      "catalogueHashMatch": true,
+      "pages": 12,
+      "status": "retrieved",
+      "edition": "680-029 Revision 03A",
+      "selectedPdfPages": [],
+      "candidatePdfPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "result": "reviewed-no-selected-diagram",
+      "note": "Candidate page 5 contains enclosure/mounting drawing and connection text but no useful actual wiring figure. Not included. Final contact-sheet pass inspected every page of this source; no selected wiring image added."
+    },
+    {
+      "recordId": "c-tec-44b03d254ee3",
+      "title": "XFP single loop 16 zone fire panel manual200510 Rev1",
+      "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/XFP%20single%20loop%2016%20zone%20fire%20panel%20manual200510%20Rev1.pdf",
+      "expectedSha256": null,
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/c-tec-44b03d254ee3.pdf",
+      "sourceSha256": "e65934abe0148df1d9230c032e8a008e2c043310f36971f06802937cc79c642b",
+      "bytes": 1437451,
+      "catalogueHashMatch": null,
+      "pages": 36,
+      "status": "retrieved",
+      "edition": "DFU1200510 Rev 1",
+      "selectedPdfPages": [
+        9,
+        10
+      ],
+      "candidatePdfPagesInspected": [
+        9,
+        10
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "c-tec-ba3f93b60d06",
+      "title": "CTEC XFP 1 OR 2 LOOP 32Z LPCB ENG MANUAL DFU2200510 R2",
+      "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP_1_OR_2_LOOP_32Z_LPCB_ENG_MANUAL_DFU2200510_R2.pdf",
+      "expectedSha256": "a56ad3e3160fa617e4d024dba54bc0e378f5542855be71ee3a35b90083b1faea",
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/c-tec-ba3f93b60d06.pdf",
+      "sourceSha256": "a56ad3e3160fa617e4d024dba54bc0e378f5542855be71ee3a35b90083b1faea",
+      "bytes": 1146161,
+      "catalogueHashMatch": true,
+      "pages": 36,
+      "status": "retrieved",
+      "edition": "DFU2200510 Rev 2",
+      "selectedPdfPages": [
+        9,
+        10,
+        11
+      ],
+      "candidatePdfPagesInspected": [
+        9,
+        10,
+        11
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "c-tec-71e2d26e5669",
+      "title": "CFP repeater panel install manual",
+      "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CFP%20repeater%20panel%20install%20manual.pdf",
+      "expectedSha256": "bfd5d6d36a25141cebc2dbd624505bbe224418533ae227b5bc1ac201b998223c",
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/c-tec-71e2d26e5669.pdf",
+      "sourceSha256": "bfd5d6d36a25141cebc2dbd624505bbe224418533ae227b5bc1ac201b998223c",
+      "bytes": 617624,
+      "catalogueHashMatch": true,
+      "pages": 14,
+      "status": "retrieved",
+      "edition": "DFU7003001 Rev 2",
+      "selectedPdfPages": [
+        12
+      ],
+      "candidatePdfPagesInspected": [
+        12
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "eaton-cooper-d30026e0a49d",
+      "title": "CF3000 — Installation and operation manual",
+      "sourceUrl": "https://www.eaton.com/content/dam/eaton/products/safety-security-emergency-communications/fire/addressable/cf3000-panel/en/eaton-fire-addressable-control-panel-cf3000-manual-25-14682-en.pdf",
+      "expectedSha256": null,
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/eaton-cooper-d30026e0a49d.pdf",
+      "sourceSha256": "7741f6041262e2c61aa724246eb2094d9ca658a94a5624d7d60e3aaf4b949796",
+      "bytes": 13304400,
+      "catalogueHashMatch": null,
+      "pages": 132,
+      "status": "retrieved",
+      "edition": "25-14682-C, December 2019",
+      "selectedPdfPages": [
+        109
+      ],
+      "candidatePdfPagesInspected": [
+        109
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "eaton-cooper-053a993a0c8b",
+      "title": "CF1100 / CF1200 — Installation manual",
+      "sourceUrl": "https://www.eaton.com/content/dam/eaton/products/safety-security-emergency-communications/fire/addressable/cf1000-panel/en/eaton-fire-addressable-control-panel-cf1100-1200-manual-25-16327-en.pdf",
+      "expectedSha256": null,
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/eaton-cooper-053a993a0c8b.pdf",
+      "sourceSha256": "7bb99d18ff9662ac9f77129193ee5ea9cc2d4c71380cce4a7898ce9ffb15c0eb",
+      "bytes": 10301052,
+      "catalogueHashMatch": null,
+      "pages": 104,
+      "status": "retrieved",
+      "edition": "25-16327-B, November 2020",
+      "selectedPdfPages": [
+        83
+      ],
+      "candidatePdfPagesInspected": [
+        83
+      ],
+      "result": "included",
+      "note": "Reviewed source identifies CF1100 and CF1200; existing corresponding picture-pack ID is eaton-cf1000. Models retain the source names."
+    },
+    {
+      "recordId": "fike-fc894e8e5796",
+      "title": "Twinflex Pro Installation Manual",
+      "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Twinflex%20Pro%20Installation%20Manual.pdf",
+      "expectedSha256": null,
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/fike-fc894e8e5796.pdf",
+      "sourceSha256": "d67d8409213042ba956bd3c98c92135038bb8af67ebee53dee79b09339b90e70",
+      "bytes": 1575823,
+      "catalogueHashMatch": null,
+      "pages": 70,
+      "status": "retrieved",
+      "edition": "26-0959 Issue 7; TWINFLEXpro V1.00 onwards",
+      "selectedPdfPages": [
+        11,
+        14
+      ],
+      "candidatePdfPagesInspected": [
+        11,
+        14
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "facp-53d7f2b3-b7fd-495d-8711-13b42717beef",
+      "title": "TWINFLEXpro2 Repeater Panel — Installation, Operations",
+      "sourceUrl": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro2_repeater_panel-installation-rev3.pdf",
+      "expectedSha256": "477ac1158a8731a9842e33d9a50d607a13b420019d7b8a6557cf79ad3164b208",
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/facp-53d7f2b3-b7fd-495d-8711-13b42717beef.pdf",
+      "sourceSha256": "477ac1158a8731a9842e33d9a50d607a13b420019d7b8a6557cf79ad3164b208",
+      "bytes": 1603368,
+      "catalogueHashMatch": true,
+      "pages": 24,
+      "status": "retrieved",
+      "edition": "26-1192 Rev 3 (cover also carries Issue 1)",
+      "selectedPdfPages": [
+        12,
+        13
+      ],
+      "candidatePdfPagesInspected": [
+        12,
+        13
+      ],
+      "result": "included",
+      "note": "Cover carries both 26-1192 Issue 1 and Doc. 26-1192 Rev. 3; edition field preserves both rather than guessing."
+    },
+    {
+      "recordId": "gent-33fdf5de07b1",
+      "title": "xenex-panel-installation-and-commissioning-manual",
+      "sourceUrl": "https://www.midlandfiresecurity.co.uk/wp-content/uploads/2019/05/xenex-panel-installation-and-commissioning-manual.pdf",
+      "expectedSha256": null,
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/gent-33fdf5de07b1.pdf",
+      "sourceSha256": "bfba77e6449597ce2a10fe1cfd0f4ef33d7db3b012f7358d5e155f6b2842f4d1",
+      "bytes": 710443,
+      "catalogueHashMatch": null,
+      "pages": 24,
+      "status": "retrieved",
+      "edition": "4188-424 Issue 6, Part 1, June 2012",
+      "selectedPdfPages": [
+        3,
+        8
+      ],
+      "candidatePdfPagesInspected": [
+        3,
+        8
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "facp-d442a96b-9a39-4e76-b773-5f7676e175dc",
+      "title": "Vigilon Compact Control Panel — Installation (2010, source-listed)",
+      "sourceUrl": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon_compact_control_panel-installation-2010-rev3.pdf",
+      "expectedSha256": "9cdf8ee0964ffb14d370929ec0ddeece559b39bd870a6426e52d5fc154d41e4a",
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/facp-d442a96b-9a39-4e76-b773-5f7676e175dc.pdf",
+      "sourceSha256": "9cdf8ee0964ffb14d370929ec0ddeece559b39bd870a6426e52d5fc154d41e4a",
+      "bytes": 8816857,
+      "catalogueHashMatch": true,
+      "pages": 64,
+      "status": "retrieved",
+      "edition": "4188-900 Issue 3, July 2010",
+      "selectedPdfPages": [
+        19,
+        20
+      ],
+      "candidatePdfPagesInspected": [
+        19,
+        20
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+      "title": "Vigilon 4/6 Loop and Compact — Installation (2015, source-listed)",
+      "sourceUrl": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon_and_vigilon_compact-installation-2015.pdf",
+      "expectedSha256": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/facp-7538be76-f958-46e4-99f6-c718601bb349.pdf",
+      "sourceSha256": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+      "bytes": 10265001,
+      "catalogueHashMatch": true,
+      "pages": 162,
+      "status": "retrieved",
+      "edition": "4188-856 Issue 7, July 2015",
+      "selectedPdfPages": [
+        28,
+        37
+      ],
+      "candidatePdfPagesInspected": [
+        28,
+        37
+      ],
+      "result": "included",
+      "note": "Archive title says Installation — 2015; actual PDF is combined Vigilon commissioning instructions 4188-856 Issue 7. Page 28 is 4/6-loop and page 37 Compact; each has its own applicable panel link."
+    },
+    {
+      "recordId": "gent-c2e20b406444",
+      "title": "SenTRI ONE installation instructions",
+      "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Sentri_one%20fire%20alarm%20Install%20Manual.pdf",
+      "expectedSha256": "45e4dca1dec5f1bc8978b22d2dfee76ece3d5949d342aa90de394b8765a118b4",
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/gent-c2e20b406444.pdf",
+      "sourceSha256": "45e4dca1dec5f1bc8978b22d2dfee76ece3d5949d342aa90de394b8765a118b4",
+      "bytes": 5687289,
+      "catalogueHashMatch": true,
+      "pages": 52,
+      "status": "retrieved",
+      "edition": "4188-979 Issue 2, April 2010; document pack 2534-235 Issue 2",
+      "selectedPdfPages": [
+        19,
+        20,
+        21
+      ],
+      "candidatePdfPagesInspected": [
+        19,
+        20,
+        21
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "haes-cd2d5aa5d441",
+      "title": "Excel Instruction Manual",
+      "sourceUrl": "https://haes-tech.com/app/uploads/2019/08/Esento-Excel-Manual-2.pdf",
+      "expectedSha256": null,
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/haes-cd2d5aa5d441.pdf",
+      "sourceSha256": "ca0394e0221f62b9a39e7b260e8b1ea10d4df660c3a90806cbeb0d4d5fe4a849",
+      "bytes": 9423030,
+      "catalogueHashMatch": null,
+      "pages": 72,
+      "status": "retrieved",
+      "edition": "UI-XLEN-01 Issue 12.0",
+      "selectedPdfPages": [
+        18,
+        19,
+        22
+      ],
+      "candidatePdfPagesInspected": [
+        18,
+        19,
+        22
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "haes-d04704a4ec15",
+      "title": "Eclipse Instruction Manual",
+      "sourceUrl": "https://haes-tech.com/app/uploads/2019/08/Esento-Eclipse-Manual-2.pdf",
+      "expectedSha256": null,
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/haes-d04704a4ec15.pdf",
+      "sourceSha256": "3c7a7e74abccfd94f9789a0292b4604efe42bf916c780b7d384302777819896a",
+      "bytes": 4759699,
+      "catalogueHashMatch": null,
+      "pages": 48,
+      "status": "retrieved",
+      "edition": "UI-ECL-01 Issue 8.0",
+      "selectedPdfPages": [
+        16,
+        18
+      ],
+      "candidatePdfPagesInspected": [
+        16,
+        18
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "haes-2ddf67adc24c",
+      "title": "AlarmSense PLUS Instruction Manual",
+      "sourceUrl": "https://haes-tech.com/app/uploads/2019/08/AlarmSense-Plus-Manual-1.pdf",
+      "expectedSha256": null,
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/haes-2ddf67adc24c.pdf",
+      "sourceSha256": "e35cb4ae76e1d4e57991c7c2694f088b9c6c7475bd2cf3c9a5cf321693533f3d",
+      "bytes": 8785814,
+      "catalogueHashMatch": null,
+      "pages": 64,
+      "status": "retrieved",
+      "edition": "UI-ASP-01 Issue 5.0",
+      "selectedPdfPages": [
+        16,
+        17,
+        19
+      ],
+      "candidatePdfPagesInspected": [
+        16,
+        17,
+        19
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "haes-c83f3256011b",
+      "title": "Fusion Installation & Commissioning Manual",
+      "sourceUrl": "https://haes-tech.com/app/uploads/2019/10/FUSION-Inst-Comm-Manual-UI-FBU-01.pdf",
+      "expectedSha256": null,
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/haes-c83f3256011b.pdf",
+      "sourceSha256": "8bc320646004ac7f4c853963d04a4efd3e50313d5a84d5c73cbd8e7c57ed08d6",
+      "bytes": 2075056,
+      "catalogueHashMatch": null,
+      "pages": 88,
+      "status": "retrieved",
+      "edition": "UI-FBU-01 Issue 3.0",
+      "selectedPdfPages": [
+        15,
+        54
+      ],
+      "candidatePdfPagesInspected": [
+        14,
+        15,
+        54
+      ],
+      "result": "included",
+      "note": "Rejected page 14 (cabinet mounting) and page 16 (front-panel controls); included actual mains connection page 15 and CAN network page 54."
+    },
+    {
+      "recordId": "haes-98aed045fb2f",
+      "title": "Esento Repeater Instruction Manual",
+      "sourceUrl": "https://haes-tech.com/app/uploads/2021/09/Esento-Repeater-Manual.pdf",
+      "expectedSha256": null,
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/haes-98aed045fb2f.pdf",
+      "sourceSha256": "e445b61606a112b2a234bb8523cab59bdc1ddf205183d808701fe14916f0b8f3",
+      "bytes": 2675206,
+      "catalogueHashMatch": null,
+      "pages": 24,
+      "status": "retrieved",
+      "edition": "UI-XLEN-R-01 Issue 6.0",
+      "selectedPdfPages": [
+        12,
+        14
+      ],
+      "candidatePdfPagesInspected": [
+        12,
+        14
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "hochiki-2e3c913355f8",
+      "title": "Latitude — Installers guide",
+      "sourceUrl": "https://assets.hochikiglobal.com/assetbank-hochikieurope/assetfile/17452.pdf",
+      "expectedSha256": null,
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/hochiki-2e3c913355f8.pdf",
+      "sourceSha256": "f0fc9f60cbbd79ff24f43da8ea12d043b2fbfe1ca7ebd2bb2c4eb6ba6f27186e",
+      "bytes": 4404039,
+      "catalogueHashMatch": null,
+      "pages": 16,
+      "status": "retrieved",
+      "edition": "ISS2/MAR24",
+      "selectedPdfPages": [
+        10
+      ],
+      "candidatePdfPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "result": "included",
+      "note": "Visually reviewed all 16 scanned pages. Included only page 10 as an honestly labelled loop-terminal connection photograph; network/architecture overview pages are not complete circuit schematics."
+    },
+    {
+      "recordId": "facp-8a4e02b8-8f8d-4061-b018-4e4b1e71b948",
+      "title": "ZX1Se, ZX2Se, ZX5Se, and ZX10Se — Installation",
+      "sourceUrl": "https://docs.facpmanuals.com/manuals/Morley-IAS/zx_series-installation.pdf",
+      "expectedSha256": "d17d1c068228c684ce7d7dc754bfe7fbdbb36b7690816513d590d28ad4f3da4a",
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/facp-8a4e02b8-8f8d-4061-b018-4e4b1e71b948.pdf",
+      "sourceSha256": "d17d1c068228c684ce7d7dc754bfe7fbdbb36b7690816513d590d28ad4f3da4a",
+      "bytes": 5370334,
+      "catalogueHashMatch": true,
+      "pages": 55,
+      "status": "retrieved",
+      "edition": "996-174-000-2 Revision 2",
+      "selectedPdfPages": [
+        19,
+        22
+      ],
+      "candidatePdfPagesInspected": [
+        19,
+        22
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "facp-b4f11834-bd71-4134-8d67-cb9c6d11f4df",
+      "title": "ID2000 — Installation (2010, source-listed)",
+      "sourceUrl": "https://docs.facpmanuals.com/manuals/Notifier/id2000-installation-2010.pdf",
+      "expectedSha256": "4c88121060f76b104f8850439c03aa87ad85faeb9bb734df04d6f3b4eec673b4",
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/facp-b4f11834-bd71-4134-8d67-cb9c6d11f4df.pdf",
+      "sourceSha256": "4c88121060f76b104f8850439c03aa87ad85faeb9bb734df04d6f3b4eec673b4",
+      "bytes": 5757325,
+      "catalogueHashMatch": true,
+      "pages": 68,
+      "status": "retrieved",
+      "edition": "997-433-000-5 Issue 5, May 2010",
+      "selectedPdfPages": [
+        48,
+        50
+      ],
+      "candidatePdfPagesInspected": [
+        48,
+        50
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "protec-dc6d79965adc",
+      "title": "6300 — Installation manual",
+      "sourceUrl": "https://www.acornfiresecurity.com/index.php?filename=Protec%2F6300+Installation.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+      "expectedSha256": "8fadf181bbcac585ddc4f7ac2e046edbed6553fac1be24637fc690196e58015b",
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/protec-dc6d79965adc.pdf",
+      "sourceSha256": "8fadf181bbcac585ddc4f7ac2e046edbed6553fac1be24637fc690196e58015b",
+      "bytes": 451230,
+      "catalogueHashMatch": true,
+      "pages": 20,
+      "status": "retrieved",
+      "edition": "93-509-09 Issue 2 Rev 2",
+      "selectedPdfPages": [],
+      "candidatePdfPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "result": "reviewed-no-selected-diagram",
+      "note": "Candidate page 17 provides connection instructions but no actual circuit picture. Not included; other Protec editions/drawings remain for future review. Final contact-sheet pass inspected every page of this source; no selected wiring image added."
+    },
+    {
+      "recordId": "protec-aee99ea8ed2b",
+      "title": "Algo-Tec 6500 / 6600 — Commissioning manual",
+      "sourceUrl": "https://www.acornfiresecurity.com/index.php?filename=6500-commissioning-manual.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+      "expectedSha256": null,
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/protec-aee99ea8ed2b.pdf",
+      "sourceSha256": "0e841fa49b0a24fac91d5c7cde6987e4b311974d0a96ee78643e0ca17a2bfeb0",
+      "bytes": 1725172,
+      "catalogueHashMatch": null,
+      "pages": 43,
+      "status": "retrieved",
+      "edition": "RDM0002/2_4; issue 2.4, 11 December 2017",
+      "selectedPdfPages": [],
+      "candidatePdfPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "result": "reviewed-no-selected-diagram",
+      "note": "Candidate page 33 is an I/O fault table, not a wiring diagram. Not included; this is not a claim that no wiring drawings exist elsewhere. Final contact-sheet pass inspected every page of this source; no selected wiring image added."
+    },
+    {
+      "recordId": "kentec-001fd3365756",
+      "title": "Sigma XT — Operation and maintenance manual",
+      "sourceUrl": "https://trinityfireandsecurity.com/wp-content/uploads/2025/09/Sigma-XT-Operating-and-Maintenance-Manual.pdf",
+      "expectedSha256": "390d7d21b9063d5c4da5b51e62f36fd338a6d84f4dcb9fed3c7c78e681b8534a",
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/kentec-001fd3365756.pdf",
+      "sourceSha256": "390d7d21b9063d5c4da5b51e62f36fd338a6d84f4dcb9fed3c7c78e681b8534a",
+      "bytes": 1091078,
+      "catalogueHashMatch": true,
+      "pages": 40,
+      "status": "retrieved",
+      "edition": "Man-1088 Issue 27",
+      "selectedPdfPages": [
+        13,
+        14,
+        15
+      ],
+      "candidatePdfPagesInspected": [
+        13,
+        14,
+        15
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "kentec-be1af1c20d35",
+      "title": "Solo Hochiki ESP — Panel installation, commissioning and operation",
+      "sourceUrl": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1054.pdf",
+      "expectedSha256": null,
+      "httpStatus": 200,
+      "retrieval": "existing catalogue URL",
+      "localPath": "/tmp/findr-wiring-panels/kentec-be1af1c20d35.pdf",
+      "sourceSha256": "93b29c2c581e24e55df01586efc498e303d4dd320d1798b78aa1ddfb54a27586",
+      "bytes": 362796,
+      "catalogueHashMatch": null,
+      "pages": 35,
+      "status": "retrieved",
+      "edition": "Issue 03, June 1999",
+      "selectedPdfPages": [
+        34,
+        35
+      ],
+      "candidatePdfPagesInspected": [
+        34,
+        35
+      ],
+      "result": "included",
+      "note": "Legacy June 1999 Hochiki ESP Solo diagrams preserve CHQ module suffixes; no modern CHQ variant compatibility inferred."
+    },
+    {
+      "recordId": "c-tec-4b1267f3fefc",
+      "title": "CFP 2,4,8 zone conventional fire panel manual",
+      "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CFP%202%2C4%2C8%20zone%20conventional%20fire%20panel%20manual.pdf",
+      "expectedSha256": "6e04b478f4fe32f3f33a0365e660a5629a6621882a6231b3f2d56985d6c1ace8",
+      "retrieval": "existing checked local PDF",
+      "localPath": "/tmp/findr-emulator-source-audit/ctec-cfp-install.pdf",
+      "sourceSha256": "6e04b478f4fe32f3f33a0365e660a5629a6621882a6231b3f2d56985d6c1ace8",
+      "bytes": 1033522,
+      "catalogueHashMatch": true,
+      "pages": 24,
+      "status": "retrieved",
+      "edition": "DFU7004010 Rev 1",
+      "selectedPdfPages": [
+        7,
+        8,
+        11,
+        13
+      ],
+      "candidatePdfPagesInspected": [
+        7,
+        8,
+        11,
+        13
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "kentec-0d82d93522c3",
+      "title": "Man-1078 Sigma CP (Main)",
+      "sourceUrl": "https://kentec.co.uk/wp-content/uploads/2018/08/Man-1078_SigmaCP_25.pdf",
+      "expectedSha256": null,
+      "retrieval": "existing checked local PDF",
+      "localPath": "/tmp/findr-emulator-source-audit/kentec-sigma-cp-main.pdf",
+      "sourceSha256": "ce2da02ef49b615e68ae7a1e69b9ffcc54efd8970bbacb9b1589f484d3e30dd6",
+      "bytes": 834385,
+      "catalogueHashMatch": null,
+      "pages": 24,
+      "status": "retrieved",
+      "edition": "Man-1078 Issue 25, April 2024",
+      "selectedPdfPages": [
+        10,
+        11,
+        12
+      ],
+      "candidatePdfPagesInspected": [
+        10,
+        11,
+        12
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "kentec-21f0fd797fe0",
+      "title": "Syncro — Product manual",
+      "sourceUrl": "https://trinityfireandsecurity.com/wp-content/uploads/2025/09/Syncro-Fire-Control-Panel-Product-Manual.pdf",
+      "expectedSha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd",
+      "retrieval": "existing checked local PDF",
+      "localPath": "/tmp/findr-kentec-syncro.pdf",
+      "sourceSha256": "46cefb817c0aa9e0f8b349c84bfe90ff3f2472067d79b7f7e216d7cdf43bbbfd",
+      "bytes": 884144,
+      "catalogueHashMatch": true,
+      "pages": 38,
+      "status": "retrieved",
+      "edition": "Man-1055 Issue 26, May 2016",
+      "selectedPdfPages": [
+        7,
+        16,
+        28
+      ],
+      "candidatePdfPagesInspected": [
+        7,
+        16,
+        28
+      ],
+      "result": "included",
+      "note": "Source is the actual Syncro Man-1055 manual. Existing panel row does not list this record; explicit source model establishes the link without changing the panel catalogue."
+    },
+    {
+      "recordId": "c-tec-ec140ad546f0",
+      "title": "CTEC XFP 32Z REPEATER MANUAL",
+      "sourceUrl": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CTEC%20XFP%2032Z%20REPEATER%20MANUAL.pdf",
+      "expectedSha256": "6c8f2ec56d9b5ad84e351a63ffd57d0d810a592064ab76feef23e19819aa5f10",
+      "retrieval": "existing checked local PDF",
+      "localPath": "/tmp/findr-panel019/c-tec-ec140ad546f0.pdf",
+      "sourceSha256": "6c8f2ec56d9b5ad84e351a63ffd57d0d810a592064ab76feef23e19819aa5f10",
+      "bytes": 302159,
+      "catalogueHashMatch": true,
+      "pages": 8,
+      "status": "retrieved",
+      "edition": "DFU2200502 Rev 1",
+      "selectedPdfPages": [
+        7
+      ],
+      "candidatePdfPagesInspected": [
+        7
+      ],
+      "result": "included",
+      "note": "This is the 32-zone repeater source. Existing panel picture catalogue has a 16-zone repeater, so panelIds is deliberately empty."
+    },
+    {
+      "recordId": "kentec-922756f21680",
+      "title": "Sigma CP-R — Repeater operation and maintenance manual",
+      "sourceUrl": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1093.pdf",
+      "expectedSha256": null,
+      "retrieval": "existing checked local PDF",
+      "localPath": "/tmp/findr-panel019/kentec-922756f21680.pdf",
+      "sourceSha256": "9afcecdc1d954f77440e5db52dfe830117abc8551bc6243314d90fbedffc622f",
+      "bytes": 296672,
+      "catalogueHashMatch": null,
+      "pages": 14,
+      "status": "retrieved",
+      "edition": "Man-1093 Issue 06, May 2016",
+      "selectedPdfPages": [
+        6,
+        7
+      ],
+      "candidatePdfPagesInspected": [
+        6,
+        7,
+        8
+      ],
+      "result": "included",
+      "note": "Page 8 withheld: paragraph says retain J2 at the last/only repeater, but its PCB figure says first/only. Page 9 repeats last. Do not endorse either contradictory instruction from that picture. Included clear terminal and supply/relay pages 6–7 instead."
+    },
+    {
+      "recordId": "kentec-07eb8f5458c5",
+      "title": "HydroSense CP-R — B3420 repeater operation and maintenance",
+      "sourceUrl": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1132.pdf",
+      "expectedSha256": null,
+      "retrieval": "existing checked local PDF",
+      "localPath": "/tmp/findr-panel019/kentec-07eb8f5458c5.pdf",
+      "sourceSha256": "68b57f09a1612749ba3677745b9e65f10e2f9a6f3ffa3d5da8d5223be689a97e",
+      "bytes": 247960,
+      "catalogueHashMatch": null,
+      "pages": 13,
+      "status": "retrieved",
+      "edition": "Man-1132 B3420 Issue 03, June 2013",
+      "selectedPdfPages": [
+        7
+      ],
+      "candidatePdfPagesInspected": [
+        7,
+        8
+      ],
+      "result": "included",
+      "note": "Page 8 withheld: paragraph says retain J2 at the last/only repeater, but its PCB figure says first/only. Included clear supply/relay page 7 instead. Manufacturer clarification is needed before curating the contradictory network figure."
+    },
+    {
+      "recordId": "kentec-579029878abe",
+      "title": "Solo Response — Repeater installation, commissioning and operation",
+      "sourceUrl": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1052.pdf",
+      "expectedSha256": null,
+      "retrieval": "existing checked local PDF",
+      "localPath": "/tmp/findr-panel019/kentec-579029878abe.pdf",
+      "sourceSha256": "2883d388d53540d5f9c0aeb635acbbb04467177a60d9919646740eb486cc3414",
+      "bytes": 178417,
+      "catalogueHashMatch": null,
+      "pages": 7,
+      "status": "retrieved",
+      "edition": "Issue 02, November 1998",
+      "selectedPdfPages": [
+        7
+      ],
+      "candidatePdfPagesInspected": [
+        7
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    },
+    {
+      "recordId": "kentec-e2d68c942c86",
+      "title": "Solo 2 Response — Repeater installation, commissioning and operation",
+      "sourceUrl": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1064.pdf",
+      "expectedSha256": null,
+      "retrieval": "existing checked local PDF",
+      "localPath": "/tmp/findr-panel019/kentec-e2d68c942c86.pdf",
+      "sourceSha256": "5296de49813d461628807ec7af8f85add240ff14a1ae2cab554e010c3f363e99",
+      "bytes": 237177,
+      "catalogueHashMatch": null,
+      "pages": 7,
+      "status": "retrieved",
+      "edition": "Issue 01, July 2002",
+      "selectedPdfPages": [
+        7
+      ],
+      "candidatePdfPagesInspected": [
+        7
+      ],
+      "result": "included",
+      "note": "Full-page source figures reviewed visually; original legends, neighbouring variants and conditions retained."
+    }
+  ]
+}

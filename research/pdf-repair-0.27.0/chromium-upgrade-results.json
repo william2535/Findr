@@ -1,0 +1,84 @@
+{
+  "browser": "chromium",
+  "oldManifest": {
+    "build": "480f4afaee4b",
+    "version": "0.26.0",
+    "assets": 1298
+  },
+  "newManifest": {
+    "build": "61a477861f3a",
+    "version": "0.27.0",
+    "assets": 1323
+  },
+  "checks": [
+    "Actual complete v0.26 offline shell installed and controlling the page",
+    "Previously cached v0.26 still opens offline",
+    "v0.27 activates only after its manifest is fully verified",
+    "Updated app and separate Quick Questions menu load offline",
+    "Manual bytes, job, transcript, history, pack usage and DBv1 survive the update",
+    "Manual saved before the update processes for the first time offline",
+    "PDF and OCR resources are verified ready in the updated shell"
+  ],
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  "before": {
+    "ready": true,
+    "build": "480f4afaee4b",
+    "version": "0.26.0",
+    "verification": "sha256-v1",
+    "controlled": true,
+    "workerState": "activated"
+  },
+  "seed": {
+    "bytes": 2252899,
+    "sha256": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e",
+    "jobId": "synthetic-pre-update-job",
+    "messageCount": 2
+  },
+  "reopenedForActivation": true,
+  "after": {
+    "ready": true,
+    "build": "61a477861f3a",
+    "version": "0.27.0",
+    "verification": "sha256-v1",
+    "controlled": true,
+    "workerState": "activated"
+  },
+  "retained": {
+    "packUsage": {
+      "synthetic-pack": {
+        "count": 2,
+        "lastUsed": 123456789
+      }
+    },
+    "sha256": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e",
+    "bytes": 2252899,
+    "dbVersion": 1,
+    "caches": [
+      "findr-shell-61a477861f3a",
+      "findr-language-model-v1"
+    ]
+  },
+  "blockedBackgroundRequests": [],
+  "offlineNetwork": {
+    "browserOffline": true,
+    "serverRefusesAllRequests": true
+  },
+  "processing": {
+    "usable": true,
+    "pageCount": 72,
+    "processorVersion": "2026-11-10.2",
+    "elapsedMs": 1360.5,
+    "readiness": {
+      "ready": true,
+      "offlineControlled": true,
+      "missing": []
+    }
+  },
+  "passed": true
+}

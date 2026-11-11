@@ -1,0 +1,44 @@
+{
+  "release": "0.14.1",
+  "checked_at": "2026-10-30T15:59:54.516565+00:00",
+  "project_id": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
+  "version_id": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_0bca0c247e0081918f36a662cf64d6c6",
+  "version_number": 28,
+  "deployed_source_commit": "3502de191d25ecd7a93e4b5e4a138743b838da6d",
+  "deployment_id": "appgdep_6ae4be3afc088191977b0a0251165292",
+  "deployment_status": "succeeded",
+  "published_at": "2026-10-30T15:57:17.304378+00:00",
+  "url": "https://findr-fault-finder.snowyskunk12.chatgpt.site/",
+  "android_download": "https://findr-fault-finder.snowyskunk12.chatgpt.site/releases/FINDR-0.14.1.apk",
+  "browser": {
+    "upgraded_from": "0.13.2 via0.14.0",
+    "final_version": "0.14.1",
+    "ready_offline": true,
+    "original_saved_pdfs_retained": 5,
+    "saved_pdfs_after_new_panel_manual_test": 6,
+    "old_CA414_PDF_opened": true,
+    "new_FireLite_MS2_PDF_downloaded_and_opened": true,
+    "panel_families": 611,
+    "panel_packs": 86,
+    "device_families": 146,
+    "device_packs": 16,
+    "FireLite_pack_families": 13,
+    "FireLite_pack_PDFs": 30,
+    "fire_exact_code_search": "CHQ-WS2 correctly returns Hochiki",
+    "intruder_exact_code_search": "DT-200 correctly returns Orisec",
+    "EMS": {
+      "device_families": 8,
+      "downloadable_PDF_records": 2,
+      "source_only_document_records": 6,
+      "distinct_online_reference_URLs_including_product_pages": 11,
+      "save_buttons": 2,
+      "source_links_in_document_list": 6
+    }
+  },
+  "screenshot": "findr-panel-packs-0141-1793375947540.jpg",
+  "limitations": [
+    "No physical Android or iPhone installation/upgrade test.",
+    "No physical-device airplane-mode test.",
+    "Six EMS publisher PDFs remain source-only; their verified identities and import matching are preserved."
+  ]
+}

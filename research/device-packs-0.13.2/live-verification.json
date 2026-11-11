@@ -1,0 +1,42 @@
+{
+  "release": "0.13.2",
+  "source_commit": "a1e020e2c513f104fc746be9b849b31401a64c91",
+  "site_version": 25,
+  "deployment": {
+    "id": "appgdep_6ae4ae1058688191972544679fed59d3",
+    "status": "succeeded",
+    "url": "https://findr-fault-finder.snowyskunk12.chatgpt.site",
+    "updated_at": "2026-10-30T14:48:17.005977+00:00"
+  },
+  "tested_existing_installation": true,
+  "previous_release": "0.13.1",
+  "version_shown": "0.13.2",
+  "offline_status": "App ready offline",
+  "saved_pdfs_before_update": 5,
+  "saved_pdfs_after_update": 5,
+  "corrected_ca414_note_visible": "DFU4140000 Rev 7, 05/08/21",
+  "corrected_ca414_document": "device-doc-c-tec-41e341b9c547",
+  "ca414_card_saved_count": "1 of 1",
+  "saved_ca414_pdf_opened": true,
+  "saved_pdf_page_count": 1,
+  "pack_counts": {
+    "Gent": {
+      "device_families": 5,
+      "documents": 3,
+      "saved": 0
+    },
+    "Apollo": {
+      "device_families": 12,
+      "documents": 12,
+      "saved": 1
+    },
+    "C-TEC": {
+      "device_families": 7,
+      "documents": 7,
+      "saved": 4
+    }
+  },
+  "screenshot": "device-packs-live.jpg",
+  "all_pack_pictures_visible": true,
+  "verification_scope": "Existing browser migration, correct device-document mapping, saved PDF reader, pack counts, and offline-ready status. Physical Android handset installation not tested."
+}

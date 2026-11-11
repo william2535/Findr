@@ -1,0 +1,148 @@
+{
+  "release": "0.23.0",
+  "reviewedOn": "2026-11-02",
+  "status": "passed-source-and-logic-review",
+  "baselineCommit": "e8691d604f07fc882a803892d4c6ca7f8722a869",
+  "method": "Independent review of the generated reference graph, original source records, preserved data, actual hint/menu route helpers and explicit wiring-family membership. Existing reviewed manual evidence is reused; no new full-manual or physical-panel verification is claimed.",
+  "coverage": {
+    "originalKeypadMaps": 9,
+    "originalKeypadEntries": 8979,
+    "addedFireMaps": 4,
+    "addedEntries": 846,
+    "totalFamilies": 13,
+    "totalEntries": 9825,
+    "brandPacks": 28,
+    "familyPacks": 79,
+    "wiringPictures": 177
+  },
+  "mapReview": [
+    {
+      "id": "gent-vigilon",
+      "entries": 456,
+      "statuses": {
+        "reference-only": 375,
+        "implemented": 44,
+        "conflict": 4,
+        "conditional": 33
+      },
+      "declaredHintLinks": 44,
+      "modelScope": [
+        "VIG1-24",
+        "VIG1-72"
+      ]
+    },
+    {
+      "id": "gent-nano",
+      "entries": 140,
+      "statuses": {
+        "reference-only": 85,
+        "implemented": 48,
+        "conditional": 7
+      },
+      "declaredHintLinks": 48,
+      "modelScope": [
+        "NANO-24"
+      ]
+    },
+    {
+      "id": "c-tec-cfp-standard",
+      "entries": 61,
+      "statuses": {
+        "reference-only": 6,
+        "implemented": 55
+      },
+      "declaredHintLinks": 15,
+      "modelScope": [
+        "Eight-zone CFP Standard front fascia and Main Control PCB \u2014 DFU7001020 Rev 2 / DFU7004010 Rev 1"
+      ]
+    },
+    {
+      "id": "kentec-sigma-cp",
+      "entries": 189,
+      "statuses": {
+        "reference-only": 79,
+        "implemented": 110
+      },
+      "declaredHintLinks": 18,
+      "modelScope": [
+        "K11080M2 eight-zone K-series; sigma_CP 214.hex or later warning scope \u2014 Man-1078 Issue 25"
+      ]
+    }
+  ],
+  "boundaries": {
+    "vigilonReferenceRuntimeNodes": 31,
+    "nanoReferenceRuntimeNodes": 17,
+    "sigmaConfigurationCodes": 103,
+    "sigmaConfigurationStatuses": {
+      "implemented": 48,
+      "reference-only": 55
+    },
+    "cfpSw8Functions": 9,
+    "conventionalMapType": "Physical controls and documented configuration functions; no invented LCD tree.",
+    "nanoOlderEngineering": "V2.xx commissioning references retain their source edition and do not gain V3.xx interactive routes solely from a shared label.",
+    "wiringMembership": "Every original page is included once in an explicit family collection. Family grouping is for browsing, not an electrical compatibility claim."
+  },
+  "findings": [
+    {
+      "id": "vigilon-reference-confidence",
+      "status": "resolved",
+      "finding": "The former onsite catalogue ignored confidence:reference for 31 Vigilon runtime nodes, so reference-only topics could receive a guided route.",
+      "resolution": "Onsite hints now consume the reviewed global map and shared route guard. Independent regressions reject every original reference runtime ID as an interactive route; the conflicting Repair and reference-only PIN topics remain discoverable without HINTS links."
+    },
+    {
+      "id": "broad-picture-family-scope",
+      "status": "resolved",
+      "finding": "The existing Orisec picture family includes CP-200 although the legacy trainer sources exclude it; several Premier Elite picture variants point to an Elite 48 fixture.",
+      "resolution": "Context help exposes the exact trainer edition/scope and explicit CP-200 exclusion / Elite 48 fixture notice, preserving the existing model data."
+    },
+    {
+      "id": "callout-route-kind",
+      "status": "resolved",
+      "finding": "The first projection attached task routes to kind:reference call-out rows, which the shared guard correctly rejected.",
+      "resolution": "Authored call-outs are classified as practice actions and remain explicitly distinct from manufacturer menu screens; declared and usable fire hint-route counts now agree."
+    },
+    {
+      "id": "fire-query-number-context",
+      "status": "resolved",
+      "finding": "The first shared search treated level3 as a bare numeric code query, yielding a three-minute delay instead of access-level references.",
+      "resolution": "Fire-specific access-level and alphanumeric control/code queries preserve context. Independent queries now find the relevant CFP/Sigma level 3 entries, SW8, Ad, d1 and exact 2A. Bare numeric lookup semantics remain covered by existing tests."
+    }
+  ],
+  "sourceSpotCheck": {
+    "sourceId": "gent-vigilon-4188-856-2015",
+    "sha256": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+    "pdfPages": [
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106
+    ],
+    "result": "All inspected text footers match printed pages98\u2013106 to their one-based PDF indices. Page 98 was also rendered and visually inspected. Its appendix names EN54 (V4) Vigilon MCC/MCB V4.53+ and retains model-dependent/option-dependent route conditions.",
+    "notClaimed": "No rereview of every cited source page in this release."
+  },
+  "preservation": {
+    "manifest": "baseline-preservation.json",
+    "byteProtectedFiles": 23,
+    "practiceRule": "Only generated top-level version may change; all remaining practice data has a canonical semantic hash."
+  },
+  "ownChecks": {
+    "tests": [
+      "tests/packs-hints-maps-preservation.test.mjs",
+      "tests/fire-map-hint-boundaries.test.mjs"
+    ],
+    "passed": 5,
+    "failed": 0,
+    "scope": "Independent focused tests. Root runs the full regression/build and QA performs browser/offline acceptance separately."
+  },
+  "limits": [
+    "Entry totals include editorial branch groupings, values, source references and authored practice tasks; they are not counts of hardware screens.",
+    "Original nine keypad maps and fire source data remain untouched; the new maps project already documented material.",
+    "Only an explicitly supported route receives interactive hints. An unsupported archive panel retains manual lookup rather than an invented engine.",
+    "This source/logic review does not certify field wiring, physical keypad operation, iPhone Safari or publication."
+  ]
+}

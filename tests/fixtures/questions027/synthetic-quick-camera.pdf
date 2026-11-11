@@ -1,0 +1,95 @@
+%PDF-1.3
+%“Œ‹ž ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/Contents 8 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 7 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+5 0 obj
+<<
+/PageMode /UseNone /Pages 7 0 R /Type /Catalog
+>>
+endobj
+6 0 obj
+<<
+/Author (FINDR synthetic QA fixture generator) /CreationDate (D:20000101000000+00'00') /Creator (anonymous) /Keywords () /ModDate (D:20000101000000+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (unspecified) /Title (SYNTHETIC QA-CAM-200 Datasheet QA-027) /Trapped /False
+>>
+endobj
+7 0 obj
+<<
+/Count 1 /Kids [ 4 0 R ] /Type /Pages
+>>
+endobj
+8 0 obj
+<<
+/Length 1503
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+BT /F2 13 Tf 15.6 TL ET
+BT 1 0 0 1 42 805 Tm (SYNTHETIC QA ONLY - NOT A REAL EQUIPMENT MANUAL) Tj T* ET
+BT /F1 11 Tf 13.2 TL ET
+BT 1 0 0 1 42 776 Tm (Manufacturer: Test Bench) Tj T* ET
+BT 1 0 0 1 42 759 Tm (Model: QA-CAM-200) Tj T* ET
+BT 1 0 0 1 42 742 Tm (Equipment: CCTV network camera) Tj T* ET
+BT 1 0 0 1 42 725 Tm (Document type: Datasheet) Tj T* ET
+BT 1 0 0 1 42 708 Tm (Revision: QA-027) Tj T* ET
+BT 1 0 0 1 42 679 Tm (Section 1 - Fictional video interface) Tj T* ET
+BT 1 0 0 1 42 662 Tm (This synthetic camera lists H.264 video and ONVIF Profile S. It does not claim that every) Tj T* ET
+BT 1 0 0 1 42 645 Tm (recorder implementing those labels will support every function. This document contains no) Tj T* ET
+BT 1 0 0 1 42 628 Tm (verified pairing with QA-NVR-300. Obtain the recorder manual, installed firmware and a) Tj T* ET
+BT 1 0 0 1 42 611 Tm (current interoperability statement before claiming a verified compatible pairing. Record) Tj T* ET
+BT 1 0 0 1 42 594 Tm (whether the proposed use requires live video, recording, audio, events, analytics or PTZ.) Tj T* ET
+BT 1 0 0 1 42 577 Tm (A common codec and protocol are supporting interface evidence only. This test fixture) Tj T* ET
+BT 1 0 0 1 42 560 Tm (does not describe a real camera or establish power, cabling, electrical safety or) Tj T* ET
+BT 1 0 0 1 42 543 Tm (environmental ratings.) Tj T* ET
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 42 30 Tm (Synthetic printed page Q-1 / PDF page 1) Tj T* ET
+ 
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000321 00000 n 
+0000000524 00000 n 
+0000000592 00000 n 
+0000000909 00000 n 
+0000000968 00000 n 
+trailer
+<<
+/ID 
+[<99d5edff5adbc6d6111c4d2d275e6bdc><99d5edff5adbc6d6111c4d2d275e6bdc>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 6 0 R
+/Root 5 0 R
+/Size 9
+>>
+startxref
+2522
+%%EOF

@@ -1,0 +1,122 @@
+{
+  "checked_at": "2026-10-30",
+  "verified_replacement_found": false,
+  "evidence": [
+    "No matching existing archive entries for these six EMS device/model references.",
+    "Both web search systems returned tool errors, so no additional independent source could be verified.",
+    "Recorded manufacturer PDF pack and public support page both returned HTTP503 maintenance HTML in single fresh requests.",
+    "HuVo was neither retried nor bypassed."
+  ],
+  "manufacturer_checks": "ems-alternate-checks/summary.json",
+  "recommendation": "Preserve six record IDs and verified hash/edition fields, set download URL null, keep original source, add source-only delivery note and import hint. All eight EMS pictures and families stay.",
+  "records": [
+    {
+      "id": "device-doc-ems-0df7986de600",
+      "device_ids": [
+        "ems-firecell-radio-hub-fcx-500-004"
+      ],
+      "title": "MK125 FireCell Radio Hub Product Datasheet",
+      "revision": "Issue 4, 02/10/2018",
+      "blocked_pdf_url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Radio-Hub.pdf",
+      "source": "https://huvo.co.uk/product/ems-firecell-radio-hub/",
+      "sha256": "0df7986de600c0cf4a177eecf00c10620bfae78c23aef61995f48c742fc2cc2c",
+      "bytes": 712181,
+      "pages": 1,
+      "local_verified_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/research/hub.pdf",
+      "recommended_url": null,
+      "preserve_record_identity": true,
+      "suggested_delivery_note": "The publisher currently blocks FINDR downloads. Open the source page, or import a PDF you already have. This reference keeps its verified edition details.",
+      "suggested_import_hint": "Use Import PDF to add your copy; check its printed document code and issue against this reference."
+    },
+    {
+      "id": "device-doc-ems-2f0d72961ef4",
+      "device_ids": [
+        "ems-firecell-dual-io-fc-610-001"
+      ],
+      "title": "MK129 FireCell Input / Output Unit Product Datasheet",
+      "revision": "Issue 5, 03/10/2018",
+      "blocked_pdf_url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Input-Output-Unit.pdf",
+      "source": "https://huvo.co.uk/product/ems-firecell-input-output-unit/",
+      "sha256": "2f0d72961ef41fc9854f5707d4f454689b1f559db94d0dbadd7a44d7aa7a9ee9",
+      "bytes": 255595,
+      "pages": 1,
+      "local_verified_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/research/io.pdf",
+      "recommended_url": null,
+      "preserve_record_identity": true,
+      "suggested_delivery_note": "The publisher currently blocks FINDR downloads. Open the source page, or import a PDF you already have. This reference keeps its verified edition details.",
+      "suggested_import_hint": "Use Import PDF to add your copy; check its printed document code and issue against this reference."
+    },
+    {
+      "id": "device-doc-ems-777d6bd3e405",
+      "device_ids": [
+        "ems-firecell-rcc-230v-fc-555-001"
+      ],
+      "title": "MK126 FireCell 230Vac Radio Cluster Communicator Product Datasheet",
+      "revision": "Issue 5, 03/10/2018",
+      "blocked_pdf_url": "https://huvo.co.uk/wp-content/uploads/2024/09/EMS-FireCell-230VAC-RCC.pdf",
+      "source": "https://huvo.co.uk/product/ems-firecell-radio-cluster-communicator/",
+      "sha256": "777d6bd3e40513cc306e394974cba19b70b995395a8f396040802844c82a9f86",
+      "bytes": 313929,
+      "pages": 1,
+      "local_verified_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/research/rcc.pdf",
+      "recommended_url": null,
+      "preserve_record_identity": true,
+      "suggested_delivery_note": "The publisher currently blocks FINDR downloads. Open the source page, or import a PDF you already have. This reference keeps its verified edition details.",
+      "suggested_import_hint": "Use Import PDF to add your copy; check its printed document code and issue against this reference."
+    },
+    {
+      "id": "device-doc-ems-c103ba80a56c",
+      "device_ids": [
+        "ems-firecell-sounder-detector-base-fcx-191-000"
+      ],
+      "title": "MK121 FireCell Wireless Combined Sounder Detector Product Datasheet",
+      "revision": "Issue 5, 17/06/2021",
+      "blocked_pdf_url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Wireless-Sounder-Detector-Base.pdf",
+      "source": "https://huvo.co.uk/product/ems-firecell-wireless-sounder-base-for-detectors/",
+      "sha256": "c103ba80a56cc6faa527b1155cba4a59edf8a7fbf34c1a0d6b3777fe9ecaa0d7",
+      "bytes": 164221,
+      "pages": 1,
+      "local_verified_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/research/combined.pdf",
+      "recommended_url": null,
+      "preserve_record_identity": true,
+      "suggested_delivery_note": "The publisher currently blocks FINDR downloads. Open the source page, or import a PDF you already have. This reference keeps its verified edition details.",
+      "suggested_import_hint": "Use Import PDF to add your copy; check its printed document code and issue against this reference."
+    },
+    {
+      "id": "device-doc-ems-c40857c87e50",
+      "device_ids": [
+        "ems-firecell-call-point-fc-200-002"
+      ],
+      "title": "MK128 FireCell Wireless Call Point Product Datasheet",
+      "revision": "Issue 4, 02/10/2018",
+      "blocked_pdf_url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Call-Point.pdf",
+      "source": "https://huvo.co.uk/product/ems-firecell-wireless-call-point/",
+      "sha256": "c40857c87e504849762f3c855546683f28a430cb96bd0346581fa3c6b236bdd5",
+      "bytes": 700922,
+      "pages": 1,
+      "local_verified_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/research/mcp.pdf",
+      "recommended_url": null,
+      "preserve_record_identity": true,
+      "suggested_delivery_note": "The publisher currently blocks FINDR downloads. Open the source page, or import a PDF you already have. This reference keeps its verified edition details.",
+      "suggested_import_hint": "Use Import PDF to add your copy; check its printed document code and issue against this reference."
+    },
+    {
+      "id": "device-doc-ems-de2c0fb8aa1f",
+      "device_ids": [
+        "ems-firecell-optical-fcx-177-001"
+      ],
+      "title": "MK119 FireCell Wireless Optical Smoke Detector Product Datasheet",
+      "revision": "Issue 7, 26/06/2025",
+      "blocked_pdf_url": "https://huvo.co.uk/wp-content/uploads/2025/12/FCX-177-001.pdf",
+      "source": "https://huvo.co.uk/wp-content/uploads/2025/12/FCX-177-001.pdf",
+      "sha256": "de2c0fb8aa1f80927bd4260932dbe586b420feec8261992273e064810b7bc334",
+      "bytes": 1069092,
+      "pages": 2,
+      "local_verified_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/research/optical.pdf",
+      "recommended_url": null,
+      "preserve_record_identity": true,
+      "suggested_delivery_note": "The publisher currently blocks FINDR downloads. Open the source page, or import a PDF you already have. This reference keeps its verified edition details.",
+      "suggested_import_hint": "Use Import PDF to add your copy; check its printed document code and issue against this reference."
+    }
+  ]
+}

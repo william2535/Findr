@@ -1,0 +1,124 @@
+{
+  "loadMs": 14137,
+  "generationMs": 35008,
+  "result": [
+    {
+      "generated_text": [
+        {
+          "role": "system",
+          "content": "You are FINDR, a concise engineering manual assistant. Use only the provided reference. Do not invent a procedure."
+        },
+        {
+          "role": "user",
+          "content": "REFERENCE (manual page 12): To view the event log, select View, then Log. Use the arrow keys to scroll through events. This menu does not change the configuration.\nQUESTION: how do i chek the evnt histry on this panel?"
+        },
+        {
+          "role": "assistant",
+          "content": "Reference: To view the event log, select View, then Log. Use the arrow keys to scroll through events. This menu does not change the configuration."
+        }
+      ]
+    }
+  ],
+  "updates": [
+    {
+      "t": "Reference: ",
+      "at": 24456
+    },
+    {
+      "t": "To ",
+      "at": 24799
+    },
+    {
+      "t": "view ",
+      "at": 25095
+    },
+    {
+      "t": "the ",
+      "at": 25401
+    },
+    {
+      "t": "event ",
+      "at": 25729
+    },
+    {
+      "t": "log, ",
+      "at": 26344
+    },
+    {
+      "t": "select ",
+      "at": 26687
+    },
+    {
+      "t": "View, ",
+      "at": 27321
+    },
+    {
+      "t": "then ",
+      "at": 27632
+    },
+    {
+      "t": "Log. ",
+      "at": 28298.000000000007
+    },
+    {
+      "t": "Use ",
+      "at": 28616
+    },
+    {
+      "t": "the ",
+      "at": 28932
+    },
+    {
+      "t": "arrow ",
+      "at": 29289.000000000007
+    },
+    {
+      "t": "keys ",
+      "at": 29637
+    },
+    {
+      "t": "to ",
+      "at": 29987.000000000007
+    },
+    {
+      "t": "scroll ",
+      "at": 30397
+    },
+    {
+      "t": "through ",
+      "at": 30778
+    },
+    {
+      "t": "events. ",
+      "at": 31696
+    },
+    {
+      "t": "This ",
+      "at": 32036.000000000007
+    },
+    {
+      "t": "menu ",
+      "at": 32393
+    },
+    {
+      "t": "does ",
+      "at": 32779
+    },
+    {
+      "t": "not ",
+      "at": 33193
+    },
+    {
+      "t": "change ",
+      "at": 33612.00000000001
+    },
+    {
+      "t": "the ",
+      "at": 34178
+    },
+    {
+      "t": "configuration.",
+      "at": 35006
+    }
+  ]
+}

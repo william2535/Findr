@@ -1,0 +1,193 @@
+{
+  "release": "0.8.0",
+  "date": "2026-10-29",
+  "androidVersionCode": 11,
+  "request": "Add Menvier and Pyronix with the same interactive depth, recognisable physical layout, guided tasks and SHOW HINTS experience as the existing FINDR families.",
+  "models": [
+    {
+      "id": "galaxy-dimension",
+      "title": "Galaxy Dimension",
+      "lessons": 7,
+      "total": 853,
+      "menus": 193,
+      "editable": 231,
+      "actions": 62,
+      "referenceOnly": 367,
+      "documentedEntries": 1365,
+      "sourceDocuments": 2,
+      "sourcePages": 354,
+      "citedPages": 166,
+      "gaps": 10
+    },
+    {
+      "id": "texecom-premier-elite",
+      "title": "Premier Elite 48",
+      "lessons": 7,
+      "total": 451,
+      "menus": 50,
+      "editable": 202,
+      "actions": 35,
+      "referenceOnly": 164,
+      "documentedEntries": 956,
+      "sourceDocuments": 3,
+      "sourcePages": 226,
+      "citedPages": 117,
+      "gaps": 9
+    },
+    {
+      "id": "scantronic-ion",
+      "title": "i-on40H+",
+      "lessons": 7,
+      "total": 810,
+      "menus": 178,
+      "editable": 287,
+      "actions": 25,
+      "referenceOnly": 320,
+      "documentedEntries": 1189,
+      "sourceDocuments": 3,
+      "sourcePages": 215,
+      "citedPages": 139,
+      "gaps": 8
+    },
+    {
+      "id": "orisec-cp",
+      "title": "Orisec CP",
+      "lessons": 6,
+      "total": 576,
+      "menus": 43,
+      "editable": 374,
+      "actions": 31,
+      "referenceOnly": 128,
+      "documentedEntries": 856,
+      "sourceDocuments": 2,
+      "sourcePages": 124,
+      "citedPages": 67,
+      "gaps": 9
+    },
+    {
+      "id": "menvier-mseries",
+      "title": "Menvier M750 / M800",
+      "lessons": 7,
+      "total": 353,
+      "menus": 62,
+      "editable": 232,
+      "actions": 44,
+      "referenceOnly": 15,
+      "documentedEntries": 1024,
+      "sourceDocuments": 3,
+      "sourcePages": 244,
+      "citedPages": 127,
+      "gaps": 8
+    },
+    {
+      "id": "pyronix-enforcer",
+      "title": "Enforcer V11",
+      "lessons": 7,
+      "total": 579,
+      "menus": 82,
+      "editable": 389,
+      "actions": 60,
+      "referenceOnly": 48,
+      "documentedEntries": 1317,
+      "sourceDocuments": 3,
+      "sourcePages": 128,
+      "citedPages": 71,
+      "gaps": 11
+    }
+  ],
+  "totals": {
+    "families": 6,
+    "guidedLessons": 41,
+    "indexedEntries": 6707,
+    "sourceDocuments": 16,
+    "sourcePages": 1291,
+    "distinctCitedSourcePages": 687,
+    "evidenceGaps": 55
+  },
+  "sourceScope": {
+    "menvier": "M750/M800 engineering 496966 Issue5 (2006); separate M800 Manager part11821957 (2010). Not a TS-series or modern Menvier30/40 emulation.",
+    "pyronix": "Enforcer V11 programming SAP102028847-02, communications102028846-01 and Extended User Guide Rev-02.",
+    "audits": [
+      "research/expansion/menvier-audit.json",
+      "research/expansion/pyronix-audit.json",
+      "research/expansion/keypad-faces-audit.json"
+    ]
+  },
+  "automated": {
+    "command": "node --test --test-isolation=none --test-reporter=spec tests/*.test.mjs",
+    "tests": 301,
+    "passed": 301,
+    "failed": 0,
+    "skipped": 0,
+    "log": "research/panel-audit/expansion-0.8.0-tests.txt",
+    "all41GuidedLessonsPass": true,
+    "originalFourPracticeProfilesSemanticallyUnchanged": true,
+    "newHintBlockersResolved": 19,
+    "hintRegression": "All three Pyronix siren routes stop at the test question with outputs OFF; guidance does not start outputs, start custom walk tests, save settings or omit zones."
+  },
+  "browser": {
+    "environment": "Managed local Chrome preview, desktop and two 320px iframe layouts",
+    "checked": [
+      "Six-family chooser and41-lesson count",
+      "Recognisable16-key Menvier and20-key Pyronix faces, including separate C/D and left/right arrow controls",
+      "Menvier2 ENT7 ENT3 ENT4 ENT resistance route",
+      "Menvier hint route after an intentional wrong numeric key, recovery and successful completion without saved settings",
+      "Pyronix NO NO YES04 YES input selection,08 YES saved type and immediate area editor",
+      "Pyronix area-assignment hints and highlighted physical keys",
+      "Phone-width physical keypad taps and hint steps for both new families",
+      "No horizontal overflow at320px; all physical key heights44px"
+    ],
+    "phoneMeasurements": [
+      {
+        "family": "menvier-mseries",
+        "iframeWidth": 320,
+        "layoutClientWidth": 305,
+        "layoutScrollWidth": 305,
+        "keyHeight": 44,
+        "minKeyWidth": 42
+      },
+      {
+        "family": "pyronix-enforcer",
+        "iframeWidth": 320,
+        "layoutClientWidth": 305,
+        "layoutScrollWidth": 305,
+        "keyHeight": 44,
+        "minKeyWidth": 38
+      }
+    ],
+    "proof": "research/panel-audit/expansion-0.8.0-preview.jpg",
+    "productionBrowserVerification": false,
+    "productionVerificationMethod": "Sites native terminal deployment status, recorded in the publication result"
+  },
+  "packaging": {
+    "webBuild": "passed",
+    "publicFilesByteIdenticalInDist": 672,
+    "qaFixtureExcluded": true,
+    "newRuntimeModulesAndMapsPrecached": true,
+    "android": {
+      "bytes": 20402657,
+      "sha256": "ad03a6c1cfefa0340c9183f11b5e8faaac2fcd8f9a555872cde7e9604647467d",
+      "bundledAppFiles": 649,
+      "allAppBytesIdentical": true,
+      "package": "com.findr.app",
+      "version": "0.8.0",
+      "versionCode": 11,
+      "minSdk": 26,
+      "targetSdk": 35,
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
+      "signatureV2Verified": true,
+      "signatureV3Verified": true,
+      "signingCertificateSha256": "6075a73725dac5a3cc1f7b6b32c5e1df907cd1ca4b5b611f4c1c1d2fd502fefd",
+      "samePreviewSignerAsPreviousRelease": true
+    }
+  },
+  "limits": [
+    "No physical panel or installed iPhone/Android device was tested.",
+    "Screen and atlas totals include clearly labelled reference-only behavior; atlas totals also include values.",
+    "Menus and rights follow the named manual editions and fictional fitted devices, not every firmware or installation.",
+    "Text-entry helpers, display timing, original panel sounds and hardware-dependent procedures retain explicit limits.",
+    "All panel state and output indicators are local fictional data; no panel transport or live signalling is included."
+  ]
+}

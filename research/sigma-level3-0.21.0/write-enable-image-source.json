@@ -1,0 +1,26 @@
+{
+  "asset": "public/app/trainer-assets/sigma-cp-write-enable.webp",
+  "description": "Original manufacturer Figure 8: location of the Sigma CP Write Enable switch behind the panel-plate aperture. Not a complete internal PCB or cabinet depiction.",
+  "sourceId": "sigma-main-25",
+  "recordId": "kentec-0d82d93522c3",
+  "sourceUrl": "https://kentec.co.uk/wp-content/uploads/2018/08/Man-1078_SigmaCP_25.pdf",
+  "sourceTitle": "Sigma CP (K and T Series) \u2014 Operation and Maintenance Manual",
+  "edition": "Issue 25, April 2024",
+  "sourceSha256": "ce2da02ef49b615e68ae7a1e69b9ffcc54efd8970bbacb9b1589f484d3e30dd6",
+  "pdfPage": 16,
+  "printedPage": "16",
+  "figure": "8",
+  "cropPoints": [
+    34,
+    479,
+    454,
+    628
+  ],
+  "renderScale": 3,
+  "width": 1260,
+  "height": 447,
+  "format": "lossless WebP",
+  "assetSha256": "594f0005c6f6a4f6e87d16780c79fe1bd7d488534b2b066eed0efd9c78db02fd",
+  "assetBytes": 15296,
+  "method": "Render original PDF crop with PyMuPDF, encode lossless WebP. No generated or invented components."
+}

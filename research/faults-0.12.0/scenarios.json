@@ -1,0 +1,466 @@
+[
+  {
+    "groupId": "fire_conventional_zone",
+    "answers": {
+      "cz_fault": "yes",
+      "cz_open": "unknown",
+      "cz_short": "no",
+      "cz_head_missing": "yes",
+      "cz_recent_work": "unknown",
+      "cz_disabled": "no",
+      "cz_test": "no"
+    },
+    "expectedCause": "cz_removed_detector"
+  },
+  {
+    "groupId": "fire_unwanted_alarm",
+    "answers": {
+      "ua_call_point": "no",
+      "ua_test": "no",
+      "ua_steam": "yes",
+      "ua_cooking": "no",
+      "ua_dust": "no",
+      "ua_contamination": "no",
+      "ua_repeat": "unknown"
+    },
+    "expectedCause": "ua_environment"
+  },
+  {
+    "groupId": "fire_disablement_test",
+    "answers": {
+      "dt_general": "no",
+      "dt_detection": "no",
+      "dt_output": "no",
+      "dt_test": "yes",
+      "dt_delays": "no"
+    },
+    "expectedCause": "dt_test_active"
+  },
+  {
+    "groupId": "fire_outputs_not_operating",
+    "answers": {
+      "on_disabled": "no",
+      "on_delay": "yes",
+      "on_silenced": "no",
+      "on_circuit_fault": "no",
+      "on_supply_fault": "no",
+      "on_test": "no",
+      "on_expected": "yes"
+    },
+    "expectedCause": "on_delayed"
+  },
+  {
+    "groupId": "fire_beam",
+    "answers": {
+      "beam_obstruction": "no",
+      "beam_obscuration": "no",
+      "beam_compensation": "no",
+      "beam_alignment": "no",
+      "beam_ambient_light": "yes",
+      "beam_communication": "no",
+      "beam_low_power": "no"
+    },
+    "expectedCause": "beam_light_interference"
+  },
+  {
+    "groupId": "fire_aspirating_airflow",
+    "answers": {
+      "asd_low": "no",
+      "asd_high": "yes",
+      "asd_pipe_damage": "yes",
+      "asd_hole_covered": "no",
+      "asd_ventilation_change": "no",
+      "asd_pipe_change": "unknown",
+      "asd_filter": "no"
+    },
+    "expectedCause": "asd_pipe_leak"
+  },
+  {
+    "groupId": "loop",
+    "answers": {
+      "loop_open": "yes",
+      "loop_short": "no",
+      "isolator": "no",
+      "integrity": "no",
+      "works": "unknown",
+      "loop_bad_data": "no",
+      "loop_all_devices_present": "yes"
+    },
+    "expectedCause": "loop_break"
+  },
+  {
+    "id": "security-alert-explicit-cie",
+    "groupId": "security-alert",
+    "answers": {
+      "security-alert_3": "yes",
+      "security-alert_0": "no",
+      "security-alert_1": "no",
+      "security-alert_2": "no",
+      "security-alert_4": "no",
+      "security-alert_5": "no"
+    },
+    "expectedCause": "security-alert_internal"
+  },
+  {
+    "id": "security-power-disconnected-standby",
+    "groupId": "security-power",
+    "answers": {
+      "security-power_battery": "yes",
+      "security-power_disconnect": "yes",
+      "security-power_mains": "no",
+      "security-power_outage": "no",
+      "security-power_charge": "no",
+      "security-power_load": "unknown",
+      "security-power_lowvolts": "unknown"
+    },
+    "expectedCause": "security-power_connection"
+  },
+  {
+    "id": "security-zone-closed-opening-still-active",
+    "groupId": "security-zone",
+    "answers": {
+      "security-zone_active": "yes",
+      "security-zone_closed_active": "yes",
+      "security-zone_opening": "no",
+      "security-zone_tamper": "no",
+      "security-zone_supervision": "no",
+      "security-zone_battery": "no",
+      "security-zone_movement": "unknown"
+    },
+    "expectedCause": "security-zone_contact"
+  },
+  {
+    "id": "security-setting-restricted-user-record",
+    "groupId": "security-setting",
+    "answers": {
+      "security-setting_locked": "yes",
+      "security-setting_rights": "yes",
+      "security-setting_zone": "no",
+      "security-setting_fault": "no",
+      "security-setting_reset": "no",
+      "security-setting_exit": "no",
+      "security-setting_fail": "no"
+    },
+    "expectedCause": "security-setting_authority"
+  },
+  {
+    "id": "security-signalling-arc-received-app-offline",
+    "groupId": "security-signalling",
+    "answers": {
+      "security-signalling_cloud": "yes",
+      "security-signalling_arc_received": "yes",
+      "security-signalling_path": "no",
+      "security-signalling_network": "no",
+      "security-signalling_cellular": "no",
+      "security-signalling_modem": "no",
+      "security-signalling_arc_fail": "no",
+      "security-signalling_arc_details": "no"
+    },
+    "expectedCause": "security-signalling_app"
+  },
+  {
+    "id": "security-repeat-alarm-documented-entry-expiry",
+    "groupId": "security-repeat-alarm",
+    "answers": {
+      "security-repeat-alarm_person": "yes",
+      "security-repeat-alarm_entry": "yes",
+      "security-repeat-alarm_pet": "no",
+      "security-repeat-alarm_sun": "no",
+      "security-repeat-alarm_heat": "no",
+      "security-repeat-alarm_opening": "no",
+      "security-repeat-alarm_tamper": "no",
+      "security-repeat-alarm_supervision": "no"
+    },
+    "expectedCause": "security-repeat-alarm_entry"
+  },
+  {
+    "id": "security-wireless-explicit-jamming",
+    "groupId": "security-wireless",
+    "answers": {
+      "security-wireless_supervision": "yes",
+      "security-wireless_jamming": "yes",
+      "security-wireless_signal": "yes",
+      "security-wireless_multiple": "yes",
+      "security-wireless_battery": "no",
+      "security-wireless_mismatch": "no",
+      "security-wireless_tamper": "no"
+    },
+    "expectedCause": "security-wireless_interference"
+  },
+  {
+    "id": "warden-report-explicit-24v-fuse",
+    "groupId": "warden-report",
+    "answers": {
+      "warden-report_3": "yes",
+      "warden-report_4": "yes",
+      "warden-report_0": "no",
+      "warden-report_1": "no",
+      "warden-report_2": "no",
+      "warden-report_5": "no",
+      "warden-report_6": "no"
+    },
+    "expectedCause": "warden-report_fuse"
+  },
+  {
+    "id": "warden-call-not-received-call-visible-silent-handset",
+    "groupId": "warden-call-not-received",
+    "answers": {
+      "warden-call-not-received_logged": "yes",
+      "warden-call-not-received_silent": "yes",
+      "warden-call-not-received_offsite": "no",
+      "warden-call-not-received_range": "no",
+      "warden-call-not-received_test": "no",
+      "warden-call-not-received_parked": "no",
+      "warden-call-not-received_line": "no",
+      "warden-call-not-received_unit": "no"
+    },
+    "expectedCause": "warden-call-not-received_handset"
+  },
+  {
+    "id": "warden-speech-routine-call-privacy",
+    "groupId": "warden-speech",
+    "answers": {
+      "warden-speech_routine": "yes",
+      "warden-speech_privacy": "yes",
+      "warden-speech_resident_hears": "yes",
+      "warden-speech_muted": "no",
+      "warden-speech_staff_hears": "no",
+      "warden-speech_volume": "no",
+      "warden-speech_announcement": "no",
+      "warden-speech_unit_fault": "no"
+    },
+    "expectedCause": "warden-speech_privacy"
+  },
+  {
+    "id": "warden-speech-emergency-local-fault",
+    "groupId": "warden-speech",
+    "answers": {
+      "warden-speech_unit_fault": "yes",
+      "warden-speech_routine": "no",
+      "warden-speech_muted": "no",
+      "warden-speech_staff_hears": "no",
+      "warden-speech_resident_hears": "no",
+      "warden-speech_volume": "no",
+      "warden-speech_announcement": "no",
+      "warden-speech_privacy": "unknown"
+    },
+    "expectedCause": "warden-speech_endpoint"
+  },
+  {
+    "groupId": "access-offline",
+    "answers": {
+      "access-offline_0": "yes",
+      "access-offline_2": "no",
+      "access-offline_server": "yes",
+      "access-offline_address": "no",
+      "access-offline_segment": "no"
+    },
+    "expectedCause": "access-offline_common"
+  },
+  {
+    "groupId": "access-offline",
+    "answers": {
+      "access-offline_2": "no",
+      "access-offline_3": "yes",
+      "access-offline_address": "yes",
+      "access-offline_server": "no"
+    },
+    "expectedCause": "access-offline_address"
+  },
+  {
+    "groupId": "access-denied",
+    "answers": {
+      "access-denied_0": "yes",
+      "access-denied_1": "yes",
+      "access-denied_expired": "yes",
+      "access-denied_update": "no",
+      "access-denied_token": "no"
+    },
+    "expectedCause": "access-denied_credential"
+  },
+  {
+    "groupId": "access-denied",
+    "answers": {
+      "access-denied_0": "yes",
+      "access-denied_expired": "no",
+      "access-denied_update": "yes",
+      "access-denied_token": "no"
+    },
+    "expectedCause": "access-denied_update"
+  },
+  {
+    "groupId": "access-unlocked",
+    "answers": {
+      "access-unlocked_schedule": "yes",
+      "access-unlocked_fire": "no",
+      "access-unlocked_exit": "no",
+      "access-unlocked_power": "no",
+      "access-unlocked_closing": "no"
+    },
+    "expectedCause": "access-unlocked_schedule"
+  },
+  {
+    "groupId": "access-unlocked",
+    "answers": {
+      "access-unlocked_schedule": "no",
+      "access-unlocked_fire": "yes",
+      "access-unlocked_exit": "no",
+      "access-unlocked_closing": "no"
+    },
+    "expectedCause": "access-unlocked_fire"
+  },
+  {
+    "groupId": "access-unlocked",
+    "answers": {
+      "access-unlocked_schedule": "no",
+      "access-unlocked_fire": "no",
+      "access-unlocked_failopen": "yes",
+      "access-unlocked_power": "yes",
+      "access-unlocked_closing": "no"
+    },
+    "expectedCause": "access-unlocked_supply"
+  },
+  {
+    "groupId": "access-door-alarm",
+    "answers": {
+      "access-door-alarm_held": "no",
+      "access-door-alarm_forced": "yes",
+      "access-door-alarm_contact": "no",
+      "access-door-alarm_exit": "yes",
+      "access-door-alarm_missing": "yes",
+      "access-door-alarm_grant": "no"
+    },
+    "expectedCause": "access-door-alarm_exit"
+  },
+  {
+    "groupId": "access-door-alarm",
+    "answers": {
+      "access-door-alarm_held": "yes",
+      "access-door-alarm_forced": "no",
+      "access-door-alarm_open": "yes",
+      "access-door-alarm_contact": "no",
+      "access-door-alarm_grant": "yes"
+    },
+    "expectedCause": "access-door-alarm_held"
+  },
+  {
+    "groupId": "cctv-link",
+    "answers": {
+      "cctv-link_0": "no",
+      "cctv-link_1": "yes",
+      "cctv-link_missing": "no",
+      "cctv-link_poe": "no",
+      "cctv-link_destination": "no"
+    },
+    "expectedCause": "cctv-link_auth"
+  },
+  {
+    "groupId": "cctv-link",
+    "answers": {
+      "cctv-link_1": "no",
+      "cctv-link_missing": "yes",
+      "cctv-link_poe": "yes",
+      "cctv-link_destination": "no"
+    },
+    "expectedCause": "cctv-link_power"
+  },
+  {
+    "groupId": "cctv-record",
+    "answers": {
+      "cctv-record_0": "no",
+      "cctv-record_1": "yes",
+      "cctv-record_2": "no",
+      "cctv-record_3": "no",
+      "cctv-record_time": "no",
+      "cctv-record_retention": "yes",
+      "cctv-record_oldest": "yes"
+    },
+    "expectedCause": "cctv-record_retention"
+  },
+  {
+    "groupId": "cctv-record",
+    "answers": {
+      "cctv-record_0": "no",
+      "cctv-record_1": "yes",
+      "cctv-record_2": "no",
+      "cctv-record_3": "no",
+      "cctv-record_time": "yes",
+      "cctv-record_retention": "no",
+      "cctv-record_oldest": "no"
+    },
+    "expectedCause": "cctv-record_time"
+  },
+  {
+    "groupId": "cctv-image",
+    "answers": {
+      "cctv-image_ir": "yes",
+      "cctv-image_motion": "no",
+      "cctv-image_static": "no",
+      "cctv-image_cover": "no",
+      "cctv-image_reflector": "yes",
+      "cctv-image_noise": "no",
+      "cctv-image_near": "no"
+    },
+    "expectedCause": "cctv-image_ir"
+  },
+  {
+    "groupId": "cctv-image",
+    "answers": {
+      "cctv-image_ir": "no",
+      "cctv-image_motion": "yes",
+      "cctv-image_static": "no",
+      "cctv-image_cover": "no",
+      "cctv-image_noise": "unknown",
+      "cctv-image_near": "no"
+    },
+    "expectedCause": "cctv-image_exposure"
+  },
+  {
+    "groupId": "cctv-stream",
+    "answers": {
+      "cctv-stream_viewers": "no",
+      "cctv-stream_shared": "yes",
+      "cctv-stream_congestion": "yes",
+      "cctv-stream_client": "no",
+      "cctv-stream_format": "no"
+    },
+    "expectedCause": "cctv-stream_network"
+  },
+  {
+    "groupId": "cctv-stream",
+    "answers": {
+      "cctv-stream_viewers": "no",
+      "cctv-stream_shared": "no",
+      "cctv-stream_local": "yes",
+      "cctv-stream_congestion": "no",
+      "cctv-stream_client": "yes",
+      "cctv-stream_format": "no"
+    },
+    "expectedCause": "cctv-stream_client"
+  },
+  {
+    "groupId": "cctv-remote",
+    "answers": {
+      "cctv-remote_local": "yes",
+      "cctv-remote_login": "no",
+      "cctv-remote_service": "yes",
+      "cctv-remote_internet": "no",
+      "cctv-remote_membership": "no",
+      "cctv-remote_codec": "no"
+    },
+    "expectedCause": "cctv-remote_service"
+  },
+  {
+    "groupId": "cctv-remote",
+    "answers": {
+      "cctv-remote_local": "yes",
+      "cctv-remote_login": "no",
+      "cctv-remote_service": "no",
+      "cctv-remote_internet": "no",
+      "cctv-remote_membership": "no",
+      "cctv-remote_codec": "yes",
+      "cctv-remote_playlocal": "yes"
+    },
+    "expectedCause": "cctv-remote_codec"
+  }
+]

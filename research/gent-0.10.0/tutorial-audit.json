@@ -1,0 +1,830 @@
+{
+  "version": "0.10.0",
+  "feature": "GENT Vigilon operator tutorials",
+  "panelId": "gent-vigilon",
+  "baseline": "Full-size EN Vigilon 4/6-loop 2 km-loop family; original Gent operator 4188-1025 July 2015, with edition-marking conflict retained.",
+  "sourceMethod": "Read the original manufacturer PDFs and their operator diagrams; do not merge the 1999 operating manual, Compact variants or unverified secondary summaries into the selected baseline.",
+  "sources": [
+    {
+      "id": "gent-vigilon-4188-1025-2015",
+      "title": "Vigilon panel and Network node — Operating instructions",
+      "documentNumber": "4188-1025",
+      "editionLabel": "July 2015; conflicting issue markings recorded in the audit",
+      "url": "https://www.midlandfiresecurity.co.uk/wp-content/uploads/2019/05/gent-honeywell-vigilon-Vig-4-6-loops-Oper_2km-4188-1025.pdf",
+      "publisher": "Gent by Honeywell",
+      "host": "Midland Fire Security mirror of the original manufacturer manual",
+      "pageCount": 40
+    },
+    {
+      "id": "gent-vigilon-4188-856-2015",
+      "title": "Vigilon 4/6 loops & Compact (VA) panels & network nodes — Commissioning instructions",
+      "documentNumber": "4188-856",
+      "editionLabel": "Issue 7, July 2015",
+      "url": "https://docs.facpmanuals.com/manuals/Honeywell_Gent/vigilon_and_vigilon_compact-installation-2015.pdf",
+      "host": "Archive mirror of the original manufacturer commissioning manual",
+      "publisher": "Gent by Honeywell",
+      "pageCount": 162,
+      "use": "Menu cross-checks and zone-test behaviour; disputed engineering order is held as reference."
+    }
+  ],
+  "counts": {
+    "tracks": 4,
+    "lessons": 18,
+    "steps": 183,
+    "helpArticles": 28,
+    "glossaryTerms": 16
+  },
+  "scopeDecisions": [
+    {
+      "decision": "18 operator-key lessons with state assertions",
+      "reason": "Teach verified physical routes and observable outcomes instead of merely advancing a scripted key counter."
+    },
+    {
+      "decision": "Separate detector input, latched fire, buzzer, sounders, faults and disablements",
+      "reason": "Cancel Buzzer, Silence Alarms, Reset and Enable perform different jobs in the operator procedures."
+    },
+    {
+      "decision": "Use zone Z2 without an MCP",
+      "reason": "Avoid teaching an unresolved zone/MCP interaction as universal behaviour."
+    },
+    {
+      "decision": "Keep zone-test engineering keys outside guided drills",
+      "reason": "The commissioning prose and diagram disagree on order; behaviour and exit requirements are still documented in help."
+    },
+    {
+      "decision": "No generic fault-repair key",
+      "reason": "The manual assigns actual fault rectification to the responsible engineer; scenario clearance is explicitly a trainer action."
+    },
+    {
+      "decision": "Do not pretend the training PIN or user buttons are site defaults",
+      "reason": "Access codes and U-button tasks are set during commissioning."
+    },
+    {
+      "decision": "Include clock and NVM save",
+      "reason": "The source distinguishes applied changes from saved changes and restricts Save when disablements exist."
+    }
+  ],
+  "sourceGaps": [
+    {
+      "id": "operator-edition-markings",
+      "title": "Conflicting edition markings in the operator PDF",
+      "detail": "The preface calls this the second issue, while the final-page footer identifies issue 4 with a July 2015 date. The release identifies the document number and date rather than silently choosing one issue.",
+      "impact": "Citations use 4188-1025, July 2015 and printed page numbers.",
+      "status": "documented",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            3,
+            40
+          ]
+        }
+      ],
+      "neededEvidence": "An unambiguous manufacturer-controlled revision record for this PDF."
+    },
+    {
+      "id": "loop-bound-copy-conflict",
+      "title": "Two-loop entries in a four/six-loop operator document",
+      "detail": "Several worked operator procedures print loop 1–2 while the document also identifies four-loop and six-loop hardware. This is not used to redefine the product capacity.",
+      "impact": "All interactive lessons use existing fictional points on loops 1 and 2; broad loop-range claims are withheld.",
+      "status": "bounded-by-fixture",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            22,
+            25,
+            28,
+            29,
+            32
+          ]
+        }
+      ],
+      "neededEvidence": "Verified operator-screen capture for the target firmware on loops 3–6."
+    },
+    {
+      "id": "zone-test-key-order",
+      "title": "Zone-test route order is inconsistent",
+      "detail": "Commissioning page 81 describes Test then Zone then On/Off. The page 105 engineering-menu diagram presents Test then Off/On then Zone. The exact physical-key route is not established by those conflicting descriptions.",
+      "impact": "Zone-test timing and restoration are taught in help and trainer demonstrations; no source-verified key drill is claimed.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-856-2015",
+          "pages": [
+            81,
+            105
+          ]
+        }
+      ],
+      "neededEvidence": "A target-firmware recording of the actual engineering menu, including each F-key assignment and entry/exit confirmation."
+    },
+    {
+      "id": "zone-mcp-interaction",
+      "title": "The selected edition does not resolve every zone/MCP interaction",
+      "detail": "The 2015 Sensing procedure limits MCP disablement to an individual point and discourages it. Its zone procedure does not explicitly state the response of every MCP when the containing zone is disabled. Older-edition wording is not merged into this baseline.",
+      "impact": "Z2, the zone used in disable/enable lessons, contains no MCP. Lessons use an optical sensor for individual disablement.",
+      "status": "bounded-by-fixture",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            25,
+            26
+          ]
+        }
+      ],
+      "neededEvidence": "Manufacturer clarification or a verified target-firmware test of MCP response under zone disablement."
+    },
+    {
+      "id": "source-dependent-user-functions",
+      "title": "Verify, U buttons and external output relationships are commissioned",
+      "detail": "The operator guide describes configuration-dependent Verify and U-button functions; interface outputs can belong to sectors. The training fixture cannot infer a real site cause-and-effect matrix.",
+      "impact": "Help explains these functions, but the generic operator lessons do not assign universal U-button tasks or an invented verification period.",
+      "status": "configuration-dependent",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            10,
+            11,
+            15,
+            28,
+            29
+          ]
+        }
+      ],
+      "neededEvidence": "Site configuration, labelled U-button functions and target firmware details."
+    },
+    {
+      "id": "fare-slot-conflict",
+      "title": "FARE key positions need additional confirmation",
+      "detail": "The operator FARE on/off description and the commissioning menu diagram do not provide one unambiguous shared physical-key sequence for all target variants.",
+      "impact": "FARE/FPE purpose is explained with source pages; no guessed action route is included in the 18 guided lessons.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            26,
+            27
+          ]
+        },
+        {
+          "sourceId": "gent-vigilon-4188-856-2015",
+          "pages": [
+            98
+          ]
+        }
+      ],
+      "neededEvidence": "A verified full-size EN panel menu recording and firmware identifier."
+    },
+    {
+      "id": "indicator-table-label",
+      "title": "A delay-description row is labelled Sounder in the operator table",
+      "detail": "The panel drawing identifies a Delay lamp, while page 9 repeats Sounder against the delay-block description. The source inconsistency is retained in the audit.",
+      "impact": "Help uses the physical panel layout and does not teach the duplicated table label as a separate second Sounder indicator.",
+      "status": "documented",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "neededEvidence": "Manufacturer erratum or a confirmed panel photograph."
+    },
+    {
+      "id": "repair-menu-conflict",
+      "title": "Repair instructions conflict with other verified menu positions",
+      "detail": "The operator repair section assigns Test/Eng to F1 although the main-menu drawing and display-test procedure use F4. Other post-authentication positions also differ.",
+      "impact": "The operator lessons do not turn Repair into a clear-fault shortcut or simulate that unresolved engineering route.",
+      "status": "reference-only",
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            20,
+            21,
+            38
+          ]
+        }
+      ],
+      "neededEvidence": "The target firmware engineering menu and the applicable manufacturer correction."
+    }
+  ],
+  "lessonCoverage": [
+    {
+      "id": "gent-menu-basics",
+      "title": "Read the panel and follow the soft keys",
+      "scenario": "normal",
+      "stepCount": 5,
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            8,
+            11,
+            20,
+            29
+          ]
+        }
+      ],
+      "completionConditions": [
+        {
+          "type": "normal",
+          "value": true
+        },
+        {
+          "type": "menuOpen",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "gent-display-test",
+      "title": "Run the display and indicator test",
+      "scenario": "normal",
+      "stepCount": 4,
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            21
+          ]
+        }
+      ],
+      "completionConditions": [
+        {
+          "type": "normal",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gent-read-device",
+      "title": "Find a device by its loop address",
+      "scenario": "normal",
+      "stepCount": 10,
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            22,
+            29
+          ]
+        }
+      ],
+      "completionConditions": [
+        {
+          "type": "normal",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gent-read-zone",
+      "title": "Identify the detection zone",
+      "scenario": "normal",
+      "stepCount": 9,
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            26,
+            30
+          ]
+        }
+      ],
+      "completionConditions": [
+        {
+          "type": "normal",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gent-acknowledge-fire",
+      "title": "Read a fire and acknowledge the buzzer",
+      "scenario": "fire",
+      "stepCount": 3,
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            8,
+            9,
+            14
+          ]
+        }
+      ],
+      "completionConditions": [
+        {
+          "type": "fire",
+          "value": true
+        },
+        {
+          "type": "buzzer",
+          "value": false
+        },
+        {
+          "type": "sounders",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gent-multiple-fires",
+      "title": "Read the first and later fires",
+      "scenario": "multiple-fires",
+      "stepCount": 4,
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            15
+          ]
+        }
+      ],
+      "completionConditions": [
+        {
+          "type": "fire",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gent-silence-resound",
+      "title": "Silence and sound the system alarms",
+      "scenario": "fire",
+      "stepCount": 4,
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            9,
+            12,
+            14
+          ]
+        }
+      ],
+      "completionConditions": [
+        {
+          "type": "sounders",
+          "value": true
+        },
+        {
+          "type": "fire",
+          "value": true
+        },
+        {
+          "type": "buzzer",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "gent-reset-fire",
+      "title": "Restore the input, then reset the fire",
+      "scenario": "fire",
+      "stepCount": 5,
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            9,
+            11,
+            14
+          ]
+        }
+      ],
+      "completionConditions": [
+        {
+          "type": "normal",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gent-fault-triage",
+      "title": "Acknowledge and investigate a fault",
+      "scenario": "fault",
+      "stepCount": 8,
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            16,
+            17,
+            23
+          ]
+        }
+      ],
+      "completionConditions": [
+        {
+          "type": "normal",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gent-disable-device",
+      "title": "Disable one sensing device",
+      "scenario": "normal",
+      "stepCount": 16,
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            18,
+            20,
+            21,
+            25
+          ]
+        }
+      ],
+      "completionConditions": [
+        {
+          "type": "deviceDisabled",
+          "device": "L1D1",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gent-enable-device",
+      "title": "Re-enable one sensing device",
+      "scenario": "disabled-device",
+      "stepCount": 16,
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            11,
+            18,
+            20,
+            21,
+            25
+          ]
+        }
+      ],
+      "completionConditions": [
+        {
+          "type": "deviceDisabled",
+          "device": "L1D1",
+          "value": false
+        },
+        {
+          "type": "normal",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gent-disable-zone",
+      "title": "Disable the correct detection zone",
+      "scenario": "normal",
+      "stepCount": 15,
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            18,
+            20,
+            21,
+            25,
+            26
+          ]
+        }
+      ],
+      "completionConditions": [
+        {
+          "type": "zoneDisabled",
+          "zone": "Z2",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gent-enable-zone",
+      "title": "Re-enable the detection zone",
+      "scenario": "disabled-zone",
+      "stepCount": 15,
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            11,
+            18,
+            20,
+            21,
+            26
+          ]
+        }
+      ],
+      "completionConditions": [
+        {
+          "type": "zoneDisabled",
+          "zone": "Z2",
+          "value": false
+        },
+        {
+          "type": "normal",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gent-active-events",
+      "title": "Audit current fire, fault and disablement events",
+      "scenario": "mixed-conditions",
+      "stepCount": 10,
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            14,
+            16,
+            18,
+            23,
+            26
+          ]
+        }
+      ],
+      "completionConditions": [
+        {
+          "type": "fire",
+          "value": true
+        },
+        {
+          "type": "fault",
+          "value": true
+        },
+        {
+          "type": "zoneDisabled",
+          "zone": "Z2",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gent-history",
+      "title": "Find the newest historic event",
+      "scenario": "mixed-conditions",
+      "stepCount": 6,
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            22,
+            23
+          ]
+        }
+      ],
+      "completionConditions": [
+        {
+          "type": "fire",
+          "value": true
+        },
+        {
+          "type": "fault",
+          "value": true
+        },
+        {
+          "type": "zoneDisabled",
+          "zone": "Z2",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gent-local-label",
+      "title": "Read the local panel identity",
+      "scenario": "normal",
+      "stepCount": 8,
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            6,
+            22,
+            31
+          ]
+        }
+      ],
+      "completionConditions": [
+        {
+          "type": "normal",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gent-clock-save",
+      "title": "Change the practice clock and save",
+      "scenario": "normal",
+      "stepCount": 25,
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            20,
+            21,
+            23,
+            24
+          ]
+        }
+      ],
+      "completionConditions": [
+        {
+          "type": "normal",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gent-return-normal",
+      "title": "Return a mixed scenario to normal",
+      "scenario": "mixed-conditions",
+      "stepCount": 20,
+      "sourceRefs": [
+        {
+          "sourceId": "gent-vigilon-4188-1025-2015",
+          "pages": [
+            9,
+            11,
+            14,
+            16,
+            18,
+            20,
+            21,
+            26
+          ]
+        }
+      ],
+      "completionConditions": [
+        {
+          "type": "normal",
+          "value": true
+        },
+        {
+          "type": "input",
+          "device": "L1D1",
+          "value": "normal"
+        },
+        {
+          "type": "zoneDisabled",
+          "zone": "Z2",
+          "value": false
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "status": "passed",
+    "sourceChecks": "Every lesson and step includes a manufacturer document reference and printed page number.",
+    "requiredRuntimeChecks": [
+      "Every declared goal node exists.",
+      "Each taught key produces its expected page, field or semantic event.",
+      "Every final state condition is reached.",
+      "Scenario actions are explicitly trainer-only.",
+      "Hint route computation does not change fire inputs, disabled targets, output state or access state."
+    ],
+    "method": "Replayed all taught physical keys and explicitly labelled trainer actions through the current pure GENT engine; checked every step condition, final condition and fresh semantic event. Shortest-route advice was checked for state immutability.",
+    "runtimeChecks": 321,
+    "results": [
+      {
+        "id": "gent-menu-basics",
+        "passedSteps": 5,
+        "totalSteps": 5,
+        "passed": true
+      },
+      {
+        "id": "gent-display-test",
+        "passedSteps": 4,
+        "totalSteps": 4,
+        "passed": true
+      },
+      {
+        "id": "gent-read-device",
+        "passedSteps": 10,
+        "totalSteps": 10,
+        "passed": true
+      },
+      {
+        "id": "gent-read-zone",
+        "passedSteps": 9,
+        "totalSteps": 9,
+        "passed": true
+      },
+      {
+        "id": "gent-acknowledge-fire",
+        "passedSteps": 3,
+        "totalSteps": 3,
+        "passed": true
+      },
+      {
+        "id": "gent-multiple-fires",
+        "passedSteps": 4,
+        "totalSteps": 4,
+        "passed": true
+      },
+      {
+        "id": "gent-silence-resound",
+        "passedSteps": 4,
+        "totalSteps": 4,
+        "passed": true
+      },
+      {
+        "id": "gent-reset-fire",
+        "passedSteps": 5,
+        "totalSteps": 5,
+        "passed": true
+      },
+      {
+        "id": "gent-fault-triage",
+        "passedSteps": 8,
+        "totalSteps": 8,
+        "passed": true
+      },
+      {
+        "id": "gent-disable-device",
+        "passedSteps": 16,
+        "totalSteps": 16,
+        "passed": true
+      },
+      {
+        "id": "gent-enable-device",
+        "passedSteps": 16,
+        "totalSteps": 16,
+        "passed": true
+      },
+      {
+        "id": "gent-disable-zone",
+        "passedSteps": 15,
+        "totalSteps": 15,
+        "passed": true
+      },
+      {
+        "id": "gent-enable-zone",
+        "passedSteps": 15,
+        "totalSteps": 15,
+        "passed": true
+      },
+      {
+        "id": "gent-active-events",
+        "passedSteps": 10,
+        "totalSteps": 10,
+        "passed": true
+      },
+      {
+        "id": "gent-history",
+        "passedSteps": 6,
+        "totalSteps": 6,
+        "passed": true
+      },
+      {
+        "id": "gent-local-label",
+        "passedSteps": 8,
+        "totalSteps": 8,
+        "passed": true
+      },
+      {
+        "id": "gent-clock-save",
+        "passedSteps": 25,
+        "totalSteps": 25,
+        "passed": true
+      },
+      {
+        "id": "gent-return-normal",
+        "passedSteps": 20,
+        "totalSteps": 20,
+        "passed": true
+      }
+    ],
+    "sourceVisualChecks": [
+      "Original operator page 25 Sensing procedure rendered and visually checked.",
+      "Original operator page 26 Zone procedure rendered and visually checked."
+    ],
+    "scopeLimit": "Software replay confirms the implemented model and lessons agree. It is not a validation against physical panel firmware.",
+    "permanentTestFile": "tests/gent-lessons.test.mjs",
+    "permanentTestResult": {
+      "status": "passed",
+      "tests": 29,
+      "failed": 0,
+      "literalLessonReplays": 18,
+      "abortedFormRecoveryCases": 8,
+      "contentAndSourceChecks": 3
+    },
+    "validatedSourceReferences": 254,
+    "recoveryFixes": [
+      "Recover a missing PIN prefix after a menu detour instead of repeatedly suggesting the last digit.",
+      "Reconstruct the ordered device/loop/zone/event entries before a deliberate commit or query after an abort; recovery navigation does not commit any protection operation.",
+      "Close the completed clock operation explicitly before opening the separate Save route."
+    ],
+    "independentReview": "Manual-map agent checked tutorial explanation scope against the selected original-source editions; no source-content blocker found."
+  }
+}

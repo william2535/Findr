@@ -1,0 +1,16 @@
+{
+  "publicFiles": 872,
+  "nativeOnlyFilesExcluded": [
+    "app/data/download-map.json"
+  ],
+  "retainedApkVersions": [
+    "0.13.0",
+    "0.12.3"
+  ],
+  "archivedReleaseFilesExcluded": 32,
+  "archivedReleaseBytes": 338682532,
+  "orphanFilesRemoved": 33,
+  "buildBytes": 93841710,
+  "archiveAllowance": 1048576,
+  "verified": true
+}

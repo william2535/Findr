@@ -1,0 +1,108 @@
+{
+  "engineVersion": "2026-11-11.3",
+  "kind": "deterministic real-PDF retrieval regression; no model inference or browser rerun",
+  "at": "2026-11-11T12:16:14.263Z",
+  "documents": [
+    {
+      "manualId": "MxPro4-user-guide.pdf",
+      "sha256": "5b0e02d2f682d6039474e94716b2f75f10868dc33fa3e6764c0b43c3c50b86a4",
+      "pageCount": 40
+    },
+    {
+      "manualId": "MxPro4-installation.pdf",
+      "sha256": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32",
+      "pageCount": 68
+    },
+    {
+      "manualId": "MxPro4-reference.pdf",
+      "sha256": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e",
+      "pageCount": 72
+    }
+  ],
+  "queries": [
+    {
+      "question": "The panel is showing a battery fault.",
+      "results": []
+    },
+    {
+      "question": "The display says \"Battery fault\".",
+      "results": []
+    },
+    {
+      "question": "How do I view the event history?",
+      "results": [
+        {
+          "manualId": "MxPro4-user-guide.pdf",
+          "page": 22,
+          "excerpt": "3.7.8 View - Log\n     After selecting to view the log option the display presents a pop-up window to allow selection between a view of\n     all of the event history, a vi"
+        },
+        {
+          "manualId": "MxPro4-user-guide.pdf",
+          "page": 36,
+          "excerpt": "To print information from the History Log, highlight the Print Log Option and press the ✔ button to confirm. A\n     pop-up window will be shown asking if all events, or j"
+        },
+        {
+          "manualId": "MxPro4-user-guide.pdf",
+          "page": 17,
+          "excerpt": "Inputs                View the current state of Inputs.\n                             Outputs               View the current operational condition of all output circuits /"
+        },
+        {
+          "manualId": "MxPro4-reference.pdf",
+          "page": 44,
+          "excerpt": "STANDARD         = the normal operating mode logging fire alarm, fault and warning conditions as they occur.\n     STANDARD + = an extended version of the standard operati"
+        }
+      ]
+    },
+    {
+      "question": "How do I start a walk test?",
+      "results": [
+        {
+          "manualId": "MxPro4-user-guide.pdf",
+          "page": 31,
+          "excerpt": "3.10 Testing\n  [Test Menu]                         User 1 Node       1\n\n       ZONES   DISPLAY           BUZZER      PRINTER\n       OUTPUTS\n\n\n\n\nPress the  buttons to hi"
+        },
+        {
+          "manualId": "MxPro4-user-guide.pdf",
+          "page": 17,
+          "excerpt": "User ID               Return Level 2 access to the default User 1\n                             Groups                Disable a user-defined disablement group\n\nENABLE     "
+        },
+        {
+          "manualId": "MxPro4-installation.pdf",
+          "page": 48,
+          "excerpt": "a) Perform the checks as recommended above in the daily, monthly and quarterly schedules.\n     b) Perform a complete “Walk Test” of the system to check that each call poi"
+        },
+        {
+          "manualId": "MxPro4-reference.pdf",
+          "page": 46,
+          "excerpt": "The service / maintenance contractor should perform the following checks and actions:\n     a) Perform the checks as recommended above in the daily, monthly and quarterly "
+        }
+      ]
+    }
+  ],
+  "excludedContentsPages": [
+    {
+      "manualId": "MxPro4-user-guide.pdf",
+      "pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "manualId": "MxPro4-installation.pdf",
+      "pages": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "manualId": "MxPro4-reference.pdf",
+      "pages": [
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "actualUserGuidePage20Preserved": true
+}

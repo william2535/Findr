@@ -1,0 +1,233 @@
+{
+  "batch": "fike-0.14.0",
+  "verified_date": "2026-10-30",
+  "brand": "Fike",
+  "scope": "Device identification cards only. No operational commissioning, wiring or interoperability guarantee is inferred from shared appearance.",
+  "image_processing": "Original manufacturer pixels; alpha flattened onto white, maximum 1200 px, WebP quality 93. PDF illustrations extracted by exact image XRef from inspected page 1. No generated imagery.",
+  "devices": [
+    {
+      "id": "fike-twinflex-multipoint-asd",
+      "record_id": "fike-44f428530108",
+      "manufacturer_product_page": "https://www.fike.com/es-es/product-documents/twinflex-pro2/",
+      "document_url": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/TwinflexPro/Conventional%20Control%20Panels/Manuals/TF%20MP%20ASD%20204-0001%20204-0003%20204-0012%20InstallInstructs%2026-0947-13.pdf",
+      "document_title": "TF MP ASD Installation Instructions",
+      "document_sha256": "c17442657a48c50feee3efe4a0e03290d03cfc5b3b3b984882935de5ecb4f79a",
+      "document_bytes": 522583,
+      "document_pages": 4,
+      "archive_sha256": null,
+      "archive_hash_matches": null,
+      "inspected_pdf_pages": [
+        1,
+        4
+      ],
+      "model_evidence": "Multipoint ASD family illustration from the exact installation sheet. The codes distinguish detector-only, integral sounder and sounder/strobe versions.",
+      "protocol_and_variant_limits": "Twinflex family only, not Sita 205-series. The pictured housing alone does not establish the sounder/strobe option; an integral strobe is not assumed to be an EN54-23 VAD.",
+      "image_url": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/TwinflexPro/Conventional%20Control%20Panels/Manuals/TF%20MP%20ASD%20204-0001%20204-0003%20204-0012%20InstallInstructs%2026-0947-13.pdf",
+      "image_pdf_page": 1,
+      "image_pdf_xref": 1356,
+      "image_sha256": "de9c397e94a26e0cc34829cf9486a0daec75e1f6ad97d67f42207e3772243b3b",
+      "image_dimensions": [
+        442,
+        370
+      ],
+      "verified_document_mark": "26-0947-13"
+    },
+    {
+      "id": "fike-sita-multipoint-asd",
+      "record_id": "fike-77a5c9cbeaa2",
+      "manufacturer_product_page": "https://www.fike.com/en-gb/product-documents/cie-a-200-fire-alarm-system/",
+      "document_url": "https://my.fike.com/_fike_new_docs/8a702f3e-4883-42bf-8eda-0388fdd005c4.pdf",
+      "document_title": "Sita MP ASD Installation Instructions",
+      "document_sha256": "e739faedc4b92569c9ff79ee2f090b6e1edb1e792cd1c93567bced754e4519b9",
+      "document_bytes": 675536,
+      "document_pages": 4,
+      "archive_sha256": null,
+      "archive_hash_matches": null,
+      "inspected_pdf_pages": [
+        1,
+        4
+      ],
+      "model_evidence": "Manufacturer family illustration shows Sita Multipoint ASD heads. Read the 205-series code to identify detector-only, sounder or sounder/strobe equipment.",
+      "protocol_and_variant_limits": "Sita addressable family, not Twinflex 204-series. The common housing and family picture cannot prove the fitted options or panel compatibility.",
+      "image_url": "https://my.fike.com/_fike_new_docs/8a702f3e-4883-42bf-8eda-0388fdd005c4.pdf",
+      "image_pdf_page": 1,
+      "image_pdf_xref": 115,
+      "image_sha256": "2455ff6e05a27d3c68fdb7541ce605bc941eaa1c3f59dc51fde7c284ee274dd7",
+      "image_dimensions": [
+        674,
+        519
+      ],
+      "verified_document_mark": "26-0874-14"
+    },
+    {
+      "id": "fike-twinflex-mcp-402-0006",
+      "record_id": "fike-6fec87fdf63f",
+      "manufacturer_product_page": "https://www.fike.com/es-es/product-documents/twinflex-pro2/",
+      "document_url": "https://my.fike.com/_fike_new_docs/02181c3b-6298-45dc-af80-9816716c3522.pdf",
+      "document_title": "TF MCP Installation Instructions",
+      "document_sha256": "8b809a677ec11f3350d2ae9dbaab3f7fcba64ed9bad8e8b3c210518a030321d4",
+      "document_bytes": 684709,
+      "document_pages": 4,
+      "archive_sha256": null,
+      "archive_hash_matches": null,
+      "inspected_pdf_pages": [
+        1,
+        4
+      ],
+      "model_evidence": "Red resettable indoor call point illustrated with its test/reset key. The rear label is needed to distinguish Twinflex from similar Sita units.",
+      "protocol_and_variant_limits": "402-0006 indoor model. The same manual includes weatherproof 402-0007; that deeper enclosure is not the pictured device.",
+      "image_url": "https://my.fike.com/_fike_new_docs/02181c3b-6298-45dc-af80-9816716c3522.pdf",
+      "image_pdf_page": 1,
+      "image_pdf_xref": 648,
+      "image_sha256": "0b648516c1e8449529ed9f21b6b1d7f62123afec8d9616d1cf3eed2773a662f0",
+      "image_dimensions": [
+        434,
+        445
+      ],
+      "verified_document_mark": "26-1834-02"
+    },
+    {
+      "id": "fike-sita-mcp-403-0006",
+      "record_id": "fike-594585b67819",
+      "manufacturer_product_page": "https://www.fike.com/en-gb/product-documents/cie-a-200-fire-alarm-system/",
+      "document_url": "https://my.fike.com/_fike_new_docs/1ab59b39-88d2-4b6f-8805-7786a80534bd.pdf",
+      "document_title": "Sita MCP Installation Instructions",
+      "document_sha256": "b367bc185ed3d86bc08ac009e96d714a75d80d96f05fbf85e25d63bcb1085f32",
+      "document_bytes": 523419,
+      "document_pages": 3,
+      "archive_sha256": null,
+      "archive_hash_matches": null,
+      "inspected_pdf_pages": [
+        1,
+        3
+      ],
+      "model_evidence": "Red Sita Mk3 indoor call point from its exact manual. Similar Twinflex fronts require a label check, not a visual compatibility decision.",
+      "protocol_and_variant_limits": "403-0006 only. The sheet also covers weatherproof 403-0007; it is a different enclosure. This entry does not describe Twinflex 402-series call points.",
+      "image_url": "https://my.fike.com/_fike_new_docs/1ab59b39-88d2-4b6f-8805-7786a80534bd.pdf",
+      "image_pdf_page": 1,
+      "image_pdf_xref": 788,
+      "image_sha256": "0b648516c1e8449529ed9f21b6b1d7f62123afec8d9616d1cf3eed2773a662f0",
+      "image_dimensions": [
+        434,
+        445
+      ],
+      "verified_document_mark": "26-1835-02"
+    },
+    {
+      "id": "fike-twinflex-io-802-0006",
+      "record_id": "fike-078df373e6a6",
+      "manufacturer_product_page": "https://www.fike.com/es-es/product-documents/twinflex-pro2/",
+      "document_url": "https://my.fike.com/_fike_new_docs/0373c9c3-e933-412e-aa08-7fb8a84d6a5d.pdf",
+      "document_title": "TF IO Installation Instructions",
+      "document_sha256": "2c635d4768d96605c2fdbe0c37604c45b1e062c1a39304f1fb1fef95fb4c07c1",
+      "document_bytes": 584452,
+      "document_pages": 8,
+      "archive_sha256": null,
+      "archive_hash_matches": null,
+      "inspected_pdf_pages": [
+        1,
+        8
+      ],
+      "model_evidence": "Grey Twinflex input/output interface faceplate, shown in the manufacturer installation instructions. Confirm the 802-0006 code.",
+      "protocol_and_variant_limits": "Twinflex zone interface only; visually similar Sita 803-0006 is an addressable-loop device. Circuit functions depend on the matched manual and panel configuration.",
+      "image_url": "https://my.fike.com/_fike_new_docs/0373c9c3-e933-412e-aa08-7fb8a84d6a5d.pdf",
+      "image_pdf_page": 1,
+      "image_pdf_xref": 957,
+      "image_sha256": "b871dbc94ea25e6f7c0915ad53e0d13124efad4b5cdf5ad47a85e905e6603aea",
+      "image_dimensions": [
+        533,
+        415
+      ],
+      "verified_document_mark": "26-1034-13"
+    },
+    {
+      "id": "fike-sita-io-803-0006",
+      "record_id": "fike-1b2de37e6684",
+      "manufacturer_product_page": "https://www.fike.com/en-gb/product-documents/cie-a-200-fire-alarm-system/",
+      "document_url": "https://my.fike.com/_fike_new_docs/56377394-750b-4543-90b1-16a1d520c9fc.pdf",
+      "document_title": "Sita I/O Module Installation Instructions",
+      "document_sha256": "be75c97fe95fcd29cd5eb2200711e03b6b0f33455a7f9f40ea561d299ef6bf6f",
+      "document_bytes": 944063,
+      "document_pages": 4,
+      "archive_sha256": null,
+      "archive_hash_matches": null,
+      "inspected_pdf_pages": [
+        1,
+        4
+      ],
+      "model_evidence": "Grey Sita input/output interface shown in the exact 803-0006 installation sheet. Read the label before distinguishing it from Twinflex.",
+      "protocol_and_variant_limits": "Sita loop I/O, not the 802-0006 Twinflex interface. The pictured faceplate does not identify the programmed input/output behaviour.",
+      "image_url": "https://my.fike.com/_fike_new_docs/56377394-750b-4543-90b1-16a1d520c9fc.pdf",
+      "image_pdf_page": 1,
+      "image_pdf_xref": 695,
+      "image_sha256": "8f1143e88d07b9b3b09c6f443412d9b19bbefc43ed463345779f787c11cfc893",
+      "image_dimensions": [
+        599,
+        610
+      ],
+      "verified_document_mark": "26-0555-16"
+    },
+    {
+      "id": "fike-twinflex-sounder-vad-f0296336",
+      "record_id": "fike-538db8f6d1d5",
+      "manufacturer_product_page": "https://www.fike.com/es-es/product-documents/twinflex-pro2/",
+      "document_url": "https://my.fike.com/_fike_new_docs/941829b3-1802-4861-8ca9-ac3c3bcdfa88.pdf",
+      "document_title": "Twinflex Sounder VAD F0296336",
+      "document_sha256": "fb3af336d1852b905ecd93f0c8661105ededf8dea5b4ba54337e447c48218960",
+      "document_bytes": 652911,
+      "document_pages": 4,
+      "archive_sha256": null,
+      "archive_hash_matches": null,
+      "inspected_pdf_pages": [
+        1,
+        4
+      ],
+      "model_evidence": "Red circular sounder/VAD with a central clear lens and lower fixing screw, illustrated in document 26-1878-04.",
+      "protocol_and_variant_limits": "Twinflex sounder/VAD only, distinct from sounder-only F0296337. Correct orientation and coverage are specified by the installation manual.",
+      "image_url": "https://my.fike.com/_fike_new_docs/941829b3-1802-4861-8ca9-ac3c3bcdfa88.pdf",
+      "image_pdf_page": 1,
+      "image_pdf_xref": 119,
+      "image_sha256": "6fd8ceaed20d3faac27e40cc0d450abc216b8cafefb2aaa11d9c556a24d83901",
+      "image_dimensions": [
+        564,
+        550
+      ],
+      "verified_document_mark": "26-1878-04"
+    },
+    {
+      "id": "fike-sita-soundpoint-313-0001",
+      "record_id": "fike-0a81dc0dbbc1",
+      "manufacturer_product_page": "https://www.fike.com/en-gb/product-documents/cie-a-200-fire-alarm-system/",
+      "document_url": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/Duonet%20&%20Quadnet/Addressable%20Control%20Panels/Manuals/Sita%20SoundPoint%20313-0001%20313-0002%20InstallInstructs%2026-0190-13.pdf",
+      "document_title": "Sita SoundPoint Installation Instructions",
+      "document_sha256": "a6bdb8ddee689f01836a8190b82426ec5be312aa9348dfe01fb8ddf481982aaf",
+      "document_bytes": 595135,
+      "document_pages": 4,
+      "archive_sha256": null,
+      "archive_hash_matches": null,
+      "inspected_pdf_pages": [
+        1,
+        4
+      ],
+      "model_evidence": "Red SoundPoint faceplate sounder with a lower grille. Image is from the Sita SoundPoint installation sheet.",
+      "protocol_and_variant_limits": "Red 313-0001 model. White 313-0002 shares the sheet; Twinflex SoundPoint 313-0021/0022 uses a different system and is not covered by this card.",
+      "image_url": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/Duonet%20&%20Quadnet/Addressable%20Control%20Panels/Manuals/Sita%20SoundPoint%20313-0001%20313-0002%20InstallInstructs%2026-0190-13.pdf",
+      "image_pdf_page": 1,
+      "image_pdf_xref": 744,
+      "image_sha256": "d27c51c187d8af22107d6774fbbb8060a27c6242bc79a3f3090e1678c46559db",
+      "image_dimensions": [
+        543,
+        600
+      ],
+      "verified_document_mark": "26-0190-13"
+    }
+  ],
+  "review_notes": [
+    "Every picture is extracted from page 1 of the exact Fike installation PDF and visually inspected. Archive records were previously listed without hashes; retrieved hashes and pages are recorded here without changing the catalogue.",
+    "Twinflex and Sita detector, MCP and I/O housing similarities are explicitly disclosed; their different two-wire/addressable systems have separate cards.",
+    "MCP entries cover indoor 402-0006 and 403-0006 only. Weatherproof variants appear in their manuals but are not implied by the pictured indoor image.",
+    "Multipoint integral strobe variants are not described as VADs. F0296336 is the separately documented Twinflex sounder/VAD."
+  ],
+  "supplementary_documents": [],
+  "visual_review": "Each final card image was inspected on the per-brand contact sheet and compared with its source product page or manufacturer PDF illustration. Shared housing, assembled-head/base and edition limitations were retained."
+}

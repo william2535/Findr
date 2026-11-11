@@ -1,0 +1,30 @@
+{
+  "browser": "Chromium154",
+  "purpose": "Cabinet figure review; taller screenshot-only viewport contains the physical front without sticky navigation overlapping it.",
+  "desktopViewport": {
+    "width": 1280,
+    "height": 2000
+  },
+  "captures": [
+    {
+      "variant": "mx",
+      "box": {
+        "x": 160,
+        "y": 859.609375,
+        "width": 960,
+        "height": 714.234375
+      },
+      "styleModified": false
+    },
+    {
+      "variant": "mx2",
+      "box": {
+        "x": 250,
+        "y": 859.609375,
+        "width": 780,
+        "height": 1012.6875
+      },
+      "styleModified": false
+    }
+  ]
+}

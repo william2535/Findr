@@ -1,0 +1,325 @@
+[
+  {
+    "route": "home",
+    "background": "rgb(11, 11, 11)",
+    "text": "rgb(238, 238, 238)",
+    "horizontalOverflow": false,
+    "greens": []
+  },
+  {
+    "route": "downloads/all",
+    "background": "rgb(11, 11, 11)",
+    "text": "rgb(238, 238, 238)",
+    "horizontalOverflow": false,
+    "greens": []
+  },
+  {
+    "route": "emulator",
+    "background": "rgb(11, 11, 11)",
+    "text": "rgb(238, 238, 238)",
+    "horizontalOverflow": false,
+    "greens": [
+      {
+        "tag": "DIV",
+        "class": "practice-lcd",
+        "property": "color",
+        "value": "rgb(37, 58, 41)",
+        "text": "GALAXY DIMENSIONExplore the menus"
+      },
+      {
+        "tag": "DIV",
+        "class": "practice-lcd",
+        "property": "backgroundImage",
+        "value": "linear-gradient(rgb(185, 200, 173), rgb(157, 171, 151))",
+        "text": "GALAXY DIMENSIONExplore the menus"
+      },
+      {
+        "tag": "DIV",
+        "class": "practice-lcd-lines ",
+        "property": "color",
+        "value": "rgb(37, 58, 41)",
+        "text": "GALAXY DIMENSIONExplore the menus"
+      },
+      {
+        "tag": "DIV",
+        "class": "practice-lcd-lines ",
+        "property": "borderTopColor",
+        "value": "rgb(37, 58, 41)",
+        "text": "GALAXY DIMENSIONExplore the menus"
+      },
+      {
+        "tag": "SPAN",
+        "class": "",
+        "property": "color",
+        "value": "rgb(37, 58, 41)",
+        "text": "GALAXY DIMENSION"
+      },
+      {
+        "tag": "SPAN",
+        "class": "",
+        "property": "borderTopColor",
+        "value": "rgb(37, 58, 41)",
+        "text": "GALAXY DIMENSION"
+      },
+      {
+        "tag": "SPAN",
+        "class": "",
+        "property": "color",
+        "value": "rgb(37, 58, 41)",
+        "text": "Explore the menus"
+      },
+      {
+        "tag": "SPAN",
+        "class": "",
+        "property": "borderTopColor",
+        "value": "rgb(37, 58, 41)",
+        "text": "Explore the menus"
+      },
+      {
+        "tag": "DIV",
+        "class": "practice-galaxy-base",
+        "property": "color",
+        "value": "rgb(114, 126, 118)",
+        "text": "Honeywell"
+      },
+      {
+        "tag": "DIV",
+        "class": "practice-galaxy-base",
+        "property": "borderTopColor",
+        "value": "rgb(189, 196, 189)",
+        "text": "Honeywell"
+      },
+      {
+        "tag": "I",
+        "class": "",
+        "property": "color",
+        "value": "rgb(114, 126, 118)",
+        "text": ""
+      },
+      {
+        "tag": "I",
+        "class": "",
+        "property": "backgroundColor",
+        "value": "rgb(141, 153, 135)",
+        "text": ""
+      },
+      {
+        "tag": "I",
+        "class": "",
+        "property": "borderTopColor",
+        "value": "rgb(175, 185, 171)",
+        "text": ""
+      },
+      {
+        "tag": "STRONG",
+        "class": "",
+        "property": "color",
+        "value": "rgb(114, 126, 118)",
+        "text": "Honeywell"
+      },
+      {
+        "tag": "STRONG",
+        "class": "",
+        "property": "borderTopColor",
+        "value": "rgb(114, 126, 118)",
+        "text": "Honeywell"
+      },
+      {
+        "tag": "I",
+        "class": "is-lit",
+        "property": "backgroundColor",
+        "value": "rgb(145, 199, 126)",
+        "text": ""
+      },
+      {
+        "tag": "I",
+        "class": "is-lit",
+        "property": "boxShadow",
+        "value": "rgba(104, 219, 141, 0.5) 0px 0px 3px 0px",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "practice-arrow-pad",
+        "property": "boxShadow",
+        "value": "rgba(108, 127, 118, 0.314) 0px 1px 3px 0px",
+        "text": "▲◀▶▼"
+      },
+      {
+        "tag": "DIV",
+        "class": "practice-arrow-pad",
+        "property": "backgroundImage",
+        "value": "linear-gradient(100deg, rgb(213, 225, 213), rgb(181, 206, 190))",
+        "text": "▲◀▶▼"
+      },
+      {
+        "tag": "I",
+        "class": "",
+        "property": "backgroundColor",
+        "value": "rgb(190, 219, 105)",
+        "text": ""
+      },
+      {
+        "tag": "I",
+        "class": "",
+        "property": "boxShadow",
+        "value": "rgba(203, 227, 116, 0.6) 0px 0px 9px 0px",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "practice-menvier-bezel",
+        "property": "borderTopColor",
+        "value": "rgb(92, 102, 85)",
+        "text": "MENVIERExplore the menus~△"
+      },
+      {
+        "tag": "DIV",
+        "class": "practice-menvier-bezel",
+        "property": "backgroundImage",
+        "value": "linear-gradient(rgb(48, 55, 47), rgb(69, 78, 64))",
+        "text": "MENVIERExplore the menus~△"
+      },
+      {
+        "tag": "DIV",
+        "class": "practice-lcd",
+        "property": "color",
+        "value": "rgb(38, 63, 44)",
+        "text": "MENVIERExplore the menus"
+      },
+      {
+        "tag": "DIV",
+        "class": "practice-lcd",
+        "property": "borderTopColor",
+        "value": "rgb(129, 148, 119)",
+        "text": "MENVIERExplore the menus"
+      },
+      {
+        "tag": "DIV",
+        "class": "practice-lcd",
+        "property": "boxShadow",
+        "value": "rgba(75, 98, 67, 0.3) 1px 2px 4px 0px inset",
+        "text": "MENVIERExplore the menus"
+      },
+      {
+        "tag": "DIV",
+        "class": "practice-lcd",
+        "property": "backgroundImage",
+        "value": "linear-gradient(rgb(192, 208, 169), rgb(165, 188, 145))",
+        "text": "MENVIERExplore the menus"
+      },
+      {
+        "tag": "DIV",
+        "class": "practice-lcd-lines ",
+        "property": "color",
+        "value": "rgb(38, 63, 44)",
+        "text": "MENVIERExplore the menus"
+      },
+      {
+        "tag": "DIV",
+        "class": "practice-lcd-lines ",
+        "property": "borderTopColor",
+        "value": "rgb(38, 63, 44)",
+        "text": "MENVIERExplore the menus"
+      },
+      {
+        "tag": "SPAN",
+        "class": "",
+        "property": "color",
+        "value": "rgb(38, 63, 44)",
+        "text": "MENVIER"
+      },
+      {
+        "tag": "SPAN",
+        "class": "",
+        "property": "borderTopColor",
+        "value": "rgb(38, 63, 44)",
+        "text": "MENVIER"
+      },
+      {
+        "tag": "SPAN",
+        "class": "",
+        "property": "color",
+        "value": "rgb(38, 63, 44)",
+        "text": "Explore the menus"
+      },
+      {
+        "tag": "SPAN",
+        "class": "",
+        "property": "borderTopColor",
+        "value": "rgb(38, 63, 44)",
+        "text": "Explore the menus"
+      },
+      {
+        "tag": "I",
+        "class": "is-lit",
+        "property": "backgroundColor",
+        "value": "rgb(117, 199, 128)",
+        "text": ""
+      },
+      {
+        "tag": "I",
+        "class": "is-lit",
+        "property": "borderTopColor",
+        "value": "rgb(177, 226, 163)",
+        "text": ""
+      },
+      {
+        "tag": "I",
+        "class": "is-lit",
+        "property": "boxShadow",
+        "value": "rgb(125, 213, 150) 0px 0px 4px 0px",
+        "text": ""
+      },
+      {
+        "tag": "I",
+        "class": "",
+        "property": "backgroundColor",
+        "value": "rgb(75, 87, 70)",
+        "text": ""
+      },
+      {
+        "tag": "I",
+        "class": "",
+        "property": "borderTopColor",
+        "value": "rgb(132, 155, 124)",
+        "text": ""
+      },
+      {
+        "tag": "I",
+        "class": "",
+        "property": "boxShadow",
+        "value": "rgb(23, 39, 21) 0px 1px 1px 0px inset",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "practice-menvier-mark",
+        "property": "color",
+        "value": "rgb(155, 170, 160)",
+        "text": "MMENVIER"
+      }
+    ]
+  },
+  {
+    "route": "menus",
+    "background": "rgb(11, 11, 11)",
+    "text": "rgb(238, 238, 238)",
+    "horizontalOverflow": false,
+    "greens": []
+  },
+  {
+    "route": "quick-questions",
+    "background": "rgb(4, 4, 4)",
+    "text": "rgb(238, 238, 238)",
+    "horizontalOverflow": false,
+    "greens": []
+  },
+  {
+    "route": "faults",
+    "background": "rgb(4, 4, 4)",
+    "text": "rgb(238, 238, 238)",
+    "horizontalOverflow": false,
+    "greens": []
+  }
+]

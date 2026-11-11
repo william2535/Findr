@@ -1,0 +1,3663 @@
+{
+  "version": "0.3.0",
+  "reviewedAt": "2026-10-29",
+  "purpose": "Source and navigation audit for FINDR’s selected offline keypad practice profiles. Raw research references are retained to distinguish manufacturer facts, implementation limits and fictional fixtures.",
+  "profileIds": [
+    "galaxy-dimension",
+    "texecom-premier-elite",
+    "scantronic-ion",
+    "orisec-cp"
+  ],
+  "modelMapping": [
+    {
+      "profileId": "galaxy-dimension",
+      "panelIds": [
+        "honeywell-galaxy-dimension"
+      ],
+      "edition": "IE1-0063 Rev 1.0 · IU1-0063 Rev 1.0"
+    },
+    {
+      "profileId": "texecom-premier-elite",
+      "panelIds": [
+        "texecom-premier-elite-24",
+        "texecom-premier-elite-48",
+        "texecom-premier-elite-88",
+        "texecom-premier-elite-168"
+      ],
+      "edition": "INS176-9 / INS222-10 / INS177-9"
+    },
+    {
+      "profileId": "scantronic-ion",
+      "panelIds": [
+        "eaton-scantronic-i-on-series"
+      ],
+      "edition": "Configuration Guide Issue 1 · software 6.0.xx · 2019"
+    },
+    {
+      "profileId": "orisec-cp",
+      "panelIds": [
+        "orisec-cp-50-cp-100-cp-200"
+      ],
+      "edition": "INS008 · 2018"
+    }
+  ],
+  "navigationLimits": {
+    "galaxy-dimension": [
+      "Full-menu hierarchy 20/30/50 is retained. Direct menu numbers are contextual.",
+      "A newer/B older in the log; # gives circuit resistance and RIO voltage.",
+      "Selected walk test: # includes a zone, ent starts; no invented extra ready confirmation. All Zones means omittable zones.",
+      "Program Zones contains a zone selector, then 1 Function; full 52-value reference retained.",
+      "Already authorised session; FINDR Exit practice is separate from actual engineer logoff."
+    ],
+    "texecom-premier-elite": [
+      "Numeric root choice + YES; the event-log choice digit opens directly.",
+      "Three-digit zone selection; NO edits the current Type field. No invented Zone Type submenu.",
+      "Walk test has the documented Area A choice before YES starts; Menu ends the test.",
+      "0 Log off ENGINEER + YES completes logoff with no extra confirmation. Reset stays authorised.",
+      "Type subset 0–4; other fields and diagnostic Omit/Chime are excluded. Draft cancellation is a trainer rule.",
+      "Area is implemented for walk-test views only. Additional zone/log Area views are documented in raw research but outside this version."
+    ],
+    "scantronic-ion": [
+      "No verified numeric root-menu shortcuts or numeric zone-picker shortcuts.",
+      "Type shortcuts 00/03/05/06 are accepted but not displayed as type labels. The type list is explicitly a subset.",
+      "Walk Test → System starts immediately; tick finishes. Other walk-test branches are outside this version.",
+      "Left/right are contextual; neither is a global confirm/back replacement.",
+      "Accepted edits persist only on confirmed exit. v6 faults must be cleared; no later Exit with faults feature is imported.",
+      "Only All Events is implemented; later official user guide supports log controls only."
+    ],
+    "orisec-cp": [
+      "Source: legacy CP-25 / CP-50 / CP-100 INS008, 2018. The catalogue family link does not expand trainer scope to CP-200.",
+      "The root screenshot and shortcut text conflict; no numeric root shortcuts are taught.",
+      "Tests & Diagnostics → Test Bell & Strobe / Walk Test Zones / View Zone Status; System Event Logs → View event log are the only implemented branches.",
+      "The documented bell/strobe controls only change fictional display state.",
+      "All populated LCD information and sample readings are simulated, using one 2k2/4k7 DEOL example."
+    ]
+  },
+  "fixturePolicy": "Every populated zone, detector state, reading, event, timestamp and log category is a simulated practice fixture. Raw manuals remain the source for menu names and controls. None of the data represents a connected alarm.",
+  "rawResearch": {
+    "galaxy": {
+      "schemaVersion": 1,
+      "modelId": "galaxy-dimension",
+      "panelId": "honeywell-galaxy-dimension",
+      "brand": "Honeywell",
+      "title": "Galaxy Dimension",
+      "keypad": "Mk7 / KeyProx",
+      "regionPriority": "UK",
+      "scope": "Selected full-menu workflows based on the Galaxy Dimension Installer Manual IE1-0063 Rev 1.0. This is a practice simulation, not an emulation of all firmware or hardware behaviour.",
+      "manualSources": [
+        {
+          "id": "galaxy-installer-rev1",
+          "title": "Galaxy Dimension Installer Manual",
+          "publisher": "Honeywell Security",
+          "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Galaxy%20Dimension%20Install%20Manual.pdf",
+          "recordId": "honeywell-18a74589d3d1",
+          "edition": "IE1-0063 Rev 1.0",
+          "totalPdfPages": 306,
+          "sha256": "b64fa5be0bd932ecb4bee89767ec1de60ef8742614548a005e982a5833812c14",
+          "sourceKind": "Original manufacturer manual hosted by an installer archive",
+          "localFile": "galaxy-dimension-installer.pdf"
+        },
+        {
+          "id": "galaxy-user-rev1",
+          "title": "Galaxy Dimension User Guide",
+          "publisher": "Honeywell Security",
+          "url": "https://dawsonsawyer.co.uk/?mdocs-file=754",
+          "recordId": null,
+          "edition": "IU1-0063 Rev 1.0",
+          "totalPdfPages": 48,
+          "sha256": "2319ad38964515e881c37f6cbea1c43c819d7e3f249012811a1539a3410ccdfb",
+          "sourceKind": "Original manufacturer manual hosted by a locksmith manuals archive",
+          "localFile": "galaxy-dimension-user-guide.pdf"
+        }
+      ],
+      "practiceSession": {
+        "initialState": "authorisedEngineerMenu",
+        "requiresPin": false,
+        "networkConnections": false,
+        "exitControl": "A FINDR Exit practice control outside the keypad. It does not represent a Galaxy menu command.",
+        "note": "The practice session starts after authorisation. User authorisation, PIN entry and engineering exit checks are outside this version."
+      },
+      "display": {
+        "rows": 2,
+        "columns": 16,
+        "sourceRefs": [
+          {
+            "sourceId": "galaxy-installer-rev1",
+            "pdfPage": 51,
+            "printedPage": "4-1"
+          }
+        ],
+        "note": "Menu names/numbers are source verified; exact LCD spacing and fixture timestamps are illustrative unless separately marked."
+      },
+      "controls": {
+        "layout": [
+          [
+            "1",
+            "2",
+            "3",
+            "A"
+          ],
+          [
+            "4",
+            "5",
+            "6",
+            "B"
+          ],
+          [
+            "7",
+            "8",
+            "9",
+            "ent"
+          ],
+          [
+            "*",
+            "0",
+            "#",
+            "esc"
+          ]
+        ],
+        "A": {
+          "caption": "A >",
+          "behaviour": "Move forward through an option or zone list. In the event log, move forward in time to a newer event."
+        },
+        "B": {
+          "caption": "< B",
+          "behaviour": "Move backward through an option or zone list. In the event log, move backward in time to an older event."
+        },
+        "ent": {
+          "caption": "ent",
+          "behaviour": "Open the selected option, start the selected-zone test, or save the proposed function value."
+        },
+        "esc": {
+          "caption": "esc",
+          "behaviour": "Return one level; cancel an unsaved function edit; end a walk test."
+        },
+        "#": {
+          "caption": "#",
+          "behaviour": "Context-specific: show zone readings, reveal log details, include/remove a selected walk-test zone, or toggle active walk-test results."
+        },
+        "*": {
+          "caption": "*",
+          "behaviour": "Context-specific on the real panel. No function is required in the supported practice workflows. Never use as a universal back key."
+        },
+        "digits": {
+          "caption": "0–9",
+          "behaviour": "Select an option valid in the current menu context, a four-digit zone address in a zone list, or a two-digit function number in the function editor."
+        },
+        "sourceRefs": [
+          {
+            "sourceId": "galaxy-installer-rev1",
+            "pdfPage": 55,
+            "printedPage": "4-5"
+          },
+          {
+            "sourceId": "galaxy-installer-rev1",
+            "pdfPage": 56,
+            "printedPage": "4-6"
+          },
+          {
+            "sourceId": "galaxy-installer-rev1",
+            "pdfPage": 76,
+            "printedPage": "6-2"
+          },
+          {
+            "sourceId": "galaxy-user-rev1",
+            "pdfPage": 9,
+            "printedPage": "1"
+          },
+          {
+            "sourceId": "galaxy-user-rev1",
+            "pdfPage": 10,
+            "printedPage": "2"
+          }
+        ]
+      },
+      "navigationRules": [
+        {
+          "rule": "Preserve full-menu groups 20 Display, 30 Test and 50 Engineer 1. The supported subset omits other groups/options rather than renumbering them.",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 75,
+              "printedPage": "6-1"
+            }
+          ]
+        },
+        {
+          "rule": "At the full-menu selection level, valid numeric option selection can jump to 21, 22, 31 or 52; ent enters the selected option. These are full-menu numbers, not quick-menu numbers.",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 76,
+              "printedPage": "6-2"
+            }
+          ]
+        },
+        {
+          "rule": "Numeric selection is contextual. In a zone list, 1002 selects the address; in the function editor, 03 selects Intruder; it must not be interpreted as a global menu jump.",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 76,
+              "printedPage": "6-2"
+            },
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 89,
+              "printedPage": "6-15"
+            },
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 146,
+              "printedPage": "6-72"
+            }
+          ]
+        },
+        {
+          "rule": "Common-phrase aliases belong in FINDR search/hints. Preserve the manufacturer labels in the keypad menu itself.",
+          "sourceRefs": []
+        }
+      ],
+      "menus": [
+        {
+          "id": "root",
+          "code": null,
+          "label": "Full menu",
+          "parent": null,
+          "type": "menu",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 75,
+              "printedPage": "6-1"
+            }
+          ],
+          "children": [
+            "display",
+            "test",
+            "engineer1"
+          ],
+          "labelKind": "teachingHeading"
+        },
+        {
+          "id": "display",
+          "code": "20",
+          "label": "Display",
+          "parent": "root",
+          "type": "menu",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 75,
+              "printedPage": "6-1"
+            }
+          ],
+          "children": [
+            "display-zones",
+            "display-log"
+          ]
+        },
+        {
+          "id": "display-zones",
+          "code": "21",
+          "label": "Display Zones",
+          "parent": "display",
+          "type": "zoneViewer",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 89,
+              "printedPage": "6-15"
+            },
+            {
+              "sourceId": "galaxy-user-rev1",
+              "pdfPage": 22,
+              "printedPage": "14"
+            },
+            {
+              "sourceId": "galaxy-user-rev1",
+              "pdfPage": 23,
+              "printedPage": "15"
+            }
+          ]
+        },
+        {
+          "id": "display-log",
+          "code": "22",
+          "label": "Display Log",
+          "parent": "display",
+          "type": "logViewer",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 90,
+              "printedPage": "6-16"
+            },
+            {
+              "sourceId": "galaxy-user-rev1",
+              "pdfPage": 23,
+              "printedPage": "15"
+            },
+            {
+              "sourceId": "galaxy-user-rev1",
+              "pdfPage": 24,
+              "printedPage": "16"
+            }
+          ]
+        },
+        {
+          "id": "test",
+          "code": "30",
+          "label": "Test",
+          "parent": "root",
+          "type": "menu",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 75,
+              "printedPage": "6-1"
+            }
+          ],
+          "children": [
+            "walk-test"
+          ]
+        },
+        {
+          "id": "walk-test",
+          "code": "31",
+          "label": "Walk Test",
+          "parent": "test",
+          "type": "menu",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 97,
+              "printedPage": "6-23"
+            },
+            {
+              "sourceId": "galaxy-user-rev1",
+              "pdfPage": 25,
+              "printedPage": "17"
+            }
+          ],
+          "children": [
+            "walk-view",
+            "walk-activate"
+          ]
+        },
+        {
+          "id": "walk-view",
+          "code": "1",
+          "label": "View",
+          "parent": "walk-test",
+          "type": "menu",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 97,
+              "printedPage": "6-23"
+            }
+          ],
+          "children": [
+            "walk-untested",
+            "walk-tested"
+          ]
+        },
+        {
+          "id": "walk-untested",
+          "code": "1",
+          "label": "Zones Untested",
+          "parent": "walk-view",
+          "type": "walkResults",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 97,
+              "printedPage": "6-23"
+            }
+          ],
+          "filter": "untested"
+        },
+        {
+          "id": "walk-tested",
+          "code": "2",
+          "label": "Zones Tested",
+          "parent": "walk-view",
+          "type": "walkResults",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 97,
+              "printedPage": "6-23"
+            }
+          ],
+          "filter": "tested"
+        },
+        {
+          "id": "walk-activate",
+          "code": "2",
+          "label": "Activate",
+          "parent": "walk-test",
+          "type": "menu",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 97,
+              "printedPage": "6-23"
+            }
+          ],
+          "children": [
+            "walk-silent",
+            "walk-audible"
+          ]
+        },
+        {
+          "id": "walk-silent",
+          "code": "1",
+          "label": "Silent",
+          "parent": "walk-activate",
+          "type": "menu",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 97,
+              "printedPage": "6-23"
+            }
+          ],
+          "children": [
+            "walk-silent-all",
+            "walk-silent-selected"
+          ]
+        },
+        {
+          "id": "walk-audible",
+          "code": "2",
+          "label": "Audible",
+          "parent": "walk-activate",
+          "type": "menu",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 97,
+              "printedPage": "6-23"
+            },
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 98,
+              "printedPage": "6-24"
+            }
+          ],
+          "children": [
+            "walk-audible-all",
+            "walk-audible-selected"
+          ]
+        },
+        {
+          "id": "walk-silent-all",
+          "code": "1",
+          "label": "Test all Zones",
+          "parent": "walk-silent",
+          "type": "walkStartAll",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 97,
+              "printedPage": "6-23"
+            }
+          ],
+          "mode": "silent"
+        },
+        {
+          "id": "walk-silent-selected",
+          "code": "2",
+          "label": "Selected Zones",
+          "parent": "walk-silent",
+          "type": "walkSelect",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 97,
+              "printedPage": "6-23"
+            },
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 98,
+              "printedPage": "6-24"
+            }
+          ],
+          "mode": "silent"
+        },
+        {
+          "id": "walk-audible-all",
+          "code": "1",
+          "label": "Test All Zones",
+          "parent": "walk-audible",
+          "type": "walkStartAll",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 97,
+              "printedPage": "6-23"
+            },
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 98,
+              "printedPage": "6-24"
+            }
+          ],
+          "mode": "audible"
+        },
+        {
+          "id": "walk-audible-selected",
+          "code": "2",
+          "label": "Selected Zones",
+          "parent": "walk-audible",
+          "type": "walkSelect",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 97,
+              "printedPage": "6-23"
+            },
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 98,
+              "printedPage": "6-24"
+            }
+          ],
+          "mode": "audible"
+        },
+        {
+          "id": "engineer1",
+          "code": "50",
+          "label": "Engineer 1",
+          "parent": "root",
+          "type": "menu",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 75,
+              "printedPage": "6-1"
+            }
+          ],
+          "children": [
+            "program-zones"
+          ]
+        },
+        {
+          "id": "program-zones",
+          "code": "52",
+          "label": "Program Zones",
+          "parent": "engineer1",
+          "type": "zonePicker",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 145,
+              "printedPage": "6-71"
+            }
+          ],
+          "children": [
+            "zone-attributes"
+          ]
+        },
+        {
+          "id": "zone-attributes",
+          "code": null,
+          "label": "Zone attributes",
+          "parent": "program-zones",
+          "type": "menu",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 145,
+              "printedPage": "6-71"
+            }
+          ],
+          "children": [
+            "zone-function"
+          ],
+          "labelKind": "teachingHeading",
+          "zoneContext": true
+        },
+        {
+          "id": "zone-function",
+          "code": "1",
+          "label": "Function",
+          "parent": "zone-attributes",
+          "type": "functionEditor",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 145,
+              "printedPage": "6-71"
+            },
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 146,
+              "printedPage": "6-72"
+            },
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 150,
+              "printedPage": "6-76"
+            }
+          ]
+        }
+      ],
+      "zoneViewer": {
+        "initialZone": "1001",
+        "sort": "addressAscending",
+        "statusAlternatesWith": "function",
+        "hashModes": [
+          "descriptor",
+          "resistanceAndRioVoltage"
+        ],
+        "supportedStatusVocabulary": [
+          "open",
+          "closed",
+          "high resistance",
+          "low resistance",
+          "tamper short",
+          "tamper open circuit",
+          "masked"
+        ],
+        "sourceRefs": [
+          {
+            "sourceId": "galaxy-installer-rev1",
+            "pdfPage": 89,
+            "printedPage": "6-15"
+          },
+          {
+            "sourceId": "galaxy-user-rev1",
+            "pdfPage": 23,
+            "printedPage": "15"
+          }
+        ],
+        "notImplemented": [
+          "Daily minimum/maximum resistance history",
+          "Printing",
+          "Wireless signal-strength diagnostics",
+          "Group selection"
+        ]
+      },
+      "logViewer": {
+        "initialEvent": "newest",
+        "B": "older",
+        "A": "newer",
+        "hash": "detailsForCurrentEvent",
+        "sourceRefs": [
+          {
+            "sourceId": "galaxy-installer-rev1",
+            "pdfPage": 90,
+            "printedPage": "6-16"
+          }
+        ],
+        "fixtureNotes": "All sample dates, identities and event history are fictional. Real logs may include many more event types and use group filtering."
+      },
+      "walkTest": {
+        "allZonesFilter": "Only zones with Omit attribute enabled.",
+        "selectedZoneHash": "Toggle inclusion; selected shows TEST and unselected shows #=TEST.",
+        "selectedZoneEnt": "Start the test after zone selection.",
+        "activeLcd": [
+          "WALK TEST ACTIVE",
+          "ESC to abort"
+        ],
+        "activeHash": "Toggle tested-zones view.",
+        "activeEscape": "Terminate walk test.",
+        "triggerControl": "Separate FINDR fixture button; not a Galaxy key.",
+        "eventLogStart": "WALK TEST +",
+        "eventLogEnd": "WALK TEST –",
+        "sourceRefs": [
+          {
+            "sourceId": "galaxy-installer-rev1",
+            "pdfPage": 97,
+            "printedPage": "6-23"
+          },
+          {
+            "sourceId": "galaxy-installer-rev1",
+            "pdfPage": 98,
+            "printedPage": "6-24"
+          },
+          {
+            "sourceId": "galaxy-user-rev1",
+            "pdfPage": 25,
+            "printedPage": "17"
+          }
+        ]
+      },
+      "functionEditor": {
+        "saveKey": "ent",
+        "cancelKey": "esc",
+        "directEntryDigits": 2,
+        "sourceRefs": [
+          {
+            "sourceId": "galaxy-installer-rev1",
+            "pdfPage": 145,
+            "printedPage": "6-71"
+          },
+          {
+            "sourceId": "galaxy-installer-rev1",
+            "pdfPage": 146,
+            "printedPage": "6-72"
+          }
+        ],
+        "recommendedTaskValues": [
+          "01",
+          "02",
+          "03",
+          "18"
+        ],
+        "referenceValues": [
+          {
+            "code": "01",
+            "label": "Final"
+          },
+          {
+            "code": "02",
+            "label": "Exit"
+          },
+          {
+            "code": "03",
+            "label": "Intruder"
+          },
+          {
+            "code": "04",
+            "label": "24 Hours"
+          },
+          {
+            "code": "05",
+            "label": "Security"
+          },
+          {
+            "code": "06",
+            "label": "Dual"
+          },
+          {
+            "code": "07",
+            "label": "Entry"
+          },
+          {
+            "code": "08",
+            "label": "Push Set"
+          },
+          {
+            "code": "09",
+            "label": "Keyswitch"
+          },
+          {
+            "code": "10",
+            "label": "Secure Final"
+          },
+          {
+            "code": "11",
+            "label": "Part Final"
+          },
+          {
+            "code": "12",
+            "label": "Part Entry"
+          },
+          {
+            "code": "13",
+            "label": "PA"
+          },
+          {
+            "code": "14",
+            "label": "PA Silent"
+          },
+          {
+            "code": "15",
+            "label": "PA Delay"
+          },
+          {
+            "code": "16",
+            "label": "PA Delay Silent"
+          },
+          {
+            "code": "17",
+            "label": "Link"
+          },
+          {
+            "code": "18",
+            "label": "Spare"
+          },
+          {
+            "code": "19",
+            "label": "Fire"
+          },
+          {
+            "code": "20",
+            "label": "Tamper"
+          },
+          {
+            "code": "21",
+            "label": "Bell Tamper"
+          },
+          {
+            "code": "22",
+            "label": "Beam Pair"
+          },
+          {
+            "code": "23",
+            "label": "Battery Low"
+          },
+          {
+            "code": "24",
+            "label": "Line Fail"
+          },
+          {
+            "code": "25",
+            "label": "AC Fail"
+          },
+          {
+            "code": "26",
+            "label": "Log"
+          },
+          {
+            "code": "27",
+            "label": "Remote Access"
+          },
+          {
+            "code": "28",
+            "label": "Video"
+          },
+          {
+            "code": "29",
+            "label": "Video Exit"
+          },
+          {
+            "code": "30",
+            "label": "Intruder Delay"
+          },
+          {
+            "code": "31",
+            "label": "Log Delay"
+          },
+          {
+            "code": "32",
+            "label": "Set Log"
+          },
+          {
+            "code": "33",
+            "label": "Custom-A"
+          },
+          {
+            "code": "34",
+            "label": "Custom-B"
+          },
+          {
+            "code": "35",
+            "label": "Exitguard"
+          },
+          {
+            "code": "36",
+            "label": "Mask"
+          },
+          {
+            "code": "37",
+            "label": "Urgent"
+          },
+          {
+            "code": "38",
+            "label": "PA Unset"
+          },
+          {
+            "code": "39",
+            "label": "Keyswitch Reset"
+          },
+          {
+            "code": "40",
+            "label": "Bell Fail"
+          },
+          {
+            "code": "41",
+            "label": "Intr Low"
+          },
+          {
+            "code": "42",
+            "label": "Intr High"
+          },
+          {
+            "code": "43",
+            "label": "PSU Fault"
+          },
+          {
+            "code": "44",
+            "label": "Not Used"
+          },
+          {
+            "code": "45",
+            "label": "Not Used"
+          },
+          {
+            "code": "46",
+            "label": "Not Used"
+          },
+          {
+            "code": "47",
+            "label": "Vibration"
+          },
+          {
+            "code": "48",
+            "label": "ATM-1"
+          },
+          {
+            "code": "49",
+            "label": "ATM-2"
+          },
+          {
+            "code": "50",
+            "label": "ATM-3"
+          },
+          {
+            "code": "51",
+            "label": "ATM-4"
+          },
+          {
+            "code": "52",
+            "label": "Alarm Extend"
+          }
+        ],
+        "referenceSourceRefs": [
+          {
+            "sourceId": "galaxy-installer-rev1",
+            "pdfPage": 150,
+            "printedPage": "6-76"
+          }
+        ],
+        "note": "Reference values preserve numeric gaps and intervening options for accurate A/B traversal. If only selected values are implemented, label that limitation and teach numeric selection instead of pretending adjacent scrolling matches the complete panel."
+      },
+      "zoneAttributeReference": {
+        "supported": [
+          "1"
+        ],
+        "items": [
+          {
+            "code": "1",
+            "label": "Function"
+          },
+          {
+            "code": "2",
+            "label": "Descriptor"
+          },
+          {
+            "code": "3",
+            "label": "Chime"
+          },
+          {
+            "code": "4",
+            "label": "Omit"
+          },
+          {
+            "code": "5",
+            "label": "Part"
+          },
+          {
+            "code": "6",
+            "label": "Resp. Time"
+          },
+          {
+            "code": "7",
+            "label": "Custom SIA"
+          },
+          {
+            "code": "8",
+            "label": "Activity Mon."
+          },
+          {
+            "code": "9",
+            "label": "Res. Select"
+          },
+          {
+            "code": "10",
+            "label": "Group"
+          }
+        ],
+        "sourceRefs": [
+          {
+            "sourceId": "galaxy-installer-rev1",
+            "pdfPage": 145,
+            "printedPage": "6-71"
+          }
+        ],
+        "note": "Group appears only when group mode is enabled. Descriptor editing has different esc/save behaviour; it is intentionally outside this bounded editor."
+      },
+      "fixtures": {
+        "allDataFictional": true,
+        "hardware": "Hardwired RIO practice zones; 1k double-balanced resistance examples.",
+        "rioVoltage": 12.6,
+        "zones": [
+          {
+            "address": "1001",
+            "descriptor": "FRONT DOOR",
+            "functionCode": "01",
+            "status": "closed",
+            "resistanceOhms": 1000,
+            "omitEnabled": true
+          },
+          {
+            "address": "1002",
+            "descriptor": "HALL PIR",
+            "functionCode": "02",
+            "status": "closed",
+            "resistanceOhms": 1000,
+            "omitEnabled": true
+          },
+          {
+            "address": "1003",
+            "descriptor": "OFFICE PIR",
+            "functionCode": "18",
+            "status": "closed",
+            "resistanceOhms": 1000,
+            "omitEnabled": true
+          },
+          {
+            "address": "1004",
+            "descriptor": "STORE PIR",
+            "functionCode": "03",
+            "status": "closed",
+            "resistanceOhms": 1000,
+            "omitEnabled": true
+          }
+        ],
+        "zoneTrigger": {
+          "closedOhms": 1000,
+          "openOhms": 2000,
+          "note": "Synthetic teaching values for the fixture only; resistance interpretation depends on installed wiring and selected resistance preset."
+        },
+        "eventsNewestFirst": [
+          {
+            "id": "event-engineer",
+            "eventLabel": "+ENGINEER",
+            "time": "10:05",
+            "date": "29 OCT",
+            "detail": "PRACTICE SESSION",
+            "sourceRefs": [
+              {
+                "sourceId": "galaxy-installer-rev1",
+                "pdfPage": 288,
+                "printedPage": "D-2"
+              }
+            ]
+          },
+          {
+            "id": "event-intruder",
+            "eventLabel": "INTRUDER",
+            "zone": "1004",
+            "time": "09:42",
+            "date": "29 OCT",
+            "detail": "STORE PIR",
+            "sourceRefs": [
+              {
+                "sourceId": "galaxy-installer-rev1",
+                "pdfPage": 289,
+                "printedPage": "D-3"
+              }
+            ]
+          },
+          {
+            "id": "event-walk-end",
+            "eventLabel": "WALK TEST –",
+            "time": "09:20",
+            "date": "29 OCT",
+            "detail": "PRACTICE TEST",
+            "sourceRefs": [
+              {
+                "sourceId": "galaxy-installer-rev1",
+                "pdfPage": 98,
+                "printedPage": "6-24"
+              }
+            ]
+          }
+        ],
+        "note": "Sample events demonstrate browsing, not real system history. Zone labels, dates, and readings are FINDR teaching fixtures."
+      },
+      "tasks": [
+        {
+          "id": "zone-status",
+          "title": "Check whether a zone is open or closed",
+          "phraseAliases": [
+            "zone status",
+            "check a detector",
+            "open zone",
+            "is the door closed",
+            "zone state"
+          ],
+          "path": [
+            "display",
+            "display-zones"
+          ],
+          "steps": [
+            {
+              "action": "openMenu",
+              "id": "display-zones",
+              "hint": "Use 20 Display, then 21 Display Zones. Direct menu selection 21 is also available."
+            },
+            {
+              "action": "selectZone",
+              "address": "1002",
+              "hint": "A advances through zones; B goes back. A four-digit address also selects a zone."
+            },
+            {
+              "action": "inspectZoneStatus",
+              "address": "1002",
+              "hint": "The zone function and circuit status alternate on the top line."
+            }
+          ],
+          "goal": {
+            "event": "zoneStatusViewed",
+            "zone": "1002"
+          },
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 89,
+              "printedPage": "6-15"
+            },
+            {
+              "sourceId": "galaxy-user-rev1",
+              "pdfPage": 23,
+              "printedPage": "15"
+            }
+          ]
+        },
+        {
+          "id": "zone-resistance",
+          "title": "Read a zone resistance and RIO voltage",
+          "phraseAliases": [
+            "resistance",
+            "ohms",
+            "loop reading",
+            "zone resistance",
+            "voltage",
+            "RIO voltage"
+          ],
+          "path": [
+            "display",
+            "display-zones"
+          ],
+          "steps": [
+            {
+              "action": "openMenu",
+              "id": "display-zones"
+            },
+            {
+              "action": "selectZone",
+              "address": "1002"
+            },
+            {
+              "action": "pressKey",
+              "key": "#",
+              "hint": "Show circuit resistance and RIO voltage on the lower line."
+            }
+          ],
+          "goal": {
+            "event": "zoneDetailsViewed",
+            "zone": "1002"
+          },
+          "teachingNote": "The voltage belongs to the RIO. These are synthetic readings from a hardwired practice zone, not measured detector voltage.",
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 89,
+              "printedPage": "6-15"
+            },
+            {
+              "sourceId": "galaxy-user-rev1",
+              "pdfPage": 23,
+              "printedPage": "15"
+            }
+          ]
+        },
+        {
+          "id": "alarm-history",
+          "title": "Find an alarm in the event log",
+          "phraseAliases": [
+            "event log",
+            "history",
+            "alarm history",
+            "last alarm",
+            "what set it off",
+            "view events"
+          ],
+          "path": [
+            "display",
+            "display-log"
+          ],
+          "steps": [
+            {
+              "action": "openMenu",
+              "id": "display-log"
+            },
+            {
+              "action": "pressKey",
+              "key": "B",
+              "hint": "B moves to an older event; A moves to a newer event."
+            },
+            {
+              "action": "pressKey",
+              "key": "#",
+              "hint": "Reveal extra details for the alarm event."
+            }
+          ],
+          "goal": {
+            "event": "logDetailsViewed",
+            "logId": "event-intruder"
+          },
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 90,
+              "printedPage": "6-16"
+            },
+            {
+              "sourceId": "galaxy-user-rev1",
+              "pdfPage": 23,
+              "printedPage": "15"
+            },
+            {
+              "sourceId": "galaxy-user-rev1",
+              "pdfPage": 24,
+              "printedPage": "16"
+            }
+          ]
+        },
+        {
+          "id": "walk-test",
+          "title": "Walk test one selected zone",
+          "phraseAliases": [
+            "walk test",
+            "test a detector",
+            "PIR test",
+            "test a zone",
+            "silent test"
+          ],
+          "path": [
+            "test",
+            "walk-test",
+            "walk-activate",
+            "walk-silent",
+            "walk-silent-selected"
+          ],
+          "steps": [
+            {
+              "action": "openMenu",
+              "id": "walk-silent-selected",
+              "hint": "30 Test → 31 Walk Test → 2 Activate → 1 Silent → 2 Selected Zones."
+            },
+            {
+              "action": "selectZone",
+              "address": "1002"
+            },
+            {
+              "action": "pressKey",
+              "key": "#",
+              "hint": "Toggle this zone into the test."
+            },
+            {
+              "action": "pressKey",
+              "key": "ent",
+              "hint": "Start the selected-zone test."
+            },
+            {
+              "action": "externalFixture",
+              "control": "triggerZone",
+              "zone": "1002",
+              "hint": "Use FINDR’s separate practice trigger to simulate the detector opening and closing."
+            },
+            {
+              "action": "pressKey",
+              "key": "#",
+              "hint": "Review zones tested during this session."
+            },
+            {
+              "action": "pressKey",
+              "key": "#",
+              "hint": "Return to the active walk test."
+            },
+            {
+              "action": "pressKey",
+              "key": "esc",
+              "hint": "End the walk test."
+            }
+          ],
+          "goal": {
+            "event": "walkTestEnded",
+            "testedZones": [
+              "1002"
+            ]
+          },
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 97,
+              "printedPage": "6-23"
+            },
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 98,
+              "printedPage": "6-24"
+            },
+            {
+              "sourceId": "galaxy-user-rev1",
+              "pdfPage": 25,
+              "printedPage": "17"
+            }
+          ]
+        },
+        {
+          "id": "zone-function",
+          "title": "Set a practice zone to Intruder",
+          "phraseAliases": [
+            "zone type",
+            "zone function",
+            "program a zone",
+            "change a zone",
+            "make it an intruder zone"
+          ],
+          "path": [
+            "engineer1",
+            "program-zones",
+            "zone-attributes",
+            "zone-function"
+          ],
+          "fixtureOverride": {
+            "zone": "1003",
+            "functionCode": "18"
+          },
+          "steps": [
+            {
+              "action": "openMenu",
+              "id": "program-zones",
+              "hint": "50 Engineer 1 → 52 Program Zones."
+            },
+            {
+              "action": "selectZone",
+              "address": "1003"
+            },
+            {
+              "action": "pressKey",
+              "key": "ent"
+            },
+            {
+              "action": "openMenu",
+              "id": "zone-function",
+              "hint": "Choose 1 Function."
+            },
+            {
+              "action": "enterDigits",
+              "digits": "03",
+              "hint": "03 is Intruder. This only selects the proposed value."
+            },
+            {
+              "action": "pressKey",
+              "key": "ent",
+              "hint": "Confirm the new function for this virtual zone."
+            }
+          ],
+          "goal": {
+            "event": "zoneFunctionSaved",
+            "zone": "1003",
+            "value": "03"
+          },
+          "sourceRefs": [
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 145,
+              "printedPage": "6-71"
+            },
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 146,
+              "printedPage": "6-72"
+            },
+            {
+              "sourceId": "galaxy-installer-rev1",
+              "pdfPage": 150,
+              "printedPage": "6-76"
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "Bounded practice based on a named archived edition, not a claim of current firmware or a complete Galaxy-family emulator.",
+        "The user guide documents Quick Menu shortcuts 3/4/6; this engineer trainer deliberately uses Full Menu 21/22/31. Do not combine the numbering schemes.",
+        "Only selected branches are implemented. Omitted menu options retain their real numbers if later added.",
+        "No live alarm communication, account credentials, PIN authorisation, physical output control, transmission or actual engineer logoff checks.",
+        "Menu labels and numbers are verified against the manuals. Exact screen spacing, dates, descriptors, readings and synthetic events are illustrative.",
+        "Readings apply to the fictional hardwired fixture; # displays RIO voltage, not detector voltage.",
+        "For a future authentic engineer-exit lesson, the documented action is engineer code plus esc from the engineer banner, not a numbered Log off menu option; real exit checks would also need modelling."
+      ],
+      "engineerAccessReferenceOnly": {
+        "includedInPractice": false,
+        "authorisationPath": "48 Eng Access → 1 System Access → 1 Engineer → 1 Enabled",
+        "exit": "From the engineer banner, engineer code + esc; the real system then performs checks.",
+        "sourceRefs": [
+          {
+            "sourceId": "galaxy-installer-rev1",
+            "pdfPage": 77,
+            "printedPage": "6-3"
+          },
+          {
+            "sourceId": "galaxy-installer-rev1",
+            "pdfPage": 103,
+            "printedPage": "6-29"
+          },
+          {
+            "sourceId": "galaxy-installer-rev1",
+            "pdfPage": 124,
+            "printedPage": "6-50"
+          },
+          {
+            "sourceId": "galaxy-user-rev1",
+            "pdfPage": 42,
+            "printedPage": "34"
+          }
+        ]
+      },
+      "catalogueAudit": {
+        "existingPanelId": "honeywell-galaxy-dimension",
+        "installerRecordId": "honeywell-18a74589d3d1",
+        "brochureRecordId": "honeywell-10550db2b231",
+        "brochureNote": "Galaxy Dimension.pdf is a two-page product brochure (HSC-GDIM-03-EN(0610)SB-C, June 2010), not the user guide. Do not cite it for menu behaviour."
+      }
+    },
+    "texecom": {
+      "modelId": "texecom-premier-elite-48",
+      "title": "Premier Elite 48 LCD",
+      "brand": "Texecom",
+      "family": "Premier Elite",
+      "panelIds": [
+        "texecom-premier-elite-24",
+        "texecom-premier-elite-48",
+        "texecom-premier-elite-88",
+        "texecom-premier-elite-168"
+      ],
+      "scope": "A bounded engineer-menu practice model for the Premier Elite 48, using the common 24/48/88/168 LCD workflows in INS176-9. It begins with simulated engineer access already granted.",
+      "display": {
+        "rows": 2,
+        "columns": 16,
+        "authenticity": "Documented labels and navigation with fictional site readings, events, zone names and time."
+      },
+      "manualSources": [
+        {
+          "id": "quick",
+          "title": "Premier Elite Series Quick Reference Guide",
+          "catalogueTitle": "Premier Elite Quick Start Guide",
+          "recordId": "texecom-12ae0837287a",
+          "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/02/01102933/INS222-10_Premier_Elite_Quick_Start_Guide.pdf",
+          "edition": "INS222-10",
+          "provenance": "Manufacturer-hosted original PDF",
+          "pages": [
+            2,
+            5,
+            6,
+            19,
+            20
+          ],
+          "pageNumbering": "Printed and one-based PDF pages match."
+        },
+        {
+          "id": "install",
+          "title": "Premier Elite 24/24-W/48/48-W/88/168 & 640 Installation Manual",
+          "recordId": "texecom-9cb9d39ce46e",
+          "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Texecom%20Premier%20Elite%20Installation%20Manual.pdf",
+          "edition": "INS176-9, Revision 9",
+          "provenance": "Original manufacturer manual, hosted by UKWatch Security; edition printed in the document",
+          "pages": [
+            45,
+            46,
+            47,
+            48,
+            50,
+            112,
+            113,
+            114,
+            115,
+            116
+          ],
+          "pageNumbering": "Printed and one-based PDF pages match."
+        },
+        {
+          "id": "user",
+          "title": "Premier Elite Series Master User Guide",
+          "recordId": "texecom-a088cf2857ea",
+          "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/02/01102934/INS177-9_Premier_Elite_Series_Master_User_Guide-3.pdf",
+          "edition": "INS177-9",
+          "provenance": "Manufacturer-hosted original PDF",
+          "pages": [
+            7
+          ],
+          "pageNumbering": "Printed and one-based PDF pages match."
+        }
+      ],
+      "controls": {
+        "physicalKeys": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "0",
+          "Yes",
+          "No",
+          "Menu",
+          "Scroll up",
+          "Scroll down",
+          "Area",
+          "Part",
+          "Chime",
+          "Omit",
+          "Reset"
+        ],
+        "keypadSourceRefs": [
+          {
+            "sourceId": "quick",
+            "pages": [
+              2
+            ]
+          },
+          {
+            "sourceId": "user",
+            "pages": [
+              7
+            ]
+          }
+        ],
+        "menu": {
+          "numeric": "Select the matching menu item, then Yes opens it. A numeric shortcut must not immediately enter the item.",
+          "Yes": "Open the highlighted option.",
+          "No": "Context-specific change/edit key; do not globally map it to Back.",
+          "Menu": "Return to the preceding menu level.",
+          "Scroll up": "Move to the preceding available item.",
+          "Scroll down": "Move to the following available item.",
+          "Reset": "Context-specific. At the engineer root it selects Log off ENGINEER; a second Reset may leave programming while keeping the engineer logged on.",
+          "sourceRefs": [
+            {
+              "sourceId": "install",
+              "pages": [
+                45,
+                47
+              ]
+            },
+            {
+              "sourceId": "quick",
+              "pages": [
+                5
+              ]
+            }
+          ]
+        },
+        "cancelCaveat": "The referenced zone diagram proves No=edit and Yes=accept. It does not establish a universal discard-draft shortcut. If the app supports abandoning a draft with Menu, identify discard behaviour as a trainer rule rather than a verified firmware promise."
+      },
+      "rootId": "engineer",
+      "menus": [
+        {
+          "id": "engineer",
+          "type": "menu",
+          "label": "Engineer programming",
+          "labelIsAppDescription": true,
+          "displayHeader": "YES to Select:-",
+          "initialSelection": "zone-setup",
+          "children": [
+            "zone-setup",
+            "engineer-utils",
+            "logoff"
+          ],
+          "sourceRefs": [
+            {
+              "sourceId": "install",
+              "pages": [
+                45,
+                46
+              ]
+            }
+          ]
+        },
+        {
+          "id": "zone-setup",
+          "type": "zone-type-editor",
+          "parent": "engineer",
+          "label": "Zone Setup",
+          "code": "1",
+          "initialZone": "001",
+          "displayTemplates": {
+            "line1": "Zone {zone} Panel {input}",
+            "line2": "{type}",
+            "editingLine2": "{type padded to 15}<"
+          },
+          "zoneNumberDigits": 3,
+          "enterBehaviour": "Yes enters the first zone's type field directly. Do not insert a firmware-looking Zone Type submenu.",
+          "browseControls": {
+            "digits": "Enter a three-digit zone number.",
+            "Scroll up/down": "Choose another zone while keeping the same field.",
+            "No": "Begin editing the displayed zone type.",
+            "Yes": "Continue to this zone's next field (Attributes 1 on the full panel).",
+            "Menu": "Return to the engineer menu."
+          },
+          "editControls": {
+            "digits": "Select the corresponding type shortcut.",
+            "Scroll up/down": "Choose a zone type.",
+            "Yes": "Accept the selected type and leave edit mode; a further Yes advances to Attributes 1 in the full firmware.",
+            "No": "Not a documented cancel key for this workflow."
+          },
+          "supportedTypes": [
+            {
+              "code": "0",
+              "label": "Not Used",
+              "aliases": [
+                "unused input"
+              ]
+            },
+            {
+              "code": "1",
+              "label": "Entry/Exit 1",
+              "aliases": [
+                "main entry door",
+                "entry route start"
+              ]
+            },
+            {
+              "code": "2",
+              "label": "Entry/Exit 2",
+              "aliases": [
+                "second entry delay"
+              ]
+            },
+            {
+              "code": "3",
+              "label": "Guard",
+              "aliases": [
+                "normal intruder zone",
+                "instant alarm zone"
+              ]
+            },
+            {
+              "code": "4",
+              "label": "Guard Access",
+              "aliases": [
+                "entry route PIR",
+                "access zone"
+              ]
+            }
+          ],
+          "outOfScopeFields": [
+            "Attributes 1",
+            "Attributes 2",
+            "Zone Areas",
+            "Zone Text",
+            "Chime",
+            "Remote Test",
+            "Wiring Type",
+            "Zone Group",
+            "Ricochet"
+          ],
+          "sourceRefs": [
+            {
+              "sourceId": "quick",
+              "pages": [
+                6
+              ]
+            },
+            {
+              "sourceId": "install",
+              "pages": [
+                48,
+                50
+              ]
+            }
+          ]
+        },
+        {
+          "id": "engineer-utils",
+          "type": "menu",
+          "parent": "engineer",
+          "label": "Engineer Utils",
+          "code": "9",
+          "displayHeader": "Engineer Utils",
+          "initialSelection": "event-log",
+          "children": [
+            "event-log",
+            "walk-test",
+            "zone-status"
+          ],
+          "sourceRefs": [
+            {
+              "sourceId": "quick",
+              "pages": [
+                19,
+                20
+              ]
+            },
+            {
+              "sourceId": "install",
+              "pages": [
+                46
+              ]
+            }
+          ]
+        },
+        {
+          "id": "event-log",
+          "type": "log-selector",
+          "parent": "engineer-utils",
+          "label": "View Event Log",
+          "code": "0",
+          "selectorDisplay": [
+            "1=Event,2 =Alarm",
+            "3=Mandatory Log"
+          ],
+          "choices": [
+            {
+              "code": "1",
+              "id": "system-log",
+              "label": "Event",
+              "description": "System log"
+            },
+            {
+              "code": "2",
+              "id": "alarm-log",
+              "label": "Alarm",
+              "description": "Alarm log"
+            },
+            {
+              "code": "3",
+              "id": "mandatory-log",
+              "label": "Mandatory Log",
+              "description": "Mandatory event log"
+            }
+          ],
+          "choiceBehaviour": "A digit opens that log directly; do not add a second confirmation.",
+          "viewerControls": {
+            "Scroll down": "Show an older event.",
+            "Scroll up": "Show a newer event.",
+            "Area": "Toggle the second line between time/date and area information.",
+            "Part": "Show associated programmed text where an event has it.",
+            "Chime": "Find a preceding related event.",
+            "Menu": "Leave this view."
+          },
+          "systemLogOnlyHotkeys": {
+            "1": "priority alarms",
+            "2": "normal alarms",
+            "3": "arming/disarming",
+            "4": "omit/reinstate",
+            "5": "maintenance",
+            "6": "tamper",
+            "7": "test calls",
+            "8": "entry/exit",
+            "0": "user codes"
+          },
+          "sourceRefs": [
+            {
+              "sourceId": "install",
+              "pages": [
+                112
+              ]
+            },
+            {
+              "sourceId": "quick",
+              "pages": [
+                20
+              ]
+            }
+          ]
+        },
+        {
+          "id": "walk-test",
+          "type": "walk-test",
+          "parent": "engineer-utils",
+          "label": "Do walk test?",
+          "indexLabel": "Do Walk Test",
+          "code": "2",
+          "areaSelectionDisplay": [
+            "Walk test Areas>",
+            "> A....... <"
+          ],
+          "areaSelectionIsTrainingFixture": true,
+          "initialActiveDisplay": [
+            "",
+            "* NONE *"
+          ],
+          "activatedDisplay": [
+            "Zone {zone}",
+            "{zoneText}"
+          ],
+          "startBehaviour": "Yes opens area selection. Yes again starts the walk test for selected areas. Digits 1–8 toggle areas on the full panel.",
+          "fixtureAreas": [
+            "A"
+          ],
+          "controls": {
+            "Area": "Cycle normal tested-zone display, zones still needing a test, then inactivity view, then normal display.",
+            "Chime": "Cycle chime once, chime on each activation, no chime.",
+            "Menu": "End this view and return."
+          },
+          "inactivityView": "The full menu can inspect zones not activated within a chosen number of days. Exclude or clearly label this view as unavailable if history is not simulated.",
+          "testCondition": "The fixture is disarmed. A simulated detector activation marks the selected zone tested.",
+          "sourceRefs": [
+            {
+              "sourceId": "install",
+              "pages": [
+                115
+              ]
+            },
+            {
+              "sourceId": "quick",
+              "pages": [
+                19,
+                20
+              ]
+            }
+          ]
+        },
+        {
+          "id": "zone-status",
+          "type": "zone-status",
+          "parent": "engineer-utils",
+          "label": "View Zone Status",
+          "code": "3",
+          "zoneNumberDigits": 3,
+          "initialZone": "001",
+          "displayTemplates": {
+            "line1": "Zone {zone} Panel {input}",
+            "line2": "{state padded to 13}{resistance}"
+          },
+          "states": [
+            "Secure",
+            "Active",
+            "Tampered",
+            "Shorted"
+          ],
+          "fixtureValues": {
+            "Secure": "2k2",
+            "Active": "6k9"
+          },
+          "fixtureWiring": "A fictional wired 2k2/4k7 loop; these readings are not universal values for every wiring configuration.",
+          "controls": {
+            "digits": "Enter a three-digit zone number.",
+            "Scroll up/down": "Choose another zone.",
+            "Area": "Show programmed zone text.",
+            "Chime": "Enable an activation chime for the selected zone.",
+            "Omit": "Temporarily disable the selected zone while this diagnostic view remains open.",
+            "Menu": "Leave the view; clear diagnostic omissions and chime flags for all zones."
+          },
+          "omittedDisplayTemplates": {
+            "line1": "ZoneX{zone} Panel {input}",
+            "line2": "Zone Disabled"
+          },
+          "implementationRequirement": "If diagnostic Omit or Chime is implemented, automatically clear it on every exit from this view, including profile switches and task resets.",
+          "sourceRefs": [
+            {
+              "sourceId": "install",
+              "pages": [
+                116
+              ]
+            },
+            {
+              "sourceId": "quick",
+              "pages": [
+                19,
+                20
+              ]
+            }
+          ]
+        },
+        {
+          "id": "logoff",
+          "type": "logoff",
+          "parent": "engineer",
+          "label": "Log off ENGINEER",
+          "code": "0",
+          "display": [
+            "YES to Select:-",
+            "Log off ENGINEER"
+          ],
+          "controls": {
+            "Yes": "Complete simulated engineer logoff and show normal idle display."
+          },
+          "sourceRefs": [
+            {
+              "sourceId": "install",
+              "pages": [
+                45,
+                47
+              ]
+            }
+          ]
+        }
+      ],
+      "fictionalFixture": {
+        "description": "FINDR training data; no actual installed panel is represented.",
+        "armed": false,
+        "engineerLoggedIn": true,
+        "areas": [
+          "A"
+        ],
+        "zones": [
+          {
+            "id": "001",
+            "input": 1,
+            "text": "Front door",
+            "area": "A",
+            "type": "Entry/Exit 1",
+            "state": "Secure"
+          },
+          {
+            "id": "002",
+            "input": 2,
+            "text": "Hall PIR",
+            "area": "A",
+            "type": "Guard Access",
+            "state": "Secure"
+          },
+          {
+            "id": "003",
+            "input": 3,
+            "text": "Workshop PIR",
+            "area": "A",
+            "type": "Entry/Exit 1",
+            "state": "Secure"
+          },
+          {
+            "id": "004",
+            "input": 4,
+            "text": "Store contact",
+            "area": "A",
+            "type": "Guard",
+            "state": "Secure"
+          }
+        ],
+        "eventsNewestFirst": [
+          {
+            "event": "PROG. START",
+            "time": "12:10.00 28/10",
+            "area": "A",
+            "category": "maintenance",
+            "logMembership": [
+              "system-log"
+            ]
+          },
+          {
+            "event": "Zone 003 Restore",
+            "time": "11:42.10 28/10",
+            "area": "A",
+            "zone": "003",
+            "category": "normal alarms",
+            "logMembership": [
+              "system-log",
+              "alarm-log"
+            ]
+          },
+          {
+            "event": "Zone 003 Alarm",
+            "time": "11:42.02 28/10",
+            "area": "A",
+            "zone": "003",
+            "category": "normal alarms",
+            "logMembership": [
+              "system-log",
+              "alarm-log"
+            ]
+          },
+          {
+            "event": "AREA Armed",
+            "time": "11:30.00 28/10",
+            "area": "A",
+            "category": "arming/disarming",
+            "logMembership": [
+              "system-log"
+            ]
+          }
+        ],
+        "eventSourceRefs": [
+          {
+            "sourceId": "install",
+            "pages": [
+              112,
+              113,
+              114
+            ]
+          }
+        ],
+        "eventMembershipCaveat": "The training fixture chooses membership for its small example set; it does not claim to reproduce the full panel's event filtering or mandatory-log classification."
+      },
+      "tasks": [
+        {
+          "id": "check-resistance",
+          "title": "Check zone resistance",
+          "phraseAliases": [
+            "zone ohms",
+            "check a PIR",
+            "is this zone open",
+            "zone diagnostics",
+            "zone status"
+          ],
+          "path": [
+            "engineer",
+            "engineer-utils",
+            "zone-status"
+          ],
+          "keysFromRoot": [
+            "9",
+            "Yes",
+            "3",
+            "Yes",
+            "0",
+            "0",
+            "2"
+          ],
+          "goal": "Select zone 002, read Secure 2k2, activate its fictional detector and observe Active 6k9.",
+          "completion": {
+            "view": "zone-status",
+            "zone": "002",
+            "observedStates": [
+              "Secure",
+              "Active"
+            ]
+          },
+          "teachingNote": "Resistance appears beside the zone state. There is no separate Resistance submenu on this path.",
+          "sourceRefs": [
+            {
+              "sourceId": "install",
+              "pages": [
+                116
+              ]
+            }
+          ]
+        },
+        {
+          "id": "find-last-alarm",
+          "title": "Find the last alarm",
+          "phraseAliases": [
+            "alarm history",
+            "what set it off",
+            "event history",
+            "look at the log"
+          ],
+          "path": [
+            "engineer",
+            "engineer-utils",
+            "event-log",
+            "alarm-log"
+          ],
+          "keysFromRoot": [
+            "9",
+            "Yes",
+            "0",
+            "Yes",
+            "2",
+            "Scroll down"
+          ],
+          "goal": "Find the example Zone 003 Alarm and inspect its area or zone text.",
+          "completion": {
+            "log": "alarm-log",
+            "event": "Zone 003 Alarm"
+          },
+          "teachingNote": "The first log selector uses 2 for Alarm. Inside the System log, numeric keys instead act as event-category shortcuts.",
+          "sourceRefs": [
+            {
+              "sourceId": "install",
+              "pages": [
+                112,
+                114
+              ]
+            }
+          ]
+        },
+        {
+          "id": "walk-test-pir",
+          "title": "Walk-test a PIR",
+          "phraseAliases": [
+            "test detector",
+            "test movement sensor",
+            "walk test",
+            "which zones have been tested"
+          ],
+          "path": [
+            "engineer",
+            "engineer-utils",
+            "walk-test"
+          ],
+          "keysFromRoot": [
+            "9",
+            "Yes",
+            "2",
+            "Yes",
+            "Yes"
+          ],
+          "goal": "Start the Area A test, activate the fictional Workshop PIR, then inspect remaining zones with Area.",
+          "completion": {
+            "testedZonesInclude": [
+              "003"
+            ],
+            "remainingViewSeen": true
+          },
+          "teachingNote": "Detector buttons beside the keypad are FINDR simulation controls, not extra panel keys.",
+          "sourceRefs": [
+            {
+              "sourceId": "install",
+              "pages": [
+                115
+              ]
+            }
+          ]
+        },
+        {
+          "id": "change-zone-type",
+          "title": "Change a zone type",
+          "phraseAliases": [
+            "program a zone",
+            "make a normal alarm zone",
+            "change a PIR type",
+            "instant zone"
+          ],
+          "path": [
+            "engineer",
+            "zone-setup"
+          ],
+          "keysFromRoot": [
+            "1",
+            "Yes",
+            "0",
+            "0",
+            "3",
+            "No",
+            "3",
+            "Yes"
+          ],
+          "goal": "Change fictional zone 003 from Entry/Exit 1 to Guard and accept the new value.",
+          "completion": {
+            "zone": "003",
+            "acceptedType": "Guard"
+          },
+          "teachingNote": "No begins editing; Yes accepts. Guard is the actual displayed type, while 'instant zone' is a FINDR search phrase.",
+          "sourceRefs": [
+            {
+              "sourceId": "install",
+              "pages": [
+                48,
+                50
+              ]
+            },
+            {
+              "sourceId": "quick",
+              "pages": [
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "id": "leave-engineering",
+          "title": "Log off engineer",
+          "phraseAliases": [
+            "exit engineer",
+            "finish programming",
+            "leave engineer mode"
+          ],
+          "path": [
+            "engineer",
+            "logoff"
+          ],
+          "keysFromRoot": [
+            "0",
+            "Yes"
+          ],
+          "goal": "Explicitly log off the simulated engineer session.",
+          "completion": {
+            "engineerLoggedIn": false
+          },
+          "teachingNote": "Leaving the programming display and logging off are different actions on this panel.",
+          "sourceRefs": [
+            {
+              "sourceId": "install",
+              "pages": [
+                45,
+                47
+              ]
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "This is a documented subset based on named manual editions, not a complete firmware emulator or a claim about every Premier Elite revision.",
+        "The trainer starts in engineer mode and has no real PIN, default-code or authentication workflow.",
+        "No live alarm, signalling, bell, user, credential or device connection is present.",
+        "Only selected engineer options and five common zone types are supported. Unimplemented fields must be visibly marked outside the keypad display.",
+        "Aliases belong in FINDR search/help; only documented wording belongs on the simulated LCD.",
+        "A generic No=Back mapping is inaccurate here. Keep Menu and No separate.",
+        "If the UI omits the full walk-test inactivity cycle, describe the walk-test screen as a simplified practice subset.",
+        "The full manual's log events and timings are replaced by fictional fixture data. Do not imply that the sample log proves real event membership or event order.",
+        "Cancellation of an unaccepted zone-type draft is an explicit trainer rule unless separately verified; the manual only clearly establishes No to edit and Yes to accept.",
+        "Only the 24/48/88/168 walk-test branch is represented. The 640 area-group workflow is excluded."
+      ]
+    },
+    "scantronic": {
+      "schemaVersion": 1,
+      "id": "scantronic-ion40h-plus-v6",
+      "brand": "Eaton / Scantronic",
+      "title": "Scantronic i-on40H+",
+      "subtitle": "Installer menu practice · software 6.0.xx",
+      "catalogueFamilyId": "eaton-scantronic-i-on-series",
+      "catalogueRecordId": "eaton-scantronic-4d91e0460f33",
+      "catalogueRecordRelationship": "Related current official user manual; the installer workflow source is a separate Eaton-authored 2019 Configuration Guide.",
+      "profile": {
+        "model": "i-on40H+",
+        "softwareVersion": "6.0.xx",
+        "keypad": "KEY-KP01-style wired LCD keypad",
+        "keypadAccuracy": "Functional key layout and menu vocabulary; not a pixel-exact firmware emulator.",
+        "entryState": "installer",
+        "authenticationSimulated": false,
+        "mode": "offline simulation",
+        "scopeLabel": "Selected installer menus",
+        "scope": [
+          "Detectors/Devices",
+          "Test",
+          "View Log",
+          "Leave installer mode ?"
+        ],
+        "hardwareAssumptions": [
+          "Wired zones available",
+          "Three fictional practice detectors",
+          "FSL 2k2/4k7 without masking for resistance examples",
+          "No active exit faults"
+        ]
+      },
+      "sources": [
+        {
+          "id": "cfg6",
+          "title": "i-on Series Security System Configuration Guide",
+          "publisher": "Eaton",
+          "edition": "Issue 1",
+          "softwareVersion": "6.0.xx",
+          "date": "2019-10-01",
+          "partNumber": "13368866",
+          "url": "https://manuals.plus/m/c3243f2cbca970b85037b1ba61cd19e6d75283e105a422e3fc0be3acfe81950c.pdf",
+          "sourceType": "Manufacturer-authored original PDF hosted on public mirror",
+          "catalogueRecordId": null,
+          "pdfPages": 140,
+          "pageNumbering": "Body printed page equals 1-based PDF page; viewer page index is printed page minus 1.",
+          "webRefs": [
+            "turn50view0",
+            "turn58view0",
+            "turn58view1",
+            "turn58view2",
+            "turn60view0",
+            "turn61view1",
+            "turn67view0"
+          ]
+        },
+        {
+          "id": "install6",
+          "title": "i-on Series Security System Installation Manual",
+          "publisher": "Eaton",
+          "edition": "Issue 1",
+          "softwareVersion": "6.0.xx",
+          "date": "2019-10-01",
+          "partNumber": "13368865",
+          "url": "https://manuals.plus/m/3b77d1ff90de3be22977303a3df5ab14c428ae952177fcf1c0d9d0b5e1cf03d9.pdf",
+          "sourceType": "Manufacturer-authored original PDF hosted on public mirror",
+          "catalogueRecordId": null,
+          "pdfPages": 54,
+          "pageNumbering": "Body printed page equals 1-based PDF page.",
+          "webRefs": [
+            "turn49view1",
+            "turn66view2",
+            "turn67view1"
+          ]
+        },
+        {
+          "id": "user7",
+          "title": "i-on Series Security System Administration and User Manual",
+          "publisher": "Eaton",
+          "edition": "Issue 4",
+          "softwareVersion": "7.02.xx",
+          "copyrightYear": 2022,
+          "url": "https://www.eaton.com/content/dam/eaton/products/safety-security-emergency-communications/security-intruder-alarm-systems/i-on-series-admin-and-user-guides/eaton-security-i-on-series-admin-user-manual-en-gb.pdf",
+          "sourceType": "Official manufacturer website",
+          "catalogueRecordId": "eaton-scantronic-4d91e0460f33",
+          "pdfPages": 67,
+          "useLimit": "Corroborates log navigation only; not the source for the v6 Installer hierarchy or exit rules.",
+          "webRefs": [
+            "turn61view0",
+            "turn66view1"
+          ]
+        }
+      ],
+      "sourceRefs": {
+        "navigation": {
+          "sourceId": "cfg6",
+          "printedPages": [
+            12,
+            13
+          ],
+          "pdfPages": [
+            12,
+            13
+          ],
+          "section": "Saving Changes; Understanding the User Interface"
+        },
+        "exit": {
+          "sourceId": "cfg6",
+          "printedPages": [
+            14
+          ],
+          "pdfPages": [
+            14
+          ],
+          "section": "Exiting the Installer Menu"
+        },
+        "zones": {
+          "sourceId": "cfg6",
+          "printedPages": [
+            23,
+            24,
+            129
+          ],
+          "pdfPages": [
+            23,
+            24,
+            129
+          ],
+          "section": "Program Zones; Type; Installer Menu Map"
+        },
+        "resistance": {
+          "sourceId": "cfg6",
+          "printedPages": [
+            110,
+            139
+          ],
+          "pdfPages": [
+            110,
+            139
+          ],
+          "section": "Zone Resistances; Installer Menu Map"
+        },
+        "fslBands": {
+          "sourceId": "install6",
+          "printedPages": [
+            22
+          ],
+          "pdfPages": [
+            22
+          ],
+          "section": "Table 4: FSL Resistor Bands (without Masking)"
+        },
+        "walk": {
+          "sourceId": "cfg6",
+          "printedPages": [
+            109,
+            110,
+            139
+          ],
+          "pdfPages": [
+            109,
+            110,
+            139
+          ],
+          "section": "Walk Test; Installer Menu Map"
+        },
+        "log": {
+          "sourceId": "cfg6",
+          "printedPages": [
+            114,
+            123,
+            124,
+            139
+          ],
+          "pdfPages": [
+            114,
+            123,
+            124,
+            139
+          ],
+          "section": "View Log Menu; Log Messages; Installer Menu Map"
+        },
+        "logNavigation": {
+          "sourceId": "user7",
+          "printedPages": [
+            40
+          ],
+          "pdfPages": [
+            44
+          ],
+          "section": "Viewing the log",
+          "versionCaveat": "Later user-guide corroboration of common log browsing controls."
+        },
+        "keypad": {
+          "sourceId": "install6",
+          "printedPages": [
+            21
+          ],
+          "pdfPages": [
+            21
+          ],
+          "section": "Table 3: Current Consumptions includes KEY-KP01 wired keypad"
+        }
+      },
+      "controls": [
+        {
+          "id": "up",
+          "label": "▲",
+          "action": "Previous option or more-recent log event",
+          "sourceRefs": [
+            "navigation",
+            "logNavigation"
+          ]
+        },
+        {
+          "id": "down",
+          "label": "▼",
+          "action": "Next option or older log event",
+          "sourceRefs": [
+            "navigation",
+            "logNavigation"
+          ]
+        },
+        {
+          "id": "confirm",
+          "label": "✓",
+          "action": "Select; confirm an edit; finish a walk test",
+          "sourceRefs": [
+            "navigation",
+            "walk"
+          ]
+        },
+        {
+          "id": "back",
+          "label": "✕",
+          "action": "Back one level; decline leaving at the exit prompt",
+          "sourceRefs": [
+            "navigation",
+            "exit"
+          ]
+        },
+        {
+          "id": "left",
+          "label": "◀",
+          "action": "Context-dependent: zone name/number or value toggle",
+          "sourceRefs": [
+            "navigation",
+            "resistance",
+            "walk"
+          ]
+        },
+        {
+          "id": "right",
+          "label": "▶",
+          "action": "Context-dependent: zone name/number, value toggle, or log details",
+          "sourceRefs": [
+            "navigation",
+            "resistance",
+            "walk",
+            "logNavigation"
+          ]
+        },
+        {
+          "id": "menu",
+          "label": "≡",
+          "action": "During walk test: switch between all and untested zones",
+          "sourceRefs": [
+            "walk"
+          ]
+        },
+        {
+          "id": "digits",
+          "label": "0–9",
+          "action": "Type menu only: two-digit type shortcut",
+          "sourceRefs": [
+            "zones"
+          ]
+        }
+      ],
+      "shortcuts": {
+        "rootMenuNumericShortcuts": null,
+        "rootMenuNote": "Menu-map row numbers are not treated as documented keypad shortcuts.",
+        "typeNumericShortcuts": true,
+        "typeShortcutDisplay": "Do not append shortcut numbers to the source-exact LCD label.",
+        "abcdnavigation": false,
+        "abcdnavigationNote": "A/B/C/D are not substitutes for arrows in this installer profile."
+      },
+      "menus": [
+        {
+          "id": "installer",
+          "label": "INSTALLER MENU",
+          "code": null,
+          "parent": null,
+          "type": "branch",
+          "children": [
+            "devices",
+            "test",
+            "log"
+          ],
+          "sourceRefs": [
+            "navigation"
+          ],
+          "isSelectedSubset": true
+        },
+        {
+          "id": "devices",
+          "label": "Detectors/Devices",
+          "code": null,
+          "parent": "installer",
+          "type": "branch",
+          "children": [
+            "detectors"
+          ],
+          "sourceRefs": [
+            "zones"
+          ]
+        },
+        {
+          "id": "detectors",
+          "label": "Detectors",
+          "code": null,
+          "parent": "devices",
+          "type": "branch",
+          "children": [
+            "program_zones"
+          ],
+          "sourceRefs": [
+            "zones"
+          ]
+        },
+        {
+          "id": "program_zones",
+          "label": "Program Zones",
+          "code": null,
+          "parent": "detectors",
+          "type": "zoneList",
+          "children": [
+            "zone_001",
+            "zone_002",
+            "zone_003"
+          ],
+          "sourceRefs": [
+            "zones"
+          ]
+        },
+        {
+          "id": "zone_001",
+          "label": "Zone 001",
+          "parent": "program_zones",
+          "type": "branch",
+          "children": [
+            "zone_001_type"
+          ],
+          "sourceRefs": [
+            "zones"
+          ],
+          "fixture": true
+        },
+        {
+          "id": "zone_002",
+          "label": "Zone 002",
+          "parent": "program_zones",
+          "type": "branch",
+          "children": [
+            "zone_002_type"
+          ],
+          "sourceRefs": [
+            "zones"
+          ],
+          "fixture": true
+        },
+        {
+          "id": "zone_003",
+          "label": "Zone 003",
+          "parent": "program_zones",
+          "type": "branch",
+          "children": [
+            "zone_003_type"
+          ],
+          "sourceRefs": [
+            "zones"
+          ],
+          "fixture": true
+        },
+        {
+          "id": "zone_001_type",
+          "label": "Type",
+          "parent": "zone_001",
+          "type": "select",
+          "valueSet": "commonZoneTypes",
+          "stateKey": "zone001.type",
+          "sourceRefs": [
+            "zones"
+          ]
+        },
+        {
+          "id": "zone_002_type",
+          "label": "Type",
+          "parent": "zone_002",
+          "type": "select",
+          "valueSet": "commonZoneTypes",
+          "stateKey": "zone002.type",
+          "sourceRefs": [
+            "zones"
+          ]
+        },
+        {
+          "id": "zone_003_type",
+          "label": "Type",
+          "parent": "zone_003",
+          "type": "select",
+          "valueSet": "commonZoneTypes",
+          "stateKey": "zone003.type",
+          "sourceRefs": [
+            "zones"
+          ]
+        },
+        {
+          "id": "test",
+          "label": "Test",
+          "code": null,
+          "parent": "installer",
+          "type": "branch",
+          "children": [
+            "walk_test",
+            "zone_resistances"
+          ],
+          "sourceRefs": [
+            "walk",
+            "resistance"
+          ]
+        },
+        {
+          "id": "walk_test",
+          "label": "Walk Test",
+          "code": null,
+          "parent": "test",
+          "type": "branch",
+          "children": [
+            "walk_chime",
+            "walk_system",
+            "walk_zones"
+          ],
+          "sourceRefs": [
+            "walk"
+          ]
+        },
+        {
+          "id": "walk_chime",
+          "label": "Chime",
+          "parent": "walk_test",
+          "type": "select",
+          "values": [
+            "Once",
+            "On",
+            "Off"
+          ],
+          "initialValue": "Once",
+          "sourceRefs": [
+            "walk"
+          ]
+        },
+        {
+          "id": "walk_system",
+          "label": "System",
+          "parent": "walk_test",
+          "type": "walkTest",
+          "scope": "allPracticeZones",
+          "sourceRefs": [
+            "walk"
+          ]
+        },
+        {
+          "id": "walk_zones",
+          "label": "Zones",
+          "parent": "walk_test",
+          "type": "walkZoneSelection",
+          "sourceRefs": [
+            "walk"
+          ]
+        },
+        {
+          "id": "zone_resistances",
+          "label": "Zone Resistances",
+          "parent": "test",
+          "type": "readResistance",
+          "sourceRefs": [
+            "resistance",
+            "fslBands"
+          ],
+          "availability": "Wired zones only"
+        },
+        {
+          "id": "log",
+          "label": "View Log",
+          "code": null,
+          "parent": "installer",
+          "type": "branch",
+          "children": [
+            "all_events",
+            "mandatory_events",
+            "nonmandatory_events"
+          ],
+          "sourceRefs": [
+            "log"
+          ]
+        },
+        {
+          "id": "all_events",
+          "label": "All Events",
+          "parent": "log",
+          "type": "log",
+          "filter": "all",
+          "sourceRefs": [
+            "log",
+            "logNavigation"
+          ]
+        },
+        {
+          "id": "mandatory_events",
+          "label": "Mandatory Events",
+          "parent": "log",
+          "type": "log",
+          "filter": "mandatory",
+          "sourceRefs": [
+            "log",
+            "logNavigation"
+          ]
+        },
+        {
+          "id": "nonmandatory_events",
+          "label": "Non-Mand. Events",
+          "parent": "log",
+          "type": "log",
+          "filter": "nonmandatory",
+          "sourceRefs": [
+            "log",
+            "logNavigation"
+          ]
+        }
+      ],
+      "commonZoneTypes": [
+        {
+          "label": "Not Used",
+          "abbreviation": "NU",
+          "shortcut": "00",
+          "sourceRefs": [
+            "zones"
+          ]
+        },
+        {
+          "label": "Normal Alarm",
+          "abbreviation": "NA",
+          "shortcut": "03",
+          "sourceRefs": [
+            "zones"
+          ]
+        },
+        {
+          "label": "Final Exit",
+          "abbreviation": "FE",
+          "shortcut": "05",
+          "sourceRefs": [
+            "zones"
+          ]
+        },
+        {
+          "label": "Entry Route",
+          "abbreviation": "ER",
+          "shortcut": "06",
+          "sourceRefs": [
+            "zones"
+          ]
+        }
+      ],
+      "typeEdit": {
+        "currentMarker": "*",
+        "previewControls": [
+          "up",
+          "down",
+          "twoDigitShortcut"
+        ],
+        "confirmControl": "confirm",
+        "backBeforeConfirm": "Return without accepting candidate value",
+        "confirmEffect": "Accept into current simulated installer session",
+        "persistEffect": "Persist the practice configuration on confirmed installer exit",
+        "sourceRefs": [
+          "navigation",
+          "zones",
+          "exit"
+        ]
+      },
+      "exit": {
+        "trigger": "back at installer root",
+        "lcdLines": [
+          "Leave",
+          "installer mode ?"
+        ],
+        "confirm": "Exit; commit accepted simulated configuration; return to practice standby",
+        "back": "Stay in Installer menu",
+        "faultHandling": "No exit faults in these exercises. v6 requires faults to be rectified before leaving.",
+        "sourceRefs": [
+          "exit",
+          "navigation"
+        ]
+      },
+      "tasks": [
+        {
+          "id": "scantronic_resistance",
+          "title": "Check a zone's resistance",
+          "phraseAliases": [
+            "check zone ohms",
+            "zone resistance",
+            "check the loop",
+            "is the detector open",
+            "zone status",
+            "check tamper resistance"
+          ],
+          "aliasesAreTeachingText": true,
+          "path": [
+            "installer",
+            "test",
+            "zone_resistances"
+          ],
+          "pathLabels": [
+            "INSTALLER MENU",
+            "Test",
+            "Zone Resistances"
+          ],
+          "goal": {
+            "action": "viewResistance",
+            "zoneId": "002"
+          },
+          "interaction": {
+            "upDown": "Browse wired detectors",
+            "leftRight": "Toggle name/number",
+            "back": "Return to Test"
+          },
+          "sourceRefs": [
+            "resistance",
+            "fslBands"
+          ]
+        },
+        {
+          "id": "scantronic_log",
+          "title": "Find a previous alarm in the log",
+          "phraseAliases": [
+            "alarm history",
+            "event history",
+            "what set it off",
+            "find the last activation",
+            "view events",
+            "check the log"
+          ],
+          "aliasesAreTeachingText": true,
+          "path": [
+            "installer",
+            "log",
+            "all_events"
+          ],
+          "pathLabels": [
+            "INSTALLER MENU",
+            "View Log",
+            "All Events"
+          ],
+          "goal": {
+            "action": "viewLogEvent",
+            "eventId": "alarm_hall"
+          },
+          "interaction": {
+            "initial": "Most recent fictional event",
+            "down": "Older event",
+            "up": "More recent event",
+            "right": "Further details when available",
+            "back": "Leave event list"
+          },
+          "sourceRefs": [
+            "log",
+            "logNavigation"
+          ]
+        },
+        {
+          "id": "scantronic_walk",
+          "title": "Walk-test the practice detectors",
+          "phraseAliases": [
+            "walk test",
+            "test the PIRs",
+            "test all zones",
+            "check the detectors",
+            "walk around test"
+          ],
+          "aliasesAreTeachingText": true,
+          "path": [
+            "installer",
+            "test",
+            "walk_test",
+            "walk_system"
+          ],
+          "pathLabels": [
+            "INSTALLER MENU",
+            "Test",
+            "Walk Test",
+            "System"
+          ],
+          "goal": {
+            "action": "triggerAllPracticeZonesThenFinish",
+            "zoneIds": [
+              "001",
+              "002",
+              "003"
+            ],
+            "finishControl": "confirm"
+          },
+          "interaction": {
+            "simulatedDetectorTrigger": "Mark A and reduce remaining count once per alarm input",
+            "tamperTrigger": "Mark T; does not complete the alarm-input test",
+            "leftRight": "Toggle zone name/number",
+            "menu": "Toggle untested/all list",
+            "confirm": "Finish walk test"
+          },
+          "sourceRefs": [
+            "walk"
+          ]
+        },
+        {
+          "id": "scantronic_type",
+          "title": "Set the practice front door to Final Exit",
+          "phraseAliases": [
+            "change zone type",
+            "program a detector",
+            "entry exit door",
+            "front door zone",
+            "final exit",
+            "change detector type"
+          ],
+          "aliasesAreTeachingText": true,
+          "path": [
+            "installer",
+            "devices",
+            "detectors",
+            "program_zones",
+            "zone_001",
+            "zone_001_type"
+          ],
+          "pathLabels": [
+            "INSTALLER MENU",
+            "Detectors/Devices",
+            "Detectors",
+            "Program Zones",
+            "Zone 001",
+            "Type"
+          ],
+          "goal": {
+            "action": "acceptZoneType",
+            "zoneId": "001",
+            "value": "Final Exit",
+            "shortcut": "05",
+            "confirmControl": "confirm"
+          },
+          "followUp": "Leave Installer mode to save the accepted practice change.",
+          "sourceRefs": [
+            "zones",
+            "navigation",
+            "exit"
+          ]
+        },
+        {
+          "id": "scantronic_exit",
+          "title": "Leave Installer mode and save",
+          "phraseAliases": [
+            "exit engineer",
+            "leave engineering",
+            "exit installer",
+            "save settings",
+            "back to normal",
+            "finish programming"
+          ],
+          "aliasesAreTeachingText": true,
+          "path": [
+            "installer"
+          ],
+          "pathLabels": [
+            "INSTALLER MENU",
+            "Leave / installer mode ?"
+          ],
+          "goal": {
+            "action": "confirmInstallerExit"
+          },
+          "sourceRefs": [
+            "navigation",
+            "exit"
+          ]
+        }
+      ],
+      "fixtures": {
+        "notice": "All detector names, dates, readings and history entries are fictional practice data.",
+        "zones": [
+          {
+            "id": "001",
+            "name": "Front Door",
+            "type": "Normal Alarm",
+            "wiring": "FSL 2k2/4k7",
+            "resistanceDisplay": "2k20",
+            "resistanceOhms": 2200,
+            "illustratedState": "Normal"
+          },
+          {
+            "id": "002",
+            "name": "Hall PIR",
+            "type": "Normal Alarm",
+            "wiring": "FSL 2k2/4k7",
+            "resistanceDisplay": "6k90",
+            "resistanceOhms": 6900,
+            "illustratedState": "Alarm"
+          },
+          {
+            "id": "003",
+            "name": "Kitchen PIR",
+            "type": "Normal Alarm",
+            "wiring": "FSL 2k2/4k7",
+            "resistanceDisplay": "O/C",
+            "resistanceOhms": null,
+            "illustratedState": "Tamper"
+          }
+        ],
+        "resistanceInterpretation": {
+          "sourceRefs": [
+            "fslBands",
+            "resistance"
+          ],
+          "appliesTo": "FSL 2k2/4k7 without masking only",
+          "bandsOhms": [
+            {
+              "state": "Tamper",
+              "min": 0,
+              "max": 1759
+            },
+            {
+              "state": "Normal",
+              "min": 1760,
+              "max": 4080
+            },
+            {
+              "state": "Alarm",
+              "min": 4081,
+              "max": 8280
+            },
+            {
+              "state": "Tamper",
+              "greaterThan": 8280
+            }
+          ],
+          "exampleStatusIsTeachingAnnotation": true,
+          "exactDisplayTokens": {
+            "O/C": "Open circuit",
+            "0k00": "Zero resistance / closed circuit"
+          },
+          "nominalExamples": "2k20 and 6k90 are chosen simulated readings within the documented bands, not captured real-panel screens."
+        },
+        "logEvents": [
+          {
+            "id": "power_restored",
+            "label": "Panel A/C Restore",
+            "timestamp": "2026-10-29T09:14:00",
+            "category": "mandatory",
+            "sourceRefs": [
+              "log"
+            ]
+          },
+          {
+            "id": "power_failed",
+            "label": "Panel A/C Fail",
+            "timestamp": "2026-10-29T09:12:00",
+            "category": "mandatory",
+            "sourceRefs": [
+              "log"
+            ]
+          },
+          {
+            "id": "alarm_restored_hall",
+            "label": "Burg Z002 Restore",
+            "details": "Hall PIR",
+            "timestamp": "2026-10-29T08:05:00",
+            "category": "mandatory",
+            "sourceRefs": [
+              "log"
+            ]
+          },
+          {
+            "id": "alarm_hall",
+            "label": "Burg Z002 Alarm",
+            "details": "Hall PIR",
+            "timestamp": "2026-10-29T08:04:00",
+            "category": "mandatory",
+            "sourceRefs": [
+              "log"
+            ]
+          }
+        ],
+        "logCategoryCaveat": "Categories here are simulator fixture assignments; do not claim this is an exhaustive EN50131 event classification."
+      },
+      "limitations": [
+        "Selected menu subset: omitted options must not be represented as missing from the real product.",
+        "Common zone type subset: 00, 03, 05 and 06. Other genuine types exist between these entries.",
+        "The manual calls the option Zone Resistances; prose once uses singular Zone Resistance. Use the menu-map plural.",
+        "Walk Test uses System, not All Zones. Partitions is conditional on partitioned configuration; Expanders is hardware-dependent.",
+        "No numeric root-menu shortcuts were verified. The type shortcuts are explicitly documented.",
+        "Zone state explanations are teaching annotations. The resistor screen reports resistance, not a universal Healthy/Fault diagnosis.",
+        "LCD arrangement for fixtures is illustrative. Only menu labels, documented status tokens and the exit prompt are source-exact.",
+        "Current official user manual is v7.02.xx; its installer features must not be merged into this v6 profile.",
+        "The source v6 manual requires exit faults to be rectified. Do not add newer Exit with faults behaviour to this profile.",
+        "No real-panel pairing, network connection, live PIN handling, radio learning, signalling, output activation, alarm bypass, or factory reset is simulated."
+      ]
+    },
+    "orisec": {
+      "id": "orisec-cp",
+      "brand": "Orisec",
+      "title": "Orisec CP",
+      "keypad": "LCD keypad · legacy CP-25 / CP-50 / CP-100",
+      "edition": "INS008 · 2018",
+      "scope": "Selected test and log routes from the legacy CP-25 / CP-50 / CP-100 manual. This is a FINDR teaching simulation with fictional site data.",
+      "panelIds": [
+        "orisec-cp-50-cp-100-cp-200"
+      ],
+      "enterLabel": "Enter",
+      "backLabel": "Back",
+      "editLabel": "Enter",
+      "directMenuCodes": false,
+      "reverseLogScroll": false,
+      "rightIsEnter": true,
+      "leftIsBack": false,
+      "commitOnExit": false,
+      "exitFromRoot": false,
+      "statusWithReading": true,
+      "typeLabel": "Type",
+      "circuit": "Double EOL · 2k2 / 4k7 example",
+      "readings": {
+        "secure": "2.2kΩ",
+        "active": "6.9kΩ",
+        "tamper": "O/C"
+      },
+      "statusLabels": {
+        "secure": "Secure",
+        "active": "Active",
+        "tamper": "Tamper"
+      },
+      "zones": [
+        {
+          "address": "01",
+          "name": "FRONT DOOR",
+          "type": "Final Exit 1"
+        },
+        {
+          "address": "02",
+          "name": "HALL PIR",
+          "type": "Intruder"
+        },
+        {
+          "address": "03",
+          "name": "STORE PIR",
+          "type": "Intruder"
+        }
+      ],
+      "zoneTypes": [
+        {
+          "code": "01",
+          "label": "Final Exit 1"
+        },
+        {
+          "code": "04",
+          "label": "Intruder"
+        }
+      ],
+      "events": [
+        {
+          "id": "restore",
+          "label": "Intruder Restore 02",
+          "zone": "HALL PIR",
+          "time": "28 OCT 14:32",
+          "details": "Demo restore · Area A"
+        },
+        {
+          "id": "alarm",
+          "label": "Intruder Alarm 02",
+          "zone": "HALL PIR",
+          "time": "28 OCT 14:30",
+          "details": "Demo alarm · Area A"
+        },
+        {
+          "id": "tamper",
+          "label": "Tamper 03 Alarm",
+          "zone": "STORE PIR",
+          "time": "27 OCT 09:14",
+          "details": "Demo tamper · Area A"
+        }
+      ],
+      "sources": [
+        {
+          "id": "orisec-ins008-2018",
+          "title": "CP-25 / CP-50 / CP-100 Installation Manual",
+          "publisher": "Orisec",
+          "edition": "INS008, ©2018",
+          "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Orisec%20CP%2025-50-100%20Install%20Manual.pdf",
+          "recordId": "orisec-01d0e0ac004c",
+          "sha256": "981dd38a39191492282d25b4d12cafb5a3e92fd6139dd4e959f4ba284276626c",
+          "totalPdfPages": 80,
+          "sourceKind": "Original manufacturer manual hosted by an installer archive"
+        }
+      ],
+      "keys": [
+        {
+          "id": "1",
+          "label": "1",
+          "ariaLabel": "1"
+        },
+        {
+          "id": "2",
+          "label": "2",
+          "ariaLabel": "2"
+        },
+        {
+          "id": "3",
+          "label": "3",
+          "ariaLabel": "3"
+        },
+        {
+          "id": "previous",
+          "label": "▲",
+          "ariaLabel": "Up"
+        },
+        {
+          "id": "4",
+          "label": "4",
+          "ariaLabel": "4"
+        },
+        {
+          "id": "5",
+          "label": "5",
+          "ariaLabel": "5"
+        },
+        {
+          "id": "6",
+          "label": "6",
+          "ariaLabel": "6"
+        },
+        {
+          "id": "next",
+          "label": "▼",
+          "ariaLabel": "Down"
+        },
+        {
+          "id": "7",
+          "label": "7",
+          "ariaLabel": "7"
+        },
+        {
+          "id": "8",
+          "label": "8",
+          "ariaLabel": "8"
+        },
+        {
+          "id": "9",
+          "label": "9",
+          "ariaLabel": "9"
+        },
+        {
+          "id": "enter",
+          "label": "Enter",
+          "ariaLabel": "Enter"
+        },
+        {
+          "id": "left",
+          "label": "◀",
+          "ariaLabel": "Left"
+        },
+        {
+          "id": "0",
+          "label": "0",
+          "ariaLabel": "0"
+        },
+        {
+          "id": "right",
+          "label": "▶",
+          "ariaLabel": "Right"
+        },
+        {
+          "id": "back",
+          "label": "Back",
+          "ariaLabel": "Back"
+        }
+      ],
+      "controls": [
+        {
+          "label": "▲ / ▼",
+          "description": "Scroll through the included menus, zones and example events."
+        },
+        {
+          "label": "Enter / ▶",
+          "description": "Open a highlighted menu. The Back key returns a level."
+        },
+        {
+          "label": "◀ / ▶ in bell test",
+          "description": "Toggle the selected simulated Bell or Strobe output."
+        }
+      ],
+      "nodes": {
+        "root": {
+          "kind": "menu",
+          "label": "Engineer menu",
+          "children": [
+            "tests",
+            "logs"
+          ],
+          "sourceRefs": [
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "30",
+              "pdfPage": 30
+            }
+          ]
+        },
+        "tests": {
+          "kind": "menu",
+          "label": "Tests & Diagnostics",
+          "parent": "root",
+          "children": [
+            "bell",
+            "walk",
+            "zones"
+          ],
+          "sourceRefs": [
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "30",
+              "pdfPage": 30
+            },
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "64",
+              "pdfPage": 64
+            }
+          ]
+        },
+        "bell": {
+          "kind": "bell",
+          "label": "Test Bell & Strobe",
+          "code": "00",
+          "parent": "tests",
+          "outputs": [
+            "Bell",
+            "Strobe"
+          ],
+          "sourceRefs": [
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "64",
+              "pdfPage": 64
+            }
+          ]
+        },
+        "walk": {
+          "kind": "walk-run",
+          "label": "Walk Test Zones",
+          "code": "01",
+          "parent": "tests",
+          "all": true,
+          "sourceRefs": [
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "64",
+              "pdfPage": 64
+            }
+          ]
+        },
+        "zones": {
+          "kind": "zones",
+          "label": "View Zone Status",
+          "code": "03",
+          "parent": "tests",
+          "resistance": true,
+          "sourceRefs": [
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "64",
+              "pdfPage": 64
+            }
+          ]
+        },
+        "logs": {
+          "kind": "menu",
+          "label": "System Event Logs",
+          "parent": "root",
+          "children": [
+            "event-log"
+          ],
+          "sourceRefs": [
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "30",
+              "pdfPage": 30
+            },
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "69",
+              "pdfPage": 69
+            }
+          ]
+        },
+        "event-log": {
+          "kind": "log",
+          "label": "View event log",
+          "code": "00",
+          "parent": "logs",
+          "sourceRefs": [
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "69",
+              "pdfPage": 69
+            },
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "70",
+              "pdfPage": 70
+            }
+          ]
+        }
+      },
+      "tasks": [
+        {
+          "id": "zone-resistance",
+          "title": "Check zone resistance",
+          "description": "Find the simulated resistance of zone 02, HALL PIR, while the detector is active.",
+          "aliases": [
+            "zone resistance",
+            "ohms",
+            "zone status",
+            "open zone",
+            "check detector",
+            "resistor"
+          ],
+          "path": [
+            "Tests & Diagnostics",
+            "03 View Zone Status",
+            "Zone 02"
+          ],
+          "routeNodeIds": [
+            "tests",
+            "zones"
+          ],
+          "hints": [
+            "Scroll to Tests & Diagnostics and press Enter.",
+            "Choose 03 View Zone Status, then scroll to zone 02. Its status includes the simulated resistance."
+          ],
+          "initialStates": {
+            "02": "active"
+          },
+          "goal": {
+            "kind": "zone",
+            "zone": "02",
+            "resistance": true
+          },
+          "sourceRefs": [
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "30",
+              "pdfPage": 30
+            },
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "64",
+              "pdfPage": 64
+            },
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "23",
+              "pdfPage": 23
+            }
+          ]
+        },
+        {
+          "id": "event-log",
+          "title": "Find the last intruder alarm",
+          "description": "Open the event log and find the example Intruder Alarm 02 entry.",
+          "aliases": [
+            "event log",
+            "history",
+            "last alarm",
+            "alarm memory",
+            "intruder alarm"
+          ],
+          "path": [
+            "System Event Logs",
+            "00 View event log",
+            "Intruder Alarm 02"
+          ],
+          "routeNodeIds": [
+            "logs",
+            "event-log"
+          ],
+          "hints": [
+            "Scroll to System Event Logs and press Enter.",
+            "Choose View event log, then use Up / Down to find Intruder Alarm 02."
+          ],
+          "goal": {
+            "kind": "log",
+            "event": "alarm"
+          },
+          "sourceRefs": [
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "30",
+              "pdfPage": 30
+            },
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "69",
+              "pdfPage": 69
+            },
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "70",
+              "pdfPage": 70
+            }
+          ]
+        },
+        {
+          "id": "walk-test",
+          "title": "Walk test a detector",
+          "description": "Start the test, activate demo zone 02, then stop the test with Back.",
+          "aliases": [
+            "walk test",
+            "test pir",
+            "test detector",
+            "walktest",
+            "test zones"
+          ],
+          "path": [
+            "Tests & Diagnostics",
+            "01 Walk Test Zones",
+            "Activate demo zone 02",
+            "Back"
+          ],
+          "routeNodeIds": [
+            "tests",
+            "walk"
+          ],
+          "hints": [
+            "Open Tests & Diagnostics, then 01 Walk Test Zones.",
+            "Use the separate demo detector button for zone 02. Press Back on the keypad to end the test."
+          ],
+          "goal": {
+            "kind": "walk",
+            "zone": "02"
+          },
+          "sourceRefs": [
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "30",
+              "pdfPage": 30
+            },
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "64",
+              "pdfPage": 64
+            }
+          ]
+        },
+        {
+          "id": "bell-test",
+          "title": "Test the bell output",
+          "description": "Switch the demo Bell on and back off. This exercise only changes the display; it makes no sound.",
+          "aliases": [
+            "bell test",
+            "sounder test",
+            "test siren",
+            "bell strobe",
+            "external sounder"
+          ],
+          "path": [
+            "Tests & Diagnostics",
+            "00 Test Bell & Strobe",
+            "Bell",
+            "◀ / ▶ on, then off"
+          ],
+          "routeNodeIds": [
+            "tests",
+            "bell"
+          ],
+          "hints": [
+            "Open Tests & Diagnostics, then 00 Test Bell & Strobe.",
+            "With Bell selected, use Left or Right to turn it on, then press again to turn it off."
+          ],
+          "goal": {
+            "kind": "bell"
+          },
+          "sourceRefs": [
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "30",
+              "pdfPage": 30
+            },
+            {
+              "sourceId": "orisec-ins008-2018",
+              "printedPage": "64",
+              "pdfPage": 64
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "Starts after authorisation. PIN entry, arming, signalling and connection to a real panel are outside this trainer.",
+        "Uses the legacy CP-25 / CP-50 / CP-100 manual, not every current CP model or firmware. A shared panel-family picture does not extend this scope.",
+        "Only the displayed test and event-log branches are included. Menu siblings, log filters, zone counters, reset modes and chime settings are omitted; LCD spacing and readings are illustrative.",
+        "The manual’s root-menu screenshot and shortcut text disagree. This trainer uses scrolling at that level; no root numeric shortcuts are taught.",
+        "The event names come from the manual. Names, dates, event order and zone readings belong to a fictional site. The example DEOL circuit is one detector with 2k2 EOL and 4k7 alarm resistance.",
+        "Bell and Strobe output states only change this training display. Exit practice and Reset task are FINDR controls."
+      ]
+    }
+  },
+  "integrationChecks": [
+    "All menu IDs, parent/child/next links and task routeNodeIds resolve.",
+    "All task source IDs resolve within their own profile.",
+    "All task zone/event targets exist.",
+    "Every type goal starts with a different initial type.",
+    "Nineteen tasks across four profiles (Galaxy 5, Texecom 5, Scantronic 5, Orisec 4). Engine interaction tests are a separate integration gate."
+  ]
+}

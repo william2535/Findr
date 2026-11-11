@@ -1,0 +1,183 @@
+{
+  "batch": "apollo-0.14.0",
+  "verified_date": "2026-10-30",
+  "brand": "Apollo",
+  "scope": "Device identification cards only. No operational commissioning, wiring or interoperability guarantee is inferred from shared appearance.",
+  "image_processing": "Original manufacturer pixels; alpha flattened onto white, maximum 1200 px, WebP quality 93. PDF illustrations extracted by exact image XRef from inspected page 1. No generated imagery.",
+  "devices": [
+    {
+      "id": "apollo-reach-loop-interface-rw1700-030",
+      "record_id": "apollo-00c3936bf0fc",
+      "manufacturer_product_page": "https://apollo-fire.co.uk/products/reach-wireless/interface-flying-leads/rw1700-030apo-reach-xp95-loop-interface-module/",
+      "document_url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0007831_0001.pdf",
+      "document_title": "PP5099 REACH Wireless User Manual FW1.0.3 R1",
+      "document_sha256": "4b709b2c5ddf5f1d0b0684c738ba088a24dd77babd415d29a2a5f17a9a4b4d64",
+      "document_bytes": 3227785,
+      "document_pages": 27,
+      "archive_sha256": null,
+      "archive_hash_matches": null,
+      "inspected_pdf_pages": [
+        1,
+        4,
+        5,
+        8
+      ],
+      "model_evidence": "White REACH interface enclosure with lower status indicators. Its display and navigation controls are inside the cover.",
+      "protocol_and_variant_limits": "REACH interface, not XPander. Linked PP5099 is revision 1 for firmware 1.0.3; match the actual firmware before following menu instructions.",
+      "image_url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0007407_0001.png",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_sha256": "9b5858476acb11d213fa4413b300e9ccc4fb8ce2a5f3a1a10bed17138f3dcf06",
+      "image_dimensions": [
+        450,
+        253
+      ],
+      "verified_document_mark": "PP5099/2023/Issue 1; hub firmware 1.0.3"
+    },
+    {
+      "id": "apollo-minidisc-remote-indicator-53832-070",
+      "record_id": "apollo-ae612a27ea60",
+      "manufacturer_product_page": "https://apollo-fire.co.uk/products/xp95/accessories/53832-070apo-minidisc-remote-indicator/",
+      "document_url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0007690_0001.pdf",
+      "document_title": "Minidisc Remote Indicator Installation Guide",
+      "document_sha256": "df337873e8f8a88c52dc345dd873b6a024e94bd3bf0c8a2728a7ed8c596c49a4",
+      "document_bytes": 1052105,
+      "document_pages": 1,
+      "archive_sha256": null,
+      "archive_hash_matches": null,
+      "inspected_pdf_pages": [
+        1
+      ],
+      "model_evidence": "Small round white remote indicator with a central red LED behind the fire symbol. This is an indicator, not a detector.",
+      "protocol_and_variant_limits": "The MiniDisc indicates a connected detector’s status. Applicable terminals and electrical limits depend on the connected device and the MiniDisc instructions.",
+      "image_url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0002153_0001.jpg",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_sha256": "6fccaeea56d72d553e68dc41bf81f0c1d4923b624d4c7f58dd885a2782755e2b",
+      "image_dimensions": [
+        450,
+        362
+      ],
+      "verified_document_mark": "39214-101 Issue 5A"
+    },
+    {
+      "id": "apollo-auto-align-beam-sa7100-100",
+      "record_id": "apollo-e4ec6992b586",
+      "manufacturer_product_page": "https://apollo-fire.co.uk/products/xp95/detector-beam/sa7100-100apo-intelligent-reflective-beam-detector-auto-aligning/",
+      "document_url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0001887_0001.pdf",
+      "document_title": "39215-002 Intelligent Auto-Aligning Beam Detector User Guide",
+      "document_sha256": "127d2c19e1ebce71f86db686440146f83086def4feffa8ed8fc2889e82d6ecc9",
+      "document_bytes": 1788535,
+      "document_pages": 24,
+      "archive_sha256": null,
+      "archive_hash_matches": null,
+      "inspected_pdf_pages": [
+        1,
+        2,
+        5,
+        24
+      ],
+      "model_evidence": "Manufacturer picture shows the beam head, separate controller and reflector together. Identify the SA7100-100APO set on its label.",
+      "protocol_and_variant_limits": "Auto-aligning intelligent model, not an assumed match for other Apollo beam products. The controller/head/reflector arrangement and permitted setup come from its own user guide.",
+      "image_url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0002143_0001.jpg",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_sha256": "d95fd19be82a91dfbdee40389423914b73d86dfb5d5d3ed4dbe5471f1dab7ff0",
+      "image_dimensions": [
+        450,
+        336
+      ],
+      "verified_document_mark": "39215-002/Issue 1; 0044-069-01-EN"
+    },
+    {
+      "id": "apollo-xp95-ir3-flame-55000-024",
+      "record_id": "apollo-d632a36424b9",
+      "manufacturer_product_page": "https://apollo-fire.co.uk/products/xp95/detector-flame/55000-024apo-xp95-flame-detector-ir3-base-mounted/",
+      "document_url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/base-mounted-ir3-installation-guide.pdf",
+      "document_title": "Base Mounted IR3 Installation Guide",
+      "document_sha256": "f49637fcc5f08725063f69dd916e8e9a7fa01f25a3db6e16ae0319d678b7bcfc",
+      "document_bytes": 495231,
+      "document_pages": 4,
+      "archive_sha256": null,
+      "archive_hash_matches": null,
+      "inspected_pdf_pages": [
+        1,
+        3
+      ],
+      "model_evidence": "White base-mounted flame detector with a dark circular sensing window. Three infrared sensing channels sit behind that window.",
+      "protocol_and_variant_limits": "Base-mounted IR3 version. The linked PP2331 Issue 9 expressly excludes the 45681-321 isolator base. Confirm the code and approved base; UV/IR2 and other housings are different products.",
+      "image_url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0002122_0001.jpg",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_sha256": "fcfd951555f603f2068f10133112240b48d843e6729281be704802a777c0159c",
+      "image_dimensions": [
+        450,
+        401
+      ],
+      "verified_document_mark": "PP2331/Issue 9"
+    },
+    {
+      "id": "apollo-xpander-diversity-interface-xpa-in-14050",
+      "record_id": "apollo-f27ce8642ca3",
+      "manufacturer_product_page": "https://apollo-fire.co.uk/products/xpander/interface-face-plate/xpa-in-14050-apo-xpander-diversity-loop-interface-module/",
+      "document_url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0008051_0001.pdf",
+      "document_title": "XPander Loop Interface Installation Guide",
+      "document_sha256": "44fc1a96d1a83246a55e4a377be904a60c3d6f501f0c060ba0abc8081be4393a",
+      "document_bytes": 458639,
+      "document_pages": 2,
+      "archive_sha256": null,
+      "archive_hash_matches": null,
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "model_evidence": "Cream XPander enclosure with front power, fault and wireless-activity indicators. Check the full interface code.",
+      "protocol_and_variant_limits": "XPander device family only; Apollo states it is not CoreProtocol compatible. It is distinct from the REACH wireless interface and requires supported panel configuration.",
+      "image_url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0002222_0001.jpg",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_sha256": "93fcfe48b56cccc8f5c5bdc8074074a6ad2476a8443a637cbe48e97cb90b25c1",
+      "image_dimensions": [
+        450,
+        389
+      ],
+      "verified_document_mark": "39214-926/Issue 3; 26/06/2024"
+    },
+    {
+      "id": "apollo-orbis-diode-base-orb-db-00003",
+      "record_id": "apollo-9739bb7328db",
+      "manufacturer_product_page": "https://apollo-fire.co.uk/products/orbis/base/orb-db-00003-apo-orbis-timesaver-base-diode/",
+      "document_url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/Orbis-TimeSaver-Base-Installation-Guide.pdf",
+      "document_title": "Orbis TimeSaver Base Installation Guide",
+      "document_sha256": "b6af18c178efc82a2ca3587bae2b7cd0cf064adc3a30166e4309243ca014f474",
+      "document_bytes": 161837,
+      "document_pages": 2,
+      "archive_sha256": null,
+      "archive_hash_matches": null,
+      "inspected_pdf_pages": [
+        1,
+        2
+      ],
+      "model_evidence": "White TimeSaver base with grouped screw terminals, shown without a head. The diode model shares the standard base’s exterior.",
+      "protocol_and_variant_limits": "Diode variant for the specified active end-of-line head-removal monitoring arrangement. Confirm the base label and system design; photo and shared wiring guide do not identify every TimeSaver variant.",
+      "image_url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0000448_0001.jpg",
+      "image_pdf_page": null,
+      "image_pdf_xref": null,
+      "image_sha256": "cacc66cbf85ee9623f6b443af58ca1deb536b988e3fdc2bf25210308b6f81222",
+      "image_dimensions": [
+        450,
+        397
+      ],
+      "verified_document_mark": "39214-208/Issue 3"
+    }
+  ],
+  "review_notes": [
+    "Six genuinely new device families; no existing Apollo cards modified.",
+    "Exact manufacturer product pages directly link the archive manuals used. Manual edition applicability is stated where material, especially REACH firmware 1.0.3.",
+    "The Orbis diode-base product page reuses a TimeSaver family image and its metadata has an unrelated caption. The visible image is a base, matches the guide design, and card explicitly requires the diode model label.",
+    "XPander is explicitly excluded from CoreProtocol; no REACH/XPander radio interoperability is claimed.",
+    "Catalogue records were PDF-indexed without hashes. Actual downloaded document hashes, page counts and reviewed pages are recorded here."
+  ],
+  "supplementary_documents": [],
+  "visual_review": "Each final card image was inspected on the per-brand contact sheet and compared with its source product page or manufacturer PDF illustration. Shared housing, assembled-head/base and edition limitations were retained."
+}

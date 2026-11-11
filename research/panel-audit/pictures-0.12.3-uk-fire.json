@@ -1,0 +1,373 @@
+{
+  "release": "0.12.3",
+  "batch": "uk-fire",
+  "generated": "2026-10-30",
+  "baseline_commit": "27ae6eddc9a6db83ebd743b8e101744fbe3bc42d",
+  "catalogue_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+  "baseline_pictured_families": 504,
+  "added_families": 11,
+  "all_entries_have_exact_archive_records": true,
+  "unique_linked_archive_records": 13,
+  "new_pictured_brands": [
+    "Ampac",
+    "Cygnus",
+    "ESSER",
+    "FireQuest",
+    "Global Fire Equipment",
+    "Ventcroft"
+  ],
+  "source_document_checks": [
+    {
+      "record_id": "facp-69c77f1f-44e3-421a-881c-ec0f0564e071",
+      "url": "https://docs.facpmanuals.com/manuals/Ampac/firefinder_plus_fire_alarm_control_panel-installation-rev12.pdf",
+      "pages": 114,
+      "bytes": 4618657,
+      "sha256": "b6c53cfc813d7dbbc9cf8dabf4a0352ce7164cb85d061e77ee5115d7230c9f38",
+      "catalogue_sha256_matches": true
+    },
+    {
+      "record_id": "facp-08b009f9-e8ea-48ad-bb30-fa65c23bf4c7",
+      "url": "https://docs.facpmanuals.com/manuals/ESSER/fire_alarm_control_panel_facp_compact-installation-2014.pdf",
+      "pages": 40,
+      "bytes": 1377534,
+      "sha256": "a30b6c95d6895fce5420c15bae041303def3b5ab698efa6a4e4ff25f43464dd3",
+      "catalogue_sha256_matches": true
+    },
+    {
+      "record_id": "facp-21c215a4-9c48-43be-a754-01cb7ca81bae",
+      "url": "https://docs.facpmanuals.com/manuals/ESSER/flexes_control-installation-2010.pdf",
+      "pages": 88,
+      "bytes": 5024872,
+      "sha256": "53369c6d963e5e41884868592dfd0a5e5e4fb733b3f23f8a4993a55d73aea741",
+      "catalogue_sha256_matches": true
+    },
+    {
+      "record_id": "facp-c73427f6-6605-4d61-b7ff-db68b4b46298",
+      "url": "https://docs.facpmanuals.com/manuals/ESSER/iq8control-datasheet-2007-rev11-2007.pdf",
+      "pages": 4,
+      "bytes": 341448,
+      "sha256": "b4e1481ebcb8be97e5ab936fc68b456d09e3438827080d4a36a3e6b8eb323bd3",
+      "catalogue_sha256_matches": true
+    },
+    {
+      "record_id": "facp-5b0fa3a1-f11c-488a-b5c2-a0159422c1ef",
+      "url": "https://docs.facpmanuals.com/manuals/ESSER/iq8control_c-m-operations-2015-revaa.pdf",
+      "pages": 48,
+      "bytes": 1655542,
+      "sha256": "86a611ae842fc64bb5e3846cd309f5baf5dc7f5463811def5df8d5cdd598c231",
+      "catalogue_sha256_matches": true
+    },
+    {
+      "record_id": "global-fire-equipment-14c6cd463c9f",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/GFE%20JUNIOR%20V4%20manual.pdf",
+      "pages": 69,
+      "bytes": 5804227,
+      "sha256": "27ce1e8fdf4eff582a251cd990287012a1caece30de77d37c079b6d21b61e179",
+      "catalogue_sha256_matches": true
+    },
+    {
+      "record_id": "global-fire-equipment-c9b43f4bf7c3",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Global%20GFE%20358N%20_rev%202-new%20version%202006.%203.%2031%28modify%29.pdf",
+      "pages": 2,
+      "bytes": 4298377,
+      "sha256": "01fd7c5e6e4c3922adbeeccd7ffbb2dc77eacab2164d059fc80cf89d7b86d57f",
+      "catalogue_sha256_matches": true
+    },
+    {
+      "record_id": "facp-03b56813-41d8-4f30-a860-a816ac399288",
+      "url": "https://docs.facpmanuals.com/manuals/FireQuest/firequest_repeater-operations-rev1-1.pdf",
+      "pages": 26,
+      "bytes": 231407,
+      "sha256": "4c753b12609d4aff175c9d13e87199b100abe90fd201bb013561164c64270d07",
+      "catalogue_sha256_matches": true
+    },
+    {
+      "record_id": "facp-42fc2327-43b1-4233-9407-eec538bc1d0d",
+      "url": "https://docs.facpmanuals.com/manuals/FireQuest/firequest_plus-operations-rev1-0.pdf",
+      "pages": 17,
+      "bytes": 237908,
+      "sha256": "5d2fbe0388f23c6627892fa8a98ccaf153512f451edf6b67d645b733e9fbfaf8",
+      "catalogue_sha256_matches": true
+    },
+    {
+      "record_id": "facp-88fe56af-1925-4dce-95a4-5c4a86a81f9d",
+      "url": "https://docs.facpmanuals.com/manuals/FireQuest/firequest-operations-rev1-1.pdf",
+      "pages": 18,
+      "bytes": 202500,
+      "sha256": "82ec67ab420ca5a0b3caa8b0fc506657c4bb958dff64b6e6c3fe2717746e5357",
+      "catalogue_sha256_matches": true
+    },
+    {
+      "record_id": "facp-2656551e-81d0-4a06-917c-78650afc7d0a",
+      "url": "https://docs.facpmanuals.com/manuals/Cygnus/smartnet-user-guide-2024.pdf",
+      "pages": 132,
+      "bytes": 7917853,
+      "sha256": "64569623361b1aad03b98038398c15ebd03209654a9c98eb24d4fa2d1c0d31be",
+      "catalogue_sha256_matches": true
+    },
+    {
+      "record_id": "facp-f4beaa7a-7847-4123-9fa8-57764c467502",
+      "url": "https://docs.facpmanuals.com/manuals/Cygnus/cie_panel-user-guide-2025.pdf",
+      "pages": 173,
+      "bytes": 14355608,
+      "sha256": "1e8b724fe28fd346c74aede515da5ed75a02f40f965e6801c8e139751680ddb8",
+      "catalogue_sha256_matches": true
+    },
+    {
+      "record_id": "ventcroft-7846d44dbc5b",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/FireTrax%20Manual%20and%20Log%20Book.pdf",
+      "pages": 24,
+      "bytes": 376364,
+      "sha256": "7f3fbb3f76c648a8dd66d7cff1bd8c7cb295f22eaa817c075343b042046c1617",
+      "catalogue_sha256_matches": true
+    },
+    {
+      "record_id": "advanced-d3af3c835ac8",
+      "url": "https://www.srsalertfire.ie/uploads/YOLnNoz6/680-029-03AMx4010-Mx4020RemoteTerminals.pdf",
+      "pages": 12,
+      "bytes": 531703,
+      "sha256": "f581bbc61be53b7715b591177bc96ed07d7dab81af41ffbe1e053dd002195bc1",
+      "catalogue_sha256_matches": true
+    }
+  ],
+  "method": [
+    "Read PDF skill; rendered source covers with Poppler and inspected complete model-specific fronts before extraction.",
+    "Compared current panel IDs and normalized aliases before selecting additions.",
+    "Only manufacturer product photographs, exact manufacturer-document photographs and one explicitly identified manufacturer fascia drawing are used; no supplier photos, generated fascia, generic cabinets or PCBs.",
+    "All selected images are complete exterior/fascia subjects and were visually reviewed.",
+    "Grouped IQ8Control C/M and Mx-4010/Mx-4020 into one family each, retaining both documented cabinets.",
+    "All 11 entries link exact existing catalogue records; source manuals are research inputs and are not copied into the app."
+  ],
+  "access_limits": [
+    {
+      "source": "https://www.esser-systems.com/",
+      "issue": "The three read-only product pages returned an ESSER Temporarily unavailable page rather than product HTML. Exact archived manufacturer PDFs supplied the images. No retries, bot workarounds or substituted model photographs."
+    }
+  ],
+  "candidates": [
+    {
+      "id": "advanced-mx4010-mx4020-remote-terminals",
+      "brand": "Advanced",
+      "model": "Mx-4010 / Mx-4020 remote terminals",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [
+        "advanced-d3af3c835ac8"
+      ],
+      "source_image_url": "https://www.srsalertfire.ie/uploads/YOLnNoz6/680-029-03AMx4010-Mx4020RemoteTerminals.pdf",
+      "source_page_url": "https://www.srsalertfire.ie/uploads/YOLnNoz6/680-029-03AMx4010-Mx4020RemoteTerminals.pdf#page=1",
+      "source_pdf_page": 1,
+      "verification": "Complete front visually checked against its model-specific manufacturer page/document; image and manual scope are recorded in panels.json.",
+      "uk_priority": true
+    },
+    {
+      "id": "ampac-firefinder-plus-en54",
+      "brand": "Ampac",
+      "model": "FireFinder Plus EN54",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [
+        "facp-69c77f1f-44e3-421a-881c-ec0f0564e071"
+      ],
+      "source_image_url": "https://ampac.net/wp-content/uploads/2017/05/EN-FireFinder-PLUS-SP1.png",
+      "source_page_url": "https://ampac.net/product/firefinder-plus-addressable-fire-alarm-control-panel-en54/",
+      "source_pdf_page": null,
+      "verification": "Complete front visually checked against its model-specific manufacturer page/document; image and manual scope are recorded in panels.json.",
+      "uk_priority": true
+    },
+    {
+      "id": "cygnus-smartnet-cie",
+      "brand": "Cygnus",
+      "model": "SmartNet CIE / SN-Pro control panel",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [
+        "facp-2656551e-81d0-4a06-917c-78650afc7d0a",
+        "facp-f4beaa7a-7847-4123-9fa8-57764c467502"
+      ],
+      "source_image_url": "https://bpl01-live-c3e607532880498b818c81580b02-33a6f85.divio-media.org/filer_public_thumbnails/filer_public/6e/e0/6ee059b8-24f2-4a1c-a15e-9b15a7dba1dd/smartnet_panel_pro.png__820x820_crop_subsampling-2_upscale.png",
+      "source_page_url": "https://www.cygnus-systems.com/en-gb/products/cygnus-sn/cygnus-sn-pro/control-panel-64-zones/",
+      "source_pdf_page": null,
+      "verification": "Complete front visually checked against its model-specific manufacturer page/document; image and manual scope are recorded in panels.json.",
+      "uk_priority": true
+    },
+    {
+      "id": "esser-compact",
+      "brand": "ESSER",
+      "model": "Compact single-loop fire alarm control panel",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [
+        "facp-08b009f9-e8ea-48ad-bb30-fa65c23bf4c7"
+      ],
+      "source_image_url": "https://docs.facpmanuals.com/manuals/ESSER/fire_alarm_control_panel_facp_compact-installation-2014.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/ESSER/fire_alarm_control_panel_facp_compact-installation-2014.pdf#page=1",
+      "source_pdf_page": 1,
+      "verification": "Complete front visually checked against its model-specific manufacturer page/document; image and manual scope are recorded in panels.json.",
+      "uk_priority": true
+    },
+    {
+      "id": "esser-flexes-control",
+      "brand": "ESSER",
+      "model": "FlexES Control",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [
+        "facp-21c215a4-9c48-43be-a754-01cb7ca81bae"
+      ],
+      "source_image_url": "https://docs.facpmanuals.com/manuals/ESSER/flexes_control-installation-2010.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/ESSER/flexes_control-installation-2010.pdf#page=1",
+      "source_pdf_page": 1,
+      "verification": "Complete front visually checked against its model-specific manufacturer page/document; image and manual scope are recorded in panels.json.",
+      "uk_priority": true
+    },
+    {
+      "id": "esser-iq8control-c-m",
+      "brand": "ESSER",
+      "model": "IQ8Control C / M",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [
+        "facp-c73427f6-6605-4d61-b7ff-db68b4b46298",
+        "facp-5b0fa3a1-f11c-488a-b5c2-a0159422c1ef"
+      ],
+      "source_image_url": "https://docs.facpmanuals.com/manuals/ESSER/iq8control_c-m-operations-2015-revaa.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/ESSER/iq8control_c-m-operations-2015-revaa.pdf#page=1",
+      "source_pdf_page": 1,
+      "verification": "Complete front visually checked against its model-specific manufacturer page/document; image and manual scope are recorded in panels.json.",
+      "uk_priority": true
+    },
+    {
+      "id": "firequest-control-panel",
+      "brand": "FireQuest",
+      "model": "FireQuest analogue addressable control panel",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [
+        "facp-88fe56af-1925-4dce-95a4-5c4a86a81f9d"
+      ],
+      "source_image_url": "https://docs.facpmanuals.com/manuals/FireQuest/firequest-operations-rev1-1.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/FireQuest/firequest-operations-rev1-1.pdf#page=1",
+      "source_pdf_page": 1,
+      "verification": "Complete front visually checked against its model-specific manufacturer page/document; image and manual scope are recorded in panels.json.",
+      "uk_priority": true
+    },
+    {
+      "id": "firequest-plus",
+      "brand": "FireQuest",
+      "model": "FireQuest Plus",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [
+        "facp-42fc2327-43b1-4233-9407-eec538bc1d0d"
+      ],
+      "source_image_url": "https://docs.facpmanuals.com/manuals/FireQuest/firequest_plus-operations-rev1-0.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/FireQuest/firequest_plus-operations-rev1-0.pdf#page=1",
+      "source_pdf_page": 1,
+      "verification": "Complete front visually checked against its model-specific manufacturer page/document; image and manual scope are recorded in panels.json.",
+      "uk_priority": true
+    },
+    {
+      "id": "firequest-repeater",
+      "brand": "FireQuest",
+      "model": "FireQuest fire alarm repeater",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [
+        "facp-03b56813-41d8-4f30-a860-a816ac399288"
+      ],
+      "source_image_url": "https://docs.facpmanuals.com/manuals/FireQuest/firequest_repeater-operations-rev1-1.pdf",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/FireQuest/firequest_repeater-operations-rev1-1.pdf#page=5",
+      "source_pdf_page": 5,
+      "verification": "Complete front visually checked against its model-specific manufacturer page/document; image and manual scope are recorded in panels.json.",
+      "uk_priority": true
+    },
+    {
+      "id": "global-fire-junior-v4",
+      "brand": "Global Fire Equipment",
+      "model": "JUNIOR V4",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [
+        "global-fire-equipment-14c6cd463c9f"
+      ],
+      "source_image_url": "https://globalfire-equipment.com/wp-content/uploads/2021/05/JUNIOR-V4_white_en_w.jpg",
+      "source_page_url": "https://globalfire-equipment.com/product/junior-v4/",
+      "source_pdf_page": null,
+      "verification": "Complete front visually checked against its model-specific manufacturer page/document; image and manual scope are recorded in panels.json.",
+      "uk_priority": true
+    },
+    {
+      "id": "ventcroft-firetrax-professional",
+      "brand": "Ventcroft",
+      "model": "FireTrax Professional VFT-P",
+      "category": "fire",
+      "status": "verified-image",
+      "record_ids": [
+        "ventcroft-7846d44dbc5b"
+      ],
+      "source_image_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/FireTrax%20Manual%20and%20Log%20Book.pdf",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/FireTrax%20Manual%20and%20Log%20Book.pdf#page=1",
+      "source_pdf_page": 1,
+      "verification": "Complete front visually checked against its model-specific manufacturer page/document; image and manual scope are recorded in panels.json.",
+      "uk_priority": true
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "brand": "FireQuest",
+      "model": "Repeater manual cover photograph",
+      "status": "rejected-image",
+      "reason": "The cover photograph is visibly labelled FIREQUEST CONTROL PANEL. Shared cabinet applicability to the repeater is unconfirmed. It was replaced by the explicitly described repeater fascia drawing on PDF page 5 (printed page 1); outer cabinet identification is not claimed."
+    },
+    {
+      "id": "gfe-358n-detector-record",
+      "brand": "Global Fire Equipment",
+      "model": "GFE-AD detector instructions / 358N filename",
+      "status": "not-panel",
+      "record_ids": [
+        "global-fire-equipment-c9b43f4bf7c3"
+      ],
+      "reason": "Downloaded original PDF identifies GFE-AD smoke/heat detectors and detector-base wiring; it is not a control panel. No picture entry created."
+    },
+    {
+      "brand": "Cygnus",
+      "model": "Additional CIE manual as a separate panel",
+      "status": "duplicate",
+      "reason": "SmartNet user guide and CIE panel manual document the same SmartNet control-panel family. Both records are attached to one entry. SN-100 and SITENET are not inferred from the SN-Pro image."
+    },
+    {
+      "brand": "Global Fire Equipment",
+      "model": "JUNIOR V3",
+      "status": "excluded",
+      "record_ids": [
+        "global-fire-equipment-5909d71cd9f0"
+      ],
+      "reason": "Selected product image and inspected manual are specifically V4. The V3 guide is not linked by a name-only assumption."
+    },
+    {
+      "brand": "ESSER",
+      "model": "IBOX-MBS-ESSER gateway",
+      "status": "not-panel",
+      "record_ids": [
+        "facp-ad546535-2b45-45f0-a5a8-0b54e3780b84"
+      ],
+      "reason": "Gateway documentation does not describe a fire-panel front."
+    },
+    {
+      "brand": "Haes / Kentec",
+      "model": "Previously deferred legacy images and blocked endpoints",
+      "status": "excluded",
+      "reason": "Not re-chased in this bounded batch. Prior unresolved states remain unchanged."
+    },
+    {
+      "brand": "ESP / Fireline / Menvier / JSB",
+      "model": "Additional photo-only leads",
+      "status": "excluded",
+      "reason": "This batch reached 11 meaningful gaps with exact existing manual evidence. Photo-only expansion was deferred rather than diluting the manual-backed selection."
+    }
+  ],
+  "contact_sheet": "review-final.jpg",
+  "image_bytes": 2051377,
+  "scope_note": "Picture-identification references with exact archive links. This batch does not add or claim new emulator menus."
+}

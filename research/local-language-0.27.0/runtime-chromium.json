@@ -1,0 +1,39 @@
+{
+  "label": "Actual service browser download and inference, before final runtime readiness manifest; no offline claim",
+  "syntheticReference": true,
+  "downloadAndVerificationMs": 45790,
+  "reply": {
+    "text": "To check the event history on this panel, you can use the arrow keys to scroll through the events.",
+    "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+    "modelRevision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+    "backend": "wasm",
+    "interpretationOnly": true,
+    "contextTruncated": false,
+    "metrics": {
+      "loadMs": 4786.699999999255,
+      "inputTokens": 91,
+      "outputTokens": 22,
+      "firstTokenMs": 2660,
+      "generationMs": 5726.5,
+      "tokensPerSecond": 3.8417881777700167
+    }
+  },
+  "model": {
+    "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+    "title": "SmolLM2 360M Instruct \u00b7 int8 \u00b7 local CPU",
+    "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+    "dtype": "q8",
+    "backend": "wasm",
+    "parameters": 360000000,
+    "license": "Apache-2.0",
+    "originalModel": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct",
+    "modelCard": "https://huggingface.co/onnx-community/SmolLM2-360M-Instruct-ONNX",
+    "maxInputTokens": 768,
+    "maxNewTokens": 96,
+    "limits": "Compact local language model. Interpretations need source checks. It does not verify electrical procedures, measurements or compatibility. CPU replies can take tens of seconds; saved references remain available.",
+    "bytes": 366642692,
+    "runtimeBytes": 0
+  },
+  "browser": "Chromium 154.0.8037.57 on Linux x86_64, Playwright persistent profile, WASM CPU one thread",
+  "network": "Actual immutable Hugging Face model URLs; no response mocking"
+}

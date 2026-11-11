@@ -1,0 +1,25 @@
+{
+  "data": {
+    "windowKeys": [],
+    "result": {
+      "error": "URL is not valid or contains user credentials.",
+      "stack": "put@[native code]\n@blob:http://127.0.0.1:8088/ae806bd5-979b-435f-b2dd-af4b13d394ae:1:124"
+    },
+    "final": []
+  },
+  "model": {
+    "name": "Error",
+    "code": "MODEL_RESOURCE_MISSING",
+    "message": "A downloaded model chunk is missing. Resume the model download.",
+    "stack": "modelError@http://127.0.0.1:8088/app/local-language-cache.mjs:2:70\n@http://127.0.0.1:8088/app/local-language.mjs:36:430",
+    "diagnostic": {
+      "code": "MODEL_RESOURCE_MISSING",
+      "message": "A downloaded model chunk is missing. Resume the model download.",
+      "name": "Error",
+      "stack": "modelError@http://127.0.0.1:8088/app/local-language-cache.mjs:2:70\ndownloadPack@http://127.0.0.1:8088/app/local-language-worker.mjs:27:148",
+      "phase": "download",
+      "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+      "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9"
+    }
+  }
+}

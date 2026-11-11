@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "version": "0.22.0",
+  "preservation": {
+    "baselineCommit": "350e887b0ce5bb3706a7a3660f0fe531d1175d9f",
+    "file": "baseline-data-hashes.json",
+    "sha256": "83cc5eebd5e9a984e303c9f6bfdb9f4d950cdf57373fde52d51fe91219a0bd02",
+    "filesVerified": 8
+  },
+  "batches": [
+    {
+      "name": "fire-devices-entries.json",
+      "sha256": "fc89121bff3af9b712aabbb8fe76326f2c842015f6ba82771494ea5d183fe433"
+    },
+    {
+      "name": "fire-panels-entries.json",
+      "sha256": "e4013694dac283817b59992c0052a69c285fac5e2d4924b38cb7e41985e1f75e"
+    },
+    {
+      "name": "security-entries.json",
+      "sha256": "7ef381535c767c8832a3702adce0448e25697464c22d3aebf8e5b4505bec2934"
+    }
+  ],
+  "coverage": {
+    "diagramCount": 177,
+    "manualCount": 105,
+    "panelCount": 40,
+    "deviceCount": 60,
+    "brandCount": 28,
+    "byCategory": {
+      "access-control": 7,
+      "fire": 121,
+      "cctv": 6,
+      "security": 32,
+      "warden-call": 11
+    },
+    "imageBytes": 31486428,
+    "newTargetLinks": [
+      {
+        "entryId": "c-tec-44b03d254ee3-p9-xfp-16-zone-analogue-loop-connections",
+        "recordId": "c-tec-44b03d254ee3",
+        "targetType": "panel",
+        "targetId": "c-tec-xfp-16-zone"
+      },
+      {
+        "entryId": "c-tec-44b03d254ee3-p10-xfp-16-zone-sounders-relays-and-inputs",
+        "recordId": "c-tec-44b03d254ee3",
+        "targetType": "panel",
+        "targetId": "c-tec-xfp-16-zone"
+      },
+      {
+        "entryId": "c-tec-ba3f93b60d06-p9-xfp-32-zone-analogue-loop-connections",
+        "recordId": "c-tec-ba3f93b60d06",
+        "targetType": "panel",
+        "targetId": "c-tec-xfp-32-zone"
+      },
+      {
+        "entryId": "c-tec-ba3f93b60d06-p11-xfp-32-zone-pc-link-and-battery-connections",
+        "recordId": "c-tec-ba3f93b60d06",
+        "targetType": "panel",
+        "targetId": "c-tec-xfp-32-zone"
+      },
+      {
+        "entryId": "c-tec-ba3f93b60d06-p10-xfp-32-zone-sounders-inputs-and-relay-wiring",
+        "recordId": "c-tec-ba3f93b60d06",
+        "targetType": "panel",
+        "targetId": "c-tec-xfp-32-zone"
+      },
+      {
+        "entryId": "facp-7538be76-f958-46e4-99f6-c718601bb349-p28-vigilon-4-6-loop-terminal-card-layout",
+        "recordId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+        "targetType": "panel",
+        "targetId": "gent-vigilon-4-6-loop"
+      },
+      {
+        "entryId": "hochiki-f97bdbde045d-p1-esp-sensor-bases",
+        "recordId": "hochiki-f97bdbde045d",
+        "targetType": "device",
+        "targetId": "hochiki-aln-en"
+      },
+      {
+        "entryId": "hochiki-f97bdbde045d-p1-esp-sensor-bases",
+        "recordId": "hochiki-f97bdbde045d",
+        "targetType": "device",
+        "targetId": "hochiki-acc-en"
+      },
+      {
+        "entryId": "hochiki-f97bdbde045d-p1-esp-sensor-bases",
+        "recordId": "hochiki-f97bdbde045d",
+        "targetType": "device",
+        "targetId": "hochiki-atj-en"
+      },
+      {
+        "entryId": "hochiki-f97bdbde045d-p1-esp-sensor-bases",
+        "recordId": "hochiki-f97bdbde045d",
+        "targetType": "device",
+        "targetId": "hochiki-acd-en"
+      },
+      {
+        "entryId": "hochiki-f97bdbde045d-p1-esp-sensor-bases",
+        "recordId": "hochiki-f97bdbde045d",
+        "targetType": "device",
+        "targetId": "hochiki-acb-ew"
+      },
+      {
+        "entryId": "hochiki-f97bdbde045d-p1-esp-sensor-bases",
+        "recordId": "hochiki-f97bdbde045d",
+        "targetType": "device",
+        "targetId": "hochiki-ybn-r3"
+      },
+      {
+        "entryId": "hochiki-f97bdbde045d-p1-esp-sensor-bases",
+        "recordId": "hochiki-f97bdbde045d",
+        "targetType": "device",
+        "targetId": "hochiki-ybv-r4"
+      },
+      {
+        "entryId": "kentec-21f0fd797fe0-p16-syncro-monitored-routing-outputs",
+        "recordId": "kentec-21f0fd797fe0",
+        "targetType": "panel",
+        "targetId": "kentec-syncro"
+      },
+      {
+        "entryId": "kentec-21f0fd797fe0-p28-syncro-network-loop-connections",
+        "recordId": "kentec-21f0fd797fe0",
+        "targetType": "panel",
+        "targetId": "kentec-syncro"
+      },
+      {
+        "entryId": "kentec-21f0fd797fe0-p7-syncro-terminal-plate-layout",
+        "recordId": "kentec-21f0fd797fe0",
+        "targetType": "panel",
+        "targetId": "kentec-syncro"
+      },
+      {
+        "entryId": "protec-502abea1875d-p2-protec-common-base",
+        "recordId": "protec-502abea1875d",
+        "targetType": "device",
+        "targetId": "protec-6000plus-base"
+      }
+    ]
+  },
+  "duplicates": [],
+  "unreferencedImages": [],
+  "datasetSha256": "e54b6a0757df727f9ab6af300b826ebd0f3f055d8e0adda359552f884aaf44f1"
+}

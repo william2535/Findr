@@ -1,0 +1,18 @@
+{
+  "checked_on": "2026-10-30",
+  "release_checked": "0.13.0",
+  "passed_pdf_downloads": [
+    "device-doc-apollo-9fa419f06047",
+    "device-doc-c-tec-f18a6fbbfbc7",
+    "device-doc-c-tec-1a72f739e6d0",
+    "device-doc-c-tec-cb5ba501ef82"
+  ],
+  "failed_source": {
+    "record_id": "device-doc-c-tec-af925ff0ac67",
+    "message": "Publisher returned 403",
+    "handling": "Retained source-only; excluded from active pack download. Independent manufacturer PDF added."
+  },
+  "four_pdfs_saved_on_device": true,
+  "browser_offline_ready": true,
+  "replacement_source_production_test": "Pending publication of 0.13.1"
+}

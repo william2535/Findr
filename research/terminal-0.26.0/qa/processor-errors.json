@@ -1,0 +1,10 @@
+{
+  "ocr": {
+    "code": "OCR_FAILED",
+    "message": "The local OCR worker failed on page 1. Retry processing, or check the offline OCR resources. The PDF and current job have been kept."
+  },
+  "resources": {
+    "name": "AbortError",
+    "message": "Offline-resource download cancelled. You can resume the download without replacing your PDF."
+  }
+}

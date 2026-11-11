@@ -1,0 +1,358 @@
+{
+  "brand": "Texecom",
+  "category": "security",
+  "review_date": "2026-10-30",
+  "device_family_count": 9,
+  "device_ids": [
+    "texecom-capture-wired-wall",
+    "texecom-capture-wireless-wall",
+    "texecom-capture-wired-ceiling",
+    "texecom-impaq-sc",
+    "texecom-impaq-sc-w",
+    "texecom-micro-contact-w",
+    "texecom-micro-shock-w",
+    "texecom-impaq-glass-break",
+    "texecom-odyssey-x-wired"
+  ],
+  "scope": "Intruder detector/contact/sounder identification pack. No control panels or keypads. Colour options are not counted separately.",
+  "source_method": "Primary manufacturer pages and original manufacturer PDFs. Independent hosts are disclosed for preserved original PDFs. Product images are real manufacturer assets or exact PDF illustrations.",
+  "document_review": {
+    "texecom-778b363ae34b": {
+      "file": "research/texecom-778b363ae34b.pdf",
+      "sha256": "75d9984f07d7b68cb905762988d074e5e40847f6b32f124ba908f805e527a3b7",
+      "bytes": 14905157,
+      "pages": 76,
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/11/04115044/INS878EN-11-Capture-G2-Wired-wall-mount-detectors.pdf",
+      "catalogue_hash_match": "Archive record has no stored hash; fetched bytes verified here",
+      "printed_edition": "INS878EN-11",
+      "models_checked_in_pdf": [
+        "P15",
+        "Q20",
+        "D20",
+        "CQ",
+        "CD"
+      ],
+      "relevant_pdf_pages": [
+        1,
+        72,
+        73
+      ]
+    },
+    "texecom-2e8386a1d8f4": {
+      "file": "research/texecom-2e8386a1d8f4.pdf",
+      "sha256": "b30026966856785e450779cb73c064f6515d576ae481c76c7988b47d1db86563",
+      "bytes": 12296817,
+      "pages": 79,
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/11/04115048/INS879EN-11-Capture-G2-Wireless-Wall-mount-detectors.pdf",
+      "catalogue_hash_match": "Archive record has no stored hash; fetched bytes verified here",
+      "printed_edition": "INS879EN-11",
+      "models_checked_in_pdf": [
+        "P15-W",
+        "Q20-W",
+        "D20-W"
+      ],
+      "relevant_pdf_pages": [
+        1,
+        75,
+        76
+      ]
+    },
+    "texecom-3973d2c533e7": {
+      "file": "research/texecom-3973d2c533e7.pdf",
+      "sha256": "dd52f1cfff42210cd5dd0a42c8dbfd49797aaf5f2a8840f056c6e158fa9f7076",
+      "bytes": 1901051,
+      "pages": 26,
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2023/01/03162715/EN-Impaq-S_SC_SG3-Installation-Manual.pdf",
+      "catalogue_hash_match": "Archive record has no stored hash; fetched bytes verified here",
+      "printed_edition": "INS877-4; Impaq S Grade 3 added 18-10-2022",
+      "models_checked_in_pdf": [
+        "Impaq SC"
+      ],
+      "relevant_pdf_pages": [
+        1,
+        6,
+        7,
+        19
+      ]
+    },
+    "texecom-4e1e0135f4bf": {
+      "file": "research/texecom-4e1e0135f4bf.pdf",
+      "sha256": "28279be832df10979150fe382f145a53e0d5311390f0fdcaf910fb823952d6f6",
+      "bytes": 591883,
+      "pages": 15,
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/02/01102935/Impaq_SC-W_instructions.pdf",
+      "catalogue_hash_match": "Archive record has no stored hash; fetched bytes verified here",
+      "printed_edition": "INS876-1",
+      "models_checked_in_pdf": [
+        "Impaq SC-W",
+        "GJAA1000"
+      ],
+      "relevant_pdf_pages": [
+        1,
+        3,
+        13
+      ]
+    },
+    "texecom-0faf7b484b7a": {
+      "file": "research/texecom-0faf7b484b7a.pdf",
+      "sha256": "65278e23b90a015c16e43461c657bb421e2e298813d240767247aff308f4521c",
+      "bytes": 631824,
+      "pages": 30,
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2023/09/20132924/Micro-Contact-W-INS741-8-Manual.pdf",
+      "catalogue_hash_match": "Archive record has no stored hash; fetched bytes verified here",
+      "printed_edition": "INS741-8",
+      "models_checked_in_pdf": [
+        "Micro Contact-W",
+        "GHAA1000"
+      ],
+      "relevant_pdf_pages": [
+        1,
+        28
+      ]
+    },
+    "texecom-d0db73f4ddd3": {
+      "file": "research/texecom-d0db73f4ddd3.pdf",
+      "sha256": "4c470d0602c1489d81c9d644f657eb2f488d3715189cf20f09bc1b4d1eab3578",
+      "bytes": 526281,
+      "pages": 28,
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2023/09/20132929/Micro-Shock-W-INS773-10-Manual.pdf",
+      "catalogue_hash_match": "Archive record has no stored hash; fetched bytes verified here",
+      "printed_edition": "INS773-10; 20-09-2023 update",
+      "models_checked_in_pdf": [
+        "Micro Shock-W",
+        "GHCA1000"
+      ],
+      "relevant_pdf_pages": [
+        1,
+        2,
+        26
+      ]
+    },
+    "texecom-d710b6c6465d": {
+      "file": "research/texecom-d710b6c6465d.pdf",
+      "sha256": "cc9dc5daeab4ef78d1bb75f535d16f4cfdf89423b750ed3946392d10e93eccef",
+      "bytes": 577568,
+      "pages": 2,
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/02/01102935/Impaq_GlassBreak_INS229-4-2.pdf",
+      "catalogue_hash_match": "Archive record has no stored hash; fetched bytes verified here",
+      "printed_edition": "Printed INS 229-3; filename contains INS229-4-2",
+      "models_checked_in_pdf": [
+        "Impaq Glass Break"
+      ],
+      "relevant_pdf_pages": [
+        1,
+        2
+      ]
+    },
+    "texecom-f166805d48dc": {
+      "file": "research/texecom-f166805d48dc.pdf",
+      "sha256": "88bf89a5c3ea9f0e8e66fc6435274518469b29f44ad06bbe0278f66df5c666f2",
+      "bytes": 1530866,
+      "pages": 44,
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/02/30152212/Odyssey-X-Wired-Wireless-and-Deterrent-sounder-INS627-8.pdf",
+      "catalogue_hash_match": "Archive record has no stored hash; fetched bytes verified here",
+      "printed_edition": "INS627-8; 03-10-2022 update",
+      "models_checked_in_pdf": [
+        "Odyssey X-B",
+        "Odyssey X-E"
+      ],
+      "relevant_pdf_pages": [
+        1,
+        4,
+        5,
+        37,
+        38
+      ]
+    }
+  },
+  "photo_review": [
+    {
+      "device_id": "texecom-capture-wired-wall",
+      "source_page_url": "https://www.texe.com/our-security-systems/capture-motion-detectors/",
+      "source_image_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/03/30143447/Capture_Wall-mount.jpeg",
+      "research_image": "research/Capture_Wall-mount.jpeg",
+      "original_image_sha256": "22471d8223b9d6e6584ef8ea7e125d4c372e3d0cc296ce19939d503c235dbe63",
+      "original_dimensions": [
+        1000,
+        800
+      ],
+      "output_sha256": "ee9bce4b5f244dd79f2da4da802cc401f695290db72c9b66f85c085cbd382e4b",
+      "output_dimensions": [
+        1000,
+        800
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Official shared Capture wall housing, with the circular lens and separate outer fascia.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "texecom-capture-wireless-wall",
+      "source_page_url": "https://www.texe.com/our-security-systems/capture-motion-detectors/",
+      "source_image_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/03/30143446/Capture_Wall-mount-W.jpeg",
+      "research_image": "research/Capture_Wall-mount-W.jpeg",
+      "original_image_sha256": "4d6043108b306c6ad735588e6392deda12f2a064018a1c7073cbfb5955461e13",
+      "original_dimensions": [
+        1000,
+        800
+      ],
+      "output_sha256": "a368d6ce606989d49b7667edac83a6c754e8a39d40dee00d47243285ef470d88",
+      "output_dimensions": [
+        1000,
+        800
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Official wireless wall-family picture; the Ricochet badge is part of the manufacturer artwork.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "texecom-capture-wired-ceiling",
+      "source_page_url": "https://www.texe.com/our-security-systems/capture-motion-detectors/",
+      "source_image_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/03/30143925/Capture_Ceiling-mount.jpeg",
+      "research_image": "research/Capture_Ceiling-mount.jpeg",
+      "original_image_sha256": "b2ef3b4085d0648ca402bf69e8782133aa1321207100052b07f74aa75fd70011",
+      "original_dimensions": [
+        1000,
+        800
+      ],
+      "output_sha256": "95e3c393b6c467ac8b90dc1910fd304370c4f471b0ba4943fca62d6021ec80d6",
+      "output_dimensions": [
+        1000,
+        800
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Round ceiling housing with central lens; manufacturer picture represents the common CQ/CD enclosure.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "texecom-impaq-sc",
+      "source_page_url": "https://www.texe.com/help-and-support/product-support/",
+      "source_image_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/03/28115704/Impaq-SC_white-1.jpg",
+      "research_image": "research/Impaq-SC_white-1.jpg",
+      "original_image_sha256": "9aa9daf7310028b75ce97124c11c8077dd136e5bb6c8e3b210967310e0e85133",
+      "original_dimensions": [
+        1000,
+        800
+      ],
+      "output_sha256": "201dc5fd90fcf9bdc0050b0dd7154d4ca0d7354956d3a40b9bdd022d67a40cb9",
+      "output_dimensions": [
+        1000,
+        800
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Manufacturer photograph of the white SC unit with its separate magnetic-contact magnet.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "texecom-impaq-sc-w",
+      "source_page_url": "https://www.texe.com/help-and-support/product-support/",
+      "source_image_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/03/28115823/Impaq-SC-W_white-1.jpg",
+      "research_image": "research/Impaq-SC-W_white-1.jpg",
+      "original_image_sha256": "565a56f4774ad27e4e7d766860babb6a9dc96be8a801bdee4f2739c341920019",
+      "original_dimensions": [
+        1000,
+        800
+      ],
+      "output_sha256": "f6e131abc2ad20f6c7a4c3fe23d96659f2296cbae6194539edeb139354db8ce7",
+      "output_dimensions": [
+        1000,
+        800
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "White SC-W housing and separate magnet, shown in the manufacturer product photograph.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "texecom-micro-contact-w",
+      "source_page_url": "https://www.texe.com/help-and-support/product-support/",
+      "source_image_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2023/02/14101620/Micro-Contact-W-BLACK.png",
+      "research_image": "research/Micro-Contact-W-BLACK.png",
+      "original_image_sha256": "470a1dd05bcfada7ed11612d420e10054676b995626cf0bd4ca70d201ccd0450",
+      "original_dimensions": [
+        342,
+        462
+      ],
+      "output_sha256": "98689e51b875b589863fdac959d3a418c057df3b611e823eadfa74eda5c39a61",
+      "output_dimensions": [
+        342,
+        462
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Official black-finish Micro Contact-W picture, showing the slim detector and separate magnet as one family.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "texecom-micro-shock-w",
+      "source_page_url": "https://www.texe.com/help-and-support/product-support/",
+      "source_image_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2023/02/14101628/Micro-Shock-W-BLACK.png",
+      "research_image": "research/Micro-Shock-W-BLACK.png",
+      "original_image_sha256": "3e67102bb161a98dbdafbc0798db0a602b91108fbe4d2d2a9f1cbf02921ff923",
+      "original_dimensions": [
+        292,
+        594
+      ],
+      "output_sha256": "ed41c41952ae99bb77e60299847f833de3dfd2a07de134ea95a53c7d9290b825",
+      "output_dimensions": [
+        292,
+        594
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Official black-finish Micro Shock-W picture; the single narrow body is a shock detector.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "texecom-impaq-glass-break",
+      "source_page_url": "https://www.texe.com/help-and-support/product-support/",
+      "source_image_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/03/28120632/Premier-Impaq-Glassbreak.jpg",
+      "research_image": "research/Premier-Impaq-Glassbreak.jpg",
+      "original_image_sha256": "f0a79f197f5e23a574d372bf7b6d1df3e25c0124b4e15586152a7b4cdf5cbc04",
+      "original_dimensions": [
+        1000,
+        800
+      ],
+      "output_sha256": "be41e9d24fa547cd096e69379e2c95d38a98365444b316e0cb63ca8d0de09309",
+      "output_dimensions": [
+        1000,
+        800
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Manufacturer photograph of the compact glass-break housing, with its microphone aperture and status indicators.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "texecom-odyssey-x-wired",
+      "source_page_url": "https://www.texe.com/help-and-support/product-support/",
+      "source_image_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/03/28121331/Odyssey-X3_WhiteBlue.jpg",
+      "research_image": "research/Odyssey-X3_WhiteBlue.jpg",
+      "original_image_sha256": "cb41d41ca18efd841ac762636c78fa1cbf1ae50628ffd889a22fe297e962d9a4",
+      "original_dimensions": [
+        1000,
+        800
+      ],
+      "output_sha256": "a6526cd0faa84818f2e923b3f236b34a1ae49d3a7d04cb4a82fc7a43a851c1fe",
+      "output_dimensions": [
+        1000,
+        800
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Official white-and-blue X3 cover photograph. The manual confirms that several Odyssey X backplates use these covers.",
+      "reviewed_visually": true
+    }
+  ],
+  "online_only_device_ids": [],
+  "failures_and_deferrals": [],
+  "review_limits": "Identification reference, not proof of exact hardware generation, regional approval or panel compatibility. Existing archive IDs retained only after matching brand/category and retrieved document scope. Manufacturer pages may change after review.",
+  "special_findings": [
+    "Impaq Glass Break archive URL/filename implies INS229-4-2; actual bytes print INS 229-3. Device applicability note explicitly reports this.",
+    "Capture wired and wireless wall/ceiling scopes are separated. Ricochet regional bands were read in the manual specification tables.",
+    "Odyssey X cover is shared by wired, wireless and dummy backplates; this card explicitly limits to the named working wired backplates."
+  ]
+}

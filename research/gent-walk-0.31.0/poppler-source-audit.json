@@ -1,0 +1,12 @@
+{
+  "source": "real PDFs",
+  "results": [
+    {
+      "recordId": "facp-7538be76-f958-46e4-99f6-c718601bb349",
+      "sha256": "a08baba300272577485f0dc29dfe0addb65815dca59036369256419d30366998",
+      "pages": 162,
+      "uniqueSourceAnchors": 33,
+      "allAnchorsMatch": true
+    }
+  ]
+}

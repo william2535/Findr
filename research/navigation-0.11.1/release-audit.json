@@ -1,0 +1,148 @@
+{
+  "release": "0.11.1",
+  "date": "2026-10-30",
+  "projectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
+  "baselineCommit": "88c3cfc8d613fd922b93e5abd664c8fa1ffd7256",
+  "request": "Group GENT panels under Emulators and reduce crowded top-level navigation.",
+  "navigation": {
+    "items": [
+      "Fault finder",
+      "Emulators",
+      "Menu maps",
+      "Downloads"
+    ],
+    "emulatorGroups": {
+      "Fire panels": [
+        "GENT Nano",
+        "GENT Vigilon"
+      ],
+      "Intruder keypads": 9
+    },
+    "totalChoices": 11,
+    "separateGentMainNavigationRemoved": true,
+    "releasePageEmulatorsButton": true,
+    "combinedHomeCallout": true,
+    "existingNanoAndVigilonRoutesPreserved": true
+  },
+  "browserQA": {
+    "releaseOpenEmulators": "passed",
+    "nanoCardOpensTrainer": "passed",
+    "vigilonCardOpensTrainer": "passed",
+    "emulatorsActiveInsideBothGentTrainers": true,
+    "homeOpenEmulatorsButtons": 1,
+    "homeSeparateNanoButtons": 0,
+    "homeSeparateVigilonButtons": 0,
+    "phoneFrames": [
+      {
+        "width": 320,
+        "contentWidth": 305,
+        "pageScrollWidth": 305,
+        "navWidth": 265,
+        "navScrollWidth": 265
+      },
+      {
+        "width": 390,
+        "contentWidth": 375,
+        "pageScrollWidth": 375
+      }
+    ],
+    "chooserCards": 11,
+    "proof": "emulators-preview.jpg",
+    "limits": [
+      "Managed HTTP preview does not provide an installed offline PWA test.",
+      "No physical phone installation was performed."
+    ]
+  },
+  "tests": {
+    "command": "node --test --test-isolation=none tests/*.test.mjs",
+    "passed": 598,
+    "failed": 0,
+    "retentionChecks": 10,
+    "newNavigationTestsAdded": false
+  },
+  "preservation": {
+    "byteIdenticalProtectedModules": [
+      "public/app/emulator-config.mjs",
+      "public/app/practice-engine.mjs",
+      "public/app/engine.mjs",
+      "public/app/emulator-feedback.mjs",
+      "public/app/emulator-engine.mjs",
+      "public/app/gent-engine.mjs",
+      "public/app/emulator-hints.mjs",
+      "public/app/menu-map-engine.mjs",
+      "public/app/gent-nano-engine.mjs",
+      "public/app/gent.mjs",
+      "public/app/gent-nano.mjs",
+      "public/app/practice.mjs"
+    ],
+    "dataFilesCompared": [
+      "public/app/data/catalogue.json",
+      "public/app/data/coverage.json",
+      "public/app/data/download-map.json",
+      "public/app/data/gent-lessons.json",
+      "public/app/data/gent-nano-lessons.json",
+      "public/app/data/gent-nano.json",
+      "public/app/data/gent-vigilon.json",
+      "public/app/data/knowledge.json",
+      "public/app/data/menu-maps/ade-accenta-optima.json",
+      "public/app/data/menu-maps/galaxy-dimension.json",
+      "public/app/data/menu-maps/hkc-quantum70.json",
+      "public/app/data/menu-maps/menvier-mseries.json",
+      "public/app/data/menu-maps/orisec-cp.json",
+      "public/app/data/menu-maps/pyronix-enforcer.json",
+      "public/app/data/menu-maps/risco-lightsys2.json",
+      "public/app/data/menu-maps/scantronic-ion.json",
+      "public/app/data/menu-maps/texecom-premier-elite.json",
+      "public/app/data/packs.json",
+      "public/app/data/panels.json",
+      "public/app/data/practice.json"
+    ],
+    "onlyDataChange": "practice.json release version 0.11.0 -> 0.11.1",
+    "historicalSourceApksStillMatchChecksums": true
+  },
+  "webBuild": {
+    "publicFiles": 728,
+    "nativeOnlyFilesExcluded": [
+      "app/data/download-map.json"
+    ],
+    "retainedApkVersions": [
+      "0.11.1",
+      "0.11.0"
+    ],
+    "archivedReleaseFilesExcluded": 20,
+    "archivedReleaseBytes": 206266983,
+    "orphanFilesRemoved": 21,
+    "buildBytes": 82007686,
+    "archiveAllowance": 1048576,
+    "verified": true
+  },
+  "android": {
+    "version": "0.11.1",
+    "versionCode": 16,
+    "bytes": 21722749,
+    "sha256": "5de91e3501f8c457d7110e5d756977cc256c4084b3f23ee2182069353610cdd5",
+    "appFiles": 711,
+    "allBundledAssetsMatch": true,
+    "physicalInstallTested": false,
+    "signerCertificateSha256": "6075a73725dac5a3cc1f7b6b32c5e1df907cd1ca4b5b611f4c1c1d2fd502fefd",
+    "minSdk": 26,
+    "targetSdk": 35,
+    "permissions": [
+      "android.permission.INTERNET"
+    ]
+  },
+  "releaseRetention": {
+    "reason": "A full additional Android APK cannot fit alongside every historical installer within the 256 MiB expanded archive limit.",
+    "publicVersions": [
+      "0.11.1",
+      "0.11.0"
+    ],
+    "historicalArtifactsRetainedInSource": true,
+    "archivedUrls": 20,
+    "archivedVersionResponse": 410,
+    "archivePageOffersCurrentDownloadAndReleasePage": true,
+    "differentBinaryNeverSubstitutedAtVersionedUrl": true,
+    "exactRoutesDoNotShadowCurrentOrPreviousStaticDownloads": true,
+    "all20ArchivedRoutesPresentInBuild": true
+  }
+}

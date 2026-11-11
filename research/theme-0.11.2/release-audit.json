@@ -1,0 +1,220 @@
+{
+  "release": "0.11.2",
+  "date": "2026-10-30",
+  "projectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
+  "baselineCommit": "c8fdd90f8e686017ab5f3485a1da3dd25f00b0b2",
+  "request": "Keep the Grindr-inspired FINDR yellow-and-black visual joke across the app.",
+  "theme": {
+    "stylesheet": "public/app/findr-theme.css",
+    "loadedLast": true,
+    "brandYellow": "#ffcc00",
+    "surfaces": "Neutral charcoal and black",
+    "headline": "Find your type. Know your panel.",
+    "intro": "Fire panels. Intruder keypads. No small talk.",
+    "surfacesUpdated": [
+      "Release page",
+      "Home",
+      "Panel catalogue",
+      "Downloads",
+      "Menu maps",
+      "Emulator chooser",
+      "Keypad tools and guided hints",
+      "GENT lessons and help",
+      "Shared dialogs and form controls",
+      "PWA and Android chrome",
+      "Share card"
+    ],
+    "existingLogoRetained": true,
+    "physicalPanelSkinsPreserved": true,
+    "operationalStatusColoursPreserved": true,
+    "layoutBreakpointsChanged": false,
+    "fourItemNavigationPreserved": true,
+    "gentPanelsRemainUnderEmulators": [
+      "Nano",
+      "Vigilon"
+    ]
+  },
+  "browserQA": {
+    "release": "0.11.2",
+    "preview": "http://terminal.local:4173/",
+    "visualChecks": [
+      "Release page and existing FINDR logo",
+      "App home",
+      "Emulators chooser with both GENT panels",
+      "Menu-map landing",
+      "Downloads catalogue",
+      "Nano panel and main-menu interaction",
+      "Nano help category filter",
+      "Galaxy physical keypad and SHOW HINTS"
+    ],
+    "phoneFrames": [
+      {
+        "width": 320,
+        "contentWidth": 305,
+        "scrollWidth": 305,
+        "routes": [
+          "home",
+          "menus",
+          "nano"
+        ]
+      },
+      {
+        "width": 390,
+        "contentWidth": 375,
+        "scrollWidth": 375,
+        "routes": [
+          "home",
+          "downloads",
+          "emulator/galaxy-dimension"
+        ]
+      }
+    ],
+    "navigationItems": [
+      "Fault finder",
+      "Emulators",
+      "Menu maps",
+      "Downloads"
+    ],
+    "routeSmokeCheck": {
+      "panel": "Galaxy Dimension",
+      "target": "Walk Test",
+      "keys": [
+        "3",
+        "1",
+        "ent"
+      ],
+      "completed": true,
+      "progressAfterFirstPress": "1 / 3 route steps",
+      "completionText": "Route complete \u2014 you reached Walk Test."
+    },
+    "physicalSkins": "Nano and Galaxy inspected in browser; independent CSS review found no selectors recolouring any LCD, keypad case, physical keys or lamps.",
+    "representativeContrastReview": {
+      "method": "Independent reviewer calculation against the stylesheet colours",
+      "primaryAndActiveNavigation": 12.58,
+      "mutedTextOnRaisedSurfaces": 7.47,
+      "inputPlaceholders": 6.04,
+      "normalStateGreenText": 8.81
+    },
+    "shareCard": {
+      "file": "public/share/findr-release-0.11.2.png",
+      "visuallyInspected": true,
+      "textFits": true
+    },
+    "browserScreenshot": {
+      "capturedAndInspected": true,
+      "attached": false,
+      "reason": "Browser-to-container synchronization produced no non-empty file after the prescribed five-second poll."
+    },
+    "limits": [
+      "Managed HTTP preview does not provide an installed offline PWA test.",
+      "No physical phone installation was performed.",
+      "Audio output was not independently measured; feedback implementation is byte-identical to the published baseline."
+    ]
+  },
+  "tests": {
+    "command": "node --test --test-isolation=none tests/*.test.mjs",
+    "passed": 598,
+    "failed": 0,
+    "newThemeTestsAdded": false
+  },
+  "preservation": {
+    "baselineCommit": "c8fdd90f8e686017ab5f3485a1da3dd25f00b0b2",
+    "byteIdenticalProtectedModules": [
+      "public/app/emulator-config.mjs",
+      "public/app/practice-engine.mjs",
+      "public/app/engine.mjs",
+      "public/app/emulator-feedback.mjs",
+      "public/app/emulator-engine.mjs",
+      "public/app/gent-engine.mjs",
+      "public/app/emulator-hints.mjs",
+      "public/app/menu-map-engine.mjs",
+      "public/app/gent-nano-engine.mjs",
+      "public/app/gent.mjs",
+      "public/app/gent-nano.mjs",
+      "public/app/practice.mjs",
+      "public/app/emulator.mjs",
+      "public/app/gent.css",
+      "public/app/gent-nano.css",
+      "public/app/practice.css"
+    ],
+    "dataFilesCompared": [
+      "public/app/data/catalogue.json",
+      "public/app/data/coverage.json",
+      "public/app/data/download-map.json",
+      "public/app/data/gent-lessons.json",
+      "public/app/data/gent-nano-lessons.json",
+      "public/app/data/gent-nano.json",
+      "public/app/data/gent-vigilon.json",
+      "public/app/data/knowledge.json",
+      "public/app/data/menu-maps/ade-accenta-optima.json",
+      "public/app/data/menu-maps/galaxy-dimension.json",
+      "public/app/data/menu-maps/hkc-quantum70.json",
+      "public/app/data/menu-maps/menvier-mseries.json",
+      "public/app/data/menu-maps/orisec-cp.json",
+      "public/app/data/menu-maps/pyronix-enforcer.json",
+      "public/app/data/menu-maps/risco-lightsys2.json",
+      "public/app/data/menu-maps/scantronic-ion.json",
+      "public/app/data/menu-maps/texecom-premier-elite.json",
+      "public/app/data/packs.json",
+      "public/app/data/panels.json",
+      "public/app/data/practice.json"
+    ],
+    "onlyDataChange": "practice.json release version 0.11.1 -> 0.11.2"
+  },
+  "offlineApp": {
+    "precacheAssets": 709,
+    "precacheBytes": 34246522,
+    "cacheBuild": "2122563b6f4c",
+    "newThemePrecached": true
+  },
+  "webBuild": {
+    "publicFiles": 730,
+    "nativeOnlyFilesExcluded": [
+      "app/data/download-map.json"
+    ],
+    "retainedApkVersions": [
+      "0.11.2",
+      "0.11.1"
+    ],
+    "archivedReleaseFilesExcluded": 22,
+    "archivedReleaseBytes": 227989815,
+    "orphanFilesRemoved": 23,
+    "buildBytes": 82150233,
+    "archiveAllowance": 1048576,
+    "verified": true
+  },
+  "android": {
+    "version": "0.11.2",
+    "versionCode": 17,
+    "package": "com.findr.app",
+    "signerCertificateSha256": "6075a73725dac5a3cc1f7b6b32c5e1df907cd1ca4b5b611f4c1c1d2fd502fefd",
+    "signatureVerified": true,
+    "signatureSchemes": [
+      "v2",
+      "v3"
+    ],
+    "minSdk": 26,
+    "targetSdk": 35,
+    "permissions": [
+      "android.permission.INTERNET"
+    ],
+    "bytes": 21726917,
+    "sha256": "d145b931adc5327356d6405f2e7f8b0b518e27e5b8a0800561f187fe105d3dbb",
+    "appFiles": 712,
+    "allBundledAssetsMatch": true,
+    "nativeDownloadIndexBundled": true,
+    "appIconPixelsMatch": true,
+    "signerMatchesPreviousRelease": true,
+    "releaseCopyMatches": true,
+    "physicalInstallTested": false
+  },
+  "releaseRetention": {
+    "publicVersions": [
+      "0.11.2",
+      "0.11.1"
+    ],
+    "archivedUrls": 22,
+    "archivedVersionResponse": 410,
+    "historicalArtifactsRetainedInSource": true
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "reviewed_on": "2026-11-02",
+  "document": "DFU7004010 Rev 1",
+  "title": "CFP Standard installation and maintenance manual",
+  "record_id": "c-tec-4b1267f3fefc",
+  "source_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CFP%202%2C4%2C8%20zone%20conventional%20fire%20panel%20manual.pdf",
+  "source_sha256": "6e04b478f4fe32f3f33a0365e660a5629a6621882a6231b3f2d56985d6c1ace8",
+  "pdf_page": 16,
+  "printed_page": "16",
+  "figure": "12 \u2014 Location of the panel programming tools on the Main Control PCB",
+  "crop_pdf_points": [
+    110,
+    160,
+    450,
+    331
+  ],
+  "render_scale": 3,
+  "asset": "public/app/trainer-assets/cfp-standard-control-pcb.webp",
+  "image_dimensions": [
+    1020,
+    513
+  ],
+  "image_sha256": "3def0f2db1ca7d1181c0bcb2de0fecf9778ae88f5d7d3c16d6b39938957d8509",
+  "image_credit": "C-TEC manufacturer manual, Figure 12. Original documented PCB diagram, cropped and rendered for this training view.",
+  "scope": "Eight-zone Main Control PCB illustration only; not a photograph of the complete enclosure, PSU or live equipment. Diagram labels are not live measurements."
+}

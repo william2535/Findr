@@ -1,0 +1,141 @@
+{
+  "release": "0.7.0",
+  "date": "2026-10-29",
+  "scope": "Guided menu routes and learning feedback for the existing four keypad emulators",
+  "android": {
+    "versionName": "0.7.0",
+    "versionCode": 10,
+    "package": "com.findr.app",
+    "apk": "public/releases/FINDR-0.7.0.apk",
+    "sizeBytes": 20295743,
+    "sha256": "fee8145507595f6a96e9d4960463f16f2e81bcde0a44ac64b39b7c6acea5d71d",
+    "signerCertificateSha256": "6075a73725dac5a3cc1f7b6b32c5e1df907cd1ca4b5b611f4c1c1d2fd502fefd",
+    "signatureVerified": true,
+    "matchingBundledAppFiles": 644,
+    "minSdk": 26,
+    "targetSdk": 35,
+    "permissions": [
+      "android.permission.INTERNET"
+    ]
+  },
+  "entryPoints": [
+    "Menu-map entry beside Open on keypad",
+    "Emulator Find a menu search result beside Open on keypad"
+  ],
+  "interactionPolicy": {
+    "automaticKeypresses": false,
+    "start": "Appropriate authorised access root; saved fictional panel settings are retained.",
+    "route": "Shortest supported key sequence within the existing emulator and matching access context, comparing documented numeric/function shortcuts and both scroll directions.",
+    "recordSelection": "Choose the relevant fictional zone, user, group or other supported record before following its dependent route.",
+    "wrongKey": "Replan from the actual resulting keypad state; guide only buttons physically present on the selected face.",
+    "arrival": "Stop at the requested menu or field, or highlight a requested choice, before saving programming or executing a command.",
+    "prerequisite": "Stop and explain when reaching a conditional branch would require saving a setting.",
+    "reference": "Reference-only locations retain their evidence qualification and do not receive the ordinary success celebration."
+  },
+  "feedback": {
+    "progress": "Monotonic earned progress based on the furthest route progress achieved; backtracking cannot farm higher pitch.",
+    "actualTaps": "Counted separately from earned route steps and shown on completion.",
+    "audio": "Success tones rise with newly earned progress; supported completion has a flourish. Feedback can be muted.",
+    "visual": "The next physical button has an obvious highlight. Supported completion receives a visual celebration.",
+    "meaning": "FINDR learning feedback, not a reproduction of manufacturer keypad audio."
+  },
+  "automatedVerification": {
+    "command": "node --test --test-isolation=none --test-reporter=spec tests/*.test.mjs",
+    "testsPassed": 213,
+    "testsFailed": 0,
+    "routePlannerTestsPassed": 21,
+    "audioTestsPassed": 12,
+    "routePlannerTestFile": "tests/emulator-hints.test.mjs",
+    "coverageSmoke": {
+      "reachableModelNodesAttempted": 2690,
+      "exceptions": 0,
+      "includesReferenceAndPrerequisiteOutcomes": true,
+      "countingRule": "Unique existing model nodes attempted by the planner. This does not count physical LCD screens or claim every target is a complete interactive route.",
+      "profiles": [
+        {
+          "profileId": "galaxy-dimension",
+          "reachableModelNodesAttempted": 853
+        },
+        {
+          "profileId": "texecom-premier-elite",
+          "reachableModelNodesAttempted": 451
+        },
+        {
+          "profileId": "scantronic-ion",
+          "reachableModelNodesAttempted": 810
+        },
+        {
+          "profileId": "orisec-cp",
+          "reachableModelNodesAttempted": 576
+        }
+      ]
+    }
+  },
+  "browserVerification": {
+    "flows": [
+      "Galaxy Function route with demo zone 1003 and recovery after a wrong key",
+      "Texecom Zone Text route through its sequential fields",
+      "Scantronic Omit Zones menu arrival without omitting any zone",
+      "Orisec Zone Text route using keyboard input",
+      "SHOW HINTS from emulator search results",
+      "SHOW HINTS from menu-map entries",
+      "Mute control and supported completion state"
+    ],
+    "layout": {
+      "frameWidthCssPixels": 320,
+      "profilesChecked": 4,
+      "horizontalOverflow": false
+    },
+    "automaticKeypressesObserved": false,
+    "actualListeningVerified": false,
+    "physicalDeviceInstallationVerified": false,
+    "screenshot": "research/panel-audit/hints-0.7.0-preview.jpg",
+    "mobileCompletionGuideBounds": {
+      "profile": "scantronic-ion",
+      "viewportHeightCssPixels": 820,
+      "topCssPixels": 273.125,
+      "bottomCssPixels": 546.453125,
+      "visible": true
+    }
+  },
+  "sourceScope": {
+    "changed": false,
+    "baselineAudit": "research/panel-audit/emulator-0.6.0.json",
+    "documentedAtlasEntries": 4366,
+    "pinnedSourceDocuments": 10,
+    "existingEvidenceQuestions": 36,
+    "editions": "Existing Galaxy, Texecom, Scantronic and Orisec manual editions, access roots and configuration distinctions remain unchanged.",
+    "profiles": [
+      {
+        "profileId": "galaxy-dimension",
+        "sourceAtlasSha256": "0bd4c554315e444a6cc2f3bbfed7abcc091f519d67593c47a0803a9a19965c77"
+      },
+      {
+        "profileId": "texecom-premier-elite",
+        "sourceAtlasSha256": "30d782b92af0563cae2da6c9f374befc469cec893474f3d51bd5be08cbd96f47"
+      },
+      {
+        "profileId": "scantronic-ion",
+        "sourceAtlasSha256": "9b2c84c53a7edf6ed9b4e70583132ecd552bc661e00be1eb53c82e67f0c64d41"
+      },
+      {
+        "profileId": "orisec-cp",
+        "sourceAtlasSha256": "2aab89d34b04416d2768bb250cc7d6b1ca108ddf5b1af22daaf6ad2bcac38637"
+      }
+    ]
+  },
+  "limitations": [
+    "Hints follow the existing fictional-panel emulator, whose timing, hardware behaviour and source gaps remain as documented in the 0.6.0 audit.",
+    "Reference arrivals and programming prerequisites are explicitly qualified; the coverage smoke does not establish complete physical-panel fidelity.",
+    "Audio scheduling and interface controls were tested, but actual listening has not been verified.",
+    "Physical iPhone or Android installation and comparison with matching real keypad hardware remain unverified."
+  ],
+  "packagingVerification": {
+    "webBuildSucceeded": true,
+    "publicFilesMatchedInBuiltClient": 664,
+    "precacheAssets": 641,
+    "offlineBuildId": "21bd1270f9f3",
+    "newHintModulesPrecached": true,
+    "temporaryQaFixtureRemoved": true
+  }
+}

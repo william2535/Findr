@@ -1,0 +1,81 @@
+{
+  "startedAt": "2026-11-11T11:35:03.624Z",
+  "actualModel": true,
+  "networkDisabledByHarness": false,
+  "tests": [
+    {
+      "kind": "readiness",
+      "at": "2026-11-11T11:35:05.302Z",
+      "helperCount": 1,
+      "frame": 1,
+      "navigatorOnline": true,
+      "local": {
+        "supported": true,
+        "ready": true,
+        "installed": true,
+        "runtimeReady": true,
+        "missing": [],
+        "error": null,
+        "model": {
+          "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+          "title": "SmolLM2 360M Instruct · int8 · local CPU",
+          "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+          "dtype": "q8",
+          "backend": "wasm",
+          "parameters": 360000000,
+          "license": "Apache-2.0",
+          "originalModel": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct",
+          "modelCard": "https://huggingface.co/onnx-community/SmolLM2-360M-Instruct-ONNX",
+          "maxInputTokens": 768,
+          "maxNewTokens": 96,
+          "limits": "Compact local language model. Interpretations need source checks. It does not verify electrical procedures, measurements or compatibility. CPU replies can take tens of seconds; saved references remain available.",
+          "bytes": 366642692,
+          "runtimeBytes": 22563501
+        }
+      },
+      "shell": {
+        "ready": false,
+        "reason": "No active FINDR worker"
+      }
+    },
+    {
+      "kind": "Service-worker install state",
+      "at": "2026-11-11T11:35:11.123Z",
+      "state": "installing",
+      "scriptURL": "http://127.0.0.1:4173/app/sw.js"
+    },
+    {
+      "kind": "Retry actual service-worker installation",
+      "status": "passed",
+      "at": "2026-11-11T11:35:11.123Z",
+      "elapsedMs": 9,
+      "scope": "http://127.0.0.1:4173/app/",
+      "active": null,
+      "installing": "installing",
+      "waiting": null,
+      "note": "Installation has been requested; subsequent verified readiness or error events determine its outcome."
+    },
+    {
+      "kind": "Service-worker install state",
+      "at": "2026-11-11T11:35:31.495Z",
+      "state": "redundant",
+      "scriptURL": "http://127.0.0.1:4173/app/sw.js"
+    },
+    {
+      "kind": "Service-worker offline error",
+      "status": "failed",
+      "at": "2026-11-11T11:35:31.496Z",
+      "type": "OFFLINE_ERROR",
+      "asset": "./vendor/ocr/eng.traineddata.gz",
+      "code": "asset_integrity",
+      "message": "The offline asset does not match this FINDR release."
+    }
+  ],
+  "frames": 1,
+  "shellProgress": {
+    "at": "2026-11-11T11:35:31.294Z",
+    "type": "OFFLINE_PROGRESS",
+    "completed": 960,
+    "total": 1342
+  }
+}

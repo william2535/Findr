@@ -1,0 +1,130 @@
+{
+  "release": "0.9.0",
+  "reviewedAt": "2026-10-29",
+  "hardwareVerified": false,
+  "method": "Code-native recognition faces based on rendered original keypad diagrams, plus a corroborating open-front Risco product photo; no claim of pixel-identical hardware.",
+  "families": [
+    {
+      "id": "ade-accenta-optima",
+      "hardware": "ADE 8EP417A LCD",
+      "source": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Accenta%20-%20Optima%20User%20Guide.pdf#page=25",
+      "physicalButtons": 18,
+      "rows": [
+        [
+          "1",
+          "2",
+          "3",
+          "CHIME"
+        ],
+        [
+          "4",
+          "5",
+          "6",
+          "OMIT"
+        ],
+        [
+          "7",
+          "8",
+          "9",
+          "PROG"
+        ],
+        [
+          "▲",
+          "0",
+          "RESET",
+          "SET"
+        ]
+      ],
+      "separateKeys": [
+        "PA left",
+        "PA right"
+      ],
+      "appearance": "White open-flap shell, pink strip and keys, green LCD. One forward ▲ key only."
+    },
+    {
+      "id": "risco-lightsys2",
+      "hardware": "RISCO RP432KP LCD",
+      "source": "https://www.maxwell.co.th/wp-content/uploads/2023/11/LightSYS-LCD-Keypad.pdf#page=4",
+      "appearancePhoto": "https://www.polartech.com.au/cdn/shop/files/RP432KP0000A_2_400x%402x.jpg?v=1748931504",
+      "photoScope": "Secondary product photo for physical appearance/placement; control functions cross-checked with original manufacturer PDF.",
+      "physicalButtons": 18,
+      "rows": [
+        [
+          "PA left",
+          "Up / Status",
+          "PA right"
+        ],
+        [
+          "Part Set / House",
+          "Down / Omit",
+          "Full Set / Lock"
+        ],
+        [
+          "1 A",
+          "2 B",
+          "3 C"
+        ],
+        [
+          "4 Fire",
+          "5 D",
+          "6 Fire"
+        ],
+        [
+          "7 Medical",
+          "8",
+          "9 Medical"
+        ],
+        [
+          "Menu",
+          "0",
+          "Unset / OK"
+        ]
+      ],
+      "appearance": "White narrow shell, curved dark fascia, blue LCD and pale blue illuminated keys."
+    },
+    {
+      "id": "hkc-quantum70",
+      "hardware": "HKC Quantum70 integrated keypad",
+      "source": "https://gard.ie/wp-content/uploads/2024/08/Quantum-70-Installation-Manual.pdf#page=7",
+      "physicalButtons": 15,
+      "rows": [
+        [
+          "1",
+          "2",
+          "3"
+        ],
+        [
+          "4",
+          "5",
+          "6"
+        ],
+        [
+          "7",
+          "8",
+          "9"
+        ],
+        [
+          "*",
+          "0",
+          "#"
+        ]
+      ],
+      "separateKeys": [
+        "PLAY / QUIT",
+        "REC / YES",
+        "LIGHT / NO"
+      ],
+      "appearance": "White integrated panel, blue LCD, charcoal pill buttons and separate three-button right column."
+    }
+  ],
+  "browser": {
+    "desktopReviewed": true,
+    "phoneIframeWidth": 320,
+    "phoneDocumentClientWidth": 305,
+    "phoneDocumentScrollWidth": 305,
+    "newFacesWithoutHorizontalOverflow": 3,
+    "keypadMeasuredWidthAtPhoneSize": 249,
+    "fixtureRemovedBeforeBuild": true,
+    "appearanceLimit": "Brand and body styling is illustrative. Practical control placement follows the pinned model references."
+  }
+}

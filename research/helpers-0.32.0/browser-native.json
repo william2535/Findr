@@ -1,0 +1,289 @@
+{
+  "recordedAt": "2026-11-11",
+  "executionPath": "Shared native Chromium controlled by task owner through CUA and Sky",
+  "evidenceSource": "Task owner observations from the live browser; full QA JSON and screenshots to be added when available",
+  "baseURL": "http://127.0.0.1:4173/",
+  "tests": [
+    {
+      "name": "Create helper through normal UI",
+      "status": "passed",
+      "helperId": "58fb01cd-dc68-4c3c-8738-df469d845024",
+      "scope": "MxPro4",
+      "selectedDocumentCount": 3
+    },
+    {
+      "name": "Download selected helper manuals through normal preview relay",
+      "status": "failed",
+      "failedDocuments": 3,
+      "httpStatus": 502,
+      "displayedError": "Publisher unavailable",
+      "incompleteStatePreserved": true,
+      "cause": "Under investigation; publisher PDFs independently downloaded successfully from the executor"
+    },
+    {
+      "name": "Download actual pinned local model in browser",
+      "status": "passed",
+      "modelId": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+      "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+      "verifiedFiles": 5,
+      "totalBytes": 366642692,
+      "elapsedSeconds": 47.9,
+      "transport": "Unmodified production local-model downloader and pinned HTTPS endpoint",
+      "provesInference": false
+    },
+    {
+      "name": "Initial service-worker app-shell installation before preview repair",
+      "status": "blocked",
+      "observedProgressPercent": 71,
+      "assetDigest": "704981aa0af9",
+      "localManifestFilesHashCheckedByTaskOwner": 1342,
+      "errorAsset": "./vendor/ocr/eng.traineddata.gz",
+      "nextAction": "OCR response repair verified; full app-shell verification pending retry",
+      "completedAssets": 960,
+      "totalAssets": 1342,
+      "errorCode": "asset_integrity",
+      "errorMessage": "The offline asset does not match this FINDR release.",
+      "errorObservedAt": "2026-11-11T11:35:31.496Z"
+    },
+    {
+      "name": "OCR preview response after dev-only metadata repair",
+      "status": "passed",
+      "httpStatus": 200,
+      "contentEncoding": null,
+      "receivedBytes": 1967599,
+      "sha256": "f1c22599ed6fd3eb821d87fdb43e09f98b61179a4abe38c43cfca2cdcb9f5ec2",
+      "matchesCompressed": true,
+      "scope": "Normal asset response; service-worker integrity checks unchanged"
+    },
+    {
+      "name": "Import real catalogue PDFs and prepare selected helper library",
+      "status": "passed",
+      "acquisition": "Three real source PDFs downloaded outside the browser, hash-checked and imported through the existing Manuals > Import PDF UI. Helpers then reused the saved files by hash and performed real extraction/OCR/indexing. No relay substitution or mocked PDF was used.",
+      "documents": [
+        {
+          "id": "advanced-8f3ba6ecfc7f",
+          "bytes": 927783,
+          "sha256": "5b0e02d2f682d6039474e94716b2f75f10868dc33fa3e6764c0b43c3c50b86a4"
+        },
+        {
+          "id": "advanced-76cae27e9ec7",
+          "bytes": 2252899,
+          "sha256": "cc6ac29723cd0a4535e9493e6aac45fe7e676760b52670726779506d2362065e"
+        },
+        {
+          "id": "advanced-9e6af4fbfd7d",
+          "bytes": 1781694,
+          "sha256": "b632b6574242523f30b5747ad74c6505ae5c77b6c41adf911bf813c759e3cb32",
+          "downloadSource": "Existing published /api/manual relay, HTTP 200"
+        }
+      ],
+      "readyDocuments": 3
+    },
+    {
+      "name": "Initial real local-model walk-test turn before selection repair",
+      "status": "fallback",
+      "actualInferenceCompleted": true,
+      "selectionValid": false,
+      "mode": "manual-search",
+      "visibleBehavior": "Labelled invalid-selection fallback with complete verified six-step procedure; no raw generated technical instructions were used",
+      "metrics": "Pending exact model response evidence"
+    },
+    {
+      "name": "Restore normal helper conversation on page reload",
+      "status": "passed",
+      "restoredSameConversation": true,
+      "scope": "Normal app page reload, not a full browser-process restart"
+    },
+    {
+      "name": "Open citation in saved PDF reader",
+      "status": "passed",
+      "pdfPage": 31,
+      "pdfPageCount": 40,
+      "savedOfflinePDFLabelObserved": true,
+      "verification": "Task owner inspected the PDF reader accessibility state"
+    },
+    {
+      "name": "App and helper readiness after preview metadata repair",
+      "status": "passed",
+      "appOfflineReady": true,
+      "pdfRuntimeReady": true,
+      "ocrReady": true,
+      "modelReady": true,
+      "helperStatus": "Ready offline",
+      "networkDisabledAtThisStep": false,
+      "provesOfflineInference": false
+    },
+    {
+      "name": "Measured preconstraint event-history model selection",
+      "status": "fallback",
+      "at": "2026-11-11T11:45:15.892Z",
+      "elapsedMs": 152827.1000000015,
+      "mode": "manual-search",
+      "modelUsed": false,
+      "coverage": "reference_only",
+      "metrics": {
+        "loadMs": 39557.59999999963,
+        "inputTokens": 439,
+        "outputTokens": 24,
+        "firstTokenMs": 60677,
+        "generationMs": 107431.59999999963,
+        "tokensPerSecond": 0.2233979573980103
+      },
+      "rawText": "Equipment: Advanced MxPro 4\nQuestion: How do I view the event history on an MxPro",
+      "inputContextIncludedOnce": true,
+      "evidenceFile": "browser-preconstraint-selection.json",
+      "interpretation": "Actual model inference completed, but generated an echoed request instead of an allowed source label. The engine rejected it. The QA action succeeded only in capturing this failure; this is not a grounded-answer pass."
+    },
+    {
+      "name": "Actual network-disabled inference and reopening",
+      "status": "blocked",
+      "executed": false,
+      "blocker": "Managed browser organization policy denied DevTools",
+      "observedDialog": [
+        "DevTools not allowed on this page",
+        "Your organization has blocked the use of DevTools on this page."
+      ],
+      "standaloneAlternative": "Previously blocked before page load by UNIX socket creation denial",
+      "policyBypassAttempted": false,
+      "simulatedNetworkUsed": false,
+      "offlineInferenceClaimed": false,
+      "offlineReloadClaimed": false
+    },
+    {
+      "name": "Actual constrained model selects a cited saved-manual answer",
+      "status": "passed",
+      "at": "2026-11-11T12:02:03.951Z",
+      "elapsedMs": 171953.30000000075,
+      "question": "How do I view the event history on an MxPro4 panel?",
+      "engineVersion": "2026-11-11.2",
+      "shell": {
+        "ready": true,
+        "build": "a289b667d3b4",
+        "version": "0.32.0",
+        "verification": "sha256-v1",
+        "controlled": true
+      },
+      "mode": "local-ai",
+      "modelUsed": true,
+      "coverage": "model_selected_manual_extract",
+      "model": {
+        "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "backend": "wasm",
+        "metrics": {
+          "loadMs": 123064.29999999888,
+          "inputTokens": 439,
+          "outputTokens": 3,
+          "firstTokenMs": 39549.59999999963,
+          "generationMs": 40864.79999999888,
+          "tokensPerSecond": 0.07341281494097811
+        },
+        "selection": {
+          "source": "S1",
+          "question": null
+        },
+        "choiceConstraint": {
+          "method": "model_logits_token_trie",
+          "allowed": [
+            "S1",
+            "S2",
+            "S3",
+            "NONE"
+          ],
+          "selected": "S1"
+        }
+      },
+      "sourceRefs": [
+        {
+          "manualId": "advanced-8f3ba6ecfc7f",
+          "contentHash": "5b0e02d2f682d6039474e94716b2f75f10868dc33fa3e6764c0b43c3c50b86a4",
+          "title": "Advanced MxPro4 \u2014 User guide",
+          "page": 22,
+          "pdfPage": 22,
+          "citationId": "S1"
+        }
+      ],
+      "evidenceFile": "browser-constrained-model.json",
+      "networkDisabled": false
+    },
+    {
+      "name": "Actual four-turn diagnostic run before relevance/context repair",
+      "status": "failed-quality-review",
+      "harnessNarrowAssertionStatus": "passed",
+      "at": "2026-11-11T12:09:34.236Z",
+      "elapsedMs": 332244.2999999989,
+      "observationCount": 4,
+      "actualModelTurns": 4,
+      "reviewFindings": [
+        "Battery-cable routing and table-of-contents passages were selected as fault evidence",
+        "No checks yet was consumed as the pending location answer, then checks were asked about again"
+      ],
+      "sourceFile": "browser-diagnostic-before-relevance-fix.json",
+      "interpretation": "Retained execution evidence, not successful diagnostic acceptance. Exact deterministic regressions for the subsequent repair are recorded separately."
+    },
+    {
+      "name": "Imported helper uses already saved PDF/index bytes",
+      "status": "passed",
+      "initialStatus": "Preparing",
+      "initialManualStates": "All three pending",
+      "action": "Normal UI Download/retry",
+      "finalStatus": "Ready offline",
+      "readyManuals": 3,
+      "additionalDownloadBytes": 0,
+      "savedPDFCount": 3,
+      "differentScopeBrowserTestPerformed": false
+    },
+    {
+      "name": "New job isolation and unsupported question in normal UI",
+      "status": "passed",
+      "newConversationInitiallyEmpty": true,
+      "question": "How do I enable quantum telemetry?",
+      "answer": "Not established in these manuals.",
+      "savedConversationList": "Separate telemetry job and original walk-test job both displayed"
+    }
+  ],
+  "pending": [],
+  "notClaimed": [
+    "Full browser-process restart offline",
+    "Physical iPhone validation",
+    "WebKit validation",
+    "Headless acceptance flow execution",
+    "Actual network-disabled model inference",
+    "Actual network-disabled app reopening",
+    "Browser retrieval-isolation check across different helper source scopes",
+    "Successful final diagnostic browser rerun after relevance/context repair"
+  ],
+  "focusedUnitTests": {
+    "status": "passed",
+    "tests": 118,
+    "passed": 118,
+    "failed": 0,
+    "durationMs": 9922.684414,
+    "command": "node --test tests/helpers-engine.test.mjs tests/helpers-library.test.mjs tests/helpers-store.test.mjs tests/local-language.test.mjs tests/manual-analysis.test.mjs tests/manual-answers.test.mjs tests/retrieval-cache.test.mjs",
+    "evidenceFile": "focused-tests.txt",
+    "engineVersion": "2026-11-11.3"
+  },
+  "temporaryQAPublicPathRemoved": true,
+  "temporaryQASourceRetainedAt": "research/helpers-0.32.0/native-browser-harness",
+  "finalDiagnosticRepair": {
+    "engineVersion": "2026-11-11.3",
+    "status": "passed-deterministic-regressions",
+    "evidenceFile": "diagnostic-retrieval-regression.json",
+    "realPDFCount": 3,
+    "batteryFaultReports": "Both return zero misleading passages",
+    "eventHistoryFirstPDFPage": 22,
+    "walkTestFirstPDFPage": 31,
+    "actualUserGuideAddressTablePage20Preserved": true,
+    "contextRegressions": [
+      "No checks yet recorded as checks, not pending location",
+      "Measured no-voltage report not interpreted as No to fault currently present"
+    ],
+    "browserRerun": false,
+    "modelRerun": false
+  },
+  "buildVerification": {
+    "earlierCanonicalProductionBuild": "passed, reported by task owner before final diagnostic repair",
+    "finalPublicationBuild": "Performed separately by the owning publication workflow",
+    "finalPrecacheBuild": "ba179e5bba56"
+  }
+}

@@ -1,0 +1,948 @@
+{
+  "id": "hkc-quantum70",
+  "brand": "HKC",
+  "title": "Quantum70 V4",
+  "keypad": "Quantum70 integrated LCD keypad",
+  "edition": "V4.0+ · 310118_1 / earlier User160811_1",
+  "scope": "Seven selected source-backed lessons, plus the complete Quantum70 V4 emulator. The separate Arming / inhibit context reproduces the official user procedure with its older-edition limit visible.",
+  "panelIds": [
+    "hkc-quantum-70"
+  ],
+  "allFixtureValuesSimulated": true,
+  "fixtureNotice": "All detectors, names, events, values and stored settings are fictional FINDR training data. No alarm, RF device, communicator or monitoring service is connected.",
+  "sessionStart": "Already-authorised Quantum70 engineer session",
+  "lcdNotice": "Menu labels and order are sourced; populated LCD wording/spacing and response times are illustrative.",
+  "enterLabel": "YES",
+  "backLabel": "QUIT",
+  "editLabel": "YES",
+  "directMenuCodes": true,
+  "rightIsEnter": false,
+  "leftIsBack": false,
+  "zoneDigits": 3,
+  "commitOnExit": false,
+  "exitFromRoot": true,
+  "exitChecks": false,
+  "exitPrompt": [
+    "Leave authorised session?",
+    "YES to finish FINDR"
+  ],
+  "hideTypeCodes": true,
+  "markCurrentType": false,
+  "typeLabel": "Zone Type",
+  "walkStopWithEnter": false,
+  "reverseLogScroll": false,
+  "rightLogDetails": false,
+  "circuit": "Fictional detector states only; no resistance meter or RF signal measurement is simulated.",
+  "readings": {
+    "secure": "Not measured",
+    "active": "Not measured",
+    "tamper": "Not measured"
+  },
+  "statusLabels": {
+    "secure": "Closed",
+    "active": "Open",
+    "tamper": "Tamper"
+  },
+  "navigation": {
+    "menuNextKey": "next",
+    "menuPreviousKey": "previous",
+    "recordNextKey": "next",
+    "recordPreviousKey": "previous",
+    "choiceNextKey": "next",
+    "choicePreviousKey": "previous",
+    "logNextKey": "next",
+    "logPreviousKey": "previous"
+  },
+  "zones": [
+    {
+      "address": "001",
+      "name": "Front door",
+      "type": "Ent/Exit",
+      "omitEnabled": true,
+      "areas": [
+        "B1"
+      ]
+    },
+    {
+      "address": "002",
+      "name": "Lobby PIR",
+      "type": "Alarm",
+      "omitEnabled": true,
+      "areas": [
+        "B1"
+      ]
+    },
+    {
+      "address": "003",
+      "name": "Store PIR",
+      "type": "Alarm",
+      "omitEnabled": true,
+      "areas": [
+        "B1"
+      ]
+    },
+    {
+      "address": "004",
+      "name": "Workshop PIR",
+      "type": "Alarm",
+      "omitEnabled": true,
+      "areas": [
+        "B2"
+      ]
+    },
+    {
+      "address": "005",
+      "name": "Office",
+      "type": "Alarm",
+      "omitEnabled": true,
+      "areas": [
+        "B2"
+      ]
+    },
+    {
+      "address": "006",
+      "name": "Plant monitor",
+      "type": "Technical 1",
+      "omitEnabled": true,
+      "areas": [
+        "B0"
+      ]
+    },
+    {
+      "address": "007",
+      "name": "Hall smoke",
+      "type": "Fire",
+      "omitEnabled": false,
+      "areas": [
+        "B0"
+      ]
+    }
+  ],
+  "zoneTypes": [
+    {
+      "code": null,
+      "label": "Alarm"
+    },
+    {
+      "code": null,
+      "label": "Ent/Exit"
+    },
+    {
+      "code": null,
+      "label": "Panic"
+    },
+    {
+      "code": null,
+      "label": "Fire"
+    },
+    {
+      "code": null,
+      "label": "Gas"
+    },
+    {
+      "code": null,
+      "label": "Tamper"
+    },
+    {
+      "code": null,
+      "label": "Key"
+    },
+    {
+      "code": null,
+      "label": "Line Fault"
+    },
+    {
+      "code": null,
+      "label": "FTC"
+    },
+    {
+      "code": null,
+      "label": "Unused"
+    },
+    {
+      "code": null,
+      "label": "Technical 1"
+    },
+    {
+      "code": null,
+      "label": "Technical 2"
+    },
+    {
+      "code": null,
+      "label": "Technical 3"
+    },
+    {
+      "code": null,
+      "label": "Technical 4"
+    },
+    {
+      "code": null,
+      "label": "Technical 5"
+    },
+    {
+      "code": null,
+      "label": "Technical 6"
+    },
+    {
+      "code": null,
+      "label": "Technical 7"
+    },
+    {
+      "code": null,
+      "label": "Technical 8"
+    },
+    {
+      "code": null,
+      "label": "Fire Exit 1"
+    },
+    {
+      "code": null,
+      "label": "Fire Exit 2"
+    },
+    {
+      "code": null,
+      "label": "Fire Exit 3"
+    },
+    {
+      "code": null,
+      "label": "Fire Exit 4"
+    },
+    {
+      "code": null,
+      "label": "Fire Exit 5"
+    },
+    {
+      "code": null,
+      "label": "Fire Exit 6"
+    },
+    {
+      "code": null,
+      "label": "Fire Exit 7"
+    },
+    {
+      "code": null,
+      "label": "Fire Exit 8"
+    },
+    {
+      "code": null,
+      "label": "Fire Exit 9"
+    },
+    {
+      "code": null,
+      "label": "Fire Exit 10"
+    },
+    {
+      "code": null,
+      "label": "Fire Exit 11"
+    },
+    {
+      "code": null,
+      "label": "Fire Exit 12"
+    },
+    {
+      "code": null,
+      "label": "Key Partset A"
+    },
+    {
+      "code": null,
+      "label": "Key Partset B"
+    },
+    {
+      "code": null,
+      "label": "Exit Terminator"
+    },
+    {
+      "code": null,
+      "label": "Shunt Lock"
+    }
+  ],
+  "events": [
+    {
+      "id": "hkc-fixture-unset",
+      "label": "Unset",
+      "zone": "",
+      "time": "10:15",
+      "details": "Fictional user 01 unset the training panel.",
+      "logs": [
+        "engineer",
+        "user"
+      ]
+    },
+    {
+      "id": "hkc-fixture-door",
+      "label": "Alarm",
+      "zone": "001",
+      "time": "10:14",
+      "details": "Front door · fictional activation.",
+      "logs": [
+        "engineer",
+        "user"
+      ],
+      "alarm": true
+    },
+    {
+      "id": "hkc-fixture-office",
+      "label": "Alarm",
+      "zone": "005",
+      "time": "10:12",
+      "details": "Office · fictional alarm event.",
+      "logs": [
+        "engineer",
+        "user"
+      ],
+      "alarm": true
+    },
+    {
+      "id": "hkc-fixture-arm",
+      "label": "Full Set",
+      "zone": "",
+      "time": "09:45",
+      "details": "Fictional setting period started.",
+      "logs": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "hkc-fixture-tamper",
+      "label": "Tamper",
+      "zone": "004",
+      "time": "09:32",
+      "details": "Workshop PIR · fictional tamper restored.",
+      "logs": [
+        "engineer"
+      ],
+      "alarm": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "q70-v4",
+      "title": "Quantum 70 Installation Manual",
+      "edition": "V4.0+ software · 310118_1 · 31 January 2018",
+      "url": "https://gard.ie/wp-content/uploads/2024/08/Quantum-70-Installation-Manual.pdf",
+      "publisher": "HKC Ltd.; original manufacturer manual hosted by GARD Security",
+      "totalPdfPages": 104,
+      "sha256": "52a169e5d15c68f33da4e6215ec134400d6b27d798054a969ae416c9d73fbb47",
+      "pageNumbering": "PDF page equals printed page.",
+      "scope": "Quantum70 V4.0+; UK variant, with documented conditional devices. Reused pages with conflicting model data are called out."
+    },
+    {
+      "id": "q70-user-2011",
+      "title": "Quantum 70 User Manual",
+      "edition": "Quantum User Manual 160811_1 · 2011",
+      "url": "https://www.hkcsecurity.com/gb/en/documents/alarm-user-/Quantum%2070%20%28Wireless%29%20User%20Manual.pdf",
+      "publisher": "HKC Security; official GB support download",
+      "totalPdfPages": 12,
+      "sha256": "f333a0e6c4e1f1a94fe04383a6e6f3d2768ceef85c6931ad3af18a275695bfe1",
+      "pageNumbering": "PDF page equals printed page.",
+      "scope": "Earlier Quantum70 user procedures. The V4 installer p57 independently corroborates User/Manager menu order; exact V4 user prompt timing still requires hardware verification."
+    }
+  ],
+  "limitations": [
+    "Quantum70 only; this profile does not represent SecureWave1070/10270 or later SecureHub.",
+    "User guide edition2011 is separated from the V4 installation baseline.",
+    "All credentials are already authorised; no factory codes or live transports.",
+    "Guided lessons are selected subsets. Full exploration, exact inhibit flow and SHOW HINTS are in the complete emulator.",
+    "User-menu entries are unnumbered; engineer quick digits act per level.",
+    "Text helpers and unresolved numeric ranges are labelled. Bell automatic timing, radio enrollment and copied manual contradictions remain visible gaps."
+  ],
+  "keys": [
+    {
+      "id": "0",
+      "label": "0",
+      "ariaLabel": "Digit 0"
+    },
+    {
+      "id": "1",
+      "label": "1",
+      "ariaLabel": "Digit 1"
+    },
+    {
+      "id": "2",
+      "label": "2",
+      "ariaLabel": "Digit 2"
+    },
+    {
+      "id": "3",
+      "label": "3",
+      "ariaLabel": "Digit 3"
+    },
+    {
+      "id": "4",
+      "label": "4",
+      "ariaLabel": "Digit 4"
+    },
+    {
+      "id": "5",
+      "label": "5",
+      "ariaLabel": "Digit 5"
+    },
+    {
+      "id": "6",
+      "label": "6",
+      "ariaLabel": "Digit 6"
+    },
+    {
+      "id": "7",
+      "label": "7",
+      "ariaLabel": "Digit 7"
+    },
+    {
+      "id": "8",
+      "label": "8",
+      "ariaLabel": "Digit 8"
+    },
+    {
+      "id": "9",
+      "label": "9",
+      "ariaLabel": "Digit 9"
+    },
+    {
+      "id": "previous",
+      "label": "*",
+      "ariaLabel": "Star: previous menu item; starts an authorised inhibit selection"
+    },
+    {
+      "id": "next",
+      "label": "#",
+      "ariaLabel": "Hash: next menu item"
+    },
+    {
+      "id": "back",
+      "label": "QUIT",
+      "ariaLabel": "PLAY / QUIT: leave current menu"
+    },
+    {
+      "id": "enter",
+      "label": "YES",
+      "ariaLabel": "REC / YES: enter, enable or accept"
+    },
+    {
+      "id": "change",
+      "label": "NO",
+      "ariaLabel": "LIGHT / NO: disable the displayed option"
+    }
+  ],
+  "controls": [
+    {
+      "label": "* / #",
+      "description": "Previous / next; numbers select local engineer menu entries."
+    },
+    {
+      "label": "QUIT",
+      "description": "Leave a menu or cancel an unconfirmed edit."
+    },
+    {
+      "label": "YES / NO",
+      "description": "Enter/enable or disable; source-specific editors show the applicable behavior."
+    },
+    {
+      "label": "Inhibit context",
+      "description": "Already authorised: * zone [* zone …] YES starts setting with eligible zones inhibited. Unset restores them."
+    }
+  ],
+  "omissionInfo": {
+    "label": "Inhibit",
+    "meaning": "Temporary removal of eligible zones for a setting period; separate from the engineer Inhibit permission attribute.",
+    "duration": "Current set period, according to the official Quantum70 User guide p8.",
+    "restore": "Unset the fictional panel to restore inhibited zones. This is not a permanent device-disable function.",
+    "sourceRefs": [
+      {
+        "sourceId": "q70-user-2011",
+        "pdfPage": 8,
+        "printedPage": "8"
+      }
+    ]
+  },
+  "nodes": {
+    "root": {
+      "label": "Engineer Menu",
+      "kind": "menu",
+      "parent": null,
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 8,
+          "printedPage": "8"
+        }
+      ],
+      "children": [
+        "service",
+        "zone-menu"
+      ],
+      "selectedSubset": true,
+      "autoDigits": true
+    },
+    "service": {
+      "label": "Service Menu",
+      "kind": "menu",
+      "parent": "root",
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 8,
+          "printedPage": "8"
+        }
+      ],
+      "code": "1",
+      "children": [
+        "log-menu",
+        "tools"
+      ],
+      "autoDigits": true
+    },
+    "log-menu": {
+      "label": "Log Menu",
+      "kind": "menu",
+      "parent": "service",
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 47,
+          "printedPage": "47"
+        }
+      ],
+      "code": "2",
+      "children": [
+        "log"
+      ],
+      "autoDigits": true
+    },
+    "log": {
+      "label": "View Log",
+      "kind": "log",
+      "parent": "log-menu",
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 47,
+          "printedPage": "47"
+        }
+      ],
+      "detailsKey": null,
+      "code": "1"
+    },
+    "tools": {
+      "label": "Engineering Tools",
+      "kind": "menu",
+      "parent": "service",
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 47,
+          "printedPage": "47"
+        }
+      ],
+      "code": "3",
+      "children": [
+        "open-inputs",
+        "walk"
+      ],
+      "autoDigits": true
+    },
+    "open-inputs": {
+      "label": "Open Inputs Menu",
+      "kind": "menu",
+      "parent": "tools",
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 47,
+          "printedPage": "47"
+        }
+      ],
+      "code": "2",
+      "children": [
+        "open-zones",
+        "open-tampers"
+      ],
+      "autoDigits": true
+    },
+    "open-zones": {
+      "label": "Show Open Zones",
+      "kind": "zones",
+      "parent": "open-inputs",
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 47,
+          "printedPage": "47"
+        }
+      ],
+      "numericSelection": false,
+      "detailsKey": null,
+      "resistance": false
+    },
+    "open-tampers": {
+      "label": "Show Open Tampers",
+      "kind": "zones",
+      "parent": "open-inputs",
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 47,
+          "printedPage": "47"
+        }
+      ],
+      "numericSelection": false,
+      "detailsKey": null,
+      "resistance": false
+    },
+    "walk": {
+      "label": "Walk Test Menu",
+      "kind": "walk-run",
+      "parent": "tools",
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 47,
+          "printedPage": "47"
+        }
+      ],
+      "all": true,
+      "finishKey": "back",
+      "code": "3"
+    },
+    "zone-menu": {
+      "label": "Zone Menu",
+      "kind": "menu",
+      "parent": "root",
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 53,
+          "printedPage": "53"
+        }
+      ],
+      "code": "3",
+      "children": [
+        "zone-select"
+      ],
+      "autoDigits": true
+    },
+    "zone-select": {
+      "label": "Zone Types",
+      "kind": "zone-select",
+      "parent": "zone-menu",
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 53,
+          "printedPage": "53"
+        }
+      ],
+      "numericSelection": false,
+      "next": "zone-type",
+      "code": "2",
+      "children": [
+        "zone-type"
+      ]
+    },
+    "zone-type": {
+      "label": "Zone Type",
+      "kind": "type",
+      "parent": "zone-select",
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 53,
+          "printedPage": "53"
+        },
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 55,
+          "printedPage": "55"
+        }
+      ],
+      "virtual": true
+    },
+    "user-root": {
+      "label": "Authorised User Menu",
+      "kind": "menu",
+      "parent": null,
+      "sourceRefs": [
+        {
+          "sourceId": "q70-user-2011",
+          "pdfPage": 3,
+          "printedPage": "3"
+        }
+      ],
+      "children": [
+        "user-log"
+      ],
+      "selectedSubset": true,
+      "sessionRoot": true,
+      "autoDigits": true
+    },
+    "user-log": {
+      "label": "View User Log?",
+      "kind": "log",
+      "parent": "user-root",
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 57,
+          "printedPage": "57"
+        },
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 65,
+          "printedPage": "65"
+        }
+      ],
+      "filter": "user",
+      "detailsKey": null
+    }
+  },
+  "tasks": [
+    {
+      "id": "hkc-open-zone",
+      "title": "Find an open detector",
+      "description": "Find Lobby PIR in the open-input route. This selected lesson displays fictional states; the full emulator filters to open inputs.",
+      "path": [
+        "Engineer Menu",
+        "Service Menu",
+        "Engineering Tools",
+        "Open Inputs Menu",
+        "Show Open Zones"
+      ],
+      "routeNodeIds": [
+        "root",
+        "service",
+        "tools",
+        "open-inputs",
+        "open-zones"
+      ],
+      "hints": [
+        "Press 1, 3, 2 to reach Open Inputs.",
+        "YES selects Show Open Zones.",
+        "Use # to reach Lobby PIR."
+      ],
+      "goal": {
+        "kind": "zone",
+        "zone": "002"
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 47,
+          "printedPage": "47"
+        }
+      ],
+      "completionMessage": "Source-backed route completed in this fictional Quantum70 session.",
+      "initialStates": {
+        "002": "active"
+      }
+    },
+    {
+      "id": "hkc-open-tamper",
+      "title": "Recognise a detector tamper",
+      "description": "View the fictional hardwired front-door tamper in the separate Show Open Tampers route. The installer manual explicitly places Dual EOL tampers in this list.",
+      "path": [
+        "Engineer Menu",
+        "Service Menu",
+        "Engineering Tools",
+        "Open Inputs Menu",
+        "Show Open Tampers"
+      ],
+      "routeNodeIds": [
+        "root",
+        "service",
+        "tools",
+        "open-inputs",
+        "open-tampers"
+      ],
+      "hints": [
+        "Use 1 → 3 → 2.",
+        "Scroll to Show Open Tampers, then YES.",
+        "Read the front-door tamper."
+      ],
+      "goal": {
+        "kind": "zone",
+        "zone": "001"
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 47,
+          "printedPage": "47"
+        }
+      ],
+      "completionMessage": "Source-backed route completed in this fictional Quantum70 session.",
+      "initialStates": {
+        "001": "tamper"
+      }
+    },
+    {
+      "id": "hkc-engineer-log",
+      "title": "Read the engineer event log",
+      "description": "Find the Office alarm in the newest-first fictional engineer log.",
+      "path": [
+        "Engineer Menu",
+        "Service Menu",
+        "Log Menu",
+        "View Log"
+      ],
+      "routeNodeIds": [
+        "root",
+        "service",
+        "log-menu",
+        "log"
+      ],
+      "hints": [
+        "Press 1 → 2 → 1.",
+        "Use # to move to older events.",
+        "Stop at the Office alarm."
+      ],
+      "goal": {
+        "kind": "log",
+        "event": "hkc-fixture-office"
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 47,
+          "printedPage": "47"
+        }
+      ],
+      "completionMessage": "Source-backed route completed in this fictional Quantum70 session."
+    },
+    {
+      "id": "hkc-user-log",
+      "title": "Read the User Log",
+      "description": "From an already-authorised user menu, inspect the alarm since the last setting period.",
+      "path": [
+        "Authorised User Menu",
+        "View User Log?"
+      ],
+      "routeNodeIds": [
+        "user-root",
+        "user-log"
+      ],
+      "hints": [
+        "YES enters View User Log in this selected subset.",
+        "Use # to find the front-door alarm."
+      ],
+      "goal": {
+        "kind": "log",
+        "event": "hkc-fixture-door"
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 57,
+          "printedPage": "57"
+        },
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 65,
+          "printedPage": "65"
+        }
+      ],
+      "completionMessage": "Source-backed route completed in this fictional Quantum70 session.",
+      "startNodeId": "user-root",
+      "sessionStart": "Already-authorised User Menu · selected subset",
+      "sessionLabel": "User Menu"
+    },
+    {
+      "id": "hkc-walk",
+      "title": "Complete a walk-test detector",
+      "description": "Enter the engineer walk test, activate Lobby PIR using the fictional detector control, then QUIT.",
+      "path": [
+        "Engineer Menu",
+        "Service Menu",
+        "Engineering Tools",
+        "Walk Test Menu"
+      ],
+      "routeNodeIds": [
+        "root",
+        "service",
+        "tools",
+        "walk"
+      ],
+      "hints": [
+        "Press 1 → 3 → 3.",
+        "Activate Lobby PIR below the keypad.",
+        "QUIT ends the test."
+      ],
+      "goal": {
+        "kind": "walk",
+        "zone": "002"
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 47,
+          "printedPage": "47"
+        }
+      ],
+      "completionMessage": "Source-backed route completed in this fictional Quantum70 session."
+    },
+    {
+      "id": "hkc-zone-type",
+      "title": "Program a fictional zone type",
+      "description": "Change Lobby PIR from Alarm to Ent/Exit. No real detector is reprogrammed.",
+      "path": [
+        "Engineer Menu",
+        "Zone Menu",
+        "Zone Types",
+        "Zone Type"
+      ],
+      "routeNodeIds": [
+        "root",
+        "zone-menu",
+        "zone-select",
+        "zone-type"
+      ],
+      "hints": [
+        "Press 3 → 2.",
+        "Use # to select Lobby PIR, then YES.",
+        "Use # to choose Ent/Exit, then YES to accept."
+      ],
+      "goal": {
+        "kind": "type",
+        "zone": "002",
+        "value": "Ent/Exit"
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 53,
+          "printedPage": "53"
+        },
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 55,
+          "printedPage": "55"
+        }
+      ],
+      "completionMessage": "Source-backed route completed in this fictional Quantum70 session."
+    },
+    {
+      "id": "hkc-leave",
+      "title": "Leave the authorised training session",
+      "description": "Return with QUIT and finish the local training session. The final leave confirmation is a FINDR session control.",
+      "path": [
+        "Engineer Menu"
+      ],
+      "routeNodeIds": [
+        "root"
+      ],
+      "hints": [
+        "QUIT leaves the current menu.",
+        "At the top, confirm the explicitly labelled FINDR session exit with YES."
+      ],
+      "goal": {
+        "kind": "logout"
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "q70-v4",
+          "pdfPage": 7,
+          "printedPage": "7"
+        }
+      ],
+      "completionMessage": "Source-backed route completed in this fictional Quantum70 session."
+    }
+  ]
+}

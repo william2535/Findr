@@ -1,0 +1,879 @@
+{
+  "date": "2026-10-30",
+  "release": "0.12.2",
+  "batch": "uk-security",
+  "baseline_commit": "f6b2ef5984bdcf66ac8e9d57d90074df62f44163",
+  "scope": "19 missing recognisable UK security remote-keypad families; photographed identification references, not new emulators or complete menu mappings. Existing 441 pictured entries were checked for overlap.",
+  "sources_policy": "18 official manufacturer image assets and one manufacturer-supplied RISCO Group UK directory photo. Technical identification from primary manufacturer product pages/manuals. All selected photographs inspected. No generated images, lookalike substitutions, speculative record IDs or default/access-code instructions added.",
+  "counts": {
+    "new_families": 19,
+    "brands": 5,
+    "with_exact_archive_links": 9,
+    "picture_only": 10,
+    "unique_existing_archive_records": 9,
+    "verified_pdf_documents": 5,
+    "online_manual_records": 4
+  },
+  "candidates": [
+    {
+      "id": "orisec-rk-400-lcd-keypad",
+      "brand": "Orisec",
+      "model": "RK-400 LCD keypad",
+      "category": "security",
+      "source_page_url": "https://www.orisec.co.uk/keypads/400-series-keypads/",
+      "source_image_url": "https://www.orisec.co.uk/wp-content/uploads/2020/10/400_LCD-open.jpg",
+      "image_credit": "Orisec official product image",
+      "record_ids": [],
+      "identification_notes": "Official RK-400 LCD photograph with the detachable hinged cover open: compact white landscape housing, a small blue LCD and black physical keys. The RK-400 LED variants use different displays; the RK-450 LCD is a larger model.",
+      "applicability_limits": "Visual identification only. This is a remote keypad, not the main control panel. Confirm the keypad label and the connected control-panel model, firmware and manual edition before using instructions. Picture-only reference in this archive snapshot. It does not establish a CP/CK/CT panel model or an LED-keypad match.",
+      "uk_priority": true,
+      "status": "verified-image",
+      "image_subject": "remote-keypad",
+      "visual_review": "Reviewed original image and final labelled contact sheet. Complete pictured device retained; no generated or substituted hardware.",
+      "source_http_status": 200,
+      "source_image_sha256": "b6aa553d18bdd566937450f1e074e58b2f982cb55f799534c07df75cd9162cf9",
+      "source_image_dimensions": [
+        860,
+        636
+      ],
+      "image_file": "orisec-rk-400-lcd-keypad.jpg",
+      "local_image_dimensions": [
+        860,
+        636
+      ],
+      "manual_scope": "Picture only; no suitable exact keypad record linked in the current archive snapshot",
+      "uk_evidence": {
+        "url": "https://www.orisec.co.uk/keypads/400-series-keypads/",
+        "finding": "UK manufacturer, official GB product page or RISCO Group UK product range; no installed-base or popularity claim is made."
+      },
+      "image_type": "official-manufacturer-keypad-product-image"
+    },
+    {
+      "id": "orisec-rk-720-keypad",
+      "brand": "Orisec",
+      "model": "RK-720 keypad",
+      "category": "security",
+      "source_page_url": "https://www.orisec.co.uk/keypads/rk-700-series/",
+      "source_image_url": "https://www.orisec.co.uk/wp-content/uploads/2023/03/RK-720-White-scaled.jpg",
+      "image_credit": "Orisec official product image",
+      "record_ids": [],
+      "identification_notes": "Official RK-720 white-front photograph: wide black LCD surround, exposed dark rubber keys and a separate four-way navigation cluster. The similarly shaped RK-850 uses capped keys; the picture shown is specifically RK-720.",
+      "applicability_limits": "Visual identification only. This is a remote keypad, not the main control panel. Confirm the keypad label and the connected control-panel model, firmware and manual edition before using instructions. Picture-only reference. Colour, wireless-expander and proximity options do not identify the connected panel. Check the actual keypad label rather than treating the RK-850 or older RK-700 as identical.",
+      "uk_priority": true,
+      "status": "verified-image",
+      "image_subject": "remote-keypad",
+      "visual_review": "Reviewed original image and final labelled contact sheet. Complete pictured device retained; no generated or substituted hardware.",
+      "source_http_status": 200,
+      "source_image_sha256": "301898f07f18faf01d91034d23aea33751a20fb3afc5d5ff5c790ae7ab2363cf",
+      "source_image_dimensions": [
+        2560,
+        2185
+      ],
+      "image_file": "orisec-rk-720-keypad.jpg",
+      "local_image_dimensions": [
+        2560,
+        2185
+      ],
+      "manual_scope": "Picture only; no suitable exact keypad record linked in the current archive snapshot",
+      "uk_evidence": {
+        "url": "https://www.orisec.co.uk/keypads/rk-700-series/",
+        "finding": "UK manufacturer, official GB product page or RISCO Group UK product range; no installed-base or popularity claim is made."
+      },
+      "image_type": "official-manufacturer-keypad-product-image"
+    },
+    {
+      "id": "orisec-rk-920-keypad",
+      "brand": "Orisec",
+      "model": "RK-920 keypad",
+      "category": "security",
+      "source_page_url": "https://www.orisec.co.uk/keypads/rk-900-series/",
+      "source_image_url": "https://www.orisec.co.uk/wp-content/uploads/2023/03/RK-920-White-scaled.jpg",
+      "image_credit": "Orisec official product image",
+      "record_ids": [],
+      "identification_notes": "Official RK-920 front photograph: tall white portrait housing, large blue LCD above the numeric/function keys and navigation cluster. Its shape differs from the landscape RK-720. The capped-key RK-1050 is a related but separate model.",
+      "applicability_limits": "Visual identification only. This is a remote keypad, not the main control panel. Confirm the keypad label and the connected control-panel model, firmware and manual edition before using instructions. Picture-only reference. The fascia alone does not verify the proximity option, panel capacity or configuration; do not substitute RK-1050 instructions without checking the label.",
+      "uk_priority": true,
+      "status": "verified-image",
+      "image_subject": "remote-keypad",
+      "visual_review": "Reviewed original image and final labelled contact sheet. Complete pictured device retained; no generated or substituted hardware.",
+      "source_http_status": 200,
+      "source_image_sha256": "3d4c01adc7dd93ae55694a5e5338b0d4add55356aa7794a799c417842b96550e",
+      "source_image_dimensions": [
+        2342,
+        2560
+      ],
+      "image_file": "orisec-rk-920-keypad.jpg",
+      "local_image_dimensions": [
+        2342,
+        2560
+      ],
+      "manual_scope": "Picture only; no suitable exact keypad record linked in the current archive snapshot",
+      "uk_evidence": {
+        "url": "https://www.orisec.co.uk/keypads/rk-900-series/",
+        "finding": "UK manufacturer, official GB product page or RISCO Group UK product range; no installed-base or popularity claim is made."
+      },
+      "image_type": "official-manufacturer-keypad-product-image"
+    },
+    {
+      "id": "orisec-mk-700-keypad",
+      "brand": "Orisec",
+      "model": "MK-700 metal keypad",
+      "category": "security",
+      "source_page_url": "https://www.orisec.co.uk/keypads/mk-700-series-keypads/",
+      "source_image_url": "https://www.orisec.co.uk/wp-content/uploads/2023/03/satin-chrome-keypad.jpg",
+      "image_credit": "Orisec official product image",
+      "record_ids": [],
+      "identification_notes": "Official satin-chrome MK-700 photograph: broad metal fascia, blue LCD in a black upper window, physical number/function keys and a four-way navigation cluster. Other manufacturer finishes and mounting backplates are grouped here.",
+      "applicability_limits": "Visual identification only. This is a remote keypad, not the main control panel. Confirm the keypad label and the connected control-panel model, firmware and manual edition before using instructions. Picture-only reference. Finish and flush, low-profile or surface mounting do not identify the connected control panel.",
+      "uk_priority": true,
+      "status": "verified-image",
+      "image_subject": "remote-keypad",
+      "visual_review": "Reviewed original image and final labelled contact sheet. Complete pictured device retained; no generated or substituted hardware.",
+      "source_http_status": 200,
+      "source_image_sha256": "b840c6cfbb18de5365bedaecc01cb356b88c94b1f3fdfe38dba00b4de0ab6f1f",
+      "source_image_dimensions": [
+        2185,
+        1598
+      ],
+      "image_file": "orisec-mk-700-keypad.jpg",
+      "local_image_dimensions": [
+        2185,
+        1598
+      ],
+      "manual_scope": "Picture only; no suitable exact keypad record linked in the current archive snapshot",
+      "uk_evidence": {
+        "url": "https://www.orisec.co.uk/keypads/mk-700-series-keypads/",
+        "finding": "UK manufacturer, official GB product page or RISCO Group UK product range; no installed-base or popularity claim is made."
+      },
+      "image_type": "official-manufacturer-keypad-product-image"
+    },
+    {
+      "id": "orisec-tk-650-keypad",
+      "brand": "Orisec",
+      "model": "TK-650 touchscreen keypad",
+      "category": "security",
+      "source_page_url": "https://www.orisec.co.uk/keypads/600-series-touch-keypads/",
+      "source_image_url": "https://www.orisec.co.uk/wp-content/uploads/2021/09/TK-650-White-scaled.jpg",
+      "image_credit": "Orisec official product image",
+      "record_ids": [],
+      "identification_notes": "Official white TK-650 product photograph: landscape touchscreen within a broad frame, on-screen blue menu and a small indicator below the display. This is the TK-650 remote touchscreen, distinct from an integrated CT control panel.",
+      "applicability_limits": "Visual identification only. This is a remote keypad, not the main control panel. Confirm the keypad label and the connected control-panel model, firmware and manual edition before using instructions. Picture-only reference. Screens and available menus depend on the connected panel and software. Other finishes are one family; this image does not establish a TK-1250 match.",
+      "uk_priority": true,
+      "status": "verified-image",
+      "image_subject": "remote-keypad",
+      "visual_review": "Reviewed original image and final labelled contact sheet. Complete pictured device retained; no generated or substituted hardware.",
+      "source_http_status": 200,
+      "source_image_sha256": "1d39ffb8f5d477b3bdea84e07c17e8a309bcd3bcebad23bce1e6910dad51d8c1",
+      "source_image_dimensions": [
+        2560,
+        1892
+      ],
+      "image_file": "orisec-tk-650-keypad.jpg",
+      "local_image_dimensions": [
+        2560,
+        1892
+      ],
+      "manual_scope": "Picture only; no suitable exact keypad record linked in the current archive snapshot",
+      "uk_evidence": {
+        "url": "https://www.orisec.co.uk/keypads/600-series-touch-keypads/",
+        "finding": "UK manufacturer, official GB product page or RISCO Group UK product range; no installed-base or popularity claim is made."
+      },
+      "image_type": "official-manufacturer-keypad-product-image"
+    },
+    {
+      "id": "orisec-tk-1250-keypad",
+      "brand": "Orisec",
+      "model": "TK-1250 touchscreen keypad",
+      "category": "security",
+      "source_page_url": "https://www.orisec.co.uk/keypads/1250-touchscreen-keypads/",
+      "source_image_url": "https://www.orisec.co.uk/wp-content/uploads/2023/06/TK-1250-White.jpg",
+      "image_credit": "Orisec official product image",
+      "record_ids": [],
+      "identification_notes": "Official white TK-1250 photograph: rounded landscape frame with a large blue touch menu and a small central indicator below. Other finishes belong to this same model family; the TK-650 is tracked separately.",
+      "applicability_limits": "Visual identification only. This is a remote keypad, not the main control panel. Confirm the keypad label and the connected control-panel model, firmware and manual edition before using instructions. Picture-only reference. Similar on-screen icons across Orisec products do not establish the control-panel model or menu revision.",
+      "uk_priority": true,
+      "status": "verified-image",
+      "image_subject": "remote-keypad",
+      "visual_review": "Reviewed original image and final labelled contact sheet. Complete pictured device retained; no generated or substituted hardware.",
+      "source_http_status": 200,
+      "source_image_sha256": "dd65e919694d74970b569e658ed8c2656526786f039027048333ba5ff5ec314f",
+      "source_image_dimensions": [
+        1912,
+        1528
+      ],
+      "image_file": "orisec-tk-1250-keypad.jpg",
+      "local_image_dimensions": [
+        1912,
+        1528
+      ],
+      "manual_scope": "Picture only; no suitable exact keypad record linked in the current archive snapshot",
+      "uk_evidence": {
+        "url": "https://www.orisec.co.uk/keypads/1250-touchscreen-keypads/",
+        "finding": "UK manufacturer, official GB product page or RISCO Group UK product range; no installed-base or popularity claim is made."
+      },
+      "image_type": "official-manufacturer-keypad-product-image"
+    },
+    {
+      "id": "texecom-premier-lcd-keypad",
+      "brand": "Texecom",
+      "model": "Premier LCD keypad",
+      "category": "security",
+      "source_page_url": "https://www.texe.com/products/premier-lcd/",
+      "source_image_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/03/21090848/Rings_Premier-LCD-Keypad-1024x1024.png",
+      "image_credit": "Texecom official product image",
+      "record_ids": [
+        "texecom-73155831f1a8"
+      ],
+      "identification_notes": "Manufacturer photograph of the Premier LCD (DBA-0001): small green 32-character display in the upper black strip and a white hinged key cover. Distinguish the small display from the larger blue display on Premier Elite LCDLP.",
+      "applicability_limits": "Visual identification only. This is a remote keypad, not the main control panel. Confirm the keypad label and the connected control-panel model, firmware and manual edition before using instructions. The linked INS524-3 installation guide explicitly includes LCD, LCDL, LCDP and LCDLP on page 2. A non-proximity LCD keypad must not be treated as the LCDP/LCDLP proximity variant. Connected Premier panel instructions remain model-specific.",
+      "uk_priority": true,
+      "status": "verified-image",
+      "image_subject": "remote-keypad",
+      "visual_review": "Reviewed original image and final labelled contact sheet. Complete pictured device retained; no generated or substituted hardware.",
+      "source_http_status": 200,
+      "source_image_sha256": "72f9689dde5c27a53b4a1b57f0e3b337fbeb1790c64e2122865d22bb3595d159",
+      "source_image_dimensions": [
+        1024,
+        1024
+      ],
+      "image_file": "texecom-premier-lcd-keypad.png",
+      "local_image_dimensions": [
+        1024,
+        1024
+      ],
+      "manual_scope": "Exact existing catalogue references linked",
+      "uk_evidence": {
+        "url": "https://www.texe.com/products/premier-lcd/",
+        "finding": "UK manufacturer, official GB product page or RISCO Group UK product range; no installed-base or popularity claim is made."
+      },
+      "image_type": "official-manufacturer-keypad-product-image"
+    },
+    {
+      "id": "texecom-premier-elite-lcdlp-keypad",
+      "brand": "Texecom",
+      "model": "Premier Elite LCDLP keypad",
+      "category": "security",
+      "source_page_url": "https://www.texe.com/products/premier-elite-lcdlp/",
+      "source_image_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2021/12/18124220/EliteLCDLP_1-1-1024x1024.png",
+      "image_credit": "Texecom official product image",
+      "record_ids": [
+        "texecom-73155831f1a8",
+        "texecom-a7ff72a02a39",
+        "texecom-c0768b1467bb"
+      ],
+      "identification_notes": "Official white Premier Elite LCDLP product photograph with its cover closed: large blue LCD in a broad black upper strip, PROX marking and white key cover. Black cosmetic versions are not separate families here.",
+      "applicability_limits": "Visual identification only. This is a remote keypad, not the main control panel. Confirm the keypad label and the connected control-panel model, firmware and manual edition before using instructions. This photograph is the wired LCDLP. A similar LCDLP-W wireless fascia needs its own label and wireless manual; it is not included as an equivalent. INS525-2 covers proximity-tag use and is not a complete control-panel menu guide.",
+      "uk_priority": true,
+      "status": "verified-image",
+      "image_subject": "remote-keypad",
+      "visual_review": "Reviewed original image and final labelled contact sheet. Complete pictured device retained; no generated or substituted hardware.",
+      "source_http_status": 200,
+      "source_image_sha256": "9c1fd93926dd2d92107afcd15a29b8fdd64cc860561bf471c73ed691723fd1d4",
+      "source_image_dimensions": [
+        1024,
+        1024
+      ],
+      "image_file": "texecom-premier-elite-lcdlp-keypad.png",
+      "local_image_dimensions": [
+        1024,
+        1024
+      ],
+      "manual_scope": "Exact existing catalogue references linked",
+      "uk_evidence": {
+        "url": "https://www.texe.com/products/premier-elite-lcdlp/",
+        "finding": "UK manufacturer, official GB product page or RISCO Group UK product range; no installed-base or popularity claim is made."
+      },
+      "image_type": "official-manufacturer-keypad-product-image"
+    },
+    {
+      "id": "texecom-premier-elite-fmk-smk-keypad",
+      "brand": "Texecom",
+      "model": "Premier Elite FMK / SMK metal keypad",
+      "category": "security",
+      "source_page_url": "https://www.texe.com/products/premier-elite-smk/",
+      "source_image_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/03/21151955/FMK_Brush_1-1-1024x1024.png",
+      "image_credit": "Texecom official product image",
+      "record_ids": [
+        "texecom-73155831f1a8",
+        "texecom-a7ff72a02a39",
+        "texecom-c0768b1467bb"
+      ],
+      "identification_notes": "Official satin-metal Premier Elite keypad photograph showing the large blue LCD, exposed oval number keys and metal front plate. FMK flush-mount and SMK surface-mount models share this recognisable front design; finishes are grouped.",
+      "applicability_limits": "Visual identification only. This is a remote keypad, not the main control panel. Confirm the keypad label and the connected control-panel model, firmware and manual edition before using instructions. The front photograph alone does not establish FMK versus SMK mounting depth, exact finish or part number. Both are explicitly covered by the linked INS524 manuals; panel capacity and software still require separate identification.",
+      "uk_priority": true,
+      "status": "verified-image",
+      "image_subject": "remote-keypad",
+      "visual_review": "Reviewed original image and final labelled contact sheet. Complete pictured device retained; no generated or substituted hardware.",
+      "source_http_status": 200,
+      "source_image_sha256": "50c07c8c9afcc979b1c0f030fb49d5b0cdd555ad10718c377e449acb29968b5e",
+      "source_image_dimensions": [
+        1024,
+        1024
+      ],
+      "image_file": "texecom-premier-elite-fmk-smk-keypad.png",
+      "local_image_dimensions": [
+        1024,
+        1024
+      ],
+      "manual_scope": "Exact existing catalogue references linked",
+      "uk_evidence": {
+        "url": "https://www.texe.com/products/premier-elite-smk/",
+        "finding": "UK manufacturer, official GB product page or RISCO Group UK product range; no installed-base or popularity claim is made."
+      },
+      "image_type": "official-manufacturer-keypad-product-image"
+    },
+    {
+      "id": "honeywell-galaxy-mk7-keypad",
+      "brand": "Honeywell",
+      "model": "Galaxy MK7 keypad / KeyProx",
+      "category": "security",
+      "source_page_url": "https://buildings.honeywell.com/content/hbtbt/gb/en/products/by-category/intrusion-detection/keypads-and-user-interfaces/galaxy-mk7-keypad-and-keyprox.html",
+      "source_image_url": "https://honeywell.scene7.com/is/image/Honeywell65/hon-ba-security-pglxy210725-4-mk7-front?wid=1000",
+      "image_credit": "Honeywell official product image",
+      "record_ids": [],
+      "identification_notes": "Official Honeywell Galaxy MK7 photograph with the side-hinged door open: tall cream housing, narrow LCD and round blue keys. Keypad and KeyProx versions use this family appearance.",
+      "applicability_limits": "Visual identification only. This is a remote keypad, not the main control panel. Confirm the keypad label and the connected control-panel model, firmware and manual edition before using instructions. Picture-only reference. The optional proximity reader and connected Galaxy generation cannot be verified from the front view. A Galaxy MK7 is not itself a Galaxy Dimension, Flex or G2 main panel.",
+      "uk_priority": true,
+      "status": "verified-image",
+      "image_subject": "remote-keypad",
+      "visual_review": "Reviewed original image and final labelled contact sheet. Complete pictured device retained; no generated or substituted hardware.",
+      "source_http_status": 200,
+      "source_image_sha256": "12629256758c949200886c61b0cc0988f8276abd7701a24ab7e5bf76ee15f49f",
+      "source_image_dimensions": [
+        1000,
+        1250
+      ],
+      "image_file": "honeywell-galaxy-mk7-keypad.jpg",
+      "local_image_dimensions": [
+        1000,
+        1250
+      ],
+      "manual_scope": "Picture only; no suitable exact keypad record linked in the current archive snapshot",
+      "uk_evidence": {
+        "url": "https://buildings.honeywell.com/content/hbtbt/gb/en/products/by-category/intrusion-detection/keypads-and-user-interfaces/galaxy-mk7-keypad-and-keyprox.html",
+        "finding": "UK manufacturer, official GB product page or RISCO Group UK product range; no installed-base or popularity claim is made."
+      },
+      "image_type": "official-manufacturer-keypad-product-image"
+    },
+    {
+      "id": "honeywell-galaxy-mk8-keypad",
+      "brand": "Honeywell",
+      "model": "Galaxy MK8 keypad / KeyProx",
+      "category": "security",
+      "source_page_url": "https://buildings.honeywell.com/content/hbtbt/gb/en/products/by-category/intrusion-detection/keypads-and-user-interfaces/galaxy-mk8-keypad-and-keyprox.html",
+      "source_image_url": "https://honeywell.scene7.com/is/image/Honeywell65/hon-ba-security-pglxy210725-5-mk7-front?wid=1000",
+      "image_credit": "Honeywell official product image",
+      "record_ids": [],
+      "identification_notes": "Official Honeywell MK8 product-page photograph: uncovered slim white/grey portrait fascia, blue LCD and four rows of rectangular keys. The A/B, ent and esc keys are at the right. The displayed Flex greeting is an example screen, not a main-panel identification.",
+      "applicability_limits": "Visual identification only. This is a remote keypad, not the main control panel. Confirm the keypad label and the connected control-panel model, firmware and manual edition before using instructions. Picture-only reference. The manufacturer asset filename contains mk7, but the source page and visibly different uncovered rectangular-key fascia identify the MK8 image. Confirm the label and proximity variant.",
+      "uk_priority": true,
+      "status": "verified-image",
+      "image_subject": "remote-keypad",
+      "visual_review": "Reviewed original image and final labelled contact sheet. Complete pictured device retained; no generated or substituted hardware.",
+      "source_http_status": 200,
+      "source_image_sha256": "40a23bcb31147171f2c7aa8184263811a446b340697ceead0329863163bb6b0d",
+      "source_image_dimensions": [
+        1000,
+        1503
+      ],
+      "image_file": "honeywell-galaxy-mk8-keypad.jpg",
+      "local_image_dimensions": [
+        1000,
+        1503
+      ],
+      "manual_scope": "Picture only; no suitable exact keypad record linked in the current archive snapshot",
+      "uk_evidence": {
+        "url": "https://buildings.honeywell.com/content/hbtbt/gb/en/products/by-category/intrusion-detection/keypads-and-user-interfaces/galaxy-mk8-keypad-and-keyprox.html",
+        "finding": "UK manufacturer, official GB product page or RISCO Group UK product range; no installed-base or popularity claim is made."
+      },
+      "image_type": "official-manufacturer-keypad-product-image"
+    },
+    {
+      "id": "honeywell-galaxy-mk9-keypad",
+      "brand": "Honeywell",
+      "model": "Galaxy MK9 keypad / KeyProx",
+      "category": "security",
+      "source_page_url": "https://buildings.honeywell.com/gb/en/products/by-category/intrusion-detection/keypads-and-user-interfaces/galaxy-mk9-keypad-and-keyprox",
+      "source_image_url": "https://honeywell.scene7.com/is/image/Honeywell65/hon-ba-sec-front1?wid=1000",
+      "image_credit": "Honeywell official product image",
+      "record_ids": [],
+      "identification_notes": "Official Galaxy MK9 front photograph: dark upper display and key field within a pale outer frame, white display text, rectangular numeric keys and Honeywell branding at the bottom. Its two-tone front differs from MK7 and MK8.",
+      "applicability_limits": "Visual identification only. This is a remote keypad, not the main control panel. Confirm the keypad label and the connected control-panel model, firmware and manual edition before using instructions. Picture-only reference. Do not infer installed Galaxy firmware, panel family or replacement compatibility from the pictured screen text; verify the keypad and control-panel documentation.",
+      "uk_priority": true,
+      "status": "verified-image",
+      "image_subject": "remote-keypad",
+      "visual_review": "Reviewed original image and final labelled contact sheet. Complete pictured device retained; no generated or substituted hardware.",
+      "source_http_status": 200,
+      "source_image_sha256": "9f8fb9dc2706eedb8e5eaf0c88c776871f27d4abf359d6278c75ae3bcb1a5cdc",
+      "source_image_dimensions": [
+        1000,
+        1333
+      ],
+      "image_file": "honeywell-galaxy-mk9-keypad.jpg",
+      "local_image_dimensions": [
+        1000,
+        1333
+      ],
+      "manual_scope": "Picture only; no suitable exact keypad record linked in the current archive snapshot",
+      "uk_evidence": {
+        "url": "https://buildings.honeywell.com/gb/en/products/by-category/intrusion-detection/keypads-and-user-interfaces/galaxy-mk9-keypad-and-keyprox",
+        "finding": "UK manufacturer, official GB product page or RISCO Group UK product range; no installed-base or popularity claim is made."
+      },
+      "image_type": "official-manufacturer-keypad-product-image"
+    },
+    {
+      "id": "honeywell-galaxy-touchcenter-plus",
+      "brand": "Honeywell",
+      "model": "Galaxy TouchCenter Plus (CP046-00)",
+      "category": "security",
+      "source_page_url": "https://buildings.honeywell.com/content/hbtbt/gb/en/products/by-category/intrusion-detection/keypads-and-user-interfaces/galaxy-touchcenter-plus.html",
+      "source_image_url": "https://s7d1.scene7.com/is/image/Honeywell65/hbt-security-cp046-00-galaxy-touchcenter-plus-primaryimage?wid=1000",
+      "image_credit": "Honeywell official product image",
+      "record_ids": [],
+      "identification_notes": "Official Honeywell CP046-00 Galaxy TouchCenter Plus photograph: wide landscape colour touchscreen with a white frame and Honeywell branding below the screen. The image has been reframed to remove unused white border only.",
+      "applicability_limits": "Visual identification only. This is a remote keypad, not the main control panel. Confirm the keypad label and the connected control-panel model, firmware and manual edition before using instructions. Picture-only reference. This is the CP046-00 source-page version; CP045 and other Honeywell touchscreens must be checked separately. Menu layouts and available operations depend on the connected Galaxy system.",
+      "uk_priority": true,
+      "status": "verified-image",
+      "image_subject": "remote-keypad",
+      "visual_review": "Reviewed original image and final labelled contact sheet. Complete pictured device retained; no generated or substituted hardware.",
+      "source_http_status": 200,
+      "source_image_sha256": "89ba8827ac76f71d3ff534a1935e4a170e1f247583ae29a034ddd97c5ed015fd",
+      "source_image_dimensions": [
+        1000,
+        329
+      ],
+      "image_file": "honeywell-galaxy-touchcenter-plus.jpg",
+      "local_image_dimensions": [
+        348,
+        305
+      ],
+      "manual_scope": "Picture only; no suitable exact keypad record linked in the current archive snapshot",
+      "image_processing": {
+        "operation": "Crop empty border only; complete manufacturer product image retained",
+        "source_dimensions": [
+          1000,
+          329
+        ],
+        "crop_box": [
+          316,
+          9,
+          664,
+          314
+        ],
+        "output_dimensions": [
+          348,
+          305
+        ],
+        "original_sha256": "89ba8827ac76f71d3ff534a1935e4a170e1f247583ae29a034ddd97c5ed015fd"
+      },
+      "uk_evidence": {
+        "url": "https://buildings.honeywell.com/content/hbtbt/gb/en/products/by-category/intrusion-detection/keypads-and-user-interfaces/galaxy-touchcenter-plus.html",
+        "finding": "UK manufacturer, official GB product page or RISCO Group UK product range; no installed-base or popularity claim is made."
+      },
+      "image_type": "official-manufacturer-keypad-product-image"
+    },
+    {
+      "id": "ajax-keypad",
+      "brand": "Ajax",
+      "model": "KeyPad",
+      "category": "security",
+      "source_page_url": "https://ajax.systems/support/manuals/keypad/",
+      "source_image_url": "https://ajax.systems/cdn/upload/keypad_og_image_f3e4433221@1.jpg",
+      "image_credit": "Ajax official product image",
+      "record_ids": [
+        "ajax-dcbc06d69d4c"
+      ],
+      "identification_notes": "Official original KeyPad manual image in black: rounded portrait touch fascia with three-column digits and security-mode symbols, but no card-reader waves at the top. The newer KeyPad Plus is pictured separately.",
+      "applicability_limits": "Visual identification only. This is a remote keypad, not the main control panel. Confirm the keypad label and the connected control-panel model, firmware and manual edition before using instructions. The linked archive record opens the exact manufacturer online manual; it is not an offline PDF. Confirm the Jeweller/wireless product name and device label: visually similar Superior or Fibra versions and hub compatibility must be checked separately.",
+      "uk_priority": true,
+      "status": "verified-image",
+      "image_subject": "remote-keypad",
+      "visual_review": "Reviewed original image and final labelled contact sheet. Complete pictured device retained; no generated or substituted hardware.",
+      "source_http_status": 200,
+      "source_image_sha256": "e38091ccb50f305ef61771775d27105874c94d08940c0dc5b806f1e64118114f",
+      "source_image_dimensions": [
+        2400,
+        1260
+      ],
+      "image_file": "ajax-keypad.jpg",
+      "local_image_dimensions": [
+        791,
+        1094
+      ],
+      "manual_scope": "Exact existing catalogue references linked",
+      "image_processing": {
+        "operation": "Crop empty border only; complete manufacturer product image retained",
+        "source_dimensions": [
+          2400,
+          1260
+        ],
+        "crop_box": [
+          807,
+          80,
+          1598,
+          1174
+        ],
+        "output_dimensions": [
+          791,
+          1094
+        ],
+        "original_sha256": "e38091ccb50f305ef61771775d27105874c94d08940c0dc5b806f1e64118114f"
+      },
+      "uk_evidence": {
+        "url": "https://www.digitaldirectsecurity.co.uk/ajax-alarms-fob-and-keypad.html",
+        "finding": "UK distributor lists the original KeyPad, Plus, TouchScreen and Outdoor Jeweller separately. Used only to establish UK relevance; manufacturer manuals remain the technical/image sources."
+      },
+      "image_type": "official-manufacturer-keypad-product-image"
+    },
+    {
+      "id": "ajax-keypad-plus-jeweller",
+      "brand": "Ajax",
+      "model": "KeyPad Plus Jeweller",
+      "category": "security",
+      "source_page_url": "https://ajax.systems/support/manuals/keypad-plus/",
+      "source_image_url": "https://ajax.systems/cdn/upload/keypad_plus_og_image_a3493e1a71@1.jpg",
+      "image_credit": "Ajax official product image",
+      "record_ids": [
+        "ajax-13983ce7375c"
+      ],
+      "identification_notes": "Official KeyPad Plus Jeweller manual image in black: rounded portrait touch keypad with contactless-reader wave symbols above the status icons. That top reader area distinguishes it from the original KeyPad shown separately.",
+      "applicability_limits": "Visual identification only. This is a remote keypad, not the main control panel. Confirm the keypad label and the connected control-panel model, firmware and manual edition before using instructions. The linked archive record opens the exact manufacturer online manual; it is not an offline PDF. Confirm the Jeweller/wireless product name and device label: visually similar Superior or Fibra versions and hub compatibility must be checked separately.",
+      "uk_priority": true,
+      "status": "verified-image",
+      "image_subject": "remote-keypad",
+      "visual_review": "Reviewed original image and final labelled contact sheet. Complete pictured device retained; no generated or substituted hardware.",
+      "source_http_status": 200,
+      "source_image_sha256": "324181005d87d6e74d9122b12de6dc9881655a6eb923877d3f9c1ef4ce2dd8c4",
+      "source_image_dimensions": [
+        2400,
+        1260
+      ],
+      "image_file": "ajax-keypad-plus-jeweller.jpg",
+      "local_image_dimensions": [
+        769,
+        1066
+      ],
+      "manual_scope": "Exact existing catalogue references linked",
+      "image_processing": {
+        "operation": "Crop empty border only; complete manufacturer product image retained",
+        "source_dimensions": [
+          2400,
+          1260
+        ],
+        "crop_box": [
+          815,
+          94,
+          1584,
+          1160
+        ],
+        "output_dimensions": [
+          769,
+          1066
+        ],
+        "original_sha256": "324181005d87d6e74d9122b12de6dc9881655a6eb923877d3f9c1ef4ce2dd8c4"
+      },
+      "uk_evidence": {
+        "url": "https://www.digitaldirectsecurity.co.uk/ajax-alarms-fob-and-keypad.html",
+        "finding": "UK distributor lists the original KeyPad, Plus, TouchScreen and Outdoor Jeweller separately. Used only to establish UK relevance; manufacturer manuals remain the technical/image sources."
+      },
+      "image_type": "official-manufacturer-keypad-product-image"
+    },
+    {
+      "id": "ajax-keypad-touchscreen-jeweller",
+      "brand": "Ajax",
+      "model": "KeyPad TouchScreen Jeweller",
+      "category": "security",
+      "source_page_url": "https://ajax.systems/support/manuals/keypad-touchscreen/",
+      "source_image_url": "https://ajax.systems/cdn/upload/keypad_touchscreen_og_6f5b08d9e8@1.jpg",
+      "image_credit": "Ajax official product image",
+      "record_ids": [
+        "ajax-6b27d33cca91"
+      ],
+      "identification_notes": "Official KeyPad TouchScreen Jeweller manual image: tall rounded black unit with a full touch display, Ajax mark below the screen and a contactless-reader area at the bottom.",
+      "applicability_limits": "Visual identification only. This is a remote keypad, not the main control panel. Confirm the keypad label and the connected control-panel model, firmware and manual edition before using instructions. The linked archive record opens the exact manufacturer online manual; it is not an offline PDF. Confirm the Jeweller/wireless product name and device label: visually similar Superior or Fibra versions and hub compatibility must be checked separately.",
+      "uk_priority": true,
+      "status": "verified-image",
+      "image_subject": "remote-keypad",
+      "visual_review": "Reviewed original image and final labelled contact sheet. Complete pictured device retained; no generated or substituted hardware.",
+      "source_http_status": 200,
+      "source_image_sha256": "d131b862912b88864123f4f09640d9f3476c9e1feeb1d6167c622151cdec2129",
+      "source_image_dimensions": [
+        2400,
+        1260
+      ],
+      "image_file": "ajax-keypad-touchscreen-jeweller.jpg",
+      "local_image_dimensions": [
+        678,
+        1254
+      ],
+      "manual_scope": "Exact existing catalogue references linked",
+      "image_processing": {
+        "operation": "Crop empty border only; complete manufacturer product image retained",
+        "source_dimensions": [
+          2400,
+          1260
+        ],
+        "crop_box": [
+          861,
+          3,
+          1539,
+          1257
+        ],
+        "output_dimensions": [
+          678,
+          1254
+        ],
+        "original_sha256": "d131b862912b88864123f4f09640d9f3476c9e1feeb1d6167c622151cdec2129"
+      },
+      "uk_evidence": {
+        "url": "https://www.digitaldirectsecurity.co.uk/ajax-alarms-fob-and-keypad.html",
+        "finding": "UK distributor lists the original KeyPad, Plus, TouchScreen and Outdoor Jeweller separately. Used only to establish UK relevance; manufacturer manuals remain the technical/image sources."
+      },
+      "image_type": "official-manufacturer-keypad-product-image"
+    },
+    {
+      "id": "ajax-keypad-outdoor-jeweller",
+      "brand": "Ajax",
+      "model": "KeyPad Outdoor Jeweller",
+      "category": "security",
+      "source_page_url": "https://ajax.systems/support/manuals/keypad-outdoor-jeweller/",
+      "source_image_url": "https://ajax.systems/cdn/upload/keypad_outdoor_j_og_4c4c9d10ab@1.jpg",
+      "image_credit": "Ajax official product image",
+      "record_ids": [
+        "ajax-7cd7f1af9990"
+      ],
+      "identification_notes": "Official KeyPad Outdoor Jeweller manual image: narrow vertical unit with large keys arranged in two columns, an OK key, Ajax branding and a separate lower contactless-reader area.",
+      "applicability_limits": "Visual identification only. This is a remote keypad, not the main control panel. Confirm the keypad label and the connected control-panel model, firmware and manual edition before using instructions. The linked archive record opens the exact manufacturer online manual; it is not an offline PDF. Confirm the Jeweller/wireless product name and device label: visually similar Superior or Fibra versions and hub compatibility must be checked separately.",
+      "uk_priority": true,
+      "status": "verified-image",
+      "image_subject": "remote-keypad",
+      "visual_review": "Reviewed original image and final labelled contact sheet. Complete pictured device retained; no generated or substituted hardware.",
+      "source_http_status": 200,
+      "source_image_sha256": "967f727bd972ef8d2b8251b5fe347d0a39835c20def3d7325286932e98db2aba",
+      "source_image_dimensions": [
+        2400,
+        1260
+      ],
+      "image_file": "ajax-keypad-outdoor-jeweller.jpg",
+      "local_image_dimensions": [
+        472,
+        1260
+      ],
+      "manual_scope": "Exact existing catalogue references linked",
+      "image_processing": {
+        "operation": "Crop empty border only; complete manufacturer product image retained",
+        "source_dimensions": [
+          2400,
+          1260
+        ],
+        "crop_box": [
+          964,
+          0,
+          1436,
+          1260
+        ],
+        "output_dimensions": [
+          472,
+          1260
+        ],
+        "original_sha256": "967f727bd972ef8d2b8251b5fe347d0a39835c20def3d7325286932e98db2aba"
+      },
+      "uk_evidence": {
+        "url": "https://www.digitaldirectsecurity.co.uk/ajax-alarms-fob-and-keypad.html",
+        "finding": "UK distributor lists the original KeyPad, Plus, TouchScreen and Outdoor Jeweller separately. Used only to establish UK relevance; manufacturer manuals remain the technical/image sources."
+      },
+      "image_type": "official-manufacturer-keypad-product-image"
+    },
+    {
+      "id": "risco-elegant-keypad",
+      "brand": "Risco",
+      "model": "Elegant touch keypad",
+      "category": "security",
+      "source_page_url": "https://www.specifiedby.com/risco-group-uk/elegant-keypad",
+      "source_image_url": "https://s3-eu-west-1.amazonaws.com/specifiedbypro/9230/42873/risco-group-uk_elegant-keypad_photo_0_88e79694-1253-420d-9158-bf5a93695d9b.png",
+      "image_credit": "RISCO Group UK manufacturer-supplied photograph via SpecifiedBy",
+      "record_ids": [
+        "risco-202db05250a9"
+      ],
+      "identification_notes": "Manufacturer-supplied RISCO Group UK directory photograph shows the black and white Elegant keypads together: landscape touch-key fascia, small LCD along the top, lettered side keys and navigation symbols. Both colours are one family.",
+      "applicability_limits": "Visual identification only. This is a remote keypad, not the main control panel. Confirm the keypad label and the connected control-panel model, firmware and manual edition before using instructions. The linked English 5IN2186 user guide explicitly covers RPKELW, RPKELWP, RPKELB and RPKELBP. A picture does not determine proximity suffix, connected LightSYS/ProSYS panel or firmware. Source image is only 270 × 255 pixels; no artificial detail was added.",
+      "uk_priority": true,
+      "status": "verified-image",
+      "image_subject": "remote-keypad",
+      "visual_review": "Reviewed original image and final labelled contact sheet. Complete pictured device retained; no generated or substituted hardware.",
+      "source_http_status": 200,
+      "source_image_sha256": "fd564aa67f2c886f7b0f6f382ef4157fef7a28e22f329a6bff8292dc49fc7216",
+      "source_image_dimensions": [
+        270,
+        255
+      ],
+      "image_file": "risco-elegant-keypad.png",
+      "local_image_dimensions": [
+        270,
+        255
+      ],
+      "manual_scope": "Exact existing catalogue references linked",
+      "uk_evidence": {
+        "url": "https://www.specifiedby.com/risco-group-uk/elegant-keypad",
+        "finding": "UK manufacturer, official GB product page or RISCO Group UK product range; no installed-base or popularity claim is made."
+      },
+      "image_type": "manufacturer-supplied-keypad-directory-product-image"
+    },
+    {
+      "id": "risco-riscontrol-smart-home",
+      "brand": "Risco",
+      "model": "RisControl Smart Home (RP432KPTZ)",
+      "category": "security",
+      "source_page_url": "https://riscogroup.com/en/rscm_product/riscontrol-smart-home-controller/",
+      "source_image_url": "https://riscogroup.com/wp-content/uploads/2024/09/div.elementor-swiper-25.png",
+      "image_credit": "Risco official product image",
+      "record_ids": [
+        "risco-5f35f8533820"
+      ],
+      "identification_notes": "Official RisControl Smart Home product photograph: white-framed landscape touchscreen showing the smart-home icon grid. The manufacturer gallery labels this Z-Wave Plus controller; the complete front is retained.",
+      "applicability_limits": "Visual identification only. This is a remote keypad, not the main control panel. Confirm the keypad label and the connected control-panel model, firmware and manual edition before using instructions. The linked 5IN2941 manual cover specifies RP432KPTZ/RP432KPTP. Other RisControl keypad versions share a similar fascia; confirm the exact model and regional radio version. The image is not evidence that every RisControl supports the same smart-home menus.",
+      "uk_priority": true,
+      "status": "verified-image",
+      "image_subject": "remote-keypad",
+      "visual_review": "Reviewed original image and final labelled contact sheet. Complete pictured device retained; no generated or substituted hardware.",
+      "source_http_status": 200,
+      "source_image_sha256": "a20dd91f6e665c7bf753fb2d5b791d97daef65904ee097aa72790dedba9ed72d",
+      "source_image_dimensions": [
+        563,
+        531
+      ],
+      "image_file": "risco-riscontrol-smart-home.png",
+      "local_image_dimensions": [
+        563,
+        531
+      ],
+      "manual_scope": "Exact existing catalogue references linked",
+      "uk_evidence": {
+        "url": "https://riscogroup.com/en/rscm_product/riscontrol-smart-home-controller/",
+        "finding": "UK manufacturer, official GB product page or RISCO Group UK product range; no installed-base or popularity claim is made."
+      },
+      "image_type": "official-manufacturer-keypad-product-image"
+    }
+  ],
+  "rejected": [
+    {
+      "id": "orisec-rk-450-lcd-keypad-candidate",
+      "brand": "Orisec",
+      "model": "RK-450 LCD",
+      "status": "excluded",
+      "source_page_url": "https://www.orisec.co.uk/keypads/450-series-keypads/",
+      "reason": "A larger LCD model in the existing RK-400-style family. Not counted in this bounded batch; it was not incorrectly added as an RK-400 alias."
+    },
+    {
+      "id": "orisec-rk-850-keypad-candidate",
+      "brand": "Orisec",
+      "model": "RK-850",
+      "status": "excluded",
+      "source_page_url": "https://www.orisec.co.uk/keypads/rk-800-series/",
+      "reason": "Related landscape model with capped keys; excluded from this batch to avoid near-duplicate family padding. It is not claimed identical to RK-720."
+    },
+    {
+      "id": "orisec-rk-1050-keypad-candidate",
+      "brand": "Orisec",
+      "model": "RK-1050",
+      "status": "excluded",
+      "source_page_url": "https://www.orisec.co.uk/keypads/rk-1000-series/",
+      "reason": "Related portrait capped-key fascia. RK-920 provides the new portrait style in this batch; RK-1050 is neither substituted nor aliased."
+    },
+    {
+      "id": "hkc-touch-keypad-candidate",
+      "brand": "HKC",
+      "model": "Touch keypad / RF remote touch keypad",
+      "status": "excluded",
+      "source_page_url": "https://www.hkcsecurity.com/gb/en/products/intrusion-keypads",
+      "reason": "Current HKC SecureHub and SW-10270 pictured packs already include this recognisable touch keypad with the panel. Avoided repeating that kit fascia as new coverage in this bounded batch."
+    },
+    {
+      "id": "orisec-keypad-colour-variants",
+      "brand": "Orisec",
+      "model": "Colour and mounting variants",
+      "status": "duplicate",
+      "source_page_url": "https://www.orisec.co.uk/keypads/",
+      "reason": "Black, white, graphite and metal finishes are not separate pictured families; selected representative photographs are explicitly identified."
+    },
+    {
+      "id": "texecom-lcdlp-w-wireless-candidate",
+      "brand": "Texecom",
+      "model": "Premier Elite LCDLP-W",
+      "status": "excluded",
+      "source_page_url": "https://www.texe.com/products/premier-elite-lcdlp-w/",
+      "reason": "Not given the wired LCDLP image or wired instruction links as a substitute. Wireless model label and its specific manual must be verified separately."
+    },
+    {
+      "id": "ajax-superior-fibra-keypad-variants",
+      "brand": "Ajax",
+      "model": "Superior / Fibra related keypads",
+      "status": "excluded",
+      "source_page_url": "https://ajax.systems/support/manuals/keypad-plus/",
+      "reason": "Similar housings do not establish wireless, wired or security-grade equivalence. No extra variants or manual links were inferred from shared-looking fascias."
+    },
+    {
+      "id": "risco-mixed-keypad-banner",
+      "brand": "Risco",
+      "model": "Mixed keypad product-family banner",
+      "status": "excluded",
+      "source_page_url": "https://riscogroup.com/en/rscm_product/keypads/",
+      "reason": "A range collage cannot reliably identify each individual Panda/Elegant/RisControl part. Used model-specific Elegant and RisControl images instead."
+    }
+  ],
+  "manual_evidence": {
+    "texecom-73155831f1a8": {
+      "revision": "INS524-3",
+      "pages_checked": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "finding": "Page 2 explicitly names Premier LCDLP/LCDL/LCDP/LCD and Elite SMK; page 3 names Elite FMK. This supports linking the original Premier LCD despite the narrower legacy catalogue models list."
+    },
+    "texecom-a7ff72a02a39": {
+      "revision": "INS524-4",
+      "pages_checked": [
+        1
+      ],
+      "finding": "Cover explicitly lists Premier LCDLP (Blue), Premier Elite FMK and Premier Elite SMK. No LCDLP-W association was added."
+    },
+    "texecom-c0768b1467bb": {
+      "revision": "INS525-2",
+      "pages_checked": [
+        1,
+        2,
+        3
+      ],
+      "finding": "Proximity-tag user guide, limited to compatible proximity keypads and stated Premier panel software. Not linked to the non-proximity Premier LCD or represented as a full panel manual."
+    },
+    "risco-202db05250a9": {
+      "revision": "5IN2186 B (05/2014)",
+      "pages_checked": [
+        1,
+        8
+      ],
+      "finding": "Cover explicitly names Elegant RPKELW, RPKELWP, RPKELB and RPKELBP; retained as historical English model-family guidance."
+    },
+    "risco-5f35f8533820": {
+      "revision": "5IN2941 H (02/2026)",
+      "pages_checked": [
+        1,
+        107
+      ],
+      "finding": "Cover explicitly names RisControl Smart Home Gateway RP432KPTZ/RP432KPTP. Photo source is specifically the Z-Wave smart-home controller."
+    }
+  },
+  "known_image_quality_limits": [
+    "RISCO Elegant original is 270×255; kept at genuine source resolution.",
+    "Honeywell CP046-00 source has a large blank border; the real product crop is 348×305. Neither image was synthetically enhanced."
+  ],
+  "retrieval_notes": [
+    "Ajax public /api/cdn-img route returned HTTP 400. The same image filenames were successfully downloaded with HTTP 200 from the manufacturer public /cdn/upload/ path, confirmed from the manufacturer product page CDN structure.",
+    "Honeywell MK8 official image filename says mk7; image is the correct uncovered MK8 rectangular-key fascia, confirmed visually against its official product-page assignment.",
+    "Only blank border cropping was performed on four Ajax images and the Honeywell TouchCenter image. Original bytes, crop rectangles and hashes are preserved under research/."
+  ],
+  "inspection_artifact": "research/contact-sheet-final.jpg"
+}

@@ -1,0 +1,77 @@
+{
+  "release": "0.11.2",
+  "preview": "http://terminal.local:4173/",
+  "visualChecks": [
+    "Release page and existing FINDR logo",
+    "App home",
+    "Emulators chooser with both GENT panels",
+    "Menu-map landing",
+    "Downloads catalogue",
+    "Nano panel and main-menu interaction",
+    "Nano help category filter",
+    "Galaxy physical keypad and SHOW HINTS"
+  ],
+  "phoneFrames": [
+    {
+      "width": 320,
+      "contentWidth": 305,
+      "scrollWidth": 305,
+      "routes": [
+        "home",
+        "menus",
+        "nano"
+      ]
+    },
+    {
+      "width": 390,
+      "contentWidth": 375,
+      "scrollWidth": 375,
+      "routes": [
+        "home",
+        "downloads",
+        "emulator/galaxy-dimension"
+      ]
+    }
+  ],
+  "navigationItems": [
+    "Fault finder",
+    "Emulators",
+    "Menu maps",
+    "Downloads"
+  ],
+  "routeSmokeCheck": {
+    "panel": "Galaxy Dimension",
+    "target": "Walk Test",
+    "keys": [
+      "3",
+      "1",
+      "ent"
+    ],
+    "completed": true,
+    "progressAfterFirstPress": "1 / 3 route steps",
+    "completionText": "Route complete \u2014 you reached Walk Test."
+  },
+  "physicalSkins": "Nano and Galaxy inspected in browser; independent CSS review found no selectors recolouring any LCD, keypad case, physical keys or lamps.",
+  "representativeContrastReview": {
+    "method": "Independent reviewer calculation against the stylesheet colours",
+    "primaryAndActiveNavigation": 12.58,
+    "mutedTextOnRaisedSurfaces": 7.47,
+    "inputPlaceholders": 6.04,
+    "normalStateGreenText": 8.81
+  },
+  "shareCard": {
+    "file": "public/share/findr-release-0.11.2.png",
+    "visuallyInspected": true,
+    "textFits": true
+  },
+  "browserScreenshot": {
+    "capturedAndInspected": true,
+    "attached": false,
+    "reason": "Browser-to-container synchronization produced no non-empty file after the prescribed five-second poll."
+  },
+  "limits": [
+    "Managed HTTP preview does not provide an installed offline PWA test.",
+    "No physical phone installation was performed.",
+    "Audio output was not independently measured; feedback implementation is byte-identical to the published baseline."
+  ]
+}

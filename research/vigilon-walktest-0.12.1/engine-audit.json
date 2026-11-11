@@ -1,0 +1,112 @@
+{
+  "version": "0.12.1",
+  "scope": "Bounded Vigilon engineering walk-test branch for the existing 2015 classic EN54 (V4), MCC/MCB V4.53+ profile.",
+  "baseline": {
+    "version": "0.10.0",
+    "dataSha256": "346f096c28ee11c7e6c3c40052b54cd71997855ed4cd11bc60032a06570017be",
+    "nodeCount": 96,
+    "menuReferenceCount": 343
+  },
+  "addedNodeIds": [
+    "test-engineer",
+    "test-engineer-more",
+    "test-engineer-tests",
+    "zone-test-mode",
+    "zone-test-on",
+    "zone-test-off"
+  ],
+  "addedMenuReferenceIds": [
+    "ref-walk-test-on",
+    "ref-walk-test-off"
+  ],
+  "updatedMenuReferenceIds": [
+    "ref-test-eng-test-test",
+    "ref-test-eng-test-zone-test"
+  ],
+  "nodeCount": 102,
+  "menuReferenceCount": 345,
+  "sourceRefs": [
+    {
+      "sourceId": "gent-vigilon-4188-856-2015",
+      "pages": [
+        81,
+        105
+      ]
+    },
+    {
+      "sourceId": "gent-vigilon-plus-basic-training-archive",
+      "pages": [
+        103
+      ]
+    }
+  ],
+  "authentication": {
+    "customer": {
+      "practicePin": "2468",
+      "level": 2,
+      "nodeId": "test-user"
+    },
+    "engineering": {
+      "practicePin": "3917",
+      "level": 3,
+      "nodeId": "test-engineer"
+    },
+    "note": "Both values are fictional FINDR-only training credentials. Door/access helpers cannot grant authenticated level 3. Only Test/Eng UserCode recognises the engineering credential."
+  },
+  "startKeys": [
+    "MENU_ON_OFF",
+    "F4",
+    "F4",
+    "3",
+    "9",
+    "1",
+    "7",
+    "ENTER",
+    "F4",
+    "F2",
+    "F4",
+    "F2",
+    "2",
+    "F2"
+  ],
+  "stopKeys": [
+    "MENU_ON_OFF",
+    "F4",
+    "F4",
+    "3",
+    "9",
+    "1",
+    "7",
+    "ENTER",
+    "F4",
+    "F2",
+    "F4",
+    "F1",
+    "2",
+    "F2"
+  ],
+  "commitActions": [
+    "zone-test-on",
+    "zone-test-off"
+  ],
+  "planner": "Pure navigation advice may type the task-appropriate fictional credential. It never traverses On/Off commit actions, resets, alarm controls or configuration commits.",
+  "draftPolicy": "F3 Cancel clears the uncommitted Zone field in FINDR. F4 Quit and Menu On/Off close the menu/authentication. None removes committed zone test.",
+  "runtime": "Test fires use the existing five-second deterministic cycle. Finishing a cycle preserves zone test; Off requires restored simulated input. Unrelated fire, faults and disablements persist.",
+  "stateCompatibility": "The new source fingerprint/map revision starts an old persisted panel snapshot fresh under the existing restore contract; separate completed-lesson records remain owned by the controller.",
+  "validation": {
+    "command": "node --test --test-isolation=none tests/gent-engine.test.mjs tests/gent-source.test.mjs",
+    "tests": 50,
+    "passed": 50,
+    "failed": 0,
+    "coverage": [
+      "typed customer/engineering authentication separation",
+      "physical double-Test route and F2 commit",
+      "invalid zone entries and Cancel/Quit/abort preservation",
+      "five-second cycle with persistent test selection",
+      "active-input Off rejection and unrelated condition preservation",
+      "pure role-correct adaptive hints",
+      "source provenance, numeric field and function-key positions"
+    ],
+    "physicalPanelTested": false
+  }
+}

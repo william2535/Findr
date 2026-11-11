@@ -1,0 +1,43 @@
+{
+  "environment": "Linux Chromium 154; phone viewport 390×844, not a physical iPhone",
+  "synthetic": true,
+  "video": "/tmp/findr027-terminal-video/114fcf2a58ede548d2da296afaac4709.webm",
+  "marks": [
+    {
+      "label": "Opening terminal visibly types",
+      "seconds": 0.655333871
+    },
+    {
+      "label": "Start continues the same transcript",
+      "seconds": 3.152917501
+    },
+    {
+      "label": "Native upload choice",
+      "seconds": 6.7274182499999995
+    },
+    {
+      "label": "Local PDF read and equipment identification",
+      "seconds": 7.0642244739999995
+    },
+    {
+      "label": "Equipment confirmed in conversation",
+      "seconds": 14.807924261
+    },
+    {
+      "label": "Fault description and arrival condition recorded",
+      "seconds": 18.558910951999998
+    },
+    {
+      "label": "Diagnostic observation changes the next question",
+      "seconds": 20.438481684
+    },
+    {
+      "label": "Separate Quick Questions menu",
+      "seconds": 22.579586605
+    },
+    {
+      "label": "Quick Questions accepts a question before choosing equipment",
+      "seconds": 26.854417298
+    }
+  ]
+}

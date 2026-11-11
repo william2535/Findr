@@ -1,0 +1,70 @@
+{
+  "checked_at": "2026-10-30T15:45:07.243353+00:00",
+  "legacy_masters": [
+    {
+      "file": "gent-vigilon-compact.jpg",
+      "bytes": 52487,
+      "sha256": "9697cc9e9948da625e8fdf6aa2d7994abb9d39a35cc8312d8a35a897fa7f7134",
+      "matches_0_13_2_original": true,
+      "absent_from_shipped_source": true
+    },
+    {
+      "file": "gent-compact-plus.jpg",
+      "bytes": 160553,
+      "sha256": "26a2652e7c54144e206e3ace90d7ef44b09e0c0051328325ef9e0c54c6cbdafe",
+      "matches_0_13_2_original": true,
+      "absent_from_shipped_source": true
+    },
+    {
+      "file": "gent-vigilon-plus.png",
+      "bytes": 3633565,
+      "sha256": "b31eb297ad2d3beee3ac56653749650e5077ecb44b5b71f6bfdf48219a1d2108",
+      "matches_0_13_2_original": true,
+      "absent_from_shipped_source": true
+    },
+    {
+      "file": "gent-nano-alt.jpg",
+      "bytes": 234423,
+      "sha256": "69a9e446ea19e2ee61ff7523be251a44e5f144c7449ef12063bb023fc428f677",
+      "matches_0_13_2_original": true,
+      "absent_from_shipped_source": true
+    },
+    {
+      "file": "gent-xenex.jpg",
+      "bytes": 660165,
+      "sha256": "23fc1cd0d589495af5b9864f603be6a519512694f95cec4a945c6c1d6a070fa0",
+      "matches_0_13_2_original": true,
+      "absent_from_shipped_source": true
+    },
+    {
+      "file": "advanced-mxpro5.jpg",
+      "bytes": 273659,
+      "sha256": "49f61e74e77ff23b268e52068b939dd70c762cfc2167972c9b183c21b48eecc0",
+      "matches_0_13_2_original": true,
+      "absent_from_shipped_source": true
+    },
+    {
+      "file": "protec-6500.png",
+      "bytes": 89666,
+      "sha256": "6a88cfe0a85ac43ca126c07840e6f3b9c46df712da6a9ef7ded5c2598e1b11af",
+      "matches_0_13_2_original": true,
+      "absent_from_shipped_source": true
+    }
+  ],
+  "legacy_master_total_bytes": 5104518,
+  "catalogue_uses_legacy_images": [],
+  "preservation": {
+    "existing549panels": {
+      "count": 549,
+      "byte_mismatches": []
+    },
+    "all611panels": {
+      "count": 611,
+      "byte_mismatches": []
+    },
+    "existing24devices": {
+      "count": 24,
+      "byte_mismatches": []
+    }
+  }
+}

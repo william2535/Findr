@@ -1,0 +1,92 @@
+{
+  "release": "0.5.0",
+  "date": "2026-10-29",
+  "maps": [
+    {
+      "profileId": "galaxy-dimension",
+      "entries": 1365,
+      "gaps": 10,
+      "sources": 2,
+      "sourcePages": 354,
+      "citedSourcePages": 166,
+      "sha256": "cef8dca1cb4aa69668f7991175e83e2b10d2bcc1fbd21885448917d35930c7b8"
+    },
+    {
+      "profileId": "orisec-cp",
+      "entries": 856,
+      "gaps": 9,
+      "sources": 2,
+      "sourcePages": 124,
+      "citedSourcePages": 67,
+      "sha256": "2aab89d34b04416d2768bb250cc7d6b1ca108ddf5b1af22daaf6ad2bcac38637"
+    },
+    {
+      "profileId": "scantronic-ion",
+      "entries": 1189,
+      "gaps": 8,
+      "sources": 3,
+      "sourcePages": 215,
+      "citedSourcePages": 139,
+      "sha256": "9b2c84c53a7edf6ed9b4e70583132ecd552bc661e00be1eb53c82e67f0c64d41"
+    },
+    {
+      "profileId": "texecom-premier-elite",
+      "entries": 956,
+      "gaps": 9,
+      "sources": 3,
+      "sourcePages": 226,
+      "citedSourcePages": 117,
+      "sha256": "30d782b92af0563cae2da6c9f374befc469cec893474f3d51bd5be08cbd96f47"
+    }
+  ],
+  "totals": {
+    "entries": 4366,
+    "gaps": 36,
+    "sources": 10,
+    "sourcePages": 919,
+    "citedSourcePages": 489
+  },
+  "tests": {
+    "command": "node --test --test-isolation=none --test-reporter=spec tests/menu-maps.test.mjs tests/practice.test.mjs tests/service-worker-redirects.test.mjs tests/offline-recovery.test.mjs",
+    "passed": 102,
+    "failed": 0,
+    "scope": "Data graph/source integrity, numeric and phrase lookup, 27 existing lesson routes, regression checks for source-bounded input and offline redirect recovery."
+  },
+  "browserChecks": {
+    "environment": "Managed local preview in Chrome; desktop and 390px iframe with 375px content width",
+    "passed": [
+      "Menu atlas loads all four final JSON files and shows 4,366 entries / 36 questions",
+      "Exact 51.46 lookup ranks Galaxy Resistance Select first",
+      "Entry breadcrumbs, type, verified address and PDF-page references render",
+      "Copy route and source references returns success",
+      "Texecom edition-conflict question expands with specific requested evidence",
+      "Galaxy configurable Quick slot 3 links to Full Menu 21",
+      "Scantronic resistance entry links to its matching practice task",
+      "Phone layout has no horizontal overflow on checked map and entry screens"
+    ],
+    "limitations": [
+      "This is a local preview check, not a production browser session.",
+      "No physical panel, native Android device, iPhone or Safari device was tested.",
+      "Full menu data is a reference; only 27 exercises are simulated."
+    ]
+  },
+  "hardwareVerified": false,
+  "productionBrowserVerification": "Unavailable in this browser environment; native Sites deployment status is the publication check.",
+  "android": {
+    "versionName": "0.5.0",
+    "versionCode": 7,
+    "package": "com.findr.app",
+    "sha256": "e948f48135030cdda02795315d397c17156600178926eee2ffdee2fb29a4fd7f",
+    "sizeBytes": 20233710,
+    "signerSha256": "6075a73725dac5a3cc1f7b6b32c5e1df907cd1ca4b5b611f4c1c1d2fd502fefd",
+    "sameSignerAsPreviousRelease": true,
+    "signatureVerificationPassed": true,
+    "bundledAppAssetFilesMatched": 636,
+    "physicalDeviceTested": false
+  },
+  "offlineManifest": {
+    "assets": 633,
+    "bytes": 30347711,
+    "build": "7880337b61f0"
+  }
+}

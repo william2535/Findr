@@ -1,0 +1,108 @@
+{
+  "release": "0.21.0",
+  "status": "passed",
+  "testedAt": "2026-11-02T20:16:51.853060+00:00",
+  "server": "http://127.0.0.1:8086",
+  "build": "0213a7fad87a",
+  "browser": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+  "script": "scripts/qa-sigma-level3.cjs",
+  "scriptSha256": "594197414aecb2650579c02056aab07f7281fcdc0186756b0cce317f42c45b91",
+  "fixture": "tests/fixtures/sigma-level3/synthetic-0.20-progress.json",
+  "legacyBaseline": "3d6f286119accef7c86f80cc74cb4461a9153b9d",
+  "command": "FINDR_PLAYWRIGHT_PATH=/opt/codex/cua_node/lib/node_modules/playwright node scripts/qa-sigma-level3.cjs",
+  "results": [
+    {
+      "width": 390,
+      "height": 844,
+      "status": "passed",
+      "offline": true,
+      "sigmaLessons": 13,
+      "cfpLessons": 15,
+      "sigmaSteps": 109,
+      "cfpSteps": 128,
+      "callouts": 5,
+      "checks": "Accurate fascia and aperture; cover and Write Enable separate; +10/+1/set/review; guided call-outs; whole-zone scope; >=44px zoom targets; prior CFP/visit/import/keypad/PDF preservation; network-disabled configuration/progress/Write Enable controls and saved PDF reads",
+      "hardware": "Chromium viewport emulation; no physical-panel or Safari certification"
+    },
+    {
+      "width": 1440,
+      "height": 844,
+      "status": "passed",
+      "offline": true,
+      "sigmaLessons": 13,
+      "cfpLessons": 15,
+      "sigmaSteps": 109,
+      "cfpSteps": 128,
+      "callouts": 5,
+      "checks": "Accurate fascia and aperture; cover and Write Enable separate; +10/+1/set/review; guided call-outs; whole-zone scope; >=44px zoom targets; prior CFP/visit/import/keypad/PDF preservation; network-disabled configuration/progress/Write Enable controls and saved PDF reads",
+      "hardware": "Chromium viewport emulation; no physical-panel or Safari certification"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "front-390.png",
+      "sha256": "625774fec5221baf83fa77260da99ea791ad70a58f7e64ba7bf40b4028b6abb7"
+    },
+    {
+      "file": "front-zoom-390.png",
+      "sha256": "c02e560df6ca795b149605051906127bf1a280493227f573d8205c5f23c1e038"
+    },
+    {
+      "file": "open-390.png",
+      "sha256": "48b2f6ead27075ccee1ae1264a930243dae028a79bf1955b6fb13e062acd5fe2"
+    },
+    {
+      "file": "open-zoom-390.png",
+      "sha256": "c2d81fc9c1b195bcf4ba7467b665308650a10c01fbf164a241461383e54082fa"
+    },
+    {
+      "file": "aperture-390.png",
+      "sha256": "b4bb8a338b579e66f8e7ffd7d2415ada3159634935027893d0ae02645cb7d13a"
+    },
+    {
+      "file": "front-1440.png",
+      "sha256": "bda2da4da86dd9fd6eb2f709aa17245e515c43cd7ec84a0b3f8c4580d35a1692"
+    },
+    {
+      "file": "front-zoom-1440.png",
+      "sha256": "244149f17087b67d7b6f25d46b0e321b02f0d30bbb4355874bfbafeefd22307d"
+    },
+    {
+      "file": "open-1440.png",
+      "sha256": "9bfcb86234a7f2d1bdc36c3b53c42325e5d8fb472a39e52133cdc4148ab9f654"
+    },
+    {
+      "file": "open-zoom-1440.png",
+      "sha256": "10c2f2e5123e3d44183c325bce987705cedea339fddde124e07a07537ce7fe5f"
+    },
+    {
+      "file": "aperture-1440.png",
+      "sha256": "c522671bfe75f00e019c162a76b9e2d2205fe251cbb9ac9009ec8feea3995e28"
+    }
+  ],
+  "assertions": [
+    "All 13 Sigma lessons / 109 steps and 15 CFP lessons / 128 steps complete through actual rendered controls at both widths",
+    "All five Call-out cards launch and complete their linked lessons; disable/add wording retains whole-zone and no-enrolment scope",
+    "Original 0.20 Sigma Z4 disablement and old completion restore before intentional practice; prior CFP configuration/progress remains unchanged by Sigma use",
+    "Opening cover does not enable writes; Write Enable enters level 3; closed cover retains enabled switch state and hides its control",
+    "Physical MODE adds 10 and SELECT adds 1; ENTER sets code 29; flashing units dot is rendered; a repeated ENTER does not invent unset",
+    "T-series code 25 is reference-only and cannot alter configuration; undefined 99 cannot be set; numeric overflow does not invent wrap",
+    "Code 29 prevents a new zone from resounding the common sounders after silence",
+    "Internal mains/CPU indication text follows the actual view, including latched CPU after clearing its synthetic cause",
+    "Front fit/zoom and open-cover fit/zoom have no document overflow; zoomed physical keys and separate Write Enable targets are at least 44 by 44 CSS pixels",
+    "Group divider lines do not intersect Enable Control/Mode/Select captions in fit or zoom; final screenshots visually reviewed",
+    "Sigma manual modal is profile-specific; normal download/read flow renders checked source PDF bytes",
+    "Network-disabled reload retains Write Enable ON under closed cover, engineering settings and lesson completions; source aperture image loads offline and Write Enable can be switched OFF",
+    "New Sigma and earlier Gent PDFs render from saved local bytes while networking is disabled",
+    "Existing synthetic fault visit, imported schedule and intruder settings remain JSON-equivalent; earlier PDF bytecount retained; return-to-visit link reopens the stored visit",
+    "No browser page errors at either width"
+  ],
+  "limits": [
+    "Desktop Chromium viewport emulation, not physical iPhone Safari or panel hardware verification",
+    "All site/event/configuration inputs are labelled synthetic; no physical detector work, installed-device identification or live-panel control is verified",
+    "The Sigma API response uses checked local manufacturer PDF bytes; this does not verify current publisher availability or catalogue hash pinning",
+    "Earlier visit/import/intruder records are preservation markers; their full feature flows are covered by separate suites",
+    "No firmware-complete configuration, unknown write-switch direction, unset procedure or alphabetic-bank key sequence is claimed",
+    "This report verifies the local app; publication and APK signing are separate release-owner checks"
+  ]
+}

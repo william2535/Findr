@@ -1,0 +1,30 @@
+// Actual cached local inference through the question-first engine; no mocked model.
+// Set FINDR_MODEL_PROFILE to an existing profile with the pinned model installed.
+import {fileURLToPath} from 'node:url';import path from 'node:path';
+import {createRequire} from 'node:module';import fs from 'node:fs';import assert from 'node:assert/strict';const require=createRequire(import.meta.url),{chromium}=require('/opt/codex/cua_node/lib/node_modules/playwright');
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),profile=process.env.FINDR_MODEL_PROFILE||'/tmp/findr027-model-chromium-profile',base=process.env.FINDR_MODEL_QA_URL||'http://127.0.0.1:8088/app/',output=process.env.FINDR_MODEL_RESULTS||path.join(root,'research/local-language-0.31.0/question-first-integration.json');
+const context=await chromium.launchPersistentContext(profile,{executablePath:'/usr/bin/chromium',headless:true,serviceWorkers:'block',viewport:{width:390,height:844},args:['--no-sandbox','--disable-dev-shm-usage']}),page=await context.newPage();const result={syntheticReference:true,actualInference:true,modelFilesDownloadedThisRun:false,checks:[]};
+try{
+ const devtools=await context.newCDPSession(page);await devtools.send('Network.enable');await devtools.send('Network.setCacheDisabled',{cacheDisabled:true});
+ await page.goto(base);result.environment={browser:context.browser()?.version(),platform:'Linux container',viewport:'390x844',physicalPhone:false};
+ const actual=await page.evaluate(async()=>{
+  const engine=await import('./quick-questions-engine.mjs'),{buildManualAnalysis}=await import('./manual-analysis-core.mjs'),language=await import('./local-language.mjs');window.language=language;
+  const record={id:'language031-synthetic-mxpro4',title:'SYNTHETIC Advanced MxPro4 user manual',brand:'Advanced',models:['MxPro4'],type:'user manual',revision:'TEST ONLY',url:'https://example.invalid/synthetic.pdf'},options={modelReady:true,catalogue:[record],savedManuals:[record]};
+  const question='How do I view the event history on MxPro4?',source='To view the event history, choose View, then Log. Use the arrow keys to scroll through the event records. Exit returns to the previous menu.';
+  const analysis=buildManualAnalysis({record,contentHash:'SYNTHETIC-language031-engine',pages:[{page:1,text:'SYNTHETIC TEST ONLY. Advanced Electronics MxPro4 fire alarm control panel User Manual. Model: MxPro4\nManufacturer: Advanced\nRevision: TEST\nThis fictitious reference is for software tests and must not be used to operate equipment.'},{page:2,text:'SYNTHETIC TEST ONLY. Event history reference. '+source}]});
+  let out=engine.submitQuickQuestion(engine.ensureQuickConversation(),question,options);out=engine.attachQuickManual(out.conversation,analysis,options);
+  if(out.effect?.type!=='generate')throw Error('Question-first did not produce local inference: '+JSON.stringify({phase:out.conversation.phase,effect:out.effect}));
+  window.integrationOut=out;window.integrationEngine=engine;
+  const reply=await language.generateLocalReply({messages:out.effect.messages,maxNewTokens:out.effect.maxNewTokens});
+  const final=engine.applyQuickModelReply(out.conversation,reply,{requestId:out.effect.requestId});
+  return {question,request:out.effect,reply,answer:final.conversation.answers.at(-1),nextEffect:final.effect,pendingQuestionId:final.conversation.pendingQuestionId,phase:final.conversation.phase,manualCount:final.conversation.manuals.length};
+ });
+ result.actual=actual;assert.equal(actual.answer.model.ran,true);assert.equal(actual.answer.model.generatedProseUsed,false);assert.equal(actual.nextEffect,null);assert.equal(actual.pendingQuestionId,null);assert.equal(actual.manualCount,1);assert.equal(actual.phase,'question');assert.match(actual.answer.text,/choose View, then Log/);result.checks.push('Question-first engine executes actual local inference and returns one source-backed answer without suggesting another manual');
+ await context.setOffline(true);const follow=await page.evaluate(async()=>{
+  const out=window.integrationOut,reply=await language.generateLocalReply({messages:out.effect.messages,maxNewTokens:out.effect.maxNewTokens}),final=integrationEngine.applyQuickModelReply(out.conversation,reply,{requestId:out.effect.requestId});return {reply,answer:final.conversation.answers.at(-1),nextEffect:final.effect,pendingQuestionId:final.conversation.pendingQuestionId};
+ });result.offline=follow;assert.equal(follow.answer.model.ran,true);assert.equal(follow.nextEffect,null);assert.equal(follow.pendingQuestionId,null);result.checks.push('Warm local inference and answer completion work with browser networking disabled');
+ const bad=JSON.parse(fs.readFileSync(path.join(root,'research/local-language-0.31.0/source-selection-gent.json'),'utf8')).results.map(r=>r.reply);result.rejectedActualOutputs=await page.evaluate(replies=>replies.map(reply=>{const out=window.integrationOut,final=integrationEngine.applyQuickModelReply(out.conversation,reply,{requestId:out.effect.requestId}),answer=final.conversation.answers.at(-1);return {generated:reply.text,accepted:answer.model.outputAccepted,generatedProseUsed:answer.model.generatedProseUsed,text:answer.text,nextEffect:final.effect,pendingQuestionId:final.conversation.pendingQuestionId};}),bad);
+ for(const output of result.rejectedActualOutputs){assert.equal(output.accepted,false);assert.equal(output.generatedProseUsed,false);assert.equal(output.nextEffect,null);assert.equal(output.pendingQuestionId,null);assert.ok(!output.text.includes('1000 mAh'));}
+ result.checks.push('Captured actual-model invented source, unsupported prose and fabricated battery value are rejected, with the pending question completed as bounded extracts');result.status='passed';
+}catch(error){result.status='failed';result.error=error.stack;process.exitCode=1;console.error(error.stack);}
+finally{fs.writeFileSync(output,JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({status:result.status,checks:result.checks}));await context.close();}

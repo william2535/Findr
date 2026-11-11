@@ -1,0 +1,71 @@
+79	12101	Quick Arm
+79	12102	Quick UO
+80	12103	Allow Bypass
+80	12104	Quick Bypass
+80	12105	False Code Trouble
+80	12106	Bell Squawk
+80	12107	3 Minute Bypass
+81	12108	Audible Panic
+81	12109	Buzzer  Bell
+81	12110	Audible Jamming
+81	12111	Exit Beeps at Stay
+81	12112	Forced Keyswitch
+82	12113	Arm Pre-Warning
+82	12201	Double Verification
+83	12202	Alarm BUS Failure
+83	12203	Code Grand Master
+83	12204	Area
+83	12205	Global Follower
+84	12206	Summer/Winter
+84	12207	24-Hour Bypass
+84	12208	Technician Tamper
+84	12209	Technician Reset
+84	12210	Installer Tamper
+85	12211	Low Battery Arming
+85	12212	Bell 30/10
+85	12213	Fire Temporal Pattern
+86	12214	IMQ Install
+86	12215	Disable Incoming Calls  No
+87	12216	Disable Keypad When
+87	12217	Buzzer Delay
+87	12218	Speaker = Buzzer
+87	12219	Confirmation Speaker  No
+87	12220	Bell Confirmation
+88	12221	Error Speaker Time Out
+88	12222	Tamper Report
+88	12223	AC Trouble Arm
+88	12224	Strobe Arm
+88	12225	Final Night
+89	12226	Stay Strobe
+89	12227	Blank display
+89	12228	Display system Lbn
+89	1231	Monitoring Station
+90	1232	Follow Me Enable
+90	1233	Configuration Software
+90	1234	Cloud Enable
+90	1241	Authorize Installer
+91	1242	Override Trouble
+91	1243	Restore Alarm
+91	1244	Mandatory Event Log
+91	1245	Restore Troubles
+91	1246	Exit Alarm
+92	1247	Entry Delayed Alarm
+92	1248	20 Minutes Signal
+92	1249	Attenuation
+92	1251	Bypass Exit/Entry
+92	1252	Entry Disable
+93	1253	Route Disable
+93	1254	Installer Reset
+93	1255	Key Switch Lock
+93	1256	Entry Disarm
+94	1257	Prox Disarm
+94	1261	Exit Restart
+94	1262	Auto Stay
+95	1271	Anti Mask = Tamper
+95	1272	Proximity  Anti Mask
+95	1273	Audible Proximity Tamper  No
+95	1274	Siren Auxiliary = Tamper
+95	1276	RF Wake-Up
+96	1277	Keyfob Instant Arm
+96	1278	Keyfob Instant Stay
+96	1279	Disarm using Code

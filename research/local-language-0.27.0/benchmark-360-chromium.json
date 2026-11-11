@@ -1,0 +1,124 @@
+{
+  "loadMs": 3663.5999999996275,
+  "generationMs": 6680.200000001118,
+  "result": [
+    {
+      "generated_text": [
+        {
+          "role": "system",
+          "content": "You are FINDR, a concise engineering manual assistant. Use only the provided reference. Do not invent a procedure."
+        },
+        {
+          "role": "user",
+          "content": "REFERENCE (manual page 12): To view the event log, select View, then Log. Use the arrow keys to scroll through events. This menu does not change the configuration.\nQUESTION: how do i chek the evnt histry on this panel?"
+        },
+        {
+          "role": "assistant",
+          "content": "Reference: To view the event log, select View, then Log. Use the arrow keys to scroll through events. This menu does not change the configuration."
+        }
+      ]
+    }
+  ],
+  "updates": [
+    {
+      "t": "Reference: ",
+      "at": 2535.5999999996275
+    },
+    {
+      "t": "To ",
+      "at": 2686.800000000745
+    },
+    {
+      "t": "view ",
+      "at": 2839.5999999996275
+    },
+    {
+      "t": "the ",
+      "at": 2991.9000000003725
+    },
+    {
+      "t": "event ",
+      "at": 3142.2000000011176
+    },
+    {
+      "t": "log, ",
+      "at": 3456.5999999996275
+    },
+    {
+      "t": "select ",
+      "at": 3622
+    },
+    {
+      "t": "View, ",
+      "at": 3950.2000000011176
+    },
+    {
+      "t": "then ",
+      "at": 4087
+    },
+    {
+      "t": "Log. ",
+      "at": 4367.5999999996275
+    },
+    {
+      "t": "Use ",
+      "at": 4516.5
+    },
+    {
+      "t": "the ",
+      "at": 4646.800000000745
+    },
+    {
+      "t": "arrow ",
+      "at": 4791
+    },
+    {
+      "t": "keys ",
+      "at": 4925.700000001118
+    },
+    {
+      "t": "to ",
+      "at": 5072.4000000003725
+    },
+    {
+      "t": "scroll ",
+      "at": 5210
+    },
+    {
+      "t": "through ",
+      "at": 5336.700000001118
+    },
+    {
+      "t": "events. ",
+      "at": 5601.9000000003725
+    },
+    {
+      "t": "This ",
+      "at": 5742.800000000745
+    },
+    {
+      "t": "menu ",
+      "at": 5868.700000001118
+    },
+    {
+      "t": "does ",
+      "at": 6008.800000000745
+    },
+    {
+      "t": "not ",
+      "at": 6151.800000000745
+    },
+    {
+      "t": "change ",
+      "at": 6287
+    },
+    {
+      "t": "the ",
+      "at": 6419.300000000745
+    },
+    {
+      "t": "configuration.",
+      "at": 6679.700000001118
+    }
+  ]
+}

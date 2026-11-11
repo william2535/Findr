@@ -1,0 +1,303 @@
+[
+  {
+    "path": "README.md",
+    "status": " M",
+    "bytes": 105121,
+    "sha256": "166fb60f02cf7be89ba7d8a0534fc50f93416cea02de026acbd47843c1b53e10",
+    "presentInLatestSource": true
+  },
+  {
+    "path": "app/open-findr.tsx",
+    "status": " M",
+    "bytes": 3864,
+    "sha256": "b369aa21c43cceb19002c50918fdd73d1406d1a62ca8f8f0bb3cf22de0d31e10",
+    "presentInLatestSource": true
+  },
+  {
+    "path": "app/page.tsx",
+    "status": " M",
+    "bytes": 8993,
+    "sha256": "55d499eae11dac2c62a072b5a05b0192403521d8c66e1ce43f022adef892c949",
+    "presentInLatestSource": true
+  },
+  {
+    "path": "public/app/app.mjs",
+    "status": " M",
+    "bytes": 96591,
+    "sha256": "1b3e171c8cbd769fb4e75e6b4737397ee6a074f2dd858f6405da1fa3a78b2cfa",
+    "presentInLatestSource": true
+  },
+  {
+    "path": "public/app/data/practice.json",
+    "status": " M",
+    "bytes": 159657,
+    "sha256": "28faddfc43e8606748899371cb8735d3838a43cf07badc30603069e57e960a1e",
+    "presentInLatestSource": true
+  },
+  {
+    "path": "public/app/index.html",
+    "status": " M",
+    "bytes": 4082,
+    "sha256": "cf90b26354f9a7c283557a4c91a33f52f881d32fbdb80fc3206b51a9d2da535c",
+    "presentInLatestSource": true
+  },
+  {
+    "path": "public/app/precache.js",
+    "status": " M",
+    "bytes": 198471,
+    "sha256": "5a8b8d3234bc67410575f164659a56236a51172b612be31b7a3e91e55524119a",
+    "presentInLatestSource": true
+  },
+  {
+    "path": "public/app/version.mjs",
+    "status": " M",
+    "bytes": 722,
+    "sha256": "064c9f6cda415a0fb2fc485d1ba377efc680041925e634c669241fd787f8f294",
+    "presentInLatestSource": true
+  },
+  {
+    "path": "public/app/helpers-catalogue.mjs",
+    "status": "??",
+    "bytes": 18962,
+    "sha256": "86890c13cb46f726e9cc8766276e64a359fbf2b384aa1c4324a4b0149f400cdd",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "public/app/helpers-engine.mjs",
+    "status": "??",
+    "bytes": 34094,
+    "sha256": "bf02735b3fd3ea4c5915890554567876bff4973c8974b191ec2a63861591d7b0",
+    "presentInLatestSource": true
+  },
+  {
+    "path": "public/app/helpers-library.mjs",
+    "status": "??",
+    "bytes": 20765,
+    "sha256": "2b43de9fd33d1134fbf1e851a1efba7a2d640de770b93dc7b25057826163eb30",
+    "presentInLatestSource": true
+  },
+  {
+    "path": "public/app/helpers-store.mjs",
+    "status": "??",
+    "bytes": 34267,
+    "sha256": "b5d3b3387c7eb728e04fc1810a0da6cdf574f873ab54c2a08bce108618439a32",
+    "presentInLatestSource": true
+  },
+  {
+    "path": "public/app/helpers.css",
+    "status": "??",
+    "bytes": 12960,
+    "sha256": "041439915833106f336fbdfbf8d35fdec298f78e30d4cac1ecdd52bc2ac04ff9",
+    "presentInLatestSource": true
+  },
+  {
+    "path": "public/app/helpers.mjs",
+    "status": "??",
+    "bytes": 48969,
+    "sha256": "52a788056ff78bd51bf349d6233e2e95d280ea73d7b51071803f09555c167b68",
+    "presentInLatestSource": true
+  },
+  {
+    "path": "public/share/findr-release-0.32.0.png",
+    "status": "??",
+    "bytes": 133386,
+    "sha256": "b43d6c30a4cdd458e5d604a17559fc9aa6f1fe24b5e44f8bd91256c732b09cbb",
+    "presentInLatestSource": true
+  },
+  {
+    "path": "research/helpers-0.32.0/browser-chromium-answer.png",
+    "status": "??",
+    "bytes": 51511,
+    "sha256": "f5ba1e21e63213703b80ea099c39f378b5bddabcbb0a973e3fa6942f05c5860c",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "research/helpers-0.32.0/browser-chromium-failure.png",
+    "status": "??",
+    "bytes": 44394,
+    "sha256": "3d5b17ea24bc55c877e2d23b1416f3bf91eb0454430da6aa112ac24bd914bc9c",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "research/helpers-0.32.0/browser-chromium-keyboard.png",
+    "status": "??",
+    "bytes": 30416,
+    "sha256": "c73540c24c8bd5473d042b82ab7d215416a9c824321a4f0cd05f81d9fa4e5f61",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "research/helpers-0.32.0/browser-chromium-model-answer.png",
+    "status": "??",
+    "bytes": 49405,
+    "sha256": "d29afd5b7132979f7c7173eb2ec47a84d88a60dcbf336e96f43014c1082a8468",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "research/helpers-0.32.0/browser-chromium-model-failure.png",
+    "status": "??",
+    "bytes": 49397,
+    "sha256": "7bea095210d20a2adc60075982b7309d18620557a46753e587879e4c7c7a4f40",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "research/helpers-0.32.0/browser-chromium-model-setup.png",
+    "status": "??",
+    "bytes": 55441,
+    "sha256": "db22c8e5423ac25750e64902735b4406653939838c3f5e7c24f8b1a643cc11ad",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "research/helpers-0.32.0/browser-chromium-model.json",
+    "status": "??",
+    "bytes": 1523965,
+    "sha256": "3dcafeab605deadd7a07f8ea9168bb45e53aa5eb734e5b7715eada67901defe3",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "research/helpers-0.32.0/browser-chromium-setup.png",
+    "status": "??",
+    "bytes": 55880,
+    "sha256": "8527c3c9671366674f7fe467d6ac948032d9f70addbba0f0bb88525bc02e5729",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "research/helpers-0.32.0/browser-chromium.json",
+    "status": "??",
+    "bytes": 18674,
+    "sha256": "e9529a6e032e6f2ce7062915b6f4b6260c1ee163d97f9f2ce6d6d6bc7392283f",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "research/helpers-0.32.0/browser-webkit-answer.png",
+    "status": "??",
+    "bytes": 78842,
+    "sha256": "75814380fde7729151e891c6f4cf96ca1a0cdc290fe3ac26b58a350a140ac5bb",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "research/helpers-0.32.0/browser-webkit-failure.png",
+    "status": "??",
+    "bytes": 54994,
+    "sha256": "54859cf2e6259243775d12bdb83b4e0423dd1ae30a5e064f2ed3e7491882f716",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "research/helpers-0.32.0/browser-webkit-keyboard.png",
+    "status": "??",
+    "bytes": 38673,
+    "sha256": "b2f41bc60172aacb401b6e6e6f5a9140954352f79e69e5d1b280a7ecab9f84bb",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "research/helpers-0.32.0/browser-webkit-setup.png",
+    "status": "??",
+    "bytes": 71246,
+    "sha256": "983d1154c845a2da288639e22361c1ec7d7343a6a183903f9ac94aef55bac473",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "research/helpers-0.32.0/browser-webkit.json",
+    "status": "??",
+    "bytes": 18660,
+    "sha256": "193fe112f4df016d257886b3b8ea0c8188c008b9db45ba92c5ffecfaddd16cd2",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "research/helpers-0.32.0/legacy-routes.json",
+    "status": "??",
+    "bytes": 680,
+    "sha256": "6350dec195745f83e549dff5d3b126a07b032139f1f96713f8035762f26bfb4f",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "research/helpers-0.32.0/legacy-routes.png",
+    "status": "??",
+    "bytes": 43878,
+    "sha256": "e6ade28e440f77879e01ced958f53d840377f4655497a11eacc9fe3a5760e1b2",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "research/helpers-0.32.0/model-preparation.json",
+    "status": "??",
+    "bytes": 55243,
+    "sha256": "6a97f9c004298a2dc57131c3a8b77a60cd7f892004716c6dfede993c2ae62236",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "research/helpers-0.32.0/real-pdf-downloads.json",
+    "status": "??",
+    "bytes": 1256,
+    "sha256": "2fc6784f03021433d18ddfbd6e0f40b45bc8b89258e0d70030cce3e50a322c25",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "research/helpers-0.32.0/unsupported-capability.json",
+    "status": "??",
+    "bytes": 19526,
+    "sha256": "8fb1e411bc17fdce9bb62482e135d196224b92fd6355df0eec5ecfd0de03ea10",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "research/helpers-0.32.0/unsupported-capability.png",
+    "status": "??",
+    "bytes": 48172,
+    "sha256": "95528562fe5c74ed886c8868d7747a067e6ab45c0f00cecaf2b4132489e88e12",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "scripts/prepare-helpers032-model.mjs",
+    "status": "??",
+    "bytes": 2508,
+    "sha256": "5dc81ddb7b8c00787af2f9ddbfccafd2477b6a8cfafa67465dc43842f950cf5d",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "scripts/verify-helpers032-browser.mjs",
+    "status": "??",
+    "bytes": 17215,
+    "sha256": "42cd29353439e89418c9726db18d33d06acaf137fbf982aacfac397dc034f32b",
+    "presentInLatestSource": true
+  },
+  {
+    "path": "scripts/verify-helpers032-legacy.mjs",
+    "status": "??",
+    "bytes": 4371,
+    "sha256": "97366caaf987fdc6a0418646f492902108401abe29fc953822332e7e573ea63a",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "scripts/verify-helpers032-unsupported.mjs",
+    "status": "??",
+    "bytes": 3514,
+    "sha256": "b7f7df49e06b66cb097f7f2a932764d745f80ff6eb5a707dc09804f4203b2bd8",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "tests/helpers-catalogue.test.mjs",
+    "status": "??",
+    "bytes": 11590,
+    "sha256": "203e3ec17f071b3c1646cca17704edc0670c438280ef0286dd4e62d2270ae60d",
+    "presentInLatestSource": false
+  },
+  {
+    "path": "tests/helpers-engine.test.mjs",
+    "status": "??",
+    "bytes": 18945,
+    "sha256": "e76cde232ee50f21a4bef759790b03d310afcbeabae9f0b7c22a108cebc9ac99",
+    "presentInLatestSource": true
+  },
+  {
+    "path": "tests/helpers-library.test.mjs",
+    "status": "??",
+    "bytes": 15936,
+    "sha256": "6d084cc77b7879d5962253058bef8ef67d018324a3a3b0625da32688631c0461",
+    "presentInLatestSource": true
+  },
+  {
+    "path": "tests/helpers-store.test.mjs",
+    "status": "??",
+    "bytes": 25204,
+    "sha256": "eb0d527bce47a2fc843c53b894a9873eb187679cfb3a69228c9d0f3db8552b64",
+    "presentInLatestSource": true
+  }
+]

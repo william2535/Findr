@@ -1,0 +1,96 @@
+{
+  "synthetic": true,
+  "environment": "Linux Chromium desktop and viewport emulation; not physical iPhone/Safari",
+  "offline": true,
+  "results": [
+    {
+      "width": 390,
+      "status": "passed",
+      "offline": true,
+      "import": {
+        "filename": "synthetic-premier-elite-scan.pdf",
+        "elapsedMs": 2871.1009510000004
+      },
+      "responseMs": [
+        61.68645999999899,
+        64.82112999999845,
+        64.46533900000031,
+        56.413737999999285,
+        56.654012000000876,
+        62.328214000001026,
+        54.6020239999998,
+        58.204454000000624,
+        73.75224600000001
+      ],
+      "confirmedAwaitingParts": true,
+      "checks": [
+        "manual compulsory",
+        "text/scanned PDF import",
+        "system/model/variant confirmation",
+        "free fault",
+        "relevant manual page",
+        "open saved PDF",
+        "Yes/No/unknown route",
+        "answer correction",
+        "ambiguous reading clarification",
+        "reading correction",
+        "second component manual",
+        "history scroll preserved",
+        "newest shortcut",
+        "reduced motion",
+        "keyboard-like viewport",
+        "resistor and comparable voltage calculators",
+        "Give up",
+        "review/export JSON/full/short",
+        "reload/resume",
+        "Fault found awaiting parts",
+        "legacy preservation"
+      ]
+    },
+    {
+      "width": 1440,
+      "status": "passed",
+      "offline": true,
+      "import": {
+        "filename": "synthetic-premier-elite-text.pdf",
+        "elapsedMs": 356.6016509999972
+      },
+      "responseMs": [
+        63.611871999997675,
+        67.31648699999641,
+        67.43592699999863,
+        67.56291899999997,
+        60.00505400000111,
+        59.68706299999758,
+        56.34914000000208,
+        60.988875999999436,
+        64.93459699999948
+      ],
+      "confirmedAwaitingParts": true,
+      "checks": [
+        "manual compulsory",
+        "text/scanned PDF import",
+        "system/model/variant confirmation",
+        "free fault",
+        "relevant manual page",
+        "open saved PDF",
+        "Yes/No/unknown route",
+        "answer correction",
+        "ambiguous reading clarification",
+        "reading correction",
+        "second component manual",
+        "history scroll preserved",
+        "newest shortcut",
+        "reduced motion",
+        "keyboard-like viewport",
+        "resistor and comparable voltage calculators",
+        "Give up",
+        "review/export JSON/full/short",
+        "reload/resume",
+        "Fault found awaiting parts",
+        "legacy preservation"
+      ]
+    }
+  ],
+  "status": "passed"
+}

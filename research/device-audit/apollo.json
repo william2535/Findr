@@ -1,0 +1,649 @@
+{
+  "release": "0.13.0",
+  "batch": "apollo",
+  "checked_at": "2026-10-30",
+  "device_count": 12,
+  "uk_priority_count": 12,
+  "source_policy": "Primary manufacturer product pages and documents; catalogue records preserved unchanged. Three verified manufacturer datasheets are supplied as new device-reference records, distinct from the archive. UK-first is editorial browsing priority, not a manufacturer-origin or universal compatibility claim.",
+  "general_sources": [
+    {
+      "url": "https://apollo-fire.co.uk/system-types/conventional-range/",
+      "supports": "Orbis and Series 65 are conventional ranges."
+    }
+  ],
+  "devices": [
+    {
+      "device_id": "apollo-xp95-optical-55000-620",
+      "part_number": "55000-620APO",
+      "product_page": "https://apollo-fire.co.uk/products/xp95/detector/55000-620apo-xp95-optical-smoke-detector/",
+      "product_page_sha256": "3c8723cae1d0b037b62cbcf8ca4aa01345ce90f80d0b25c2f7fc846cee26efca",
+      "picture": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0000465_0001.jpg",
+        "source_file_sha256": "c573beddd760a42313c4572ef8001a7032df5878e3aadf5fdc05d0f1cb6948cb",
+        "source_dimensions": [
+          450,
+          384
+        ],
+        "output_sha256": "47606c7ac6bba890e132f4f5cc993074dcabada7b6a1779df519891791090a62",
+        "transform": "Original product image at original dimensions; alpha composited onto white; WebP encoding only. No hardware geometry changed.",
+        "visual_check": "Product image reviewed against the exact manufacturer page and datasheet photograph."
+      },
+      "manufacturer_datasheet": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0006476_0001.pdf",
+        "title": "PP2610 XP95 Optical Smoke Detector Data Sheet",
+        "observed_sha256": "44ca8b979263a0afc199e32dfd474353f53a66b1d10009214c35f51ce051309e",
+        "pages": 2,
+        "exact_model_pdf_pages": [
+          1
+        ]
+      },
+      "linked_archive_records": [
+        {
+          "record_id": "apollo-0f80e75d8a7b",
+          "title": "XP95/Discovery Mounting Bases Installation Guide",
+          "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0002037_0001.pdf",
+          "pages": 2,
+          "observed_sha256": "a3b11944f1ddcf5ed62e6794c1ab12734508e7c229c900cba5f67fc3dfb27cbd",
+          "archive_sha256": null,
+          "hash_matches_archive": null,
+          "model_number_pdf_pages": [],
+          "association_evidence": "Manufacturer links this base installation guide directly from the exact product page; head cards clearly state it is a base guide."
+        }
+      ],
+      "supplementary_document_records": [
+        {
+          "record_id": "device-doc-apollo-44ca8b979263",
+          "title": "PP2610 XP95 Optical Smoke Detector Data Sheet",
+          "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0006476_0001.pdf",
+          "revision": "PP2610/2021/Issue 2",
+          "observed_sha256": "44ca8b979263a0afc199e32dfd474353f53a66b1d10009214c35f51ce051309e",
+          "bytes": 503895,
+          "pages": 2,
+          "provenance": "Manufacturer PDF downloaded directly from the exact product page and verified by model number and edition. New device-reference record; not claimed to be an archived copy.",
+          "related_archive_record_ids": [
+            "apollo-0f80e75d8a7b"
+          ],
+          "local_verification_file": "/workspace/scratch/163ad62fc051/device-batches-0.13.0/apollo/research/xp95-optical-datasheet.pdf"
+        }
+      ]
+    },
+    {
+      "device_id": "apollo-xp95-heat-a2s-55000-420",
+      "part_number": "55000-420APO",
+      "product_page": "https://apollo-fire.co.uk/products/xp95/detector/55000-420apo-xp95-heat-detector-a2s/",
+      "product_page_sha256": "f9e32630cbe30d0557b1ace443519c329b5f09ee966f4b2861d133a4427299c2",
+      "picture": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0000461_0001.jpg",
+        "source_file_sha256": "170599b972dfd736e91bca7ce2015cf8764fbb9a37008cc194847a12cc04cb1c",
+        "source_dimensions": [
+          450,
+          382
+        ],
+        "output_sha256": "ecd7d80a4b1c35f6cf9566c98b31dcdd08be238fc88f1cce9415c9925fce53d4",
+        "transform": "Original product image at original dimensions; alpha composited onto white; WebP encoding only. No hardware geometry changed.",
+        "visual_check": "Product image reviewed against the exact manufacturer page and datasheet photograph."
+      },
+      "manufacturer_datasheet": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0006477_0001.pdf",
+        "title": "PP2611 XP95 Heat Detector Data Sheet",
+        "observed_sha256": "0c937f028eba869be22bde1e92b0989d60a10af890972723b1bb444c4aae1a5f",
+        "pages": 2,
+        "exact_model_pdf_pages": [
+          1
+        ]
+      },
+      "linked_archive_records": [
+        {
+          "record_id": "apollo-0f80e75d8a7b",
+          "title": "XP95/Discovery Mounting Bases Installation Guide",
+          "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0002037_0001.pdf",
+          "pages": 2,
+          "observed_sha256": "a3b11944f1ddcf5ed62e6794c1ab12734508e7c229c900cba5f67fc3dfb27cbd",
+          "archive_sha256": null,
+          "hash_matches_archive": null,
+          "model_number_pdf_pages": [],
+          "association_evidence": "Manufacturer links this base installation guide directly from the exact product page; head cards clearly state it is a base guide."
+        }
+      ],
+      "supplementary_document_records": [
+        {
+          "record_id": "device-doc-apollo-0c937f028eba",
+          "title": "PP2611 XP95 Heat Detector Data Sheet",
+          "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0006477_0001.pdf",
+          "revision": "PP2611/2018/Issue 1",
+          "observed_sha256": "0c937f028eba869be22bde1e92b0989d60a10af890972723b1bb444c4aae1a5f",
+          "bytes": 573574,
+          "pages": 2,
+          "provenance": "Manufacturer PDF downloaded directly from the exact product page and verified by model number and edition. New device-reference record; not claimed to be an archived copy.",
+          "related_archive_record_ids": [
+            "apollo-0f80e75d8a7b"
+          ],
+          "local_verification_file": "/workspace/scratch/163ad62fc051/device-batches-0.13.0/apollo/research/xp95-heat-a2s-datasheet.pdf"
+        }
+      ]
+    },
+    {
+      "device_id": "apollo-discovery-optical-58000-600",
+      "part_number": "58000-600APO",
+      "product_page": "https://apollo-fire.co.uk/products/discovery/detector/58000-600apo-discovery-optical-smoke-detector/",
+      "product_page_sha256": "79057eb36bb2c2a33f22ba6ea3eef0a44f9b026fcac64de45b988e74761fa777",
+      "picture": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0000411_0001.jpg",
+        "source_file_sha256": "1bd29b2b97f65487d37bf99f8944033cfaf6e44d61070b9248b30b94a081f7f7",
+        "source_dimensions": [
+          450,
+          354
+        ],
+        "output_sha256": "455da96e1f95408a14a0e79a9cb65769cebbb48a01674b25783e5ae159365bc6",
+        "transform": "Original product image at original dimensions; alpha composited onto white; WebP encoding only. No hardware geometry changed.",
+        "visual_check": "Product image reviewed against the exact manufacturer page and datasheet photograph."
+      },
+      "manufacturer_datasheet": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/PP2606_Discovery-Optical-Smoke-Detector_Issue-4-2.pdf",
+        "title": "PP2606 Discovery Optical Smoke Detector",
+        "observed_sha256": "607fa31bb21a4a5491173b5cf5edd355513d7ebdca60962a0a7be838472bf6b8",
+        "pages": 3,
+        "exact_model_pdf_pages": [
+          1
+        ]
+      },
+      "linked_archive_records": [
+        {
+          "record_id": "facp-1f98cd15-ad27-4365-8c16-aeac5a39d515",
+          "title": "58000-600 — Datasheet (2021, source-listed)",
+          "url": "https://docs.facpmanuals.com/manuals/Apollo/58000-600-datasheet-2021-rev2.pdf",
+          "pages": 3,
+          "observed_sha256": "a8759e0369eaa661e847f25e9b3e5aa2c4086c764642f520f767b556448dbc9f",
+          "archive_sha256": "a8759e0369eaa661e847f25e9b3e5aa2c4086c764642f520f767b556448dbc9f",
+          "hash_matches_archive": true,
+          "model_number_pdf_pages": [
+            1
+          ],
+          "association_evidence": "Exact model number verified in document text."
+        }
+      ]
+    },
+    {
+      "device_id": "apollo-soteria-dual-optical-heat-sa5100-710",
+      "part_number": "SA5100-710APO",
+      "product_page": "https://apollo-fire.co.uk/products/soteria/detector/sa5100-710apo-soteria-multi-sensor-detector-dual-optical-heat/",
+      "product_page_sha256": "676b212aa2bfdbf2ec5540bedf08f4d41130bf9a3e5c16e4b371e79796e9b3e4",
+      "picture": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0008046_0001.jpg",
+        "source_file_sha256": "8b0ef489218d14ea3aec3088437d27d064adb1e4550ec905254f20a1c4d30e42",
+        "source_dimensions": [
+          450,
+          338
+        ],
+        "output_sha256": "ad9d0d33ccd4620bde51cbaa68297fdf8a789c846062eb73744fdd09cffbb4a8",
+        "transform": "Original product image at original dimensions; alpha composited onto white; WebP encoding only. No hardware geometry changed.",
+        "visual_check": "Product image reviewed against the exact manufacturer page and datasheet photograph."
+      },
+      "manufacturer_datasheet": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/PP5095_Soteria-Multisensor-Detector-Dual-Optical-Heat_Issue-4.pdf",
+        "title": "PP5095 Soteria Multisensor Detector (Dual Optical-Heat)",
+        "observed_sha256": "691895fbb8d1823479aa6da746e190d8d95ef9ff6a2b804037123cf3369c9dab",
+        "pages": 3,
+        "exact_model_pdf_pages": [
+          1
+        ]
+      },
+      "linked_archive_records": [
+        {
+          "record_id": "apollo-fe50a6c32956",
+          "title": "Soteria Multi-Sensor and Tri-Sensor Detectors Installation Instructions",
+          "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0007743_0001.pdf",
+          "pages": 2,
+          "observed_sha256": "e11c709064d8180d7905607a17090c70b527ee83c8a13dcbe6e7c3a546dac0bb",
+          "archive_sha256": null,
+          "hash_matches_archive": null,
+          "model_number_pdf_pages": [
+            1,
+            2
+          ],
+          "association_evidence": "Exact model number verified in document text."
+        }
+      ]
+    },
+    {
+      "device_id": "apollo-orbis-optical-orb-op-12001",
+      "part_number": "ORB-OP-12001-APO",
+      "product_page": "https://apollo-fire.co.uk/products/orbis/detector/orb-op-12001-apo-orbis-optical-smoke-detector/",
+      "product_page_sha256": "db544f7a171bfb62cca70155765e027fcae229e06f63bf067c7185954eac124d",
+      "picture": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0000483_0001.jpg",
+        "source_file_sha256": "709d2f6bf421bbcc3db89323b85bfa46982bc25ef7543c4811d1f21de95679f9",
+        "source_dimensions": [
+          450,
+          429
+        ],
+        "output_sha256": "dd57f396def4be7d9fa79db582933ed07fdc5c4dab960c217bf7ae0326a1ce34",
+        "transform": "Original product image at original dimensions; alpha composited onto white; WebP encoding only. No hardware geometry changed.",
+        "visual_check": "Product image reviewed against the exact manufacturer page and datasheet photograph."
+      },
+      "manufacturer_datasheet": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0006650_0001.pdf",
+        "title": "PP2632 Orbis Optical Smoke Detector",
+        "observed_sha256": "908eb3f39ea7c39034649d15422fb2a490cc97de19b56fa4d1ecd8056175ad6f",
+        "pages": 2,
+        "exact_model_pdf_pages": [
+          1
+        ]
+      },
+      "linked_archive_records": [
+        {
+          "record_id": "apollo-2323fa59b7f0",
+          "title": "ORBIS Detector Head Installation Guide",
+          "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0001978_0001.pdf",
+          "pages": 2,
+          "observed_sha256": "18cd4ddb890d123d36cf7d3f1be6dbec7723067491b1af9d032c2ec89ff5b225",
+          "archive_sha256": null,
+          "hash_matches_archive": null,
+          "model_number_pdf_pages": [],
+          "association_evidence": "Manufacturer links the Orbis detector-head family installation guide directly from the exact ORB-OP-12001 product page; its current datasheet supplies the part-number match."
+        }
+      ]
+    },
+    {
+      "device_id": "apollo-series65-optical-55000-317",
+      "part_number": "55000-317APO",
+      "product_page": "https://apollo-fire.co.uk/products/series-65/detector/55000-317apo-series-65-optical-smoke-detector/",
+      "product_page_sha256": "5a2750007f96ab619eaecee4d6c3c893f8cebc90214d4b64194fb61b023c03f1",
+      "picture": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0000439_0001.jpg",
+        "source_file_sha256": "0861522e509b229b820b8cf6001b1ef8b90052755cc01353b4a5476f1b3c7915",
+        "source_dimensions": [
+          450,
+          374
+        ],
+        "output_sha256": "ce69d6250985bb5cde2d80596c5f6d95943b71fb7614294f07c166977ae2ea22",
+        "transform": "Original product image at original dimensions; alpha composited onto white; WebP encoding only. No hardware geometry changed.",
+        "visual_check": "Product image reviewed against the exact manufacturer page and datasheet photograph."
+      },
+      "manufacturer_datasheet": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0004602_0001.pdf",
+        "title": "PP2613 Series 65 Optical Smoke Detector Datasheet",
+        "observed_sha256": "9fa419f06047cd85b95db1589151f04028ab9a691ae564982a37ac5f8b82eeb1",
+        "pages": 2,
+        "exact_model_pdf_pages": [
+          1
+        ]
+      },
+      "linked_archive_records": [],
+      "supplementary_document_records": [
+        {
+          "record_id": "device-doc-apollo-9fa419f06047",
+          "title": "PP2613 Series 65 Optical Smoke Detector Datasheet",
+          "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0004602_0001.pdf",
+          "revision": "PP2613/2023/Issue 2",
+          "observed_sha256": "9fa419f06047cd85b95db1589151f04028ab9a691ae564982a37ac5f8b82eeb1",
+          "bytes": 331630,
+          "pages": 2,
+          "provenance": "Manufacturer PDF downloaded directly from the exact product page and verified by model number and edition. New device-reference record; not claimed to be an archived copy.",
+          "related_archive_record_ids": [],
+          "local_verification_file": "/workspace/scratch/163ad62fc051/device-batches-0.13.0/apollo/research/series65-optical-datasheet.pdf"
+        }
+      ]
+    },
+    {
+      "device_id": "apollo-intelligent-mcp-sa5900-908",
+      "part_number": "SA5900-908APO",
+      "product_page": "https://apollo-fire.co.uk/products/xp95/mcp/sa5900-908apo-intelligent-manual-call-point/",
+      "product_page_sha256": "889f7cd757300fa712af50a2f86e8d98d180d3a6f40216211a03f4bc61d6e494",
+      "picture": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0000100_0001.jpg",
+        "source_file_sha256": "0bab7f82366e7886958fa605ac8acf467a1b33d5382a7f405e4a3e0eb947f523",
+        "source_dimensions": [
+          450,
+          450
+        ],
+        "output_sha256": "8c08acb9860e96edf1a9132233ad064c2bf2acb59bb747cc1a75e63bdef147e6",
+        "transform": "Original product image at original dimensions; alpha composited onto white; WebP encoding only. No hardware geometry changed.",
+        "visual_check": "Product image reviewed against the exact manufacturer page and datasheet photograph."
+      },
+      "manufacturer_datasheet": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/PP2526_Intelligent-MCP_Issue-6.pdf",
+        "title": "PP2526 Intelligent MCP Datasheet",
+        "observed_sha256": "d2e3091f6d4b088e4dc0eae5bc487e2ba27ec4619428d6f0f0a89cb26daf8727",
+        "pages": 2,
+        "exact_model_pdf_pages": [
+          1
+        ]
+      },
+      "linked_archive_records": [
+        {
+          "record_id": "apollo-33c5f6586bfd",
+          "title": "Intelligent Manual Call Point Installation Guide",
+          "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0000082_0001.pdf",
+          "pages": 2,
+          "observed_sha256": "85927dcf376349796bde07cbfb3c6f881c9c73dae0fc66bbf3f1b70d084a88e0",
+          "archive_sha256": null,
+          "hash_matches_archive": null,
+          "model_number_pdf_pages": [
+            1
+          ],
+          "association_evidence": "Exact model number verified in document text."
+        }
+      ]
+    },
+    {
+      "device_id": "apollo-xpander-mcp-xpa-mc-14101",
+      "part_number": "XPA-MC-14101-APO",
+      "product_page": "https://apollo-fire.co.uk/products/xpander/mcp/xpa-mc-14101-apo-xpander-manual-call-point/",
+      "product_page_sha256": "642cf975584c869858625a261cf6c93d3ae14a5173c1cb698251749b15f7f4e6",
+      "picture": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0007896_0001.jpg",
+        "source_file_sha256": "3abb316b708c5c6529849ea0c1b49c1f456589c946cd1a0aa7fca9b8399d6f42",
+        "source_dimensions": [
+          450,
+          446
+        ],
+        "output_sha256": "5d7260522318840b1cdfa97e2c1b1276d5e80e63d4af2e130e528daf702e3960",
+        "transform": "Original product image at original dimensions; alpha composited onto white; WebP encoding only. No hardware geometry changed.",
+        "visual_check": "Product image reviewed against the exact manufacturer page and datasheet photograph."
+      },
+      "manufacturer_datasheet": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0007903_0001.pdf",
+        "title": "PP5091 Xpander Manual Call Point",
+        "observed_sha256": "22d008aae13a25a330b1e4de52458369b1bc63b7261305e74109e3f6eeaea332",
+        "pages": 2,
+        "exact_model_pdf_pages": [
+          1
+        ]
+      },
+      "linked_archive_records": [
+        {
+          "record_id": "apollo-ff8644c57eb9",
+          "title": "XPander Manual Call Point Installation Guide",
+          "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0007894_0001.pdf",
+          "pages": 5,
+          "observed_sha256": "ff2b48fbbd626e14fedb7eb2dfa6cca366127409ebe68f6637524d09a96099dc",
+          "archive_sha256": null,
+          "hash_matches_archive": null,
+          "model_number_pdf_pages": [
+            1
+          ],
+          "association_evidence": "Exact model number verified in document text."
+        }
+      ]
+    },
+    {
+      "device_id": "apollo-intelligent-sounder-vid-sa5500-350",
+      "part_number": "SA5500-350APO",
+      "product_page": "https://apollo-fire.co.uk/products/xp95/av/sa5500-350apo-intelligent-open-area-sounder-vid-red-body-white-flash/",
+      "product_page_sha256": "93f936eecb1b614cebf9c94a6ca6d31203312974d9573b10c3538c101e298044",
+      "picture": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/sa5501-350apo.png",
+        "source_file_sha256": "a3ccc68c68a794e453645e947e6c70dbb9b36331042d62ebc10e980d21eb76ef",
+        "source_dimensions": [
+          450,
+          450
+        ],
+        "output_sha256": "b70a44d0cf3dff978b1824e6753dbbd7354662a2b2cf38b5e1477ec47b8fde03",
+        "transform": "Original product image at original dimensions; alpha composited onto white; WebP encoding only. No hardware geometry changed.",
+        "visual_check": "Product image reviewed against the exact manufacturer page and datasheet photograph."
+      },
+      "manufacturer_datasheet": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/PP2667_Intelligent-Open-Area-Sounder-VID_Issue-4.pdf",
+        "title": "PP2667 Intelligent Open-Area Sounder VID Datasheet",
+        "observed_sha256": "ed2a80b879a2ced0e6ca16aae4b92ef971f8b825776eafe9416b380c978d03dd",
+        "pages": 3,
+        "exact_model_pdf_pages": [
+          1
+        ]
+      },
+      "linked_archive_records": [
+        {
+          "record_id": "apollo-07744a0bb623",
+          "title": "Intelligent Open-Area Audio Visual Device Installation Guide",
+          "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/Intelligent-Open-Area-Audio-Visual-Device-Installation-Guide.pdf",
+          "pages": 2,
+          "observed_sha256": "57e1b0bb230d26fed8dbb02523abe8ad630117469f2f33b4ced4a30bd9e4c90c",
+          "archive_sha256": null,
+          "hash_matches_archive": null,
+          "model_number_pdf_pages": [
+            1,
+            2
+          ],
+          "association_evidence": "Exact model number verified in document text."
+        }
+      ]
+    },
+    {
+      "device_id": "apollo-intelligent-io-sa4700-102",
+      "part_number": "SA4700-102APO",
+      "product_page": "https://apollo-fire.co.uk/products/xp95/interface-face-plate/sa4700-102apo-intelligent-input-output-module/",
+      "product_page_sha256": "43004923bdb43a4fb2986cfc2df16dd67e6ec85128e4945bc9bb193587f85751",
+      "picture": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0002138_0001.jpg",
+        "source_file_sha256": "7512de8afbf34d6f68821636e7bd45b1f049f6757bf685ebe1af2da2ac5d1713",
+        "source_dimensions": [
+          450,
+          450
+        ],
+        "output_sha256": "52f638b209430d283094b524b85e03251d0d3f94175fea22f54d6d9484fac3c3",
+        "transform": "Original product image at original dimensions; alpha composited onto white; WebP encoding only. No hardware geometry changed.",
+        "visual_check": "Product image reviewed against the exact manufacturer page and datasheet photograph."
+      },
+      "manufacturer_datasheet": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/PP2553_Intelligent-I_O-Unit_Issue-6.pdf",
+        "title": "PP2553 Intelligent Input/Output Unit Datasheet",
+        "observed_sha256": "dcef19fafc78066ac2f24f89d327597c82e4c583871352022625f69aa4056a27",
+        "pages": 3,
+        "exact_model_pdf_pages": [
+          1
+        ]
+      },
+      "linked_archive_records": [
+        {
+          "record_id": "apollo-7e9f50267330",
+          "title": "39215-159 Intelligent Input/Output Unit Installation Guide",
+          "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0000707_0001.pdf",
+          "pages": 2,
+          "observed_sha256": "119d0f2e5aa91ce215c9d848ae9170a53d86fa21292f2b664e0bd5d828405cea",
+          "archive_sha256": null,
+          "hash_matches_archive": null,
+          "model_number_pdf_pages": [
+            1
+          ],
+          "association_evidence": "Exact model number verified in document text."
+        }
+      ]
+    },
+    {
+      "device_id": "apollo-xpert7-base-45681-210",
+      "part_number": "45681-210APO",
+      "product_page": "https://apollo-fire.co.uk/products/xp95/base/45681-210apo-xpert-7-base/",
+      "product_page_sha256": "0d9eda721860d031668222bef57c4d34d8c8326ecb48fe816fa9c86d31efa9e4",
+      "picture": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0002106_0001.jpg",
+        "source_file_sha256": "00fca696f7429cd0f7e30a77acee731f40d110c9f2da3b5e51ac2fd509c896a4",
+        "source_dimensions": [
+          450,
+          361
+        ],
+        "output_sha256": "6e8d7319949bd9232b91a9095917ad6daed31b482852446412c10493af3665bb",
+        "transform": "Original product image at original dimensions; alpha composited onto white; WebP encoding only. No hardware geometry changed.",
+        "visual_check": "Product image reviewed against the exact manufacturer page and datasheet photograph."
+      },
+      "manufacturer_datasheet": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0006480_0001.pdf",
+        "title": "PP2633 XP95 Mounting Base Datasheet",
+        "observed_sha256": "8b15ab10a85ed05abc200e34feb7a58c7f5f0e76e4971aa8dd19ce989eec8cab",
+        "pages": 1,
+        "exact_model_pdf_pages": [
+          1
+        ]
+      },
+      "linked_archive_records": [
+        {
+          "record_id": "apollo-0f80e75d8a7b",
+          "title": "XP95/Discovery Mounting Bases Installation Guide",
+          "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0002037_0001.pdf",
+          "pages": 2,
+          "observed_sha256": "a3b11944f1ddcf5ed62e6794c1ab12734508e7c229c900cba5f67fc3dfb27cbd",
+          "archive_sha256": null,
+          "hash_matches_archive": null,
+          "model_number_pdf_pages": [],
+          "association_evidence": "Manufacturer links this base installation guide directly from the exact product page; head cards clearly state it is a base guide."
+        }
+      ]
+    },
+    {
+      "device_id": "apollo-xpert8-base-sa5000-200",
+      "part_number": "SA5000-200APO",
+      "product_page": "https://apollo-fire.co.uk/products/soteria/base/sa5000-200apo-xpert-8-base/",
+      "product_page_sha256": "88e6d8cac6435cb615cdd056aa8d5dc9b8444d0792e96c3d30aff30ba86e683d",
+      "picture": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0000087_0001.jpg",
+        "source_file_sha256": "bd87b56225afae22b5d49c89a15fae024b11918daa32256f86bb979d4a76dbab",
+        "source_dimensions": [
+          450,
+          412
+        ],
+        "output_sha256": "8acfeb14e995c25053f4b73aaad66f044687146fd07007e7163531a440c24bf3",
+        "transform": "Original product image at original dimensions; alpha composited onto white; WebP encoding only. No hardware geometry changed.",
+        "visual_check": "Product image reviewed against the exact manufacturer page and datasheet photograph."
+      },
+      "manufacturer_datasheet": {
+        "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/pp2513_xpert-8-intelligent-mounting-base_issue-5.pdf",
+        "title": "PP2513_XPERT 8 Intelligent Mounting Base_Issue 5.pdf",
+        "observed_sha256": "24708749ade77827b7f17425ffeb3e08c4661592de9cd096fc8668aece6c4a52",
+        "pages": 2,
+        "exact_model_pdf_pages": [
+          1
+        ]
+      },
+      "linked_archive_records": [
+        {
+          "record_id": "apollo-1288f40f26a2",
+          "title": "XPERT 8 Intelligent Mounting Base Installation Guide",
+          "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0001909_0001.pdf",
+          "pages": 2,
+          "observed_sha256": "ccea11eb907ee063520c10e0eb49a4d87c20adbea1dead28de1e05c020f87a6f",
+          "archive_sha256": null,
+          "hash_matches_archive": null,
+          "model_number_pdf_pages": [
+            1
+          ],
+          "association_evidence": "Exact model number verified in document text."
+        }
+      ]
+    }
+  ],
+  "review_notes": [
+    {
+      "id": "xp95-mcp-55100-905",
+      "status": "deferred",
+      "reason": "Official product page says not available for the UK market; replaced with current SA5900-908APO for this first UK-priority batch.",
+      "url": "https://apollo-fire.co.uk/products/xp95/mcp/55100-905apo-xp95-manual-call-point/"
+    },
+    {
+      "id": "discovery-mcp-58100-908",
+      "status": "deferred",
+      "reason": "Official product page says not available for the UK market; retained in research only.",
+      "url": "https://apollo-fire.co.uk/products/xp95/mcp/58100-908apo-discovery-manual-call-point-isolating/"
+    },
+    {
+      "id": "sounder-only-sa5500-300",
+      "status": "rejected-image-association",
+      "reason": "Official product page uses a photograph with a VID lens. Selected the exact SA5500-350 sounder-VID product instead. Its image filename says sa5501 but actual image is red; red-body match cross-checked against PP2667/2026 Issue 4 page 1.",
+      "url": "https://apollo-fire.co.uk/products/xp95/av/sa5500-300apo-intelligent-open-area-sounder-red-body/"
+    },
+    {
+      "id": "soteria-sa5100-710-xp95-support",
+      "status": "unconfirmed",
+      "reason": "Product page and installation guide specify Discovery/CoreProtocol. PP5095/2026 Issue 4 page 1 lists XP95 in Product Overview but omits it in Digital communication technical data. Card uses common supported scope and states the discrepancy.",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/PP5095_Soteria-Multisensor-Detector-Dual-Optical-Heat_Issue-4.pdf"
+    },
+    {
+      "id": "series65-55000-317-archive-link",
+      "status": "resolved-with-supplementary-device-reference",
+      "reason": "Exact PP2613 manufacturer datasheet verified and supplied as a separate device-reference record for offline saving. No matching record existed in the original archive snapshot; neither a Series 65A nor a base manual was substituted.",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0004602_0001.pdf"
+    }
+  ],
+  "validation": {
+    "images_decode": true,
+    "all_part_numbers_in_verified_datasheets": true,
+    "all_record_ids_exist": true,
+    "distinct_archive_records": 9,
+    "archive_backed_devices": 11,
+    "source_only_devices": [],
+    "image_bytes": 195820,
+    "supplementary_manufacturer_documents": 3,
+    "all_device_record_ids_resolve_against_archive_plus_supplement": true,
+    "devices_with_downloadable_documents": 12,
+    "distinct_linked_document_records": 12
+  },
+  "supplementary_documents": [
+    {
+      "id": "device-doc-apollo-44ca8b979263",
+      "brand": "Apollo",
+      "category": "fire",
+      "models": [
+        "55000-620APO",
+        "XP95 Optical Smoke Detector"
+      ],
+      "title": "PP2610 XP95 Optical Smoke Detector Data Sheet",
+      "type": "manufacturer reference",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0006476_0001.pdf",
+      "source": "https://apollo-fire.co.uk/products/xp95/detector/55000-620apo-xp95-optical-smoke-detector/",
+      "revision": "PP2610/2021/Issue 2",
+      "status": "file-hash",
+      "sha256": "44ca8b979263a0afc199e32dfd474353f53a66b1d10009214c35f51ce051309e",
+      "bytes": 503895,
+      "pages": 2,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "apollo-0f80e75d8a7b"
+      ]
+    },
+    {
+      "id": "device-doc-apollo-0c937f028eba",
+      "brand": "Apollo",
+      "category": "fire",
+      "models": [
+        "55000-420APO",
+        "XP95 Heat Detector (A2S)"
+      ],
+      "title": "PP2611 XP95 Heat Detector Data Sheet",
+      "type": "manufacturer reference",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0006477_0001.pdf",
+      "source": "https://apollo-fire.co.uk/products/xp95/detector/55000-420apo-xp95-heat-detector-a2s/",
+      "revision": "PP2611/2018/Issue 1",
+      "status": "file-hash",
+      "sha256": "0c937f028eba869be22bde1e92b0989d60a10af890972723b1bb444c4aae1a5f",
+      "bytes": 573574,
+      "pages": 2,
+      "origin": "device-reference",
+      "related_archive_record_ids": [
+        "apollo-0f80e75d8a7b"
+      ]
+    },
+    {
+      "id": "device-doc-apollo-9fa419f06047",
+      "brand": "Apollo",
+      "category": "fire",
+      "models": [
+        "55000-317APO",
+        "Series 65 Optical Smoke Detector"
+      ],
+      "title": "PP2613 Series 65 Optical Smoke Detector Datasheet",
+      "type": "manufacturer reference",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0004602_0001.pdf",
+      "source": "https://apollo-fire.co.uk/products/series-65/detector/55000-317apo-series-65-optical-smoke-detector/",
+      "revision": "PP2613/2023/Issue 2",
+      "status": "file-hash",
+      "sha256": "9fa419f06047cd85b95db1589151f04028ab9a691ae564982a37ac5f8b82eeb1",
+      "bytes": 331630,
+      "pages": 2,
+      "origin": "device-reference",
+      "related_archive_record_ids": []
+    }
+  ],
+  "independent_review": {
+    "protocol_and_document_associations": "Reviewed against downloaded manufacturer documents and pages; no blocking issue.",
+    "picture_note_correction": "XPander photo is front-on. Removed the claim that a rear wireless module is visible."
+  }
+}

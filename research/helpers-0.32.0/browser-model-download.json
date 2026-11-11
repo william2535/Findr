@@ -1,0 +1,133 @@
+{
+  "startedAt": "2026-11-11T11:27:19.739Z",
+  "actualModel": true,
+  "networkDisabledByHarness": false,
+  "tests": [
+    {
+      "kind": "readiness",
+      "at": "2026-11-11T11:27:28.373Z",
+      "helperCount": 0,
+      "frame": 1,
+      "navigatorOnline": true,
+      "local": {
+        "supported": true,
+        "ready": false,
+        "installed": false,
+        "runtimeReady": true,
+        "missing": [
+          "config.json",
+          "generation_config.json",
+          "tokenizer.json",
+          "tokenizer_config.json",
+          "onnx/model_quantized.onnx"
+        ],
+        "error": null,
+        "model": {
+          "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+          "title": "SmolLM2 360M Instruct · int8 · local CPU",
+          "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+          "dtype": "q8",
+          "backend": "wasm",
+          "parameters": 360000000,
+          "license": "Apache-2.0",
+          "originalModel": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct",
+          "modelCard": "https://huggingface.co/onnx-community/SmolLM2-360M-Instruct-ONNX",
+          "maxInputTokens": 768,
+          "maxNewTokens": 96,
+          "limits": "Compact local language model. Interpretations need source checks. It does not verify electrical procedures, measurements or compatibility. CPU replies can take tens of seconds; saved references remain available.",
+          "bytes": 366642692,
+          "runtimeBytes": 22563501
+        }
+      },
+      "shell": {
+        "ready": false,
+        "reason": "No active FINDR worker"
+      }
+    },
+    {
+      "kind": "Actual pinned model download",
+      "status": "passed",
+      "at": "2026-11-11T11:28:33.705Z",
+      "elapsedMs": 47924.90000000037,
+      "alreadyInstalled": false,
+      "installed": true,
+      "downloadBytes": 366642692,
+      "model": {
+        "id": "onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "title": "SmolLM2 360M Instruct · int8 · local CPU",
+        "revision": "fe7c7db4c8921c9e3fa1c65cfd296fb3b1b1a8f9",
+        "dtype": "q8",
+        "backend": "wasm",
+        "parameters": 360000000,
+        "license": "Apache-2.0",
+        "originalModel": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct",
+        "modelCard": "https://huggingface.co/onnx-community/SmolLM2-360M-Instruct-ONNX",
+        "maxInputTokens": 768,
+        "maxNewTokens": 96,
+        "limits": "Compact local language model. Interpretations need source checks. It does not verify electrical procedures, measurements or compatibility. CPU replies can take tens of seconds; saved references remain available.",
+        "bytes": 366642692,
+        "runtimeBytes": 22563501
+      },
+      "verifiedFiles": [
+        {
+          "path": "config.json",
+          "ready": true,
+          "savedBytes": 961
+        },
+        {
+          "path": "generation_config.json",
+          "ready": true,
+          "savedBytes": 132
+        },
+        {
+          "path": "tokenizer.json",
+          "ready": true,
+          "savedBytes": 3522656
+        },
+        {
+          "path": "tokenizer_config.json",
+          "ready": true,
+          "savedBytes": 3794
+        },
+        {
+          "path": "onnx/model_quantized.onnx",
+          "ready": true,
+          "savedBytes": 363115149
+        }
+      ],
+      "progress": [
+        {
+          "phase": "verify",
+          "file": "config.json",
+          "completed": 961,
+          "total": 961
+        },
+        {
+          "phase": "verify",
+          "file": "generation_config.json",
+          "completed": 132,
+          "total": 132
+        },
+        {
+          "phase": "verify",
+          "file": "tokenizer.json",
+          "completed": 3522656,
+          "total": 3522656
+        },
+        {
+          "phase": "verify",
+          "file": "tokenizer_config.json",
+          "completed": 3794,
+          "total": 3794
+        },
+        {
+          "phase": "verify",
+          "file": "onnx/model_quantized.onnx",
+          "completed": 363115149,
+          "total": 363115149
+        }
+      ]
+    }
+  ],
+  "frames": 1
+}

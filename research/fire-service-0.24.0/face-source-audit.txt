@@ -1,0 +1,118 @@
+FINDR 0.24.0 — XFP and TWINFLEXpro² face source audit
+2026-11-02
+
+Source identity
+
+C-TEC XFP 16-zone plastic: official engineering manual DFU1200510 Rev 3,
+36 PDF pages, c-tec-6a8ae5ddd7bc. Front controls p14; access level 3 and
+Memory Unlock PCB detail p18. This supersedes the initially inspected
+mirror of Rev 1; both cover and footer of the official document identify Rev 3.
+SHA-256 dd2afe39b0a4b2fcb2ad6c83559edc812ab0d43b8db8e3f23423a13e8eed556d
+https://c-tec.com/download?wpdmdl=12092
+
+C-TEC XFP 32-zone metal: official engineering manual DFU2200510 Rev 2,
+36 PDF pages, c-tec-b03be75d8eb7. Front controls and separate key/instruction
+strip p14; access level 3 and PLK2 NVM link detail p18.
+SHA-256 a56ad3e3160fa617e4d024dba54bc0e378f5542855be71ee3a35b90083b1faea
+https://c-tec.com/download?wpdmdl=12095
+
+Fike TWINFLEXpro²: current engineering/commissioning manual 26-0959 Rev 18,
+October 2020, V3.00+, 80 PDF pages, fike-6cfbefcbbb78. Cover and page headings
+identify pro² even though the publisher URL retains the older TwinflexPro name.
+Write Enable original photograph p19; front with keypad flap open p21;
+physical key labels and access indicators p24.
+SHA-256 19a3a00c9300574c53573cbdda4eb98fa240e6a7c633bbd5003fec9b439ef5cd
+https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/TwinflexPro/Conventional%20Control%20Panels/Manuals/TWINFLEXpro%20Panel%20Eng&ComManual%2026-0959-18.pdf
+
+Existing repository photographs inspected directly
+
+public/app/panels/c-tec-xfp-16-zone.webp
+SHA-256 79a0b8d170154ef2c0201fae0c70bdda5f6aa1eb0f129ae07c82313aaea9fab8
+public/app/panels/c-tec-xfp-32-zone.webp
+SHA-256 69e8ef74d594ab740c5b6f33ac5dc021d652caf52109ce2df682e1365a90b12f
+public/app/panels/fike-twinflexpro2.webp
+SHA-256 783aee2a8875d36988cd290e5918c9b00b0ec149835560486aa7f10fe5408b6a
+
+Asset provenance and rendering
+
+XFP front fascia and instructions are original colour PDF vector figures
+rendered at 3x using PyMuPDF. Exact PDF page numbers and clipping rectangles
+in PDF points are recorded in face-asset-clips.json. Live LCD content,
+indicator states and transparent button hit areas are overlaid. Original
+printed example LCD text and lit lamps are covered completely by runtime
+state. The cabinet outline and finish use CSS derived from the corresponding
+photograph; the plastic and metal cabinet layouts remain distinct. A small
+C-TEC/XFP brand mark supplements the original manual figure to reflect the
+pictured product. No fictional controls are added to either fascia.
+
+The TWINFLEXpro² front figure is the original embedded PNG from Rev18 p21,
+PDF image xref76, 689x1244. The Write Enable detail is the original embedded
+JPEG from p19, xref66, 300x163. They are copied without image generation or
+invented component detail. The interactive front uses HTML/CSS at positions
+measured against the p21 figure. The blue upper fascia, red alarm buttons,
+cream/gray cabinet, right-hand seam and corner fasteners follow the photo.
+The lower system-indication strip is charcoal with light lettering and
+pale inactive indicator windows, as visible through the closed keypad flap
+in that photograph; its colour is not inferred from the monochrome diagram.
+The hidden programming keypad is rendered with neutral gray controls; its
+colour cannot be verified from the closed-flap photograph. Its button names,
+order, positions and numeric/letter legends follow the open-flap manual
+figure. This is a flat interactive training illustration, not a photograph.
+The original picture and original open-flap manual figure are both available
+through the in-app comparison option.
+
+Specific distinctions preserved
+
+- XFP 16 has a left instruction column, central compact arrow diamond,
+  2x8 zone bank and an access key in the same fascia.
+- XFP 32 has a left control cluster, right two-line LCD and 2x16 zone bank,
+  with the access key in the separate lower instruction strip.
+- XFP keeps Up/1, Accept/2, Down/3, Escape/4, Menu, More information,
+  Silence internal sounder, Control panel reset, Investigate and
+  Silence/resound sounders. Access uses the existing code/menu flow;
+  opening the cover is not represented as entering level 3.
+- A code-granted access level does not visually turn the physical keyswitch.
+  The independent keySwitch/keyEnabled state controls its blade.
+- TWINFLEXpro² has four separate alarm keys left-to-right: Silence alarms,
+  Reset system, Sound alarms, Silence buzzer. There is no combined invented
+  Silence/Resound key. Controls Enabled indicator and key are separate.
+- Its lower-left keypad flap is independent of the right-hand access cover.
+  Closing the keypad flap removes the hidden keys from the tab order. Only
+  removing the right cover displays the original Write Enable switch detail.
+  The right-hand interior is deliberately represented as a labelled source
+  detail rather than an invented full board layout.
+- TWINFLEXpro² keeps five navigation keys plus digits, * / Esc and # / left
+  arrow. Its eight red zone LEDs and twelve system-indication labels remain
+  in source order. Four display rows are used; XFP has two.
+- Flashing LEDs honour reduced-motion preference with a static outline;
+  controls-enabled slow/fast states have separate CSS rates when supplied
+  by the engine.
+
+Verification
+
+node --test tests/fire024-faces.test.mjs: 6 tests passed. Assertions cover
+variant-specific zone count and source images, exact key sets and order,
+cover/keypad independence, hints on physical controls, display escaping,
+LED off/on/flashing mapping and local source asset presence.
+
+Standalone Chromium source-comparison renders checked at desktop width1440
+and phone width390. All three cabinets, both Fit and Large modes: no document
+horizontal overflow; the panel viewport scrolls internally. Large mode
+minimum physical target dimensions: XFP16 45x44px, XFP32 69.98x68.59px,
+TWINFLEXpro² 51.08x49.48px. The exact results are in face-measurements.json.
+Fit preserves the real cabinet proportions and therefore has smaller keys;
+controllers expose Enlarge physical controls for touch use. Face class
+selectors: .xfp-face-viewport, .xfp-face-large, .xfp-cabinet-16/-32,
+.twinflex-face-viewport, .twinflex-face-large, .twinflex-cabinet.
+
+Standalone visual captures (temporary review artifacts):
+/tmp/findr-face024/xfp16-1440-fit.png
+/tmp/findr-face024/xfp32-1440-fit.png
+/tmp/findr-face024/twinflex-1440-fit.png
+/tmp/findr-face024/xfp16-390-fit.png
+/tmp/findr-face024/xfp32-390-fit.png
+/tmp/findr-face024/twinflex-390-fit.png
+
+Integrated controller, offline, release and publication checks are recorded
+separately by the integration/QA work. These measurements alone do not claim
+hardware validation, a published website or a signed APK.

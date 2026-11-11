@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-10",
+  "reviewMethod": "Downloaded real manufacturer-authored PDFs from the existing Manual Archives catalogue; compared SHA-256 with catalogue; reviewed selectable text at one-based PDF page positions; checked all runtime quote anchors against real page text.",
+  "synthetic": false,
+  "sources": [
+    {
+      "recordId": "advanced-8f3ba6ecfc7f",
+      "sha256": "5b0e02d2f682d6039474e94716b2f75f10868dc33fa3e6764c0b43c3c50b86a4",
+      "title": "Advanced MxPro4 — User guide",
+      "documentNumber": "680-015",
+      "revision": "10",
+      "models": [
+        "MxPro4",
+        "Mx-4100",
+        "Mx-4100/L",
+        "Mx-4200",
+        "Mx-4200/D",
+        "Mx-4400",
+        "Mx-4400/D",
+        "Mx-4400/LE",
+        "Mx-4800"
+      ],
+      "pageCount": 40,
+      "url": "https://irp-cdn.multiscreensite.com/cdbd5f30/files/uploaded/Liberty%20Systems_Advanced%20MxPro4%20Fire%20Alarm%20User%20Manual.pdf",
+      "bytes": 927783,
+      "sha256Verified": true,
+      "pagePositions": "For the reviewed pages, printed page numbers equal one-based PDF positions.",
+      "procedureSection": "3.10.1 Test – Zones",
+      "procedurePages": [
+        31,
+        32
+      ],
+      "accessPages": [
+        10
+      ],
+      "menuPages": [
+        17,
+        18
+      ],
+      "coveragePage": 5,
+      "documentIdentityPage": 40,
+      "quoteAnchorsChecked": 28,
+      "quotedPages": [
+        5,
+        10,
+        17,
+        18,
+        31,
+        32,
+        40
+      ]
+    },
+    {
+      "recordId": "advanced-0254975c10bd",
+      "sha256": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+      "title": "Advanced MxPro5 — User guide",
+      "documentNumber": "680-166",
+      "revision": "04",
+      "models": [
+        "MxPro5",
+        "Mx-5100",
+        "Mx-5200",
+        "Mx-5400",
+        "Mx-5800",
+        "Mx-5100V",
+        "Mx-5200V",
+        "Mx-5400V",
+        "Mx-5800V",
+        "Mx-5100N",
+        "Mx-5200N",
+        "Mx-5400N",
+        "Mx-5800N"
+      ],
+      "pageCount": 43,
+      "url": "https://irp-cdn.multiscreensite.com/cdbd5f30/files/uploaded/Liberty%20Systems_Advanced%20MxPro5%20Fire%20Alarm%20User%20Manual.pdf",
+      "bytes": 1079368,
+      "sha256Verified": true,
+      "pagePositions": "For the reviewed pages, printed page numbers equal one-based PDF positions.",
+      "procedureSection": "3.13.1 Test – Zones",
+      "procedurePages": [
+        33,
+        34
+      ],
+      "accessPages": [
+        10,
+        11
+      ],
+      "menuPages": [
+        17,
+        18,
+        19
+      ],
+      "coveragePage": 5,
+      "documentIdentityPage": 43,
+      "quoteAnchorsChecked": 28,
+      "quotedPages": [
+        5,
+        10,
+        11,
+        18,
+        19,
+        33,
+        34,
+        43
+      ]
+    }
+  ],
+  "familyQuestionPolicy": {
+    "question": "How do I do a walk test on an MxPro panel?",
+    "equivalentProcedureVerified": true,
+    "basis": "Both reviewed guides describe the same TEST → ZONES sequence, sounder choice, zone selection, activation, automatic reset and FINISHED TEST exit. Their Level 2 main menus differ elsewhere; these differences do not change the walk-test route.",
+    "oneDocumentCoversBoth": false,
+    "answerPolicy": "Allow family-worded questions, but clearly scope the answer to the proposed and downloaded manual. Download approval is not confirmation of the installed panel model. A question explicitly naming MxPro4 or MxPro5 must use that model family’s evidence.",
+    "unknownVersions": "No claim is made that later revisions, firmware changes, other panel families or installation-specific output programming behave identically."
+  },
+  "sourceLimits": [
+    "These user guides describe programmed sounder operation in walk test. They do not establish that all other outputs or remote signalling are suppressed; the answer must not claim this.",
+    "Esc alone does not establish restoration: FINISHED TEST cancels all zone tests; KEEP ZONES IN TEST leaves them active.",
+    "No default access code is supplied or inferred.",
+    "Manufacturer-authored documents are hosted by the existing catalogue’s third-party source. Their file hashes identify the reviewed copies; no manufacturer endorsement or current-revision guarantee is implied."
+  ]
+}

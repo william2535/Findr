@@ -1,0 +1,157 @@
+{
+  "browser": "webkit",
+  "oldManifest": {
+    "build": "480f4afaee4b",
+    "version": "0.26.0",
+    "assets": 1298
+  },
+  "newManifest": {
+    "build": "61a477861f3a",
+    "version": "0.27.0",
+    "assets": 1323
+  },
+  "checks": [],
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15",
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  "passed": false,
+  "failure": {
+    "message": "Offline release 0.26.0 did not become ready: {\"ready\":false,\"build\":\"480f4afaee4b\",\"version\":\"0.26.0\",\"verification\":\"sha256-v1\",\"controlled\":false,\"workerState\":\"activated\"}",
+    "stack": "Error: Offline release 0.26.0 did not become ready: {\"ready\":false,\"build\":\"480f4afaee4b\",\"version\":\"0.26.0\",\"verification\":\"sha256-v1\",\"controlled\":false,\"workerState\":\"activated\"}\n    at ready (file:///workspace/sites/findr/scripts/verify-pdf-upgrade027.mjs:25:1044)\n    at async file:///workspace/sites/findr/scripts/verify-pdf-upgrade027.mjs:29:17"
+  },
+  "offlineDiagnostic": {
+    "messages": [
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1020,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1032,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1044,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1056,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1068,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1080,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1092,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1104,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1116,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1128,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1140,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1152,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1164,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1176,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1188,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1200,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1212,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1224,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1236,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1248,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1260,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1272,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1284,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1296,
+        "total": 1298
+      },
+      {
+        "type": "OFFLINE_PROGRESS",
+        "completed": 1298,
+        "total": 1298
+      }
+    ],
+    "active": "activated"
+  },
+  "seed": null
+}

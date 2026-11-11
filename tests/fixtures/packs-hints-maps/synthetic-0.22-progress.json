@@ -1,0 +1,589 @@
+{
+  "synthetic": true,
+  "baseline": "e8691d604f07fc882a803892d4c6ca7f8722a869",
+  "description": "Fictional prior CFP and Sigma records normalized by the committed 0.22.0 engine; no real panel or customer data.",
+  "sourceFixture": "tests/fixtures/wiring/synthetic-0.21-progress.json",
+  "engineSha256": "8ce6ba2593e360625087e3fa3abee919930c345a308a8c3858a5755be31bb33f",
+  "profiles": {
+    "c-tec-cfp-standard": {
+      "version": 1,
+      "profileId": "c-tec-cfp-standard",
+      "state": {
+        "version": 1,
+        "profileId": "c-tec-cfp-standard",
+        "sourceVersion": "2026-11-02.3",
+        "scenarioId": "normal",
+        "sequence": 9,
+        "keyEnabled": true,
+        "codeAccess": false,
+        "codeBuffer": "",
+        "inputs": {
+          "Z1": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z2": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z3": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z4": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z5": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z6": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z7": {
+            "alarm": false,
+            "fault": false
+          },
+          "Z8": {
+            "alarm": false,
+            "fault": false
+          }
+        },
+        "faults": {
+          "power": false,
+          "sounder": false
+        },
+        "fireZones": [],
+        "silencedZones": [],
+        "soundersRequested": false,
+        "evacuation": false,
+        "buzzerSilenced": false,
+        "disabledZones": [],
+        "disabledOutputs": [],
+        "testZones": [],
+        "selection": null,
+        "sigmaMode": null,
+        "sigmaZone": "Z1",
+        "modeChooser": false,
+        "lampTest": false,
+        "log": [
+          {
+            "key": "KEYSWITCH",
+            "kind": "key",
+            "ok": true,
+            "message": "Simulated enable key turned on. Authorised controls are available.",
+            "sequence": 1,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-user-rev2",
+                "pdfPage": 6,
+                "printedPage": "6",
+                "section": "Control fascia / access"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "cover",
+            "ok": true,
+            "message": "Training cover removed. Press the actual SW8 control to enter access level 3.",
+            "sequence": 2,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "delay-setting",
+            "ok": true,
+            "message": "VR1 set to 3 minute(s) for subsequent delayed alarms in this fictional installation.",
+            "sequence": 3,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": ""
+              },
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": "Function sequence"
+              }
+            ]
+          },
+          {
+            "key": "ENGINEER",
+            "kind": "engineering",
+            "ok": true,
+            "message": "Access level 3: Coincidence. Unconfirmed training drafts are not applied.",
+            "sequence": 4,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": ""
+              },
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": "Function sequence"
+              }
+            ]
+          },
+          {
+            "key": "NEXT_OPTION",
+            "kind": "engineering",
+            "ok": true,
+            "message": "Z1-Z2 selected. Enable/Disable stages a change; Next Option confirms it.",
+            "sequence": 5,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": ""
+              },
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": "Function sequence"
+              }
+            ]
+          },
+          {
+            "key": "TOGGLE",
+            "kind": "engineering",
+            "ok": true,
+            "message": "Z1-Z2 staged on. Press Next Option to confirm.",
+            "sequence": 6,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": ""
+              },
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": "Function sequence"
+              }
+            ]
+          },
+          {
+            "key": "NEXT_OPTION",
+            "kind": "engineering",
+            "ok": true,
+            "message": "Z1-Z2 confirmed. Z3-Z4 selected.",
+            "sequence": 7,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": ""
+              },
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": "Function sequence"
+              }
+            ]
+          },
+          {
+            "key": "EXIT",
+            "kind": "engineering",
+            "ok": true,
+            "message": "Access level 3 exited. Confirmed settings remain; an unconfirmed training draft was not applied.",
+            "sequence": 8,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": ""
+              },
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": "Function sequence"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "cover",
+            "ok": true,
+            "message": "Training cover refitted.",
+            "sequence": 9,
+            "sourceRefs": [
+              {
+                "sourceId": "cfp-engineer-rev1",
+                "pdfPage": 16,
+                "printedPage": "16"
+              }
+            ]
+          }
+        ],
+        "lastAction": {
+          "key": "",
+          "kind": "cover",
+          "ok": true,
+          "message": "Training cover refitted.",
+          "sequence": 9,
+          "sourceRefs": [
+            {
+              "sourceId": "cfp-engineer-rev1",
+              "pdfPage": 16,
+              "printedPage": "16"
+            }
+          ]
+        },
+        "cfpEngineeringVersion": 1,
+        "coverOpen": false,
+        "engineering": null,
+        "settings": {
+          "coincidencePairs": [
+            "Z1-Z2"
+          ],
+          "nonLatchingZones": [],
+          "delayedZones": [],
+          "delayedOutputs": [],
+          "delayMinutes": 3,
+          "resoundNewZone": true,
+          "delaysEnabled": true
+        },
+        "simulationSeconds": 0,
+        "pendingDelays": {},
+        "testStartedAt": {},
+        "manualOverride": false,
+        "overrideDelays": false,
+        "diagnostics": {
+          "systemFaults": [],
+          "systemInputs": [],
+          "repeaters": []
+        }
+      },
+      "completed": {
+        "cfp-code-access": {
+          "at": "2026-11-01T12:00:00.000Z",
+          "withHints": true
+        }
+      },
+      "hints": true,
+      "faceZoom": "fit"
+    },
+    "kentec-sigma-cp": {
+      "version": 1,
+      "profileId": "kentec-sigma-cp",
+      "state": {
+        "version": 1,
+        "profileId": "kentec-sigma-cp",
+        "sourceVersion": "2026-11-02.3",
+        "scenarioId": "normal",
+        "sequence": 10,
+        "keyEnabled": true,
+        "codeAccess": false,
+        "codeBuffer": "",
+        "inputs": {
+          "Z1": {
+            "alarm": false,
+            "fault": false,
+            "alarmKind": "detector"
+          },
+          "Z2": {
+            "alarm": false,
+            "fault": false,
+            "alarmKind": "detector"
+          },
+          "Z3": {
+            "alarm": false,
+            "fault": false,
+            "alarmKind": "detector"
+          },
+          "Z4": {
+            "alarm": false,
+            "fault": false,
+            "alarmKind": "detector"
+          },
+          "Z5": {
+            "alarm": false,
+            "fault": false,
+            "alarmKind": "detector"
+          },
+          "Z6": {
+            "alarm": false,
+            "fault": false,
+            "alarmKind": "detector"
+          },
+          "Z7": {
+            "alarm": false,
+            "fault": false,
+            "alarmKind": "detector"
+          },
+          "Z8": {
+            "alarm": false,
+            "fault": false,
+            "alarmKind": "detector"
+          }
+        },
+        "faults": {
+          "power": false,
+          "sounder": false
+        },
+        "fireZones": [],
+        "silencedZones": [],
+        "soundersRequested": false,
+        "evacuation": false,
+        "buzzerSilenced": false,
+        "disabledZones": [],
+        "disabledOutputs": [],
+        "testZones": [],
+        "selection": null,
+        "sigmaMode": null,
+        "sigmaZone": "Z1",
+        "modeChooser": false,
+        "lampTest": false,
+        "log": [
+          {
+            "key": "KEYSWITCH",
+            "kind": "key",
+            "ok": true,
+            "message": "Simulated enable key turned on. Authorised controls are available.",
+            "sequence": 1,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 9,
+                "printedPage": "9",
+                "section": "Control fascia / access"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "cover",
+            "ok": true,
+            "message": "Training cover opened. Write Enable is a separate ON/OFF control.",
+            "sequence": 2,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 16,
+                "printedPage": "16",
+                "section": ""
+              },
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": ""
+              },
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 18,
+                "printedPage": "18",
+                "section": ""
+              },
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 19,
+                "printedPage": "19",
+                "section": ""
+              },
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 23,
+                "printedPage": "23",
+                "section": ""
+              }
+            ]
+          },
+          {
+            "key": "WRITE_ENABLE",
+            "kind": "sigma-engineering",
+            "ok": true,
+            "message": "Write Enable ON: level 3 configuration. The display starting point is fictional; use Mode (+10), Select (+1) and Enter to set a documented option.",
+            "sequence": 3,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": "Table 8 — configuration codes"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "sigma-configuration-target",
+            "ok": true,
+            "message": "Training starting point 01 loaded. This is not a physical Mode/Select sequence or a claim about code wrap.",
+            "sequence": 4,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": "Table 8 — configuration codes"
+              }
+            ]
+          },
+          {
+            "key": "ENTER",
+            "kind": "sigma-engineering",
+            "ok": true,
+            "message": "Code 01 set: Sounder delay: 1 minute. The flashing units dot records this training setting.",
+            "sequence": 5,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": "Table 8 — configuration codes"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "sigma-configuration-target",
+            "ok": true,
+            "message": "Training starting point 31 loaded. This is not a physical Mode/Select sequence or a claim about code wrap.",
+            "sequence": 6,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": "Table 8 — configuration codes"
+              }
+            ]
+          },
+          {
+            "key": "ENTER",
+            "kind": "sigma-engineering",
+            "ok": true,
+            "message": "Code 31 set: Zone 1: Detector alarm delayed. The flashing units dot records this training setting.",
+            "sequence": 7,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": "Table 8 — configuration codes"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "sigma-configuration-target",
+            "ok": true,
+            "message": "Training starting point 29 loaded. This is not a physical Mode/Select sequence or a claim about code wrap.",
+            "sequence": 8,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": "Table 8 — configuration codes"
+              }
+            ]
+          },
+          {
+            "key": "ENTER",
+            "kind": "sigma-engineering",
+            "ok": true,
+            "message": "Code 29 set: Do not re-sound alarms from another zone. The flashing units dot records this training setting.",
+            "sequence": 9,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": "Table 8 — configuration codes"
+              }
+            ]
+          },
+          {
+            "key": "",
+            "kind": "cover",
+            "ok": true,
+            "message": "Training cover refitted. Write Enable remains ON; reopen to switch it OFF.",
+            "sequence": 10,
+            "sourceRefs": [
+              {
+                "sourceId": "sigma-main-25",
+                "pdfPage": 17,
+                "printedPage": "17",
+                "section": "Table 8 — configuration codes"
+              }
+            ]
+          }
+        ],
+        "lastAction": {
+          "key": "",
+          "kind": "cover",
+          "ok": true,
+          "message": "Training cover refitted. Write Enable remains ON; reopen to switch it OFF.",
+          "sequence": 10,
+          "sourceRefs": [
+            {
+              "sourceId": "sigma-main-25",
+              "pdfPage": 17,
+              "printedPage": "17",
+              "section": "Table 8 — configuration codes"
+            }
+          ]
+        },
+        "sigmaEngineeringVersion": 1,
+        "coverOpen": false,
+        "writeEnabled": true,
+        "engineering": {
+          "code": "29"
+        },
+        "sigmaLastCode": "29",
+        "sigmaConfig": {
+          "codes": [
+            "10",
+            "31",
+            "29",
+            "01"
+          ],
+          "delaysEnabled": false
+        },
+        "sigmaDiagnostics": {
+          "active": [],
+          "cpuLatched": false
+        },
+        "simulationSeconds": 0,
+        "pendingDelays": {},
+        "pendingNonLatch": {},
+        "sigmaManualSound": false,
+        "sigmaLocalRelayRequested": false,
+        "trainingCheckpoints": []
+      },
+      "completed": {
+        "sigma-lamps": {
+          "at": "2026-11-01T12:00:00.000Z",
+          "withHints": true
+        }
+      },
+      "hints": true,
+      "faceZoom": "fit"
+    }
+  }
+}

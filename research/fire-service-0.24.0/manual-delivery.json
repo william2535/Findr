@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-11-02T22:04:18.287567+00:00",
+  "method": "Actual browser fetch through the existing public FINDR manual relay before the 0.24.0 deployment; no API interception. This checks delivery, not publication of the new application.",
+  "baseUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site",
+  "results": [
+    {
+      "id": "c-tec-b03be75d8eb7",
+      "status": 200,
+      "bytes": 1146161,
+      "sha256": "a56ad3e3160fa617e4d024dba54bc0e378f5542855be71ee3a35b90083b1faea"
+    },
+    {
+      "id": "fike-6cfbefcbbb78",
+      "status": 200,
+      "bytes": 5328796,
+      "sha256": "19a3a00c9300574c53573cbdda4eb98fa240e6a7c633bbd5003fec9b439ef5cd"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+[
+  {
+    "id": "gent-vigilon-compact",
+    "brand": "Gent",
+    "model": "Vigilon Compact",
+    "category": "fire",
+    "aliases": [
+      "COMPACT-24-N",
+      "Vigilon Compact"
+    ],
+    "image": "gent-vigilon-compact.jpg",
+    "source_image_url": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/document-lists/gent-download-center/image-library/addressable-systems/Vigilon%20Compact1.jpg",
+    "source_page_url": "https://buildings.honeywell.com/gb/en/brands/our-brands/gent/tools-and-resources/download-centre",
+    "record_ids": [
+      "gent-6f93f6f727f3",
+      "facp-d442a96b-9a39-4e76-b773-5f7676e175dc",
+      "facp-7538be76-f958-46e4-99f6-c718601bb349"
+    ],
+    "identification_notes": "Light grey case, recessed green LCD, two oval Previous/Next buttons, right-side key lock. Check label: cabinet appearance alone does not establish loop count or firmware.",
+    "applicability_limits": "Visual comparison aid only. Confirm the physical model label, product code, protocol and revision before using a manual. Linked records retain catalogue evidence and may be historical or source-listed.",
+    "image_credit": "Honeywell Gent product image",
+    "image_type": "official-manufacturer-product-image"
+  },
+  {
+    "id": "gent-compact-plus",
+    "brand": "Gent",
+    "model": "Compact Plus",
+    "category": "fire",
+    "aliases": [
+      "Vigilon Compact Plus",
+      "COMPACT-PLUS"
+    ],
+    "image": "gent-compact-plus.jpg",
+    "source_image_url": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/document-lists/gent-download-center/image-library/addressable-systems/Compact-Plus-face-view1.jpg",
+    "source_page_url": "https://buildings.honeywell.com/gb/en/brands/our-brands/gent/tools-and-resources/download-centre",
+    "record_ids": [],
+    "identification_notes": "Dark case, red border around LCD/zone-indicator area, two oval Previous/Next buttons and right-side key lock. Similar to Vigilon Plus: confirm the model label.",
+    "applicability_limits": "Visual comparison aid only. Confirm the physical model label, product code, protocol and revision before using a manual. Linked records retain catalogue evidence and may be historical or source-listed.",
+    "image_credit": "Honeywell Gent product image",
+    "image_type": "official-manufacturer-product-image"
+  },
+  {
+    "id": "gent-vigilon-plus",
+    "brand": "Gent",
+    "model": "Vigilon Plus",
+    "category": "fire",
+    "aliases": [
+      "Vigilon Plus 4 loop",
+      "Vigilon Plus 6 loop",
+      "VIGPLUS-24"
+    ],
+    "image": "gent-vigilon-plus.png",
+    "source_image_url": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/document-lists/gent-download-center/image-library/addressable-systems/Vigilon-plus-front-view.png",
+    "source_page_url": "https://buildings.honeywell.com/gb/en/brands/our-brands/gent/tools-and-resources/download-centre",
+    "record_ids": [
+      "facp-56e1a364-8eb4-48b9-a0d1-4152226bca32",
+      "facp-5bb98c9f-d1d2-432f-a17a-4e80e2852d0d"
+    ],
+    "identification_notes": "Dark case, red border around display, two oval buttons and key lock. Can resemble Compact Plus; use the model label to distinguish them.",
+    "applicability_limits": "Visual comparison aid only. Confirm the physical model label, product code, protocol and revision before using a manual. Linked records retain catalogue evidence and may be historical or source-listed.",
+    "image_credit": "Honeywell Gent product image",
+    "image_type": "official-manufacturer-product-image"
+  },
+  {
+    "id": "gent-nano",
+    "brand": "Gent",
+    "model": "Nano",
+    "category": "fire",
+    "aliases": [
+      "NANO-24",
+      "Nano v2"
+    ],
+    "image": "gent-nano-alt.jpg",
+    "source_image_url": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/document-lists/gent-download-center/image-library/addressable-systems/Nano_retouch%20FLAT%20WHITE%20BACK.jpg",
+    "source_page_url": "https://buildings.honeywell.com/gb/en/brands/our-brands/gent/tools-and-resources/download-centre",
+    "record_ids": [
+      "gent-8d26fbbe29f6"
+    ],
+    "identification_notes": "Tall black central fascia with pale side strips, LCD, row of five small buttons, and three large FAULT / POWER / FIRE indicator bars.",
+    "applicability_limits": "Visual comparison aid only. Confirm the physical model label, product code, protocol and revision before using a manual. Linked records retain catalogue evidence and may be historical or source-listed.",
+    "image_credit": "Honeywell Gent product image",
+    "image_type": "official-manufacturer-product-image"
+  },
+  {
+    "id": "gent-xenex",
+    "brand": "Gent",
+    "model": "Xenex",
+    "category": "fire",
+    "aliases": [
+      "13270",
+      "Xenex 2",
+      "Xenex 4",
+      "Xenex 8"
+    ],
+    "image": "gent-xenex.jpg",
+    "source_image_url": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/document-lists/gent-download-center/image-library/conventional-systems/Xenex.jpg",
+    "source_page_url": "https://buildings.honeywell.com/gb/en/brands/our-brands/gent/tools-and-resources/download-centre",
+    "record_ids": [
+      "gent-33fdf5de07b1",
+      "gent-88d7bb063fd0"
+    ],
+    "identification_notes": "Wide light grey cabinet, black horizontal fascia, numeric keypad on the right, zone lamps and no text LCD. Confirm zone count and variant from the label.",
+    "applicability_limits": "Visual comparison aid only. Confirm the physical model label, product code, protocol and revision before using a manual. Linked records retain catalogue evidence and may be historical or source-listed.",
+    "image_credit": "Honeywell Gent product image",
+    "image_type": "official-manufacturer-product-image"
+  },
+  {
+    "id": "advanced-mxpro5",
+    "brand": "Advanced",
+    "model": "MxPro 5",
+    "category": "fire",
+    "aliases": [
+      "MxPro5",
+      "MX-5101",
+      "MX-5201",
+      "MX-5202",
+      "MX-5404"
+    ],
+    "image": "advanced-mxpro5.jpg",
+    "source_image_url": "https://www.advancedco.com/wp-content/uploads/SSD5596.12-MxPro-Web-Images-v1_06_1080-x-1080.jpg",
+    "source_page_url": "https://www.advancedco.com/product/advanced-mxpro-5/",
+    "record_ids": [
+      "advanced-0254975c10bd",
+      "advanced-a18ea5cccf04",
+      "advanced-aa801f2a3d3c"
+    ],
+    "identification_notes": "Pale metal cabinet, black upper fascia, LCD, circular navigation control, numeric keypad and MxPro5 marking. Cabinet sizes vary.",
+    "applicability_limits": "Representative current MxPro 5 enclosure. Confirm generation, protocol and product code. Historical repo manuals are not automatically applicable to a current-generation panel.",
+    "image_credit": "Advanced Electronics product image",
+    "image_type": "official-manufacturer-product-image"
+  },
+  {
+    "id": "protec-6500",
+    "brand": "Protec",
+    "model": "6500",
+    "category": "fire",
+    "aliases": [
+      "Algo-Tec 6500",
+      "6500E"
+    ],
+    "image": "protec-6500.png",
+    "source_image_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6500_panel.png",
+    "source_page_url": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/panels/6500-single-loop-fire-alarm-panel/",
+    "record_ids": [
+      "protec-342a0d542c7d",
+      "protec-aee99ea8ed2b"
+    ],
+    "identification_notes": "Storm grey moulded enclosure with a colour touchscreen and 6500 marking. Confirm exact model and whether it is a standalone, networked or conversion installation.",
+    "applicability_limits": "Visual comparison aid only. Confirm model, firmware, loop protocol and manual issue before use; upgrade cabinets and variants can look different.",
+    "image_credit": "Protec Fire and Security Group product image",
+    "image_type": "official-manufacturer-product-image"
+  }
+]

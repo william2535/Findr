@@ -1,0 +1,88 @@
+{
+  "loadMs": 0.09999999962747097,
+  "generationMs": 2288.4000000003725,
+  "result": [
+    {
+      "generated_text": [
+        {
+          "role": "system",
+          "content": "You are FINDR, a concise engineering manual assistant. Use only the provided reference. Do not invent a procedure."
+        },
+        {
+          "role": "user",
+          "content": "REFERENCE (manual page 12): To view the event log, select View, then Log. Use the arrow keys to scroll through events. This menu does not change the configuration.\nQUESTION: how do i chek the evnt histry on this panel?"
+        },
+        {
+          "role": "assistant",
+          "content": "Select View, then Log. Use the arrow keys to scroll through events."
+        },
+        {
+          "role": "user",
+          "content": "where is that menu?"
+        },
+        {
+          "role": "assistant",
+          "content": "You can view the event log on the panel by selecting View, then Log."
+        }
+      ]
+    }
+  ],
+  "updates": [
+    {
+      "t": "You ",
+      "at": 1359.5
+    },
+    {
+      "t": "can ",
+      "at": 1429.300000000745
+    },
+    {
+      "t": "view ",
+      "at": 1498
+    },
+    {
+      "t": "the ",
+      "at": 1559.699999999255
+    },
+    {
+      "t": "event ",
+      "at": 1623
+    },
+    {
+      "t": "log ",
+      "at": 1684.199999999255
+    },
+    {
+      "t": "on ",
+      "at": 1760.5
+    },
+    {
+      "t": "the ",
+      "at": 1817.699999999255
+    },
+    {
+      "t": "panel ",
+      "at": 1872.5
+    },
+    {
+      "t": "by ",
+      "at": 1932.5999999996275
+    },
+    {
+      "t": "selecting ",
+      "at": 1988.0999999996275
+    },
+    {
+      "t": "View, ",
+      "at": 2095.0999999996275
+    },
+    {
+      "t": "then ",
+      "at": 2160.5999999996275
+    },
+    {
+      "t": "Log.",
+      "at": 2287.800000000745
+    }
+  ]
+}

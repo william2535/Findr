@@ -1,0 +1,23 @@
+{
+  "release": "0.13.1",
+  "base_commit": "bff915ab7470eb4d463350a7b38d844b1a526c5e",
+  "pictured_device_families": 24,
+  "device_packs": 3,
+  "active_pack_documents": 22,
+  "supplementary_references": 17,
+  "preserved_source_only_references": [
+    "device-doc-c-tec-c355db94ca7a",
+    "device-doc-c-tec-af925ff0ac67",
+    "device-doc-c-tec-9310045e0f57",
+    "device-doc-c-tec-8533dbee907d",
+    "device-doc-c-tec-7da7a3d9afa0",
+    "device-doc-c-tec-c1e5b7a7bd89"
+  ],
+  "replacement_references": [
+    "device-doc-c-tec-97eb0a9793d9",
+    "device-doc-c-tec-41e341b9c547",
+    "device-doc-c-tec-7ad9393daf5b",
+    "device-doc-c-tec-df7988f16dc3"
+  ],
+  "panel_catalogue_unchanged": true
+}

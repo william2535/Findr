@@ -1,0 +1,124 @@
+{
+  "sources": [
+    [
+      {
+        "id": "installer",
+        "url": "https://www.lsc.com.au/Documents/LightSYS2%20Installer%20Manual%20EN.pdf",
+        "final_url": "https://www.lsc.com.au/Documents/LightSYS2%20Installer%20Manual%20EN.pdf",
+        "sha256": "d686a09823279da50e3c9fc307a88576742220a6bb093e52f09928b1e79ffdd1",
+        "bytes": 9131592,
+        "pages": 272,
+        "metadata": {
+          "format": "PDF 1.4",
+          "title": "Microsoft Word - 5IN2048 G LightSYS2 Installer Manual EN SOURCE",
+          "author": "Ronnie.Solomon",
+          "subject": "",
+          "keywords": "",
+          "creator": "PScript5.dll Version 5.2.2",
+          "producer": "Acrobat Distiller 11.0 (Windows)",
+          "creationDate": "D:20200621133235+03'00'",
+          "modDate": "D:20200724152727+10'00'",
+          "trapped": "",
+          "encryption": null
+        }
+      },
+      {
+        "id": "user-uk",
+        "url": "https://www.aurumalarms.co.uk/storage/files/shares/support/LightSYS2%20Full%20User%20Manual.pdf",
+        "final_url": "https://www.aurumalarms.co.uk/storage/files/shares/support/LightSYS2%20Full%20User%20Manual.pdf",
+        "sha256": "3325de4e12edec037c7c1243a438f28f0f30134770aa0b1668849038e2b5fdfa",
+        "bytes": 1638237,
+        "pages": 60,
+        "metadata": {
+          "format": "PDF 1.7",
+          "title": "5IN2124 E LightSYS2 Full User Manual UK WEB",
+          "author": "",
+          "subject": "",
+          "keywords": "5IN2124 E LightSYS2 Full User Manual UK WEB",
+          "creator": "Microsoft\u00ae Word for Microsoft 365",
+          "producer": "Microsoft\u00ae Word for Microsoft 365",
+          "creationDate": "D:20210816163830+03'00'",
+          "modDate": "D:20210816163846+03'00'",
+          "trapped": "",
+          "encryption": null
+        }
+      }
+    ],
+    {
+      "url": "https://riscogroup.com/en/downloads-material/21659/",
+      "final_url": "https://riscogroup.com/en/downloads-material/21659/",
+      "sha256": "3325de4e12edec037c7c1243a438f28f0f30134770aa0b1668849038e2b5fdfa",
+      "pages": 60,
+      "metadata": {
+        "format": "PDF 1.7",
+        "title": "5IN2124 E LightSYS2 Full User Manual UK WEB",
+        "author": "",
+        "subject": "",
+        "keywords": "5IN2124 E LightSYS2 Full User Manual UK WEB",
+        "creator": "Microsoft\u00ae Word for Microsoft 365",
+        "producer": "Microsoft\u00ae Word for Microsoft 365",
+        "creationDate": "D:20210816163830+03'00'",
+        "modDate": "D:20210816163846+03'00'",
+        "trapped": "",
+        "encryption": null
+      }
+    },
+    {
+      "id": "keypad",
+      "url": "https://www.maxwell.co.th/wp-content/uploads/2023/11/LightSYS-LCD-Keypad.pdf",
+      "sha256": "4b703bed3d22383a73bbbcb4aeb7af96ff85b5db78137a760e1fc504c276e6fd",
+      "pages": 6,
+      "metadata": {
+        "format": "PDF 1.7",
+        "title": "5IN1425 H LightSYS LCD 432 Keypad Instructions ML WEB",
+        "author": "",
+        "subject": "",
+        "keywords": "5IN1425 H LightSYS LCD 432 Keypad Instructions ML WEB",
+        "creator": "Microsoft\u00ae Word for Microsoft 365",
+        "producer": "Microsoft\u00ae Word for Microsoft 365",
+        "creationDate": "D:20220127141248+02'00'",
+        "modDate": "D:20231127220009+07'00'",
+        "trapped": "",
+        "encryption": null
+      }
+    }
+  ],
+  "physicalAppearance": {
+    "url": "https://www.polartech.com.au/cdn/shop/files/RP432KP0000A_2_400x%402x.jpg?v=1748931504",
+    "sha256": "da2e10666e01ad5f532808036e447d8513e1bd2f46aac9bcdb1ab461f388425d",
+    "status": "Secondary product photograph inspected only to corroborate physical arrangement. All control functions come from original RISCO keypad instructions p4.",
+    "rows": [
+      [
+        "panic-left",
+        "previous",
+        "panic-right"
+      ],
+      [
+        "part-set",
+        "next",
+        "arm"
+      ],
+      [
+        "1",
+        "2",
+        "3"
+      ],
+      [
+        "4",
+        "5",
+        "6"
+      ],
+      [
+        "7",
+        "8",
+        "9"
+      ],
+      [
+        "back",
+        "0",
+        "enter"
+      ]
+    ]
+  },
+  "note": "Full PDFs stay in scratch research; this repository carries source identity, hashes and the minimal factual quick-key index needed to reproduce the reviewed map."
+}

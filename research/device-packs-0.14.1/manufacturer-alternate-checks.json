@@ -1,0 +1,30 @@
+[
+  {
+    "name": "manufacturer-pack",
+    "url": "https://emsgroup.co.uk/wp-content/uploads/2025/07/FireCell-Datasheet-Pack-27-06-2025.pdf",
+    "http_status": 503,
+    "final_url": "https://emsgroup.co.uk/wp-content/uploads/2025/07/FireCell-Datasheet-Pack-27-06-2025.pdf",
+    "content_type": "text/html",
+    "curl_exit": 0,
+    "error": "",
+    "bytes": 1826,
+    "pdf": false,
+    "sha256": "d3a03b9c0d43bce552e2a3ad8c76974709c62c4f6a5543d76b249a63d9f5a41c",
+    "pdf_links": [],
+    "page_excerpt": "\n     \n \n     \n         \n         \n         We'll Be Right Back! \n         \n            body {\n                margin: 0;\n                font-family: Arial, sans-serif;\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                height: 100vh;\n                background-color: #f4f4f4;\n                color: #333;\n                text-align: center;\n            }\n            .container {\n                max-width: 600px;\n         "
+  },
+  {
+    "name": "manufacturer-support",
+    "url": "https://emsgroup.co.uk/support/firedatasheetsmanuals/",
+    "http_status": 503,
+    "final_url": "https://emsgroup.co.uk/support/firedatasheetsmanuals/",
+    "content_type": "text/html",
+    "curl_exit": 0,
+    "error": "",
+    "bytes": 1826,
+    "pdf": false,
+    "sha256": "d3a03b9c0d43bce552e2a3ad8c76974709c62c4f6a5543d76b249a63d9f5a41c",
+    "pdf_links": [],
+    "page_excerpt": "\n     \n \n     \n         \n         \n         We'll Be Right Back! \n         \n            body {\n                margin: 0;\n                font-family: Arial, sans-serif;\n                display: flex;\n                align-items: center;\n                justify-content: center;\n                height: 100vh;\n                background-color: #f4f4f4;\n                color: #333;\n                text-align: center;\n            }\n            .container {\n                max-width: 600px;\n         "
+  }
+]

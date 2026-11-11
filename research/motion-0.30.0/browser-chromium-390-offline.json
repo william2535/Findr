@@ -1,0 +1,213 @@
+{
+  "status": "passed",
+  "environment": {
+    "browser": "chromium",
+    "version": "154.0.8037.57",
+    "os": "Linux container",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "physicalPhone": false
+  },
+  "checks": [
+    "Requested main navigation and neutral Home layout remain intact",
+    "Gloss/edge effects run with real elapsed time and no processing claim",
+    "Scrolling decoration outside the viewport pauses its animation",
+    "Visibility-change handler pauses ambient effects (simulated hidden event)",
+    "Help dialog opens promptly with an accessible motion preference",
+    "Motion preference is respected immediately and survives reload",
+    "Re-enabling motion restores decoration without reloading",
+    "System reduced-motion overrides decorative effects dynamically",
+    "Emulator chooser remains usable with its decorative card highlights",
+    "Physical Minerva cabinet, display and indicators receive no new decorative animation",
+    "Terminal still types new output while completed transcript entries remain stable",
+    "Prompt remains reachable in a keyboard-sized portrait viewport",
+    "Local PDF import and the saved-page viewer work without animating document pixels",
+    "Verified installed shell caches both motion resources; offline reload, navigation and saved preference work without external requests"
+  ],
+  "samples": [
+    {
+      "stage": "home",
+      "body": {
+        "interfaceMotion": "on",
+        "motionPaused": "false"
+      },
+      "animations": [
+        {
+          "name": "findr-gloss",
+          "playState": "running",
+          "currentTime": 200.0470000035097,
+          "duration": 6500,
+          "iterations": null,
+          "target": "brand motion-watch motion-gloss motion-visible",
+          "pseudo": "::after"
+        },
+        {
+          "name": "findr-tab-in",
+          "playState": "running",
+          "currentTime": 50.03600000000008,
+          "duration": 180,
+          "iterations": 1,
+          "target": "active",
+          "pseudo": null
+        },
+        {
+          "name": "findr-edge",
+          "playState": "running",
+          "currentTime": 16.72100000502219,
+          "duration": 12000,
+          "iterations": null,
+          "target": "home-intro motion-watch motion-rail motion-visible",
+          "pseudo": "::before"
+        },
+        {
+          "name": "findr-edge",
+          "playState": "running",
+          "currentTime": 16.72100000502219,
+          "duration": 12000,
+          "iterations": null,
+          "target": "home-import-callout motion-watch motion-gloss motion-rail motion-visible",
+          "pseudo": "::before"
+        },
+        {
+          "name": "findr-gloss",
+          "playState": "running",
+          "currentTime": 16.72100000502219,
+          "duration": 11000,
+          "iterations": null,
+          "target": "home-import-callout motion-watch motion-gloss motion-rail motion-visible",
+          "pseudo": "::after"
+        }
+      ]
+    },
+    {
+      "stage": "offscreen",
+      "moving": [
+        {
+          "name": "findr-edge",
+          "state": "running"
+        },
+        {
+          "name": "findr-gloss",
+          "state": "running"
+        }
+      ],
+      "offscreen": [
+        {
+          "name": "findr-edge",
+          "state": "paused"
+        },
+        {
+          "name": "findr-gloss",
+          "state": "paused"
+        }
+      ]
+    },
+    {
+      "stage": "visibility-handler",
+      "paused": "true",
+      "running": 0,
+      "simulation": "Visibility-event handler exercised with a temporary hidden-property override; native OS backgrounding is not claimed."
+    },
+    {
+      "stage": "preference-off",
+      "body": {
+        "interfaceMotion": "off",
+        "motionPaused": "false"
+      },
+      "animations": []
+    },
+    {
+      "stage": "os-reduced-motion",
+      "body": {
+        "interfaceMotion": "off",
+        "motionPaused": "false"
+      },
+      "animations": []
+    },
+    {
+      "stage": "emulator-card",
+      "css": [
+        {
+          "pseudo": null,
+          "transform": "none",
+          "opacity": "1",
+          "animation": "none",
+          "playState": "running"
+        },
+        {
+          "pseudo": "::before",
+          "transform": "none",
+          "opacity": "1",
+          "animation": "none",
+          "playState": "running"
+        },
+        {
+          "pseudo": "::after",
+          "transform": "matrix(1, 0, -0.32492, 1, -27.372, 0)",
+          "opacity": "0.834578",
+          "animation": "findr-gloss",
+          "playState": "running"
+        }
+      ]
+    },
+    {
+      "stage": "physical-panel",
+      "transforms": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "animations": []
+    },
+    {
+      "stage": "saved-pdf",
+      "width": 595,
+      "height": 841,
+      "animation": "none",
+      "transform": "none",
+      "ancestors": [
+        {
+          "animation": "none",
+          "transform": "none"
+        },
+        {
+          "animation": "none",
+          "transform": "none"
+        }
+      ]
+    }
+  ],
+  "pageErrors": [],
+  "syntheticPDF": "tests/fixtures/diagnostic025/synthetic-premier-elite-text.pdf",
+  "offlineExternalRequests": [],
+  "appVersion": "0.30.0",
+  "offlineReadiness": {
+    "ready": true,
+    "build": "6d367add625c",
+    "version": "0.30.0",
+    "verification": "sha256-v1",
+    "controlled": true
+  },
+  "motionCache": {
+    "shell": "findr-shell-6d367add625c",
+    "js": true,
+    "css": true
+  }
+}

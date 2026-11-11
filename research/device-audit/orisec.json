@@ -1,0 +1,165 @@
+{
+  "brand": "Orisec",
+  "category": "security",
+  "review_date": "2026-10-30",
+  "device_family_count": 5,
+  "device_ids": [
+    "orisec-ir-100",
+    "orisec-dt-200",
+    "orisec-w-mc-c",
+    "orisec-sd-wired",
+    "orisec-es-120-130-wired"
+  ],
+  "scope": "Intruder detector/contact/sounder identification pack. No control panels or keypads. Colour options are not counted separately.",
+  "source_method": "Primary manufacturer pages and original manufacturer PDFs. Independent hosts are disclosed for preserved original PDFs. Product images are real manufacturer assets or exact PDF illustrations.",
+  "document_review": {
+    "orisec-806438c080d2": {
+      "file": "research/orisec-806438c080d2.pdf",
+      "sha256": "9ac35d7202cf562640bafda66c97122719cfeeb4315bbf48234f5edd0e5f6d2d",
+      "bytes": 597913,
+      "pages": 2,
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Orisec%20IR-100%20PIR.pdf",
+      "catalogue_hash_match": true,
+      "printed_edition": "INS001; copyright 2016 printed on page 2",
+      "models_checked_in_pdf": [
+        "IR-100"
+      ],
+      "relevant_pdf_pages": [
+        1,
+        2
+      ]
+    }
+  },
+  "photo_review": [
+    {
+      "device_id": "orisec-ir-100",
+      "source_page_url": "https://www.orisec.co.uk/internal-detectors/50-100-series-detectors/",
+      "source_image_url": "https://www.orisec.co.uk/wp-content/uploads/2020/09/100maintest-1.jpg",
+      "research_image": "research/ir100-photo.jpg",
+      "original_image_sha256": "175ae357029a15e538cfb0b30b318556b2dd46b851c11b79f5fe1fdaf7a32070",
+      "original_dimensions": [
+        231,
+        319
+      ],
+      "output_sha256": "e4a3cbb33a2a41fc27668747835ab2b1bae71fd2534b56ed18cbb3440fb2ab61",
+      "output_dimensions": [
+        240,
+        319
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Manufacturer IR-100 photograph, with compact lower lens and a single front LED window.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "orisec-dt-200",
+      "source_page_url": "https://www.orisec.co.uk/internal-detectors/200-series-detectors/",
+      "source_image_url": "https://www.orisec.co.uk/wp-content/uploads/2020/09/200maintest-1.jpg",
+      "research_image": "research/dt200-photo.jpg",
+      "original_image_sha256": "d52faeabf705b7904163df5da13ed615893855bbee34711ec5d0884403e2c360",
+      "original_dimensions": [
+        231,
+        319
+      ],
+      "output_sha256": "5385df76f97f4114f68c3a1d8808558e27c0023220c2831b722316f3e5218829",
+      "output_dimensions": [
+        240,
+        319
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Official shared 200-series housing photograph, with the three-part LED area above the lens.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "orisec-w-mc-c",
+      "source_page_url": "https://www.orisec.co.uk/internal-detectors/wireless-covert-magnetic-contact/",
+      "source_image_url": "https://www.orisec.co.uk/wp-content/uploads/2021/02/MicrosoftTeams-image-12.png",
+      "research_image": "research/wmcc-photo.png",
+      "original_image_sha256": "fb87aa1dd1533878e605075c93f3c1d3ad5e9c25ec5ec2d9a532e0d016267ec2",
+      "original_dimensions": [
+        2500,
+        1238
+      ],
+      "output_sha256": "a99830f6b90ab912030f8ad21a747fbfe54e02adaedbf13e4d970a294a4fb1ef",
+      "output_dimensions": [
+        1100,
+        545
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Manufacturer family image shows the slim magnetic-contact body and magnet in four finishes; counted as one family.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "orisec-sd-wired",
+      "source_page_url": "https://www.orisec.co.uk/internal-detectors/shock-detectors/",
+      "source_image_url": "https://www.orisec.co.uk/wp-content/uploads/2022/04/Shock-Campaign-Image.jpg",
+      "research_image": "research/sd-photo.jpg",
+      "original_image_sha256": "6df326c229b3f1244b1086d7247b8d2bf96ebd1000cee282070465c6a4ef9d7d",
+      "original_dimensions": [
+        1588,
+        832
+      ],
+      "output_sha256": "24e8c9e1d62a73d207c6c2627ad7a57e6f0862d46fad964f2a8e0a9e76de6023",
+      "output_dimensions": [
+        1100,
+        576
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Official shared shock-detector photograph presents four finish options for one wired housing family.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "orisec-es-120-130-wired",
+      "source_page_url": "https://www.orisec.co.uk/external-sounders/es-100-series-external-sounders/",
+      "source_image_url": "https://www.orisec.co.uk/wp-content/uploads/2020/09/es120130-1.jpg",
+      "research_image": "research/es100-photo.jpg",
+      "original_image_sha256": "788e09cf4590ae554d77b85e155f9914ca4515098f7eb3a152d252ebec688e38",
+      "original_dimensions": [
+        860,
+        636
+      ],
+      "output_sha256": "fc70ae78e027cafb321f3985e208d8d4fb63044744e7a210ffbabfc3185ddf8d",
+      "output_dimensions": [
+        860,
+        636
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Manufacturer shield-style ES-120/130 picture, including the example custom-logo area.",
+      "reviewed_visually": true
+    }
+  ],
+  "online_only_device_ids": [
+    "orisec-dt-200",
+    "orisec-w-mc-c",
+    "orisec-sd-wired",
+    "orisec-es-120-130-wired"
+  ],
+  "failures_and_deferrals": [
+    {
+      "url": "https://www.security-systems.nl/wp-content/uploads/downloads/ins049_incert_dt_200_instructions.pdf",
+      "out": "orisec/research/orisec-44572475fc04.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.security-systems.nl/wp-content/uploads/downloads/INS046-INCERT-DT-200-PET-Instructions_manuals.pdf",
+      "out": "orisec/research/orisec-d7d6198e4475.pdf",
+      "error": "Host blocked earlier in this batch; not retried"
+    },
+    {
+      "url": "https://www.security-systems.nl/wp-content/uploads/downloads/ins145_incert_dt_200_am_eol_jumpers_instructions.pdf",
+      "out": "orisec/research/orisec-f6e13696a504.pdf",
+      "error": "Host blocked earlier in this batch; not retried"
+    }
+  ],
+  "review_limits": "Identification reference, not proof of exact hardware generation, regional approval or panel compatibility. Existing archive IDs retained only after matching brand/category and retrieved document scope. Manufacturer pages may change after review.",
+  "special_findings": [
+    "The original IR-100 archive PDF was downloaded and its stored SHA-256 matched.",
+    "Independent DT-200 PDF source returned 403; it was not retried. DT-200 uses the manufacturer online specifications and has no fabricated PDF association.",
+    "W-MC-C manufacturer table has a generic shock-detector description error; title/heading and official declaration identify W-MC-C as magnetic contact. No shock capability is claimed.",
+    "SD and ES shared-housing groups include only the explicitly named wired models; wireless and dummy variants are excluded."
+  ]
+}

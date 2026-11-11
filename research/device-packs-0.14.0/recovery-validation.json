@@ -1,0 +1,3908 @@
+{
+  "review_date": "2026-10-30",
+  "batch_count": 14,
+  "additional_device_families": 122,
+  "expected_total_device_families": 146,
+  "brand_additions": {
+    "Aico": 12,
+    "Ajax": 10,
+    "Apollo": 6,
+    "EMS": 8,
+    "Fike": 8,
+    "The Fire Beam Company": 2,
+    "Hochiki": 18,
+    "Nittan": 10,
+    "Notifier": 9,
+    "Optex": 7,
+    "Orisec": 5,
+    "Protec": 12,
+    "Pyronix": 6,
+    "Texecom": 9
+  },
+  "new_supplemental_pdf_records": 44,
+  "distinct_linked_records_in_additions": 106,
+  "all_images_decode_and_match_declared_hashes": true,
+  "source_image_visual_review_completed": true,
+  "existing_device_ids_overwritten": 0,
+  "locally_verified_pdf_count": 96,
+  "online_only_linked_records_without_pdf": [
+    {
+      "id": "ajax-20acb6e3d08d",
+      "url": null,
+      "title": "MotionProtect Curtain user manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    },
+    {
+      "id": "ajax-31ec417c87c3",
+      "url": null,
+      "title": "DoorProtect user manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    },
+    {
+      "id": "ajax-3837d17e4660",
+      "url": null,
+      "title": "MotionCam Jeweller user manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    },
+    {
+      "id": "ajax-4d6ca373b0b7",
+      "url": null,
+      "title": "StreetSiren Jeweller user manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    },
+    {
+      "id": "ajax-5d2fa14fb8ca",
+      "url": null,
+      "title": "HomeSiren Jeweller user manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    },
+    {
+      "id": "ajax-7e7baaa693fd",
+      "url": null,
+      "title": "DoorProtect Plus Jeweller user manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    },
+    {
+      "id": "ajax-af0b7d4e7c33",
+      "url": null,
+      "title": "CombiProtect user manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    },
+    {
+      "id": "ajax-bf92b9a58fdb",
+      "url": null,
+      "title": "MotionProtect Jeweller user manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    },
+    {
+      "id": "ajax-f0ce8387a135",
+      "url": null,
+      "title": "MotionProtect Plus Jeweller user manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    },
+    {
+      "id": "ajax-f9691d9be788",
+      "url": null,
+      "title": "GlassProtect User manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    }
+  ],
+  "downloadable_records_without_recovered_pdf": [],
+  "literal_code_match_exceptions_resolved": [
+    {
+      "device": "aico-ei144e",
+      "document": "aico-55f3ba358d2a",
+      "resolution": "PDF page 1 was rendered and visually checked: Ei144e Heat Alarm. The model text is outlined rather than extractable."
+    },
+    {
+      "device": "aico-ei3000mrf",
+      "document": "aico-5520615bdeb8",
+      "resolution": "PDF page 1 was rendered and visually checked: SmartLINK Module Ei3000MRF, Rev 2 20/03/19 KTS. The model text is outlined rather than extractable."
+    },
+    {
+      "device": "apollo-minidisc-remote-indicator-53832-070",
+      "document": "apollo-ae612a27ea60",
+      "resolution": "Rendered installation sheet explicitly reads MINIDISC REMOTE INDICATOR PART No. 53832-070/072, 39214-101 Issue 5A. The catalogue marketing code adds APO."
+    },
+    {
+      "device": "apollo-auto-align-beam-sa7100-100",
+      "document": "apollo-e4ec6992b586",
+      "resolution": "Preserved exact manufacturer SA7100-100APO page directly links F0001887_0001.pdf as 39215-002 Intelligent Auto-Aligning Beam Detector User Guide. Downloaded PDF prints 39215-002 Issue 1 / 0044-069-01-EN and shows the matching head/controller/reflector set."
+    },
+    {
+      "device": "apollo-xp95-ir3-flame-55000-024",
+      "document": "apollo-d632a36424b9",
+      "resolution": "PDF text explicitly gives Intelligent Base Mounted Triple Infra-red (IR3) Flame Detector, part no. 55000-024, PP2331 Issue 9. The catalogue marketing code adds APO."
+    },
+    {
+      "device": "apollo-orbis-diode-base-orb-db-00003",
+      "document": "apollo-9739bb7328db",
+      "resolution": "Preserved exact ORB-DB-00003-APO product page directly links Orbis-TimeSaver-Base-Installation-Guide.pdf. This is the shared 39214-208 Issue 3 wiring guide, not a unique diode-base datasheet. Shared exterior and guide limitations are explicit on the card; require the product label."
+    },
+    {
+      "device": "nittan-ev-dph-cs",
+      "document": "device-doc-nittan-24b1fd056ba7",
+      "resolution": "NISM/EV-DPH/01 Issue 1 uses the EV-DPH family name; page 3 states A2R or CS, and page 7 explicitly identifies F14N82107 (CS). The exact EV-DPH-CS manufacturer page provides the image and manual."
+    }
+  ],
+  "known_supplemental_hash_differences_from_related_archive": [
+    {
+      "supplemental_id": "device-doc-aico-6c128c0b705a",
+      "archive_id": "aico-fb1ec779904f",
+      "archive_sha256": "c70f2d0eb32cfddc64a17fbbdc84cc4a64d6898bf224f4c7c710d812a48963c0",
+      "supplemental_sha256": "6c128c0b705ac601a55a5902c3f788932d72df8e92622a633fb96607d6bcfb66",
+      "archive_url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2020/07/Ei3024-Ei3016-Ei3014-Instructions-Updated.pdf",
+      "supplemental_url": "https://www.aico.co.uk/wp-content/uploads/2025/02/B20224-R4-Ei301430163024-UK-SERIES-UC-ENG.pdf",
+      "same_url": false,
+      "new_revision": "B20224 Rev4, 2025",
+      "action": "Separate hash-pinned document record; original archive record and any saved PDF stay unchanged."
+    },
+    {
+      "supplemental_id": "device-doc-aico-7dbcfdf98ccb",
+      "archive_id": "aico-2b6abe9e7cf7",
+      "archive_sha256": "c6d88b870bdf660aa8aed1e7a4dda9442ca0d50d6fdc4dff85522767023dfe41",
+      "supplemental_sha256": "7dbcfdf98ccb6bac7fa482d85f19a6c5450e55dd323984e8b5cb049861cae124",
+      "archive_url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2023/07/Ei3030-Instructions.pdf",
+      "supplemental_url": "https://www.aico.co.uk/wp-content/uploads/2025/02/B20665-R4-Ei3030-UK-SERIES-UC-ENG.pdf",
+      "same_url": false,
+      "new_revision": "B20665 Rev4, 2025",
+      "action": "Separate hash-pinned document record; original archive record and any saved PDF stay unchanged."
+    },
+    {
+      "supplemental_id": "device-doc-aico-22884205c611",
+      "archive_id": "aico-6ee64921f39b",
+      "archive_sha256": "47e7f72051167281b907ab7e87302b786f101c18db59a396877a9d20aabcdc23",
+      "supplemental_sha256": "22884205c611820750da890bc787c37288421f260faf2e12fc3a1394d3014d37",
+      "archive_url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/Ei3000MRF-Instructions-1.pdf",
+      "supplemental_url": "https://www.aico.co.uk/wp-content/uploads/2024/10/B19047-R6-Ei3000MRF-UC-ENG.pdf",
+      "same_url": false,
+      "new_revision": "B19047 Rev6, 2024",
+      "action": "Separate hash-pinned document record; original archive record and any saved PDF stay unchanged."
+    },
+    {
+      "supplemental_id": "device-doc-aico-8f8b5876b06d",
+      "archive_id": "aico-3c1e5028796a",
+      "archive_sha256": "b5907dd5d52bad4612c5e81178ce2bf67233fec0cd918bb55a5a78644763011a",
+      "supplemental_sha256": "8f8b5876b06de0e1fd9a920a4da3823b738508dad2334c924d2ebdf3d089e852",
+      "archive_url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/140e-Series-Instructions-Rev-0-1.pdf",
+      "supplemental_url": "https://www.aico.co.uk/wp-content/uploads/2021/06/Ei140e-Series.pdf",
+      "same_url": false,
+      "new_revision": "B20412 Rev2, 2023",
+      "action": "Separate hash-pinned document record; original archive record and any saved PDF stay unchanged."
+    },
+    {
+      "supplemental_id": "device-doc-the-fire-beam-company-9ea9d54e1f2c",
+      "archive_id": "the-fire-beam-company-7f8db7c4abfe",
+      "archive_sha256": "7ba874422420c1cd5cbd8728b5685a03902407930d01d17ba95ed00c9bd90d3e",
+      "supplemental_sha256": "9ea9d54e1f2c6ea887646ef03e63cac1532e471c496be732ed009a48fa6b66e8",
+      "archive_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Fire%20Beam%20Xtra%20User%20Guide.pdf",
+      "supplemental_url": "https://thefirebeamcompany.com/user-zone/pdf/Fire-Beam-Xtra-User-Guide-0025-12.pdf",
+      "same_url": false,
+      "new_revision": "0025-12, Rev12, 22 April 2026",
+      "action": "Separate hash-pinned document record; original archive record and any saved PDF stay unchanged."
+    }
+  ],
+  "original_ready_batches_copied_byte_for_byte": [
+    {
+      "batch": "apollo-0.14.0",
+      "source": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/fire-b/apollo-0.14.0",
+      "unchanged_files": 44
+    },
+    {
+      "batch": "ems-0.14.0",
+      "source": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/fire-b/ems-0.14.0",
+      "unchanged_files": 33
+    },
+    {
+      "batch": "fike-0.14.0",
+      "source": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/fire-b/fike-0.14.0",
+      "unchanged_files": 38
+    },
+    {
+      "batch": "protec-0.14.0",
+      "source": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/fire-b/protec-0.14.0",
+      "unchanged_files": 68
+    },
+    {
+      "batch": "ajax",
+      "source": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/intruder/ajax",
+      "unchanged_files": 69
+    },
+    {
+      "batch": "optex",
+      "source": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/intruder/optex",
+      "unchanged_files": 50
+    },
+    {
+      "batch": "orisec",
+      "source": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/intruder/orisec",
+      "unchanged_files": 33
+    },
+    {
+      "batch": "pyronix",
+      "source": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/intruder/pyronix",
+      "unchanged_files": 41
+    },
+    {
+      "batch": "texecom",
+      "source": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/intruder/texecom",
+      "unchanged_files": 86
+    },
+    {
+      "batch": "aico-0.14.0",
+      "source": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/ready/aico-0.14.0",
+      "unchanged_files": 16
+    },
+    {
+      "batch": "firebeam-0.14.0",
+      "source": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/ready/firebeam-0.14.0",
+      "unchanged_files": 6
+    }
+  ],
+  "network_notes": [
+    "No fresh production relay/CORS verification was performed during recovery. Successfully recovered PDF bytes do not establish current relay availability.",
+    "Failed EMS manufacturer requests (503) are not downloadable references; eight verified manufacturer PDFs from alternate public hosts are used.",
+    "Blocked Orisec DT-200 family PDF host (403) remains excluded; affected cards retain manufacturer online documentation without fabricated PDF records.",
+    "Pyronix catalogue and MCNANO URLs that returned HTML/503 are excluded; affected source-only cards retain their honest online references.",
+    "Ajax current manuals remain online-only archive records; dated 2020 PDF editions are separately labelled, hash-pinned references.",
+    "NRXI-GATE unavailable product page is not used; verified Honeywell Agile PDF is the source reference."
+  ],
+  "documents": [
+    {
+      "id": "aico-0b817031d733",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/11/Datasheet_Ei3016Optical-Smoke-Alarm_22-Nov-2021.pdf",
+      "title": "Ei3016 Optical Smoke Alarm Data Sheet",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/aico/sources/aico-0b817031d733.pdf",
+      "sha256": "29d4011e7488cdb637482ec60fd0e94b36d01b8cad93b4a9e006c633300e40aa",
+      "bytes": 5740537,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "aico-0d5d7df89314",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/Aico-Data-Sheet-Ei3014.pdf",
+      "title": "Ei3014 Heat Alarm Data Sheet",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/aico/sources/aico-0d5d7df89314.pdf",
+      "sha256": "c664d1ff49711540800284846b9a62673e379b31746dacc028dc7fe13e99f546",
+      "bytes": 349102,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "aico-33d08994b662",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/Datasheet_Ei650iOptical-Smoke-Alarm_19-Oct-2022-1.pdf",
+      "title": "Ei650i Battery Optical Alarm Data Sheet",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/aico/sources/aico-33d08994b662.pdf",
+      "sha256": "f097003fc11a4f96118aa7fae7873a6d190aaee17ea37651d73f54190c35cdf4",
+      "bytes": 211750,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "aico-3940aa649cda",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/MCP401RC-Instructions-Rev2.pdf",
+      "title": "MCP401RC Instructions",
+      "declared_revision": "Rev 2",
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/aico/sources/aico-3940aa649cda.pdf",
+      "sha256": "9bc26ac591276431fc756d47895d07e54246fced1e0ceb42c91c26e435ea679e",
+      "bytes": 161917,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "aico-4fb4b285b074",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2023/07/Datasheet_Ei3030Ei3030_20-Jul-2023.pdf",
+      "title": "Ei3030 Data Sheet",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/aico/sources/aico-4fb4b285b074.pdf",
+      "sha256": "34bda10a183ee374c272934cc79f66beae28cea170dc24b3643deed160c244c2",
+      "bytes": 234435,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "aico-5520615bdeb8",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/Aico-Data-Sheet-Ei3000MRF.pdf",
+      "title": "Ei3000MRF SmartLINK Module Data Sheet",
+      "declared_revision": "Rev 2",
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/aico/sources/aico-5520615bdeb8.pdf",
+      "sha256": "18e2fe67deb6eeba1159cd4e10a1abd0186ade3be2bbfaedd1f79bbfe41934be",
+      "bytes": 809280,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "aico-55f3ba358d2a",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/Datasheet_Ei144eEi144e_27-Jan-2023-1.pdf",
+      "title": "Ei144e Heat Alarm Data Sheet",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/aico/sources/aico-55f3ba358d2a.pdf",
+      "sha256": "08488e1b0b64b89bc8e2a522aa61f7ab2c0c665ee372b499d0bd20d44a59bbc5",
+      "bytes": 1085284,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "aico-6d83ddd276c6",
+      "url": "https://www.aico.co.uk/wp-content/uploads/2022/10/b20267-r3-ei600-series-u-c-eng-master_uk.pdf",
+      "title": "Ei600 series smoke / heat / multi-sensor alarms - instruction manual",
+      "declared_revision": "Rev 3",
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/aico/sources/ei660i-doc-0.pdf",
+      "sha256": "c11d74204ac4454d7d297f4c71f776e11493b1cda4746dbde651794779ed5143",
+      "bytes": 1807833,
+      "pages": 48,
+      "archive_hash_match": true
+    },
+    {
+      "id": "aico-8b45527b51c1",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2022/07/Datasheet_Ei630iHeat-Alarm_07-Jul-2022.pdf",
+      "title": "Ei630i Data Sheet",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/aico/sources/aico-8b45527b51c1.pdf",
+      "sha256": "9081f91d30416f6947760bc3e21ea7f071699f9eb198145c5d53339836532098",
+      "bytes": 207690,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "aico-957a8189361b",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2022/09/Datasheet_Ei660iMulti-Sensor-Fire-Alarm_26-Sep-2022-1.pdf",
+      "title": "Ei660i Data Sheet",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/aico/sources/aico-957a8189361b.pdf",
+      "sha256": "e07d0227385a0247876b92cd6e5a674c5922f80288a0285a941b49ab56cdfa80",
+      "bytes": 209789,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "aico-a107023f8485",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/Datasheet_MCP401RCManual-Call-Point_18-Nov-2022.pdf",
+      "title": "MCP401RC Data Sheet",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/aico/sources/aico-a107023f8485.pdf",
+      "sha256": "e1533f2a1af89e30449a5bcd65c0af041d1ba3e6b70499bed973c8ce8d72644b",
+      "bytes": 189513,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "aico-d3fb97090714",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/Datasheet_Ei146eOptical-Smoke-Alarm_24-Mar-2022.pdf",
+      "title": "Ei146e Optical Smoke Alarm Data Sheet",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/aico/sources/aico-d3fb97090714.pdf",
+      "sha256": "8ceb48d230de1ba694b51eec30db0af5bac4649b929b72546cbc9f3cb6308317",
+      "bytes": 244429,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "aico-efec1bd3d80d",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/Ei450-Instructions.pdf",
+      "title": "Ei450 Instructions",
+      "declared_revision": "Rev 9",
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/aico/sources/ei450-doc-0.pdf",
+      "sha256": "b855177c9566182e2078b358aad3f2ca96639e1821ea3c4ab2bdcdcdf807c989",
+      "bytes": 1992627,
+      "pages": 24,
+      "archive_hash_match": true
+    },
+    {
+      "id": "aico-f4d4866ac694",
+      "url": "https://www.aico.co.uk/homeowner/wp-content/uploads/2021/06/Datasheet_Ei450RadioLINK-Alarm-Controller_18-Nov-2022-1.pdf",
+      "title": "Ei450 Data Sheet",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/aico/sources/aico-f4d4866ac694.pdf",
+      "sha256": "0b9559ecad43bc318c42166a04bf4d5a25177debaa581f2269d6767af264a20b",
+      "bytes": 213208,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "ajax-20acb6e3d08d",
+      "url": null,
+      "title": "MotionProtect Curtain user manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    },
+    {
+      "id": "ajax-31ec417c87c3",
+      "url": null,
+      "title": "DoorProtect user manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    },
+    {
+      "id": "ajax-3837d17e4660",
+      "url": null,
+      "title": "MotionCam Jeweller user manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    },
+    {
+      "id": "ajax-4d6ca373b0b7",
+      "url": null,
+      "title": "StreetSiren Jeweller user manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    },
+    {
+      "id": "ajax-5d2fa14fb8ca",
+      "url": null,
+      "title": "HomeSiren Jeweller user manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    },
+    {
+      "id": "ajax-7e7baaa693fd",
+      "url": null,
+      "title": "DoorProtect Plus Jeweller user manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    },
+    {
+      "id": "ajax-af0b7d4e7c33",
+      "url": null,
+      "title": "CombiProtect user manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    },
+    {
+      "id": "ajax-bf92b9a58fdb",
+      "url": null,
+      "title": "MotionProtect Jeweller user manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    },
+    {
+      "id": "ajax-f0ce8387a135",
+      "url": null,
+      "title": "MotionProtect Plus Jeweller user manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    },
+    {
+      "id": "ajax-f9691d9be788",
+      "url": null,
+      "title": "GlassProtect User manual",
+      "declared_revision": null,
+      "local_source_pdf": null,
+      "sha256": null,
+      "bytes": null,
+      "pages": null
+    },
+    {
+      "id": "apollo-00c3936bf0fc",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0007831_0001.pdf",
+      "title": "PP5099 REACH Wireless User Manual FW1.0.3 R1",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/apollo-0.14.0/research/apollo-00c3936bf0fc.pdf",
+      "sha256": "4b709b2c5ddf5f1d0b0684c738ba088a24dd77babd415d29a2a5f17a9a4b4d64",
+      "bytes": 3227785,
+      "pages": 27,
+      "archive_hash_match": null
+    },
+    {
+      "id": "apollo-9739bb7328db",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/Orbis-TimeSaver-Base-Installation-Guide.pdf",
+      "title": "Orbis TimeSaver Base Installation Guide",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/apollo-0.14.0/research/apollo-9739bb7328db.pdf",
+      "sha256": "b6af18c178efc82a2ca3587bae2b7cd0cf064adc3a30166e4309243ca014f474",
+      "bytes": 161837,
+      "pages": 2,
+      "archive_hash_match": null
+    },
+    {
+      "id": "apollo-ae612a27ea60",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0007690_0001.pdf",
+      "title": "Minidisc Remote Indicator Installation Guide",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/apollo-0.14.0/research/apollo-ae612a27ea60.pdf",
+      "sha256": "df337873e8f8a88c52dc345dd873b6a024e94bd3bf0c8a2728a7ed8c596c49a4",
+      "bytes": 1052105,
+      "pages": 1,
+      "archive_hash_match": null
+    },
+    {
+      "id": "apollo-d632a36424b9",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/base-mounted-ir3-installation-guide.pdf",
+      "title": "Base Mounted IR3 Installation Guide",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/apollo-0.14.0/research/apollo-d632a36424b9.pdf",
+      "sha256": "f49637fcc5f08725063f69dd916e8e9a7fa01f25a3db6e16ae0319d678b7bcfc",
+      "bytes": 495231,
+      "pages": 4,
+      "archive_hash_match": null
+    },
+    {
+      "id": "apollo-e4ec6992b586",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0001887_0001.pdf",
+      "title": "39215-002 Intelligent Auto-Aligning Beam Detector User Guide",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/apollo-0.14.0/research/apollo-e4ec6992b586.pdf",
+      "sha256": "127d2c19e1ebce71f86db686440146f83086def4feffa8ed8fc2889e82d6ecc9",
+      "bytes": 1788535,
+      "pages": 24,
+      "archive_hash_match": null
+    },
+    {
+      "id": "apollo-f27ce8642ca3",
+      "url": "https://apollo-fire.co.uk/wp-content/uploads/2025/10/F0008051_0001.pdf",
+      "title": "XPander Loop Interface Installation Guide",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/apollo-0.14.0/research/apollo-f27ce8642ca3.pdf",
+      "sha256": "44fc1a96d1a83246a55e4a377be904a60c3d6f501f0c060ba0abc8081be4393a",
+      "bytes": 458639,
+      "pages": 2,
+      "archive_hash_match": null
+    },
+    {
+      "id": "device-doc-aico-22884205c611",
+      "url": "https://www.aico.co.uk/wp-content/uploads/2024/10/B19047-R6-Ei3000MRF-UC-ENG.pdf",
+      "title": "Ei3000MRF SmartLINK module instructions — B19047 Rev6",
+      "declared_revision": "B19047 Rev6, 2024",
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/aico/sources/ei3000mrf-doc-0.pdf",
+      "sha256": "22884205c611820750da890bc787c37288421f260faf2e12fc3a1394d3014d37",
+      "bytes": 2109510,
+      "pages": 24,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-aico-6c128c0b705a",
+      "url": "https://www.aico.co.uk/wp-content/uploads/2025/02/B20224-R4-Ei301430163024-UK-SERIES-UC-ENG.pdf",
+      "title": "Ei3014 / Ei3016 / Ei3024 instruction manual — B20224 Rev4",
+      "declared_revision": "B20224 Rev4, 2025",
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/aico/sources/ei3014-doc-0.pdf",
+      "sha256": "6c128c0b705ac601a55a5902c3f788932d72df8e92622a633fb96607d6bcfb66",
+      "bytes": 2566567,
+      "pages": 52,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-aico-7dbcfdf98ccb",
+      "url": "https://www.aico.co.uk/wp-content/uploads/2025/02/B20665-R4-Ei3030-UK-SERIES-UC-ENG.pdf",
+      "title": "Ei3030 fire and carbon monoxide alarm instructions — B20665 Rev4",
+      "declared_revision": "B20665 Rev4, 2025",
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/aico/sources/ei3030-doc-0.pdf",
+      "sha256": "7dbcfdf98ccb6bac7fa482d85f19a6c5450e55dd323984e8b5cb049861cae124",
+      "bytes": 2503823,
+      "pages": 64,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-aico-8f8b5876b06d",
+      "url": "https://www.aico.co.uk/wp-content/uploads/2021/06/Ei140e-Series.pdf",
+      "title": "Ei140e series smoke and heat alarm instructions — B20412 Rev2",
+      "declared_revision": "B20412 Rev2, 2023",
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/aico/sources/ei144e-doc-0.pdf",
+      "sha256": "8f8b5876b06de0e1fd9a920a4da3823b738508dad2334c924d2ebdf3d089e852",
+      "bytes": 2913696,
+      "pages": 30,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-ajax-26155dac817d",
+      "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-MotionProtect-Curtain-User-Manual.pdf",
+      "title": "MotionProtect Curtain — manufacturer user manual (6 November 2020)",
+      "declared_revision": "6 November 2020",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ajax/research/Ajax-MotionProtect-Curtain-User-Manual.pdf",
+      "sha256": "26155dac817d50d9c06cdbda1ec22fd93ef8a71959f0cb5ab6a457ceff665150",
+      "bytes": 677951,
+      "pages": 23,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-ajax-3b7dbd6db378",
+      "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-StreetSiren-User-Manual.pdf",
+      "title": "StreetSiren — manufacturer user manual (27 May 2020)",
+      "declared_revision": "27 May 2020",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ajax/research/Ajax-StreetSiren-User-Manual.pdf",
+      "sha256": "3b7dbd6db378a597639976ccef27254476bb063f4fabebe01b2d190373cbb360",
+      "bytes": 741175,
+      "pages": 13,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-ajax-44764eb47998",
+      "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-MotionCam-User-Manual.pdf",
+      "title": "MotionCam — manufacturer user manual (3 June 2020)",
+      "declared_revision": "3 June 2020",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ajax/research/Ajax-MotionCam-User-Manual.pdf",
+      "sha256": "44764eb47998d5c529972d008f591e9505b5c7ddda0ad6d0dc4ec17b19d3c72a",
+      "bytes": 1977249,
+      "pages": 21,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-ajax-53339097c1a5",
+      "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-HomeSiren-User-Manual.pdf",
+      "title": "HomeSiren — manufacturer user manual (8 June 2020)",
+      "declared_revision": "8 June 2020",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ajax/research/Ajax-HomeSiren-User-Manual.pdf",
+      "sha256": "53339097c1a5d94bb9a86131ae0c824b12ffbcb8e672956f6ef43e1800f4c872",
+      "bytes": 517865,
+      "pages": 13,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-ajax-740eadda7644",
+      "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-MotionProtect-and-MotionProtect-Plus-User-Manual.pdf",
+      "title": "MotionProtect / MotionProtect Plus — manufacturer user manual (10 June 2020)",
+      "declared_revision": "10 June 2020",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ajax/research/Ajax-MotionProtect-and-MotionProtect-Plus-User-Manual.pdf",
+      "sha256": "740eadda76447faeeabf58f2b61e73a48538d69c17f6593732cfa194ea8c7522",
+      "bytes": 763093,
+      "pages": 15,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-ajax-9486bbc86323",
+      "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-CombiProtect-User-Manual.pdf",
+      "title": "CombiProtect — manufacturer user manual (29 June 2020)",
+      "declared_revision": "29 June 2020",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ajax/research/Ajax-CombiProtect-User-Manual.pdf",
+      "sha256": "9486bbc86323f8293eb3d23596e8a627ac27b16c03efd44d34e91ece9d9cb45f",
+      "bytes": 721072,
+      "pages": 15,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-ajax-b17f6521ffcf",
+      "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-DoorProtect-Plus-User-Manual.pdf",
+      "title": "DoorProtect Plus — manufacturer user manual (17 July 2020)",
+      "declared_revision": "17 July 2020",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ajax/research/Ajax-DoorProtect-Plus-User-Manual.pdf",
+      "sha256": "b17f6521ffcf438bbeb48ae9eb1c04f58d5742f74b0476e9cc2224f3ea37c165",
+      "bytes": 800607,
+      "pages": 17,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-ajax-c05166983480",
+      "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-GlassProtect-User-Manual.pdf",
+      "title": "GlassProtect — manufacturer user manual (8 June 2020)",
+      "declared_revision": "8 June 2020",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ajax/research/Ajax-GlassProtect-User-Manual.pdf",
+      "sha256": "c05166983480808ac4de20426050901713ba15dff335a1b4292d426ba7a0ce60",
+      "bytes": 530525,
+      "pages": 14,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-ajax-cf09dfff46dd",
+      "url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-DoorProtect-User-Manual.pdf",
+      "title": "DoorProtect — manufacturer user manual (30 June 2020)",
+      "declared_revision": "30 June 2020",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ajax/research/Ajax-DoorProtect-User-Manual.pdf",
+      "sha256": "cf09dfff46dddf1d39f5deb2b110d742e514774966e12e7c4df60cb7dc643770",
+      "bytes": 560616,
+      "pages": 15,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-ems-0df7986de600",
+      "url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Radio-Hub.pdf",
+      "title": "MK125 FireCell Radio Hub Product Datasheet",
+      "declared_revision": "Issue 4, 02/10/2018",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/research/hub.pdf",
+      "sha256": "0df7986de600c0cf4a177eecf00c10620bfae78c23aef61995f48c742fc2cc2c",
+      "bytes": 712181,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-ems-2f0d72961ef4",
+      "url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Input-Output-Unit.pdf",
+      "title": "MK129 FireCell Input / Output Unit Product Datasheet",
+      "declared_revision": "Issue 5, 03/10/2018",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/research/io.pdf",
+      "sha256": "2f0d72961ef41fc9854f5707d4f454689b1f559db94d0dbadd7a44d7aa7a9ee9",
+      "bytes": 255595,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-ems-777d6bd3e405",
+      "url": "https://huvo.co.uk/wp-content/uploads/2024/09/EMS-FireCell-230VAC-RCC.pdf",
+      "title": "MK126 FireCell 230Vac Radio Cluster Communicator Product Datasheet",
+      "declared_revision": "Issue 5, 03/10/2018",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/research/rcc.pdf",
+      "sha256": "777d6bd3e40513cc306e394974cba19b70b995395a8f396040802844c82a9f86",
+      "bytes": 313929,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-ems-a93fc764968b",
+      "url": "https://www.firesense.co.uk/amfile/file/download/file/399/product/2472/",
+      "title": "MK127 FireCell Fusion RLM Product Datasheet",
+      "declared_revision": "Issue 7, 24/09/2024",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/research/rlm.pdf",
+      "sha256": "a93fc764968b96a6dce97eeb0c3ace6b9baecb909a581bc1845882319413723e",
+      "bytes": 227012,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-ems-c103ba80a56c",
+      "url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Wireless-Sounder-Detector-Base.pdf",
+      "title": "MK121 FireCell Wireless Combined Sounder Detector Product Datasheet",
+      "declared_revision": "Issue 5, 17/06/2021",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/research/combined.pdf",
+      "sha256": "c103ba80a56cc6faa527b1155cba4a59edf8a7fbf34c1a0d6b3777fe9ecaa0d7",
+      "bytes": 164221,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-ems-c40857c87e50",
+      "url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Call-Point.pdf",
+      "title": "MK128 FireCell Wireless Call Point Product Datasheet",
+      "declared_revision": "Issue 4, 02/10/2018",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/research/mcp.pdf",
+      "sha256": "c40857c87e504849762f3c855546683f28a430cb96bd0346581fa3c6b236bdd5",
+      "bytes": 700922,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-ems-cf888f19e273",
+      "url": "https://www.safefiredirect.co.uk/media/bss/productattachment/EMS_FC-171-002_FC-315-WA2_Datasheet.pdf",
+      "title": "MK123 FireCell Wireless Wall Sounder Beacon Product Datasheet",
+      "declared_revision": "Issue 4, 02/10/2018",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/research/sounder-vad.pdf",
+      "sha256": "cf888f19e273e2471a365748ceea9c93871494ebd85d743156a5616c85dcbe96",
+      "bytes": 283815,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-ems-de2c0fb8aa1f",
+      "url": "https://huvo.co.uk/wp-content/uploads/2025/12/FCX-177-001.pdf",
+      "title": "MK119 FireCell Wireless Optical Smoke Detector Product Datasheet",
+      "declared_revision": "Issue 7, 26/06/2025",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/research/optical.pdf",
+      "sha256": "de2c0fb8aa1f80927bd4260932dbe586b420feec8261992273e064810b7bc334",
+      "bytes": 1069092,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-hochiki-25693c776dcc",
+      "url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "title": "Hochiki Europe Product Guide - Issue 33, March 2026",
+      "declared_revision": "9-5-0-321 / ISS33 / MAR26",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/hochiki-0.14.0/research/hochiki-product-guide.pdf",
+      "sha256": "25693c776dcc86b823870dc205b9051a37daaa9dad46c974136abf626f3bed3a",
+      "bytes": 11777900,
+      "pages": 56,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-nittan-24b1fd056ba7",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/NISM-EV-DPH-01_Manual.pdf",
+      "title": "Nittan EV-DPH-CS reference - NISM/EV-DPH/01 Issue 1, May 2010",
+      "declared_revision": "NISM/EV-DPH/01 Issue 1, May 2010",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/research/nittan-6fd49a400a54.pdf",
+      "sha256": "24b1fd056ba7e0312ffcbab08909ff71399bc9815901d7ca4e708524a2513339",
+      "bytes": 764598,
+      "pages": 10,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-nittan-2baa1e344172",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/ev-h_a1r_techmanual.pdf",
+      "title": "Nittan EV-H-CS reference - NISM/EV-H/05, September 2015",
+      "declared_revision": "NISM/EV-H/05, September 2015",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/research/nittan-14089a9905eb.pdf",
+      "sha256": "2baa1e344172062e5c91021267dc7904d1ac981cc87700a5df5289500910fda8",
+      "bytes": 195034,
+      "pages": 7,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-nittan-4e12fd384d8c",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/2026/06/NISM-EVC-IR-Tech-Manual-Iss-9.pdf",
+      "title": "Nittan EVC-IR reference - NISM-EVC-IR Issue 9",
+      "declared_revision": "NISM-EVC-IR Issue 9",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/research/nittan-0ac170ea49ab.pdf",
+      "sha256": "4e12fd384d8c18dadcfe71cb75553a65bf1485f0cf4959ac0977ead569365dc0",
+      "bytes": 266377,
+      "pages": 6,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-nittan-509751ace6d5",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-MCP2-SCI-IP24%20Iss%203%20Installation%20instruction%20sheet.pdf",
+      "title": "Nittan EV-MCP2-SCI-IP24 reference - IIS-EV-MCP2-SCI-IP24 Issue 3, 08/10/2019",
+      "declared_revision": "IIS-EV-MCP2-SCI-IP24 Issue 3, 08/10/2019",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/research/nittan-62c9c1d3b106.pdf",
+      "sha256": "509751ace6d5abdb7675d679c7d844cdbb5abbd4cf67dd11413f08f49d486fb8",
+      "bytes": 214302,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-nittan-60acce3d2e53",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/ev-240vmra_installmanual.pdf",
+      "title": "Nittan EV-240V MRA reference - EV-240V MRA Installation Leaflet Issue 1",
+      "declared_revision": "EV-240V MRA Installation Leaflet Issue 1",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/research/nittan-695cd16504ab.pdf",
+      "sha256": "60acce3d2e53aa94eb7c74ecb05222e962a78b3daddd8527c909fb901693c1a1",
+      "bytes": 306264,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-nittan-651d5abec767",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/ev-ps_techmanual.pdf",
+      "title": "Nittan EV-PS reference - NISM/EV-PS/01 Issue 1, May 2010",
+      "declared_revision": "NISM/EV-PS/01 Issue 1, May 2010",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/research/nittan-bd4b83c91afc.pdf",
+      "sha256": "651d5abec767d4674524a8b7bbad471b908c4b85a1008ca4e3d049c6b03709e1",
+      "bytes": 887499,
+      "pages": 10,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-nittan-92f082662910",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-MCP2-SCI-IP67%20Iss%202%20Installation%20instruction%20sheet.pdf",
+      "title": "Nittan EV-MCP2-SCI-IP67 reference - IIS-EV-MCP2-SCI-IP67 Issue 2, 08/10/2019",
+      "declared_revision": "IIS-EV-MCP2-SCI-IP67 Issue 2, 08/10/2019",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/research/nittan-1a1a18b53ab3.pdf",
+      "sha256": "92f082662910775f8f633359f84188014201ac5fd1926f7a0e2320dd0c80d93c",
+      "bytes": 341095,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-nittan-c2305fc3416e",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-2I1O%28EU%29%20Iss%204%20Installation%20instruction%20sheet.pdf",
+      "title": "Nittan EV-2I1O reference - IIS-EV-2I1O (-EU) Issue 4, 04/03/2019",
+      "declared_revision": "IIS-EV-2I1O (-EU) Issue 4, 04/03/2019",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/research/nittan-ea9adebcd190.pdf",
+      "sha256": "c2305fc3416e3f064559a41b2354f47d95f75878a213313e64dbcc7f760e4de4",
+      "bytes": 458432,
+      "pages": 4,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-nittan-c65c530f2411",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-Mini%20IP2%20Iss%204%20Installation%20instruction%20sheet.pdf",
+      "title": "Nittan EV-Mini IP2 reference - IIS-EV-Mini IP2 Issue 4, 18/01/2019",
+      "declared_revision": "IIS-EV-Mini IP2 Issue 4, 18/01/2019",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/research/nittan-702bcab0c22a.pdf",
+      "sha256": "c65c530f2411588278a1e09401f4ad7bcf395488f011d27493ce257ec0a91866",
+      "bytes": 273328,
+      "pages": 4,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-nittan-f912292fc103",
+      "url": "https://www.nittan.com/english/cms/wp-content/uploads/products/files/alarm/manuals/IIS-EV-HIOP-SB-SCI_Iss_7_Instruction_leaflet.pdf",
+      "title": "Nittan EV-HIOP-SB-SCI reference - IIS-EV-HIOP-SB-SCI Issue 9, 20/10/2016",
+      "declared_revision": "IIS-EV-HIOP-SB-SCI Issue 9, 20/10/2016",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/research/nittan-14b8944e8de0.pdf",
+      "sha256": "f912292fc103239e1d4ea38eba311a74309a8dc0cf6d105c61d00313ef976eb6",
+      "bytes": 326478,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-notifier-05a7316dffbe",
+      "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-uk/hba-fire-Agile-Wireless-Fire-Detection-990-182-0919.pdf?download=false",
+      "title": "Notifier Agile wireless fire detection - 990-182_0919",
+      "declared_revision": "990-182_0919, September 2019",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/notifier-devices-0.14.0/research/agile-990-182-0919.pdf",
+      "sha256": "05a7316dffbe411403d95f86c8885a5a5ef2954cae4ee3af854d2a0cc6a6d56e",
+      "bytes": 439386,
+      "pages": 3,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-notifier-722c2bfa968b",
+      "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-it/HBT-Fire-NFX-OPT-ENG.pdf?download=false",
+      "title": "Notifier NFX-OPT / NFXI-OPT and B501AP - English manufacturer datasheet",
+      "declared_revision": "D-532.3-NFX-ENG Rev. A.1, October 2009",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/notifier-devices-0.14.0/research/nfx-opt-datasheet.pdf",
+      "sha256": "722c2bfa968b04f1a3f7e27071344ee6eb48be7ba7553bc5ebc601b90dd44188",
+      "bytes": 1715533,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-notifier-c96d59e70df0",
+      "url": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/downloads/Fire-EMEA-NOTIFIER-2023-Black-Book_digital.pdf",
+      "title": "Notifier UK Black Book - 2023 product reference",
+      "declared_revision": "2023 edition",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/notifier-devices-0.14.0/research/notifier-black-book-2023.pdf",
+      "sha256": "c96d59e70df050fed1f927d38ba0cc6d2ab4143b80deae3f868bb80132c7d5d0",
+      "bytes": 13158971,
+      "pages": 106,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-optex-0e24f35a8e1a",
+      "url": "https://optex.imgix.net/downloads/sensor-downloads/Intrusion-Detection/Data-Sheets/optex-ftn-st_ftn-r_ftn-ram_ftn-am-datasheet.pdf",
+      "title": "FTN-ST compact outdoor PIR — manufacturer datasheet",
+      "declared_revision": "No. 75119-00-15747-1002",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/optex/research/ftn-st-datasheet.pdf",
+      "sha256": "0e24f35a8e1a903a6154f6fe3c13f176d92ff2f277fba39ef850088a62fa6069",
+      "bytes": 1309488,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-optex-133f7df088cd",
+      "url": "https://optex.imgix.net/downloads/sensor-downloads/Intrusion-Detection/Data-Sheets/optex-wxi-datasheet-en.pdf",
+      "title": "WXI-ST outdoor 180-degree PIR — manufacturer datasheet",
+      "declared_revision": "Revision not stated in the supplied manufacturer datasheet",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/optex/research/wxi-st-datasheet.pdf",
+      "sha256": "133f7df088cdf34dca6fc65ecb1ba3f55639bc42a5e8a7fdecc1b25d18f4609c",
+      "bytes": 1637780,
+      "pages": 4,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-optex-4db79e533f2a",
+      "url": "https://optex.imgix.net/downloads/sensor-downloads/Intrusion-Detection/Data-Sheets/optex-vxi-series-datasheet-en.pdf",
+      "title": "VXI-AM outdoor PIR with anti-masking — manufacturer datasheet",
+      "declared_revision": "Revision not stated in the supplied manufacturer datasheet",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/optex/research/vxi-am-datasheet.pdf",
+      "sha256": "4db79e533f2af8ac0fe8d81ed28b396828e08831a768af143f826f1805e01406",
+      "bytes": 1610677,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-optex-6c50f85965a3",
+      "url": "https://optex.imgix.net/downloads/sensor-downloads/Intrusion-Detection/Data-Sheets/optex-qxi-datasheet-En.pdf",
+      "title": "QXI-ST outdoor wide-angle PIR — manufacturer datasheet",
+      "declared_revision": "No. 00000-01-15747-1911-OE (2019)",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/optex/research/qxi-st-datasheet.pdf",
+      "sha256": "6c50f85965a3a2fce37331f4bb6615b1d0f17a7773d4fd9b4160ef4e18a6cd31",
+      "bytes": 3983750,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-optex-f26b1b42fc56",
+      "url": "https://optex.imgix.net/downloads/sensor-downloads/Intrusion-Detection/Data-Sheets/optex-flipx-standard-datasheet-en-web.pdf",
+      "title": "FlipX FLX-S-ST indoor PIR — manufacturer datasheet",
+      "declared_revision": "Revision not stated in the supplied manufacturer datasheet",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/optex/research/flx-s-st-datasheet.pdf",
+      "sha256": "f26b1b42fc56d6a6cb632b12d8d3b2c17c3a85d101ffdc25fb53b6ebed2d5075",
+      "bytes": 3033306,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-the-fire-beam-company-5e3186d7eb4f",
+      "url": "https://thefirebeamcompany.com/user-zone/pdf/Fire-Beam-BLUE-Datasheet.pdf",
+      "title": "Fire Beam BLUE manufacturer datasheet",
+      "declared_revision": "Undated manufacturer datasheet, retrieved 30 October 2026",
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/firebeam/sources/blue-datasheet.pdf",
+      "sha256": "5e3186d7eb4fae05438b3ee49d36f10b7cd29e261747dae5d3ea2fbe5def98e6",
+      "bytes": 824918,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-the-fire-beam-company-9ea9d54e1f2c",
+      "url": "https://thefirebeamcompany.com/user-zone/pdf/Fire-Beam-Xtra-User-Guide-0025-12.pdf",
+      "title": "Fire Beam Xtra user guide — issue 0025-12",
+      "declared_revision": "0025-12, Rev12, 22 April 2026",
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/firebeam/sources/xtra-guide.pdf",
+      "sha256": "9ea9d54e1f2c6ea887646ef03e63cac1532e471c496be732ed009a48fa6b66e8",
+      "bytes": 3543204,
+      "pages": 16,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-the-fire-beam-company-ef8e716e192b",
+      "url": "https://thefirebeamcompany.com/user-zone/pdf/Fire-Beam-BLUE-User-Guide-0165-05.pdf",
+      "title": "Fire Beam BLUE user guide — issue 0165-05",
+      "declared_revision": "0165-05, Rev05, 22 April 2026",
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/firebeam/sources/blue-guide.pdf",
+      "sha256": "ef8e716e192bc1d7120129374698f6ffd1f4f4560de79321f589048ee297becd",
+      "bytes": 6868242,
+      "pages": 28,
+      "archive_hash_match": true
+    },
+    {
+      "id": "device-doc-the-fire-beam-company-f9652cff6119",
+      "url": "https://thefirebeamcompany.com/user-zone/pdf/Fire-Beam-Xtra-Datasheet.pdf",
+      "title": "Fire Beam Xtra manufacturer datasheet",
+      "declared_revision": "Undated manufacturer datasheet, retrieved 30 October 2026",
+      "local_source_pdf": "/workspace/scratch/163ad62fc051/device-bulk-0.14.0/root/firebeam/sources/xtra-datasheet.pdf",
+      "sha256": "f9652cff611921fcd8b698a1be134483d2cdf31296f2961e251462b2c524c4e5",
+      "bytes": 815283,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "fike-078df373e6a6",
+      "url": "https://my.fike.com/_fike_new_docs/0373c9c3-e933-412e-aa08-7fb8a84d6a5d.pdf",
+      "title": "TF IO Installation Instructions",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/fike-0.14.0/research/fike-078df373e6a6.pdf",
+      "sha256": "2c635d4768d96605c2fdbe0c37604c45b1e062c1a39304f1fb1fef95fb4c07c1",
+      "bytes": 584452,
+      "pages": 8,
+      "archive_hash_match": null
+    },
+    {
+      "id": "fike-0a81dc0dbbc1",
+      "url": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/Duonet%20&%20Quadnet/Addressable%20Control%20Panels/Manuals/Sita%20SoundPoint%20313-0001%20313-0002%20InstallInstructs%2026-0190-13.pdf",
+      "title": "Sita SoundPoint Installation Instructions",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/fike-0.14.0/research/fike-0a81dc0dbbc1.pdf",
+      "sha256": "a6bdb8ddee689f01836a8190b82426ec5be312aa9348dfe01fb8ddf481982aaf",
+      "bytes": 595135,
+      "pages": 4,
+      "archive_hash_match": null
+    },
+    {
+      "id": "fike-1b2de37e6684",
+      "url": "https://my.fike.com/_fike_new_docs/56377394-750b-4543-90b1-16a1d520c9fc.pdf",
+      "title": "Sita I/O Module Installation Instructions",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/fike-0.14.0/research/fike-1b2de37e6684.pdf",
+      "sha256": "be75c97fe95fcd29cd5eb2200711e03b6b0f33455a7f9f40ea561d299ef6bf6f",
+      "bytes": 944063,
+      "pages": 4,
+      "archive_hash_match": null
+    },
+    {
+      "id": "fike-44f428530108",
+      "url": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/TwinflexPro/Conventional%20Control%20Panels/Manuals/TF%20MP%20ASD%20204-0001%20204-0003%20204-0012%20InstallInstructs%2026-0947-13.pdf",
+      "title": "TF MP ASD Installation Instructions",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/fike-0.14.0/research/fike-44f428530108.pdf",
+      "sha256": "c17442657a48c50feee3efe4a0e03290d03cfc5b3b3b984882935de5ecb4f79a",
+      "bytes": 522583,
+      "pages": 4,
+      "archive_hash_match": null
+    },
+    {
+      "id": "fike-538db8f6d1d5",
+      "url": "https://my.fike.com/_fike_new_docs/941829b3-1802-4861-8ca9-ac3c3bcdfa88.pdf",
+      "title": "Twinflex Sounder VAD F0296336",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/fike-0.14.0/research/fike-538db8f6d1d5.pdf",
+      "sha256": "fb3af336d1852b905ecd93f0c8661105ededf8dea5b4ba54337e447c48218960",
+      "bytes": 652911,
+      "pages": 4,
+      "archive_hash_match": null
+    },
+    {
+      "id": "fike-594585b67819",
+      "url": "https://my.fike.com/_fike_new_docs/1ab59b39-88d2-4b6f-8805-7786a80534bd.pdf",
+      "title": "Sita MCP Installation Instructions",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/fike-0.14.0/research/fike-594585b67819.pdf",
+      "sha256": "b367bc185ed3d86bc08ac009e96d714a75d80d96f05fbf85e25d63bcb1085f32",
+      "bytes": 523419,
+      "pages": 3,
+      "archive_hash_match": null
+    },
+    {
+      "id": "fike-6fec87fdf63f",
+      "url": "https://my.fike.com/_fike_new_docs/02181c3b-6298-45dc-af80-9816716c3522.pdf",
+      "title": "TF MCP Installation Instructions",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/fike-0.14.0/research/fike-6fec87fdf63f.pdf",
+      "sha256": "8b809a677ec11f3350d2ae9dbaab3f7fcba64ed9bad8e8b3c210518a030321d4",
+      "bytes": 684709,
+      "pages": 4,
+      "archive_hash_match": null
+    },
+    {
+      "id": "fike-77a5c9cbeaa2",
+      "url": "https://my.fike.com/_fike_new_docs/8a702f3e-4883-42bf-8eda-0388fdd005c4.pdf",
+      "title": "Sita MP ASD Installation Instructions",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/fike-0.14.0/research/fike-77a5c9cbeaa2.pdf",
+      "sha256": "e739faedc4b92569c9ff79ee2f090b6e1edb1e792cd1c93567bced754e4519b9",
+      "bytes": 675536,
+      "pages": 4,
+      "archive_hash_match": null
+    },
+    {
+      "id": "optex-1cb70a0528ac",
+      "url": "https://s3-eu-west-1.amazonaws.com/optex-europe/sensor-downloads/Intrusion-Detection/Manuals/optex-rxc-dt-manual-mutli-lingual.pdf",
+      "title": "RXC-DT / RXC-DT-X5 / RXC-DT-X7 / RXC-DT-X8 - PIR / microwave detector installation instructions (59-1954-1)",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/optex/research/optex-1cb70a0528ac.pdf",
+      "sha256": "93a8f971102bf65d375dfedc9895a0e00aff6385326e3dfc6c85f4d754b6f94c",
+      "bytes": 942832,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "optex-41bd61569d20",
+      "url": "https://navi.optex.net/manual/08832/5918959_RXC-ST_STPL_181214op_web.pdf",
+      "title": "RXC-ST / RXC-STPL - PIR detector installation instructions (59-1895-9)",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/optex/research/optex-41bd61569d20.pdf",
+      "sha256": "a8e1ad708920e569775cabd136055bc1f0a64d294038c70b4d9a5d3933550f3f",
+      "bytes": 1093969,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "orisec-806438c080d2",
+      "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Orisec%20IR-100%20PIR.pdf",
+      "title": "Orisec IR-100 PIR",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/orisec/research/orisec-806438c080d2.pdf",
+      "sha256": "9ac35d7202cf562640bafda66c97122719cfeeb4315bbf48234f5edd0e5f6d2d",
+      "bytes": 597913,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "protec-0be7c2a76eef",
+      "url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-SSR-VAD.pdf",
+      "title": "6000/SSR/VAD Datasheet",
+      "declared_revision": "Issue 7",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/research/protec-0be7c2a76eef.pdf",
+      "sha256": "92b5ced0a82eb3c054c9df5c5169e9f3de89eba19ead820b79e0353f961f041e",
+      "bytes": 631104,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "protec-19c2f3a94324",
+      "url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-LPZA-Issue-2.pdf",
+      "title": "6000/LPZA Datasheet",
+      "declared_revision": "Issue 2",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/research/protec-19c2f3a94324.pdf",
+      "sha256": "266a376b4a49340e5954621f100fc8fbb2f542b74a987d045539c17f1133ca75",
+      "bytes": 1640148,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "protec-339b6a0f3290",
+      "url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-MCP-WP.pdf",
+      "title": "6000/MCP/WP Datasheet",
+      "declared_revision": "Issue 6",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/research/protec-339b6a0f3290.pdf",
+      "sha256": "3ff47ee08ae751dd5d831dac22ad393d520da022f5946825be7a5d3a38b2f8f8",
+      "bytes": 573877,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "protec-3d5612b83a2a",
+      "url": "https://www.protec.co.uk/wp-content/uploads/2021/04/6000-LCM.pdf",
+      "title": "6000/LCM Datasheet",
+      "declared_revision": "Issue 5",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/research/protec-3d5612b83a2a.pdf",
+      "sha256": "ee5dd0b9bd1a88f15c18342fe4eb130b9ee05fad6c76b226c58f5ea1456c2234",
+      "bytes": 548984,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "protec-5b9f06e51aac",
+      "url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000PLUS-BASE-Tech-sheet-Issue-0.pdf",
+      "title": "6000PLUS/BASE Tech Sheet",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/research/protec-5b9f06e51aac.pdf",
+      "sha256": "903d63c4d204ed040dcd6efba72352adb2db60e70cccfa827215d2a2fc40d94b",
+      "bytes": 121557,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "protec-6d5775af2bdd",
+      "url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000PLUS-OP-Tech-sheet-Issue-0.pdf",
+      "title": "6000PLUS/OP Tech Sheet",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/research/protec-6d5775af2bdd.pdf",
+      "sha256": "9799687e7b6fe7a664445f2a0585aa0a4cc218ecba5f7e3b7514ababb087a62d",
+      "bytes": 109483,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "protec-8fe34afdfd9e",
+      "url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000PLUS-HT-Tech-sheet-Issue-0.pdf",
+      "title": "6000PLUS/HT Tech Sheet",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/research/protec-8fe34afdfd9e.pdf",
+      "sha256": "0c2c16d1eb2d7e2937491086c350ccd27eebf32a58245b307a3ccfb96f611c1f",
+      "bytes": 109524,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "protec-9e5e03fd774a",
+      "url": "https://www.protec.co.uk/wp-content/uploads/2025/10/6000-2IO-Tech-sheet-Issue-0.pdf",
+      "title": "6000/2IO Tech Sheet",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/research/protec-9e5e03fd774a.pdf",
+      "sha256": "11643d7d7586d32e735477876ed7e7114e2ef177c6dc89fd898097b8cab4012c",
+      "bytes": 127116,
+      "pages": 1,
+      "archive_hash_match": true
+    },
+    {
+      "id": "protec-a7baa334bd77",
+      "url": "https://www.protec.co.uk/wp-content/uploads/2020/03/UG4DP-Issue-4-1.pdf",
+      "title": "6000PLUS/UG4DP Datasheet",
+      "declared_revision": "Issue 4",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/research/protec-a7baa334bd77.pdf",
+      "sha256": "9ab3a01536165848d100819870ca23603e5f6ef56cdc6f702375bba78469ae82",
+      "bytes": 538029,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "protec-ce38ec46cb37",
+      "url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-DCM-Smoke-Damper-Module.pdf",
+      "title": "6000/DCM Datasheet",
+      "declared_revision": "Issue 2",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/research/protec-ce38ec46cb37.pdf",
+      "sha256": "1e9752d8dc1b3d2adaf23b78f881835a4528439ba192c13f5a9168b2800c4e22",
+      "bytes": 558190,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "protec-f00b03bef0a0",
+      "url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-MCP.pdf",
+      "title": "6000/MCP Datasheet",
+      "declared_revision": "Issue 7",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/research/protec-f00b03bef0a0.pdf",
+      "sha256": "4f1d88053c3046b2212ba0d1761a4a49c0c317a8f19e7619b3fe5d5aebb63d14",
+      "bytes": 472402,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "protec-f6b672126de1",
+      "url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000PLUS-OPHTCO.pdf",
+      "title": "6000PLUS/OPHTCO Datasheet",
+      "declared_revision": "Issue 6",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/research/protec-f6b672126de1.pdf",
+      "sha256": "1f94841e859bb05f3bf214056b98c57544e95805e0352c2fec80704d4d4ef3ad",
+      "bytes": 585317,
+      "pages": 2,
+      "archive_hash_match": true
+    },
+    {
+      "id": "pyronix-12dc1a0275b5",
+      "url": "https://dsc.hu/themes/frontend/documents/kx15dt-installation-manual-multilingual.pdf",
+      "title": "KX15DT - installation guide (RINS549-14)",
+      "declared_revision": "14",
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/pyronix/research/pyronix-12dc1a0275b5.pdf",
+      "sha256": "2cd59b9ecb5aaa3d5052803c146704551c79e74bb6fce2225d6bd8476a7f8086",
+      "bytes": 13260308,
+      "pages": 4,
+      "archive_hash_match": true
+    },
+    {
+      "id": "texecom-0faf7b484b7a",
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2023/09/20132924/Micro-Contact-W-INS741-8-Manual.pdf",
+      "title": "Micro Contact-W INS741-8 Manual",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/texecom/research/texecom-0faf7b484b7a.pdf",
+      "sha256": "65278e23b90a015c16e43461c657bb421e2e298813d240767247aff308f4521c",
+      "bytes": 631824,
+      "pages": 30,
+      "archive_hash_match": null
+    },
+    {
+      "id": "texecom-2e8386a1d8f4",
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/11/04115048/INS879EN-11-Capture-G2-Wireless-Wall-mount-detectors.pdf",
+      "title": "INS879EN-11 Capture G2 Wireless Wall mount detectors",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/texecom/research/texecom-2e8386a1d8f4.pdf",
+      "sha256": "b30026966856785e450779cb73c064f6515d576ae481c76c7988b47d1db86563",
+      "bytes": 12296817,
+      "pages": 79,
+      "archive_hash_match": null
+    },
+    {
+      "id": "texecom-3973d2c533e7",
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2023/01/03162715/EN-Impaq-S_SC_SG3-Installation-Manual.pdf",
+      "title": "EN Impaq S_SC_SG3 Installation Manual",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/texecom/research/texecom-3973d2c533e7.pdf",
+      "sha256": "dd52f1cfff42210cd5dd0a42c8dbfd49797aaf5f2a8840f056c6e158fa9f7076",
+      "bytes": 1901051,
+      "pages": 26,
+      "archive_hash_match": null
+    },
+    {
+      "id": "texecom-4e1e0135f4bf",
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/02/01102935/Impaq_SC-W_instructions.pdf",
+      "title": "Impaq SC-W Installation Manual",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/texecom/research/texecom-4e1e0135f4bf.pdf",
+      "sha256": "28279be832df10979150fe382f145a53e0d5311390f0fdcaf910fb823952d6f6",
+      "bytes": 591883,
+      "pages": 15,
+      "archive_hash_match": null
+    },
+    {
+      "id": "texecom-778b363ae34b",
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/11/04115044/INS878EN-11-Capture-G2-Wired-wall-mount-detectors.pdf",
+      "title": "INS878EN-11 Capture G2 Wired wall mount detectors",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/texecom/research/texecom-778b363ae34b.pdf",
+      "sha256": "75d9984f07d7b68cb905762988d074e5e40847f6b32f124ba908f805e527a3b7",
+      "bytes": 14905157,
+      "pages": 76,
+      "archive_hash_match": null
+    },
+    {
+      "id": "texecom-d0db73f4ddd3",
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2023/09/20132929/Micro-Shock-W-INS773-10-Manual.pdf",
+      "title": "Micro Shock-W INS773-10 Manual",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/texecom/research/texecom-d0db73f4ddd3.pdf",
+      "sha256": "4c470d0602c1489d81c9d644f657eb2f488d3715189cf20f09bc1b4d1eab3578",
+      "bytes": 526281,
+      "pages": 28,
+      "archive_hash_match": null
+    },
+    {
+      "id": "texecom-d710b6c6465d",
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/02/01102935/Impaq_GlassBreak_INS229-4-2.pdf",
+      "title": "Premier Impaq Glass Break Instruction Manual",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/texecom/research/texecom-d710b6c6465d.pdf",
+      "sha256": "cc9dc5daeab4ef78d1bb75f535d16f4cfdf89423b750ed3946392d10e93eccef",
+      "bytes": 577568,
+      "pages": 2,
+      "archive_hash_match": null
+    },
+    {
+      "id": "texecom-f166805d48dc",
+      "url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/02/30152212/Odyssey-X-Wired-Wireless-and-Deterrent-sounder-INS627-8.pdf",
+      "title": "Odyssey-X-Wired-Wireless-and-Deterrent-sounder-INS627-8",
+      "declared_revision": null,
+      "local_source_pdf": "/workspace/scratch/dc428cd64ddc/device-batches/texecom/research/texecom-f166805d48dc.pdf",
+      "sha256": "88bf89a5c3ea9f0e8e66fc6435274518469b29f44ad06bbe0278f66df5c666f2",
+      "bytes": 1530866,
+      "pages": 44,
+      "archive_hash_match": null
+    }
+  ],
+  "devices": [
+    {
+      "id": "aico-ei3014",
+      "brand": "Aico",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/aico-0.14.0/images/aico-ei3014.webp",
+      "image_sha256": "2ae75f24a89afafe26a0c359bd53b0ff32fabd26c1a72757a73c94b36824fb06",
+      "image_source_url": "https://www.aico.co.uk/wp-content/uploads/2020/08/EI3014_MAIN-600x600.jpg",
+      "source_page_url": "https://www.aico.co.uk/product/ei3014-heat-alarm/",
+      "matched_documents": [
+        {
+          "record_id": "aico-0d5d7df89314",
+          "model_codes_found_in_pdf": [
+            "Ei3014"
+          ],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "device-doc-aico-6c128c0b705a",
+          "model_codes_found_in_pdf": [
+            "Ei3014"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "aico-ei3016",
+      "brand": "Aico",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/aico-0.14.0/images/aico-ei3016.webp",
+      "image_sha256": "ab7f8bafcebf522aef5e91e8e4dea6fa9fb4b1a8bec58eb7896b6f615d33acd2",
+      "image_source_url": "https://www.aico.co.uk/wp-content/uploads/2020/08/EI3016_MAIN-600x600.jpg",
+      "source_page_url": "https://www.aico.co.uk/product/ei3016-optical-smoke-alarm/",
+      "matched_documents": [
+        {
+          "record_id": "aico-0b817031d733",
+          "model_codes_found_in_pdf": [
+            "Ei3016"
+          ],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "device-doc-aico-6c128c0b705a",
+          "model_codes_found_in_pdf": [
+            "Ei3016"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "aico-ei3024",
+      "brand": "Aico",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/aico-0.14.0/images/aico-ei3024.webp",
+      "image_sha256": "8a95f6d4a7b7ae8452a3ea6b9199108f88e4767c3eab729b13d000a0d833c031",
+      "image_source_url": "https://www.aico.co.uk/wp-content/uploads/2020/08/EI3024_MAIN-600x600.jpg",
+      "source_page_url": "https://www.aico.co.uk/product/ei3024-multi-sensor-fire-alarm/",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-aico-6c128c0b705a",
+          "model_codes_found_in_pdf": [
+            "Ei3024"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "aico-ei3030",
+      "brand": "Aico",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/aico-0.14.0/images/aico-ei3030.webp",
+      "image_sha256": "cd65898119a8e122d94ad24655e989339b04d2e205780f516b07132dd2aa61fd",
+      "image_source_url": "https://www.aico.co.uk/wp-content/uploads/2020/08/EI3030_MAIN-600x600.jpg",
+      "source_page_url": "https://www.aico.co.uk/product/ei3030-multi-sensor-fire-and-carbon-monoxide-alarm/",
+      "matched_documents": [
+        {
+          "record_id": "aico-4fb4b285b074",
+          "model_codes_found_in_pdf": [
+            "Ei3030"
+          ],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "device-doc-aico-7dbcfdf98ccb",
+          "model_codes_found_in_pdf": [
+            "Ei3030"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "aico-ei660i",
+      "brand": "Aico",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/aico-0.14.0/images/aico-ei660i.webp",
+      "image_sha256": "8fbc02225d6224ac224f9d4f6ccc9ee11ac019458c3f9265975904af8c116a04",
+      "image_source_url": "https://www.aico.co.uk/wp-content/uploads/2022/10/EI660I_MAIN-600x600.jpg",
+      "source_page_url": "https://www.aico.co.uk/product/ei660i-multi-sensor-fire-alarm/",
+      "matched_documents": [
+        {
+          "record_id": "aico-957a8189361b",
+          "model_codes_found_in_pdf": [
+            "Ei660i"
+          ],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "aico-6d83ddd276c6",
+          "model_codes_found_in_pdf": [
+            "Ei660i"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "aico-ei650i",
+      "brand": "Aico",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/aico-0.14.0/images/aico-ei650i.webp",
+      "image_sha256": "a19ad129fa6a3d40324d8ecf1addd678d9d92cacd74ededdc2b81e6cfd235284",
+      "image_source_url": "https://www.aico.co.uk/wp-content/uploads/2020/07/EI650I_MAIN-600x600.jpg",
+      "source_page_url": "https://www.aico.co.uk/product/ei650i-battery-optical-alarm/",
+      "matched_documents": [
+        {
+          "record_id": "aico-33d08994b662",
+          "model_codes_found_in_pdf": [
+            "Ei650i"
+          ],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "aico-6d83ddd276c6",
+          "model_codes_found_in_pdf": [
+            "Ei650i"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "aico-ei630i",
+      "brand": "Aico",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/aico-0.14.0/images/aico-ei630i.webp",
+      "image_sha256": "a22ab21bc93daaac9f1ecf104831eaae92d6b17f33899f663bdcd85fbe269bd1",
+      "image_source_url": "https://www.aico.co.uk/wp-content/uploads/2022/05/EI630I_MAIN-600x600.jpg",
+      "source_page_url": "https://www.aico.co.uk/product/ei630i-battery-heat-alarm/",
+      "matched_documents": [
+        {
+          "record_id": "aico-8b45527b51c1",
+          "model_codes_found_in_pdf": [
+            "Ei630i"
+          ],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "aico-6d83ddd276c6",
+          "model_codes_found_in_pdf": [
+            "Ei630i"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "aico-ei144e",
+      "brand": "Aico",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/aico-0.14.0/images/aico-ei144e.webp",
+      "image_sha256": "33b69d5ac63f1e2da45367c25a46562b5b96c8b6764553d48b9c716c1c525a18",
+      "image_source_url": "https://www.aico.co.uk/wp-content/uploads/2022/03/EI144_MAIN-600x600.jpg",
+      "source_page_url": "https://www.aico.co.uk/product/ei144e-heat-alarm/",
+      "matched_documents": [
+        {
+          "record_id": "aico-55f3ba358d2a",
+          "model_codes_found_in_pdf": [],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "device-doc-aico-8f8b5876b06d",
+          "model_codes_found_in_pdf": [
+            "Ei144e"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "aico-ei146e",
+      "brand": "Aico",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/aico-0.14.0/images/aico-ei146e.webp",
+      "image_sha256": "a192081bc2860520e8487d4e109433b47bf797bcbce3cc4dae01679ab9440911",
+      "image_source_url": "https://www.aico.co.uk/wp-content/uploads/2022/03/EI146_MAIN-600x600.jpg",
+      "source_page_url": "https://www.aico.co.uk/product/ei146e-optical-smoke-alarm/",
+      "matched_documents": [
+        {
+          "record_id": "aico-d3fb97090714",
+          "model_codes_found_in_pdf": [
+            "Ei146e"
+          ],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "device-doc-aico-8f8b5876b06d",
+          "model_codes_found_in_pdf": [
+            "Ei146e"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "aico-ei3000mrf",
+      "brand": "Aico",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/aico-0.14.0/images/aico-ei3000mrf.webp",
+      "image_sha256": "7c6ec1df7ddd7bbaeeb28cff6f7d0854cdf652cf0b037d8115765df5f56999f0",
+      "image_source_url": "https://www.aico.co.uk/wp-content/uploads/2020/08/EI3000MRF_MAIN-600x600.jpg",
+      "source_page_url": "https://www.aico.co.uk/product/ei3000mrf-smartlink-module/",
+      "matched_documents": [
+        {
+          "record_id": "aico-5520615bdeb8",
+          "model_codes_found_in_pdf": [],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "device-doc-aico-22884205c611",
+          "model_codes_found_in_pdf": [
+            "Ei3000MRF"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "aico-ei450",
+      "brand": "Aico",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/aico-0.14.0/images/aico-ei450.webp",
+      "image_sha256": "ee79f24309ee70460485f426a026f6995874346d31f283458ab437304a99a76d",
+      "image_source_url": "https://www.aico.co.uk/wp-content/uploads/2020/07/Ei450-front-600x600.jpg",
+      "source_page_url": "https://www.aico.co.uk/product/ei450-radiolink-alarm-controller/",
+      "matched_documents": [
+        {
+          "record_id": "aico-f4d4866ac694",
+          "model_codes_found_in_pdf": [
+            "Ei450"
+          ],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "aico-efec1bd3d80d",
+          "model_codes_found_in_pdf": [
+            "Ei450"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "aico-mcp401rc",
+      "brand": "Aico",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/aico-0.14.0/images/aico-mcp401rc.webp",
+      "image_sha256": "d92091868ee72aa46ff0ddbdc6ac6a43f72b5e4cf9a24b41a241fcbe415f51e0",
+      "image_source_url": "https://www.aico.co.uk/wp-content/uploads/2020/07/MCP401RC_MAIN-600x600.jpg",
+      "source_page_url": "https://www.aico.co.uk/product/mcp401rc-hard-wired-manual-call-point/",
+      "matched_documents": [
+        {
+          "record_id": "aico-a107023f8485",
+          "model_codes_found_in_pdf": [
+            "MCP401RC"
+          ],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "aico-3940aa649cda",
+          "model_codes_found_in_pdf": [
+            "MCP401RC"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "ajax-motionprotect",
+      "brand": "Ajax",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/ajax/images/ajax-motionprotect.webp",
+      "image_sha256": "a2a63a41fc05dd106d935bb3fd526e7b3175ba07379ab802479bb947006bec9e",
+      "image_source_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-MotionProtect-and-MotionProtect-Plus-User-Manual.pdf",
+      "source_page_url": "https://ajax.systems/support/manuals/motionprotect/",
+      "matched_documents": [
+        {
+          "record_id": "ajax-bf92b9a58fdb",
+          "model_codes_found_in_pdf": [],
+          "pdf_locally_inspected": false
+        },
+        {
+          "record_id": "device-doc-ajax-740eadda7644",
+          "model_codes_found_in_pdf": [
+            "MotionProtect"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "ajax-motionprotect-plus",
+      "brand": "Ajax",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/ajax/images/ajax-motionprotect-plus.webp",
+      "image_sha256": "a2a63a41fc05dd106d935bb3fd526e7b3175ba07379ab802479bb947006bec9e",
+      "image_source_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-MotionProtect-and-MotionProtect-Plus-User-Manual.pdf",
+      "source_page_url": "https://ajax.systems/support/manuals/motionprotect-plus/",
+      "matched_documents": [
+        {
+          "record_id": "ajax-f0ce8387a135",
+          "model_codes_found_in_pdf": [],
+          "pdf_locally_inspected": false
+        },
+        {
+          "record_id": "device-doc-ajax-740eadda7644",
+          "model_codes_found_in_pdf": [
+            "MotionProtect Plus"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "ajax-combiprotect",
+      "brand": "Ajax",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/ajax/images/ajax-combiprotect.webp",
+      "image_sha256": "b574f048ac5a3d3ce4008caffebe0d6a60872d621b5211aad62a7b3acd994886",
+      "image_source_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-CombiProtect-User-Manual.pdf",
+      "source_page_url": "https://ajax.systems/support/manuals/combiprotect/",
+      "matched_documents": [
+        {
+          "record_id": "ajax-af0b7d4e7c33",
+          "model_codes_found_in_pdf": [],
+          "pdf_locally_inspected": false
+        },
+        {
+          "record_id": "device-doc-ajax-9486bbc86323",
+          "model_codes_found_in_pdf": [
+            "CombiProtect"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "ajax-doorprotect",
+      "brand": "Ajax",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/ajax/images/ajax-doorprotect.webp",
+      "image_sha256": "b643b0b0138a383954616958e6697a00d7f6f527b6a20c596cc2c3e6f6e19215",
+      "image_source_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-DoorProtect-User-Manual.pdf",
+      "source_page_url": "https://ajax.systems/support/manuals/doorprotect/",
+      "matched_documents": [
+        {
+          "record_id": "ajax-31ec417c87c3",
+          "model_codes_found_in_pdf": [],
+          "pdf_locally_inspected": false
+        },
+        {
+          "record_id": "device-doc-ajax-cf09dfff46dd",
+          "model_codes_found_in_pdf": [
+            "DoorProtect"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "ajax-doorprotect-plus",
+      "brand": "Ajax",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/ajax/images/ajax-doorprotect-plus.webp",
+      "image_sha256": "b643b0b0138a383954616958e6697a00d7f6f527b6a20c596cc2c3e6f6e19215",
+      "image_source_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-DoorProtect-Plus-User-Manual.pdf",
+      "source_page_url": "https://ajax.systems/support/manuals/doorprotect-plus/",
+      "matched_documents": [
+        {
+          "record_id": "ajax-7e7baaa693fd",
+          "model_codes_found_in_pdf": [],
+          "pdf_locally_inspected": false
+        },
+        {
+          "record_id": "device-doc-ajax-b17f6521ffcf",
+          "model_codes_found_in_pdf": [
+            "DoorProtect Plus"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "ajax-glassprotect",
+      "brand": "Ajax",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/ajax/images/ajax-glassprotect.webp",
+      "image_sha256": "ee0581feeb449f6e63d21f32167cfe1343a074ea888fd90c63b89cf5c82a4ec7",
+      "image_source_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-GlassProtect-User-Manual.pdf",
+      "source_page_url": "https://ajax.systems/support/manuals/glassprotect/",
+      "matched_documents": [
+        {
+          "record_id": "ajax-f9691d9be788",
+          "model_codes_found_in_pdf": [],
+          "pdf_locally_inspected": false
+        },
+        {
+          "record_id": "device-doc-ajax-c05166983480",
+          "model_codes_found_in_pdf": [
+            "GlassProtect"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "ajax-homesiren",
+      "brand": "Ajax",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/ajax/images/ajax-homesiren.webp",
+      "image_sha256": "820b712a69487f67328ac36408baba1602c3ae5258ce57e5495176803e767258",
+      "image_source_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-HomeSiren-User-Manual.pdf",
+      "source_page_url": "https://ajax.systems/support/manuals/homesiren/",
+      "matched_documents": [
+        {
+          "record_id": "ajax-5d2fa14fb8ca",
+          "model_codes_found_in_pdf": [],
+          "pdf_locally_inspected": false
+        },
+        {
+          "record_id": "device-doc-ajax-53339097c1a5",
+          "model_codes_found_in_pdf": [
+            "HomeSiren"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "ajax-streetsiren",
+      "brand": "Ajax",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/ajax/images/ajax-streetsiren.webp",
+      "image_sha256": "cb14fffb96c3f0b1454e26634e6cbeb741aa15ca6e61ca52bd0b77cbbbe44fa0",
+      "image_source_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-StreetSiren-User-Manual.pdf",
+      "source_page_url": "https://ajax.systems/support/manuals/streetsiren/",
+      "matched_documents": [
+        {
+          "record_id": "ajax-4d6ca373b0b7",
+          "model_codes_found_in_pdf": [],
+          "pdf_locally_inspected": false
+        },
+        {
+          "record_id": "device-doc-ajax-3b7dbd6db378",
+          "model_codes_found_in_pdf": [
+            "StreetSiren"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "ajax-motioncam",
+      "brand": "Ajax",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/ajax/images/ajax-motioncam.webp",
+      "image_sha256": "4340d0f1002bbd49d412aaa11bc421a49029218791b3bec0a0cae71895fcff4a",
+      "image_source_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-MotionCam-User-Manual.pdf",
+      "source_page_url": "https://ajax.systems/support/manuals/motioncam/",
+      "matched_documents": [
+        {
+          "record_id": "ajax-3837d17e4660",
+          "model_codes_found_in_pdf": [],
+          "pdf_locally_inspected": false
+        },
+        {
+          "record_id": "device-doc-ajax-44764eb47998",
+          "model_codes_found_in_pdf": [
+            "MotionCam"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "ajax-motionprotect-curtain",
+      "brand": "Ajax",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/ajax/images/ajax-motionprotect-curtain.webp",
+      "image_sha256": "33063d5f24343934083df397407ed34b70c7b023d6e62f9dfb4afca40b225769",
+      "image_source_url": "https://www.intelligentsecurity.org/resources/intruder-alarms/Ajax-MotionProtect-Curtain-User-Manual.pdf",
+      "source_page_url": "https://ajax.systems/support/manuals/motionprotect-curtain/",
+      "matched_documents": [
+        {
+          "record_id": "ajax-20acb6e3d08d",
+          "model_codes_found_in_pdf": [],
+          "pdf_locally_inspected": false
+        },
+        {
+          "record_id": "device-doc-ajax-26155dac817d",
+          "model_codes_found_in_pdf": [
+            "MotionProtect Curtain"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "apollo-reach-loop-interface-rw1700-030",
+      "brand": "Apollo",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/apollo-0.14.0/images/apollo-reach-loop-interface-rw1700-030.webp",
+      "image_sha256": "9b5858476acb11d213fa4413b300e9ccc4fb8ce2a5f3a1a10bed17138f3dcf06",
+      "image_source_url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0007407_0001.png",
+      "source_page_url": "https://apollo-fire.co.uk/products/reach-wireless/interface-flying-leads/rw1700-030apo-reach-xp95-loop-interface-module/",
+      "matched_documents": [
+        {
+          "record_id": "apollo-00c3936bf0fc",
+          "model_codes_found_in_pdf": [
+            "RW1700-030APO"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "apollo-minidisc-remote-indicator-53832-070",
+      "brand": "Apollo",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/apollo-0.14.0/images/apollo-minidisc-remote-indicator-53832-070.webp",
+      "image_sha256": "6fccaeea56d72d553e68dc41bf81f0c1d4923b624d4c7f58dd885a2782755e2b",
+      "image_source_url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0002153_0001.jpg",
+      "source_page_url": "https://apollo-fire.co.uk/products/xp95/accessories/53832-070apo-minidisc-remote-indicator/",
+      "matched_documents": [
+        {
+          "record_id": "apollo-ae612a27ea60",
+          "model_codes_found_in_pdf": [],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "apollo-auto-align-beam-sa7100-100",
+      "brand": "Apollo",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/apollo-0.14.0/images/apollo-auto-align-beam-sa7100-100.webp",
+      "image_sha256": "d95fd19be82a91dfbdee40389423914b73d86dfb5d5d3ed4dbe5471f1dab7ff0",
+      "image_source_url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0002143_0001.jpg",
+      "source_page_url": "https://apollo-fire.co.uk/products/xp95/detector-beam/sa7100-100apo-intelligent-reflective-beam-detector-auto-aligning/",
+      "matched_documents": [
+        {
+          "record_id": "apollo-e4ec6992b586",
+          "model_codes_found_in_pdf": [],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "apollo-xp95-ir3-flame-55000-024",
+      "brand": "Apollo",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/apollo-0.14.0/images/apollo-xp95-ir3-flame-55000-024.webp",
+      "image_sha256": "fcfd951555f603f2068f10133112240b48d843e6729281be704802a777c0159c",
+      "image_source_url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0002122_0001.jpg",
+      "source_page_url": "https://apollo-fire.co.uk/products/xp95/detector-flame/55000-024apo-xp95-flame-detector-ir3-base-mounted/",
+      "matched_documents": [
+        {
+          "record_id": "apollo-d632a36424b9",
+          "model_codes_found_in_pdf": [],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "apollo-xpander-diversity-interface-xpa-in-14050",
+      "brand": "Apollo",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/apollo-0.14.0/images/apollo-xpander-diversity-interface-xpa-in-14050.webp",
+      "image_sha256": "93fcfe48b56cccc8f5c5bdc8074074a6ad2476a8443a637cbe48e97cb90b25c1",
+      "image_source_url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0002222_0001.jpg",
+      "source_page_url": "https://apollo-fire.co.uk/products/xpander/interface-face-plate/xpa-in-14050-apo-xpander-diversity-loop-interface-module/",
+      "matched_documents": [
+        {
+          "record_id": "apollo-f27ce8642ca3",
+          "model_codes_found_in_pdf": [
+            "XPA-IN-14050-APO"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "apollo-orbis-diode-base-orb-db-00003",
+      "brand": "Apollo",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/apollo-0.14.0/images/apollo-orbis-diode-base-orb-db-00003.webp",
+      "image_sha256": "cacc66cbf85ee9623f6b443af58ca1deb536b988e3fdc2bf25210308b6f81222",
+      "image_source_url": "https://apollo-fire.co.uk/wp-content/uploads/2025/07/E0000448_0001.jpg",
+      "source_page_url": "https://apollo-fire.co.uk/products/orbis/base/orb-db-00003-apo-orbis-timesaver-base-diode/",
+      "matched_documents": [
+        {
+          "record_id": "apollo-9739bb7328db",
+          "model_codes_found_in_pdf": [],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "ems-firecell-optical-fcx-177-001",
+      "brand": "EMS",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/images/ems-firecell-optical-fcx-177-001.webp",
+      "image_sha256": "8ec19f52ee89dfd27ce7d3d69794717941e189e13805e96be7038812b3cbdf5d",
+      "image_source_url": "https://huvo.co.uk/wp-content/uploads/2025/12/FCX-177-001.pdf",
+      "source_page_url": "https://huvo.co.uk/wp-content/uploads/2025/12/FCX-177-001.pdf",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-ems-de2c0fb8aa1f",
+          "model_codes_found_in_pdf": [
+            "FCX-177-001"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "ems-firecell-sounder-detector-base-fcx-191-000",
+      "brand": "EMS",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/images/ems-firecell-sounder-detector-base-fcx-191-000.webp",
+      "image_sha256": "af91e74db45236cece90c9b4e5ca8e807a43ccdb6edeb916f24806b005ea1920",
+      "image_source_url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Wireless-Sounder-Detector-Base.pdf",
+      "source_page_url": "https://huvo.co.uk/product/ems-firecell-wireless-sounder-base-for-detectors/",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-ems-c103ba80a56c",
+          "model_codes_found_in_pdf": [
+            "FCX-191-000"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "ems-firecell-wall-sounder-vad-fc-315-wa2",
+      "brand": "EMS",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/images/ems-firecell-wall-sounder-vad-fc-315-wa2.webp",
+      "image_sha256": "cebb1f1b6342ee8e6e68c74e519fa8c06d9969a61893330cd20c6bbbe13e28ef",
+      "image_source_url": "https://www.safefiredirect.co.uk/media/bss/productattachment/EMS_FC-171-002_FC-315-WA2_Datasheet.pdf",
+      "source_page_url": "https://www.safefiredirect.co.uk/media/bss/productattachment/EMS_FC-171-002_FC-315-WA2_Datasheet.pdf",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-ems-cf888f19e273",
+          "model_codes_found_in_pdf": [
+            "FC-315-WA2"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "ems-firecell-call-point-fc-200-002",
+      "brand": "EMS",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/images/ems-firecell-call-point-fc-200-002.webp",
+      "image_sha256": "1529e40110415b4b4948d80fce07915c8b5f3a68b74cdb32cb34279967482735",
+      "image_source_url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Call-Point.pdf",
+      "source_page_url": "https://huvo.co.uk/product/ems-firecell-wireless-call-point/",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-ems-c40857c87e50",
+          "model_codes_found_in_pdf": [
+            "FC-200-002"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "ems-firecell-dual-io-fc-610-001",
+      "brand": "EMS",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/images/ems-firecell-dual-io-fc-610-001.webp",
+      "image_sha256": "5204df0c48d5d9cf047f7b0cf57b2e580749f8daef472cfb0331aeac9934cb35",
+      "image_source_url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Input-Output-Unit.pdf",
+      "source_page_url": "https://huvo.co.uk/product/ems-firecell-input-output-unit/",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-ems-2f0d72961ef4",
+          "model_codes_found_in_pdf": [
+            "FC-610-001"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "ems-fusion-rlm-fcx-532-001",
+      "brand": "EMS",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/images/ems-fusion-rlm-fcx-532-001.webp",
+      "image_sha256": "6696053f06b9db7c45ced649202c9c29bce43fd9ebd6e0c996e6c52645a66995",
+      "image_source_url": "https://www.firesense.co.uk/amfile/file/download/file/399/product/2472/",
+      "source_page_url": "https://www.firesense.co.uk/amfile/file/download/file/399/product/2472/",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-ems-a93fc764968b",
+          "model_codes_found_in_pdf": [
+            "FCX-532-001"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "ems-firecell-rcc-230v-fc-555-001",
+      "brand": "EMS",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/images/ems-firecell-rcc-230v-fc-555-001.webp",
+      "image_sha256": "65019bb76696bc4aa2cdb68e8a08468e129df2625ddf35f324c93719d12cddd5",
+      "image_source_url": "https://huvo.co.uk/wp-content/uploads/2024/09/EMS-FireCell-230VAC-RCC.pdf",
+      "source_page_url": "https://huvo.co.uk/product/ems-firecell-radio-cluster-communicator/",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-ems-777d6bd3e405",
+          "model_codes_found_in_pdf": [
+            "FC-555-001"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "ems-firecell-radio-hub-fcx-500-004",
+      "brand": "EMS",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/ems-0.14.0/images/ems-firecell-radio-hub-fcx-500-004.webp",
+      "image_sha256": "bde69754bfc128ce3c5a03af94f661c316d84d85e6a846b06de900f79d225621",
+      "image_source_url": "https://huvo.co.uk/media/pdfs/EMS/FireCell-Radio-Hub.pdf",
+      "source_page_url": "https://huvo.co.uk/product/ems-firecell-radio-hub/",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-ems-0df7986de600",
+          "model_codes_found_in_pdf": [
+            "FCX-500-004"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "fike-twinflex-multipoint-asd",
+      "brand": "Fike",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/fike-0.14.0/images/fike-twinflex-multipoint-asd.webp",
+      "image_sha256": "de9c397e94a26e0cc34829cf9486a0daec75e1f6ad97d67f42207e3772243b3b",
+      "image_source_url": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/TwinflexPro/Conventional%20Control%20Panels/Manuals/TF%20MP%20ASD%20204-0001%20204-0003%20204-0012%20InstallInstructs%2026-0947-13.pdf",
+      "source_page_url": "https://www.fike.com/es-es/product-documents/twinflex-pro2/",
+      "matched_documents": [
+        {
+          "record_id": "fike-44f428530108",
+          "model_codes_found_in_pdf": [
+            "204-0003",
+            "204-0001",
+            "204-0012"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "fike-sita-multipoint-asd",
+      "brand": "Fike",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/fike-0.14.0/images/fike-sita-multipoint-asd.webp",
+      "image_sha256": "2455ff6e05a27d3c68fdb7541ce605bc941eaa1c3f59dc51fde7c284ee274dd7",
+      "image_source_url": "https://my.fike.com/_fike_new_docs/8a702f3e-4883-42bf-8eda-0388fdd005c4.pdf",
+      "source_page_url": "https://www.fike.com/en-gb/product-documents/cie-a-200-fire-alarm-system/",
+      "matched_documents": [
+        {
+          "record_id": "fike-77a5c9cbeaa2",
+          "model_codes_found_in_pdf": [
+            "205-0003",
+            "205-0001",
+            "205-0012"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "fike-twinflex-mcp-402-0006",
+      "brand": "Fike",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/fike-0.14.0/images/fike-twinflex-mcp-402-0006.webp",
+      "image_sha256": "0b648516c1e8449529ed9f21b6b1d7f62123afec8d9616d1cf3eed2773a662f0",
+      "image_source_url": "https://my.fike.com/_fike_new_docs/02181c3b-6298-45dc-af80-9816716c3522.pdf",
+      "source_page_url": "https://www.fike.com/es-es/product-documents/twinflex-pro2/",
+      "matched_documents": [
+        {
+          "record_id": "fike-6fec87fdf63f",
+          "model_codes_found_in_pdf": [
+            "402-0006"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "fike-sita-mcp-403-0006",
+      "brand": "Fike",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/fike-0.14.0/images/fike-sita-mcp-403-0006.webp",
+      "image_sha256": "0b648516c1e8449529ed9f21b6b1d7f62123afec8d9616d1cf3eed2773a662f0",
+      "image_source_url": "https://my.fike.com/_fike_new_docs/1ab59b39-88d2-4b6f-8805-7786a80534bd.pdf",
+      "source_page_url": "https://www.fike.com/en-gb/product-documents/cie-a-200-fire-alarm-system/",
+      "matched_documents": [
+        {
+          "record_id": "fike-594585b67819",
+          "model_codes_found_in_pdf": [
+            "403-0006"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "fike-twinflex-io-802-0006",
+      "brand": "Fike",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/fike-0.14.0/images/fike-twinflex-io-802-0006.webp",
+      "image_sha256": "b871dbc94ea25e6f7c0915ad53e0d13124efad4b5cdf5ad47a85e905e6603aea",
+      "image_source_url": "https://my.fike.com/_fike_new_docs/0373c9c3-e933-412e-aa08-7fb8a84d6a5d.pdf",
+      "source_page_url": "https://www.fike.com/es-es/product-documents/twinflex-pro2/",
+      "matched_documents": [
+        {
+          "record_id": "fike-078df373e6a6",
+          "model_codes_found_in_pdf": [
+            "802-0006"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "fike-sita-io-803-0006",
+      "brand": "Fike",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/fike-0.14.0/images/fike-sita-io-803-0006.webp",
+      "image_sha256": "8f1143e88d07b9b3b09c6f443412d9b19bbefc43ed463345779f787c11cfc893",
+      "image_source_url": "https://my.fike.com/_fike_new_docs/56377394-750b-4543-90b1-16a1d520c9fc.pdf",
+      "source_page_url": "https://www.fike.com/en-gb/product-documents/cie-a-200-fire-alarm-system/",
+      "matched_documents": [
+        {
+          "record_id": "fike-1b2de37e6684",
+          "model_codes_found_in_pdf": [
+            "803-0006"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "fike-twinflex-sounder-vad-f0296336",
+      "brand": "Fike",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/fike-0.14.0/images/fike-twinflex-sounder-vad-f0296336.webp",
+      "image_sha256": "6fd8ceaed20d3faac27e40cc0d450abc216b8cafefb2aaa11d9c556a24d83901",
+      "image_source_url": "https://my.fike.com/_fike_new_docs/941829b3-1802-4861-8ca9-ac3c3bcdfa88.pdf",
+      "source_page_url": "https://www.fike.com/es-es/product-documents/twinflex-pro2/",
+      "matched_documents": [
+        {
+          "record_id": "fike-538db8f6d1d5",
+          "model_codes_found_in_pdf": [
+            "F0296336"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "fike-sita-soundpoint-313-0001",
+      "brand": "Fike",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/fike-0.14.0/images/fike-sita-soundpoint-313-0001.webp",
+      "image_sha256": "d27c51c187d8af22107d6774fbbb8060a27c6242bc79a3f3090e1678c46559db",
+      "image_source_url": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/Duonet%20&%20Quadnet/Addressable%20Control%20Panels/Manuals/Sita%20SoundPoint%20313-0001%20313-0002%20InstallInstructs%2026-0190-13.pdf",
+      "source_page_url": "https://www.fike.com/en-gb/product-documents/cie-a-200-fire-alarm-system/",
+      "matched_documents": [
+        {
+          "record_id": "fike-0a81dc0dbbc1",
+          "model_codes_found_in_pdf": [
+            "313-0001"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "fire-beam-blue",
+      "brand": "The Fire Beam Company",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/firebeam-0.14.0/images/fire-beam-blue.webp",
+      "image_sha256": "652b196fa655921b760dcdf8fdc24cb9477f422230a2ed46f233a965a27990f7",
+      "image_source_url": "https://thefirebeamcompany.com/wp-content/uploads/product-box-fire-beam-blue.jpg",
+      "source_page_url": "https://thefirebeamcompany.com/fire-beam-blue-optical-beam-smoke-detector/",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-the-fire-beam-company-ef8e716e192b",
+          "model_codes_found_in_pdf": [
+            "FIREBEAM BLUE"
+          ],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "device-doc-the-fire-beam-company-5e3186d7eb4f",
+          "model_codes_found_in_pdf": [
+            "FIREBEAM BLUE"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "fire-beam-xtra",
+      "brand": "The Fire Beam Company",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/firebeam-0.14.0/images/fire-beam-xtra.webp",
+      "image_sha256": "c082a3881459cb88e91176cc00a45e55ca3a5857e662a41d048ac21ba852df4e",
+      "image_source_url": "https://thefirebeamcompany.com/wp-content/uploads/product-box-fire-beam-xtra.jpg",
+      "source_page_url": "https://thefirebeamcompany.com/fire-beam-xtra-optical-beam-smoke-detector/",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-the-fire-beam-company-9ea9d54e1f2c",
+          "model_codes_found_in_pdf": [
+            "FIREBEAM XTRA"
+          ],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "device-doc-the-fire-beam-company-f9652cff6119",
+          "model_codes_found_in_pdf": [
+            "FIREBEAM XTRA"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "hochiki-aln-en",
+      "brand": "Hochiki",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/hochiki-0.14.0/images/hochiki-aln-en.webp",
+      "image_sha256": "c4a45254db6618d02838801e0fc1428a9801b67df68112298c413d217b9a01b3",
+      "image_source_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "source_page_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-hochiki-25693c776dcc",
+          "model_codes_found_in_pdf": [
+            "ALN-EN"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "hochiki-acc-en",
+      "brand": "Hochiki",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/hochiki-0.14.0/images/hochiki-acc-en.webp",
+      "image_sha256": "79551216d452872d8e890fb4f2498680e87105f3c7ba62f81dc04d69679775bb",
+      "image_source_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "source_page_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-hochiki-25693c776dcc",
+          "model_codes_found_in_pdf": [
+            "ACC-EN"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "hochiki-atj-en",
+      "brand": "Hochiki",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/hochiki-0.14.0/images/hochiki-atj-en.webp",
+      "image_sha256": "2589b67e89c7fb1fcaae5c07fba426e89a420276c2c394cd094f617f834a6b29",
+      "image_source_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "source_page_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-hochiki-25693c776dcc",
+          "model_codes_found_in_pdf": [
+            "ATJ-EN"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "hochiki-acd-en",
+      "brand": "Hochiki",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/hochiki-0.14.0/images/hochiki-acd-en.webp",
+      "image_sha256": "fdd2c0926599a099e124f8ad7edf17e0555b364902e7423f73a57de45680f3ab",
+      "image_source_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "source_page_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-hochiki-25693c776dcc",
+          "model_codes_found_in_pdf": [
+            "ACD-EN"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "hochiki-acb-ew",
+      "brand": "Hochiki",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/hochiki-0.14.0/images/hochiki-acb-ew.webp",
+      "image_sha256": "3c4a78f512f0e43624c3d05ccb93c93d984a69b2bccc647afb696de5c36e5e0a",
+      "image_source_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "source_page_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-hochiki-25693c776dcc",
+          "model_codes_found_in_pdf": [
+            "ACB-EW"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "hochiki-ybn-r3",
+      "brand": "Hochiki",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/hochiki-0.14.0/images/hochiki-ybn-r3.webp",
+      "image_sha256": "85af2a952c1253e604058641e1a6a69628651665db518bdb1a1a1f76a92ffb80",
+      "image_source_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "source_page_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-hochiki-25693c776dcc",
+          "model_codes_found_in_pdf": [
+            "YBN-R/3"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "hochiki-ybv-r4",
+      "brand": "Hochiki",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/hochiki-0.14.0/images/hochiki-ybv-r4.webp",
+      "image_sha256": "654c6fdb556bedf2f33600bc260cf5f592179296cc262aa2851ec53fe9259d83",
+      "image_source_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "source_page_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-hochiki-25693c776dcc",
+          "model_codes_found_in_pdf": [
+            "YBV-R/4"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "hochiki-chq-ws2",
+      "brand": "Hochiki",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/hochiki-0.14.0/images/hochiki-chq-ws2.webp",
+      "image_sha256": "9ce1ee2e4f3db95b0a12fe59d2c49789c1740f4d4a16a480c50cb90ad1eebc2c",
+      "image_source_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "source_page_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-hochiki-25693c776dcc",
+          "model_codes_found_in_pdf": [
+            "CHQ-WS2"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "hochiki-chq-wsb2",
+      "brand": "Hochiki",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/hochiki-0.14.0/images/hochiki-chq-wsb2.webp",
+      "image_sha256": "111f4c6fe3d18be2c54c65ec592cff67a90057c5347318edb434af8c74c848d1",
+      "image_source_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "source_page_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-hochiki-25693c776dcc",
+          "model_codes_found_in_pdf": [
+            "CHQ-WSB2"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "hochiki-ybo-bs",
+      "brand": "Hochiki",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/hochiki-0.14.0/images/hochiki-ybo-bs.webp",
+      "image_sha256": "fc213c721de61ca7c964af62a1ad14905f873fc55ec5652caec2ffdc413ebb5d",
+      "image_source_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "source_page_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-hochiki-25693c776dcc",
+          "model_codes_found_in_pdf": [
+            "YBO-BS"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "hochiki-chq-ari",
+      "brand": "Hochiki",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/hochiki-0.14.0/images/hochiki-chq-ari.webp",
+      "image_sha256": "c0af6c322ad0e549527d718a19793aebbf37dc2021f5f452219881665e6cbae1",
+      "image_source_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "source_page_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-hochiki-25693c776dcc",
+          "model_codes_found_in_pdf": [
+            "CHQ-ARI"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "hochiki-chq-sim",
+      "brand": "Hochiki",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/hochiki-0.14.0/images/hochiki-chq-sim.webp",
+      "image_sha256": "f10ecd623824f7fb6694af53b1212d5a43610b3c56887a458b99557691d987d8",
+      "image_source_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "source_page_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-hochiki-25693c776dcc",
+          "model_codes_found_in_pdf": [
+            "CHQ-SIM"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "hochiki-chq-dim2-sci",
+      "brand": "Hochiki",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/hochiki-0.14.0/images/hochiki-chq-dim2-sci.webp",
+      "image_sha256": "e8ba85ec05d2a026fa1a6896d6f8ce50b2b8cd481c7fada413cdee1179e36fbb",
+      "image_source_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "source_page_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-hochiki-25693c776dcc",
+          "model_codes_found_in_pdf": [
+            "CHQ-DIM2(SCI)"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "hochiki-hcp-e-sci",
+      "brand": "Hochiki",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/hochiki-0.14.0/images/hochiki-hcp-e-sci.webp",
+      "image_sha256": "6d70785987a991468fdeffb3c801fa0c31d41e3e351f25718262b11c42b88f96",
+      "image_source_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "source_page_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-hochiki-25693c776dcc",
+          "model_codes_found_in_pdf": [
+            "HCP-E(SCI)"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "hochiki-tch-b200",
+      "brand": "Hochiki",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/hochiki-0.14.0/images/hochiki-tch-b200.webp",
+      "image_sha256": "81de468a3219c75edac737a0b0ee55330a9d470f062f8795b78c5c653cee3cf0",
+      "image_source_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "source_page_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-hochiki-25693c776dcc",
+          "model_codes_found_in_pdf": [
+            "TCH-B200"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "hochiki-soc-e3n",
+      "brand": "Hochiki",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/hochiki-0.14.0/images/hochiki-soc-e3n.webp",
+      "image_sha256": "eb809b6bc98ec6fe262f364cf919c2771595cfe29402be347fa6c387a05d5904",
+      "image_source_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "source_page_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-hochiki-25693c776dcc",
+          "model_codes_found_in_pdf": [
+            "SOC-E3N"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "hochiki-dcd-ae3-ce3",
+      "brand": "Hochiki",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/hochiki-0.14.0/images/hochiki-dcd-ae3-ce3.webp",
+      "image_sha256": "d9a76f7cc4902c7cae3fdb60560299c3019e1841b9e2eb08abf9a2b1f7645f6b",
+      "image_source_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "source_page_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-hochiki-25693c776dcc",
+          "model_codes_found_in_pdf": [
+            "DCD-AE3",
+            "DCD-CE3"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "hochiki-drd-e",
+      "brand": "Hochiki",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/hochiki-0.14.0/images/hochiki-drd-e.webp",
+      "image_sha256": "b3392f040609c841181effec39eabad486d361f86b99b1c8d42e7f85c00f5e29",
+      "image_source_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "source_page_url": "https://www.hochikieurope.com/hubfs/website2025/Product%20Guide.pdf?hsLang=en-gb",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-hochiki-25693c776dcc",
+          "model_codes_found_in_pdf": [
+            "DRD-E"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "nittan-evc-ir",
+      "brand": "Nittan",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/images/nittan-evc-ir.webp",
+      "image_sha256": "e9a8bc6d4af8cb2352d70a32a0a160416afb328b4132e9272d40f22e6d7ae197",
+      "image_source_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EVC-IR.jpg",
+      "source_page_url": "https://www.nittan.com/english/product/evc-ir/",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-nittan-4e12fd384d8c",
+          "model_codes_found_in_pdf": [
+            "EVC-IR"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "nittan-ev-h-cs",
+      "brand": "Nittan",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/images/nittan-ev-h-cs.webp",
+      "image_sha256": "9c23d206e1b0fcc738ba12fa4fa99eb441b292a48a6fa7b8f8a7803cb0411841",
+      "image_source_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EV-H-CS.jpg",
+      "source_page_url": "https://www.nittan.com/english/product/ev-h-cs/",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-nittan-2baa1e344172",
+          "model_codes_found_in_pdf": [
+            "EV-H-CS"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "nittan-ev-hiop-sb-sci",
+      "brand": "Nittan",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/images/nittan-ev-hiop-sb-sci.webp",
+      "image_sha256": "2af0b76fe8ffa876d129cf0db4d0c9dda8381d2ac4a3d2ca72f0b8dd0f643622",
+      "image_source_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EV-HIOP-SB-SCI.jpg",
+      "source_page_url": "https://www.nittan.com/english/product/ev-hiop-sb-sci/",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-nittan-f912292fc103",
+          "model_codes_found_in_pdf": [
+            "EV-HIOP-SB-SCI"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "nittan-ev-mcp2-sci-ip67",
+      "brand": "Nittan",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/images/nittan-ev-mcp2-sci-ip67.webp",
+      "image_sha256": "30e649a3a2c2a5691fb8c85b1ca261fa53e05410e4f9af58a85c8af2af3db34d",
+      "image_source_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EV-MCP2-SCI-IP67.jpg",
+      "source_page_url": "https://www.nittan.com/english/product/ev-mcp2-sci-ip67/",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-nittan-92f082662910",
+          "model_codes_found_in_pdf": [
+            "EV-MCP2-SCI-IP67"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "nittan-ev-mcp2-sci-ip24",
+      "brand": "Nittan",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/images/nittan-ev-mcp2-sci-ip24.webp",
+      "image_sha256": "d683d5b1974f63c94eb1b1029eefef727ae017b24473321849bc3cc47a82b7a0",
+      "image_source_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EV-MCP2-SCI-IP24.jpg",
+      "source_page_url": "https://www.nittan.com/english/product/ev-mcp2-sci-ip24/",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-nittan-509751ace6d5",
+          "model_codes_found_in_pdf": [
+            "EV-MCP2-SCI-IP24"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "nittan-ev-240v-mra",
+      "brand": "Nittan",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/images/nittan-ev-240v-mra.webp",
+      "image_sha256": "c5a4ab137b83ff686828cc312cb5e1be5d5f9daa9c1f01afddf743ded98c3b3a",
+      "image_source_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EV-240V_MRA.jpg",
+      "source_page_url": "https://www.nittan.com/english/product/ev-240v-mra/",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-nittan-60acce3d2e53",
+          "model_codes_found_in_pdf": [
+            "EV-240V MRA"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "nittan-ev-dph-cs",
+      "brand": "Nittan",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/images/nittan-ev-dph-cs.webp",
+      "image_sha256": "7f7b4540ac8832e4b74a61c62bf8dd929a6ba23165ad9651a1580ec8ff998a3f",
+      "image_source_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EV-DPH-CS.jpg",
+      "source_page_url": "https://www.nittan.com/english/product/ev-dph-cs/",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-nittan-24b1fd056ba7",
+          "model_codes_found_in_pdf": [],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "nittan-ev-mini-ip2",
+      "brand": "Nittan",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/images/nittan-ev-mini-ip2.webp",
+      "image_sha256": "236e6bc976a48bd85e22db428dffbb65192444c427c30c600536d32d15420b2d",
+      "image_source_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EV-MiniIP2.jpg",
+      "source_page_url": "https://www.nittan.com/english/product/ev-mini-ip2/",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-nittan-c65c530f2411",
+          "model_codes_found_in_pdf": [
+            "EV-Mini IP2"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "nittan-ev-ps",
+      "brand": "Nittan",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/images/nittan-ev-ps.webp",
+      "image_sha256": "840de2613b3cca55a693218f4756576161295944d8f9ef13b2084b7527db3616",
+      "image_source_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EV-PS.jpg",
+      "source_page_url": "https://www.nittan.com/english/product/ev-ps/",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-nittan-651d5abec767",
+          "model_codes_found_in_pdf": [
+            "EV-PS"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "nittan-ev-2i1o",
+      "brand": "Nittan",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/nittan-0.14.0/images/nittan-ev-2i1o.webp",
+      "image_sha256": "ba67062a35e1be001cedb37b2f60603886afac19114ad9759a884cd73a7cf900",
+      "image_source_url": "https://www.nittan.com/english/cms/wp-content/uploads/2024/09/EV-2I1O.jpg",
+      "source_page_url": "https://www.nittan.com/english/product/ev-2i1o/",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-nittan-c2305fc3416e",
+          "model_codes_found_in_pdf": [
+            "EV-2I1O"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "notifier-device-nfxi-opt",
+      "brand": "Notifier",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/notifier-devices-0.14.0/images/notifier-device-nfxi-opt.webp",
+      "image_sha256": "0683720d596d23aed0272410e0abe89af2654fbfa9582913c8872350b3130e65",
+      "image_source_url": "https://honeywell.scene7.com/is/image/Honeywell65/hbt-fire-nfxi-opt-opal-photoelectric-smoke-detector-primaryimage",
+      "source_page_url": "https://buildings.honeywell.com/gb/en/products/by-category/sensors/smoke-detectors/opal-photoelectric-smoke-detector-with-isolator-notifier",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-notifier-c96d59e70df0",
+          "model_codes_found_in_pdf": [
+            "NFXI-OPT"
+          ],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "device-doc-notifier-722c2bfa968b",
+          "model_codes_found_in_pdf": [
+            "NFXI-OPT"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "notifier-device-b501ap",
+      "brand": "Notifier",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/notifier-devices-0.14.0/images/notifier-device-b501ap.webp",
+      "image_sha256": "0383c896e82f371f55d8881068b984356acffa6c1c9b79c9bc3bf8c2644d7fc2",
+      "image_source_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-it/HBT-Fire-NFX-OPT-ENG.pdf?download=false",
+      "source_page_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-it/HBT-Fire-NFX-OPT-ENG.pdf?download=false",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-notifier-c96d59e70df0",
+          "model_codes_found_in_pdf": [
+            "B501AP"
+          ],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "device-doc-notifier-722c2bfa968b",
+          "model_codes_found_in_pdf": [
+            "B501AP"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "notifier-device-nfxi-beam",
+      "brand": "Notifier",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/notifier-devices-0.14.0/images/notifier-device-nfxi-beam.webp",
+      "image_sha256": "22317afe3eb0e06f32baafa265215cf73721297e8d616f474c4edd4d01c18a94",
+      "image_source_url": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/downloads/Fire-EMEA-NOTIFIER-2023-Black-Book_digital.pdf",
+      "source_page_url": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/downloads/Fire-EMEA-NOTIFIER-2023-Black-Book_digital.pdf",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-notifier-c96d59e70df0",
+          "model_codes_found_in_pdf": [
+            "NFXI-BEAM-E",
+            "NFXI-BEAM-TE"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "notifier-device-nrx-opt",
+      "brand": "Notifier",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/notifier-devices-0.14.0/images/notifier-device-nrx-opt.webp",
+      "image_sha256": "70ce0bec68b4f6c10a0ea8cc1def93826e7344d47a3bca91027b65de28a995da",
+      "image_source_url": "https://honeywell.scene7.com/is/image/Honeywell65/hbt-fire-nrx-opt-photo-thermal-fire-detector-primaryimage",
+      "source_page_url": "https://buildings.honeywell.com/gb/en/products/by-category/sensors/multi-criteria-sensors/scattered-light-smoke-detectors",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-notifier-c96d59e70df0",
+          "model_codes_found_in_pdf": [
+            "NRX-OPT"
+          ],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "device-doc-notifier-05a7316dffbe",
+          "model_codes_found_in_pdf": [
+            "NRX-OPT"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "notifier-device-nrx-heat",
+      "brand": "Notifier",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/notifier-devices-0.14.0/images/notifier-device-nrx-heat.webp",
+      "image_sha256": "b5e8db68c1d32f38eea273fde9bafb5a6af741d6ede6763a194dd4ed7cb78889",
+      "image_source_url": "https://s7d1.scene7.com/is/image/Honeywell65/hbt-fire-nrx-tdiff-agile-wireless-fire-detection-primaryimage",
+      "source_page_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-uk/hba-fire-Agile-Wireless-Fire-Detection-990-182-0919.pdf?download=false",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-notifier-c96d59e70df0",
+          "model_codes_found_in_pdf": [
+            "NRX-TDIFF",
+            "NRX-TFIX58"
+          ],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "device-doc-notifier-05a7316dffbe",
+          "model_codes_found_in_pdf": [
+            "NRX-TDIFF",
+            "NRX-TFIX58"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "notifier-device-nrx-wcp",
+      "brand": "Notifier",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/notifier-devices-0.14.0/images/notifier-device-nrx-wcp.webp",
+      "image_sha256": "cc6656f876b317085aae7a92b0bdf827ebbea049262294e3924be349a795bef3",
+      "image_source_url": "https://s7d1.scene7.com/is/image/Honeywell65/hbt-fire-nrx-wcp-radio-alarm-signalling-button-primaryimage",
+      "source_page_url": "https://buildings.honeywell.com/gb/en/products/by-category/fire-life-safety/manual-call-points-pull-stations-and-panic-buttons/manual-call-points-pull-stations/nrx-wcp",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-notifier-c96d59e70df0",
+          "model_codes_found_in_pdf": [
+            "NRX-WCP"
+          ],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "device-doc-notifier-05a7316dffbe",
+          "model_codes_found_in_pdf": [
+            "NRX-WCP"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "notifier-device-nrxi-gate",
+      "brand": "Notifier",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/notifier-devices-0.14.0/images/notifier-device-nrxi-gate.webp",
+      "image_sha256": "b11d60e0cfa29fa5ec2dc38fa017ef985093ff4b57cf3ee903ec1b86b9a40b5c",
+      "image_source_url": "https://s7d1.scene7.com/is/image/Honeywell65/hbt-fire-nrxi-gate-nrxi-gateway-primaryimage",
+      "source_page_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-uk/hba-fire-Agile-Wireless-Fire-Detection-990-182-0919.pdf?download=false",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-notifier-c96d59e70df0",
+          "model_codes_found_in_pdf": [
+            "NRXI-GATE"
+          ],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "device-doc-notifier-05a7316dffbe",
+          "model_codes_found_in_pdf": [
+            "NRXI-GATE"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "notifier-device-nrx-rep",
+      "brand": "Notifier",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/notifier-devices-0.14.0/images/notifier-device-nrx-rep.webp",
+      "image_sha256": "db84b1e9bdebec47a73df95f72f4072196e514176788a1fc70e9361e62613dce",
+      "image_source_url": "https://s7d1.scene7.com/is/image/Honeywell65/hbt-fire-nrx-rep-nrx-rep-wireless-repeater---------primaryimage",
+      "source_page_url": "https://buildings.honeywell.com/gb/en/products/by-category/building-management/networking/repeaters/repeater",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-notifier-c96d59e70df0",
+          "model_codes_found_in_pdf": [
+            "NRX-REP"
+          ],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "device-doc-notifier-05a7316dffbe",
+          "model_codes_found_in_pdf": [
+            "NRX-REP"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "notifier-device-nrx-irk",
+      "brand": "Notifier",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/notifier-devices-0.14.0/images/notifier-device-nrx-irk.webp",
+      "image_sha256": "faaca7ac9aff932869c1d2a7fdedf371471e1c75bf6741a655edd66d501767a5",
+      "image_source_url": "https://honeywell.scene7.com/is/image/Honeywell65/hbt-fire-nrx-irk-agile-wireless-remote-indicator-primaryimage",
+      "source_page_url": "https://buildings.honeywell.com/ae/en/products/by-category/fire-life-safety/notification-appliances/strobes-and-signal-lights/agile-wireless-remote-indicator",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-notifier-c96d59e70df0",
+          "model_codes_found_in_pdf": [
+            "NRX-IRK"
+          ],
+          "pdf_locally_inspected": true
+        },
+        {
+          "record_id": "device-doc-notifier-05a7316dffbe",
+          "model_codes_found_in_pdf": [
+            "NRX-IRK"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "optex-vxi-am",
+      "brand": "Optex",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/optex/images/optex-vxi-am.webp",
+      "image_sha256": "dddc5fea78e9135b51d23e94d6a12cd64f78b5fe4f4e3a26112e69e47d432d3a",
+      "image_source_url": "https://optex.imgix.net/assets/vxi-wired-side.png?crop=focalpoint&fp-x=0.5&fp-y=0.5&fp-debug=false&fm=webp&auto=format&w=3072&fm=png&q=80&fit=crop",
+      "source_page_url": "https://www.optex-europe.com/products/intrusion-detection/vxi-am",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-optex-4db79e533f2a",
+          "model_codes_found_in_pdf": [
+            "VXI-AM"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "optex-qxi-st",
+      "brand": "Optex",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/optex/images/optex-qxi-st.webp",
+      "image_sha256": "263f034c81d313ae7500e0d1a02ff11b3c4177addd49109b77bfd65de5e24c85",
+      "image_source_url": "https://optex.imgix.net/assets/QXI-Prod-3q-1k-01.png?crop=focalpoint&fp-x=0.5&fp-y=0.5&fp-debug=false&fm=webp&auto=format&w=3072&fm=png&q=80&fit=crop",
+      "source_page_url": "https://www.optex-europe.com/products/intrusion-detection/qxi-st",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-optex-6c50f85965a3",
+          "model_codes_found_in_pdf": [
+            "QXI-ST"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "optex-wxi-st",
+      "brand": "Optex",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/optex/images/optex-wxi-st.webp",
+      "image_sha256": "962ff1e18d4f49424d21a7b3849998db003dca1d3c3c03cb02ee2a81928a1b7f",
+      "image_source_url": "https://optex.imgix.net/assets/Product-Images/wxi_image.png?crop=focalpoint&fp-x=0.5&fp-y=0.5&fp-debug=false&fm=webp&auto=format&w=3072&fm=png&q=80&fit=crop",
+      "source_page_url": "https://www.optex-europe.com/products/intrusion-detection/wxi-st",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-optex-133f7df088cd",
+          "model_codes_found_in_pdf": [
+            "WXI-ST"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "optex-ftn-st",
+      "brand": "Optex",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/optex/images/optex-ftn-st.webp",
+      "image_sha256": "70ae4a057dc90556ee94243b608a9b5987db5f7ab1d52bf872748d08622ac161",
+      "image_source_url": "https://optex.imgix.net/assets/Product-Images/FTN.png?crop=focalpoint&fp-x=0.5&fp-y=0.5&fp-debug=false&fm=webp&auto=format&w=3072&fm=png&q=80&fit=crop",
+      "source_page_url": "https://www.optex-europe.com/products/intrusion-detection/ftn-st",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-optex-0e24f35a8e1a",
+          "model_codes_found_in_pdf": [
+            "FTN-ST"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "optex-flx-s-st",
+      "brand": "Optex",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/optex/images/optex-flx-s-st.webp",
+      "image_sha256": "c11152bdacbdb7c4885aae3ec23f4d812c21bbddfda71e4660ec05053cb00f02",
+      "image_source_url": "https://optex.imgix.net/assets/flipx-34.png",
+      "source_page_url": "https://www.optex-europe.com/products/intrusion-detection/flx-s-st",
+      "matched_documents": [
+        {
+          "record_id": "device-doc-optex-f26b1b42fc56",
+          "model_codes_found_in_pdf": [
+            "FLX-S-ST"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "optex-rxc-st",
+      "brand": "Optex",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/optex/images/optex-rxc-st.webp",
+      "image_sha256": "7abc5149511b6b070cd148cffb855b9fb999c885178736ae65e9bfac07317012",
+      "image_source_url": "https://optex.imgix.net/assets/RX-front.png?crop=focalpoint&fp-x=0.5&fp-y=0.5&fp-debug=false&fm=webp&auto=format&w=3072&fm=png&q=80&fit=crop",
+      "source_page_url": "https://www.optex-europe.com/products/intrusion-detection/rxc-st",
+      "matched_documents": [
+        {
+          "record_id": "optex-41bd61569d20",
+          "model_codes_found_in_pdf": [
+            "RXC-ST"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "optex-rxc-dt",
+      "brand": "Optex",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/optex/images/optex-rxc-dt.webp",
+      "image_sha256": "7abc5149511b6b070cd148cffb855b9fb999c885178736ae65e9bfac07317012",
+      "image_source_url": "https://optex.imgix.net/assets/RX-front.png?crop=focalpoint&fp-x=0.5&fp-y=0.5&fp-debug=false&fm=webp&auto=format&w=3072&fm=png&q=80&fit=crop",
+      "source_page_url": "https://www.optex-europe.com/products/intrusion-detection/rxc-dt",
+      "matched_documents": [
+        {
+          "record_id": "optex-1cb70a0528ac",
+          "model_codes_found_in_pdf": [
+            "RXC-DT"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "orisec-ir-100",
+      "brand": "Orisec",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/orisec/images/orisec-ir-100.webp",
+      "image_sha256": "e4a3cbb33a2a41fc27668747835ab2b1bae71fd2534b56ed18cbb3440fb2ab61",
+      "image_source_url": "https://www.orisec.co.uk/wp-content/uploads/2020/09/100maintest-1.jpg",
+      "source_page_url": "https://www.orisec.co.uk/internal-detectors/50-100-series-detectors/",
+      "matched_documents": [
+        {
+          "record_id": "orisec-806438c080d2",
+          "model_codes_found_in_pdf": [
+            "IR-100"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "orisec-dt-200",
+      "brand": "Orisec",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/orisec/images/orisec-dt-200.webp",
+      "image_sha256": "5385df76f97f4114f68c3a1d8808558e27c0023220c2831b722316f3e5218829",
+      "image_source_url": "https://www.orisec.co.uk/wp-content/uploads/2020/09/200maintest-1.jpg",
+      "source_page_url": "https://www.orisec.co.uk/internal-detectors/200-series-detectors/",
+      "matched_documents": [],
+      "online_only": true,
+      "online_reference": "https://www.orisec.co.uk/internal-detectors/200-series-detectors/"
+    },
+    {
+      "id": "orisec-w-mc-c",
+      "brand": "Orisec",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/orisec/images/orisec-w-mc-c.webp",
+      "image_sha256": "a99830f6b90ab912030f8ad21a747fbfe54e02adaedbf13e4d970a294a4fb1ef",
+      "image_source_url": "https://www.orisec.co.uk/wp-content/uploads/2021/02/MicrosoftTeams-image-12.png",
+      "source_page_url": "https://www.orisec.co.uk/internal-detectors/wireless-covert-magnetic-contact/",
+      "matched_documents": [],
+      "online_only": true,
+      "online_reference": "https://www.orisec.co.uk/internal-detectors/wireless-covert-magnetic-contact/"
+    },
+    {
+      "id": "orisec-sd-wired",
+      "brand": "Orisec",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/orisec/images/orisec-sd-wired.webp",
+      "image_sha256": "24e8c9e1d62a73d207c6c2627ad7a57e6f0862d46fad964f2a8e0a9e76de6023",
+      "image_source_url": "https://www.orisec.co.uk/wp-content/uploads/2022/04/Shock-Campaign-Image.jpg",
+      "source_page_url": "https://www.orisec.co.uk/internal-detectors/shock-detectors/",
+      "matched_documents": [],
+      "online_only": true,
+      "online_reference": "https://www.orisec.co.uk/internal-detectors/shock-detectors/"
+    },
+    {
+      "id": "orisec-es-120-130-wired",
+      "brand": "Orisec",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/orisec/images/orisec-es-120-130-wired.webp",
+      "image_sha256": "fc70ae78e027cafb321f3985e208d8d4fb63044744e7a210ffbabfc3185ddf8d",
+      "image_source_url": "https://www.orisec.co.uk/wp-content/uploads/2020/09/es120130-1.jpg",
+      "source_page_url": "https://www.orisec.co.uk/external-sounders/es-100-series-external-sounders/",
+      "matched_documents": [],
+      "online_only": true,
+      "online_reference": "https://www.orisec.co.uk/external-sounders/es-100-series-external-sounders/"
+    },
+    {
+      "id": "protec-6000plus-op",
+      "brand": "Protec",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/images/protec-6000plus-op.webp",
+      "image_sha256": "a34dcfac5f31ccb570d4c92f0b4ead68bb5d11f4dd087d5a6d68f6b9548acb27",
+      "image_source_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000PLUS-OP.png",
+      "source_page_url": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/sensors/6000plus-op/",
+      "matched_documents": [
+        {
+          "record_id": "protec-6d5775af2bdd",
+          "model_codes_found_in_pdf": [
+            "6000PLUS/OP"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "protec-6000plus-ht",
+      "brand": "Protec",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/images/protec-6000plus-ht.webp",
+      "image_sha256": "5281b019315c3d777e618075ddd5d5d0ce9281c9535c551bb62de13f8e57b14f",
+      "image_source_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000Plus-HT.png",
+      "source_page_url": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/sensors/6000plus-ht/",
+      "matched_documents": [
+        {
+          "record_id": "protec-8fe34afdfd9e",
+          "model_codes_found_in_pdf": [
+            "6000PLUS/HT"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "protec-6000plus-ophtco",
+      "brand": "Protec",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/images/protec-6000plus-ophtco.webp",
+      "image_sha256": "57658cc8a2c99324bc2743d967a4c8b5ec7ef696c46c77183f3e660f8c8cade2",
+      "image_source_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000PLUS-OPHTCO.png",
+      "source_page_url": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/sensors/6000plus-ophtco/",
+      "matched_documents": [
+        {
+          "record_id": "protec-f6b672126de1",
+          "model_codes_found_in_pdf": [
+            "6000PLUS/OPHTCO"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "protec-6000-mcp",
+      "brand": "Protec",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/images/protec-6000-mcp.webp",
+      "image_sha256": "f3b5d6f19c3142bbed09ccc3840c276bc8707e71a459fcc1c322c8305dd23dae",
+      "image_source_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/3000-MCP.png",
+      "source_page_url": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/manual-call-points/6000-mcp/",
+      "matched_documents": [
+        {
+          "record_id": "protec-f00b03bef0a0",
+          "model_codes_found_in_pdf": [
+            "6000/MCP"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "protec-6000-mcp-wp",
+      "brand": "Protec",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/images/protec-6000-mcp-wp.webp",
+      "image_sha256": "8786df695944ce18d6c58637912766db011291d7a50d5e84631a506c4d549696",
+      "image_source_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/3000-MCP-Weatherproof.png",
+      "source_page_url": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/manual-call-points/6000-mcp-wp/",
+      "matched_documents": [
+        {
+          "record_id": "protec-339b6a0f3290",
+          "model_codes_found_in_pdf": [
+            "6000/MCP/WP"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "protec-6000plus-base",
+      "brand": "Protec",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/images/protec-6000plus-base.webp",
+      "image_sha256": "e6c5ac02ea0262674b6781966df4eef05e01915be06808cd7e3e00ce212813ab",
+      "image_source_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000PLUS-BASE.png",
+      "source_page_url": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/sensors/6000plus-base/",
+      "matched_documents": [
+        {
+          "record_id": "protec-5b9f06e51aac",
+          "model_codes_found_in_pdf": [
+            "6000PLUS/BASE"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "protec-6000-2io",
+      "brand": "Protec",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/images/protec-6000-2io.webp",
+      "image_sha256": "8ad79fd2d89a5f07eff3163945ec9eb439bc1a1ab875493da3d598574bb64b13",
+      "image_source_url": "https://www.protec.co.uk/wp-content/uploads/2025/10/6000-2IO-Tech-sheet-Issue-0.pdf",
+      "source_page_url": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/interfaces/two-channel-input-output-interface-6000-2io/",
+      "matched_documents": [
+        {
+          "record_id": "protec-9e5e03fd774a",
+          "model_codes_found_in_pdf": [
+            "6000/2IO"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "protec-6000-lcm",
+      "brand": "Protec",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/images/protec-6000-lcm.webp",
+      "image_sha256": "1f832b65bc87a570f841f41b3999ba66a8b063cf8fab8c91de94281885eb198a",
+      "image_source_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-LCM.png",
+      "source_page_url": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/interfaces/6000-lcm/",
+      "matched_documents": [
+        {
+          "record_id": "protec-3d5612b83a2a",
+          "model_codes_found_in_pdf": [
+            "6000/LCM"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "protec-ug4dp-duct-detector",
+      "brand": "Protec",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/images/protec-ug4dp-duct-detector.webp",
+      "image_sha256": "5cf80e64d34bba5fad943211c246f83f97c728bb08b29e1a51d31e5e5925990c",
+      "image_source_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000PLUS-UG4DP-Duct-probe.png",
+      "source_page_url": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/ancillaries/6000plus-ug4dp-duct-probe-smoke-detector/",
+      "matched_documents": [
+        {
+          "record_id": "protec-a7baa334bd77",
+          "model_codes_found_in_pdf": [
+            "6000PLUS/UG4DP",
+            "3000PLUS/UG4DP"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "protec-6000-ssr-vad",
+      "brand": "Protec",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/images/protec-6000-ssr-vad.webp",
+      "image_sha256": "408f5a78b40c8233ed964e35e68844851129e7675806a8d4e17b8e83f64be57e",
+      "image_source_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-SSR-VAD-Red.png",
+      "source_page_url": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/sounders-vads/6000-ssr-vad/",
+      "matched_documents": [
+        {
+          "record_id": "protec-0be7c2a76eef",
+          "model_codes_found_in_pdf": [
+            "6000/SSR/VAD"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "protec-6000-dcm",
+      "brand": "Protec",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/images/protec-6000-dcm.webp",
+      "image_sha256": "a8b14b16bfea1099906160a2663a0c918dd3c9e80de8ca66408e977f7621d9e7",
+      "image_source_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-DCM.png",
+      "source_page_url": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/interfaces/6000-dcm/",
+      "matched_documents": [
+        {
+          "record_id": "protec-ce38ec46cb37",
+          "model_codes_found_in_pdf": [
+            "6000/DCM"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "protec-6000-lpza",
+      "brand": "Protec",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/protec-0.14.0/images/protec-6000-lpza.webp",
+      "image_sha256": "f73a9c4e4a3a35372051b683fb98c547ad3faa9661b9d55ed7a3b45ba942d1da",
+      "image_source_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/6000-APZA-and-6000-LPZA.png",
+      "source_page_url": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/interfaces/6000-loop-panel-zone-alarm/",
+      "matched_documents": [
+        {
+          "record_id": "protec-19c2f3a94324",
+          "model_codes_found_in_pdf": [
+            "6000/LPZA"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "pyronix-kx12dq-we",
+      "brand": "Pyronix",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/pyronix/images/pyronix-kx12dq-we.webp",
+      "image_sha256": "1fd67b8fc3b09fa5a99e4c661ed09fd745bfe63a13a91f8a477775a2dd982035",
+      "image_source_url": "https://static.wixstatic.com/media/619595_1c9f733d8766405a8bfdb11531c68f45~mv2.jpeg",
+      "source_page_url": "https://www.pyronixltd.com/product-page/kx12dq-we",
+      "matched_documents": [],
+      "online_only": true,
+      "online_reference": "https://www.pyronixltd.com/product-page/kx12dq-we"
+    },
+    {
+      "id": "pyronix-xdl12tt-we",
+      "brand": "Pyronix",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/pyronix/images/pyronix-xdl12tt-we.webp",
+      "image_sha256": "26f0d3c3d31a97ab7b00c194770161211d02d27ca2023c30ec85c4a76607e172",
+      "image_source_url": "https://static.wixstatic.com/media/619595_0b5608f99e5c4d2abd307ad4b107bf30~mv2.jpeg",
+      "source_page_url": "https://www.pyronixltd.com/product-page/xdl12tt-we",
+      "matched_documents": [],
+      "online_only": true,
+      "online_reference": "https://www.pyronixltd.com/product-page/xdl12tt-we"
+    },
+    {
+      "id": "pyronix-mc1z1-we",
+      "brand": "Pyronix",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/pyronix/images/pyronix-mc1z1-we.webp",
+      "image_sha256": "6636362f19790419d87e5cd060a1b72fd0388aadb757c8acfb879dac456c748c",
+      "image_source_url": "https://static.wixstatic.com/media/619595_5f36b069154d4eba90a09efd29c944b5~mv2.jpeg",
+      "source_page_url": "https://www.pyronixltd.com/product-page/mc1z1-we",
+      "matched_documents": [],
+      "online_only": true,
+      "online_reference": "https://www.pyronixltd.com/product-page/mc1z1-we"
+    },
+    {
+      "id": "pyronix-mcexternal-we",
+      "brand": "Pyronix",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/pyronix/images/pyronix-mcexternal-we.webp",
+      "image_sha256": "2be1eef28a804abd52ee1aac3db45e00f593d3c47c23eb345767d300011b9f6c",
+      "image_source_url": "https://static.wixstatic.com/media/619595_317b3603170c44afa016f006100a9f06~mv2.jpeg",
+      "source_page_url": "https://www.pyronixltd.com/product-page/mcexternal-we",
+      "matched_documents": [],
+      "online_only": true,
+      "online_reference": "https://www.pyronixltd.com/product-page/mcexternal-we"
+    },
+    {
+      "id": "pyronix-nano-shock-we",
+      "brand": "Pyronix",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/pyronix/images/pyronix-nano-shock-we.webp",
+      "image_sha256": "9ba66bda74eac7d7ed1a243b60b5cd6e0c14f2e47c568e7b8c3447fa9d7f2c9c",
+      "image_source_url": "https://static.wixstatic.com/media/619595_f013dfed978b46c093621bc531ad3548~mv2.jpeg",
+      "source_page_url": "https://www.pyronixltd.com/product-page/nano-shock-we",
+      "matched_documents": [],
+      "online_only": true,
+      "online_reference": "https://www.pyronixltd.com/product-page/nano-shock-we"
+    },
+    {
+      "id": "pyronix-kx15dt-rins549",
+      "brand": "Pyronix",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/pyronix/images/pyronix-kx15dt-rins549.webp",
+      "image_sha256": "cbd8969623f94c3fe568af701dc116ecc450d2c4ba0b9c086c6a4e8621919c69",
+      "image_source_url": "https://dsc.hu/themes/frontend/documents/kx15dt-installation-manual-multilingual.pdf",
+      "source_page_url": "https://www.pyronixltd.com/product-page/kx15dt",
+      "matched_documents": [
+        {
+          "record_id": "pyronix-12dc1a0275b5",
+          "model_codes_found_in_pdf": [
+            "KX15DT"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "texecom-capture-wired-wall",
+      "brand": "Texecom",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/texecom/images/texecom-capture-wired-wall.webp",
+      "image_sha256": "ee9bce4b5f244dd79f2da4da802cc401f695290db72c9b66f85c085cbd382e4b",
+      "image_source_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/03/30143447/Capture_Wall-mount.jpeg",
+      "source_page_url": "https://www.texe.com/our-security-systems/capture-motion-detectors/",
+      "matched_documents": [
+        {
+          "record_id": "texecom-778b363ae34b",
+          "model_codes_found_in_pdf": [
+            "P15",
+            "Q20",
+            "D20",
+            "AKBA0000",
+            "AKCA0000",
+            "AKDA0000"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "texecom-capture-wireless-wall",
+      "brand": "Texecom",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/texecom/images/texecom-capture-wireless-wall.webp",
+      "image_sha256": "a368d6ce606989d49b7667edac83a6c754e8a39d40dee00d47243285ef470d88",
+      "image_source_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/03/30143446/Capture_Wall-mount-W.jpeg",
+      "source_page_url": "https://www.texe.com/our-security-systems/capture-motion-detectors/",
+      "matched_documents": [
+        {
+          "record_id": "texecom-2e8386a1d8f4",
+          "model_codes_found_in_pdf": [
+            "P15-W",
+            "Q20-W",
+            "D20-W",
+            "GDAA-1000",
+            "GDBA-1000",
+            "GDCA-1000"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "texecom-capture-wired-ceiling",
+      "brand": "Texecom",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/texecom/images/texecom-capture-wired-ceiling.webp",
+      "image_sha256": "95e3c393b6c467ac8b90dc1910fd304370c4f471b0ba4943fca62d6021ec80d6",
+      "image_source_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/03/30143925/Capture_Ceiling-mount.jpeg",
+      "source_page_url": "https://www.texe.com/our-security-systems/capture-motion-detectors/",
+      "matched_documents": [
+        {
+          "record_id": "texecom-778b363ae34b",
+          "model_codes_found_in_pdf": [
+            "CQ",
+            "CD",
+            "AKFA0000",
+            "AKGA0000"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "texecom-impaq-sc",
+      "brand": "Texecom",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/texecom/images/texecom-impaq-sc.webp",
+      "image_sha256": "201dc5fd90fcf9bdc0050b0dd7154d4ca0d7354956d3a40b9bdd022d67a40cb9",
+      "image_source_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/03/28115704/Impaq-SC_white-1.jpg",
+      "source_page_url": "https://www.texe.com/help-and-support/product-support/",
+      "matched_documents": [
+        {
+          "record_id": "texecom-3973d2c533e7",
+          "model_codes_found_in_pdf": [
+            "Impaq SC"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "texecom-impaq-sc-w",
+      "brand": "Texecom",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/texecom/images/texecom-impaq-sc-w.webp",
+      "image_sha256": "f6e131abc2ad20f6c7a4c3fe23d96659f2296cbae6194539edeb139354db8ce7",
+      "image_source_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/03/28115823/Impaq-SC-W_white-1.jpg",
+      "source_page_url": "https://www.texe.com/help-and-support/product-support/",
+      "matched_documents": [
+        {
+          "record_id": "texecom-4e1e0135f4bf",
+          "model_codes_found_in_pdf": [
+            "Impaq SC-W",
+            "GJAA1000"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "texecom-micro-contact-w",
+      "brand": "Texecom",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/texecom/images/texecom-micro-contact-w.webp",
+      "image_sha256": "98689e51b875b589863fdac959d3a418c057df3b611e823eadfa74eda5c39a61",
+      "image_source_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2023/02/14101620/Micro-Contact-W-BLACK.png",
+      "source_page_url": "https://www.texe.com/help-and-support/product-support/",
+      "matched_documents": [
+        {
+          "record_id": "texecom-0faf7b484b7a",
+          "model_codes_found_in_pdf": [
+            "Micro Contact-W",
+            "GHAA1000"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "texecom-micro-shock-w",
+      "brand": "Texecom",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/texecom/images/texecom-micro-shock-w.webp",
+      "image_sha256": "ed41c41952ae99bb77e60299847f833de3dfd2a07de134ea95a53c7d9290b825",
+      "image_source_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2023/02/14101628/Micro-Shock-W-BLACK.png",
+      "source_page_url": "https://www.texe.com/help-and-support/product-support/",
+      "matched_documents": [
+        {
+          "record_id": "texecom-d0db73f4ddd3",
+          "model_codes_found_in_pdf": [
+            "Micro Shock-W",
+            "GHCA1000"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "texecom-impaq-glass-break",
+      "brand": "Texecom",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/texecom/images/texecom-impaq-glass-break.webp",
+      "image_sha256": "be41e9d24fa547cd096e69379e2c95d38a98365444b316e0cb63ca8d0de09309",
+      "image_source_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/03/28120632/Premier-Impaq-Glassbreak.jpg",
+      "source_page_url": "https://www.texe.com/help-and-support/product-support/",
+      "matched_documents": [
+        {
+          "record_id": "texecom-d710b6c6465d",
+          "model_codes_found_in_pdf": [
+            "Premier Impaq Glass Break"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    },
+    {
+      "id": "texecom-odyssey-x-wired",
+      "brand": "Texecom",
+      "image": "/workspace/scratch/dc428cd64ddc/device-batches/texecom/images/texecom-odyssey-x-wired.webp",
+      "image_sha256": "a6526cd0faa84818f2e923b3f236b34a1ae49d3a7d04cb4a82fc7a43a851c1fe",
+      "image_source_url": "https://texecom-live.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/03/28121331/Odyssey-X3_WhiteBlue.jpg",
+      "source_page_url": "https://www.texe.com/help-and-support/product-support/",
+      "matched_documents": [
+        {
+          "record_id": "texecom-f166805d48dc",
+          "model_codes_found_in_pdf": [
+            "Odyssey X",
+            "Odyssey X-B",
+            "Odyssey X-E",
+            "Odyssey X-BE"
+          ],
+          "pdf_locally_inspected": true
+        }
+      ],
+      "online_only": false,
+      "online_reference": null
+    }
+  ],
+  "validation_limit": "Recovered source bytes and provenance verified locally. This report does not claim a fresh production relay download or physical phone test."
+}

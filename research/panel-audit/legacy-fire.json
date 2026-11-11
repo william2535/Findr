@@ -1,0 +1,1063 @@
+{
+  "candidate_count": 85,
+  "verified_count": 64,
+  "candidates": [
+    {
+      "id": "edwards-est-est1-series-control-panel",
+      "brand": "Edwards EST",
+      "model": "EST1 Series Control Panel",
+      "record_ids": [
+        "facp-344cfd0b-b0c1-4347-85a9-4b753ac7e9a2",
+        "facp-4140093e-2607-4b6f-aa3c-70991f53643c"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": "facp-344cfd0b-b0c1-4347-85a9-4b753ac7e9a2"
+    },
+    {
+      "id": "edwards-est-est2",
+      "brand": "Edwards EST",
+      "model": "EST2",
+      "record_ids": [
+        "facp-806889ed-d65a-43f2-aab0-6b7e5a6b1b91",
+        "facp-ac377466-76fe-4150-acc9-0299d0e7598a",
+        "facp-28e7a834-ba7a-432b-b420-2995e82c66fc",
+        "facp-19519e67-457c-4c96-a9a6-e537ae9afb5b",
+        "facp-46d30609-c6ac-432b-996b-aa105109beee"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": "facp-806889ed-d65a-43f2-aab0-6b7e5a6b1b91"
+    },
+    {
+      "id": "edwards-est-est3",
+      "brand": "Edwards EST",
+      "model": "EST3",
+      "record_ids": [
+        "facp-e0ad6ae4-2ec5-4271-baf9-70d85fca5dac",
+        "facp-0be18bd6-59cc-4069-832d-4ca1426e5e19",
+        "facp-35906b2b-560a-4428-a127-9c382c7bee77",
+        "facp-12a116e0-e52c-4084-95e0-3718b358456a",
+        "facp-ced80b82-b010-4e5f-bcae-792b3113f2cf",
+        "facp-106543df-d608-48f3-a56a-5bfaee4e9b74",
+        "facp-139ecbc2-a701-4708-a962-c494dc3df61c",
+        "facp-51ba5267-5e28-4c2c-b6ec-6fb1993aa4b1",
+        "facp-63220470-50a8-4f91-856b-73999bf7bd19",
+        "facp-95440380-24ca-4ba1-a6db-5b01a30cc6e6",
+        "facp-78f7cccf-248e-4f7e-9044-30cd688237b4"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-e0ad6ae4-2ec5-4271-baf9-70d85fca5dac"
+    },
+    {
+      "id": "edwards-est-est3x",
+      "brand": "Edwards EST",
+      "model": "EST3X",
+      "record_ids": [
+        "facp-69a21840-a63b-4b34-9897-2186fb870dd9",
+        "facp-c6c12af2-e184-48c5-8876-08c88d6046bd",
+        "facp-45781a64-2df7-468b-bbc8-d31cb8366a8f",
+        "facp-f8919f55-018c-42ff-a41d-c781a40e324a",
+        "facp-29fc9084-610f-4b17-9865-ac14de2068c6"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-69a21840-a63b-4b34-9897-2186fb870dd9"
+    },
+    {
+      "id": "edwards-est-est4",
+      "brand": "Edwards EST",
+      "model": "EST4",
+      "record_ids": [
+        "facp-c1147a96-e751-429a-bd49-2be6bd46dce2",
+        "facp-115fe90c-b454-40c1-99c2-13f937fb0f6f",
+        "facp-7d73d057-8f8c-488a-9808-c14b4d5c0503",
+        "facp-c370c5bf-d5b7-4cbf-a9e9-1ddb9c7cd50b",
+        "facp-aa54002c-a0d7-4a02-8aec-ce836ced57f8",
+        "facp-78f71800-9a6a-4703-8571-6cf88c5f58e1"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-c1147a96-e751-429a-bd49-2be6bd46dce2"
+    },
+    {
+      "id": "edwards-est-fireshield-fire-alarm-control-panels",
+      "brand": "Edwards EST",
+      "model": "FireShield Fire Alarm Control Panels",
+      "record_ids": [
+        "facp-6cba82c8-5527-4cf0-afaa-c6187bd39ba9"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-6cba82c8-5527-4cf0-afaa-c6187bd39ba9"
+    },
+    {
+      "id": "edwards-est-fireshield-plus",
+      "brand": "Edwards EST",
+      "model": "FireShield Plus",
+      "record_ids": [
+        "facp-8ea4a754-9d44-4051-b611-9d9b7f320f6d",
+        "facp-82c53c00-f046-454d-8f76-7ae3e3be94de"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-8ea4a754-9d44-4051-b611-9d9b7f320f6d"
+    },
+    {
+      "id": "edwards-est-fireshield-single-zone-panel",
+      "brand": "Edwards EST",
+      "model": "FireShield Single-Zone Panel",
+      "record_ids": [
+        "facp-17354228-d928-4228-a947-122c4fd98954"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-17354228-d928-4228-a947-122c4fd98954"
+    },
+    {
+      "id": "edwards-est-e-fsc-series",
+      "brand": "Edwards EST",
+      "model": "E-FSC Series",
+      "record_ids": [
+        "facp-380218fa-f021-4bf7-ba75-a01232aaccf2",
+        "facp-696139a7-e36c-4e22-9ce1-0b989f827bad"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-380218fa-f021-4bf7-ba75-a01232aaccf2"
+    },
+    {
+      "id": "edwards-est-e-fsa64",
+      "brand": "Edwards EST",
+      "model": "E-FSA64",
+      "record_ids": [
+        "facp-3ba8fb01-8279-491a-8298-dd8775969d28",
+        "facp-71479c67-6fdd-47b7-8356-ec0953950a68"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-3ba8fb01-8279-491a-8298-dd8775969d28"
+    },
+    {
+      "id": "edwards-est-e-fsa250-life-safety-system",
+      "brand": "Edwards EST",
+      "model": "E-FSA250 Life Safety System",
+      "record_ids": [
+        "facp-36fdba60-ac40-40ce-93b5-26a8215e036b",
+        "facp-521dd82d-3290-4366-acb1-2bf81fe1efd4"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-36fdba60-ac40-40ce-93b5-26a8215e036b"
+    },
+    {
+      "id": "edwards-est-io64-intelligent-life-safety-system",
+      "brand": "Edwards EST",
+      "model": "iO64 Intelligent Life Safety System",
+      "record_ids": [
+        "facp-7010b2b3-800f-40af-94a5-3709b260cdf3",
+        "facp-5978ef52-dc39-4739-b7b8-562c521588c4",
+        "facp-a23a255d-2535-4ba9-951d-53bb0263b365",
+        "facp-a34f9a57-bd41-4b7f-9b06-934f64b6b078",
+        "facp-1a78e5b5-2110-4d29-9230-31f979ba0b37",
+        "facp-b5a1a3b2-85bb-47a4-828e-2b2a01008f61"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-7010b2b3-800f-40af-94a5-3709b260cdf3"
+    },
+    {
+      "id": "edwards-est-io500",
+      "brand": "Edwards EST",
+      "model": "IO500",
+      "record_ids": [
+        "facp-d8c4b4fa-8d0b-4e2c-9d7a-ff4088f06486"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-d8c4b4fa-8d0b-4e2c-9d7a-ff4088f06486"
+    },
+    {
+      "id": "edwards-est-2400-series",
+      "brand": "Edwards EST",
+      "model": "2400 Series",
+      "record_ids": [
+        "facp-1b6484b0-e600-4ca4-88a2-2614f18b4d3f",
+        "facp-840b7098-bed3-48f9-9c3c-d4907de80ab0"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": "facp-1b6484b0-e600-4ca4-88a2-2614f18b4d3f"
+    },
+    {
+      "id": "simplex-2001-series",
+      "brand": "Simplex",
+      "model": "2001 Series",
+      "record_ids": [
+        "facp-18bbfd55-1209-4923-95a1-ebe698a96af6",
+        "facp-ef92ac48-3d0d-45c4-a9eb-ce8c4703c9ae",
+        "facp-7d8b7354-07fd-49aa-8389-ab57697c8e75"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": "facp-18bbfd55-1209-4923-95a1-ebe698a96af6"
+    },
+    {
+      "id": "simplex-2120",
+      "brand": "Simplex",
+      "model": "2120",
+      "record_ids": [
+        "facp-ee8cf398-c1e6-4beb-af61-a94ab34d68ed",
+        "facp-d4d28d82-8700-4169-9410-253315350ec0",
+        "facp-65ca85c8-ff50-425c-91bb-8e7c81359394",
+        "facp-8c3ad2e5-1dff-4f5b-8f69-9f3138129b9b",
+        "facp-b3217ba9-8e6a-4a40-9ab9-5cdcc8d1500b"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-ee8cf398-c1e6-4beb-af61-a94ab34d68ed"
+    },
+    {
+      "id": "simplex-4001-9403-and-4001-9404",
+      "brand": "Simplex",
+      "model": "4001-9403 and 4001-9404",
+      "record_ids": [
+        "facp-4471a2dc-0cca-4f64-b182-94c1b5c3f3d1",
+        "facp-5b08645a-2828-4957-ab6f-246978b68a16"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-4471a2dc-0cca-4f64-b182-94c1b5c3f3d1"
+    },
+    {
+      "id": "simplex-4002",
+      "brand": "Simplex",
+      "model": "4002",
+      "record_ids": [
+        "facp-dd5d09e7-c86b-419e-be97-a02a82351b68",
+        "facp-9319ba70-73b4-416e-8ecd-18ad1ae71d87",
+        "facp-588a80ae-f795-4f0c-b3f2-0c97ea33a6eb",
+        "facp-2cb9d13c-9471-4f88-9eb8-637548008573"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-9319ba70-73b4-416e-8ecd-18ad1ae71d87"
+    },
+    {
+      "id": "simplex-4003",
+      "brand": "Simplex",
+      "model": "4003",
+      "record_ids": [
+        "facp-6071a4b8-7260-46b4-9a25-5bb08ea95817",
+        "facp-44ea8eac-6bde-4a4e-9bf3-1270254e6740",
+        "facp-44f44e1b-544b-43f6-bd39-3cbffe961097"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": "facp-6071a4b8-7260-46b4-9a25-5bb08ea95817"
+    },
+    {
+      "id": "simplex-4003ec",
+      "brand": "Simplex",
+      "model": "4003EC",
+      "record_ids": [
+        "facp-abbd3dec-6fe0-48ce-93a7-019390e8d72a"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-abbd3dec-6fe0-48ce-93a7-019390e8d72a"
+    },
+    {
+      "id": "simplex-4004",
+      "brand": "Simplex",
+      "model": "4004",
+      "record_ids": [
+        "facp-577de8ec-9171-444f-ae79-ea089fa3b941",
+        "facp-e8034496-7e5a-4378-973c-67787d115080"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": "facp-577de8ec-9171-444f-ae79-ea089fa3b941"
+    },
+    {
+      "id": "simplex-4004r",
+      "brand": "Simplex",
+      "model": "4004R",
+      "record_ids": [
+        "facp-41600791-e9f8-4bd5-a622-7131cd7ddc07",
+        "facp-d7df1359-698f-4259-ab9c-28021f3332d1"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": "facp-41600791-e9f8-4bd5-a622-7131cd7ddc07"
+    },
+    {
+      "id": "simplex-4005",
+      "brand": "Simplex",
+      "model": "4005",
+      "record_ids": [
+        "facp-ad87a68f-5447-4db1-97e1-446d89656587",
+        "facp-b06eab9e-9ca7-418a-8745-0da974fb5512"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": "facp-ad87a68f-5447-4db1-97e1-446d89656587"
+    },
+    {
+      "id": "simplex-4006-series",
+      "brand": "Simplex",
+      "model": "4006 Series",
+      "record_ids": [
+        "facp-14c69c27-5aa8-414f-b389-122b32c01e4c"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-14c69c27-5aa8-414f-b389-122b32c01e4c"
+    },
+    {
+      "id": "simplex-4007es",
+      "brand": "Simplex",
+      "model": "4007ES",
+      "record_ids": [
+        "facp-2955772b-4c90-4983-8b0d-487271917a39",
+        "facp-7e865c26-4254-4364-bb00-a09086ad2f3d",
+        "facp-299c6bc7-1d36-403b-bf9d-605f13505635"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-2955772b-4c90-4983-8b0d-487271917a39"
+    },
+    {
+      "id": "simplex-4007es-hybrid",
+      "brand": "Simplex",
+      "model": "4007ES Hybrid",
+      "record_ids": [
+        "facp-ce9cc381-e6b9-43d5-8fa3-568a3fdadd2d"
+      ],
+      "status": "merged-identical-fascia",
+      "reason": "Same photographed hybrid enclosure as 4007ES Hybrid (4007-9101)",
+      "source_document_id": "facp-ce9cc381-e6b9-43d5-8fa3-568a3fdadd2d"
+    },
+    {
+      "id": "simplex-4008",
+      "brand": "Simplex",
+      "model": "4008",
+      "record_ids": [
+        "facp-cce20e4a-b596-4961-adc5-f1255c0c66e6"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": "facp-cce20e4a-b596-4961-adc5-f1255c0c66e6"
+    },
+    {
+      "id": "simplex-4010",
+      "brand": "Simplex",
+      "model": "4010",
+      "record_ids": [
+        "facp-837478fa-3c0e-4648-8782-2ef10543dc1a",
+        "facp-986fd0f9-495a-4c06-833d-ffb0f2c14d4e",
+        "facp-4dcefee0-cc0b-4fc1-921a-f5ad353a8f0e",
+        "facp-3495988f-dcd6-4874-8fea-d56aa2133fb2"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-837478fa-3c0e-4648-8782-2ef10543dc1a"
+    },
+    {
+      "id": "simplex-4010es",
+      "brand": "Simplex",
+      "model": "4010ES",
+      "record_ids": [
+        "facp-e87afdda-1900-4857-9959-938315249663",
+        "facp-e77e4ac7-de3a-4930-9117-54d39a81f679",
+        "facp-5f165b0f-7adc-4202-8dbc-033798484b36",
+        "facp-e2dfb06a-c0b1-4b02-8bfb-99db15c22351"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-e87afdda-1900-4857-9959-938315249663"
+    },
+    {
+      "id": "simplex-4020",
+      "brand": "Simplex",
+      "model": "4020",
+      "record_ids": [
+        "facp-0aab3b29-0ab8-4aaf-a6fe-08712d54a79d"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-0aab3b29-0ab8-4aaf-a6fe-08712d54a79d"
+    },
+    {
+      "id": "simplex-4100",
+      "brand": "Simplex",
+      "model": "4100",
+      "record_ids": [
+        "facp-6cc18b4b-c119-4d72-922c-7511ef87e447",
+        "facp-542dd48b-6d3a-4d40-a52d-1aa8130e58bf",
+        "facp-c4641de6-7659-4791-896b-44185dc91eeb"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": "facp-6cc18b4b-c119-4d72-922c-7511ef87e447"
+    },
+    {
+      "id": "simplex-4100u",
+      "brand": "Simplex",
+      "model": "4100U",
+      "record_ids": [
+        "facp-253df45d-c7d5-44e2-be49-1a137d5cc5c6",
+        "facp-361ba08a-c7f3-4f63-b10a-b497b5b1e98a",
+        "facp-b64784ad-e1a7-458a-bbd2-e1160a2da061",
+        "facp-afc1c1f7-6fa6-4d9b-88da-1d0144a9da3e"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": "facp-253df45d-c7d5-44e2-be49-1a137d5cc5c6"
+    },
+    {
+      "id": "simplex-4100es",
+      "brand": "Simplex",
+      "model": "4100ES",
+      "record_ids": [
+        "facp-752ba08c-afe0-45b7-8b6e-8eedccb4bc03",
+        "facp-1b567873-060f-4933-a801-7e4648a97370",
+        "facp-d93a3ad4-c13c-47d1-8592-a93a2a9a2c9f",
+        "facp-c3e2a049-8306-41cd-a217-81aabae94dd8",
+        "facp-ab15fcaf-1a63-4be9-a9b4-23913f50ef24",
+        "facp-9dcdfc37-8672-4669-9fce-92cef8c23c1e",
+        "facp-b81d7629-95a6-4b69-8dc3-6b7cdfb07b76"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-752ba08c-afe0-45b7-8b6e-8eedccb4bc03"
+    },
+    {
+      "id": "simplex-4100esi",
+      "brand": "Simplex",
+      "model": "4100ESi",
+      "record_ids": [
+        "facp-b30811dd-b2c2-4505-aa05-6328d930b6c1",
+        "facp-2f0dc3ec-4c0d-4ffd-9c42-acb57a80abce"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-b30811dd-b2c2-4505-aa05-6328d930b6c1"
+    },
+    {
+      "id": "mircom-fa-103-and-fa-106",
+      "brand": "Mircom",
+      "model": "FA-103 and FA-106",
+      "record_ids": [
+        "facp-bcac779e-62d9-4abc-b1f6-457f317e4066",
+        "facp-ac1a0c2b-2ab0-4077-b71d-119216ecb50a"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-bcac779e-62d9-4abc-b1f6-457f317e4066"
+    },
+    {
+      "id": "mircom-fa-200",
+      "brand": "Mircom",
+      "model": "FA-200",
+      "record_ids": [
+        "facp-c83a5a0a-5016-4f99-bc4e-3f40106dc173"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-c83a5a0a-5016-4f99-bc4e-3f40106dc173"
+    },
+    {
+      "id": "mircom-fa-262",
+      "brand": "Mircom",
+      "model": "FA-262",
+      "record_ids": [
+        "facp-ac93054c-d154-4ad9-ba35-a34cff35d690",
+        "facp-0f353f00-2cec-41ec-96d9-85589a20cc14"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-ac93054c-d154-4ad9-ba35-a34cff35d690"
+    },
+    {
+      "id": "mircom-fa-300-series-lcd",
+      "brand": "Mircom",
+      "model": "FA-300 Series LCD",
+      "record_ids": [
+        "facp-56ba5824-90e0-4f2c-8610-5de4792f9b6a",
+        "facp-2598080e-664d-40c4-b798-feb71bf563c1",
+        "facp-449eb7f1-215f-470d-959c-b549560ffec3"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-56ba5824-90e0-4f2c-8610-5de4792f9b6a"
+    },
+    {
+      "id": "mircom-fa-300-series-led",
+      "brand": "Mircom",
+      "model": "FA-300 Series LED",
+      "record_ids": [
+        "facp-f5d66a11-b290-491b-9d34-70047288ad49",
+        "facp-fbe688a6-967b-4d80-94e5-435ac6aaacb9",
+        "facp-084e95f3-9585-410c-a975-8c602bea40ad"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-f5d66a11-b290-491b-9d34-70047288ad49"
+    },
+    {
+      "id": "mircom-fa-1000-series",
+      "brand": "Mircom",
+      "model": "FA-1000 Series",
+      "record_ids": [
+        "facp-c2cbbfdf-e66d-4c4f-9f64-e367d63a43d7",
+        "facp-f912d9a4-b06e-4604-9346-19d2589a0a42",
+        "facp-545d6581-0899-40db-a6d8-ccfadc436186",
+        "facp-e2293482-1f7e-44b9-86c9-1a9f31affa23"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-c2cbbfdf-e66d-4c4f-9f64-e367d63a43d7"
+    },
+    {
+      "id": "mircom-fr-320-series",
+      "brand": "Mircom",
+      "model": "FR-320 Series",
+      "record_ids": [
+        "facp-159fd638-c622-4b26-8873-91dce802257e",
+        "facp-eecd1701-57cf-4471-af33-92e821d00dad"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-159fd638-c622-4b26-8873-91dce802257e"
+    },
+    {
+      "id": "mircom-fx-2000",
+      "brand": "Mircom",
+      "model": "FX-2000",
+      "record_ids": [
+        "facp-1d52f11d-3dd7-45fd-b050-36c1656fbcef",
+        "facp-4e18ea49-049e-4aca-a67f-6a7eabee7657",
+        "facp-8d5c4876-d7e6-481c-9155-79ca143946d1"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-1d52f11d-3dd7-45fd-b050-36c1656fbcef"
+    },
+    {
+      "id": "mircom-fx-2001-6k-and-fx-2001-6ku",
+      "brand": "Mircom",
+      "model": "FX-2001-6K and FX-2001-6KU",
+      "record_ids": [
+        "facp-180f9ec9-b965-404a-afb4-4dd6ea7aeacf"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": "facp-180f9ec9-b965-404a-afb4-4dd6ea7aeacf"
+    },
+    {
+      "id": "mircom-fx-2003-12nxtds",
+      "brand": "Mircom",
+      "model": "FX-2003-12NXTDS",
+      "record_ids": [
+        "facp-9b26b909-9a56-4580-a09a-79a3dcb7c86a",
+        "facp-48110d13-c9c3-4b7e-9867-097e8cbd87a1"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-9b26b909-9a56-4580-a09a-79a3dcb7c86a"
+    },
+    {
+      "id": "mircom-fx-2003-12xtds",
+      "brand": "Mircom",
+      "model": "FX-2003-12XTDS",
+      "record_ids": [
+        "facp-f2fe6031-ad9f-48af-9d67-5af239bf4493"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-f2fe6031-ad9f-48af-9d67-5af239bf4493"
+    },
+    {
+      "id": "mircom-fx-2003-6ds-16led",
+      "brand": "Mircom",
+      "model": "FX-2003-6DS-16LED",
+      "record_ids": [
+        "facp-4346130f-9d7e-4394-b654-4d8f45d87951"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-4346130f-9d7e-4394-b654-4d8f45d87951"
+    },
+    {
+      "id": "mircom-fx-2009-12nds",
+      "brand": "Mircom",
+      "model": "FX-2009-12NDS",
+      "record_ids": [
+        "facp-7c993e48-3a2d-45c6-b55c-e50d6f7eb4f3"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-7c993e48-3a2d-45c6-b55c-e50d6f7eb4f3"
+    },
+    {
+      "id": "mircom-fx-3318",
+      "brand": "Mircom",
+      "model": "FX-3318",
+      "record_ids": [
+        "facp-d1b68099-2b5f-4448-8204-3b9d7d5e7f5f",
+        "facp-5a19ca14-4538-4f7e-b9b8-580448c34f70",
+        "facp-b373fbb8-dc3f-4ae0-9160-89d3dc905491",
+        "facp-e44e39b6-c038-4f47-9110-47966abd768f"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-d1b68099-2b5f-4448-8204-3b9d7d5e7f5f"
+    },
+    {
+      "id": "mircom-fx-3500",
+      "brand": "Mircom",
+      "model": "FX-3500",
+      "record_ids": [
+        "facp-110fd4f7-8276-4f58-a572-7267cc9495a5",
+        "facp-a4b290c4-aa68-4b22-a5fb-1b6022529b92",
+        "facp-8043ec35-192b-4c5c-b04d-65c1add0a07b",
+        "facp-aadb9d4b-5963-4d19-87f9-f1f48a3f0f7b",
+        "facp-1d99c0b5-a4c3-4bc2-951f-5c040c73c52c"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-110fd4f7-8276-4f58-a572-7267cc9495a5"
+    },
+    {
+      "id": "mircom-fx-3500rcu",
+      "brand": "Mircom",
+      "model": "FX-3500RCU",
+      "record_ids": [
+        "facp-e1ef6e16-591f-4734-80a9-5de5064ab564",
+        "facp-5144fd35-0cd3-4b42-8393-63df8bcd8a0b"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-e1ef6e16-591f-4734-80a9-5de5064ab564"
+    },
+    {
+      "id": "mircom-fx-351-lw-and-fx-351-ldw",
+      "brand": "Mircom",
+      "model": "FX-351-LW and FX-351-LDW",
+      "record_ids": [
+        "facp-e883470c-b105-4fd9-8aec-21e1159626db"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-e883470c-b105-4fd9-8aec-21e1159626db"
+    },
+    {
+      "id": "mircom-fx-400",
+      "brand": "Mircom",
+      "model": "FX-400",
+      "record_ids": [
+        "facp-4b053aa2-be02-41e2-90c0-6b0b46bef194",
+        "facp-82fc92f1-2a14-4060-b87c-cc4df85a912f",
+        "facp-39ae3111-e3e0-4814-a31d-6c97192d0553"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-4b053aa2-be02-41e2-90c0-6b0b46bef194"
+    },
+    {
+      "id": "mircom-fx-401",
+      "brand": "Mircom",
+      "model": "FX-401",
+      "record_ids": [
+        "facp-64b10c3a-df89-463b-919c-7db793a93809",
+        "facp-c275e82b-9990-4b76-8251-fae2609c1b4e",
+        "facp-accb5f8c-c148-4a09-8992-b94f07e269f4",
+        "facp-6dcd906b-0f53-40f2-a6eb-e184411c9a26"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-64b10c3a-df89-463b-919c-7db793a93809"
+    },
+    {
+      "id": "mircom-fx-4000",
+      "brand": "Mircom",
+      "model": "FX-4000",
+      "record_ids": [
+        "facp-8f668815-8e98-435f-9c37-5e339ced6596",
+        "facp-27bdb73b-da85-401a-bf99-6af76e3724e8",
+        "facp-f21c9917-2d88-4fa5-b067-268933b2f499",
+        "facp-c573f8ad-3a14-4d5d-80f6-ae7ca4cfa504",
+        "facp-8594c3cb-9986-4461-a691-5ca91d8cba42"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-8f668815-8e98-435f-9c37-5e339ced6596"
+    },
+    {
+      "id": "mircom-fx-4009-12n",
+      "brand": "Mircom",
+      "model": "FX-4009-12N",
+      "record_ids": [
+        "facp-a303e785-4664-4a74-86bf-4b39fd93f676"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-a303e785-4664-4a74-86bf-4b39fd93f676"
+    },
+    {
+      "id": "mircom-flex-net-fx-2003-12nds-network-series",
+      "brand": "Mircom",
+      "model": "FleX-Net FX-2003-12NDS Network Series",
+      "record_ids": [
+        "facp-1289516e-ea96-4fa5-a995-56405d8217dd"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-1289516e-ea96-4fa5-a995-56405d8217dd"
+    },
+    {
+      "id": "mircom-flex-net-fx-2017-12nds-network-fire-alarm-control-panel",
+      "brand": "Mircom",
+      "model": "FleX-Net FX-2017-12NDS Network Fire Alarm Control Panel",
+      "record_ids": [
+        "facp-d5ca12da-bc17-48f0-9dff-96f5ac1cd7a6"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-d5ca12da-bc17-48f0-9dff-96f5ac1cd7a6"
+    },
+    {
+      "id": "kidde-fx-5-and-fx-10",
+      "brand": "Kidde",
+      "model": "FX-5 and FX-10",
+      "record_ids": [
+        "facp-babbb08f-42b7-41db-986f-b1da2c5d4133",
+        "facp-8d3c9d58-7ff6-4e84-9f9f-98a59d908106"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-babbb08f-42b7-41db-986f-b1da2c5d4133"
+    },
+    {
+      "id": "kidde-fx-64-and-fx-1000",
+      "brand": "Kidde",
+      "model": "FX-64 and FX-1000",
+      "record_ids": [
+        "facp-fc4ab90a-6a4b-4ca1-91d5-77e80870a137",
+        "facp-6fa781be-d6d0-4fde-9c25-ff8577888eeb",
+        "facp-c06ff773-217e-438d-b038-9aab588db2b4"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-fc4ab90a-6a4b-4ca1-91d5-77e80870a137"
+    },
+    {
+      "id": "kidde-vm-1",
+      "brand": "Kidde",
+      "model": "VM-1",
+      "record_ids": [
+        "facp-046ccbe1-88a0-4e03-8c3f-b104b48adc3c",
+        "facp-d29519d1-18fb-4d7a-b777-9ed9727c5073"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-046ccbe1-88a0-4e03-8c3f-b104b48adc3c"
+    },
+    {
+      "id": "fenwal-2320",
+      "brand": "Fenwal",
+      "model": "2320",
+      "record_ids": [
+        "facp-478e500f-701a-403a-a0e3-8db68521cb0c"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-478e500f-701a-403a-a0e3-8db68521cb0c"
+    },
+    {
+      "id": "fenwal-fenwalnet-6000",
+      "brand": "Fenwal",
+      "model": "FENWALNET 6000",
+      "record_ids": [
+        "facp-059c8cf3-6fee-45c4-b0d5-2783eaf55e1b",
+        "facp-592408f7-fd88-417e-a357-3314802730b8",
+        "facp-f67d9c43-4024-4c11-840e-7048e54a03a4"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-059c8cf3-6fee-45c4-b0d5-2783eaf55e1b"
+    },
+    {
+      "id": "fenwal-fenwalnet-8000-ml",
+      "brand": "Fenwal",
+      "model": "FenwalNET 8000-ML",
+      "record_ids": [
+        "facp-aeabb9ba-bb09-42ac-b7ee-fd6360c413a3",
+        "facp-fec5243d-44fc-458c-8496-3c4c6d6d6bd4"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-aeabb9ba-bb09-42ac-b7ee-fd6360c413a3"
+    },
+    {
+      "id": "autocall-4007es",
+      "brand": "Autocall",
+      "model": "4007ES",
+      "record_ids": [
+        "facp-5da9da10-a433-4082-b624-15098c433cd7"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": "facp-5da9da10-a433-4082-b624-15098c433cd7"
+    },
+    {
+      "id": "autocall-4010es-releasing-control",
+      "brand": "Autocall",
+      "model": "4010ES Releasing Control",
+      "record_ids": [
+        "facp-9dc62e99-9b6f-414c-b92b-a8654d29e6a5"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": "facp-9dc62e99-9b6f-414c-b92b-a8654d29e6a5"
+    },
+    {
+      "id": "autocall-4100es",
+      "brand": "Autocall",
+      "model": "4100ES",
+      "record_ids": [
+        "facp-79c3ecd4-522d-4560-8a53-3c91cf536de1",
+        "facp-ea509e3f-0168-4305-be75-dd87397b041c"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": "facp-79c3ecd4-522d-4560-8a53-3c91cf536de1"
+    },
+    {
+      "id": "faraday-12400",
+      "brand": "Faraday",
+      "model": "12400",
+      "record_ids": [
+        "facp-89e5dba9-6505-4665-a649-9e3bc86d71f4"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": "facp-89e5dba9-6505-4665-a649-9e3bc86d71f4"
+    },
+    {
+      "id": "faraday-13400",
+      "brand": "Faraday",
+      "model": "13400",
+      "record_ids": [
+        "facp-87e1f1b5-d189-454c-a44f-90c609bde3b6"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": "facp-87e1f1b5-d189-454c-a44f-90c609bde3b6"
+    },
+    {
+      "id": "faraday-firewatch-200",
+      "brand": "Faraday",
+      "model": "FireWatch 200",
+      "record_ids": [
+        "facp-5b48f54f-d44a-452b-8466-c79e6accadcf",
+        "facp-5be0131c-35d7-4c26-a61d-5e65d8240038"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-5b48f54f-d44a-452b-8466-c79e6accadcf"
+    },
+    {
+      "id": "faraday-firewatch-ii-2",
+      "brand": "Faraday",
+      "model": "FireWatch II+2",
+      "record_ids": [
+        "facp-27516921-4d90-4477-ae0f-471cd987ddcc"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-27516921-4d90-4477-ae0f-471cd987ddcc"
+    },
+    {
+      "id": "faraday-firewatch-400",
+      "brand": "Faraday",
+      "model": "FireWatch-400",
+      "record_ids": [
+        "facp-17a22bda-5178-4341-8cfd-45d45675e2c3"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-17a22bda-5178-4341-8cfd-45d45675e2c3"
+    },
+    {
+      "id": "faraday-firewatch-4000",
+      "brand": "Faraday",
+      "model": "FireWatch-4000",
+      "record_ids": [
+        "facp-c5b61cfe-e3ce-42da-8737-818cb6bd9c5c"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-c5b61cfe-e3ce-42da-8737-818cb6bd9c5c"
+    },
+    {
+      "id": "faraday-mpc-1000",
+      "brand": "Faraday",
+      "model": "MPC-1000",
+      "record_ids": [
+        "facp-ef266849-5d0e-45b4-b2d6-d770ddc205f3",
+        "facp-3df47236-c6d3-41dc-8b21-c876d69bdf4c"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-ef266849-5d0e-45b4-b2d6-d770ddc205f3"
+    },
+    {
+      "id": "faraday-mpc-1000-plus",
+      "brand": "Faraday",
+      "model": "MPC-1000 Plus",
+      "record_ids": [
+        "facp-71d878e7-7a57-47bf-bb9f-7a9736ca3fb5",
+        "facp-4dbd5cfb-7bc6-4256-aea9-4be9b31faadd"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-71d878e7-7a57-47bf-bb9f-7a9736ca3fb5"
+    },
+    {
+      "id": "faraday-mpc-1500",
+      "brand": "Faraday",
+      "model": "MPC-1500",
+      "record_ids": [
+        "facp-7eb238fa-a4d1-4c84-906d-c77a4078beb6",
+        "facp-b727e569-d2e2-4d74-ad93-6522bc4a2d80"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-7eb238fa-a4d1-4c84-906d-c77a4078beb6"
+    },
+    {
+      "id": "faraday-mpc-1500-plus",
+      "brand": "Faraday",
+      "model": "MPC-1500 Plus",
+      "record_ids": [
+        "facp-51313694-0b42-4a95-8a92-1a8d85e674c3",
+        "facp-41dcb5ff-5a15-4d31-8a92-1e214f23394d"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-51313694-0b42-4a95-8a92-1a8d85e674c3"
+    },
+    {
+      "id": "faraday-mpc-2000",
+      "brand": "Faraday",
+      "model": "MPC-2000",
+      "record_ids": [
+        "facp-a20133b4-b23f-4f63-8616-9e9b8158a07a",
+        "facp-ff153afc-7199-47f3-bee3-1572a7b5b006",
+        "facp-f51ab216-d1e2-482d-a69d-d8b71a66c7e1"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-a20133b4-b23f-4f63-8616-9e9b8158a07a"
+    },
+    {
+      "id": "faraday-mpc-6000-and-mpc-7000",
+      "brand": "Faraday",
+      "model": "MPC-6000 and MPC-7000",
+      "record_ids": [
+        "facp-bd9a31c9-8b6a-40f9-90e6-0c39c75a2663",
+        "facp-d36d77d1-1ecf-41e7-b377-c3c4a292cdce",
+        "facp-5ea3f919-4950-42ca-ad5a-e6d147a29192",
+        "facp-32e0ea6a-5bb6-4733-93b3-dbbc9444816a",
+        "facp-ad405a60-8e9b-4887-aeeb-afb4e2216230",
+        "facp-e92cb331-9c5c-441a-9d9a-c2356eed47f1"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-bd9a31c9-8b6a-40f9-90e6-0c39c75a2663"
+    },
+    {
+      "id": "faraday-lw-401",
+      "brand": "Faraday",
+      "model": "LW-401",
+      "record_ids": [
+        "facp-c21dbf0a-6342-4f13-b22d-efa6ff00d3d0",
+        "facp-c13f1285-e632-4758-81c9-30a59044e0d7",
+        "facp-4fceb323-08e0-40f0-8c55-279234bb4f80"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-c21dbf0a-6342-4f13-b22d-efa6ff00d3d0"
+    },
+    {
+      "id": "faraday-vps-100-voice-plus",
+      "brand": "Faraday",
+      "model": "VPS-100 Voice-Plus",
+      "record_ids": [
+        "facp-5432b48a-6dfc-422d-90a1-1221fc265ec2",
+        "facp-ca2b19ad-de2f-4227-9797-3797f057e8b6"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-5432b48a-6dfc-422d-90a1-1221fc265ec2"
+    },
+    {
+      "id": "cerberus-pyrotronics-cp-2er",
+      "brand": "Cerberus Pyrotronics",
+      "model": "CP-2ER",
+      "record_ids": [
+        "facp-b889abbc-10e2-4c1b-b300-2fded45b4ece"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-b889abbc-10e2-4c1b-b300-2fded45b4ece"
+    },
+    {
+      "id": "cerberus-pyrotronics-cp-400",
+      "brand": "Cerberus Pyrotronics",
+      "model": "CP-400",
+      "record_ids": [
+        "facp-3dff4cf9-d3fd-4624-8f74-05c321a4a8a0"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": null
+    },
+    {
+      "id": "cerberus-pyrotronics-cz-10",
+      "brand": "Cerberus Pyrotronics",
+      "model": "CZ 10",
+      "record_ids": [
+        "facp-6af0dd59-1c98-4c74-847a-8a6d99cae31e"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": "facp-6af0dd59-1c98-4c74-847a-8a6d99cae31e"
+    },
+    {
+      "id": "cerberus-pyrotronics-sxl-conventional-zone-fire-alarm-control-panel",
+      "brand": "Cerberus Pyrotronics",
+      "model": "SXL Conventional Zone Fire Alarm Control Panel",
+      "record_ids": [
+        "facp-d1e905a7-5c02-44b0-a4b7-5c92bc07f99a"
+      ],
+      "status": "verified-image",
+      "reason": "",
+      "source_document_id": "facp-d1e905a7-5c02-44b0-a4b7-5c92bc07f99a"
+    },
+    {
+      "id": "ge-security-vs1-and-vs2",
+      "brand": "GE Security",
+      "model": "VS1 and VS2",
+      "record_ids": [
+        "facp-ce98c373-db5e-43d1-98df-f0057ffc1fd1"
+      ],
+      "status": "awaiting-image-review",
+      "reason": "",
+      "source_document_id": "facp-ce98c373-db5e-43d1-98df-f0057ffc1fd1"
+    }
+  ]
+}

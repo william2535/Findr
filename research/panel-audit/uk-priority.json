@@ -1,0 +1,1843 @@
+{
+  "generated": "2026-10-29",
+  "purpose": "Editorial UK priority for FINDR picture browsing. Sorting only; retain all 396 cards and existing evidence/IDs.",
+  "meaning": "Priority means relevant to this UK servicing workflow; not country of manufacture, exclusivity, market prevalence, product certification or approval. An unmarked card means normal sort priority, not non-UK.",
+  "total_panels": 396,
+  "uk_priority_count": 230,
+  "uk_priority_ids": [
+    "gent-vigilon-compact",
+    "c-tec-cfp-alarmsense",
+    "c-tec-cfp-economy",
+    "c-tec-cfp-legacy",
+    "c-tec-cfp-standard",
+    "c-tec-eacie",
+    "c-tec-ep203",
+    "c-tec-sigtel-16-128",
+    "c-tec-sigtel-compact",
+    "c-tec-xfp-16-zone",
+    "c-tec-xfp-32-zone",
+    "c-tec-xfp-cast-16-zone",
+    "c-tec-xfp-cast-32-zone",
+    "c-tec-zfp-apollo",
+    "c-tec-zfp-cast",
+    "eaton-cf1000",
+    "eaton-cf3000",
+    "eaton-df6000",
+    "gent-compact-plus",
+    "gent-nano",
+    "gent-sentri",
+    "gent-sentri-one",
+    "gent-vig1-24-vig1-72",
+    "gent-vigilon-4-6-loop",
+    "gent-vigilon-plus",
+    "gent-xenex",
+    "haes-2000-series",
+    "haes-3000-series",
+    "haes-7003",
+    "haes-alarmsense",
+    "haes-alarmsense-plus",
+    "haes-elan",
+    "haes-elan-hs-5200",
+    "haes-elan-hs-5400",
+    "haes-elan-hs-5800",
+    "haes-elite-1-apollo",
+    "haes-elite-1-nittan",
+    "haes-envoy-1-4",
+    "haes-esento-eclipse",
+    "haes-esento-excel",
+    "haes-esento-marine-2-4",
+    "haes-esento-marine-8-12",
+    "haes-esprit-apollo",
+    "haes-esprit-argus",
+    "haes-esprit-gas",
+    "haes-evoque",
+    "haes-fusion",
+    "haes-haescom-evcs",
+    "haes-mini4",
+    "haes-mzaov",
+    "haes-surveyor-9002-a",
+    "haes-9002-9004",
+    "haes-szaov",
+    "haes-vector-1",
+    "haes-vector-ml-pre-v4-1",
+    "haes-vector-ml-v4-1",
+    "haes-xlk",
+    "nittan-evo5030",
+    "nittan-evo5800",
+    "nittan-evo5200",
+    "nittan-evolution1",
+    "notifier-id2000",
+    "notifier-id3000",
+    "notifier-id50",
+    "notifier-conventional",
+    "notifier-extinguishant",
+    "notifier-pearl",
+    "protec-6100",
+    "protec-6300",
+    "protec-6500",
+    "protec-6600",
+    "tyco-mx1000",
+    "tyco-mzx125",
+    "tyco-mzx250",
+    "zeta-infinity16",
+    "zeta-infinity8",
+    "zeta-expro",
+    "zeta-expro-repeater",
+    "zeta-smartconnect",
+    "ziton-zp2",
+    "ziton-zp3",
+    "ziton-zp3rd",
+    "advanced-axis-en-5000v",
+    "advanced-lifeline-px-100",
+    "advanced-mx-4000-series",
+    "advanced-mxpro-4",
+    "advanced-mxpro5",
+    "kentec-ecu",
+    "kentec-evcs-safe-point",
+    "kentec-hydrosense-cp",
+    "kentec-hydrosense-e2000000",
+    "kentec-hydrosense-k2000000",
+    "kentec-k2-01",
+    "kentec-k3000s",
+    "kentec-k4-01-k4-01-plus",
+    "kentec-microsense-ii",
+    "kentec-sigma-cp",
+    "kentec-sigma-cp-a-alarmsense",
+    "kentec-sigma-k1000",
+    "kentec-sigma-k1000-economy",
+    "kentec-sigma-xt",
+    "kentec-sigma-xt-plus",
+    "kentec-sigma-zxt",
+    "kentec-signifire",
+    "kentec-signifire-ii",
+    "kentec-solex-2",
+    "kentec-solo-2",
+    "kentec-solo-2-lite",
+    "kentec-solo-apollo",
+    "kentec-solo-hochiki-esp",
+    "kentec-syncro",
+    "kentec-syncro-as",
+    "kentec-syncro-asm",
+    "kentec-syncro-lite",
+    "kentec-syncro-xt",
+    "kentec-syncro-xt-plus",
+    "kentec-taktis",
+    "morley-ias-dimension-dx-series",
+    "morley-ias-dx-connexion",
+    "morley-ias-horizon-hrz",
+    "morley-ias-zx-series",
+    "fike-ciea200",
+    "fike-ciea400",
+    "fike-rdua200",
+    "fike-rdua400",
+    "fike-twinflexpro",
+    "fike-twinflexpro2",
+    "fike-twinflexpro2-repeater",
+    "fireclass-essential",
+    "fireclass-fc32",
+    "fireclass-fc501",
+    "fireclass-fc64",
+    "ade-accenta-g3",
+    "ade-accenta-mini-g3",
+    "ade-karizma-plus",
+    "ade-optima-compact-g3",
+    "ade-optima-g3",
+    "ademco-accord",
+    "eaton-scantronic-9100-9105",
+    "eaton-scantronic-9448-9448es",
+    "eaton-scantronic-9452-9453",
+    "eaton-scantronic-9500",
+    "eaton-scantronic-9800",
+    "eaton-scantronic-i-on-series",
+    "menvier-ts500-ts510",
+    "menvier-ts700",
+    "menvier-ts800",
+    "orisec-ck-ct-10-20-60",
+    "orisec-cp-10-cp-20-cp-60",
+    "orisec-cp-50-cp-100-cp-200",
+    "orisec-w-cp-40k-w-cp-40t-w-cp-40e",
+    "pyronix-enforcer-v11",
+    "pyronix-euro-mini",
+    "pyronix-sterling-10",
+    "risco-agility-4",
+    "risco-gardtec-350",
+    "risco-lightsys-2",
+    "risco-lightsys-air",
+    "risco-lightsys",
+    "risco-wicomm-pro",
+    "texecom-premier-elite-168",
+    "texecom-premier-elite-24",
+    "texecom-premier-elite-24-polymer",
+    "texecom-premier-elite-48",
+    "texecom-premier-elite-64-w",
+    "texecom-premier-elite-64-w-live",
+    "texecom-premier-elite-640",
+    "texecom-premier-elite-88",
+    "texecom-veritas-8",
+    "texecom-veritas-8-compact",
+    "texecom-veritas-excel",
+    "texecom-veritas-r8",
+    "texecom-veritas-r8-plus",
+    "visonic-powermax-plus",
+    "visonic-powermax-pro",
+    "visonic-powermaxcomplete",
+    "honeywell-galaxy-dimension",
+    "honeywell-galaxy-flex",
+    "ajax-hub-jeweller",
+    "ajax-hub-2-jeweller",
+    "ajax-superior-hub-hybrid",
+    "ajax-superior-hub-hybrid-2",
+    "cdvi-a22",
+    "paxton-entry-controller",
+    "paxton-net2-classic",
+    "paxton-net2-nano",
+    "paxton-net2-plus",
+    "paxton10-door-gen1",
+    "paxton10-door-gen2",
+    "paxton10-plastic-gen1",
+    "paxton10-plastic-gen2",
+    "paxton10-video",
+    "paxton-solo-controller",
+    "paxton-switch2",
+    "tdsi-excel4",
+    "tdsi-expert2",
+    "tdsi-expert4",
+    "tdsi-gardis",
+    "tdsi-microgarde",
+    "tdsi-sologarde",
+    "tunstall-communicall-connect",
+    "tunstall-communicall-vision-tic",
+    "tynetec-advent-xt",
+    "tynetec-xt-manager",
+    "tynetec-advent-xt2",
+    "tynetec-xt2-manager",
+    "tynetec-reach",
+    "tynetec-reach-ip",
+    "tynetec-reach-plus",
+    "tynetec-reach-plus-gsm",
+    "tynetec-reach-ultra",
+    "comelit-ipnvr109a-116",
+    "comelit-ipnvr125a",
+    "comelit-ipnvr704a-708a",
+    "comelit-ipnvr746a",
+    "comelit-winvr040a",
+    "dedicated-micros-digital-sprite2",
+    "hikvision-ds7000hi-s",
+    "hikvision-ds7208-7216-hvi-s",
+    "hikvision-ds7300hwi-sh",
+    "hikvision-ds8000ahi-s",
+    "hikvision-ds8000ahli-ahfli-s",
+    "hikvision-ds9000-s",
+    "hikvision-ds9000-9100-sh-9600",
+    "hikvision-ds9100-s",
+    "samsung-svr1680c-1660c-1645",
+    "samsung-svr3200",
+    "samsung-svr480",
+    "samsung-svr945",
+    "samsung-svr960c"
+  ],
+  "curated_first_ids": [
+    "gent-vigilon-compact",
+    "advanced-mxpro5",
+    "kentec-syncro-as",
+    "c-tec-xfp-16-zone",
+    "haes-esento-excel",
+    "morley-ias-zx-series",
+    "ziton-zp3",
+    "fike-twinflexpro2",
+    "protec-6500",
+    "notifier-id3000",
+    "gent-vigilon-4-6-loop",
+    "advanced-mxpro-4",
+    "kentec-syncro",
+    "c-tec-cfp-standard",
+    "haes-esento-eclipse",
+    "morley-ias-dx-connexion",
+    "ziton-zp2",
+    "kentec-sigma-cp",
+    "kentec-sigma-xt",
+    "c-tec-cfp-economy",
+    "c-tec-xfp-32-zone",
+    "eaton-cf3000",
+    "kentec-taktis",
+    "gent-xenex"
+  ],
+  "category_order": [
+    "fire",
+    "security",
+    "warden-call",
+    "access-control",
+    "cctv",
+    "other-reference"
+  ],
+  "groups": [
+    {
+      "name": "UK fire and support ranges already sourced in catalogue",
+      "ids": [
+        "gent-vigilon-compact",
+        "c-tec-cfp-alarmsense",
+        "c-tec-cfp-economy",
+        "c-tec-cfp-legacy",
+        "c-tec-cfp-standard",
+        "c-tec-eacie",
+        "c-tec-ep203",
+        "c-tec-sigtel-16-128",
+        "c-tec-sigtel-compact",
+        "c-tec-xfp-16-zone",
+        "c-tec-xfp-32-zone",
+        "c-tec-xfp-cast-16-zone",
+        "c-tec-xfp-cast-32-zone",
+        "c-tec-zfp-apollo",
+        "c-tec-zfp-cast",
+        "eaton-cf1000",
+        "eaton-cf3000",
+        "eaton-df6000",
+        "gent-compact-plus",
+        "gent-nano",
+        "gent-sentri",
+        "gent-sentri-one",
+        "gent-vig1-24-vig1-72",
+        "gent-vigilon-4-6-loop",
+        "gent-vigilon-plus",
+        "gent-xenex",
+        "haes-2000-series",
+        "haes-3000-series",
+        "haes-7003",
+        "haes-alarmsense",
+        "haes-alarmsense-plus",
+        "haes-elan",
+        "haes-elan-hs-5200",
+        "haes-elan-hs-5400",
+        "haes-elan-hs-5800",
+        "haes-elite-1-apollo",
+        "haes-elite-1-nittan",
+        "haes-envoy-1-4",
+        "haes-esento-eclipse",
+        "haes-esento-excel",
+        "haes-esento-marine-2-4",
+        "haes-esento-marine-8-12",
+        "haes-esprit-apollo",
+        "haes-esprit-argus",
+        "haes-esprit-gas",
+        "haes-evoque",
+        "haes-fusion",
+        "haes-haescom-evcs",
+        "haes-mini4",
+        "haes-mzaov",
+        "haes-surveyor-9002-a",
+        "haes-9002-9004",
+        "haes-szaov",
+        "haes-vector-1",
+        "haes-vector-ml-pre-v4-1",
+        "haes-vector-ml-v4-1",
+        "haes-xlk",
+        "nittan-evo5030",
+        "nittan-evo5800",
+        "nittan-evo5200",
+        "nittan-evolution1",
+        "notifier-id2000",
+        "notifier-id3000",
+        "notifier-id50",
+        "notifier-conventional",
+        "notifier-extinguishant",
+        "notifier-pearl",
+        "protec-6100",
+        "protec-6300",
+        "protec-6500",
+        "protec-6600",
+        "tyco-mx1000",
+        "tyco-mzx125",
+        "tyco-mzx250",
+        "zeta-infinity16",
+        "zeta-infinity8",
+        "zeta-expro",
+        "zeta-expro-repeater",
+        "zeta-smartconnect",
+        "ziton-zp2",
+        "ziton-zp3",
+        "ziton-zp3rd"
+      ],
+      "basis": "Editorial UK priority for the named existing models; existing manufacturer product/document provenance and linked UK engineer references retained. No statement of country of manufacture, exclusivity, prevalence or blanket system approval. Legacy and marine entries remain below the curated main panel shortlist.",
+      "supplementary_evidence_urls": [
+        "https://c-tec.com/info/instruction-manuals/",
+        "https://buildings.honeywell.com/gb/en/brands/our-brands/gent/tools-and-resources/download-centre",
+        "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/panels/6500-single-loop-fire-alarm-panel/",
+        "https://nittan.co.uk/wp-content/uploads/2025/10/Nittan-Evolution-1-Install-Manual-Iss8_web-1.pdf"
+      ]
+    },
+    {
+      "name": "Advanced UK/EN families",
+      "ids": [
+        "advanced-axis-en-5000v",
+        "advanced-lifeline-px-100",
+        "advanced-mx-4000-series",
+        "advanced-mxpro-4",
+        "advanced-mxpro5"
+      ],
+      "basis": "MxPro range has explicit UK case-study/catalogue evidence. Axis EN and LifeLine use retained manufacturer/UK-Ireland product documentation. The Axis AX UL entry remains normal priority.",
+      "supplementary_evidence_urls": [
+        "https://www.advancedco.com/projects/advanceds-fire-protection-installed-in-the-heart-of-birmingham/",
+        "https://datasheets.advancedco.com/",
+        "https://www.advancedco.com/advanced-fire-protection-products/fire-protection/"
+      ]
+    },
+    {
+      "name": "Kentec UK/EN and legacy families",
+      "ids": [
+        "kentec-ecu",
+        "kentec-evcs-safe-point",
+        "kentec-hydrosense-cp",
+        "kentec-hydrosense-e2000000",
+        "kentec-hydrosense-k2000000",
+        "kentec-k2-01",
+        "kentec-k3000s",
+        "kentec-k4-01-k4-01-plus",
+        "kentec-microsense-ii",
+        "kentec-sigma-cp",
+        "kentec-sigma-cp-a-alarmsense",
+        "kentec-sigma-k1000",
+        "kentec-sigma-k1000-economy",
+        "kentec-sigma-xt",
+        "kentec-sigma-xt-plus",
+        "kentec-sigma-zxt",
+        "kentec-signifire",
+        "kentec-signifire-ii",
+        "kentec-solex-2",
+        "kentec-solo-2",
+        "kentec-solo-2-lite",
+        "kentec-solo-apollo",
+        "kentec-solo-hochiki-esp",
+        "kentec-syncro",
+        "kentec-syncro-as",
+        "kentec-syncro-asm",
+        "kentec-syncro-lite",
+        "kentec-syncro-xt",
+        "kentec-syncro-xt-plus",
+        "kentec-taktis"
+      ],
+      "basis": "Select exact existing IDs, excluding the Elite and Sigma A UL-focused document families. Taktis picture is explicitly Taktis EN; linked Taktis records include other editions, so preserve all existing edition warnings. Sigma CP and CP-A manufacturer pages explicitly state BS EN54 and UK installation references.",
+      "supplementary_evidence_urls": [
+        "https://kentec.co.uk/product/sigma-cp/",
+        "https://kentec.co.uk/product/sigma-cp-a/",
+        "https://kentec.co.uk/product/taktis-en/",
+        "https://kentec.co.uk/resources/product-resources/"
+      ]
+    },
+    {
+      "name": "Morley UK picture families",
+      "ids": [
+        "morley-ias-dimension-dx-series",
+        "morley-ias-dx-connexion",
+        "morley-ias-horizon-hrz",
+        "morley-ias-zx-series"
+      ],
+      "basis": "Existing UK-specific Honeywell pages and UK-sourced Dimension/Horizon manufacturer documentation. Do not blanket-prioritise LT-159 (KSA edition), MA-2000 or PL-1000.",
+      "supplementary_evidence_urls": [
+        "https://buildings.honeywell.com/gb/en/products/by-category/control-panels/fire-control-panels/fire-alarm-control-panels/morley-ias-zxse-fire-alarm-control-panel",
+        "https://buildings.honeywell.com/gb/en/products/by-category/control-panels/fire-control-panels/fire-alarm-control-panels/morley-ias-dxc-range-fire-alarm-control-panel"
+      ]
+    },
+    {
+      "name": "Fike UK/EN product families",
+      "ids": [
+        "fike-ciea200",
+        "fike-ciea400",
+        "fike-rdua200",
+        "fike-rdua400",
+        "fike-twinflexpro",
+        "fike-twinflexpro2",
+        "fike-twinflexpro2-repeater"
+      ],
+      "basis": "Manufacturer CIE-A-400 document has Fike UK address, CE/UKCA and EN54 details. Manufacturer TWINFLEX page cites BS5839 applications. Related old CIE/RDU/TWINFLEX entries retain specific manual provenance. Cheetah, CyberCat, FCP, FGX and SHP PRO stay normal priority.",
+      "supplementary_evidence_urls": [
+        "https://my.fike.com/_fike_new_docs/4945fef4-9895-405c-a288-18b1506e49c2.pdf",
+        "https://www.fike.com/fire-protection/solutions/fire-panels/"
+      ]
+    },
+    {
+      "name": "FireClass documented UK engineer ranges",
+      "ids": [
+        "fireclass-essential",
+        "fireclass-fc32",
+        "fireclass-fc501",
+        "fireclass-fc64"
+      ],
+      "basis": "Existing original manufacturer documents and UK engineer archive supply clear UK-workflow relevance; FC600 and FC708D/FC718D remain normal priority pending variant-specific review.",
+      "supplementary_evidence_urls": []
+    },
+    {
+      "name": "UK intruder and legacy service families",
+      "ids": [
+        "ade-accenta-g3",
+        "ade-accenta-mini-g3",
+        "ade-karizma-plus",
+        "ade-optima-compact-g3",
+        "ade-optima-g3",
+        "ademco-accord",
+        "eaton-scantronic-9100-9105",
+        "eaton-scantronic-9448-9448es",
+        "eaton-scantronic-9452-9453",
+        "eaton-scantronic-9500",
+        "eaton-scantronic-9800",
+        "eaton-scantronic-i-on-series",
+        "menvier-ts500-ts510",
+        "menvier-ts700",
+        "menvier-ts800",
+        "orisec-ck-ct-10-20-60",
+        "orisec-cp-10-cp-20-cp-60",
+        "orisec-cp-50-cp-100-cp-200",
+        "orisec-w-cp-40k-w-cp-40t-w-cp-40e",
+        "pyronix-enforcer-v11",
+        "pyronix-euro-mini",
+        "pyronix-sterling-10",
+        "risco-agility-4",
+        "risco-gardtec-350",
+        "risco-lightsys-2",
+        "risco-lightsys-air",
+        "risco-lightsys",
+        "risco-wicomm-pro",
+        "texecom-premier-elite-168",
+        "texecom-premier-elite-24",
+        "texecom-premier-elite-24-polymer",
+        "texecom-premier-elite-48",
+        "texecom-premier-elite-64-w",
+        "texecom-premier-elite-64-w-live",
+        "texecom-premier-elite-640",
+        "texecom-premier-elite-88",
+        "texecom-veritas-8",
+        "texecom-veritas-8-compact",
+        "texecom-veritas-excel",
+        "texecom-veritas-r8",
+        "texecom-veritas-r8-plus",
+        "visonic-powermax-plus",
+        "visonic-powermax-pro",
+        "visonic-powermaxcomplete"
+      ],
+      "basis": "Exact existing family list drawn from UK manufacturer and engineer support documentation. This is a UK servicing shortlist including historical models, not a market-prevalence assertion. RISCO LightSYS Air explicitly offers UK kits; retain radio/edition distinctions in source manuals.",
+      "supplementary_evidence_urls": [
+        "https://riscogroup.com/en/rscm_product/lightsys-air/",
+        "https://riscogroup.com/en/uk-risco-innovation-roadshow-2/",
+        "https://www.texe.com/products/premier-elite-48/",
+        "https://www.eaton.com/content/dam/eaton/products/safety-security-emergency-communications/security-intruder-alarm-systems/i-on-series-admin-and-user-guides/eaton-security-i-on-series-admin-user-manual-en-gb.pdf"
+      ]
+    },
+    {
+      "name": "Honeywell Galaxy UK families",
+      "ids": [
+        "honeywell-galaxy-dimension",
+        "honeywell-galaxy-flex"
+      ],
+      "basis": "Honeywell GB manufacturer product pages. Keep VISTA and LYNX normal priority.",
+      "supplementary_evidence_urls": [
+        "https://buildings.honeywell.com/gb/en/products/by-category/intrusion-detection/control-panels/galaxy-dimension-control-panels",
+        "https://buildings.honeywell.com/gb/en/products/by-category/intrusion-detection/control-panels/galaxy-flex-control-panels"
+      ]
+    },
+    {
+      "name": "Ajax explicitly verified UK support models",
+      "ids": [
+        "ajax-hub-jeweller",
+        "ajax-hub-2-jeweller",
+        "ajax-superior-hub-hybrid",
+        "ajax-superior-hub-hybrid-2"
+      ],
+      "basis": "Manufacturer manuals expressly document PD 6662 UK setup. Other Ajax entries remain normal priority for this conservative first pass, rather than inheriting a blanket brand classification.",
+      "supplementary_evidence_urls": [
+        "https://support.ajax.systems/pl/manuals/hub/",
+        "https://support.ajax.systems/pl/manuals/hub-2/",
+        "https://support.ajax.systems/es/manuals/superior-hub-hybrid/",
+        "https://support.ajax.systems/es/manuals/superior-hub-hybrid-2-without-casing/"
+      ]
+    },
+    {
+      "name": "UK warden-call and access support families",
+      "ids": [
+        "cdvi-a22",
+        "paxton-entry-controller",
+        "paxton-net2-classic",
+        "paxton-net2-nano",
+        "paxton-net2-plus",
+        "paxton10-door-gen1",
+        "paxton10-door-gen2",
+        "paxton10-plastic-gen1",
+        "paxton10-plastic-gen2",
+        "paxton10-video",
+        "paxton-solo-controller",
+        "paxton-switch2",
+        "tdsi-excel4",
+        "tdsi-expert2",
+        "tdsi-expert4",
+        "tdsi-gardis",
+        "tdsi-microgarde",
+        "tdsi-sologarde",
+        "tunstall-communicall-connect",
+        "tunstall-communicall-vision-tic",
+        "tynetec-advent-xt",
+        "tynetec-xt-manager",
+        "tynetec-advent-xt2",
+        "tynetec-xt2-manager",
+        "tynetec-reach",
+        "tynetec-reach-ip",
+        "tynetec-reach-plus",
+        "tynetec-reach-plus-gsm",
+        "tynetec-reach-ultra"
+      ],
+      "basis": "Existing models have UK manufacturer product/support pages or UK engineer documentation. Paxton10 Video remains in its existing CCTV category.",
+      "supplementary_evidence_urls": [
+        "https://www.tynetec.co.uk/on-demand/technical-support/advent-xt2/",
+        "https://www.tunstall.co.uk/archive-product-information/",
+        "https://www.tdsi.co.uk/technical-guides/",
+        "https://www.cdvi.co.uk/our-products/a22/",
+        "https://www.paxton-access.com/install-paxton/resources/instructions/"
+      ]
+    },
+    {
+      "name": "UK-sourced recorder support families",
+      "ids": [
+        "comelit-ipnvr109a-116",
+        "comelit-ipnvr125a",
+        "comelit-ipnvr704a-708a",
+        "comelit-ipnvr746a",
+        "comelit-winvr040a",
+        "dedicated-micros-digital-sprite2",
+        "hikvision-ds7000hi-s",
+        "hikvision-ds7208-7216-hvi-s",
+        "hikvision-ds7300hwi-sh",
+        "hikvision-ds8000ahi-s",
+        "hikvision-ds8000ahli-ahfli-s",
+        "hikvision-ds9000-s",
+        "hikvision-ds9000-9100-sh-9600",
+        "hikvision-ds9100-s",
+        "samsung-svr1680c-1660c-1645",
+        "samsung-svr3200",
+        "samsung-svr480",
+        "samsung-svr945",
+        "samsung-svr960c"
+      ],
+      "basis": "Retained exact model families use en-gb manufacturer documents (Comelit) or the UK engineer archive (legacy Hikvision, Samsung, Dedicated Micros). These are international products with UK-workflow sources, not UK manufacture. Dahua general global families remain normal priority pending UK variant review.",
+      "supplementary_evidence_urls": [
+        "https://pro.comelitgroup.com/en-gb/downloads/cctv/technical-sheets-5/generic-documents-1",
+        "https://www.ukwatchsecurity.co.uk/engineers.php"
+      ]
+    }
+  ],
+  "important_exclusions": [
+    {
+      "ids": [
+        "advanced-axis-ax-ctl-2-ax-ctl-4"
+      ],
+      "reason": "Axis AX UL line, despite UK manufacturer; normal priority.",
+      "evidence_url": "https://datasheets.advancedco.com/advancedco/english/rest-of-world/axis-ax/"
+    },
+    {
+      "ids": [
+        "kentec-elite",
+        "kentec-elite-rs",
+        "kentec-sigma-a-cp",
+        "kentec-sigma-a-xt-elite-xt"
+      ],
+      "reason": "Existing pictured/documented UL-focused lines; Elite RS also has EN versions, therefore do not assert not UK. Normal priority conservatively.",
+      "evidence_url": "https://kentec.co.uk/product-category/ul-fm-approved-panels/"
+    },
+    {
+      "ids": [
+        "morley-ias-lt-159",
+        "morley-ias-ma-2000",
+        "morley-ias-pl-1000"
+      ],
+      "reason": "LT-159 linked manual is 2024 KSA edition; MA-2000 and PL-1000 UK-market model evidence not established in this audit."
+    },
+    {
+      "ids": [
+        "hochiki-firenet-4127",
+        "hochiki-firenet-latitude",
+        "hochiki-firenet-plus",
+        "hochiki-fnlcdn",
+        "hochiki-fnlcds",
+        "hochiki-fnpled",
+        "hochiki-hcp1000",
+        "hochiki-hcvr3",
+        "hochiki-voicenet"
+      ],
+      "reason": "Existing FireNET L@titude entry explicitly shows US red cabinet, not European Latitude. Other current Hochiki cards are UL/US document families; leave normal priority rather than brand-based promotion.",
+      "evidence_url": "https://www.hochikieurope.com/en-gb/product/lfaud13010h1"
+    },
+    {
+      "ids": [
+        "siemens-fc726",
+        "siemens-fc722-au",
+        "simplex-4100esi"
+      ],
+      "reason": "Existing identification notes/catalogue explicitly identify Australian variants."
+    },
+    {
+      "ids": [
+        "honeywell-lynx-touch-2011",
+        "honeywell-vista-15p",
+        "honeywell-vista-20p",
+        "honeywell-vista-21ip"
+      ],
+      "reason": "Keep normal priority; UK-first decision is model-specific, not all Honeywell."
+    }
+  ],
+  "notes": [
+    "No EMS pictured family is present in the 396-card dataset; do not invent a card or lose existing cards.",
+    "Use exact ID membership rather than live brand matching so future imported models do not inherit assumptions.",
+    "Keep A-Z and all existing search/filter controls.",
+    "Packs with a UK-priority model may be sorted first while their full set of models remains visible.",
+    "All original source_page_url values remain available per panel; supplementary sources explain editorial judgement only.",
+    "The first page uses 24 selected UK fire families across brands. Remaining UK-priority entries are grouped by system type, then brand/model; every other card stays searchable with normal priority. UK first is a sorting preference, not a geographic filter."
+  ],
+  "per_panel_provenance": {
+    "gent-vigilon-compact": {
+      "brand": "Gent",
+      "model": "Vigilon Compact",
+      "source_page_url": "https://buildings.honeywell.com/gb/en/brands/our-brands/gent/tools-and-resources/download-centre"
+    },
+    "c-tec-cfp-alarmsense": {
+      "brand": "C-TEC",
+      "model": "CFP AlarmSense",
+      "source_page_url": "https://c-tec.com/product/two-wire-fire-systems/cfp-2-8-zone-alarmsense-panels/cfp-alarmsense-4-zone-two-wire-fire-alarm-panel/"
+    },
+    "c-tec-cfp-economy": {
+      "brand": "C-TEC",
+      "model": "CFP Economy",
+      "source_page_url": "https://www.firetradesupplies.com/products/cfp702e-4-cfp-economy-2-zone-panel"
+    },
+    "c-tec-cfp-legacy": {
+      "brand": "C-TEC",
+      "model": "CFP legacy",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    },
+    "c-tec-cfp-standard": {
+      "brand": "C-TEC",
+      "model": "CFP Standard",
+      "source_page_url": "https://c-tec.com/product/conventional-fire-systems/cfp-2-8-zone-fire-panels/cfp704-4-standard-4-zone-conventional-fire-alarm-panel/"
+    },
+    "c-tec-eacie": {
+      "brand": "C-TEC",
+      "model": "EACIE",
+      "source_page_url": "https://c-tec.com/info/instruction-manuals/"
+    },
+    "c-tec-ep203": {
+      "brand": "C-TEC",
+      "model": "EP203",
+      "source_page_url": "https://c-tec.com/product/conventional-fire-systems/ep203-automatic-extinguisher-panels/ep203-automatic-extinguisher-panel/"
+    },
+    "c-tec-sigtel-16-128": {
+      "brand": "C-TEC",
+      "model": "SigTEL 16-128",
+      "source_page_url": "https://www.acornfiresecurity.com/c-tec-ccu-16-16-line-sigtel-control-unit"
+    },
+    "c-tec-sigtel-compact": {
+      "brand": "C-TEC",
+      "model": "SigTEL Compact",
+      "source_page_url": "https://c-tec.com/info/instruction-manuals/"
+    },
+    "c-tec-xfp-16-zone": {
+      "brand": "C-TEC",
+      "model": "XFP 16 Zone",
+      "source_page_url": "https://c-tec.com/product/addressable-fire-systems/apollo-xp95discovery/xfp-apollo-1-2-loop-fire-panels/xfp501e-x-xfp-1-loop-16-zone-addressable-fire-panel-xp95discovery-protocol/"
+    },
+    "c-tec-xfp-32-zone": {
+      "brand": "C-TEC",
+      "model": "XFP 32 Zone",
+      "source_page_url": "https://c-tec.com/product/addressable-fire-systems/apollo-xp95discovery/xfp-apollo-1-2-loop-fire-panels/xfp501-x-xfp-1-loop-32-zone-addressable-fire-panel-xp95discovery-protocol/"
+    },
+    "c-tec-xfp-cast-16-zone": {
+      "brand": "C-TEC",
+      "model": "XFP CAST 16 Zone",
+      "source_page_url": "https://c-tec.com/product/addressable-fire-systems/c-tec-cast/xfp-1-2-loop-fire-panels/xfp501e-ca-xfp-1-loop-16-zone-addressable-fire-panel-c-tec-cast-protocol/"
+    },
+    "c-tec-xfp-cast-32-zone": {
+      "brand": "C-TEC",
+      "model": "XFP CAST 32 Zone",
+      "source_page_url": "https://c-tec.com/product/addressable-fire-systems/c-tec-cast/xfp-1-2-loop-fire-panels/xfp501-ca-xfp-1-loop-32-zone-addressable-fire-panel-c-tec-cast-protocol/"
+    },
+    "c-tec-zfp-apollo": {
+      "brand": "C-TEC",
+      "model": "ZFP Apollo",
+      "source_page_url": "https://c-tec.com/info/instruction-manuals/"
+    },
+    "c-tec-zfp-cast": {
+      "brand": "C-TEC",
+      "model": "ZFP CAST",
+      "source_page_url": "https://c-tec.com/info/instruction-manuals/"
+    },
+    "eaton-cf1000": {
+      "brand": "Eaton / Cooper",
+      "model": "CF1100 / CF1200",
+      "source_page_url": "https://www.eaton.com/content/dam/eaton/products/safety-security-emergency-communications/fire/addressable/cf1000-panel/en/eaton-fire-addressable-control-panel-cf1100-1200-manual-25-16327-en.pdf#page=1"
+    },
+    "eaton-cf3000": {
+      "brand": "Eaton / Cooper",
+      "model": "CF3000",
+      "source_page_url": "https://www.eaton.com/content/dam/eaton/products/safety-security-emergency-communications/fire/addressable/cf3000-panel/en/eaton-fire-addressable-control-panel-cf3000-manual-25-14682-en.pdf#page=1"
+    },
+    "eaton-df6000": {
+      "brand": "Eaton / Cooper",
+      "model": "DF6000",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Eaton/df6000_applications_guide-2021.pdf#page=1"
+    },
+    "gent-compact-plus": {
+      "brand": "Gent",
+      "model": "Compact Plus",
+      "source_page_url": "https://buildings.honeywell.com/gb/en/brands/our-brands/gent/tools-and-resources/download-centre"
+    },
+    "gent-nano": {
+      "brand": "Gent",
+      "model": "Nano",
+      "source_page_url": "https://buildings.honeywell.com/gb/en/brands/our-brands/gent/tools-and-resources/download-centre"
+    },
+    "gent-sentri": {
+      "brand": "Gent",
+      "model": "SenTRI",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    },
+    "gent-sentri-one": {
+      "brand": "Gent",
+      "model": "SenTRI ONE",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    },
+    "gent-vig1-24-vig1-72": {
+      "brand": "Gent",
+      "model": "VIG1-24 / VIG1-72",
+      "source_page_url": "https://facpmanuals.com/manuals/honeywell_gent"
+    },
+    "gent-vigilon-4-6-loop": {
+      "brand": "Gent",
+      "model": "Vigilon 4/6 loop",
+      "source_page_url": "https://www.midlandfiresecurity.co.uk/client-support-training/instruction-manuals-and-documentation/"
+    },
+    "gent-vigilon-plus": {
+      "brand": "Gent",
+      "model": "Vigilon Plus",
+      "source_page_url": "https://buildings.honeywell.com/gb/en/brands/our-brands/gent/tools-and-resources/download-centre"
+    },
+    "gent-xenex": {
+      "brand": "Gent",
+      "model": "Xenex",
+      "source_page_url": "https://buildings.honeywell.com/gb/en/brands/our-brands/gent/tools-and-resources/download-centre"
+    },
+    "haes-2000-series": {
+      "brand": "Haes",
+      "model": "2000 Series",
+      "source_page_url": "https://haes-tech.com/downloads/2000-series-manual-2"
+    },
+    "haes-3000-series": {
+      "brand": "Haes",
+      "model": "3000 Series",
+      "source_page_url": "https://haes-tech.com/downloads/3000-series-manual-2"
+    },
+    "haes-7003": {
+      "brand": "Haes",
+      "model": "7003",
+      "source_page_url": "https://haes-tech.com/downloads/7003-manual-2"
+    },
+    "haes-alarmsense": {
+      "brand": "Haes",
+      "model": "AlarmSense",
+      "source_page_url": "https://haes-tech.com/downloads/alarmsense-instruction-manual"
+    },
+    "haes-alarmsense-plus": {
+      "brand": "Haes",
+      "model": "AlarmSense PLUS",
+      "source_page_url": "https://haes-tech.com/downloads/alarmsense-plus-instruction-manual"
+    },
+    "haes-elan": {
+      "brand": "Haes",
+      "model": "Elan HS-5100",
+      "source_page_url": "https://haes-tech.com/downloads/elan-hs-5100-technical-data-sheet"
+    },
+    "haes-elan-hs-5200": {
+      "brand": "Haes",
+      "model": "Elan HS-5200",
+      "source_page_url": "https://haes-tech.com/downloads/elan-hs-5200-technical-data-sheet"
+    },
+    "haes-elan-hs-5400": {
+      "brand": "Haes",
+      "model": "Elan HS-5400",
+      "source_page_url": "https://haes-tech.com/downloads/elan-hs-5400-technical-data-sheet"
+    },
+    "haes-elan-hs-5800": {
+      "brand": "Haes",
+      "model": "Elan HS-5800",
+      "source_page_url": "https://haes-tech.com/downloads/elan-hs-5800-technical-data-sheet"
+    },
+    "haes-elite-1-apollo": {
+      "brand": "Haes",
+      "model": "Elite 1 Apollo",
+      "source_page_url": "https://haes-tech.com/downloads/elite-1-apollo-installation-manual"
+    },
+    "haes-elite-1-nittan": {
+      "brand": "Haes",
+      "model": "Elite 1 Nittan",
+      "source_page_url": "https://haes-tech.com/downloads/elite-1-nittan-installation-manual"
+    },
+    "haes-envoy-1-4": {
+      "brand": "Haes",
+      "model": "Envoy 1-4",
+      "source_page_url": "https://haes-tech.com/downloads/envoy-1-4-manual"
+    },
+    "haes-esento-eclipse": {
+      "brand": "Haes",
+      "model": "Esento Eclipse",
+      "source_page_url": "https://haes-tech.com/downloads/eclipse-instruction-manual"
+    },
+    "haes-esento-excel": {
+      "brand": "Haes",
+      "model": "Esento Excel",
+      "source_page_url": "https://haes-tech.com/downloads/excel-instruction-manual"
+    },
+    "haes-esento-marine-2-4": {
+      "brand": "Haes",
+      "model": "Esento Marine 2-4",
+      "source_page_url": "https://haes-tech.com/downloads/esento-marine-2-4-instruction-manual"
+    },
+    "haes-esento-marine-8-12": {
+      "brand": "Haes",
+      "model": "Esento Marine 8-12",
+      "source_page_url": "https://haes-tech.com/downloads/esento-marine-8-12-instruction-manual"
+    },
+    "haes-esprit-apollo": {
+      "brand": "Haes",
+      "model": "Esprit Apollo",
+      "source_page_url": "https://haes-tech.com/downloads/esprit-apollo-addressable-instruction-manual-2"
+    },
+    "haes-esprit-argus": {
+      "brand": "Haes",
+      "model": "Esprit Argus",
+      "source_page_url": "https://haes-tech.com/downloads/esprit-a-instruction-manual"
+    },
+    "haes-esprit-gas": {
+      "brand": "Haes",
+      "model": "Esprit Gas",
+      "source_page_url": "https://haes-tech.com/downloads/esprit-g-instruction-manual"
+    },
+    "haes-evoque": {
+      "brand": "Haes",
+      "model": "Evoque",
+      "source_page_url": "https://haes-tech.com/downloads/evoque-instruction-manual"
+    },
+    "haes-fusion": {
+      "brand": "Haes",
+      "model": "Fusion",
+      "source_page_url": "https://haes-tech.com/downloads/fusion-operating-manual"
+    },
+    "haes-haescom-evcs": {
+      "brand": "Haes",
+      "model": "HaesCom EVCS",
+      "source_page_url": "https://www.libertysystems.co.uk/Fire-Alarm-User-Manuals"
+    },
+    "haes-mini4": {
+      "brand": "Haes",
+      "model": "Mini4",
+      "source_page_url": "https://haes-tech.com/downloads/mini4-manual"
+    },
+    "haes-mzaov": {
+      "brand": "Haes",
+      "model": "MZAOV",
+      "source_page_url": "https://haes-tech.com/downloads/mzaov-instruction-manual"
+    },
+    "haes-surveyor-9002-a": {
+      "brand": "Haes",
+      "model": "Surveyor 9002/A",
+      "source_page_url": "https://haes-tech.com/downloads/9002-4-manual-2"
+    },
+    "haes-9002-9004": {
+      "brand": "Haes",
+      "model": "Surveyor 9004",
+      "source_page_url": "https://haes-tech.com/downloads/9002-4-manual-2"
+    },
+    "haes-szaov": {
+      "brand": "Haes",
+      "model": "SZAOV",
+      "source_page_url": "https://haes-tech.com/downloads/szaov-instruction-manual"
+    },
+    "haes-vector-1": {
+      "brand": "Haes",
+      "model": "Vector 1",
+      "source_page_url": "https://haes-tech.com/downloads/vector-1-installation-commissioning-manual"
+    },
+    "haes-vector-ml-pre-v4-1": {
+      "brand": "Haes",
+      "model": "Vector ML Pre-V4.1",
+      "source_page_url": "https://haes-tech.com/downloads/vector-ml-installation-commissioning-manual-pre-v4-1"
+    },
+    "haes-vector-ml-v4-1": {
+      "brand": "Haes",
+      "model": "Vector ML V4.1",
+      "source_page_url": "https://haes-tech.com/downloads/vector-ml-v4-1-operating-manual-2"
+    },
+    "haes-xlk": {
+      "brand": "Haes",
+      "model": "XLK",
+      "source_page_url": "https://haes-tech.com/downloads/xlk-installation-commissioning-manual"
+    },
+    "nittan-evo5030": {
+      "brand": "Nittan",
+      "model": "EVO+5030 remote panel",
+      "source_page_url": "https://nittan.co.uk/wp-content/uploads/2026/09/NT680-185-02-Nittan-evo-Remote-Panel-Product-Manual-1.pdf#page=1"
+    },
+    "nittan-evo5800": {
+      "brand": "Nittan",
+      "model": "EVO+5800",
+      "source_page_url": "https://nittan.co.uk/wp-content/uploads/2025/10/NT680-165-02-Nittan-evo-Product-Manual-3.pdf#page=1"
+    },
+    "nittan-evo5200": {
+      "brand": "Nittan",
+      "model": "EVO-5200",
+      "source_page_url": "https://nittan.co.uk/wp-content/uploads/2025/10/NT680-165-02-Nittan-evo-Product-Manual-1.pdf#page=1"
+    },
+    "nittan-evolution1": {
+      "brand": "Nittan",
+      "model": "Evolution 1",
+      "source_page_url": "https://nittan.co.uk/wp-content/uploads/2025/10/Nittan-Evolution-1-Install-Manual-Iss8_web-1.pdf#page=1"
+    },
+    "notifier-id2000": {
+      "brand": "Notifier",
+      "model": "ID2000",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Notifier/id2000-datasheet-2006.pdf#page=1"
+    },
+    "notifier-id3000": {
+      "brand": "Notifier",
+      "model": "ID3000",
+      "source_page_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-uk/hba-fire-990-053-0511-ID3000-datasheet.pdf#page=1"
+    },
+    "notifier-id50": {
+      "brand": "Notifier",
+      "model": "ID50 / ID60",
+      "source_page_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-uk/hba-fire-990-052-0712-ID50-ID60-datasheet.pdf#page=1"
+    },
+    "notifier-conventional": {
+      "brand": "Notifier",
+      "model": "NFS2-8",
+      "source_page_url": "https://notifier.lu/docs/notifierfiresystems/nl/b/NFS2-8.pdf#page=1"
+    },
+    "notifier-extinguishant": {
+      "brand": "Notifier",
+      "model": "NFS3-EXT",
+      "source_page_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/hbt/en-us/documents/literature-and-specs/datasheets/notifier-uk/hba-fire-990-126-0411-NFS3-EXT-datasheet.pdf#page=1"
+    },
+    "notifier-pearl": {
+      "brand": "Notifier",
+      "model": "Pearl",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Notifier/pearl-operations.pdf#page=4"
+    },
+    "protec-6100": {
+      "brand": "Protec",
+      "model": "6100",
+      "source_page_url": "https://www.specifiedby.com/protec-fire-detection-plc/6100-single-loop-fire-alarm-panel/protec-fire-detection-plc_6100-single-loop-fire-alarm-panel_operations_7_e513ed53-3447-47ca-a80f-6d287acf6f45.pdf"
+    },
+    "protec-6300": {
+      "brand": "Protec",
+      "model": "6300",
+      "source_page_url": "https://www.specifiedby.com/protec-fire-detection-plc/6300-fire-alarm-control-panel/protec-fire-detection-plc_6300-fire-alarm-control-panel_operations_3_cdf519ed-962c-4021-a949-14865e13a0c5.pdf"
+    },
+    "protec-6500": {
+      "brand": "Protec",
+      "model": "6500",
+      "source_page_url": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/panels/6500-single-loop-fire-alarm-panel/"
+    },
+    "protec-6600": {
+      "brand": "Protec",
+      "model": "6600",
+      "source_page_url": "https://www.acornfiresecurity.com/protec/protec-algo-tec-6500-fire-alarm-control-panel-1-4-loop?page=18"
+    },
+    "tyco-mx1000": {
+      "brand": "Tyco",
+      "model": "MX1000 / MX4000 / ZX1 / ZX4",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Tyco/mx1000_mx4000_zx1_and_zx4_mx_panel_range-datasheet-2017-rev3.pdf#page=1"
+    },
+    "tyco-mzx125": {
+      "brand": "Tyco",
+      "model": "MZX125",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Tyco/minerva_mzx_125-250-user-guide-2008-revv1-0.pdf#page=6"
+    },
+    "tyco-mzx250": {
+      "brand": "Tyco",
+      "model": "MZX250",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Tyco/minerva_mzx_125-250-user-guide-2008-revv1-0.pdf#page=7"
+    },
+    "zeta-infinity16": {
+      "brand": "Zeta",
+      "model": "Infinity 16",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Zeta/infinity_16-datasheet-2025-rev001.pdf#page=1"
+    },
+    "zeta-infinity8": {
+      "brand": "Zeta",
+      "model": "Infinity 8",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Zeta/infinity_8-installation-2023-rev2-4.pdf#page=1"
+    },
+    "zeta-expro": {
+      "brand": "Zeta",
+      "model": "Premier EX Pro",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Zeta/premier_ex_pro-installation-2023-rev1-9.pdf#page=1"
+    },
+    "zeta-expro-repeater": {
+      "brand": "Zeta",
+      "model": "Premier EXPro repeater",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Zeta/premier_expro_repeater-datasheet-2013-rev1.pdf#page=1"
+    },
+    "zeta-smartconnect": {
+      "brand": "Zeta",
+      "model": "Smart Connect",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Zeta/smart_connect-installation-2023-rev011.pdf#page=1"
+    },
+    "ziton-zp2": {
+      "brand": "Ziton",
+      "model": "ZP2",
+      "source_page_url": "https://pim.firesecurityproducts.com/sites/default/files/product_downloads/2022/operation_manual/00-3251-505-0003-07_zp2_series_operation_manual_en.pdf#page=9"
+    },
+    "ziton-zp3": {
+      "brand": "Ziton",
+      "model": "ZP3",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Ziton/zp3-datasheet.pdf#page=1"
+    },
+    "ziton-zp3rd": {
+      "brand": "Ziton",
+      "model": "ZP3-RDUB1 repeater",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Ziton/zp3-rdub1-installation-2005-rev01.pdf#page=1"
+    },
+    "advanced-axis-en-5000v": {
+      "brand": "Advanced",
+      "model": "Axis EN 5000V",
+      "source_page_url": "https://www.advancedco.com/wp-content/uploads/680-165V-07-Axis-EN-Product-Manual.pdf"
+    },
+    "advanced-lifeline-px-100": {
+      "brand": "Advanced",
+      "model": "LifeLine PX-100",
+      "source_page_url": "https://www.srsalertfire.ie/product-info/product-literature"
+    },
+    "advanced-mx-4000-series": {
+      "brand": "Advanced",
+      "model": "Mx-4000 Series",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    },
+    "advanced-mxpro-4": {
+      "brand": "Advanced",
+      "model": "MxPro 4",
+      "source_page_url": "https://www.srsalertfire.ie/product-info/product-literature"
+    },
+    "advanced-mxpro5": {
+      "brand": "Advanced",
+      "model": "MxPro 5",
+      "source_page_url": "https://www.advancedco.com/product/advanced-mxpro-5/"
+    },
+    "kentec-ecu": {
+      "brand": "Kentec",
+      "model": "ECU",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-evcs-safe-point": {
+      "brand": "Kentec",
+      "model": "EVCS Safe-Point",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-hydrosense-cp": {
+      "brand": "Kentec",
+      "model": "HydroSense CP",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-hydrosense-e2000000": {
+      "brand": "Kentec",
+      "model": "HydroSense E2000000",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-hydrosense-k2000000": {
+      "brand": "Kentec",
+      "model": "HydroSense K2000000",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-k2-01": {
+      "brand": "Kentec",
+      "model": "K2.01",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-k3000s": {
+      "brand": "Kentec",
+      "model": "K3000S",
+      "source_page_url": "https://trinityfireandsecurity.com/resources/user-and-operating-manuals/"
+    },
+    "kentec-k4-01-k4-01-plus": {
+      "brand": "Kentec",
+      "model": "K4.01 / K4.01+",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-microsense-ii": {
+      "brand": "Kentec",
+      "model": "Microsense II",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-sigma-cp": {
+      "brand": "Kentec",
+      "model": "Sigma CP",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-sigma-cp-a-alarmsense": {
+      "brand": "Kentec",
+      "model": "Sigma CP-A AlarmSense",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-sigma-k1000": {
+      "brand": "Kentec",
+      "model": "Sigma K1000",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-sigma-k1000-economy": {
+      "brand": "Kentec",
+      "model": "Sigma K1000 Economy",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-sigma-xt": {
+      "brand": "Kentec",
+      "model": "Sigma XT",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-sigma-xt-plus": {
+      "brand": "Kentec",
+      "model": "Sigma XT+",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-sigma-zxt": {
+      "brand": "Kentec",
+      "model": "Sigma ZXT",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-signifire": {
+      "brand": "Kentec",
+      "model": "Signifire",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-signifire-ii": {
+      "brand": "Kentec",
+      "model": "Signifire II",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-solex-2": {
+      "brand": "Kentec",
+      "model": "Solex 2",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-solo-2": {
+      "brand": "Kentec",
+      "model": "Solo 2",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-solo-2-lite": {
+      "brand": "Kentec",
+      "model": "Solo 2 Lite",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-solo-apollo": {
+      "brand": "Kentec",
+      "model": "Solo Apollo",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-solo-hochiki-esp": {
+      "brand": "Kentec",
+      "model": "Solo Hochiki ESP",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-syncro": {
+      "brand": "Kentec",
+      "model": "Syncro",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-syncro-as": {
+      "brand": "Kentec",
+      "model": "Syncro AS",
+      "source_page_url": "https://trinityfireandsecurity.com/resources/user-and-operating-manuals/"
+    },
+    "kentec-syncro-asm": {
+      "brand": "Kentec",
+      "model": "Syncro ASM",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-syncro-lite": {
+      "brand": "Kentec",
+      "model": "Syncro Lite",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-syncro-xt": {
+      "brand": "Kentec",
+      "model": "Syncro XT",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-syncro-xt-plus": {
+      "brand": "Kentec",
+      "model": "Syncro XT+",
+      "source_page_url": "https://kentec.co.uk/resources/product-resources/"
+    },
+    "kentec-taktis": {
+      "brand": "Kentec",
+      "model": "Taktis",
+      "source_page_url": "https://kentec.co.uk/product/taktis-en/"
+    },
+    "morley-ias-dimension-dx-series": {
+      "brand": "Morley-IAS",
+      "model": "Dimension DX Series",
+      "source_page_url": "https://www.thesafetycentre.co.uk/morley-fire-alarm-control-panel-1-loop-analogue-addressable-dx1e-20s-20-zones-16058"
+    },
+    "morley-ias-dx-connexion": {
+      "brand": "Morley-IAS",
+      "model": "DX ConneXion",
+      "source_page_url": "https://buildings.honeywell.com/gb/en/products/by-category/control-panels/fire-control-panels/fire-alarm-control-panels/morley-ias-dxc-range-fire-alarm-control-panel"
+    },
+    "morley-ias-horizon-hrz": {
+      "brand": "Morley-IAS",
+      "model": "Horizon HRZ",
+      "source_page_url": "https://facpmanuals.com/manuals/morleyias"
+    },
+    "morley-ias-zx-series": {
+      "brand": "Morley-IAS",
+      "model": "ZX Series",
+      "source_page_url": "https://buildings.honeywell.com/gb/en/products/by-category/control-panels/fire-control-panels/fire-alarm-control-panels/morley-ias-zxse-fire-alarm-control-panel"
+    },
+    "fike-ciea200": {
+      "brand": "Fike",
+      "model": "CIE-A-200",
+      "source_page_url": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/Control%20Panels/Manuals/CIE-A-200%20Panel%20UserGuide%2026-1780-1.pdf#page=1"
+    },
+    "fike-ciea400": {
+      "brand": "Fike",
+      "model": "CIE-A-400",
+      "source_page_url": "https://my.fike.com/_fike_new_docs/4945fef4-9895-405c-a288-18b1506e49c2.pdf#page=1"
+    },
+    "fike-rdua200": {
+      "brand": "Fike",
+      "model": "RDU-A-200",
+      "source_page_url": "https://my.fike.com/_fike_docs/New_Docs_System/Fire%20Protection/Fire%20Detection%20&%20Control/Control%20Panels/Manuals/RDU%20Quick%20Start%2026-1773-1.pdf#page=1"
+    },
+    "fike-rdua400": {
+      "brand": "Fike",
+      "model": "RDU-A-400",
+      "source_page_url": "https://my.fike.com/_fike_new_docs/30b15068-718f-403b-a3aa-9e2be717c181.pdf#page=1"
+    },
+    "fike-twinflexpro": {
+      "brand": "Fike",
+      "model": "TWINFLEXpro",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro-user-guide-rev3.pdf#page=9"
+    },
+    "fike-twinflexpro2": {
+      "brand": "Fike",
+      "model": "TWINFLEXpro²",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Fike/twinflex_pro2-user-guide-rev5.pdf#page=1"
+    },
+    "fike-twinflexpro2-repeater": {
+      "brand": "Fike",
+      "model": "TWINFLEXpro² repeater",
+      "source_page_url": "https://docs.facpmanuals.com/manuals/Fike/twinflexpro2_repeater_panel-installation-rev3.pdf#page=1"
+    },
+    "fireclass-essential": {
+      "brand": "FireClass",
+      "model": "Essential 2 / Essential 4",
+      "source_page_url": "https://docs.johnsoncontrols.com/fireclass/api/khub/documents/E5HEQmcBQJ~myvB9BkneBg/content#page=1"
+    },
+    "fireclass-fc32": {
+      "brand": "FireClass",
+      "model": "FC32",
+      "source_page_url": "https://trinityfireandsecurity.com/wp-content/uploads/2025/09/Tyco-FireClass-FC32-Datasheet.pdf#page=1"
+    },
+    "fireclass-fc501": {
+      "brand": "FireClass",
+      "model": "FC501",
+      "source_page_url": "https://trinityfireandsecurity.com/wp-content/uploads/2025/09/FireClass-FC501-Addressable-Fire-Control-Panel-Installation-Manual.pdf#page=1"
+    },
+    "fireclass-fc64": {
+      "brand": "FireClass",
+      "model": "FC64",
+      "source_page_url": "https://trinityfireandsecurity.com/wp-content/uploads/2025/09/Tyco-FireClass-FC64-Datasheet.pdf#page=1"
+    },
+    "ade-accenta-g3": {
+      "brand": "ADE",
+      "model": "Accenta G3",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/ADE%20Accenta%20G3%20Optima%20G3%20Installation%20manual.pdf"
+    },
+    "ade-accenta-mini-g3": {
+      "brand": "ADE",
+      "model": "Accenta Mini G3",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/ADE%20Accenta%20G3%20Optima%20G3%20Installation%20manual.pdf"
+    },
+    "ade-karizma-plus": {
+      "brand": "ADE",
+      "model": "Karizma Plus",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/ADE%20Karizma%20Plus.pdf"
+    },
+    "ade-optima-compact-g3": {
+      "brand": "ADE",
+      "model": "Optima Compact G3",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/ADE%20Accenta%20G3%20Optima%20G3%20Installation%20manual.pdf"
+    },
+    "ade-optima-g3": {
+      "brand": "ADE",
+      "model": "Optima G3",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/ADE%20Accenta%20G3%20Optima%20G3%20Installation%20manual.pdf"
+    },
+    "ademco-accord": {
+      "brand": "Ademco",
+      "model": "Accord",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Ademco%20Accord%20Installation%20.pdf"
+    },
+    "eaton-scantronic-9100-9105": {
+      "brand": "Eaton / Scantronic",
+      "model": "9100 / 9105",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Scantronic%209100%20install%20and%20user%20guide.pdf"
+    },
+    "eaton-scantronic-9448-9448es": {
+      "brand": "Eaton / Scantronic",
+      "model": "9448+ / 9448ES",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Scantronic%209448plus%209448ES%20install%20and%20user%20manual.pdf"
+    },
+    "eaton-scantronic-9452-9453": {
+      "brand": "Eaton / Scantronic",
+      "model": "9452 / 9453",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/scantronic%209452%209453%20install%20and%20user%20manual.pdf"
+    },
+    "eaton-scantronic-9500": {
+      "brand": "Eaton / Scantronic",
+      "model": "9500",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Scantronic%209500%20install%20and%20user%20manual.PDF"
+    },
+    "eaton-scantronic-9800": {
+      "brand": "Eaton / Scantronic",
+      "model": "9800",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Scantronic%209800%20install%20and%20user%20guide.pdf"
+    },
+    "eaton-scantronic-i-on-series": {
+      "brand": "Eaton / Scantronic",
+      "model": "i-on Series",
+      "source_page_url": "https://www.eaton.com/content/dam/eaton/products/safety-security-emergency-communications/security-intruder-alarm-systems/i-on-series-admin-and-user-guides/eaton-security-i-on-series-admin-user-manual-en-gb.pdf"
+    },
+    "menvier-ts500-ts510": {
+      "brand": "Menvier",
+      "model": "TS500 / TS510",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Menvier%20TS510%20%26%20500%20User.pdf"
+    },
+    "menvier-ts700": {
+      "brand": "Menvier",
+      "model": "TS700",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Menvier%20TS700.pdf"
+    },
+    "menvier-ts800": {
+      "brand": "Menvier",
+      "model": "TS800",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Menvier%20TS800%20User%20Installation%20Manual.pdf"
+    },
+    "orisec-ck-ct-10-20-60": {
+      "brand": "Orisec",
+      "model": "CK / CT-10, 20, 60",
+      "source_page_url": "https://www.orisec.co.uk/control-panels/"
+    },
+    "orisec-cp-10-cp-20-cp-60": {
+      "brand": "Orisec",
+      "model": "CP-10 / CP-20 / CP-60",
+      "source_page_url": "https://www.orisec.co.uk/control-panels/"
+    },
+    "orisec-cp-50-cp-100-cp-200": {
+      "brand": "Orisec",
+      "model": "CP-50 / CP-100 / CP-200",
+      "source_page_url": "https://www.orisec.co.uk/control-panels/"
+    },
+    "orisec-w-cp-40k-w-cp-40t-w-cp-40e": {
+      "brand": "Orisec",
+      "model": "W-CP-40K / W-CP-40T / W-CP-40E",
+      "source_page_url": "https://www.orisec.co.uk/control-panels/"
+    },
+    "pyronix-enforcer-v11": {
+      "brand": "Pyronix",
+      "model": "Enforcer V11",
+      "source_page_url": "https://www.citysecuritysystems.co.uk/pyronix-enforcer-v11-panel"
+    },
+    "pyronix-euro-mini": {
+      "brand": "Pyronix",
+      "model": "Euro Mini",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Castle%20Euro%20Mini%20User.pdf"
+    },
+    "pyronix-sterling-10": {
+      "brand": "Pyronix",
+      "model": "Sterling 10",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Pyronix%20Sterling%2010%20Install.pdf"
+    },
+    "risco-agility-4": {
+      "brand": "Risco",
+      "model": "Agility 4",
+      "source_page_url": "https://riscogroup.com/en/rscm_product/agility-4/"
+    },
+    "risco-gardtec-350": {
+      "brand": "Risco",
+      "model": "Gardtec 350+",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Gardtec%20350%2B%20user%20manual.pdf"
+    },
+    "risco-lightsys-2": {
+      "brand": "Risco",
+      "model": "LightSYS 2",
+      "source_page_url": "https://riscogroup.com/en/rscm_product/lightsys-2/"
+    },
+    "risco-lightsys-air": {
+      "brand": "Risco",
+      "model": "LightSYS Air",
+      "source_page_url": "https://riscogroup.com/en/rscm_product/lightsys-air/"
+    },
+    "risco-lightsys": {
+      "brand": "Risco",
+      "model": "LightSYS Plus",
+      "source_page_url": "https://riscogroup.com/en/rscm_product/lightsys/"
+    },
+    "risco-wicomm-pro": {
+      "brand": "Risco",
+      "model": "WiComm Pro",
+      "source_page_url": "https://riscogroup.com/en/rscm_product/wicomm-pro/"
+    },
+    "texecom-premier-elite-168": {
+      "brand": "Texecom",
+      "model": "Premier Elite 168",
+      "source_page_url": "https://www.texe.com/products/premier-elite-168/"
+    },
+    "texecom-premier-elite-24": {
+      "brand": "Texecom",
+      "model": "Premier Elite 24",
+      "source_page_url": "https://www.texe.com/products/premier-elite-24/"
+    },
+    "texecom-premier-elite-24-polymer": {
+      "brand": "Texecom",
+      "model": "Premier Elite 24 (Polymer)",
+      "source_page_url": "https://www.texe.com/products/premier-elite-24-polymer/"
+    },
+    "texecom-premier-elite-48": {
+      "brand": "Texecom",
+      "model": "Premier Elite 48",
+      "source_page_url": "https://www.texe.com/products/premier-elite-48/"
+    },
+    "texecom-premier-elite-64-w": {
+      "brand": "Texecom",
+      "model": "Premier Elite 64-W",
+      "source_page_url": "https://www.texe.com/products/premier-elite-64-w/"
+    },
+    "texecom-premier-elite-64-w-live": {
+      "brand": "Texecom",
+      "model": "Premier Elite 64-W LIVE",
+      "source_page_url": "https://www.texe.com/products/premier-elite-64-w-live/"
+    },
+    "texecom-premier-elite-640": {
+      "brand": "Texecom",
+      "model": "Premier Elite 640",
+      "source_page_url": "https://www.texe.com/products/premier-elite-640/"
+    },
+    "texecom-premier-elite-88": {
+      "brand": "Texecom",
+      "model": "Premier Elite 88",
+      "source_page_url": "https://www.texe.com/products/premier-elite-88/"
+    },
+    "texecom-veritas-8": {
+      "brand": "Texecom",
+      "model": "Veritas 8",
+      "source_page_url": "https://www.texe.com/products/veritas-8/"
+    },
+    "texecom-veritas-8-compact": {
+      "brand": "Texecom",
+      "model": "Veritas 8 Compact",
+      "source_page_url": "https://www.texe.com/products/veritas-8-compact/"
+    },
+    "texecom-veritas-excel": {
+      "brand": "Texecom",
+      "model": "Veritas Excel",
+      "source_page_url": "https://www.texe.com/products/veritas-excel/"
+    },
+    "texecom-veritas-r8": {
+      "brand": "Texecom",
+      "model": "Veritas R8",
+      "source_page_url": "https://www.texe.com/products/veritas-r8/"
+    },
+    "texecom-veritas-r8-plus": {
+      "brand": "Texecom",
+      "model": "Veritas R8 Plus",
+      "source_page_url": "https://www.texe.com/products/veritas-r8-plus/"
+    },
+    "visonic-powermax-plus": {
+      "brand": "Visonic",
+      "model": "PowerMax Plus",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    },
+    "visonic-powermax-pro": {
+      "brand": "Visonic",
+      "model": "PowerMax Pro",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Powermax%20Pro%20Installation.pdf"
+    },
+    "visonic-powermaxcomplete": {
+      "brand": "Visonic",
+      "model": "PowerMaxComplete",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/PowerMax%20Complete%20User%20Guide%20Eng%20v17.pdf"
+    },
+    "honeywell-galaxy-dimension": {
+      "brand": "Honeywell",
+      "model": "Galaxy Dimension",
+      "source_page_url": "https://buildings.honeywell.com/gb/en/products/by-category/intrusion-detection/control-panels/galaxy-dimension-control-panels"
+    },
+    "honeywell-galaxy-flex": {
+      "brand": "Honeywell",
+      "model": "Galaxy Flex",
+      "source_page_url": "https://buildings.honeywell.com/gb/en/products/by-category/intrusion-detection/control-panels/galaxy-flex-control-panels"
+    },
+    "ajax-hub-jeweller": {
+      "brand": "Ajax",
+      "model": "Hub Jeweller",
+      "source_page_url": "https://ajax.systems/support/category/hub/"
+    },
+    "ajax-hub-2-jeweller": {
+      "brand": "Ajax",
+      "model": "Hub 2 Jeweller",
+      "source_page_url": "https://ajax.systems/support/category/hub-2/"
+    },
+    "ajax-superior-hub-hybrid": {
+      "brand": "Ajax",
+      "model": "Superior Hub Hybrid",
+      "source_page_url": "https://ajax.systems/support/category/superior-hub-hybrid/"
+    },
+    "ajax-superior-hub-hybrid-2": {
+      "brand": "Ajax",
+      "model": "Superior Hub Hybrid 2",
+      "source_page_url": "https://ajax.systems/support/category/superior-hub-hybrid-2/"
+    },
+    "cdvi-a22": {
+      "brand": "CDVI",
+      "model": "ATRIUM A22",
+      "source_page_url": "https://www.cdvi.co.uk/our-products/a22/"
+    },
+    "paxton-entry-controller": {
+      "brand": "Paxton",
+      "model": "Entry Control Unit",
+      "source_page_url": "https://www.paxton-access.com/install-paxton/resources/instructions/"
+    },
+    "paxton-net2-classic": {
+      "brand": "Paxton",
+      "model": "Net2 Classic",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    },
+    "paxton-net2-nano": {
+      "brand": "Paxton",
+      "model": "Net2 Nano",
+      "source_page_url": "https://www.paxton-access.com/install-paxton/resources/instructions/"
+    },
+    "paxton-net2-plus": {
+      "brand": "Paxton",
+      "model": "Net2 Plus",
+      "source_page_url": "https://www.paxton-access.com/install-paxton/resources/instructions/"
+    },
+    "paxton10-door-gen1": {
+      "brand": "Paxton",
+      "model": "Paxton10 Door Controller — Gen 1",
+      "source_page_url": "https://www.paxton-access.com/install-paxton/resources/instructions/"
+    },
+    "paxton10-door-gen2": {
+      "brand": "Paxton",
+      "model": "Paxton10 Door Controller — Gen 2",
+      "source_page_url": "https://www.paxton-access.com/install-paxton/resources/instructions/"
+    },
+    "paxton10-plastic-gen1": {
+      "brand": "Paxton",
+      "model": "Paxton10 Door Controller, plastic housing — Gen 1",
+      "source_page_url": "https://www.paxton-access.com/install-paxton/resources/instructions/"
+    },
+    "paxton10-plastic-gen2": {
+      "brand": "Paxton",
+      "model": "Paxton10 Door Controller, plastic housing — Gen 2",
+      "source_page_url": "https://www.paxton-access.com/install-paxton/resources/instructions/"
+    },
+    "paxton10-video": {
+      "brand": "Paxton",
+      "model": "Paxton10 Video Controller",
+      "source_page_url": "https://www.paxton-access.com/install-paxton/resources/instructions/"
+    },
+    "paxton-solo-controller": {
+      "brand": "Paxton",
+      "model": "Solo Controller",
+      "source_page_url": "https://www.paxton-access.com/install-paxton/resources/instructions/"
+    },
+    "paxton-switch2": {
+      "brand": "Paxton",
+      "model": "Switch2",
+      "source_page_url": "https://www.paxton-access.com/install-paxton/resources/instructions/"
+    },
+    "tdsi-excel4": {
+      "brand": "TDSi",
+      "model": "EXcel4",
+      "source_page_url": "https://www.tdsi.co.uk/technical-guides/"
+    },
+    "tdsi-expert2": {
+      "brand": "TDSi",
+      "model": "EXpert2",
+      "source_page_url": "https://www.tdsi.co.uk/technical-guides/"
+    },
+    "tdsi-expert4": {
+      "brand": "TDSi",
+      "model": "EXpert4",
+      "source_page_url": "https://www.tdsi.co.uk/technical-guides/"
+    },
+    "tdsi-gardis": {
+      "brand": "TDSi",
+      "model": "GARDiS G1 / G2 / G4",
+      "source_page_url": "https://www.tdsi.co.uk/technical-guides/"
+    },
+    "tdsi-microgarde": {
+      "brand": "TDSi",
+      "model": "MICROgarde I / II",
+      "source_page_url": "https://www.tdsi.co.uk/technical-guides/"
+    },
+    "tdsi-sologarde": {
+      "brand": "TDSi",
+      "model": "SOLOgarde",
+      "source_page_url": "https://www.tdsi.co.uk/technical-guides/"
+    },
+    "tunstall-communicall-connect": {
+      "brand": "Tunstall",
+      "model": "Communicall Connect Control Unit",
+      "source_page_url": "https://www.tunstall.co.uk/archive-product-information/"
+    },
+    "tunstall-communicall-vision-tic": {
+      "brand": "Tunstall",
+      "model": "Communicall Vision TIC Control Panel",
+      "source_page_url": "https://www.tunstall.co.uk/archive-product-information/"
+    },
+    "tynetec-advent-xt": {
+      "brand": "Tynetec",
+      "model": "Advent XT Controller",
+      "source_page_url": "https://www.tynetec.co.uk/on-demand/technical-support/advent-xt/"
+    },
+    "tynetec-xt-manager": {
+      "brand": "Tynetec",
+      "model": "Advent XT Manager’s Display Panel",
+      "source_page_url": "https://www.tynetec.co.uk/on-demand/technical-support/advent-xt/"
+    },
+    "tynetec-advent-xt2": {
+      "brand": "Tynetec",
+      "model": "Advent XT2 Controller",
+      "source_page_url": "https://www.tynetec.co.uk/on-demand/technical-support/advent-xt2/"
+    },
+    "tynetec-xt2-manager": {
+      "brand": "Tynetec",
+      "model": "Advent XT2 Manager’s Display Panel",
+      "source_page_url": "https://www.tynetec.co.uk/on-demand/technical-support/advent-xt2/"
+    },
+    "tynetec-reach": {
+      "brand": "Tynetec",
+      "model": "Reach",
+      "source_page_url": "https://www.tynetec.co.uk/on-demand/user-guides/at-home-alarms/"
+    },
+    "tynetec-reach-ip": {
+      "brand": "Tynetec",
+      "model": "Reach IP",
+      "source_page_url": "https://www.tynetec.co.uk/on-demand/user-guides/at-home-alarms/"
+    },
+    "tynetec-reach-plus": {
+      "brand": "Tynetec",
+      "model": "Reach Plus",
+      "source_page_url": "https://www.tynetec.co.uk/on-demand/user-guides/at-home-alarms/"
+    },
+    "tynetec-reach-plus-gsm": {
+      "brand": "Tynetec",
+      "model": "Reach Plus GSM",
+      "source_page_url": "https://www.tynetec.co.uk/on-demand/user-guides/at-home-alarms/"
+    },
+    "tynetec-reach-ultra": {
+      "brand": "Tynetec",
+      "model": "Reach Ultra",
+      "source_page_url": "https://www.tynetec.co.uk/on-demand/user-guides/at-home-alarms/"
+    },
+    "comelit-ipnvr109a-116": {
+      "brand": "Comelit",
+      "model": "IPNVR109A / IPNVR116A/B/C",
+      "source_page_url": "https://pro.comelitgroup.com/en-gb/downloads/cctv/technical-sheets-5/generic-documents-1"
+    },
+    "comelit-ipnvr125a": {
+      "brand": "Comelit",
+      "model": "IPNVR125A",
+      "source_page_url": "https://pro.comelitgroup.com/en-gb/downloads/cctv/technical-sheets-5/generic-documents-1"
+    },
+    "comelit-ipnvr704a-708a": {
+      "brand": "Comelit",
+      "model": "IPNVR704A / IPNVR708A",
+      "source_page_url": "https://pro.comelitgroup.com/en-gb/downloads/cctv/technical-sheets-5/generic-documents-1"
+    },
+    "comelit-ipnvr746a": {
+      "brand": "Comelit",
+      "model": "IPNVR746A",
+      "source_page_url": "https://pro.comelitgroup.com/en-gb/downloads/cctv/technical-sheets-5/generic-documents-1"
+    },
+    "comelit-winvr040a": {
+      "brand": "Comelit",
+      "model": "WINVR040A",
+      "source_page_url": "https://pro.comelitgroup.com/en-gb/downloads/cctv/technical-sheets-5/generic-documents-1"
+    },
+    "dedicated-micros-digital-sprite2": {
+      "brand": "Dedicated Micros",
+      "model": "Digital Sprite 2",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    },
+    "hikvision-ds7000hi-s": {
+      "brand": "Hikvision",
+      "model": "DS-7000HI-S",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    },
+    "hikvision-ds7208-7216-hvi-s": {
+      "brand": "Hikvision",
+      "model": "DS-7208HVI-S / DS-7216HVI-S",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    },
+    "hikvision-ds7300hwi-sh": {
+      "brand": "Hikvision",
+      "model": "DS-7308HWI-SH / DS-7316HWI-SH",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    },
+    "hikvision-ds8000ahi-s": {
+      "brand": "Hikvision",
+      "model": "DS-8000AHI-S",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    },
+    "hikvision-ds8000ahli-ahfli-s": {
+      "brand": "Hikvision",
+      "model": "DS-8000AHLI-S / AHFLI-S",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    },
+    "hikvision-ds9000-s": {
+      "brand": "Hikvision",
+      "model": "DS-9000-S",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    },
+    "hikvision-ds9000-9100-sh-9600": {
+      "brand": "Hikvision",
+      "model": "DS-9000/9100-SH / DS-9600",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    },
+    "hikvision-ds9100-s": {
+      "brand": "Hikvision",
+      "model": "DS-9100-S",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    },
+    "samsung-svr1680c-1660c-1645": {
+      "brand": "Samsung",
+      "model": "SVR-1680C / SVR-1660C / SVR-1645",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    },
+    "samsung-svr3200": {
+      "brand": "Samsung",
+      "model": "SVR-3200",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    },
+    "samsung-svr480": {
+      "brand": "Samsung",
+      "model": "SVR-480",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    },
+    "samsung-svr945": {
+      "brand": "Samsung",
+      "model": "SVR-945",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    },
+    "samsung-svr960c": {
+      "brand": "Samsung",
+      "model": "SVR-960C",
+      "source_page_url": "https://www.ukwatchsecurity.co.uk/engineers.php"
+    }
+  }
+}

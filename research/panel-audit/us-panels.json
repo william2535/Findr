@@ -1,0 +1,14 @@
+[
+  {
+    "id": "simplex-4100",
+    "brand": "Simplex",
+    "model": "4100",
+    "status": "awaiting-image-review",
+    "reason": "Reviewed manufacturer manual; exterior photograph not found. Available drawings are too faint or show internal module positions rather than a clear complete identification fascia.",
+    "record_ids": [
+      "facp-6cc18b4b-c119-4d72-922c-7511ef87e447",
+      "facp-542dd48b-6d3a-4d40-a52d-1aa8130e58bf",
+      "facp-c4641de6-7659-4791-896b-44185dc91eeb"
+    ]
+  }
+]

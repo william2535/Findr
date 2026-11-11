@@ -1,0 +1,217 @@
+[
+  {
+    "id": "c-tec-cfp-alarmsense",
+    "brand": "C-TEC",
+    "model": "CFP AlarmSense",
+    "status": "verified-image",
+    "reason": "Source-matched and visually inspected photograph.",
+    "record_ids": [
+      "c-tec-9ee63ad9f660"
+    ],
+    "source_image_url": "https://c-tec.com/wp-content/uploads/2015/11/p_2_3_8_238-CFP-AlarmSense-4-Zone-Conventional-Fire-Alarm-Panel.jpg"
+  },
+  {
+    "id": "c-tec-cfp-economy",
+    "brand": "C-TEC",
+    "model": "CFP Economy",
+    "status": "verified-image",
+    "reason": "Source-matched and visually inspected supplier-product-photograph.",
+    "record_ids": [
+      "c-tec-94904b32eae0"
+    ],
+    "source_image_url": "https://www.firetradesupplies.com/cdn/shop/products/cfp702e-4-cfp-economy-2-zone-panel-776752.jpg?v=1681895862"
+  },
+  {
+    "id": "c-tec-cfp-standard",
+    "brand": "C-TEC",
+    "model": "CFP Standard",
+    "status": "verified-image",
+    "reason": "Source-matched and visually inspected photograph.",
+    "record_ids": [
+      "c-tec-fc443e51b6e1"
+    ],
+    "source_image_url": "https://c-tec.com/wp-content/uploads/2015/10/p_1_5_6_156-CFP-Standard-2-Zone-Conventional-Fire-Alarm-Panel.jpg"
+  },
+  {
+    "id": "c-tec-cfp-legacy",
+    "brand": "C-TEC",
+    "model": "CFP legacy",
+    "status": "verified-image",
+    "reason": "Source-matched and visually inspected manufacturer-front-panel-illustration.",
+    "record_ids": [
+      "c-tec-db128c0c9cc4",
+      "c-tec-dfdd357d3c7a"
+    ],
+    "source_image_url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/CFP%202%2C4%2C8%20zone%20conventional%20fire%20panel%20OLD%20user%20%20manual.pdf#page=6"
+  },
+  {
+    "id": "c-tec-ep203",
+    "brand": "C-TEC",
+    "model": "EP203",
+    "status": "verified-image",
+    "reason": "Source-matched and visually inspected photograph.",
+    "record_ids": [
+      "facp-d0fe3fa2-044c-4c65-a60e-12fbcd5c3fa4"
+    ],
+    "source_image_url": "https://c-tec.com/wp-content/uploads/2015/12/ep203-new.jpg"
+  },
+  {
+    "id": "c-tec-sigtel-16-128",
+    "brand": "C-TEC",
+    "model": "SigTEL 16-128",
+    "status": "verified-image",
+    "reason": "Source-matched and visually inspected supplier-product-photograph.",
+    "record_ids": [
+      "c-tec-24d565baf846"
+    ],
+    "source_image_url": "https://www.acornfiresecurity.com/image/cache/data/CCU-16-600x600.jpg"
+  },
+  {
+    "id": "c-tec-xfp-16-zone",
+    "brand": "C-TEC",
+    "model": "XFP 16 Zone",
+    "status": "verified-image",
+    "reason": "Source-matched and visually inspected photograph.",
+    "record_ids": [
+      "c-tec-6a8ae5ddd7bc"
+    ],
+    "source_image_url": "https://c-tec.com/wp-content/uploads/2015/11/p_5_6_6_566-XFP-1-Loop-16-Zone-Addressable-Fire-Panel-Dimensions.jpg"
+  },
+  {
+    "id": "c-tec-xfp-32-zone",
+    "brand": "C-TEC",
+    "model": "XFP 32 Zone",
+    "status": "verified-image",
+    "reason": "Source-matched and visually inspected photograph.",
+    "record_ids": [
+      "c-tec-b03be75d8eb7"
+    ],
+    "source_image_url": "https://c-tec.com/wp-content/uploads/2015/12/p_5_6_8_568-XFP-1-Loop-32-Zone-Addressable-Fire-Panel.jpg"
+  },
+  {
+    "id": "c-tec-xfp-cast-16-zone",
+    "brand": "C-TEC",
+    "model": "XFP CAST 16 Zone",
+    "status": "verified-image",
+    "reason": "Source-matched and visually inspected photograph.",
+    "record_ids": [
+      "c-tec-232499eefc01"
+    ],
+    "source_image_url": "https://c-tec.com/wp-content/uploads/2016/02/p_7_4_1_741-XFP-1-Loop-16-Zone-Addressable-Fire-Panel.jpg"
+  },
+  {
+    "id": "c-tec-xfp-cast-32-zone",
+    "brand": "C-TEC",
+    "model": "XFP CAST 32 Zone",
+    "status": "verified-image",
+    "reason": "Source-matched and visually inspected photograph.",
+    "record_ids": [
+      "c-tec-8f8f7b76fc27"
+    ],
+    "source_image_url": "https://c-tec.com/wp-content/uploads/2016/02/p_7_6_7_767-XFP-1-Loop-32-Zone-Addressable-Fire-Panel.jpg"
+  },
+  {
+    "id": "kentec-elite",
+    "brand": "Kentec",
+    "model": "Elite",
+    "status": "verified-image",
+    "reason": "Source-matched and visually inspected photograph.",
+    "record_ids": [
+      "facp-2f2b749f-f0e8-450d-b986-d5c0c34f8c75",
+      "facp-34332cb4-be40-488f-b4b8-e7c927c48944",
+      "facp-3d977047-4b62-4ba3-a581-0ffec68bc4af",
+      "facp-55acfd38-3720-4bb1-b872-177083e5abf6",
+      "kentec-07e5b1afdff7",
+      "kentec-24a1ad2740fe",
+      "kentec-60e4e2070323",
+      "kentec-c5d528024dee"
+    ],
+    "source_image_url": "https://kentec.co.uk/wp-content/uploads/2020/03/man-1199.pdf#page=1"
+  },
+  {
+    "id": "kentec-hydrosense-cp",
+    "brand": "Kentec",
+    "model": "HydroSense CP",
+    "status": "verified-image",
+    "reason": "Source-matched and visually inspected photograph.",
+    "record_ids": [
+      "kentec-15a0afabb443",
+      "kentec-294c3596e39d",
+      "kentec-335b42420476"
+    ],
+    "source_image_url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1131.pdf#page=1"
+  },
+  {
+    "id": "kentec-syncro-xt",
+    "brand": "Kentec",
+    "model": "Syncro XT",
+    "status": "verified-image",
+    "reason": "Source-matched and visually inspected photograph.",
+    "record_ids": [
+      "facp-c46ad9de-1a85-49e4-bac5-4e58c345f8b3",
+      "kentec-315ab95f24b7",
+      "kentec-5fa7053b016d"
+    ],
+    "source_image_url": "https://kentec.co.uk/wp-content/uploads/2018/08/man-1133.pdf#page=1"
+  },
+  {
+    "id": "kentec-taktis",
+    "brand": "Kentec",
+    "model": "Taktis",
+    "status": "verified-image",
+    "reason": "Source-matched and visually inspected photograph.",
+    "record_ids": [
+      "facp-2dc8625f-013f-49d3-89b9-27a897eb5f9b",
+      "facp-72c01658-2967-4480-87f6-4abcc2d5e8f5",
+      "kentec-27a240e84d49",
+      "kentec-2bfba8c019b3",
+      "kentec-3de714100d8b",
+      "kentec-428d834827df",
+      "kentec-491d9e30a393",
+      "kentec-4f2d4465b39c",
+      "kentec-62cf41bc3353",
+      "kentec-6f1adb7e32c7",
+      "kentec-7f56ed0d54d0",
+      "kentec-877f5d295966",
+      "kentec-87a95bf945ea",
+      "kentec-8a36d5087932",
+      "kentec-985345806342",
+      "kentec-9a99246ac97f",
+      "kentec-ab47f626ac68"
+    ],
+    "source_image_url": "https://kentec.co.uk/wp-content/uploads/2023/10/taktis-fire.png"
+  },
+  {
+    "id": "morley-ias-dx-connexion",
+    "brand": "Morley-IAS",
+    "model": "DX ConneXion",
+    "status": "verified-image",
+    "reason": "Source-matched and visually inspected photograph.",
+    "record_ids": [
+      "morley-ias-62b2834792ed"
+    ],
+    "source_image_url": "https://s7d1.scene7.com/is/image/Honeywell65/HBT-Fire-DCX2-PrimaryImage"
+  },
+  {
+    "id": "morley-ias-dimension-dx-series",
+    "brand": "Morley-IAS",
+    "model": "Dimension DX Series",
+    "status": "verified-image",
+    "reason": "Source-matched and visually inspected supplier-product-photograph.",
+    "record_ids": [
+      "facp-3f3b5d72-1c5b-4053-a6e6-92fcad4e1d3e"
+    ],
+    "source_image_url": "https://www.thesafetycentre.co.uk/pub/media/catalog/product/cache/66673e676dee9cd8274211e1f139aa55/g/i/gi_3_510_250_250_4.jpg"
+  },
+  {
+    "id": "morley-ias-zx-series",
+    "brand": "Morley-IAS",
+    "model": "ZX Series",
+    "status": "verified-image",
+    "reason": "Source-matched and visually inspected photograph.",
+    "record_ids": [
+      "facp-8a4e02b8-8f8d-4061-b018-4e4b1e71b948"
+    ],
+    "source_image_url": "https://s7d1.scene7.com/is/image/Honeywell65/HBT-Fire-721-001-301-ZX5Se-1-5-Loop-control-panel"
+  }
+]

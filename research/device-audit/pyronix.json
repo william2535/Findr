@@ -1,0 +1,194 @@
+{
+  "brand": "Pyronix",
+  "category": "security",
+  "review_date": "2026-10-30",
+  "device_family_count": 6,
+  "device_ids": [
+    "pyronix-kx12dq-we",
+    "pyronix-xdl12tt-we",
+    "pyronix-mc1z1-we",
+    "pyronix-mcexternal-we",
+    "pyronix-nano-shock-we",
+    "pyronix-kx15dt-rins549"
+  ],
+  "scope": "Intruder detector/contact/sounder identification pack. No control panels or keypads. Colour options are not counted separately.",
+  "source_method": "Primary manufacturer pages and original manufacturer PDFs. Independent hosts are disclosed for preserved original PDFs. Product images are real manufacturer assets or exact PDF illustrations.",
+  "document_review": {
+    "pyronix-12dc1a0275b5": {
+      "file": "research/pyronix-12dc1a0275b5.pdf",
+      "sha256": "2cd59b9ecb5aaa3d5052803c146704551c79e74bb6fce2225d6bd8476a7f8086",
+      "bytes": 13260308,
+      "pages": 4,
+      "url": "https://dsc.hu/themes/frontend/documents/kx15dt-installation-manual-multilingual.pdf",
+      "catalogue_hash_match": true,
+      "printed_edition": "RINS549-14",
+      "models_checked_in_pdf": [
+        "KX15DT"
+      ],
+      "relevant_pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  "photo_review": [
+    {
+      "device_id": "pyronix-kx12dq-we",
+      "source_page_url": "https://www.pyronixltd.com/product-page/kx12dq-we",
+      "source_image_url": "https://static.wixstatic.com/media/619595_1c9f733d8766405a8bfdb11531c68f45~mv2.jpeg",
+      "research_image": "research/kx12dq-we-photo.jpeg",
+      "original_image_sha256": "350a52cc62cadc167c6cb5ced9e27f423bffc6675116cf489f11e65cfbe2dcca",
+      "original_dimensions": [
+        1500,
+        1500
+      ],
+      "output_sha256": "1fd67b8fc3b09fa5a99e4c661ed09fd745bfe63a13a91f8a477775a2dd982035",
+      "output_dimensions": [
+        900,
+        900
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "White KX housing with a lower curved PIR lens and the upper horizontal indicator strip.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "pyronix-xdl12tt-we",
+      "source_page_url": "https://www.pyronixltd.com/product-page/xdl12tt-we",
+      "source_image_url": "https://static.wixstatic.com/media/619595_0b5608f99e5c4d2abd307ad4b107bf30~mv2.jpeg",
+      "research_image": "research/xdl12tt-we-photo.jpeg",
+      "original_image_sha256": "60cbe1552545456cac24da75437b9e85e32fc1331a3059785128bd45cacdd6c2",
+      "original_dimensions": [
+        1500,
+        1500
+      ],
+      "output_sha256": "26f0d3c3d31a97ab7b00c194770161211d02d27ca2023c30ec85c4a76607e172",
+      "output_dimensions": [
+        900,
+        900
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Official outdoor XD picture with a protective hood and two vertically separated detector windows.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "pyronix-mc1z1-we",
+      "source_page_url": "https://www.pyronixltd.com/product-page/mc1z1-we",
+      "source_image_url": "https://static.wixstatic.com/media/619595_5f36b069154d4eba90a09efd29c944b5~mv2.jpeg",
+      "research_image": "research/mc1z1-we-photo.jpeg",
+      "original_image_sha256": "bf6c1d2c248f39cf7b122dc327a34e41248bc53c692266ea0e3a9a3bfa3363cb",
+      "original_dimensions": [
+        1500,
+        1500
+      ],
+      "output_sha256": "6636362f19790419d87e5cd060a1b72fd0388aadb757c8acfb879dac456c748c",
+      "output_dimensions": [
+        900,
+        900
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Official compact surface contact photograph shows the detector and its matching magnet.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "pyronix-mcexternal-we",
+      "source_page_url": "https://www.pyronixltd.com/product-page/mcexternal-we",
+      "source_image_url": "https://static.wixstatic.com/media/619595_317b3603170c44afa016f006100a9f06~mv2.jpeg",
+      "research_image": "research/mcexternal-we-photo.jpeg",
+      "original_image_sha256": "cb89a1cc60bf61a6caa97fa5da43e97fd9c0e98ce57976e7ffc03e76a7128332",
+      "original_dimensions": [
+        1500,
+        1500
+      ],
+      "output_sha256": "2be1eef28a804abd52ee1aac3db45e00f593d3c47c23eb345767d300011b9f6c",
+      "output_dimensions": [
+        900,
+        900
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Official anthracite outdoor contact and magnet photograph, showing the deeper protected enclosures.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "pyronix-nano-shock-we",
+      "source_page_url": "https://www.pyronixltd.com/product-page/nano-shock-we",
+      "source_image_url": "https://static.wixstatic.com/media/619595_f013dfed978b46c093621bc531ad3548~mv2.jpeg",
+      "research_image": "research/nano-shock-we-photo.jpeg",
+      "original_image_sha256": "8504ef69536aafe02f8dc3eefd06d7333e29161692c4c5697865d746cb9eec43",
+      "original_dimensions": [
+        1500,
+        1500
+      ],
+      "output_sha256": "9ba66bda74eac7d7ed1a243b60b5cd6e0c14f2e47c568e7b8c3447fa9d7f2c9c",
+      "output_dimensions": [
+        900,
+        900
+      ],
+      "source_pdf_page": null,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Official slim NanoShock body, shown without a magnet because it is a shock sensor.",
+      "reviewed_visually": true
+    },
+    {
+      "device_id": "pyronix-kx15dt-rins549",
+      "source_page_url": "https://www.pyronixltd.com/product-page/kx15dt",
+      "source_image_url": "https://dsc.hu/themes/frontend/documents/kx15dt-installation-manual-multilingual.pdf",
+      "research_image": "research/kx15dt-illustration.png",
+      "original_image_sha256": "f34de64889e40edf43c57b74447154191012d40dc412b3b9d00e0967c200e561",
+      "original_dimensions": [
+        339,
+        615
+      ],
+      "output_sha256": "cbd8969623f94c3fe568af701dc116ecc450d2c4ba0b9c086c6a4e8621919c69",
+      "output_dimensions": [
+        339,
+        615
+      ],
+      "source_pdf_page": 1,
+      "processing": "Whole source illustration retained, proportional resize, white padding when necessary, WebP encoding",
+      "scope_review": "Rendered page 1 clip [1057,592,1170,797] PDF points, containing the complete closed detector and bracket illustration; no device geometry changed.",
+      "reviewed_visually": true
+    }
+  ],
+  "online_only_device_ids": [
+    "pyronix-kx12dq-we",
+    "pyronix-xdl12tt-we",
+    "pyronix-mc1z1-we",
+    "pyronix-mcexternal-we",
+    "pyronix-nano-shock-we"
+  ],
+  "failures_and_deferrals": [
+    {
+      "url": "https://stage.pyronix.com/uk/wp-content/uploads/sites/4/2024/01/Limited-Page-JUNE-23-24-V9.pdf",
+      "out": "pyronix/research/uk-ireland-catalogue-2024.pdf",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "url": "https://www.pyronix.com/wp-content/uploads/2025/05/Catalogue-25.pdf",
+      "out": "pyronix/research/catalogue25.pdf",
+      "error": "Not PDF bytes: text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.pyronix.com/uk/downloads/uk-roi-product-catalogue",
+      "out": "pyronix/research/uk-catalogue.pdf",
+      "error": "Not PDF bytes: text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.pyronix.com/datastore/wp-content/uploads/sites/2/2020/06/102025482-01-MCNANO_WE-Installation-Guide-EN.pdf",
+      "out": "pyronix/research/mcnano-guide.pdf",
+      "error": "Not PDF bytes: text/html; charset=UTF-8"
+    }
+  ],
+  "review_limits": "Identification reference, not proof of exact hardware generation, regional approval or panel compatibility. Existing archive IDs retained only after matching brand/category and retrieved document scope. Manufacturer pages may change after review.",
+  "special_findings": [
+    "Old pyronix.com catalogue/PDF links returned HTML rather than PDF bytes. They were not issued as downloadable document records.",
+    "Current pyronixltd.com product pages supply exact product photographs, retrieved from the linked original Wix image assets rather than blurred placeholders.",
+    "UK/ROI WE radio family and exact XD variant names cross-checked against manufacturer UK/ROI catalogue and CarDefender reference exposed in web search; online product entries do not claim locally retrieved PDF manuals.",
+    "KX15DT preserved archive SHA-256 matched. RINS549-14 line illustration is used, and the pre-2020 / 2020-guide distinction is explicit."
+  ]
+}

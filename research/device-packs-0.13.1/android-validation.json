@@ -1,0 +1,43 @@
+{
+  "version": "0.13.1",
+  "android_version_code": 23,
+  "apk": "/workspace/scratch/163ad62fc051/findr/public/releases/FINDR-0.13.1.apk",
+  "apk_bytes": 25360149,
+  "sha256": "04f643c3cf135efdfebc5fcd43c1b6512008834dbb48fecf887bdab492595a64",
+  "zip_crc_valid": true,
+  "zipalign_valid": true,
+  "signature_v2_valid": true,
+  "signature_v3_valid": true,
+  "signer_sha256": "6075a73725dac5a3cc1f7b6b32c5e1df907cd1ca4b5b611f4c1c1d2fd502fefd",
+  "same_signer_as_0_13_0": true,
+  "manifest": {
+    "package": "com.findr.app",
+    "version_name": "0.13.1",
+    "version_code": 23,
+    "min_sdk": 26,
+    "target_sdk": 35,
+    "permissions": [
+      "android.permission.INTERNET"
+    ]
+  },
+  "app_assets": {
+    "count": 849,
+    "bytes": 40028856,
+    "byte_equal_to_current_public_app": true,
+    "source_unchanged_during_build": true,
+    "native_download_map_included": true,
+    "supplementary_document_records": 17,
+    "downloadable_supplementary_documents_in_native_allowlist": 11,
+    "reference_only_documents_without_native_download_url": 6,
+    "pictured_device_count": 24,
+    "device_picture_files": 24,
+    "precache_count": 846,
+    "build_hash": "167e39bbfbed"
+  },
+  "public_apk_byte_equal_to_artifact": true,
+  "checksum_files_written": true,
+  "limitations": [
+    "No physical handset installation was performed.",
+    "No real alarm hardware was tested."
+  ]
+}

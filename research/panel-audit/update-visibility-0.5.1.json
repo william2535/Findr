@@ -1,0 +1,45 @@
+{
+  "release": "0.5.1",
+  "date": "2026-10-29",
+  "problem": "A cached older app could open before its replacement worker activated, leaving the Menu maps navigation absent. The installed Android APK is a separate bundled release.",
+  "changes": [
+    "Existing web app launch awaits activated worker with exact release and complete cache handshake",
+    "Release page and app home link directly to Menu maps",
+    "Phone navigation uses four equal columns",
+    "Help uses the shared release version",
+    "Future in-app upgrades offer a deliberate Reload FINDR control",
+    "Android update guidance explains that the APK must be updated separately"
+  ],
+  "verification": {
+    "automatedPassed": 118,
+    "automatedFailed": 0,
+    "command": "node --test --test-isolation=none --test-reporter=spec tests/app-update.test.mjs tests/menu-maps.test.mjs tests/practice.test.mjs tests/service-worker-redirects.test.mjs tests/offline-recovery.test.mjs",
+    "localBrowser": [
+      "Release page Open Menu maps reaches app/#menus with 4,366 entries",
+      "Help displays 0.5.1",
+      "320px iframe:release and menu page content width 305px, no horizontal overflow",
+      "All four navigation links share one row with client/scroll widths 66px"
+    ],
+    "limits": [
+      "Managed HTTP preview does not support service workers; update/activation cases use stateful regression tests plus the actual worker in a VM.",
+      "No physical Android or iPhone test.",
+      "User device and viewing method have not been supplied; the observed code defect is a possible cause, not a confirmed device diagnosis."
+    ]
+  },
+  "storage": "No clear-site-data, IndexedDB deletion, worker unregistration or PDF/progress reset is used.",
+  "android": {
+    "versionName": "0.5.1",
+    "versionCode": 8,
+    "package": "com.findr.app",
+    "sha256": "fe9feb89093355de69501f98073a1936aba241423a34189e3f353a8b5659e60c",
+    "sizeBytes": 20233778,
+    "signatureVerified": true,
+    "sameSignerAsPreviousRelease": true,
+    "bundledAppFilesMatched": 637
+  },
+  "offlineManifest": {
+    "assetCount": 634,
+    "bytes": 30351086,
+    "build": "91200e280a65"
+  }
+}

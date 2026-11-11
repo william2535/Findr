@@ -1,0 +1,15 @@
+# Fire-device wiring review — 0.22.0
+
+55 source-page pictures from 48 existing archived documents cover Apollo, Gent, C-TEC, Aico, Protec, Fike, The Fire Beam Company, Nittan and Hochiki. The images total 11,360,710 bytes. This is a reviewed selection, not a statement that every device or archive manual has a verified wiring diagram.
+
+`fire-devices-entries.json` follows the shared entry contract. `fire-devices-audit.json` records each retrieved source URL, SHA256, edition, temporary PDF path, selected page, rejected candidate and review outcome. 59 PDF retrievals succeeded; 36 existing pinned hashes matched, 23 unpinned source hashes were recorded, and there were no source-hash mismatches. Catalogue data and existing PDF identities were not changed.
+
+74 candidate PDF pages were visually inspected as source renders/contact sheets. All selected pages contain a real wiring drawing, labelled terminal layout or manufacturer connection example. Whole PDF pages were rendered to lossless WebP, normally 1600 pixels wide, with 1800–3400 pixels used for small print and imposed sheets. No published image was cropped, generated or redrawn. Some PDF pages contain several printed pages, translations or repeated leaflets; both the PDF page index and any observed printed-page labels are recorded.
+
+Model scope and caveats remain specific to the source. Examples include the legacy Gent S-Quad non-UK MCP-input example; Nittan negative-line-isolator exclusions for Mx4000/Pro4; separate Protec conventional-zone and addressable-loop base diagrams; Fike Twinflex SRP exclusion for its I/O module; model-dependent EOL components; and separate mains-alarm versus fire-panel loop wiring. A photographed terminal layout is labelled as such. Generic beam connection examples do not establish compatibility with every control panel.
+
+The generic `hochiki-chq-ari` device row was deliberately not associated with the CHQ-ARI(CLR)-only installation sheet. Its verified diagram remains searchable in the manual gallery under the exact source model. The ESP instructions explicitly cover the listed sensor families and variants, and the Protec common-base sheet explicitly depicts the 6000PLUS/BASE circuit, so their existing device associations are retained.
+
+No Notifier wiring picture is claimed from the checked NFX-OPT/NFXI-OPT datasheet: both pages contain product photographs/specifications, without a connection drawing. EMS source-only records and unselected wireless datasheets are recorded as unattempted candidates. Other text-only and product-photo pages were excluded. Lack of a selected image means further source review is needed, not that a product has no wiring.
+
+Validation passed for every selected source/image SHA256, image size and dimensions, source-page bounds, duplicate IDs/pages, existing device IDs, source URL, exact category and visual-review record. Application regression/build/offline testing is performed by the integrating agents; this curation batch does not independently claim a published site or APK.

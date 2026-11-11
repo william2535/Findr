@@ -1,0 +1,517 @@
+{
+  "batch": "uk-fire",
+  "generated": "2026-10-29T22:38:58.554524+00:00",
+  "repository_commit": "7d37ac3035c2024e906fcc4453d52ffcfbde87c2",
+  "scope": "Fifteen new UK-relevant fire control-panel, remote-control and evacuation-alert identification families. Does not change emulator menus or claim complete manual coverage.",
+  "candidates": [
+    {
+      "id": "advanced-quickzone",
+      "brand": "Advanced",
+      "category": "fire",
+      "model": "QuickZone 2 / 4 zone",
+      "status": "verified-image",
+      "record_ids": [],
+      "source_page_url": "https://www.advancedco.com/product/quickzone/",
+      "source_image_url": "https://datasheets.advancedco.com/advancedco/english/uk/quickzone/panels/2-or-4-zone-conventional-control-panel/",
+      "source_pdf_page": 1,
+      "source_refs": [
+        "turn171search0",
+        "turn171search10",
+        "turn184view0"
+      ],
+      "image": "images/advanced-quickzone.jpg",
+      "original_image_dimensions": [
+        446,
+        385
+      ],
+      "original_image_sha256": "6a0b6c0e2d6abb4c65fdb4a4789dc4216e9bd2e03d4e285fa57f0447ed356402",
+      "image_credit": "Advanced Electronics, QuickZone 2 or 4 Zone Conventional Control Panel datasheet, version 09/26, PDF page 1; original embedded product photo.",
+      "uk_priority_evidence": "Manufacturer's English/UK datasheet and official product page.",
+      "visual_review": "Passed: exact manufacturer's panel/repeater image inspected, exterior controls visible; logos, decorative graphics and wiring-only figures excluded.",
+      "archive_link_review": "No exact model-family manual match found in this archive snapshot; picture-only card with no invented archive identifiers.",
+      "limits": "No matching manual is linked in this archive snapshot. The image is the manufacturer's 2/4-zone family example from the September 2026 datasheet. The wider QuickZone XL has a different zone indicator layout. Zone count and conventional/twin-wire configuration must be checked on the installed unit. Confirm the installed model label and document revision before using operating instructions."
+    },
+    {
+      "id": "advanced-quickzone-xl",
+      "brand": "Advanced",
+      "category": "fire",
+      "model": "QuickZone XL",
+      "status": "verified-image",
+      "record_ids": [],
+      "source_page_url": "https://www.advancedco.com/product/quickzone/",
+      "source_image_url": "https://www.advancedco.com/wp-content/uploads/QZ-XL32-face.jpg",
+      "source_pdf_page": null,
+      "source_refs": [
+        "turn171search0"
+      ],
+      "image": "images/advanced-quickzone-xl.jpg",
+      "original_image_dimensions": [
+        1143,
+        857
+      ],
+      "original_image_sha256": "c89d593df3d9b207284f7599e2f5bbc470939612c87f9b36f8dc699692705211",
+      "image_credit": "Advanced Electronics, official QuickZone product page, QZ-XL32 product photograph.",
+      "uk_priority_evidence": "UK manufacturer product page for the conventional QuickZone range.",
+      "visual_review": "Passed: exact manufacturer's panel/repeater image inspected, exterior controls visible; logos, decorative graphics and wiring-only figures excluded.",
+      "archive_link_review": "No exact model-family manual match found in this archive snapshot; picture-only card with no invented archive identifiers.",
+      "limits": "No matching manual is linked in this archive snapshot. This is the QuickZone XL family, kept separate from the smaller 2/4-zone QuickZone. The image does not identify installed zone count or wiring configuration. Confirm the installed model label and document revision before using operating instructions."
+    },
+    {
+      "id": "advanced-go",
+      "brand": "Advanced",
+      "category": "fire",
+      "model": "Go / Go+",
+      "status": "verified-image",
+      "record_ids": [],
+      "source_page_url": "https://www.advancedco.com/product/go-the-powerful-flexible-single-loop-fire-alarm-panel/",
+      "source_image_url": "https://www.advancedco.com/wp-content/uploads/Go-face-on-green-LED-2-NO-DATE-800x800-3.jpg",
+      "source_pdf_page": null,
+      "source_refs": [
+        "turn173search10"
+      ],
+      "image": "images/advanced-go.jpg",
+      "original_image_dimensions": [
+        800,
+        800
+      ],
+      "original_image_sha256": "a970eaccb0aebe2e9c7c22fcce797e3cf44de0e4ca5f5a2bad14f636365ad66f",
+      "image_credit": "Advanced Electronics, official Go product photograph.",
+      "uk_priority_evidence": "Official product page includes UK installations in Clapham, Huddersfield and the Scottish Borders.",
+      "visual_review": "Passed: exact manufacturer's panel/repeater image inspected, exterior controls visible; logos, decorative graphics and wiring-only figures excluded.",
+      "archive_link_review": "No exact model-family manual match found in this archive snapshot; picture-only card with no invented archive identifiers.",
+      "limits": "No matching manual is linked in this archive snapshot. Go and Go+ are grouped because the manufacturer offers the same panel family with different address capacities. The face alone does not establish detector protocol or capacity, and similar Advanced fascias also appear on other ranges. Confirm the installed model label and document revision before using operating instructions."
+    },
+    {
+      "id": "advanced-touchcontrol",
+      "brand": "Advanced",
+      "category": "fire",
+      "model": "TouchControl remote terminal",
+      "status": "verified-image",
+      "record_ids": [],
+      "source_page_url": "https://www.advancedco.com/product/touchcontrol-touchscreen-fire-alarm-panel/",
+      "source_image_url": "https://www.advancedco.com/wp-content/uploads/Touch-10-touch-screen-terminal-without-bezel-dark-logo-face-800-x-800.jpg",
+      "source_pdf_page": null,
+      "source_refs": [
+        "turn173search0"
+      ],
+      "image": "images/advanced-touchcontrol.jpg",
+      "original_image_dimensions": [
+        800,
+        800
+      ],
+      "original_image_sha256": "93327242d006f4741453aea29556f0e101699095afd4d3d443287f2d532ed695",
+      "image_credit": "Advanced Electronics, official TouchControl 10-inch terminal product photograph, without bezel.",
+      "uk_priority_evidence": "Official product page identifies UK installations including Canary Wharf, HMS Belfast and Imperial College London.",
+      "visual_review": "Passed: exact manufacturer's panel/repeater image inspected, exterior controls visible; logos, decorative graphics and wiring-only figures excluded.",
+      "archive_link_review": "No exact model-family manual match found in this archive snapshot; picture-only card with no invented archive identifiers.",
+      "limits": "No matching manual is linked in this archive snapshot. This is a remote control terminal/repeater for an Advanced fire network, not a self-contained detector-loop control panel. Screen content, bezel and available controls depend on the configured system. Confirm the installed model label and document revision before using operating instructions."
+    },
+    {
+      "id": "advanced-exgo",
+      "brand": "Advanced",
+      "category": "fire",
+      "model": "ExGo gas suppression control panel",
+      "status": "verified-image",
+      "record_ids": [],
+      "source_page_url": "https://www.advancedco.com/product/exgo-gas-suppression-system/",
+      "source_image_url": "https://www.advancedco.com/wp-content/uploads/ExGo-Face-Mar-26.jpg",
+      "source_pdf_page": null,
+      "source_refs": [
+        "turn183search3"
+      ],
+      "image": "images/advanced-exgo.jpg",
+      "original_image_dimensions": [
+        1920,
+        1920
+      ],
+      "original_image_sha256": "e432254061af374e08e3b17da809076c4a94e8f4e2fedb8a831c8651e5926576",
+      "image_credit": "Advanced Electronics, official ExGo product photograph, March 2026 image revision.",
+      "uk_priority_evidence": "UK manufacturer product documentation for its ExGo gas suppression control system.",
+      "visual_review": "Passed: exact manufacturer's panel/repeater image inspected, exterior controls visible; logos, decorative graphics and wiring-only figures excluded.",
+      "archive_link_review": "No exact model-family manual match found in this archive snapshot; picture-only card with no invented archive identifiers.",
+      "limits": "No matching manual is linked in this archive snapshot. ExGo is a gas suppression control family. Its release controls and configured functions require the exact extinguishing-system documentation; this identification image is not an operating procedure. Cabinet revisions and remote repeater variants must be checked separately. Confirm the installed model label and document revision before using operating instructions."
+    },
+    {
+      "id": "advanced-evacgo",
+      "brand": "Advanced",
+      "category": "fire",
+      "model": "EvacGo evacuation alert panel",
+      "status": "verified-image",
+      "record_ids": [],
+      "source_page_url": "https://www.advancedco.com/product/evacgo-evacuation-alert-system/",
+      "source_image_url": "https://www.advancedco.com/wp-content/uploads/EACIE-Panel-face-on-32-zone-SSD5514.5-800x800-1.jpg",
+      "source_pdf_page": null,
+      "source_refs": [
+        "turn186search0",
+        "turn186search12"
+      ],
+      "image": "images/advanced-evacgo.jpg",
+      "original_image_dimensions": [
+        800,
+        800
+      ],
+      "original_image_sha256": "2f90c7c7574ea8bcd285acd84db670e645e66e45619902a51190e384b4c0ba5d",
+      "image_credit": "Advanced Electronics, official EvacGo 32-zone EACIE control-face photograph.",
+      "uk_priority_evidence": "Manufacturer explicitly states UK-only availability and identifies multiple UK evacuation-alert installations.",
+      "visual_review": "Passed: exact manufacturer's panel/repeater image inspected, exterior controls visible; logos, decorative graphics and wiring-only figures excluded.",
+      "archive_link_review": "No exact model-family manual match found in this archive snapshot; picture-only card with no invented archive identifiers.",
+      "limits": "No matching manual is linked in this archive snapshot. EvacGo is evacuation alert control and indicating equipment. It is not an automatic fire detection control panel. The manufacturer offers several area counts, and this photo shows the inner controls rather than the secure outer enclosure. Confirm the installed model label and document revision before using operating instructions."
+    },
+    {
+      "id": "eaton-cf2000",
+      "brand": "Eaton / Cooper",
+      "category": "fire",
+      "model": "CF2000",
+      "status": "verified-image",
+      "record_ids": [],
+      "source_page_url": "https://www.eaton.com/gb/en-gb/catalog/fire-detection-systems/cf2000-addressable-panel.html",
+      "source_image_url": "https://www.eaton.com/mdmfiles/contentId/ES-CS-LS-EATON-CF2000ADDRESSABLECONTROLPANEL_L/500x500_72dpi",
+      "source_pdf_page": null,
+      "source_refs": [
+        "turn171search4"
+      ],
+      "image": "images/eaton-cf2000.jpg",
+      "original_image_dimensions": [
+        500,
+        500
+      ],
+      "original_image_sha256": "4b0058172ac2a3a5b22b32ffe62d26d21d180049fbcb31278c22e3d5f8b87d29",
+      "image_credit": "Eaton, official CF2000 product photograph from its UK product page.",
+      "uk_priority_evidence": "Eaton UK product page identifies the CF2000 family and UK fire-system context.",
+      "visual_review": "Passed: exact manufacturer's panel/repeater image inspected, exterior controls visible; logos, decorative graphics and wiring-only figures excluded.",
+      "archive_link_review": "No exact model-family manual match found in this archive snapshot; picture-only card with no invented archive identifiers.",
+      "limits": "No matching manual is linked in this archive snapshot. CF2000 is the manufacturer's one/two-loop, non-networked addressable family. The pictured enclosure does not establish how many loops are configured. Branding and production revisions may differ on installed units. Confirm the installed model label and document revision before using operating instructions."
+    },
+    {
+      "id": "eaton-xdetect",
+      "brand": "Eaton / Cooper",
+      "category": "fire",
+      "model": "xDetect modular control panel",
+      "status": "verified-image",
+      "record_ids": [],
+      "source_page_url": "https://www.eaton.com/gb/en-gb/catalog/fire-detection-systems/xdetect-addressable-panel.html",
+      "source_image_url": "https://www.eaton.com/mdmfiles/contentId/ES-CS-LS-EATONXDETECTMODULARADDRESSABLEFIREALARMSYSTEMPANEL_FM/500x500_72dpi",
+      "source_pdf_page": null,
+      "source_refs": [
+        "turn173search8"
+      ],
+      "image": "images/eaton-xdetect.jpg",
+      "original_image_dimensions": [
+        500,
+        500
+      ],
+      "original_image_sha256": "d9dd0d175dbfed8e6090ba4360858fecea8b18bdaff89792a4a95e49202d20bd",
+      "image_credit": "Eaton, official xDetect family composite showing its small and large metal cabinets.",
+      "uk_priority_evidence": "Eaton UK product page includes an xDetect installation at Parcevall Hall, Skyreholme, UK.",
+      "visual_review": "Passed: exact manufacturer's panel/repeater image inspected, exterior controls visible; logos, decorative graphics and wiring-only figures excluded.",
+      "archive_link_review": "No exact model-family manual match found in this archive snapshot; picture-only card with no invented archive identifiers.",
+      "limits": "No matching manual is linked in this archive snapshot. Small and large modular cabinets are grouped as one pictured family. The separate xDetect Mini range is not represented by this image. Screen colour is a displayed system state and is not a model identifier; fitted cards determine system capacity. Confirm the installed model label and document revision before using operating instructions."
+    },
+    {
+      "id": "eaton-fx2200",
+      "brand": "Eaton / Cooper",
+      "category": "fire",
+      "model": "FX2200 2 / 4 zone",
+      "status": "verified-image",
+      "record_ids": [],
+      "source_page_url": "https://www.eaton.com/gb/en-gb/skuPage.FX2202CPD.html",
+      "source_image_url": "https://www.eaton.com/mdmfiles/PDM73947400/FX2202CPD_C/500x500_72dpi",
+      "source_pdf_page": null,
+      "source_refs": [
+        "turn183search4"
+      ],
+      "image": "images/eaton-fx2200.jpg",
+      "original_image_dimensions": [
+        500,
+        500
+      ],
+      "original_image_sha256": "418d3036d2119759d666fea537be249358420c965b231f4364408827ada3e00a",
+      "image_credit": "Eaton, official FX2202CPD product image; pictured fascia carries JSB branding.",
+      "uk_priority_evidence": "Eaton UK SKU page for the legacy FX2202CPD 2/4-zone conventional range.",
+      "visual_review": "Passed: exact manufacturer's panel/repeater image inspected, exterior controls visible; logos, decorative graphics and wiring-only figures excluded.",
+      "archive_link_review": "No exact model-family manual match found in this archive snapshot; picture-only card with no invented archive identifiers.",
+      "limits": "No matching manual is linked in this archive snapshot. The source identifies FX2202CPD within Eaton's 2/4-zone conventional panel family. The two-zone picture is representative only; confirm the product code and installed zone count. This card does not cover the differently styled eight-zone families. Confirm the installed model label and document revision before using operating instructions."
+    },
+    {
+      "id": "protec-3500",
+      "brand": "Protec",
+      "category": "fire",
+      "model": "3500 Series (3502 / 3504 / 3508)",
+      "status": "verified-image",
+      "record_ids": [],
+      "source_page_url": "https://www.protec.co.uk/our-products/fire-detection/conventional/view-all-panels/3508-fire-alarm-control-panel/",
+      "source_image_url": "https://www.protec.co.uk/wp-content/uploads/2020/03/3500-Panel.png",
+      "source_pdf_page": null,
+      "source_refs": [
+        "turn173search6",
+        "turn193view0"
+      ],
+      "image": "images/protec-3500.png",
+      "original_image_dimensions": [
+        2000,
+        1600
+      ],
+      "original_image_sha256": "42bffea28ebabc9401eb7493c3f4cbde16cdf1dfac275ebf6099ae76cd504e95",
+      "image_credit": "Protec Fire and Security Group, official 3500-panel product image on its 3508 UK product page.",
+      "uk_priority_evidence": "Protec UK product page identifies 3508 part 62-809-UK and the 2/4/8-zone family.",
+      "visual_review": "Passed: exact manufacturer's panel/repeater image inspected, exterior controls visible; logos, decorative graphics and wiring-only figures excluded.",
+      "archive_link_review": "No exact model-family manual match found in this archive snapshot; picture-only card with no invented archive identifiers.",
+      "limits": "No matching manual is linked in this archive snapshot. The manufacturer's 3508 page identifies the 3500 conventional range in two-, four- and eight-zone versions. These are grouped as one visual family. This photo does not represent the separate 3500/RP repeat indicator. Confirm the installed model label and document revision before using operating instructions."
+    },
+    {
+      "id": "protec-6000plus-repeater",
+      "brand": "Protec",
+      "category": "fire",
+      "model": "6000PLUS/REPEATER",
+      "status": "verified-image",
+      "record_ids": [],
+      "source_page_url": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/panels/6000plus-repeater/",
+      "source_image_url": "https://www.protec.co.uk/wp-content/uploads/2022/06/6000PLUS_REPEATER.png",
+      "source_pdf_page": null,
+      "source_refs": [
+        "turn171search2"
+      ],
+      "image": "images/protec-6000plus-repeater.png",
+      "original_image_dimensions": [
+        2000,
+        1600
+      ],
+      "original_image_sha256": "c314774591907f4abd930527e04339f332e517be1197f3a4f3a621009bef1daf",
+      "image_credit": "Protec Fire and Security Group, official 6000PLUS/REPEATER product image.",
+      "uk_priority_evidence": "Protec UK product page identifies the 6500-compatible loop-powered remote unit.",
+      "visual_review": "Passed: exact manufacturer's panel/repeater image inspected, exterior controls visible; logos, decorative graphics and wiring-only figures excluded.",
+      "archive_link_review": "No exact model-family manual match found in this archive snapshot; picture-only card with no invented archive identifiers.",
+      "limits": "No matching manual is linked in this archive snapshot. This is the 6000PLUS/REPEATER remote indicator/control unit for the Protec 6500 host identified by the manufacturer, not a standalone fire panel. The similarly cased 6000/LOOP/REPEATER has a different control scope; do not infer interchangeability from appearance. Enabled remote functions vary by configuration. Confirm the installed model label and document revision before using operating instructions."
+    },
+    {
+      "id": "protec-3300",
+      "brand": "Protec",
+      "category": "fire",
+      "model": "3300 Series (3304 / 3308)",
+      "status": "verified-image",
+      "record_ids": [],
+      "source_page_url": "https://www.protec.co.uk/wp-content/uploads/2020/09/3300.pdf#page=1",
+      "source_image_url": "https://www.protec.co.uk/wp-content/uploads/2020/09/3300.pdf",
+      "source_pdf_page": 1,
+      "source_refs": [
+        "turn173search50",
+        "turn198view1"
+      ],
+      "image": "images/protec-3300.png",
+      "original_image_dimensions": [
+        588,
+        504
+      ],
+      "original_image_sha256": "9d10ad6d4d86c5a722fbd4ceefa3bdf0a5fa192643bbd8763d2cb952b82123fa",
+      "image_credit": "Protec Fire Detection, 3300 conventional panel datasheet MED1056 Issue 2, PDF page 1; original embedded cabinet photo.",
+      "uk_priority_evidence": "Original Protec datasheet identifies the Lancashire UK manufacturer and 3304/3308 model references.",
+      "visual_review": "Passed: exact manufacturer's panel/repeater image inspected, exterior controls visible; logos, decorative graphics and wiring-only figures excluded.",
+      "archive_link_review": "No exact model-family manual match found in this archive snapshot; picture-only card with no invented archive identifiers.",
+      "limits": "No matching manual is linked in this archive snapshot. Legacy 3304/3308 main control-panel family, pictured in Protec datasheet MED1056 Issue 2. This older cabinet is visually distinct from the 3500 range. The 3300/RP repeater is a separate device and is not included as an alias. Confirm the installed model label and document revision before using operating instructions."
+    },
+    {
+      "id": "hochiki-latitude-en",
+      "brand": "Hochiki",
+      "category": "fire",
+      "model": "Latitude (UK / EN range)",
+      "status": "verified-image",
+      "record_ids": [
+        "hochiki-2e3c913355f8"
+      ],
+      "source_page_url": "https://www.hochikieurope.com/en-gb/products/en-fire-detection/control-panels",
+      "source_image_url": "https://www.hochikieurope.com/hs-fs/hubfs/Latitude-Panel-(Clean).png?width=2496&height=3336&name=Latitude-Panel-(Clean).png",
+      "source_pdf_page": null,
+      "source_refs": [
+        "turn181search1"
+      ],
+      "image": "images/hochiki-latitude-en.png",
+      "original_image_dimensions": [
+        2496,
+        3336
+      ],
+      "original_image_sha256": "71b89b6e2ad5c5f46a6df6a53adfe26563e885036e8c079768634bc15fac9796",
+      "image_credit": "Hochiki Europe, official Latitude panel product image on its UK EN fire-detection control-panel page.",
+      "uk_priority_evidence": "Hochiki Europe en-gb control-panel page names its UK systems partner network and UK installations.",
+      "visual_review": "Passed: exact manufacturer's panel/repeater image inspected, exterior controls visible; logos, decorative graphics and wiring-only figures excluded.",
+      "archive_link_review": "Exact Hochiki Europe Latitude Installers Guide verified by catalogue URL, 16-page length, document cover, EN system architecture on PDF page 14 and UK publisher/ISS2/MAR24 on page 16. Catalogue status remains pdf-indexed and its hash is null; live downloaded PDF hash is recorded in source_documents. Not the US FireNET guide.",
+      "limits": "This card covers Hochiki Europe's UK/EN Latitude family and links the existing Latitude Installers Guide record (ISS2/MAR24, 16 pages). It is distinct from the separately pictured US FireNET L@titude. Cabinet size, loop cards, zone LED modules, printer options and software revision must be confirmed on the actual installation; the guide is not a complete menu or operations manual."
+    },
+    {
+      "id": "notifier-inspire-e10-e15",
+      "brand": "Notifier",
+      "category": "fire",
+      "model": "INSPIRE E10 / E15",
+      "status": "verified-image",
+      "record_ids": [],
+      "source_page_url": "https://buildings.honeywell.com/gb/en/lp/notifierinspire",
+      "source_image_url": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/downloads/NOTIFIER_INSPIRE-E_DS_EN_May24.pdf",
+      "source_pdf_page": 1,
+      "source_refs": [
+        "turn173search7"
+      ],
+      "image": "images/notifier-inspire-e10-e15.png",
+      "original_image_dimensions": [
+        777,
+        774
+      ],
+      "original_image_sha256": "f7df97c2f085c4c7224bbe42abd4b2bd013da735fe4bacd857ba96bfec57c844",
+      "image_credit": "Honeywell Notifier, NOTIFIER INSPIRE E10/E15 datasheet, May 2024, PDF page 1; original embedded product image.",
+      "uk_priority_evidence": "Honeywell Notifier gb/en INSPIRE page and E10/E15 English EMEA datasheet.",
+      "visual_review": "Passed: exact manufacturer's panel/repeater image inspected, exterior controls visible; logos, decorative graphics and wiring-only figures excluded.",
+      "archive_link_review": "No exact model-family manual match found in this archive snapshot; picture-only card with no invented archive identifiers.",
+      "limits": "No matching manual is linked in this archive snapshot. The May 2024 manufacturer datasheet identifies the E10/E15 EMEA family. E10 and E15 enclosure capacities are grouped, and the pictured cabinet does not establish fitted modules. The archive's INSPIRE N16 documents are not assigned to this European family. Confirm the installed model label and document revision before using operating instructions."
+    },
+    {
+      "id": "zeta-premier-quatro-mkii",
+      "brand": "Zeta",
+      "category": "fire",
+      "model": "Premier Quatro MKII",
+      "status": "verified-image",
+      "record_ids": [],
+      "source_page_url": "https://www.zetaalarmsystems.com/wp-content/uploads/2025/03/Premier-Quatro-MKII-User-Manual-V1.08.pdf#page=1",
+      "source_image_url": "https://www.zetaalarmsystems.com/wp-content/uploads/2025/03/Premier-Quatro-MKII-User-Manual-V1.08.pdf",
+      "source_pdf_page": 1,
+      "source_refs": [
+        "turn183search8",
+        "turn198view0"
+      ],
+      "image": "images/zeta-premier-quatro-mkii.jpg",
+      "original_image_dimensions": [
+        885,
+        650
+      ],
+      "original_image_sha256": "7f6d264cad083af88e99f0abe4b98143eba419352f039235a5c8134dd5bf103c",
+      "image_credit": "Zeta Alarm Systems, Premier Quatro MKII user manual GLT-215-7-2 Issue 1.08, PDF page 1; original embedded cabinet image.",
+      "uk_priority_evidence": "Original Zeta manual identifies its Swansea UK manufacturer and UK system context.",
+      "visual_review": "Passed: exact manufacturer's panel/repeater image inspected, exterior controls visible; logos, decorative graphics and wiring-only figures excluded.",
+      "archive_link_review": "No exact model-family manual match found in this archive snapshot; picture-only card with no invented archive identifiers.",
+      "limits": "No matching manual is linked in this archive snapshot. The image is from the Fyreye MKII Premier Quatro guide GLT-215-7-2 Issue 1.08 (26 May 2017), for panel firmware 1.84 and loop-card firmware 3.70. Confirm the Fyreye protocol generation and firmware on site; appearance alone does not establish MKII compatibility or loop count. Confirm the installed model label and document revision before using operating instructions."
+    }
+  ],
+  "source_documents": [
+    {
+      "local_file": "sources/advanced-quickzone.pdf",
+      "url": "https://datasheets.advancedco.com/advancedco/english/uk/quickzone/panels/2-or-4-zone-conventional-control-panel/",
+      "title": "QuickZone 2 or 4 Zone Conventional Control Panel, version 09/26",
+      "sha256": "eed62361c31c21a1ebe358258470a73280e351746bd418e7b0b06eb1eb8bdd0d",
+      "bytes": 898248,
+      "image_pdf_page": 1,
+      "purpose": "Original embedded image extraction; physical PDF page numbered from 1"
+    },
+    {
+      "local_file": "sources/notifier-inspire.pdf",
+      "url": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/downloads/NOTIFIER_INSPIRE-E_DS_EN_May24.pdf",
+      "title": "NOTIFIER INSPIRE E10/E15 datasheet, May 2024",
+      "sha256": "c804e624aa4f4a5c3753809c646bd573221c8bff30e4c86f5368dcec05b87ff1",
+      "bytes": 12259058,
+      "image_pdf_page": 1,
+      "purpose": "Original embedded image extraction; physical PDF page numbered from 1"
+    },
+    {
+      "local_file": "sources/zeta-quatro-mkii.pdf",
+      "url": "https://www.zetaalarmsystems.com/wp-content/uploads/2025/03/Premier-Quatro-MKII-User-Manual-V1.08.pdf",
+      "title": "Premier Quatro Fyreye MKII user guide GLT-215-7-2 Issue 1.08, 26 May 2017",
+      "sha256": "020567cdb88f5afadc2ca195b1c1973b6ab10831e8b659c6a5c262ebe78dd2bb",
+      "bytes": 691883,
+      "image_pdf_page": 1,
+      "purpose": "Original embedded image extraction; physical PDF page numbered from 1"
+    },
+    {
+      "local_file": "sources/protec-3300.pdf",
+      "url": "https://www.protec.co.uk/wp-content/uploads/2020/09/3300.pdf",
+      "title": "Protec 3300 datasheet MED1056 Issue 2",
+      "sha256": "40bbfeae19e704e1793c8f0526dabb5f3957fcdfac65e789c27b767470afa92e",
+      "bytes": 427708,
+      "image_pdf_page": 1,
+      "purpose": "Original embedded image extraction; physical PDF page numbered from 1"
+    },
+    {
+      "local_file": "sources/hochiki-latitude-installation.pdf",
+      "url": "https://assets.hochikiglobal.com/assetbank-hochikieurope/assetfile/17452.pdf",
+      "title": "Hochiki Latitude Installers Guide",
+      "sha256": "f0fc9f60cbbd79ff24f43da8ea12d043b2fbfe1ca7ebd2bb2c4eb6ba6f27186e",
+      "bytes": 4404039,
+      "image_pdf_page": null,
+      "purpose": "Exact archive record verification only"
+    }
+  ],
+  "reviewed_not_added": [
+    {
+      "brand": "Protec",
+      "model": "6000/LOOP/REPEATER",
+      "decision": "Not added as a separate picture family in this pass",
+      "source_url": "https://www.protec.co.uk/our-products/fire-detection/digital-addressable/panels/6000-loop-repeater/",
+      "source_refs": [
+        "turn173search2"
+      ],
+      "reason": "Very similar enclosure to 6000PLUS/REPEATER, but different remote-control scope. It is not silently aliased to the PLUS controller or used to inflate the family count."
+    },
+    {
+      "brand": "Notifier",
+      "model": "INSPIRE N16/N16x archive records",
+      "decision": "Excluded from E10/E15 manual links",
+      "record_ids": [
+        "facp-78a07742-9442-45ab-a1a1-6e004028f53b",
+        "facp-d1e8a0e3-a431-4365-9d13-afc249bb5fa3",
+        "facp-f03fa39c-277e-4f6e-9b57-01508fcd10f1"
+      ],
+      "reason": "The current candidate is the EMEA E10/E15 family. Similar INSPIRE branding does not establish a manual match to N16/N16x. The general INSPIRE Solutions Guide record was also not linked without exact E10/E15 evidence."
+    },
+    {
+      "brand": "Hochiki",
+      "model": "FireNET L@titude (US)",
+      "decision": "Existing pictured US family retained separately",
+      "existing_panel_id": "hochiki-firenet-latitude",
+      "record_ids": [
+        "facp-04acd126-c739-44a6-961a-df6ce526aee9"
+      ],
+      "reason": "Red US FireNET cabinet and its US manual are not relabelled as the white European Latitude. New UK/EN card links only the exact Europe Installers Guide."
+    },
+    {
+      "brand": "Zeta",
+      "model": "Premier Quatro older installation download",
+      "decision": "Old failed asset route replaced by a verified public manufacturer PDF",
+      "source_url": "https://www.zetaalarmsystems.com/media/content/pdfs/QT-Installation-Manual.pdf",
+      "source_refs": [
+        "turn183search7"
+      ],
+      "reason": "The legacy URL redirected to an HTTP asset and did not download successfully. The openly accessible current HTTPS MKII user-guide URL downloaded normally and its original panel image was inspected. The product page's warning SVG was rejected as a non-panel graphic."
+    },
+    {
+      "brand": "Ziton",
+      "model": "ZP1",
+      "decision": "Held for a subsequent batch",
+      "source_url": "https://www.safefiredirect.co.uk/media/bss/productattachment/Ziton_ZP1-F4-03_Datasheet.pdf",
+      "source_refs": [
+        "turn181search49",
+        "turn183search9"
+      ],
+      "reason": "An original-manufacturer datasheet mirrored by a UK supplier was located, but its exact front-face imagery was not downloaded and visually reviewed in this pass. No placeholder image or archive match was created."
+    }
+  ],
+  "grouping_decisions": [
+    "Advanced Go and Go+ share one visual family; QuickZone small and QuickZone XL remain separate because their exterior size and zone fascia differ.",
+    "Eaton xDetect small and large metal cabinets share one family composite; xDetect Mini is explicitly outside this photo's scope.",
+    "Protec 3502/3504/3508 are one 3500 family, and 3304/3308 are one legacy 3300 family. Repeat indicators are not silently included.",
+    "Notifier E10/E15 are grouped as one family, with no N16 manual assignment.",
+    "EvacGo is labelled evacuation alert equipment, and TouchControl/6000PLUS are labelled remote units. They are not represented as automatic detector-loop panels."
+  ],
+  "qa": {
+    "new_family_count": 15,
+    "image_count": 15,
+    "official_direct_product_images": 11,
+    "manufacturer_pdf_embedded_images": 4,
+    "families_with_exact_archive_records": 1,
+    "linked_archive_records": 1,
+    "picture_only_families": 14,
+    "all_images_decode": true,
+    "all_original_images_at_least_300px_each_axis": true,
+    "existing_panel_id_collisions": [],
+    "all_selected_images_visually_inspected": true,
+    "pdfs_in_images_directory": false,
+    "generated_images": 0,
+    "manual_images_reconstructed_or_redrawn": 0,
+    "source_pdf_page_numbering": "Physical page index starting at 1",
+    "scope": "Source identity, visual recognition, duplicate/variant grouping, archive ID integrity and provenance checked. No physical-panel emulator/menu validation is claimed."
+  }
+}

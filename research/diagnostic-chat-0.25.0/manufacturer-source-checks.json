@@ -1,0 +1,192 @@
+[
+  {
+    "id": "ctec-cfp-dfu7004010-r4",
+    "url": "https://c-tec.com/download?wpdmdl=13537",
+    "retrievedDate": "2026-11-10",
+    "httpStatus": 200,
+    "sha256": "afa491bc18e43e4bb822acb3b7ca5cec58c30a1daf6e899b51de06db5c905447",
+    "bytes": 3287108,
+    "pageCount": 24,
+    "pagesChecked": [
+      7,
+      8
+    ],
+    "pageTextSha256": {
+      "7": "6ccdb4f40e7e2ba522747599a6b670db5826cb9da40f49ac8978cc6961b1f884",
+      "8": "ccfe9a6f86ab531b06e3a5d65b2092a49d6b25f0b63cb527484af3540276497d"
+    },
+    "metadata": {
+      "format": "PDF 1.4",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "Adobe InDesign 17.1 (Macintosh)",
+      "producer": "Adobe PDF Library 16.0.5",
+      "creationDate": "D:20220714133521+01'00'",
+      "modDate": "D:20220714133533+01'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "check": "Text checked; Texecom page32 and PaxtonAPN1086 page1 diagrams additionally visually reviewed. Document facts only; no competent-person operational review or installed-equipment applicability asserted."
+  },
+  {
+    "id": "texecom-premier-elite-ins176-15",
+    "url": "https://branding.texe.com/uk/uploads/INS176-15_Premier_Elite_Series_Installation_Manual_4.pdf",
+    "retrievedDate": "2026-11-10",
+    "httpStatus": 200,
+    "sha256": "38ae303f9345642abd8c9f1401c7e54c61dfb66747d20106666d5f4a2b991d16",
+    "bytes": 9463396,
+    "pageCount": 152,
+    "pagesChecked": [
+      32,
+      60
+    ],
+    "pageTextSha256": {
+      "32": "ae1f60c75e961567e73d2715212e77a1cab7b61c759cffd5107ad7cc0c526389",
+      "60": "2a7547a8aa35e35e035ea3922967f5e2cd7381e3ce149796625d2b1e13c275f0"
+    },
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "Premier Elite Series Installation Manual",
+      "author": "Adrian Mealing",
+      "subject": "",
+      "keywords": "",
+      "creator": "Microsoft\u00ae Word 2016",
+      "producer": "Microsoft\u00ae Word 2016",
+      "creationDate": "D:20170720171332+01'00'",
+      "modDate": "D:20170720171840+01'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "check": "Text checked; Texecom page32 and PaxtonAPN1086 page1 diagrams additionally visually reviewed. Document facts only; no competent-person operational review or installed-equipment applicability asserted."
+  },
+  {
+    "id": "paxton-net2-apn1061-1.0.1",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1061.pdf",
+    "retrievedDate": "2026-11-10",
+    "httpStatus": 200,
+    "sha256": "61311e1b2a7cfc859fecbd2ee8b777ae7f950260546589f0ab107e6a78eea546",
+    "bytes": 2557356,
+    "pageCount": 2,
+    "pagesChecked": [
+      1,
+      2
+    ],
+    "pageTextSha256": {
+      "1": "9e4445192a8be8270aa0120f50ef890b9fa50244dff9b6768269ee5e6027f414",
+      "2": "7a05e8b2fda7763141a9ec808fab484b516a41db46fe15caae4e5b70d95ec764"
+    },
+    "metadata": {
+      "format": "PDF 1.4",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "Adobe InDesign 17.4 (Windows)",
+      "producer": "Adobe PDF Library 16.0.7",
+      "creationDate": "D:20230421143835+01'00'",
+      "modDate": "D:20230421143836+01'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "check": "Text checked; Texecom page32 and PaxtonAPN1086 page1 diagrams additionally visually reviewed. Document facts only; no competent-person operational review or installed-equipment applicability asserted."
+  },
+  {
+    "id": "paxton-net2-apn1086-1.0.3",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/AN1086.pdf",
+    "retrievedDate": "2026-11-10",
+    "httpStatus": 200,
+    "sha256": "6251317c579addcdbcdb1da105047a1fa55250e7719633cbc25902dde07cb5c7",
+    "bytes": 2935140,
+    "pageCount": 2,
+    "pagesChecked": [
+      1,
+      2
+    ],
+    "pageTextSha256": {
+      "1": "1d496a77d64506a00a526b581b54995f8dcdeac675c15afc401c4d4af553475b",
+      "2": "60b99164d16d7a1dd5844d3b207aa82dfb7e08e6120d6de00db7691e1ac7eaa7"
+    },
+    "metadata": {
+      "format": "PDF 1.4",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "Adobe InDesign 17.4 (Windows)",
+      "producer": "Adobe PDF Library 16.0.7",
+      "creationDate": "D:20231023104428+01'00'",
+      "modDate": "D:20231023104430+01'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "check": "Text checked; Texecom page32 and PaxtonAPN1086 page1 diagrams additionally visually reviewed. Document facts only; no competent-person operational review or installed-equipment applicability asserted."
+  },
+  {
+    "id": "galaxy-dimension-ie1-0063-r1",
+    "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Galaxy%20Dimension%20Install%20Manual.pdf",
+    "retrievedDate": "2026-11-10",
+    "httpStatus": 200,
+    "sha256": "b64fa5be0bd932ecb4bee89767ec1de60ef8742614548a005e982a5833812c14",
+    "bytes": 1777789,
+    "pageCount": 306,
+    "pagesChecked": [
+      25,
+      26,
+      306
+    ],
+    "pageTextSha256": {
+      "25": "a5a82afbdcc3c0c5a6ed32e81709de4630baef16f2f8e5a6fbd3df5d86f465a0",
+      "26": "e034bbad808ff9697f83cfaab1b37cf40215efd2baa632839718ace9aef0e883",
+      "306": "88af66b6e68da09c5c87878a0e35c832789519900f9bf4b314c82cf56112d9c2"
+    },
+    "metadata": {
+      "format": "PDF 1.5",
+      "title": "TOC",
+      "author": "e191049",
+      "subject": "TOC",
+      "keywords": "",
+      "creator": "Adobe PageMaker 7.0",
+      "producer": "Acrobat Distiller 6.0.1 (Windows)",
+      "creationDate": "D:20080312151256Z",
+      "modDate": "D:20110924150012+01'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "check": "Text checked; Texecom page32 and PaxtonAPN1086 page1 diagrams additionally visually reviewed. Document facts only; no competent-person operational review or installed-equipment applicability asserted."
+  },
+  {
+    "id": "advanced-680-165-r05",
+    "url": "https://www.eufireandsecurity.com/wp-content/uploads/2025/03/MxPro5-Product-Manual.pdf",
+    "retrievedDate": "2026-11-10",
+    "httpStatus": 200,
+    "sha256": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b",
+    "bytes": 2804250,
+    "pageCount": 74,
+    "pagesChecked": [
+      1,
+      48,
+      74
+    ],
+    "pageTextSha256": {
+      "1": "bc38690b26988710c4091bff6867e5bfa15168522bad22e54746eaa23a76a4a4",
+      "48": "9bdfd0d22e4461f7b7c64bb3df3311ea492030b8ab386cef75142f67cad59206",
+      "74": "a9ee480d6e495889255cc46c071b6eaa927ff56ff8c90b7c66463c3a7f4e6aae"
+    },
+    "metadata": {
+      "format": "PDF 1.5",
+      "title": "",
+      "author": "Dave Wilson",
+      "subject": "",
+      "keywords": "",
+      "creator": "Microsoft\u00ae Word 2010",
+      "producer": "Microsoft\u00ae Word 2010",
+      "creationDate": "D:20131211130254+00'00'",
+      "modDate": "D:20131211130254+00'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "check": "Text checked; Texecom page32 and PaxtonAPN1086 page1 diagrams additionally visually reviewed. Document facts only; no competent-person operational review or installed-equipment applicability asserted."
+  }
+]

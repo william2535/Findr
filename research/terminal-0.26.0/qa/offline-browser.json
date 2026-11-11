@@ -1,0 +1,67 @@
+{
+  "synthetic": true,
+  "environment": "Linux Chromium; desktop and phone viewport emulation only",
+  "offline": true,
+  "results": [
+    {
+      "width": 390,
+      "status": "passed",
+      "import": {
+        "filename": "synthetic-premier-elite-scan.pdf",
+        "elapsedMs": 3162.363238
+      },
+      "responseMs": [
+        81.15474800000084
+      ],
+      "checks": [
+        "Actual opening character animation and tap-to-reveal",
+        "Actual Start shortcut / typed START retain one persisted transcript",
+        "Number and upload alias reach native picker; cancellation keeps job",
+        "App and PDF/OCR resources ready before network blocked",
+        "Local text/scanned PDF upload and identity in transcript",
+        "Confirmed identity, free-text route, ordinary command words, Enter / Shift+Enter, cited next question",
+        "Saved source PDF opens",
+        "BACK corrects prior answer while retaining original and updating evidence",
+        "Ambiguous reading asks exact points, reference, condition, connection and source",
+        "Reading correction remains in continuous transcript and evidence history",
+        "Second manual resumes pending diagnostic step in same job",
+        "Scrollback survives typing / new reply; Latest message follows output",
+        "Reload preserves full messages / evidence and does not replay introduction",
+        "Reduced motion renders new messages immediately",
+        "390×500 keyboard-like viewport, composer/outcomes reachable",
+        "Give up remains conversational, saves handover and exports reviewed complete record",
+        "Fault found conversation confirms linked evidence separately from parts/retests/restoration"
+      ]
+    },
+    {
+      "width": 1440,
+      "status": "passed",
+      "import": {
+        "filename": "synthetic-premier-elite-text.pdf",
+        "elapsedMs": 362.3555889999989
+      },
+      "responseMs": [
+        84.25122600000032
+      ],
+      "checks": [
+        "Actual opening character animation and tap-to-reveal",
+        "Actual Start shortcut / typed START retain one persisted transcript",
+        "Number and upload alias reach native picker; cancellation keeps job",
+        "App and PDF/OCR resources ready before network blocked",
+        "Local text/scanned PDF upload and identity in transcript",
+        "Confirmed identity, free-text route, ordinary command words, Enter / Shift+Enter, cited next question",
+        "Saved source PDF opens",
+        "BACK corrects prior answer while retaining original and updating evidence",
+        "Ambiguous reading asks exact points, reference, condition, connection and source",
+        "Reading correction remains in continuous transcript and evidence history",
+        "Second manual resumes pending diagnostic step in same job",
+        "Scrollback survives typing / new reply; Latest message follows output",
+        "Reload preserves full messages / evidence and does not replay introduction",
+        "Reduced motion renders new messages immediately",
+        "Give up remains conversational, saves handover and exports reviewed complete record",
+        "Fault found conversation confirms linked evidence separately from parts/retests/restoration"
+      ]
+    }
+  ],
+  "status": "passed"
+}
