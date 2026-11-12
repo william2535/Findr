@@ -1,3 +1,13 @@
+## Full timed practice papers — web 0.39.1
+
+**Quizzes → 10 full papers** adds a third option alongside the 31 subject quizzes and 20 short mocks. Each generated paper has 60 different questions from the existing reviewed bank, mixed across subjects. All 196 points appear across the ten papers. The one-hour practice clock starts on Start, continues while away, survives reload and submits the saved choices when it expires.
+
+You can skip, revisit and change answers before submission. Correctness is hidden until you finish; the result distinguishes correct, incorrect and unanswered questions, with the supporting explanations and sources for all 60. The existing instant-feedback learning quizzes and understanding circles remain separate.
+
+Highfield’s current FESS EPA Kit v5.0 specifies **60 questions in 75 minutes**. FINDR uses the requested **60-minute practice timer**, clearly labelled as unofficial. Confirm your enrolled assessment version with your provider. The saved deadline uses the device clock; this offline learning tool is not a proctored exam or a clock-tampering prevention system.
+
+[Generation and source evidence](research/fess-0.39.1/paper-generation.md). Android remains **0.37.0**.
+
 ## Subject quizzes, FESS mocks and Resistor Lab — web 0.39.0
 
 **Quizzes** is the final navigation entry. Choose from 31 subject quizzes (4–8 questions, about five minutes at your own pace), or keep using the **20 mocks** option. Together each option covers all 196 points in the supplied revision guide. Correct answers play a short ding; wrong answers show the correction and wait for you to select it. Completion reaches 100% after corrections while the original first-attempt score stays separate.

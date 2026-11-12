@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "recordedAt": "2026-11-12T01:42:09.658Z",
+  "environment": "Linux browser; emulated viewports, not a physical phone",
+  "browser": "chromium",
+  "acceleratedExpiry": "Explicit Date.now offset; does not represent a real-hour endurance test",
+  "checks": [
+    {
+      "name": "Actual Quizzes navigation retains31 sections/20 mocks and opens10 full papers",
+      "evidence": {
+        "version": "2026-11-12.1",
+        "questions": 196,
+        "quizzes": 31,
+        "mocks": 20,
+        "papers": 10
+      }
+    },
+    {
+      "name": "Paper menu fits320/390/1440px with at least44px start controls"
+    },
+    {
+      "name": "Real timer advances; skip/back/jump/revised answer and reload preserve the original deadline; no reveal or answer tone",
+      "evidence": {
+        "initialClock": "60:00",
+        "afterClock": "59:59",
+        "deadlineAt": 1794451332397
+      }
+    },
+    {
+      "name": "Submit confirmation can be cancelled; partial submission scores unanswered as zero and exposes60 sourced explanations"
+    },
+    {
+      "name": "All60 real questions answered through UI score60/60; a fresh attempt preserves prior history and reduced-motion reload",
+      "evidence": {
+        "uiSeconds": 11
+      }
+    },
+    {
+      "name": "Accelerated deadline overrun rejects a late click and finalises an unanswered paper at0/60"
+    },
+    {
+      "name": "Accelerated expiry while away from paper and across reload uses saved deadlines and retained answers"
+    },
+    {
+      "name": "Existing mock and section records remain byte-for-byte intact; timed paper answers produce no oscillator tones or model requests"
+    }
+  ],
+  "errors": [],
+  "forbiddenRequests": [],
+  "browserVersion": "154.0.8037.57",
+  "bank": {
+    "version": "2026-11-12.1",
+    "questions": 196,
+    "quizzes": 31,
+    "mocks": 20,
+    "papers": 10
+  },
+  "finishedAt": "2026-11-12T01:42:29.481Z"
+}

@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-11-12T01:44:56.422129+00:00",
+  "webVersion": "0.39.1",
+  "apkVersion": "0.37.0",
+  "offlineBuild": "cb02a06e59e0",
+  "sourceBaseline": "12f286085221fba690cefa6a84c96316d9b6dcd8",
+  "nodeRegression": {
+    "passed": 1960,
+    "failed": 0,
+    "skipped": 0,
+    "durationMs": 51696.422353
+  },
+  "typecheck": "pnpm exec tsc --noEmit: exit 0",
+  "build": "pnpm build: exit 0",
+  "publicBuild": {
+    "publicFiles": 1491,
+    "nativeOnlyFilesExcluded": [
+      "app/data/download-map.json"
+    ],
+    "retainedApkVersions": [
+      "0.37.0",
+      "0.14.1"
+    ],
+    "externalReleaseFilesExcluded": [
+      "FINDR-0.37.0.apk"
+    ],
+    "externalReleaseVerification": [
+      {
+        "filename": "FINDR-0.37.0.apk",
+        "sha256": "e6f91ded97b687b3a69ebfeee46e9a0c3a43b9679ef4fca7b63bf9b5a3a3e37f",
+        "localCopy": true,
+        "localBytesVerified": true
+      }
+    ],
+    "archivedReleaseFilesExcluded": 42,
+    "archivedReleaseBytes": 463833947,
+    "orphanFilesRemoved": 44,
+    "maxStaticAssetBytes": 26214400,
+    "largestStaticAssetBytes": 24126768,
+    "buildBytes": 165627602,
+    "archiveAllowance": 1048576,
+    "verified": true
+  },
+  "browserEvidence": [
+    "browser-chromium.json",
+    "browser-webkit.json",
+    "browser-chromium-offline.json",
+    "controller-storage-results.json"
+  ],
+  "physicalPhoneTested": false,
+  "realHourEnduranceTested": false,
+  "expiryMethod": "Explicit controlled Date.now offset; actual deadline implementation and original IndexedDB persistence",
+  "apkRebuilt": false
+}

@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "recordedAt": "2026-11-12T01:42:35.756Z",
+  "environment": "Linux Chromium;390px emulated viewport",
+  "fixture": "Synthetic60-question bank; injected read/write exceptions and controlled Date.now; audio stub; service workers blocked",
+  "realStorageQuotaTest": false,
+  "physicalPhoneTest": false,
+  "offlineTest": false,
+  "checks": [
+    {
+      "name": "Injected read failure retains disk and Try again recovers without writing a replacement store"
+    },
+    {
+      "name": "Failed new-paper save remains on menu with no stored paper or automatic write loop",
+      "evidence": {
+        "id": "89cb2de2-389a-405a-b9a9-ce21150e5267",
+        "deadlineAt": 1700003600000,
+        "writes": 1
+      }
+    },
+    {
+      "name": "Retry opens the same paper with original one-hour deadline after five minutes away"
+    },
+    {
+      "name": "Failed answer is visible as unsaved while the prior stored answers remain intact"
+    },
+    {
+      "name": "Deadline during a pending answer locks all choices and asks for retry without background write retries"
+    },
+    {
+      "name": "Successful retry saves the accepted pre-deadline answer then finalizes expiry once without duplicate papers",
+      "evidence": {
+        "writesAfterRetry": 2
+      }
+    },
+    {
+      "name": "Failed expiry save shows locked results plus unsaved warning/Retry, retains prior disk and stops automatic retry writes"
+    },
+    {
+      "name": "Retry persists the same expired result once, preserving the earlier paper and unrelated data without answer-feedback audio"
+    }
+  ],
+  "errors": [],
+  "browserVersion": "154.0.8037.57",
+  "finishedAt": "2026-11-12T01:42:42.060Z"
+}

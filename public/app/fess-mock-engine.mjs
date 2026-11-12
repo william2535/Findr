@@ -1,4 +1,5 @@
 // Practice progress is separate from diagnostic jobs and official exam results.
+import {validateFessPaperDefinition,validateFessPaperRun} from './fess-paper-engine.mjs';
 export const FESS_STORE_KEY='fess-mocks:v1';
 export const FESS_STORE_VERSION=1;
 const clone=value=>structuredClone(value);
@@ -7,14 +8,15 @@ const text=value=>typeof value==='string'&&value.trim().length>0;
 const unique=items=>new Set(items).size===items.length;
 
 export function validateFessBank(bank){
- if(!object(bank)||bank.schemaVersion!==1||!text(bank.version)||!Array.isArray(bank.questions)||!bank.questions.length||!Array.isArray(bank.mocks)||!bank.mocks.length||bank.quizzes!==undefined&&!Array.isArray(bank.quizzes)||!object(bank.sources))throw new Error('The FESS practice questions could not be read. Update FINDR and try again.');
- const sets=[...bank.mocks,...(bank.quizzes||[])];
+ if(!object(bank)||bank.schemaVersion!==1||!text(bank.version)||!Array.isArray(bank.questions)||!bank.questions.length||!Array.isArray(bank.mocks)||!bank.mocks.length||bank.quizzes!==undefined&&!Array.isArray(bank.quizzes)||bank.papers!==undefined&&!Array.isArray(bank.papers)||!object(bank.sources))throw new Error('The FESS practice questions could not be read. Update FINDR and try again.');
+ const sets=[...bank.mocks,...(bank.quizzes||[]),...(bank.papers||[])];
  if(!unique(bank.questions.map(q=>q.id))||!unique(sets.map(m=>m.id)))throw new Error('The FESS question bank has duplicate identifiers.');
  for(const q of bank.questions){
   if(!text(q.id)||['__proto__','constructor','prototype'].includes(q.id)||!text(q.question)||!text(q.explanation)||!Array.isArray(q.options)||q.options.length!==4||!unique(q.options.map(o=>o.id))||!q.options.some(o=>o.id===q.correctOptionId)||q.options.some(o=>!text(o.id)||!text(o.text)||!text(o.explanation))||!Array.isArray(q.sourceIds)||!q.sourceIds.length||q.sourceIds.some(id=>!Object.hasOwn(bank.sources,id)||!object(bank.sources[id])))throw new Error('A FESS question is incomplete. Update FINDR before using this mock.');
  }
  const ids=new Set(bank.questions.map(q=>q.id));
  for(const mock of sets)if(!text(mock.id)||!text(mock.title)||!Array.isArray(mock.questionIds)||!mock.questionIds.length||!unique(mock.questionIds)||mock.questionIds.some(id=>!ids.has(id)))throw new Error('A FESS practice set references a missing question.');
+ for(const paper of bank.papers||[])validateFessPaperDefinition(paper,ids);
  for(const source of Object.values(bank.sources)){let url;try{url=new URL(source.url);}catch{}if(!text(source.title)||url?.protocol!=='https:'||url.username||url.password)throw new Error('A FESS source reference is invalid.');}
  return bank;
 }
@@ -25,6 +27,7 @@ export function validateFessStore(value){
  if(value==null)return emptyFessStore();
  if(!object(value)||value.schemaVersion!==FESS_STORE_VERSION||!Array.isArray(value.runs)||!unique(value.runs.map(r=>r.id))||typeof value.soundEnabled!=='boolean'||value.activeRunId!==null&&!text(value.activeRunId))throw new Error('Saved FESS practice could not be read. It has been left unchanged.');
  for(const run of value.runs){
+  if(run?.kind==='paper'){validateFessPaperRun(run);continue;}
   if(!text(run.id)||!text(run.title)||!text(run.bankVersion)||run.kind!==undefined&&!['mock','quiz'].includes(run.kind)||!Array.isArray(run.questions)||!run.questions.length||!unique(run.questions.map(q=>q.id))||!object(run.sources)||!object(run.answers)||!['active','completed'].includes(run.status)||!Number.isFinite(run.startedAt)||!Number.isFinite(run.updatedAt)||run.status==='completed'&&!Number.isFinite(run.finishedAt)||!Number.isInteger(run.cursor)||run.cursor<0||run.cursor>=run.questions.length)throw new Error('A saved FESS run is incomplete. It has been left unchanged.');
   validateFessBank({schemaVersion:1,version:run.bankVersion,questions:run.questions,mocks:[{id:run.id,title:run.title,questionIds:run.questions.map(q=>q.id)}],sources:run.sources});
   for(const [id,answer]of Object.entries(run.answers)){
