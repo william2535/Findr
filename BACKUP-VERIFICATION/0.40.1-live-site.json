@@ -1,0 +1,70 @@
+{
+  "browser": "chromium",
+  "base": "https://findr-fault-finder.floodyyy21.chatgpt.site/app/",
+  "checks": [
+    {
+      "homeWidth": 320,
+      "controlsSameRow": true,
+      "toolboxLeft": true,
+      "disclosureWorks": true
+    },
+    {
+      "homeWidth": 390,
+      "controlsSameRow": true,
+      "toolboxLeft": true,
+      "disclosureWorks": true
+    },
+    {
+      "homeWidth": 430,
+      "controlsSameRow": true,
+      "toolboxLeft": true,
+      "disclosureWorks": true
+    },
+    {
+      "homeWidth": 768,
+      "controlsSameRow": true,
+      "toolboxLeft": true,
+      "disclosureWorks": true
+    },
+    {
+      "homeWidth": 1440,
+      "controlsSameRow": true,
+      "toolboxLeft": true,
+      "disclosureWorks": true
+    },
+    {
+      "emulatorWidth": 320,
+      "fourPerRow": true,
+      "touchTargets": true
+    },
+    {
+      "emulatorWidth": 390,
+      "fourPerRow": true,
+      "touchTargets": true
+    },
+    {
+      "emulatorWidth": 430,
+      "fourPerRow": true,
+      "touchTargets": true
+    },
+    {
+      "emulatorWidth": 768,
+      "fourPerRow": true,
+      "touchTargets": true
+    },
+    {
+      "emulatorWidth": 1440,
+      "fourPerRow": true,
+      "touchTargets": true
+    },
+    {
+      "listPreserved": true,
+      "openPanelWorks": true
+    }
+  ],
+  "errors": [],
+  "physicalPhone": false,
+  "version": "154.0.8037.57",
+  "appVersion": "0.40.1",
+  "status": "passed"
+}
