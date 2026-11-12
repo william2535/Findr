@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "checks": [
+    "injected quota failure leaves previous stored record untouched with retry warning",
+    "retry saves current circuit and clears warning",
+    "rapid mutations serialize writes and preserve newest saved circuit"
+  ]
+}

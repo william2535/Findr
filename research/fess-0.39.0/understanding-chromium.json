@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "recordedAt": "2026-11-12T01:25:20.308Z",
+  "browser": "chromium",
+  "environment": "Linux browser; emulated viewport, not a physical phone",
+  "offlineTest": false,
+  "serviceWorkers": "blocked",
+  "checks": [
+    {
+      "name": "Quizzes is the final main-navigation entry and opens actual section rounds",
+      "evidence": {
+        "version": "2026-11-12.1",
+        "quizzes": 31,
+        "mocks": 20,
+        "questions": 196,
+        "testedQuiz": "quiz-industry-certification"
+      }
+    },
+    {
+      "name": "CCTV subject filter shows only its actual questions and All subjects restores the section menu"
+    },
+    {
+      "name": "Section menu fits320/390/1440px with44px start controls"
+    },
+    {
+      "name": "Wrong answer needs correction before understanding; explicit mark survives reload without changing the first attempt"
+    },
+    {
+      "name": "Section circle progresses toward green after I understand; Continue restores its saved question"
+    },
+    {
+      "name": "Finishing six questions earns a tick, preserves5/6 first score, and does not claim full understanding"
+    },
+    {
+      "name": "All six understanding marks enable explicit final confirmation; only confirmation gives fully green circle and persists reload"
+    },
+    {
+      "name": "Review and confirmation fit mobile/desktop with reduced motion enabled"
+    },
+    {
+      "name": "Saved section reopens through history; all20 original mocks remain available and start independently"
+    },
+    {
+      "name": "Trying a section again starts independent progress while its previously confirmed green achievement stays visible"
+    }
+  ],
+  "errors": [],
+  "layouts": [
+    {
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390
+    }
+  ],
+  "browserVersion": "154.0.8037.57",
+  "bank": {
+    "version": "2026-11-12.1",
+    "quizzes": 31,
+    "mocks": 20,
+    "questions": 196,
+    "testedQuiz": "quiz-industry-certification"
+  },
+  "finishedAt": "2026-11-12T01:25:29.894Z"
+}

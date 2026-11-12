@@ -1,3 +1,15 @@
+## Subject quizzes, FESS mocks and Resistor Lab — web 0.39.0
+
+**Quizzes** is the final navigation entry. Choose from 31 subject quizzes (4–8 questions, about five minutes at your own pace), or keep using the **20 mocks** option. Together each option covers all 196 points in the supplied revision guide. Correct answers play a short ding; wrong answers show the correction and wait for you to select it. Completion reaches 100% after corrections while the original first-attempt score stays separate.
+
+Tap **I understand** as each explanation clicks. The subject quiz’s circle becomes greener, finishing its questions earns a tick, and explicitly confirming the whole section turns the circle fully green. Starting another attempt keeps previously confirmed understanding visible. Runs, answers, understanding and the question/explanation edition are saved locally. Every review includes reasons for all four choices, source references and visible revision notes where the older guide needed qualification or correction.
+
+**Home → Tool box → Resistor lab** finds combinations from the resistors you have, or lets you build and rearrange series/parallel groups in a sandbox. It shows the equivalent resistance live, supports zero-ohm links and open circuits, and keeps your circuit on this device. Search is explicitly bounded to 12 available pieces and up to four per combination; it does not claim to solve every possible network, power rating or tolerance. [Tool details](docs/resistor-lab.md).
+
+These features are included in the app update and do not need an AI model or manual download. External revision-source links need a connection. Current Highfield, Skills England, FIA, Hochiki, NSI and ECS resources are linked with their assessment scope and version; confirm your enrolled EPA with your training provider. FINDR’s learning mocks are not an official paper or exam-grade prediction.
+
+The Android download remains **0.37.0**. Release verification and limitations are recorded in [the FESS research folder](research/fess-0.39.0/).
+
 ## Manual retrieval and downloadable Tool box — web 0.38.0
 
 Panel Pals now builds a versioned inverted index with source-linked heading hints and uses a bounded local search planner. The planner retains the original question, searches only the pal’s selected readable manuals, and records up to three real search attempts. Existing model, citation, variant and diagnostic safeguards remain in place; no new model training or larger model download is claimed. See [the compact assistant plan](docs/COMPACT-PANEL-PALS.md) and [measured retrieval research](research/retrieval-0.38.0/).

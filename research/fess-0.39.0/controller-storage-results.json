@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "environment": "Chromium desktop Linux;390px emulated viewport",
+  "fixture": "Synthetic two-question controller fixture; injected write failures and audio stub",
+  "checks": [
+    "Failed start retains prior empty disk; does not enter an unsaved run",
+    "Retrying the failed start automatically opens the newly saved run",
+    "Wrong answer is shown with unsaved warning while prior disk answers stay unchanged",
+    "Corrections reach100% without inflating first score; every reviewed question explains all options and source",
+    "One feedback event per accepted answer; save retries do not repeat sounds",
+    "Reload restores historical review without playing audio",
+    "Retrying a preference save does not redirect into an earlier run",
+    "Malformed route encoding stays recoverable"
+  ],
+  "errors": [],
+  "browserVersion": "154.0.8037.57"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "browser": "154.0.8037.57",
+  "which": "chromium",
+  "checks": [
+    "320/390px finder fits without page overflow",
+    "actual default stock search finds 1.1k using two 2.2k resistors",
+    "search result opens actual sandbox topology",
+    "moving 1k into parallel group recalculates from 2.1k to 523.8095Ω",
+    "open resistor branch stays distinct from zero and other parallel branches",
+    "invalid edit leaves usable circuit unchanged",
+    "saved mixed circuit and current tab survive reload",
+    "empty group is open; adding a resistor closes the modelled path",
+    "oversized stock rejected without pretending results",
+    "real in-progress search can be cancelled without fabricated results"
+  ],
+  "searchMs": 99,
+  "errors": []
+}

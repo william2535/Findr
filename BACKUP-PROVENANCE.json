@@ -1,20 +1,20 @@
 {
-  "webVersion": "0.38.0",
-  "siteVersion": 85,
+  "webVersion": "0.39.0",
+  "siteVersion": 86,
   "siteProjectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
-  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_a47f5f347b20819198dca16d14e618c2",
-  "deploymentId": "appgdep_6af50b63ea7881918cfdb29c69ca834f",
+  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_3d986e38733881918df3ba2c9b94d9b9",
+  "deploymentId": "appgdep_6af516ae43c88191b37a7498bfb14e56",
   "deploymentStatus": "succeeded",
-  "deploymentUpdatedAt": "2026-11-12T00:42:32.299231+00:00",
+  "deploymentUpdatedAt": "2026-11-12T01:30:43.121285+00:00",
   "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site",
-  "sourceCommit": "bf5050f76a9d9ddd3a0f7b837cfc0c9515fe29d5",
+  "sourceCommit": "12f286085221fba690cefa6a84c96316d9b6dcd8",
   "sourceRepository": "Sites project source repository",
   "githubRepository": "https://github.com/william2535/Findr",
   "githubBranch": "main",
   "backupRevision": "The Git commit containing this provenance and SOURCE-FILES.sha256 identifies the backup; it intentionally differs from the deployment source commit.",
   "sourceManifest": "SOURCE-FILES.sha256",
   "manifestScope": "All source-backup payload files except the checksum manifest itself; includes GitHub setup/export documentation and separately archived recovery files.",
-  "verifiedOriginalSourceFiles": 2862,
+  "verifiedOriginalSourceFiles": 2921,
   "intentionallyDetachedFile": ".openai/hosting.json",
   "detachedHostingReason": "Keep a migrated checkout separate from the original live ChatGPT Site.",
   "intentionalExclusions": "EXPORT-EXCLUSIONS.json and normal private/cache/user-data exclusions; explicit exception: current signed 0.37.0 APK retained as an additional artifact, with checksum and source. Historical export exclusions remain unchanged.",
@@ -24,20 +24,28 @@
     "recoveryArchive": "WORKSPACE-RECOVERY/original-workspace-files.zip"
   },
   "checks": {
-    "scope": "Panel Pal retrieval and a separately downloaded, SHA-pinned original Toolbox pack.",
+    "scope": "196-question FESS bank, 31 subject quizzes, 20 short mocks, audio/score/history/review, understanding indicators and included Resistor Lab.",
     "unitTests": {
-      "passed": 1903,
-      "failed": 0
+      "passed": 1943,
+      "failed": 0,
+      "skipped": 0
     },
+    "focusedTests": 40,
     "productionBuild": "passed",
     "typescript": "passed",
     "publicAssets": "passed",
-    "offlineBuildHash": "df788a7d9a0a",
+    "offlineBuildHash": "1aa01ca47d9c",
     "browserChecks": {
-      "groupedChecksPassed": 16,
-      "environments": "Chromium and WebKit online; Chromium cold offline"
+      "environments": "Chromium and WebKit desktop/mobile layouts; Chromium cold offline",
+      "evidence": [
+        "research/fess-0.39.0/browser-chromium.json",
+        "research/fess-0.39.0/browser-webkit.json",
+        "research/fess-0.39.0/understanding-chromium.json",
+        "research/fess-0.39.0/understanding-webkit.json",
+        "research/resistor-lab-0.39.0/chromium.json",
+        "research/resistor-lab-0.39.0/webkit.json"
+      ]
     },
-    "offlineVerified": "Prepared Toolbox pack, saved manual retrieval and conversations tested with networking disabled in Chromium.",
     "android": {
       "versionName": "0.37.0",
       "versionCode": 27,
@@ -45,48 +53,45 @@
       "apkUnchanged": true
     },
     "limitations": [
-      "No physical iPhone or Android browser tested in this release.",
-      "WebKit executor cannot establish app-shell CacheStorage readiness; cold offline tested in Chromium.",
-      "Normal Panel Pal browser tests used clearly labelled manual search, not installed conversational model inference.",
-      "Experimental 23.69 MB encoder benchmark is not shipped or claimed cold-offline ready.",
-      "No new model training; retrieval benchmark is source relevance, not universal answer accuracy.",
-      "APK remains 0.37.0."
+      "No physical iPhone or Android test.",
+      "No new local-inference or authenticated AI-provider testing.",
+      "Original uploaded PDF and private extraction files are excluded; the adapted application question bank is included."
     ],
     "evidence": [
-      "research/toolbox-pack-0.38.0/README.md",
-      "research/retrieval-0.38.0/README.md"
+      "research/fess-0.39.0/README.md",
+      "research/resistor-lab-0.39.0/README.md"
     ],
-    "verificationRecord": "research/toolbox-pack-0.38.0/release-validation.json"
+    "verificationRecord": "research/fess-0.39.0/release-checks.json"
   },
   "secretReview": {
-    "sourceCommit": "bf5050f76a9d9ddd3a0f7b837cfc0c9515fe29d5",
-    "copiedFiles": 49,
+    "sourceCommit": "12f286085221fba690cefa6a84c96316d9b6dcd8",
+    "copiedFiles": 67,
     "changedTextFilesScanned": 40,
     "candidates": [],
-    "allEligibleSourceFilesVerified": 2862,
+    "allEligibleSourceFilesVerified": 2921,
     "detachedHostingVerified": true,
     "recoveryArchiveUnchanged": true,
     "limitations": "Changed text plus reviewed baseline; no mathematical absence proof. One explicitly retained signed APK is an additional verified release artifact; private signing key, model weights and downloaded user manuals remain excluded.",
-    "reviewScope": "Current 0.38.0 source changes plus previously reviewed complete source backup; retained signed APK checksum unchanged."
+    "reviewScope": "Current 0.39.0 source changes plus previously reviewed complete source backup; original uploaded PDF/private extracts excluded; retained signed APK checksum unchanged."
   },
-  "preparedAt": "2026-11-12T00:43:08.730658+00:00",
+  "preparedAt": "2026-11-12T01:31:18.825007+00:00",
   "deploymentArchive": {
-    "sha256": "5052b8d68f8dc327f04984b56855497c32f6008a71e16e89e93e483f401709dd",
-    "bytes": 166144000,
-    "files": 1585,
+    "sha256": "0c941f88965da940787ecdd7a39fa9fbfab0189bc686f744c1deb65c1b6cc71b",
+    "bytes": 166707200,
+    "files": 1594,
     "note": "Canonical stored Sites archive; distinct from locally prepared tar."
   },
   "previousPublishedRelease": {
-    "webVersion": "0.37.1",
-    "siteVersion": 84,
-    "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_9565b101117c81919577b6904503ed5d",
-    "deploymentId": "appgdep_6af505cfd2d081918d1918595076ca29",
+    "webVersion": "0.38.0",
+    "siteVersion": 85,
+    "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_a47f5f347b20819198dca16d14e618c2",
+    "deploymentId": "appgdep_6af50b63ea7881918cfdb29c69ca834f",
     "deploymentStatus": "succeeded",
-    "deploymentUpdatedAt": "2026-11-12T00:18:43.414041+00:00",
-    "sourceCommit": "d1ff3d032895efa02b4f2ad8188e2d9508fbdf00",
+    "deploymentUpdatedAt": "2026-11-12T00:42:32.299231+00:00",
+    "sourceCommit": "bf5050f76a9d9ddd3a0f7b837cfc0c9515fe29d5",
     "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site"
   },
-  "publicationNote": "Web 0.38.0 published as Site 85. Android APK remains 0.37.0/code 27 and is unchanged; no new Android release or tag was created.",
+  "publicationNote": "Web 0.39.0 published as Site 86; native deployment status verified succeeded. Android APK remains 0.37.0/code 27 and is unchanged; no new Android release or tag was created.",
   "additionalRetainedArtifacts": [
     {
       "path": "public/releases/FINDR-0.37.0.apk",
