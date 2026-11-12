@@ -1,20 +1,20 @@
 {
-  "webVersion": "0.37.0",
-  "siteVersion": 83,
+  "webVersion": "0.37.1",
+  "siteVersion": 84,
   "siteProjectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
-  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_f2eb5baa9d408191889d9804798c1f8c",
-  "deploymentId": "appgdep_6af4fe7a5b88819186969a6a8f4b95de",
+  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_9565b101117c81919577b6904503ed5d",
+  "deploymentId": "appgdep_6af505cfd2d081918d1918595076ca29",
   "deploymentStatus": "succeeded",
-  "deploymentUpdatedAt": "2026-11-11T23:47:24.986517+00:00",
+  "deploymentUpdatedAt": "2026-11-12T00:18:43.414041+00:00",
   "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site",
-  "sourceCommit": "74cdb678f93c20fa71a43a2c6a90ef03f98a2d88",
+  "sourceCommit": "d1ff3d032895efa02b4f2ad8188e2d9508fbdf00",
   "sourceRepository": "Sites project source repository",
   "githubRepository": "https://github.com/william2535/Findr",
   "githubBranch": "main",
   "backupRevision": "The Git commit containing this provenance and SOURCE-FILES.sha256 identifies the backup; it intentionally differs from the deployment source commit.",
   "sourceManifest": "SOURCE-FILES.sha256",
   "manifestScope": "All source-backup payload files except the checksum manifest itself; includes GitHub setup/export documentation and separately archived recovery files.",
-  "verifiedOriginalSourceFiles": 2790,
+  "verifiedOriginalSourceFiles": 2820,
   "intentionallyDetachedFile": ".openai/hosting.json",
   "detachedHostingReason": "Keep a migrated checkout separate from the original live ChatGPT Site.",
   "intentionalExclusions": "EXPORT-EXCLUSIONS.json and normal private/cache/user-data exclusions; explicit exception: current signed 0.37.0 APK retained as an additional artifact, with checksum and source. Historical export exclusions remain unchanged.",
@@ -24,95 +24,71 @@
     "recoveryArchive": "WORKSPACE-RECOVERY/original-workspace-files.zip"
   },
   "checks": {
-    "scope": "Offline Toolbox calculators and Android 0.37.0/code 27 wrapper update.",
+    "scope": "Home Detailed/Compact grid preference, compact Toolbox dropdown, soft yellow sparks and Zone Sketch link.",
     "unitTests": {
       "passed": 1872,
       "failed": 0,
       "skipped": 0
     },
-    "productionBuild": "passed after final Worker release-route correction",
+    "productionBuild": "passed",
     "typescript": "passed",
     "publicAssets": "passed",
-    "offlineBuildHash": "7423eeefce3a",
+    "offlineBuildHash": "bd8308995bf3",
     "browserChecks": {
-      "Chromium154": 7,
-      "WebKit26": 5
+      "homeGrid": 7,
+      "sparksChromium": 5,
+      "sparksWebKit": 5,
+      "finalSecretIconAndColdOffline": "passed"
     },
-    "offlineVerified": "Chromium cold offline app reload and calculators with retained synthetic saved pal/log; WebKit online layout only.",
+    "offlineVerified": "Final current-build Chromium cold offline home and Toolbox checks passed.",
     "android": {
-      "package": "com.findr.app",
       "versionName": "0.37.0",
       "versionCode": 27,
-      "signatureSchemes": [
-        "v2",
-        "v3"
-      ],
-      "signerSha256": "6075a73725dac5a3cc1f7b6b32c5e1df907cd1ca4b5b611f4c1c1d2fd502fefd",
-      "zipAligned": true,
-      "bundledAppFilesCompared": 1388,
-      "zipCrcAndUniqueEntries": true,
-      "oldApkUnchanged": true,
-      "physicalDeviceTested": false,
-      "emulatorTested": false
+      "rebuilt": false,
+      "apkUnchanged": true
     },
     "limitations": [
-      "No physical Android phone, Android emulator or iPhone test.",
-      "No authenticated AI provider calls or new local-inference benchmark.",
-      "APK compilation/signing and asset checks do not establish on-device WebView/PDF/OCR/inference behaviour."
+      "No physical Android or iPhone test.",
+      "Actual background-tab suspension not verified.",
+      "No new local-inference or authenticated AI-provider testing."
     ],
-    "evidence": "research/toolbox-0.37.0/README.md",
-    "verificationRecord": "research/toolbox-0.37.0/release-validation.json",
-    "postRouteCorrection": {
-      "releasePolicyTestsPassed": 17,
-      "build": "passed",
-      "publicAssetGate": "passed",
-      "appAndApkBytes": "unchanged",
-      "rawDownloadBytesAndSHA256": "verified",
-      "fullSuiteTestsPassed": 1872,
-      "compiledProductionRouteChecksPassed": 8
-    },
+    "evidence": "research/home-grid-0.37.1/README.md",
+    "verificationRecord": "research/home-grid-0.37.1/release-validation.json",
     "liveVerification": {
       "status": "passed",
-      "checksPerRun": 9,
-      "currentApkGetAndHeadStatus": 307,
-      "sourceMatchedAssets": 7,
-      "homeShowsToolboxAndVersion": true,
-      "evidence": [
-        "BACKUP-VERIFICATION/0.37.0-live-head.json",
-        "BACKUP-VERIFICATION/0.37.0-live-get.json"
-      ],
-      "access": "Official Sites verification header was used after unauthenticated executor access returned edge 403; credentials are excluded."
+      "sourceMatchedFiles": 8,
+      "evidence": "BACKUP-VERIFICATION/0.37.1-live.json",
+      "access": "Official Sites verification header; credential values excluded."
     }
   },
   "secretReview": {
-    "sourceCommit": "74cdb678f93c20fa71a43a2c6a90ef03f98a2d88",
-    "copiedFiles": 5,
-    "changedTextFilesScanned": 5,
+    "sourceCommit": "d1ff3d032895efa02b4f2ad8188e2d9508fbdf00",
+    "copiedFiles": 40,
+    "changedTextFilesScanned": 24,
     "candidates": [],
-    "allEligibleSourceFilesVerified": 2790,
+    "allEligibleSourceFilesVerified": 2820,
     "detachedHostingVerified": true,
     "recoveryArchiveUnchanged": true,
     "limitations": "Changed text plus reviewed baseline; no mathematical absence proof. One explicitly retained signed APK is an additional verified release artifact; private signing key, model weights and downloaded user manuals remain excluded.",
-    "reviewScope": "Five current source-serving text changes and two credential-free live verification records, plus the previously reviewed complete 0.37.0 source and additional APK artifact.",
-    "additionalApkVerified": true
+    "reviewScope": "Current 0.37.1 source changes plus previously reviewed complete source backup; retained signed APK checksum unchanged."
   },
-  "preparedAt": "2026-11-11T23:50:43.808502+00:00",
+  "preparedAt": "2026-11-12T00:19:11.062880+00:00",
   "deploymentArchive": {
-    "sha256": "c3f70f2c8bb914f84491e0a1c333b9b50959461f38e5575d9768f9f435d32e08",
-    "bytes": 165816320,
-    "files": 1574
+    "sha256": "a3f7e426cc2af70a7414fc4737d88ef608def7fae30ba97dcd2438776b191b68",
+    "bytes": 165969920,
+    "files": 1578
   },
   "previousPublishedRelease": {
-    "webVersion": "0.36.2",
-    "siteVersion": 80,
-    "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_6a2ca39c9e1881919cb06df2df54c429",
-    "deploymentId": "appgdep_6af4f648d42481918ae310a252405f60",
+    "webVersion": "0.37.0",
+    "siteVersion": 83,
+    "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_f2eb5baa9d408191889d9804798c1f8c",
+    "deploymentId": "appgdep_6af4fe7a5b88819186969a6a8f4b95de",
     "deploymentStatus": "succeeded",
-    "deploymentUpdatedAt": "2026-11-11T23:12:27.777646+00:00",
-    "sourceCommit": "3c731f770e5bbc48da64e204331fab20a38a8c60",
+    "deploymentUpdatedAt": "2026-11-11T23:47:24.986517+00:00",
+    "sourceCommit": "74cdb678f93c20fa71a43a2c6a90ef03f98a2d88",
     "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site"
   },
-  "publicationNote": "Site 83 deployment and live assets/routes verified. The signed Android APK is available through an immutable GitHub raw file and published release-page links; there are no uploaded release assets. Site 81 was saved but not deployed; Site 82 was superseded by the verified server-route correction.",
+  "publicationNote": "Web 0.37.1 published as Site 84. Android APK remains 0.37.0/code 27 and is unchanged; no new Android release or tag was created.",
   "additionalRetainedArtifacts": [
     {
       "path": "public/releases/FINDR-0.37.0.apk",

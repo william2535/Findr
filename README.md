@@ -1,3 +1,9 @@
+## Home layout — web 0.37.1
+
+Home’s Tool box is now a small48px icon-only square just below the view switch. Its native dropdown is closed on first use; the icon retains a Tool box label for assistive technology and a hover tooltip. The new **Detailed / Compact grid** switch reduces card padding, arranges shortcuts and packs into columns, and folds the longer installation/about guides in Compact view. Text remains readable and interactive controls retain touch targets; this does not change browser zoom. Layout and dropdown state are saved locally, independently of manuals, jobs and calculator drafts. The existing yellow heading glow remains. Occasional soft yellow sparks now brighten, fade and sometimes shoot through the background; they pause while hidden or when reduced motion is requested. Home also links to the verified [Zone Sketch Tester Hub](https://william2535.github.io/FIRE-ZONE-PLAN-APP/beta.html) in a separate tab.
+
+This is a web/PWA layout update. The verified signed Android download remains0.37.0; it has not been rebuilt or relabelled. Browser checks and measured page-height changes are in `research/home-grid-0.37.1/`.
+
 ## Tool box and Android update — 0.37.0
 
 Home now has a **Tool box** with fire-alarm battery capacity (24/72/custom hours), DC voltage drop, 4/5/6-band resistor colours and conductor resistance / R1 + R2. The calculators run locally, save their inputs separately from fault logs, and show formulas, assumptions and sources. They do not establish equipment limits or compliance. [Calculation references](research/toolbox-0.37.0/calculators-and-sources.md).

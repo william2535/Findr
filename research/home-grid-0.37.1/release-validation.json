@@ -1,0 +1,23 @@
+{
+  "webVersion": "0.37.1",
+  "apkVersion": "0.37.0",
+  "apkUnchanged": true,
+  "offlineBuild": "bd8308995bf3",
+  "regressionTests": {
+    "passed": 1872,
+    "failed": 0,
+    "skipped": 0
+  },
+  "typecheck": true,
+  "webBuild": true,
+  "publicAssetGate": true,
+  "homeGridBrowserChecks": 7,
+  "sparksChromiumChecks": 5,
+  "sparksWebKitChecks": 5,
+  "finalSecretIconAndColdOffline": true,
+  "physicalDevicesTested": false,
+  "realBackgroundTabSuspensionVerified": false,
+  "zoneSketchTesterUrl": "https://william2535.github.io/FIRE-ZONE-PLAN-APP/beta.html",
+  "zoneSketchHttpStatus": 200,
+  "published": false
+}

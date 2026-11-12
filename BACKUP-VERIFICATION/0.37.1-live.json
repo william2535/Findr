@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "webVersion": "0.37.1",
+  "siteVersion": 84,
+  "sourceCommit": "d1ff3d032895efa02b4f2ad8188e2d9508fbdf00",
+  "access": "Provided Sites verification header",
+  "checks": [
+    {
+      "path": "/app-release.json",
+      "status": 200,
+      "sha256": "6d2342e1eb69e6279bd4ca125e0e88f410f182c927c5e7bbd4f0abc6a305e41e"
+    },
+    {
+      "path": "/app/version.mjs",
+      "status": 200,
+      "sha256": "f7bfa67c71ea291c75adc25732151f61da5bdaf257ad4d50dc3a015bda7ce783"
+    },
+    {
+      "path": "/app/app.mjs",
+      "status": 200,
+      "sha256": "896b64b3ff8c098395e6b12017a48019833bbe76bdd9bf5b7439a3880fa9a37f"
+    },
+    {
+      "path": "/app/home-view.mjs",
+      "status": 200,
+      "sha256": "88765c9be4c702cb56e36bf5199b451c682e9d21ec278e7bde4fa5dfeb473d85"
+    },
+    {
+      "path": "/app/home-view.css",
+      "status": 200,
+      "sha256": "2b8d1ee6969d5ae3b2dcf4eae8a5791b00f272f0784c72f044e178d53e36d1d3"
+    },
+    {
+      "path": "/app/ambient-sparks.mjs",
+      "status": 200,
+      "sha256": "a4cb125db7b3cb3d25e7c6f0617053cbd0e7f97f5d08993e4c120f741a69dcfc"
+    },
+    {
+      "path": "/app/motion.css",
+      "status": 200,
+      "sha256": "78b74d4d426c3df8a7996542fef1e69130310e1ebae585751d3e42d868fe39ee"
+    },
+    {
+      "path": "/app/precache.js",
+      "status": 200,
+      "sha256": "5d55b73da5e0c6c08cebe44535f47836ff3063d3806f75496adee298593d0875"
+    }
+  ]
+}

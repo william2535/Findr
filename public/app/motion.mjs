@@ -1,3 +1,4 @@
+import {createAmbientSparks} from './ambient-sparks.mjs';
 // Decorative motion only: never changes a job, loading state or panel indicator.
 // Heading glow, edge traces and short surface reveals; the logo and tiles stay matte.
 const SURFACES = '.project-badge,.home-pack-card,.home-import-callout,.panel-card,.pack,.manual,.device-card,.device-pack-card,.emulator-profile-card,.menu-map-card,.menu-result,.wiring-card,.wiring-family-card,.wiring-brand-card,.field-tool,.resume-session';
@@ -7,6 +8,7 @@ const HEADINGS = '.home-intro,.section-head,.emulator-landing-head,.menu-heading
 const IGNORED = '.terminal-line,.terminal-history,.diagnostic-transcript,.reader-canvas,.pdfViewer,canvas,.practice-keypad,.minerva-fascia,.cfp-fascia,.sigma-fascia';
 
 export function createInterfaceMotion({root}){
+ const sparks=createAmbientSparks();
  let route='',scheduled=0,destroyed=false;
  const observed=new Set(),entered=new Set(),entrances=new Set();
  // Interface animations are always enabled, regardless of any legacy saved preference.
@@ -55,6 +57,6 @@ export function createInterfaceMotion({root}){
  sync();
  return {
   refresh:schedule,
-  destroy(){destroyed=true;mutations.disconnect();visibility?.disconnect();cancelAnimationFrame(scheduled);cancelEntrances();observed.clear();document.removeEventListener('visibilitychange',sync);}
+  destroy(){destroyed=true;sparks.destroy();mutations.disconnect();visibility?.disconnect();cancelAnimationFrame(scheduled);cancelEntrances();observed.clear();document.removeEventListener('visibilitychange',sync);}
  };
 }

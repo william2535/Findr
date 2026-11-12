@@ -1,0 +1,175 @@
+{
+  "status": "passed",
+  "recordedAt": "2026-11-12T00:00:17.191Z",
+  "profile": "/workspace/findr-homegrid0371-shxEgV",
+  "physicalIPhone": false,
+  "fixture": "Three catalogue packs with labelled synthetic saved-PDF bytes and usage; isolated browser profile, no real customer data.",
+  "checks": [
+    {
+      "name": "Fresh Home defaults to Detailed with Tool box closed; native Enter/Space opens and closes it"
+    },
+    {
+      "name": "390px compact Home reduces scrolling, preserves every link/action and has no overflow or undersized view/dropdown controls",
+      "evidence": {
+        "width": 390,
+        "detailed": 5051,
+        "compact": 2612,
+        "compactAllExpanded": 4739,
+        "reductionPx": 2439,
+        "reductionPercent": 48,
+        "sameContentReductionPx": 312
+      }
+    },
+    {
+      "name": "320px compact Home reduces scrolling, preserves every link/action and has no overflow or undersized view/dropdown controls",
+      "evidence": {
+        "width": 320,
+        "detailed": 5995,
+        "compact": 2977,
+        "compactAllExpanded": 5186,
+        "reductionPx": 3018,
+        "reductionPercent": 50,
+        "sameContentReductionPx": 809
+      }
+    },
+    {
+      "name": "1440px compact Home reduces scrolling, preserves every link/action and has no overflow or undersized view/dropdown controls",
+      "evidence": {
+        "width": 1440,
+        "detailed": 3405,
+        "compact": 1619,
+        "compactAllExpanded": 2783,
+        "reductionPx": 1786,
+        "reductionPercent": 52,
+        "sameContentReductionPx": 622
+      }
+    },
+    {
+      "name": "All four calculators remain reachable through the open Tool box; returning Home keeps its view and disclosure state"
+    },
+    {
+      "name": "Reload restores Compact grid, open Tool box and individual extra-section preferences"
+    },
+    {
+      "name": "Real cold-offline Home restores preferences, switches views and keeps saved PDF metadata/log/calculator drafts unchanged"
+    }
+  ],
+  "heights": [
+    {
+      "width": 390,
+      "detailed": 5051,
+      "compact": 2612,
+      "compactAllExpanded": 4739,
+      "reductionPx": 2439,
+      "reductionPercent": 48,
+      "sameContentReductionPx": 312
+    },
+    {
+      "width": 320,
+      "detailed": 5995,
+      "compact": 2977,
+      "compactAllExpanded": 5186,
+      "reductionPx": 3018,
+      "reductionPercent": 50,
+      "sameContentReductionPx": 809
+    },
+    {
+      "width": 1440,
+      "detailed": 3405,
+      "compact": 1619,
+      "compactAllExpanded": 2783,
+      "reductionPx": 1786,
+      "reductionPercent": 52,
+      "sameContentReductionPx": 622
+    }
+  ],
+  "errors": [],
+  "browserVersion": "154.0.8037.57",
+  "seed": [
+    {
+      "id": "ade-security",
+      "title": "ADE panel pack"
+    },
+    {
+      "id": "acre-vanderbilt-access-control",
+      "title": "Acre / Vanderbilt panel pack"
+    },
+    {
+      "id": "ademco-security",
+      "title": "Ademco panel pack"
+    }
+  ],
+  "before": {
+    "manuals": [
+      {
+        "id": "act-6137ac1ea5e1",
+        "brand": "ACT",
+        "category": "access-control",
+        "models": [
+          "10 and 20 digi keypad",
+          "10 Digital Keypad",
+          "10 Keypad"
+        ],
+        "title": "SYNTHETIC HOME DISPLAY QA — ACT 10 and 20 digi keypad",
+        "type": "reference",
+        "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/ACT%2010%20and%2020%20digi%20keypad.pdf",
+        "source": "https://www.ukwatchsecurity.co.uk/engineers.php",
+        "revision": null,
+        "status": "file-hash",
+        "sha256": "ab79a044fbc1e72ff88f68aa57169ccb3e794d3ed8dcd3de99472b21dfd9c582",
+        "bytes": 2068,
+        "pages": null,
+        "savedAt": 100
+      },
+      {
+        "id": "ade-ac5884f0ac8d",
+        "brand": "ADE",
+        "category": "security",
+        "models": [
+          "Accenta G3 Optima G3"
+        ],
+        "title": "SYNTHETIC HOME DISPLAY QA — ADE Accenta G3 Optima G3 Installation manual",
+        "type": "installation",
+        "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/ADE%20Accenta%20G3%20Optima%20G3%20Installation%20manual.pdf",
+        "source": "https://www.ukwatchsecurity.co.uk/engineers.php",
+        "revision": null,
+        "status": "file-hash",
+        "sha256": "ed7fb5ac45b69041ac649754c1cd36107aa2503b1f437bed877f492197191f1c",
+        "bytes": 2068,
+        "pages": null,
+        "savedAt": 100
+      },
+      {
+        "id": "ademco-77e192934d9d",
+        "brand": "Ademco",
+        "category": "security",
+        "models": [
+          "Accord"
+        ],
+        "title": "SYNTHETIC HOME DISPLAY QA — Ademco Accord Installation",
+        "type": "installation",
+        "url": "https://www.ukwatchsecurity.co.uk/engineer-manuals/Manuals/Ademco%20Accord%20Installation%20.pdf",
+        "source": "https://www.ukwatchsecurity.co.uk/engineers.php",
+        "revision": null,
+        "status": "file-hash",
+        "sha256": "2fb9c3344ad7a3d01916bebb2effd6590a98cc80ca0ee511476a4f5d17b36c0e",
+        "bytes": 2068,
+        "pages": null,
+        "savedAt": 100
+      }
+    ],
+    "log": {
+      "id": "qa-log",
+      "raw": "24.1 V",
+      "source": "synthetic preservation check"
+    },
+    "calc": "{\"schemaVersion\":1,\"drafts\":{\"battery\":{\"standbyCurrent\":\"100\"}}}"
+  },
+  "shell": {
+    "ready": true,
+    "build": "b8286d26d002",
+    "version": "0.37.1",
+    "verification": "sha256-v1"
+  },
+  "finishedAt": "2026-11-12T00:00:27.535Z"
+}

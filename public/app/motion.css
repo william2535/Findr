@@ -75,3 +75,10 @@
  .motion-rail::before { display: none !important; }
  .motion-title { background: none !important; color: inherit !important; animation: none !important; }
 }
+
+/* Antialiased canvas particles sit behind the interface, without a painted box. */
+body{isolation:isolate}
+.ambient-sparks{position:fixed;inset:0;z-index:-1;pointer-events:none!important;user-select:none;background:transparent;border:0;border-radius:0;box-shadow:none;filter:none;image-rendering:auto}
+body:has(#fault-terminal-entry)>.ambient-sparks{visibility:hidden}
+@media(prefers-reduced-motion:reduce){.ambient-sparks{display:none!important}}
+@media print{.ambient-sparks{display:none!important}}

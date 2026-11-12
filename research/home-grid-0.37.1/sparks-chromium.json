@@ -1,0 +1,137 @@
+{
+  "status": "passed",
+  "recordedAt": "2026-11-12T00:08:11.565Z",
+  "browser": "chromium",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "physicalIPhone": false,
+  "checks": [
+    {
+      "name": "Zone Sketch Home link targets verified beta URL in a separate safe tab; Compact grid remains usable"
+    },
+    {
+      "name": "Real warm-yellow burst has soft alpha edges, rounded caps, moving/fading pixels and visible rendered gutter light",
+      "evidence": {
+        "visibleYellowChangedPixels": 248,
+        "peakBrightnessDifference": 642
+      }
+    },
+    {
+      "name": "Actual scheduled shooting burst draws an elongated fading trail",
+      "evidence": {
+        "active": "true",
+        "kind": "shoot",
+        "alpha": 14421,
+        "max": 253,
+        "coloured": 465,
+        "soft": 438,
+        "yellow": 279,
+        "levels": 104,
+        "signature": 421987152,
+        "bounds": {
+          "x0": 369,
+          "y0": 676,
+          "x1": 386,
+          "y1": 709
+        },
+        "scale": 1,
+        "lineCap": "round",
+        "css": {
+          "pointerEvents": "none",
+          "zIndex": "-1",
+          "display": "block"
+        }
+      }
+    },
+    {
+      "name": "Real reduced-motion preference immediately clears active particles and keeps canvas idle/hidden"
+    },
+    {
+      "name": "Decorative layer never intercepts pointer controls or produces page errors"
+    }
+  ],
+  "errors": [],
+  "scope": "Real-time canvas bursts, rendered page pixels and layout. No fabricated particles or inference. Headless tab visibility stays visible; actual background-tab suspension not verified here.",
+  "browserVersion": "154.0.8037.57",
+  "frames": [
+    {
+      "active": "true",
+      "kind": "spark",
+      "alpha": 21614,
+      "max": 255,
+      "coloured": 549,
+      "soft": 506,
+      "yellow": 312,
+      "levels": 131,
+      "signature": 1962041610,
+      "bounds": {
+        "x0": 2,
+        "y0": 303,
+        "x1": 21,
+        "y1": 322
+      },
+      "scale": 1,
+      "lineCap": "round",
+      "css": {
+        "pointerEvents": "none",
+        "zIndex": "-1",
+        "display": "block"
+      }
+    },
+    {
+      "active": "true",
+      "kind": "spark",
+      "alpha": 14741,
+      "max": 223,
+      "coloured": 448,
+      "soft": 418,
+      "yellow": 233,
+      "levels": 120,
+      "signature": 819828284,
+      "bounds": {
+        "x0": 3,
+        "y0": 307,
+        "x1": 20,
+        "y1": 324
+      },
+      "scale": 1,
+      "lineCap": "round",
+      "css": {
+        "pointerEvents": "none",
+        "zIndex": "-1",
+        "display": "block"
+      }
+    }
+  ],
+  "renderedPixels": {
+    "visibleYellowChangedPixels": 248,
+    "peakBrightnessDifference": 642
+  },
+  "shooting": {
+    "active": "true",
+    "kind": "shoot",
+    "alpha": 14421,
+    "max": 253,
+    "coloured": 465,
+    "soft": 438,
+    "yellow": 279,
+    "levels": 104,
+    "signature": 421987152,
+    "bounds": {
+      "x0": 369,
+      "y0": 676,
+      "x1": 386,
+      "y1": 709
+    },
+    "scale": 1,
+    "lineCap": "round",
+    "css": {
+      "pointerEvents": "none",
+      "zIndex": "-1",
+      "display": "block"
+    }
+  },
+  "finishedAt": "2026-11-12T00:08:45.457Z"
+}
