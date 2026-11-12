@@ -1,0 +1,14 @@
+{
+  "webVersion": "0.39.2",
+  "offlineBuild": "d31cfc89d315",
+  "nodeTests": {
+    "pass": 1960,
+    "fail": 0,
+    "skipped": 0
+  },
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "publicBuildVerification": "passed",
+  "androidVersion": "0.37.0",
+  "physicalIPhoneTested": false
+}

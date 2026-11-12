@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "browser": "webkit",
+  "physicalPhone": false,
+  "checks": [
+    "Original banner loads at1280x319 and retains the beta link/new tab",
+    "320/390/1440px: icon-only44px controls, compact group, uncropped image, no horizontal overflow, both layouts work",
+    "Saved view and Tool box state survive reload; accessible controls work with reduced motion"
+  ],
+  "errors": [],
+  "viewports": [
+    {
+      "width": 320,
+      "toolbar": {
+        "x": 198,
+        "y": 238.78125,
+        "width": 102,
+        "height": 54
+      },
+      "buttons": [
+        {
+          "width": 44,
+          "height": 44,
+          "text": "",
+          "pressed": "true",
+          "label": "Detailed view"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "text": "",
+          "pressed": "false",
+          "label": "Compact grid view"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "toolbar": {
+        "x": 268,
+        "y": 256.21875,
+        "width": 102,
+        "height": 54
+      },
+      "buttons": [
+        {
+          "width": 44,
+          "height": 44,
+          "text": "",
+          "pressed": "true",
+          "label": "Detailed view"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "text": "",
+          "pressed": "false",
+          "label": "Compact grid view"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "toolbar": {
+        "x": 1208,
+        "y": 408.21875,
+        "width": 102,
+        "height": 54
+      },
+      "buttons": [
+        {
+          "width": 44,
+          "height": 44,
+          "text": "",
+          "pressed": "true",
+          "label": "Detailed view"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "text": "",
+          "pressed": "false",
+          "label": "Compact grid view"
+        }
+      ]
+    }
+  ],
+  "browserVersion": "26.0"
+}

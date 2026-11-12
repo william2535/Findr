@@ -1,3 +1,7 @@
+## Home banner and compact view buttons — web 0.39.2
+
+Home uses the owner-supplied Zone Sketch banner artwork as the link to its existing beta tester page. The image is bundled unchanged for offline display. Detailed and Compact grid are now small icon-only buttons, with accessible names, hover titles, 44px tap targets and the same saved preference. Android remains **0.37.0**.
+
 ## Full timed practice papers — web 0.39.1
 
 **Quizzes → 10 full papers** adds a third option alongside the 31 subject quizzes and 20 short mocks. Each generated paper has 60 different questions from the existing reviewed bank, mixed across subjects. All 196 points appear across the ten papers. The one-hour practice clock starts on Start, continues while away, survives reload and submits the saved choices when it expires.

@@ -1,0 +1,107 @@
+{
+  "status": "passed",
+  "browser": "chromium",
+  "physicalPhone": false,
+  "checks": [
+    "Original banner loads at1280x319 and retains the beta link/new tab",
+    "320/390/1440px: icon-only44px controls, compact group, uncropped image, no horizontal overflow, both layouts work",
+    "Saved view and Tool box state survive reload; accessible controls work with reduced motion",
+    "Final verified cache cold-reloads offline with original banner and saved icon selector working"
+  ],
+  "errors": [],
+  "viewports": [
+    {
+      "width": 320,
+      "toolbar": {
+        "x": 198,
+        "y": -5.21875,
+        "width": 102,
+        "height": 54
+      },
+      "buttons": [
+        {
+          "width": 44,
+          "height": 44,
+          "text": "",
+          "pressed": "true",
+          "label": "Detailed view"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "text": "",
+          "pressed": "false",
+          "label": "Compact grid view"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "toolbar": {
+        "x": 268,
+        "y": 256.21875,
+        "width": 102,
+        "height": 54
+      },
+      "buttons": [
+        {
+          "width": 44,
+          "height": 44,
+          "text": "",
+          "pressed": "true",
+          "label": "Detailed view"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "text": "",
+          "pressed": "false",
+          "label": "Compact grid view"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "toolbar": {
+        "x": 1208,
+        "y": 408.21875,
+        "width": 102,
+        "height": 54
+      },
+      "buttons": [
+        {
+          "width": 44,
+          "height": 44,
+          "text": "",
+          "pressed": "true",
+          "label": "Detailed view"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "text": "",
+          "pressed": "false",
+          "label": "Compact grid view"
+        }
+      ]
+    }
+  ],
+  "browserVersion": "154.0.8037.57",
+  "shell": {
+    "ready": true,
+    "build": "d31cfc89d315",
+    "version": "0.39.2",
+    "verification": "sha256-v1"
+  },
+  "beforeOffline": {
+    "url": "http://127.0.0.1:4173/app/#home",
+    "controller": "http://127.0.0.1:4173/app/sw.js",
+    "scope": "http://127.0.0.1:4173/app/",
+    "keys": [
+      "findr-shell-d31cfc89d315",
+      "findr-language-model-v1"
+    ],
+    "cached": true
+  },
+  "offlineBuild": "d31cfc89d315"
+}
