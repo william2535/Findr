@@ -1,0 +1,78 @@
+{
+  "browser": "chromium",
+  "status": "passed",
+  "physicalIPhone": false,
+  "checks": [
+    "Repeated real viewport resizes preserve visible bursts",
+    "Visible warm-yellow screen pixels, high-DPI soft edges and gradual fade verified",
+    "Occasional shooting trail observed on the actual scheduler",
+    "320/390/1440px controls remain clickable and layouts do not overflow",
+    "Reduce Motion clears and suppresses decorative particles",
+    "Final verified cache reloads offline and renders the updated sparks"
+  ],
+  "errors": [],
+  "version": "154.0.8037.57",
+  "resize": {
+    "activeFrames": 13,
+    "visibleFrames": 13,
+    "samples": 20
+  },
+  "bright": {
+    "alpha": 182340,
+    "peak": 255,
+    "soft": 3986,
+    "levels": 244,
+    "x": 377.5,
+    "y": 577,
+    "active": "true",
+    "kind": "spark",
+    "scale": 2,
+    "display": "block"
+  },
+  "fading": {
+    "alpha": 158965,
+    "peak": 250,
+    "soft": 3459,
+    "levels": 220,
+    "x": 373,
+    "y": 581.5,
+    "active": "true",
+    "kind": "spark",
+    "scale": 2,
+    "display": "block"
+  },
+  "rendered": {
+    "visibleYellowPixels": 3084,
+    "peakDifference": 549
+  },
+  "shooting": {
+    "alpha": 103231,
+    "peak": 255,
+    "soft": 3021,
+    "levels": 156,
+    "x": 11.5,
+    "y": 596.5,
+    "active": "true",
+    "kind": "shoot",
+    "scale": 2,
+    "display": "block"
+  },
+  "reduced": {
+    "alpha": 0,
+    "peak": 0,
+    "soft": 0,
+    "levels": 0,
+    "x": 0,
+    "y": 0,
+    "active": "false",
+    "kind": "shoot",
+    "scale": 2,
+    "display": "none"
+  },
+  "shell": {
+    "ready": true,
+    "build": "314c7ceab33e",
+    "version": "0.39.3",
+    "verification": "sha256-v1"
+  }
+}

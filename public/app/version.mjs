@@ -1,6 +1,6 @@
 // Shared by the web launcher, offline app and release packaging scripts.
 export const APK_VERSION = '0.37.0';
-export const APP_VERSION = '0.39.2';
+export const APP_VERSION = '0.39.3';
 export const ANDROID_VERSION_CODE = 27;
 export const RELEASE_URL = 'https://findr-fault-finder.floodyyy21.chatgpt.site';
 

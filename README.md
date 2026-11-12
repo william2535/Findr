@@ -1,3 +1,7 @@
+## Clearer phone sparks — web 0.39.3
+
+Yellow background sparks favour open space, use larger soft bursts and fade more slowly, with shorter quiet gaps and occasional shooting trails. Safari viewport resizing no longer cancels the current burst or continually postpones the next one. Reduced Motion still disables these decorative particles; controls, black background and matte cards stay unchanged. Android remains **0.37.0**.
+
 ## Home banner and compact view buttons — web 0.39.2
 
 Home uses the owner-supplied Zone Sketch banner artwork as the link to its existing beta tester page. The image is bundled unchanged for offline display. Detailed and Compact grid are now small icon-only buttons, with accessible names, hover titles, 44px tap targets and the same saved preference. Android remains **0.37.0**.
