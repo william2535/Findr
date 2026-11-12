@@ -1,0 +1,58 @@
+[
+  {
+    "path": "/api/manual/advanced-0254975c10bd",
+    "method": "OPTIONS",
+    "status": 204,
+    "cors": "https://william2535.github.io",
+    "bytes": 0,
+    "contentType": null,
+    "contentRange": null
+  },
+  {
+    "path": "/api/assistant/online",
+    "method": "OPTIONS",
+    "status": 204,
+    "cors": "https://william2535.github.io",
+    "bytes": 0,
+    "contentType": null,
+    "contentRange": null
+  },
+  {
+    "path": "/api/assistant/online",
+    "method": "GET",
+    "status": 200,
+    "cors": "https://william2535.github.io",
+    "bytes": 422,
+    "contentType": "application/json; charset=utf-8",
+    "contentRange": null,
+    "capabilities": {
+      "supported": true,
+      "providerId": "groq",
+      "provider": "Groq",
+      "modelId": "openai/gpt-oss-120b",
+      "consentVersion": "groq-byok-v1",
+      "credentialMode": "per-user-memory",
+      "billingType": "free-plan-available",
+      "requiresKey": true,
+      "serviceVerified": false,
+      "freeTierLimits": {
+        "requestsPerMinute": 30,
+        "requestsPerDay": 1000,
+        "tokensPerMinute": 8000,
+        "tokensPerDay": 200000,
+        "checkedOn": "2026-11-11"
+      },
+      "policyURL": "https://console.groq.com/docs/your-data"
+    }
+  },
+  {
+    "path": "/api/manual/advanced-0254975c10bd",
+    "method": "GET",
+    "status": 200,
+    "cors": "https://william2535.github.io",
+    "bytes": 1079368,
+    "contentType": "application/pdf",
+    "contentRange": null,
+    "validPDFPrefix": true
+  }
+]

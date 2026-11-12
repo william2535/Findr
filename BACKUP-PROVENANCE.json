@@ -54,7 +54,24 @@
       "No authenticated online-provider inference or new local-inference performance claim."
     ],
     "evidence": "research/github-pages-0.40.0/README.md",
-    "verificationRecord": "research/github-pages-0.40.0/checks.json"
+    "verificationRecord": "research/github-pages-0.40.0/checks.json",
+    "productionApi": {
+      "status": "passed",
+      "realManualBytes": 1079368,
+      "exactAllowedOrigin": "https://william2535.github.io",
+      "evidence": "BACKUP-VERIFICATION/0.40.0-production-api.json",
+      "authenticatedInferenceVerified": false
+    },
+    "publishedBrowser": {
+      "status": "passed",
+      "browser": "Chromium 154.0.8037.57",
+      "viewport": "390px portrait",
+      "realManualDownloadAndRead": true,
+      "networkDisabledReloadAndRead": true,
+      "pageErrors": 0,
+      "physicalPhone": false,
+      "evidence": "BACKUP-VERIFICATION/0.40.0-live-browser.json"
+    }
   },
   "secretReview": {
     "sourceCommit": "fad95d0f08d78a44c2e123ddb5ec0ea03296fa81",
@@ -67,7 +84,7 @@
     "limitations": "Changed text plus reviewed baseline; no mathematical absence proof. One explicitly retained signed APK is an additional verified release artifact; private signing key, model weights and downloaded user manuals remain excluded.",
     "reviewScope": "Current 0.40.0 source changes plus previously reviewed complete source backup; archived APKs remain explicitly excluded, current signed APK unchanged."
   },
-  "preparedAt": "2026-11-12T15:01:10.943284+00:00",
+  "preparedAt": "2026-11-12T15:04:36.942732+00:00",
   "deploymentArchive": null,
   "previousPublishedRelease": {
     "webVersion": "0.39.3",
@@ -79,7 +96,7 @@
     "sourceCommit": "dfc68291fa3e222c5e6004b936c81bd0d4f1c35f",
     "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site"
   },
-  "publicationNote": "Web 0.40.0 backend published as Site 91 using a remote source build; native deployment succeeded. Artifact uploads timed out and no uploaded deployment archive is claimed. The GitHub Pages workflow is introduced by this backup; its publication is tracked separately below. Android remains 0.37.0/code 27.",
+  "publicationNote": "Web 0.40.0 backend succeeded as Site 91 using a remote source build, with no uploaded archive. GitHub Pages deployed successfully from fd7aced49511870df7ba9e7739a0eb6168eac75f; public URL, real manual download/rendering and offline reopening verified. This later documentation-only commit records evidence without redeploying unchanged app bytes. Android remains 0.37.0/code 27.",
   "additionalRetainedArtifacts": [
     {
       "path": "public/releases/FINDR-0.37.0.apk",
@@ -131,9 +148,18 @@
     "url": "https://william2535.github.io/Findr/",
     "appUrl": "https://william2535.github.io/Findr/app/",
     "buildType": "workflow",
-    "status": "awaiting_workflow",
+    "status": "published_and_verified",
     "workflow": ".github/workflows/deploy-pages.yml",
     "apiOrigin": "https://findr-fault-finder.floodyyy21.chatgpt.site",
-    "storageNote": "Separate browser origin; existing local data is not automatically transferred."
+    "storageNote": "Separate browser origin; existing local data is not automatically transferred.",
+    "deployedCommit": "fd7aced49511870df7ba9e7739a0eb6168eac75f",
+    "workflowRunId": 43243295304,
+    "workflowUrl": "https://github.com/william2535/Findr/actions/runs/43243295304",
+    "workflowConclusion": "success",
+    "deploymentId": 7740872984,
+    "deploymentUpdatedAt": "2026-11-12T15:02:20Z",
+    "offlineBuild": "eb325bb83367",
+    "publicationEvidence": "BACKUP-VERIFICATION/0.40.0-pages-publication.json",
+    "liveBrowserEvidence": "BACKUP-VERIFICATION/0.40.0-live-browser.json"
   }
 }

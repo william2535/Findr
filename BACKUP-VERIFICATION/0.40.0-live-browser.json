@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "url": "https://william2535.github.io/Findr/",
+  "checks": [
+    "Public GitHub Pages root redirects to original FINDR app and serves0.40.0",
+    "Real cross-origin capability GET works without embedding a provider key",
+    "Browser performs real custom-header preflight and receives consent rejection; no inference requested",
+    "Actual Save PDF control downloaded and saved the real Advanced MxPro5 user guide through production relay",
+    "Saved real manual renders through the normal Read control",
+    "Network disabled: published app and downloaded real PDF reopen at scoped Pages path"
+  ],
+  "errors": [],
+  "physicalPhone": false,
+  "browser": "154.0.8037.57",
+  "version": "0.40.0",
+  "api": {
+    "status": 200,
+    "supported": true,
+    "providerId": "groq",
+    "provider": "Groq",
+    "modelId": "openai/gpt-oss-120b",
+    "consentVersion": "groq-byok-v1",
+    "credentialMode": "per-user-memory",
+    "billingType": "free-plan-available",
+    "requiresKey": true,
+    "serviceVerified": false,
+    "freeTierLimits": {
+      "requestsPerMinute": 30,
+      "requestsPerDay": 1000,
+      "tokensPerMinute": 8000,
+      "tokensPerDay": 200000,
+      "checkedOn": "2026-11-11"
+    },
+    "policyURL": "https://console.groq.com/docs/your-data"
+  },
+  "preflight": {
+    "status": 403,
+    "body": {
+      "error": {
+        "code": "ONLINE_CONSENT_REQUIRED",
+        "message": "Choose a provider and confirm what will be sent before using online AI."
+      }
+    }
+  },
+  "manual": {
+    "id": "advanced-0254975c10bd",
+    "title": "Advanced MxPro5 — User guide",
+    "bytes": 1079368,
+    "pdfPrefix": "%PDF-"
+  },
+  "shell": {
+    "ready": true,
+    "build": "eb325bb83367",
+    "version": "0.40.0",
+    "verification": "sha256-v1"
+  },
+  "scope": "https://william2535.github.io/Findr/app/"
+}

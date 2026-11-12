@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "workflowRunId": 43243295304,
+  "workflowUrl": "https://github.com/william2535/Findr/actions/runs/43243295304",
+  "conclusion": "success",
+  "commit": "fd7aced49511870df7ba9e7739a0eb6168eac75f",
+  "createdAt": "2026-11-12T15:01:29Z",
+  "updatedAt": "2026-11-12T15:02:20Z",
+  "deploymentId": 7740872984,
+  "deploymentState": "success",
+  "deploymentUpdatedAt": "2026-11-12T15:02:20Z",
+  "environmentUrl": "https://william2535.github.io/Findr/",
+  "checks": [
+    {
+      "url": "https://william2535.github.io/Findr/",
+      "status": 200,
+      "bytes": 394,
+      "sha256": "68facefbb04de12c3ad3cc598ca8bc19f7e6cba3f18ab4d521b4024153729764"
+    },
+    {
+      "url": "https://william2535.github.io/Findr/app/",
+      "status": 200,
+      "bytes": 4624,
+      "sha256": "7055df3ae9c173ad5a63438420f5a17ebea183f2c9bd4e3975ecc31ec95f201b"
+    },
+    {
+      "url": "https://william2535.github.io/Findr/app-release.json",
+      "status": 200,
+      "bytes": 21,
+      "sha256": "8d4bb1772b8341d42b42ff156b5620214b6acb68a4dcf2cd82228622f7eb03ec"
+    },
+    {
+      "url": "https://william2535.github.io/Findr/app/deployment-config.mjs",
+      "status": 200,
+      "bytes": 259,
+      "sha256": "65007ca2034a3d612f85e02bb99c7efec77aec5a3572edbd711347a628fb837e"
+    },
+    {
+      "url": "https://william2535.github.io/Findr/app/precache.js",
+      "status": 200,
+      "bytes": 206443,
+      "sha256": "29a9712043736a4df1eb7b429a4be5a4525efb2d4bbb7cf200ad2907b0e264a3"
+    }
+  ]
+}
