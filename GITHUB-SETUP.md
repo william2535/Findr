@@ -1,5 +1,9 @@
 # FINDR — GitHub setup
 
+## Current GitHub Pages setup
+
+For the current web 0.40.0 deployment workflow and full feature support, read [GitHub Pages setup](docs/github-pages.md). The Pages site uses the same browser application plus the existing FINDR server for manual downloads and optional online AI. Its browser storage is separate from the original site. [BACKUP-PROVENANCE.json](BACKUP-PROVENANCE.json) records current deployment status and source revisions; the original export notes below are retained as historical documentation.
+
 Verified export: **web 0.32.6**, **Site version 69**, source commit `c4bdbb83ff0ed11762b603f3aca6d5dadd795df3`. The source is from the current source repository, not a compiled deployment archive. The original checkout and live website were not changed. Older unfinished local edits are preserved in `WORKSPACE-RECOVERY/` without overwriting newer source. See `SOURCE-INVENTORY.md` and `EXPORT-VALIDATION.md` for exactly what was included and tested.
 
 ## Current Panel Pals online configuration

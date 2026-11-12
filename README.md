@@ -1,3 +1,11 @@
+## GitHub Pages edition — web 0.40.0
+
+FINDR can also run at **https://william2535.github.io/Findr/** using the same browser application, emulators, Panel Pals, offline manuals, Toolbox and quizzes. The Pages build configures its own nested app paths, install manifest, release check and verified offline cache. Manual downloads and explicitly selected online AI use the existing FINDR server through an origin-restricted relay; no keys are embedded in this repository or deployment.
+
+Each website address has separate browser storage. Existing saved PDFs and jobs remain at the original address; Panel Pal export/import can move supported records. Local AI and manual processing continue on the device after their required downloads. Android remains **0.37.0**.
+
+See [GitHub Pages setup](docs/github-pages.md). This section describes the deployment support; publication and checks are recorded in release evidence and the GitHub backup provenance.
+
 ## Clearer phone sparks — web 0.39.3
 
 Yellow background sparks favour open space, use larger soft bursts and fade more slowly, with shorter quiet gaps and occasional shooting trails. Safari viewport resizing no longer cancels the current burst or continually postpones the next one. Reduced Motion still disables these decorative particles; controls, black background and matte cards stay unchanged. Android remains **0.37.0**.

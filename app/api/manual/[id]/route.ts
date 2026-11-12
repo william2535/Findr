@@ -1,10 +1,15 @@
 import downloads from '../../../../lib/download-map.json';
+import {pagesPreflight, withPagesCors} from '../../../../lib/pages-cors.mjs';
 const urls:Record<string,string> = downloads;
 function safe(url:URL) {
   const h=url.hostname.toLowerCase();
   return ['https:','http:'].includes(url.protocol) && !url.username && !url.password && (!url.port || ['80','443'].includes(url.port)) && !h.includes(':') && h.includes('.') && !h.endsWith('.local') && !h.endsWith('.localhost') && !/^\d+\.\d+\.\d+\.\d+$/.test(h);
 }
-export async function GET(request:Request,{params}:{params:Promise<{id:string}>}) {
+export const OPTIONS = (request:Request) => pagesPreflight(request, {methods: ['GET'], headers: ['range', 'if-range']});
+export async function GET(request:Request,context:{params:Promise<{id:string}>}) {
+  return withPagesCors(request, await getManual(request,context), ['Content-Length','Content-Range','Accept-Ranges','ETag','Last-Modified']);
+}
+async function getManual(request:Request,{params}:{params:Promise<{id:string}>}) {
   const {id}=await params; if(!urls[id]) return new Response('Manual not in this catalogue snapshot.',{status:404});
   const requestedRange=request.headers.get('range');
   if(requestedRange && !/^bytes=\d+-\d*$/.test(requestedRange))return new Response('Only a single forward byte range is supported.',{status:400});

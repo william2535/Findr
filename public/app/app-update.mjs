@@ -1,4 +1,5 @@
 import {APP_VERSION,isNewerRelease} from './version.mjs';
+import {APP_BASE_PATH} from './deployment-config.mjs';
 
 // Chromium can allow an outgoing worker five minutes to finish its requests.
 // Grant this grace once, only after the waiting release proves its saved cache.
@@ -11,6 +12,8 @@ const VERIFIED_ACTIVATION_GRACE_MS = 360000;
 export async function checkForAppUpdate({
   serviceWorker,
   origin,
+  appPath = APP_BASE_PATH,
+  releaseBaseURL = '',
   currentVersion = APP_VERSION,
   online = globalThis.navigator?.onLine !== false,
   fetchImpl = globalThis.fetch,
@@ -21,9 +24,9 @@ export async function checkForAppUpdate({
   if (!online) throw new AppLaunchError('offline', 'You’re offline. Connect to the internet, then tap Update app again.');
   let releaseURL;
   try {
-    const base = new URL(origin);
-    if (!['https:', 'http:'].includes(base.protocol)) throw Error();
-    releaseURL = new URL('/app-release.json', base.origin);
+    const base = new URL(releaseBaseURL || '../', new URL(appPath, origin));
+    if (!['https:', 'http:'].includes(base.protocol) || base.origin !== new URL(origin).origin) throw Error();
+    releaseURL = new URL('app-release.json', base.href.endsWith('/') ? base.href : base.href + '/');
   } catch {
     throw new AppLaunchError('scope_mismatch', 'The FINDR update address could not be checked. Open FINDR in your browser and retry.');
   }
@@ -49,7 +52,7 @@ export async function checkForAppUpdate({
   if (isNewerRelease(currentVersion, version)) {
     throw new AppLaunchError('release_older', 'The server is reporting an older FINDR release. Keep using this version and check again later.');
   }
-  const result = await prepare({serviceWorker, origin: releaseURL.origin, appPath: '/app/', expectedVersion: version, onProgress});
+  const result = await prepare({serviceWorker, origin: releaseURL.origin, appPath, expectedVersion: version, onProgress});
   const needsReload = isNewerRelease(version, currentVersion);
   return {...result, status: needsReload ? 'ready' : 'current', version, needsReload};
 }
@@ -105,7 +108,7 @@ export function describeAppLaunchError(error) {
 export function prepareAppLaunch({
   serviceWorker,
   origin,
-  appPath = '/app/',
+  appPath = APP_BASE_PATH,
   expectedVersion = APP_VERSION,
   onProgress,
   // Real progress renews this inactivity deadline; a separate overall limit

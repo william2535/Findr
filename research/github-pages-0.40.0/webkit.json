@@ -1,0 +1,20 @@
+{
+  "browser": "webkit",
+  "status": "failed",
+  "physicalPhone": false,
+  "base": "http://127.0.0.1:4174/Findr/",
+  "checks": [
+    "Root opens actual app; 320/390/1440px Home, original banner and grid controls work",
+    "Manual packs, emulators, menu maps, Resistor Lab and full papers load; timed paper survives reload",
+    "Make a pal and ordinary typed reply save and reopen through the normal UI without claiming missing manuals ready"
+  ],
+  "errors": [
+    "Context is stopped"
+  ],
+  "wrongLocalPaths": [],
+  "version": "26.0",
+  "error": {
+    "message": "page.evaluate: Error: Device storage is unavailable.",
+    "stack": "page.evaluate: Error: Device storage is unavailable.\n    at analyse (/workspace/sites/findr-sources/scripts/verify-pages040-browser.mjs:8:98)\n    at /workspace/sites/findr-sources/scripts/verify-pages040-browser.mjs:15:19"
+  }
+}

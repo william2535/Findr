@@ -32,6 +32,7 @@ import {createWiringPackController} from './wiring-packs.mjs';
 import {helpBar,panelHintContext} from './onsite.mjs';
 import * as db from './db.mjs';
 import {APP_VERSION, RELEASE_URL, isNewerRelease} from './version.mjs';
+import {apiAddressing} from './deployment.mjs';
 import {checkForAppUpdate, describeAppLaunchError} from './app-update.mjs';
 import {createPracticeController} from './practice.mjs';
 import {createMenuMapController} from './menu-map.mjs';
@@ -227,7 +228,7 @@ const downloadButton=downloadable.length?action('download-pack',icon('download')
 app.innerHTML=`${back('#downloads','Downloads')}${header(esc(p.title),subtitle,downloadButton)}<p class="small">${esc(p.description)}</p><div class="panel-grid" style="margin:25px 0">${sortPanels(p.panel_ids.map(id=>panels.find(p=>p.id===id)).filter(Boolean),browseOrder).map(panelCard).join('')}</div><div class="notice">${esc(p.scope)}<br>${list.length?'Older editions are retained. ':''}Pictures are comparison aids; confirm the model label.</div><h3 style="margin:25px 0 18px">Included documents</h3>${list.length?`<div class="manual-list">${list.map(manualRow).join('')}</div>`:'<div class="notice">No manuals are linked to this pictured pack yet. The panel pictures and their source credits are available above.</div>'}<div id="job-slot"></div>`;renderJob()}
 function renderJob(){const slot=$('#job-slot');if(!slot||!job)return;slot.innerHTML=`<div class="download-job">${job.running?action('cancel-job','Stop','', ''):action('dismiss-job','Dismiss','')}<strong>${job.running?'Downloading…':job.cancelled?'Download stopped':job.failed.length?'Pack partially saved':'Download complete'}</strong><p>${job.done}/${job.total} processed · ${job.saved} saved · ${job.failed.length} failed</p>${job.current?`<p>${esc(job.current)}</p>`:''}<progress max="${job.total||1}" value="${job.done}"></progress>${job.failed.length?`<details><summary class="small">View ${job.failed.length} failed download${job.failed.length===1?'':'s'}</summary>${job.failed.map(f=>`<p>${esc(records.get(f.id)?.title)}: ${esc(f.error)}</p>`).join('')}</details>${!job.running?action('retry-job','Retry failed','secondary'):''}`:''}</div>`}
 async function fetchPDF(record,signal,onProgress){
-  const response=await fetch('/api/manual/'+encodeURIComponent(record.id),{signal});
+  const response=await fetch(apiAddressing.endpoint('/api/manual/'+encodeURIComponent(record.id)),{signal,credentials:apiAddressing.credentials});
   if(!response.ok)throw new Error((await response.text()).slice(0,220)||'Download failed');
   const max=120*1024*1024,total=Number(response.headers.get('content-length')||0);
   if(total>max)throw new Error('File is over 120 MB.');

@@ -1,0 +1,27 @@
+{
+  "failedVersion": {
+    "number": 90,
+    "id": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_50b0420ddbe48191b593aac3a56290c6",
+    "source": "47d5bb22bd63eacd035f351d54023ca23a2e8383"
+  },
+  "failedDeployment": {
+    "id": "appgdep_6af5d180e4dc8191abaed5037e03d545",
+    "projectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
+    "failure": "Cloudflare Sandbox Worker request failed: status=500 body={\"error\":\"Cannot create a string longer than0x1fffffe8 characters\"}",
+    "existingLiveSiteUnchanged": true
+  },
+  "uploads": [
+    {
+      "format": "tar",
+      "bytes": 167383040,
+      "sha256": "aa7fd39f7ae40eddc3b8a3c8c6f0a2ac4bfc288e3cfea9fea9a61ec32eb0577f",
+      "result": "300secondtimeout; notstored"
+    },
+    {
+      "format": "gzip",
+      "bytes": 108488087,
+      "sha256": "2ae2e9e90a466e44534bd6bd70e2f34c48d1fd382b88689e4ba2ae2ad2299c5c",
+      "result": "300secondtimeout; notstored"
+    }
+  ]
+}

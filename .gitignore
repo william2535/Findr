@@ -56,3 +56,27 @@ __pycache__/
 # Current APK is published on GitHub; too large for the Sites source host.
 # Keep the local artifact and checksum; GitHub backup retains an explicit copy.
 /public/releases/FINDR-0.37.0.apk
+
+# Archived Android build outputs remain local and in historical Git revisions.
+# These410-retired installers are not inputs to a clean web build.
+/public/releases/FINDR-0.3.1.apk
+/public/releases/FINDR-0.4.0.apk
+/public/releases/FINDR-0.5.0.apk
+/public/releases/FINDR-0.5.1.apk
+/public/releases/FINDR-0.6.0.apk
+/public/releases/FINDR-0.7.0.apk
+/public/releases/FINDR-0.8.0.apk
+/public/releases/FINDR-0.8.1.apk
+/public/releases/FINDR-0.9.0.apk
+/public/releases/FINDR-0.10.0.apk
+/public/releases/FINDR-0.11.0.apk
+/public/releases/FINDR-0.11.1.apk
+/public/releases/FINDR-0.11.2.apk
+/public/releases/FINDR-0.12.0.apk
+/public/releases/FINDR-0.12.1.apk
+/public/releases/FINDR-0.12.2.apk
+/public/releases/FINDR-0.12.3.apk
+/public/releases/FINDR-0.13.0.apk
+/public/releases/FINDR-0.13.1.apk
+/public/releases/FINDR-0.13.2.apk
+/public/releases/FINDR-0.14.0.apk

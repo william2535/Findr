@@ -7,7 +7,7 @@ import {join,relative} from 'node:path';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {
-  ARCHIVED_RELEASE_FILES, RETAINED_APK_VERSIONS, RETAINED_RELEASE_FILES,
+  ARCHIVED_RELEASES, ARCHIVED_RELEASE_FILES, RETAINED_APK_VERSIONS, RETAINED_RELEASE_FILES,
   EXTERNAL_RELEASES, EXTERNAL_RELEASE_FILES, releaseFileDisposition,
 } from '../lib/release-downloads.mjs';
 
@@ -17,6 +17,7 @@ const publicRoot=join(root,'public'),output=join(root,'dist/client');
 // separate lib/download-map.json allowlist; browser code and precache omit it.
 const nativeOnlyFiles=new Set(['app/data/download-map.json']);
 const archivedReleaseFiles=new Set(ARCHIVED_RELEASE_FILES.map(name=>`releases/${name}`));
+const optionalArchivedApks=new Set(ARCHIVED_RELEASES.map(release=>release.apkFile));
 const externalReleaseFiles=new Set(EXTERNAL_RELEASE_FILES.map(name=>`releases/${name}`));
 const excludedFiles=new Set([...nativeOnlyFiles,...archivedReleaseFiles,...externalReleaseFiles]);
 function files(directory){
@@ -35,11 +36,24 @@ for(const path of files(join(publicRoot,'releases'))){
   assert.ok(releaseFileDisposition(name),`Release file needs an explicit deployment policy: ${name}`);
 }
 for(const name of [...RETAINED_RELEASE_FILES,...ARCHIVED_RELEASE_FILES]){
-  if(EXTERNAL_RELEASE_FILES.includes(name))continue;
+  if(EXTERNAL_RELEASE_FILES.includes(name)||optionalArchivedApks.has(name))continue;
   assert.ok(existsSync(join(publicRoot,'releases',name)),`Missing source release artifact: ${name}`);
 }
 for(const name of ARCHIVED_RELEASE_FILES){
   assert.ok(existsSync(join(root,'app/releases',name,'route.ts')),`Missing archived release handler: ${name}`);
+}
+const archivedReleaseVerification=[];
+for(const release of ARCHIVED_RELEASES){
+  const checksum=readFileSync(join(publicRoot,'releases',release.checksumFile),'utf8').trim().split(/\s+/);
+  assert.equal(checksum.length,2,`Invalid archived release checksum record: ${release.checksumFile}`);
+  assert.match(checksum[0],/^[a-f0-9]{64}$/,`Invalid archived release checksum: ${release.checksumFile}`);
+  assert.equal(checksum[1]?.replace(/^\*/,''),release.apkFile,`Archived checksum names another artifact: ${release.checksumFile}`);
+  const apk=join(publicRoot,'releases',release.apkFile),localCopy=existsSync(apk);
+  if(localCopy){
+    const hash=createHash('sha256').update(readFileSync(apk)).digest('hex');
+    assert.equal(hash,checksum[0],`Archived release checksum differs from source APK: ${release.apkFile}`);
+  }
+  archivedReleaseVerification.push({filename:release.apkFile,sha256:checksum[0],localCopy,localBytesVerified:localCopy});
 }
 const externalReleaseVerification=[];
 for(const name of EXTERNAL_RELEASE_FILES){
@@ -94,5 +108,5 @@ assert.ok(bytes+archiveAllowance<256*1024*1024,`Build output leaves insufficient
 for(const name of nativeOnlyFiles)assert.ok(!existsSync(join(output,name)),`Native-only index leaked into web output: ${name}`);
 for(const name of archivedReleaseFiles)assert.ok(!existsSync(join(output,name)),`Archived release leaked into web output: ${name}`);
 for(const name of externalReleaseFiles)assert.ok(!existsSync(join(output,name)),`Externally hosted release leaked into web output: ${name}`);
-const archivedReleaseBytes=ARCHIVED_RELEASE_FILES.reduce((sum,name)=>sum+statSync(join(publicRoot,'releases',name)).size,0);
-console.log(JSON.stringify({publicFiles:sourceFiles.length,nativeOnlyFilesExcluded:[...nativeOnlyFiles],retainedApkVersions:RETAINED_APK_VERSIONS,externalReleaseFilesExcluded:EXTERNAL_RELEASE_FILES,externalReleaseVerification,archivedReleaseFilesExcluded:ARCHIVED_RELEASE_FILES.length,archivedReleaseBytes,orphanFilesRemoved:removed,maxStaticAssetBytes,largestStaticAssetBytes,buildBytes:bytes,archiveAllowance,verified:true}));
+const archivedReleaseBytes=ARCHIVED_RELEASE_FILES.reduce((sum,name)=>{const path=join(publicRoot,'releases',name);return sum+(existsSync(path)?statSync(path).size:0);},0);
+console.log(JSON.stringify({publicFiles:sourceFiles.length,nativeOnlyFilesExcluded:[...nativeOnlyFiles],retainedApkVersions:RETAINED_APK_VERSIONS,externalReleaseFilesExcluded:EXTERNAL_RELEASE_FILES,externalReleaseVerification,archivedReleaseFilesExcluded:ARCHIVED_RELEASE_FILES.length,archivedReleaseBytes,archivedReleaseVerification,orphanFilesRemoved:removed,maxStaticAssetBytes,largestStaticAssetBytes,buildBytes:bytes,archiveAllowance,verified:true}));

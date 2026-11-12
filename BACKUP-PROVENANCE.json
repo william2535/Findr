@@ -1,20 +1,20 @@
 {
-  "webVersion": "0.39.3",
-  "siteVersion": 89,
+  "webVersion": "0.40.0",
+  "siteVersion": 91,
   "siteProjectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
-  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_552bea0e98a8819181de84ed9c726a72",
-  "deploymentId": "appgdep_6af56f7c17a48191b2c13075a1912bfc",
+  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_194b60174c0881919b1fb3bc2d2d6979",
+  "deploymentId": "appgdep_6af5d40706488191b36f75b61e768c13",
   "deploymentStatus": "succeeded",
-  "deploymentUpdatedAt": "2026-11-12T07:49:35.335444+00:00",
+  "deploymentUpdatedAt": "2026-11-12T14:59:44.642516+00:00",
   "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site",
-  "sourceCommit": "dfc68291fa3e222c5e6004b936c81bd0d4f1c35f",
+  "sourceCommit": "fad95d0f08d78a44c2e123ddb5ec0ea03296fa81",
   "sourceRepository": "Sites project source repository",
   "githubRepository": "https://github.com/william2535/Findr",
   "githubBranch": "main",
   "backupRevision": "The Git commit containing this provenance and SOURCE-FILES.sha256 identifies the backup; it intentionally differs from the deployment source commit.",
   "sourceManifest": "SOURCE-FILES.sha256",
   "manifestScope": "All source-backup payload files except the checksum manifest itself; includes GitHub setup/export documentation and separately archived recovery files.",
-  "verifiedOriginalSourceFiles": 2975,
+  "verifiedOriginalSourceFiles": 2998,
   "intentionallyDetachedFile": ".openai/hosting.json",
   "detachedHostingReason": "Keep a migrated checkout separate from the original live ChatGPT Site.",
   "intentionalExclusions": "EXPORT-EXCLUSIONS.json and normal private/cache/user-data exclusions; explicit exception: current signed 0.37.0 APK retained as an additional artifact, with checksum and source. Historical export exclusions remain unchanged.",
@@ -24,30 +24,23 @@
     "recoveryArchive": "WORKSPACE-RECOVERY/original-workspace-files.zip"
   },
   "checks": {
-    "scope": "Preserve ambient sparks during viewport resizing and improve their phone visibility while respecting reduced motion.",
+    "scope": "GitHub Pages packaging, nested app/install/update paths, complete browser features and origin-restricted manual/online-AI server relay.",
     "unitTests": {
-      "passed": 1960,
+      "passed": 1980,
       "failed": 0,
-      "skipped": 0
+      "skipped": 1,
+      "skipReason": "Optional manufacturer default-access PDF audit cache unavailable"
     },
+    "portableBuildTests": 4,
     "productionBuild": "passed",
     "typescript": "passed",
     "publicAssets": "passed",
-    "offlineBuildHash": "314c7ceab33e",
+    "offlineBuildHash": "8516b2c77b5d",
+    "pagesOfflineBuildHash": "eb325bb83367",
     "browserChecks": {
-      "environments": "Chromium 154 and WebKit 26; Chromium final cached offline passed",
-      "actualRenderedYellowPixels": "passed",
-      "softFadeAndShootingTrail": "passed",
-      "visibleResizeSamples": {
-        "chromium": 13,
-        "webkit": 13,
-        "samplesPerBrowser": 20
-      },
-      "evidence": [
-        "research/sparks-0.39.3/chromium.json",
-        "research/sparks-0.39.3/webkit.json",
-        "research/sparks-0.39.3/resize-before.json"
-      ]
+      "chromium154": "Nested app and full offline smoke passed, including previously unseen text/scanned PDFs",
+      "webkit26": "Partial UI passed; PDF stage stopped with context/storage failure. No WebKit offline claim.",
+      "evidence": "research/github-pages-0.40.0/"
     },
     "android": {
       "versionName": "0.37.0",
@@ -56,40 +49,37 @@
       "apkUnchanged": true
     },
     "limitations": [
-      "No physical iPhone test.",
-      "No new local-inference or authenticated AI-provider testing."
+      "No physical iPhone/Android test.",
+      "WebKit PDF/storage stage remains unverified.",
+      "No authenticated online-provider inference or new local-inference performance claim."
     ],
-    "evidence": "research/sparks-0.39.3/README.md"
+    "evidence": "research/github-pages-0.40.0/README.md",
+    "verificationRecord": "research/github-pages-0.40.0/checks.json"
   },
   "secretReview": {
-    "sourceCommit": "dfc68291fa3e222c5e6004b936c81bd0d4f1c35f",
-    "copiedFiles": 19,
-    "changedTextFilesScanned": 12,
+    "sourceCommit": "fad95d0f08d78a44c2e123ddb5ec0ea03296fa81",
+    "copiedFiles": 41,
+    "changedTextFilesScanned": 37,
     "candidates": [],
-    "allEligibleSourceFilesVerified": 2975,
+    "allEligibleSourceFilesVerified": 2998,
     "detachedHostingVerified": true,
     "recoveryArchiveUnchanged": true,
     "limitations": "Changed text plus reviewed baseline; no mathematical absence proof. One explicitly retained signed APK is an additional verified release artifact; private signing key, model weights and downloaded user manuals remain excluded.",
-    "reviewScope": "Current 0.39.3 source changes plus previously reviewed complete source backup; private extracts excluded; retained signed APK checksum unchanged."
+    "reviewScope": "Current 0.40.0 source changes plus previously reviewed complete source backup; archived APKs remain explicitly excluded, current signed APK unchanged."
   },
-  "preparedAt": "2026-11-12T07:50:10.174233+00:00",
-  "deploymentArchive": {
-    "sha256": "6de62a1ca61f296a128ca344ddaeeb7ef7b15028b282df367d235afdb389179e",
-    "bytes": 167219200,
-    "files": 1600,
-    "note": "Canonical stored Sites archive; distinct from locally prepared tar."
-  },
+  "preparedAt": "2026-11-12T15:01:10.943284+00:00",
+  "deploymentArchive": null,
   "previousPublishedRelease": {
-    "webVersion": "0.39.2",
-    "siteVersion": 88,
-    "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_4a8bbdabe7ac8191a1d7f134d055acd2",
-    "deploymentId": "appgdep_6af56ba4efac81918741c19e14cb29f4",
+    "webVersion": "0.39.3",
+    "siteVersion": 89,
+    "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_552bea0e98a8819181de84ed9c726a72",
+    "deploymentId": "appgdep_6af56f7c17a48191b2c13075a1912bfc",
     "deploymentStatus": "succeeded",
-    "deploymentUpdatedAt": "2026-11-12T07:33:13.033004+00:00",
-    "sourceCommit": "0e9342666ca1cc65767d795a5b74db6d53953297",
+    "deploymentUpdatedAt": "2026-11-12T07:49:35.335444+00:00",
+    "sourceCommit": "dfc68291fa3e222c5e6004b936c81bd0d4f1c35f",
     "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site"
   },
-  "publicationNote": "Web 0.39.3 published as Site 89; native deployment status verified succeeded. Android APK remains 0.37.0/code 27 and is unchanged; no new Android release or tag was created.",
+  "publicationNote": "Web 0.40.0 backend published as Site 91 using a remote source build; native deployment succeeded. Artifact uploads timed out and no uploaded deployment archive is claimed. The GitHub Pages workflow is introduced by this backup; its publication is tracked separately below. Android remains 0.37.0/code 27.",
   "additionalRetainedArtifacts": [
     {
       "path": "public/releases/FINDR-0.37.0.apk",
@@ -130,5 +120,20 @@
     "publicHttp200AndHashesVerified": true,
     "cors": "*",
     "evidence": "BACKUP-VERIFICATION/0.38.0-pack-public.json"
+  },
+  "localBuildArchive": {
+    "sha256": "9ad7b078632b1005ffc09e9590fa9bcdec0edce96ac4a0fb667edf484237d96b",
+    "bytes": 167372800,
+    "uploaded": false,
+    "purpose": "Locally verified recovery build; Sites used remote source compilation instead."
+  },
+  "githubPages": {
+    "url": "https://william2535.github.io/Findr/",
+    "appUrl": "https://william2535.github.io/Findr/app/",
+    "buildType": "workflow",
+    "status": "awaiting_workflow",
+    "workflow": ".github/workflows/deploy-pages.yml",
+    "apiOrigin": "https://findr-fault-finder.floodyyy21.chatgpt.site",
+    "storageNote": "Separate browser origin; existing local data is not automatically transferred."
   }
 }

@@ -1,0 +1,94 @@
+{
+  "browser": "chromium",
+  "status": "passed",
+  "physicalPhone": false,
+  "base": "http://127.0.0.1:4174/Findr/",
+  "checks": [
+    "Root opens actual app; 320/390/1440px Home, original banner and grid controls work",
+    "Manual packs, emulators, menu maps, Resistor Lab and full papers load; timed paper survives reload",
+    "Make a pal and ordinary typed reply save and reopen through the normal UI without claiming missing manuals ready",
+    "Text PDF read by actual bundled PDF worker at nested path; processing resources saved",
+    "Update app checks nested release metadata and verifies only the nested worker",
+    "Network disabled: shell, saved pal/messages, saved PDF viewer and previously unseen text/scanned PDF processing work"
+  ],
+  "errors": [],
+  "wrongLocalPaths": [],
+  "version": "154.0.8037.57",
+  "pdf": {
+    "usable": true,
+    "pageCount": 3,
+    "timing": {
+      "extractionMs": 352,
+      "ocrMs": 0,
+      "indexingMs": 48,
+      "totalMs": 999
+    },
+    "hash": "f17ed26918995987832590df05bd398bf2ae753a216dc817c741fb95335befce",
+    "pages": [
+      {
+        "textLength": 513,
+        "method": "text"
+      },
+      {
+        "textLength": 632,
+        "method": "text"
+      },
+      {
+        "textLength": 647,
+        "method": "text"
+      }
+    ]
+  },
+  "resources": {
+    "ready": true,
+    "supported": true,
+    "missing": 0,
+    "offlineControlled": true
+  },
+  "profile": {
+    "API_ORIGIN": "https://findr-fault-finder.floodyyy21.chatgpt.site",
+    "APP_BASE_PATH": "/Findr/app/",
+    "RELEASE_BASE_URL": "https://william2535.github.io/Findr/",
+    "api": "https://findr-fault-finder.floodyyy21.chatgpt.site/api/manual/qa"
+  },
+  "shell": {
+    "ready": true,
+    "build": "eb325bb83367",
+    "version": "0.40.0",
+    "verification": "sha256-v1"
+  },
+  "offlineText": {
+    "usable": true,
+    "pageCount": 1,
+    "timing": {
+      "extractionMs": 80,
+      "ocrMs": 0,
+      "indexingMs": 30,
+      "totalMs": 337
+    },
+    "hash": "5842fde48f4adae871ae1305b278c68c882ba11bd72e5ee5990e9da36c1f30dd",
+    "pages": [
+      {
+        "textLength": 638,
+        "method": "text"
+      }
+    ]
+  },
+  "offlineScan": {
+    "usable": true,
+    "pageCount": 1,
+    "timing": {
+      "extractionMs": 43,
+      "ocrMs": 4442,
+      "indexingMs": 33,
+      "totalMs": 4644
+    },
+    "hash": "d3f72c67bdd69d46a96600705cae437f86e1b5faa3cad6b5bba6c3e5dab79b73",
+    "pages": [
+      {
+        "textLength": 647,
+        "method": "ocr"
+      }
+    ]
+  }
+}

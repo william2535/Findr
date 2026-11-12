@@ -4,8 +4,9 @@ import {nativeOnlineFetch} from './native-platform.mjs';
 import {validOnlineConsent} from './helper-mode.mjs';
 import {normalizeAllowance} from './online-usage.mjs';
 import {getOnlineProvider} from './online-language-policy.mjs';
+import {apiAddressing} from './deployment.mjs';
 
-const ENDPOINT='/api/assistant/online';
+const ENDPOINT=apiAddressing.endpoint('/api/assistant/online');
 const MAX_BODY_BYTES=64*1024,MAX_RESPONSE_BYTES=64*1024;
 const MESSAGES={
  ONLINE_CONSENT_REQUIRED:'Choose Online AI and confirm what will be sent before using it.',
@@ -67,7 +68,7 @@ function verifiedReply(value,payload,elapsedMs,provider){
  return {text:value.text,modelId:provider.modelId,provider:provider.name,providerId:provider.id,backend:'online',metrics};
 }
 
-/** Injectable transport for tests; production always uses a fixed same-origin URL. */
+/** Injectable transport for tests; production uses the fixed deployment relay. */
 export function createOnlineLanguage({fetchImpl=nativeOnlineFetch,getOnline=()=>globalThis.navigator?.onLine!==false,getOrigin=()=>globalThis.location?.origin,timeoutMs=50000,now=()=>performance.now(),wallNow=()=>Date.now(),supported=()=>typeof globalThis.fetch==='function'&&typeof AbortController==='function'}={}){
  const sessions=new Map(),usageListeners=new Set();let usageProviderId='groq';
  const sessionFor=(providerId='groq')=>{const provider=getOnlineProvider(providerId);if(!provider)throw fail('ONLINE_PROVIDER_INVALID','setup');if(!sessions.has(providerId))sessions.set(providerId,{key:'',generation:0,allowance:null,active:new Set()});return {provider,session:sessions.get(providerId)};};
@@ -102,9 +103,9 @@ export function createOnlineLanguage({fetchImpl=nativeOnlineFetch,getOnline=()=>
   timeout=setTimeout(()=>operation.cancel(fail('ONLINE_TIMEOUT','request')),Math.min(50000,Math.max(1,Number(timeoutMs)||50000)));
   try{
    check();safeProgress(onProgress,{phase:'online',message:'Sending the selected context to '+provider.name+'…',provider:provider.name});check();
-   const response=await race(fetchImpl(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json','X-FINDR-Provider-Key':session.key},body,credentials:'same-origin',cache:'no-store',redirect:'error',signal:controller.signal}));check();
+   const response=await race(fetchImpl(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json','X-FINDR-Provider-Key':session.key},body,credentials:apiAddressing.credentials,cache:'no-store',redirect:'error',signal:controller.signal}));check();
    if(!response||typeof response.status!=='number'||response.redirected)throw fail('ONLINE_RESPONSE_INVALID','response');
-   if(response.url){let address;try{address=new URL(response.url);}catch{throw fail('ONLINE_RESPONSE_INVALID','response');}if(getOrigin()&&address.origin!==getOrigin())throw fail('ONLINE_RESPONSE_INVALID','response');}
+   if(response.url){let address;try{address=new URL(response.url);}catch{throw fail('ONLINE_RESPONSE_INVALID','response');}const expected=apiAddressing.responseOrigin(getOrigin());if(expected&&address.origin!==expected)throw fail('ONLINE_RESPONSE_INVALID','response');}
    if(!/^application\/json(?:\s*;|\s*$)/i.test(response.headers?.get('content-type')||''))throw response.ok?fail('ONLINE_RESPONSE_INVALID','response'):serverFailure(response,{});
    if(Number(response.headers.get('content-length')||0)>MAX_RESPONSE_BYTES||!response.body?.getReader)throw fail('ONLINE_RESPONSE_INVALID','response');
    reader=response.body.getReader();const decoder=new TextDecoder('utf-8',{fatal:true});let text='',bytes=0;

@@ -14,10 +14,14 @@ if (command === "build") {
   rmSync(fileURLToPath(new URL("../dist", import.meta.url)), { recursive: true, force: true });
 }
 
-if (managedLinux && command === "build") {
-  const result = spawnSync("bash", [
-    fileURLToPath(new URL("./build-verified.sh", import.meta.url)), ...args,
-  ], { stdio: "inherit" });
+if (command === "build") {
+  // A clean clone selects portable. Run its CLI as a child too: importing it
+  // in-process can exit the launcher before the required public-asset gate.
+  const executable = managedLinux ? "bash" : process.execPath;
+  const buildArgs = managedLinux
+    ? [fileURLToPath(new URL("./build-verified.sh", import.meta.url)), ...args]
+    : [fileURLToPath(new URL("../node_modules/vinext/dist/cli.js", import.meta.url)), "build", ...args];
+  const result = spawnSync(executable, buildArgs, { stdio: "inherit" });
   if (result.error) throw result.error;
   if (result.status === 0) {
     const checked = spawnSync(process.execPath, [

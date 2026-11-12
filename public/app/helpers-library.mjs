@@ -1,4 +1,5 @@
 import * as db from './db.mjs';
+import {apiAddressing} from './deployment.mjs';
 import {validatePDF} from './engine.mjs';
 import {analyseManual,getManualAnalysis,getManualProcessingReadiness,downloadManualProcessingResources,MANUAL_ANALYSIS_VERSION} from './manual-analysis.mjs';
 import {loadQuickManualIndex,quickManualIndexKey} from './retrieval-cache.mjs';
@@ -37,8 +38,9 @@ export function createResumableManualDownloader({fetchFn=(...args)=>fetch(...arg
    const storage=await estimate?.(),remaining=Math.max(0,(Number(record.bytes)||partial.total||chunkBytes)-partial.bytes);if(storage?.quota&&storage.quota-(storage.usage||0)<remaining+chunkBytes)throw code('STORAGE_UNAVAILABLE','There is not enough available device storage for this PDF. Free space and resume; existing manuals are unchanged.');
    let resumedBytes=partial.bytes,headers={};if(partial.bytes){headers.Range='bytes='+partial.bytes+'-';if(partial.etag&&!partial.etag.startsWith('W/'))headers['If-Range']=partial.etag;else if(partial.lastModified)headers['If-Range']=partial.lastModified;}
    report(onProgress,{phase:'download',manualId:record.id,message:(partial.bytes?'Resuming ':'Downloading ')+record.title,bytes:partial.bytes,savedBytes:partial.bytes,totalBytes:Number(record.bytes)||partial.total||null,resumedBytes});
-   let response=await fetchFn('/api/manual/'+encodeURIComponent(record.id),{headers,signal,cache:'no-store'});check(signal);
-   if(response.status===416&&partial.bytes){await discard(record.id,partial);partial={schemaVersion:1,recordId:record.id,identity,parts:0,bytes:0,total:0};resumedBytes=0;response=await fetchFn('/api/manual/'+encodeURIComponent(record.id),{signal,cache:'no-store'});}
+   const endpoint=apiAddressing.endpoint('/api/manual/'+encodeURIComponent(record.id));
+   let response=await fetchFn(endpoint,{headers,signal,cache:'no-store',credentials:apiAddressing.credentials});check(signal);
+   if(response.status===416&&partial.bytes){await discard(record.id,partial);partial={schemaVersion:1,recordId:record.id,identity,parts:0,bytes:0,total:0};resumedBytes=0;response=await fetchFn(endpoint,{signal,cache:'no-store',credentials:apiAddressing.credentials});}
    if(!response.ok)throw code('MANUAL_DOWNLOAD_FAILED',(await response.text()).slice(0,220)||'The publisher returned HTTP '+response.status+'.');
    const range=response.headers.get('content-range')?.match(/^bytes (\d+)-(\d+)\/(\d+)$/i);
    if(response.status===206&&(!range||Number(range[1])!==partial.bytes||Number(range[2])<Number(range[1])))throw code('MANUAL_DOWNLOAD_FAILED','The publisher returned an unexpected download range. Retry this manual.');

@@ -1,0 +1,169 @@
+{
+  "node": {
+    "tests": 1981,
+    "passed": 1980,
+    "failed": 0,
+    "skipped": 1,
+    "skipReason": "Optional manufacturer default-access PDF source audit cache not installed"
+  },
+  "typescript": "passed",
+  "productionBuild": "passed",
+  "publicBuildGate": {
+    "publicFiles": 1497,
+    "nativeOnlyFilesExcluded": [
+      "app/data/download-map.json"
+    ],
+    "retainedApkVersions": [
+      "0.37.0",
+      "0.14.1"
+    ],
+    "externalReleaseFilesExcluded": [
+      "FINDR-0.37.0.apk"
+    ],
+    "externalReleaseVerification": [
+      {
+        "filename": "FINDR-0.37.0.apk",
+        "sha256": "e6f91ded97b687b3a69ebfeee46e9a0c3a43b9679ef4fca7b63bf9b5a3a3e37f",
+        "localCopy": true,
+        "localBytesVerified": true
+      }
+    ],
+    "archivedReleaseFilesExcluded": 42,
+    "archivedReleaseBytes": 463833947,
+    "archivedReleaseVerification": [
+      {
+        "filename": "FINDR-0.3.1.apk",
+        "sha256": "eaeaa9b784282e0e170d376a687acfb314821989d3f607fff358dfc59ed369e9",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.4.0.apk",
+        "sha256": "98b788187ac5829113542def66558ee847b6f114b83c943ff60b753abb4ec965",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.5.0.apk",
+        "sha256": "e948f48135030cdda02795315d397c17156600178926eee2ffdee2fb29a4fd7f",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.5.1.apk",
+        "sha256": "fe9feb89093355de69501f98073a1936aba241423a34189e3f353a8b5659e60c",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.6.0.apk",
+        "sha256": "6205b9c2dc0f3f58ee048045675b0493afbe76b73e9e4b044241afcf82ee7481",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.7.0.apk",
+        "sha256": "fee8145507595f6a96e9d4960463f16f2e81bcde0a44ac64b39b7c6acea5d71d",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.8.0.apk",
+        "sha256": "ad03a6c1cfefa0340c9183f11b5e8faaac2fcd8f9a555872cde7e9604647467d",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.8.1.apk",
+        "sha256": "876b87e2ee37bf93b5eb7cd7b90e85e931594675148d39bd9d3fe7c535118fb1",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.9.0.apk",
+        "sha256": "6b92ad297b828c8f0ca9cedaf663fba40a8f00bc2a82a023fd4b2cdb75cd2bda",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.10.0.apk",
+        "sha256": "16ec248042f51a23dd330c63a201e86a288b3a2ab91205b85f5121177c22ba05",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.11.0.apk",
+        "sha256": "fdc4bdae4002701784ea9bc3ecb47450c7e904dbf02d6ce1bc1b6276e043ce06",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.11.1.apk",
+        "sha256": "5de91e3501f8c457d7110e5d756977cc256c4084b3f23ee2182069353610cdd5",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.11.2.apk",
+        "sha256": "d145b931adc5327356d6405f2e7f8b0b518e27e5b8a0800561f187fe105d3dbb",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.12.0.apk",
+        "sha256": "514e55e660e2085e6b0098948ce0cf4b93c3c59ab4b1b00173a3e36799627581",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.12.1.apk",
+        "sha256": "e0845cd2c655df9db13d717ef9a26dad0bd4fbdf8fcbfa763c175ef3e47fd4e5",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.12.2.apk",
+        "sha256": "dda26780c38a8351d8bedaaa60d9338ab358c92cbde03818435a9a53dfb7d0f5",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.12.3.apk",
+        "sha256": "8e97ce4f6d8dc400f0a4835e238a839b7548adb613ba141934f5403b3d00b469",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.13.0.apk",
+        "sha256": "341b61019dbe8db396e1e3c3802bb9e85c902f7392e34238637d35a558dfe9c9",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.13.1.apk",
+        "sha256": "04f643c3cf135efdfebc5fcd43c1b6512008834dbb48fecf887bdab492595a64",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.13.2.apk",
+        "sha256": "72f7e6c6a40627745cfb967811ce3ab43e161c7e870f1d759e475daae9533043",
+        "localCopy": true,
+        "localBytesVerified": true
+      },
+      {
+        "filename": "FINDR-0.14.0.apk",
+        "sha256": "e9d0366a76dda58bd442288660210cb94fcb74af87c2c8d98b9a8ba1cc3d1a17",
+        "localCopy": true,
+        "localBytesVerified": true
+      }
+    ],
+    "orphanFilesRemoved": 44,
+    "maxStaticAssetBytes": 26214400,
+    "largestStaticAssetBytes": 24126768,
+    "buildBytes": 166098527,
+    "archiveAllowance": 1048576,
+    "verified": true
+  },
+  "portableBuildIntegratedGate": "passed"
+}

@@ -25,15 +25,18 @@ test('current and previous artifacts retain explicit static or external deployme
   }
   for (const filename of ARCHIVED_RELEASE_FILES) assert.equal(releaseFileDisposition(filename), 'archived');
   const sourceFiles = readdirSync(join(root, 'public/releases')).sort();
-  assert.deepEqual(sourceFiles.filter(name=>!EXTERNAL_RELEASE_FILES.includes(name)), [...DEPLOYED_RELEASE_FILES, ...ARCHIVED_RELEASE_FILES].sort());
+  const optionalArchived=new Set(ARCHIVED_RELEASES.map(release=>release.apkFile));
+  assert.deepEqual(sourceFiles.filter(name=>!EXTERNAL_RELEASE_FILES.includes(name)&&!optionalArchived.has(name)), [...DEPLOYED_RELEASE_FILES, ...ARCHIVED_RELEASES.map(release=>release.checksumFile)].sort());
   assert.ok(sourceFiles.every(name=>releaseFileDisposition(name)));
 });
 
-test('every historical source APK still matches its original checksum', () => {
+test('historical checksums remain required and every available archived APK matches them', () => {
   for (const release of ARCHIVED_RELEASES) {
     const checksum = readFileSync(join(root, 'public/releases', release.checksumFile), 'utf8').trim();
-    const [expectedHash, originalFilename] = checksum.split(/\s+/);
+    const fields=checksum.split(/\s+/);assert.equal(fields.length,2);
+    const [expectedHash, originalFilename] = fields;assert.match(expectedHash,/^[a-f0-9]{64}$/);
     assert.equal(originalFilename.replace(/^\*/, ''), release.apkFile);
+    if(!existsSync(join(root,'public/releases',release.apkFile)))continue;
     const actualHash = createHash('sha256').update(readFileSync(join(root, 'public/releases', release.apkFile))).digest('hex');
     assert.equal(actualHash, expectedHash, `Archived source changed: ${release.apkFile}`);
   }
@@ -152,6 +155,10 @@ function fixture(t) {
     const bytes=sourceFiles.get(`releases/${filename}`);
     sourceFiles.set(`releases/${filename}.sha256`,Buffer.from(createHash('sha256').update(bytes).digest('hex')+'  '+filename+'\n'));
   }
+  for(const release of ARCHIVED_RELEASES){
+    const bytes=sourceFiles.get(`releases/${release.apkFile}`);
+    sourceFiles.set(`releases/${release.checksumFile}`,Buffer.from(createHash('sha256').update(bytes).digest('hex')+'  '+release.apkFile+'\n'));
+  }
   for (const [name, contents] of sourceFiles) {
     write(`public/${name}`, contents);
     write(`dist/client/${name}`, contents);
@@ -213,6 +220,39 @@ test('a new release without an explicit policy fails before pruning any assets',
   assert.notEqual(result.status, 0);
   assert.match(result.stderr, /Release file needs an explicit deployment policy: FINDR-99\.0\.0\.apk/);
   assert.ok(existsSync(join(directory, 'dist/client/releases', ARCHIVED_RELEASE_FILES[0])));
+});
+
+test('clean checkout may omit archived APKs and still prunes every stale archived deployment copy',async t=>{
+  const {directory,verify}=fixture(t);
+  for(const release of ARCHIVED_RELEASES)rmSync(join(directory,'public/releases',release.apkFile));
+  const result=await verify();assert.equal(result.status,0,result.stderr);
+  const report=JSON.parse(result.stdout);
+  assert.equal(report.archivedReleaseVerification.length,ARCHIVED_RELEASES.length);
+  assert.ok(report.archivedReleaseVerification.every(item=>!item.localCopy&&!item.localBytesVerified));
+  for(const release of ARCHIVED_RELEASES){
+    assert.ok(existsSync(join(directory,'public/releases',release.checksumFile)));
+    assert.ok(!existsSync(join(directory,'dist/client/releases',release.apkFile)));
+    assert.ok(!existsSync(join(directory,'dist/client/releases',release.checksumFile)));
+  }
+  assert.deepEqual(readdirSync(join(directory,'dist/client/releases')).sort(),[...DEPLOYED_RELEASE_FILES].sort());
+  assert.equal((await verify()).status,0,'Repeat verification must work without historical APK bytes');
+});
+
+test('missing archived checksum remains a blocker even when its APK is deliberately absent',async t=>{
+  const {directory,verify}=fixture(t),release=ARCHIVED_RELEASES[0];
+  rmSync(join(directory,'public/releases',release.apkFile));
+  rmSync(join(directory,'public/releases',release.checksumFile));
+  const result=await verify();assert.notEqual(result.status,0);assert.match(result.stderr,/Missing source release artifact/);
+  assert.ok(existsSync(join(directory,'dist/client/releases',release.apkFile)),'Verification fails before pruning');
+});
+
+test('malformed archived checksum or changed available APK fails before output pruning',async t=>{
+  const first=fixture(t),release=ARCHIVED_RELEASES[0];
+  first.write(`public/releases/${release.checksumFile}`,'not-a-checksum  '+release.apkFile+'\n');
+  let result=await first.verify();assert.notEqual(result.status,0);assert.match(result.stderr,/Invalid archived release checksum/);
+  const second=fixture(t);second.write(`public/releases/${release.apkFile}`,'Changed archived bytes');
+  result=await second.verify();assert.notEqual(result.status,0);assert.match(result.stderr,/Archived release checksum differs/);
+  assert.ok(existsSync(join(second.directory,'dist/client/releases',release.apkFile)));
 });
 
 test('an archive cannot be excluded until its compatibility handler exists', async t => {
