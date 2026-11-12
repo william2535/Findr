@@ -17,9 +17,14 @@ details.home-toolbox{padding:0;margin:0 0 24px;overflow:visible}.home-toolbox>su
 
 .zone-sketch-link{display:block;width:100%;max-width:1000px;margin:0 auto 10px;padding:0;border:0;border-radius:12px;background:#000}.zone-sketch-link>img{display:block;width:100%;height:auto;border-radius:inherit}.zone-sketch-link:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 
-/* The small Tool box shortcut lives directly beneath the view switch. */
-details.home-toolbox.home-toolbox-secret{margin:0 0 14px;padding:0;border:0;border-radius:0;background:transparent}
-.home-toolbox-secret>summary{width:48px;height:48px;min-height:48px;margin-left:auto;padding:0;display:grid;place-items:center;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+/* One control row: Toolbox on the left, view switch on the right.
+   The native disclosure still expands across the full width below both. */
+.home-controls{display:grid;align-items:start;margin:0 0 14px}
+.home-controls>details.home-toolbox,.home-controls>.home-view-bar{grid-area:1/1;min-width:0;margin:0}
+.home-controls>.home-view-bar{justify-self:end;z-index:1}
+.home-dashboard[data-layout=grid] .home-controls>.home-view-bar{margin:0}
+details.home-toolbox.home-toolbox-secret{margin:0;padding:0;border:0;border-radius:0;background:transparent}
+.home-toolbox-secret>summary{width:54px;height:54px;min-height:54px;margin:0;padding:0;display:grid;place-items:center;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
 .home-toolbox-secret>summary:hover,.home-toolbox-secret[open]>summary{border-color:var(--accent);background:#28230f}
 .home-toolbox-secret>summary .home-toolbox-symbol{font-size:27px;line-height:1}
 .home-toolbox-secret>.home-toolbox-body{margin-top:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}

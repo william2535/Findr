@@ -1,20 +1,20 @@
 {
-  "webVersion": "0.40.0",
-  "siteVersion": 91,
+  "webVersion": "0.40.1",
+  "siteVersion": 92,
   "siteProjectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
-  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_194b60174c0881919b1fb3bc2d2d6979",
-  "deploymentId": "appgdep_6af5d40706488191b36f75b61e768c13",
+  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_d5f3446435308191842f044dcafe17d6",
+  "deploymentId": "appgdep_6af5db78d0d08191b0da2e46eb4c34e2",
   "deploymentStatus": "succeeded",
-  "deploymentUpdatedAt": "2026-11-12T14:59:44.642516+00:00",
+  "deploymentUpdatedAt": "2026-11-12T15:32:06.243200+00:00",
   "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site",
-  "sourceCommit": "fad95d0f08d78a44c2e123ddb5ec0ea03296fa81",
+  "sourceCommit": "899bf12457ffd65517a372d743e5f904237ecf36",
   "sourceRepository": "Sites project source repository",
   "githubRepository": "https://github.com/william2535/Findr",
   "githubBranch": "main",
   "backupRevision": "The Git commit containing this provenance and SOURCE-FILES.sha256 identifies the backup; it intentionally differs from the deployment source commit.",
   "sourceManifest": "SOURCE-FILES.sha256",
   "manifestScope": "All source-backup payload files except the checksum manifest itself; includes GitHub setup/export documentation and separately archived recovery files.",
-  "verifiedOriginalSourceFiles": 2998,
+  "verifiedOriginalSourceFiles": 3006,
   "intentionallyDetachedFile": ".openai/hosting.json",
   "detachedHostingReason": "Keep a migrated checkout separate from the original live ChatGPT Site.",
   "intentionalExclusions": "EXPORT-EXCLUSIONS.json and normal private/cache/user-data exclusions; explicit exception: current signed 0.37.0 APK retained as an additional artifact, with checksum and source. Historical export exclusions remain unchanged.",
@@ -24,23 +24,35 @@
     "recoveryArchive": "WORKSPACE-RECOVERY/original-workspace-files.zip"
   },
   "checks": {
-    "scope": "GitHub Pages packaging, nested app/install/update paths, complete browser features and origin-restricted manual/online-AI server relay.",
-    "unitTests": {
-      "passed": 1980,
+    "scope": "Home Toolbox beside view controls and four-column compact emulator grid on phones.",
+    "focusedRegressionTests": {
+      "passed": 226,
       "failed": 0,
-      "skipped": 1,
-      "skipReason": "Optional manufacturer default-access PDF audit cache unavailable"
+      "scope": "Relevant Home and emulator regressions; full suite not rerun for this layout-only change."
     },
-    "portableBuildTests": 4,
     "productionBuild": "passed",
     "typescript": "passed",
+    "syntax": "passed",
     "publicAssets": "passed",
-    "offlineBuildHash": "8516b2c77b5d",
-    "pagesOfflineBuildHash": "eb325bb83367",
+    "offlineBuildHash": "4c3dbe34c67b",
+    "pagesOfflineBuildHash": "7b559fd2dcc0",
     "browserChecks": {
-      "chromium154": "Nested app and full offline smoke passed, including previously unseen text/scanned PDFs",
-      "webkit26": "Partial UI passed; PDF stage stopped with context/storage failure. No WebKit offline claim.",
-      "evidence": "research/github-pages-0.40.0/"
+      "environments": "Chromium 154 and WebKit 26",
+      "widths": [
+        320,
+        390,
+        430,
+        768,
+        1440
+      ],
+      "verified": [
+        "Toolbox disclosure",
+        "Four grid columns",
+        "44px targets",
+        "List layout",
+        "Open panel"
+      ],
+      "evidence": "research/layout-0.40.1/"
     },
     "android": {
       "versionName": "0.37.0",
@@ -50,53 +62,34 @@
     },
     "limitations": [
       "No physical iPhone/Android test.",
-      "WebKit PDF/storage stage remains unverified.",
-      "No authenticated online-provider inference or new local-inference performance claim."
+      "No new authenticated online-provider inference or local-model performance claim."
     ],
-    "evidence": "research/github-pages-0.40.0/README.md",
-    "verificationRecord": "research/github-pages-0.40.0/checks.json",
-    "productionApi": {
-      "status": "passed",
-      "realManualBytes": 1079368,
-      "exactAllowedOrigin": "https://william2535.github.io",
-      "evidence": "BACKUP-VERIFICATION/0.40.0-production-api.json",
-      "authenticatedInferenceVerified": false
-    },
-    "publishedBrowser": {
-      "status": "passed",
-      "browser": "Chromium 154.0.8037.57",
-      "viewport": "390px portrait",
-      "realManualDownloadAndRead": true,
-      "networkDisabledReloadAndRead": true,
-      "pageErrors": 0,
-      "physicalPhone": false,
-      "evidence": "BACKUP-VERIFICATION/0.40.0-live-browser.json"
-    }
+    "evidence": "research/layout-0.40.1/README.md"
   },
   "secretReview": {
-    "sourceCommit": "fad95d0f08d78a44c2e123ddb5ec0ea03296fa81",
-    "copiedFiles": 41,
-    "changedTextFilesScanned": 37,
+    "sourceCommit": "899bf12457ffd65517a372d743e5f904237ecf36",
+    "copiedFiles": 18,
+    "changedTextFilesScanned": 13,
     "candidates": [],
-    "allEligibleSourceFilesVerified": 2998,
+    "allEligibleSourceFilesVerified": 3006,
     "detachedHostingVerified": true,
     "recoveryArchiveUnchanged": true,
     "limitations": "Changed text plus reviewed baseline; no mathematical absence proof. One explicitly retained signed APK is an additional verified release artifact; private signing key, model weights and downloaded user manuals remain excluded.",
-    "reviewScope": "Current 0.40.0 source changes plus previously reviewed complete source backup; archived APKs remain explicitly excluded, current signed APK unchanged."
+    "reviewScope": "Current 0.40.1 source changes plus previously reviewed complete source backup; current signed APK unchanged."
   },
-  "preparedAt": "2026-11-12T15:04:36.942732+00:00",
+  "preparedAt": "2026-11-12T15:33:11.259844+00:00",
   "deploymentArchive": null,
   "previousPublishedRelease": {
-    "webVersion": "0.39.3",
-    "siteVersion": 89,
-    "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_552bea0e98a8819181de84ed9c726a72",
-    "deploymentId": "appgdep_6af56f7c17a48191b2c13075a1912bfc",
+    "webVersion": "0.40.0",
+    "siteVersion": 91,
+    "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_194b60174c0881919b1fb3bc2d2d6979",
+    "deploymentId": "appgdep_6af5d40706488191b36f75b61e768c13",
     "deploymentStatus": "succeeded",
-    "deploymentUpdatedAt": "2026-11-12T07:49:35.335444+00:00",
-    "sourceCommit": "dfc68291fa3e222c5e6004b936c81bd0d4f1c35f",
+    "deploymentUpdatedAt": "2026-11-12T14:59:44.642516+00:00",
+    "sourceCommit": "fad95d0f08d78a44c2e123ddb5ec0ea03296fa81",
     "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site"
   },
-  "publicationNote": "Web 0.40.0 backend succeeded as Site 91 using a remote source build, with no uploaded archive. GitHub Pages deployed successfully from fd7aced49511870df7ba9e7739a0eb6168eac75f; public URL, real manual download/rendering and offline reopening verified. This later documentation-only commit records evidence without redeploying unchanged app bytes. Android remains 0.37.0/code 27.",
+  "publicationNote": "Web 0.40.1 backend published as Site 92 using a remote source build; native deployment succeeded. No uploaded deployment archive is claimed. The GitHub Pages workflow will publish this snapshot separately. Android remains 0.37.0/code 27.",
   "additionalRetainedArtifacts": [
     {
       "path": "public/releases/FINDR-0.37.0.apk",
@@ -139,12 +132,21 @@
     "evidence": "BACKUP-VERIFICATION/0.38.0-pack-public.json"
   },
   "localBuildArchive": {
-    "sha256": "9ad7b078632b1005ffc09e9590fa9bcdec0edce96ac4a0fb667edf484237d96b",
-    "bytes": 167372800,
+    "sha256": "2584532ca04f97d4f6c0c51f053e05deb4cc10fc743a7e573e3b8ea1a33b51cb",
+    "bytes": 167516160,
     "uploaded": false,
-    "purpose": "Locally verified recovery build; Sites used remote source compilation instead."
+    "purpose": "Locally verified build; Sites used remote source compilation."
   },
   "githubPages": {
+    "url": "https://william2535.github.io/Findr/",
+    "appUrl": "https://william2535.github.io/Findr/app/",
+    "buildType": "workflow",
+    "status": "awaiting_workflow",
+    "workflow": ".github/workflows/deploy-pages.yml",
+    "apiOrigin": "https://findr-fault-finder.floodyyy21.chatgpt.site",
+    "storageNote": "Separate browser origin; existing local data is not automatically transferred."
+  },
+  "previousGithubPages": {
     "url": "https://william2535.github.io/Findr/",
     "appUrl": "https://william2535.github.io/Findr/app/",
     "buildType": "workflow",

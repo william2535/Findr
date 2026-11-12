@@ -1,5 +1,10 @@
 ## GitHub Pages edition — web 0.40.0
 
+## Web0.40.1 — compact controls
+
+Toolbox now sits on the left beside Home’s view icons. The compact emulator library shows four panels per row on phones as well as larger screens, with readable model labels and shorter Open controls. List view remains available. Layout checks passed in Chromium and WebKit; see `research/layout-0.40.1/README.md`.
+
+
 FINDR can also run at **https://william2535.github.io/Findr/** using the same browser application, emulators, Panel Pals, offline manuals, Toolbox and quizzes. The Pages build configures its own nested app paths, install manifest, release check and verified offline cache. Manual downloads and explicitly selected online AI use the existing FINDR server through an origin-restricted relay; no keys are embedded in this repository or deployment.
 
 Each website address has separate browser storage. Existing saved PDFs and jobs remain at the original address; Panel Pal export/import can move supported records. Local AI and manual processing continue on the device after their required downloads. Android remains **0.37.0**.

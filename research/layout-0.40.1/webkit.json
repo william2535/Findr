@@ -1,0 +1,69 @@
+{
+  "browser": "webkit",
+  "base": "http://127.0.0.1:4174/Findr/app/",
+  "checks": [
+    {
+      "homeWidth": 320,
+      "controlsSameRow": true,
+      "toolboxLeft": true,
+      "disclosureWorks": true
+    },
+    {
+      "homeWidth": 390,
+      "controlsSameRow": true,
+      "toolboxLeft": true,
+      "disclosureWorks": true
+    },
+    {
+      "homeWidth": 430,
+      "controlsSameRow": true,
+      "toolboxLeft": true,
+      "disclosureWorks": true
+    },
+    {
+      "homeWidth": 768,
+      "controlsSameRow": true,
+      "toolboxLeft": true,
+      "disclosureWorks": true
+    },
+    {
+      "homeWidth": 1440,
+      "controlsSameRow": true,
+      "toolboxLeft": true,
+      "disclosureWorks": true
+    },
+    {
+      "emulatorWidth": 320,
+      "fourPerRow": true,
+      "touchTargets": true
+    },
+    {
+      "emulatorWidth": 390,
+      "fourPerRow": true,
+      "touchTargets": true
+    },
+    {
+      "emulatorWidth": 430,
+      "fourPerRow": true,
+      "touchTargets": true
+    },
+    {
+      "emulatorWidth": 768,
+      "fourPerRow": true,
+      "touchTargets": true
+    },
+    {
+      "emulatorWidth": 1440,
+      "fourPerRow": true,
+      "touchTargets": true
+    },
+    {
+      "listPreserved": true,
+      "openPanelWorks": true
+    }
+  ],
+  "errors": [],
+  "physicalPhone": false,
+  "version": "26.0",
+  "status": "passed"
+}
