@@ -1,3 +1,11 @@
+## Manual retrieval and downloadable Tool box — web 0.38.0
+
+Panel Pals now builds a versioned inverted index with source-linked heading hints and uses a bounded local search planner. The planner retains the original question, searches only the pal’s selected readable manuals, and records up to three real search attempts. Existing model, citation, variant and diagnostic safeguards remain in place; no new model training or larger model download is claimed. See [the compact assistant plan](docs/COMPACT-PANEL-PALS.md) and [measured retrieval research](research/retrieval-0.38.0/).
+
+Open the small Tool box icon on Home, then **Download tool box pack**. The optional 16,473-byte pack contains six additional calculators and six original visual guides. Actual files are fetched from an immutable GitHub commit, verified and stored locally, with cancellation, resume and safe retries. The original four calculators stay included. See [pack contents and maintenance](docs/toolbox-packs.md) and [technical source research](research/toolbox-pack-0.38.0/source-research.md).
+
+This release updates the web/PWA. The signed Android download remains **0.37.0**; it has not been rebuilt or relabelled. Browser and release verification are recorded in `research/toolbox-pack-0.38.0/`.
+
 ## Home layout — web 0.37.1
 
 Home’s Tool box is now a small48px icon-only square just below the view switch. Its native dropdown is closed on first use; the icon retains a Tool box label for assistive technology and a hover tooltip. The new **Detailed / Compact grid** switch reduces card padding, arranges shortcuts and packs into columns, and folds the longer installation/about guides in Compact view. Text remains readable and interactive controls retain touch targets; this does not change browser zoom. Layout and dropdown state are saved locally, independently of manuals, jobs and calculator drafts. The existing yellow heading glow remains. Occasional soft yellow sparks now brighten, fade and sometimes shoot through the background; they pause while hidden or when reduced motion is requested. Home also links to the verified [Zone Sketch Tester Hub](https://william2535.github.io/FIRE-ZONE-PLAN-APP/beta.html) in a separate tab.

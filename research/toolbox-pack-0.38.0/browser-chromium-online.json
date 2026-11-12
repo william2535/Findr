@@ -1,0 +1,427 @@
+{
+  "status": "passed",
+  "recordedAt": "2026-11-12T00:37:43.714Z",
+  "mode": "online",
+  "browser": "chromium",
+  "profile": "/workspace/findr-menu0361-chromium-xEvw2S",
+  "physicalIPhone": false,
+  "actualInference": false,
+  "manifest": {
+    "commit": "d6cfb85034994f73cbbf6b24a8490a9002ed7c62",
+    "bytes": 16473,
+    "files": 7
+  },
+  "checks": [
+    {
+      "name": "Normal Home secret icon opens the pack screen with its actual16,473-byte size"
+    },
+    {
+      "name": "Actual first GitHub file saves with byte progress; cancellation retains partial pack for Resume",
+      "evidence": {
+        "faultInjection": "Second network request delayed, not replaced",
+        "progress": {
+          "value": "1476",
+          "status": "1 / 7 files saved · camera-path.svg"
+        },
+        "state": {
+          "complete": false,
+          "files": 1,
+          "totalFiles": 7,
+          "savedBytes": 1476,
+          "totalBytes": 16473
+        }
+      }
+    },
+    {
+      "name": "One injected request failure leaves pack incomplete and preserves completed file"
+    },
+    {
+      "name": "Retry downloads and SHA-verifies every remaining actual GitHub file, without redownloading the completed file",
+      "evidence": {
+        "complete": true,
+        "files": 7,
+        "totalFiles": 7,
+        "savedBytes": 16473,
+        "totalBytes": 16473
+      }
+    },
+    {
+      "name": "All six real downloaded calculators produce expected units/values; all six guides render saved SVGs with references"
+    },
+    {
+      "name": "Normal helper composer uses saved real MxPro5 clock/history pages with bounded search and no cross-pal source leakage"
+    },
+    {
+      "name": "Downloaded pack and new QA conversations preserve existing manual metadata, original helper jobs and calculator drafts"
+    }
+  ],
+  "errors": [],
+  "rawRequests": [
+    "https://raw.githubusercontent.com/william2535/Findr/d6cfb85034994f73cbbf6b24a8490a9002ed7c62/toolbox-packs/onsite-v1/camera-path.svg",
+    "https://raw.githubusercontent.com/william2535/Findr/d6cfb85034994f73cbbf6b24a8490a9002ed7c62/toolbox-packs/onsite-v1/dc-points.svg",
+    "https://raw.githubusercontent.com/william2535/Findr/d6cfb85034994f73cbbf6b24a8490a9002ed7c62/toolbox-packs/onsite-v1/dc-points.svg",
+    "https://raw.githubusercontent.com/william2535/Findr/d6cfb85034994f73cbbf6b24a8490a9002ed7c62/toolbox-packs/onsite-v1/dc-points.svg",
+    "https://raw.githubusercontent.com/william2535/Findr/d6cfb85034994f73cbbf6b24a8490a9002ed7c62/toolbox-packs/onsite-v1/ohms.svg",
+    "https://raw.githubusercontent.com/william2535/Findr/d6cfb85034994f73cbbf6b24a8490a9002ed7c62/toolbox-packs/onsite-v1/pack.json",
+    "https://raw.githubusercontent.com/william2535/Findr/d6cfb85034994f73cbbf6b24a8490a9002ed7c62/toolbox-packs/onsite-v1/poe-budget.svg",
+    "https://raw.githubusercontent.com/william2535/Findr/d6cfb85034994f73cbbf6b24a8490a9002ed7c62/toolbox-packs/onsite-v1/relay.svg",
+    "https://raw.githubusercontent.com/william2535/Findr/d6cfb85034994f73cbbf6b24a8490a9002ed7c62/toolbox-packs/onsite-v1/resistors.svg"
+  ],
+  "forbiddenRequests": [],
+  "faultInjection": "First attempt delays second genuine GitHub request until UI cancellation; next attempt aborts that request once. Successful downloads always use real pinned GitHub bytes.",
+  "browserVersion": "154.0.8037.57",
+  "shell": {
+    "ready": true,
+    "build": "df788a7d9a0a",
+    "version": "0.38.0",
+    "verification": "sha256-v1"
+  },
+  "progress": {
+    "value": "1476",
+    "status": "1 / 7 files saved · camera-path.svg"
+  },
+  "pack": {
+    "complete": true,
+    "files": 7,
+    "totalFiles": 7,
+    "savedBytes": 16473,
+    "totalBytes": 16473
+  },
+  "outputs": [
+    {
+      "id": "dc-ohms",
+      "text": "Calculated estimate\nCurrent\n0.2 A\nPower\n4.8 W\n\nFor a steady DC resistive load. Real devices may have startup current or non-resistive behaviour."
+    },
+    {
+      "id": "resistors",
+      "text": "Calculated estimate\nSeries total\n3000 Ω\nParallel total\n666.66667 Ω\n\nIdeal nominal resistors; tolerance and power ratings still apply. This does not establish the alarm input’s required wiring profile."
+    },
+    {
+      "id": "cctv-storage",
+      "text": "Calculated estimate\nVideo payload\n604.8 GB\nVideo payload\n0.6048 TB\nAggregate active bitrate\n8 Mbit/s\n\nDecimal GB/TB. Constant average bitrate and identical cameras are assumed. Audio metadata filesystem/RAID reserves and variable bitrate peaks are excluded. Actual retention must be checked on the recorder."
+    },
+    {
+      "id": "bandwidth",
+      "text": "Calculated estimate\nPayload bitrate\n32 Mbit/s\nNominal link utilisation\n32 %\nNominal spare capacity\n68 Mbit/s\n\nAssumes every counted stream crosses this link. Excludes protocol overhead bursts and other traffic. A positive spare value is not a network-performance guarantee."
+    },
+    {
+      "id": "poe-budget",
+      "text": "Calculated estimate\nRequired switch allocation\n60 W\nTotal budget remaining\n0 W\nPer-port headroom\n15 W\n\nEnter each device’s maximum allocated demand at the switch/PSE including losses as applicable. Identical ports/devices assumed. Total budget and per-port limits both matter; IEEE type/class negotiation cable and device requirements still need checking."
+    },
+    {
+      "id": "dc-load",
+      "text": "Calculated estimate\nTotal current\n0.4 A\nTotal current\n400 mA\nSteady DC power\n9.6 W\n\nIdentical loads at the entered voltage. Use the correct standby active or worst-case specification; startup peaks and charger allowance are not included."
+    }
+  ],
+  "helperReplies": [
+    {
+      "id": "qa038-full",
+      "question": "Where do I set the clock?",
+      "message": {
+        "id": "484d1178-34b7-4a35-b0fd-af228ca81250",
+        "role": "assistant",
+        "text": "Manual search — prepare the local AI engine when you’re ready to use AI assistance.\n\nHere are the related passages I found in your saved manuals:\n\n[1] www.advancedco.com 39 3.14.2 Change-Time Allows the clock time to be changed. If the current User ID does not have the necessary permission, the display prompts for entry of a password to guard against inadvertent changes. For example: [SET TIME/DATE] TIME = 15:28 DATE = 05/01/09 MON 5 JAN 2009 To change the settings, use the  buttons to highlight the required option. Directly enter the new time or date using the number buttons. As soon as a number button is pressed, the display will clear the current setting and show the new value as it is entered. For example: [SET TIME/DATE] TIME = 1 - : -- DATE = 05/01/09 MON 5 JAN 2009 If this panel is connected to a network, ALL panels on the network will assume this new value.\n\n[2] In the above example the SSM will be active between 19:00 on Monday and 06:30 on Tuesday. Press the  buttons to select the appropriate time field and use the number buttons to enter the required times. Press the ‘ Esc ’ button to return to the previous menu display. Every type of device (the device type is shown in the top, right hand corner) supports unique SSM settings for each SSM/Clock number. In the previous example the Special Sensitivity Mode settings have been defined for a Multi-Sensor that is using SSM/Clock number 2. If other Multi-sensors on the same panel also require the same settings, then you only need to set them to SSM/Clock 2. If instead another Multi-Sensor requires a different setting, use a different SSM/Clock number.\n\nThese passages are references to check, not a verified answer or a confirmed diagnosis.",
+        "createdAt": 1794443876237,
+        "kind": "manual_search",
+        "sourceRefs": [
+          {
+            "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-39:0",
+            "citationId": "S1",
+            "manualId": "advanced-0254975c10bd",
+            "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+            "processorVersion": "2026-11-10.3",
+            "title": "Advanced MxPro5 — User guide",
+            "revision": "",
+            "models": [
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800",
+              "Mx-5100V",
+              "Mx-5200V",
+              "Mx-5400V",
+              "Mx-5800V"
+            ],
+            "page": 39,
+            "pdfPage": 39,
+            "printedPage": null,
+            "section": null,
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "www.advancedco.com 39 3.14.2 Change-Time Allows the clock time to be changed. If the current User ID does not have the necessary permission, the display prompts for entry of a password to guard against inadvertent changes. For example: [SET TIME/DATE] TIME = 15:28 DATE = 05/01/09 MON 5 JAN 2009 To change the settings, use the  buttons to highlight the required option. Directly enter the new time or date using the number buttons. As soon as a number button is pressed, the display will clear the current setting and show the new value as it is entered. For example: [SET TIME/DATE] TIME = 1 - : -- DATE = 05/01/09 MON 5 JAN 2009 If this panel is connected to a network, ALL panels on the network will assume this new value.",
+            "excerpt": "www.advancedco.com 39 3.14.2 Change-Time Allows the clock time to be changed. If the current User ID does not have the necessary permission, the display prompts for entry of a password to guard against inadvertent changes. For example: [SET TIME/DATE] TIME = 15:28 DATE = 05/01/09 MON 5 JAN 2009 To change the settings, use the  buttons to highlight the required option. Directly enter the new time or date using the number buttons. As soon as a number button is pressed, the display will clear the current setting and show the new value as it is entered. For example: [SET TIME/DATE] TIME = 1 - : -- DATE = 05/01/09 MON 5 JAN 2009 If this panel is connected to a network, ALL panels on the network will assume this new value."
+          },
+          {
+            "sourceId": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-44:2",
+            "citationId": "S2",
+            "manualId": "advanced-a18ea5cccf04",
+            "contentHash": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b",
+            "processorVersion": "2026-11-10.3",
+            "title": "MxPro5 — Product Manual",
+            "revision": "",
+            "models": [
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800"
+            ],
+            "page": 44,
+            "pdfPage": 44,
+            "printedPage": null,
+            "section": null,
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "In the above example the SSM will be active between 19:00 on Monday and 06:30 on Tuesday. Press the  buttons to select the appropriate time field and use the number buttons to enter the required times. Press the ‘ Esc ’ button to return to the previous menu display. Every type of device (the device type is shown in the top, right hand corner) supports unique SSM settings for each SSM/Clock number. In the previous example the Special Sensitivity Mode settings have been defined for a Multi-Sensor that is using SSM/Clock number 2. If other Multi-sensors on the same panel also require the same settings, then you only need to set them to SSM/Clock 2. If instead another Multi-Sensor requires a different setting, use a different SSM/Clock number.",
+            "excerpt": "In the above example the SSM will be active between 19:00 on Monday and 06:30 on Tuesday. Press the  buttons to select the appropriate time field and use the number buttons to enter the required times. Press the ‘ Esc ’ button to return to the previous menu display. Every type of device (the device type is shown in the top, right hand corner) supports unique SSM settings for each SSM/Clock number. In the previous example the Special Sensitivity Mode settings have been defined for a Multi-Sensor that is using SSM/Clock number 2. If other Multi-sensors on the same panel also require the same settings, then you only need to set them to SSM/Clock 2. If instead another Multi-Sensor requires a different setting, use a different SSM/Clock number."
+          }
+        ],
+        "quickReplies": [],
+        "mode": "manual-search",
+        "modelUsed": false,
+        "coverage": "reference_only",
+        "engineVersion": "2026-11-12.1",
+        "searchPlan": {
+          "version": "2026-11-12.1",
+          "scope": "selected_helper_manuals",
+          "attempts": [
+            {
+              "kind": "original",
+              "query": "Where do I set the clock?",
+              "candidateIds": [
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-44:2",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-39:0",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-44:1",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-31:1",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-44:0",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-71:0"
+              ]
+            },
+            {
+              "kind": "vocabulary",
+              "query": "Where do I set the clock? change date time clock",
+              "candidateIds": [
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-39:0",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-44:2",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-44:1",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-31:1"
+              ]
+            }
+          ],
+          "searchCount": 2,
+          "status": "candidate_references_found",
+          "stopped": "candidates_found",
+          "inferenceUsed": false
+        }
+      }
+    },
+    {
+      "id": "qa038-full",
+      "question": "How can I look up old alarms?",
+      "message": {
+        "id": "e8cdfa8a-57ca-4c05-90ce-2e3e357ecdea",
+        "role": "assistant",
+        "text": "Manual search — prepare the local AI engine when you’re ready to use AI assistance.\n\nHere are the related passages I found in your saved manuals:\n\n[1] all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.9.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001.0 001 14/03/06 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001. The analogue value registered by the device (64) has also been recorded. The lower two lines show the zone and device location texts descriptions for ease of identification.\n\n[2] Press the  buttons to scroll through the fire alarm events logged in the system. Press the  button to show more recent events and press the  button to show earlier events. To view the details for a specific Log Entry Number, it is possible to select the record by typing in the required number using the number keys. Press the ✔ button to confirm. The display will then display the required record. Press the ‘Esc’ button to return to the main view menu.\n\nThese passages are references to check, not a verified answer or a confirmed diagnosis.",
+        "createdAt": 1794443876692,
+        "kind": "manual_search",
+        "sourceRefs": [
+          {
+            "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:1",
+            "citationId": "S1",
+            "manualId": "advanced-0254975c10bd",
+            "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+            "processorVersion": "2026-11-10.3",
+            "title": "Advanced MxPro5 — User guide",
+            "revision": "",
+            "models": [
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800",
+              "Mx-5100V",
+              "Mx-5200V",
+              "Mx-5400V",
+              "Mx-5800V"
+            ],
+            "page": 24,
+            "pdfPage": 24,
+            "printedPage": null,
+            "section": null,
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.9.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001.0 001 14/03/06 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001. The analogue value registered by the device (64) has also been recorded. The lower two lines show the zone and device location texts descriptions for ease of identification.",
+            "excerpt": "all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.9.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001.0 001 14/03/06 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001. The analogue value registered by the device (64) has also been recorded. The lower two lines show the zone and device location texts descriptions for ease of identification."
+          },
+          {
+            "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:2",
+            "citationId": "S2",
+            "manualId": "advanced-0254975c10bd",
+            "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+            "processorVersion": "2026-11-10.3",
+            "title": "Advanced MxPro5 — User guide",
+            "revision": "",
+            "models": [
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800",
+              "Mx-5100V",
+              "Mx-5200V",
+              "Mx-5400V",
+              "Mx-5800V"
+            ],
+            "page": 24,
+            "pdfPage": 24,
+            "printedPage": null,
+            "section": null,
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "Press the  buttons to scroll through the fire alarm events logged in the system. Press the  button to show more recent events and press the  button to show earlier events. To view the details for a specific Log Entry Number, it is possible to select the record by typing in the required number using the number keys. Press the ✔ button to confirm. The display will then display the required record. Press the ‘Esc’ button to return to the main view menu.",
+            "excerpt": "Press the  buttons to scroll through the fire alarm events logged in the system. Press the  button to show more recent events and press the  button to show earlier events. To view the details for a specific Log Entry Number, it is possible to select the record by typing in the required number using the number keys. Press the ✔ button to confirm. The display will then display the required record. Press the ‘Esc’ button to return to the main view menu."
+          }
+        ],
+        "quickReplies": [],
+        "mode": "manual-search",
+        "modelUsed": false,
+        "coverage": "reference_only",
+        "engineVersion": "2026-11-12.1",
+        "searchPlan": {
+          "version": "2026-11-12.1",
+          "scope": "selected_helper_manuals",
+          "attempts": [
+            {
+              "kind": "original",
+              "query": "How can I look up old alarms?",
+              "candidateIds": [
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-61:1",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-13:0",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-16:1",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:1",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-8:0",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-12:1",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-18:0",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-20:0",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-20:1",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-9:0",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-17:0",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-9:0"
+              ]
+            },
+            {
+              "kind": "vocabulary",
+              "query": "How can I look up old alarms? view event history log recorded alarms",
+              "candidateIds": [
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:1",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:2",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-20:1",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-60:1",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-18:0",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-25:0",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-40:1",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-20:0",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-13:0"
+              ]
+            }
+          ],
+          "searchCount": 2,
+          "status": "candidate_references_found",
+          "stopped": "candidates_found",
+          "inferenceUsed": false
+        }
+      }
+    },
+    {
+      "id": "qa038-product",
+      "question": "Where do I set the clock?",
+      "message": {
+        "id": "e4792389-0d4c-48f7-962d-c1a8e82955ad",
+        "role": "assistant",
+        "text": "Manual search — prepare the local AI engine when you’re ready to use AI assistance.\n\nHere are the related passages I found in your saved manuals:\n\n[1] In the above example the SSM will be active between 19:00 on Monday and 06:30 on Tuesday. Press the  buttons to select the appropriate time field and use the number buttons to enter the required times. Press the ‘ Esc ’ button to return to the previous menu display. Every type of device (the device type is shown in the top, right hand corner) supports unique SSM settings for each SSM/Clock number. In the previous example the Special Sensitivity Mode settings have been defined for a Multi-Sensor that is using SSM/Clock number 2. If other Multi-sensors on the same panel also require the same settings, then you only need to set them to SSM/Clock 2. If instead another Multi-Sensor requires a different setting, use a different SSM/Clock number.\n\n[2] All panels supports 10 independent, 7-day time clocks. With the SAM/SSM Option highlighted, press the ✔ button to view the Special Sensitivity Mode settings. For example: SPECIAL SENSITIVITY MODE (MULTI.SENSOR) [SSM/Clock = 2 ][ Alarm = 55 ] [ Mode = 5 ][ Pre-Alarm= 40 ] [ Delay = 5s][ Min.Value= 8 ] [SAM/SSM] In the above example the panel is using special sensitivity mode 5 (and time clock number 2). Enter “ 0 ” in the SSM/Clock field to cancel Special Sensitivity Mode. A number must be entered in the SSM/Clock field to select the appropriate SSM number and time clock. To view the time clock settings, highlight the SSM/Clock field, and press the ✔ button. For example: [Time Clock 2] DAY ON -> OFF ON -> OFF MON 00:00 00:00 19:00 00:00 TUE 00:00 06:30 00:00 00:00 WED 00:00 00:00 00:00 00:00 THU 00:00 00:00 00:00 00:00 The panel supports two independent times for each day of the week during which the SSM mode will be switched on (i.e. during which the Special Sensitivity Mode settings are active)\n\nThese passages are references to check, not a verified answer or a confirmed diagnosis.",
+        "createdAt": 1794443877052,
+        "kind": "manual_search",
+        "sourceRefs": [
+          {
+            "sourceId": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-44:2",
+            "citationId": "S1",
+            "manualId": "advanced-a18ea5cccf04",
+            "contentHash": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b",
+            "processorVersion": "2026-11-10.3",
+            "title": "MxPro5 — Product Manual",
+            "revision": "",
+            "models": [
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800"
+            ],
+            "page": 44,
+            "pdfPage": 44,
+            "printedPage": null,
+            "section": null,
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "In the above example the SSM will be active between 19:00 on Monday and 06:30 on Tuesday. Press the  buttons to select the appropriate time field and use the number buttons to enter the required times. Press the ‘ Esc ’ button to return to the previous menu display. Every type of device (the device type is shown in the top, right hand corner) supports unique SSM settings for each SSM/Clock number. In the previous example the Special Sensitivity Mode settings have been defined for a Multi-Sensor that is using SSM/Clock number 2. If other Multi-sensors on the same panel also require the same settings, then you only need to set them to SSM/Clock 2. If instead another Multi-Sensor requires a different setting, use a different SSM/Clock number.",
+            "excerpt": "In the above example the SSM will be active between 19:00 on Monday and 06:30 on Tuesday. Press the  buttons to select the appropriate time field and use the number buttons to enter the required times. Press the ‘ Esc ’ button to return to the previous menu display. Every type of device (the device type is shown in the top, right hand corner) supports unique SSM settings for each SSM/Clock number. In the previous example the Special Sensitivity Mode settings have been defined for a Multi-Sensor that is using SSM/Clock number 2. If other Multi-sensors on the same panel also require the same settings, then you only need to set them to SSM/Clock 2. If instead another Multi-Sensor requires a different setting, use a different SSM/Clock number."
+          },
+          {
+            "sourceId": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-44:1",
+            "citationId": "S2",
+            "manualId": "advanced-a18ea5cccf04",
+            "contentHash": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b",
+            "processorVersion": "2026-11-10.3",
+            "title": "MxPro5 — Product Manual",
+            "revision": "",
+            "models": [
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800"
+            ],
+            "page": 44,
+            "pdfPage": 44,
+            "printedPage": null,
+            "section": null,
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "All panels supports 10 independent, 7-day time clocks. With the SAM/SSM Option highlighted, press the ✔ button to view the Special Sensitivity Mode settings. For example: SPECIAL SENSITIVITY MODE (MULTI.SENSOR) [SSM/Clock = 2 ][ Alarm = 55 ] [ Mode = 5 ][ Pre-Alarm= 40 ] [ Delay = 5s][ Min.Value= 8 ] [SAM/SSM] In the above example the panel is using special sensitivity mode 5 (and time clock number 2). Enter “ 0 ” in the SSM/Clock field to cancel Special Sensitivity Mode. A number must be entered in the SSM/Clock field to select the appropriate SSM number and time clock. To view the time clock settings, highlight the SSM/Clock field, and press the ✔ button. For example: [Time Clock 2] DAY ON -> OFF ON -> OFF MON 00:00 00:00 19:00 00:00 TUE 00:00 06:30 00:00 00:00 WED 00:00 00:00 00:00 00:00 THU 00:00 00:00 00:00 00:00 The panel supports two independent times for each day of the week during which the SSM mode will be switched on (i.e. during which the Special Sensitivity Mode settings are active)",
+            "excerpt": "All panels supports 10 independent, 7-day time clocks. With the SAM/SSM Option highlighted, press the ✔ button to view the Special Sensitivity Mode settings. For example: SPECIAL SENSITIVITY MODE (MULTI.SENSOR) [SSM/Clock = 2 ][ Alarm = 55 ] [ Mode = 5 ][ Pre-Alarm= 40 ] [ Delay = 5s][ Min.Value= 8 ] [SAM/SSM] In the above example the panel is using special sensitivity mode 5 (and time clock number 2). Enter “ 0 ” in the SSM/Clock field to cancel Special Sensitivity Mode. A number must be entered in the SSM/Clock field to select the appropriate SSM number and time clock. To view the time clock settings, highlight the SSM/Clock field, and press the ✔ button. For example: [Time Clock 2] DAY ON -> OFF ON -> OFF MON 00:00 00:00 19:00 00:00 TUE 00:00 06:30 00:00 00:00 WED 00:00 00:00 00:00 00:00 THU 00:00 00:00 00:00 00:00 The panel supports two independent times for each day of the week during which the SSM mode will be switched on (i.e. during which the Special Sensitivity Mode settings are active)"
+          }
+        ],
+        "quickReplies": [],
+        "mode": "manual-search",
+        "modelUsed": false,
+        "coverage": "reference_only",
+        "engineVersion": "2026-11-12.1",
+        "searchPlan": {
+          "version": "2026-11-12.1",
+          "scope": "selected_helper_manuals",
+          "attempts": [
+            {
+              "kind": "original",
+              "query": "Where do I set the clock?",
+              "candidateIds": [
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-44:2",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-44:1",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-44:0",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-71:0"
+              ]
+            },
+            {
+              "kind": "vocabulary",
+              "query": "Where do I set the clock? change date time clock",
+              "candidateIds": [
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-44:2",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-44:1",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-44:0"
+              ]
+            }
+          ],
+          "searchCount": 2,
+          "status": "candidate_references_found",
+          "stopped": "candidates_found",
+          "inferenceUsed": false
+        }
+      }
+    }
+  ],
+  "finishedAt": "2026-11-12T00:37:57.258Z"
+}

@@ -1,3 +1,4 @@
+import {createToolboxPackController} from './toolbox-pack.mjs';
 import {calculateToolbox,resistorBandOptions} from './toolbox-calculators.mjs';
 
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -30,6 +31,7 @@ const button=(action,label,extra='',style='secondary')=>`<button type="button" c
  * or confirmed findings. No model, network request or job mutation is used. */
 export function createToolboxController({app,toast=()=>{}}){
  let selected='',drafts=structuredClone(defaults),result=null,storageWarning='',loaded=false;
+ const pack=createToolboxPackController({app,toast});
  const find=selector=>app.querySelector(selector);
  function load(){
   if(loaded)return;loaded=true;
@@ -70,8 +72,9 @@ export function createToolboxController({app,toast=()=>{}}){
   return `${select('bands','Number of bands',[['4','4 bands'],['5','5 bands'],['6','6 bands']])}<div id="toolbox-resistor-visual">${resistorPreview()}</div><p class="toolbox-note">Set each colour to match the resistor, reading from the digit end. Do not rely on the example colours below.</p><div class="toolbox-colours">${roles.map((role,index)=>`<label class="toolbox-field" for="toolbox-band-${index}"><span>${index+1}. ${esc(role)}</span><select id="toolbox-band-${index}" data-toolbox-band="${index}" aria-describedby="toolbox-colours-error">${colourOptions(bands,index).map(([key,label])=>`<option value="${esc(key)}"${drafts.resistor.colours[index]===key?' selected':''}>${esc(label)}</option>`).join('')}</select></label>`).join('')}</div><small class="toolbox-field-error" id="toolbox-colours-error"></small>`;
  }
  function render(slug=''){
+  if(slug==='pack'||slug.startsWith('pack-'))return pack.render(slug==='pack'?'':slug.slice(5));
   load();selected=toolRows.some(row=>row[0]===slug)?slug:'';result=null;
-  if(!selected){app.innerHTML=`<section class="toolbox-page"><a class="back" href="#home">← Home</a><div class="eyebrow">FINDR / TOOL BOX</div><h1>Tool box</h1><p class="toolbox-lead">Quick calculations for the job in front of you. Everything here works on this device, offline.</p><div class="toolbox-grid">${toolRows.map(([slug,,title,description,type])=>`<a class="toolbox-card" href="#toolbox/${slug}"><span class="toolbox-icon">${icon(type)}</span><div><h2>${title}</h2><p>${description}</p></div><span aria-hidden="true">→</span></a>`).join('')}</div><p class="toolbox-footnote">Use the actual equipment and cable documentation for required limits. Calculator results are separate from your fault-finding logs.</p></section>`;return;}
+  if(!selected){app.innerHTML=`<section class="toolbox-page"><a class="back" href="#home">← Home</a><div class="eyebrow">FINDR / TOOL BOX</div><h1>Tool box</h1><p class="toolbox-lead">Quick calculations for the job in front of you. Everything here works on this device, offline.</p><a class="toolbox-pack-banner" style="display:block" href="#toolbox/pack"><h2>Download tool box pack</h2><p>Six more calculators and six quick picture guides, saved from GitHub for offline use.</p><span class="primary" style="display:inline-block">Open pack →</span></a><div class="toolbox-grid">${toolRows.map(([slug,,title,description,type])=>`<a class="toolbox-card" href="#toolbox/${slug}"><span class="toolbox-icon">${icon(type)}</span><div><h2>${title}</h2><p>${description}</p></div><span aria-hidden="true">→</span></a>`).join('')}</div><p class="toolbox-footnote">Use the actual equipment and cable documentation for required limits. Calculator results are separate from your fault-finding logs.</p></section>`;return;}
   const [, ,title,description,type]=toolRows.find(row=>row[0]===selected);
   app.innerHTML=`<section class="toolbox-page"><div class="toolbox-top"><a class="back" href="#toolbox">← Tool box</a><a class="subtle" href="#home">Home</a></div><div class="eyebrow">FINDR / TOOL BOX</div><div class="toolbox-heading"><span class="toolbox-icon">${icon(type)}</span><h1>${title}</h1></div><p class="toolbox-lead">${description}</p><form id="toolbox-form" class="toolbox-form" novalidate>${({battery:batteryForm,'voltage-drop':voltageForm,resistor:resistorForm,resistance:conductorForm}[selected])()}<div id="toolbox-error-summary" class="toolbox-error-summary" role="alert" hidden></div><div class="toolbox-actions"><button type="submit" class="primary">Calculate</button>${button('reset','Reset')}</div><p id="toolbox-save-status" class="toolbox-footnote">${esc(storageWarning||'Inputs kept on this device · separate from fault logs')}</p></form><section id="toolbox-result" class="toolbox-result" aria-live="polite" tabindex="-1" hidden></section></section>`;
  }

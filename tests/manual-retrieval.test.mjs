@@ -101,3 +101,58 @@ test('equipment names identify the manual while procedure content outranks cover
  const item=manual({pages:[{page:1,text:('Fixture Panel 4 Synthetic ').repeat(12)+'Programming manual and installation.',quality:{readable:true}},{page:2,text:'Contents. Event history ......... 7. Walk test ......... 8. Terminal wiring ......... 9.',quality:{readable:true}},{page:7,text:'To view event history, select VIEW then LOG. Scroll the recorded events using the arrow keys.',quality:{readable:true}}]});
  const hits=retrieveManualPassages([item],'How do I view event history on Synthetic Fixture Panel 4?',{equipment:[{manufacturer:'Synthetic',model:'Fixture Panel 4'}]});assert.equal(hits[0].page,7);
 });
+
+test('persisted postings match passage identities and do not restore a filtered-out source',()=>{
+ const index=buildManualIndex(manual());
+ assert.equal(index.schemaVersion,2);
+ for(const [term,positions]of Object.entries(index.postings)){
+  assert.equal(index.documentFrequencies[term],positions.length);
+  assert.deepEqual(positions,index.passages.flatMap((p,i)=>p.tokens.includes(term)?[i]:[]));
+  assert.ok(positions.every(i=>index.passageIds[i]===index.passages[i].id));
+ }
+ const filtered={...index,passages:index.passages.filter(p=>p.page!==3)};
+ assert.ok(retrieveManualPassages([filtered],'PSU output voltage').every(p=>p.page!==3));
+ const none={...index,passages:[]};assert.deepEqual(retrieveManualPassages([none],'event history'),[]);
+});
+
+test('explicit operation headings outrank repeated related words without changing source text',()=>{
+ const a=manual({pages:[
+  {page:1,quality:{readable:true},text:'SYNTHETIC TEST ONLY. Maintenance checklist. Perform a walk test. The walk test is required annually. Walk test results should be recorded. Test the full system.'},
+  {page:2,quality:{readable:true},text:'3.13 Testing\n3.13.1 Test - Zones\nSYNTHETIC TEST ONLY. The Test Zones function provides a one-person walk test. Select the fictional zone and check its documented test condition. This is not real equipment guidance.'},
+  {page:3,quality:{readable:true},text:'3.14 Enable - Inputs\nSYNTHETIC TEST ONLY. Enable an input detector. A detector is enabled here; disable detector instructions are in a separate section.'},
+  {page:4,quality:{readable:true},text:'3.15 Disable - Inputs\nSYNTHETIC TEST ONLY. Select the detector input in this fictional menu to disable it. Read its documented conditions and effects before work.'}
+ ]});
+ const index=buildManualIndex(a),testHits=retrieveManualPassages([index],'How do I do a walk test?'),disableHits=retrieveManualPassages([index],'How do I disable a detector?');
+ assert.equal(testHits[0].page,2);assert.equal(disableHits[0].page,4);
+ for(const p of [...testHits,...disableHits])assert.ok(a.pages.find(page=>page.page===p.page).text.includes(p.text));
+ assert.equal(testHits[0].section,null,'Candidate headings must not become a certified section citation');
+ assert.deepEqual(testHits[0].headings[0],{number:'3.13',title:'Testing',page:2,offset:0,quote:'3.13 Testing'});
+});
+
+test('heading context has exact source anchors and lasts at most the next readable page',()=>{
+ const a=manual({pages:[
+  {page:1,quality:{readable:true},text:'4.2 Event history\nSYNTHETIC TEST ONLY. This section describes a fictional event log, its display and the recorded history.'},
+  {page:2,quality:{readable:true},text:'SYNTHETIC TEST ONLY. A continuation of readable source text with enough characters to exercise a second page without another numbered heading.'},
+  {page:3,quality:{readable:true},text:'SYNTHETIC TEST ONLY. Different unnumbered topic. No prior heading should be assigned indefinitely to unrelated readable pages.'},
+  {page:5,quality:{readable:true},text:'3.5 A (per chassis)\nSYNTHETIC TEST ONLY. Numerical electrical specifications are not inferred to be numbered manual headings.'}
+ ]});
+ const index=buildManualIndex(a);
+ assert.equal(index.passages.find(p=>p.page===2).headings[0].page,1);
+ assert.deepEqual(index.passages.find(p=>p.page===3).headings,[]);
+ assert.deepEqual(index.passages.find(p=>p.page===5).headings,[]);
+ assert.ok(index.passages.every(p=>p.section===null));
+ for(const p of index.passages)for(const h of p.headings)assert.equal(a.pages.find(page=>page.page===h.page).text.trim().slice(h.offset,h.offset+h.quote.length),h.quote);
+});
+
+test('new numbered heading prevents a previous-page heading following an unrelated page header',()=>{
+ const a=manual({pages:[
+  {page:1,quality:{readable:true},text:'4.2 Disable outputs\nSYNTHETIC TEST ONLY. Details for one fictional operation end on this page.'},
+  {page:2,quality:{readable:true},text:'SYNTHETIC publisher\nPage 2\n4.3 Change clock\nSYNTHETIC TEST ONLY. This separate operation concerns the clock and has no output-disable instructions.'}
+ ]}),p=buildManualIndex(a).passages.find(p=>p.page===2);
+ assert.deepEqual(p.headings.map(h=>h.title),['Change clock']);
+});
+
+test('JSON-restored postings handle prototype-property query words as ordinary absent terms',()=>{
+ const index=JSON.parse(JSON.stringify(buildManualIndex(manual())));
+ assert.deepEqual(retrieveManualPassages([index],'constructor prototype'),[]);
+});

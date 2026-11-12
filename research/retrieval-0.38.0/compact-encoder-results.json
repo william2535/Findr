@@ -1,0 +1,980 @@
+{
+  "createdAt": "2026-11-12T00:30:07.807Z",
+  "purpose": "Research-only semantic ranking comparison; no answer generation or app integration.",
+  "baseline": "d1ff3d032895efa02b4f2ad8188e2d9508fbdf00",
+  "model": {
+    "modelId": "Xenova/multi-qa-MiniLM-L6-cos-v1",
+    "revision": "3c96c1df3fec9a98a5de76e80877c8bec18498f6",
+    "files": [
+      {
+        "path": "config.json",
+        "bytes": 659,
+        "sha256": "3616e064a97f002d780a0fcb84a9f48cf88f48ce65cf86fc33dab9c28c4536b5",
+        "downloadMs": 434.4605410005897,
+        "reused": false,
+        "url": "https://huggingface.co/Xenova/multi-qa-MiniLM-L6-cos-v1/resolve/3c96c1df3fec9a98a5de76e80877c8bec18498f6/config.json"
+      },
+      {
+        "path": "tokenizer.json",
+        "bytes": 711661,
+        "sha256": "ba0b295093cc7b311a6df393d6912df56cf6fb2651fb21e02be72cdb0b095e3e",
+        "downloadMs": 506.8854949931847,
+        "reused": false,
+        "url": "https://huggingface.co/Xenova/multi-qa-MiniLM-L6-cos-v1/resolve/3c96c1df3fec9a98a5de76e80877c8bec18498f6/tokenizer.json"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "bytes": 366,
+        "sha256": "9261e7d79b44c8195c1cada2b453e55b00aeb81e907a6664974b4d7776172ab3",
+        "downloadMs": 357.46288699738216,
+        "reused": false,
+        "url": "https://huggingface.co/Xenova/multi-qa-MiniLM-L6-cos-v1/resolve/3c96c1df3fec9a98a5de76e80877c8bec18498f6/tokenizer_config.json"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "bytes": 125,
+        "sha256": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+        "downloadMs": 409.1294600002584,
+        "reused": false,
+        "url": "https://huggingface.co/Xenova/multi-qa-MiniLM-L6-cos-v1/resolve/3c96c1df3fec9a98a5de76e80877c8bec18498f6/special_tokens_map.json"
+      },
+      {
+        "path": "onnx/model_quantized.onnx",
+        "bytes": 22972369,
+        "sha256": "3da8d06414059630b9e6989c5877bae7d79c2dc5525070e2f36417c15bc07114",
+        "downloadMs": 4157.574664001004,
+        "reused": false,
+        "url": "https://huggingface.co/Xenova/multi-qa-MiniLM-L6-cos-v1/resolve/3c96c1df3fec9a98a5de76e80877c8bec18498f6/onnx/model_quantized.onnx"
+      }
+    ],
+    "bytes": 23685180,
+    "downloadMs": 5865.513046992419
+  },
+  "firstDownload": {
+    "modelId": "Xenova/multi-qa-MiniLM-L6-cos-v1",
+    "revision": "3c96c1df3fec9a98a5de76e80877c8bec18498f6",
+    "files": [
+      {
+        "path": "config.json",
+        "bytes": 659,
+        "sha256": "3616e064a97f002d780a0fcb84a9f48cf88f48ce65cf86fc33dab9c28c4536b5",
+        "downloadMs": 434.4605410005897,
+        "reused": false,
+        "url": "https://huggingface.co/Xenova/multi-qa-MiniLM-L6-cos-v1/resolve/3c96c1df3fec9a98a5de76e80877c8bec18498f6/config.json"
+      },
+      {
+        "path": "tokenizer.json",
+        "bytes": 711661,
+        "sha256": "ba0b295093cc7b311a6df393d6912df56cf6fb2651fb21e02be72cdb0b095e3e",
+        "downloadMs": 506.8854949931847,
+        "reused": false,
+        "url": "https://huggingface.co/Xenova/multi-qa-MiniLM-L6-cos-v1/resolve/3c96c1df3fec9a98a5de76e80877c8bec18498f6/tokenizer.json"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "bytes": 366,
+        "sha256": "9261e7d79b44c8195c1cada2b453e55b00aeb81e907a6664974b4d7776172ab3",
+        "downloadMs": 357.46288699738216,
+        "reused": false,
+        "url": "https://huggingface.co/Xenova/multi-qa-MiniLM-L6-cos-v1/resolve/3c96c1df3fec9a98a5de76e80877c8bec18498f6/tokenizer_config.json"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "bytes": 125,
+        "sha256": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+        "downloadMs": 409.1294600002584,
+        "reused": false,
+        "url": "https://huggingface.co/Xenova/multi-qa-MiniLM-L6-cos-v1/resolve/3c96c1df3fec9a98a5de76e80877c8bec18498f6/special_tokens_map.json"
+      },
+      {
+        "path": "onnx/model_quantized.onnx",
+        "bytes": 22972369,
+        "sha256": "3da8d06414059630b9e6989c5877bae7d79c2dc5525070e2f36417c15bc07114",
+        "downloadMs": 4157.574664001004,
+        "reused": false,
+        "url": "https://huggingface.co/Xenova/multi-qa-MiniLM-L6-cos-v1/resolve/3c96c1df3fec9a98a5de76e80877c8bec18498f6/onnx/model_quantized.onnx"
+      }
+    ],
+    "bytes": 23685180,
+    "downloadMs": 5865.513046992419
+  },
+  "environment": {
+    "host": "linux 6.18.57",
+    "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+    "logicalCpus": 5,
+    "browser": {
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "hardwareConcurrency": 5,
+      "deviceMemoryGB": 16,
+      "viewport": [
+        390,
+        844
+      ]
+    }
+  },
+  "manuals": [
+    {
+      "manualId": "advanced-0254975c10bd",
+      "title": "Advanced MxPro5 — User guide",
+      "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+      "cachedPages": 43
+    },
+    {
+      "manualId": "advanced-a18ea5cccf04",
+      "title": "MxPro5 — Product Manual",
+      "contentHash": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b",
+      "cachedPages": 74
+    }
+  ],
+  "passageCount": 254,
+  "parameters": {
+    "pooling": "mean",
+    "normalize": true,
+    "maxLength": 256,
+    "device": "wasm",
+    "dtype": "q8",
+    "threads": 1,
+    "batchSize": 4
+  },
+  "queries": [
+    {
+      "question": "How do I view the event history?",
+      "baselineLexical": [
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:1",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 24,
+          "offset": 1082,
+          "score": 16.104647549921353
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-52:1",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 52,
+          "offset": 1062,
+          "score": 13.17924484594474
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-38:1",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 38,
+          "offset": 1029,
+          "score": 12.936636387223446
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:2",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 24,
+          "offset": 2166,
+          "score": 12.453540554084523
+        }
+      ],
+      "encodingMs": 8,
+      "semantic": [
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:1",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 24,
+          "offset": 1082,
+          "score": 0.6393713821371629
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:2",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 24,
+          "offset": 2166,
+          "score": 0.43342223318168493
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-52:1",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 52,
+          "offset": 1062,
+          "score": 0.36331518548610653
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-17:1",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 17,
+          "offset": 1088,
+          "score": 0.35651852751154606
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-1:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 1,
+          "offset": 0,
+          "score": 0.3503708922117903
+        }
+      ],
+      "expectedReferences": [
+        [
+          "advanced-0254975c10bd",
+          24
+        ]
+      ],
+      "evaluation": {
+        "baselineTop1": true,
+        "baselineTop3": true,
+        "semanticTop1": true,
+        "semanticTop3": true
+      }
+    },
+    {
+      "question": "How do I do a walk test?",
+      "baselineLexical": [
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-60:2",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 60,
+          "offset": 2087,
+          "score": 9.620204534610448
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-33:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 33,
+          "offset": 0,
+          "score": 9.227454252720586
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-18:1",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 18,
+          "offset": 1095,
+          "score": 8.602100504479687
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-57:1",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 57,
+          "offset": 1066,
+          "score": 7.700703244276208
+        }
+      ],
+      "encodingMs": 8.200000002980232,
+      "semantic": [
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-33:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 33,
+          "offset": 0,
+          "score": 0.4056553723375646
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-34:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 34,
+          "offset": 0,
+          "score": 0.38043631904476155
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-60:2",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 60,
+          "offset": 2087,
+          "score": 0.3602618229777674
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-33:1",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 33,
+          "offset": 1065,
+          "score": 0.32756246709352105
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-35:1",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 35,
+          "offset": 1095,
+          "score": 0.32566986151822663
+        }
+      ],
+      "expectedReferences": [
+        [
+          "advanced-0254975c10bd",
+          33
+        ],
+        [
+          "advanced-0254975c10bd",
+          34
+        ]
+      ],
+      "evaluation": {
+        "baselineTop1": false,
+        "baselineTop3": true,
+        "semanticTop1": true,
+        "semanticTop3": true
+      }
+    },
+    {
+      "question": "How do I disable a detector?",
+      "baselineLexical": [
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-29:1",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 29,
+          "offset": 1073,
+          "score": 9.099335138047477
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-30:1",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 30,
+          "offset": 1068,
+          "score": 7.58562871134701
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-27:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 27,
+          "offset": 0,
+          "score": 7.26517951429374
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-8:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 8,
+          "offset": 0,
+          "score": 5.785197772498655
+        }
+      ],
+      "encodingMs": 6.899999998509884,
+      "semantic": [
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-27:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 27,
+          "offset": 0,
+          "score": 0.5552067714211859
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-26:1",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 26,
+          "offset": 1020,
+          "score": 0.5157917157419889
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-26:2",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 26,
+          "offset": 2069,
+          "score": 0.5015115551837063
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-43:1",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 43,
+          "offset": 1036,
+          "score": 0.491234953064379
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-30:1",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 30,
+          "offset": 1068,
+          "score": 0.455004270475299
+        }
+      ],
+      "expectedReferences": [
+        [
+          "advanced-0254975c10bd",
+          26
+        ],
+        [
+          "advanced-0254975c10bd",
+          27
+        ]
+      ],
+      "evaluation": {
+        "baselineTop1": false,
+        "baselineTop3": true,
+        "semanticTop1": true,
+        "semanticTop3": true
+      }
+    },
+    {
+      "question": "What is the panel battery voltage?",
+      "baselineLexical": [
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-2:4",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 2,
+          "offset": 4371,
+          "score": 13.694881764274378
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-23:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 23,
+          "offset": 0,
+          "score": 11.613497555191172
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-66:1",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 66,
+          "offset": 1089,
+          "score": 10.346194776012393
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-25:0",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 25,
+          "offset": 0,
+          "score": 9.284002743785077
+        }
+      ],
+      "encodingMs": 6.5,
+      "semantic": [
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-25:0",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 25,
+          "offset": 0,
+          "score": 0.5074857644501644
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-27:0",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 27,
+          "offset": 0,
+          "score": 0.48704400271137327
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-61:0",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 61,
+          "offset": 0,
+          "score": 0.4695497310434008
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-26:0",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 26,
+          "offset": 0,
+          "score": 0.4469987149724567
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-61:1",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 61,
+          "offset": 1098,
+          "score": 0.4140258510161442
+        }
+      ],
+      "expectedReferences": [
+        [
+          "advanced-0254975c10bd",
+          23
+        ],
+        [
+          "advanced-a18ea5cccf04",
+          25
+        ]
+      ],
+      "evaluation": {
+        "baselineTop1": false,
+        "baselineTop3": true,
+        "semanticTop1": true,
+        "semanticTop3": true
+      }
+    },
+    {
+      "question": "What does loop open circuit mean?",
+      "baselineLexical": [
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-51:2",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 51,
+          "offset": 2127,
+          "score": 11.425519465852245
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-70:2",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 70,
+          "offset": 2111,
+          "score": 9.949795530005236
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-23:1",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 23,
+          "offset": 1092,
+          "score": 9.430124432495559
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-38:1",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 38,
+          "offset": 1090,
+          "score": 8.434414898791449
+        }
+      ],
+      "encodingMs": 7.100000001490116,
+      "semantic": [
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-51:2",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 51,
+          "offset": 2127,
+          "score": 0.44543544632034243
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-41:1",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 41,
+          "offset": 1028,
+          "score": 0.4217524903226693
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-48:0",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 48,
+          "offset": 0,
+          "score": 0.38198722184288414
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-70:2",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 70,
+          "offset": 2111,
+          "score": 0.37231505070035903
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-19:1",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 19,
+          "offset": 1058,
+          "score": 0.3553311637699916
+        }
+      ],
+      "expectedReferences": [
+        [
+          "advanced-0254975c10bd",
+          23
+        ]
+      ],
+      "evaluation": {
+        "baselineTop1": false,
+        "baselineTop3": true,
+        "semanticTop1": false,
+        "semanticTop3": false
+      }
+    },
+    {
+      "question": "Where do I find the disable sounders menu?",
+      "baselineLexical": [
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-29:1",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 29,
+          "offset": 1073,
+          "score": 15.349796975049877
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-27:1",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 27,
+          "offset": 1083,
+          "score": 14.938830857987838
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-33:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 33,
+          "offset": 0,
+          "score": 11.729278454185481
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-69:1",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 69,
+          "offset": 1091,
+          "score": 10.74171067128309
+        }
+      ],
+      "encodingMs": 10.799999997019768,
+      "semantic": [
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-16:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 16,
+          "offset": 0,
+          "score": 0.534348022787678
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-27:1",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 27,
+          "offset": 1083,
+          "score": 0.5063004495583368
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-15:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 15,
+          "offset": 0,
+          "score": 0.46943444168685466
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-29:1",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 29,
+          "offset": 1073,
+          "score": 0.4569822876538566
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-30:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 30,
+          "offset": 0,
+          "score": 0.45354938708083026
+        }
+      ],
+      "expectedReferences": [
+        [
+          "advanced-0254975c10bd",
+          27
+        ],
+        [
+          "advanced-0254975c10bd",
+          28
+        ]
+      ],
+      "evaluation": {
+        "baselineTop1": false,
+        "baselineTop3": true,
+        "semanticTop1": false,
+        "semanticTop3": true
+      }
+    },
+    {
+      "question": "How do I change the date and time?",
+      "baselineLexical": [
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-50:1",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 50,
+          "offset": 1072,
+          "score": 12.746173885244502
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-39:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 39,
+          "offset": 0,
+          "score": 12.61101751314165
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-52:0",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 52,
+          "offset": 0,
+          "score": 12.280280047394928
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-48:0",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 48,
+          "offset": 0,
+          "score": 10.358855105117154
+        }
+      ],
+      "encodingMs": 8,
+      "semantic": [
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-39:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 39,
+          "offset": 0,
+          "score": 0.6562611751210001
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-50:1",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 50,
+          "offset": 1072,
+          "score": 0.6275106101024622
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-36:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 36,
+          "offset": 0,
+          "score": 0.40022150289975245
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-69:1",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 69,
+          "offset": 1091,
+          "score": 0.3500331989114451
+        },
+        {
+          "id": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-52:2",
+          "manualId": "advanced-a18ea5cccf04",
+          "title": "MxPro5 — Product Manual",
+          "pdfPage": 52,
+          "offset": 2156,
+          "score": 0.3498049693875066
+        }
+      ],
+      "expectedReferences": [
+        [
+          "advanced-0254975c10bd",
+          39
+        ],
+        [
+          "advanced-a18ea5cccf04",
+          50
+        ]
+      ],
+      "evaluation": {
+        "baselineTop1": true,
+        "baselineTop3": true,
+        "semanticTop1": true,
+        "semanticTop3": true
+      }
+    },
+    {
+      "question": "How can I see all disabled devices?",
+      "baselineLexical": [
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-15:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 15,
+          "offset": 0,
+          "score": 14.594948956482511
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-15:1",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 15,
+          "offset": 1078,
+          "score": 14.179182156007702
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-16:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 16,
+          "offset": 0,
+          "score": 14.060556001742155
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-21:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 21,
+          "offset": 0,
+          "score": 13.19532774047097
+        }
+      ],
+      "encodingMs": 6.799999997019768,
+      "semantic": [
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-16:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 16,
+          "offset": 0,
+          "score": 0.514141234283015
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-15:2",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 15,
+          "offset": 2091,
+          "score": 0.5082478365093807
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-30:0",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 30,
+          "offset": 0,
+          "score": 0.5026619838971272
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-15:1",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 15,
+          "offset": 1078,
+          "score": 0.47173054094208283
+        },
+        {
+          "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-22:1",
+          "manualId": "advanced-0254975c10bd",
+          "title": "Advanced MxPro5 — User guide",
+          "pdfPage": 22,
+          "offset": 1054,
+          "score": 0.431811825421479
+        }
+      ],
+      "expectedReferences": [
+        [
+          "advanced-0254975c10bd",
+          15
+        ],
+        [
+          "advanced-0254975c10bd",
+          16
+        ],
+        [
+          "advanced-0254975c10bd",
+          21
+        ]
+      ],
+      "evaluation": {
+        "baselineTop1": true,
+        "baselineTop3": true,
+        "semanticTop1": true,
+        "semanticTop3": true
+      }
+    }
+  ],
+  "limitations": [
+    "Eight exploratory questions, not a quality benchmark or procedure-safety validation.",
+    "Warm offline inference only; does not test cold offline loading or browser persistence.",
+    "Linux Chromium CPU only; no physical phone, iPhone, Android or WebKit inference claim.",
+    "Model download measured through execution environment proxy, not typical mobile download speed.",
+    "RSS is sampled aggregate Chromium renderer resident memory; includes browser overhead, not model-only or a guaranteed peak."
+  ],
+  "load": {
+    "loadMs": 1257
+  },
+  "indexing": {
+    "encodingMs": 39786.69999996573,
+    "passages": 254,
+    "dimensions": 384,
+    "truncatedPassages": 15,
+    "maxUntruncatedTokens": 403,
+    "vectorFloat32Bytes": 390144
+  },
+  "warmOffline": {
+    "networkDisabled": true,
+    "encodingMs": 7.799999997019768,
+    "top": {
+      "id": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:1",
+      "manualId": "advanced-0254975c10bd",
+      "title": "Advanced MxPro5 — User guide",
+      "pdfPage": 24,
+      "offset": 1082,
+      "score": 0.6393713821371629
+    },
+    "serverRequestsDuringOffline": 0
+  },
+  "memory": {
+    "sampleCount": 169,
+    "intervalMs": 250,
+    "baselineRendererRssBytes": 149098496,
+    "peakRendererRssBytes": 448618496
+  },
+  "requests": [
+    "/",
+    "/favicon.ico",
+    "/worker.mjs",
+    "/runtime/transformers.min.js",
+    "/models/multiqa/tokenizer.json",
+    "/models/multiqa/tokenizer_config.json",
+    "/models/multiqa/config.json",
+    "/models/multiqa/onnx/model_quantized.onnx",
+    "/runtime/ort-wasm-simd-threaded.mjs",
+    "/runtime/ort-wasm-simd-threaded.wasm"
+  ],
+  "completed": true,
+  "evaluation": {
+    "definition": "Page-relevance targets independently reviewed in lexical-benchmark.json. Hits do not establish a complete or safe answer; loop-open target supplies monitoring context only.",
+    "questionCount": 8,
+    "baselineTop1": 3,
+    "baselineTop3": 8,
+    "semanticTop1": 6,
+    "semanticTop3": 7
+  },
+  "runtimeFiles": [
+    {
+      "path": "transformers.min.js",
+      "bytes": 888173,
+      "sha256": "aa5002b70e789798da263f5f99c62bd3e8fcd0c119258a493c40c180648365fa"
+    },
+    {
+      "path": "ort-wasm-simd-threaded.mjs",
+      "bytes": 20856,
+      "sha256": "43c25054b6b9ac000f786c65545ff83a45f871e0e310e8c2f4d48a363bb66db4"
+    },
+    {
+      "path": "ort-wasm-simd-threaded.wasm",
+      "bytes": 11133407,
+      "sha256": "f061472c6e77d6d50d079aacdc0ff9b63fee287ddd2cbf46cf62438d3891de2b"
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "status": "passed",
+  "recordedAt": "2026-11-12T00:38:31.361Z",
+  "mode": "offline",
+  "browser": "chromium",
+  "profile": "/workspace/findr-menu0361-chromium-xEvw2S",
+  "physicalIPhone": false,
+  "actualInference": false,
+  "manifest": {
+    "commit": "d6cfb85034994f73cbbf6b24a8490a9002ed7c62",
+    "bytes": 16473,
+    "files": 7
+  },
+  "checks": [
+    {
+      "name": "Normal Home secret icon opens the pack screen with its actual16,473-byte size"
+    },
+    {
+      "name": "After actual final-shell cold reload with network disabled, six calculators and six saved picture guides work; existing data unchanged",
+      "evidence": {
+        "ready": true,
+        "build": "df788a7d9a0a",
+        "version": "0.38.0",
+        "verification": "sha256-v1"
+      }
+    },
+    {
+      "name": "Saved helper conversation resumes offline; bounded manual search finds real MxPro5 event-history page24 and opens saved PDF without inference",
+      "evidence": {
+        "id": "15db9169-d953-480d-ba0f-51beb55b2bfd",
+        "role": "assistant",
+        "text": "Manual search — prepare the local AI engine when you’re ready to use AI assistance.\n\nHere are the related passages I found in your saved manuals:\n\n[1] Press the  buttons to scroll through the fire alarm events logged in the system. Press the  button to show more recent events and press the  button to show earlier events. To view the details for a specific Log Entry Number, it is possible to select the record by typing in the required number using the number keys. Press the ✔ button to confirm. The display will then display the required record. Press the ‘Esc’ button to return to the main view menu.\n\n[2] all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.9.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001.0 001 14/03/06 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001. The analogue value registered by the device (64) has also been recorded. The lower two lines show the zone and device location texts descriptions for ease of identification.\n\nThese passages are references to check, not a verified answer or a confirmed diagnosis.",
+        "createdAt": 1794443925135,
+        "kind": "manual_search",
+        "sourceRefs": [
+          {
+            "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:2",
+            "citationId": "S1",
+            "manualId": "advanced-0254975c10bd",
+            "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+            "processorVersion": "2026-11-10.3",
+            "title": "Advanced MxPro5 — User guide",
+            "revision": "",
+            "models": [
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800",
+              "Mx-5100V",
+              "Mx-5200V",
+              "Mx-5400V",
+              "Mx-5800V"
+            ],
+            "page": 24,
+            "pdfPage": 24,
+            "printedPage": null,
+            "section": null,
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "Press the  buttons to scroll through the fire alarm events logged in the system. Press the  button to show more recent events and press the  button to show earlier events. To view the details for a specific Log Entry Number, it is possible to select the record by typing in the required number using the number keys. Press the ✔ button to confirm. The display will then display the required record. Press the ‘Esc’ button to return to the main view menu.",
+            "excerpt": "Press the  buttons to scroll through the fire alarm events logged in the system. Press the  button to show more recent events and press the  button to show earlier events. To view the details for a specific Log Entry Number, it is possible to select the record by typing in the required number using the number keys. Press the ✔ button to confirm. The display will then display the required record. Press the ‘Esc’ button to return to the main view menu."
+          },
+          {
+            "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:1",
+            "citationId": "S2",
+            "manualId": "advanced-0254975c10bd",
+            "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+            "processorVersion": "2026-11-10.3",
+            "title": "Advanced MxPro5 — User guide",
+            "revision": "",
+            "models": [
+              "Mx-5100",
+              "Mx-5200",
+              "Mx-5400",
+              "Mx-5800",
+              "Mx-5100V",
+              "Mx-5200V",
+              "Mx-5400V",
+              "Mx-5800V"
+            ],
+            "page": 24,
+            "pdfPage": 24,
+            "printedPage": null,
+            "section": null,
+            "method": "text",
+            "requiresSourceReview": false,
+            "quote": "all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.9.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001.0 001 14/03/06 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001. The analogue value registered by the device (64) has also been recorded. The lower two lines show the zone and device location texts descriptions for ease of identification.",
+            "excerpt": "all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.9.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001.0 001 14/03/06 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001. The analogue value registered by the device (64) has also been recorded. The lower two lines show the zone and device location texts descriptions for ease of identification."
+          }
+        ],
+        "quickReplies": [],
+        "mode": "manual-search",
+        "modelUsed": false,
+        "coverage": "reference_only",
+        "engineVersion": "2026-11-12.1",
+        "searchPlan": {
+          "version": "2026-11-12.1",
+          "scope": "selected_helper_manuals",
+          "attempts": [
+            {
+              "kind": "original",
+              "query": "Where is the event log?",
+              "candidateIds": [
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-52:1",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:2",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-38:1",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:1",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-18:1",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-18:0",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-60:1",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-40:1",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-2:3",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-57:0",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-58:0",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:0"
+              ]
+            },
+            {
+              "kind": "vocabulary",
+              "query": "Where is the event log? view event history log recorded alarms",
+              "candidateIds": [
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:1",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:2",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-38:1",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-47:2",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-60:1",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-18:0",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-25:0",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:0",
+                "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-40:1",
+                "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-20:0"
+              ]
+            }
+          ],
+          "searchCount": 2,
+          "status": "candidate_references_found",
+          "stopped": "candidates_found",
+          "inferenceUsed": false
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "rawRequests": [],
+  "forbiddenRequests": [],
+  "faultInjection": "First attempt delays second genuine GitHub request until UI cancellation; next attempt aborts that request once. Successful downloads always use real pinned GitHub bytes.",
+  "browserVersion": "154.0.8037.57",
+  "shell": {
+    "ready": true,
+    "build": "df788a7d9a0a",
+    "version": "0.38.0",
+    "verification": "sha256-v1"
+  },
+  "outputs": [
+    {
+      "id": "dc-ohms",
+      "text": "Calculated estimate\nCurrent\n0.2 A\nPower\n4.8 W\n\nFor a steady DC resistive load. Real devices may have startup current or non-resistive behaviour."
+    },
+    {
+      "id": "resistors",
+      "text": "Calculated estimate\nSeries total\n3000 Ω\nParallel total\n666.66667 Ω\n\nIdeal nominal resistors; tolerance and power ratings still apply. This does not establish the alarm input’s required wiring profile."
+    },
+    {
+      "id": "cctv-storage",
+      "text": "Calculated estimate\nVideo payload\n604.8 GB\nVideo payload\n0.6048 TB\nAggregate active bitrate\n8 Mbit/s\n\nDecimal GB/TB. Constant average bitrate and identical cameras are assumed. Audio metadata filesystem/RAID reserves and variable bitrate peaks are excluded. Actual retention must be checked on the recorder."
+    },
+    {
+      "id": "bandwidth",
+      "text": "Calculated estimate\nPayload bitrate\n32 Mbit/s\nNominal link utilisation\n32 %\nNominal spare capacity\n68 Mbit/s\n\nAssumes every counted stream crosses this link. Excludes protocol overhead bursts and other traffic. A positive spare value is not a network-performance guarantee."
+    },
+    {
+      "id": "poe-budget",
+      "text": "Calculated estimate\nRequired switch allocation\n60 W\nTotal budget remaining\n0 W\nPer-port headroom\n15 W\n\nEnter each device’s maximum allocated demand at the switch/PSE including losses as applicable. Identical ports/devices assumed. Total budget and per-port limits both matter; IEEE type/class negotiation cable and device requirements still need checking."
+    },
+    {
+      "id": "dc-load",
+      "text": "Calculated estimate\nTotal current\n0.4 A\nTotal current\n400 mA\nSteady DC power\n9.6 W\n\nIdentical loads at the entered voltage. Use the correct standby active or worst-case specification; startup peaks and charger allowance are not included."
+    }
+  ],
+  "offlineHelper": {
+    "id": "15db9169-d953-480d-ba0f-51beb55b2bfd",
+    "role": "assistant",
+    "text": "Manual search — prepare the local AI engine when you’re ready to use AI assistance.\n\nHere are the related passages I found in your saved manuals:\n\n[1] Press the  buttons to scroll through the fire alarm events logged in the system. Press the  button to show more recent events and press the  button to show earlier events. To view the details for a specific Log Entry Number, it is possible to select the record by typing in the required number using the number keys. Press the ✔ button to confirm. The display will then display the required record. Press the ‘Esc’ button to return to the main view menu.\n\n[2] all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.9.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001.0 001 14/03/06 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001. The analogue value registered by the device (64) has also been recorded. The lower two lines show the zone and device location texts descriptions for ease of identification.\n\nThese passages are references to check, not a verified answer or a confirmed diagnosis.",
+    "createdAt": 1794443925135,
+    "kind": "manual_search",
+    "sourceRefs": [
+      {
+        "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:2",
+        "citationId": "S1",
+        "manualId": "advanced-0254975c10bd",
+        "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+        "processorVersion": "2026-11-10.3",
+        "title": "Advanced MxPro5 — User guide",
+        "revision": "",
+        "models": [
+          "Mx-5100",
+          "Mx-5200",
+          "Mx-5400",
+          "Mx-5800",
+          "Mx-5100V",
+          "Mx-5200V",
+          "Mx-5400V",
+          "Mx-5800V"
+        ],
+        "page": 24,
+        "pdfPage": 24,
+        "printedPage": null,
+        "section": null,
+        "method": "text",
+        "requiresSourceReview": false,
+        "quote": "Press the  buttons to scroll through the fire alarm events logged in the system. Press the  button to show more recent events and press the  button to show earlier events. To view the details for a specific Log Entry Number, it is possible to select the record by typing in the required number using the number keys. Press the ✔ button to confirm. The display will then display the required record. Press the ‘Esc’ button to return to the main view menu.",
+        "excerpt": "Press the  buttons to scroll through the fire alarm events logged in the system. Press the  button to show more recent events and press the  button to show earlier events. To view the details for a specific Log Entry Number, it is possible to select the record by typing in the required number using the number keys. Press the ✔ button to confirm. The display will then display the required record. Press the ‘Esc’ button to return to the main view menu."
+      },
+      {
+        "sourceId": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:1",
+        "citationId": "S2",
+        "manualId": "advanced-0254975c10bd",
+        "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+        "processorVersion": "2026-11-10.3",
+        "title": "Advanced MxPro5 — User guide",
+        "revision": "",
+        "models": [
+          "Mx-5100",
+          "Mx-5200",
+          "Mx-5400",
+          "Mx-5800",
+          "Mx-5100V",
+          "Mx-5200V",
+          "Mx-5400V",
+          "Mx-5800V"
+        ],
+        "page": 24,
+        "pdfPage": 24,
+        "printedPage": null,
+        "section": null,
+        "method": "text",
+        "requiresSourceReview": false,
+        "quote": "all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.9.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001.0 001 14/03/06 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001. The analogue value registered by the device (64) has also been recorded. The lower two lines show the zone and device location texts descriptions for ease of identification.",
+        "excerpt": "all of the event history, a view of only the fire alarms that have occurred or a view of the fire alarm counter. ALL EVENTS . FIRE EVENTS ONLY ALARM COUNTER Press the  buttons to highlight the required menu option and then press the ✔ button to select it. The display then shows the appropriate list of events. 3.9.8.1 Event Log The display will always show the most recent event to have occurred, e.g. [View Fire Events] Entry 0076 Time/Date Node Lp:Addr Zone 10:54:23 1 1:001.0 001 14/03/06 FIRE ALARM 64 BASEMENT ROOM 10 < Number of Highlighted Event < Time, Origin and Zone < Date, Event and Analogue Value < Zone Text Description < Device Location Description In the above example, the latest fire occurred (Event No. 76) at 10:54 am on March 14, 2006. This fire alarm originated at the device at address 001(Addr) on Loop 1 (Lp) on Panel No. 1 (Panel). The device was in Zone 001. The analogue value registered by the device (64) has also been recorded. The lower two lines show the zone and device location texts descriptions for ease of identification."
+      }
+    ],
+    "quickReplies": [],
+    "mode": "manual-search",
+    "modelUsed": false,
+    "coverage": "reference_only",
+    "engineVersion": "2026-11-12.1",
+    "searchPlan": {
+      "version": "2026-11-12.1",
+      "scope": "selected_helper_manuals",
+      "attempts": [
+        {
+          "kind": "original",
+          "query": "Where is the event log?",
+          "candidateIds": [
+            "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-52:1",
+            "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:2",
+            "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-38:1",
+            "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:1",
+            "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-18:1",
+            "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-18:0",
+            "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-60:1",
+            "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-40:1",
+            "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-2:3",
+            "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-57:0",
+            "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-58:0",
+            "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:0"
+          ]
+        },
+        {
+          "kind": "vocabulary",
+          "query": "Where is the event log? view event history log recorded alarms",
+          "candidateIds": [
+            "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:1",
+            "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:2",
+            "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-38:1",
+            "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-47:2",
+            "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-60:1",
+            "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-18:0",
+            "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-25:0",
+            "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-24:0",
+            "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b:pdf-40:1",
+            "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8:pdf-20:0"
+          ]
+        }
+      ],
+      "searchCount": 2,
+      "status": "candidate_references_found",
+      "stopped": "candidates_found",
+      "inferenceUsed": false
+    }
+  },
+  "finishedAt": "2026-11-12T00:38:45.902Z"
+}

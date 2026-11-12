@@ -1,0 +1,1996 @@
+{
+  "environment": {
+    "node": "v24.19.0",
+    "platform": "linux",
+    "arch": "x64"
+  },
+  "baselineCommit": "d1ff3d032895efa02b4f2ad8188e2d9508fbdf00",
+  "source": "Cached actual manufacturer PDFs extracted previously into local analysis.json. Page relevance is a retrieval benchmark, not proof of procedure completeness or physical-panel validation.",
+  "manuals": [
+    {
+      "manualId": "advanced-0254975c10bd",
+      "title": "Advanced MxPro5 — User guide",
+      "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+      "pages": 43,
+      "pdfHashVerified": true
+    },
+    {
+      "manualId": "advanced-a18ea5cccf04",
+      "title": "MxPro5 — Product Manual",
+      "contentHash": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b",
+      "pages": 74,
+      "pdfHashVerified": true
+    }
+  ],
+  "baseline": {
+    "version": "2026-11-10.2",
+    "buildMs": 80.28842800000001,
+    "passages": 294,
+    "indexBytes": 1039246,
+    "top1": 6,
+    "top4": 12,
+    "medianQueryMs": 24.72321199999999,
+    "results": [
+      {
+        "question": "How do I view the event history?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            24
+          ]
+        ],
+        "medianMs": 27.504052,
+        "top1": true,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 24,
+            "offset": 1082,
+            "score": 16.104647549921353,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 52,
+            "offset": 1062,
+            "score": 13.17924484594474,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 38,
+            "offset": 1029,
+            "score": 12.936636387223446,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 24,
+            "offset": 2166,
+            "score": 12.453540554084523,
+            "section": null,
+            "headings": []
+          }
+        ]
+      },
+      {
+        "question": "How do I do a walk test?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            33
+          ],
+          [
+            "advanced-0254975c10bd",
+            34
+          ]
+        ],
+        "medianMs": 24.564347999999995,
+        "top1": false,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 60,
+            "offset": 2087,
+            "score": 9.620204534610448,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 33,
+            "offset": 0,
+            "score": 9.227454252720586,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 18,
+            "offset": 1095,
+            "score": 8.602100504479687,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 57,
+            "offset": 1066,
+            "score": 7.700703244276208,
+            "section": null,
+            "headings": []
+          }
+        ]
+      },
+      {
+        "question": "How do I disable a detector?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            26
+          ],
+          [
+            "advanced-0254975c10bd",
+            27
+          ]
+        ],
+        "medianMs": 24.326786999999968,
+        "top1": false,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 29,
+            "offset": 1073,
+            "score": 9.099335138047477,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 30,
+            "offset": 1068,
+            "score": 7.58562871134701,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 27,
+            "offset": 0,
+            "score": 7.26517951429374,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 8,
+            "offset": 0,
+            "score": 5.785197772498655,
+            "section": null,
+            "headings": []
+          }
+        ]
+      },
+      {
+        "question": "What is the panel battery voltage?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            23
+          ],
+          [
+            "advanced-a18ea5cccf04",
+            25
+          ]
+        ],
+        "medianMs": 24.465510999999992,
+        "top1": false,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 2,
+            "offset": 4371,
+            "score": 13.694881764274378,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 23,
+            "offset": 0,
+            "score": 11.613497555191172,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 66,
+            "offset": 1089,
+            "score": 10.346194776012393,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 25,
+            "offset": 0,
+            "score": 9.284002743785077,
+            "section": null,
+            "headings": []
+          }
+        ]
+      },
+      {
+        "question": "What does loop open circuit mean?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            23
+          ]
+        ],
+        "medianMs": 24.72321199999999,
+        "top1": false,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 51,
+            "offset": 2127,
+            "score": 11.425519465852245,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 70,
+            "offset": 2111,
+            "score": 9.949795530005236,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 23,
+            "offset": 1092,
+            "score": 9.430124432495559,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 38,
+            "offset": 1090,
+            "score": 8.434414898791449,
+            "section": null,
+            "headings": []
+          }
+        ]
+      },
+      {
+        "question": "Where do I find the disable sounders menu?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            27
+          ],
+          [
+            "advanced-0254975c10bd",
+            28
+          ]
+        ],
+        "medianMs": 24.92196600000011,
+        "top1": false,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 29,
+            "offset": 1073,
+            "score": 15.349796975049877,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 27,
+            "offset": 1083,
+            "score": 14.938830857987838,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 33,
+            "offset": 0,
+            "score": 11.729278454185481,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 69,
+            "offset": 1091,
+            "score": 10.74171067128309,
+            "section": null,
+            "headings": []
+          }
+        ]
+      },
+      {
+        "question": "How do I change the date and time?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            39
+          ],
+          [
+            "advanced-a18ea5cccf04",
+            50
+          ]
+        ],
+        "medianMs": 26.50877800000012,
+        "top1": true,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 50,
+            "offset": 1072,
+            "score": 12.746173885244502,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 39,
+            "offset": 0,
+            "score": 12.61101751314165,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 52,
+            "offset": 0,
+            "score": 12.280280047394928,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 48,
+            "offset": 0,
+            "score": 10.358855105117154,
+            "section": null,
+            "headings": []
+          }
+        ]
+      },
+      {
+        "question": "How can I see all disabled devices?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            15
+          ],
+          [
+            "advanced-0254975c10bd",
+            16
+          ],
+          [
+            "advanced-0254975c10bd",
+            21
+          ]
+        ],
+        "medianMs": 24.806971000000203,
+        "top1": true,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 15,
+            "offset": 0,
+            "score": 14.594948956482511,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 15,
+            "offset": 1078,
+            "score": 14.179182156007702,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 16,
+            "offset": 0,
+            "score": 14.060556001742155,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 21,
+            "offset": 0,
+            "score": 13.19532774047097,
+            "section": null,
+            "headings": []
+          }
+        ]
+      },
+      {
+        "question": "How do I enable sounders?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            30
+          ]
+        ],
+        "medianMs": 24.052036000000044,
+        "top1": false,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 69,
+            "offset": 1091,
+            "score": 10.918054345853017,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 29,
+            "offset": 1073,
+            "score": 10.331964675105398,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 30,
+            "offset": 0,
+            "score": 10.240468459046788,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 27,
+            "offset": 1083,
+            "score": 10.168667372659087,
+            "section": null,
+            "headings": []
+          }
+        ]
+      },
+      {
+        "question": "What does the yellow disable light mean?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            8
+          ],
+          [
+            "advanced-0254975c10bd",
+            15
+          ]
+        ],
+        "medianMs": 24.876680999999735,
+        "top1": true,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 8,
+            "offset": 0,
+            "score": 12.997146515349884,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 8,
+            "offset": 1099,
+            "score": 10.186655002164136,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 64,
+            "offset": 1088,
+            "score": 7.1516382969968815,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 45,
+            "offset": 1051,
+            "score": 5.496557836612431,
+            "section": null,
+            "headings": []
+          }
+        ]
+      },
+      {
+        "question": "How do I print the event log?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            38
+          ]
+        ],
+        "medianMs": 23.96240200000011,
+        "top1": true,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 38,
+            "offset": 1029,
+            "score": 14.356220047313538,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 18,
+            "offset": 1095,
+            "score": 13.664037375778626,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 52,
+            "offset": 1062,
+            "score": 11.262144465877281,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 24,
+            "offset": 2166,
+            "score": 9.150957009842095,
+            "section": null,
+            "headings": []
+          }
+        ]
+      },
+      {
+        "question": "How do I calibrate the loop?",
+        "expectedReferences": [
+          [
+            "advanced-a18ea5cccf04",
+            47
+          ]
+        ],
+        "medianMs": 23.442459000000326,
+        "top1": true,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 47,
+            "offset": 2083,
+            "score": 10.132632574306456,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 40,
+            "offset": 0,
+            "score": 9.042990001404299,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 41,
+            "offset": 1028,
+            "score": 8.538323143690183,
+            "section": null,
+            "headings": []
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 19,
+            "offset": 0,
+            "score": 3.6765943562370724,
+            "section": null,
+            "headings": []
+          }
+        ]
+      }
+    ]
+  },
+  "current": {
+    "version": "2026-11-12.1",
+    "buildMs": 53.25235599999996,
+    "passages": 294,
+    "indexBytes": 1282150,
+    "top1": 10,
+    "top4": 12,
+    "medianQueryMs": 21.553492000000006,
+    "results": [
+      {
+        "question": "How do I view the event history?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            24
+          ]
+        ],
+        "medianMs": 23.366848000000118,
+        "top1": true,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 24,
+            "offset": 1082,
+            "score": 33.81975985483484,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.9.8",
+                "title": "View - Log",
+                "page": 24,
+                "offset": 950,
+                "quote": "3.9.8 View - Log "
+              },
+              {
+                "number": "3.9.8.1",
+                "title": "Event Log",
+                "page": 24,
+                "offset": 1426,
+                "quote": "3.9.8.1 Event Log "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 24,
+            "offset": 2166,
+            "score": 26.152435163577497,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.9.8.1",
+                "title": "Event Log",
+                "page": 24,
+                "offset": 1426,
+                "quote": "3.9.8.1 Event Log "
+              },
+              {
+                "number": "3.9.8",
+                "title": "View - Log",
+                "page": 24,
+                "offset": 950,
+                "quote": "3.9.8 View - Log "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 24,
+            "offset": 0,
+            "score": 17.093844841223646,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.9.7.3",
+                "title": "Network Hardware",
+                "page": 24,
+                "offset": 23,
+                "quote": "3.9.7.3 Network Hardware "
+              },
+              {
+                "number": "3.9.8",
+                "title": "View - Log",
+                "page": 24,
+                "offset": 950,
+                "quote": "3.9.8 View - Log "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 38,
+            "offset": 1029,
+            "score": 27.16693641316924,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.14.1.6",
+                "title": "Print Disabled",
+                "page": 38,
+                "offset": 501,
+                "quote": "3.14.1.6 \nPrint Disabled "
+              },
+              {
+                "number": "3.14.1.7",
+                "title": "Print - Log",
+                "page": 38,
+                "offset": 1707,
+                "quote": "3.14.1.7 \nPrint - Log "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "How do I do a walk test?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            33
+          ],
+          [
+            "advanced-0254975c10bd",
+            34
+          ]
+        ],
+        "medianMs": 21.553492000000006,
+        "top1": true,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 33,
+            "offset": 0,
+            "score": 19.37765393071323,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.13",
+                "title": "Testing",
+                "page": 33,
+                "offset": 23,
+                "quote": "3.13 Testing "
+              },
+              {
+                "number": "3.13.1",
+                "title": "Test - Zones",
+                "page": 33,
+                "offset": 238,
+                "quote": "3.13.1 Test - Zones "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 60,
+            "offset": 2087,
+            "score": 9.620204534610448,
+            "section": null,
+            "headings": [
+              {
+                "number": "4.1.4",
+                "title": "Annual Actions",
+                "page": 60,
+                "offset": 1887,
+                "quote": "4.1.4 Annual Actions "
+              },
+              {
+                "number": "4.1",
+                "title": "Maintenance Schedule",
+                "page": 60,
+                "offset": 50,
+                "quote": "4.1 \nMaintenance Schedule "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 18,
+            "offset": 1095,
+            "score": 8.602100504479687,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.8",
+                "title": "Menu Functions",
+                "page": 17,
+                "offset": 2060,
+                "quote": "3.8 \nMenu Functions "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 57,
+            "offset": 1066,
+            "score": 7.700703244276208,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.3.20.2",
+                "title": "Cause",
+                "page": 57,
+                "offset": 25,
+                "quote": "3.3.20.2 \nCause "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "How do I disable a detector?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            26
+          ],
+          [
+            "advanced-0254975c10bd",
+            27
+          ]
+        ],
+        "medianMs": 22.40483099999983,
+        "top1": true,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 27,
+            "offset": 0,
+            "score": 15.256876980016854,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.10.1",
+                "title": "Disable - Zones and Inputs",
+                "page": 26,
+                "offset": 344,
+                "quote": "3.10.1 Disable - Zones and Inputs "
+              },
+              {
+                "number": "3.10.2",
+                "title": "Disable - Outputs",
+                "page": 27,
+                "offset": 492,
+                "quote": "3.10.2 Disable - Outputs "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 29,
+            "offset": 1073,
+            "score": 10.009268651852226,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.10.5",
+                "title": "Disable – Groups",
+                "page": 29,
+                "offset": 877,
+                "quote": "3.10.5 Disable – Groups "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 26,
+            "offset": 1020,
+            "score": 9.985780522891774,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.10.1",
+                "title": "Disable - Zones and Inputs",
+                "page": 26,
+                "offset": 344,
+                "quote": "3.10.1 Disable - Zones and Inputs "
+              },
+              {
+                "number": "3.10",
+                "title": "Disabling",
+                "page": 26,
+                "offset": 23,
+                "quote": "3.10 Disabling "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 47,
+            "offset": 2083,
+            "score": 7.603158310181907,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.3.3.4",
+                "title": "Procedure if the Panel finds Devices Changed",
+                "page": 47,
+                "offset": 1014,
+                "quote": "3.3.3.4 Procedure if the Panel finds Devices Changed "
+              },
+              {
+                "number": "3.3.4",
+                "title": "Loop – Calibrate",
+                "page": 47,
+                "offset": 2458,
+                "quote": "3.3.4 Loop – Calibrate  "
+              },
+              {
+                "number": "3.3.5",
+                "title": "Loop - History",
+                "page": 47,
+                "offset": 2595,
+                "quote": "3.3.5 Loop - History "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "What is the panel battery voltage?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            23
+          ],
+          [
+            "advanced-a18ea5cccf04",
+            25
+          ]
+        ],
+        "medianMs": 22.06021299999975,
+        "top1": false,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 2,
+            "offset": 4371,
+            "score": 13.694881764274378,
+            "section": null,
+            "headings": [
+              {
+                "number": "2.1",
+                "title": "for location)",
+                "page": 2,
+                "offset": 1568,
+                "quote": "2.1 for location) "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 23,
+            "offset": 0,
+            "score": 11.613497555191172,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.9.7.2",
+                "title": "Local Hardware",
+                "page": 23,
+                "offset": 23,
+                "quote": "3.9.7.2 Local Hardware "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 66,
+            "offset": 1089,
+            "score": 10.346194776012393,
+            "section": null,
+            "headings": [
+              {
+                "number": "5.3",
+                "title": "Appendix 3 – Battery Standby Calculation Chart",
+                "page": 66,
+                "offset": 23,
+                "quote": "5.3 \nAppendix 3 – Battery Standby Calculation Chart "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 25,
+            "offset": 0,
+            "score": 9.284002743785077,
+            "section": null,
+            "headings": [
+              {
+                "number": "2.5.2",
+                "title": "Battery Installation",
+                "page": 25,
+                "offset": 23,
+                "quote": "2.5.2 Battery Installation "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "What does loop open circuit mean?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            23
+          ]
+        ],
+        "medianMs": 21.21930599999996,
+        "top1": false,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 51,
+            "offset": 2127,
+            "score": 11.425519465852245,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.3.17.2",
+                "title": "Panel Zone",
+                "page": 51,
+                "offset": 1876,
+                "quote": "3.3.17.2 \nPanel Zone "
+              },
+              {
+                "number": "3.3.17",
+                "title": "Setup",
+                "page": 51,
+                "offset": 1109,
+                "quote": "3.3.17 Setup "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 70,
+            "offset": 2111,
+            "score": 9.949795530005236,
+            "section": null,
+            "headings": [
+              {
+                "number": "5.6.2",
+                "title": "Network Wiring",
+                "page": 70,
+                "offset": 1420,
+                "quote": "5.6.2 Network Wiring "
+              },
+              {
+                "number": "5.6.3",
+                "title": "Parent Functions",
+                "page": 70,
+                "offset": 2259,
+                "quote": "5.6.3 Parent Functions "
+              },
+              {
+                "number": "5.6",
+                "title": "Appendix 6 –Network Design Principles",
+                "page": 70,
+                "offset": 23,
+                "quote": "5.6 \nAppendix 6 –Network Design Principles "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 23,
+            "offset": 1092,
+            "score": 9.430124432495559,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.9.7.2",
+                "title": "Local Hardware",
+                "page": 23,
+                "offset": 23,
+                "quote": "3.9.7.2 Local Hardware "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 38,
+            "offset": 1090,
+            "score": 8.434414898791449,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.1.1",
+                "title": "Access Levels",
+                "page": 38,
+                "offset": 341,
+                "quote": "3.1.1 Access Levels "
+              },
+              {
+                "number": "3.1.2",
+                "title": "Memory Lock",
+                "page": 38,
+                "offset": 1150,
+                "quote": "3.1.2 Memory Lock "
+              },
+              {
+                "number": "3.1.3",
+                "title": "Navigating through menus",
+                "page": 38,
+                "offset": 1601,
+                "quote": "3.1.3 Navigating through menus "
+              },
+              {
+                "number": "3.1",
+                "title": "Introduction",
+                "page": 38,
+                "offset": 38,
+                "quote": "3.1 \nIntroduction "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "Where do I find the disable sounders menu?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            27
+          ],
+          [
+            "advanced-0254975c10bd",
+            28
+          ]
+        ],
+        "medianMs": 23.542324000000008,
+        "top1": true,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 27,
+            "offset": 1083,
+            "score": 31.371544801774462,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.10.2",
+                "title": "Disable - Outputs",
+                "page": 27,
+                "offset": 492,
+                "quote": "3.10.2 Disable - Outputs "
+              },
+              {
+                "number": "3.10.2.1",
+                "title": "All Sounder Outputs",
+                "page": 27,
+                "offset": 1398,
+                "quote": "3.10.2.1 \nAll Sounder Outputs "
+              },
+              {
+                "number": "3.10.2.2",
+                "title": "All Beacon Outputs",
+                "page": 27,
+                "offset": 1669,
+                "quote": "3.10.2.2 \nAll Beacon Outputs "
+              },
+              {
+                "number": "3.10.2.3",
+                "title": "Fire Routing Outputs",
+                "page": 27,
+                "offset": 2114,
+                "quote": "3.10.2.3 \nFire Routing Outputs "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 29,
+            "offset": 1073,
+            "score": 16.884776672554867,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.10.5",
+                "title": "Disable – Groups",
+                "page": 29,
+                "offset": 877,
+                "quote": "3.10.5 Disable – Groups "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 67,
+            "offset": 0,
+            "score": 14.112213904052224,
+            "section": null,
+            "headings": [
+              {
+                "number": "5.4",
+                "title": "Appendix 4 – Cause and Effect Programming Example",
+                "page": 67,
+                "offset": 23,
+                "quote": "5.4 \nAppendix 4 – Cause and Effect Programming Example "
+              },
+              {
+                "number": "5.4.1",
+                "title": "Introduction",
+                "page": 67,
+                "offset": 79,
+                "quote": "5.4.1 Introduction "
+              },
+              {
+                "number": "5.4.2",
+                "title": "Output Groups",
+                "page": 67,
+                "offset": 835,
+                "quote": "5.4.2 Output Groups "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 67,
+            "offset": 1096,
+            "score": 13.906416221746747,
+            "section": null,
+            "headings": [
+              {
+                "number": "5.4.2",
+                "title": "Output Groups",
+                "page": 67,
+                "offset": 835,
+                "quote": "5.4.2 Output Groups "
+              },
+              {
+                "number": "5.4.3",
+                "title": "Styles",
+                "page": 67,
+                "offset": 1429,
+                "quote": "5.4.3 Styles "
+              },
+              {
+                "number": "5.4",
+                "title": "Appendix 4 – Cause and Effect Programming Example",
+                "page": 67,
+                "offset": 23,
+                "quote": "5.4 \nAppendix 4 – Cause and Effect Programming Example "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "How do I change the date and time?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            39
+          ],
+          [
+            "advanced-a18ea5cccf04",
+            50
+          ]
+        ],
+        "medianMs": 21.526582999999846,
+        "top1": true,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 50,
+            "offset": 1072,
+            "score": 26.766965159013456,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.3.14",
+                "title": "Time and Date",
+                "page": 50,
+                "offset": 1050,
+                "quote": "3.3.14 Time and Date "
+              },
+              {
+                "number": "3.3.15",
+                "title": "PC Config",
+                "page": 50,
+                "offset": 1728,
+                "quote": "3.3.15 PC Config "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 39,
+            "offset": 0,
+            "score": 26.483136777597466,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.14.2",
+                "title": "Change-Time",
+                "page": 39,
+                "offset": 23,
+                "quote": "3.14.2 Change-Time "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 52,
+            "offset": 0,
+            "score": 25.78858809952935,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.3.17.3",
+                "title": "Service Number",
+                "page": 52,
+                "offset": 23,
+                "quote": "3.3.17.3 \nService Number "
+              },
+              {
+                "number": "3.3.17.4",
+                "title": "Service Due Date",
+                "page": 52,
+                "offset": 355,
+                "quote": "3.3.17.4 \nService Due Date "
+              },
+              {
+                "number": "3.3.17.5",
+                "title": "Trace Logging Mode",
+                "page": 52,
+                "offset": 1032,
+                "quote": "3.3.17.5 \nTrace Logging Mode "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 50,
+            "offset": 0,
+            "score": 15.245775143280305,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.3.12",
+                "title": "View Options",
+                "page": 50,
+                "offset": 23,
+                "quote": "3.3.12 View Options "
+              },
+              {
+                "number": "3.3.13",
+                "title": "Passwords",
+                "page": 50,
+                "offset": 174,
+                "quote": "3.3.13 Passwords "
+              },
+              {
+                "number": "3.3.14",
+                "title": "Time and Date",
+                "page": 50,
+                "offset": 1050,
+                "quote": "3.3.14 Time and Date "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "How can I see all disabled devices?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            15
+          ],
+          [
+            "advanced-0254975c10bd",
+            16
+          ],
+          [
+            "advanced-0254975c10bd",
+            21
+          ]
+        ],
+        "medianMs": 36.590733,
+        "top1": true,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 15,
+            "offset": 1078,
+            "score": 15.597100371608473,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.4",
+                "title": "Disablement Condition",
+                "page": 15,
+                "offset": 23,
+                "quote": "3.4 \nDisablement Condition "
+              },
+              {
+                "number": "3.4.1",
+                "title": "Disabled Inputs",
+                "page": 15,
+                "offset": 1190,
+                "quote": "3.4.1 Disabled Inputs "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 15,
+            "offset": 0,
+            "score": 16.054443852130763,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.4",
+                "title": "Disablement Condition",
+                "page": 15,
+                "offset": 23,
+                "quote": "3.4 \nDisablement Condition "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 16,
+            "offset": 0,
+            "score": 15.466611601916371,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.4.2",
+                "title": "Disabled Outputs",
+                "page": 16,
+                "offset": 23,
+                "quote": "3.4.2 Disabled Outputs "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 21,
+            "offset": 0,
+            "score": 13.19532774047097,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.9.5",
+                "title": "View - Inputs",
+                "page": 21,
+                "offset": 23,
+                "quote": "3.9.5 View - Inputs "
+              },
+              {
+                "number": "3.9.6",
+                "title": "View - Outputs",
+                "page": 21,
+                "offset": 683,
+                "quote": "3.9.6 View - Outputs "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "How do I enable sounders?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            30
+          ]
+        ],
+        "medianMs": 19.53251199999977,
+        "top1": true,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 30,
+            "offset": 0,
+            "score": 21.504983763998254,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.11",
+                "title": "Enabling",
+                "page": 30,
+                "offset": 23,
+                "quote": "3.11 Enabling "
+              },
+              {
+                "number": "3.11.1",
+                "title": "Enable - Zones and Inputs",
+                "page": 30,
+                "offset": 328,
+                "quote": "3.11.1 Enable - Zones and Inputs "
+              },
+              {
+                "number": "3.11.2",
+                "title": "Enable - Outputs",
+                "page": 30,
+                "offset": 616,
+                "quote": "3.11.2 Enable - Outputs "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 67,
+            "offset": 0,
+            "score": 14.112213904052224,
+            "section": null,
+            "headings": [
+              {
+                "number": "5.4",
+                "title": "Appendix 4 – Cause and Effect Programming Example",
+                "page": 67,
+                "offset": 23,
+                "quote": "5.4 \nAppendix 4 – Cause and Effect Programming Example "
+              },
+              {
+                "number": "5.4.1",
+                "title": "Introduction",
+                "page": 67,
+                "offset": 79,
+                "quote": "5.4.1 Introduction "
+              },
+              {
+                "number": "5.4.2",
+                "title": "Output Groups",
+                "page": 67,
+                "offset": 835,
+                "quote": "5.4.2 Output Groups "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 67,
+            "offset": 1096,
+            "score": 13.906416221746747,
+            "section": null,
+            "headings": [
+              {
+                "number": "5.4.2",
+                "title": "Output Groups",
+                "page": 67,
+                "offset": 835,
+                "quote": "5.4.2 Output Groups "
+              },
+              {
+                "number": "5.4.3",
+                "title": "Styles",
+                "page": 67,
+                "offset": 1429,
+                "quote": "5.4.3 Styles "
+              },
+              {
+                "number": "5.4",
+                "title": "Appendix 4 – Cause and Effect Programming Example",
+                "page": 67,
+                "offset": 23,
+                "quote": "5.4 \nAppendix 4 – Cause and Effect Programming Example "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 69,
+            "offset": 1091,
+            "score": 10.918054345853017,
+            "section": null,
+            "headings": [
+              {
+                "number": "5.5",
+                "title": "Appendix 5 – Other Useful Documents",
+                "page": 69,
+                "offset": 23,
+                "quote": "5.5 \nAppendix 5 – Other Useful Documents "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "What does the yellow disable light mean?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            8
+          ],
+          [
+            "advanced-0254975c10bd",
+            15
+          ]
+        ],
+        "medianMs": 19.479403999999704,
+        "top1": true,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 8,
+            "offset": 0,
+            "score": 12.997146515349884,
+            "section": null,
+            "headings": [
+              {
+                "number": "2.2",
+                "title": "LED Status Indicators",
+                "page": 8,
+                "offset": 22,
+                "quote": "2.2 \nLED Status Indicators "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 8,
+            "offset": 1099,
+            "score": 10.186655002164136,
+            "section": null,
+            "headings": [
+              {
+                "number": "2.2",
+                "title": "LED Status Indicators",
+                "page": 8,
+                "offset": 22,
+                "quote": "2.2 \nLED Status Indicators "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 64,
+            "offset": 1088,
+            "score": 7.1516382969968815,
+            "section": null,
+            "headings": [
+              {
+                "number": "2.5",
+                "title": "S (30)",
+                "page": 64,
+                "offset": 334,
+                "quote": "2.5 \nS (30) "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 45,
+            "offset": 1051,
+            "score": 5.496557836612431,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.3.2.10",
+                "title": "Device Testing",
+                "page": 45,
+                "offset": 1025,
+                "quote": "3.3.2.10 \nDevice Testing "
+              },
+              {
+                "number": "005.1",
+                "title": "Normal         SOUNDER        -",
+                "page": 45,
+                "offset": 1513,
+                "quote": " 005.1  Normal         SOUNDER        - "
+              },
+              {
+                "number": "006.1",
+                "title": "Normal         RELAY          -",
+                "page": 45,
+                "offset": 1595,
+                "quote": " 006.1  Normal         RELAY          - "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "How do I print the event log?",
+        "expectedReferences": [
+          [
+            "advanced-0254975c10bd",
+            38
+          ]
+        ],
+        "medianMs": 20.50056500000028,
+        "top1": true,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 38,
+            "offset": 1029,
+            "score": 14.356220047313538,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.14.1.6",
+                "title": "Print Disabled",
+                "page": 38,
+                "offset": 501,
+                "quote": "3.14.1.6 \nPrint Disabled "
+              },
+              {
+                "number": "3.14.1.7",
+                "title": "Print - Log",
+                "page": 38,
+                "offset": 1707,
+                "quote": "3.14.1.7 \nPrint - Log "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 18,
+            "offset": 1095,
+            "score": 13.664037375778626,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.8",
+                "title": "Menu Functions",
+                "page": 17,
+                "offset": 2060,
+                "quote": "3.8 \nMenu Functions "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 52,
+            "offset": 1062,
+            "score": 11.262144465877281,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.3.17.5",
+                "title": "Trace Logging Mode",
+                "page": 52,
+                "offset": 1032,
+                "quote": "3.3.17.5 \nTrace Logging Mode "
+              },
+              {
+                "number": "3.3.17.6",
+                "title": "Detector Blinking",
+                "page": 52,
+                "offset": 1996,
+                "quote": "3.3.17.6 \nDetector Blinking "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-0254975c10bd",
+            "page": 24,
+            "offset": 2166,
+            "score": 9.150957009842095,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.9.8.1",
+                "title": "Event Log",
+                "page": 24,
+                "offset": 1426,
+                "quote": "3.9.8.1 Event Log "
+              },
+              {
+                "number": "3.9.8",
+                "title": "View - Log",
+                "page": 24,
+                "offset": 950,
+                "quote": "3.9.8 View - Log "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "How do I calibrate the loop?",
+        "expectedReferences": [
+          [
+            "advanced-a18ea5cccf04",
+            47
+          ]
+        ],
+        "medianMs": 20.039958999999726,
+        "top1": true,
+        "top4": true,
+        "hits": [
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 47,
+            "offset": 2083,
+            "score": 10.132632574306456,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.3.3.4",
+                "title": "Procedure if the Panel finds Devices Changed",
+                "page": 47,
+                "offset": 1014,
+                "quote": "3.3.3.4 Procedure if the Panel finds Devices Changed "
+              },
+              {
+                "number": "3.3.4",
+                "title": "Loop – Calibrate",
+                "page": 47,
+                "offset": 2458,
+                "quote": "3.3.4 Loop – Calibrate  "
+              },
+              {
+                "number": "3.3.5",
+                "title": "Loop - History",
+                "page": 47,
+                "offset": 2595,
+                "quote": "3.3.5 Loop - History "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 40,
+            "offset": 0,
+            "score": 9.042990001404299,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.2",
+                "title": "Level 3 Menu Functions",
+                "page": 40,
+                "offset": 119,
+                "quote": "3.2 \nLevel 3 Menu Functions "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 41,
+            "offset": 1028,
+            "score": 8.538323143690183,
+            "section": null,
+            "headings": [
+              {
+                "number": "3.3.1",
+                "title": "Loops",
+                "page": 41,
+                "offset": 636,
+                "quote": "3.3.1 Loops "
+              },
+              {
+                "number": "3.3.2",
+                "title": "Loops – View/Edit",
+                "page": 41,
+                "offset": 1478,
+                "quote": "3.3.2 Loops – View/Edit "
+              },
+              {
+                "number": "3.3",
+                "title": "Recommended Programming Procedure",
+                "page": 41,
+                "offset": 23,
+                "quote": "3.3 \nRecommended Programming Procedure "
+              }
+            ]
+          },
+          {
+            "manualId": "advanced-a18ea5cccf04",
+            "page": 19,
+            "offset": 0,
+            "score": 3.6765943562370724,
+            "section": null,
+            "headings": [
+              {
+                "number": "2.3",
+                "title": "Loop Driver Installation",
+                "page": 19,
+                "offset": 23,
+                "quote": "2.3 \nLoop Driver Installation "
+              },
+              {
+                "number": "2.3.1",
+                "title": "Fitting the cards",
+                "page": 19,
+                "offset": 381,
+                "quote": "2.3.1 Fitting the cards "
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "scale": {
+    "label": "SYNTHETIC repeated text, distinct manual identities",
+    "baseline": [
+      {
+        "manuals": 20,
+        "pages": 800,
+        "passages": 800,
+        "buildMs": 81.89270699999997,
+        "indexBytes": 2486961,
+        "queries": {
+          "broad": {
+            "question": "component19 section39 event history",
+            "medianMs": 8.572363000000223
+          },
+          "precise": {
+            "question": "component19 section39",
+            "medianMs": 7.90096099999937
+          }
+        }
+      },
+      {
+        "manuals": 100,
+        "pages": 4000,
+        "passages": 4000,
+        "buildMs": 514.0906940000004,
+        "indexBytes": 12482961,
+        "queries": {
+          "broad": {
+            "question": "component99 section39 event history",
+            "medianMs": 45.297819000000345
+          },
+          "precise": {
+            "question": "component99 section39",
+            "medianMs": 39.269139999999425
+          }
+        }
+      }
+    ],
+    "current": [
+      {
+        "manuals": 20,
+        "pages": 800,
+        "passages": 800,
+        "buildMs": 81.14381500000036,
+        "indexBytes": 2756981,
+        "queries": {
+          "broad": {
+            "question": "component19 section39 event history",
+            "medianMs": 9.490968000000066
+          },
+          "precise": {
+            "question": "component19 section39",
+            "medianMs": 0.7812699999994948
+          }
+        }
+      },
+      {
+        "manuals": 100,
+        "pages": 4000,
+        "passages": 4000,
+        "buildMs": 409.43478199999936,
+        "indexBytes": 13837941,
+        "queries": {
+          "broad": {
+            "question": "component99 section39 event history",
+            "medianMs": 46.3950420000001
+          },
+          "precise": {
+            "question": "component99 section39",
+            "medianMs": 1.7588869999999588
+          }
+        }
+      }
+    ]
+  }
+}

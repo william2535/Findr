@@ -1,0 +1,255 @@
+{
+  "recordedAt": "2026-11-12T00:35:42.462Z",
+  "environment": {
+    "node": "v24.19.0",
+    "platform": "linux",
+    "architecture": "x64"
+  },
+  "baselineCommit": "d1ff3d032895efa02b4f2ad8188e2d9508fbdf00",
+  "comparison": "Previous helper engine against current lexical indexes versus bounded planner; retrieval ranking changes measured separately.",
+  "manuals": [
+    {
+      "id": "advanced-0254975c10bd",
+      "title": "Advanced MxPro5 — User guide",
+      "contentHash": "e5a636dd6f10edeb047520368714e04cde7b93bacc9465ab26ec6c30f19c2ce8",
+      "pages": 43
+    },
+    {
+      "id": "advanced-a18ea5cccf04",
+      "title": "MxPro5 — Product Manual",
+      "contentHash": "d185e9c6e06af7108cbe373246e6b4fe7f1d4ad6202d3bc79691b1e16829150b",
+      "pages": 74
+    }
+  ],
+  "claim": "Reference retrieval only. No model inference, PDF reading, procedure validation or physical iPhone benchmark is measured.",
+  "rows": [
+    {
+      "question": "Where do I set the clock?",
+      "expected": [
+        {
+          "manualId": "advanced-0254975c10bd",
+          "page": 39
+        },
+        {
+          "manualId": "advanced-a18ea5cccf04",
+          "page": 50
+        }
+      ],
+      "sameIndexWithoutPlanner": {
+        "medianMs": 20.063,
+        "top": {
+          "manualId": "advanced-a18ea5cccf04",
+          "page": 44
+        },
+        "top1Expected": false
+      },
+      "boundedPlanner": {
+        "medianMs": 24.344,
+        "top": {
+          "manualId": "advanced-0254975c10bd",
+          "page": 39
+        },
+        "top1Expected": true,
+        "searchCount": 2,
+        "attemptKinds": [
+          "original",
+          "vocabulary"
+        ]
+      }
+    },
+    {
+      "question": "How can I look up old alarms?",
+      "expected": [
+        {
+          "manualId": "advanced-0254975c10bd",
+          "page": 24
+        }
+      ],
+      "sameIndexWithoutPlanner": {
+        "medianMs": 21.175,
+        "top": {
+          "manualId": "advanced-a18ea5cccf04",
+          "page": 61
+        },
+        "top1Expected": false
+      },
+      "boundedPlanner": {
+        "medianMs": 28.061,
+        "top": {
+          "manualId": "advanced-0254975c10bd",
+          "page": 24
+        },
+        "top1Expected": true,
+        "searchCount": 2,
+        "attemptKinds": [
+          "original",
+          "vocabulary"
+        ]
+      }
+    },
+    {
+      "question": "Where is the event log?",
+      "expected": [
+        {
+          "manualId": "advanced-0254975c10bd",
+          "page": 24
+        }
+      ],
+      "sameIndexWithoutPlanner": {
+        "medianMs": 18.54,
+        "top": {
+          "manualId": "advanced-a18ea5cccf04",
+          "page": 52
+        },
+        "top1Expected": false
+      },
+      "boundedPlanner": {
+        "medianMs": 26.297,
+        "top": {
+          "manualId": "advanced-0254975c10bd",
+          "page": 24
+        },
+        "top1Expected": true,
+        "searchCount": 2,
+        "attemptKinds": [
+          "original",
+          "vocabulary"
+        ]
+      }
+    },
+    {
+      "question": "How do I print the event log?",
+      "expected": [
+        {
+          "manualId": "advanced-0254975c10bd",
+          "page": 38
+        }
+      ],
+      "sameIndexWithoutPlanner": {
+        "medianMs": 19.269,
+        "top": {
+          "manualId": "advanced-0254975c10bd",
+          "page": 38
+        },
+        "top1Expected": true
+      },
+      "boundedPlanner": {
+        "medianMs": 19.772,
+        "top": {
+          "manualId": "advanced-0254975c10bd",
+          "page": 38
+        },
+        "top1Expected": true,
+        "searchCount": 1,
+        "attemptKinds": [
+          "original"
+        ]
+      }
+    },
+    {
+      "question": "How do I change the printer options?",
+      "expected": [
+        {
+          "manualId": "advanced-0254975c10bd",
+          "page": 36
+        }
+      ],
+      "sameIndexWithoutPlanner": {
+        "medianMs": 21.041,
+        "top": {
+          "manualId": "advanced-0254975c10bd",
+          "page": 36
+        },
+        "top1Expected": true
+      },
+      "boundedPlanner": {
+        "medianMs": 20.051,
+        "top": {
+          "manualId": "advanced-0254975c10bd",
+          "page": 36
+        },
+        "top1Expected": true,
+        "searchCount": 1,
+        "attemptKinds": [
+          "original"
+        ]
+      }
+    },
+    {
+      "question": "Where can I see the software version?",
+      "expected": [
+        {
+          "manualId": "advanced-0254975c10bd",
+          "page": 22
+        }
+      ],
+      "sameIndexWithoutPlanner": {
+        "medianMs": 18.624,
+        "top": {
+          "manualId": "advanced-0254975c10bd",
+          "page": 22
+        },
+        "top1Expected": true
+      },
+      "boundedPlanner": {
+        "medianMs": 18.723,
+        "top": {
+          "manualId": "advanced-0254975c10bd",
+          "page": 22
+        },
+        "top1Expected": true,
+        "searchCount": 1,
+        "attemptKinds": [
+          "original"
+        ]
+      }
+    },
+    {
+      "question": "What does dirty mean?",
+      "expected": [
+        {
+          "manualId": "advanced-0254975c10bd",
+          "page": 25
+        }
+      ],
+      "sameIndexWithoutPlanner": {
+        "medianMs": 19.683,
+        "top": {
+          "manualId": "advanced-0254975c10bd",
+          "page": 25
+        },
+        "top1Expected": true
+      },
+      "boundedPlanner": {
+        "medianMs": 18.766,
+        "top": {
+          "manualId": "advanced-0254975c10bd",
+          "page": 25
+        },
+        "top1Expected": true,
+        "searchCount": 1,
+        "attemptKinds": [
+          "original"
+        ]
+      }
+    },
+    {
+      "question": "How do I enable quantum teleportation?",
+      "expected": [],
+      "sameIndexWithoutPlanner": {
+        "medianMs": 19.892,
+        "top": null,
+        "top1Expected": true
+      },
+      "boundedPlanner": {
+        "medianMs": 22.957,
+        "top": null,
+        "top1Expected": true,
+        "searchCount": 1,
+        "attemptKinds": [
+          "original"
+        ]
+      }
+    }
+  ]
+}

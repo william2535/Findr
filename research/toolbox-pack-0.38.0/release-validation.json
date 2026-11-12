@@ -1,0 +1,73 @@
+{
+  "webVersion": "0.38.0",
+  "androidVersion": "0.37.0",
+  "date": "2026-11-12T00:39:21.892621+00:00",
+  "sourceBaseline": "d1ff3d032895efa02b4f2ad8188e2d9508fbdf00",
+  "offlineBuild": "df788a7d9a0a",
+  "checks": {
+    "regression": {
+      "command": "FINDR_DEFAULT_CODE_PDF_CACHE=/tmp/findr0361-default-code-evidence node --test --test-isolation=none tests/*.test.mjs",
+      "passed": 1903,
+      "failed": 0
+    },
+    "typescript": {
+      "command": "pnpm exec tsc --noEmit",
+      "exitCode": 0
+    },
+    "build": {
+      "command": "pnpm build",
+      "exitCode": 0
+    },
+    "publicGate": {
+      "publicFiles": 1479,
+      "nativeOnlyFilesExcluded": [
+        "app/data/download-map.json"
+      ],
+      "retainedApkVersions": [
+        "0.37.0",
+        "0.14.1"
+      ],
+      "externalReleaseFilesExcluded": [
+        "FINDR-0.37.0.apk"
+      ],
+      "externalReleaseVerification": [
+        {
+          "filename": "FINDR-0.37.0.apk",
+          "sha256": "e6f91ded97b687b3a69ebfeee46e9a0c3a43b9679ef4fca7b63bf9b5a3a3e37f",
+          "localCopy": true,
+          "localBytesVerified": true
+        }
+      ],
+      "archivedReleaseFilesExcluded": 42,
+      "archivedReleaseBytes": 463833947,
+      "orphanFilesRemoved": 44,
+      "maxStaticAssetBytes": 26214400,
+      "largestStaticAssetBytes": 24126768,
+      "buildBytes": 164904762,
+      "archiveAllowance": 1048576,
+      "verified": true
+    }
+  },
+  "pack": {
+    "repositoryCommit": "d6cfb85034994f73cbbf6b24a8490a9002ed7c62",
+    "bytes": 16473,
+    "files": 7,
+    "calculators": 6,
+    "guides": 6,
+    "publicRawFilesVerified": true
+  },
+  "browserEvidence": [
+    "browser-chromium-online.json",
+    "browser-webkit-online.json",
+    "browser-chromium-offline.json"
+  ],
+  "limitations": [
+    "No physical iPhone or Android browser tested in this release.",
+    "WebKit executor cannot establish app-shell CacheStorage readiness; cold offline tested in Chromium.",
+    "Normal Panel Pal browser tests used clearly labelled manual search, not installed conversational model inference.",
+    "Experimental 23.69 MB encoder benchmark is not shipped or claimed cold-offline ready.",
+    "No new model training; retrieval benchmark is source relevance, not universal answer accuracy.",
+    "APK remains 0.37.0."
+  ],
+  "publication": "Build and test record only. Publication and corresponding source/GitHub provenance are recorded separately by the release workflow."
+}

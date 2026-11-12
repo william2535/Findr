@@ -74,3 +74,16 @@ test('worker dispatch returns useful failure type without document text in the e
  const successful=buildRetrievalWorkerReply({id:'synthetic-message',analysis:analysis()});assert.equal(successful.id,'synthetic-message');assert.equal(successful.ok,true);assert.equal(successful.index.passages.length,1);
  const malicious={contentHash:'synthetic',get pages(){throw new TypeError('SENSITIVE SYNTHETIC DOCUMENT TEXT');}},failed=buildRetrievalWorkerReply({id:'synthetic-error',analysis:malicious});assert.equal(failed.ok,false);assert.equal(failed.error.name,'TypeError');assert.equal(failed.error.code,'INDEX_WORKER_FAILED');assert.doesNotMatch(JSON.stringify(failed.error),/SENSITIVE SYNTHETIC/);
 });
+
+test('legacy indexes and corrupted postings or heading labels rebuild without changing saved analysis',async()=>{
+ const a=analysis({pages:[{page:2,quality:{readable:true},text:'4.2 Event history\nSYNTHETIC TEST ONLY. To view history, select the fictional event log. This page has enough readable context for source indexing.'}]}),valid=buildManualIndex(a),term=valid.vocabulary[0],original=structuredClone(a);
+ const corrupt=[
+  {...valid,schemaVersion:1},
+  {...valid,postings:{...valid.postings,[term]:[9999]}},
+  {...valid,documentFrequencies:{...valid.documentFrequencies,[term]:999}},
+  {...valid,passageIds:['different-source']},
+  {...valid,passages:[{...valid.passages[0],headings:[{...valid.passages[0].headings[0],title:'Invented unrelated procedure'}]}]}
+ ];
+ for(const damaged of corrupt){const backend=storage(damaged),result=await loadQuickManualIndex(a,backend);assert.equal(result.reused,false);assert.equal(result.persisted,true);assert.equal(backend.writes,1);assert.deepEqual(a,original);}
+ const cache=storage(valid),reused=await loadQuickManualIndex(a,cache);assert.equal(reused.reused,true);assert.deepEqual(reused.index.passages[0].headings,valid.passages[0].headings);
+});

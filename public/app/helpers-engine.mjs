@@ -2,14 +2,15 @@
 // It cannot author a manufacturer fact: displayed technical wording is either an
 // exact saved-PDF extract or a hash-and-page-verified reviewed procedure.
 import {generateLocalReply, LOCAL_MODEL} from './local-language.mjs';
-import {buildManualIndex, retrieveManualPassages, MANUAL_RETRIEVAL_VERSION} from './manual-retrieval.mjs';
+import {buildManualIndex, MANUAL_RETRIEVAL_VERSION} from './manual-retrieval.mjs';
 import {prepareManualAnswer} from './manual-answers.mjs';
+import {searchHelperManuals} from './helper-search-planner.mjs';
 import {interpretHelperDialogue,limitedHelperDialogue} from './helper-dialogue.mjs';
 import {answerHelperTasks} from './helper-task-evidence.mjs';
 import {resolveHelperMenuReference} from './helpers-menu-reference.mjs';
 import {resolveHelperPanelAccess,bindHelperReferenceSources} from './helper-panel-access.mjs';
 
-export const HELPERS_ENGINE_VERSION='2026-11-11.9';
+export const HELPERS_ENGINE_VERSION='2026-11-12.1';
 const list=value=>Array.isArray(value)?value:[];
 const str=value=>String(value??'');
 const compact=value=>str(value).normalize('NFC').replace(/\u0000/g,'').replace(/\s+/g,' ').trim();
@@ -21,7 +22,7 @@ const at=value=>Number.isFinite(value)?value:Date.now();
 const modelKey=value=>fold(value).replace(/[^\p{L}\p{N}]/gu,'');
 const object=value=>value&&typeof value==='object'&&!Array.isArray(value)?value:{};
 const controls=value=>/(?:ignore|override|disregard).{0,45}(?:system|developer|previous|earlier).{0,30}(?:prompt|instructions)|(?:system|developer) prompt|reveal.{0,25}(?:secret|api.?key)|(?:execute|run).{0,20}(?:javascript|shell command|script)|(?:read|access).{0,25}other helpers?/i.test(str(value));
-const STOP=new Set('a an and are as at be been by can could do does for from has have how i in is it its me of on or that the their them then there these this to was were what when where which will with would you your please tell show explain need want help using use panel system device manual start starting begin perform carry out get set view see check find make put fault error code meaning means mean says saying message display screen shows showing reads currently now still report reported issue problem'.split(' '));
+const STOP=new Set('a an and are as at be been by can could do does for from has have how i in is it its me of on or that the their them then there these this to was were what when where which will with would you your please tell show explain need want help using use panel system device manual start starting begin perform carry out get set view see check find make put fault error code meaning means mean look up says saying message display screen shows showing reads currently now still report reported issue problem'.split(' '));
 const ALIASES={walktest:['walk','test'],histry:['history','events','log'],histroy:['history','events','log'],history:['events','event','log'],event:['history','log'],logs:['history','event'],psu:['power','supply'],poe:['power','ethernet'],eol:['end','line'],deol:['double','balanced','end','line'],volts:['voltage'],voltage:['volts','supply'],compatible:['compatibility','supported','protocol'],compatibility:['compatible','supported','protocol'],offline:['offline','communication','comms'],comms:['communication','communications'],communication:['comms','communications'],aspiration:['aspirating','flow'],flow:['airflow','flow'],walk:['walk','walking'],test:['test','testing'],reset:['reset','resetting'],wiring:['wiring','terminal'],terminals:['terminal','wiring'],disable:['disable','disabled','disablement'],enable:['enable','enabled']};
 const words=value=>(fold(value).replace(/\bre[ -]+enabl/g,'enabl').match(/[\p{L}\p{N}][\p{L}\p{N}_.+-]*/gu)||[]).map(word=>word.replace(/[.]+$/,'')).filter(word=>word.length>1);
 const stem=word=>word.length>4&&!/\d/.test(word)?word.replace(/ies$/,'y').replace(/(?:ing|ed|s)$/,''):word;
@@ -122,9 +123,10 @@ function relevantPassage(p,question,helper,c){
  if(explicitCode&&!fold(p.text).includes(fold(explicitCode[1])))return false;
  return covered.length>=Math.min(2,Math.ceil(substantive.length/2))||substantive.length===0&&terms.some(match);
 }
-export function retrieveHelperEvidence({helper,conversation,question='',indexes=[],analyses=[],limit=4}={}){
+export function retrieveHelperEvidence({helper,conversation,question='',indexes=[],analyses=[],limit=4,onSearch,onPlan}={}){
  const scoped=scopeHelperIndexes(helper,indexes,analyses).map(index=>({...index,passages:index.passages.filter(p=>faultEvidenceMatches(p,question,helper,conversation))})).filter(index=>index.passages.length),equipment=helperEquipment(helper,conversation);
- return retrieveManualPassages(scoped,question,{equipment,limit:12,maxCharacters:12500}).filter(p=>relevantPassage(p,question,helper,conversation)).slice(0,limit).map((p,i)=>({...p,citationId:'S'+(i+1)}));
+ const result=searchHelperManuals({question,indexes:scoped,equipment,limit,focusTerms:searchTerms(question,helper,conversation),accept:p=>relevantPassage(p,question,helper,conversation),onSearch});
+ onPlan?.(result.plan);return result.passages;
 }
 function scopedAnalyses(helper,indexes,analyses=[]){
  const scoped=scopeHelperIndexes(helper,indexes,analyses);
@@ -257,14 +259,15 @@ export async function answerHelper({helper,conversation,text='',indexes=[],analy
  const turn=recordInput(c,question,helper,time,clarifyPending),diagnosing=!!c.context.investigation&&(faultReport(question)||!isDirectQuestion(question)||turn.isAnswer||clarifyPending||continueInvestigation),query=clarifyPending||continueInvestigation?c.context.investigation?.complaint||c.context.previousQuestion||question:turn.query;
  onProgress?.({phase:'retrieval',message:'Searching saved manuals…'});
  const sources=scopedAnalyses(helper,indexes,analyses),equipment=helperEquipment(helper,c);
- let passages=retrieveHelperEvidence({helper,conversation:c,question:query,indexes,analyses,limit:4});
+ let searchPlan=null;
+ let passages=retrieveHelperEvidence({helper,conversation:c,question:query,indexes,analyses,limit:4,onSearch:onProgress,onPlan:plan=>{searchPlan=plan;}});
  const reviewed=prepareManualAnswer({question:turn.isAnswer?query:question,analyses:sources,equipment,context:{...object(c.context.procedureContext),previousQuestion:c.context.previousQuestion,previousAnswer:c.context.previousAnswer},procedures});
  if(reviewed.status==='answered'&&reviewed.coverage==='reviewed_manual_procedure'){
   const refs=reviewed.sourceRefs,preferred=[];
   for(const ref of refs){const index=scopeHelperIndexes(helper,indexes,analyses).find(i=>i.manualId===ref.manualId&&i.contentHash===ref.contentHash),p=index?.passages.find(p=>p.page===ref.page);if(p&&!preferred.some(item=>item.id===p.id))preferred.push(p);}
   passages=[...preferred,...passages.filter(p=>!preferred.some(item=>item.id===p.id))].slice(0,4).map((p,i)=>({...p,citationId:'S'+(i+1)}));
  }
- const finish=details=>{const message=append(c,'assistant',details.text,{...details,engineVersion:HELPERS_ENGINE_VERSION},time);if(details.pendingQuestion){c.context.pendingQuestion={...details.pendingQuestion,id:message.id};delete message.pendingQuestion;}c.context.previousQuestion=question;if(details.coverage==='reviewed_manual_procedure'){c.context.previousAnswer={text:details.text,steps:details.steps,sourceRefs:details.sourceRefs,procedureId:details.procedureId,operation:details.operation};c.context.procedureContext={procedureId:details.procedureId,previousAnswer:c.context.previousAnswer};}return {conversation:c,message,modelUsed:!!details.modelUsed,mode:details.mode};};
+ const finish=details=>{const message=append(c,'assistant',details.text,{...details,engineVersion:HELPERS_ENGINE_VERSION,searchPlan},time);if(details.pendingQuestion){c.context.pendingQuestion={...details.pendingQuestion,id:message.id};delete message.pendingQuestion;}c.context.previousQuestion=question;if(details.coverage==='reviewed_manual_procedure'){c.context.previousAnswer={text:details.text,steps:details.steps,sourceRefs:details.sourceRefs,procedureId:details.procedureId,operation:details.operation};c.context.procedureContext={procedureId:details.procedureId,previousAnswer:c.context.previousAnswer};}return {conversation:c,message,modelUsed:!!details.modelUsed,mode:details.mode};};
  const asReference=(reason,error)=>reviewed.status==='answered'&&reviewed.coverage==='reviewed_manual_procedure'?{text:reason+'\n\nHere are the documented steps:\n\n'+reviewed.text,kind:'manual_search',mode:'manual-search',modelUsed:false,sourceRefs:reviewed.sourceRefs,quickReplies:[],coverage:reviewed.coverage,steps:reviewed.steps,procedureId:reviewed.procedureId,operation:reviewed.operation,...(error?{error:{code:error.code||'MODEL_RUNTIME_ERROR',message:error.message}}:{})}:fallbackMessage({reason,passages,withholdInstructions:hazardous(question,passages,null),error});
  const outside=foreignModel(question,helper,passages);
  if(outside)return finish({text:'I can’t establish that for '+outside+' from this pal’s manuals. Open a pal for that exact model, or add its manual before using model-specific instructions.',kind:'unsupported',mode:'manual-search',modelUsed:false,sourceRefs:[],quickReplies:[],coverage:'different_model'});

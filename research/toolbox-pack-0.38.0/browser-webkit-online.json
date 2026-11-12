@@ -1,0 +1,108 @@
+{
+  "status": "passed",
+  "recordedAt": "2026-11-12T00:36:57.455Z",
+  "mode": "online",
+  "browser": "webkit",
+  "profile": "/workspace/findr-pack038-webkit-EoLJGQ",
+  "physicalIPhone": false,
+  "actualInference": false,
+  "manifest": {
+    "commit": "d6cfb85034994f73cbbf6b24a8490a9002ed7c62",
+    "bytes": 16473,
+    "files": 7
+  },
+  "checks": [
+    {
+      "name": "Normal Home secret icon opens the pack screen with its actual16,473-byte size"
+    },
+    {
+      "name": "Actual first GitHub file saves with byte progress; cancellation retains partial pack for Resume",
+      "evidence": {
+        "faultInjection": "Second network request delayed, not replaced",
+        "progress": {
+          "value": "1476",
+          "status": "1 / 7 files saved · camera-path.svg"
+        },
+        "state": {
+          "complete": false,
+          "files": 1,
+          "totalFiles": 7,
+          "savedBytes": 1476,
+          "totalBytes": 16473
+        }
+      }
+    },
+    {
+      "name": "One injected request failure leaves pack incomplete and preserves completed file"
+    },
+    {
+      "name": "Retry downloads and SHA-verifies every remaining actual GitHub file, without redownloading the completed file",
+      "evidence": {
+        "complete": true,
+        "files": 7,
+        "totalFiles": 7,
+        "savedBytes": 16473,
+        "totalBytes": 16473
+      }
+    },
+    {
+      "name": "All six real downloaded calculators produce expected units/values; all six guides render saved SVGs with references"
+    },
+    {
+      "name": "Downloaded pack and new QA conversations preserve existing manual metadata, original helper jobs and calculator drafts"
+    }
+  ],
+  "errors": [],
+  "rawRequests": [
+    "https://raw.githubusercontent.com/william2535/Findr/d6cfb85034994f73cbbf6b24a8490a9002ed7c62/toolbox-packs/onsite-v1/camera-path.svg",
+    "https://raw.githubusercontent.com/william2535/Findr/d6cfb85034994f73cbbf6b24a8490a9002ed7c62/toolbox-packs/onsite-v1/dc-points.svg",
+    "https://raw.githubusercontent.com/william2535/Findr/d6cfb85034994f73cbbf6b24a8490a9002ed7c62/toolbox-packs/onsite-v1/dc-points.svg",
+    "https://raw.githubusercontent.com/william2535/Findr/d6cfb85034994f73cbbf6b24a8490a9002ed7c62/toolbox-packs/onsite-v1/dc-points.svg",
+    "https://raw.githubusercontent.com/william2535/Findr/d6cfb85034994f73cbbf6b24a8490a9002ed7c62/toolbox-packs/onsite-v1/ohms.svg",
+    "https://raw.githubusercontent.com/william2535/Findr/d6cfb85034994f73cbbf6b24a8490a9002ed7c62/toolbox-packs/onsite-v1/pack.json",
+    "https://raw.githubusercontent.com/william2535/Findr/d6cfb85034994f73cbbf6b24a8490a9002ed7c62/toolbox-packs/onsite-v1/poe-budget.svg",
+    "https://raw.githubusercontent.com/william2535/Findr/d6cfb85034994f73cbbf6b24a8490a9002ed7c62/toolbox-packs/onsite-v1/relay.svg",
+    "https://raw.githubusercontent.com/william2535/Findr/d6cfb85034994f73cbbf6b24a8490a9002ed7c62/toolbox-packs/onsite-v1/resistors.svg"
+  ],
+  "forbiddenRequests": [],
+  "faultInjection": "First attempt delays second genuine GitHub request until UI cancellation; next attempt aborts that request once. Successful downloads always use real pinned GitHub bytes.",
+  "browserVersion": "26.0",
+  "progress": {
+    "value": "1476",
+    "status": "1 / 7 files saved · camera-path.svg"
+  },
+  "pack": {
+    "complete": true,
+    "files": 7,
+    "totalFiles": 7,
+    "savedBytes": 16473,
+    "totalBytes": 16473
+  },
+  "outputs": [
+    {
+      "id": "dc-ohms",
+      "text": "Calculated estimate\nCurrent\n0.2 A\nPower\n4.8 W\nFor a steady DC resistive load. Real devices may have startup current or non-resistive behaviour.\n"
+    },
+    {
+      "id": "resistors",
+      "text": "Calculated estimate\nSeries total\n3000 Ω\nParallel total\n666.66667 Ω\nIdeal nominal resistors; tolerance and power ratings still apply. This does not establish the alarm input’s required wiring profile.\n"
+    },
+    {
+      "id": "cctv-storage",
+      "text": "Calculated estimate\nVideo payload\n604.8 GB\nVideo payload\n0.6048 TB\nAggregate active bitrate\n8 Mbit/s\nDecimal GB/TB. Constant average bitrate and identical cameras are assumed. Audio metadata filesystem/RAID reserves and variable bitrate peaks are excluded. Actual retention must be checked on the recorder.\n"
+    },
+    {
+      "id": "bandwidth",
+      "text": "Calculated estimate\nPayload bitrate\n32 Mbit/s\nNominal link utilisation\n32 %\nNominal spare capacity\n68 Mbit/s\nAssumes every counted stream crosses this link. Excludes protocol overhead bursts and other traffic. A positive spare value is not a network-performance guarantee.\n"
+    },
+    {
+      "id": "poe-budget",
+      "text": "Calculated estimate\nRequired switch allocation\n60 W\nTotal budget remaining\n0 W\nPer-port headroom\n15 W\nEnter each device’s maximum allocated demand at the switch/PSE including losses as applicable. Identical ports/devices assumed. Total budget and per-port limits both matter; IEEE type/class negotiation cable and device requirements still need checking.\n"
+    },
+    {
+      "id": "dc-load",
+      "text": "Calculated estimate\nTotal current\n0.4 A\nTotal current\n400 mA\nSteady DC power\n9.6 W\nIdentical loads at the entered voltage. Use the correct standby active or worst-case specification; startup peaks and charger allowance are not included.\n"
+    }
+  ],
+  "finishedAt": "2026-11-12T00:37:05.459Z"
+}
