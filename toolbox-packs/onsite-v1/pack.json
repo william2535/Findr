@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "id": "onsite-v1",
+  "title": "On-site essentials",
+  "version": "1.0.0",
+  "description": "Six practical calculators and six original picture guides for fire and security jobs.",
+  "license": "Original FINDR content; source references remain owned by their respective publishers. No third-party code or artwork is redistributed.",
+  "checkedAt": "2026-11-12",
+  "tools": [
+    {
+      "id": "dc-ohms",
+      "title": "DC current & power",
+      "description": "Enter voltage and resistance to find current and power.",
+      "formula": "I = V ÷ R; P = V × I",
+      "fields": [
+        {
+          "key": "volts",
+          "label": "Voltage (V DC)",
+          "default": ""
+        },
+        {
+          "key": "ohms",
+          "label": "Resistance (Ω)",
+          "default": ""
+        }
+      ],
+      "sources": [
+        "ohm",
+        "power"
+      ]
+    },
+    {
+      "id": "resistors",
+      "title": "Two resistors · series / parallel",
+      "description": "Quick nominal resistance for two components.",
+      "formula": "Series: R1 + R2. Parallel: (R1 × R2) ÷ (R1 + R2)",
+      "fields": [
+        {
+          "key": "r1",
+          "label": "First resistance (Ω)",
+          "default": ""
+        },
+        {
+          "key": "r2",
+          "label": "Second resistance (Ω)",
+          "default": ""
+        }
+      ],
+      "sources": [
+        "resistors"
+      ]
+    },
+    {
+      "id": "cctv-storage",
+      "title": "CCTV storage estimate",
+      "description": "Turn average video bitrate and recording time into decimal GB / TB.",
+      "formula": "GB = cameras × Mbit/s × 3600 × hours/day × days ÷ 8000",
+      "fields": [
+        {
+          "key": "cameras",
+          "label": "Identical cameras",
+          "default": 1
+        },
+        {
+          "key": "mbps",
+          "label": "Average video bitrate per camera (Mbit/s)",
+          "default": ""
+        },
+        {
+          "key": "hours",
+          "label": "Recording hours per day",
+          "default": 24,
+          "max": 24
+        },
+        {
+          "key": "days",
+          "label": "Days to retain",
+          "default": 7
+        }
+      ],
+      "sources": [
+        "axis"
+      ]
+    },
+    {
+      "id": "bandwidth",
+      "title": "Camera link bandwidth",
+      "description": "Add streams that actually cross the network link.",
+      "formula": "Payload Mbit/s = cameras × bitrate × streams per camera",
+      "fields": [
+        {
+          "key": "cameras",
+          "label": "Identical cameras",
+          "default": 1
+        },
+        {
+          "key": "mbps",
+          "label": "Bitrate per stream (Mbit/s)",
+          "default": ""
+        },
+        {
+          "key": "streams",
+          "label": "Streams per camera crossing this link",
+          "default": 1
+        },
+        {
+          "key": "capacity",
+          "label": "Nominal link capacity (Mbit/s)",
+          "default": ""
+        }
+      ],
+      "sources": [
+        "axis"
+      ]
+    },
+    {
+      "id": "poe-budget",
+      "title": "PoE budget check",
+      "description": "Check total switch allocation and individual port headroom.",
+      "formula": "Total allocation = devices × allocated watts per device",
+      "fields": [
+        {
+          "key": "devices",
+          "label": "Identical powered devices",
+          "default": 1
+        },
+        {
+          "key": "watts",
+          "label": "Maximum allocation at switch per device (W)",
+          "default": ""
+        },
+        {
+          "key": "budget",
+          "label": "Available switch PoE budget (W)",
+          "default": ""
+        },
+        {
+          "key": "limit",
+          "label": "Documented limit per port (W)",
+          "default": ""
+        }
+      ],
+      "sources": [
+        "poe"
+      ]
+    },
+    {
+      "id": "dc-load",
+      "title": "DC load total",
+      "description": "Add identical low-voltage loads in mA and calculate steady power.",
+      "formula": "A = devices × mA ÷ 1000; W = V × A",
+      "fields": [
+        {
+          "key": "devices",
+          "label": "Identical loads",
+          "default": 1
+        },
+        {
+          "key": "milliamps",
+          "label": "Current per load (mA)",
+          "default": ""
+        },
+        {
+          "key": "volts",
+          "label": "Operating voltage (V DC)",
+          "default": ""
+        }
+      ],
+      "sources": [
+        "power"
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "ohms",
+      "title": "Ohm’s law at a glance",
+      "image": "ohms.svg",
+      "alt": "Voltage above current and resistance in a triangle, with V equals I times R; I equals V divided by R; R equals V divided by I.",
+      "notes": [
+        "For resistive DC arithmetic. This is not an instruction to measure resistance on a live circuit."
+      ],
+      "sources": [
+        "ohm"
+      ]
+    },
+    {
+      "id": "resistors",
+      "title": "Series / parallel picture guide",
+      "image": "resistors.svg",
+      "alt": "Two resistors on one path add in series. Two resistors on separate branches use product divided by sum.",
+      "notes": [
+        "Original abstract circuit. Do not infer an intruder detector’s EOL/DEOL wiring profile from this picture; use its panel and detector documentation."
+      ],
+      "sources": [
+        "resistors"
+      ]
+    },
+    {
+      "id": "dc-points",
+      "title": "PSU reading or device reading?",
+      "image": "dc-points.svg",
+      "alt": "Two conductors link a DC supply and a device. Point A is across the supply terminals. Point B is across device terminals. Record operating condition separately.",
+      "notes": [
+        "A record-keeping concept for low-voltage DC equipment, not a live-work procedure. Only measure at points accessible under the equipment’s documented procedure. Record exact points, polarity, load, and connected or isolated state."
+      ],
+      "sources": [
+        "dc"
+      ]
+    },
+    {
+      "id": "camera-path",
+      "title": "Camera, switch or recorder?",
+      "image": "camera-path.svg",
+      "alt": "Camera connects to switch then recorder, with power, port, uplink and storage listed as separate observations.",
+      "notes": [
+        "Use the actual network topology. Recorder reachability does not establish camera power or uplink health. This guide suggests where observations belong; it does not diagnose a failed part."
+      ],
+      "sources": [
+        "axis",
+        "poe"
+      ]
+    },
+    {
+      "id": "poe-budget",
+      "title": "PoE total versus port limit",
+      "image": "poe-budget.svg",
+      "alt": "The switch total budget sits above three ports, each with its own port limit and device demand.",
+      "notes": [
+        "Check both limits and the documented IEEE type/class and negotiation. Use switch-side maximum allocation; a device power figure alone may exclude cable loss and allocation overhead."
+      ],
+      "sources": [
+        "poe"
+      ]
+    },
+    {
+      "id": "relay",
+      "title": "Relay click ≠ door open",
+      "image": "relay.svg",
+      "alt": "Relay coil and contacts are separate. A changeover contact connects COM to NC with the coil de-energised; NO is open.",
+      "notes": [
+        "Generic electromagnetic relay, coil de-energised. Actual equipment can use other relay/contact arrangements. NC/NO names do not establish a lock’s fail-safe/fail-secure operation or permission to interrupt escape functions."
+      ],
+      "sources": [
+        "relay"
+      ]
+    }
+  ],
+  "sources": {
+    "ohm": {
+      "title": "Fluke · Ohm’s law",
+      "url": "https://www.fluke.com/en-gb/learn/blog/electrical/what-is-ohms-law"
+    },
+    "power": {
+      "title": "DigiKey · Ohm’s law and power calculator",
+      "url": "https://www.digikey.co.uk/en/resources/conversion-calculators/conversion-calculator-ohms"
+    },
+    "resistors": {
+      "title": "DigiKey · Series and parallel resistors",
+      "url": "https://www.digikey.co.uk/en/resources/conversion-calculators/conversion-calculator-parallel-and-series-resistor"
+    },
+    "axis": {
+      "title": "Axis · Site Designer documentation",
+      "url": "https://help.axis.com/en-us/axis-site-designer"
+    },
+    "poe": {
+      "title": "Cisco · Power over Ethernet",
+      "url": "https://www.cisco.com/site/us/en/learn/topics/networking/what-is-power-over-ethernet.html"
+    },
+    "dc": {
+      "title": "Fluke · DC voltage measurement",
+      "url": "https://www.fluke.com/en-gb/learn/blog/digital-multimeters/how-to-measure-dc-voltage-with-a-digital-multimeter"
+    },
+    "relay": {
+      "title": "Omron · Relay basics",
+      "url": "https://components.omron.com/us-en/products/basic-knowledge/relays/basics"
+    }
+  }
+}
