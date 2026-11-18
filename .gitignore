@@ -1,5 +1,5 @@
 # Dependencies
-/node_modules/
+/node_modules
 /.pnp
 .pnp.*
 # Keep authored Yarn tooling if the project adopts Yarn.
@@ -30,6 +30,14 @@ yarn-error.log*
 .env*
 .dev.vars*
 *.pem
+*.jks
+*.keystore
+/android-play/.gradle/
+/android-play/build/
+/android-play/app/build/
+/android-play/local.properties
+/android-play/feedback-worker/.wrangler/
+/android-play/feedback-worker/node_modules
 
 # Checkout-local tool state
 /.wrangler/
@@ -44,7 +52,7 @@ yarn-error.log*
 # OS metadata
 .DS_Store
 
-# Android generated outputs (preview signing identity intentionally retained)
+# Android generated outputs (private signing material is never tracked)
 /android/build/
 /android/assets/
 /artifacts/
@@ -80,3 +88,6 @@ __pycache__/
 /public/releases/FINDR-0.13.1.apk
 /public/releases/FINDR-0.13.2.apk
 /public/releases/FINDR-0.14.0.apk
+
+# Private feedback deployment binding IDs and local service state.
+/android-play/feedback-worker/wrangler.json

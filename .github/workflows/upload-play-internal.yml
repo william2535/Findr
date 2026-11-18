@@ -1,0 +1,84 @@
+name: Upload FINDR internal draft
+
+on:
+  # Deliberately create/update this separate branch only when an upload is intended.
+  # No merge into main, website deployment or production rollout is performed.
+  push:
+    branches: [release/play-upload]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: findr-play-com-findr-play
+  cancel-in-progress: false
+
+jobs:
+  internal-draft:
+    if: github.repository == 'william2535/Findr' && github.ref == 'refs/heads/release/play-upload'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3 # v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Check required secret presence
+        env:
+          HAS_SIGNING: ${{ secrets.FINDR_PLAY_SIGNING_JSON != '' }}
+          HAS_GOOGLE: ${{ secrets.GOOGLE_PLAY_SERVICE_ACCOUNT_JSON != '' }}
+        run: |
+          if [ "$HAS_SIGNING" != true ]; then echo 'Add FINDR_PLAY_SIGNING_JSON in Actions secrets.'; exit 1; fi
+          if [ "$HAS_GOOGLE" != true ]; then echo 'Add GOOGLE_PLAY_SERVICE_ACCOUNT_JSON in Actions secrets.'; exit 1; fi
+      - name: Verify build, credential handling and draft-only upload logic
+        run: |
+          python3 -m unittest discover -s android-play/tests -v
+          node --test android-play/tests/*.test.mjs android-play/feedback-worker/tests/*.test.mjs
+      - name: Set up Android command-line tools
+        uses: android-actions/setup-android@9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407 # v3.2.2
+        with:
+          packages: 'platform-tools'
+          log-accepted-android-sdk-licenses: false
+      - name: Install Android SDK packages
+        run: sdkmanager 'platforms;android-36' 'build-tools;36.0.0'
+      - name: Sign review-only AAB with the dedicated upload key
+        env:
+          FINDR_PLAY_SIGNING_JSON: ${{ secrets.FINDR_PLAY_SIGNING_JSON }}
+        run: node android-play/scripts/with-play-signing.mjs -- ./gradlew --no-daemon bundleRelease lintRelease -PrequirePlaySigning=true -PplayReviewOnly=true
+      - name: Install verified bundletool
+        run: |
+          curl --fail --location --retry 3 --output "$RUNNER_TEMP/bundletool.jar" https://github.com/google/bundletool/releases/download/1.18.3/bundletool-all-1.18.3.jar
+          printf '%s  %s\n' 'a099cfa1543f55593bc2ed16a70a7c67fe54b1747bb7301f37fdfd6d91028e29' "$RUNNER_TEMP/bundletool.jar" | sha256sum --check -
+      - name: Verify actual signature, complete assets and review-only metadata
+        run: >-
+          python3 android-play/scripts/verify-bundle.py
+          android-play/app/build/outputs/bundle/release/app-release.aab
+          --bundletool "$RUNNER_TEMP/bundletool.jar"
+          --require-signed --allow-review-draft
+          --output android-play/app/build/verification.json
+      - name: Upload and verify internal draft without rollout
+        env:
+          GOOGLE_PLAY_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_PLAY_SERVICE_ACCOUNT_JSON }}
+        run: >-
+          node android-play/scripts/upload-play-internal.mjs
+          --bundle android-play/app/build/outputs/bundle/release/app-release.aab
+          --verification android-play/app/build/verification.json
+          --commit-internal-draft
+          --output android-play/app/build/play-upload-result.json
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: FINDR-internal-draft-${{ github.run_number }}
+          path: |
+            android-play/app/build/outputs/bundle/release/*.aab
+            android-play/app/build/verification.json
+            android-play/app/build/play-upload-result.json
+            android-play/app/build/reports/lint-results-release.html
+          if-no-files-found: ignore
+
+# This workflow never accepts a production track, completed status or rollout input.
+# Do not rerun an ambiguous upload/commit; reconcile the Console version first.

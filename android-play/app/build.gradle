@@ -1,0 +1,155 @@
+import com.android.build.api.artifact.SingleArtifact
+import java.nio.file.Files
+import java.nio.file.StandardCopyOption
+import java.security.MessageDigest
+import java.util.zip.GZIPInputStream
+import javax.inject.Inject
+import org.gradle.api.file.DirectoryProperty
+import org.gradle.api.file.FileSystemOperations
+import org.gradle.api.tasks.InputDirectory
+import org.gradle.api.tasks.OutputDirectory
+import org.gradle.api.tasks.PathSensitive
+import org.gradle.api.tasks.PathSensitivity
+import org.gradle.api.tasks.TaskAction
+
+plugins { id 'com.android.application' }
+
+/** AGP's AssetItem/MergedAssetWriter deliberately remove .gz and decompress it.
+ * Restore compressed web resources after merging, through the supported artifact API.
+ * noCompress only controls ZIP compression and cannot prevent this merge transformation.
+ * https://developer.android.com/reference/tools/gradle-api/8.13/com/android/build/api/artifact/SingleArtifact.ASSETS
+ * https://github.com/android/gradle-recipes/tree/agp-8.13/transformDirectory
+ */
+abstract class RestoreCompressedWebAssets extends DefaultTask {
+    @InputDirectory @PathSensitive(PathSensitivity.RELATIVE)
+    abstract DirectoryProperty getMergedAssets()
+
+    @InputDirectory @PathSensitive(PathSensitivity.RELATIVE)
+    abstract DirectoryProperty getOriginalAssets()
+
+    @OutputDirectory
+    abstract DirectoryProperty getOutputAssets()
+
+    @Inject
+    abstract FileSystemOperations getFileOperations()
+
+    static byte[] checksum(InputStream stream) {
+        stream.withCloseable { input ->
+            def hash = MessageDigest.getInstance('SHA-256')
+            byte[] buffer = new byte[65536]
+            int count
+            while ((count = input.read(buffer)) != -1) hash.update(buffer, 0, count)
+            return hash.digest()
+        }
+    }
+
+    @TaskAction
+    void restore() {
+        def originals = originalAssets.get().asFile.toPath()
+        def merged = mergedAssets.get().asFile.toPath()
+        def output = outputAssets.get().asFile.toPath()
+        def compressed = []
+        Files.walk(originals).withCloseable { paths ->
+            paths.filter { Files.isRegularFile(it) && it.fileName.toString().endsWith('.gz') }
+                .sorted().forEach { compressed.add(it) }
+        }
+        // Validate every deletion before touching generated output. A real source
+        // named foo beside foo.gz is ambiguous and must not be silently removed.
+        compressed.each { source ->
+            def relative = originals.relativize(source).toString()
+            def expandedName = relative.substring(0, relative.length() - 3)
+            if (Files.exists(originals.resolve(expandedName))) {
+                throw new GradleException('Compressed web asset collides with an original: ' + relative)
+            }
+            def expanded = merged.resolve(expandedName)
+            if (Files.exists(expanded)) {
+                if (!Files.isRegularFile(expanded) || !Arrays.equals(
+                        RestoreCompressedWebAssets.checksum(new GZIPInputStream(Files.newInputStream(source))),
+                        RestoreCompressedWebAssets.checksum(Files.newInputStream(expanded)))) {
+                    throw new GradleException('Merged counterpart is not the expected gzip expansion: ' + relative)
+                }
+            }
+        }
+        fileOperations.sync { from(mergedAssets); into(outputAssets) }
+        compressed.each { source ->
+            def relative = originals.relativize(source).toString()
+            Files.deleteIfExists(output.resolve(relative.substring(0, relative.length() - 3)))
+            def destination = output.resolve(relative)
+            Files.createDirectories(destination.parent)
+            Files.copy(source, destination, StandardCopyOption.REPLACE_EXISTING)
+        }
+    }
+}
+
+def playProps = new Properties()
+rootProject.file('play-release.properties').withInputStream { playProps.load(it) }
+def signingNames = ['FINDR_PLAY_KEYSTORE', 'FINDR_PLAY_STORE_PASSWORD', 'FINDR_PLAY_KEY_ALIAS', 'FINDR_PLAY_KEY_PASSWORD']
+def signingReady = signingNames.every { System.getenv(it) }
+def requireSigning = providers.gradleProperty('requirePlaySigning').orElse('false').get() == 'true'
+def reviewOnly = providers.gradleProperty('playReviewOnly').orElse('false').get() == 'true'
+if (reviewOnly && !requireSigning) throw new GradleException('Review-only bundles require explicit upload-key signing.')
+if (requireSigning && !signingReady) throw new GradleException('Release signing is required. Configure the four FINDR_PLAY signing environment variables; never use the preview key.')
+
+android {
+    namespace 'com.findr.play'
+    compileSdk 36
+    buildToolsVersion '36.0.0'
+    defaultConfig {
+        applicationId playProps.getProperty('applicationId')
+        minSdk 26
+        targetSdk 36
+        versionCode playProps.getProperty('versionCode').toInteger()
+        versionName playProps.getProperty('versionName')
+    }
+    signingConfigs {
+        if (signingReady) {
+            playUpload {
+                storeFile file(System.getenv('FINDR_PLAY_KEYSTORE'))
+                storePassword System.getenv('FINDR_PLAY_STORE_PASSWORD')
+                keyAlias System.getenv('FINDR_PLAY_KEY_ALIAS')
+                keyPassword System.getenv('FINDR_PLAY_KEY_PASSWORD')
+            }
+        }
+    }
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled false
+            if (requireSigning && signingReady) signingConfig signingConfigs.playUpload
+        }
+        debug { debuggable true }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets.main.assets.srcDir(layout.buildDirectory.dir('generated/playAssets'))
+    androidResources { noCompress += ['wasm', 'pdf', 'onnx', 'bin'] }
+    lint { abortOnError true; checkReleaseBuilds true }
+}
+
+def prepareAssets = tasks.register('preparePlayAssets', Exec) {
+    workingDir rootProject.projectDir
+    commandLine 'python3', 'scripts/prepare-assets.py', '--output', layout.buildDirectory.dir('generated/playAssets').get().asFile.absolutePath
+    if (reviewOnly) args '--review-only'
+    else if (requireSigning) args '--release'
+    // Contact/policy URLs are environment-provided and deliberately rechecked on every build.
+    outputs.upToDateWhen { false }
+}
+def verifyRelease = tasks.register('verifyPlayRelease', Exec) {
+    onlyIf { requireSigning && !reviewOnly }
+    workingDir rootProject.projectDir
+    commandLine 'python3', 'scripts/release-readiness.py'
+}
+prepareAssets.configure { dependsOn verifyRelease }
+tasks.named('preBuild').configure { dependsOn prepareAssets }
+
+androidComponents.onVariants(androidComponents.selector().all()) { variant ->
+    def restoreAssets = tasks.register("restore${variant.name.capitalize()}CompressedWebAssets", RestoreCompressedWebAssets) {
+        dependsOn prepareAssets
+        originalAssets.set(layout.buildDirectory.dir('generated/playAssets'))
+    }
+    variant.artifacts.use(restoreAssets)
+        .wiredWithDirectories({ it.mergedAssets }, { it.outputAssets })
+        .toTransform(SingleArtifact.ASSETS.INSTANCE)
+}
