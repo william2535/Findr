@@ -86,4 +86,4 @@ Depending on the circumstances and applicable law, you may also have rights to a
 
 FINDR is intended for fire and security engineers and learners, and is not designed as a child-directed service. It is a reference and record-keeping aid, not a replacement for manufacturer instructions, competence or site safety arrangements.
 
-Changes will be dated in this policy. The current public policy is available at [FINDR's privacy-policy page](https://github.com/william2535/Findr/blob/release/play-store/docs/play-store/PRIVACY-POLICY.md).
+Changes will be dated in this policy. The current public policy is available at [FINDR's privacy-policy page](https://william2535.github.io/Findr/privacy/).
