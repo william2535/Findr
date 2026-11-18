@@ -2,7 +2,13 @@
 
 **Last updated: 18 November 2026**
 
-This policy covers the separate FINDR Google Play app, package **`com.findr.play`**, developed by **Will Flood**. For support, a privacy question or a deletion request, contact **[Williamflood8@gmail.com](mailto:Williamflood8@gmail.com)**. Will Flood is the project developer; FINDR is not presented as a separate incorporated company.
+This policy covers the separate FINDR Google Play app, package **`com.findr.play`**, developed by **Will Flood**. For support, a privacy question or a deletion request, contact **[Williamflood8@gmail.com](mailto:Williamflood8@gmail.com)**. Will Flood is responsible for the developer-held personal information described in this policy; FINDR is not a separate incorporated company.
+
+## Free app and optional services
+
+FINDR is free to download and use. FINDR does not charge a subscription or sell access to its features. You do not need to provide payment-card details to FINDR.
+
+Optional external AI services have their own accounts, usage limits and pricing. Connecting your own provider account is your choice, and that provider may charge you under its terms. A free FINDR download does not include unlimited third-party AI usage. Your network provider may also charge for internet data used to download manuals, packs or AI resources.
 
 ## Information stored on your device
 
@@ -30,6 +36,8 @@ The relay application processes requests without saving a conversation database.
 
 ## Voluntary AI-answer reports
 
+In the current internal draft, version **0.40.1-play.1**, the reporting service is not connected. The form says reporting is unavailable, disables sending and does not submit a report. The following describes the optional service when it is configured.
+
 When reporting is available and you choose to send a report, FINDR asks you to review the problem category, description and optional answer excerpt first. The report also contains a random report reference, app version, package name and confirmation that you agreed to send it. The reporting service records receipt/expiry timestamps and a payload checksum to handle retries without duplicating the same report.
 
 A report does not automatically attach your jobs, manual files, other conversations or API keys. You can remove identifying information from the form before sending. The report is used by the developer to investigate problematic output and improve the app. It is not posted to a public GitHub issue or a public report feed.
@@ -46,9 +54,23 @@ If you email support, the developer receives your email address and the informat
 
 Reports and other exports are created when you request them and saved to a location you choose. They may contain job details, readings and conversation text. If you share them, the recipient or chosen storage service controls its copy. Clearing FINDR storage does not delete those external copies.
 
+## Why the developer uses personal information
+
+Where UK data protection law applies, the developer relies on these lawful bases for information they receive:
+
+- **Consent** for the optional Online AI relay and voluntary AI-answer reports. You choose whether to use these features. Declining does not prevent saved-manual search or other local functions. Disconnect Online AI to stop future requests; email the contact above with a report reference to withdraw consent for further use of a submitted report.
+- **Legitimate interests** in answering support enquiries you send, resolving the issues you ask for help with, and keeping online services secure against misuse. This covers the information reasonably needed for those purposes, such as your correspondence and transient connection information used to limit abusive requests. You can object to this processing using the contact above.
+- **Legal obligations**, where the law requires handling or retaining information, such as responding to a valid data-rights request.
+
+Withdrawing consent does not affect processing already lawfully carried out. These bases do not authorise unrelated advertising or reuse of your job records. FINDR does not use personal information to make solely automated decisions about your legal rights or eligibility for services; its technical suggestions remain for the engineer to assess.
+
 ## Service providers and security
 
 FINDR's relay and feedback hosting, GitHub resource hosting, your selected AI provider and the email service used for support process information necessary for those functions. Their own infrastructure may process connection and security metadata. Relevant policies include [Cloudflare](https://www.cloudflare.com/privacypolicy/), [GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) and the AI-provider policies linked above.
+
+These providers may process information outside the United Kingdom. Their applicable privacy notices describe processing locations, transfer safeguards and account controls. Do not assume that selecting an online service keeps information in the UK.
+
+For information about the transfer arrangements applying to developer-operated services, or a copy of applicable safeguards, contact the developer. Provider links above also explain how to obtain their relevant privacy or contractual documents.
 
 FINDR uses HTTPS for its online AI and reporting connections. Its application does not include an advertising/analytics SDK or use job records for advertising. No transmission or storage system is infallible; avoid storing or sending credentials and information unnecessary for the task.
 
@@ -57,6 +79,8 @@ FINDR uses HTTPS for its online AI and reporting connections. Its application do
 You can keep Online AI disconnected, use saved-manual search, choose supported local inference, remove local records through FINDR, or clear the Android app's storage. Deleting a Pal removes its saved conversations and context but deliberately retains shared manuals and model resources; remove those separately if desired. Clearing storage does not remove data already sent to providers, support, or a recipient of an export.
 
 For information received by the developer, email **[Williamflood8@gmail.com](mailto:Williamflood8@gmail.com)**. Give the report reference or enough detail to locate the relevant correspondence, without including unnecessary personal information. The developer can act on records under their control; provider-held account data may require a separate request to that provider. Deletion may be limited where retention is required by law or necessary to establish, exercise or defend a legal claim.
+
+Depending on the circumstances and applicable law, you may also have rights to access or correct personal information, restrict or object to processing, or receive a portable copy. You can withdraw your choice to use optional online features by disconnecting them; this does not undo processing already carried out. Contact the developer to exercise rights over information they hold. You can raise a concern with the UK's [Information Commissioner's Office](https://ico.org.uk/make-a-complaint/).
 
 ## Audience and policy changes
 
