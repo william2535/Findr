@@ -86,6 +86,8 @@ rootProject.file('play-release.properties').withInputStream { playProps.load(it)
 def signingNames = ['FINDR_PLAY_KEYSTORE', 'FINDR_PLAY_STORE_PASSWORD', 'FINDR_PLAY_KEY_ALIAS', 'FINDR_PLAY_KEY_PASSWORD']
 def signingReady = signingNames.every { System.getenv(it) }
 def requireSigning = providers.gradleProperty('requirePlaySigning').orElse('false').get() == 'true'
+def reviewOnly = providers.gradleProperty('playReviewOnly').orElse('false').get() == 'true'
+if (reviewOnly && !requireSigning) throw new GradleException('Review-only bundles require explicit upload-key signing.')
 if (requireSigning && !signingReady) throw new GradleException('Release signing is required. Configure the four FINDR_PLAY signing environment variables; never use the preview key.')
 
 android {
@@ -129,12 +131,13 @@ android {
 def prepareAssets = tasks.register('preparePlayAssets', Exec) {
     workingDir rootProject.projectDir
     commandLine 'python3', 'scripts/prepare-assets.py', '--output', layout.buildDirectory.dir('generated/playAssets').get().asFile.absolutePath
-    if (requireSigning) args '--release'
+    if (reviewOnly) args '--review-only'
+    else if (requireSigning) args '--release'
     // Contact/policy URLs are environment-provided and deliberately rechecked on every build.
     outputs.upToDateWhen { false }
 }
 def verifyRelease = tasks.register('verifyPlayRelease', Exec) {
-    onlyIf { requireSigning }
+    onlyIf { requireSigning && !reviewOnly }
     workingDir rootProject.projectDir
     commandLine 'python3', 'scripts/release-readiness.py'
 }

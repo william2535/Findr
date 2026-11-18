@@ -106,6 +106,27 @@ class BundleTests(unittest.TestCase):
         self.assertEqual(result['status'], 'unsigned')
         self.assertFalse(result['verified'])
 
+    def test_review_draft_requires_bundled_metadata_and_explicit_verification_mode(self):
+        review = {'releaseConfigurationReady': False, 'reviewOnly': True}
+        self.assertFalse(verify.signed_readiness_allowed(review))
+        self.assertTrue(verify.signed_readiness_allowed(review, True))
+        self.assertFalse(verify.signed_readiness_allowed({'releaseConfigurationReady': False, 'reviewOnly': False}, True))
+        self.assertFalse(verify.signed_readiness_allowed({'releaseConfigurationReady': True, 'reviewOnly': True}, True))
+        self.assertTrue(verify.signed_readiness_allowed({'releaseConfigurationReady': True, 'reviewOnly': False}))
+        self.report['reviewOnly'] = True
+        with self.assertRaisesRegex(ValueError, 'review-only mode differs'):
+            self.check()
+
+    def test_matching_review_metadata_remains_not_distribution_ready(self):
+        self.report['reviewOnly'] = True
+        config = json.loads(self.assets['play-config.json'])
+        config['reviewOnly'] = True
+        self.assets['play-config.json'] = json.dumps(config).encode()
+        self.report['assets']['play-config.json'] = verify.digest(self.assets['play-config.json'])
+        result = self.check()
+        self.assertTrue(result['reviewOnly'])
+        self.assertFalse(result['releaseConfigurationReady'])
+
     def test_existing_preview_signing_certificate_is_rejected(self):
         certificate = b'SYNTHETIC TEST CERTIFICATE'
         pem = '-----BEGIN CERTIFICATE-----\n' + base64.b64encode(certificate).decode() + '\n-----END CERTIFICATE-----'
@@ -160,6 +181,10 @@ class StagingGuardTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'Invalid public HTTPS'):
                 prepare.prepare(output)
         self.assertFalse(output.exists())
+
+    def test_review_mode_cannot_be_combined_with_distribution_release(self):
+        with self.assertRaisesRegex(ValueError, 'mutually exclusive'):
+            prepare.prepare(self.root / 'app/build/generated/playAssets', release=True, review_only=True)
 
 
 if __name__ == '__main__':

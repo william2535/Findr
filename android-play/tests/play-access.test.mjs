@@ -111,6 +111,9 @@ test('network exceptions and malformed edit identifiers cannot leak or redirect 
 });
 
 test('setup reporting accepts only presence flags, and never treats them as verified signing', () => {
+  const combined = releaseSetup({ PLAY_HAS_SIGNING_JSON: 'true' });
+  assert.equal(combined.combinedSigningSecretPresent, true);
+  assert.deepEqual(combined.missingSettings, ['FINDR_PLAY_REPORT_URL', 'FINDR_PLAY_READINESS_CONFIRMED']);
   const state = releaseSetup({ PLAY_HAS_KEYSTORE: 'true', PLAY_HAS_KEY_PASSWORD: 'a secret value' });
   assert.ok(!state.missingSettings.includes('FINDR_PLAY_KEYSTORE_BASE64'));
   assert.ok(state.missingSettings.includes('FINDR_PLAY_KEY_PASSWORD'));

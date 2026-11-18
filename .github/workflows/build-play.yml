@@ -8,6 +8,11 @@ on:
         type: boolean
         default: false
         required: true
+      review_only:
+        description: 'Signed review-only bundle for an undistributed internal draft (requires signing)'
+        type: boolean
+        default: false
+        required: true
 
 permissions:
   contents: read
@@ -26,7 +31,9 @@ jobs:
         run: sdkmanager 'platforms;android-36' 'build-tools;36.0.0'
       - name: Check Play tooling and reporting logic
         run: |
+          if [ '${{ inputs.review_only }}' = true ] && [ '${{ inputs.sign_release }}' != true ]; then exit 1; fi
           python3 -m unittest discover -s android-play/tests -v
+          node --test android-play/tests/*.test.mjs
           node --test android-play/feedback-worker/tests/*.test.mjs
       - name: Build unsigned review bundle
         if: ${{ !inputs.sign_release }}
@@ -36,6 +43,7 @@ jobs:
         if: ${{ inputs.sign_release }}
         working-directory: android-play
         env:
+          FINDR_PLAY_SIGNING_JSON: ${{ secrets.FINDR_PLAY_SIGNING_JSON }}
           FINDR_PLAY_KEYSTORE_BASE64: ${{ secrets.FINDR_PLAY_KEYSTORE_BASE64 }}
           FINDR_PLAY_STORE_PASSWORD: ${{ secrets.FINDR_PLAY_STORE_PASSWORD }}
           FINDR_PLAY_KEY_ALIAS: ${{ secrets.FINDR_PLAY_KEY_ALIAS }}
@@ -43,13 +51,20 @@ jobs:
           FINDR_PLAY_REPORT_URL: ${{ vars.FINDR_PLAY_REPORT_URL }}
           FINDR_PLAY_PRIVACY_URL: ${{ vars.FINDR_PLAY_PRIVACY_URL }}
           FINDR_PLAY_READINESS_CONFIRMED: ${{ vars.FINDR_PLAY_READINESS_CONFIRMED }}
+          REVIEW_ONLY: ${{ inputs.review_only }}
         run: |
+          extra=()
+          if [ "$REVIEW_ONLY" = true ]; then extra+=(-PplayReviewOnly=true); fi
+          if [ -n "$FINDR_PLAY_SIGNING_JSON" ]; then
+            node scripts/with-play-signing.mjs -- ./gradlew --no-daemon bundleRelease lintRelease -PrequirePlaySigning=true "${extra[@]}"
+            exit 0
+          fi
           test -n "$FINDR_PLAY_KEYSTORE_BASE64"
           export FINDR_PLAY_KEYSTORE="$RUNNER_TEMP/findr-play-upload.jks"
           trap 'rm -f "$FINDR_PLAY_KEYSTORE"' EXIT
           umask 077
           printf '%s' "$FINDR_PLAY_KEYSTORE_BASE64" | base64 --decode > "$FINDR_PLAY_KEYSTORE"
-          ./gradlew --no-daemon bundleRelease lintRelease -PrequirePlaySigning=true
+          ./gradlew --no-daemon bundleRelease lintRelease -PrequirePlaySigning=true "${extra[@]}"
       - name: Install verified bundletool
         run: |
           curl --fail --location --retry 3 --output "$RUNNER_TEMP/bundletool.jar" https://github.com/google/bundletool/releases/download/1.18.3/bundletool-all-1.18.3.jar
@@ -57,9 +72,11 @@ jobs:
       - name: Verify bundle contents and manifest
         env:
           REQUIRE_SIGNATURE: ${{ inputs.sign_release }}
+          REVIEW_ONLY: ${{ inputs.review_only }}
         run: |
           extra=()
           if [ "$REQUIRE_SIGNATURE" = true ]; then extra+=(--require-signed); fi
+          if [ "$REVIEW_ONLY" = true ]; then extra+=(--allow-review-draft); fi
           python3 android-play/scripts/verify-bundle.py android-play/app/build/outputs/bundle/release/app-release.aab --bundletool "$RUNNER_TEMP/bundletool.jar" --output android-play/app/build/verification.json "${extra[@]}"
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:

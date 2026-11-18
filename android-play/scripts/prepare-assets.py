@@ -32,7 +32,8 @@ def public_https(value):
             and not url.username and not url.password and not url.fragment and not url.query)
 
 
-def prepare(output, release=False):
+def prepare(output, release=False, review_only=False):
+    if release and review_only: raise ValueError('Review-only and distribution release modes are mutually exclusive.')
     settings = release_settings()
     source = PROJECT / 'public/app'
     version = re.search(r"APP_VERSION = '([^']+)'", (source / 'version.mjs').read_text()).group(1)
@@ -54,6 +55,7 @@ def prepare(output, release=False):
     if release and os.environ.get('FINDR_PLAY_READINESS_CONFIRMED') != 'yes':
         raise ValueError('Complete the documented Play readiness review and set FINDR_PLAY_READINESS_CONFIRMED=yes.')
     config['releaseReady'] = release and not missing
+    config['reviewOnly'] = review_only
     output = Path(output).resolve()
     if not output.is_relative_to(ROOT / 'app/build'):
         raise ValueError('Only the generated app/build directory may be used for staging.')
@@ -88,7 +90,7 @@ def prepare(output, release=False):
     report = {'webVersion': version, 'versionName': settings['versionName'], 'applicationId': settings['applicationId'],
               'originalAssets': len(originals), 'includedAssets': len(assets), 'originalBytes': sum(p.stat().st_size for p in source.rglob('*') if p.is_file()),
               'intentionalOverrides': changed, 'additionalAssets': sorted(set(assets) - set(originals)),
-              'releaseReady': config['releaseReady'], 'missingConfiguration': missing, 'assets': assets}
+              'releaseReady': config['releaseReady'], 'reviewOnly': review_only, 'missingConfiguration': missing, 'assets': assets}
     (output / 'play-asset-manifest.json').write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps({k:v for k,v in report.items() if k != 'assets'}, indent=2))
     return report
@@ -98,5 +100,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', required=True)
     parser.add_argument('--release', action='store_true')
+    parser.add_argument('--review-only', action='store_true', help='Signed internal draft preparation; never a distribution-ready release')
     args = parser.parse_args()
-    prepare(args.output, args.release)
+    prepare(args.output, args.release, args.review_only)

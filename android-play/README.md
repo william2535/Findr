@@ -16,6 +16,8 @@ python3 scripts/verify-bundle.py app/build/outputs/bundle/release/app-release.aa
 
 Output: `app/build/outputs/bundle/release/app-release.aab`. Without the explicit signing flag this is an **unsigned review artifact**, not a production submission. `assembleDebug` produces a debug-signed QA APK for a test device; export data before uninstalling it to install a differently signed Play build.
 
+For the first **undistributed internal draft**, use the dedicated key with `-PrequirePlaySigning=true -PplayReviewOnly=true`. This marks the bundled configuration `reviewOnly: true`, `releaseReady: false`. Verify with `--require-signed --allow-review-draft` and bundletool. The explicit draft mode allows Console preparation before deployment/reporting/device review is finished; it never establishes distribution readiness. Normal release signing still enforces those checks. See [draft upload](../docs/play-store/INTERNAL-DRAFT-UPLOAD.md).
+
 Gradle 8.13 is checksum-pinned; Android Gradle Plugin 8.13.2 builds the bundle. Web assets are copied into generated output and checked for parity. Only staged `app.mjs` and `index.html` receive documented Play-specific changes: Play update links and the privacy/reporting module. All other original assets remain byte-identical. A supported AGP asset transform restores `.gz` resources after the default asset merger expands/renames them; the verifier checks the final OCR gzip path and bytes, not just staging. `play-asset-manifest.json` records every file hash.
 
 ## Finish the first Play release
@@ -28,6 +30,8 @@ Gradle 8.13 is checksum-pinned; Android Gradle Plugin 8.13.2 builds the bundle. 
 6. Test on Android phones, including offline cold start, PDF import/OCR, downloads, a local-model conversation where supported, report delivery, export/re-import, process recreation, keyboard, predictive back and 16 KB devices. Use Play internal testing/pre-launch reports and any required closed testing before production.
 
 For a signed build, export the following variables in a private local shell (values are never committed):
+
+Phone-only owners can instead add one `FINDR_PLAY_SIGNING_JSON` Actions secret using the [private signing handover instructions](../docs/play-store/PHONE-SIGNING.md). The signing wrapper validates the key and removes its temporary copy. Final verification pins the public certificate recorded in `play-release.properties`; keep the private backup for future updates.
 
 ```text
 FINDR_PLAY_KEYSTORE=/absolute/private/path/upload.jks
@@ -45,6 +49,8 @@ Then run `./gradlew bundleRelease lintRelease -PrequirePlaySigning=true`. This f
 The manual **Build separate FINDR Google Play bundle** action builds an unsigned review bundle by default. For signing, configure repository secrets `FINDR_PLAY_KEYSTORE_BASE64`, `FINDR_PLAY_STORE_PASSWORD`, `FINDR_PLAY_KEY_ALIAS`, `FINDR_PLAY_KEY_PASSWORD`, plus repository variables `FINDR_PLAY_REPORT_URL` and `FINDR_PLAY_READINESS_CONFIRMED`. `FINDR_PLAY_PRIVACY_URL` is optional when the tracked policy URL is correct. No Play publishing credentials are required because the action only produces an artifact.
 
 The action lives on the separate branch until reviewed/merged. GitHub normally exposes `workflow_dispatch` only once the workflow exists on the default branch; local builds work immediately. Keep the `release/play-store` branch while a shipped build links to its privacy policy; migrate the public policy URL deliberately before removing the branch. The existing Pages workflow is untouched. Review the separate PR before merging; merging to `main` still triggers that repository’s existing Pages workflow.
+
+The separate `Upload FINDR internal draft` workflow runs only on an intentional push to `release/play-upload`. It builds and validates a signed review-only bundle, uploads only an internal **draft**, and reads it back. It cannot roll out to testers or production. It uses the Google credential solely for the upload step and shares a concurrency group with the access checker. Reused version codes or an existing internal draft stop the upload; do not rerun an ambiguous upload/commit without reconciling Console state.
 
 ## Maintenance and checks
 

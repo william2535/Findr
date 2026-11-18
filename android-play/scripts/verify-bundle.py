@@ -95,9 +95,12 @@ def verify_assets(package, report, originals, allowed_additions):
     require(config.get('applicationId') == report.get('applicationId') and config.get('versionName') == report.get('versionName'),
             'Play runtime identity differs from staged identity')
     require(config.get('releaseReady') is report.get('releaseReady'), 'Runtime release readiness differs from staging')
+    require(config.get('reviewOnly', False) is report.get('reviewOnly', False), 'Runtime review-only mode differs from staging')
+    require(not (report.get('reviewOnly') is True and report.get('releaseReady') is True), 'Review-only bundle cannot claim distribution readiness')
     return {'originalAssets': len(originals), 'includedAssets': len(expected), 'intentionalOverrides': changed,
             'additionalAssets': additions, 'nativeLibraries': [], 'secretPatternScan': 'passed',
             'releaseConfigurationReady': report.get('releaseReady') is True,
+            'reviewOnly': report.get('reviewOnly') is True,
             'missingConfiguration': report.get('missingConfiguration', [])}
 
 
@@ -147,6 +150,12 @@ def signature_status(bundle, names, java='java'):
             'note': 'JAR signature verified and preview signer excluded; certificate trust warnings do not establish Play Console registration.'}
 
 
+def signed_readiness_allowed(results, allow_review_draft=False):
+    if results.get('releaseConfigurationReady') is True and results.get('reviewOnly') is not True:
+        return True
+    return allow_review_draft and results.get('reviewOnly') is True and results.get('releaseConfigurationReady') is False
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('bundle', type=Path)
@@ -154,8 +163,10 @@ def main():
     parser.add_argument('--bundletool', type=Path, help='Official bundletool JAR; required for decoded-manifest and bundle validation')
     parser.add_argument('--java', default='java')
     parser.add_argument('--require-signed', action='store_true')
+    parser.add_argument('--allow-review-draft', action='store_true', help='Accept explicitly marked signed internal drafts; does not permit distribution')
     parser.add_argument('--output', type=Path, help='Write the verification report as JSON')
     args = parser.parse_args()
+    require(not args.allow_review_draft or args.require_signed, 'Review draft verification requires --require-signed')
     expected = settings()
     report = json.loads(args.asset_manifest.read_text())
     require(report.get('applicationId') == expected['applicationId'] and report.get('versionName') == expected['versionName'],
@@ -166,9 +177,12 @@ def main():
     with zipfile.ZipFile(args.bundle) as package:
         results = verify_assets(package, report, originals, additions)
         signature = signature_status(args.bundle, package.namelist(), args.java)
+    if signature['verified']:
+        require(signature.get('certificateSha256') == [expected.get('uploadCertificateSha256')],
+                'Bundle does not use the configured dedicated FINDR upload certificate')
     if args.require_signed:
         require(signature['verified'], 'Bundle is unsigned; Play upload requires the configured private upload key')
-        require(results['releaseConfigurationReady'], 'Signed bundle lacks complete release configuration')
+        require(signed_readiness_allowed(results, args.allow_review_draft), 'Signed bundle lacks complete release configuration or explicit review-only metadata')
         require(args.bundletool is not None, 'Signed release verification requires bundletool')
     manifest = None
     if args.bundletool:
@@ -180,7 +194,9 @@ def main():
     results.update({'bundle': str(args.bundle), 'bytes': args.bundle.stat().st_size,
                     'sha256': digest(args.bundle.read_bytes()), 'signature': signature,
                     'bundletoolValidated': bool(args.bundletool), 'manifest': manifest,
-                    'uploadableBuildChecksPassed': bool(signature['verified'] and manifest and results['releaseConfigurationReady']),
+                    'uploadableBuildChecksPassed': bool(signature['verified'] and manifest and results['releaseConfigurationReady'] and not results['reviewOnly']),
+                    'draftUploadChecksPassed': bool(signature['verified'] and manifest and signed_readiness_allowed(results, args.allow_review_draft)),
+                    'verificationMode': 'internal-draft' if args.allow_review_draft else 'distribution-release',
                     'storeApproval': 'Not submitted or verified. Play Console/account/policy review remains separate.'})
     encoded = json.dumps(results, indent=2) + '\n'
     if args.output:

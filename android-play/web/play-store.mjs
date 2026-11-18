@@ -113,6 +113,7 @@ function report(answerText) {
 const footer = document.querySelector('body > footer');
 if (footer) {
   const tools = element('div', undefined, {class: 'play-support-tools'});
+  if (config.reviewOnly) tools.append(element('span', 'Internal draft · not ready for distribution'));
   tools.append(button('Privacy & support', privacy), button('Report AI answer', () => report('')));
   footer.append(tools);
 }

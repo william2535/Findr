@@ -78,15 +78,16 @@ async function googleRequest(fetcher, url, options, stage) {
 }
 
 export function releaseSetup(env = {}) {
+  const combinedSigning = env.PLAY_HAS_SIGNING_JSON === 'true';
   const checks = {
-    FINDR_PLAY_KEYSTORE_BASE64: env.PLAY_HAS_KEYSTORE === 'true',
-    FINDR_PLAY_STORE_PASSWORD: env.PLAY_HAS_STORE_PASSWORD === 'true',
-    FINDR_PLAY_KEY_ALIAS: env.PLAY_HAS_KEY_ALIAS === 'true',
-    FINDR_PLAY_KEY_PASSWORD: env.PLAY_HAS_KEY_PASSWORD === 'true',
+    FINDR_PLAY_KEYSTORE_BASE64: combinedSigning || env.PLAY_HAS_KEYSTORE === 'true',
+    FINDR_PLAY_STORE_PASSWORD: combinedSigning || env.PLAY_HAS_STORE_PASSWORD === 'true',
+    FINDR_PLAY_KEY_ALIAS: combinedSigning || env.PLAY_HAS_KEY_ALIAS === 'true',
+    FINDR_PLAY_KEY_PASSWORD: combinedSigning || env.PLAY_HAS_KEY_PASSWORD === 'true',
     FINDR_PLAY_REPORT_URL: env.PLAY_HAS_REPORT_URL === 'true',
     FINDR_PLAY_READINESS_CONFIRMED: env.PLAY_READINESS_CONFIRMED === 'true',
   };
-  return { missingSettings: Object.keys(checks).filter(key => !checks[key]),
+  return { combinedSigningSecretPresent: combinedSigning, missingSettings: Object.keys(checks).filter(key => !checks[key]),
     note: 'Presence only; signing identity, live reporting, device tests and first-release setup are checked separately.' };
 }
 

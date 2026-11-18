@@ -31,6 +31,7 @@ jobs:
       - name: Verify Google authentication and FINDR access
         env:
           GOOGLE_PLAY_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_PLAY_SERVICE_ACCOUNT_JSON }}
+          PLAY_HAS_SIGNING_JSON: ${{ secrets.FINDR_PLAY_SIGNING_JSON != '' }}
           PLAY_HAS_KEYSTORE: ${{ secrets.FINDR_PLAY_KEYSTORE_BASE64 != '' }}
           PLAY_HAS_STORE_PASSWORD: ${{ secrets.FINDR_PLAY_STORE_PASSWORD != '' }}
           PLAY_HAS_KEY_ALIAS: ${{ secrets.FINDR_PLAY_KEY_ALIAS != '' }}
