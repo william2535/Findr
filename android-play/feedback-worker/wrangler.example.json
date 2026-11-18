@@ -1,0 +1,12 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "findr-play-feedback",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-11-18",
+  "workers_dev": true,
+  "vars": {"FINDR_APPLICATION_ID": "com.findr.play"},
+  "d1_databases": [{"binding": "DB", "database_name": "findr-play-feedback", "database_id": "REPLACE_WITH_NEW_FEEDBACK_DATABASE_ID", "migrations_dir": "migrations"}],
+  "ratelimits": [{"name": "REPORT_RATE_LIMIT", "namespace_id": "103041", "simple": {"limit": 10, "period": 60}}],
+  "triggers": {"crons": ["17 * * * *"]},
+  "observability": {"enabled": false}
+}

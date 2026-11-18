@@ -1,0 +1,121 @@
+{
+  "date": "2026-11-18",
+  "baseGithubCommit": "8bdd8b03feb8babd6266b80b57dbc5d53efeadb2",
+  "baseSiteSourceCommit": "899bf12457ffd65517a372d743e5f904237ecf36",
+  "siteVersion": 92,
+  "webVersion": "0.40.1",
+  "playVersion": "0.40.1-play.1",
+  "applicationId": "com.findr.play",
+  "targetSdk": 36,
+  "minSdk": 26,
+  "regression": {
+    "passed": 1980,
+    "failed": 0,
+    "skipped": 1,
+    "skip": "Manufacturer PDF byte validation needs private downloaded research PDFs."
+  },
+  "toolchain": {
+    "gradle": "8.13",
+    "gradleZipSha256": "20f1b1176237254a6fc204d8434196fa11a4cfb387567519c61556e8710aed78",
+    "agp": "8.13.2",
+    "jdk": "Eclipse Temurin 17.0.21+9",
+    "bundletool": "1.18.3",
+    "bundletoolSha256": "a099cfa1543f55593bc2ed16a70a7c67fe54b1747bb7301f37fdfd6d91028e29"
+  },
+  "uiChecks": [
+    {
+      "browser": "Chromium",
+      "width": 390,
+      "height": 844,
+      "android": false,
+      "backend": "unconfigured",
+      "errors": [],
+      "overflow": false
+    },
+    {
+      "browser": "Chromium",
+      "width": 390,
+      "height": 460,
+      "android": false,
+      "backend": "unconfigured",
+      "errors": [],
+      "overflow": false
+    }
+  ],
+  "deviceLimitations": [
+    "No physical Android or emulator installation tested.",
+    "Desktop Chromium used a synthetic native bridge and local asset interception; this does not establish Android WebView compatibility.",
+    "No live feedback service deployed or end-to-end report delivery verified.",
+    "No production signing key supplied or Play Console submission made."
+  ],
+  "sourceIsolation": "Web public/app, original android/ project, original Pages workflow and live Sites deployment unchanged.",
+  "playToolingTests": {
+    "passed": 12,
+    "failed": 0
+  },
+  "feedbackTests": {
+    "passed": 11,
+    "failed": 0
+  },
+  "androidBuild": {
+    "tasks": [
+      "bundleRelease",
+      "lintRelease",
+      "assembleDebug"
+    ],
+    "result": "BUILD SUCCESSFUL",
+    "durationSeconds": 31,
+    "lintErrors": 0,
+    "lintWarnings": 7
+  },
+  "bundleVerification": {
+    "originalAssets": 1410,
+    "includedAssets": 1414,
+    "intentionalOverrides": [
+      "app.mjs",
+      "index.html"
+    ],
+    "additionalAssets": [
+      "play-config.json",
+      "play-report.mjs",
+      "play-store.css",
+      "play-store.mjs"
+    ],
+    "nativeLibraries": [],
+    "secretPatternScan": "passed",
+    "releaseConfigurationReady": false,
+    "missingConfiguration": [
+      "FINDR_PLAY_REPORT_URL"
+    ],
+    "bundle": "android-play/app/build/outputs/bundle/release/app-release.aab",
+    "bytes": 73679637,
+    "sha256": "535f26382563b173a9556e5e5bfeddbaac7eefd5a44812ffbd64a8e3335ab38b",
+    "signature": {
+      "status": "unsigned",
+      "verified": false,
+      "note": "Requires a private upload-key signature before Google Play upload."
+    },
+    "bundletoolValidated": true,
+    "manifest": {
+      "applicationId": "com.findr.play",
+      "versionCode": 1,
+      "versionName": "0.40.1-play.1",
+      "minSdk": 26,
+      "targetSdk": 36,
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
+      "debuggable": false,
+      "allowBackup": false,
+      "usesCleartextTraffic": false
+    },
+    "uploadableBuildChecksPassed": false,
+    "storeApproval": "Not submitted or verified. Play Console/account/policy review remains separate."
+  },
+  "bundletoolQaApk": {
+    "generated": true,
+    "assetsVerified": 1414,
+    "installed": false,
+    "productionSigned": false
+  }
+}
