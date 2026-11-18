@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "workflowRunId": 44309757393,
+  "workflowUrl": "https://github.com/william2535/Findr/actions/runs/44309757393",
+  "conclusion": "success",
+  "commit": "85df22d5a6e8cf066812f337684d99d48bd7e9a7",
+  "createdAt": "2026-11-18T13:03:00Z",
+  "updatedAt": "2026-11-18T13:03:45Z",
+  "deploymentId": 7884028603,
+  "deploymentState": "success",
+  "deploymentUpdatedAt": "2026-11-18T13:03:45Z",
+  "environmentUrl": "https://william2535.github.io/Findr/",
+  "checks": [
+    {
+      "url": "https://william2535.github.io/Findr/app-release.json",
+      "status": 200,
+      "bytes": 21,
+      "sha256": "58169bf4a6ac56a0bd47f84d7ba223cdb0d0260636656a3cff1fb279f05e1ca7"
+    },
+    {
+      "url": "https://william2535.github.io/Findr/app/app.mjs",
+      "status": 200,
+      "bytes": 105200,
+      "sha256": "5a85c7da9afc61665883e42482dcca8bd11dde9272bb318846605aea76ea3d13"
+    },
+    {
+      "url": "https://william2535.github.io/Findr/app/version.mjs",
+      "status": 200,
+      "bytes": 722,
+      "sha256": "3d1a74dcb5e036c603f1f7f2a7d294e532d8ffc504d1c7dcf811e10497f92a92"
+    },
+    {
+      "url": "https://william2535.github.io/Findr/app/precache.js",
+      "status": 200,
+      "bytes": 206443,
+      "sha256": "ab4619292e0067a9dd5eec46b581b10ee1edee3f8f3756681df257085721f8bb"
+    },
+    {
+      "url": "https://william2535.github.io/Findr/app/images/zone-sketch-banner.jpg",
+      "status": 200,
+      "bytes": 131021,
+      "sha256": "85b9476989cc4f26f9c7e2feadb699618e0b308e686522fbea890cc38bac2326"
+    },
+    {
+      "url": "https://william2535.github.io/Findr/privacy/",
+      "status": 200,
+      "bytes": 14717,
+      "sha256": "b1a0d48243cb8f077cc98ed9cfebe520b07f527e7780fae2460f7e3eaeddab93"
+    }
+  ]
+}
