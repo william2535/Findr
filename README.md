@@ -1,5 +1,9 @@
 ## GitHub Pages edition — web 0.40.0
 
+## Web0.40.2 — Zone Sketch store link
+
+The Home promotion now opens Zone Sketch in Google Play (`com.zonesketch.app`) and the artwork no longer offers public beta access. Google Play testing is separate; an enrolled tester account may be required while the public listing is unavailable.
+
 ## Web0.40.1 — compact controls
 
 Toolbox now sits on the left beside Home’s view icons. The compact emulator library shows four panels per row on phones as well as larger screens, with readable model labels and shorter Open controls. List view remains available. Layout checks passed in Chromium and WebKit; see `research/layout-0.40.1/README.md`.
