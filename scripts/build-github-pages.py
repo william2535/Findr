@@ -105,7 +105,7 @@ def build_pages(source, output, site_url, api_origin, revision):
     try:
         app = stage / 'app'
         copy_tree(app_source, app, NATIVE_ONLY)
-        for folder in ['share', 'demos']:
+        for folder in ['share', 'demos', 'privacy']:
             copy_tree(public / folder, stage / folder)
         favicon = public / 'favicon.png'
         if favicon.is_file() and not favicon.is_symlink():
