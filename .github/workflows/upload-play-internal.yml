@@ -38,6 +38,11 @@ jobs:
         run: |
           python3 -m unittest discover -s android-play/tests -v
           node --test android-play/tests/*.test.mjs android-play/feedback-worker/tests/*.test.mjs
+      - name: Set up Android command-line tools
+        uses: android-actions/setup-android@9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407 # v3.2.2
+        with:
+          packages: 'platform-tools'
+          log-accepted-android-sdk-licenses: false
       - name: Install Android SDK packages
         run: sdkmanager 'platforms;android-36' 'build-tools;36.0.0'
       - name: Sign review-only AAB with the dedicated upload key
