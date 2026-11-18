@@ -46,6 +46,20 @@ export function verifyUploadInput(bytes, report, expected, readinessConfirmed) {
     reviewOnly: reviewDraft, distributionReady: productionReady };
 }
 
+// Only fixed, documented Google diagnostics are exposed; never emit upstream text.
+export function classifyCommitError(status, body) {
+  if (status !== 400) return null;
+  if (Array.isArray(body?.error?.details) && body.error.details.some(detail => detail?.reason === 'CHANGES_ALREADY_IN_REVIEW'))
+    return 'review_in_progress';
+  const message = typeof body?.error?.message === 'string' ? body.error.message.trim().replace(/\s+/g, ' ') : '';
+  if (message === 'Changes are sent for review automatically. The query parameter changesNotSentForReview must not be set.' ||
+      message === 'The query parameter changesNotSentForReview must not be set.') return 'review_flag_must_be_omitted';
+  if (message === 'Changes cannot be sent for review automatically. Please set the query parameter changesNotSentForReview to true. Once committed, the changes in this edit can be sent for review from the Google Play Console UI.' ||
+      message === 'Please set the query parameter changesNotSentForReview to true.') return 'review_flag_required';
+  if (message === 'Only releases with status draft may be created on draft app.') return 'draft_app_requires_draft_release';
+  return null;
+}
+
 async function request(fetcher, url, options, stage) {
   let response;
   try {
@@ -59,9 +73,8 @@ async function request(fetcher, url, options, stage) {
     if (text) body = JSON.parse(text);
   } catch { throw new UploadError('invalid_google_response', response.status, response.ok || response.status >= 500); }
   if (!response.ok) {
-    const reviewBlocked = stage === 'commit' && response.status === 400 && Array.isArray(body?.error?.details) &&
-      body.error.details.some(detail => detail?.reason === 'CHANGES_ALREADY_IN_REVIEW');
-    throw new UploadError(reviewBlocked ? 'review_in_progress' : classifyGoogleError(response.status, body, stage), response.status, response.status >= 500);
+    const diagnostic = stage === 'commit' ? classifyCommitError(response.status, body) : null;
+    throw new UploadError(diagnostic || classifyGoogleError(response.status, body, stage), response.status, response.status >= 500);
   }
   return body;
 }

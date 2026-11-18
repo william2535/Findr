@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createHash, generateKeyPairSync } from 'node:crypto';
-import { uploadInternalDraft, verifyUploadInput } from '../scripts/upload-play-internal.mjs';
+import { classifyCommitError, uploadInternalDraft, verifyUploadInput } from '../scripts/upload-play-internal.mjs';
 
 const bytes = Buffer.from('Synthetic AAB fixture; never an Android application.');
 const sha256 = createHash('sha256').update(bytes).digest('hex');
@@ -193,6 +193,23 @@ test('deterministic commit rejection never retries with weaker review flags', as
   assert.equal(result.code, 'review_in_progress');
   assert.equal(m.calls.filter(x => x.url.includes(':commit')).length, 1);
   assert.ok(!JSON.stringify(result).includes('private_key'));
+});
+
+test('known commit diagnostics expose fixed enums only and never change flags automatically', async () => {
+  const forbidden = 'Changes are sent for review automatically. The query parameter changesNotSentForReview must not be set.';
+  const required = 'Changes cannot be sent for review automatically. Please set the query parameter changesNotSentForReview to true. Once committed, the changes in this edit can be sent for review from the Google Play Console UI.';
+  for (const [message, code] of [[forbidden, 'review_flag_must_be_omitted'], [required, 'review_flag_required'],
+    ['Only releases with status draft may be created on draft app.', 'draft_app_requires_draft_release']]) {
+    const m = mock([...successful().slice(0, 8), [400, { error: { message } }], [204, null]]);
+    const result = await uploadInternalDraft(input, m);
+    assert.equal(result.code, code); assert.equal(result.committed, false); assert.equal(result.temporaryEditDeleted, true);
+    assert.equal(m.calls.filter(x => x.url.includes(':commit')).length, 1);
+    assert.match(m.calls.find(x => x.url.includes(':commit')).url, /changesNotSentForReview=true&changesInReviewBehavior=ERROR_IF_IN_REVIEW/);
+    assert.ok(!JSON.stringify(result).includes(message));
+  }
+  assert.equal(classifyCommitError(503, { error: { message: forbidden } }), null);
+  assert.equal(classifyCommitError(400, { error: { message: forbidden + ' PRIVATE INFORMATION' } }), null);
+  assert.equal(classifyCommitError(400, { error: { message: rawCredential } }), null);
 });
 
 test('a committed draft with failed readback is not described as verified or uploaded again', async () => {
