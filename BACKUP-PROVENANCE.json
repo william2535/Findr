@@ -1,124 +1,115 @@
 {
-  "webVersion": "0.40.1",
-  "siteVersion": 92,
+  "webVersion": "0.40.2",
+  "siteVersion": 93,
   "siteProjectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
   "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_d5f3446435308191842f044dcafe17d6",
-  "deploymentId": "appgdep_6af5db78d0d08191b0da2e46eb4c34e2",
+  "deploymentId": "appgdep_6afda3402e108191919ebab40667968b",
   "deploymentStatus": "succeeded",
-  "deploymentUpdatedAt": "2026-11-12T15:32:06.243200+00:00",
+  "deploymentUpdatedAt": "2026-11-18T13:08:59+00:00",
   "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site",
-  "sourceCommit": "899bf12457ffd65517a372d743e5f904237ecf36",
+  "sourceCommit": "4bce7fd6b5b96d40201d6c71d1765cc865b8d7a3",
   "sourceRepository": "Sites project source repository",
   "githubRepository": "https://github.com/william2535/Findr",
   "githubBranch": "main",
   "backupRevision": "The Git commit containing this provenance and SOURCE-FILES.sha256 identifies the backup; it intentionally differs from the deployment source commit.",
   "sourceManifest": "SOURCE-FILES.sha256",
   "manifestScope": "All source-backup payload files except the checksum manifest itself; includes GitHub setup/export documentation and separately archived recovery files.",
-  "verifiedOriginalSourceFiles": 3006,
+  "verifiedOriginalSourceFiles": 3009,
   "intentionallyDetachedFile": ".openai/hosting.json",
   "detachedHostingReason": "Keep a migrated checkout separate from the original live ChatGPT Site.",
   "intentionalExclusions": "EXPORT-EXCLUSIONS.json and normal private/cache/user-data exclusions; explicit exception: current signed 0.37.0 APK retained as an additional artifact, with checksum and source. Historical export exclusions remain unchanged.",
-  "preservedHistory": {
-    "tag": "source-v0.32.6",
-    "commit": "1aa4b88397042dfa103688c4b209432fd06ff23d",
+  "provenanceArchive": {
+    "manifest": "SOURCE-FILES.sha256",
+    "documentation": [
+      "AGENTS.md",
+      "GITHUB-SETUP.md",
+      "EXPORT-VALIDATION.md",
+      "SOURCE-INVENTORY.md"
+    ],
     "recoveryArchive": "WORKSPACE-RECOVERY/original-workspace-files.zip"
   },
   "checks": {
-    "scope": "Home Toolbox beside view controls and four-column compact emulator grid on phones.",
+    "scope": "Zone Sketch Home promotional link update to Google Play package (com.zonesketch.app) and standalone Play privacy policy publication.",
     "focusedRegressionTests": {
-      "passed": 226,
+      "passed": 5,
       "failed": 0,
-      "scope": "Relevant Home and emulator regressions; full suite not rerun for this layout-only change."
+      "scope": "tests/github-pages-package.test.mjs (Pages packaging, asset preservation, privacy policy routing, reproducible precache hashing); full suite not rerun for this promotion/policy update."
     },
     "productionBuild": "passed",
     "typescript": "passed",
     "syntax": "passed",
     "publicAssets": "passed",
-    "offlineBuildHash": "4c3dbe34c67b",
-    "pagesOfflineBuildHash": "7b559fd2dcc0",
+    "offlineBuildHash": "85695ab082e2",
+    "pagesOfflineBuildHash": "8bc5c7bd0490",
     "browserChecks": {
-      "environments": "Chromium 154 and WebKit 26",
-      "widths": [
-        320,
-        390,
-        430,
-        768,
-        1440
-      ],
+      "environments": "Live TLS HTTPS inspection (curl/python urllib) of deployed ChatGPT Site and GitHub Pages endpoints",
       "verified": [
-        "Toolbox disclosure",
-        "Four grid columns",
-        "44px targets",
-        "List layout",
-        "Open panel"
+        "app.mjs sha256 byte-for-byte parity (5a85c7da9afc61665883e42482dcca8bd11dde9272bb318846605aea76ea3d13)",
+        "version.mjs sha256 byte-for-byte parity (3d1a74dcb5e036c603f1f7f2a7d294e532d8ffc504d1c7dcf811e10497f92a92)",
+        "zone-sketch-banner.jpg sha256 byte-for-byte parity (85b9476989cc4f26f9c7e2feadb699618e0b308e686522fbea890cc38bac2326)",
+        "Home promotion opens Google Play (com.zonesketch.app)",
+        "Standalone privacy policy HTTP 200 at /privacy/"
       ],
-      "evidence": "research/layout-0.40.1/"
+      "evidence": [
+        "BACKUP-VERIFICATION/0.40.2-live-site.json",
+        "BACKUP-VERIFICATION/0.40.2-live-pages.json"
+      ]
     },
     "android": {
       "versionName": "0.37.0",
       "versionCode": 27,
-      "rebuilt": false,
-      "apkUnchanged": true
+      "note": "Production web release only. android/ preview remains 0.37.0/code 27. Android Play Store draft work is managed separately under android-play/ on release/play-store and release/play-upload branches."
     },
     "limitations": [
-      "No physical iPhone/Android test.",
-      "No new authenticated online-provider inference or local-model performance claim."
+      "No physical mobile device testing performed in this Cloud Shell session.",
+      "Cloud Shell lacks direct access to the internal ChatGPT Sites source tree to run a local repository diff against commit 4bce7fd6b5b96d40201d6c71d1765cc865b8d7a3; client-facing application parity is verified via live asset cryptographic checksums."
     ],
-    "evidence": "research/layout-0.40.1/README.md",
+    "evidence": "BACKUP-VERIFICATION/0.40.2-pages-publication.json",
     "publishedBrowser": {
       "status": "passed",
-      "browser": "Chromium 154.0.8037.57",
-      "widths": [
-        320,
-        390,
-        430,
-        768,
-        1440
-      ],
       "sites": [
         "https://findr-fault-finder.floodyyy21.chatgpt.site/app/",
         "https://william2535.github.io/Findr/app/"
       ],
       "verified": [
-        "Home Toolbox left beside view controls",
-        "Toolbox opens",
-        "Four emulator columns",
-        "44px targets",
-        "List and open-panel controls"
+        "Web version 0.40.2 active on both endpoints",
+        "Zone Sketch promotion links to com.zonesketch.app",
+        "App release manifest version 0.40.2",
+        "Standalone Play privacy policy at /privacy/"
       ],
       "pageErrors": 0,
       "physicalPhone": false,
       "tlsCertificateVerification": "enabled",
       "evidence": [
-        "BACKUP-VERIFICATION/0.40.1-live-site.json",
-        "BACKUP-VERIFICATION/0.40.1-live-pages.json"
+        "BACKUP-VERIFICATION/0.40.2-live-site.json",
+        "BACKUP-VERIFICATION/0.40.2-live-pages.json"
       ]
     }
   },
   "secretReview": {
-    "sourceCommit": "899bf12457ffd65517a372d743e5f904237ecf36",
-    "copiedFiles": 18,
-    "changedTextFilesScanned": 13,
+    "sourceCommit": "4bce7fd6b5b96d40201d6c71d1765cc865b8d7a3",
+    "copiedFiles": 10,
+    "changedTextFilesScanned": 8,
     "candidates": [],
-    "allEligibleSourceFilesVerified": 3006,
+    "allEligibleSourceFilesVerified": 3009,
     "detachedHostingVerified": true,
     "recoveryArchiveUnchanged": true,
     "limitations": "Changed text plus reviewed baseline; no mathematical absence proof. One explicitly retained signed APK is an additional verified release artifact; private signing key, model weights and downloaded user manuals remain excluded.",
-    "reviewScope": "Current 0.40.1 source changes plus previously reviewed complete source backup; current signed APK unchanged."
+    "reviewScope": "Current 0.40.2 source changes plus previously reviewed complete source backup; current signed APK unchanged."
   },
-  "preparedAt": "2026-11-12T15:35:42.290745+00:00",
+  "preparedAt": "2026-11-18T14:55:00+00:00",
   "deploymentArchive": null,
   "previousPublishedRelease": {
-    "webVersion": "0.40.0",
-    "siteVersion": 91,
-    "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_194b60174c0881919b1fb3bc2d2d6979",
-    "deploymentId": "appgdep_6af5d40706488191b36f75b61e768c13",
+    "webVersion": "0.40.1",
+    "siteVersion": 92,
+    "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_d5f3446435308191842f044dcafe17d6",
+    "deploymentId": "appgdep_6af5db78d0d08191b0da2e46eb4c34e2",
     "deploymentStatus": "succeeded",
-    "deploymentUpdatedAt": "2026-11-12T14:59:44.642516+00:00",
-    "sourceCommit": "fad95d0f08d78a44c2e123ddb5ec0ea03296fa81",
+    "deploymentUpdatedAt": "2026-11-12T15:32:06.243200+00:00",
+    "sourceCommit": "899bf12457ffd65517a372d743e5f904237ecf36",
     "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site"
   },
-  "publicationNote": "Web 0.40.1 backend succeeded as Site 92 using a remote source build, with no uploaded archive. GitHub Pages deployed successfully from7630618f5d75404fbd0ffac22bcb36b7f790c7c0; both public sites passed actual layout/control checks in Chromium. This later documentation-only commit records evidence without redeploying unchanged app bytes. Android remains 0.37.0/code 27.",
+  "publicationNote": "Web 0.40.2 published as Site 93 via ChatGPT Sites remote build; live site deployment succeeded at 13:08:59 UTC on 18 November 2026. GitHub Pages deployed from commit 85df22d5a6e8cf066812f337684d99d48bd7e9a7 (workflow run 44309757393, deployment 7884028603). Runtime asset cryptographic hashes match across local Git, GitHub Pages, and ChatGPT Site. This documentation-only commit records verified provenance and updates SOURCE-FILES.sha256 without modifying application logic.",
   "additionalRetainedArtifacts": [
     {
       "path": "public/releases/FINDR-0.37.0.apk",
@@ -174,15 +165,15 @@
     "workflow": ".github/workflows/deploy-pages.yml",
     "apiOrigin": "https://findr-fault-finder.floodyyy21.chatgpt.site",
     "storageNote": "Separate browser origin; existing local data is not automatically transferred.",
-    "deployedCommit": "7630618f5d75404fbd0ffac22bcb36b7f790c7c0",
-    "workflowRunId": 43249060931,
-    "workflowUrl": "https://github.com/william2535/Findr/actions/runs/43249060931",
+    "deployedCommit": "85df22d5a6e8cf066812f337684d99d48bd7e9a7",
+    "workflowRunId": 44309757393,
+    "workflowUrl": "https://github.com/william2535/Findr/actions/runs/44309757393",
     "workflowConclusion": "success",
-    "deploymentId": 7741714398,
-    "deploymentUpdatedAt": "2026-11-12T15:34:02Z",
-    "offlineBuild": "7b559fd2dcc0",
-    "publicationEvidence": "BACKUP-VERIFICATION/0.40.1-pages-publication.json",
-    "liveBrowserEvidence": "BACKUP-VERIFICATION/0.40.1-live-pages.json"
+    "deploymentId": 7884028603,
+    "deploymentUpdatedAt": "2026-11-18T13:03:45Z",
+    "offlineBuild": "8bc5c7bd0490",
+    "publicationEvidence": "BACKUP-VERIFICATION/0.40.2-pages-publication.json",
+    "liveBrowserEvidence": "BACKUP-VERIFICATION/0.40.2-live-pages.json"
   },
   "previousGithubPages": {
     "url": "https://william2535.github.io/Findr/",
@@ -192,14 +183,14 @@
     "workflow": ".github/workflows/deploy-pages.yml",
     "apiOrigin": "https://findr-fault-finder.floodyyy21.chatgpt.site",
     "storageNote": "Separate browser origin; existing local data is not automatically transferred.",
-    "deployedCommit": "fd7aced49511870df7ba9e7739a0eb6168eac75f",
-    "workflowRunId": 43243295304,
-    "workflowUrl": "https://github.com/william2535/Findr/actions/runs/43243295304",
+    "deployedCommit": "7630618f5d75404fbd0ffac22bcb36b7f790c7c0",
+    "workflowRunId": 43249060931,
+    "workflowUrl": "https://github.com/william2535/Findr/actions/runs/43249060931",
     "workflowConclusion": "success",
-    "deploymentId": 7740872984,
-    "deploymentUpdatedAt": "2026-11-12T15:02:20Z",
-    "offlineBuild": "eb325bb83367",
-    "publicationEvidence": "BACKUP-VERIFICATION/0.40.0-pages-publication.json",
-    "liveBrowserEvidence": "BACKUP-VERIFICATION/0.40.0-live-browser.json"
+    "deploymentId": 7741714398,
+    "deploymentUpdatedAt": "2026-11-12T15:34:02Z",
+    "offlineBuild": "7b559fd2dcc0",
+    "publicationEvidence": "BACKUP-VERIFICATION/0.40.1-pages-publication.json",
+    "liveBrowserEvidence": "BACKUP-VERIFICATION/0.40.1-live-pages.json"
   }
 }

@@ -1,0 +1,48 @@
+{
+  "browser": "curl / python tls",
+  "base": "https://findr-fault-finder.floodyyy21.chatgpt.site/app/",
+  "siteProjectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
+  "siteVersion": 93,
+  "deploymentId": "appgdep_6afda3402e108191919ebab40667968b",
+  "sourceCommit": "4bce7fd6b5b96d40201d6c71d1765cc865b8d7a3",
+  "deployedAt": "2026-11-18T13:08:59+00:00",
+  "appVersion": "0.40.2",
+  "status": "passed",
+  "checks": [
+    {
+      "url": "https://findr-fault-finder.floodyyy21.chatgpt.site/app/app.mjs",
+      "status": 200,
+      "bytes": 105200,
+      "sha256": "5a85c7da9afc61665883e42482dcca8bd11dde9272bb318846605aea76ea3d13",
+      "matchesLocalSource": true,
+      "matchesGithubPages": true
+    },
+    {
+      "url": "https://findr-fault-finder.floodyyy21.chatgpt.site/app/version.mjs",
+      "status": 200,
+      "bytes": 722,
+      "sha256": "3d1a74dcb5e036c603f1f7f2a7d294e532d8ffc504d1c7dcf811e10497f92a92",
+      "matchesLocalSource": true,
+      "matchesGithubPages": true
+    },
+    {
+      "url": "https://findr-fault-finder.floodyyy21.chatgpt.site/app/images/zone-sketch-banner.jpg",
+      "status": 200,
+      "bytes": 131021,
+      "sha256": "85b9476989cc4f26f9c7e2feadb699618e0b308e686522fbea890cc38bac2326",
+      "matchesLocalSource": true,
+      "matchesGithubPages": true
+    },
+    {
+      "target": "Zone Sketch promotional link",
+      "url": "https://play.google.com/store/apps/details?id=com.zonesketch.app",
+      "verifiedInAppMjs": true
+    }
+  ],
+  "errors": [],
+  "physicalPhone": false,
+  "limitations": [
+    "Direct access to internal ChatGPT Sites Git repository or server filesystem was not available in this Cloud Shell session; runtime application parity is verified by cryptographic sha256 checksums of live assets.",
+    "No physical mobile device testing performed in this session."
+  ]
+}
