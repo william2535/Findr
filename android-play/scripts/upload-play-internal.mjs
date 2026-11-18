@@ -165,9 +165,11 @@ export async function uploadInternalDraft({ bytes, report, expected, rawCredenti
     result.editValidated = true;
     phase = 'commit';
     result.commitAttempted = true;
-    // Explicitly refuse cancellation of an existing review. Never retry with weaker parameters.
+    // Refuse cancellation of an existing review. Google explicitly rejected
+    // changesNotSentForReview for FINDR (run 44301204915); omit that parameter.
+    // The release remains an internal draft; never retry a commit automatically.
     const committed = await request(fetcher,
-      `${edit}:commit?changesNotSentForReview=true&changesInReviewBehavior=ERROR_IF_IN_REVIEW`, { method: 'POST', headers }, phase);
+      `${edit}:commit?changesInReviewBehavior=ERROR_IF_IN_REVIEW`, { method: 'POST', headers }, phase);
     if (committed?.id !== editId) throw new UploadError('invalid_google_response', null, true);
     result.committed = true;
     phase = 'readback';

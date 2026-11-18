@@ -74,7 +74,7 @@ test('success uploads exact bytes, stages internal draft only and verifies commi
   const puts = m.calls.filter(x => x.method === 'PUT'); assert.equal(puts.length, 1);
   assert.match(puts[0].url, /\/tracks\/internal$/); assert.deepEqual(JSON.parse(puts[0].body), internal);
   const commit = m.calls.find(x => x.url.includes(':commit'));
-  assert.match(commit.url, /changesNotSentForReview=true/); assert.match(commit.url, /changesInReviewBehavior=ERROR_IF_IN_REVIEW/);
+  assert.equal(new URL(commit.url).searchParams.has('changesNotSentForReview'), false); assert.match(commit.url, /changesInReviewBehavior=ERROR_IF_IN_REVIEW/);
   assert.equal(commit.body, undefined); assert.ok(m.calls.every(x => x.redirect === 'error' && x.signal));
   assert.ok(!JSON.stringify(result).includes('synthetic-access-token'));
   assert.ok(!JSON.stringify(result).includes('iam.gserviceaccount.com'));
@@ -204,7 +204,9 @@ test('known commit diagnostics expose fixed enums only and never change flags au
     const result = await uploadInternalDraft(input, m);
     assert.equal(result.code, code); assert.equal(result.committed, false); assert.equal(result.temporaryEditDeleted, true);
     assert.equal(m.calls.filter(x => x.url.includes(':commit')).length, 1);
-    assert.match(m.calls.find(x => x.url.includes(':commit')).url, /changesNotSentForReview=true&changesInReviewBehavior=ERROR_IF_IN_REVIEW/);
+    const commitUrl = new URL(m.calls.find(x => x.url.includes(':commit')).url);
+    assert.equal(commitUrl.searchParams.get('changesInReviewBehavior'), 'ERROR_IF_IN_REVIEW');
+    assert.equal(commitUrl.searchParams.has('changesNotSentForReview'), false);
     assert.ok(!JSON.stringify(result).includes(message));
   }
   assert.equal(classifyCommitError(503, { error: { message: forbidden } }), null);
