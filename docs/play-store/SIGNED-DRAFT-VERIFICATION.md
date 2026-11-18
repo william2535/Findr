@@ -19,4 +19,18 @@ This distinction permits uploading an **undistributed internal draft** for Conso
 
 Focused checks: 15 Python build/bundle tests and 49 Node access/signing/upload/reporting tests passed. The earlier full web regression result remains 1,980 passed and one private-research-fixture skip; this change does not alter the shared web source. No physical Android test was performed.
 
-GitHub builds produce their own freshly verified artifact and SHA; build timestamps/signatures can change the archive hash. A successful local build is not evidence of a successful Google upload. The upload workflow records its real commit/readback result separately. Reporting infrastructure, store declarations, actual Android tests and distribution readiness remain outstanding.
+GitHub builds produce their own freshly verified artifact and SHA; build timestamps/signatures can change the archive hash. A successful local build alone is not evidence of a successful Google upload.
+
+## Verified Google Play internal draft
+
+[GitHub run 44301763067](https://github.com/william2535/Findr/actions/runs/44301763067), source commit `e7787457cf236414e933561a4e485569b92442f6`, succeeded on 18 November 2026 at 12:14 UTC. Google saved the release, and a separate readback verified the internal draft and exact bundle hash. The readback edit was deleted. Result: `internal_draft_uploaded`, `committed: true`, `readbackVerified: true`, `manualReconciliationRequired: false`.
+
+- Track/status: `internal` / `draft`; package `com.findr.play`, code `1`, version `0.40.1-play.1`.
+- Uploaded AAB: 73,768,154 bytes; SHA-256 `ff01268327e0d41adb883be432fcb728f3ee80d310e74e6ceb7c7ac0dcbea2ab`.
+- Actual upload certificate, official bundletool, manifest and complete asset verification passed. The dedicated signing secret was used without exporting credentials to repository artifacts.
+- CI checks: 15 Python tests and 50 Node tests passed; Gradle bundle/signing/lint build succeeded in 43 seconds.
+- [Build artifacts and verification reports](https://github.com/william2535/Findr/actions/runs/44301763067/artifacts/14425428168), subject to GitHub artifact retention (current expiry 16 February 2027).
+
+Google initially rejected the commit's `changesNotSentForReview=true` parameter. [Diagnostic run 44301204915](https://github.com/william2535/Findr/actions/runs/44301204915) confirmed its exact forbidden-parameter response; the uncommitted edit was deleted. Omitting that parameter while retaining `ERROR_IF_IN_REVIEW` resolved the error. The uploader never automatically retried or changed flags, and it cannot start a rollout.
+
+This is a saved, **undistributed internal draft**, not an installable tester release or public publication. `reviewOnly: true` and `distributionReady: false` remain accurate. Reporting infrastructure, store declarations, actual Android tests and distribution readiness remain outstanding. Google approval is not established. Existing web app source, original Android preview project, Pages deployment workflow and Zone Sketch were not changed by this upload.

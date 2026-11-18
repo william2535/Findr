@@ -1,5 +1,7 @@
 # Separate Play build — verified 18 November 2026
 
+This document records the earlier unsigned-build checkpoint. For the later signed build and verified Google Play internal draft, see [SIGNED-DRAFT-VERIFICATION.md](SIGNED-DRAFT-VERIFICATION.md).
+
 This is preparation for FINDR's first Google Play release. The unsigned review AAB is **not ready for Play submission**, and no Play listing or live website was published. The original preview APK is unchanged.
 
 ## Source and identity
