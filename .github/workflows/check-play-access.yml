@@ -1,0 +1,42 @@
+name: Check FINDR Google Play access
+
+on:
+  push:
+    branches: [release/play-store]
+    paths:
+      - '.github/workflows/check-play-access.yml'
+      - 'android-play/scripts/check-play-access.mjs'
+      - 'android-play/tests/play-access.test.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# A service account can have only one open edit per app. Never overlap checks/uploads.
+concurrency:
+  group: findr-play-com-findr-play
+  cancel-in-progress: false
+
+jobs:
+  check:
+    if: github.repository == 'william2535/Findr' && github.ref == 'refs/heads/release/play-store'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Check credential handling with synthetic fixtures
+        run: node --test android-play/tests/play-access.test.mjs
+      - name: Verify Google authentication and FINDR access
+        env:
+          GOOGLE_PLAY_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_PLAY_SERVICE_ACCOUNT_JSON }}
+          PLAY_HAS_KEYSTORE: ${{ secrets.FINDR_PLAY_KEYSTORE_BASE64 != '' }}
+          PLAY_HAS_STORE_PASSWORD: ${{ secrets.FINDR_PLAY_STORE_PASSWORD != '' }}
+          PLAY_HAS_KEY_ALIAS: ${{ secrets.FINDR_PLAY_KEY_ALIAS != '' }}
+          PLAY_HAS_KEY_PASSWORD: ${{ secrets.FINDR_PLAY_KEY_PASSWORD != '' }}
+          PLAY_HAS_REPORT_URL: ${{ vars.FINDR_PLAY_REPORT_URL != '' }}
+          PLAY_READINESS_CONFIRMED: ${{ vars.FINDR_PLAY_READINESS_CONFIRMED == 'yes' }}
+        run: node android-play/scripts/check-play-access.mjs
+
+# No AAB upload, edit commit, production release, website deployment or key export.
