@@ -45,3 +45,16 @@
 @keyframes findrGlint{from{transform:translateX(-120%) rotate(33deg)}to{transform:translateX(520%) rotate(33deg)}}
 @media(max-height:580px){.findr-book-stage{width:min(55vw,190px);margin-bottom:0}}
 @media(prefers-reduced-motion:reduce){.findr-book-stage,.findr-book-turn,.findr-magnifier,.findr-intro-wordmark,.findr-intro-core p{animation:none!important}}
+
+/* iOS Safari correction: keep the book as a single readable silhouette.
+   Avoid 3D backface transforms, which collapsed the page layers into strips. */
+.findr-book-stage{width:min(88vw,390px);aspect-ratio:340/240;perspective:none;transform-style:flat;isolation:isolate;margin-bottom:4px}
+.findr-book-base{display:block;z-index:1;filter:drop-shadow(0 9px 8px #0009)}
+.findr-book-turn{z-index:2;left:50%;top:26%;width:43%;height:59%;transform-origin:0 50%;transform-style:flat;backface-visibility:visible;opacity:0;filter:drop-shadow(-4px 3px 4px #0004)}
+.findr-book-turn svg{backface-visibility:visible}
+.findr-book-turn-one{animation:findrFlatTurn 1.05s cubic-bezier(.45,0,.2,1) .35s both}
+.findr-book-turn-two{animation:findrFlatTurn 1.05s cubic-bezier(.45,0,.2,1) .8s both}
+.findr-magnifier{z-index:3;left:52%;top:27%;width:28%;animation:findrLensClear 1.15s cubic-bezier(.2,.8,.2,1) 1.25s both}
+@keyframes findrFlatTurn{0%{opacity:0;transform:scaleX(1)}10%{opacity:1}48%{opacity:1;transform:scaleX(.035)}52%{opacity:1;transform:scaleX(-.035)}90%{opacity:1;transform:scaleX(-1)}100%{opacity:0;transform:scaleX(-1)}}
+@keyframes findrLensClear{0%{opacity:0;transform:translate(-35%,20%) scale(.85) rotate(-17deg)}45%{opacity:1}100%{opacity:1;transform:translate(6%,4%) scale(1) rotate(-17deg)}}
+@media(max-height:580px){.findr-book-stage{width:min(65vw,220px)}}
