@@ -15,7 +15,7 @@ concurrency:
 jobs:
   retrieve:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
         with:
@@ -28,7 +28,7 @@ jobs:
       - name: Retrieve first manufacturer batch
         run: |
           python -m py_compile scripts/project-10k-retrieve.py
-          python scripts/project-10k-retrieve.py --limit 5
+          python scripts/project-10k-retrieve.py --discover --limit 100
       - name: Upload review bundle
         if: always()
         uses: actions/upload-artifact@v4
