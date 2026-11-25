@@ -49,4 +49,7 @@ for item in read(a.review/'report.json'):
     audit.append(result)
 write(batch/'devices.json',rows)
 write(batch/'audit.json',audit)
-print(json.dumps({'staged':len(rows),'held':len(audit)-len(rows)}))
+from collections import Counter
+print(json.dumps({'staged':len(rows),'held':len(audit)-len(rows),'hold_reasons':dict(Counter(x['reason'] for x in audit if x['status']=='held'))},indent=2))
+for x in audit:
+    if x['status']=='held': print(x['code']+': '+x['reason'])
