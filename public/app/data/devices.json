@@ -5054,5 +5054,1207 @@
     "source_pdf_page": 1,
     "uk_priority": true,
     "uk_priority_order": 753
+  },
+  {
+    "id": "paxton-214-326",
+    "brand": "Paxton",
+    "model": "214-326",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "214-326"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-214-326.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/214-326-Desktop-reader-with-Keyboard-Output-USB-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/desktop-reader-with-keyboard-output-usb/",
+    "record_ids": [
+      "device-doc-paxton-5a9106a5cb1f"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "6675dd12244b41f3acb7536f2474807e6bd7fa47e49089f6f46362190bcb4997",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-313-110",
+    "brand": "Paxton",
+    "model": "313-110",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "313-110"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-313-110.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/313-110-Proximity-Long-Range-Reader-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-long-range-reader/",
+    "record_ids": [
+      "device-doc-paxton-ea37f3f0297c"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "3e749e9fee1e574f577f42f90177b20523c57d0864a445052c9a3dc52c5ba88b",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-323-110",
+    "brand": "Paxton",
+    "model": "323-110",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "323-110"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-323-110.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/323-110-Proximity-Reader-P200-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-reader-p200/",
+    "record_ids": [
+      "device-doc-paxton-f5d3b947e014"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "b27973fbbf3c2b19787c55ab1b0909e90c075138fdf3ca13f9136585321e56c7",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-324-110",
+    "brand": "Paxton",
+    "model": "324-110",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "324-110"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-324-110.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/324-110-Proximity-Reader-P200-Metal-Mount-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-reader-p200-metal-mount/",
+    "record_ids": [
+      "device-doc-paxton-f5d3b947e014"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "2351f6988f95b3db464d8767f10adb8ab19f93c0b3546acd95a5b12d9290dca9",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-333-110",
+    "brand": "Paxton",
+    "model": "333-110",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "333-110"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-333-110.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2020/06/333-110-Proximity-reader-P3892-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-reader-p38/",
+    "record_ids": [
+      "device-doc-paxton-0d551bd038b3",
+      "device-doc-paxton-a2bf957fbaf7"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "977bd2df57a5ca26fdaa96f78828a8885ab35f2f4c20a33b380edd237c8ccf8b",
+    "image_dimensions": [
+      812,
+      741
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-339-111",
+    "brand": "Paxton",
+    "model": "339-111",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "339-111"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-339-111.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2020/06/339-111-Proximity-universal-reader-Clock-and-data2.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-universal-reader-clock-and-data/",
+    "record_ids": [
+      "device-doc-paxton-a4a14e9c2316"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "a6cd95feb5795d66cc96a171914c266bd06d42f0babfa1dd83a91015f5c5e3f9",
+    "image_dimensions": [
+      1200,
+      1096
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-351-110",
+    "brand": "Paxton",
+    "model": "351-110",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "351-110"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-351-110.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2020/06/351-110-Touchlock-Keypad-K50-25-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/touchlock-keypad-k50/",
+    "record_ids": [
+      "device-doc-paxton-a2bf957fbaf7"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "e06882e9d572799ec4002bbca3fdf40b1e59374c2add38c16e90e2fc3090bd0c",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-352-110",
+    "brand": "Paxton",
+    "model": "352-110",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "352-110"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-352-110.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/352-110-TOUCHLOCK-stainless-steel-keypad-K50-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/touchlock-stainless-steel-keypad-k50/",
+    "record_ids": [
+      "device-doc-paxton-a2bf957fbaf7"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "ff27f9fa4d3f92de4448fe1f6174593aff18f930f2b6d82ff8376fa79712372d",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-353-110",
+    "brand": "Paxton",
+    "model": "353-110",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "353-110"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-353-110.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2020/06/353-110-Proximity-reader-P502-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-reader-p50/",
+    "record_ids": [
+      "device-doc-paxton-0d551bd038b3",
+      "device-doc-paxton-a2bf957fbaf7"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "7843984be2cce61be5af8dcce2341d2a395b1ae6665c4496169df971d5699d6a",
+    "image_dimensions": [
+      812,
+      741
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-355-110",
+    "brand": "Paxton",
+    "model": "355-110",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "355-110"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-355-110.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2020/06/355-110-Proximity-keypad-KP50-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-keypad-kp50/",
+    "record_ids": [
+      "device-doc-paxton-6eba639d0d81",
+      "device-doc-paxton-a2bf957fbaf7"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "d99b524d59d958a3c121c501dd04b59257fbf4bbc2206e5fdbae0b5559195623",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-356-310",
+    "brand": "Paxton",
+    "model": "356-310",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "356-310"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-356-310.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/356-310-Paxton-exit-button-E50-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/paxton-exit-button-e50/",
+    "record_ids": [
+      "device-doc-paxton-b05aeb74b97d"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "06c4c31c7e77d11b09710f51cff9527edff91473e40906eaed9f8e3e55287dad",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-360-864bl",
+    "brand": "Paxton",
+    "model": "360-864BL",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "360-864BL"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-360-864bl.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/04/360-864BL-Proximity-Architectural-Reader-Matt-Black-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-reader-architectural-matt-black/",
+    "record_ids": [
+      "device-doc-paxton-7ed4e861fef5"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "bede690063f852899dae68f1d7ed7d0ba7cff4502f54ed64d4525fb382acb26b",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-370-225bl",
+    "brand": "Paxton",
+    "model": "370-225BL",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "370-225BL"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-370-225bl.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/04/370-225BL-Proximity-Backbox-Reader-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-reader-uk-backbox-black/",
+    "record_ids": [
+      "device-doc-paxton-a7b9474af724"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "e40cb80066aec732885c1fe4fb99d2d1343a90a84abfb2dfd7c666cd19d56d85",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-370-225wt",
+    "brand": "Paxton",
+    "model": "370-225WT",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "370-225WT"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-370-225wt.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/04/370-225WT-Proximity-Backbox-Reader-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-reader-uk-backbox-white/",
+    "record_ids": [
+      "device-doc-paxton-a7b9474af724"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "9111ed47ec6ebc0f17bd901bd7b39e9359522f03e6ff8b44b68ddb519300f63e",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-371-125",
+    "brand": "Paxton",
+    "model": "371-125",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "371-125"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-371-125.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/371-125-Proximity-backbox-reader-MIFARE-3466-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-reader-backbox-mifare/",
+    "record_ids": [
+      "device-doc-paxton-b468254d038f"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "6fd0f900bebc1d922f8665abf5a0002354bb1f470ad032ad28a3044b1cbaf60b",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-372-110",
+    "brand": "Paxton",
+    "model": "372-110",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "372-110"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-372-110.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/372-110-TOUCHLOCK-stainless-steel-keypad-K75-Chrome-35-grey.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/touchlock-keypad-stainless-steel-k75/",
+    "record_ids": [
+      "device-doc-paxton-a2bf957fbaf7"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "2341c93c6b0ef8b370eec74e510ede9b4add261096ff596dd1ba319092ff50e1",
+    "image_dimensions": [
+      1200,
+      1096
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-373-110",
+    "brand": "Paxton",
+    "model": "373-110",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "373-110"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-373-110.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2020/06/373-110-Proximity-Reader-P752-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-reader-p75/",
+    "record_ids": [
+      "device-doc-paxton-0d551bd038b3",
+      "device-doc-paxton-a2bf957fbaf7"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "33c47f240a631aa5e48a43e3571ff5ca8a48be3d238d7944c094f134ffd8d1cd",
+    "image_dimensions": [
+      812,
+      741
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-373-120",
+    "brand": "Paxton",
+    "model": "373-120",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "373-120"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-373-120.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/373-120-Proximity-Reader-P75-screw-connector-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-reader-p75-screw-connector/",
+    "record_ids": [
+      "device-doc-paxton-0d551bd038b3",
+      "device-doc-paxton-a2bf957fbaf7"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "d846bf45350b6ecd7b128cae1f58aa02d58c13d3c9ccdc6ffdcc26743f7a432f",
+    "image_dimensions": [
+      812,
+      741
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-375-130",
+    "brand": "Paxton",
+    "model": "375-130",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "375-130"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-375-130.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/375-130-Proximity-metal-keypad-MIFARE-KP75-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-keypad-metal-kp75-mifare/",
+    "record_ids": [
+      "device-doc-paxton-148e2b725c4e",
+      "device-doc-paxton-a2bf957fbaf7"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "b4c5b19c3c01a2e45caab2d244d5ae4ff39d9e190d574490c0bd5de4534cd64e",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-376-310",
+    "brand": "Paxton",
+    "model": "376-310",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "376-310"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-376-310.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/376-310-Paxton-exit-button-E75-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/paxton-exit-button-e75/",
+    "record_ids": [
+      "device-doc-paxton-b05aeb74b97d",
+      "device-doc-paxton-fb1afda7fdfb"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "f83cb211c2213b5a9f4c986258a0514b0ea5302f0ae348357f0266cc8868c17d",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-390-135",
+    "brand": "Paxton",
+    "model": "390-135",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "390-135"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-390-135.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/390-135-Proximity-Panel-Mount-Reader-27-grey-full.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-reader-panel-mount/",
+    "record_ids": [
+      "device-doc-paxton-512b891acd3c",
+      "device-doc-paxton-94a201057ef2"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "b44b827728ea10ab76f3af48442bdba737bf6398513f66c22fb48f69ee005338",
+    "image_dimensions": [
+      1200,
+      1097
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-390-727",
+    "brand": "Paxton",
+    "model": "390-727",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "390-727"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-390-727.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/390-727-Net2-Proximity-HID-Metal-Reader-Chrome-3561-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-reader-metal-chrome/",
+    "record_ids": [
+      "device-doc-paxton-13ac570d25ed",
+      "device-doc-paxton-4683a4718c33"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "011ab36d6eb2b38ba80796a5f487b0cded2d135c5bb06112a2004607e0e335b0",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-390-747",
+    "brand": "Paxton",
+    "model": "390-747",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "390-747"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-390-747.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/390-747-Proximity-metal-reader-Satin-chrome-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-reader-metal-satin-chrome/",
+    "record_ids": [
+      "device-doc-paxton-13ac570d25ed"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "e2cb2ad6e8fc56460e0e500cb5e37778998c39be6503f5cdf6a3db6e7094e292",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-409-711sc",
+    "brand": "Paxton",
+    "model": "409-711SC",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "409-711SC"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-409-711sc.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/04/409-711SC-Cardlock-reader-Satin-Chrome-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/cardlock-reader-satin-chrome/",
+    "record_ids": [
+      "device-doc-paxton-56d783f3a394"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "da7f6423a95454500209289086e68b80a851c4f67ddb60157f0c7a1b0a146bda",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-477-222",
+    "brand": "Paxton",
+    "model": "477-222",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "477-222"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-477-222.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/477-222-Proximity-hands-free-interface-Plastic-housing-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-handsfree-interface-with-plastic-housing/",
+    "record_ids": [
+      "device-doc-paxton-61b91bb11e2c"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "1fa26b134e77c02fb5acde19c5cdf91c7a0aac5efc0e45f54e5711cab109db77",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-500-010",
+    "brand": "Paxton",
+    "model": "500-010",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "500-010"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-500-010.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/500-010-Proximity-Marine-Reader-5-grey.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-reader-marine/",
+    "record_ids": [
+      "device-doc-paxton-c842ccfdcc63"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "4db9744d8a44b73405ac2660d008a3af9501bac38418cc8a0beed62e6457569d",
+    "image_dimensions": [
+      1200,
+      1097
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-521-715",
+    "brand": "Paxton",
+    "model": "521-715",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "521-715"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-521-715.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/521-715-Touchlock-Vandal-Resistant-Metal-Keypad-20-grey.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/touchlock-keypad-vandal-resistant-metal/",
+    "record_ids": [
+      "device-doc-paxton-173b8e254ab0"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "bdb7e6040b07ad443a2824588311de43991414a100326af8be78c42b35d96c28",
+    "image_dimensions": [
+      1200,
+      1200
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-521-836",
+    "brand": "Paxton",
+    "model": "521-836",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "521-836"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-521-836.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2024/05/521-836-Compact-vandal-resistant-metal-keypad-grey-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/compact-keypad-vandal-resistant-metal/",
+    "record_ids": [
+      "device-doc-paxton-61c1de00f66d"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "c9244774d279778333735c1e2908cb714ca34b278038a02e64a388e20c5b53fb",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-568-855",
+    "brand": "Paxton",
+    "model": "568-855",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "568-855"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-568-855.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/568-855-Proximity-Vendal-Proof-Reader-6-grey.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-reader-vandal-proof/",
+    "record_ids": [
+      "device-doc-paxton-def643b23126"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "01d905d0b38f6b7d5025af1946cedfa916a061b8fe17a6ec74d1681fe8f95c07",
+    "image_dimensions": [
+      1200,
+      1097
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-593-721",
+    "brand": "Paxton",
+    "model": "593-721",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "593-721"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-593-721.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/593-721-Paxton-Marine-Exit-Button-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/paxton-exit-button-marine/",
+    "record_ids": [
+      "device-doc-paxton-508440e37e3a"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "ae7b257b5c0cfd004578fa10f07f59a11d721d75230bbdd85fad99e9234444b8",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-595-248",
+    "brand": "Paxton",
+    "model": "595-248",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "595-248"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-595-248.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/595-248-Proximity-Energy-Saving-Reader-9187-Edit-grey.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/proximity-reader-energy-saving/",
+    "record_ids": [
+      "device-doc-paxton-d8f704a9723c"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "5d436e8550ce3159bccbc60812baa0af85ccfa86792eec52a9acf81808e293d8",
+    "image_dimensions": [
+      1200,
+      1097
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-682-284",
+    "brand": "Paxton",
+    "model": "682-284",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "682-284"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-682-284.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2024/05/682-284-Net2-plus-1-door-controller-PoE-plastic-cabinet-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/net2-plus-1-door-controller-poe-with-plastic-cabinet/",
+    "record_ids": [
+      "device-doc-paxton-e6ca9dce5f5f",
+      "device-doc-paxton-f391c620db12",
+      "device-doc-paxton-f70e6af72fde"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "8efde69e20a6b4646e22a9a6dbe26ecfe906f6e40d3194199c9274398d7b920e",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-682-531",
+    "brand": "Paxton",
+    "model": "682-531",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "682-531"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-682-531.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2024/05/682-531-Net2-plus-1-door-controller-12V-2A-PSU-plastic-cabinet-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/net2-plus-1-door-controller-12v-2a-psu-with-plastic-cabinet/",
+    "record_ids": [
+      "device-doc-paxton-517f231e9661",
+      "device-doc-paxton-e6ca9dce5f5f",
+      "device-doc-paxton-f391c620db12"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "e1ec8ddb3511100ea4bde149e254ca9c36b5d15bb44593c51ea3927691302751",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-690-222",
+    "brand": "Paxton",
+    "model": "690-222",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "690-222"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-690-222.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/690-222-Net2-hands-free-keyfob-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/net2-hands-free-keyfob/",
+    "record_ids": [
+      "device-doc-paxton-fa1e4b348fa3"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "aa28d45215ed5f71dd84d3abeb640cb74d443414c66daa85a54fb5c909d7141e",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-690-333",
+    "brand": "Paxton",
+    "model": "690-333",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "690-333"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-690-333.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/690-333-Net2-hands-free-keycard-2-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/net2-hands-free-keycard/",
+    "record_ids": [
+      "device-doc-paxton-5b92ca8d48bf"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "8278d0f22e02d60df4d4591e9c506c319ab65dd784b50cf84d3af40d707fa637",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-692-052",
+    "brand": "Paxton",
+    "model": "692-052",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "692-052"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-692-052.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/692-052-Net2-proximity-ISO-card-without-magstripe-Pack-of-500-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/net2-proximity-iso-card-without-magstripe-pack-of-500/",
+    "record_ids": [
+      "device-doc-paxton-ab16a015f9aa"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "ef8f26940152d66727cb47fe8c31a657a68587c542e996919edc9c7aab378509",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-692-053",
+    "brand": "Paxton",
+    "model": "692-053",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "692-053"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-692-053.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/692-053-Net2-proximity-ISO-card-with-magstripe-Pack-of-500-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/net2-proximity-iso-card-with-magstripe-pack-of-500/",
+    "record_ids": [
+      "device-doc-paxton-b1f629bf839c"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "e0066aa3b4a79d9babf0077cb627c72f1621166b8b34778db83aafcdfcb038d3",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-692-448",
+    "brand": "Paxton",
+    "model": "692-448",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "692-448"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-692-448.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/692-448-Net2-proximity-ISO-cards-With-magstripe-Pack-of-10-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/net2-proximity-iso-cards-with-magstripe-pack-of-10/",
+    "record_ids": [
+      "device-doc-paxton-b1f629bf839c"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "7b9c6dbd3ecca60ee46a80fcfd24f9fd90278e3ce6f12fef2b1d190a9dd9ea47",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-692-500",
+    "brand": "Paxton",
+    "model": "692-500",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "692-500"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-692-500.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/692-500-Net2-proximity-ISO-cards-Without-magstripe-pack-of-10-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/net2-proximity-iso-cards-without-magstripe-pack-of-10/",
+    "record_ids": [
+      "device-doc-paxton-ab16a015f9aa"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "e2c4896f42a3e212d9655d68a32ad46803d5efba86e824a7c7f84009e600d3bc",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-695-150",
+    "brand": "Paxton",
+    "model": "695-150",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "695-150"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-695-150.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2023/04/695-150-MIFARE-Classic-4k-keyfob.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/mifare-classic-4k-keyfob-pack-of-10/",
+    "record_ids": [
+      "device-doc-paxton-f5e9c5a0df15"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "a3d4ba0a784efda4195a6cac6d8daaa590a4bb833d6b52db9ed41f7ba3fc1724",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
+  },
+  {
+    "id": "paxton-695-644",
+    "brand": "Paxton",
+    "model": "695-644",
+    "category": "access-control",
+    "device_type": "accessory",
+    "aliases": [],
+    "part_numbers": [
+      "695-644"
+    ],
+    "protocol": "Confirm product label and system compatibility",
+    "image": "paxton-695-644.webp",
+    "source_image_url": "https://www.paxton-access.com/wp-content/uploads/2019/02/695-644-Net2-proximity-keyfobs–Pack-of-10-812x742.jpg",
+    "source_page_url": "https://www.paxton-access.com/products/net2-proximity-keyfobs-pack-of-10/",
+    "record_ids": [
+      "device-doc-paxton-34c4167b0804"
+    ],
+    "identification_notes": "Compare the manufacturer picture and exact product label.",
+    "applicability_limits": "Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.",
+    "image_credit": "Paxton manufacturer product image",
+    "image_type": "official-manufacturer-product-image",
+    "image_sha256": "96c3d11ce5276e8a187a86457568fc61996a4c5b850b4ec78fab4429a429336d",
+    "image_dimensions": [
+      812,
+      742
+    ],
+    "uk_priority": true,
+    "uk_priority_order": 1000
   }
 ]

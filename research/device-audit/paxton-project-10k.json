@@ -1,0 +1,443 @@
+[
+  {
+    "code": "353-110",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-0d551bd038b3",
+      "device-doc-paxton-a2bf957fbaf7"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "353-467",
+    "status": "held",
+    "reason": "No retrieved image"
+  },
+  {
+    "code": "373-110",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-0d551bd038b3",
+      "device-doc-paxton-a2bf957fbaf7"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "375-110",
+    "status": "held",
+    "reason": "No retrieved image"
+  },
+  {
+    "code": "345-220",
+    "status": "held",
+    "reason": "No retrieved image"
+  },
+  {
+    "code": "390-747",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-13ac570d25ed"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "333-110",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-0d551bd038b3",
+      "device-doc-paxton-a2bf957fbaf7"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "370-225BL",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-a7b9474af724"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "355-110",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-6eba639d0d81",
+      "device-doc-paxton-a2bf957fbaf7"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "390-135",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-512b891acd3c",
+      "device-doc-paxton-94a201057ef2"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "375-130",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-148e2b725c4e",
+      "device-doc-paxton-a2bf957fbaf7"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "409-711SC",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-56d783f3a394"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "214-326",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-5a9106a5cb1f"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "350-910",
+    "status": "held",
+    "reason": "No approved exact document match"
+  },
+  {
+    "code": "514-326",
+    "status": "held",
+    "reason": "No approved exact document match"
+  },
+  {
+    "code": "356-310",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-b05aeb74b97d"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "593-721",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-508440e37e3a"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "375-120",
+    "status": "held",
+    "reason": "No retrieved image"
+  },
+  {
+    "code": "313-110",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-ea37f3f0297c"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "360-864GG",
+    "status": "held",
+    "reason": "No approved exact document match"
+  },
+  {
+    "code": "360-864BL",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-7ed4e861fef5"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "360-864SC",
+    "status": "held",
+    "reason": "No approved exact document match"
+  },
+  {
+    "code": "371-125",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-b468254d038f"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "595-248",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-d8f704a9723c"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "500-010",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-c842ccfdcc63"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "390-727",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-13ac570d25ed",
+      "device-doc-paxton-4683a4718c33"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "323-110",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-f5d3b947e014"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "324-110",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-f5d3b947e014"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "373-120",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-0d551bd038b3",
+      "device-doc-paxton-a2bf957fbaf7"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "370-225WT",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-a7b9474af724"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "568-855",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-def643b23126"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "339-111",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-a4a14e9c2316"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "351-110",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-a2bf957fbaf7"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "371-110",
+    "status": "held",
+    "reason": "No retrieved image"
+  },
+  {
+    "code": "372-110",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-a2bf957fbaf7"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "521-715",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-173b8e254ab0"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "352-110",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-a2bf957fbaf7"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "682-531",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-517f231e9661",
+      "device-doc-paxton-e6ca9dce5f5f",
+      "device-doc-paxton-f391c620db12"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "695-644",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-34c4167b0804"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "695-150",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-f5e9c5a0df15"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "692-448",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-b1f629bf839c"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "692-500",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-ab16a015f9aa"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "692-148",
+    "status": "held",
+    "reason": "No approved exact document match"
+  },
+  {
+    "code": "376-310",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-b05aeb74b97d",
+      "device-doc-paxton-fb1afda7fdfb"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "690-222",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-fa1e4b348fa3"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "690-333",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-5b92ca8d48bf"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "361-003",
+    "status": "held",
+    "reason": "No retrieved image"
+  },
+  {
+    "code": "242-166",
+    "status": "held",
+    "reason": "No retrieved image"
+  },
+  {
+    "code": "371-210",
+    "status": "held",
+    "reason": "No retrieved image"
+  },
+  {
+    "code": "352-210",
+    "status": "held",
+    "reason": "No approved exact document match"
+  },
+  {
+    "code": "521-836",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-61c1de00f66d"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "930-010",
+    "status": "held",
+    "reason": "No approved exact document match"
+  },
+  {
+    "code": "682-284",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-e6ca9dce5f5f",
+      "device-doc-paxton-f391c620db12",
+      "device-doc-paxton-f70e6af72fde"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "682-493",
+    "status": "held",
+    "reason": "No retrieved image"
+  },
+  {
+    "code": "692-152",
+    "status": "held",
+    "reason": "No approved exact document match"
+  },
+  {
+    "code": "692-053",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-b1f629bf839c"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "692-052",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-ab16a015f9aa"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "477-222",
+    "status": "staged",
+    "record_ids": [
+      "device-doc-paxton-61b91bb11e2c"
+    ],
+    "document_approval": "automated exact-code evidence"
+  },
+  {
+    "code": "405-321",
+    "status": "held",
+    "reason": "No retrieved image"
+  },
+  {
+    "code": "351-210",
+    "status": "held",
+    "reason": "No approved exact document match"
+  },
+  {
+    "code": "372-210",
+    "status": "held",
+    "reason": "No approved exact document match"
+  }
+]

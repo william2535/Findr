@@ -1265,6 +1265,585 @@
     "related_archive_record_ids": []
   },
   {
+    "id": "device-doc-paxton-0d551bd038b3",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1001",
+    "models": [
+      "353-110",
+      "373-110",
+      "333-110",
+      "373-120"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1001.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1001.pdf",
+    "sha256": "0d551bd038b3d425b780b4174f597276caf527d2211834a7702218bb1ec72e44",
+    "bytes": 570681,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-6eba639d0d81",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1004",
+    "models": [
+      "355-110"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1004.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1004.pdf",
+    "sha256": "6eba639d0d81d2e43a7a7241597d421c58479e472062e2f4735d65b98ff81cef",
+    "bytes": 644031,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-def643b23126",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1005",
+    "models": [
+      "568-855"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1005.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1005.pdf",
+    "sha256": "def643b23126e0a728d20fab74d6761616bcf117626be082d553eac5f29e7c26",
+    "bytes": 599216,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-94a201057ef2",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1006",
+    "models": [
+      "390-135"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1006.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1006.pdf",
+    "sha256": "94a201057ef2db1d95feed52ed5bc5fd2292ae3163e0be7b13f94038d9525a8d",
+    "bytes": 481489,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-4683a4718c33",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1007",
+    "models": [
+      "390-727"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1007.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1007.pdf",
+    "sha256": "4683a4718c33bfbbfea1c4c44caaeeeea0534c98880b3b79f644d8d93abb728b",
+    "bytes": 357495,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-c842ccfdcc63",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1008",
+    "models": [
+      "500-010"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1008.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1008.pdf",
+    "sha256": "c842ccfdcc63b5c3837761d8de35105e71a7a75b0cd893fe880c95d691596259",
+    "bytes": 484292,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-d8f704a9723c",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1009",
+    "models": [
+      "595-248"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1009.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1009.pdf",
+    "sha256": "d8f704a9723c9435af82673623e42f9277b952211d5905116bd3021c4bc59dbe",
+    "bytes": 442441,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-ea37f3f0297c",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1010",
+    "models": [
+      "313-110"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1010.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1010.pdf",
+    "sha256": "ea37f3f0297ca4e9f908c10e5ef4fa2a61267e0c403403f50b45d08bcb2da859",
+    "bytes": 514970,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-7ed4e861fef5",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1012",
+    "models": [
+      "360-864BL"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1012.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1012.pdf",
+    "sha256": "7ed4e861fef566a31f61b0617e61fca61c99764c8210fc4862b97a5ff2f29bb5",
+    "bytes": 461712,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-b468254d038f",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1017",
+    "models": [
+      "371-125"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1017.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1017.pdf",
+    "sha256": "b468254d038fdf87cef748edcd305522dcf8b9613fdec95af3fe4defa60564bb",
+    "bytes": 417788,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-a4a14e9c2316",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1019",
+    "models": [
+      "339-111"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1019.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1019.pdf",
+    "sha256": "a4a14e9c231613296d9a895c27ae90844dbd84e9b75d61141ff69107f944dd79",
+    "bytes": 3524183,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-173b8e254ab0",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1023",
+    "models": [
+      "521-715"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1023.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1023.pdf",
+    "sha256": "173b8e254ab08a338aaa13ae988946dbb39a8f301359d31b495d062d47113f9c",
+    "bytes": 687835,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-61c1de00f66d",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1029",
+    "models": [
+      "521-836"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1029.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1029.pdf",
+    "sha256": "61c1de00f66d1db455e0a6e11582b58715ab3116801f4bc0e5d77019e32b7d08",
+    "bytes": 688750,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-fb1afda7fdfb",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1032",
+    "models": [
+      "376-310"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1032.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1032.pdf",
+    "sha256": "fb1afda7fdfb78025c265198f8d6261d7f96f5ac6c57b417cd52a1e003ee696e",
+    "bytes": 1529819,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-508440e37e3a",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1033",
+    "models": [
+      "593-721"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1033.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1033.pdf",
+    "sha256": "508440e37e3aadf2d9b7f73c09a7c25f0b01513e9418f541e01042efbe91a61e",
+    "bytes": 606462,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-e6ca9dce5f5f",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1038",
+    "models": [
+      "682-531",
+      "682-284"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1038.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1038.pdf",
+    "sha256": "e6ca9dce5f5f8b628ec8336fabcbf8012fe7e5755b05badda4d53a1a6d315b87",
+    "bytes": 624899,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-517f231e9661",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1040",
+    "models": [
+      "682-531"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1040.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1040.pdf",
+    "sha256": "517f231e966110d6f89857b8f201066366e239f8b71267d93fb1b1d56d49b2aa",
+    "bytes": 572628,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-f70e6af72fde",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1042",
+    "models": [
+      "682-284"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1042.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1042.pdf",
+    "sha256": "f70e6af72fdef01d5cd32a842472793cd935216bbe0ea0f4ef7b2b955a37a1af",
+    "bytes": 541709,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-148e2b725c4e",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1058",
+    "models": [
+      "375-130"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1058.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1058.pdf",
+    "sha256": "148e2b725c4e007d973319d336e6c9e72c4923f80a8a1eac2f046f6bbb74f34e",
+    "bytes": 599549,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-61b91bb11e2c",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1061",
+    "models": [
+      "477-222"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1061.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1061.pdf",
+    "sha256": "61b91bb11e2c3a9139a6e8cd105f5d4364e73b9045d01e2f6dd73468d329c861",
+    "bytes": 540356,
+    "pages": 2
+  },
+  {
+    "id": "device-doc-paxton-34c4167b0804",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1077",
+    "models": [
+      "695-644"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2020/01/DS1077.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2020/01/DS1077.pdf",
+    "sha256": "34c4167b08048afd13e3e07e0da365d7c225878542f80c5330db5f438cb5c3cc",
+    "bytes": 349951,
+    "pages": 1
+  },
+  {
+    "id": "device-doc-paxton-fa1e4b348fa3",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1078",
+    "models": [
+      "690-222"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2020/01/DS1078.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2020/01/DS1078.pdf",
+    "sha256": "fa1e4b348fa32db4533485d17be900a508b2dd80a70aaae8b2bb93d4bdbbbd32",
+    "bytes": 186919,
+    "pages": 1
+  },
+  {
+    "id": "device-doc-paxton-5b92ca8d48bf",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1079",
+    "models": [
+      "690-333"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2020/01/DS1079.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2020/01/DS1079.pdf",
+    "sha256": "5b92ca8d48bf2dcd27e6f2ee7963ba58ca6a60bf9eb438720d88dd176b99ad06",
+    "bytes": 388620,
+    "pages": 1
+  },
+  {
+    "id": "device-doc-paxton-ab16a015f9aa",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1080",
+    "models": [
+      "692-500",
+      "692-052"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2020/01/DS1080.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2020/01/DS1080.pdf",
+    "sha256": "ab16a015f9aa1676eb975657e63ca18c860111408d9d4c54cae33731e3f99123",
+    "bytes": 145474,
+    "pages": 1
+  },
+  {
+    "id": "device-doc-paxton-b1f629bf839c",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "DS1081",
+    "models": [
+      "692-448",
+      "692-053"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2020/01/DS1081.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2020/01/DS1081.pdf",
+    "sha256": "b1f629bf839c86e7c98a38ac091cb012cf4fe52de057a3cb255ce15fd3b75ce7",
+    "bytes": 176840,
+    "pages": 1
+  },
+  {
+    "id": "device-doc-paxton-f5e9c5a0df15",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "TDS-1084",
+    "models": [
+      "695-150"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2020/07/TDS-1084.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2020/07/TDS-1084.pdf",
+    "sha256": "f5e9c5a0df15000e68ecbdb1f2350b3584012c881de86f32ecad71200981a717",
+    "bytes": 181389,
+    "pages": 1
+  },
+  {
+    "id": "device-doc-paxton-f391c620db12",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "ins-20006",
+    "models": [
+      "682-531",
+      "682-284"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-20006.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-20006.pdf",
+    "sha256": "f391c620db12f2b6871b93e4beb9cb2ab747b91d3395216ddd8e778317c68709",
+    "bytes": 2477354,
+    "pages": 12
+  },
+  {
+    "id": "device-doc-paxton-56d783f3a394",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "ins-20101",
+    "models": [
+      "409-711SC"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-20101.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-20101.pdf",
+    "sha256": "56d783f3a394a2874b9aa5d3533fdc9ef8e548ba7995f765002dff7dc2835577",
+    "bytes": 665380,
+    "pages": 6
+  },
+  {
+    "id": "device-doc-paxton-b05aeb74b97d",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "ins-20200",
+    "models": [
+      "356-310",
+      "376-310"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-20200.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-20200.pdf",
+    "sha256": "b05aeb74b97d154beeea10e8fd2c738251539c95de04b13c98ef2550817c392d",
+    "bytes": 768132,
+    "pages": 8
+  },
+  {
+    "id": "device-doc-paxton-a2bf957fbaf7",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "ins-20700",
+    "models": [
+      "353-110",
+      "373-110",
+      "333-110",
+      "355-110",
+      "375-130",
+      "373-120",
+      "351-110",
+      "372-110",
+      "352-110"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-20700.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-20700.pdf",
+    "sha256": "a2bf957fbaf768414689f2035f510229a41b4c48eb0e0009414fbce88b8a2c4e",
+    "bytes": 1171853,
+    "pages": 12
+  },
+  {
+    "id": "device-doc-paxton-13ac570d25ed",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "ins-20702",
+    "models": [
+      "390-747",
+      "390-727"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-20702.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-20702.pdf",
+    "sha256": "13ac570d25edc852bbf99c4bc7d7956b1424787c0f889ab2cd718b1422f22734",
+    "bytes": 980249,
+    "pages": 8
+  },
+  {
+    "id": "device-doc-paxton-512b891acd3c",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "ins-20703",
+    "models": [
+      "390-135"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-20703.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-20703.pdf",
+    "sha256": "512b891acd3c2c6bb8ec5498841ceeaf4bd4e6a2ed2d2b2eeb43a7aaeb0e9b64",
+    "bytes": 1063220,
+    "pages": 8
+  },
+  {
+    "id": "device-doc-paxton-a7b9474af724",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "ins-20706",
+    "models": [
+      "370-225BL",
+      "370-225WT"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-20706.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-20706.pdf",
+    "sha256": "a7b9474af724915ba552ebf836f38f90b36c1372c69a0e8463c8ac5af8feb765",
+    "bytes": 864978,
+    "pages": 8
+  },
+  {
+    "id": "device-doc-paxton-f5d3b947e014",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "ins-20710",
+    "models": [
+      "323-110",
+      "324-110"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-20710.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-20710.pdf",
+    "sha256": "f5d3b947e014ff5c8e04bee317e19bddad97feedc85e30d9a02541b8c9c450e4",
+    "bytes": 1004674,
+    "pages": 8
+  },
+  {
+    "id": "device-doc-paxton-5a9106a5cb1f",
+    "brand": "Paxton",
+    "category": "access-control",
+    "title": "ins-30217",
+    "models": [
+      "214-326"
+    ],
+    "origin": "device-reference",
+    "status": "file-hash",
+    "source": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-30217.pdf",
+    "url": "https://www.paxton-access.com/wp-content/uploads/2019/03/ins-30217.pdf",
+    "sha256": "5a9106a5cb1f3b1ae92e566eb48a0fab34c9a9ce6c7c2fc9d8bf4c7d4f51c6c9",
+    "bytes": 1367570,
+    "pages": 8
+  },
+  {
     "id": "device-doc-the-fire-beam-company-5e3186d7eb4f",
     "brand": "The Fire Beam Company",
     "category": "fire",
