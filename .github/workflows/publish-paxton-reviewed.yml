@@ -1,0 +1,44 @@
+name: Publish reviewed Paxton batch
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/publish-paxton-reviewed.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'Pillow>=11,<13'
+      - name: Find exact reviewed artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -eu
+          for id in $(gh api 'repos/${{ github.repository }}/actions/workflows/project-10k-retrieval.yml/runs?status=success&per_page=30' --jq '.workflow_runs[] | select(.event=="workflow_dispatch" and .head_branch=="main") | .id'); do
+            rm -rf /tmp/paxton-batch
+            if gh run download "$id" -n project-10k-staged-import -D /tmp/paxton-batch; then
+              if (cd /tmp/paxton-batch/paxton-project-10k && printf '%s\n' 'e079038fc7a093f59f6756322df5b82afa1e2ca6ab67d2f9332c7940a7f67039  devices.json' '2cd7daa6203f46eda097543a806f5e8804bb44305d890cab99b39ed568290776  documents.json' '1ec1bacdc21c326a09a110889bc9513b50d1342fa330e36d410e53d09d2e2568  audit.json' | sha256sum -c -); then
+                exit 0
+              fi
+            fi
+          done
+          echo 'Exact reviewed artifact not found'; exit 1
+      - name: Validate and import reviewed batch
+        run: |
+          python scripts/add-device-images.py /tmp/paxton-batch --check
+          python scripts/add-device-images.py /tmp/paxton-batch
+      - name: Publish catalogue
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/app/data public/app/devices lib/download-map.json research/device-audit
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Publish reviewed Project 10K Paxton device batch'
+          git push origin HEAD:main
