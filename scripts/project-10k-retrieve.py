@@ -61,6 +61,9 @@ for row in rows[:max(0,a.limit)]:
             src=img.get('data-src') or img.get('src')
             if src and code.lower() in (src+' '+img.get('alt','')).lower(): candidates.append(urljoin(page,src))
         if not candidates: raise ValueError('No code-matched image; manual review required')
+        # Exclude obvious technical drawings and non-product assets.
+        candidates=[url for url in candidates if not re.search(r'(?i)(?:^|[-_/])(?:dim|dimensions?|drawing|diagram|schematic|wiring|logo|icon)(?:[-_./]|$)',urlparse(url).path)]
+        if not candidates: raise ValueError('Only drawing or non-product candidates found')
         for url in dict.fromkeys(candidates):
             try:
                 raw=get(url,12_000_000)
