@@ -1,0 +1,28 @@
+name: Project 1000 PDF image pilot
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/project-1000-pdf.yml']
+permissions:
+  contents: read
+jobs:
+  extract:
+    strategy:
+      fail-fast: false
+      matrix:
+        brand: [Apollo, Hochiki, Texecom, Pyronix, Orisec, Hikvision, Dahua]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests pymupdf Pillow
+      - run: python scripts/project-1000-pdf.py --brand "${{ matrix.brand }}" --limit 60
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pdf-review-${{ matrix.brand }}
+          path: project-1000-pdf-review/
