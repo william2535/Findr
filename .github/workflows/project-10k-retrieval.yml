@@ -1,6 +1,11 @@
 name: Project 10K image retrieval
 on:
   workflow_dispatch:
+    inputs:
+      prepare_import:
+        description: 'Stage reviewed images using approved hash manifest'
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -29,6 +34,17 @@ jobs:
         run: |
           python -m py_compile scripts/project-10k-retrieve.py
           python scripts/project-10k-retrieve.py --discover --limit 100
+      - name: Prepare and validate import
+        if: inputs.prepare_import
+        run: |
+          python scripts/project-10k-prepare.py --approved research/project-10k/approved-images.json
+          python scripts/add-device-images.py project-10k-batches --check
+      - name: Upload staged import
+        if: always() && inputs.prepare_import
+        uses: actions/upload-artifact@v4
+        with:
+          name: project-10k-staged-import
+          path: project-10k-batches/
       - name: Upload review bundle
         if: always()
         uses: actions/upload-artifact@v4
