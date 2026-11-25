@@ -1,11 +1,17 @@
 name: Project 1000 PDF image pilot
 on:
   workflow_dispatch:
+    inputs:
+      pdf_pack_run_id:
+        description: 'Optional Findr Actions run ID containing authorised-pdfs artifact (PDFs named by archive ID)'
+        required: false
+        type: string
   push:
     branches: [main]
     paths: ['.github/workflows/project-1000-pdf.yml']
 permissions:
   contents: read
+  actions: read
 jobs:
   extract:
     strategy:
@@ -20,7 +26,15 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install requests pymupdf Pillow
-      - run: python scripts/project-1000-pdf.py --brand "${{ matrix.brand }}" --limit 60
+      - name: Download authorised local PDF pack
+        if: inputs.pdf_pack_run_id != ''
+        uses: actions/download-artifact@v4
+        with:
+          name: authorised-pdfs
+          run-id: ${{ inputs.pdf_pack_run_id }}
+          github-token: ${{ github.token }}
+          path: local-pdfs
+      - run: python scripts/project-1000-pdf.py --brand "${{ matrix.brand }}" --limit 60 --local-pdfs local-pdfs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
