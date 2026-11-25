@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       prepare_import:
-        description: 'Stage reviewed images using approved hash manifest'
+        description: 'Stage approved images with verified exact-code PDF matches'
         type: boolean
         default: false
   push:
@@ -42,7 +42,7 @@ jobs:
       - name: Prepare and validate import
         if: inputs.prepare_import
         run: |
-          python scripts/project-10k-prepare.py --approved research/project-10k/approved-images.json
+          python scripts/project-10k-prepare.py --approved research/project-10k/approved-images.json --verified-documents
           if python -c "import json; from pathlib import Path; import sys; sys.exit(0 if any(json.loads(p.read_text()) for p in Path('project-10k-batches').glob('*/devices.json')) else 1)"; then
             python scripts/add-device-images.py project-10k-batches --check
           else
