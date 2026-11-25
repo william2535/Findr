@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Bounded archive-led discovery of official manufacturer product pages; review only."""
-import argparse,json,re,time
+import argparse,json,re,time,signal
 from pathlib import Path
 from urllib.parse import urlparse,urljoin
 from urllib.robotparser import RobotFileParser
@@ -10,6 +10,7 @@ p=argparse.ArgumentParser()
 p.add_argument('--brand',required=True)
 p.add_argument('--limit',type=int,default=200)
 a=p.parse_args()
+deadline=time.monotonic()+540
 brands={'Apollo':('apollo-fire.co.uk','apollo-fire.com'),'Hochiki':('hochikieurope.com','hochiki.co.uk'),'Texecom':('texe.com','texecom.com'),'Pyronix':('pyronix.com',),'Orisec':('orisec.co.uk','orisec.com'),'Hikvision':('hikvision.com',),'Dahua':('dahuasecurity.com',)}
 domains=brands[a.brand]
 def allowed(url):
@@ -37,7 +38,9 @@ def get(url):
         if r.status_code not in (200,404): raise ValueError('Robots unavailable')
         rp=RobotFileParser();rp.parse(r.text.splitlines() if r.status_code==200 else []);robots[base]=rp
     if not robots[base].can_fetch(agent,url): raise ValueError('Robots denied')
-    time.sleep(max(1,robots[base].crawl_delay(agent) or 1))
+    delay=max(1,robots[base].crawl_delay(agent) or 1)
+    if time.monotonic()+delay+30>deadline: raise ValueError('Discovery time budget reached')
+    time.sleep(delay)
     with session.get(url,timeout=(10,20),stream=True,allow_redirects=False) as r:
         if r.status_code!=200: raise ValueError('HTTP '+str(r.status_code))
         b=bytearray()
@@ -49,10 +52,16 @@ queue=list(dict.fromkeys(r.get('source') for r in records if r.get('brand')==a.b
 queue+=['https://www.'+d+'/' for d in domains]
 seen=set();found={};errors=[]
 patterns={m:re.compile(r'(?<![A-Za-z0-9-])'+re.escape(m)+r'(?![A-Za-z0-9-])',re.I) for m in models}
-while queue and len(seen)<a.limit and len(found)<300:
+out=Path('project-1000-review');out.mkdir(exist_ok=True)
+def checkpoint():
+    (out/(a.brand+'.json')).write_text(json.dumps({'brand':a.brand,'archive_models':len(models),'pages_checked':len(seen),'candidates':list(found.values()),'errors':errors,'remaining_pages':len(queue)},indent=2))
+checkpoint()
+while queue and len(seen)<a.limit and len(found)<300 and time.monotonic()<deadline:
     url=queue.pop(0)
     if url in seen: continue
     seen.add(url)
+    print(f'{a.brand}: page {len(seen)}, {len(found)} candidates: {url}',flush=True)
+    checkpoint()
     try:
         soup=BeautifulSoup(get(url),'html.parser')
         title=' '.join(x.get_text(' ',strip=True) for x in soup.select('h1,title'))
@@ -62,13 +71,14 @@ while queue and len(seen)<a.limit and len(found)<300:
             if not src or not allowed(image): continue
             label=src+' '+img.get('alt','')
             for m,pat in patterns.items():
-                if pat.search(label) and pat.search(title):
+                if re.search(r'\d{3,}',m) and pat.search(label) and pat.search(title):
                     found.setdefault(m,dict(brand=a.brand,model=m,product_page=url,image_url=image,record_ids=models[m],status='candidate-review-required'))
         for link in soup.select('a[href]'):
             dest=urljoin(url,link['href']).split('#')[0]
             u=urlparse(dest)
             if allowed(dest) and not u.query and re.search(r'(?i)/(products?|devices?|detectors?|cameras?|product-range)(/|$)',u.path) and not re.search(r'\.[a-z0-9]{2,5}$',u.path,re.I) and dest not in seen and dest not in queue and len(queue)<2000: queue.append(dest)
     except Exception as e: errors.append({'url':url,'error':str(e)})
+    checkpoint()
 out=Path('project-1000-review');out.mkdir(exist_ok=True)
 (out/(a.brand+'.json')).write_text(json.dumps({'brand':a.brand,'archive_models':len(models),'pages_checked':len(seen),'candidates':list(found.values()),'errors':errors},indent=2))
 print(json.dumps({'brand':a.brand,'archive_models':len(models),'pages_checked':len(seen),'candidates':len(found)}))
