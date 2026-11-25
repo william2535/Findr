@@ -122,6 +122,7 @@ def build_pages(source, output, site_url, api_origin, revision):
         html = re.sub(r'<link rel="canonical" href="[^"]*">', '<link rel="canonical" href="' + site_url + 'app/">', html)
         html = re.sub(r'(<meta property="og:url" content=")[^"]*(")', lambda m: m.group(1) + site_url + 'app/' + m.group(2), html)
         html = html.replace(DEFAULT_API + '/share/', site_url + 'share/')
+        html = html.replace('</body>', "<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{\"token\": \"b9340aeb4e734b459d645c9e1629cafa\"}'></script><!-- End Cloudflare Web Analytics -->" + '</body>')
         (app / 'index.html').write_text(html, encoding='utf-8')
         # Keep update discovery outside the worker's /<repository>/app/ scope.
         (stage / 'app-release.json').write_text(json_text({'version': version}), encoding='utf-8')
