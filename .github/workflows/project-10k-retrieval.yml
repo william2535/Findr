@@ -1,0 +1,42 @@
+name: Project 10K image retrieval
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/project-10k-retrieval.yml'
+      - 'scripts/project-10k-retrieve.py'
+      - 'research/project-10k/paxton-source-review.json'
+permissions:
+  contents: read
+concurrency:
+  group: project-10k-retrieval
+  cancel-in-progress: false
+jobs:
+  retrieve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install retrieval dependencies
+        run: python -m pip install 'requests>=2.32,<3' 'beautifulsoup4>=4.12,<5' 'Pillow>=11,<13'
+      - name: Retrieve first manufacturer batch
+        run: |
+          python -m py_compile scripts/project-10k-retrieve.py
+          python scripts/project-10k-retrieve.py --limit 5
+      - name: Upload review bundle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: project-10k-review
+          path: project-10k-review/
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Check retrieval yield
+        run: |
+          python -c "import json; r=json.load(open('project-10k-review/report.json')); assert any(x['status']=='downloaded-awaiting-review' for x in r), 'No images retrieved; inspect review report'"
