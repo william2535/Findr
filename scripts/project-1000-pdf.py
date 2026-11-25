@@ -9,6 +9,7 @@ from PIL import Image
 p=argparse.ArgumentParser()
 p.add_argument('--brand',required=True)
 p.add_argument('--limit',type=int,default=60)
+p.add_argument('--local-pdfs',type=Path,help='Folder of authorised PDFs named by archive record ID')
 a=p.parse_args()
 root=Path('project-1000-pdf-review');root.mkdir(exist_ok=True)
 data=json.loads(Path('public/app/data/catalogue.json').read_text())
@@ -39,7 +40,7 @@ def fetch(url):
             if len(b)>20000000 or time.monotonic()>deadline: raise ValueError('Download budget exceeded')
         if not b.startswith(b'%PDF-'): raise ValueError('Not PDF')
         return bytes(b)
-rows=[r for r in records if r.get('brand')==a.brand and not r.get('retired_from_packs') and isinstance(r.get('url'),str) and allowed(r['url'])]
+rows=[r for r in records if r.get('brand')==a.brand and not r.get('retired_from_packs') and isinstance(r.get('url'),str) and (allowed(r['url']) or (a.local_pdfs and re.fullmatch(r'[A-Za-z0-9_-]+',r['id']) and (a.local_pdfs/(r['id']+'.pdf')).is_file()))]
 rows.sort(key=lambda r:(not bool(re.search(r'data.?sheet|specification|product sheet',r.get('title',''),re.I)),len(r.get('models',[]))))
 save()
 for r in rows:
@@ -51,7 +52,13 @@ for r in rows:
     try:
         models=[m for m in r.get('models',[]) if isinstance(m,str) and re.search(r'\d{3,}',m)]
         if not models: continue
-        raw=fetch(url);digest=hashlib.sha256(raw).hexdigest()
+        local=a.local_pdfs/(r['id']+'.pdf') if a.local_pdfs and re.fullmatch(r'[A-Za-z0-9_-]+',r['id']) else None
+        if local and local.is_file():
+            if local.stat().st_size>20000000: raise ValueError('Local PDF too large')
+            raw=local.read_bytes()
+        else:
+            raw=fetch(url)
+        digest=hashlib.sha256(raw).hexdigest()
         with fitz.open(stream=raw,filetype='pdf') as doc:
             for i in range(min(4,len(doc))):
                 if time.monotonic()>deadline: break
@@ -65,7 +72,7 @@ for r in rows:
                     im.thumbnail((1000,1000))
                     buf=io.BytesIO();im.save(buf,format='WEBP',quality=85);b=buf.getvalue();h=hashlib.sha256(b).hexdigest()
                     (root/(h+'.webp')).write_bytes(b)
-                    results.append(dict(record_id=r['id'],url=url,pdf_sha256=digest,page=i+1,models=matches,image=h+'.webp',image_sha256=h,bbox=list(info['bbox']),status='visual-review-required'))
+                    results.append(dict(record_id=r['id'],brand=a.brand,category=r.get('category'),document_title=r.get('title'),url=url,pdf_sha256=digest,page=i+1,models=matches,image=h+'.webp',image_sha256=h,bbox=list(info['bbox']),status='visual-review-required'))
     except Exception as e: errors.append(dict(record_id=r['id'],error=str(e)))
     finally: save()
 print(json.dumps(dict(checked=len(seen),candidates=len(results),errors=len(errors))))
