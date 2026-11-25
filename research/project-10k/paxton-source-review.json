@@ -1,0 +1,50 @@
+{
+  "source_index": "https://www.paxton-access.com/install-paxton/resources/datasheets/",
+  "rows": [
+    {
+      "code": "353-110",
+      "product_page": "https://www.paxton-access.com/products/proximity-reader-p50/",
+      "document_ref": "TDS-1001",
+      "pdf": null,
+      "model_verified": true,
+      "image_verified": false,
+      "manual_bytes_verified": false
+    },
+    {
+      "code": "353-467",
+      "product_page": "https://www.paxton-access.com/products/net2-proximity-mifare-reader-p50/",
+      "document_ref": "TDS-1013",
+      "pdf": "https://www.paxton-access.com/wp-content/uploads/2019/03/DS1013.pdf",
+      "model_verified": true,
+      "image_verified": false,
+      "manual_bytes_verified": false
+    },
+    {
+      "code": "373-110",
+      "product_page": "https://www.paxton-access.com/products/proximity-reader-p75/",
+      "document_ref": "TDS-1001",
+      "pdf": null,
+      "model_verified": true,
+      "image_verified": false,
+      "manual_bytes_verified": false
+    },
+    {
+      "code": "375-110",
+      "product_page": "https://www.paxton-access.com/products/proximity-keypad-kp75/",
+      "document_ref": "TDS-1004",
+      "pdf": null,
+      "model_verified": true,
+      "image_verified": false,
+      "manual_bytes_verified": false
+    },
+    {
+      "code": "345-220",
+      "product_page": "https://www.paxton-access.com/products/net2-proximity-mullion-reader/",
+      "document_ref": "TDS-1014",
+      "pdf": null,
+      "model_verified": true,
+      "image_verified": false,
+      "manual_bytes_verified": false
+    }
+  ]
+}
