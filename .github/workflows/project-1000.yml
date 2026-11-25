@@ -1,0 +1,27 @@
+name: Project 1000 manufacturer discovery
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/project-1000.yml']
+permissions:
+  contents: read
+jobs:
+  discover:
+    strategy:
+      fail-fast: false
+      matrix:
+        brand: [Apollo, Hochiki, Texecom, Pyronix, Orisec, Hikvision, Dahua]
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'requests>=2.32,<3' 'beautifulsoup4>=4.12,<5'
+      - run: python scripts/project-1000-discover.py --brand "${{ matrix.brand }}" --limit 200
+      - uses: actions/upload-artifact@v4
+        with:
+          name: project-1000-${{ matrix.brand }}
+          path: project-1000-review/
