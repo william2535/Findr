@@ -7,6 +7,7 @@ p=argparse.ArgumentParser()
 p.add_argument('--review',type=Path,default=Path('project-10k-review'))
 p.add_argument('--approved',type=Path,required=True)
 p.add_argument('--output',type=Path,default=Path('project-10k-batches'))
+p.add_argument('--verified-documents', action='store_true', help='Use exact-code PDF evidence generated in this run; image approval still required')
 a=p.parse_args()
 def read(path): return json.loads(path.read_text())
 def write(path,obj): path.write_text(json.dumps(obj,indent=2)+'\n')
@@ -43,8 +44,8 @@ for item in read(a.review/'report.json'):
         supplemental=[]
         for evidence in reviews.get(code,{}).get('candidates',[]):
             d=candidates.get(evidence['id'])
-            if not d or evidence['sha256'] not in doc_approved.get(code,[]): continue
-            if d['sha256']!=evidence['sha256'] or d['url']!=evidence['url'] or code not in d['models'] or not evidence['exact_code_pages']: continue
+            if not d or (not a.verified_documents and evidence['sha256'] not in doc_approved.get(code,[])): continue
+            if not re.fullmatch(r'[a-f0-9]{64}',d['sha256']) or d['sha256']!=evidence['sha256'] or d['url']!=evidence['url'] or code not in d['models'] or not evidence['exact_code_pages']: continue
             if d['brand']!='Paxton' or d['category']!='access-control' or d['id']!='device-doc-paxton-'+d['sha256'][:12]: continue
             supplemental.append(d)
         matches+=supplemental
@@ -61,7 +62,7 @@ for item in read(a.review/'report.json'):
         rows.append(dict(id=identifier,brand='Paxton',model=code,category='access-control',device_type='accessory',aliases=[],part_numbers=[code],protocol='Confirm product label and system compatibility',image=target,source_image_url=item['source_image_url'],source_page_url=item['source_page_url'],record_ids=sorted({r['id'] for r in matches}),identification_notes='Compare the manufacturer picture and exact product label.',applicability_limits='Exact code matched in archive metadata or reviewed manufacturer PDF; confirm document edition and applicability before use.',image_credit='Paxton manufacturer product image',image_type='official-manufacturer-product-image',image_sha256=digest,image_dimensions=item['image_dimensions'],uk_priority=True,uk_priority_order=1000))
         for d in supplemental: admitted[d['id']]=d
         ids.add(identifier);hashes.add(digest)
-        result.update(status='staged',record_ids=rows[-1]['record_ids'])
+        result.update(status='staged',record_ids=rows[-1]['record_ids'],document_approval='automated exact-code evidence' if a.verified_documents else 'explicit hash review')
     except Exception as exc: result.update(status='held',reason=str(exc))
     audit.append(result)
 write(batch/'devices.json',rows)
