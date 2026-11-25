@@ -38,7 +38,13 @@ jobs:
         if: inputs.prepare_import
         run: |
           python scripts/project-10k-prepare.py --approved research/project-10k/approved-images.json
-          python scripts/add-device-images.py project-10k-batches --check
+          if python -c "import json; from pathlib import Path; import sys; sys.exit(0 if any(json.loads(p.read_text()) for p in Path('project-10k-batches').glob('*/devices.json')) else 1)"; then
+            python scripts/add-device-images.py project-10k-batches --check
+          else
+            echo "::warning::No eligible image/document pairs; nothing imported. Inspect the staged audit."
+            echo "### Import preparation: 0 eligible entries" >> "$GITHUB_STEP_SUMMARY"
+            echo "No catalogue changes made. Review held candidates and exact document matches." >> "$GITHUB_STEP_SUMMARY"
+          fi
       - name: Upload staged import
         if: always() && inputs.prepare_import
         uses: actions/upload-artifact@v4
