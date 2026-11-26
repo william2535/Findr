@@ -23,6 +23,15 @@ await fs.mkdir(output, { recursive: true });
 let browser, context, page, stage = 'launch';
 const action = name => page.locator(`[data-loop-action="${name}"]`).first();
 const check = (name, details) => { result.checks.push({ name, ...(details ? { details } : {}) }); console.log('PASS ' + name); };
+// Explicitly await browser promises; waitForFunction must not receive async predicates.
+async function waitAsync(predicate, argument, { timeout = 30000 } = {}) {
+  const deadline = Date.now() + timeout; let lastError;
+  while (Date.now() < deadline) {
+    try { if (await page.evaluate(predicate, argument)) return; } catch (error) { lastError = error; }
+    await page.waitForTimeout(60);
+  }
+  throw new Error(`Timed out awaiting browser data${lastError ? ': ' + lastError.message : ''}`);
+}
 const saved = () => page.evaluate(async key => (await import('./db.mjs')).setting(key), key);
 const view = () => page.evaluate(async key => (await import('./protec-loop-engine.mjs')).evaluateLoopRun(await (await import('./db.mjs')).setting(key)), key);
 const matrices = () => page.evaluate(async () => (await import('./cause-effect-store.mjs')).listProjects());
@@ -35,7 +44,7 @@ async function reveal(locator) {
   for (const id of closed) await page.locator(`details[data-loop-disclosure="${id}"] > summary`).click();
 }
 async function click(name) { const target = action(name); await reveal(target); await target.click(); }
-async function waitActions(count) { await page.waitForFunction(async ({ key, count }) => (await (await import('./db.mjs')).setting(key))?.actions.length === count, { key, count }); await idle(); }
+async function waitActions(count) { await waitAsync(async ({ key, count }) => (await (await import('./db.mjs')).setting(key))?.actions.length === count, { key, count }); await idle(); }
 async function step(name) { const count = (await saved())?.actions.length || 0; await click(name); await waitActions(count + 1); }
 async function configure(id) {
   const count = (await saved()).actions.length;
@@ -99,6 +108,8 @@ try {
   await desktopPage.locator('#findr-startup').waitFor({ state: 'detached' });
   await desktopPage.locator('header [data-nav=panel-lab]').click();
   await desktopPage.locator('[data-panel-lab-action=tab][data-tab=loop-diagnostics]').click();
+  const desktopPractice = desktopPage.locator('[data-panel-lab-action=loop-mode][data-id=practice]');
+  if (await desktopPractice.count()) await desktopPractice.click();
   await desktopPage.locator('.pll-root').waitFor();
   assert.ok(await desktopPage.evaluate(() => matchMedia('(pointer:fine)').matches && document.documentElement.scrollWidth <= innerWidth + 1));
   await desktopPage.locator('[data-loop-action=acknowledge]').first().click();
@@ -125,7 +136,10 @@ try {
   const cell = page.locator('.pl-cell').first(); await cell.click();
   await page.waitForFunction(() => document.querySelector('#pl-save-status')?.textContent.startsWith('Saved on this device'));
   const originalMatrices = await matrices();
-  await page.locator('[data-panel-lab-action=tab][data-tab=loop-diagnostics]').click(); await page.locator('.pll-root').waitFor(); await fits();
+  await page.locator('[data-panel-lab-action=tab][data-tab=loop-diagnostics]').click();
+  const practiceChoice = page.locator('[data-panel-lab-action=loop-mode][data-id=practice]');
+  if (await practiceChoice.count()) await practiceChoice.click();
+  await page.locator('.pll-root').waitFor(); await fits();
   assert.match(await page.locator('.pll-root').innerText(), /No live panel is connected/);
   assert.ok(await action('observe').count() === 0 || await action('observe').isDisabled(), 'Observations are unavailable before prerequisites');
   check('Normal Panel Lab entry opens Loop diagnostics and retains the existing edited matrix');
@@ -223,7 +237,7 @@ try {
   check('Injected quota failure preserves saved actions and supports Retry; malformed data is retained rather than silently replaced; matrices are unaffected');
 
   if (offline) {
-    stage = 'real verified offline operation'; result.offlineShell = await offlineShell(); assert.equal(result.offlineShell.version, '0.42.0');
+    stage = 'real verified offline operation'; result.offlineShell = await offlineShell(); assert.equal(result.offlineShell.version, await page.evaluate(async () => (await import('./version.mjs')).APP_VERSION));
     await context.setOffline(true); await page.reload(); await page.locator('.pll-root').waitFor();
     await step('map'); await step('verify-topology'); await step('reset-counts'); await step('observe'); assert.equal((await view()).seconds, 3600);
     if (manual) { await citation(); await page.waitForFunction(() => document.querySelector('#pdf-page')?.value === '21' && document.querySelector('#pdf-status')?.textContent === 'Saved PDF · offline'); await page.locator('#modal [data-action=close-modal]').click(); }

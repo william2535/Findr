@@ -21,7 +21,21 @@ Manufacturer lessons show the existing reviewed manual editions and PDF page ref
 
 ## Protec 6500 loop diagnostics
 
-Choose **Loop diagnostics** or open `#panel-lab/loops`. Pick a mapped, intermittent or incomplete-map exercise. Review its scope and Map groups, then check the independently supplied fictional survey. Consecutive addresses and tied Map values never establish cable order.
+### Record a site investigation
+
+The **Site investigation** option is a local notebook for actual engineer-entered evidence. It is separate from **Practise** and never generates test readings. Identify the panel, card and loop before reviewing rows; different loops can reuse the same addresses.
+
+Add one or several photos of the loop list, or enter the rows manually. English OCR uses the existing downloaded software on the device. Review every Address and Map value against its original photo before confirming it. OCR confidence is not confirmation. Missing headings or unreadable rows stay available for manual transcription. Check overlapping pages and resolve conflicting addresses explicitly. Confirm inventory completeness separately; a handful of photos does not establish the full loop inventory.
+
+Map values create approximate groups. Define physical sections only from independent site evidence, such as a verified drawing or observed connection points. Record the devices actually polled, those excluded and those unavailable/unknown for each observation. Keep both counter snapshots, any reset, the actual test interval, operating conditions and the source of any optional poll count. Do not derive observed polls from scan time or screen-refresh timing.
+
+Record each introduced impairment and its restoration separately from any functional retest. A handover may retain outstanding work. Corrections must keep the previous evidence and flag affected interpretations for review. Save, reopen and export the job without mixing it with another investigation or with practice results. The export explains whether original photo files travel with it; protect private information before sharing.
+
+FINDR does not provide an unverified live splitting/disconnection procedure. It records what the engineer reports doing under the applicable authorisation, monitoring and safety arrangements. “No additional missed replies in this window” is an observation, not proof that a device, section or whole system is healthy. See the [field evidence scope](../research/loop-field-0.43.0/field-evidence-scope.md).
+
+### Practise with synthetic data
+
+Choose **Practise** within **Loop diagnostics**, or open `#panel-lab/loops`. Pick a mapped, intermittent or incomplete-map exercise. Review its scope and Map groups, then check the independently supplied fictional survey. Consecutive addresses and tied Map values never establish cable order.
 
 Record a whole-loop baseline, then compare virtual section configurations using equal one-hour simulated windows. Each observation is calculated immediately; the app does not pretend to wait an hour or collect actual measurements. Reset synthetic counters when changing configuration. Earlier readings remain in the chronological log. Per-device attempts and missed replies are fictional teaching data; the cited 6500 manual describes a total missed-reply counter.
 

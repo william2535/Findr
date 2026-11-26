@@ -1,0 +1,48 @@
+{
+  "webVersion": "0.43.0",
+  "environment": {
+    "os": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "node": "24.19.0",
+    "physicalDevice": false
+  },
+  "regression": {
+    "command": "node --test --test-isolation=none tests/*.test.mjs",
+    "tests": 2084,
+    "passed": 2083,
+    "failed": 0,
+    "skipped": 1,
+    "durationMs": 36484.24805,
+    "skip": "Existing manufacturer PDF fixture is intentionally absent.",
+    "note": "Initial development run detected a stale hash while UI edits were in progress. Manifest regenerated; stable full run passed. Subsequent deep-link preference correction checked with 29 focused manifest/practice/loop-engine tests and final browser runs."
+  },
+  "finalFocusedGates": {
+    "tests": 29,
+    "passed": 29,
+    "failed": 0
+  },
+  "typescript": "passed",
+  "productionBuild": {
+    "command": "node scripts/run-framework.mjs build",
+    "passed": true,
+    "publicFiles": 1558,
+    "bytes": 167960331,
+    "publicAssetGate": true
+  },
+  "offline": {
+    "version": "0.43.0",
+    "build": "2c7d00d2cfc5",
+    "assets": 1461,
+    "bytes": 127749431,
+    "photoReading": "Existing pinned English Tesseract worker/WASM; no cloud inference or new LLM required."
+  },
+  "scope": "Real engineer-entered loop photographs, reviewed addresses/Map values, site sections, actual counters/coverage/conditions/intervals, corrections, saved jobs and handover. Separate synthetic practice retained.",
+  "credentialReview": "Changed files scanned for common token/private-key signatures; none found. No user photos, downloaded manuals, keys, models or real logs added. Not a new full-repository secret audit.",
+  "limits": [
+    "Synthetic layout photographs used for OCR testing; no actual field-camera photo supplied.",
+    "No physical iPhone, Android device or connected Protec panel tested.",
+    "Source navigation is scoped to RDM0002/2_4 (2017), not a verified current-firmware procedure.",
+    "JSON exports preserve text, readings and provenance; original image binaries are saved separately.",
+    "No new APK/AAB built or Play rollout."
+  ],
+  "uiByteParity": "All five new runtime modules, panel-lab.mjs and panel-lab.css match the final built public bytes."
+}

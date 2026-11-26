@@ -1,5 +1,13 @@
 ## GitHub Pages edition — web 0.40.0
 
+## FINDR 0.43.0 — Photo-assisted loop investigation records
+
+**Panel Lab → Loop diagnostics → Site investigation** records an engineer's real loop-list photos, reviewed address/Map rows, physical section evidence, counter observations and restoration. The separate **Practise** option keeps the existing synthetic 6500 exercises. No live panel is connected or controlled.
+
+Photo OCR runs on the device using the existing English Tesseract resources. Suggestions remain drafts until checked against the original photo; overlapping photos and conflicting addresses require review. Partial inventories, unknown topology, changed polling coverage and resets remain explicit. A quiet window does not become a healthy-loop or confirmed-repair claim.
+
+[Panel Lab guide](docs/PANEL-LAB.md) · [Field evidence scope](research/loop-field-0.43.0/field-evidence-scope.md)
+
 ## FINDR 0.42.0 — Protec 6500 loop practice
 
 Open **Panel Lab → Loop diagnostics** to practise sorting Map groups, inspecting cumulative missed replies, comparing virtual sections and recording a handover. Three saved exercises cover a mapped loop, intermittent symptoms and incomplete topology. Hints, equal one-hour simulated observation windows, polling coverage and restoration checks keep the conclusions tied to recorded evidence. This is an offline learning exercise, not a connection to a panel or a full 6500 emulator.

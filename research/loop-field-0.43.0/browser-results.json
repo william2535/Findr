@@ -1,0 +1,267 @@
+{
+  "date": "2026-11-26",
+  "version": "0.43.0",
+  "build": "2c7d00d2cfc5",
+  "automation": "Playwright 1.65.1, Linux; fresh persistent profiles",
+  "physicalDeviceTested": false,
+  "field": [
+    {
+      "browser": "chromium",
+      "browserVersion": "154.0.8037.57",
+      "status": "passed",
+      "elapsedMs": 38357,
+      "firstOCRMs": 2165,
+      "ocrResources": {
+        "ready": true,
+        "bytes": 10050731
+      },
+      "offlineShell": {
+        "ready": true,
+        "build": "2c7d00d2cfc5",
+        "version": "0.43.0",
+        "verification": "sha256-v1",
+        "waitMs": 9899
+      },
+      "checks": [
+        {
+          "name": "Actual release and English OCR resources are verified before the journey",
+          "details": {
+            "offline": true,
+            "ready": true,
+            "build": "2c7d00d2cfc5",
+            "version": "0.43.0",
+            "verification": "sha256-v1",
+            "waitMs": 9899
+          }
+        },
+        {
+          "name": "Normal navigation creates an empty real job while existing matrix and practice are retained"
+        },
+        {
+          "name": "Real OCR associates documented columns; serials/summaries are excluded, duplicates block approval, corrections and unknown Map retain photo provenance",
+          "details": {
+            "milliseconds": 2165,
+            "confidence": 81
+          }
+        },
+        {
+          "name": "Partial photographs and mismatched expected counts cannot establish full coverage; Map ties do not prove a section; later evidence preserves original snapshots"
+        },
+        {
+          "name": "Recorded timestamps/counters drive deltas; equal coverage can compare, excluded or unknown coverage cannot, quiet is not healthy, resets/raw-only readings retain uncertainty, polls require a source"
+        },
+        {
+          "name": "A corrected device retains its photo and old values; dependent observations are marked for review and explicit review has its own history"
+        },
+        {
+          "name": "Handover preserves an open impairment; recording restoration remains distinct from a cause confirmation or healthy-system certificate"
+        },
+        {
+          "name": "Export includes full provenance/history and explicitly excludes image bytes; import creates an independent job with honest missing-photo notice; other jobs share no device/impairment state"
+        },
+        {
+          "name": "Original photo is atomically saved before OCR, survives an interrupted page, can be cancelled/retried without duplicate identity, and never moves to a different job"
+        },
+        {
+          "name": "Invalid and blank images retain originals with honest recovery; injected photo quota failure remains visibly unsaved, then Retry saves the retained original without duplicating the photo"
+        },
+        {
+          "name": "Phone/tablet/large-touch/reduced-height views fit; saved job and draft resume exactly; separate practice and matrix are unchanged; no page errors"
+        },
+        {
+          "name": "Explicit practice\u2192field deep links persist the chosen site mode through ordinary navigation and reload"
+        },
+        {
+          "name": "Separate fine-pointer desktop reaches the real field route and fits at1440px"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "browser": "webkit",
+      "browserVersion": "27.2",
+      "status": "passed",
+      "elapsedMs": 55145,
+      "firstOCRMs": 3985,
+      "ocrResources": {
+        "ready": true,
+        "bytes": 10050731
+      },
+      "offlineShell": {
+        "ready": true,
+        "build": "2c7d00d2cfc5",
+        "version": "0.43.0",
+        "verification": "sha256-v1",
+        "waitMs": 13468
+      },
+      "checks": [
+        {
+          "name": "Actual release and English OCR resources are verified before the journey",
+          "details": {
+            "offline": true,
+            "ready": true,
+            "build": "2c7d00d2cfc5",
+            "version": "0.43.0",
+            "verification": "sha256-v1",
+            "waitMs": 13468
+          }
+        },
+        {
+          "name": "Normal navigation creates an empty real job while existing matrix and practice are retained"
+        },
+        {
+          "name": "Real OCR associates documented columns; serials/summaries are excluded, duplicates block approval, corrections and unknown Map retain photo provenance",
+          "details": {
+            "milliseconds": 3985,
+            "confidence": 83
+          }
+        },
+        {
+          "name": "Partial photographs and mismatched expected counts cannot establish full coverage; Map ties do not prove a section; later evidence preserves original snapshots"
+        },
+        {
+          "name": "Recorded timestamps/counters drive deltas; equal coverage can compare, excluded or unknown coverage cannot, quiet is not healthy, resets/raw-only readings retain uncertainty, polls require a source"
+        },
+        {
+          "name": "A corrected device retains its photo and old values; dependent observations are marked for review and explicit review has its own history"
+        },
+        {
+          "name": "Handover preserves an open impairment; recording restoration remains distinct from a cause confirmation or healthy-system certificate"
+        },
+        {
+          "name": "Export includes full provenance/history and explicitly excludes image bytes; import creates an independent job with honest missing-photo notice; other jobs share no device/impairment state"
+        },
+        {
+          "name": "Original photo is atomically saved before OCR, survives an interrupted page, can be cancelled/retried without duplicate identity, and never moves to a different job"
+        },
+        {
+          "name": "Invalid and blank images retain originals with honest recovery; injected photo quota failure remains visibly unsaved, then Retry saves the retained original without duplicating the photo"
+        },
+        {
+          "name": "Phone/tablet/large-touch/reduced-height views fit; saved job and draft resume exactly; separate practice and matrix are unchanged; no page errors"
+        },
+        {
+          "name": "Explicit practice\u2192field deep links persist the chosen site mode through ordinary navigation and reload"
+        },
+        {
+          "name": "Separate fine-pointer desktop reaches the real field route and fits at1440px"
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "practiceRegression": [
+    {
+      "browser": "chromium",
+      "browserVersion": "154.0.8037.57",
+      "status": "passed",
+      "elapsedMs": 25882,
+      "offlineShell": {
+        "ready": true,
+        "build": "2c7d00d2cfc5",
+        "version": "0.43.0",
+        "verification": "sha256-v1",
+        "verificationWaitMs": 36
+      },
+      "checks": [
+        {
+          "name": "Fine-pointer desktop opens the normal navigation entry, saves a real action and fits at 1440px"
+        },
+        {
+          "name": "Normal Panel Lab entry opens Loop diagnostics and retains the existing edited matrix"
+        },
+        {
+          "name": "Addresses and Map groups use different order; exact survey positions are explicitly independent; real hints open"
+        },
+        {
+          "name": "Each action advances one synthetic hour; interval deltas stay separate from cumulative counts; premature completion is rejected"
+        },
+        {
+          "name": "Repeat equal windows localise synthetic section C; excluded devices display Not polled and dashes, never healthy zero readings"
+        },
+        {
+          "name": "Phone, tablet, large touch and reduced-height layouts fit; alias/navigation/reload preserve exact actions and unrelated matrix"
+        },
+        {
+          "name": "Later configuration changes invalidate restoration; completed exported handover retains missed replies and unconfirmed cause/repair"
+        },
+        {
+          "name": "Intermittent quiet windows remain uncertain; incomplete map supplies no invented route, blocks splits and retains missing-address coverage at handover"
+        },
+        {
+          "name": "Reviewed manual opens PDFpage21; forged matching metadata with different actual bytes is rejected for that page and opens page1 with an edition warning"
+        },
+        {
+          "name": "Injected quota failure preserves saved actions and supports Retry; malformed data is retained rather than silently replaced; matrices are unaffected"
+        },
+        {
+          "name": "Actual SHA256-verified service-worker release runs new observations, reloads saved state and opens the downloaded citation with networking disabled",
+          "details": {
+            "ready": true,
+            "build": "2c7d00d2cfc5",
+            "version": "0.43.0",
+            "verification": "sha256-v1",
+            "verificationWaitMs": 36
+          }
+        }
+      ],
+      "errors": []
+    },
+    {
+      "browser": "webkit",
+      "browserVersion": "27.2",
+      "status": "passed",
+      "elapsedMs": 46084,
+      "offlineShell": {
+        "ready": true,
+        "build": "2c7d00d2cfc5",
+        "version": "0.43.0",
+        "verification": "sha256-v1",
+        "verificationWaitMs": 2623
+      },
+      "checks": [
+        {
+          "name": "Fine-pointer desktop opens the normal navigation entry, saves a real action and fits at 1440px"
+        },
+        {
+          "name": "Normal Panel Lab entry opens Loop diagnostics and retains the existing edited matrix"
+        },
+        {
+          "name": "Addresses and Map groups use different order; exact survey positions are explicitly independent; real hints open"
+        },
+        {
+          "name": "Each action advances one synthetic hour; interval deltas stay separate from cumulative counts; premature completion is rejected"
+        },
+        {
+          "name": "Repeat equal windows localise synthetic section C; excluded devices display Not polled and dashes, never healthy zero readings"
+        },
+        {
+          "name": "Phone, tablet, large touch and reduced-height layouts fit; alias/navigation/reload preserve exact actions and unrelated matrix"
+        },
+        {
+          "name": "Later configuration changes invalidate restoration; completed exported handover retains missed replies and unconfirmed cause/repair"
+        },
+        {
+          "name": "Intermittent quiet windows remain uncertain; incomplete map supplies no invented route, blocks splits and retains missing-address coverage at handover"
+        },
+        {
+          "name": "Reviewed manual opens PDFpage21; forged matching metadata with different actual bytes is rejected for that page and opens page1 with an edition warning"
+        },
+        {
+          "name": "Injected quota failure preserves saved actions and supports Retry; malformed data is retained rather than silently replaced; matrices are unaffected"
+        },
+        {
+          "name": "Actual SHA256-verified service-worker release runs new observations, reloads saved state and opens the downloaded citation with networking disabled",
+          "details": {
+            "ready": true,
+            "build": "2c7d00d2cfc5",
+            "version": "0.43.0",
+            "verification": "sha256-v1",
+            "verificationWaitMs": 2623
+          }
+        }
+      ],
+      "errors": []
+    }
+  ]
+}
