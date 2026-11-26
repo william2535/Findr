@@ -1,0 +1,85 @@
+{
+  "webVersion": "0.41.0",
+  "sourceCommit": "029dab57d76da05772f676dd0171121cf3e2e155",
+  "githubAppCommit": "6a3752cbb7974e1a7aabd2db915cbf41ef6dac91",
+  "siteVersion": 94,
+  "siteDeploymentId": "appgdep_6b08962f0ff08191a656cacc406b2d10",
+  "siteDeploymentStatus": "succeeded",
+  "githubPagesWorkflowRunId": 45891288953,
+  "githubPagesWorkflowConclusion": "success",
+  "httpChecks": [
+    {
+      "path": "app-release.json",
+      "status": 200,
+      "bytes": 21,
+      "sha256": "dc1fe599c97024a02c27d4d2e501cd50c7374866a805c995987d669a5edd633c",
+      "version": "0.41.0"
+    },
+    {
+      "path": "app/app.mjs",
+      "status": 200,
+      "bytes": 106630,
+      "sha256": "37b922e88c198aab2b026931a6b6ac2cbf66aaaed0b91d11b5dd7af896f1785d",
+      "panelLab": true,
+      "zonePromotion": false,
+      "matchesSource": true
+    },
+    {
+      "path": "app/panel-lab.mjs",
+      "status": 200,
+      "bytes": 33684,
+      "sha256": "693e8338657c0a0582e93d55db8702faa778a26189ec59070f54b72338adf615",
+      "matchesSource": true
+    },
+    {
+      "path": "app/panel-lab.css",
+      "status": 200,
+      "bytes": 16649,
+      "sha256": "3bcd9790c339d9572684a1f6c33a51f57c4a195aad371b877d73147305bc8c35",
+      "matchesSource": true
+    },
+    {
+      "path": "app/cause-effect-engine.mjs",
+      "status": 200,
+      "bytes": 18548,
+      "sha256": "ac7e752aaa6fb9c2009f460084dc6b4c494ea52cd0b37f531610e88f105f4d1a",
+      "matchesSource": true
+    },
+    {
+      "path": "app/cause-effect-store.mjs",
+      "status": 200,
+      "bytes": 5653,
+      "sha256": "f9ed0d5aab809700a8173ce22ca764b9e76b32730233b1838e3ded1aac300b0b",
+      "matchesSource": true
+    },
+    {
+      "path": "app/panel-lab-practice.mjs",
+      "status": 200,
+      "bytes": 33335,
+      "sha256": "216e882dd412d6afe8ffdecf572edb6654aebec496a5163f3afa89964db46238",
+      "matchesSource": true
+    },
+    {
+      "path": "app/ambient-sparks.mjs",
+      "status": 200,
+      "bytes": 6028,
+      "sha256": "ba21f9f4f552657848429a7330b7800a378f5ba5e93ab3389cea99f8fa83aa67",
+      "matchesSource": true
+    },
+    {
+      "path": "app/precache.js",
+      "status": 200,
+      "bytes": 212559,
+      "sha256": "033361dc3ebababce77e69bfd72d1f1d3ea8c338290c90589ff4148bc53819c3",
+      "offlineBuild": "0ac751fcd6a4"
+    },
+    {
+      "path": "privacy/",
+      "status": 200,
+      "bytes": 15429,
+      "sha256": "e98e48ce5bee89b1aaea3b66ca6301d29e36144c646f47dc7c4ca3ccb1d6d403"
+    }
+  ],
+  "testEvidence": "research/panel-lab-0.41.0/browser-verification.md",
+  "nativeBuild": "No new APK/AAB or Play rollout."
+}
