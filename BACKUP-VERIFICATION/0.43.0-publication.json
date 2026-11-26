@@ -1,0 +1,164 @@
+{
+  "webVersion": "0.43.0",
+  "siteVersion": 96,
+  "siteProjectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
+  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_9c2c627928cc8191a1be4856775110f6",
+  "deploymentId": "appgdep_6b08b88398448191902fb282720a4c21",
+  "deploymentStatus": "succeeded",
+  "deploymentUpdatedAt": "2026-11-26T22:54:12.899821+00:00",
+  "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site",
+  "sourceCommit": "4c6f09febc768852facb025496818ee0611c1fee",
+  "githubSourceCommit": "fbce139244d0ba25dd9fb783a2f0582fadb9b231",
+  "githubSourceTree": "47627fc6d1548c9f5ff40cb656b2fecf058cb8c6",
+  "githubPages": {
+    "url": "https://william2535.github.io/Findr/",
+    "appUrl": "https://william2535.github.io/Findr/app/",
+    "status": "published_and_verified",
+    "workflow": ".github/workflows/deploy-pages.yml",
+    "deployedCommit": "fbce139244d0ba25dd9fb783a2f0582fadb9b231",
+    "workflowRunId": 45907628203,
+    "workflowUrl": "https://github.com/william2535/Findr/actions/runs/45907628203",
+    "workflowConclusion": "success",
+    "offlineBuild": "2bc99e1cbdcb",
+    "httpChecks": "BACKUP-VERIFICATION/0.43.0-publication.json",
+    "browserSmoke": "BACKUP-VERIFICATION/0.43.0-live-browser.json"
+  },
+  "recordedAt": "2026-11-26T22:56:12.487563+00:00",
+  "localArchive": {
+    "sha256": "ae519d7525e0a45e14d4e0567ea2182aca80cf4e10469576666042a526009f0f",
+    "bytes": 169287680,
+    "uploaded": true
+  },
+  "savedArchive": {
+    "sha256": "e46f389956c7ae60fc96d899ce8b7fbe50226a1f6b946cadd387732b422adc50",
+    "bytes": 169267200,
+    "fileCount": 1665,
+    "note": "Server-returned normalized saved archive metadata."
+  },
+  "sourceParity": {
+    "nativeCommit": "4c6f09febc768852facb025496818ee0611c1fee",
+    "githubAppCommit": "fbce139244d0ba25dd9fb783a2f0582fadb9b231",
+    "matchedSourceFiles": 3201,
+    "mismatches": [],
+    "intentionalExclusions": [
+      ".openai/hosting.json",
+      "android/preview.keystore",
+      "public/releases/FINDR-0.14.1.apk"
+    ]
+  },
+  "httpChecks": [
+    {
+      "path": "app/version.mjs",
+      "status": 200,
+      "bytes": 722,
+      "sha256": "557e178c958f72d164e2fce35cc5989febf6d191c64ce0168c780f26e2adfc84",
+      "matchesSource": true
+    },
+    {
+      "path": "app/loop-field-log.mjs",
+      "status": 200,
+      "bytes": 58574,
+      "sha256": "906fa7045d9f5dfd85a521191c0a0c5eba3ba8098f55a66ff2c6b00aad75dbc2",
+      "matchesSource": true
+    },
+    {
+      "path": "app/loop-field-model.mjs",
+      "status": 200,
+      "bytes": 31371,
+      "sha256": "784c23bf534342b0dbda929783f8114915be19a39ce8a28d9f62fa6829370fa6",
+      "matchesSource": true
+    },
+    {
+      "path": "app/loop-field-store.mjs",
+      "status": 200,
+      "bytes": 8352,
+      "sha256": "5e2bc2093af5d017f7e8d9545db4287f307050bb775bd595bee5ace9413ec2ab",
+      "matchesSource": true
+    },
+    {
+      "path": "app/loop-photo-import.mjs",
+      "status": 200,
+      "bytes": 17671,
+      "sha256": "7a9604e71773ab7a93f89f3656e824e5a22a3f7ca81574481084b9b3ef28d6ba",
+      "matchesSource": true
+    },
+    {
+      "path": "app/loop-photo-parser.mjs",
+      "status": 200,
+      "bytes": 5463,
+      "sha256": "78fcca16ec9fea853b7f2d64ce8969d48251d4c7289b39ee44e8bbb13effec96",
+      "matchesSource": true
+    },
+    {
+      "path": "app/panel-lab.mjs",
+      "status": 200,
+      "bytes": 36326,
+      "sha256": "3315d3241237cab53e9bcf5b7636a403ef37d3bee5a9ce35319d9c5fe98d0b5b",
+      "matchesSource": true
+    },
+    {
+      "path": "app/panel-lab.css",
+      "status": 200,
+      "bytes": 38883,
+      "sha256": "2a124b02b288f7a9af2bb2c48e2adc524ff4e572aed545214af1aa515612c3ac",
+      "matchesSource": true
+    },
+    {
+      "path": "app/precache.js",
+      "status": 200,
+      "bytes": 213387,
+      "sha256": "81638a214b7048839724d17b7568b4b208218f48e69de23a413107b1ae6b0cbb",
+      "build": "2bc99e1cbdcb"
+    },
+    {
+      "path": "app-release.json",
+      "status": 200,
+      "bytes": 21,
+      "sha256": "30d04e1f0dc32a30f3f181e7625371ba927cfcf21803d364bd8932e6820bc74a",
+      "release": {
+        "version": "0.43.0"
+      }
+    },
+    {
+      "path": "privacy/",
+      "status": 200,
+      "bytes": 16077,
+      "sha256": "0896f45008a9670778b7ba886e9e25e05297f7c014852ffb59f6e3301e5866a5"
+    }
+  ],
+  "nativeHttpProbe": {
+    "status": 403,
+    "server": "envoy",
+    "response": "error code: 1010",
+    "limitation": "The execution environment blocks anonymous native-Site probes. No bypass attempted; Sites returned deployment succeeded. No separate native HTTP parity claim."
+  },
+  "checks": {
+    "scope": "Real local Protec6500 field investigations: photo OCR/review, sections, actual counters/interval/reset/coverage, corrections, saved jobs, handover and restoration; existing simulation retained.",
+    "nodeRegression": {
+      "tests": 2084,
+      "passed": 2083,
+      "failed": 0,
+      "skipped": 1,
+      "skip": "Existing original manufacturer PDF fixture not bundled."
+    },
+    "finalFocusedGates": {
+      "tests": 29,
+      "passed": 29,
+      "failed": 0
+    },
+    "typescript": "passed",
+    "productionBuild": "passed",
+    "publicAssetGate": "passed",
+    "publicFiles": 1558,
+    "offlineBuildHash": "2c7d00d2cfc5",
+    "browserEvidence": "research/loop-field-0.43.0/browser-verification.md",
+    "chromium": "154.0.8037.57 on Linux;13fieldchecks +11practicechecks, including verified offline shell/OCR/newphoto/job/reload and savedPDFcitation",
+    "webkit": "27.2 on Linux persistent profile;13fieldchecks +11practicechecks, including verified offline shell/OCR/newphoto/job/reload and savedPDFcitation",
+    "firstPhotoOCRMs": {
+      "chromium": 2165,
+      "webkit": 3985
+    },
+    "physicalPhone": false,
+    "nativeBuild": "No new APK/AAB or Play rollout"
+  }
+}

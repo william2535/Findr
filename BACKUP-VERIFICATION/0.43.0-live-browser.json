@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "url": "https://william2535.github.io/Findr/app/#panel-lab/loop-log",
+  "version": "0.43.0",
+  "browser": "154.0.8037.57",
+  "checks": [
+    "Actual Home navigation > Panel Lab > Loop diagnostics opens Site investigation",
+    "New local field job saves",
+    "Reload resumes same field job and mode",
+    "390px no page overflow",
+    "No page errors"
+  ],
+  "errors": []
+}
