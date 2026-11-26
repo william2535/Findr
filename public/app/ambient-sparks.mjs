@@ -1,63 +1,74 @@
-// Decorative yellow sparks only. No job, download or equipment state is changed.
-export function createAmbientSparks({host=window,doc=document}={}){
+// Decorative warm-yellow embers. This never represents equipment or work progress.
+export function createAmbientSparks({host=window,doc=document,random=Math.random}={}){
  const canvas=doc.createElement('canvas');canvas.id='findr-ambient-sparks';canvas.className='ambient-sparks';canvas.setAttribute('aria-hidden','true');
  let ctx;try{ctx=canvas.getContext('2d');}catch{}if(!ctx)return{destroy(){}};
  doc.body.prepend(canvas);
  const reduced=host.matchMedia('(prefers-reduced-motion: reduce)');
  let width=0,height=0,frame=0,timer=0,resizeFrame=0,particles=[],destroyed=false,burst=0;
  const clear=()=>ctx.clearRect(0,0,width,height);
+ const typing=()=>/^(INPUT|TEXTAREA|SELECT)$/.test(doc.activeElement?.tagName||'')||doc.activeElement?.isContentEditable;
+ const allowed=()=>!destroyed&&!doc.hidden&&!reduced.matches&&!typing();
  function stop(){host.clearTimeout(timer);host.cancelAnimationFrame(frame);timer=frame=0;particles=[];clear();canvas.dataset.active='false';}
- const allowed=()=>!destroyed&&!doc.hidden&&!reduced.matches;
- function size(){width=host.innerWidth;height=host.innerHeight;const scale=Math.min(2,host.devicePixelRatio||1);canvas.width=Math.round(width*scale);canvas.height=Math.round(height*scale);canvas.style.width=width+'px';canvas.style.height=height+'px';ctx.setTransform(scale,0,0,scale,0,0);ctx.lineCap='round';ctx.lineJoin='round';}
+ function size(){
+  width=Math.max(1,host.innerWidth);height=Math.max(1,host.innerHeight);
+  // Bound memory/fill cost on phones and large Retina displays, while retaining
+  // antialiased round points. CSS dimensions remain the actual viewport size.
+  const scale=Math.max(1,Math.min(2,host.devicePixelRatio||1,Math.sqrt(6000000/(width*height))));
+  canvas.width=Math.round(width*scale);canvas.height=Math.round(height*scale);canvas.style.width=width+'px';canvas.style.height=height+'px';ctx.setTransform(scale,0,0,scale,0,0);ctx.lineCap='round';ctx.lineJoin='round';
+ }
  function point(shoot){
   const viewport=host.visualViewport,top=viewport?.offsetTop||0,bottom=Math.min(height,top+(viewport?.height||height));
   const header=doc.querySelector('.header')?.getBoundingClientRect();
-  const low=Math.min(bottom-40,Math.max(top+32,header?.bottom||0)+32+(shoot?130:0));
-  const high=Math.max(low,bottom-60),y=()=>low+Math.random()*(high-low);
-  // Prefer genuinely empty space in the current viewport, not text or buttons.
-  // Edge-only 2px bursts were too easy to miss on a portrait phone.
-  const open=(x,y)=>{const hit=doc.elementFromPoint(x,y);return hit&&(hit===doc.body||hit.id==='app'||hit.classList.contains('home-intro')||hit.id==='home-dashboard');};
-  if(Math.random()<.8){for(let i=0;i<16;i++){
-   const x=28+Math.random()*Math.max(1,width-56),py=y();
-   // Check the glow and travel corridor too, so a spark does not immediately
-   // drift underneath a card or across a label after starting in a small gap.
-   const rows=shoot?[-130,-70,-20,0,20]:[-20,0,20,40];
-   if([-20,0,20].every(dx=>rows.every(dy=>open(x+dx,py+dy))))return{x,y:py};
+  const low=Math.max(top+40,Math.min(bottom-70,(header?.bottom||top)+54+(shoot?100:0))),high=Math.max(low,bottom-70);
+  const y=()=>low+random()*(high-low);
+  const open=(x,y)=>{const hit=doc.elementFromPoint(x,y);return hit&&(hit===doc.body||hit.id==='app'||hit.classList?.contains('home-intro')||hit.id==='home-dashboard');};
+  // Keep most bursts in true background space. Always use an inset gutter for
+  // at least every second burst so an opaque mobile card cannot hide all light.
+  if(burst%2===0){for(let i=0;i<12;i++){
+   const x=36+random()*Math.max(1,width-72),py=y(),rows=shoot?[-150,-90,-35,0,25]:[-25,0,25,50];
+   if([-24,0,24].every(dx=>rows.every(dy=>open(x+dx,py+dy))))return{x,y:py};
   }}
-  return{x:Math.random()<.5?12:width-12,y:y()};
+  return{x:random()<.5?14:width-14,y:y()};
  }
  function emit(){
   timer=0;if(!allowed())return;
-  const shoot=++burst%3===0,{x,y}=point(shoot),birth=host.performance.now();
-  particles=[{x,y,birth,life:shoot?1800:2200,vx:shoot?(Math.random()-.5)*8:0,vy:shoot?-65:6,radius:shoot?2.8:3.4,star:!shoot,trail:shoot}];
-  if(!shoot)for(let i=0;i<6;i++){const direction=Math.random()*Math.PI*2,speed=10+Math.random()*16;particles.push({x,y,birth,life:1200+Math.random()*600,vx:Math.cos(direction)*speed,vy:Math.sin(direction)*speed+6,radius:1+Math.random()*.6,star:false,trail:false});}
+  const shoot=++burst%4===0,{x,y}=point(shoot),birth=host.performance.now();
+  particles=[{x,y,birth,life:shoot?2100:2450,vx:shoot?(random()-.5)*10:0,vy:shoot?-64:7,radius:shoot?2.5:3,star:!shoot,trail:shoot}];
+  const count=shoot?2:7;
+  for(let i=0;i<count;i++){
+   const angle=random()*Math.PI*2,speed=8+random()*15;
+   particles.push({x,y,birth,life:1450+random()*650,vx:Math.cos(angle)*speed,vy:Math.sin(angle)*speed+5,radius:.8+random()*.65,star:false,trail:false});
+  }
   canvas.dataset.active='true';canvas.dataset.kind=shoot?'shoot':'spark';frame=host.requestAnimationFrame(draw);
  }
  function draw(now){
   frame=0;if(!allowed()){stop();return;}clear();particles=particles.filter(p=>now-p.birth<p.life);
   for(const p of particles){
-   const age=Math.max(0,now-p.birth),t=age/p.life,seconds=age/1000,fade=(1-t)**1.4;
-   const x=p.x+p.vx*seconds,y=p.y+p.vy*seconds+(p.trail?0:6*seconds*seconds),radius=p.radius*(.45+.55*(1-t));
-   const halo=radius*6,glow=ctx.createRadialGradient(x,y,0,x,y,halo);
-   glow.addColorStop(0,`rgba(255,233,128,${fade*.65})`);glow.addColorStop(.2,`rgba(255,218,61,${fade*.32})`);glow.addColorStop(.6,`rgba(255,199,25,${fade*.07})`);glow.addColorStop(1,'rgba(255,199,25,0)');
+   const age=Math.max(0,now-p.birth),t=age/p.life,seconds=age/1000,fade=(1-t)**1.65;
+   const x=p.x+p.vx*seconds,y=p.y+p.vy*seconds+(p.trail?0:5*seconds*seconds),radius=p.radius*(.38+.62*(1-t));
+   const halo=radius*(p.star?7:5),glow=ctx.createRadialGradient(x,y,0,x,y,halo);
+   glow.addColorStop(0,`rgba(255,243,174,${fade*.8})`);glow.addColorStop(.16,`rgba(255,223,81,${fade*.45})`);glow.addColorStop(.5,`rgba(255,197,32,${fade*.11})`);glow.addColorStop(1,'rgba(255,191,25,0)');
    ctx.fillStyle=glow;ctx.beginPath();ctx.arc(x,y,halo,0,Math.PI*2);ctx.fill();
-   if(p.trail){const tailY=y+28,trail=ctx.createLinearGradient(x,tailY,x,y);trail.addColorStop(0,'rgba(255,218,61,0)');trail.addColorStop(1,`rgba(255,225,90,${fade*.8})`);ctx.strokeStyle=trail;ctx.lineWidth=1.15;ctx.beginPath();ctx.moveTo(x-p.vx*.28,tailY);ctx.lineTo(x,y);ctx.stroke();}
-   if(p.star){const arm=4+6*(1-t);ctx.strokeStyle=`rgba(255,225,90,${fade*.8})`;ctx.lineWidth=1.1;ctx.beginPath();ctx.moveTo(x-arm,y);ctx.lineTo(x+arm,y);ctx.moveTo(x,y-arm);ctx.lineTo(x,y+arm);ctx.stroke();}
-   ctx.fillStyle=`rgba(255,239,154,${fade})`;ctx.beginPath();ctx.arc(x,y,radius,0,Math.PI*2);ctx.fill();
+   if(p.trail){
+    // Short rounded segments taper to a transparent tail; no rectangular glow
+    // textures, hard ends, CSS filters or expensive full-screen blending.
+    const length=36+12*(1-t);
+    for(let i=7;i>=0;i--){const tail=i/8,next=(i+1)/8;ctx.strokeStyle=`rgba(255,224,99,${fade*(1-tail)**2*.78})`;ctx.lineWidth=1.7*(1-tail)+.12;ctx.beginPath();ctx.moveTo(x-p.vx*.48*next,y+length*next);ctx.lineTo(x-p.vx*.48*tail,y+length*tail);ctx.stroke();}
+   }
+   if(p.star){
+    const arm=3+7*(1-t),ray=ctx.createRadialGradient(x,y,0,x,y,arm);ray.addColorStop(0,`rgba(255,244,179,${fade*.9})`);ray.addColorStop(.4,`rgba(255,224,99,${fade*.65})`);ray.addColorStop(1,'rgba(255,224,99,0)');ctx.strokeStyle=ray;ctx.lineWidth=.95;ctx.beginPath();ctx.moveTo(x-arm,y);ctx.lineTo(x+arm,y);ctx.moveTo(x,y-arm);ctx.lineTo(x,y+arm);ctx.stroke();
+   }
+   ctx.fillStyle=`rgba(255,246,189,${fade})`;ctx.beginPath();ctx.arc(x,y,radius,0,Math.PI*2);ctx.fill();
   }
   if(particles.length)frame=host.requestAnimationFrame(draw);
-  else{canvas.dataset.active='false';timer=host.setTimeout(emit,650+Math.random()*900);}
+  else{canvas.dataset.active='false';timer=host.setTimeout(emit,700+random()*1100);}
  }
- function sync(){stop();if(allowed())timer=host.setTimeout(emit,250);}
- // Safari changes viewport height as its toolbar moves. Resize the drawing
- // surface once per frame without cancelling the burst or restarting its timer.
+ function sync(){stop();if(allowed())timer=host.setTimeout(emit,280);}
+ // Safari toolbar/keyboard changes must not repeatedly cancel a visible burst.
  function resize(){if(!resizeFrame)resizeFrame=host.requestAnimationFrame(()=>{
-  resizeFrame=0;size();
-  // Changing canvas dimensions erases its pixels. Redraw in this same frame
-  // so a stream of Safari toolbar resizes cannot erase each visible frame.
-  if(particles.length&&allowed()){host.cancelAnimationFrame(frame);frame=0;draw(host.performance.now());}
+  resizeFrame=0;size();if(particles.length&&allowed()){host.cancelAnimationFrame(frame);frame=0;draw(host.performance.now());}
  });}
  size();sync();
- doc.addEventListener('visibilitychange',sync);host.addEventListener('resize',resize);host.addEventListener('pagehide',stop);host.addEventListener('pageshow',sync);reduced.addEventListener('change',sync);
- return{destroy(){destroyed=true;stop();host.cancelAnimationFrame(resizeFrame);doc.removeEventListener('visibilitychange',sync);host.removeEventListener('resize',resize);host.removeEventListener('pagehide',stop);host.removeEventListener('pageshow',sync);reduced.removeEventListener('change',sync);canvas.remove();}};
+ doc.addEventListener('visibilitychange',sync);doc.addEventListener('focusin',sync);doc.addEventListener('focusout',sync);host.addEventListener('resize',resize);host.addEventListener('pagehide',stop);host.addEventListener('pageshow',sync);reduced.addEventListener('change',sync);
+ return{destroy(){destroyed=true;stop();host.cancelAnimationFrame(resizeFrame);doc.removeEventListener('visibilitychange',sync);doc.removeEventListener('focusin',sync);doc.removeEventListener('focusout',sync);host.removeEventListener('resize',resize);host.removeEventListener('pagehide',stop);host.removeEventListener('pageshow',sync);reduced.removeEventListener('change',sync);canvas.remove();}};
 }

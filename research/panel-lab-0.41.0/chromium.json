@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "startedAt": "2026-11-26T20:18:01.906Z",
+  "browser": "chromium",
+  "base": "http://127.0.0.1:4177/app/",
+  "physicalPhone": false,
+  "environment": "Linux browser; emulated phone viewport. Reduced height checks layout with focused fields, not an actual iPhone keyboard.",
+  "checks": [
+    {
+      "name": "Normal Home and top navigation open Panel Lab; Zone Sketch promotion removed"
+    },
+    {
+      "name": "Create, rename, add input/output and save real AND/delay/latch configuration"
+    },
+    {
+      "name": "Matrix fits320/390/1440px;44px cell targets; focused form remains scrollable at reduced viewport height"
+    },
+    {
+      "name": "Two causes, delay boundary, isolate/restore, latch and reset change real outputs;11s clock and complete run resume after reload"
+    },
+    {
+      "name": "Real JSON/log downloads contain saved rules and events; import creates separate identity; rejected JSON preserves all projects"
+    },
+    {
+      "name": "Seven challenges grade actual rules; wrong board fails, correct board passes, edits clear stale grade;10 sourced lessons open existing trainer without awarding completion"
+    },
+    {
+      "name": "Injected IndexedDB quota failure is visible; unsaved work can be exported; Retry saves it after storage recovers"
+    },
+    {
+      "name": "Reduced-motion reload preserves selected matrix and unrelated saved readings"
+    }
+  ],
+  "errors": [],
+  "networkRequests": [],
+  "browserVersion": "154.0.8037.57",
+  "finishedAt": "2026-11-26T20:18:09.706Z"
+}

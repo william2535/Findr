@@ -1,5 +1,14 @@
 ## GitHub Pages edition — web 0.40.0
 
+## FINDR 0.41.0 — Panel Lab
+
+The Home promotion has been removed and the black/yellow interface refined, with visible soft sparks and tapered trails. **Panel Lab** adds a saved cause-and-effect matrix editor, deterministic simulation, seven graded logic challenges and ten documented panel lessons using the existing emulators. It runs locally without an AI model download.
+
+[Panel Lab guide](docs/PANEL-LAB.md) · [Lesson sources](research/panel-lab-0.41.0/practice-sources.md)
+
+Matrices are learning/design drafts, not native panel configurations or compliance approval. No commands are sent to live equipment. The Android/Play builds are separate release artifacts; this web update does not claim a new signed APK or Play rollout.
+
+
 ## Web0.40.2 — Zone Sketch store link
 
 The Home promotion now opens Zone Sketch in Google Play (`com.zonesketch.app`) and the artwork no longer offers public beta access. Google Play testing is separate; an enrolled tester account may be required while the public listing is unavailable.

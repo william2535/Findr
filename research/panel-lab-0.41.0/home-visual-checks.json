@@ -1,0 +1,22 @@
+{
+  "browser": "Chromium",
+  "physicalPhone": false,
+  "checks": [
+    {
+      "width": 390,
+      "layout": "detailed-and-grid",
+      "horizontalOverflow": false,
+      "toolboxOpens": true,
+      "title": "Build the logic.\nSee it work.",
+      "compactTitle": "Build the logic. See it work."
+    },
+    {
+      "width": 1440,
+      "layout": "detailed-and-grid",
+      "horizontalOverflow": false,
+      "toolboxOpens": true,
+      "title": "Build the logic.\nSee it work.",
+      "compactTitle": "Build the logic. See it work."
+    }
+  ]
+}
