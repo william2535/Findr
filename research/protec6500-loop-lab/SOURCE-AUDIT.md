@@ -1,0 +1,40 @@
+# Protec 6500 loop practice source audit
+
+Reviewed 26 November 2026. The request is interpreted as Protec Algo-Tec 6500 (not an official model named “A6500”). This is research for a bounded FINDR training exercise, not field instructions or a full emulator.
+
+## Sources and provenance
+
+1. Existing Manual Archives record `protec-aee99ea8ed2b`: **Protec Algo-Tec 6500/6600 Commissioning Manual**, RDM0002/2_4, revision table dated 11 December 2017. Manufacturer-authored document hosted by distributor Acorn; downloaded from [the existing catalogue URL](https://www.acornfiresecurity.com/index.php?filename=6500-commissioning-manual.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload). 1,725,172 bytes; SHA-256 `0e841fa49b0a24fac91d5c7cde6987e4b311974d0a96ee78643e0ca17a2bfeb0`. There are 43 actual PDF pages, while the footer says “of 44”; cited PDF positions and printed page numbers coincide. Text extracted with `pdftotext -layout`; rendered pages 7, 8, 10, 13 and 20 visually inspected. This is the runtime citation target; do not silently substitute another edition.
+2. **RDM0002/3**, revision 19 July 2019: manufacturer-authored manual corroborated on [ManualsLib](https://www.manualslib.com/manual/1618133/Protec-Algo-Tec-6500.html), and downloaded using its public [Save PDF link](https://data2.manualslib.com/cpdf/33/162/16182/fda3cd.pdf). 3,005,201 bytes; SHA-256 `a4c5b095db9272356f74cfe5c8c7d5e1ff382ae2173fb2f784a0d0fbe31dee93`. This wrapper has 60 PDF pages: manufacturer pages 1–57 occupy PDF positions 4–60. Logging printed10/PDF13; allocation printed11/PDF14; diagnostic menu printed16/PDF19; Loop Info printed23–24/PDF26–27. Research corroboration only; not a new runtime catalogue record.
+3. **Protec X600 Commissioning Software User Manual**, RDM0024 Issue 6 AC, revision table dated 26 February 2019, 126 printed pages. Public [manufacturer-document transcription on Scribd](https://www.scribd.com/document/558311549/Commissioning-Software-User-Manual) inspected at printed pp52,123 for map-node definition; p35 identifies 6500/6500ND/6600 Fire Panel editor scope. Public HTML downloaded for reproducibility: 1,265,285 bytes, SHA-256 `cf9b4ae14ef7ccd5a13ad664c9d54815f4a63ffa28046aa9a5977c26fd23a02c`. HTML hash is NOT a PDF hash. No verified PDF download/page offset or saved-manual catalogue ID. Link externally, with printed sections, rather than inventing a saved-PDF page link.
+4. Existing `protec-342a0d542c7d`: **6500/6600 Loop Commissioning Manual**, RDM0017 Issue2, 2017, from [Acorn](https://www.acornfiresecurity.com/index.php?filename=6500-Loop-Commissioning.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload). 1,128,518 bytes; SHA-256 `8a0dec64a696fae2768780ecc0db7a25f63dfa6840bd798bb05c52731d8d9590`;39 actual PDF pages. This is mainly a barcode/address record booklet, NOT the diagnostic procedure. Do not cite it as authority for missed-reply analysis.
+5. Official [Protec software/firmware page](https://www.protec.co.uk/help-advice/software/) checked on the review date lists 6500 P5.7 (September2026) and directs current downloads through the Support Portal. Historic 2017/2019 menu references therefore do NOT establish current P5.7 screen parity. The [official 6500 product page](https://www.protec.co.uk/our-products/fire-detection/digital-addressable/panels/6500-single-loop-fire-alarm-panel/) corroborates the family but is not a diagnostic procedure.
+
+All downloaded PDFs and page renders remain under `/tmp/protec6500-research/`; no downloaded manuals are bundled in application source.
+
+## Verified interpretation
+
+- RDM0002/2_4 pp4–8: trained, skilled, competent commissioning personnel; engineer login exposes Main Menu, then Tools Menu. Loop Tools and Diagnostic Tools are different entries. No engineer-code value is given. No code should be invented.
+- pp9–11: logging discovers devices and maps physical position; allocation associates serial numbers with addresses. A logged loop is prerequisite for allocation. Allocate addresses selects panel, card and loop. Its **Map** column is visible in the actual p10 screenshot, and touching headers changes sort. The anecdotal name “allocate loop” is not the documented label. Save changes allocation data; viewing/sorting and changing allocation must remain distinct.
+- X600 pp52,123: map node is based on preceding isolators counted from loop side A. It represents approximate position, not an independent exact cable-sequence survey. Tied map values do not order devices inside that group. The 6500 p10 screenshot itself shows several devices with the same map value. A device need not itself have an isolator to have a map value. Do not infer physical sequence from consecutive addresses, map ties, missing data or a stale upload.
+- RDM0002/2_4 pp13,20–21: Diagnostic Tools → Loop Info selects card then loop. Refresh is every30seconds. **Total Device Missed Replies** counts device-to-loop-card missed replies since reset and indicates signalling quality. **Total Exchange Errors** describes loop-card/driver-processor communication separately. Reset Counts clears both. The manual recommends resetting counts and checking again after one hour, expecting no missed replies. This recommendation must not be shortened silently to a30second acceptance test.
+- RDM0002/2_4 pp30–31: a missing loop device and a loop wiring fault are distinct indications. Loop fault indications latch. Clearing/resetting an indication does not identify its cause.
+
+## Unverified and bounded simulation decisions
+
+No software control called “Split Loop” was found in either reviewed commissioning edition or the X600 manual. No manufacturer-endorsed live physical disconnection/splitting method or safe isolation sequence was obtained. Do not invent that panel menu or present simulator actions as wiring instructions. Any segment comparison must explicitly be a FINDR fictional exercise with known topology and a simulated observation interval.
+
+A lower cumulative value after reset only proves the counter was reset. Compare the newly accumulated missed replies with baseline under a stated comparable interval/condition; a change in reachable devices or topology affects the interpretation. Even a lower comparable rate narrows a hypothesis; it does not prove a bad cable, interference, device corruption, or successful restoration. These are analytical safeguards and simulator design decisions, not quoted Protec procedures.
+
+Unmapped devices, branching and stale maps must remain uncertain. The documents reviewed do not specify complete branch/spur reconstruction behaviour; the simulation must not extrapolate it. Physical sequencing inside a tied map group requires independent site evidence.
+
+For training prerequisite/restoration screens, record authorisation, monitoring/fire strategy arrangements and expected impairment before a fictional topology change. Require the fictional loop and affected devices/outputs restored, introduced changes cleared, functional check and a comparable post-restoration observation before marking the exercise complete. These safeguards do not turn the lab into a commissioning certificate or replace applicable procedures.
+
+## Suggested scenarios
+
+1. Sort non-consecutive addresses by map node; preserve tied groups as unresolved until an explicit fictional site survey supplies order.
+2. Baseline cumulative missed replies, then compare equal simulated intervals for two known segments. Keep the other segment's missing devices visible and avoid attributing a cause solely from reduced replies.
+3. Restore topology and compare again. A restored loop with recurring missed replies is unresolved; simply resetting the displayed count cannot pass.
+4. Missing map / incomplete physical sequence: select “need topology evidence”, with feedback for refusing to use address number as physical position.
+
+`./sources.json` contains citation objects and checked navigation labels for the UI author. The source objects pin PDF hash, edition and page; an existing saved PDF with a different hash/edition must not inherit these page claims without checking.

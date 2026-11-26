@@ -19,6 +19,20 @@ Seven matrix challenges grade the behaviour you build, with hints and individual
 
 Manufacturer lessons show the existing reviewed manual editions and PDF page references. A saved manual opens through FINDR's normal reader. If it is not saved, obtain it through the normal manual library before expecting the PDF to work offline. See [practice source coverage](../research/panel-lab-0.41.0/practice-sources.md).
 
+## Protec 6500 loop diagnostics
+
+Choose **Loop diagnostics** or open `#panel-lab/loops`. Pick a mapped, intermittent or incomplete-map exercise. Review its scope and Map groups, then check the independently supplied fictional survey. Consecutive addresses and tied Map values never establish cable order.
+
+Record a whole-loop baseline, then compare virtual section configurations using equal one-hour simulated windows. Each observation is calculated immediately; the app does not pretend to wait an hour or collect actual measurements. Reset synthetic counters when changing configuration. Earlier readings remain in the chronological log. Per-device attempts and missed replies are fictional teaching data; the cited 6500 manual describes a total missed-reply counter.
+
+Hints explain the next useful check. Repeated observations and opposite-section coverage can narrow the synthetic fault to a section. A reduced count, a reset or an unpolled device cannot prove a repair. Incomplete maps and intermittent symptoms can finish as unresolved handovers with their limitations retained.
+
+Record the finding, restore the original virtual configuration, reset counters and take a final whole-loop observation before completing the lesson. Export the evidence log to retain a separate run. Starting another exercise explicitly replaces only the saved loop exercise; it leaves matrices, manuals, Panel Pals and other jobs intact. IndexedDB save errors offer retry and export. An unreadable saved exercise is preserved until explicitly replaced.
+
+Menu references cite Protec **RDM0002/2_4, 11 December 2017**, particularly p10 (Allocate addresses / Map) and pp20–21 (Loop Info / counters). The PDF is a separate library download. A source with different saved bytes opens at page1 with an edition warning instead of assuming the reviewed page. The external X600 mapping-limit reference requires internet access. See the [source audit](../research/protec6500-loop-lab/SOURCE-AUDIT.md); current firmware screens and real physical splitting procedures have not been verified.
+
+Implementation: `public/app/protec-loop-engine.mjs` is a deterministic action-replay engine; `protec-loop-lab.mjs` is its UI. The separate `panel-lab-protec-loop-v1` setting preserves matrix history. No AI model, account or panel connection is needed.
+
 ## Offline and scope
 
 Wait for FINDR's app installation to complete while online. The matrix editor, simulation, grading and existing bundled emulator lessons then run without a model download or an online AI service. Saved PDFs remain separate downloads.

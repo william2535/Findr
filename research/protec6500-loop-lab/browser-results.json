@@ -1,0 +1,125 @@
+{
+  "testedAt": "2026-11-26",
+  "applicationVersion": "0.42.0",
+  "build": "fc785a81ee8e",
+  "automation": "Playwright 1.65.1 on Linux",
+  "results": [
+    {
+      "browser": "chromium",
+      "browserVersion": "154.0.8037.57",
+      "status": "passed",
+      "physicalDevice": false,
+      "offline": true,
+      "checks": [
+        {
+          "name": "Fine-pointer desktop opens the normal navigation entry, saves a real action and fits at 1440px"
+        },
+        {
+          "name": "Normal Panel Lab entry opens Loop diagnostics and retains the existing edited matrix"
+        },
+        {
+          "name": "Addresses and Map groups use different order; exact survey positions are explicitly independent; real hints open"
+        },
+        {
+          "name": "Each action advances one synthetic hour; interval deltas stay separate from cumulative counts; premature completion is rejected"
+        },
+        {
+          "name": "Repeat equal windows localise synthetic section C; excluded devices display Not polled and dashes, never healthy zero readings"
+        },
+        {
+          "name": "Phone, tablet, large touch and reduced-height layouts fit; alias/navigation/reload preserve exact actions and unrelated matrix"
+        },
+        {
+          "name": "Later configuration changes invalidate restoration; completed exported handover retains missed replies and unconfirmed cause/repair"
+        },
+        {
+          "name": "Intermittent quiet windows remain uncertain; incomplete map supplies no invented route, blocks splits and retains missing-address coverage at handover"
+        },
+        {
+          "name": "Reviewed manual opens PDFpage21; forged matching metadata with different actual bytes is rejected for that page and opens page1 with an edition warning"
+        },
+        {
+          "name": "Injected quota failure preserves saved actions and supports Retry; malformed data is retained rather than silently replaced; matrices are unaffected"
+        },
+        {
+          "name": "Actual SHA256-verified service-worker release runs new observations, reloads saved state and opens the downloaded citation with networking disabled",
+          "details": {
+            "ready": true,
+            "build": "fc785a81ee8e",
+            "version": "0.42.0",
+            "verification": "sha256-v1",
+            "verificationWaitMs": 41
+          }
+        }
+      ],
+      "errors": [],
+      "elapsedMs": 24277,
+      "offlineShell": {
+        "ready": true,
+        "build": "fc785a81ee8e",
+        "version": "0.42.0",
+        "verification": "sha256-v1",
+        "verificationWaitMs": 41
+      }
+    },
+    {
+      "browser": "webkit",
+      "browserVersion": "27.2",
+      "status": "passed",
+      "physicalDevice": false,
+      "offline": true,
+      "checks": [
+        {
+          "name": "Fine-pointer desktop opens the normal navigation entry, saves a real action and fits at 1440px"
+        },
+        {
+          "name": "Normal Panel Lab entry opens Loop diagnostics and retains the existing edited matrix"
+        },
+        {
+          "name": "Addresses and Map groups use different order; exact survey positions are explicitly independent; real hints open"
+        },
+        {
+          "name": "Each action advances one synthetic hour; interval deltas stay separate from cumulative counts; premature completion is rejected"
+        },
+        {
+          "name": "Repeat equal windows localise synthetic section C; excluded devices display Not polled and dashes, never healthy zero readings"
+        },
+        {
+          "name": "Phone, tablet, large touch and reduced-height layouts fit; alias/navigation/reload preserve exact actions and unrelated matrix"
+        },
+        {
+          "name": "Later configuration changes invalidate restoration; completed exported handover retains missed replies and unconfirmed cause/repair"
+        },
+        {
+          "name": "Intermittent quiet windows remain uncertain; incomplete map supplies no invented route, blocks splits and retains missing-address coverage at handover"
+        },
+        {
+          "name": "Reviewed manual opens PDFpage21; forged matching metadata with different actual bytes is rejected for that page and opens page1 with an edition warning"
+        },
+        {
+          "name": "Injected quota failure preserves saved actions and supports Retry; malformed data is retained rather than silently replaced; matrices are unaffected"
+        },
+        {
+          "name": "Actual SHA256-verified service-worker release runs new observations, reloads saved state and opens the downloaded citation with networking disabled",
+          "details": {
+            "ready": true,
+            "build": "fc785a81ee8e",
+            "version": "0.42.0",
+            "verification": "sha256-v1",
+            "verificationWaitMs": 4306
+          }
+        }
+      ],
+      "errors": [],
+      "elapsedMs": 40726,
+      "offlineShell": {
+        "ready": true,
+        "build": "fc785a81ee8e",
+        "version": "0.42.0",
+        "verification": "sha256-v1",
+        "verificationWaitMs": 4306
+      },
+      "storageContext": "Fresh persistent profile; actual IndexedDB Blob records"
+    }
+  ]
+}

@@ -1,5 +1,13 @@
 ## GitHub Pages edition — web 0.40.0
 
+## FINDR 0.42.0 — Protec 6500 loop practice
+
+Open **Panel Lab → Loop diagnostics** to practise sorting Map groups, inspecting cumulative missed replies, comparing virtual sections and recording a handover. Three saved exercises cover a mapped loop, intermittent symptoms and incomplete topology. Hints, equal one-hour simulated observation windows, polling coverage and restoration checks keep the conclusions tied to recorded evidence. This is an offline learning exercise, not a connection to a panel or a full 6500 emulator.
+
+The documented menu references use Protec commissioning manual **RDM0002/2_4 (2017)**. Its Map values do not establish exact order within an isolator group. Virtual section tests are FINDR controls; no manufacturer “Split Loop” command or live disconnection procedure is claimed. Saved PDF citations check the reviewed file hash before applying a page reference. Current firmware parity remains unverified.
+
+[Panel Lab guide](docs/PANEL-LAB.md) · [Source audit](research/protec6500-loop-lab/SOURCE-AUDIT.md)
+
 ## FINDR 0.41.0 — Panel Lab
 
 The Home promotion has been removed and the black/yellow interface refined, with visible soft sparks and tapered trails. **Panel Lab** adds a saved cause-and-effect matrix editor, deterministic simulation, seven graded logic challenges and ten documented panel lessons using the existing emulators. It runs locally without an AI model download.

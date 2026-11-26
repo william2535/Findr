@@ -1,0 +1,201 @@
+{
+  "reviewedAt": "2026-11-26",
+  "scope": "Historical Protec Algo-Tec 6500/6600 menu references from RDM0002/2_4. Current firmware parity not verified. Training-only simulation; no connection to a live panel.",
+  "sources": {
+    "scope": {
+      "recordId": "protec-aee99ea8ed2b",
+      "title": "Protec Algo-Tec 6500/6600 \u2014 Commissioning manual",
+      "edition": "RDM0002/2_4 \u00b7 11 December 2017",
+      "url": "https://www.acornfiresecurity.com/index.php?filename=6500-commissioning-manual.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+      "sha256": "0e841fa49b0a24fac91d5c7cde6987e4b311974d0a96ee78643e0ca17a2bfeb0",
+      "pdfPage": 4,
+      "printedPage": 4,
+      "section": "Introduction"
+    },
+    "login": {
+      "recordId": "protec-aee99ea8ed2b",
+      "title": "Protec Algo-Tec 6500/6600 \u2014 Commissioning manual",
+      "edition": "RDM0002/2_4 \u00b7 11 December 2017",
+      "url": "https://www.acornfiresecurity.com/index.php?filename=6500-commissioning-manual.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+      "sha256": "0e841fa49b0a24fac91d5c7cde6987e4b311974d0a96ee78643e0ca17a2bfeb0",
+      "pdfPage": 5,
+      "printedPage": 5,
+      "section": "1.1 Login"
+    },
+    "mainMenu": {
+      "recordId": "protec-aee99ea8ed2b",
+      "title": "Protec Algo-Tec 6500/6600 \u2014 Commissioning manual",
+      "edition": "RDM0002/2_4 \u00b7 11 December 2017",
+      "url": "https://www.acornfiresecurity.com/index.php?filename=6500-commissioning-manual.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+      "sha256": "0e841fa49b0a24fac91d5c7cde6987e4b311974d0a96ee78643e0ca17a2bfeb0",
+      "pdfPage": 6,
+      "printedPage": 6,
+      "section": "1.2 Entering the Menu System"
+    },
+    "toolsMenu": {
+      "recordId": "protec-aee99ea8ed2b",
+      "title": "Protec Algo-Tec 6500/6600 \u2014 Commissioning manual",
+      "edition": "RDM0002/2_4 \u00b7 11 December 2017",
+      "url": "https://www.acornfiresecurity.com/index.php?filename=6500-commissioning-manual.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+      "sha256": "0e841fa49b0a24fac91d5c7cde6987e4b311974d0a96ee78643e0ca17a2bfeb0",
+      "pdfPage": 7,
+      "printedPage": 7,
+      "section": "1.3 Tools Menu"
+    },
+    "loopTools": {
+      "recordId": "protec-aee99ea8ed2b",
+      "title": "Protec Algo-Tec 6500/6600 \u2014 Commissioning manual",
+      "edition": "RDM0002/2_4 \u00b7 11 December 2017",
+      "url": "https://www.acornfiresecurity.com/index.php?filename=6500-commissioning-manual.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+      "sha256": "0e841fa49b0a24fac91d5c7cde6987e4b311974d0a96ee78643e0ca17a2bfeb0",
+      "pdfPage": 8,
+      "printedPage": 8,
+      "section": "1.4 Loop Tools"
+    },
+    "logging": {
+      "recordId": "protec-aee99ea8ed2b",
+      "title": "Protec Algo-Tec 6500/6600 \u2014 Commissioning manual",
+      "edition": "RDM0002/2_4 \u00b7 11 December 2017",
+      "url": "https://www.acornfiresecurity.com/index.php?filename=6500-commissioning-manual.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+      "sha256": "0e841fa49b0a24fac91d5c7cde6987e4b311974d0a96ee78643e0ca17a2bfeb0",
+      "pdfPage": 9,
+      "printedPage": 9,
+      "section": "1.5 Loop logging"
+    },
+    "mapping": {
+      "recordId": "protec-aee99ea8ed2b",
+      "title": "Protec Algo-Tec 6500/6600 \u2014 Commissioning manual",
+      "edition": "RDM0002/2_4 \u00b7 11 December 2017",
+      "url": "https://www.acornfiresecurity.com/index.php?filename=6500-commissioning-manual.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+      "sha256": "0e841fa49b0a24fac91d5c7cde6987e4b311974d0a96ee78643e0ca17a2bfeb0",
+      "pdfPage": 10,
+      "printedPage": 10,
+      "section": "1.6 Allocate Addresses \u2014 Map column"
+    },
+    "allocationExit": {
+      "recordId": "protec-aee99ea8ed2b",
+      "title": "Protec Algo-Tec 6500/6600 \u2014 Commissioning manual",
+      "edition": "RDM0002/2_4 \u00b7 11 December 2017",
+      "url": "https://www.acornfiresecurity.com/index.php?filename=6500-commissioning-manual.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+      "sha256": "0e841fa49b0a24fac91d5c7cde6987e4b311974d0a96ee78643e0ca17a2bfeb0",
+      "pdfPage": 11,
+      "printedPage": 11,
+      "section": "1.6 Allocate Addresses \u2014 save/exit"
+    },
+    "diagnostics": {
+      "recordId": "protec-aee99ea8ed2b",
+      "title": "Protec Algo-Tec 6500/6600 \u2014 Commissioning manual",
+      "edition": "RDM0002/2_4 \u00b7 11 December 2017",
+      "url": "https://www.acornfiresecurity.com/index.php?filename=6500-commissioning-manual.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+      "sha256": "0e841fa49b0a24fac91d5c7cde6987e4b311974d0a96ee78643e0ca17a2bfeb0",
+      "pdfPage": 13,
+      "printedPage": 13,
+      "section": "1.8 Diagnostic Tools"
+    },
+    "loopInfo": {
+      "recordId": "protec-aee99ea8ed2b",
+      "title": "Protec Algo-Tec 6500/6600 \u2014 Commissioning manual",
+      "edition": "RDM0002/2_4 \u00b7 11 December 2017",
+      "url": "https://www.acornfiresecurity.com/index.php?filename=6500-commissioning-manual.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+      "sha256": "0e841fa49b0a24fac91d5c7cde6987e4b311974d0a96ee78643e0ca17a2bfeb0",
+      "pdfPage": 20,
+      "printedPage": 20,
+      "section": "1.12 Loop Info"
+    },
+    "missedReplies": {
+      "recordId": "protec-aee99ea8ed2b",
+      "title": "Protec Algo-Tec 6500/6600 \u2014 Commissioning manual",
+      "edition": "RDM0002/2_4 \u00b7 11 December 2017",
+      "url": "https://www.acornfiresecurity.com/index.php?filename=6500-commissioning-manual.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+      "sha256": "0e841fa49b0a24fac91d5c7cde6987e4b311974d0a96ee78643e0ca17a2bfeb0",
+      "pdfPage": 21,
+      "printedPage": 21,
+      "section": "1.12 Loop Info \u2014 counters"
+    },
+    "loopFaults": {
+      "recordId": "protec-aee99ea8ed2b",
+      "title": "Protec Algo-Tec 6500/6600 \u2014 Commissioning manual",
+      "edition": "RDM0002/2_4 \u00b7 11 December 2017",
+      "url": "https://www.acornfiresecurity.com/index.php?filename=6500-commissioning-manual.pdf&route=extension%2Fmodule%2Fdocument%2Fdownload",
+      "sha256": "0e841fa49b0a24fac91d5c7cde6987e4b311974d0a96ee78643e0ca17a2bfeb0",
+      "pdfPage": 30,
+      "printedPage": 30,
+      "section": "2.4 Loop faults"
+    },
+    "mapLimits": {
+      "recordId": null,
+      "title": "Protec X600 Commissioning Software User Manual",
+      "edition": "RDM0024 Issue 6 AC \u00b7 26 February 2019",
+      "url": "https://www.scribd.com/document/558311549/Commissioning-Software-User-Manual",
+      "pdfPage": null,
+      "printedPages": [
+        52,
+        123
+      ],
+      "section": "Loop Devices / glossary: Loop Map Node",
+      "retrieval": "Public HTML transcription of manufacturer-authored manual; not a downloadable catalogue PDF. No verified PDF page position.",
+      "htmlSha256": "cf9b4ae14ef7ccd5a13ad664c9d54815f4a63ffa28046aa9a5977c26fd23a02c"
+    }
+  },
+  "menuGuides": [
+    {
+      "id": "mapping",
+      "title": "View the map column",
+      "path": [
+        "Engineer login",
+        "Main Menu",
+        "Tools Menu",
+        "Loop Tools",
+        "Allocate addresses",
+        "Select panel",
+        "Select loop card",
+        "Select loop",
+        "Map column header"
+      ],
+      "sources": [
+        "login",
+        "mainMenu",
+        "toolsMenu",
+        "loopTools",
+        "mapping"
+      ],
+      "caution": "This is an allocation screen with write controls. Sorting a column is not allocating an address. The lab does not change panel configuration. No default engineer code is established by this source."
+    },
+    {
+      "id": "missed-replies",
+      "title": "View missed-reply diagnostics",
+      "path": [
+        "Engineer login",
+        "Main Menu",
+        "Tools Menu",
+        "Diagnostic Tools",
+        "Loop Info",
+        "Select loop card",
+        "Select loop"
+      ],
+      "sources": [
+        "login",
+        "mainMenu",
+        "toolsMenu",
+        "diagnostics",
+        "loopInfo",
+        "missedReplies"
+      ],
+      "caution": "Total Device Missed Replies is cumulative since Reset Counts. Reset Counts also clears Total Exchange Errors. It is not the panel Reset control. Preserve baseline evidence before clearing counters."
+    }
+  ],
+  "verifiedTerms": {
+    "mapSort": "Map column header",
+    "allocationMenu": "Allocate addresses",
+    "missedReplies": "Total Device Missed Replies",
+    "exchangeErrors": "Total Exchange Errors",
+    "resetCounters": "Reset Counts"
+  },
+  "limits": [
+    "Map node is approximate, derived from preceding isolators from side A; ties do not establish order within a group.",
+    "A Split Loop software menu/action was not found in either commissioning edition or the X600 manual. Training segment comparisons must not be represented as a real panel command.",
+    "Counter decrease after reset is not proof of improvement. Compare new missed replies over equal observation windows and note missing devices and topology changes.",
+    "A lower missed-reply count supports a narrower investigation, not a confirmed cable fault, corrupted device or cause.",
+    "No manufacturer-endorsed physical split/disconnection procedure was verified. Do not provide wiring steps."
+  ]
+}
