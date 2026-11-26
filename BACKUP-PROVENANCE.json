@@ -1,23 +1,23 @@
 {
-  "webVersion": "0.41.0",
-  "siteVersion": 94,
+  "webVersion": "0.42.0",
+  "siteVersion": 95,
   "siteProjectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
-  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_334bdc4b38f08191b3b2c244c2d720a2",
-  "deploymentId": "appgdep_6b08962f0ff08191a656cacc406b2d10",
+  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_20774ef6f09c8191985e6f3fc30fd45c",
+  "deploymentId": "appgdep_6b08afc2d0248191b23a0900e8b63619",
   "deploymentStatus": "succeeded",
-  "deploymentUpdatedAt": "2026-11-26T20:27:45.537926+00:00",
+  "deploymentUpdatedAt": "2026-11-26T22:16:53.031827+00:00",
   "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site",
-  "sourceCommit": "029dab57d76da05772f676dd0171121cf3e2e155",
+  "sourceCommit": "a139e4c106ef26ca3462877f77a69a28f5aa9c10",
   "sourceRepository": "Sites project source repository",
   "githubRepository": "https://github.com/william2535/Findr",
   "githubBranch": "main",
   "backupRevision": "The Git commit containing this provenance and SOURCE-FILES.sha256 identifies the backup; it intentionally differs from the deployment source commit.",
   "sourceManifest": "SOURCE-FILES.sha256",
   "manifestScope": "All source-backup payload files except the checksum manifest itself; includes GitHub setup/export documentation and separately archived recovery files.",
-  "verifiedOriginalSourceFiles": 3175,
+  "verifiedOriginalSourceFiles": 3186,
   "intentionallyDetachedFile": ".openai/hosting.json",
   "detachedHostingReason": "Keep a migrated checkout separate from the original live ChatGPT Site.",
-  "intentionalExclusions": "EXPORT-EXCLUSIONS.json and normal private/cache/user-data exclusions; explicit exception: current signed 0.37.0 APK retained as an additional artifact, with checksum and source. Historical export exclusions remain unchanged.",
+  "intentionalExclusions": "Existing EXPORT-EXCLUSIONS.json remains applicable. Private android/preview.keystore excluded. Hosting identity detached. Legacy0.14.1 APK supplied only to isolated build for existing retention gate; historical GitHub export omits it. Current0.37.0 APK remains separately retained with immutable checksum/source. No downloaded manuals/model weights/user data added.",
   "provenanceArchive": {
     "manifest": "SOURCE-FILES.sha256",
     "documentation": [
@@ -29,46 +29,47 @@
     "recoveryArchive": "WORKSPACE-RECOVERY/original-workspace-files.zip"
   },
   "checks": {
-    "scope": "Panel Lab matrix editor, simulation, seven graded challenges, ten source-backed emulator lessons, Home polish and ambient sparks",
+    "scope": "Protec6500 Map groups, synthetic section comparisons, missed-reply evidence, hints/citations and saved handover/restoration",
     "nodeRegression": {
-      "tests": 2028,
-      "passed": 2027,
+      "tests": 2040,
+      "passed": 2039,
       "failed": 0,
       "skipped": 1,
-      "skip": "Original manufacturer PDF byte/text re-extraction fixture unavailable; existing reviewed references retained."
+      "skip": "Existing test requires an original reviewed manufacturer PDF fixture that is not bundled."
     },
     "typescript": "passed",
     "productionBuild": "passed",
     "publicAssetGate": "passed",
-    "offlineBuildHash": "aba35152880b",
-    "browserEvidence": "research/panel-lab-0.41.0/browser-verification.md",
-    "chromium": "154.0.8037.57 on Linux, phone widths and network-disabled cold reload passed",
-    "webkit": "26.0 on Linux, online phone/desktop UI passed",
+    "publicFiles": 1552,
+    "offlineBuildHash": "fc785a81ee8e",
+    "browserEvidence": "research/protec6500-loop-lab/browser-verification.md",
+    "chromium": "154.0.8037.57 on Linux;11 checks including verified offline shell and actual savedPDF p21",
+    "webkit": "27.2 on Linux persistent profile;11 checks including verified offline shell and actual savedPDF p21",
     "physicalPhone": false,
-    "nativeBuild": "No APK/AAB rebuilt or Play track modified"
+    "nativeBuild": "No new APK/AAB or Play rollout"
   },
   "secretReview": {
-    "scope": "New Panel Lab code, authored tests, synthetic browser evidence and non-secret release metadata; existing export exclusions retained.",
-    "limitations": "Not a new full-repository secret audit. Signing material and real environment files remain excluded."
+    "scope": "New synthetic loop engine/UI, regression harness, source audit and release records; existing export exclusions retained. No private keys, real environment values or downloaded manuals added.",
+    "limitations": "Not a new full-repository secret audit."
   },
-  "preparedAt": "2026-11-26T20:29:32.999026+00:00",
+  "preparedAt": "2026-11-26T22:18:34.526327+00:00",
   "deploymentArchive": {
-    "sha256": "27db9eb1d52a8353e78b09c9dc42738e729e85c944c16b342cfb3a1a797737c4",
-    "bytes": 168796160,
-    "fileCount": 1656,
+    "sha256": "845a01d0e53c86d0df1c8a8c76296862f531ac9ab904b8ddb9358e2234d1d756",
+    "bytes": 168990720,
+    "fileCount": 1659,
     "note": "Server-returned normalized saved archive metadata."
   },
   "previousPublishedRelease": {
-    "webVersion": "0.40.2",
-    "siteVersion": 93,
-    "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_d5f3446435308191842f044dcafe17d6",
-    "deploymentId": "appgdep_6afda3402e108191919ebab40667968b",
+    "webVersion": "0.41.0",
+    "siteVersion": 94,
+    "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_334bdc4b38f08191b3b2c244c2d720a2",
+    "deploymentId": "appgdep_6b08962f0ff08191a656cacc406b2d10",
     "deploymentStatus": "succeeded",
-    "deploymentUpdatedAt": "2026-11-18T13:08:59+00:00",
-    "sourceCommit": "4bce7fd6b5b96d40201d6c71d1765cc865b8d7a3",
+    "deploymentUpdatedAt": "2026-11-26T20:27:45.537926+00:00",
+    "sourceCommit": "029dab57d76da05772f676dd0171121cf3e2e155",
     "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site"
   },
-  "publicationNote": "Web0.41.0 published as Site94 from current original source plus newer GitHub startup, catalogue and Play source. GitHub main contains matching app source. This documentation-only backup record does not change app bytes. See checked browser evidence; no new native release.",
+  "publicationNote": "Web0.42.0 published as Site95 (Sites returned succeeded). GitHub main contains matching app source; Pages source9537e0f passed deployment and live smoke checks. Native anonymous HTTP probe is blocked by execution-environment Envoy403/1010, so no separate native HTTP parity check is claimed. Three synthetic Protec6500 loop exercises reuse historical menu references, not a live split command. No native release.",
   "additionalRetainedArtifacts": [
     {
       "path": "public/releases/FINDR-0.37.0.apk",
@@ -111,8 +112,8 @@
     "evidence": "BACKUP-VERIFICATION/0.38.0-pack-public.json"
   },
   "localBuildArchive": {
-    "sha256": "da31eff1045346baaa18dfb9ee939886ee31fbafca7f15a935ad14bafe0ac4ff",
-    "bytes": 170547200,
+    "sha256": "144c4d1cdfbdcd9502926c340bce72143fae0b583a25707d5a4fd3260af94008",
+    "bytes": 169011200,
     "uploaded": true
   },
   "githubPages": {
@@ -120,12 +121,13 @@
     "appUrl": "https://william2535.github.io/Findr/app/",
     "status": "published_and_verified",
     "workflow": ".github/workflows/deploy-pages.yml",
-    "deployedCommit": "6a3752cbb7974e1a7aabd2db915cbf41ef6dac91",
-    "workflowRunId": 45891288953,
-    "workflowUrl": "https://github.com/william2535/Findr/actions/runs/45891288953",
+    "deployedCommit": "9537e0fc78d6864c9cacb4e9ce90a027568478cf",
+    "workflowRunId": 45903306501,
+    "workflowUrl": "https://github.com/william2535/Findr/actions/runs/45903306501",
     "workflowConclusion": "success",
-    "offlineBuild": "0ac751fcd6a4",
-    "publicationEvidence": "BACKUP-VERIFICATION/0.41.0-publication.json"
+    "offlineBuild": "aa3672d98ad3",
+    "httpChecks": "BACKUP-VERIFICATION/0.42.0-publication.json",
+    "browserSmoke": "BACKUP-VERIFICATION/0.42.0-live-browser.json"
   },
   "previousGithubPages": {
     "url": "https://william2535.github.io/Findr/",
@@ -204,12 +206,13 @@
     }
   },
   "sourceComparison": {
-    "byteIdenticalTrackedFiles": 3175,
-    "intentionalDifferences": {
-      ".openai/hosting.json": "GitHub copy intentionally detached from original Site",
-      "android/preview.keystore": "Private signing material excluded",
-      "public/releases/FINDR-0.14.1.apk": "Historical generated APK excluded from GitHub; restored locally from original Site source and verified against retained checksum for validation only"
-    },
-    "githubAppCommit": "6a3752cbb7974e1a7aabd2db915cbf41ef6dac91"
+    "matchedSourceFiles": 3186,
+    "intentionalDifferences": [
+      ".openai/hosting.json",
+      "android/preview.keystore",
+      "public/releases/FINDR-0.14.1.apk"
+    ],
+    "sourceCommit": "a139e4c106ef26ca3462877f77a69a28f5aa9c10",
+    "githubAppCommit": "9537e0fc78d6864c9cacb4e9ce90a027568478cf"
   }
 }

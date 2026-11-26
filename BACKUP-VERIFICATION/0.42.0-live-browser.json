@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "url": "https://william2535.github.io/Findr/app/#panel-lab",
+  "version": "0.42.0",
+  "browser": "154.0.8037.57",
+  "checks": [
+    "Home navigation > Panel Lab > Loop diagnostics",
+    "three scenarios visible",
+    "scope and Map actions recorded",
+    "reload resumes Map step",
+    "390px no page overflow",
+    "no page errors"
+  ],
+  "errors": []
+}

@@ -1,0 +1,87 @@
+{
+  "webVersion": "0.42.0",
+  "sourceCommit": "a139e4c106ef26ca3462877f77a69a28f5aa9c10",
+  "githubAppCommit": "9537e0fc78d6864c9cacb4e9ce90a027568478cf",
+  "siteVersion": 95,
+  "siteDeploymentId": "appgdep_6b08afc2d0248191b23a0900e8b63619",
+  "siteDeploymentStatus": "succeeded",
+  "githubPagesWorkflowRunId": 45903306501,
+  "githubPagesWorkflowConclusion": "success",
+  "githubPagesHttpChecks": [
+    {
+      "path": "app-release.json",
+      "status": 200,
+      "bytes": 21,
+      "sha256": "08b19e2b5f89ae847277fae503fe0cba4e4a4f1f3ee1f111f5960e48ddfa1f16",
+      "version": "0.42.0"
+    },
+    {
+      "path": "app/version.mjs",
+      "status": 200,
+      "bytes": 722,
+      "sha256": "e10ee3dbe9ee6b2f9728b0e66792f9aeac5ffbe883d48e5e795805a77b6e2fe2",
+      "matchesSource": true
+    },
+    {
+      "path": "app/app.mjs",
+      "status": 200,
+      "bytes": 107232,
+      "sha256": "322923385215eaa7b6ce68191028425591e4b720c261fa8f0bd0762d729cf24b",
+      "matchesSource": true
+    },
+    {
+      "path": "app/protec-loop-engine.mjs",
+      "status": 200,
+      "bytes": 23096,
+      "sha256": "4319fbdbc4ed9f7e2a8c85e2d21bf083b527d74e8468a5dd9456e11757f2783e",
+      "matchesSource": true
+    },
+    {
+      "path": "app/protec-loop-lab.mjs",
+      "status": 200,
+      "bytes": 27803,
+      "sha256": "2801b28cf61f86c640f8e3c9c0b1932580b9745a163547a518aff635a9e52c3c",
+      "matchesSource": true
+    },
+    {
+      "path": "app/panel-lab.mjs",
+      "status": 200,
+      "bytes": 34354,
+      "sha256": "ad7a03c349dd943feaa519a2891d35f7743007d29bacf5c82ee7101afc436805",
+      "matchesSource": true
+    },
+    {
+      "path": "app/panel-lab.css",
+      "status": 200,
+      "bytes": 26302,
+      "sha256": "c0d820f1ab95b705e65517243cf777a8c86110d4263be39a0844ef87fa78cebc",
+      "matchesSource": true
+    },
+    {
+      "path": "app/precache.js",
+      "status": 200,
+      "bytes": 212797,
+      "sha256": "31451894ad90342f25073f3c3f0a7c48279a756b2a7c565b02f2e70e0492c199",
+      "offlineBuild": "aa3672d98ad3"
+    }
+  ],
+  "nativeSiteHttpCheck": {
+    "status": 403,
+    "response": "envoy error code:1010",
+    "verified": false,
+    "note": "Execution environment probe blocked; Sites deployment itself returned succeeded. No bypass attempted."
+  },
+  "sourceComparison": {
+    "matchedSourceFiles": 3186,
+    "intentionalDifferences": [
+      ".openai/hosting.json",
+      "android/preview.keystore",
+      "public/releases/FINDR-0.14.1.apk"
+    ],
+    "sourceCommit": "a139e4c106ef26ca3462877f77a69a28f5aa9c10",
+    "githubAppCommit": "9537e0fc78d6864c9cacb4e9ce90a027568478cf"
+  },
+  "testEvidence": "research/protec6500-loop-lab/browser-verification.md",
+  "newsCommit": "e1304904b0da8bfe0c9fa05e8bc94221506b06fc",
+  "nativeBuild": "No APK/AAB rebuild or Play rollout."
+}
