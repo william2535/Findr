@@ -1,0 +1,63 @@
+{
+  "browser": "chromium",
+  "physicalDevice": false,
+  "offline": false,
+  "base": "http://127.0.0.1:4187/app/",
+  "checks": [
+    {
+      "name": "Default Home keeps installation and About closed",
+      "details": {
+        "page": 1637,
+        "home": 1370
+      }
+    },
+    {
+      "name": "Layouts, controls and toolbox fit 320px"
+    },
+    {
+      "name": "Layouts, controls and toolbox fit 390px"
+    },
+    {
+      "name": "Layouts, controls and toolbox fit 820px"
+    },
+    {
+      "name": "Layouts, controls and toolbox fit 1440px"
+    },
+    {
+      "name": "Layout and independent disclosure choices survive reload"
+    },
+    {
+      "name": "Every daily shortcut opens its real existing workspace"
+    },
+    {
+      "name": "Update app is reachable and offline failure remains retryable"
+    },
+    {
+      "name": "Storage dialog, system PDF picker and offline status remain available"
+    },
+    {
+      "name": "Saved PDF bytes and real pack-use history survive reload without duplicate cards"
+    },
+    {
+      "name": "Additional downloaded packs remain reachable with Show more and no duplicates"
+    },
+    {
+      "name": "Reduced-motion and normal-motion Home both work; short viewport remains scrollable"
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "chromium-phone.png",
+    "chromium-phone-grid.png",
+    "chromium-ipad.png",
+    "chromium-desktop.png",
+    "chromium-motion-enabled.png"
+  ],
+  "browserVersion": "154.0.8037.57",
+  "appVersion": "0.43.1",
+  "initialHeight": {
+    "page": 1637,
+    "home": 1370
+  },
+  "status": "passed"
+}

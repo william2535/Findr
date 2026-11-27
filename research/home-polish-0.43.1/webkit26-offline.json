@@ -1,0 +1,17 @@
+{
+  "browser": "webkit",
+  "physicalDevice": false,
+  "offline": true,
+  "base": "http://127.0.0.1:4187/app/",
+  "checks": [],
+  "errors": [],
+  "screenshots": [],
+  "browserVersion": "26.0",
+  "appVersion": "0.43.1",
+  "status": "failed",
+  "failure": {
+    "stage": "verify offline cache",
+    "message": "Offline worker did not verify its complete cache",
+    "stack": "Error: Offline worker did not verify its complete cache\n    at verifiedShell (file:///tmp/findr-home-polish/tests/verify-home-polish-browser.mjs:52:9)\n    at async file:///tmp/findr-home-polish/tests/verify-home-polish-browser.mjs:69:53"
+  }
+}

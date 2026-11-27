@@ -15,13 +15,13 @@ export function mountHomeView(app,{notify=()=>{}}={}){
   root.dataset.layout=state.layout;
   root.querySelectorAll('[data-home-layout]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.homeLayout===state.layout)));
   toolbox.open=state.toolboxOpen;
-  root.querySelectorAll('[data-home-extra]').forEach(detail=>{detail.open=state.layout==='detailed'||state.extra[detail.dataset.homeExtra];detail.querySelector('summary').hidden=state.layout==='detailed';});
+  root.querySelectorAll('[data-home-extra]').forEach(detail=>{detail.open=state.extra[detail.dataset.homeExtra]===true;});
  };
  root.addEventListener('click',event=>{const button=event.target.closest('[data-home-layout]');if(!button||!root.contains(button)||!['detailed','grid'].includes(button.dataset.homeLayout))return;state.layout=button.dataset.homeLayout;apply();save();});
  root.addEventListener('toggle',event=>{
   const detail=event.target;
   if(detail===toolbox&&state.toolboxOpen!==detail.open){state.toolboxOpen=detail.open;save();}
-  else if(state.layout==='grid'&&detail.dataset.homeExtra&&state.extra[detail.dataset.homeExtra]!==detail.open){state.extra[detail.dataset.homeExtra]=detail.open;save();}
+  else if(detail.dataset.homeExtra&&state.extra[detail.dataset.homeExtra]!==detail.open){state.extra[detail.dataset.homeExtra]=detail.open;save();}
  },true);
  apply();
 }

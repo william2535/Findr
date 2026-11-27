@@ -1,0 +1,52 @@
+{
+  "version": "0.43.1",
+  "checkedAt": "2026-11-27T16:21:01.249559+00:00",
+  "baseline": {
+    "github": "c3c31a3016e7a811b2f88277e1430d571ee2ae04",
+    "native": "4c6f09febc768852facb025496818ee0611c1fee",
+    "matchingSourceFiles": 3201
+  },
+  "scope": "Home hierarchy, cards, pack shortcuts and display preferences. No diagnostic engine, manual store, user-data migration, Android binary or API changes.",
+  "node": {
+    "command": "node --test --test-isolation=none tests/*.test.mjs",
+    "tests": 2084,
+    "passed": 2083,
+    "failed": 0,
+    "skipped": 1,
+    "skipReason": "Existing manufacturer PDF fixture not bundled.",
+    "environment": "Native publication source with its existing retained legacy APK fixture.",
+    "durationMs": 72867.776403
+  },
+  "initialGithubCheckoutCheck": {
+    "tests": 2084,
+    "passed": 2081,
+    "failed": 2,
+    "skipped": 1,
+    "cause": "The GitHub export intentionally excludes retained legacy FINDR-0.14.1.apk; two release-retention tests require it. Copied verified existing APK into ignored isolated checkout; all21 release/manifest gates passed. Complete suite also passed against native source."
+  },
+  "typescript": "passed",
+  "syntax": "passed",
+  "diffWhitespace": "passed",
+  "productionBuild": "passed",
+  "publicAssetGate": {
+    "passed": true,
+    "files": 1559,
+    "bytes": 168088643
+  },
+  "offlineManifest": {
+    "build": "f522586dca36",
+    "assets": 1461,
+    "bytes": 127745896,
+    "hashVerification": "sha256-v1"
+  },
+  "review": {
+    "changedSourceSecrets": "No credentials or confidential data found in the changed Home source, release files or synthetic test fixtures. Existing export exclusions retained.",
+    "visualScreens": [
+      "390px phone",
+      "820px tablet",
+      "1440px desktop"
+    ],
+    "physicalDevice": false,
+    "androidBuild": false
+  }
+}

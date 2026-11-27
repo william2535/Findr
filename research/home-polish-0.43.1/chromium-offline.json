@@ -1,0 +1,84 @@
+{
+  "browser": "chromium",
+  "physicalDevice": false,
+  "offline": true,
+  "base": "http://127.0.0.1:4187/app/",
+  "checks": [
+    {
+      "name": "Actual service worker verified all required release assets",
+      "details": {
+        "ready": true,
+        "build": "f522586dca36",
+        "version": "0.43.1",
+        "verification": "sha256-v1",
+        "waitMs": 11271
+      }
+    },
+    {
+      "name": "Default Home keeps installation and About closed",
+      "details": {
+        "page": 1637,
+        "home": 1370
+      }
+    },
+    {
+      "name": "Layouts, controls and toolbox fit 320px"
+    },
+    {
+      "name": "Layouts, controls and toolbox fit 390px"
+    },
+    {
+      "name": "Layouts, controls and toolbox fit 820px"
+    },
+    {
+      "name": "Layouts, controls and toolbox fit 1440px"
+    },
+    {
+      "name": "Layout and independent disclosure choices survive reload"
+    },
+    {
+      "name": "Every daily shortcut opens its real existing workspace"
+    },
+    {
+      "name": "Update app is reachable and offline failure remains retryable"
+    },
+    {
+      "name": "Storage dialog, system PDF picker and offline status remain available"
+    },
+    {
+      "name": "Saved PDF bytes and real pack-use history survive reload without duplicate cards"
+    },
+    {
+      "name": "Additional downloaded packs remain reachable with Show more and no duplicates"
+    },
+    {
+      "name": "Reduced-motion and normal-motion Home both work; short viewport remains scrollable"
+    },
+    {
+      "name": "Network-disabled reload restores Home, saved count and existing workspace navigation"
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "chromium-offline-phone.png",
+    "chromium-offline-phone-grid.png",
+    "chromium-offline-ipad.png",
+    "chromium-offline-desktop.png",
+    "chromium-offline-motion-enabled.png",
+    "chromium-offline-offline.png"
+  ],
+  "browserVersion": "154.0.8037.57",
+  "appVersion": "0.43.1",
+  "cache": {
+    "ready": true,
+    "build": "f522586dca36",
+    "version": "0.43.1",
+    "verification": "sha256-v1",
+    "waitMs": 11271
+  },
+  "initialHeight": {
+    "page": 1637,
+    "home": 1370
+  },
+  "status": "passed"
+}

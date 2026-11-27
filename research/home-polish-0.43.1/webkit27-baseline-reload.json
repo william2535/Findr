@@ -1,0 +1,50 @@
+{
+  "browser": "WebKit27.2",
+  "baseline": "0.43.0",
+  "checks": [
+    "8 reloads with IndexedDB setting write and service worker allowed"
+  ],
+  "errors": [
+    {
+      "message": "Context is stopped",
+      "stack": "",
+      "url": "http://127.0.0.1:4188/app/#home"
+    },
+    {
+      "message": "Context is stopped",
+      "stack": "",
+      "url": "http://127.0.0.1:4188/app/#home"
+    },
+    {
+      "message": "Context is stopped",
+      "stack": "",
+      "url": "http://127.0.0.1:4188/app/#home"
+    },
+    {
+      "message": "Context is stopped",
+      "stack": "",
+      "url": "http://127.0.0.1:4188/app/#home"
+    },
+    {
+      "message": "Context is stopped",
+      "stack": "",
+      "url": "http://127.0.0.1:4188/app/#home"
+    },
+    {
+      "message": "Context is stopped",
+      "stack": "",
+      "url": "http://127.0.0.1:4188/app/#home"
+    },
+    {
+      "message": "Context is stopped",
+      "stack": "",
+      "url": "http://127.0.0.1:4188/app/#home"
+    },
+    {
+      "message": "Context is stopped",
+      "stack": "",
+      "url": "http://127.0.0.1:4188/app/#home"
+    }
+  ],
+  "version": "0.43.0"
+}

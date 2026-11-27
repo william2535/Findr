@@ -1,0 +1,75 @@
+{
+  "browser": "webkit",
+  "physicalDevice": false,
+  "offline": false,
+  "base": "http://127.0.0.1:4187/app/",
+  "checks": [
+    {
+      "name": "Default Home keeps installation and About closed",
+      "details": {
+        "page": 1628,
+        "home": 1362
+      }
+    },
+    {
+      "name": "Layouts, controls and toolbox fit 320px"
+    },
+    {
+      "name": "Layouts, controls and toolbox fit 390px"
+    },
+    {
+      "name": "Layouts, controls and toolbox fit 820px"
+    },
+    {
+      "name": "Layouts, controls and toolbox fit 1440px"
+    },
+    {
+      "name": "Layout and independent disclosure choices survive reload"
+    },
+    {
+      "name": "Every daily shortcut opens its real existing workspace"
+    },
+    {
+      "name": "Update app is reachable and offline failure remains retryable"
+    },
+    {
+      "name": "Storage dialog, system PDF picker and offline status remain available"
+    },
+    {
+      "name": "Saved PDF bytes and real pack-use history survive reload without duplicate cards"
+    },
+    {
+      "name": "Additional downloaded packs remain reachable with Show more and no duplicates"
+    },
+    {
+      "name": "Reduced-motion and normal-motion Home both work; short viewport remains scrollable"
+    }
+  ],
+  "errors": [
+    {
+      "message": "Context is stopped",
+      "stack": "",
+      "stage": "saved data",
+      "url": "http://127.0.0.1:4187/app/#home"
+    }
+  ],
+  "screenshots": [
+    "webkit-phone.png",
+    "webkit-phone-grid.png",
+    "webkit-ipad.png",
+    "webkit-desktop.png",
+    "webkit-motion-enabled.png"
+  ],
+  "browserVersion": "26.0",
+  "appVersion": "0.43.1",
+  "initialHeight": {
+    "page": 1628,
+    "home": 1362
+  },
+  "status": "failed",
+  "failure": {
+    "stage": "compact viewport and motion",
+    "message": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   {\n+     message: 'Context is stopped',\n+     stack: '',\n+     stage: 'saved data',\n+     url: 'http://127.0.0.1:4187/app/#home'\n+   }\n+ ]\n- []\n",
+    "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   {\n+     message: 'Context is stopped',\n+     stack: '',\n+     stage: 'saved data',\n+     url: 'http://127.0.0.1:4187/app/#home'\n+   }\n+ ]\n- []\n\n    at file:///tmp/findr-home-polish/tests/verify-home-polish-browser.mjs:208:10"
+  }
+}

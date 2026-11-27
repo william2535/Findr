@@ -1,0 +1,44 @@
+{
+  "pageHeight": 5004,
+  "homeHeight": 4737,
+  "viewportHeight": 844,
+  "sections": [
+    {
+      "name": "home-intro motion-watch motion-rail motion-visible",
+      "height": 445
+    },
+    {
+      "name": "home-lab-callout",
+      "height": 503
+    },
+    {
+      "name": "home-helper-callout",
+      "height": 313
+    },
+    {
+      "name": "home-import-callout motion-watch motion-rail",
+      "height": 320
+    },
+    {
+      "name": "home-pack-section",
+      "height": 277
+    },
+    {
+      "name": "home-pack-section",
+      "height": 375
+    },
+    {
+      "name": "field-ready",
+      "height": 232
+    },
+    {
+      "name": "home-extra",
+      "height": 616
+    },
+    {
+      "name": "home-extra",
+      "height": 1452
+    }
+  ],
+  "overflow": false
+}
