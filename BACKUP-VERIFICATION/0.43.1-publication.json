@@ -1,0 +1,95 @@
+{
+  "version": "0.43.1",
+  "savedVersion": {
+    "id": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_ee14cc82222c8191a549ea2e60c08987",
+    "project_id": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
+    "version_number": 97,
+    "source": {
+      "commit_sha": "38f05293b65499a6fb4265bfc3c34aa34b3dc4aa"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_000000009fc08210a904007c4e606abc",
+      "content_hash": "sha256:95d1861de40edaf73a98b9b91ee95a7693d15e5e24ecbade562961976ddf52b1",
+      "size_bytes": 169390080,
+      "file_count": 1666
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6b09af7a215c8191827e5d6da6888d85",
+    "project_id": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
+    "title": "FINDR \u2014 Fault finder",
+    "version_id": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_ee14cc82222c8191a549ea2e60c08987",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://findr-fault-finder.floodyyy21.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ae3125a4f808191a0a5ced2b71065ff",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-11-27T16:27:54.804299+00:00"
+  },
+  "githubSourceCommit": "6017eb00d89a59a4cb3a77a63dd4a94b6cb675f5",
+  "workflow": {
+    "id": 46033638643,
+    "name": "Deploy FINDR to GitHub Pages",
+    "status": "completed",
+    "conclusion": "success",
+    "sha": "6017eb00d89a59a4cb3a77a63dd4a94b6cb675f5"
+  },
+  "assetChecks": {
+    "app-release.json": {
+      "status": 200,
+      "bytes": 21,
+      "sha256": "b62ddb1a697edf92492c335e4ac9f74f95b1db66c616cccf0220c871de6503d3"
+    },
+    "app/app.mjs": {
+      "status": 200,
+      "bytes": 106041,
+      "sha256": "efaf59c32544b65a21a47a0728eede89b0e8f1a40aad4072336da04509d6d3a4"
+    },
+    "app/home-view.css": {
+      "status": 200,
+      "bytes": 13289,
+      "sha256": "b8cd62975043d45956af699767d91a4fbab9f74a320ebda2e589e521393a042e"
+    },
+    "app/home-view.mjs": {
+      "status": 200,
+      "bytes": 1864,
+      "sha256": "51de8ace533c04825b7df3d699fb89c948176ebd9a2eae23c056a11426b4125e"
+    },
+    "app/version.mjs": {
+      "status": 200,
+      "bytes": 722,
+      "sha256": "e2f145eed46e1a78d994c565808f356e7499cf8d96f577dd43b25d7ad61bdf8f"
+    },
+    "app/precache.js": {
+      "status": 200,
+      "bytes": 213387,
+      "sha256": "f00639e07eaf28723cfc4267876520d5508370910d6b5baa13c67292357ff929"
+    }
+  },
+  "sourceComparison": {
+    "matchedFiles": 3214,
+    "nativeSourceCommit": "38f05293b65499a6fb4265bfc3c34aa34b3dc4aa",
+    "intentionalExceptions": [
+      ".openai/hosting.json",
+      "android/preview.keystore",
+      "public/releases/FINDR-0.14.1.apk"
+    ],
+    "githubOnlyDocumentationAndRetainedArtifacts": "Preserved; see original export exclusions and additionalRetainedArtifacts."
+  },
+  "validation": "research/home-polish-0.43.1/validation.json",
+  "browserEvidence": "research/home-polish-0.43.1/README.md",
+  "localArchive": {
+    "sha256": "fa34326269f9d272f1ae6d270ededc96b16790e8fa5c92773b74d9c23c62b26e",
+    "bytes": 169420800
+  },
+  "immutableTags": {
+    "source-v0.32.6": "1aa4b88397042dfa103688c4b209432fd06ff23d",
+    "android-v0.37.0": "eeba7e45a4e1cfed2f62f8982fdd308ad5ff87d9"
+  }
+}

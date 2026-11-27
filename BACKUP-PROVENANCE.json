@@ -1,20 +1,20 @@
 {
-  "webVersion": "0.43.0",
-  "siteVersion": 96,
+  "webVersion": "0.43.1",
+  "siteVersion": 97,
   "siteProjectId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff",
-  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_9c2c627928cc8191a1be4856775110f6",
-  "deploymentId": "appgdep_6b08b88398448191902fb282720a4c21",
+  "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_ee14cc82222c8191a549ea2e60c08987",
+  "deploymentId": "appgdep_6b09af7a215c8191827e5d6da6888d85",
   "deploymentStatus": "succeeded",
-  "deploymentUpdatedAt": "2026-11-26T22:54:12.899821+00:00",
+  "deploymentUpdatedAt": "2026-11-27T16:27:54.804299+00:00",
   "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site",
-  "sourceCommit": "4c6f09febc768852facb025496818ee0611c1fee",
+  "sourceCommit": "38f05293b65499a6fb4265bfc3c34aa34b3dc4aa",
   "sourceRepository": "Sites project source repository",
   "githubRepository": "https://github.com/william2535/Findr",
   "githubBranch": "main",
   "backupRevision": "The Git commit containing this provenance and SOURCE-FILES.sha256 identifies the backup; it intentionally differs from the deployment source commit.",
   "sourceManifest": "SOURCE-FILES.sha256",
   "manifestScope": "All source-backup payload files except the checksum manifest itself; includes GitHub setup/export documentation and separately archived recovery files.",
-  "verifiedOriginalSourceFiles": 3201,
+  "verifiedOriginalSourceFiles": 3214,
   "intentionallyDetachedFile": ".openai/hosting.json",
   "detachedHostingReason": "Keep a migrated checkout separate from the original live ChatGPT Site.",
   "intentionalExclusions": "Existing EXPORT-EXCLUSIONS.json remains applicable. Private android/preview.keystore excluded. Hosting identity detached. Legacy0.14.1 APK supplied only to isolated build for existing retention gate; historical GitHub export omits it. Current0.37.0 APK remains separately retained with immutable checksum/source. No downloaded manuals/model weights/user data added.",
@@ -29,56 +29,44 @@
     "recoveryArchive": "WORKSPACE-RECOVERY/original-workspace-files.zip"
   },
   "checks": {
-    "scope": "Real local Protec6500 field investigations: photo OCR/review, sections, actual counters/interval/reset/coverage, corrections, saved jobs, handover and restoration; existing simulation retained.",
+    "scope": "Home hierarchy, compact shortcuts, manual pack consolidation and display preferences. Existing feature routes and storage retained.",
     "nodeRegression": {
       "tests": 2084,
       "passed": 2083,
       "failed": 0,
       "skipped": 1,
-      "skip": "Existing original manufacturer PDF fixture not bundled."
-    },
-    "finalFocusedGates": {
-      "tests": 29,
-      "passed": 29,
-      "failed": 0
+      "skip": "Existing manufacturer PDF fixture not bundled."
     },
     "typescript": "passed",
     "productionBuild": "passed",
     "publicAssetGate": "passed",
-    "publicFiles": 1558,
-    "offlineBuildHash": "2c7d00d2cfc5",
-    "browserEvidence": "research/loop-field-0.43.0/browser-verification.md",
-    "chromium": "154.0.8037.57 on Linux;13fieldchecks +11practicechecks, including verified offline shell/OCR/newphoto/job/reload and savedPDFcitation",
-    "webkit": "27.2 on Linux persistent profile;13fieldchecks +11practicechecks, including verified offline shell/OCR/newphoto/job/reload and savedPDFcitation",
-    "firstPhotoOCRMs": {
-      "chromium": 2165,
-      "webkit": 3985
-    },
+    "publicFiles": 1559,
+    "offlineBuildHash": "f522586dca36",
+    "browserEvidence": "research/home-polish-0.43.1/README.md",
+    "chromium": "154.0.8037.57 on Linux; 12 normal and 14 actual-offline checks passed without page errors.",
+    "webkit": "27.2 on Linux; 12 normal checks passed. All 14 offline functional checks completed with a verified cache; zero-error assertion failed on 8 empty-stack Context is stopped errors during rapid reloads. Same errors reproduced on unchanged 0.43.0. WebKit26 older runtime diagnostics retained.",
     "physicalPhone": false,
     "nativeBuild": "No new APK/AAB or Play rollout"
   },
   "secretReview": {
-    "scope": "Changed field model/store/UI/photoOCR modules, tests, source audit and release records inspected. Existing export exclusions retained; no private keys, real environment values, original userphotos or downloaded manuals added.",
-    "limitations": "Not a new full-repository secret audit."
+    "scope": "Eight changed tracked runtime/release files scanned for common credential patterns; no matches. Home source and synthetic test evidence reviewed. Existing export exclusions and private keys unchanged.",
+    "limitations": "Focused changed-file review, not a new complete repository audit."
   },
-  "preparedAt": "2026-11-26T22:56:12.487563+00:00",
+  "preparedAt": "2026-11-27T16:30:02.578811+00:00",
   "deploymentArchive": {
-    "sha256": "e46f389956c7ae60fc96d899ce8b7fbe50226a1f6b946cadd387732b422adc50",
-    "bytes": 169267200,
-    "fileCount": 1665,
+    "sha256": "95d1861de40edaf73a98b9b91ee95a7693d15e5e24ecbade562961976ddf52b1",
+    "bytes": 169390080,
+    "fileCount": 1666,
     "note": "Server-returned normalized saved archive metadata."
   },
   "previousPublishedRelease": {
-    "webVersion": "0.42.0",
-    "siteVersion": 95,
-    "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_20774ef6f09c8191985e6f3fc30fd45c",
-    "deploymentId": "appgdep_6b08afc2d0248191b23a0900e8b63619",
-    "deploymentStatus": "succeeded",
-    "deploymentUpdatedAt": "2026-11-26T22:16:53.031827+00:00",
-    "sourceCommit": "a139e4c106ef26ca3462877f77a69a28f5aa9c10",
-    "liveUrl": "https://findr-fault-finder.floodyyy21.chatgpt.site"
+    "webVersion": "0.43.0",
+    "siteVersion": 96,
+    "savedVersionId": "appgprj_6ae3125a4f808191a0a5ced2b71065ff~appgver_9c2c627928cc8191a1be4856775110f6",
+    "deploymentId": "appgdep_6b08b88398448191902fb282720a4c21",
+    "sourceCommit": "4c6f09febc768852facb025496818ee0611c1fee"
   },
-  "publicationNote": "Web0.43.0 published as Site96 (Sites returned succeeded). GitHub sourcefbce139 passed Pages deployment and live smoke checks. Source parity verified3201eligible files. Native anonymous HTTP probe is blocked by execution-environment Envoy403/1010, so no separate native HTTP parity check is claimed. Field records and synthetic practice remain separate; no native release.",
+  "publicationNote": "Sites returned succeeded for version97. GitHub Pages workflow and public asset bytes/live Home checked. Anonymous native dispatch returned HTTP403/error1010 in this environment; no bypass. Real iPhone/iPad not available.",
   "additionalRetainedArtifacts": [
     {
       "path": "public/releases/FINDR-0.37.0.apk",
@@ -121,11 +109,23 @@
     "evidence": "BACKUP-VERIFICATION/0.38.0-pack-public.json"
   },
   "localBuildArchive": {
-    "sha256": "ae519d7525e0a45e14d4e0567ea2182aca80cf4e10469576666042a526009f0f",
-    "bytes": 169287680,
-    "uploaded": true
+    "sha256": "fa34326269f9d272f1ae6d270ededc96b16790e8fa5c92773b74d9c23c62b26e",
+    "bytes": 169420800
   },
   "githubPages": {
+    "url": "https://william2535.github.io/Findr/",
+    "appUrl": "https://william2535.github.io/Findr/app/",
+    "status": "published_and_verified",
+    "workflow": ".github/workflows/deploy-pages.yml",
+    "deployedCommit": "6017eb00d89a59a4cb3a77a63dd4a94b6cb675f5",
+    "workflowRunId": 46033638643,
+    "workflowUrl": "https://github.com/william2535/Findr/actions/runs/46033638643",
+    "workflowConclusion": "success",
+    "offlineBuild": "61a31cf2dbe4",
+    "httpChecks": "BACKUP-VERIFICATION/0.43.1-publication.json",
+    "browserSmoke": "BACKUP-VERIFICATION/0.43.1-live-browser.json"
+  },
+  "previousGithubPages": {
     "url": "https://william2535.github.io/Findr/",
     "appUrl": "https://william2535.github.io/Findr/app/",
     "status": "published_and_verified",
@@ -138,85 +138,43 @@
     "httpChecks": "BACKUP-VERIFICATION/0.43.0-publication.json",
     "browserSmoke": "BACKUP-VERIFICATION/0.43.0-live-browser.json"
   },
-  "previousGithubPages": {
-    "url": "https://william2535.github.io/Findr/",
-    "appUrl": "https://william2535.github.io/Findr/app/",
-    "status": "published_and_verified",
-    "workflow": ".github/workflows/deploy-pages.yml",
-    "deployedCommit": "9537e0fc78d6864c9cacb4e9ce90a027568478cf",
-    "workflowRunId": 45903306501,
-    "workflowUrl": "https://github.com/william2535/Findr/actions/runs/45903306501",
-    "workflowConclusion": "success",
-    "offlineBuild": "aa3672d98ad3",
-    "httpChecks": "BACKUP-VERIFICATION/0.42.0-publication.json",
-    "browserSmoke": "BACKUP-VERIFICATION/0.42.0-live-browser.json"
-  },
   "previousChecks": {
-    "scope": "Zone Sketch Home promotional link update to Google Play package (com.zonesketch.app) and standalone Play privacy policy publication.",
-    "focusedRegressionTests": {
-      "passed": 5,
+    "scope": "Real local Protec6500 field investigations: photo OCR/review, sections, actual counters/interval/reset/coverage, corrections, saved jobs, handover and restoration; existing simulation retained.",
+    "nodeRegression": {
+      "tests": 2084,
+      "passed": 2083,
       "failed": 0,
-      "scope": "tests/github-pages-package.test.mjs (Pages packaging, asset preservation, privacy policy routing, reproducible precache hashing); full suite not rerun for this promotion/policy update."
+      "skipped": 1,
+      "skip": "Existing original manufacturer PDF fixture not bundled."
     },
-    "productionBuild": "passed",
+    "finalFocusedGates": {
+      "tests": 29,
+      "passed": 29,
+      "failed": 0
+    },
     "typescript": "passed",
-    "syntax": "passed",
-    "publicAssets": "passed",
-    "offlineBuildHash": "85695ab082e2",
-    "pagesOfflineBuildHash": "8bc5c7bd0490",
-    "browserChecks": {
-      "environments": "Live TLS HTTPS inspection (curl/python urllib) of deployed ChatGPT Site and GitHub Pages endpoints",
-      "verified": [
-        "app.mjs sha256 byte-for-byte parity (5a85c7da9afc61665883e42482dcca8bd11dde9272bb318846605aea76ea3d13)",
-        "version.mjs sha256 byte-for-byte parity (3d1a74dcb5e036c603f1f7f2a7d294e532d8ffc504d1c7dcf811e10497f92a92)",
-        "zone-sketch-banner.jpg sha256 byte-for-byte parity (85b9476989cc4f26f9c7e2feadb699618e0b308e686522fbea890cc38bac2326)",
-        "Home promotion opens Google Play (com.zonesketch.app)",
-        "Standalone privacy policy HTTP 200 at /privacy/"
-      ],
-      "evidence": [
-        "BACKUP-VERIFICATION/0.40.2-live-site.json",
-        "BACKUP-VERIFICATION/0.40.2-live-pages.json"
-      ]
+    "productionBuild": "passed",
+    "publicAssetGate": "passed",
+    "publicFiles": 1558,
+    "offlineBuildHash": "2c7d00d2cfc5",
+    "browserEvidence": "research/loop-field-0.43.0/browser-verification.md",
+    "chromium": "154.0.8037.57 on Linux;13fieldchecks +11practicechecks, including verified offline shell/OCR/newphoto/job/reload and savedPDFcitation",
+    "webkit": "27.2 on Linux persistent profile;13fieldchecks +11practicechecks, including verified offline shell/OCR/newphoto/job/reload and savedPDFcitation",
+    "firstPhotoOCRMs": {
+      "chromium": 2165,
+      "webkit": 3985
     },
-    "android": {
-      "versionName": "0.37.0",
-      "versionCode": 27,
-      "note": "Production web release only. android/ preview remains 0.37.0/code 27. Android Play Store draft work is managed separately under android-play/ on release/play-store and release/play-upload branches."
-    },
-    "limitations": [
-      "No physical mobile device testing performed in this Cloud Shell session.",
-      "Cloud Shell lacks direct access to the internal ChatGPT Sites source tree to run a local repository diff against commit 4bce7fd6b5b96d40201d6c71d1765cc865b8d7a3; client-facing application parity is verified via live asset cryptographic checksums."
-    ],
-    "evidence": "BACKUP-VERIFICATION/0.40.2-pages-publication.json",
-    "publishedBrowser": {
-      "status": "passed",
-      "sites": [
-        "https://findr-fault-finder.floodyyy21.chatgpt.site/app/",
-        "https://william2535.github.io/Findr/app/"
-      ],
-      "verified": [
-        "Web version 0.40.2 active on both endpoints",
-        "Zone Sketch promotion links to com.zonesketch.app",
-        "App release manifest version 0.40.2",
-        "Standalone Play privacy policy at /privacy/"
-      ],
-      "pageErrors": 0,
-      "physicalPhone": false,
-      "tlsCertificateVerification": "enabled",
-      "evidence": [
-        "BACKUP-VERIFICATION/0.40.2-live-site.json",
-        "BACKUP-VERIFICATION/0.40.2-live-pages.json"
-      ]
-    }
+    "physicalPhone": false,
+    "nativeBuild": "No new APK/AAB or Play rollout"
   },
   "sourceComparison": {
-    "matchedSourceFiles": 3186,
-    "intentionalDifferences": [
+    "matchedFiles": 3214,
+    "nativeSourceCommit": "38f05293b65499a6fb4265bfc3c34aa34b3dc4aa",
+    "intentionalExceptions": [
       ".openai/hosting.json",
       "android/preview.keystore",
       "public/releases/FINDR-0.14.1.apk"
     ],
-    "sourceCommit": "a139e4c106ef26ca3462877f77a69a28f5aa9c10",
-    "githubAppCommit": "9537e0fc78d6864c9cacb4e9ce90a027568478cf"
+    "githubOnlyDocumentationAndRetainedArtifacts": "Preserved; see original export exclusions and additionalRetainedArtifacts."
   }
 }

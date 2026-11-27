@@ -1,0 +1,22 @@
+{
+  "url": "https://william2535.github.io/Findr/app/#home",
+  "checks": [
+    "Live 0.43.1, six cards and help closed",
+    "No horizontal overflow at 320/390/820",
+    "Compact toggle and toolbox work",
+    "Panel Lab opens",
+    "Return Home works"
+  ],
+  "errors": [],
+  "physicalDevice": false,
+  "browser": "154.0.8037.57",
+  "httpStatus": 200,
+  "footer": "App installing \u00b7 0 PDFs saved \u00b7 PDF pending \u00b7 OCR pending \u00b7 Model pending\nFINDR / 0.43.1",
+  "status": "passed",
+  "nativeProbe": {
+    "url": "https://findr-fault-finder.floodyyy21.chatgpt.site/app/",
+    "httpStatus": 403,
+    "body": "error code: 1010",
+    "limitation": "Native live browser verification blocked by environment dispatch; no bypass attempted."
+  }
+}
