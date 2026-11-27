@@ -33,19 +33,14 @@ export function createAmbientSparks({host=window,doc=document,random=Math.random
  function emit(){
   timer=0;if(!allowed())return;
   const shoot=++burst%4===0,{x,y}=point(shoot),birth=host.performance.now();
-  particles=[{x,y,birth,life:shoot?2100:2450,vx:shoot?(random()-.5)*10:0,vy:shoot?-64:7,radius:shoot?2.5:3,star:!shoot,trail:shoot}];
-  const count=shoot?2:7;
-  for(let i=0;i<count;i++){
-   const angle=random()*Math.PI*2,speed=8+random()*15;
-   particles.push({x,y,birth,life:1450+random()*650,vx:Math.cos(angle)*speed,vy:Math.sin(angle)*speed+5,radius:.8+random()*.65,star:false,trail:false});
-  }
+  particles=Array.from({length:3+Math.floor(random()*3)},()=>({x:x+(random()-.5)*12,y:y+(random()-.5)*20,birth,life:2400+random()*1600,vx:(random()-.5)*5,vy:-5-random()*9,radius:.65+random()*.85,star:false,trail:false}));
   canvas.dataset.active='true';canvas.dataset.kind=shoot?'shoot':'spark';frame=host.requestAnimationFrame(draw);
  }
  function draw(now){
   frame=0;if(!allowed()){stop();return;}clear();particles=particles.filter(p=>now-p.birth<p.life);
   for(const p of particles){
-   const age=Math.max(0,now-p.birth),t=age/p.life,seconds=age/1000,fade=(1-t)**1.65;
-   const x=p.x+p.vx*seconds,y=p.y+p.vy*seconds+(p.trail?0:5*seconds*seconds),radius=p.radius*(.38+.62*(1-t));
+   const age=Math.max(0,now-p.birth),t=age/p.life,seconds=age/1000,fade=Math.sin(Math.PI*t)*.55;
+   const x=p.x+p.vx*seconds,y=p.y+p.vy*seconds+0,radius=p.radius*(.38+.62*(1-t));
    const halo=radius*(p.star?7:5),glow=ctx.createRadialGradient(x,y,0,x,y,halo);
    glow.addColorStop(0,`rgba(255,243,174,${fade*.8})`);glow.addColorStop(.16,`rgba(255,223,81,${fade*.45})`);glow.addColorStop(.5,`rgba(255,197,32,${fade*.11})`);glow.addColorStop(1,'rgba(255,191,25,0)');
    ctx.fillStyle=glow;ctx.beginPath();ctx.arc(x,y,halo,0,Math.PI*2);ctx.fill();
@@ -61,7 +56,7 @@ export function createAmbientSparks({host=window,doc=document,random=Math.random
    ctx.fillStyle=`rgba(255,246,189,${fade})`;ctx.beginPath();ctx.arc(x,y,radius,0,Math.PI*2);ctx.fill();
   }
   if(particles.length)frame=host.requestAnimationFrame(draw);
-  else{canvas.dataset.active='false';timer=host.setTimeout(emit,700+random()*1100);}
+  else{canvas.dataset.active='false';timer=host.setTimeout(emit,1100+random()*1800);}
  }
  function sync(){stop();if(allowed())timer=host.setTimeout(emit,280);}
  // Safari toolbar/keyboard changes must not repeatedly cancel a visible burst.
